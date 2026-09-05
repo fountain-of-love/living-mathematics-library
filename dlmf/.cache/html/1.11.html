@@ -1,0 +1,1718 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>DLMF: §1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods</title>
+<link rel="shortcut icon" href="./style/DLMF-16.png" type="image/png">
+<script type="text/javascript"><!--
+	var PATH="DLMF:/1.11";
+	var ROOT="./";
+      //--></script>
+<script type="text/javascript" src="./style/jquery.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/jquery.leaveNotice.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/DLMF.js"><!-- non-empty so ie6 will accept it --></script>
+<script async="" type="text/javascript" id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC&amp;subagency=NIST&amp;pua=UA-37115410-44&amp;yt=true&amp;exts=ppsx,pps,f90,sch,rtf,wrl,txz,m1v,xlsm,msi,xsd,f,tif,eps,mpg,xml,pl,xlt,c"><!-- non-empty so ie6 will accept it --></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-BZB64W4M0L"></script><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-BZB64W4M0L');
+      </script>
+<link rel="stylesheet" type="text/css" href="./style/LaTeXML.css">
+<link rel="stylesheet" type="text/css" href="./style/DLMF.css">
+<link rel="stylesheet" type="text/css" href="./style/print.css" media="print">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="top" href="./" title="DLMF">
+<link rel="copyright" href="./about/notices" title="Copyright">
+<link rel="search" href="./search/search" title="Search">
+<link rel="help" class="ltx_help" href="./help/" title="Help">
+<link rel="up" href="./1#PT2" title="Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods">
+<link rel="up up" href="./1" title="Chapter 1 Algebraic and Analytic Methods">
+<link rel="start" href="./" title="">
+<link rel="prev" href="./1.10" title="§1.10 Functions of a Complex Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods">
+<link rel="next" href="./1.12" title="§1.12 Continued Fractions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods">
+<link rel="section" href="./1.1" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods">
+<link rel="section" href="./1.2" title="§1.2 Elementary Algebra ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods">
+<link rel="section" href="./1.3" title="§1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods">
+<link rel="section" href="./1.4" title="§1.4 Calculus of One Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods">
+<link rel="section" href="./1.5" title="§1.5 Calculus of Two or More Variables ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods">
+<link rel="section" href="./1.6" title="§1.6 Vectors and Vector-Valued Functions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods">
+<link rel="section" href="./1.7" title="§1.7 Inequalities ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods">
+<link rel="section" href="./1.8" title="§1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods">
+<link rel="section" href="./1.9" title="§1.9 Calculus of a Complex Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods">
+<link rel="section" href="./1.10" title="§1.10 Functions of a Complex Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods">
+<link rel="section" href="./1.12" title="§1.12 Continued Fractions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods">
+<link rel="section" href="./1.13" title="§1.13 Differential Equations ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods">
+<link rel="section" href="./1.14" title="§1.14 Integral Transforms ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods">
+<link rel="section" href="./1.15" title="§1.15 Summability Methods ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods">
+<link rel="section" href="./1.16" title="§1.16 Distributions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods">
+<link rel="section" href="./1.17" title="§1.17 Integral and Series Representations of the Dirac Delta ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods">
+<link rel="section" href="./1.18" title="§1.18 Linear Second Order Differential Operators and Eigenfunction Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods">
+<link rel="document" href="./front/foreword" title="Foreword">
+<link rel="document" href="./front/preface" title="Preface">
+<link rel="document" href="./front/introduction" title="Mathematical Introduction">
+<link rel="chapter" href="./1" title="Chapter 1 Algebraic and Analytic Methods">
+<link rel="chapter" href="./2" title="Chapter 2 Asymptotic Approximations">
+<link rel="chapter" href="./3" title="Chapter 3 Numerical Methods">
+<link rel="chapter" href="./4" title="Chapter 4 Elementary Functions">
+<link rel="chapter" href="./5" title="Chapter 5 Gamma Function">
+<link rel="chapter" href="./6" title="Chapter 6 Exponential, Logarithmic, Sine, and Cosine Integrals">
+<link rel="chapter" href="./7" title="Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="chapter" href="./8" title="Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="chapter" href="./9" title="Chapter 9 Airy and Related Functions">
+<link rel="chapter" href="./10" title="Chapter 10 Bessel Functions">
+<link rel="chapter" href="./11" title="Chapter 11 Struve and Related Functions">
+<link rel="chapter" href="./12" title="Chapter 12 Parabolic Cylinder Functions">
+<link rel="chapter" href="./13" title="Chapter 13 Confluent Hypergeometric Functions">
+<link rel="chapter" href="./14" title="Chapter 14 Legendre and Related Functions">
+<link rel="chapter" href="./15" title="Chapter 15 Hypergeometric Function">
+<link rel="chapter" href="./16" title="Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="chapter" href="./17" title="Chapter 17 𝑞-Hypergeometric and Related Functions">
+<link rel="chapter" href="./18" title="Chapter 18 Orthogonal Polynomials">
+<link rel="chapter" href="./19" title="Chapter 19 Elliptic Integrals">
+<link rel="chapter" href="./20" title="Chapter 20 Theta Functions">
+<link rel="chapter" href="./21" title="Chapter 21 Multidimensional Theta Functions">
+<link rel="chapter" href="./22" title="Chapter 22 Jacobian Elliptic Functions">
+<link rel="chapter" href="./23" title="Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="chapter" href="./24" title="Chapter 24 Bernoulli and Euler Polynomials">
+<link rel="chapter" href="./25" title="Chapter 25 Zeta and Related Functions">
+<link rel="chapter" href="./26" title="Chapter 26 Combinatorial Analysis">
+<link rel="chapter" href="./27" title="Chapter 27 Functions of Number Theory">
+<link rel="chapter" href="./28" title="Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="chapter" href="./29" title="Chapter 29 Lamé Functions">
+<link rel="chapter" href="./30" title="Chapter 30 Spheroidal Wave Functions">
+<link rel="chapter" href="./31" title="Chapter 31 Heun Functions">
+<link rel="chapter" href="./32" title="Chapter 32 Painlevé Transcendents">
+<link rel="chapter" href="./33" title="Chapter 33 Coulomb Functions">
+<link rel="chapter" href="./34" title="Chapter 34 3⁢𝑗,6⁢𝑗,9⁢𝑗 Symbols">
+<link rel="chapter" href="./35" title="Chapter 35 Functions of Matrix Argument">
+<link rel="chapter" href="./36" title="Chapter 36 Integrals with Coalescing Saddles">
+<link rel="bibliography" href="./bib/" title="Bibliography">
+<link rel="index" href="./idx/" title="Index">
+<link rel="glossary" href="./not/" title="Notations">
+<link rel="document" href="./lof/" title="List of Figures">
+<link rel="document" href="./lot/" title="List of Tables">
+<link rel="document" href="./software/" title="Software Index">
+<link rel="document" href="./errata/" title="Errata">
+<link rel="document" href="./help/" title="Need Help?">
+<link rel="document" href="./search/" title="Advanced Search">
+<link rel="document" href="./about/" title="About the Project">
+<meta name="keywords" lang="en" content="Descartes’ rule of signs, Descartes’ rule of signs (for polynomials), Horner’s scheme, Horner’s scheme for polynomials, Hurwitz criterion, Hurwitz criterion for stable polynomials, constants, cubic equation, degrees two, three, four, discriminant, distribution, division algorithm, elementary properties, elementary symmetric functions, extended, monic, monic polynomial, of a polynomial, polynomials, quadratic equations, quartic equations, resolvent, resolvent cubic, resolvent cubic equation, roots of, roots of constants, roots of unity, stable, stable polynomials, unity, zeros, zeros of polynomials">
+</head>
+<body class="color_default textfont_default titlefont_default fontsize_default navbar_default">
+<div class="ltx_page_navbar">
+<div class="ltx_page_navlogo"><a href="./" title="Digital Library of Mathematical Functions"><span>DLMF</span></a></div>
+<div class="ltx_page_navitems">
+<form method="get" action="./search/search">
+<ul>
+<li><a href="./idx/">Index</a></li>
+<li><a href="./not/">Notations</a></li>
+<li><small><input type="text" name="q" value="" size="6" class="ltx_page_navitem_search"><button type="submit">Search</button></small></li>
+<li><a href="./help/" class="ltx_help">Help?</a></li>
+<li><a href="./help/cite">Citing</a></li>
+<li><a href="./help/customize" class="ltx_customize">Customize</a></li>
+<li id="showinfo"><a href="" onclick="showInfo(); return false;" title="Show Annotations">Annotate</a></li>
+<li id="hideinfo"><a href="" onclick="hideInfo(); return false;">UnAnnotate</a></li>
+</ul>
+</form>
+</div>
+<div class="ltx_page_navsponsors">
+<div><a href="./about/" class="ltx_page_navabout">About the Project</a></div>
+</div>
+</div>
+<div class="ltx_page_main">
+<div class="ltx_page_header">
+<a href="./1" title="" class="ltx_ref" rel="up up"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1 </span>Algebraic and Analytic Methods</span></a><a href="./1#PT2" title="In Chapter 1 Algebraic and Analytic Methods" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title">Topics of Discussion</span></a><a href="./1.10" title="In Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.10 </span>Functions of a Complex Variable</span></a><a href="./1.12" title="In Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.12 </span>Continued Fractions</span></a>
+</div>
+<div class="ltx_page_content">
+<section class="ltx_section ltx_authors_multiline ltx_leqno">
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">§1.11 </span>Zeros of Polynomials</h1>
+<div id="info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=polynomials">polynomials</a>, <a class="ltx_keyword" href="./search/search?q=zeros">zeros</a>, <a class="ltx_keyword" href="./search/search?q=zeros%20of%20polynomials">zeros of polynomials</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./1.1#t1.r2" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.1</span></a>,
+<a href="./1.1#t1.r3" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.1</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./1.11" title="" class="ltx_ref">http://dlmf.nist.gov/1.11</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<h6>Contents</h6>
+<ol class="ltx_toclist ltx_toclist_section">
+<li class="ltx_tocentry"><a href="#i"><span class="ltx_tag ltx_tag_subsection">§1.11(i) </span>Division Algorithm</a></li>
+<li class="ltx_tocentry"><a href="#ii"><span class="ltx_tag ltx_tag_subsection">§1.11(ii) </span>Elementary Properties</a></li>
+<li class="ltx_tocentry"><a href="#iii"><span class="ltx_tag ltx_tag_subsection">§1.11(iii) </span>Polynomials of Degrees Two, Three, and Four</a></li>
+<li class="ltx_tocentry"><a href="#iv"><span class="ltx_tag ltx_tag_subsection">§1.11(iv) </span>Roots of Unity and of Other Constants</a></li>
+<li class="ltx_tocentry"><a href="#v"><span class="ltx_tag ltx_tag_subsection">§1.11(v) </span>Stable Polynomials</a></li>
+</ol>
+<section id="i" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§1.11(i) </span>Division Algorithm</h2>
+<div id="i.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=division%20algorithm">division algorithm</a>, <a class="ltx_keyword" href="./search/search?q=zeros%20of%20polynomials">zeros of polynomials</a>
+</dd>
+<dt>Notes:</dt>
+<dd>For the Horner scheme, see <cite class="ltx_cite ltx_citemacro_citet">Burnside and Panton (<a href="./bib/B#bib385" title="The Theory of Equations: With an Introduction to the Theory of Binary Algebraic Forms" class="ltx_ref">1960</a>, pp. 8–9)</cite>. The double
+Horner scheme is derived similarly. For (<a href="./1.11#E7" title="(1.11.7) ‣ Extended Horner Scheme ‣ §1.11(i) Division Algorithm ‣ §1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.11.7</span></a>), see
+<cite class="ltx_cite ltx_citemacro_citet">Dummit and Foote (<a href="./bib/D#bib689" title="Abstract Algebra" class="ltx_ref">1999</a>, pp. 300–301)</cite>.</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./18.40#i.p1" title="§18.40(i) Computation of Polynomials ‣ §18.40 Methods of Computation ‣ Computation ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§18.40(i)</span></a>,
+<a href="./3.8#iv.p2" title="§3.8(iv) Zeros of Polynomials ‣ §3.8 Nonlinear Equations ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§3.8(iv)</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./1.11.i" title="" class="ltx_ref">http://dlmf.nist.gov/1.11.i</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.11#info" title="§1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<section id="Px1" class="ltx_paragraph">
+<h3 class="ltx_title ltx_title_paragraph">Horner’s Scheme</h3>
+<div id="Px1.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=Horner%20scheme">Horner’s scheme</a>, <a class="ltx_keyword" href="./search/search?q=Horner%20scheme%20for%20polynomials">Horner’s scheme for polynomials</a>, <a class="ltx_keyword" href="./search/search?q=zeros%20of%20polynomials">zeros of polynomials</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.11#i.info" title="§1.11(i) Division Algorithm ‣ §1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11(i)</span></a>,
+<a href="./1.11#info" title="§1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="Px1.p1" class="ltx_para">
+<p class="ltx_p">Let</p>
+<table id="E1" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">1.11.1</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E1.png" altimg-height="29px" altimg-valign="-7px" altimg-width="331px" alttext="f(z)=a_{n}z^{n}+a_{n-1}z^{n-1}+\dots+a_{0}." display="block"><mrow><mrow><mrow><mi>f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./1.1#t1.r2" title="variable">z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><msub><mi>a</mi><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></msub><mo>⁢</mo><msup><mi href="./1.1#t1.r2" title="variable">z</mi><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></msup></mrow><mo>+</mo><mrow><msub><mi>a</mi><mrow><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>⁢</mo><msup><mi href="./1.1#t1.r2" title="variable">z</mi><mrow><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi><mo>−</mo><mn>1</mn></mrow></msup></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><msub><mi>a</mi><mn>0</mn></msub></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E1.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./1.1#t1.r2" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m129.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi href="./1.1#t1.r2" title="variable">z</mi></math>:  variable</a> and
+<a href="./1.1#t1.r5" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m118.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></math>:  nonnegative integer</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./1.11#Px2.p1" title="Extended Horner Scheme ‣ §1.11(i) Division Algorithm ‣ §1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11(i)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./1.11.E1" title="" class="ltx_ref">http://dlmf.nist.gov/1.11.E1</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./1.11.E1.tex">TeX</a>, <a href="./1.11.E1.pmml">pMML</a>, <a href="./1.11.E1.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.11#Px1.info" title="Horner’s Scheme ‣ §1.11(i) Division Algorithm ‣ §1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11(i)</span></a>,
+<a href="./1.11#i.info" title="§1.11(i) Division Algorithm ‣ §1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11(i)</span></a>,
+<a href="./1.11#info" title="§1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">Then</p>
+<table id="E2" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">1.11.2</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E2.png" altimg-height="29px" altimg-valign="-7px" altimg-width="471px" alttext="f(z)=(z-\alpha)(b_{n}z^{n-1}+b_{n-1}z^{n-2}+\dots+b_{1})+b_{0}," display="block"><mrow><mrow><mrow><mi>f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./1.1#t1.r2" title="variable">z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mi href="./1.1#t1.r2" title="variable">z</mi><mo>−</mo><mi>α</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><msub><mi>b</mi><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></msub><mo>⁢</mo><msup><mi href="./1.1#t1.r2" title="variable">z</mi><mrow><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi><mo>−</mo><mn>1</mn></mrow></msup></mrow><mo>+</mo><mrow><msub><mi>b</mi><mrow><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>⁢</mo><msup><mi href="./1.1#t1.r2" title="variable">z</mi><mrow><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi><mo>−</mo><mn>2</mn></mrow></msup></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><msub><mi>b</mi><mn>1</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><msub><mi>b</mi><mn>0</mn></msub></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E2.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./1.1#t1.r2" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m129.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi href="./1.1#t1.r2" title="variable">z</mi></math>:  variable</a> and
+<a href="./1.1#t1.r5" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m118.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></math>:  nonnegative integer</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./1.11.E2" title="" class="ltx_ref">http://dlmf.nist.gov/1.11.E2</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./1.11.E2.tex">TeX</a>, <a href="./1.11.E2.pmml">pMML</a>, <a href="./1.11.E2.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.11#Px1.info" title="Horner’s Scheme ‣ §1.11(i) Division Algorithm ‣ §1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11(i)</span></a>,
+<a href="./1.11#i.info" title="§1.11(i) Division Algorithm ‣ §1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11(i)</span></a>,
+<a href="./1.11#info" title="§1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">where <math class="ltx_Math" altimg="m91.png" altimg-height="21px" altimg-valign="-5px" altimg-width="74px" alttext="b_{n}=a_{n}" display="inline"><mrow><msub><mi>b</mi><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></msub><mo>=</mo><msub><mi>a</mi><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></msub></mrow></math>,</p>
+<table id="E3" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">1.11.3</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E3.png" altimg-height="25px" altimg-valign="-7px" altimg-width="159px" alttext="b_{k}=\alpha b_{k+1}+a_{k}," display="block"><mrow><mrow><msub><mi>b</mi><mi href="./1.1#t1.r4" title="integer">k</mi></msub><mo>=</mo><mrow><mrow><mi>α</mi><mo>⁢</mo><msub><mi>b</mi><mrow><mi href="./1.1#t1.r4" title="integer">k</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow><mo>+</mo><msub><mi>a</mi><mi href="./1.1#t1.r4" title="integer">k</mi></msub></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="4"><span class="ltx_constraint"><math class="ltx_Math" altimg="m115.png" altimg-height="22px" altimg-valign="-6px" altimg-width="206px" alttext="k=n-1,n-2,\dots,0" display="inline"><mrow><mi href="./1.1#t1.r4" title="integer">k</mi><mo>=</mo><mrow><mrow><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi><mo>−</mo><mn>1</mn></mrow><mo>,</mo><mrow><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi><mo>−</mo><mn>2</mn></mrow><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mn>0</mn></mrow></mrow></math>,</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E3.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./1.1#t1.r4" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m117.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./1.1#t1.r4" title="integer">k</mi></math>:  integer</a> and
+<a href="./1.1#t1.r5" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m118.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></math>:  nonnegative integer</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./1.11#Px2.p1" title="Extended Horner Scheme ‣ §1.11(i) Division Algorithm ‣ §1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11(i)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./1.11.E3" title="" class="ltx_ref">http://dlmf.nist.gov/1.11.E3</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./1.11.E3.tex">TeX</a>, <a href="./1.11.E3.pmml">pMML</a>, <a href="./1.11.E3.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.11#Px1.info" title="Horner’s Scheme ‣ §1.11(i) Division Algorithm ‣ §1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11(i)</span></a>,
+<a href="./1.11#i.info" title="§1.11(i) Division Algorithm ‣ §1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11(i)</span></a>,
+<a href="./1.11#info" title="§1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<table id="E4" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">1.11.4</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E4.png" altimg-height="27px" altimg-valign="-7px" altimg-width="100px" alttext="f(\alpha)=b_{0}." display="block"><mrow><mrow><mrow><mi>f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>α</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><msub><mi>b</mi><mn>0</mn></msub></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E4.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Permalink:</dt>
+<dd><a href="./1.11.E4" title="" class="ltx_ref">http://dlmf.nist.gov/1.11.E4</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./1.11.E4.tex">TeX</a>, <a href="./1.11.E4.pmml">pMML</a>, <a href="./1.11.E4.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.11#Px1.info" title="Horner’s Scheme ‣ §1.11(i) Division Algorithm ‣ §1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11(i)</span></a>,
+<a href="./1.11#i.info" title="§1.11(i) Division Algorithm ‣ §1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11(i)</span></a>,
+<a href="./1.11#info" title="§1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="Px2" class="ltx_paragraph">
+<h3 class="ltx_title ltx_title_paragraph">Extended Horner Scheme</h3>
+<div id="Px2.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=Horner%20scheme">Horner’s scheme</a>, <a class="ltx_keyword" href="./search/search?q=Horner%20scheme%20for%20polynomials">Horner’s scheme for polynomials</a>, <a class="ltx_keyword" href="./search/search?q=extended">extended</a>, <a class="ltx_keyword" href="./search/search?q=zeros%20of%20polynomials">zeros of polynomials</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.11#i.info" title="§1.11(i) Division Algorithm ‣ §1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11(i)</span></a>,
+<a href="./1.11#info" title="§1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="Px2.p1" class="ltx_para">
+<p class="ltx_p">With <math class="ltx_Math" altimg="m90.png" altimg-height="21px" altimg-valign="-5px" altimg-width="23px" alttext="b_{k}" display="inline"><msub><mi>b</mi><mi href="./1.1#t1.r4" title="integer">k</mi></msub></math> as in (<a href="./1.11#E1" title="(1.11.1) ‣ Horner’s Scheme ‣ §1.11(i) Division Algorithm ‣ §1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.11.1</span></a>)–(<a href="./1.11#E3" title="(1.11.3) ‣ Horner’s Scheme ‣ §1.11(i) Division Algorithm ‣ §1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.11.3</span></a>) let
+<math class="ltx_Math" altimg="m93.png" altimg-height="16px" altimg-valign="-5px" altimg-width="75px" alttext="c_{n}=a_{n}" display="inline"><mrow><msub><mi>c</mi><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></msub><mo>=</mo><msub><mi>a</mi><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></msub></mrow></math> and</p>
+<table id="E5" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">1.11.5</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E5.png" altimg-height="25px" altimg-valign="-7px" altimg-width="157px" alttext="c_{k}=\alpha c_{k+1}+b_{k}," display="block"><mrow><mrow><msub><mi>c</mi><mi href="./1.1#t1.r4" title="integer">k</mi></msub><mo>=</mo><mrow><mrow><mi>α</mi><mo>⁢</mo><msub><mi>c</mi><mrow><mi href="./1.1#t1.r4" title="integer">k</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow><mo>+</mo><msub><mi>b</mi><mi href="./1.1#t1.r4" title="integer">k</mi></msub></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="4"><span class="ltx_constraint"><math class="ltx_Math" altimg="m116.png" altimg-height="22px" altimg-valign="-6px" altimg-width="206px" alttext="k=n-1,n-2,\dots,1" display="inline"><mrow><mi href="./1.1#t1.r4" title="integer">k</mi><mo>=</mo><mrow><mrow><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi><mo>−</mo><mn>1</mn></mrow><mo>,</mo><mrow><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi><mo>−</mo><mn>2</mn></mrow><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mn>1</mn></mrow></mrow></math>.</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E5.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./1.1#t1.r4" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m117.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./1.1#t1.r4" title="integer">k</mi></math>:  integer</a> and
+<a href="./1.1#t1.r5" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m118.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></math>:  nonnegative integer</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./1.11.E5" title="" class="ltx_ref">http://dlmf.nist.gov/1.11.E5</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./1.11.E5.tex">TeX</a>, <a href="./1.11.E5.pmml">pMML</a>, <a href="./1.11.E5.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.11#Px2.info" title="Extended Horner Scheme ‣ §1.11(i) Division Algorithm ‣ §1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11(i)</span></a>,
+<a href="./1.11#i.info" title="§1.11(i) Division Algorithm ‣ §1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11(i)</span></a>,
+<a href="./1.11#info" title="§1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">Then
+</p>
+<table id="E6" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">1.11.6</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E6.png" altimg-height="28px" altimg-valign="-7px" altimg-width="106px" alttext="f^{\prime}(\alpha)=c_{1}." display="block"><mrow><mrow><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>α</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><msub><mi>c</mi><mn>1</mn></msub></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E6.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Permalink:</dt>
+<dd><a href="./1.11.E6" title="" class="ltx_ref">http://dlmf.nist.gov/1.11.E6</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./1.11.E6.tex">TeX</a>, <a href="./1.11.E6.pmml">pMML</a>, <a href="./1.11.E6.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.11#Px2.info" title="Extended Horner Scheme ‣ §1.11(i) Division Algorithm ‣ §1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11(i)</span></a>,
+<a href="./1.11#i.info" title="§1.11(i) Division Algorithm ‣ §1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11(i)</span></a>,
+<a href="./1.11#info" title="§1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+<div id="Px2.p2" class="ltx_para">
+<p class="ltx_p">More generally, for polynomials <math class="ltx_Math" altimg="m101.png" altimg-height="25px" altimg-valign="-7px" altimg-width="43px" alttext="f(z)" display="inline"><mrow><mi>f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./1.1#t1.r2" title="variable">z</mi><mo stretchy="false">)</mo></mrow></mrow></math> and <math class="ltx_Math" altimg="m107.png" altimg-height="25px" altimg-valign="-7px" altimg-width="42px" alttext="g(z)" display="inline"><mrow><mi>g</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./1.1#t1.r2" title="variable">z</mi><mo stretchy="false">)</mo></mrow></mrow></math>, there are polynomials <math class="ltx_Math" altimg="m121.png" altimg-height="25px" altimg-valign="-7px" altimg-width="41px" alttext="q(z)" display="inline"><mrow><mi href="./1.11#Px2.p2" title="polynomial">q</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./1.1#t1.r2" title="variable">z</mi><mo stretchy="false">)</mo></mrow></mrow></math>
+and <math class="ltx_Math" altimg="m124.png" altimg-height="25px" altimg-valign="-7px" altimg-width="41px" alttext="r(z)" display="inline"><mrow><mi href="./1.11#Px2.p2" title="polynomial">r</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./1.1#t1.r2" title="variable">z</mi><mo stretchy="false">)</mo></mrow></mrow></math>, found by equating coefficients, such that</p>
+<table id="E7" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">1.11.7</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E7.png" altimg-height="27px" altimg-valign="-7px" altimg-width="215px" alttext="f(z)=g(z)q(z)+r(z)," display="block"><mrow><mrow><mrow><mi>f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./1.1#t1.r2" title="variable">z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mrow><mi>g</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./1.1#t1.r2" title="variable">z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⁢</mo><mrow><mi href="./1.11#Px2.p2" title="polynomial">q</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./1.1#t1.r2" title="variable">z</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>+</mo><mrow><mi href="./1.11#Px2.p2" title="polynomial">r</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./1.1#t1.r2" title="variable">z</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E7.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./1.1#t1.r2" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m129.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi href="./1.1#t1.r2" title="variable">z</mi></math>:  variable</a>,
+<a href="./1.11#Px2.p2" title="Extended Horner Scheme ‣ §1.11(i) Division Algorithm ‣ §1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m121.png" altimg-height="25px" altimg-valign="-7px" altimg-width="41px" alttext="q(z)" display="inline"><mrow><mi href="./1.11#Px2.p2" title="polynomial">q</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./1.1#t1.r2" title="variable">z</mi><mo stretchy="false">)</mo></mrow></mrow></math>:  polynomial</a> and
+<a href="./1.11#Px2.p2" title="Extended Horner Scheme ‣ §1.11(i) Division Algorithm ‣ §1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m124.png" altimg-height="25px" altimg-valign="-7px" altimg-width="41px" alttext="r(z)" display="inline"><mrow><mi href="./1.11#Px2.p2" title="polynomial">r</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./1.1#t1.r2" title="variable">z</mi><mo stretchy="false">)</mo></mrow></mrow></math>:  polynomial</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./1.11#i.info" title="§1.11(i) Division Algorithm ‣ §1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11(i)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./1.11.E7" title="" class="ltx_ref">http://dlmf.nist.gov/1.11.E7</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./1.11.E7.tex">TeX</a>, <a href="./1.11.E7.pmml">pMML</a>, <a href="./1.11.E7.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.11#Px2.info" title="Extended Horner Scheme ‣ §1.11(i) Division Algorithm ‣ §1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11(i)</span></a>,
+<a href="./1.11#i.info" title="§1.11(i) Division Algorithm ‣ §1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11(i)</span></a>,
+<a href="./1.11#info" title="§1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">where <math class="ltx_Math" altimg="m46.png" altimg-height="25px" altimg-valign="-7px" altimg-width="214px" alttext="0\leq\deg r(z)&lt;\deg g(z)" display="inline"><mrow><mn>0</mn><mo>≤</mo><mrow><mi>deg</mi><mo lspace="0.167em">⁡</mo><mrow><mi href="./1.11#Px2.p2" title="polynomial">r</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./1.1#t1.r2" title="variable">z</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>&lt;</mo><mrow><mi>deg</mi><mo lspace="0.167em">⁡</mo><mrow><mi>g</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./1.1#t1.r2" title="variable">z</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></math>.</p>
+</div>
+</section>
+</section>
+<section id="ii" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§1.11(ii) </span>Elementary Properties</h2>
+<div id="ii.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=distribution">distribution</a>, <a class="ltx_keyword" href="./search/search?q=elementary%20properties">elementary properties</a>, <a class="ltx_keyword" href="./search/search?q=monic">monic</a>, <a class="ltx_keyword" href="./search/search?q=monic%20polynomial">monic polynomial</a>, <a class="ltx_keyword" href="./search/search?q=polynomials">polynomials</a>, <a class="ltx_keyword" href="./search/search?q=zeros%20of%20polynomials">zeros of polynomials</a>
+</dd>
+<dt>Notes:</dt>
+<dd>See <cite class="ltx_cite ltx_citemacro_citet">Burnside and Panton (<a href="./bib/B#bib385" title="The Theory of Equations: With an Introduction to the Theory of Binary Algebraic Forms" class="ltx_ref">1960</a>, Chapter 2)</cite>. For (<a href="./1.11#E9" title="(1.11.9) ‣ Example ‣ §1.11(ii) Elementary Properties ‣ §1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.11.9</span></a>) see
+<cite class="ltx_cite ltx_citemacro_citet">Dummit and Foote (<a href="./bib/D#bib689" title="Abstract Algebra" class="ltx_ref">1999</a>, p. 591)</cite>.</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./23.3#i.p2" title="§23.3(i) Invariants, Roots, and Discriminant ‣ §23.3 Differential Equations ‣ Weierstrass Elliptic Functions ‣ Chapter 23 Weierstrass Elliptic and Modular Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§23.3(i)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./1.11.ii" title="" class="ltx_ref">http://dlmf.nist.gov/1.11.ii</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.11#info" title="§1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="ii.p1" class="ltx_para">
+<p class="ltx_p">A polynomial of degree <math class="ltx_Math" altimg="m118.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></math> with real or complex coefficients has exactly <math class="ltx_Math" altimg="m118.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></math>
+real or complex zeros counting multiplicity. Every <em class="ltx_emph ltx_font_italic">monic</em> (coefficient of
+highest power is one) polynomial of odd degree with real coefficients has at
+least one real zero with sign opposite to that of the constant term. A monic
+polynomial of even degree with real coefficients has at least two zeros of
+opposite signs when the constant term is negative.</p>
+</div>
+<section id="Px3" class="ltx_paragraph">
+<h3 class="ltx_title ltx_title_paragraph">Descartes’ Rule of Signs</h3>
+<div id="Px3.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=Descartes%E2%80%99%20rule%20of%20signs">Descartes’ rule of signs</a>, <a class="ltx_keyword" href="./search/search?q=Descartes%E2%80%99%20rule%20of%20signs%20%28for%20polynomials%29">Descartes’ rule of signs (for polynomials)</a>, <a class="ltx_keyword" href="./search/search?q=zeros%20of%20polynomials">zeros of polynomials</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.11#ii.info" title="§1.11(ii) Elementary Properties ‣ §1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11(ii)</span></a>,
+<a href="./1.11#info" title="§1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="Px3.p1" class="ltx_para">
+<p class="ltx_p">The number of positive zeros of a polynomial with real coefficients cannot
+exceed the number of times the coefficients change sign, and the two numbers
+have same parity. A similar relation holds for the changes in sign of the
+coefficients of <math class="ltx_Math" altimg="m94.png" altimg-height="25px" altimg-valign="-7px" altimg-width="60px" alttext="f(-z)" display="inline"><mrow><mi>f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mi href="./1.1#t1.r2" title="variable">z</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></math>, and hence for the number of negative zeros of <math class="ltx_Math" altimg="m101.png" altimg-height="25px" altimg-valign="-7px" altimg-width="43px" alttext="f(z)" display="inline"><mrow><mi>f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./1.1#t1.r2" title="variable">z</mi><mo stretchy="false">)</mo></mrow></mrow></math>.</p>
+</div>
+</section>
+<section id="Px4" class="ltx_paragraph">
+<h3 class="ltx_title ltx_title_paragraph">Example</h3>
+<div id="Px4.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=discriminant">discriminant</a>, <a class="ltx_keyword" href="./search/search?q=distribution">distribution</a>, <a class="ltx_keyword" href="./search/search?q=elementary%20symmetric%20functions">elementary symmetric functions</a>, <a class="ltx_keyword" href="./search/search?q=of%20a%20polynomial">of a polynomial</a>, <a class="ltx_keyword" href="./search/search?q=polynomials">polynomials</a>, <a class="ltx_keyword" href="./search/search?q=zeros%20of%20polynomials">zeros of polynomials</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.11#ii.info" title="§1.11(ii) Elementary Properties ‣ §1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11(ii)</span></a>,
+<a href="./1.11#info" title="§1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="Px4.p1" class="ltx_para">
+<table id="E8" class="ltx_equationgroup ltx_eqn_table">
+<tbody>
+<tr id="Ex1" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="2" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equationgroup ltx_align_left">1.11.8</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m36.png" altimg-height="27px" altimg-valign="-7px" altimg-width="46px" alttext="\displaystyle f(z)" display="inline"><mrow><mi>f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./1.1#t1.r2" title="variable">z</mi><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m23.png" altimg-height="28px" altimg-valign="-6px" altimg-width="192px" alttext="\displaystyle=z^{8}+10z^{3}+z-4," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mrow><msup><mi href="./1.1#t1.r2" title="variable">z</mi><mn>8</mn></msup><mo>+</mo><mrow><mn>10</mn><mo>⁢</mo><msup><mi href="./1.1#t1.r2" title="variable">z</mi><mn>3</mn></msup></mrow><mo>+</mo><mi href="./1.1#t1.r2" title="variable">z</mi></mrow><mo>−</mo><mn>4</mn></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex2" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m35.png" altimg-height="27px" altimg-valign="-7px" altimg-width="62px" alttext="\displaystyle f(-z)" display="inline"><mrow><mi>f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mi href="./1.1#t1.r2" title="variable">z</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m24.png" altimg-height="26px" altimg-valign="-4px" altimg-width="192px" alttext="\displaystyle=z^{8}-10z^{3}-z-4." display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><msup><mi href="./1.1#t1.r2" title="variable">z</mi><mn>8</mn></msup><mo>−</mo><mrow><mn>10</mn><mo>⁢</mo><msup><mi href="./1.1#t1.r2" title="variable">z</mi><mn>3</mn></msup></mrow><mo>−</mo><mi href="./1.1#t1.r2" title="variable">z</mi><mo>−</mo><mn>4</mn></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E8.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd><a href="./1.1#t1.r2" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m129.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi href="./1.1#t1.r2" title="variable">z</mi></math>:  variable</a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./1.11.E8" title="" class="ltx_ref">http://dlmf.nist.gov/1.11.E8</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./1.11.E8a.tex">TeX</a>, <a href="./1.11.E8b.tex">TeX</a>, <a href="./1.11.E8a.pmml">pMML</a>, <a href="./1.11.E8b.pmml">pMML</a>, <a href="./1.11.E8a.png">png</a>, <a href="./1.11.E8b.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.11#Px4.info" title="Example ‣ §1.11(ii) Elementary Properties ‣ §1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11(ii)</span></a>,
+<a href="./1.11#ii.info" title="§1.11(ii) Elementary Properties ‣ §1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11(ii)</span></a>,
+<a href="./1.11#info" title="§1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">Both polynomials have one change of sign; hence for each polynomial there is
+one positive zero, one negative zero, and six complex zeros.</p>
+</div>
+<div id="Px4.p2" class="ltx_para">
+<p class="ltx_p">Next, let <math class="ltx_Math" altimg="m96.png" altimg-height="26px" altimg-valign="-7px" altimg-width="322px" alttext="f(z)=a_{n}z^{n}+a_{n-1}z^{n-1}+\dots+a_{0}" display="inline"><mrow><mrow><mi>f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./1.1#t1.r2" title="variable">z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><msub><mi>a</mi><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></msub><mo>⁢</mo><msup><mi href="./1.1#t1.r2" title="variable">z</mi><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></msup></mrow><mo>+</mo><mrow><msub><mi>a</mi><mrow><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>⁢</mo><msup><mi href="./1.1#t1.r2" title="variable">z</mi><mrow><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi><mo>−</mo><mn>1</mn></mrow></msup></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><msub><mi>a</mi><mn>0</mn></msub></mrow></mrow></math>. The zeros of
+<math class="ltx_Math" altimg="m132.png" altimg-height="26px" altimg-valign="-7px" altimg-width="342px" alttext="z^{n}f(1/z)=a_{0}z^{n}+a_{1}z^{n-1}+\dots+a_{n}" display="inline"><mrow><mrow><msup><mi href="./1.1#t1.r2" title="variable">z</mi><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></msup><mo>⁢</mo><mrow><mi>f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>/</mo><mi href="./1.1#t1.r2" title="variable">z</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mrow><msub><mi>a</mi><mn>0</mn></msub><mo>⁢</mo><msup><mi href="./1.1#t1.r2" title="variable">z</mi><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></msup></mrow><mo>+</mo><mrow><msub><mi>a</mi><mn>1</mn></msub><mo>⁢</mo><msup><mi href="./1.1#t1.r2" title="variable">z</mi><mrow><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi><mo>−</mo><mn>1</mn></mrow></msup></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><msub><mi>a</mi><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></msub></mrow></mrow></math> are reciprocals of the zeros
+of <math class="ltx_Math" altimg="m101.png" altimg-height="25px" altimg-valign="-7px" altimg-width="43px" alttext="f(z)" display="inline"><mrow><mi>f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./1.1#t1.r2" title="variable">z</mi><mo stretchy="false">)</mo></mrow></mrow></math>.</p>
+</div>
+<div id="Px4.p3" class="ltx_para">
+<p class="ltx_p">The <em class="ltx_emph ltx_font_italic">discriminant</em> of <math class="ltx_Math" altimg="m101.png" altimg-height="25px" altimg-valign="-7px" altimg-width="43px" alttext="f(z)" display="inline"><mrow><mi>f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./1.1#t1.r2" title="variable">z</mi><mo stretchy="false">)</mo></mrow></mrow></math> is defined by
+</p>
+<table id="E9" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">1.11.9</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E9.png" altimg-height="58px" altimg-valign="-32px" altimg-width="232px" alttext="D=a_{n}^{2n-2}\prod_{j&lt;k}(z_{j}-z_{k})^{2}," display="block"><mrow><mrow><mi href="./1.11#E9" title="discriminant of 𝑓(𝑧)">D</mi><mo>=</mo><mrow><msubsup><mi>a</mi><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi><mrow><mrow><mn>2</mn><mo>⁢</mo><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></mrow><mo>−</mo><mn>2</mn></mrow></msubsup><mo>⁢</mo><mrow><munder><mo movablelimits="false" rspace="0em">∏</mo><mrow><mi href="./1.1#t1.r4" title="integer">j</mi><mo>&lt;</mo><mi href="./1.1#t1.r4" title="integer">k</mi></mrow></munder><msup><mrow><mo stretchy="false">(</mo><mrow><msub><mi href="./1.1#t1.r2" title="variable">z</mi><mi href="./1.1#t1.r4" title="integer">j</mi></msub><mo>−</mo><msub><mi href="./1.1#t1.r2" title="variable">z</mi><mi href="./1.1#t1.r4" title="integer">k</mi></msub></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E9.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Defines:</dt>
+<dd><span class="ltx_text"><math class="ltx_Math" altimg="m59.png" altimg-height="18px" altimg-valign="-2px" altimg-width="22px" alttext="D" display="inline"><mi href="./1.11#E9" title="discriminant of 𝑓(𝑧)">D</mi></math>:  discriminant of <math class="ltx_Math" altimg="m101.png" altimg-height="25px" altimg-valign="-7px" altimg-width="43px" alttext="f(z)" display="inline"><mrow><mi>f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./1.1#t1.r2" title="variable">z</mi><mo stretchy="false">)</mo></mrow></mrow></math> (locally)</span></dd>
+<dt>Symbols:</dt>
+<dd>
+<a href="./1.1#t1.r2" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m129.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi href="./1.1#t1.r2" title="variable">z</mi></math>:  variable</a>,
+<a href="./1.1#t1.r4" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m111.png" altimg-height="22px" altimg-valign="-6px" altimg-width="14px" alttext="j" display="inline"><mi href="./1.1#t1.r4" title="integer">j</mi></math>:  integer</a>,
+<a href="./1.1#t1.r4" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m117.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./1.1#t1.r4" title="integer">k</mi></math>:  integer</a> and
+<a href="./1.1#t1.r5" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m118.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></math>:  nonnegative integer</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./1.11#ii.info" title="§1.11(ii) Elementary Properties ‣ §1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11(ii)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./1.11.E9" title="" class="ltx_ref">http://dlmf.nist.gov/1.11.E9</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./1.11.E9.tex">TeX</a>, <a href="./1.11.E9.pmml">pMML</a>, <a href="./1.11.E9.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.11#Px4.info" title="Example ‣ §1.11(ii) Elementary Properties ‣ §1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11(ii)</span></a>,
+<a href="./1.11#ii.info" title="§1.11(ii) Elementary Properties ‣ §1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11(ii)</span></a>,
+<a href="./1.11#info" title="§1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">where <math class="ltx_Math" altimg="m133.png" altimg-height="17px" altimg-valign="-6px" altimg-width="119px" alttext="z_{1},z_{2},\dots,z_{n}" display="inline"><mrow><msub><mi href="./1.1#t1.r2" title="variable">z</mi><mn>1</mn></msub><mo>,</mo><msub><mi href="./1.1#t1.r2" title="variable">z</mi><mn>2</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi href="./1.1#t1.r2" title="variable">z</mi><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></msub></mrow></math> are the zeros of <math class="ltx_Math" altimg="m101.png" altimg-height="25px" altimg-valign="-7px" altimg-width="43px" alttext="f(z)" display="inline"><mrow><mi>f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./1.1#t1.r2" title="variable">z</mi><mo stretchy="false">)</mo></mrow></mrow></math>. The <em class="ltx_emph ltx_font_italic">elementary
+symmetric functions</em>
+of the zeros are (with <math class="ltx_Math" altimg="m88.png" altimg-height="22px" altimg-valign="-6px" altimg-width="65px" alttext="a_{n}\not=0" display="inline"><mrow><msub><mi>a</mi><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></msub><mo>≠</mo><mn>0</mn></mrow></math>)
+</p>
+</div>
+<div id="Px4.p4" class="ltx_para">
+<table id="E10" class="ltx_equationgroup ltx_eqn_table">
+<tbody>
+<tr id="E10X" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="4" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equationgroup ltx_align_left">1.11.10</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m41.png" altimg-height="21px" altimg-valign="-5px" altimg-width="166px" alttext="\displaystyle z_{1}+z_{2}+\dots+z_{n}" display="inline"><mrow><msub><mi href="./1.1#t1.r2" title="variable">z</mi><mn>1</mn></msub><mo>+</mo><msub><mi href="./1.1#t1.r2" title="variable">z</mi><mn>2</mn></msub><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><msub><mi href="./1.1#t1.r2" title="variable">z</mi><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></msub></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m13.png" altimg-height="27px" altimg-valign="-7px" altimg-width="127px" alttext="\displaystyle=-a_{n-1}/a_{n}," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mo>−</mo><mrow><msub><mi>a</mi><mrow><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>/</mo><msub><mi>a</mi><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></msub></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="E10Xa" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m34.png" altimg-height="58px" altimg-valign="-32px" altimg-width="127px" alttext="\displaystyle\sum_{1\leq j&lt;k\leq n}z_{j}z_{k}" display="inline"><mrow><mstyle displaystyle="true"><munder><mo movablelimits="false">∑</mo><mrow><mn>1</mn><mo>≤</mo><mi href="./1.1#t1.r4" title="integer">j</mi><mo>&lt;</mo><mi href="./1.1#t1.r4" title="integer">k</mi><mo>≤</mo><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></mrow></munder></mstyle><mrow><msub><mi href="./1.1#t1.r2" title="variable">z</mi><mi href="./1.1#t1.r4" title="integer">j</mi></msub><mo>⁢</mo><msub><mi href="./1.1#t1.r2" title="variable">z</mi><mi href="./1.1#t1.r4" title="integer">k</mi></msub></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m20.png" altimg-height="27px" altimg-valign="-7px" altimg-width="110px" alttext="\displaystyle=a_{n-2}/a_{n}," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><msub><mi>a</mi><mrow><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi><mo>−</mo><mn>2</mn></mrow></msub><mo>/</mo><msub><mi>a</mi><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></msub></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="E10Xb" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="E10c.png" altimg-height="38px" altimg-valign="-2px" altimg-width="12px" alttext="\displaystyle\mathrel{\vdots}" display="inline"><mo>⋮</mo></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="E10Xc" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m42.png" altimg-height="18px" altimg-valign="-5px" altimg-width="97px" alttext="\displaystyle z_{1}z_{2}\cdots z_{n}" display="inline"><mrow><msub><mi href="./1.1#t1.r2" title="variable">z</mi><mn>1</mn></msub><mo>⁢</mo><msub><mi href="./1.1#t1.r2" title="variable">z</mi><mn>2</mn></msub><mo>⁢</mo><mi mathvariant="normal">⋯</mi><mo>⁢</mo><msub><mi href="./1.1#t1.r2" title="variable">z</mi><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></msub></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m5.png" altimg-height="27px" altimg-valign="-7px" altimg-width="141px" alttext="\displaystyle=(-1)^{n}a_{0}/a_{n}." display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></msup><mo>⁢</mo><msub><mi>a</mi><mn>0</mn></msub></mrow><mo>/</mo><msub><mi>a</mi><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></msub></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E10.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./1.1#t1.r2" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m129.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi href="./1.1#t1.r2" title="variable">z</mi></math>:  variable</a>,
+<a href="./1.1#t1.r4" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m111.png" altimg-height="22px" altimg-valign="-6px" altimg-width="14px" alttext="j" display="inline"><mi href="./1.1#t1.r4" title="integer">j</mi></math>:  integer</a>,
+<a href="./1.1#t1.r4" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m117.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./1.1#t1.r4" title="integer">k</mi></math>:  integer</a> and
+<a href="./1.1#t1.r5" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m118.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></math>:  nonnegative integer</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./1.11.E10" title="" class="ltx_ref">http://dlmf.nist.gov/1.11.E10</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./1.11.E10a.tex">TeX</a>, <a href="./1.11.E10b.tex">TeX</a>, <a href="./1.11.E10c.tex">TeX</a>, <a href="./1.11.E10d.tex">TeX</a>, <a href="./1.11.E10a.pmml">pMML</a>, <a href="./1.11.E10b.pmml">pMML</a>, <a href="./1.11.E10c.pmml">pMML</a>, <a href="./1.11.E10d.pmml">pMML</a>, <a href="./1.11.E10a.png">png</a>, <a href="./1.11.E10b.png">png</a>, <a href="./1.11.E10c.png">png</a>, <a href="./1.11.E10d.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.11#Px4.info" title="Example ‣ §1.11(ii) Elementary Properties ‣ §1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11(ii)</span></a>,
+<a href="./1.11#ii.info" title="§1.11(ii) Elementary Properties ‣ §1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11(ii)</span></a>,
+<a href="./1.11#info" title="§1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+<section id="iii" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§1.11(iii) </span>Polynomials of Degrees Two, Three, and Four</h2>
+<div id="iii.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=degrees%20two%2C%20three%2C%20four">degrees two, three, four</a>, <a class="ltx_keyword" href="./search/search?q=zeros%20of%20polynomials">zeros of polynomials</a>
+</dd>
+<dt>Notes:</dt>
+<dd>See <cite class="ltx_cite ltx_citemacro_citet">Dummit and Foote (<a href="./bib/D#bib689" title="Abstract Algebra" class="ltx_ref">1999</a>, pp. 592–595, 611–616)</cite>.</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./23.22#I1.i1.p1" title="In Starting from Invariants ‣ §23.22(ii) Lattice Calculations ‣ §23.22 Methods of Computation ‣ Computation ‣ Chapter 23 Weierstrass Elliptic and Modular Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">item 1</span></a>,
+<a href="./3.8#iv.p1" title="§3.8(iv) Zeros of Polynomials ‣ §3.8 Nonlinear Equations ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§3.8(iv)</span></a>,
+<a href="./4.43#p2" title="§4.43 Cubic Equations ‣ Applications ‣ Chapter 4 Elementary Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§4.43</span></a>,
+<a href="./errata/#V1.0.10.I1.ix1.p2" title="In Errata ‣ Version 1.0.10 (August 7, 2015) ‣ Errata" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Erratum (V1.0.10) for  Section <span class="ltx_text ltx_ref_tag">4.43</span></span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./1.11.iii" title="" class="ltx_ref">http://dlmf.nist.gov/1.11.iii</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.11#info" title="§1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<section id="Px5" class="ltx_paragraph">
+<h3 class="ltx_title ltx_title_paragraph">Quadratic Equations</h3>
+<div id="Px5.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd><a class="ltx_keyword" href="./search/search?q=quadratic%20equations">quadratic equations</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.11#iii.info" title="§1.11(iii) Polynomials of Degrees Two, Three, and Four ‣ §1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11(iii)</span></a>,
+<a href="./1.11#info" title="§1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="Px5.p1" class="ltx_para">
+<p class="ltx_p">The roots of <math class="ltx_Math" altimg="m89.png" altimg-height="23px" altimg-valign="-4px" altimg-width="152px" alttext="az^{2}+bz+c=0" display="inline"><mrow><mrow><mrow><mi>a</mi><mo>⁢</mo><msup><mi href="./1.1#t1.r2" title="variable">z</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mi>b</mi><mo>⁢</mo><mi href="./1.1#t1.r2" title="variable">z</mi></mrow><mo>+</mo><mi>c</mi></mrow><mo>=</mo><mn>0</mn></mrow></math> are</p>
+<table id="E11" class="ltx_equationgroup ltx_eqn_table">
+<tbody>
+<tr id="Ex3" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="2" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equationgroup ltx_align_left">1.11.11</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center" colspan="2"><math class="ltx_Math" altimg="E11a.png" altimg-height="33px" altimg-valign="-9px" altimg-width="76px" alttext="\frac{-b\pm\sqrt{D}}{2a}," display="inline"><mrow><mstyle displaystyle="true"><mfrac><mrow><mrow><mo>−</mo><mi>b</mi></mrow><mo>±</mo><msqrt><mi href="./1.11#E12" title="discriminant">D</mi></msqrt></mrow><mrow><mn>2</mn><mo>⁢</mo><mi>a</mi></mrow></mfrac></mstyle><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex4" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m28.png" altimg-height="20px" altimg-valign="-2px" altimg-width="24px" alttext="\displaystyle D" display="inline"><mi href="./1.11#E12" title="discriminant">D</mi></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m21.png" altimg-height="26px" altimg-valign="-4px" altimg-width="108px" alttext="\displaystyle=b^{2}-4ac." display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><msup><mi>b</mi><mn>2</mn></msup><mo>−</mo><mrow><mn>4</mn><mo>⁢</mo><mi>a</mi><mo>⁢</mo><mi>c</mi></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E11.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd><a href="./1.11#E12" title="(1.11.12) ‣ Cubic Equations ‣ §1.11(iii) Polynomials of Degrees Two, Three, and Four ‣ §1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m59.png" altimg-height="18px" altimg-valign="-2px" altimg-width="22px" alttext="D" display="inline"><mi href="./1.11#E12" title="discriminant">D</mi></math>:  discriminant</a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./1.11.E11" title="" class="ltx_ref">http://dlmf.nist.gov/1.11.E11</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./1.11.E11a.tex">TeX</a>, <a href="./1.11.E11b.tex">TeX</a>, <a href="./1.11.E11a.pmml">pMML</a>, <a href="./1.11.E11b.pmml">pMML</a>, <a href="./1.11.E11a.png">png</a>, <a href="./1.11.E11b.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.11#Px5.info" title="Quadratic Equations ‣ §1.11(iii) Polynomials of Degrees Two, Three, and Four ‣ §1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11(iii)</span></a>,
+<a href="./1.11#iii.info" title="§1.11(iii) Polynomials of Degrees Two, Three, and Four ‣ §1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11(iii)</span></a>,
+<a href="./1.11#info" title="§1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">The sum and product of the roots are respectively <math class="ltx_Math" altimg="m45.png" altimg-height="25px" altimg-valign="-7px" altimg-width="51px" alttext="-b/a" display="inline"><mrow><mo>−</mo><mrow><mi>b</mi><mo>/</mo><mi>a</mi></mrow></mrow></math> and <math class="ltx_Math" altimg="m92.png" altimg-height="25px" altimg-valign="-7px" altimg-width="35px" alttext="c/a" display="inline"><mrow><mi>c</mi><mo>/</mo><mi>a</mi></mrow></math>.</p>
+</div>
+</section>
+<section id="Px6" class="ltx_paragraph">
+<h3 class="ltx_title ltx_title_paragraph">Cubic Equations</h3>
+<div id="Px6.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd><a class="ltx_keyword" href="./search/search?q=cubic%20equation">cubic equation</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.11#iii.info" title="§1.11(iii) Polynomials of Degrees Two, Three, and Four ‣ §1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11(iii)</span></a>,
+<a href="./1.11#info" title="§1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="Px6.p1" class="ltx_para">
+<p class="ltx_p">Set <math class="ltx_Math" altimg="m127.png" altimg-height="29px" altimg-valign="-9px" altimg-width="108px" alttext="z=w-\tfrac{1}{3}a" display="inline"><mrow><mi href="./1.1#t1.r2" title="variable">z</mi><mo>=</mo><mrow><mi href="./1.1#t1.r3" title="variable">w</mi><mo>−</mo><mrow><mfrac><mn>1</mn><mn>3</mn></mfrac><mo>⁢</mo><mi>a</mi></mrow></mrow></mrow></math> to reduce <math class="ltx_Math" altimg="m97.png" altimg-height="26px" altimg-valign="-7px" altimg-width="226px" alttext="f(z)=z^{3}+az^{2}+bz+c" display="inline"><mrow><mrow><mi>f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./1.1#t1.r2" title="variable">z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msup><mi href="./1.1#t1.r2" title="variable">z</mi><mn>3</mn></msup><mo>+</mo><mrow><mi>a</mi><mo>⁢</mo><msup><mi href="./1.1#t1.r2" title="variable">z</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mi>b</mi><mo>⁢</mo><mi href="./1.1#t1.r2" title="variable">z</mi></mrow><mo>+</mo><mi>c</mi></mrow></mrow></math> to
+<math class="ltx_Math" altimg="m103.png" altimg-height="26px" altimg-valign="-7px" altimg-width="186px" alttext="g(w)=w^{3}+pw+q" display="inline"><mrow><mrow><mi>g</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./1.1#t1.r3" title="variable">w</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msup><mi href="./1.1#t1.r3" title="variable">w</mi><mn>3</mn></msup><mo>+</mo><mrow><mi href="./1.11#Px8.p1" title="𝑝">p</mi><mo>⁢</mo><mi href="./1.1#t1.r3" title="variable">w</mi></mrow><mo>+</mo><mi href="./1.11#Px8.p1" title="𝑞">q</mi></mrow></mrow></math>, with <math class="ltx_Math" altimg="m119.png" altimg-height="26px" altimg-valign="-7px" altimg-width="144px" alttext="p=(3b-a^{2})/3" display="inline"><mrow><mi href="./1.11#Px8.p1" title="𝑝">p</mi><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>3</mn><mo>⁢</mo><mi>b</mi></mrow><mo>−</mo><msup><mi>a</mi><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow><mo>/</mo><mn>3</mn></mrow></mrow></math>, <math class="ltx_Math" altimg="m122.png" altimg-height="26px" altimg-valign="-7px" altimg-width="231px" alttext="q=(2a^{3}-9ab+27c)/27" display="inline"><mrow><mi href="./1.11#Px8.p1" title="𝑞">q</mi><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mrow><mrow><mn>2</mn><mo>⁢</mo><msup><mi>a</mi><mn>3</mn></msup></mrow><mo>−</mo><mrow><mn>9</mn><mo>⁢</mo><mi>a</mi><mo>⁢</mo><mi>b</mi></mrow></mrow><mo>+</mo><mrow><mn>27</mn><mo>⁢</mo><mi>c</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>/</mo><mn>27</mn></mrow></mrow></math>. The
+discriminant of <math class="ltx_Math" altimg="m106.png" altimg-height="25px" altimg-valign="-7px" altimg-width="47px" alttext="g(w)" display="inline"><mrow><mi>g</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./1.1#t1.r3" title="variable">w</mi><mo stretchy="false">)</mo></mrow></mrow></math> is</p>
+<table id="E12" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">1.11.12</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E12.png" altimg-height="28px" altimg-valign="-6px" altimg-width="170px" alttext="D=-4p^{3}-27q^{2}." display="block"><mrow><mrow><mi href="./1.11#E12" title="discriminant">D</mi><mo>=</mo><mrow><mrow><mo>−</mo><mrow><mn>4</mn><mo>⁢</mo><msup><mi href="./1.11#Px8.p1" title="𝑝">p</mi><mn>3</mn></msup></mrow></mrow><mo>−</mo><mrow><mn>27</mn><mo>⁢</mo><msup><mi href="./1.11#Px8.p1" title="𝑞">q</mi><mn>2</mn></msup></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E12.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Defines:</dt>
+<dd><span class="ltx_text"><math class="ltx_Math" altimg="m59.png" altimg-height="18px" altimg-valign="-2px" altimg-width="22px" alttext="D" display="inline"><mi href="./1.11#E12" title="discriminant">D</mi></math>:  discriminant (locally)</span></dd>
+<dt>Symbols:</dt>
+<dd>
+<a href="./1.11#Px8.p1" title="Quartic Equations ‣ §1.11(iii) Polynomials of Degrees Two, Three, and Four ‣ §1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m120.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="p" display="inline"><mi href="./1.11#Px8.p1" title="𝑝">p</mi></math></a> and
+<a href="./1.11#Px8.p1" title="Quartic Equations ‣ §1.11(iii) Polynomials of Degrees Two, Three, and Four ‣ §1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m123.png" altimg-height="17px" altimg-valign="-6px" altimg-width="14px" alttext="q" display="inline"><mi href="./1.11#Px8.p1" title="𝑞">q</mi></math></a>
+</dd>
+<dt>A&amp;S Ref:</dt>
+<dd> <span class="ltx_origref"><span class="ltx_tag">3.8.1</span></span>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./1.11.E12" title="" class="ltx_ref">http://dlmf.nist.gov/1.11.E12</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./1.11.E12.tex">TeX</a>, <a href="./1.11.E12.pmml">pMML</a>, <a href="./1.11.E12.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.11#Px6.info" title="Cubic Equations ‣ §1.11(iii) Polynomials of Degrees Two, Three, and Four ‣ §1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11(iii)</span></a>,
+<a href="./1.11#iii.info" title="§1.11(iii) Polynomials of Degrees Two, Three, and Four ‣ §1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11(iii)</span></a>,
+<a href="./1.11#info" title="§1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">Let</p>
+<table id="E13" class="ltx_equationgroup ltx_eqn_table">
+<tbody>
+<tr id="Ex5" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="2" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equationgroup ltx_align_left">1.11.13</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m26.png" altimg-height="20px" altimg-valign="-2px" altimg-width="22px" alttext="\displaystyle A" display="inline"><mi href="./1.11#E13" title="𝐴">A</mi></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m18.png" altimg-height="45px" altimg-valign="-13px" altimg-width="204px" alttext="\displaystyle=\sqrt[3]{-\tfrac{27}{2}q+\tfrac{3}{2}\sqrt{-3D}}," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mroot><mrow><mrow><mo>−</mo><mrow><mfrac><mn>27</mn><mn>2</mn></mfrac><mo>⁢</mo><mi href="./1.11#Px8.p1" title="𝑞">q</mi></mrow></mrow><mo>+</mo><mrow><mfrac><mn>3</mn><mn>2</mn></mfrac><mo>⁢</mo><msqrt><mrow><mo>−</mo><mrow><mn>3</mn><mo>⁢</mo><mi href="./1.11#E12" title="discriminant">D</mi></mrow></mrow></msqrt></mrow></mrow><mn>3</mn></mroot></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex6" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m27.png" altimg-height="20px" altimg-valign="-2px" altimg-width="23px" alttext="\displaystyle B" display="inline"><mi href="./1.11#E13" title="𝐵">B</mi></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m9.png" altimg-height="27px" altimg-valign="-7px" altimg-width="96px" alttext="\displaystyle=-3p/A." display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mo>−</mo><mrow><mrow><mn>3</mn><mo>⁢</mo><mi href="./1.11#Px8.p1" title="𝑝">p</mi></mrow><mo>/</mo><mi href="./1.11#E13" title="𝐴">A</mi></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E13.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Defines:</dt>
+<dd>
+<span class="ltx_text"><math class="ltx_Math" altimg="m56.png" altimg-height="18px" altimg-valign="-2px" altimg-width="20px" alttext="A" display="inline"><mi href="./1.11#E13" title="𝐴">A</mi></math> (locally)</span> and
+<span class="ltx_text"><math class="ltx_Math" altimg="m58.png" altimg-height="18px" altimg-valign="-2px" altimg-width="21px" alttext="B" display="inline"><mi href="./1.11#E13" title="𝐵">B</mi></math> (locally)</span>
+</dd>
+<dt>Symbols:</dt>
+<dd>
+<a href="./1.11#Px8.p1" title="Quartic Equations ‣ §1.11(iii) Polynomials of Degrees Two, Three, and Four ‣ §1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m120.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="p" display="inline"><mi href="./1.11#Px8.p1" title="𝑝">p</mi></math></a>,
+<a href="./1.11#Px8.p1" title="Quartic Equations ‣ §1.11(iii) Polynomials of Degrees Two, Three, and Four ‣ §1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m123.png" altimg-height="17px" altimg-valign="-6px" altimg-width="14px" alttext="q" display="inline"><mi href="./1.11#Px8.p1" title="𝑞">q</mi></math></a> and
+<a href="./1.11#E12" title="(1.11.12) ‣ Cubic Equations ‣ §1.11(iii) Polynomials of Degrees Two, Three, and Four ‣ §1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m59.png" altimg-height="18px" altimg-valign="-2px" altimg-width="22px" alttext="D" display="inline"><mi href="./1.11#E12" title="discriminant">D</mi></math>:  discriminant</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./1.11.E13" title="" class="ltx_ref">http://dlmf.nist.gov/1.11.E13</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./1.11.E13a.tex">TeX</a>, <a href="./1.11.E13b.tex">TeX</a>, <a href="./1.11.E13a.pmml">pMML</a>, <a href="./1.11.E13b.pmml">pMML</a>, <a href="./1.11.E13a.png">png</a>, <a href="./1.11.E13b.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.11#Px6.info" title="Cubic Equations ‣ §1.11(iii) Polynomials of Degrees Two, Three, and Four ‣ §1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11(iii)</span></a>,
+<a href="./1.11#iii.info" title="§1.11(iii) Polynomials of Degrees Two, Three, and Four ‣ §1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11(iii)</span></a>,
+<a href="./1.11#info" title="§1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+<div id="Px6.p2" class="ltx_para">
+<p class="ltx_p">The roots of <math class="ltx_Math" altimg="m102.png" altimg-height="25px" altimg-valign="-7px" altimg-width="85px" alttext="g(w)=0" display="inline"><mrow><mrow><mi>g</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./1.1#t1.r3" title="variable">w</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math> are</p>
+<table id="E14" class="ltx_equationgroup ltx_eqn_table">
+<tbody>
+<tr id="Ex7" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="3" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equationgroup ltx_align_left">1.11.14</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E14a.png" altimg-height="29px" altimg-valign="-9px" altimg-width="97px" alttext="\tfrac{1}{3}(A+B)," display="inline"><mrow><mrow><mfrac><mn>1</mn><mn>3</mn></mfrac><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi href="./1.11#E13" title="𝐴">A</mi><mo>+</mo><mi href="./1.11#E13" title="𝐵">B</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex8" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E14b.png" altimg-height="29px" altimg-valign="-9px" altimg-width="128px" alttext="\tfrac{1}{3}(\rho A+\rho^{2}B)," display="inline"><mrow><mrow><mfrac><mn>1</mn><mn>3</mn></mfrac><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi href="./1.11#Px6.p2" title="𝜌">ρ</mi><mo>⁢</mo><mi href="./1.11#E13" title="𝐴">A</mi></mrow><mo>+</mo><mrow><msup><mi href="./1.11#Px6.p2" title="𝜌">ρ</mi><mn>2</mn></msup><mo>⁢</mo><mi href="./1.11#E13" title="𝐵">B</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex9" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E14c.png" altimg-height="29px" altimg-valign="-9px" altimg-width="128px" alttext="\tfrac{1}{3}(\rho^{2}A+\rho B)," display="inline"><mrow><mrow><mfrac><mn>1</mn><mn>3</mn></mfrac><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><msup><mi href="./1.11#Px6.p2" title="𝜌">ρ</mi><mn>2</mn></msup><mo>⁢</mo><mi href="./1.11#E13" title="𝐴">A</mi></mrow><mo>+</mo><mrow><mi href="./1.11#Px6.p2" title="𝜌">ρ</mi><mo>⁢</mo><mi href="./1.11#E13" title="𝐵">B</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E14.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./1.11#Px6.p2" title="Cubic Equations ‣ §1.11(iii) Polynomials of Degrees Two, Three, and Four ‣ §1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m72.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="\rho" display="inline"><mi href="./1.11#Px6.p2" title="𝜌">ρ</mi></math></a>,
+<a href="./1.11#E13" title="(1.11.13) ‣ Cubic Equations ‣ §1.11(iii) Polynomials of Degrees Two, Three, and Four ‣ §1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m56.png" altimg-height="18px" altimg-valign="-2px" altimg-width="20px" alttext="A" display="inline"><mi href="./1.11#E13" title="𝐴">A</mi></math></a> and
+<a href="./1.11#E13" title="(1.11.13) ‣ Cubic Equations ‣ §1.11(iii) Polynomials of Degrees Two, Three, and Four ‣ §1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m58.png" altimg-height="18px" altimg-valign="-2px" altimg-width="21px" alttext="B" display="inline"><mi href="./1.11#E13" title="𝐵">B</mi></math></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./1.11.E14" title="" class="ltx_ref">http://dlmf.nist.gov/1.11.E14</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./1.11.E14a.tex">TeX</a>, <a href="./1.11.E14b.tex">TeX</a>, <a href="./1.11.E14c.tex">TeX</a>, <a href="./1.11.E14a.pmml">pMML</a>, <a href="./1.11.E14b.pmml">pMML</a>, <a href="./1.11.E14c.pmml">pMML</a>, <a href="./1.11.E14a.png">png</a>, <a href="./1.11.E14b.png">png</a>, <a href="./1.11.E14c.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.11#Px6.info" title="Cubic Equations ‣ §1.11(iii) Polynomials of Degrees Two, Three, and Four ‣ §1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11(iii)</span></a>,
+<a href="./1.11#iii.info" title="§1.11(iii) Polynomials of Degrees Two, Three, and Four ‣ §1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11(iii)</span></a>,
+<a href="./1.11#info" title="§1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">with</p>
+<table id="E15" class="ltx_equationgroup ltx_eqn_table">
+<tbody>
+<tr id="Ex10" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="2" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equationgroup ltx_align_left">1.11.15</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m32.png" altimg-height="19px" altimg-valign="-6px" altimg-width="17px" alttext="\displaystyle\rho" display="inline"><mi href="./1.11#Px6.p2" title="𝜌">ρ</mi></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m12.png" altimg-height="33px" altimg-valign="-9px" altimg-width="224px" alttext="\displaystyle=-\tfrac{1}{2}+\tfrac{1}{2}\sqrt{-3}={\mathrm{e}}^{2\pi\mathrm{i}%
+/3}," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mrow><mo>−</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow><mo>+</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><msqrt><mrow><mo>−</mo><mn>3</mn></mrow></msqrt></mrow></mrow><mo>=</mo><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mrow><mrow><mn>2</mn><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>⁢</mo><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></mrow><mo>/</mo><mn>3</mn></mrow></msup></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex11" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m33.png" altimg-height="28px" altimg-valign="-6px" altimg-width="27px" alttext="\displaystyle\rho^{2}" display="inline"><msup><mi href="./1.11#Px6.p2" title="𝜌">ρ</mi><mn>2</mn></msup></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m25.png" altimg-height="26px" altimg-valign="-2px" altimg-width="97px" alttext="\displaystyle={\mathrm{e}}^{-2\pi\mathrm{i}/3}." display="inline"><mrow><mrow><mi></mi><mo>=</mo><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mrow><mo>−</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>⁢</mo><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></mrow><mo>/</mo><mn>3</mn></mrow></mrow></msup></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E15.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./3.12#E1" title="(3.12.1) ‣ §3.12 Mathematical Constants ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m71.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="\pi" display="inline"><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></math>: the ratio of the circumference of a circle to its diameter</a>,
+<a href="./4.2#E11" title="(4.2.11) ‣ §4.2(ii) Logarithms to a General Base 𝑎 ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m68.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="\mathrm{e}" display="inline"><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi></math>: base of natural logarithm</a>,
+<a href="./1.9#E1" title="(1.9.1) ‣ §1.9(i) Complex Numbers ‣ §1.9 Calculus of a Complex Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m69.png" altimg-height="18px" altimg-valign="-2px" altimg-width="10px" alttext="\mathrm{i}" display="inline"><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></math>: imaginary unit</a> and
+<a href="./1.11#Px6.p2" title="Cubic Equations ‣ §1.11(iii) Polynomials of Degrees Two, Three, and Four ‣ §1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m72.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="\rho" display="inline"><mi href="./1.11#Px6.p2" title="𝜌">ρ</mi></math></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./1.11.E15" title="" class="ltx_ref">http://dlmf.nist.gov/1.11.E15</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./1.11.E15a.tex">TeX</a>, <a href="./1.11.E15b.tex">TeX</a>, <a href="./1.11.E15a.pmml">pMML</a>, <a href="./1.11.E15b.pmml">pMML</a>, <a href="./1.11.E15a.png">png</a>, <a href="./1.11.E15b.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.11#Px6.info" title="Cubic Equations ‣ §1.11(iii) Polynomials of Degrees Two, Three, and Four ‣ §1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11(iii)</span></a>,
+<a href="./1.11#iii.info" title="§1.11(iii) Polynomials of Degrees Two, Three, and Four ‣ §1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11(iii)</span></a>,
+<a href="./1.11#info" title="§1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">Addition of <math class="ltx_Math" altimg="m43.png" altimg-height="29px" altimg-valign="-9px" altimg-width="45px" alttext="-\frac{1}{3}a" display="inline"><mrow><mo>−</mo><mrow><mfrac><mn>1</mn><mn>3</mn></mfrac><mo>⁢</mo><mi>a</mi></mrow></mrow></math> to each of these roots gives the roots of
+<math class="ltx_Math" altimg="m95.png" altimg-height="25px" altimg-valign="-7px" altimg-width="81px" alttext="f(z)=0" display="inline"><mrow><mrow><mi>f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./1.1#t1.r2" title="variable">z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math>.</p>
+</div>
+</section>
+<section id="Px7" class="ltx_paragraph">
+<h3 class="ltx_title ltx_title_paragraph">Example</h3>
+<div id="Px7.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.11#iii.info" title="§1.11(iii) Polynomials of Degrees Two, Three, and Four ‣ §1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11(iii)</span></a>,
+<a href="./1.11#info" title="§1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="Px7.p1" class="ltx_para">
+<p class="ltx_p"><math class="ltx_Math" altimg="m98.png" altimg-height="26px" altimg-valign="-7px" altimg-width="229px" alttext="f(z)=z^{3}-6z^{2}+6z-2" display="inline"><mrow><mrow><mi>f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./1.1#t1.r2" title="variable">z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mrow><msup><mi href="./1.1#t1.r2" title="variable">z</mi><mn>3</mn></msup><mo>−</mo><mrow><mn>6</mn><mo>⁢</mo><msup><mi href="./1.1#t1.r2" title="variable">z</mi><mn>2</mn></msup></mrow></mrow><mo>+</mo><mrow><mn>6</mn><mo>⁢</mo><mi href="./1.1#t1.r2" title="variable">z</mi></mrow></mrow><mo>−</mo><mn>2</mn></mrow></mrow></math>, <math class="ltx_Math" altimg="m104.png" altimg-height="26px" altimg-valign="-7px" altimg-width="186px" alttext="g(w)=w^{3}-6w-6" display="inline"><mrow><mrow><mi>g</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./1.1#t1.r3" title="variable">w</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msup><mi href="./1.1#t1.r3" title="variable">w</mi><mn>3</mn></msup><mo>−</mo><mrow><mn>6</mn><mo>⁢</mo><mi href="./1.1#t1.r3" title="variable">w</mi></mrow><mo>−</mo><mn>6</mn></mrow></mrow></math>, <math class="ltx_Math" altimg="m55.png" altimg-height="26px" altimg-valign="-5px" altimg-width="87px" alttext="A=3\sqrt[3]{4}" display="inline"><mrow><mi href="./1.11#E13" title="𝐴">A</mi><mo>=</mo><mrow><mn>3</mn><mo>⁢</mo><mroot><mn>4</mn><mn>3</mn></mroot></mrow></mrow></math>,
+<math class="ltx_Math" altimg="m57.png" altimg-height="26px" altimg-valign="-5px" altimg-width="88px" alttext="B=3\sqrt[3]{2}" display="inline"><mrow><mi href="./1.11#E13" title="𝐵">B</mi><mo>=</mo><mrow><mn>3</mn><mo>⁢</mo><mroot><mn>2</mn><mn>3</mn></mroot></mrow></mrow></math>. Roots of <math class="ltx_Math" altimg="m95.png" altimg-height="25px" altimg-valign="-7px" altimg-width="81px" alttext="f(z)=0" display="inline"><mrow><mrow><mi>f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./1.1#t1.r2" title="variable">z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math> are <math class="ltx_Math" altimg="m48.png" altimg-height="26px" altimg-valign="-5px" altimg-width="123px" alttext="2+\sqrt[3]{4}+\sqrt[3]{2}" display="inline"><mrow><mn>2</mn><mo>+</mo><mroot><mn>4</mn><mn>3</mn></mroot><mo>+</mo><mroot><mn>2</mn><mn>3</mn></mroot></mrow></math>,
+<math class="ltx_Math" altimg="m49.png" altimg-height="27px" altimg-valign="-6px" altimg-width="154px" alttext="2+\sqrt[3]{4}\rho+\sqrt[3]{2}\rho^{2}" display="inline"><mrow><mn>2</mn><mo>+</mo><mrow><mroot><mn>4</mn><mn>3</mn></mroot><mo>⁢</mo><mi href="./1.11#Px6.p2" title="𝜌">ρ</mi></mrow><mo>+</mo><mrow><mroot><mn>2</mn><mn>3</mn></mroot><mo>⁢</mo><msup><mi href="./1.11#Px6.p2" title="𝜌">ρ</mi><mn>2</mn></msup></mrow></mrow></math>,
+<math class="ltx_Math" altimg="m50.png" altimg-height="27px" altimg-valign="-6px" altimg-width="154px" alttext="2+\sqrt[3]{4}\rho^{2}+\sqrt[3]{2}\rho" display="inline"><mrow><mn>2</mn><mo>+</mo><mrow><mroot><mn>4</mn><mn>3</mn></mroot><mo>⁢</mo><msup><mi href="./1.11#Px6.p2" title="𝜌">ρ</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mroot><mn>2</mn><mn>3</mn></mroot><mo>⁢</mo><mi href="./1.11#Px6.p2" title="𝜌">ρ</mi></mrow></mrow></math>.</p>
+</div>
+<div id="Px7.p2" class="ltx_para">
+<p class="ltx_p">For another method see §<a href="./4.43" title="§4.43 Cubic Equations ‣ Applications ‣ Chapter 4 Elementary Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.43</span></a>.</p>
+</div>
+</section>
+<section id="Px8" class="ltx_paragraph">
+<h3 class="ltx_title ltx_title_paragraph">Quartic Equations</h3>
+<div id="Px8.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=cubic%20equation">cubic equation</a>, <a class="ltx_keyword" href="./search/search?q=quartic%20equations">quartic equations</a>, <a class="ltx_keyword" href="./search/search?q=resolvent">resolvent</a>, <a class="ltx_keyword" href="./search/search?q=resolvent%20cubic">resolvent cubic</a>, <a class="ltx_keyword" href="./search/search?q=resolvent%20cubic%20equation">resolvent cubic equation</a>, <a class="ltx_keyword" href="./search/search?q=zeros%20of%20polynomials">zeros of polynomials</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.11#iii.info" title="§1.11(iii) Polynomials of Degrees Two, Three, and Four ‣ §1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11(iii)</span></a>,
+<a href="./1.11#info" title="§1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="Px8.p1" class="ltx_para">
+<p class="ltx_p">Set <math class="ltx_Math" altimg="m128.png" altimg-height="29px" altimg-valign="-9px" altimg-width="108px" alttext="z=w-\tfrac{1}{4}a" display="inline"><mrow><mi href="./1.1#t1.r2" title="variable">z</mi><mo>=</mo><mrow><mi href="./1.1#t1.r3" title="variable">w</mi><mo>−</mo><mrow><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>⁢</mo><mi>a</mi></mrow></mrow></mrow></math> to reduce <math class="ltx_Math" altimg="m99.png" altimg-height="26px" altimg-valign="-7px" altimg-width="282px" alttext="f(z)=z^{4}+az^{3}+bz^{2}+cz+d" display="inline"><mrow><mrow><mi>f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./1.1#t1.r2" title="variable">z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msup><mi href="./1.1#t1.r2" title="variable">z</mi><mn>4</mn></msup><mo>+</mo><mrow><mi>a</mi><mo>⁢</mo><msup><mi href="./1.1#t1.r2" title="variable">z</mi><mn>3</mn></msup></mrow><mo>+</mo><mrow><mi>b</mi><mo>⁢</mo><msup><mi href="./1.1#t1.r2" title="variable">z</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mi>c</mi><mo>⁢</mo><mi href="./1.1#t1.r2" title="variable">z</mi></mrow><mo>+</mo><mi>d</mi></mrow></mrow></math> to
+</p>
+<table id="E16" class="ltx_equationgroup ltx_eqn_table">
+<tbody>
+<tr id="Ex12" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="4" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equationgroup ltx_align_left">1.11.16</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m37.png" altimg-height="27px" altimg-valign="-7px" altimg-width="49px" alttext="\displaystyle g(w)" display="inline"><mrow><mi>g</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./1.1#t1.r3" title="variable">w</mi><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m22.png" altimg-height="28px" altimg-valign="-6px" altimg-width="205px" alttext="\displaystyle=w^{4}+pw^{2}+qw+r," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><msup><mi href="./1.1#t1.r3" title="variable">w</mi><mn>4</mn></msup><mo>+</mo><mrow><mi href="./1.11#Px8.p1" title="𝑝">p</mi><mo>⁢</mo><msup><mi href="./1.1#t1.r3" title="variable">w</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mi href="./1.11#Px8.p1" title="𝑞">q</mi><mo>⁢</mo><mi href="./1.1#t1.r3" title="variable">w</mi></mrow><mo>+</mo><mi href="./1.11#Px8.p1" title="𝑟">r</mi></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex13" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m38.png" altimg-height="19px" altimg-valign="-6px" altimg-width="17px" alttext="\displaystyle p" display="inline"><mi href="./1.11#Px8.p1" title="𝑝">p</mi></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m6.png" altimg-height="29px" altimg-valign="-7px" altimg-width="163px" alttext="\displaystyle=(-3a^{2}+8b)/8," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mrow><mo>−</mo><mrow><mn>3</mn><mo>⁢</mo><msup><mi>a</mi><mn>2</mn></msup></mrow></mrow><mo>+</mo><mrow><mn>8</mn><mo>⁢</mo><mi>b</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>/</mo><mn>8</mn></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex14" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m39.png" altimg-height="19px" altimg-valign="-6px" altimg-width="17px" alttext="\displaystyle q" display="inline"><mi href="./1.11#Px8.p1" title="𝑞">q</mi></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m8.png" altimg-height="29px" altimg-valign="-7px" altimg-width="192px" alttext="\displaystyle=(a^{3}-4ab+8c)/8," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mrow><msup><mi>a</mi><mn>3</mn></msup><mo>−</mo><mrow><mn>4</mn><mo>⁢</mo><mi>a</mi><mo>⁢</mo><mi>b</mi></mrow></mrow><mo>+</mo><mrow><mn>8</mn><mo>⁢</mo><mi>c</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>/</mo><mn>8</mn></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex15" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m40.png" altimg-height="15px" altimg-valign="-2px" altimg-width="17px" alttext="\displaystyle r" display="inline"><mi href="./1.11#Px8.p1" title="𝑟">r</mi></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m7.png" altimg-height="29px" altimg-valign="-7px" altimg-width="347px" alttext="\displaystyle=(-3a^{4}+16a^{2}b-64ac+256d)/256." display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mrow><mrow><mrow><mo>−</mo><mrow><mn>3</mn><mo>⁢</mo><msup><mi>a</mi><mn>4</mn></msup></mrow></mrow><mo>+</mo><mrow><mn>16</mn><mo>⁢</mo><msup><mi>a</mi><mn>2</mn></msup><mo>⁢</mo><mi>b</mi></mrow></mrow><mo>−</mo><mrow><mn>64</mn><mo>⁢</mo><mi>a</mi><mo>⁢</mo><mi>c</mi></mrow></mrow><mo>+</mo><mrow><mn>256</mn><mo>⁢</mo><mi>d</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>/</mo><mn>256</mn></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E16.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./1.1#t1.r3" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m126.png" altimg-height="13px" altimg-valign="-2px" altimg-width="20px" alttext="w" display="inline"><mi href="./1.1#t1.r3" title="variable">w</mi></math>:  variable</a>,
+<a href="./1.11#Px8.p1" title="Quartic Equations ‣ §1.11(iii) Polynomials of Degrees Two, Three, and Four ‣ §1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m120.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="p" display="inline"><mi href="./1.11#Px8.p1" title="𝑝">p</mi></math></a>,
+<a href="./1.11#Px8.p1" title="Quartic Equations ‣ §1.11(iii) Polynomials of Degrees Two, Three, and Four ‣ §1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m123.png" altimg-height="17px" altimg-valign="-6px" altimg-width="14px" alttext="q" display="inline"><mi href="./1.11#Px8.p1" title="𝑞">q</mi></math></a> and
+<a href="./1.11#Px8.p1" title="Quartic Equations ‣ §1.11(iii) Polynomials of Degrees Two, Three, and Four ‣ §1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m125.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="r" display="inline"><mi href="./1.11#Px8.p1" title="𝑟">r</mi></math></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./1.11.E16" title="" class="ltx_ref">http://dlmf.nist.gov/1.11.E16</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./1.11.E16a.tex">TeX</a>, <a href="./1.11.E16b.tex">TeX</a>, <a href="./1.11.E16c.tex">TeX</a>, <a href="./1.11.E16d.tex">TeX</a>, <a href="./1.11.E16a.pmml">pMML</a>, <a href="./1.11.E16b.pmml">pMML</a>, <a href="./1.11.E16c.pmml">pMML</a>, <a href="./1.11.E16d.pmml">pMML</a>, <a href="./1.11.E16a.png">png</a>, <a href="./1.11.E16b.png">png</a>, <a href="./1.11.E16c.png">png</a>, <a href="./1.11.E16d.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.11#Px8.info" title="Quartic Equations ‣ §1.11(iii) Polynomials of Degrees Two, Three, and Four ‣ §1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11(iii)</span></a>,
+<a href="./1.11#iii.info" title="§1.11(iii) Polynomials of Degrees Two, Three, and Four ‣ §1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11(iii)</span></a>,
+<a href="./1.11#info" title="§1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+<div id="Px8.p2" class="ltx_para">
+<p class="ltx_p">The discriminant of <math class="ltx_Math" altimg="m106.png" altimg-height="25px" altimg-valign="-7px" altimg-width="47px" alttext="g(w)" display="inline"><mrow><mi>g</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./1.1#t1.r3" title="variable">w</mi><mo stretchy="false">)</mo></mrow></mrow></math> is</p>
+<table id="E17" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">1.11.17</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E17.png" altimg-height="28px" altimg-valign="-6px" altimg-width="516px" alttext="D=16p^{4}r-4p^{3}q^{2}-128p^{2}r^{2}+144pq^{2}r-27q^{4}+256r^{3}." display="block"><mrow><mrow><mi href="./1.11#E17" title="discriminant">D</mi><mo>=</mo><mrow><mrow><mrow><mrow><mrow><mn>16</mn><mo>⁢</mo><msup><mi href="./1.11#Px8.p1" title="𝑝">p</mi><mn>4</mn></msup><mo>⁢</mo><mi href="./1.11#Px8.p1" title="𝑟">r</mi></mrow><mo>−</mo><mrow><mn>4</mn><mo>⁢</mo><msup><mi href="./1.11#Px8.p1" title="𝑝">p</mi><mn>3</mn></msup><mo>⁢</mo><msup><mi href="./1.11#Px8.p1" title="𝑞">q</mi><mn>2</mn></msup></mrow><mo>−</mo><mrow><mn>128</mn><mo>⁢</mo><msup><mi href="./1.11#Px8.p1" title="𝑝">p</mi><mn>2</mn></msup><mo>⁢</mo><msup><mi href="./1.11#Px8.p1" title="𝑟">r</mi><mn>2</mn></msup></mrow></mrow><mo>+</mo><mrow><mn>144</mn><mo>⁢</mo><mi href="./1.11#Px8.p1" title="𝑝">p</mi><mo>⁢</mo><msup><mi href="./1.11#Px8.p1" title="𝑞">q</mi><mn>2</mn></msup><mo>⁢</mo><mi href="./1.11#Px8.p1" title="𝑟">r</mi></mrow></mrow><mo>−</mo><mrow><mn>27</mn><mo>⁢</mo><msup><mi href="./1.11#Px8.p1" title="𝑞">q</mi><mn>4</mn></msup></mrow></mrow><mo>+</mo><mrow><mn>256</mn><mo>⁢</mo><msup><mi href="./1.11#Px8.p1" title="𝑟">r</mi><mn>3</mn></msup></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E17.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Defines:</dt>
+<dd><span class="ltx_text"><math class="ltx_Math" altimg="m59.png" altimg-height="18px" altimg-valign="-2px" altimg-width="22px" alttext="D" display="inline"><mi href="./1.11#E17" title="discriminant">D</mi></math>:  discriminant (locally)</span></dd>
+<dt>Symbols:</dt>
+<dd>
+<a href="./1.11#Px8.p1" title="Quartic Equations ‣ §1.11(iii) Polynomials of Degrees Two, Three, and Four ‣ §1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m120.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="p" display="inline"><mi href="./1.11#Px8.p1" title="𝑝">p</mi></math></a>,
+<a href="./1.11#Px8.p1" title="Quartic Equations ‣ §1.11(iii) Polynomials of Degrees Two, Three, and Four ‣ §1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m123.png" altimg-height="17px" altimg-valign="-6px" altimg-width="14px" alttext="q" display="inline"><mi href="./1.11#Px8.p1" title="𝑞">q</mi></math></a> and
+<a href="./1.11#Px8.p1" title="Quartic Equations ‣ §1.11(iii) Polynomials of Degrees Two, Three, and Four ‣ §1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m125.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="r" display="inline"><mi href="./1.11#Px8.p1" title="𝑟">r</mi></math></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./1.11.E17" title="" class="ltx_ref">http://dlmf.nist.gov/1.11.E17</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./1.11.E17.tex">TeX</a>, <a href="./1.11.E17.pmml">pMML</a>, <a href="./1.11.E17.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.11#Px8.info" title="Quartic Equations ‣ §1.11(iii) Polynomials of Degrees Two, Three, and Four ‣ §1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11(iii)</span></a>,
+<a href="./1.11#iii.info" title="§1.11(iii) Polynomials of Degrees Two, Three, and Four ‣ §1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11(iii)</span></a>,
+<a href="./1.11#info" title="§1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">For the roots <math class="ltx_Math" altimg="m65.png" altimg-height="17px" altimg-valign="-6px" altimg-width="122px" alttext="\alpha_{1},\alpha_{2},\alpha_{3},\alpha_{4}" display="inline"><mrow><msub><mi>α</mi><mn>1</mn></msub><mo>,</mo><msub><mi>α</mi><mn>2</mn></msub><mo>,</mo><msub><mi>α</mi><mn>3</mn></msub><mo>,</mo><msub><mi>α</mi><mn>4</mn></msub></mrow></math> of <math class="ltx_Math" altimg="m102.png" altimg-height="25px" altimg-valign="-7px" altimg-width="85px" alttext="g(w)=0" display="inline"><mrow><mrow><mi>g</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./1.1#t1.r3" title="variable">w</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math> and the
+roots <math class="ltx_Math" altimg="m79.png" altimg-height="22px" altimg-valign="-6px" altimg-width="80px" alttext="\theta_{1},\theta_{2},\theta_{3}" display="inline"><mrow><msub><mi href="./1.11#E19" title="cubic roots">θ</mi><mn>1</mn></msub><mo>,</mo><msub><mi href="./1.11#E19" title="cubic roots">θ</mi><mn>2</mn></msub><mo>,</mo><msub><mi href="./1.11#E19" title="cubic roots">θ</mi><mn>3</mn></msub></mrow></math> of the <em class="ltx_emph ltx_font_italic">resolvent cubic equation</em>
+</p>
+<table id="E18" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">1.11.18</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E18.png" altimg-height="29px" altimg-valign="-7px" altimg-width="299px" alttext="z^{3}-2pz^{2}+(p^{2}-4r)z+q^{2}=0," display="block"><mrow><mrow><mrow><mrow><msup><mi href="./1.1#t1.r2" title="variable">z</mi><mn>3</mn></msup><mo>−</mo><mrow><mn>2</mn><mo>⁢</mo><mi href="./1.11#Px8.p1" title="𝑝">p</mi><mo>⁢</mo><msup><mi href="./1.1#t1.r2" title="variable">z</mi><mn>2</mn></msup></mrow></mrow><mo>+</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><msup><mi href="./1.11#Px8.p1" title="𝑝">p</mi><mn>2</mn></msup><mo>−</mo><mrow><mn>4</mn><mo>⁢</mo><mi href="./1.11#Px8.p1" title="𝑟">r</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi href="./1.1#t1.r2" title="variable">z</mi></mrow><mo>+</mo><msup><mi href="./1.11#Px8.p1" title="𝑞">q</mi><mn>2</mn></msup></mrow><mo>=</mo><mn>0</mn></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E18.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./1.1#t1.r2" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m129.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi href="./1.1#t1.r2" title="variable">z</mi></math>:  variable</a>,
+<a href="./1.11#Px8.p1" title="Quartic Equations ‣ §1.11(iii) Polynomials of Degrees Two, Three, and Four ‣ §1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m120.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="p" display="inline"><mi href="./1.11#Px8.p1" title="𝑝">p</mi></math></a>,
+<a href="./1.11#Px8.p1" title="Quartic Equations ‣ §1.11(iii) Polynomials of Degrees Two, Three, and Four ‣ §1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m123.png" altimg-height="17px" altimg-valign="-6px" altimg-width="14px" alttext="q" display="inline"><mi href="./1.11#Px8.p1" title="𝑞">q</mi></math></a> and
+<a href="./1.11#Px8.p1" title="Quartic Equations ‣ §1.11(iii) Polynomials of Degrees Two, Three, and Four ‣ §1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m125.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="r" display="inline"><mi href="./1.11#Px8.p1" title="𝑟">r</mi></math></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./1.11.E18" title="" class="ltx_ref">http://dlmf.nist.gov/1.11.E18</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./1.11.E18.tex">TeX</a>, <a href="./1.11.E18.pmml">pMML</a>, <a href="./1.11.E18.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.11#Px8.info" title="Quartic Equations ‣ §1.11(iii) Polynomials of Degrees Two, Three, and Four ‣ §1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11(iii)</span></a>,
+<a href="./1.11#iii.info" title="§1.11(iii) Polynomials of Degrees Two, Three, and Four ‣ §1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11(iii)</span></a>,
+<a href="./1.11#info" title="§1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">we have</p>
+<table id="E19" class="ltx_equationgroup ltx_eqn_table">
+<tbody>
+<tr id="Ex16" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="4" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equationgroup ltx_align_left">1.11.19</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m1.png" altimg-height="22px" altimg-valign="-5px" altimg-width="40px" alttext="\displaystyle 2\alpha_{1}" display="inline"><mrow><mn>2</mn><mo>⁢</mo><msub><mi>α</mi><mn>1</mn></msub></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m16.png" altimg-height="32px" altimg-valign="-7px" altimg-width="269px" alttext="\displaystyle=\phantom{+}\sqrt{-\theta_{1}}+\sqrt{-\theta_{2}}+\sqrt{-\theta_{%
+3}}," display="inline"><mrow><mrow><mi></mi><mo rspace="1.058em">=</mo><mrow><msqrt><mrow><mo>−</mo><msub><mi href="./1.11#E19" title="cubic roots">θ</mi><mn>1</mn></msub></mrow></msqrt><mo>+</mo><msqrt><mrow><mo>−</mo><msub><mi href="./1.11#E19" title="cubic roots">θ</mi><mn>2</mn></msub></mrow></msqrt><mo>+</mo><msqrt><mrow><mo>−</mo><msub><mi href="./1.11#E19" title="cubic roots">θ</mi><mn>3</mn></msub></mrow></msqrt></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex17" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m2.png" altimg-height="22px" altimg-valign="-5px" altimg-width="40px" alttext="\displaystyle 2\alpha_{2}" display="inline"><mrow><mn>2</mn><mo>⁢</mo><msub><mi>α</mi><mn>2</mn></msub></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m17.png" altimg-height="32px" altimg-valign="-7px" altimg-width="269px" alttext="\displaystyle=\phantom{+}\sqrt{-\theta_{1}}-\sqrt{-\theta_{2}}-\sqrt{-\theta_{%
+3}}," display="inline"><mrow><mrow><mi></mi><mo rspace="1.058em">=</mo><mrow><msqrt><mrow><mo>−</mo><msub><mi href="./1.11#E19" title="cubic roots">θ</mi><mn>1</mn></msub></mrow></msqrt><mo>−</mo><msqrt><mrow><mo>−</mo><msub><mi href="./1.11#E19" title="cubic roots">θ</mi><mn>2</mn></msub></mrow></msqrt><mo>−</mo><msqrt><mrow><mo>−</mo><msub><mi href="./1.11#E19" title="cubic roots">θ</mi><mn>3</mn></msub></mrow></msqrt></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex18" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m3.png" altimg-height="22px" altimg-valign="-5px" altimg-width="40px" alttext="\displaystyle 2\alpha_{3}" display="inline"><mrow><mn>2</mn><mo>⁢</mo><msub><mi>α</mi><mn>3</mn></msub></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m10.png" altimg-height="32px" altimg-valign="-7px" altimg-width="269px" alttext="\displaystyle=-\sqrt{-\theta_{1}}+\sqrt{-\theta_{2}}-\sqrt{-\theta_{3}}," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mrow><mrow><mo>−</mo><msqrt><mrow><mo>−</mo><msub><mi href="./1.11#E19" title="cubic roots">θ</mi><mn>1</mn></msub></mrow></msqrt></mrow><mo>+</mo><msqrt><mrow><mo>−</mo><msub><mi href="./1.11#E19" title="cubic roots">θ</mi><mn>2</mn></msub></mrow></msqrt></mrow><mo>−</mo><msqrt><mrow><mo>−</mo><msub><mi href="./1.11#E19" title="cubic roots">θ</mi><mn>3</mn></msub></mrow></msqrt></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex19" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m4.png" altimg-height="22px" altimg-valign="-5px" altimg-width="40px" alttext="\displaystyle 2\alpha_{4}" display="inline"><mrow><mn>2</mn><mo>⁢</mo><msub><mi>α</mi><mn>4</mn></msub></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m11.png" altimg-height="32px" altimg-valign="-7px" altimg-width="269px" alttext="\displaystyle=-\sqrt{-\theta_{1}}-\sqrt{-\theta_{2}}+\sqrt{-\theta_{3}}." display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mrow><mrow><mo>−</mo><msqrt><mrow><mo>−</mo><msub><mi href="./1.11#E19" title="cubic roots">θ</mi><mn>1</mn></msub></mrow></msqrt></mrow><mo>−</mo><msqrt><mrow><mo>−</mo><msub><mi href="./1.11#E19" title="cubic roots">θ</mi><mn>2</mn></msub></mrow></msqrt></mrow><mo>+</mo><msqrt><mrow><mo>−</mo><msub><mi href="./1.11#E19" title="cubic roots">θ</mi><mn>3</mn></msub></mrow></msqrt></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E19.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Defines:</dt>
+<dd><span class="ltx_text"><math class="ltx_Math" altimg="m83.png" altimg-height="24px" altimg-valign="-8px" altimg-width="23px" alttext="\theta_{j}" display="inline"><msub><mi href="./1.11#E19" title="cubic roots">θ</mi><mi href="./1.1#t1.r4" title="integer">j</mi></msub></math>:  cubic roots (locally)</span></dd>
+<dt>Symbols:</dt>
+<dd><a href="./1.1#t1.r4" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m111.png" altimg-height="22px" altimg-valign="-6px" altimg-width="14px" alttext="j" display="inline"><mi href="./1.1#t1.r4" title="integer">j</mi></math>:  integer</a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./1.11.E19" title="" class="ltx_ref">http://dlmf.nist.gov/1.11.E19</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./1.11.E19a.tex">TeX</a>, <a href="./1.11.E19b.tex">TeX</a>, <a href="./1.11.E19c.tex">TeX</a>, <a href="./1.11.E19d.tex">TeX</a>, <a href="./1.11.E19a.pmml">pMML</a>, <a href="./1.11.E19b.pmml">pMML</a>, <a href="./1.11.E19c.pmml">pMML</a>, <a href="./1.11.E19d.pmml">pMML</a>, <a href="./1.11.E19a.png">png</a>, <a href="./1.11.E19b.png">png</a>, <a href="./1.11.E19c.png">png</a>, <a href="./1.11.E19d.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.11#Px8.info" title="Quartic Equations ‣ §1.11(iii) Polynomials of Degrees Two, Three, and Four ‣ §1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11(iii)</span></a>,
+<a href="./1.11#iii.info" title="§1.11(iii) Polynomials of Degrees Two, Three, and Four ‣ §1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11(iii)</span></a>,
+<a href="./1.11#info" title="§1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">The square roots are chosen so that</p>
+<table id="E20" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">1.11.20</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E20.png" altimg-height="32px" altimg-valign="-7px" altimg-width="246px" alttext="\sqrt{-\theta_{1}}\;\sqrt{-\theta_{2}}\;\sqrt{-\theta_{3}}=-q." display="block"><mrow><mrow><mrow><msqrt><mrow><mo>−</mo><msub><mi href="./1.11#E19" title="cubic roots">θ</mi><mn>1</mn></msub></mrow></msqrt><mo lspace="0.280em">⁢</mo><msqrt><mrow><mo>−</mo><msub><mi href="./1.11#E19" title="cubic roots">θ</mi><mn>2</mn></msub></mrow></msqrt><mo lspace="0.280em">⁢</mo><msqrt><mrow><mo>−</mo><msub><mi href="./1.11#E19" title="cubic roots">θ</mi><mn>3</mn></msub></mrow></msqrt></mrow><mo>=</mo><mrow><mo>−</mo><mi href="./1.11#Px8.p1" title="𝑞">q</mi></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E20.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./1.11#Px8.p1" title="Quartic Equations ‣ §1.11(iii) Polynomials of Degrees Two, Three, and Four ‣ §1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m123.png" altimg-height="17px" altimg-valign="-6px" altimg-width="14px" alttext="q" display="inline"><mi href="./1.11#Px8.p1" title="𝑞">q</mi></math></a> and
+<a href="./1.11#E19" title="(1.11.19) ‣ Quartic Equations ‣ §1.11(iii) Polynomials of Degrees Two, Three, and Four ‣ §1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m83.png" altimg-height="24px" altimg-valign="-8px" altimg-width="23px" alttext="\theta_{j}" display="inline"><msub><mi href="./1.11#E19" title="cubic roots">θ</mi><mi href="./1.1#t1.r4" title="integer">j</mi></msub></math>:  cubic roots</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./1.11.E20" title="" class="ltx_ref">http://dlmf.nist.gov/1.11.E20</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./1.11.E20.tex">TeX</a>, <a href="./1.11.E20.pmml">pMML</a>, <a href="./1.11.E20.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.11#Px8.info" title="Quartic Equations ‣ §1.11(iii) Polynomials of Degrees Two, Three, and Four ‣ §1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11(iii)</span></a>,
+<a href="./1.11#iii.info" title="§1.11(iii) Polynomials of Degrees Two, Three, and Four ‣ §1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11(iii)</span></a>,
+<a href="./1.11#info" title="§1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">Add <math class="ltx_Math" altimg="m44.png" altimg-height="29px" altimg-valign="-9px" altimg-width="45px" alttext="-\tfrac{1}{4}a" display="inline"><mrow><mo>−</mo><mrow><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>⁢</mo><mi>a</mi></mrow></mrow></math> to the roots of <math class="ltx_Math" altimg="m102.png" altimg-height="25px" altimg-valign="-7px" altimg-width="85px" alttext="g(w)=0" display="inline"><mrow><mrow><mi>g</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./1.1#t1.r3" title="variable">w</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math> to get those of <math class="ltx_Math" altimg="m95.png" altimg-height="25px" altimg-valign="-7px" altimg-width="81px" alttext="f(z)=0" display="inline"><mrow><mrow><mi>f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./1.1#t1.r2" title="variable">z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math>.</p>
+</div>
+</section>
+<section id="Px9" class="ltx_paragraph">
+<h3 class="ltx_title ltx_title_paragraph">Example</h3>
+<div id="Px9.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.11#iii.info" title="§1.11(iii) Polynomials of Degrees Two, Three, and Four ‣ §1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11(iii)</span></a>,
+<a href="./1.11#info" title="§1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="Px9.p1" class="ltx_para">
+<p class="ltx_p"><math class="ltx_Math" altimg="m100.png" altimg-height="26px" altimg-valign="-7px" altimg-width="229px" alttext="f(z)=z^{4}-4z^{3}+5z+2" display="inline"><mrow><mrow><mi>f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./1.1#t1.r2" title="variable">z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><msup><mi href="./1.1#t1.r2" title="variable">z</mi><mn>4</mn></msup><mo>−</mo><mrow><mn>4</mn><mo>⁢</mo><msup><mi href="./1.1#t1.r2" title="variable">z</mi><mn>3</mn></msup></mrow></mrow><mo>+</mo><mrow><mn>5</mn><mo>⁢</mo><mi href="./1.1#t1.r2" title="variable">z</mi></mrow><mo>+</mo><mn>2</mn></mrow></mrow></math>,   <math class="ltx_Math" altimg="m105.png" altimg-height="26px" altimg-valign="-7px" altimg-width="246px" alttext="g(w)=w^{4}-6w^{2}-3w+4" display="inline"><mrow><mrow><mi>g</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./1.1#t1.r3" title="variable">w</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><msup><mi href="./1.1#t1.r3" title="variable">w</mi><mn>4</mn></msup><mo>−</mo><mrow><mn>6</mn><mo>⁢</mo><msup><mi href="./1.1#t1.r3" title="variable">w</mi><mn>2</mn></msup></mrow><mo>−</mo><mrow><mn>3</mn><mo>⁢</mo><mi href="./1.1#t1.r3" title="variable">w</mi></mrow></mrow><mo>+</mo><mn>4</mn></mrow></mrow></math>. Resolvent cubic
+is <math class="ltx_Math" altimg="m130.png" altimg-height="23px" altimg-valign="-4px" altimg-width="221px" alttext="z^{3}+12z^{2}+20z+9=0" display="inline"><mrow><mrow><msup><mi href="./1.1#t1.r2" title="variable">z</mi><mn>3</mn></msup><mo>+</mo><mrow><mn>12</mn><mo>⁢</mo><msup><mi href="./1.1#t1.r2" title="variable">z</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mn>20</mn><mo>⁢</mo><mi href="./1.1#t1.r2" title="variable">z</mi></mrow><mo>+</mo><mn>9</mn></mrow><mo>=</mo><mn>0</mn></mrow></math> with roots <math class="ltx_Math" altimg="m80.png" altimg-height="21px" altimg-valign="-5px" altimg-width="78px" alttext="\theta_{1}=-1" display="inline"><mrow><msub><mi href="./1.11#E19" title="cubic roots">θ</mi><mn>1</mn></msub><mo>=</mo><mrow><mo>−</mo><mn>1</mn></mrow></mrow></math>, <math class="ltx_Math" altimg="m81.png" altimg-height="30px" altimg-valign="-9px" altimg-width="181px" alttext="\theta_{2}=-\tfrac{1}{2}(11+\sqrt{85})" display="inline"><mrow><msub><mi href="./1.11#E19" title="cubic roots">θ</mi><mn>2</mn></msub><mo>=</mo><mrow><mo>−</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>11</mn><mo>+</mo><msqrt><mn>85</mn></msqrt></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></math>, <math class="ltx_Math" altimg="m82.png" altimg-height="30px" altimg-valign="-9px" altimg-width="181px" alttext="\theta_{3}=-\tfrac{1}{2}(11-\sqrt{85})" display="inline"><mrow><msub><mi href="./1.11#E19" title="cubic roots">θ</mi><mn>3</mn></msub><mo>=</mo><mrow><mo>−</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>11</mn><mo>−</mo><msqrt><mn>85</mn></msqrt></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></math>, and
+<math class="ltx_Math" altimg="m74.png" altimg-height="26px" altimg-valign="-6px" altimg-width="95px" alttext="\sqrt{-\theta_{1}}=1" display="inline"><mrow><msqrt><mrow><mo>−</mo><msub><mi href="./1.11#E19" title="cubic roots">θ</mi><mn>1</mn></msub></mrow></msqrt><mo>=</mo><mn>1</mn></mrow></math>, <math class="ltx_Math" altimg="m75.png" altimg-height="30px" altimg-valign="-9px" altimg-width="205px" alttext="\sqrt{-\theta_{2}}=\tfrac{1}{2}(\sqrt{17}+\sqrt{5})" display="inline"><mrow><msqrt><mrow><mo>−</mo><msub><mi href="./1.11#E19" title="cubic roots">θ</mi><mn>2</mn></msub></mrow></msqrt><mo>=</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msqrt><mn>17</mn></msqrt><mo>+</mo><msqrt><mn>5</mn></msqrt></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></math>,
+<math class="ltx_Math" altimg="m76.png" altimg-height="30px" altimg-valign="-9px" altimg-width="205px" alttext="\sqrt{-\theta_{3}}=\tfrac{1}{2}(\sqrt{17}-\sqrt{5})" display="inline"><mrow><msqrt><mrow><mo>−</mo><msub><mi href="./1.11#E19" title="cubic roots">θ</mi><mn>3</mn></msub></mrow></msqrt><mo>=</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msqrt><mn>17</mn></msqrt><mo>−</mo><msqrt><mn>5</mn></msqrt></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></math>. So <math class="ltx_Math" altimg="m51.png" altimg-height="26px" altimg-valign="-5px" altimg-width="139px" alttext="2\alpha_{1}=1+\sqrt{17}" display="inline"><mrow><mrow><mn>2</mn><mo>⁢</mo><msub><mi>α</mi><mn>1</mn></msub></mrow><mo>=</mo><mrow><mn>1</mn><mo>+</mo><msqrt><mn>17</mn></msqrt></mrow></mrow></math>, <math class="ltx_Math" altimg="m52.png" altimg-height="26px" altimg-valign="-5px" altimg-width="139px" alttext="2\alpha_{2}=1-\sqrt{17}" display="inline"><mrow><mrow><mn>2</mn><mo>⁢</mo><msub><mi>α</mi><mn>2</mn></msub></mrow><mo>=</mo><mrow><mn>1</mn><mo>−</mo><msqrt><mn>17</mn></msqrt></mrow></mrow></math>, <math class="ltx_Math" altimg="m53.png" altimg-height="26px" altimg-valign="-5px" altimg-width="144px" alttext="2\alpha_{3}=-1+\sqrt{5}" display="inline"><mrow><mrow><mn>2</mn><mo>⁢</mo><msub><mi>α</mi><mn>3</mn></msub></mrow><mo>=</mo><mrow><mrow><mo>−</mo><mn>1</mn></mrow><mo>+</mo><msqrt><mn>5</mn></msqrt></mrow></mrow></math>, <math class="ltx_Math" altimg="m54.png" altimg-height="26px" altimg-valign="-5px" altimg-width="144px" alttext="2\alpha_{4}=-1-\sqrt{5}" display="inline"><mrow><mrow><mn>2</mn><mo>⁢</mo><msub><mi>α</mi><mn>4</mn></msub></mrow><mo>=</mo><mrow><mrow><mo>−</mo><mn>1</mn></mrow><mo>−</mo><msqrt><mn>5</mn></msqrt></mrow></mrow></math>, and the roots of <math class="ltx_Math" altimg="m95.png" altimg-height="25px" altimg-valign="-7px" altimg-width="81px" alttext="f(z)=0" display="inline"><mrow><mrow><mi>f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./1.1#t1.r2" title="variable">z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math> are <math class="ltx_Math" altimg="m78.png" altimg-height="30px" altimg-valign="-9px" altimg-width="107px" alttext="\tfrac{1}{2}(3\pm\sqrt{17})" display="inline"><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>3</mn><mo>±</mo><msqrt><mn>17</mn></msqrt></mrow><mo stretchy="false">)</mo></mrow></mrow></math>,
+<math class="ltx_Math" altimg="m77.png" altimg-height="30px" altimg-valign="-9px" altimg-width="97px" alttext="\tfrac{1}{2}(1\pm\sqrt{5})" display="inline"><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>±</mo><msqrt><mn>5</mn></msqrt></mrow><mo stretchy="false">)</mo></mrow></mrow></math>.</p>
+</div>
+</section>
+</section>
+<section id="iv" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§1.11(iv) </span>Roots of Unity and of Other Constants</h2>
+<div id="iv.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=constants">constants</a>, <a class="ltx_keyword" href="./search/search?q=roots%20of">roots of</a>, <a class="ltx_keyword" href="./search/search?q=roots%20of%20constants">roots of constants</a>, <a class="ltx_keyword" href="./search/search?q=roots%20of%20unity">roots of unity</a>, <a class="ltx_keyword" href="./search/search?q=unity">unity</a>, <a class="ltx_keyword" href="./search/search?q=zeros%20of%20polynomials">zeros of polynomials</a>
+</dd>
+<dt>Notes:</dt>
+<dd>See <cite class="ltx_cite ltx_citemacro_citet">Burnside and Panton (<a href="./bib/B#bib385" title="The Theory of Equations: With an Introduction to the Theory of Binary Algebraic Forms" class="ltx_ref">1960</a>, pp. 80–81)</cite>.</dd>
+<dt>Permalink:</dt>
+<dd><a href="./1.11.iv" title="" class="ltx_ref">http://dlmf.nist.gov/1.11.iv</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.11#info" title="§1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="iv.p1" class="ltx_para">
+<p class="ltx_p">The roots of</p>
+<table id="E21" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">1.11.21</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E21.png" altimg-height="29px" altimg-valign="-7px" altimg-width="441px" alttext="z^{n}-1=(z-1)(z^{n-1}+z^{n-2}+\dots+z+1)=0" display="block"><mrow><mrow><msup><mi href="./1.1#t1.r2" title="variable">z</mi><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></msup><mo>−</mo><mn>1</mn></mrow><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi href="./1.1#t1.r2" title="variable">z</mi><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi href="./1.1#t1.r2" title="variable">z</mi><mrow><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi><mo>−</mo><mn>1</mn></mrow></msup><mo>+</mo><msup><mi href="./1.1#t1.r2" title="variable">z</mi><mrow><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi><mo>−</mo><mn>2</mn></mrow></msup><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><mi href="./1.1#t1.r2" title="variable">z</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E21.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./1.1#t1.r2" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m129.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi href="./1.1#t1.r2" title="variable">z</mi></math>:  variable</a> and
+<a href="./1.1#t1.r5" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m118.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></math>:  nonnegative integer</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./1.3#Px7.p1" title="Circulant ‣ §1.3(ii) Special Determinants ‣ §1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.3(ii)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./1.11.E21" title="" class="ltx_ref">http://dlmf.nist.gov/1.11.E21</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./1.11.E21.tex">TeX</a>, <a href="./1.11.E21.pmml">pMML</a>, <a href="./1.11.E21.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.11#iv.info" title="§1.11(iv) Roots of Unity and of Other Constants ‣ §1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11(iv)</span></a>,
+<a href="./1.11#info" title="§1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">are <math class="ltx_Math" altimg="m47.png" altimg-height="17px" altimg-valign="-2px" altimg-width="15px" alttext="1" display="inline"><mn>1</mn></math>, <math class="ltx_Math" altimg="m134.png" altimg-height="23px" altimg-valign="-2px" altimg-width="57px" alttext="{\mathrm{e}}^{2\pi\mathrm{i}/n}" display="inline"><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mrow><mrow><mn>2</mn><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>⁢</mo><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></mrow><mo>/</mo><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></mrow></msup></math>, <math class="ltx_Math" altimg="m135.png" altimg-height="27px" altimg-valign="-6px" altimg-width="199px" alttext="{\mathrm{e}}^{4\pi\mathrm{i}/n},\dots,{\mathrm{e}}^{(2n-2)\pi\mathrm{i}/n}" display="inline"><mrow><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mrow><mrow><mn>4</mn><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>⁢</mo><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></mrow><mo>/</mo><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></mrow></msup><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></mrow><mo>−</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>⁢</mo><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></mrow><mo>/</mo><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></mrow></msup></mrow></math>, and of
+<math class="ltx_Math" altimg="m131.png" altimg-height="20px" altimg-valign="-4px" altimg-width="100px" alttext="z^{n}+1=0" display="inline"><mrow><mrow><msup><mi href="./1.1#t1.r2" title="variable">z</mi><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></msup><mo>+</mo><mn>1</mn></mrow><mo>=</mo><mn>0</mn></mrow></math> they are <math class="ltx_Math" altimg="m136.png" altimg-height="27px" altimg-valign="-6px" altimg-width="253px" alttext="{\mathrm{e}}^{\pi\mathrm{i}/n},{\mathrm{e}}^{3\pi\mathrm{i}/n},\dots,{\mathrm{%
+e}}^{(2n-1)\pi\mathrm{i}/n}" display="inline"><mrow><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mrow><mrow><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>⁢</mo><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></mrow><mo>/</mo><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></mrow></msup><mo>,</mo><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mrow><mrow><mn>3</mn><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>⁢</mo><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></mrow><mo>/</mo><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></mrow></msup><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></mrow><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>⁢</mo><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></mrow><mo>/</mo><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></mrow></msup></mrow></math>.</p>
+</div>
+<div id="iv.p2" class="ltx_para">
+<p class="ltx_p">The roots of</p>
+<table id="E22" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">1.11.22</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E22.png" altimg-height="25px" altimg-valign="-6px" altimg-width="113px" alttext="z^{n}=a+\mathrm{i}b," display="block"><mrow><mrow><msup><mi href="./1.1#t1.r2" title="variable">z</mi><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></msup><mo>=</mo><mrow><mi>a</mi><mo>+</mo><mrow><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi><mo>⁢</mo><mi>b</mi></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="4"><span class="ltx_constraint"><math class="ltx_Math" altimg="m84.png" altimg-height="22px" altimg-valign="-6px" altimg-width="33px" alttext="a,b" display="inline"><mrow><mi>a</mi><mo>,</mo><mi>b</mi></mrow></math> real,</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E22.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./1.9#E1" title="(1.9.1) ‣ §1.9(i) Complex Numbers ‣ §1.9 Calculus of a Complex Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m69.png" altimg-height="18px" altimg-valign="-2px" altimg-width="10px" alttext="\mathrm{i}" display="inline"><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></math>: imaginary unit</a>,
+<a href="./1.1#t1.r2" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m129.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi href="./1.1#t1.r2" title="variable">z</mi></math>:  variable</a> and
+<a href="./1.1#t1.r5" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m118.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></math>:  nonnegative integer</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./1.11.E22" title="" class="ltx_ref">http://dlmf.nist.gov/1.11.E22</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./1.11.E22.tex">TeX</a>, <a href="./1.11.E22.pmml">pMML</a>, <a href="./1.11.E22.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.11#iv.info" title="§1.11(iv) Roots of Unity and of Other Constants ‣ §1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11(iv)</span></a>,
+<a href="./1.11#info" title="§1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">are</p>
+<table id="E23" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">1.11.23</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E23.png" altimg-height="147px" altimg-valign="-22px" altimg-width="220px" alttext="\sqrt[n]{R}\left(\cos\left(\frac{\alpha+2k\pi}{n}\right)+\mathrm{i}\sin\left(%
+\frac{\alpha+2k\pi}{n}\right)\right)," display="block"><mrow><mrow><mroot><mi href="./1.11#iv.p2" title="radius">R</mi><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></mroot><mo>⁢</mo><mrow><mo>(</mo><mrow><mrow><mi href="./4.14#E2" title="cosine function">cos</mi><mo>⁡</mo><mrow><mo>(</mo><mfrac><mrow><mi>α</mi><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><mi href="./1.1#t1.r4" title="integer">k</mi><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></mrow></mrow><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></mfrac><mo>)</mo></mrow></mrow><mo>+</mo><mrow><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi><mo lspace="0.167em">⁢</mo><mrow><mi href="./4.14#E1" title="sine function">sin</mi><mo>⁡</mo><mrow><mo>(</mo><mfrac><mrow><mi>α</mi><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><mi href="./1.1#t1.r4" title="integer">k</mi><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></mrow></mrow><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></mfrac><mo>)</mo></mrow></mrow></mrow></mrow><mo>)</mo></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E23.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./3.12#E1" title="(3.12.1) ‣ §3.12 Mathematical Constants ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m71.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="\pi" display="inline"><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></math>: the ratio of the circumference of a circle to its diameter</a>,
+<a href="./4.14#E2" title="(4.14.2) ‣ §4.14 Definitions and Periodicity ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m66.png" altimg-height="13px" altimg-valign="-2px" altimg-width="46px" alttext="\cos\NVar{z}" display="inline"><mrow><mi href="./4.14#E2" title="cosine function">cos</mi><mo lspace="0.167em">⁡</mo><mi class="ltx_nvar" href="./4.1#t1.r4" title="complex variable">z</mi></mrow></math>: cosine function</a>,
+<a href="./1.9#E1" title="(1.9.1) ‣ §1.9(i) Complex Numbers ‣ §1.9 Calculus of a Complex Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m69.png" altimg-height="18px" altimg-valign="-2px" altimg-width="10px" alttext="\mathrm{i}" display="inline"><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></math>: imaginary unit</a>,
+<a href="./4.14#E1" title="(4.14.1) ‣ §4.14 Definitions and Periodicity ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m73.png" altimg-height="18px" altimg-valign="-2px" altimg-width="44px" alttext="\sin\NVar{z}" display="inline"><mrow><mi href="./4.14#E1" title="sine function">sin</mi><mo lspace="0.167em">⁡</mo><mi class="ltx_nvar" href="./4.1#t1.r4" title="complex variable">z</mi></mrow></math>: sine function</a>,
+<a href="./1.1#t1.r4" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m117.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./1.1#t1.r4" title="integer">k</mi></math>:  integer</a>,
+<a href="./1.1#t1.r5" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m118.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></math>:  nonnegative integer</a> and
+<a href="./1.11#iv.p2" title="§1.11(iv) Roots of Unity and of Other Constants ‣ §1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m63.png" altimg-height="18px" altimg-valign="-2px" altimg-width="20px" alttext="R" display="inline"><mi href="./1.11#iv.p2" title="radius">R</mi></math>:  radius</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./1.11.E23" title="" class="ltx_ref">http://dlmf.nist.gov/1.11.E23</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./1.11.E23.tex">TeX</a>, <a href="./1.11.E23.pmml">pMML</a>, <a href="./1.11.E23.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.11#iv.info" title="§1.11(iv) Roots of Unity and of Other Constants ‣ §1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11(iv)</span></a>,
+<a href="./1.11#info" title="§1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">where <math class="ltx_Math" altimg="m62.png" altimg-height="28px" altimg-valign="-7px" altimg-width="154px" alttext="R=(a^{2}+b^{2})^{1/2}" display="inline"><mrow><mi href="./1.11#iv.p2" title="radius">R</mi><mo>=</mo><msup><mrow><mo stretchy="false">(</mo><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msup></mrow></math>, <math class="ltx_Math" altimg="m64.png" altimg-height="25px" altimg-valign="-7px" altimg-width="139px" alttext="\alpha=\operatorname{ph}\left(a+\mathrm{i}b\right)" display="inline"><mrow><mi>α</mi><mo>=</mo><mrow><mi href="./1.9#E7" title="phase">ph</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi>a</mi><mo>+</mo><mrow><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi><mo>⁢</mo><mi>b</mi></mrow></mrow><mo>)</mo></mrow></mrow></mrow></math>, with the principal value
+of phase (§<a href="./1.9#i" title="§1.9(i) Complex Numbers ‣ §1.9 Calculus of a Complex Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.9(i)</span></a>), and <math class="ltx_Math" altimg="m113.png" altimg-height="22px" altimg-valign="-6px" altimg-width="168px" alttext="k=0,1,\dots,n-1" display="inline"><mrow><mi href="./1.1#t1.r4" title="integer">k</mi><mo>=</mo><mrow><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mrow><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi><mo>−</mo><mn>1</mn></mrow></mrow></mrow></math>.</p>
+</div>
+</section>
+<section id="v" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§1.11(v) </span>Stable Polynomials</h2>
+<div id="v.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=polynomials">polynomials</a>, <a class="ltx_keyword" href="./search/search?q=stable">stable</a>, <a class="ltx_keyword" href="./search/search?q=stable%20polynomials">stable polynomials</a>
+</dd>
+<dt>Notes:</dt>
+<dd>See <cite class="ltx_cite ltx_citemacro_citet">Henrici (<a href="./bib/H#bib1067" title="Applied and Computational Complex Analysis. Vol. 2: Special Functions—Integral Transforms—Asymptotics—Continued Fractions" class="ltx_ref">1977</a>, vol. 2, pp. 555–559)</cite>.</dd>
+<dt>Permalink:</dt>
+<dd><a href="./1.11.v" title="" class="ltx_ref">http://dlmf.nist.gov/1.11.v</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.11#info" title="§1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="v.p1" class="ltx_para">
+<table id="E24" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">1.11.24</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E24.png" altimg-height="27px" altimg-valign="-7px" altimg-width="275px" alttext="f(z)=a_{0}+a_{1}z+\dots+a_{n}z^{n}," display="block"><mrow><mrow><mrow><mi>f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./1.1#t1.r2" title="variable">z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msub><mi>a</mi><mn>0</mn></msub><mo>+</mo><mrow><msub><mi>a</mi><mn>1</mn></msub><mo>⁢</mo><mi href="./1.1#t1.r2" title="variable">z</mi></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><mrow><msub><mi>a</mi><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></msub><mo>⁢</mo><msup><mi href="./1.1#t1.r2" title="variable">z</mi><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></msup></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E24.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./1.1#t1.r2" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m129.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi href="./1.1#t1.r2" title="variable">z</mi></math>:  variable</a> and
+<a href="./1.1#t1.r5" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m118.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></math>:  nonnegative integer</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./1.11.E24" title="" class="ltx_ref">http://dlmf.nist.gov/1.11.E24</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./1.11.E24.tex">TeX</a>, <a href="./1.11.E24.pmml">pMML</a>, <a href="./1.11.E24.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.11#v.info" title="§1.11(v) Stable Polynomials ‣ §1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11(v)</span></a>,
+<a href="./1.11#info" title="§1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">with real coefficients, is called <em class="ltx_emph ltx_font_italic">stable</em> if the real parts of all the
+zeros are strictly negative.</p>
+</div>
+<section id="Px10" class="ltx_paragraph">
+<h3 class="ltx_title ltx_title_paragraph">Hurwitz Criterion</h3>
+<div id="Px10.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=Hurwitz%20criterion">Hurwitz criterion</a>, <a class="ltx_keyword" href="./search/search?q=Hurwitz%20criterion%20for%20stable%20polynomials">Hurwitz criterion for stable polynomials</a>, <a class="ltx_keyword" href="./search/search?q=stable%20polynomials">stable polynomials</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.11#v.info" title="§1.11(v) Stable Polynomials ‣ §1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11(v)</span></a>,
+<a href="./1.11#info" title="§1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="Px10.p1" class="ltx_para">
+<p class="ltx_p">Let
+</p>
+<table id="E25" class="ltx_equationgroup ltx_eqn_table">
+<tbody>
+<tr id="Ex20" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="3" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equationgroup ltx_align_left">1.11.25</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m29.png" altimg-height="23px" altimg-valign="-5px" altimg-width="33px" alttext="\displaystyle D_{1}" display="inline"><msub><mi href="./1.11#Px10.p1" title="quantities">D</mi><mn>1</mn></msub></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m19.png" altimg-height="19px" altimg-valign="-6px" altimg-width="55px" alttext="\displaystyle=a_{1}," display="inline"><mrow><mrow><mi></mi><mo>=</mo><msub><mi>a</mi><mn>1</mn></msub></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex21" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m30.png" altimg-height="23px" altimg-valign="-5px" altimg-width="33px" alttext="\displaystyle D_{2}" display="inline"><msub><mi href="./1.11#Px10.p1" title="quantities">D</mi><mn>2</mn></msub></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m15.png" altimg-height="62px" altimg-valign="-22px" altimg-width="119px" alttext="\displaystyle=\begin{vmatrix}a_{1}&amp;a_{3}\\
+a_{0}&amp;a_{2}\end{vmatrix}," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mo href="./1.2#Px11.p1" title="determinant">|</mo><mtable columnspacing="5pt" rowspacing="0pt"><mtr><mtd><msub><mi>a</mi><mn>1</mn></msub></mtd><mtd><msub><mi>a</mi><mn>3</mn></msub></mtd></mtr><mtr><mtd><msub><mi>a</mi><mn>0</mn></msub></mtd><mtd><msub><mi>a</mi><mn>2</mn></msub></mtd></mtr></mtable><mo href="./1.2#Px11.p1" title="determinant">|</mo></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex22" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m31.png" altimg-height="23px" altimg-valign="-5px" altimg-width="33px" alttext="\displaystyle D_{3}" display="inline"><msub><mi href="./1.11#Px10.p1" title="quantities">D</mi><mn>3</mn></msub></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m14.png" altimg-height="87px" altimg-valign="-34px" altimg-width="160px" alttext="\displaystyle=\begin{vmatrix}a_{1}&amp;a_{3}&amp;a_{5}\\
+a_{0}&amp;a_{2}&amp;a_{4}\\
+0&amp;a_{1}&amp;a_{3}\end{vmatrix}," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mo href="./1.2#Px11.p1" title="determinant">|</mo><mtable columnspacing="5pt" rowspacing="0pt"><mtr><mtd><msub><mi>a</mi><mn>1</mn></msub></mtd><mtd><msub><mi>a</mi><mn>3</mn></msub></mtd><mtd><msub><mi>a</mi><mn>5</mn></msub></mtd></mtr><mtr><mtd><msub><mi>a</mi><mn>0</mn></msub></mtd><mtd><msub><mi>a</mi><mn>2</mn></msub></mtd><mtd><msub><mi>a</mi><mn>4</mn></msub></mtd></mtr><mtr><mtd><mn>0</mn></mtd><mtd><msub><mi>a</mi><mn>1</mn></msub></mtd><mtd><msub><mi>a</mi><mn>3</mn></msub></mtd></mtr></mtable><mo href="./1.2#Px11.p1" title="determinant">|</mo></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E25.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./1.2#Px11.p1" title="The Determinant ‣ §1.2(vi) Square Matrices ‣ §1.2 Elementary Algebra ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m67.png" altimg-height="18px" altimg-valign="-2px" altimg-width="33px" alttext="\det" display="inline"><mo href="./1.2#E58" title="determinant">det</mo></math>: determinant</a> and
+<a href="./1.11#Px10.p1" title="Hurwitz Criterion ‣ §1.11(v) Stable Polynomials ‣ §1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m61.png" altimg-height="24px" altimg-valign="-8px" altimg-width="30px" alttext="D_{j}" display="inline"><msub><mi href="./1.11#Px10.p1" title="quantities">D</mi><mi href="./1.1#t1.r4" title="integer">j</mi></msub></math>:  quantities</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./1.11.E25" title="" class="ltx_ref">http://dlmf.nist.gov/1.11.E25</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./1.11.E25a.tex">TeX</a>, <a href="./1.11.E25b.tex">TeX</a>, <a href="./1.11.E25c.tex">TeX</a>, <a href="./1.11.E25a.pmml">pMML</a>, <a href="./1.11.E25b.pmml">pMML</a>, <a href="./1.11.E25c.pmml">pMML</a>, <a href="./1.11.E25a.png">png</a>, <a href="./1.11.E25b.png">png</a>, <a href="./1.11.E25c.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.11#Px10.info" title="Hurwitz Criterion ‣ §1.11(v) Stable Polynomials ‣ §1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11(v)</span></a>,
+<a href="./1.11#v.info" title="§1.11(v) Stable Polynomials ‣ §1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11(v)</span></a>,
+<a href="./1.11#info" title="§1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">and</p>
+<table id="E26" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">1.11.26</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E26.png" altimg-height="34px" altimg-valign="-8px" altimg-width="296px" alttext="D_{k}=\det[h_{k}^{(1)},h_{k}^{(3)},\dots,h_{k}^{(2k-1)}]," display="block"><mrow><mrow><msub><mi href="./1.11#Px10.p1" title="quantities">D</mi><mi href="./1.1#t1.r4" title="integer">k</mi></msub><mo rspace="0.1389em">=</mo><mrow><mo href="./1.2#E58" lspace="0.1389em" movablelimits="false" rspace="0em" title="determinant">det</mo><mrow><mo stretchy="false">[</mo><msubsup><mi>h</mi><mi href="./1.1#t1.r4" title="integer">k</mi><mrow><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></msubsup><mo>,</mo><msubsup><mi>h</mi><mi href="./1.1#t1.r4" title="integer">k</mi><mrow><mo stretchy="false">(</mo><mn>3</mn><mo stretchy="false">)</mo></mrow></msubsup><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msubsup><mi>h</mi><mi href="./1.1#t1.r4" title="integer">k</mi><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi href="./1.1#t1.r4" title="integer">k</mi></mrow><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></msubsup><mo stretchy="false">]</mo></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E26.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./1.2#Px11.p1" title="The Determinant ‣ §1.2(vi) Square Matrices ‣ §1.2 Elementary Algebra ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m67.png" altimg-height="18px" altimg-valign="-2px" altimg-width="33px" alttext="\det" display="inline"><mo href="./1.2#E58" title="determinant">det</mo></math>: determinant</a>,
+<a href="./1.1#t1.r4" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m117.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./1.1#t1.r4" title="integer">k</mi></math>:  integer</a> and
+<a href="./1.11#Px10.p1" title="Hurwitz Criterion ‣ §1.11(v) Stable Polynomials ‣ §1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m61.png" altimg-height="24px" altimg-valign="-8px" altimg-width="30px" alttext="D_{j}" display="inline"><msub><mi href="./1.11#Px10.p1" title="quantities">D</mi><mi href="./1.1#t1.r4" title="integer">j</mi></msub></math>:  quantities</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./1.11.E26" title="" class="ltx_ref">http://dlmf.nist.gov/1.11.E26</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./1.11.E26.tex">TeX</a>, <a href="./1.11.E26.pmml">pMML</a>, <a href="./1.11.E26.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.11#Px10.info" title="Hurwitz Criterion ‣ §1.11(v) Stable Polynomials ‣ §1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11(v)</span></a>,
+<a href="./1.11#v.info" title="§1.11(v) Stable Polynomials ‣ §1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11(v)</span></a>,
+<a href="./1.11#info" title="§1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.11</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">where the column vector <math class="ltx_Math" altimg="m108.png" altimg-height="32px" altimg-valign="-8px" altimg-width="45px" alttext="h_{k}^{(m)}" display="inline"><msubsup><mi>h</mi><mi href="./1.1#t1.r4" title="integer">k</mi><mrow><mo stretchy="false">(</mo><mi href="./1.1#t1.r5" title="nonnegative integer">m</mi><mo stretchy="false">)</mo></mrow></msubsup></math> consists of the first <math class="ltx_Math" altimg="m117.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./1.1#t1.r4" title="integer">k</mi></math> members of the
+sequence <math class="ltx_Math" altimg="m87.png" altimg-height="18px" altimg-valign="-7px" altimg-width="179px" alttext="a_{m},a_{m-1},a_{m-2},\dots" display="inline"><mrow><msub><mi>a</mi><mi href="./1.1#t1.r5" title="nonnegative integer">m</mi></msub><mo>,</mo><msub><mi>a</mi><mrow><mi href="./1.1#t1.r5" title="nonnegative integer">m</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>,</mo><msub><mi>a</mi><mrow><mi href="./1.1#t1.r5" title="nonnegative integer">m</mi><mo>−</mo><mn>2</mn></mrow></msub><mo>,</mo><mi mathvariant="normal">…</mi></mrow></math> with <math class="ltx_Math" altimg="m86.png" altimg-height="23px" altimg-valign="-8px" altimg-width="62px" alttext="a_{j}=0" display="inline"><mrow><msub><mi>a</mi><mi href="./1.1#t1.r4" title="integer">j</mi></msub><mo>=</mo><mn>0</mn></mrow></math> if <math class="ltx_Math" altimg="m109.png" altimg-height="22px" altimg-valign="-6px" altimg-width="52px" alttext="j&lt;0" display="inline"><mrow><mi href="./1.1#t1.r4" title="integer">j</mi><mo>&lt;</mo><mn>0</mn></mrow></math> or <math class="ltx_Math" altimg="m110.png" altimg-height="22px" altimg-valign="-6px" altimg-width="54px" alttext="j&gt;n" display="inline"><mrow><mi href="./1.1#t1.r4" title="integer">j</mi><mo>&gt;</mo><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></mrow></math>.</p>
+</div>
+<div id="Px10.p2" class="ltx_para">
+<p class="ltx_p">Then <math class="ltx_Math" altimg="m101.png" altimg-height="25px" altimg-valign="-7px" altimg-width="43px" alttext="f(z)" display="inline"><mrow><mi>f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./1.1#t1.r2" title="variable">z</mi><mo stretchy="false">)</mo></mrow></mrow></math>, with <math class="ltx_Math" altimg="m88.png" altimg-height="22px" altimg-valign="-6px" altimg-width="65px" alttext="a_{n}\not=0" display="inline"><mrow><msub><mi>a</mi><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></msub><mo>≠</mo><mn>0</mn></mrow></math>, is stable iff <math class="ltx_Math" altimg="m85.png" altimg-height="22px" altimg-valign="-6px" altimg-width="63px" alttext="a_{0}\not=0" display="inline"><mrow><msub><mi>a</mi><mn>0</mn></msub><mo>≠</mo><mn>0</mn></mrow></math>; <math class="ltx_Math" altimg="m60.png" altimg-height="21px" altimg-valign="-5px" altimg-width="78px" alttext="D_{2k}&gt;0" display="inline"><mrow><msub><mi href="./1.11#Px10.p1" title="quantities">D</mi><mrow><mn>2</mn><mo>⁢</mo><mi href="./1.1#t1.r4" title="integer">k</mi></mrow></msub><mo>&gt;</mo><mn>0</mn></mrow></math>,
+<math class="ltx_Math" altimg="m114.png" altimg-height="29px" altimg-valign="-9px" altimg-width="145px" alttext="k=1,\dots,\left\lfloor\frac{1}{2}n\right\rfloor" display="inline"><mrow><mi href="./1.1#t1.r4" title="integer">k</mi><mo>=</mo><mrow><mn>1</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mrow><mo href="./front/introduction#common.t1.r17" title="floor of 𝑥">⌊</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></mrow><mo href="./front/introduction#common.t1.r17" title="floor of 𝑥">⌋</mo></mrow></mrow></mrow></math>; <math class="ltx_Math" altimg="m70.png" altimg-height="23px" altimg-valign="-7px" altimg-width="188px" alttext="\operatorname{sign}D_{2k+1}=\operatorname{sign}a_{0}" display="inline"><mrow><mrow><mi href="./front/introduction#common.t2.r18" title="sign of">sign</mi><mo lspace="0.167em">⁡</mo><msub><mi href="./1.11#Px10.p1" title="quantities">D</mi><mrow><mrow><mn>2</mn><mo>⁢</mo><mi href="./1.1#t1.r4" title="integer">k</mi></mrow><mo>+</mo><mn>1</mn></mrow></msub></mrow><mo>=</mo><mrow><mi href="./front/introduction#common.t2.r18" title="sign of">sign</mi><mo lspace="0.167em">⁡</mo><msub><mi>a</mi><mn>0</mn></msub></mrow></mrow></math>,
+<math class="ltx_Math" altimg="m112.png" altimg-height="29px" altimg-valign="-9px" altimg-width="203px" alttext="k=0,1,\dots,\left\lfloor\frac{1}{2}n-\frac{1}{2}\right\rfloor" display="inline"><mrow><mi href="./1.1#t1.r4" title="integer">k</mi><mo>=</mo><mrow><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mrow><mo href="./front/introduction#common.t1.r17" title="floor of 𝑥">⌊</mo><mrow><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></mrow><mo>−</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow><mo href="./front/introduction#common.t1.r17" title="floor of 𝑥">⌋</mo></mrow></mrow></mrow></math>.</p>
+</div>
+</section>
+</section>
+</section>
+</div>
+<div class="ltx_page_footer">
+<div class="ltx_siblings">
+<a href="./1.10" title="In Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.10 </span>Functions of a Complex Variable</span></a><a href="./1.12" title="In Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.12 </span>Continued Fractions</span></a>
+</div>
+<div class="ltx_footer_links ltx_centering">
+<a href="./about/notices">© 2010–2026 NIST</a> / <a href="./about/notices#S2">Disclaimer</a> / <a href="/cdn-cgi/l/email-protection#6c2820212a410a0909080e0d0f072c02051f18420b031a">Feedback</a>;
+ Version 1.2.7;
+Release date 2026-06-15.</div>
+<span id="pagesettings"></span>
+<div class="ltx_nist_logo"><a href="http://www.nist.gov/"><img src="./style/nistidc.png" width="500" alt="NIST"></a></div>
+<div class="ltx_nist_links ltx_align_right">
+<a href="https://www.nist.gov/privacy-policy">Site Privacy</a> <a href="https://www.nist.gov/oism/accessibility">Accessibility</a> <a href="https://www.nist.gov/privacy">Privacy Program</a> <a href="https://www.nist.gov/oism/copyrights">Copyrights</a> <a href="https://www.commerce.gov/vulnerability-disclosure-policy">Vulnerability Disclosure</a> <a href="https://www.nist.gov/no-fear-act-policy">No Fear Act Policy</a> <a href="https://www.nist.gov/foia">FOIA</a> <a href="https://www.nist.gov/environmental-policy-statement">Environmental Policy</a> <a href="https://www.nist.gov/summary-report-scientific-integrity">Scientific Integrity</a> <a href="https://www.nist.gov/nist-information-quality-standards">Information Quality Standards</a> <a href="https://www.commerce.gov/">Commerce.gov</a> <a href="http://www.science.gov/">Science.gov</a> <a href="http://www.usa.gov/">USA.gov</a>
+</div>
+</div>
+</div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a3152a5b0e027a38',t:'MTc4Nzc3MTcyOQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

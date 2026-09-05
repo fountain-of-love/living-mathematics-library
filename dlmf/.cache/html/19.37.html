@@ -1,0 +1,494 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>DLMF: §19.37 Tables ‣ Computation ‣ Chapter 19 Elliptic Integrals</title>
+<link rel="shortcut icon" href="./style/DLMF-16.png" type="image/png">
+<script type="text/javascript"><!--
+	var PATH="DLMF:/19.37";
+	var ROOT="./";
+      //--></script>
+<script type="text/javascript" src="./style/jquery.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/jquery.leaveNotice.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/DLMF.js"><!-- non-empty so ie6 will accept it --></script>
+<script async="" type="text/javascript" id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC&amp;subagency=NIST&amp;pua=UA-37115410-44&amp;yt=true&amp;exts=ppsx,pps,f90,sch,rtf,wrl,txz,m1v,xlsm,msi,xsd,f,tif,eps,mpg,xml,pl,xlt,c"><!-- non-empty so ie6 will accept it --></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-BZB64W4M0L"></script><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-BZB64W4M0L');
+      </script>
+<link rel="stylesheet" type="text/css" href="./style/LaTeXML.css">
+<link rel="stylesheet" type="text/css" href="./style/DLMF.css">
+<link rel="stylesheet" type="text/css" href="./style/print.css" media="print">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="top" href="./" title="DLMF">
+<link rel="copyright" href="./about/notices" title="Copyright">
+<link rel="search" href="./search/search" title="Search">
+<link rel="help" class="ltx_help" href="./help/" title="Help">
+<link rel="up" href="./19#PT5" title="Computation ‣ Chapter 19 Elliptic Integrals">
+<link rel="up up" href="./19" title="Chapter 19 Elliptic Integrals">
+<link rel="start" href="./" title="">
+<link rel="prev" href="./19.36" title="§19.36 Methods of Computation ‣ Computation ‣ Chapter 19 Elliptic Integrals">
+<link rel="next" href="./19.38" title="§19.38 Approximations ‣ Computation ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.1" title="§19.1 Special Notation ‣ Notation ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.2" title="§19.2 Definitions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.3" title="§19.3 Graphics ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.4" title="§19.4 Derivatives and Differential Equations ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.5" title="§19.5 Maclaurin and Related Expansions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.6" title="§19.6 Special Cases ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.7" title="§19.7 Connection Formulas ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.8" title="§19.8 Quadratic Transformations ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.9" title="§19.9 Inequalities ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.10" title="§19.10 Relations to Other Functions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.11" title="§19.11 Addition Theorems ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.12" title="§19.12 Asymptotic Approximations ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.13" title="§19.13 Integrals of Elliptic Integrals ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.14" title="§19.14 Reduction of General Elliptic Integrals ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.15" title="§19.15 Advantages of Symmetry ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.16" title="§19.16 Definitions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.17" title="§19.17 Graphics ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.18" title="§19.18 Derivatives and Differential Equations ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.19" title="§19.19 Taylor and Related Series ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.20" title="§19.20 Special Cases ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.21" title="§19.21 Connection Formulas ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.22" title="§19.22 Quadratic Transformations ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.23" title="§19.23 Integral Representations ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.24" title="§19.24 Inequalities ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.25" title="§19.25 Relations to Other Functions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.26" title="§19.26 Addition Theorems ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.27" title="§19.27 Asymptotic Approximations and Expansions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.28" title="§19.28 Integrals of Elliptic Integrals ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.29" title="§19.29 Reduction of General Elliptic Integrals ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.30" title="§19.30 Lengths of Plane Curves ‣ Applications ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.31" title="§19.31 Probability Distributions ‣ Applications ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.32" title="§19.32 Conformal Map onto a Rectangle ‣ Applications ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.33" title="§19.33 Triaxial Ellipsoids ‣ Applications ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.34" title="§19.34 Mutual Inductance of Coaxial Circles ‣ Applications ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.35" title="§19.35 Other Applications ‣ Applications ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.36" title="§19.36 Methods of Computation ‣ Computation ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.38" title="§19.38 Approximations ‣ Computation ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.39" title="§19.39 Software ‣ Computation ‣ Chapter 19 Elliptic Integrals">
+<link rel="document" href="./front/foreword" title="Foreword">
+<link rel="document" href="./front/preface" title="Preface">
+<link rel="document" href="./front/introduction" title="Mathematical Introduction">
+<link rel="chapter" href="./1" title="Chapter 1 Algebraic and Analytic Methods">
+<link rel="chapter" href="./2" title="Chapter 2 Asymptotic Approximations">
+<link rel="chapter" href="./3" title="Chapter 3 Numerical Methods">
+<link rel="chapter" href="./4" title="Chapter 4 Elementary Functions">
+<link rel="chapter" href="./5" title="Chapter 5 Gamma Function">
+<link rel="chapter" href="./6" title="Chapter 6 Exponential, Logarithmic, Sine, and Cosine Integrals">
+<link rel="chapter" href="./7" title="Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="chapter" href="./8" title="Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="chapter" href="./9" title="Chapter 9 Airy and Related Functions">
+<link rel="chapter" href="./10" title="Chapter 10 Bessel Functions">
+<link rel="chapter" href="./11" title="Chapter 11 Struve and Related Functions">
+<link rel="chapter" href="./12" title="Chapter 12 Parabolic Cylinder Functions">
+<link rel="chapter" href="./13" title="Chapter 13 Confluent Hypergeometric Functions">
+<link rel="chapter" href="./14" title="Chapter 14 Legendre and Related Functions">
+<link rel="chapter" href="./15" title="Chapter 15 Hypergeometric Function">
+<link rel="chapter" href="./16" title="Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="chapter" href="./17" title="Chapter 17 𝑞-Hypergeometric and Related Functions">
+<link rel="chapter" href="./18" title="Chapter 18 Orthogonal Polynomials">
+<link rel="chapter" href="./19" title="Chapter 19 Elliptic Integrals">
+<link rel="chapter" href="./20" title="Chapter 20 Theta Functions">
+<link rel="chapter" href="./21" title="Chapter 21 Multidimensional Theta Functions">
+<link rel="chapter" href="./22" title="Chapter 22 Jacobian Elliptic Functions">
+<link rel="chapter" href="./23" title="Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="chapter" href="./24" title="Chapter 24 Bernoulli and Euler Polynomials">
+<link rel="chapter" href="./25" title="Chapter 25 Zeta and Related Functions">
+<link rel="chapter" href="./26" title="Chapter 26 Combinatorial Analysis">
+<link rel="chapter" href="./27" title="Chapter 27 Functions of Number Theory">
+<link rel="chapter" href="./28" title="Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="chapter" href="./29" title="Chapter 29 Lamé Functions">
+<link rel="chapter" href="./30" title="Chapter 30 Spheroidal Wave Functions">
+<link rel="chapter" href="./31" title="Chapter 31 Heun Functions">
+<link rel="chapter" href="./32" title="Chapter 32 Painlevé Transcendents">
+<link rel="chapter" href="./33" title="Chapter 33 Coulomb Functions">
+<link rel="chapter" href="./34" title="Chapter 34 3⁢𝑗,6⁢𝑗,9⁢𝑗 Symbols">
+<link rel="chapter" href="./35" title="Chapter 35 Functions of Matrix Argument">
+<link rel="chapter" href="./36" title="Chapter 36 Integrals with Coalescing Saddles">
+<link rel="bibliography" href="./bib/" title="Bibliography">
+<link rel="index" href="./idx/" title="Index">
+<link rel="glossary" href="./not/" title="Notations">
+<link rel="document" href="./lof/" title="List of Figures">
+<link rel="document" href="./lot/" title="List of Tables">
+<link rel="document" href="./software/" title="Software Index">
+<link rel="document" href="./errata/" title="Errata">
+<link rel="document" href="./help/" title="Need Help?">
+<link rel="document" href="./search/" title="Advanced Search">
+<link rel="document" href="./about/" title="About the Project">
+<meta name="keywords" lang="en" content="Legendre’s elliptic integrals, symmetric elliptic integrals, tables">
+</head>
+<body class="color_default textfont_default titlefont_default fontsize_default navbar_default">
+<div class="ltx_page_navbar">
+<div class="ltx_page_navlogo"><a href="./" title="Digital Library of Mathematical Functions"><span>DLMF</span></a></div>
+<div class="ltx_page_navitems">
+<form method="get" action="./search/search">
+<ul>
+<li><a href="./idx/">Index</a></li>
+<li><a href="./not/">Notations</a></li>
+<li><small><input type="text" name="q" value="" size="6" class="ltx_page_navitem_search"><button type="submit">Search</button></small></li>
+<li><a href="./help/" class="ltx_help">Help?</a></li>
+<li><a href="./help/cite">Citing</a></li>
+<li><a href="./help/customize" class="ltx_customize">Customize</a></li>
+<li id="showinfo"><a href="" onclick="showInfo(); return false;" title="Show Annotations">Annotate</a></li>
+<li id="hideinfo"><a href="" onclick="hideInfo(); return false;">UnAnnotate</a></li>
+</ul>
+</form>
+</div>
+<div class="ltx_page_navsponsors">
+<div><a href="./about/" class="ltx_page_navabout">About the Project</a></div>
+</div>
+</div>
+<div class="ltx_page_main">
+<div class="ltx_page_header">
+<a href="./19" title="" class="ltx_ref" rel="up up"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">19 </span>Elliptic Integrals</span></a><a href="./19#PT5" title="In Chapter 19 Elliptic Integrals" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title">Computation</span></a><a href="./19.36" title="In Computation ‣ Chapter 19 Elliptic Integrals" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">19.36 </span>Methods of Computation</span></a><a href="./19.38" title="In Computation ‣ Chapter 19 Elliptic Integrals" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">19.38 </span>Approximations</span></a>
+</div>
+<div class="ltx_page_content">
+<section class="ltx_section ltx_authors_multiline ltx_leqno">
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">§19.37 </span>Tables</h1>
+<div id="info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=Legendre%20elliptic%20integrals">Legendre’s elliptic integrals</a>, <a class="ltx_keyword" href="./search/search?q=tables">tables</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./19.37" title="" class="ltx_ref">http://dlmf.nist.gov/19.37</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<h6>Contents</h6>
+<ol class="ltx_toclist ltx_toclist_section">
+<li class="ltx_tocentry"><a href="#i"><span class="ltx_tag ltx_tag_subsection">§19.37(i) </span>Introduction</a></li>
+<li class="ltx_tocentry"><a href="#ii"><span class="ltx_tag ltx_tag_subsection">§19.37(ii) </span>Legendre’s Complete Integrals</a></li>
+<li class="ltx_tocentry"><a href="#iii"><span class="ltx_tag ltx_tag_subsection">§19.37(iii) </span>Legendre’s Incomplete Integrals</a></li>
+<li class="ltx_tocentry"><a href="#iv"><span class="ltx_tag ltx_tag_subsection">§19.37(iv) </span>Symmetric Integrals</a></li>
+</ol>
+<section id="i" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§19.37(i) </span>Introduction</h2>
+<div id="i.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Permalink:</dt>
+<dd><a href="./19.37.i" title="" class="ltx_ref">http://dlmf.nist.gov/19.37.i</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19.37#info" title="§19.37 Tables ‣ Computation ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.37</span></a> and
+<a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="i.p1" class="ltx_para">
+<p class="ltx_p">Only tables published since 1960 are included. For earlier tables see
+<cite class="ltx_cite ltx_citemacro_citet">Fletcher (<a href="./bib/F#bib809" title="Guide to tables of elliptic functions" class="ltx_ref">1948</a>)</cite>, <cite class="ltx_cite ltx_citemacro_citet">Lebedev and Fedorova (<a href="./bib/L#bib1392" title="A Guide to Mathematical Tables" class="ltx_ref">1960</a>)</cite>, and
+<cite class="ltx_cite ltx_citemacro_citet">Fletcher<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/F#bib810" title="An Index of Mathematical Tables. Vols. I, II" class="ltx_ref">1962</a>)</cite>.</p>
+</div>
+</section>
+<section id="ii" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§19.37(ii) </span>Legendre’s Complete Integrals</h2>
+<div id="ii.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Permalink:</dt>
+<dd><a href="./19.37.ii" title="" class="ltx_ref">http://dlmf.nist.gov/19.37.ii</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19.37#info" title="§19.37 Tables ‣ Computation ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.37</span></a> and
+<a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<section id="Px1" class="ltx_paragraph">
+<h3 class="ltx_title ltx_title_paragraph">Functions <math class="ltx_Math" altimg="m5.png" altimg-height="25px" altimg-valign="-7px" altimg-width="54px" alttext="K\left(k\right)" display="inline"><mrow><mi href="./19.2#E8" title="Legendre’s complete elliptic integral of the first kind">K</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mo>)</mo></mrow></mrow></math> and <math class="ltx_Math" altimg="m3.png" altimg-height="25px" altimg-valign="-7px" altimg-width="52px" alttext="E\left(k\right)" display="inline"><mrow><mi href="./19.2#E8" title="Legendre’s complete elliptic integral of the second kind">E</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mo>)</mo></mrow></mrow></math>
+</h3>
+<div id="Px1.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19.37#ii.info" title="§19.37(ii) Legendre’s Complete Integrals ‣ §19.37 Tables ‣ Computation ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.37(ii)</span></a>,
+<a href="./19.37#info" title="§19.37 Tables ‣ Computation ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.37</span></a> and
+<a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="Px1.p1" class="ltx_para">
+<p class="ltx_p">Tabulated for <math class="ltx_Math" altimg="m37.png" altimg-height="26px" altimg-valign="-7px" altimg-width="116px" alttext="k^{2}=0(.01)1" display="inline"><mrow><msup><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mn>2</mn></msup><mo>=</mo><mrow><mn>0</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>.01</mn><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mn>1</mn></mrow></mrow></math> to 6D by <cite class="ltx_cite ltx_citemacro_citet">Byrd and Friedman (<a href="./bib/B#bib400" title="Handbook of Elliptic Integrals for Engineers and Scientists" class="ltx_ref">1971</a>)</cite>, to 15D for
+<math class="ltx_Math" altimg="m5.png" altimg-height="25px" altimg-valign="-7px" altimg-width="54px" alttext="K\left(k\right)" display="inline"><mrow><mi href="./19.2#E8" title="Legendre’s complete elliptic integral of the first kind">K</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mo>)</mo></mrow></mrow></math> and 9D for <math class="ltx_Math" altimg="m3.png" altimg-height="25px" altimg-valign="-7px" altimg-width="52px" alttext="E\left(k\right)" display="inline"><mrow><mi href="./19.2#E8" title="Legendre’s complete elliptic integral of the second kind">E</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mo>)</mo></mrow></mrow></math> by
+<cite class="ltx_cite ltx_citemacro_citet">Abramowitz and Stegun (<a href="./bib/#bib24" title="Handbook of Mathematical Functions with Formulas, Graphs, and Mathematical Tables" class="ltx_ref">1964</a>, Chapter 17)</cite>, and to 10D by <cite class="ltx_cite ltx_citemacro_citet">Fettis and Caslin (<a href="./bib/F#bib786" title="Tables of Elliptic Integrals of the First, Second, and Third Kind" class="ltx_ref">1964</a>)</cite>.</p>
+</div>
+<div id="Px1.p2" class="ltx_para">
+<p class="ltx_p">Tabulated for <math class="ltx_Math" altimg="m33.png" altimg-height="25px" altimg-valign="-7px" altimg-width="107px" alttext="k=0(.01)1" display="inline"><mrow><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mo>=</mo><mrow><mn>0</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>.01</mn><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mn>1</mn></mrow></mrow></math> to 10D by <cite class="ltx_cite ltx_citemacro_citet">Fettis and Caslin (<a href="./bib/F#bib786" title="Tables of Elliptic Integrals of the First, Second, and Third Kind" class="ltx_ref">1964</a>)</cite>, and for
+<math class="ltx_Math" altimg="m34.png" altimg-height="25px" altimg-valign="-7px" altimg-width="107px" alttext="k=0(.02)1" display="inline"><mrow><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mo>=</mo><mrow><mn>0</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>.02</mn><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mn>1</mn></mrow></mrow></math> to 7D by <cite class="ltx_cite ltx_citemacro_citet">Zhang and Jin (<a href="./bib/Z#bib2493" title="Computation of Special Functions" class="ltx_ref">1996</a>, p. 673)</cite>.</p>
+</div>
+<div id="Px1.p3" class="ltx_para">
+<p class="ltx_p">Tabulated for <math class="ltx_Math" altimg="m19.png" altimg-height="25px" altimg-valign="-7px" altimg-width="177px" alttext="\operatorname{arcsin}k=0(1^{\circ})90^{\circ}" display="inline"><mrow><mrow><mi href="./4.23#ii.p1" title="arcsine function">arcsin</mi><mo lspace="0.167em">⁡</mo><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi></mrow><mo>=</mo><mrow><mn>0</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mn>1</mn><mo>∘</mo></msup><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mn>90</mn><mo>∘</mo></msup></mrow></mrow></math> to 6D by
+<cite class="ltx_cite ltx_citemacro_citet">Byrd and Friedman (<a href="./bib/B#bib400" title="Handbook of Elliptic Integrals for Engineers and Scientists" class="ltx_ref">1971</a>)</cite> and to 15D by <cite class="ltx_cite ltx_citemacro_citet">Abramowitz and Stegun (<a href="./bib/#bib24" title="Handbook of Mathematical Functions with Formulas, Graphs, and Mathematical Tables" class="ltx_ref">1964</a>, Chapter 17)</cite>.</p>
+</div>
+</section>
+<section id="Px2" class="ltx_paragraph">
+<h3 class="ltx_title ltx_title_paragraph">Functions <math class="ltx_Math" altimg="m5.png" altimg-height="25px" altimg-valign="-7px" altimg-width="54px" alttext="K\left(k\right)" display="inline"><mrow><mi href="./19.2#E8" title="Legendre’s complete elliptic integral of the first kind">K</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mo>)</mo></mrow></mrow></math>, <math class="ltx_Math" altimg="m41.png" altimg-height="25px" altimg-valign="-7px" altimg-width="60px" alttext="{K^{\prime}}\left(k\right)" display="inline"><mrow><msup><mi href="./19.2#E8_1" title="Legendre’s complementary complete elliptic integral of the first kind">K</mi><mo href="./19.2#E8_1" title="Legendre’s complementary complete elliptic integral of the first kind">′</mo></msup><mo>⁡</mo><mrow><mo>(</mo><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mo>)</mo></mrow></mrow></math>, and
+<math class="ltx_Math" altimg="m32.png" altimg-height="25px" altimg-valign="-7px" altimg-width="131px" alttext="i{K^{\prime}}\left(k\right)/K\left(k\right)" display="inline"><mrow><mrow><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi><mo>⁢</mo><mrow><msup><mi href="./19.2#E8_1" title="Legendre’s complementary complete elliptic integral of the first kind">K</mi><mo href="./19.2#E8_1" title="Legendre’s complementary complete elliptic integral of the first kind">′</mo></msup><mo>⁡</mo><mrow><mo>(</mo><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mo>)</mo></mrow></mrow></mrow><mo>/</mo><mrow><mi href="./19.2#E8" title="Legendre’s complete elliptic integral of the first kind">K</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mo>)</mo></mrow></mrow></mrow></math>
+</h3>
+<div id="Px2.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19.37#ii.info" title="§19.37(ii) Legendre’s Complete Integrals ‣ §19.37 Tables ‣ Computation ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.37(ii)</span></a>,
+<a href="./19.37#info" title="§19.37 Tables ‣ Computation ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.37</span></a> and
+<a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="Px2.p1" class="ltx_para">
+<p class="ltx_p">Tabulated with <math class="ltx_Math" altimg="m35.png" altimg-height="22px" altimg-valign="-2px" altimg-width="84px" alttext="k=R{\mathrm{e}}^{i\theta}" display="inline"><mrow><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mo>=</mo><mrow><mi>R</mi><mo>⁢</mo><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mrow><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi><mo>⁢</mo><mi>θ</mi></mrow></msup></mrow></mrow></math> for <math class="ltx_Math" altimg="m6.png" altimg-height="25px" altimg-valign="-7px" altimg-width="111px" alttext="R=0(.01)1" display="inline"><mrow><mi>R</mi><mo>=</mo><mrow><mn>0</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>.01</mn><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mn>1</mn></mrow></mrow></math> and
+<math class="ltx_Math" altimg="m29.png" altimg-height="25px" altimg-valign="-7px" altimg-width="119px" alttext="\theta=0(1^{\circ})90^{\circ}" display="inline"><mrow><mi>θ</mi><mo>=</mo><mrow><mn>0</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mn>1</mn><mo>∘</mo></msup><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mn>90</mn><mo>∘</mo></msup></mrow></mrow></math> to 11D by <cite class="ltx_cite ltx_citemacro_citet">Fettis and Caslin (<a href="./bib/F#bib787" title="A Table of the Complete Elliptic Integral of the First Kind for Complex Values of the Modulus. Part I" class="ltx_ref">1969</a>)</cite>.</p>
+</div>
+</section>
+<section id="Px3" class="ltx_paragraph">
+<h3 class="ltx_title ltx_title_paragraph">Function <math class="ltx_Math" altimg="m17.png" altimg-height="25px" altimg-valign="-7px" altimg-width="283px" alttext="\exp\left(-\pi{K^{\prime}}\left(k\right)/K\left(k\right)\right)(=q(k))" display="inline"><mrow><mrow><mi href="./4.2#E19" title="exponential function">exp</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mo>−</mo><mrow><mrow><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>⁢</mo><mrow><msup><mi href="./19.2#E8_1" title="Legendre’s complementary complete elliptic integral of the first kind">K</mi><mo href="./19.2#E8_1" title="Legendre’s complementary complete elliptic integral of the first kind">′</mo></msup><mo>⁡</mo><mrow><mo>(</mo><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mo>)</mo></mrow></mrow></mrow><mo>/</mo><mrow><mi href="./19.2#E8" title="Legendre’s complete elliptic integral of the first kind">K</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mo>)</mo></mrow></mrow></mrow></mrow><mo>)</mo></mrow></mrow><mspace style="width:0.3888888888888889em;" width="0.3888888888888889em"></mspace><mrow><mo stretchy="false">(</mo><mrow><mi></mi><mo>=</mo><mrow><mi>q</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></math>
+</h3>
+<div id="Px3.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19.37#ii.info" title="§19.37(ii) Legendre’s Complete Integrals ‣ §19.37 Tables ‣ Computation ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.37(ii)</span></a>,
+<a href="./19.37#info" title="§19.37 Tables ‣ Computation ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.37</span></a> and
+<a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="Px3.p1" class="ltx_para">
+<p class="ltx_p">Tabulated for <math class="ltx_Math" altimg="m37.png" altimg-height="26px" altimg-valign="-7px" altimg-width="116px" alttext="k^{2}=0(.01)1" display="inline"><mrow><msup><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mn>2</mn></msup><mo>=</mo><mrow><mn>0</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>.01</mn><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mn>1</mn></mrow></mrow></math> to 6D by <cite class="ltx_cite ltx_citemacro_citet">Byrd and Friedman (<a href="./bib/B#bib400" title="Handbook of Elliptic Integrals for Engineers and Scientists" class="ltx_ref">1971</a>)</cite> and to 15D by
+<cite class="ltx_cite ltx_citemacro_citet">Abramowitz and Stegun (<a href="./bib/#bib24" title="Handbook of Mathematical Functions with Formulas, Graphs, and Mathematical Tables" class="ltx_ref">1964</a>, Chapter 17)</cite>.</p>
+</div>
+<div id="Px3.p2" class="ltx_para">
+<p class="ltx_p">Tabulated for <math class="ltx_Math" altimg="m19.png" altimg-height="25px" altimg-valign="-7px" altimg-width="177px" alttext="\operatorname{arcsin}k=0(1^{\circ})90^{\circ}" display="inline"><mrow><mrow><mi href="./4.23#ii.p1" title="arcsine function">arcsin</mi><mo lspace="0.167em">⁡</mo><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi></mrow><mo>=</mo><mrow><mn>0</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mn>1</mn><mo>∘</mo></msup><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mn>90</mn><mo>∘</mo></msup></mrow></mrow></math> to 6D by
+<cite class="ltx_cite ltx_citemacro_citet">Byrd and Friedman (<a href="./bib/B#bib400" title="Handbook of Elliptic Integrals for Engineers and Scientists" class="ltx_ref">1971</a>)</cite> and to 15D by <cite class="ltx_cite ltx_citemacro_citet">Abramowitz and Stegun (<a href="./bib/#bib24" title="Handbook of Mathematical Functions with Formulas, Graphs, and Mathematical Tables" class="ltx_ref">1964</a>, Chapter 17)</cite>.</p>
+</div>
+<div id="Px3.p3" class="ltx_para">
+<p class="ltx_p">Tabulated for <math class="ltx_Math" altimg="m36.png" altimg-height="26px" altimg-valign="-7px" altimg-width="127px" alttext="k^{2}=0(.001)1" display="inline"><mrow><msup><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mn>2</mn></msup><mo>=</mo><mrow><mn>0</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>.001</mn><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mn>1</mn></mrow></mrow></math> to 8D by <cite class="ltx_cite ltx_citemacro_citet">Beli͡akov<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/B#bib229" title="Tablit͡sy Elliptic͡heskik͡h Integralov. Tom I" class="ltx_ref">1962</a>)</cite>.</p>
+</div>
+</section>
+</section>
+<section id="iii" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§19.37(iii) </span>Legendre’s Incomplete Integrals</h2>
+<div id="iii.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Referenced by:</dt>
+<dd><a href="./19.36#Px2.p5" title="Example ‣ §19.36(ii) Quadratic Transformations ‣ §19.36 Methods of Computation ‣ Computation ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.36(ii)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./19.37.iii" title="" class="ltx_ref">http://dlmf.nist.gov/19.37.iii</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19.37#info" title="§19.37 Tables ‣ Computation ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.37</span></a> and
+<a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<section id="Px4" class="ltx_paragraph">
+<h3 class="ltx_title ltx_title_paragraph">Functions <math class="ltx_Math" altimg="m4.png" altimg-height="25px" altimg-valign="-7px" altimg-width="73px" alttext="F\left(\phi,k\right)" display="inline"><mrow><mi href="./19.2#E4" title="Legendre’s incomplete elliptic integral of the first kind">F</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./19.1#p1.t1.r2" title="real or complex argument">ϕ</mi><mo>,</mo><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mo>)</mo></mrow></mrow></math> and <math class="ltx_Math" altimg="m2.png" altimg-height="25px" altimg-valign="-7px" altimg-width="73px" alttext="E\left(\phi,k\right)" display="inline"><mrow><mi href="./19.2#E5" title="Legendre’s incomplete elliptic integral of the second kind">E</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./19.1#p1.t1.r2" title="real or complex argument">ϕ</mi><mo>,</mo><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mo>)</mo></mrow></mrow></math>
+</h3>
+<div id="Px4.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19.37#iii.info" title="§19.37(iii) Legendre’s Incomplete Integrals ‣ §19.37 Tables ‣ Computation ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.37(iii)</span></a>,
+<a href="./19.37#info" title="§19.37 Tables ‣ Computation ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.37</span></a> and
+<a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="Px4.p1" class="ltx_para">
+<p class="ltx_p">Tabulated for <math class="ltx_Math" altimg="m25.png" altimg-height="25px" altimg-valign="-7px" altimg-width="121px" alttext="\phi=0(5^{\circ})90^{\circ}" display="inline"><mrow><mi href="./19.1#p1.t1.r2" title="real or complex argument">ϕ</mi><mo>=</mo><mrow><mn>0</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mn>5</mn><mo>∘</mo></msup><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mn>90</mn><mo>∘</mo></msup></mrow></mrow></math>, <math class="ltx_Math" altimg="m37.png" altimg-height="26px" altimg-valign="-7px" altimg-width="116px" alttext="k^{2}=0(.01)1" display="inline"><mrow><msup><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mn>2</mn></msup><mo>=</mo><mrow><mn>0</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>.01</mn><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mn>1</mn></mrow></mrow></math> to 10D by
+<cite class="ltx_cite ltx_citemacro_citet">Fettis and Caslin (<a href="./bib/F#bib786" title="Tables of Elliptic Integrals of the First, Second, and Third Kind" class="ltx_ref">1964</a>)</cite>.</p>
+</div>
+<div id="Px4.p2" class="ltx_para">
+<p class="ltx_p">Tabulated for <math class="ltx_Math" altimg="m24.png" altimg-height="25px" altimg-valign="-7px" altimg-width="121px" alttext="\phi=0(1^{\circ})90^{\circ}" display="inline"><mrow><mi href="./19.1#p1.t1.r2" title="real or complex argument">ϕ</mi><mo>=</mo><mrow><mn>0</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mn>1</mn><mo>∘</mo></msup><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mn>90</mn><mo>∘</mo></msup></mrow></mrow></math>, <math class="ltx_Math" altimg="m37.png" altimg-height="26px" altimg-valign="-7px" altimg-width="116px" alttext="k^{2}=0(.01)1" display="inline"><mrow><msup><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mn>2</mn></msup><mo>=</mo><mrow><mn>0</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>.01</mn><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mn>1</mn></mrow></mrow></math> to 7S by
+<cite class="ltx_cite ltx_citemacro_citet">Beli͡akov<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/B#bib229" title="Tablit͡sy Elliptic͡heskik͡h Integralov. Tom I" class="ltx_ref">1962</a>)</cite>. (<math class="ltx_Math" altimg="m4.png" altimg-height="25px" altimg-valign="-7px" altimg-width="73px" alttext="F\left(\phi,k\right)" display="inline"><mrow><mi href="./19.2#E4" title="Legendre’s incomplete elliptic integral of the first kind">F</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./19.1#p1.t1.r2" title="real or complex argument">ϕ</mi><mo>,</mo><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mo>)</mo></mrow></mrow></math> is presented as
+<math class="ltx_Math" altimg="m10.png" altimg-height="25px" altimg-valign="-7px" altimg-width="92px" alttext="\Pi\left(\phi,0,k\right)" display="inline"><mrow><mi href="./19.2#E7" mathvariant="normal" title="Legendre’s incomplete elliptic integral of the third kind">Π</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./19.1#p1.t1.r2" title="real or complex argument">ϕ</mi><mo>,</mo><mn>0</mn><mo>,</mo><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mo>)</mo></mrow></mrow></math>.)</p>
+</div>
+<div id="Px4.p3" class="ltx_para">
+<p class="ltx_p">Tabulated for <math class="ltx_Math" altimg="m25.png" altimg-height="25px" altimg-valign="-7px" altimg-width="121px" alttext="\phi=0(5^{\circ})90^{\circ}" display="inline"><mrow><mi href="./19.1#p1.t1.r2" title="real or complex argument">ϕ</mi><mo>=</mo><mrow><mn>0</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mn>5</mn><mo>∘</mo></msup><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mn>90</mn><mo>∘</mo></msup></mrow></mrow></math>, <math class="ltx_Math" altimg="m33.png" altimg-height="25px" altimg-valign="-7px" altimg-width="107px" alttext="k=0(.01)1" display="inline"><mrow><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mo>=</mo><mrow><mn>0</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>.01</mn><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mn>1</mn></mrow></mrow></math> to 10D by
+<cite class="ltx_cite ltx_citemacro_citet">Fettis and Caslin (<a href="./bib/F#bib786" title="Tables of Elliptic Integrals of the First, Second, and Third Kind" class="ltx_ref">1964</a>)</cite>.</p>
+</div>
+<div id="Px4.p4" class="ltx_para">
+<p class="ltx_p">Tabulated for <math class="ltx_Math" altimg="m25.png" altimg-height="25px" altimg-valign="-7px" altimg-width="121px" alttext="\phi=0(5^{\circ})90^{\circ}" display="inline"><mrow><mi href="./19.1#p1.t1.r2" title="real or complex argument">ϕ</mi><mo>=</mo><mrow><mn>0</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mn>5</mn><mo>∘</mo></msup><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mn>90</mn><mo>∘</mo></msup></mrow></mrow></math>, <math class="ltx_Math" altimg="m19.png" altimg-height="25px" altimg-valign="-7px" altimg-width="177px" alttext="\operatorname{arcsin}k=0(1^{\circ})90^{\circ}" display="inline"><mrow><mrow><mi href="./4.23#ii.p1" title="arcsine function">arcsin</mi><mo lspace="0.167em">⁡</mo><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi></mrow><mo>=</mo><mrow><mn>0</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mn>1</mn><mo>∘</mo></msup><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mn>90</mn><mo>∘</mo></msup></mrow></mrow></math> to 6D by <cite class="ltx_cite ltx_citemacro_citet">Byrd and Friedman (<a href="./bib/B#bib400" title="Handbook of Elliptic Integrals for Engineers and Scientists" class="ltx_ref">1971</a>)</cite>, for <math class="ltx_Math" altimg="m25.png" altimg-height="25px" altimg-valign="-7px" altimg-width="121px" alttext="\phi=0(5^{\circ})90^{\circ}" display="inline"><mrow><mi href="./19.1#p1.t1.r2" title="real or complex argument">ϕ</mi><mo>=</mo><mrow><mn>0</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mn>5</mn><mo>∘</mo></msup><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mn>90</mn><mo>∘</mo></msup></mrow></mrow></math>,
+<math class="ltx_Math" altimg="m20.png" altimg-height="25px" altimg-valign="-7px" altimg-width="177px" alttext="\operatorname{arcsin}k=0(2^{\circ})90^{\circ}" display="inline"><mrow><mrow><mi href="./4.23#ii.p1" title="arcsine function">arcsin</mi><mo lspace="0.167em">⁡</mo><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi></mrow><mo>=</mo><mrow><mn>0</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mn>2</mn><mo>∘</mo></msup><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mn>90</mn><mo>∘</mo></msup></mrow></mrow></math> and <math class="ltx_Math" altimg="m1.png" altimg-height="25px" altimg-valign="-7px" altimg-width="101px" alttext="5^{\circ}(10^{\circ})85^{\circ}" display="inline"><mrow><msup><mn>5</mn><mo>∘</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mn>10</mn><mo>∘</mo></msup><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mn>85</mn><mo>∘</mo></msup></mrow></math> to 8D by
+<cite class="ltx_cite ltx_citemacro_citet">Abramowitz and Stegun (<a href="./bib/#bib24" title="Handbook of Mathematical Functions with Formulas, Graphs, and Mathematical Tables" class="ltx_ref">1964</a>, Chapter 17)</cite>, and for <math class="ltx_Math" altimg="m22.png" altimg-height="25px" altimg-valign="-7px" altimg-width="131px" alttext="\phi=0(10^{\circ})90^{\circ}" display="inline"><mrow><mi href="./19.1#p1.t1.r2" title="real or complex argument">ϕ</mi><mo>=</mo><mrow><mn>0</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mn>10</mn><mo>∘</mo></msup><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mn>90</mn><mo>∘</mo></msup></mrow></mrow></math>, <math class="ltx_Math" altimg="m21.png" altimg-height="25px" altimg-valign="-7px" altimg-width="177px" alttext="\operatorname{arcsin}k=0(5^{\circ})90^{\circ}" display="inline"><mrow><mrow><mi href="./4.23#ii.p1" title="arcsine function">arcsin</mi><mo lspace="0.167em">⁡</mo><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi></mrow><mo>=</mo><mrow><mn>0</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mn>5</mn><mo>∘</mo></msup><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mn>90</mn><mo>∘</mo></msup></mrow></mrow></math> to 9D by
+<cite class="ltx_cite ltx_citemacro_citet">Zhang and Jin (<a href="./bib/Z#bib2493" title="Computation of Special Functions" class="ltx_ref">1996</a>, pp. 674–675)</cite>.</p>
+</div>
+</section>
+<section id="Px5" class="ltx_paragraph">
+<h3 class="ltx_title ltx_title_paragraph">Function <math class="ltx_Math" altimg="m11.png" altimg-height="29px" altimg-valign="-9px" altimg-width="107px" alttext="\Pi\left(\phi,\alpha^{2},k\right)" display="inline"><mrow><mi href="./19.2#E7" mathvariant="normal" title="Legendre’s incomplete elliptic integral of the third kind">Π</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./19.1#p1.t1.r2" title="real or complex argument">ϕ</mi><mo>,</mo><msup><mi href="./19.1#p1.t1.r5" title="real or complex parameter">α</mi><mn>2</mn></msup><mo>,</mo><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mo>)</mo></mrow></mrow></math>
+</h3>
+<div id="Px5.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=Legendre%20elliptic%20integrals">Legendre’s elliptic integrals</a>, <a class="ltx_keyword" href="./search/search?q=tables">tables</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19.37#iii.info" title="§19.37(iii) Legendre’s Incomplete Integrals ‣ §19.37 Tables ‣ Computation ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.37(iii)</span></a>,
+<a href="./19.37#info" title="§19.37 Tables ‣ Computation ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.37</span></a> and
+<a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="Px5.p1" class="ltx_para">
+<p class="ltx_p">Tabulated (with different notation) for <math class="ltx_Math" altimg="m23.png" altimg-height="25px" altimg-valign="-7px" altimg-width="131px" alttext="\phi=0(15^{\circ})90^{\circ}" display="inline"><mrow><mi href="./19.1#p1.t1.r2" title="real or complex argument">ϕ</mi><mo>=</mo><mrow><mn>0</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mn>15</mn><mo>∘</mo></msup><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mn>90</mn><mo>∘</mo></msup></mrow></mrow></math>,
+<math class="ltx_Math" altimg="m14.png" altimg-height="26px" altimg-valign="-7px" altimg-width="108px" alttext="\alpha^{2}=0(.1)1" display="inline"><mrow><msup><mi href="./19.1#p1.t1.r5" title="real or complex parameter">α</mi><mn>2</mn></msup><mo>=</mo><mrow><mn>0</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>.1</mn><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mn>1</mn></mrow></mrow></math>, <math class="ltx_Math" altimg="m18.png" altimg-height="25px" altimg-valign="-7px" altimg-width="187px" alttext="\operatorname{arcsin}k=0(15^{\circ})90^{\circ}" display="inline"><mrow><mrow><mi href="./4.23#ii.p1" title="arcsine function">arcsin</mi><mo lspace="0.167em">⁡</mo><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi></mrow><mo>=</mo><mrow><mn>0</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mn>15</mn><mo>∘</mo></msup><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mn>90</mn><mo>∘</mo></msup></mrow></mrow></math> to 5D by
+<cite class="ltx_cite ltx_citemacro_citet">Abramowitz and Stegun (<a href="./bib/#bib24" title="Handbook of Mathematical Functions with Formulas, Graphs, and Mathematical Tables" class="ltx_ref">1964</a>, Chapter 17)</cite>, and for
+<math class="ltx_Math" altimg="m23.png" altimg-height="25px" altimg-valign="-7px" altimg-width="131px" alttext="\phi=0(15^{\circ})90^{\circ}" display="inline"><mrow><mi href="./19.1#p1.t1.r2" title="real or complex argument">ϕ</mi><mo>=</mo><mrow><mn>0</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mn>15</mn><mo>∘</mo></msup><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mn>90</mn><mo>∘</mo></msup></mrow></mrow></math>, <math class="ltx_Math" altimg="m14.png" altimg-height="26px" altimg-valign="-7px" altimg-width="108px" alttext="\alpha^{2}=0(.1)1" display="inline"><mrow><msup><mi href="./19.1#p1.t1.r5" title="real or complex parameter">α</mi><mn>2</mn></msup><mo>=</mo><mrow><mn>0</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>.1</mn><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mn>1</mn></mrow></mrow></math>, <math class="ltx_Math" altimg="m18.png" altimg-height="25px" altimg-valign="-7px" altimg-width="187px" alttext="\operatorname{arcsin}k=0(15^{\circ})90^{\circ}" display="inline"><mrow><mrow><mi href="./4.23#ii.p1" title="arcsine function">arcsin</mi><mo lspace="0.167em">⁡</mo><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi></mrow><mo>=</mo><mrow><mn>0</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mn>15</mn><mo>∘</mo></msup><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mn>90</mn><mo>∘</mo></msup></mrow></mrow></math> to 7D by <cite class="ltx_cite ltx_citemacro_citet">Zhang and Jin (<a href="./bib/Z#bib2493" title="Computation of Special Functions" class="ltx_ref">1996</a>, pp. 676–677)</cite>.</p>
+</div>
+<div id="Px5.p2" class="ltx_para">
+<p class="ltx_p">Tabulated for <math class="ltx_Math" altimg="m26.png" altimg-height="25px" altimg-valign="-7px" altimg-width="213px" alttext="\phi=5^{\circ}(5^{\circ})80^{\circ}(2.5^{\circ})90^{\circ}" display="inline"><mrow><mi href="./19.1#p1.t1.r2" title="real or complex argument">ϕ</mi><mo>=</mo><mrow><msup><mn>5</mn><mo>∘</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mn>5</mn><mo>∘</mo></msup><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mn>80</mn><mo>∘</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mn>2.5</mn><mo>∘</mo></msup><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mn>90</mn><mo>∘</mo></msup></mrow></mrow></math>,
+<math class="ltx_Math" altimg="m12.png" altimg-height="26px" altimg-valign="-7px" altimg-width="244px" alttext="\alpha^{2}=-1(.1)-0.1,0.1(.1)1" display="inline"><mrow><msup><mi href="./19.1#p1.t1.r5" title="real or complex parameter">α</mi><mn>2</mn></msup><mo>=</mo><mrow><mrow><mrow><mo>−</mo><mrow><mn>1</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>.1</mn><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>−</mo><mn>0.1</mn></mrow><mo>,</mo><mrow><mn>0.1</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>.1</mn><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mn>1</mn></mrow></mrow></mrow></math>, <math class="ltx_Math" altimg="m38.png" altimg-height="26px" altimg-valign="-7px" altimg-width="185px" alttext="k^{2}=0(.05)0.9(.02)1" display="inline"><mrow><msup><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mn>2</mn></msup><mo>=</mo><mrow><mn>0</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>.05</mn><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mn>0.9</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>.02</mn><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mn>1</mn></mrow></mrow></math> to 10D by
+<cite class="ltx_cite ltx_citemacro_citet">Fettis and Caslin (<a href="./bib/F#bib786" title="Tables of Elliptic Integrals of the First, Second, and Third Kind" class="ltx_ref">1964</a>)</cite> (and warns of inaccuracies in
+<cite class="ltx_cite ltx_citemacro_citet">Selfridge and Maxfield (<a href="./bib/S#bib2046" title="A Table of the Incomplete Elliptic Integral of the Third Kind" class="ltx_ref">1958</a>)</cite> and <cite class="ltx_cite ltx_citemacro_citet">Paxton and Rollin (<a href="./bib/P#bib1861" title="Tables of the Incomplete Elliptic Integrals of the First and Third Kind" class="ltx_ref">1959</a>)</cite>).</p>
+</div>
+<div id="Px5.p3" class="ltx_para">
+<p class="ltx_p">Tabulated for <math class="ltx_Math" altimg="m24.png" altimg-height="25px" altimg-valign="-7px" altimg-width="121px" alttext="\phi=0(1^{\circ})90^{\circ}" display="inline"><mrow><mi href="./19.1#p1.t1.r2" title="real or complex argument">ϕ</mi><mo>=</mo><mrow><mn>0</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mn>1</mn><mo>∘</mo></msup><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mn>90</mn><mo>∘</mo></msup></mrow></mrow></math>, <math class="ltx_Math" altimg="m13.png" altimg-height="26px" altimg-valign="-7px" altimg-width="413px" alttext="\alpha^{2}=0(.05)0.85,0.88(.02)0.94(.01)0.98(.005)1" display="inline"><mrow><msup><mi href="./19.1#p1.t1.r5" title="real or complex parameter">α</mi><mn>2</mn></msup><mo>=</mo><mrow><mrow><mn>0</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>.05</mn><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mn>0.85</mn></mrow><mo>,</mo><mrow><mn>0.88</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>.02</mn><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mn>0.94</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>.01</mn><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mn>0.98</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>.005</mn><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mn>1</mn></mrow></mrow></mrow></math>, <math class="ltx_Math" altimg="m37.png" altimg-height="26px" altimg-valign="-7px" altimg-width="116px" alttext="k^{2}=0(.01)1" display="inline"><mrow><msup><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mn>2</mn></msup><mo>=</mo><mrow><mn>0</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>.01</mn><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mn>1</mn></mrow></mrow></math> to 7S by
+<cite class="ltx_cite ltx_citemacro_citet">Beli͡akov<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/B#bib229" title="Tablit͡sy Elliptic͡heskik͡h Integralov. Tom I" class="ltx_ref">1962</a>)</cite>.
+</p>
+</div>
+</section>
+</section>
+<section id="iv" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§19.37(iv) </span>Symmetric Integrals</h2>
+<div id="iv.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=symmetric%20elliptic%20integrals">symmetric elliptic integrals</a>, <a class="ltx_keyword" href="./search/search?q=tables">tables</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./19.37.iv" title="" class="ltx_ref">http://dlmf.nist.gov/19.37.iv</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19.37#info" title="§19.37 Tables ‣ Computation ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.37</span></a> and
+<a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<section id="Px6" class="ltx_paragraph">
+<h3 class="ltx_title ltx_title_paragraph">Functions <math class="ltx_Math" altimg="m8.png" altimg-height="29px" altimg-valign="-9px" altimg-width="127px" alttext="R_{F}\left(x^{2},1,y^{2}\right)" display="inline"><mrow><msub><mi href="./19.16#E1" title="symmetric elliptic integral of first kind">R</mi><mi href="./19.16#E1" title="symmetric elliptic integral of first kind">F</mi></msub><mo>⁡</mo><mrow><mo>(</mo><msup><mi>x</mi><mn>2</mn></msup><mo>,</mo><mn>1</mn><mo>,</mo><msup><mi>y</mi><mn>2</mn></msup><mo>)</mo></mrow></mrow></math> and <math class="ltx_Math" altimg="m9.png" altimg-height="29px" altimg-valign="-9px" altimg-width="127px" alttext="R_{G}\left(x^{2},1,y^{2}\right)" display="inline"><mrow><msub><mi href="./19.16#E2_5" title="symmetric elliptic integral of second kind">R</mi><mi href="./19.16#E2_5" title="symmetric elliptic integral of second kind">G</mi></msub><mo>⁡</mo><mrow><mo>(</mo><msup><mi>x</mi><mn>2</mn></msup><mo>,</mo><mn>1</mn><mo>,</mo><msup><mi>y</mi><mn>2</mn></msup><mo>)</mo></mrow></mrow></math>
+</h3>
+<div id="Px6.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19.37#iv.info" title="§19.37(iv) Symmetric Integrals ‣ §19.37 Tables ‣ Computation ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.37(iv)</span></a>,
+<a href="./19.37#info" title="§19.37 Tables ‣ Computation ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.37</span></a> and
+<a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="Px6.p1" class="ltx_para">
+<p class="ltx_p">Tabulated for <math class="ltx_Math" altimg="m39.png" altimg-height="25px" altimg-valign="-7px" altimg-width="97px" alttext="x=0(.1)1" display="inline"><mrow><mi>x</mi><mo>=</mo><mrow><mn>0</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>.1</mn><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mn>1</mn></mrow></mrow></math>, <math class="ltx_Math" altimg="m40.png" altimg-height="25px" altimg-valign="-7px" altimg-width="96px" alttext="y=1(.2)6" display="inline"><mrow><mi>y</mi><mo>=</mo><mrow><mn>1</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>.2</mn><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mn>6</mn></mrow></mrow></math> to 3D by <cite class="ltx_cite ltx_citemacro_citet">Nellis and Carlson (<a href="./bib/N#bib1703" title="Reduction and evaluation of elliptic integrals" class="ltx_ref">1966</a>)</cite>.</p>
+</div>
+</section>
+<section id="Px7" class="ltx_paragraph">
+<h3 class="ltx_title ltx_title_paragraph">Function <math class="ltx_Math" altimg="m7.png" altimg-height="29px" altimg-valign="-9px" altimg-width="132px" alttext="R_{F}\left(a^{2},b^{2},c^{2}\right)" display="inline"><mrow><msub><mi href="./19.16#E1" title="symmetric elliptic integral of first kind">R</mi><mi href="./19.16#E1" title="symmetric elliptic integral of first kind">F</mi></msub><mo>⁡</mo><mrow><mo>(</mo><msup><mi>a</mi><mn>2</mn></msup><mo>,</mo><msup><mi>b</mi><mn>2</mn></msup><mo>,</mo><msup><mi>c</mi><mn>2</mn></msup><mo>)</mo></mrow></mrow></math> with <math class="ltx_Math" altimg="m31.png" altimg-height="18px" altimg-valign="-2px" altimg-width="71px" alttext="abc=1" display="inline"><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>b</mi><mo>⁢</mo><mi>c</mi></mrow><mo>=</mo><mn>1</mn></mrow></math>
+</h3>
+<div id="Px7.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19.37#iv.info" title="§19.37(iv) Symmetric Integrals ‣ §19.37 Tables ‣ Computation ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.37(iv)</span></a>,
+<a href="./19.37#info" title="§19.37 Tables ‣ Computation ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.37</span></a> and
+<a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="Px7.p1" class="ltx_para">
+<p class="ltx_p">Tabulated for <math class="ltx_Math" altimg="m27.png" altimg-height="25px" altimg-valign="-7px" altimg-width="252px" alttext="\sigma=0(.05)0.5(.1)1(.2)2(.5)5" display="inline"><mrow><mi>σ</mi><mo>=</mo><mrow><mn>0</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>.05</mn><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mn>0.5</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>.1</mn><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mn>1</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>.2</mn><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mn>2</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>.5</mn><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mn>5</mn></mrow></mrow></math>,
+<math class="ltx_Math" altimg="m16.png" altimg-height="25px" altimg-valign="-7px" altimg-width="171px" alttext="\cos\left(3\gamma\right)=-1(.2)1" display="inline"><mrow><mrow><mi href="./4.14#E2" title="cosine function">cos</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mn>3</mn><mo>⁢</mo><mi>γ</mi></mrow><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mo>−</mo><mrow><mn>1</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>.2</mn><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mn>1</mn></mrow></mrow></mrow></math> to 5D by <cite class="ltx_cite ltx_citemacro_citet">Carlson (<a href="./bib/C#bib424" title="Ellipsoidal distributions of charge or mass" class="ltx_ref">1961a</a>)</cite>. Here
+<math class="ltx_Math" altimg="m28.png" altimg-height="29px" altimg-valign="-9px" altimg-width="302px" alttext="\sigma^{2}=\tfrac{2}{3}((\ln a)^{2}+(\ln b)^{2}+(\ln c)^{2})" display="inline"><mrow><msup><mi>σ</mi><mn>2</mn></msup><mo>=</mo><mrow><mfrac><mn>2</mn><mn>3</mn></mfrac><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi href="./4.2#E2" title="principal branch of logarithm function">ln</mi><mo lspace="0.167em">⁡</mo><mi>a</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>+</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi href="./4.2#E2" title="principal branch of logarithm function">ln</mi><mo lspace="0.167em">⁡</mo><mi>b</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>+</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi href="./4.2#E2" title="principal branch of logarithm function">ln</mi><mo lspace="0.167em">⁡</mo><mi>c</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></math>,
+<math class="ltx_Math" altimg="m15.png" altimg-height="26px" altimg-valign="-7px" altimg-width="300px" alttext="\cos\left(3\gamma\right)=(4/\sigma^{3})(\ln a)(\ln b)(\ln c)" display="inline"><mrow><mrow><mi href="./4.14#E2" title="cosine function">cos</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mn>3</mn><mo>⁢</mo><mi>γ</mi></mrow><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mn>4</mn><mo>/</mo><msup><mi>σ</mi><mn>3</mn></msup></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi href="./4.2#E2" title="principal branch of logarithm function">ln</mi><mo lspace="0.167em">⁡</mo><mi>a</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi href="./4.2#E2" title="principal branch of logarithm function">ln</mi><mo lspace="0.167em">⁡</mo><mi>b</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi href="./4.2#E2" title="principal branch of logarithm function">ln</mi><mo lspace="0.167em">⁡</mo><mi>c</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></math>, and
+<math class="ltx_Math" altimg="m30.png" altimg-height="22px" altimg-valign="-6px" altimg-width="52px" alttext="a,b,c" display="inline"><mrow><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi></mrow></math> are semiaxes of an ellipsoid with the same volume as the unit sphere.</p>
+</div>
+</section>
+<section id="Px8" class="ltx_paragraph">
+<h3 class="ltx_title ltx_title_paragraph">Check Values</h3>
+<div id="Px8.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19.37#iv.info" title="§19.37(iv) Symmetric Integrals ‣ §19.37 Tables ‣ Computation ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.37(iv)</span></a>,
+<a href="./19.37#info" title="§19.37 Tables ‣ Computation ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.37</span></a> and
+<a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="Px8.p1" class="ltx_para">
+<p class="ltx_p">For check values of symmetric integrals with real or complex variables
+to 14S see <cite class="ltx_cite ltx_citemacro_citet">Carlson (<a href="./bib/C#bib441" title="Numerical computation of real or complex elliptic integrals" class="ltx_ref">1995</a>)</cite>.</p>
+</div>
+</section>
+</section>
+</section>
+</div>
+<div class="ltx_page_footer">
+<div class="ltx_siblings">
+<a href="./19.36" title="In Computation ‣ Chapter 19 Elliptic Integrals" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">19.36 </span>Methods of Computation</span></a><a href="./19.38" title="In Computation ‣ Chapter 19 Elliptic Integrals" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">19.38 </span>Approximations</span></a>
+</div>
+<div class="ltx_footer_links ltx_centering">
+<a href="./about/notices">© 2010–2026 NIST</a> / <a href="./about/notices#S2">Disclaimer</a> / <a href="/cdn-cgi/l/email-protection#1c5850515a317a7979787e7d7f775c72756f68327b736a">Feedback</a>;
+ Version 1.2.7;
+Release date 2026-06-15.</div>
+<span id="pagesettings"></span>
+<div class="ltx_nist_logo"><a href="http://www.nist.gov/"><img src="./style/nistidc.png" width="500" alt="NIST"></a></div>
+<div class="ltx_nist_links ltx_align_right">
+<a href="https://www.nist.gov/privacy-policy">Site Privacy</a> <a href="https://www.nist.gov/oism/accessibility">Accessibility</a> <a href="https://www.nist.gov/privacy">Privacy Program</a> <a href="https://www.nist.gov/oism/copyrights">Copyrights</a> <a href="https://www.commerce.gov/vulnerability-disclosure-policy">Vulnerability Disclosure</a> <a href="https://www.nist.gov/no-fear-act-policy">No Fear Act Policy</a> <a href="https://www.nist.gov/foia">FOIA</a> <a href="https://www.nist.gov/environmental-policy-statement">Environmental Policy</a> <a href="https://www.nist.gov/summary-report-scientific-integrity">Scientific Integrity</a> <a href="https://www.nist.gov/nist-information-quality-standards">Information Quality Standards</a> <a href="https://www.commerce.gov/">Commerce.gov</a> <a href="http://www.science.gov/">Science.gov</a> <a href="http://www.usa.gov/">USA.gov</a>
+</div>
+</div>
+</div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"9ef5b487afff42a68917b2d63593a474"}' crossorigin="anonymous"></script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a30b651f98aba4e2',t:'MTc4NzY2OTI3OA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

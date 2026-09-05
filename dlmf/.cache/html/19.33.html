@@ -1,0 +1,826 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>DLMF: §19.33 Triaxial Ellipsoids ‣ Applications ‣ Chapter 19 Elliptic Integrals</title>
+<link rel="shortcut icon" href="./style/DLMF-16.png" type="image/png">
+<script type="text/javascript"><!--
+	var PATH="DLMF:/19.33";
+	var ROOT="./";
+      //--></script>
+<script type="text/javascript" src="./style/jquery.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/jquery.leaveNotice.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/DLMF.js"><!-- non-empty so ie6 will accept it --></script>
+<script async="" type="text/javascript" id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC&amp;subagency=NIST&amp;pua=UA-37115410-44&amp;yt=true&amp;exts=ppsx,pps,f90,sch,rtf,wrl,txz,m1v,xlsm,msi,xsd,f,tif,eps,mpg,xml,pl,xlt,c"><!-- non-empty so ie6 will accept it --></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-BZB64W4M0L"></script><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-BZB64W4M0L');
+      </script>
+<link rel="stylesheet" type="text/css" href="./style/LaTeXML.css">
+<link rel="stylesheet" type="text/css" href="./style/DLMF.css">
+<link rel="stylesheet" type="text/css" href="./style/print.css" media="print">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="top" href="./" title="DLMF">
+<link rel="copyright" href="./about/notices" title="Copyright">
+<link rel="search" href="./search/search" title="Search">
+<link rel="help" class="ltx_help" href="./help/" title="Help">
+<link rel="up" href="./19#PT4" title="Applications ‣ Chapter 19 Elliptic Integrals">
+<link rel="up up" href="./19" title="Chapter 19 Elliptic Integrals">
+<link rel="start" href="./" title="">
+<link rel="prev" href="./19.32" title="§19.32 Conformal Map onto a Rectangle ‣ Applications ‣ Chapter 19 Elliptic Integrals">
+<link rel="next" href="./19.34" title="§19.34 Mutual Inductance of Coaxial Circles ‣ Applications ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.1" title="§19.1 Special Notation ‣ Notation ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.2" title="§19.2 Definitions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.3" title="§19.3 Graphics ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.4" title="§19.4 Derivatives and Differential Equations ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.5" title="§19.5 Maclaurin and Related Expansions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.6" title="§19.6 Special Cases ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.7" title="§19.7 Connection Formulas ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.8" title="§19.8 Quadratic Transformations ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.9" title="§19.9 Inequalities ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.10" title="§19.10 Relations to Other Functions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.11" title="§19.11 Addition Theorems ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.12" title="§19.12 Asymptotic Approximations ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.13" title="§19.13 Integrals of Elliptic Integrals ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.14" title="§19.14 Reduction of General Elliptic Integrals ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.15" title="§19.15 Advantages of Symmetry ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.16" title="§19.16 Definitions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.17" title="§19.17 Graphics ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.18" title="§19.18 Derivatives and Differential Equations ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.19" title="§19.19 Taylor and Related Series ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.20" title="§19.20 Special Cases ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.21" title="§19.21 Connection Formulas ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.22" title="§19.22 Quadratic Transformations ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.23" title="§19.23 Integral Representations ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.24" title="§19.24 Inequalities ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.25" title="§19.25 Relations to Other Functions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.26" title="§19.26 Addition Theorems ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.27" title="§19.27 Asymptotic Approximations and Expansions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.28" title="§19.28 Integrals of Elliptic Integrals ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.29" title="§19.29 Reduction of General Elliptic Integrals ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.30" title="§19.30 Lengths of Plane Curves ‣ Applications ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.31" title="§19.31 Probability Distributions ‣ Applications ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.32" title="§19.32 Conformal Map onto a Rectangle ‣ Applications ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.34" title="§19.34 Mutual Inductance of Coaxial Circles ‣ Applications ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.35" title="§19.35 Other Applications ‣ Applications ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.36" title="§19.36 Methods of Computation ‣ Computation ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.37" title="§19.37 Tables ‣ Computation ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.38" title="§19.38 Approximations ‣ Computation ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.39" title="§19.39 Software ‣ Computation ‣ Chapter 19 Elliptic Integrals">
+<link rel="document" href="./front/foreword" title="Foreword">
+<link rel="document" href="./front/preface" title="Preface">
+<link rel="document" href="./front/introduction" title="Mathematical Introduction">
+<link rel="chapter" href="./1" title="Chapter 1 Algebraic and Analytic Methods">
+<link rel="chapter" href="./2" title="Chapter 2 Asymptotic Approximations">
+<link rel="chapter" href="./3" title="Chapter 3 Numerical Methods">
+<link rel="chapter" href="./4" title="Chapter 4 Elementary Functions">
+<link rel="chapter" href="./5" title="Chapter 5 Gamma Function">
+<link rel="chapter" href="./6" title="Chapter 6 Exponential, Logarithmic, Sine, and Cosine Integrals">
+<link rel="chapter" href="./7" title="Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="chapter" href="./8" title="Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="chapter" href="./9" title="Chapter 9 Airy and Related Functions">
+<link rel="chapter" href="./10" title="Chapter 10 Bessel Functions">
+<link rel="chapter" href="./11" title="Chapter 11 Struve and Related Functions">
+<link rel="chapter" href="./12" title="Chapter 12 Parabolic Cylinder Functions">
+<link rel="chapter" href="./13" title="Chapter 13 Confluent Hypergeometric Functions">
+<link rel="chapter" href="./14" title="Chapter 14 Legendre and Related Functions">
+<link rel="chapter" href="./15" title="Chapter 15 Hypergeometric Function">
+<link rel="chapter" href="./16" title="Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="chapter" href="./17" title="Chapter 17 𝑞-Hypergeometric and Related Functions">
+<link rel="chapter" href="./18" title="Chapter 18 Orthogonal Polynomials">
+<link rel="chapter" href="./19" title="Chapter 19 Elliptic Integrals">
+<link rel="chapter" href="./20" title="Chapter 20 Theta Functions">
+<link rel="chapter" href="./21" title="Chapter 21 Multidimensional Theta Functions">
+<link rel="chapter" href="./22" title="Chapter 22 Jacobian Elliptic Functions">
+<link rel="chapter" href="./23" title="Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="chapter" href="./24" title="Chapter 24 Bernoulli and Euler Polynomials">
+<link rel="chapter" href="./25" title="Chapter 25 Zeta and Related Functions">
+<link rel="chapter" href="./26" title="Chapter 26 Combinatorial Analysis">
+<link rel="chapter" href="./27" title="Chapter 27 Functions of Number Theory">
+<link rel="chapter" href="./28" title="Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="chapter" href="./29" title="Chapter 29 Lamé Functions">
+<link rel="chapter" href="./30" title="Chapter 30 Spheroidal Wave Functions">
+<link rel="chapter" href="./31" title="Chapter 31 Heun Functions">
+<link rel="chapter" href="./32" title="Chapter 32 Painlevé Transcendents">
+<link rel="chapter" href="./33" title="Chapter 33 Coulomb Functions">
+<link rel="chapter" href="./34" title="Chapter 34 3⁢𝑗,6⁢𝑗,9⁢𝑗 Symbols">
+<link rel="chapter" href="./35" title="Chapter 35 Functions of Matrix Argument">
+<link rel="chapter" href="./36" title="Chapter 36 Integrals with Coalescing Saddles">
+<link rel="bibliography" href="./bib/" title="Bibliography">
+<link rel="index" href="./idx/" title="Index">
+<link rel="glossary" href="./not/" title="Notations">
+<link rel="document" href="./lof/" title="List of Figures">
+<link rel="document" href="./lot/" title="List of Tables">
+<link rel="document" href="./software/" title="Software Index">
+<link rel="document" href="./errata/" title="Errata">
+<link rel="document" href="./help/" title="Need Help?">
+<link rel="document" href="./search/" title="Advanced Search">
+<link rel="document" href="./about/" title="About the Project">
+<meta name="keywords" lang="en" content="applications, capacity, depolarization, ellipsoid, physical, potential, potential theory, self-energy, surface area, symmetric elliptic integrals, triaxial">
+</head>
+<body class="color_default textfont_default titlefont_default fontsize_default navbar_default">
+<div class="ltx_page_navbar">
+<div class="ltx_page_navlogo"><a href="./" title="Digital Library of Mathematical Functions"><span>DLMF</span></a></div>
+<div class="ltx_page_navitems">
+<form method="get" action="./search/search">
+<ul>
+<li><a href="./idx/">Index</a></li>
+<li><a href="./not/">Notations</a></li>
+<li><small><input type="text" name="q" value="" size="6" class="ltx_page_navitem_search"><button type="submit">Search</button></small></li>
+<li><a href="./help/" class="ltx_help">Help?</a></li>
+<li><a href="./help/cite">Citing</a></li>
+<li><a href="./help/customize" class="ltx_customize">Customize</a></li>
+<li id="showinfo"><a href="" onclick="showInfo(); return false;" title="Show Annotations">Annotate</a></li>
+<li id="hideinfo"><a href="" onclick="hideInfo(); return false;">UnAnnotate</a></li>
+</ul>
+</form>
+</div>
+<div class="ltx_page_navsponsors">
+<div><a href="./about/" class="ltx_page_navabout">About the Project</a></div>
+</div>
+</div>
+<div class="ltx_page_main">
+<div class="ltx_page_header">
+<a href="./19" title="" class="ltx_ref" rel="up up"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">19 </span>Elliptic Integrals</span></a><a href="./19#PT4" title="In Chapter 19 Elliptic Integrals" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title">Applications</span></a><a href="./19.32" title="In Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">19.32 </span>Conformal Map onto a Rectangle</span></a><a href="./19.34" title="In Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">19.34 </span>Mutual Inductance of Coaxial Circles</span></a>
+</div>
+<div class="ltx_page_content">
+<section class="ltx_section ltx_authors_multiline ltx_leqno">
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">§19.33 </span>Triaxial Ellipsoids</h1>
+<div id="info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=ellipsoid">ellipsoid</a>, <a class="ltx_keyword" href="./search/search?q=triaxial">triaxial</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./19.15#p5" title="§19.15 Advantages of Symmetry ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.15</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./19.33" title="" class="ltx_ref">http://dlmf.nist.gov/19.33</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<h6>Contents</h6>
+<ol class="ltx_toclist ltx_toclist_section">
+<li class="ltx_tocentry"><a href="#i"><span class="ltx_tag ltx_tag_subsection">§19.33(i) </span>Surface Area</a></li>
+<li class="ltx_tocentry"><a href="#ii"><span class="ltx_tag ltx_tag_subsection">§19.33(ii) </span>Potential of a Charged Conducting Ellipsoid</a></li>
+<li class="ltx_tocentry"><a href="#iii"><span class="ltx_tag ltx_tag_subsection">§19.33(iii) </span>Depolarization Factors</a></li>
+<li class="ltx_tocentry"><a href="#iv"><span class="ltx_tag ltx_tag_subsection">§19.33(iv) </span>Self-Energy of an Ellipsoidal Distribution</a></li>
+</ol>
+<section id="i" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§19.33(i) </span>Surface Area</h2>
+<div id="i.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=ellipsoid">ellipsoid</a>, <a class="ltx_keyword" href="./search/search?q=surface%20area">surface area</a>
+</dd>
+<dt>Notes:</dt>
+<dd>For a short proof see <cite class="ltx_cite ltx_citemacro_citet">Carlson (<a href="./bib/C#bib434" title="Special Functions of Applied Mathematics" class="ltx_ref">1977b</a>, p. 271)</cite>. For other
+proofs see <cite class="ltx_cite ltx_citemacro_citet">Watson (<a href="./bib/W#bib2378" title="The surface of an ellipsoid" class="ltx_ref">1935b</a>)</cite>, <cite class="ltx_cite ltx_citemacro_citet">Bowman (<a href="./bib/B#bib325" title="Introduction to Elliptic Functions with Applications" class="ltx_ref">1953</a>, pp. 31–32)</cite>,
+and <cite class="ltx_cite ltx_citemacro_citet">Carlson (<a href="./bib/C#bib427" title="Normal elliptic integrals of the first and second kinds" class="ltx_ref">1964</a>, p. 417)</cite>.</dd>
+<dt>Permalink:</dt>
+<dd><a href="./19.33.i" title="" class="ltx_ref">http://dlmf.nist.gov/19.33.i</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19.33#info" title="§19.33 Triaxial Ellipsoids ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.33</span></a> and
+<a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="i.p1" class="ltx_para">
+<p class="ltx_p">The surface area of an ellipsoid with semiaxes <math class="ltx_Math" altimg="m37.png" altimg-height="22px" altimg-valign="-6px" altimg-width="52px" alttext="a,b,c" display="inline"><mrow><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi></mrow></math>, and volume
+<math class="ltx_Math" altimg="m21.png" altimg-height="25px" altimg-valign="-7px" altimg-width="121px" alttext="V=4\pi abc/3" display="inline"><mrow><mi href="./19.33#i.p1" title="volume">V</mi><mo>=</mo><mrow><mrow><mn>4</mn><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>⁢</mo><mi>a</mi><mo>⁢</mo><mi>b</mi><mo>⁢</mo><mi>c</mi></mrow><mo>/</mo><mn>3</mn></mrow></mrow></math> is given by
+</p>
+<table id="E1" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">19.33.1</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E1.png" altimg-height="57px" altimg-valign="-9px" altimg-width="251px" alttext="S=3VR_{G}\left(a^{-2},b^{-2},c^{-2}\right)," display="block"><mrow><mrow><mi href="./19.33#i.p1" title="area">S</mi><mo>=</mo><mrow><mn>3</mn><mo>⁢</mo><mi href="./19.33#i.p1" title="volume">V</mi><mo>⁢</mo><mrow><msub><mi href="./19.16#E2_5" title="symmetric elliptic integral of second kind">R</mi><mi href="./19.16#E2_5" title="symmetric elliptic integral of second kind">G</mi></msub><mo>⁡</mo><mrow><mo>(</mo><msup><mi>a</mi><mrow><mo>−</mo><mn>2</mn></mrow></msup><mo>,</mo><msup><mi>b</mi><mrow><mo>−</mo><mn>2</mn></mrow></msup><mo>,</mo><msup><mi>c</mi><mrow><mo>−</mo><mn>2</mn></mrow></msup><mo>)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E1.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./19.16#E2_5" title="(19.16.2_5) ‣ §19.16(i) Symmetric Integrals ‣ §19.16 Definitions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m17.png" altimg-height="25px" altimg-valign="-7px" altimg-width="105px" alttext="R_{G}\left(\NVar{x},\NVar{y},\NVar{z}\right)" display="inline"><mrow><msub><mi href="./19.16#E2_5" title="symmetric elliptic integral of second kind">R</mi><mi href="./19.16#E2_5" title="symmetric elliptic integral of second kind">G</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">x</mi><mo>,</mo><mi class="ltx_nvar">y</mi><mo>,</mo><mi class="ltx_nvar">z</mi><mo>)</mo></mrow></mrow></math>: symmetric elliptic integral of second kind</a>,
+<a href="./19.33#i.p1" title="§19.33(i) Surface Area ‣ §19.33 Triaxial Ellipsoids ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m22.png" altimg-height="18px" altimg-valign="-2px" altimg-width="21px" alttext="V" display="inline"><mi href="./19.33#i.p1" title="volume">V</mi></math>:  volume</a> and
+<a href="./19.33#i.p1" title="§19.33(i) Surface Area ‣ §19.33 Triaxial Ellipsoids ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m18.png" altimg-height="18px" altimg-valign="-2px" altimg-width="18px" alttext="S" display="inline"><mi href="./19.33#i.p1" title="area">S</mi></math>:  area</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./19.33#i.p2" title="§19.33(i) Surface Area ‣ §19.33 Triaxial Ellipsoids ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.33(i)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./19.33.E1" title="" class="ltx_ref">http://dlmf.nist.gov/19.33.E1</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./19.33.E1.tex">TeX</a>, <a href="./19.33.E1.pmml">pMML</a>, <a href="./19.33.E1.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19.33#i.info" title="§19.33(i) Surface Area ‣ §19.33 Triaxial Ellipsoids ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.33(i)</span></a>,
+<a href="./19.33#info" title="§19.33 Triaxial Ellipsoids ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.33</span></a> and
+<a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">or equivalently,</p>
+<table id="E2" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">19.33.2</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E2.png" altimg-height="148px" altimg-valign="-20px" altimg-width="257px" alttext="\frac{S}{2\pi}=c^{2}+\frac{ab}{\sin\phi}\left(E\left(\phi,k\right){\sin}^{2}%
+\phi+F\left(\phi,k\right){\cos}^{2}\phi\right)," display="block"><mrow><mrow><mfrac><mi href="./19.33#i.p1" title="area">S</mi><mrow><mn>2</mn><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></mrow></mfrac><mo>=</mo><mrow><msup><mi>c</mi><mn>2</mn></msup><mo>+</mo><mrow><mfrac><mrow><mi>a</mi><mo>⁢</mo><mi>b</mi></mrow><mrow><mi href="./4.14#E1" title="sine function">sin</mi><mo lspace="0.167em">⁡</mo><mi href="./19.1#p1.t1.r2" title="real or complex argument">ϕ</mi></mrow></mfrac><mo>⁢</mo><mrow><mo>(</mo><mrow><mrow><mrow><mi href="./19.2#E5" title="Legendre’s incomplete elliptic integral of the second kind">E</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./19.1#p1.t1.r2" title="real or complex argument">ϕ</mi><mo>,</mo><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mo>)</mo></mrow></mrow><mo lspace="0.167em">⁢</mo><mrow><msup><mi href="./4.14#E1" title="sine function">sin</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi href="./19.1#p1.t1.r2" title="real or complex argument">ϕ</mi></mrow></mrow><mo>+</mo><mrow><mrow><mi href="./19.2#E4" title="Legendre’s incomplete elliptic integral of the first kind">F</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./19.1#p1.t1.r2" title="real or complex argument">ϕ</mi><mo>,</mo><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mo>)</mo></mrow></mrow><mo lspace="0.167em">⁢</mo><mrow><msup><mi href="./4.14#E2" title="cosine function">cos</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi href="./19.1#p1.t1.r2" title="real or complex argument">ϕ</mi></mrow></mrow></mrow><mo>)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="4"><span class="ltx_constraint"><math class="ltx_Math" altimg="m39.png" altimg-height="21px" altimg-valign="-5px" altimg-width="89px" alttext="a\geq b\geq c" display="inline"><mrow><mi>a</mi><mo>≥</mo><mi>b</mi><mo>≥</mo><mi>c</mi></mrow></math>,</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E2.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./3.12#E1" title="(3.12.1) ‣ §3.12 Mathematical Constants ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m34.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="\pi" display="inline"><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></math>: the ratio of the circumference of a circle to its diameter</a>,
+<a href="./4.14#E2" title="(4.14.2) ‣ §4.14 Definitions and Periodicity ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m27.png" altimg-height="13px" altimg-valign="-2px" altimg-width="46px" alttext="\cos\NVar{z}" display="inline"><mrow><mi href="./4.14#E2" title="cosine function">cos</mi><mo lspace="0.167em">⁡</mo><mi class="ltx_nvar" href="./4.1#t1.r4" title="complex variable">z</mi></mrow></math>: cosine function</a>,
+<a href="./19.2#E4" title="(19.2.4) ‣ §19.2(ii) Legendre’s Integrals ‣ §19.2 Definitions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m8.png" altimg-height="25px" altimg-valign="-7px" altimg-width="73px" alttext="F\left(\NVar{\phi},\NVar{k}\right)" display="inline"><mrow><mi href="./19.2#E4" title="Legendre’s incomplete elliptic integral of the first kind">F</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./19.1#p1.t1.r2" title="real or complex argument">ϕ</mi><mo>,</mo><mi class="ltx_nvar" href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mo>)</mo></mrow></mrow></math>: Legendre’s incomplete elliptic integral of the first kind</a>,
+<a href="./19.2#E5" title="(19.2.5) ‣ §19.2(ii) Legendre’s Integrals ‣ §19.2 Definitions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m7.png" altimg-height="25px" altimg-valign="-7px" altimg-width="73px" alttext="E\left(\NVar{\phi},\NVar{k}\right)" display="inline"><mrow><mi href="./19.2#E5" title="Legendre’s incomplete elliptic integral of the second kind">E</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./19.1#p1.t1.r2" title="real or complex argument">ϕ</mi><mo>,</mo><mi class="ltx_nvar" href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mo>)</mo></mrow></mrow></math>: Legendre’s incomplete elliptic integral of the second kind</a>,
+<a href="./4.14#E1" title="(4.14.1) ‣ §4.14 Definitions and Periodicity ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m36.png" altimg-height="18px" altimg-valign="-2px" altimg-width="44px" alttext="\sin\NVar{z}" display="inline"><mrow><mi href="./4.14#E1" title="sine function">sin</mi><mo lspace="0.167em">⁡</mo><mi class="ltx_nvar" href="./4.1#t1.r4" title="complex variable">z</mi></mrow></math>: sine function</a>,
+<a href="./19.1#p1.t1.r2" title="§19.1 Special Notation ‣ Notation ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m33.png" altimg-height="22px" altimg-valign="-6px" altimg-width="17px" alttext="\phi" display="inline"><mi href="./19.1#p1.t1.r2" title="real or complex argument">ϕ</mi></math>:  real or complex argument</a>,
+<a href="./19.1#p1.t1.r3" title="§19.1 Special Notation ‣ Notation ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m46.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi></math>:  real or complex modulus</a> and
+<a href="./19.33#i.p1" title="§19.33(i) Surface Area ‣ §19.33 Triaxial Ellipsoids ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m18.png" altimg-height="18px" altimg-valign="-2px" altimg-width="18px" alttext="S" display="inline"><mi href="./19.33#i.p1" title="area">S</mi></math>:  area</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./19.33.E2" title="" class="ltx_ref">http://dlmf.nist.gov/19.33.E2</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./19.33.E2.tex">TeX</a>, <a href="./19.33.E2.pmml">pMML</a>, <a href="./19.33.E2.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19.33#i.info" title="§19.33(i) Surface Area ‣ §19.33 Triaxial Ellipsoids ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.33(i)</span></a>,
+<a href="./19.33#info" title="§19.33 Triaxial Ellipsoids ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.33</span></a> and
+<a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">where</p>
+<table id="E3" class="ltx_equationgroup ltx_eqn_table">
+<tbody>
+<tr id="Ex1" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="2" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equationgroup ltx_align_left">19.33.3</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m3.png" altimg-height="24px" altimg-valign="-6px" altimg-width="50px" alttext="\displaystyle\cos\phi" display="inline"><mrow><mi href="./4.14#E2" title="cosine function">cos</mi><mo lspace="0.167em">⁡</mo><mi href="./19.1#p1.t1.r2" title="real or complex argument">ϕ</mi></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m2.png" altimg-height="44px" altimg-valign="-16px" altimg-width="50px" alttext="\displaystyle=\frac{c}{a}," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mstyle displaystyle="true"><mfrac><mi>c</mi><mi>a</mi></mfrac></mstyle></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex2" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m4.png" altimg-height="24px" altimg-valign="-2px" altimg-width="27px" alttext="\displaystyle k^{2}" display="inline"><msup><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mn>2</mn></msup></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m1.png" altimg-height="57px" altimg-valign="-21px" altimg-width="138px" alttext="\displaystyle=\frac{a^{2}(b^{2}-c^{2})}{b^{2}(a^{2}-c^{2})}." display="inline"><mrow><mrow><mi></mi><mo>=</mo><mstyle displaystyle="true"><mfrac><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>b</mi><mn>2</mn></msup><mo>−</mo><msup><mi>c</mi><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><mrow><msup><mi>b</mi><mn>2</mn></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>−</mo><msup><mi>c</mi><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow></mrow></mfrac></mstyle></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E3.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./4.14#E2" title="(4.14.2) ‣ §4.14 Definitions and Periodicity ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m27.png" altimg-height="13px" altimg-valign="-2px" altimg-width="46px" alttext="\cos\NVar{z}" display="inline"><mrow><mi href="./4.14#E2" title="cosine function">cos</mi><mo lspace="0.167em">⁡</mo><mi class="ltx_nvar" href="./4.1#t1.r4" title="complex variable">z</mi></mrow></math>: cosine function</a>,
+<a href="./19.1#p1.t1.r2" title="§19.1 Special Notation ‣ Notation ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m33.png" altimg-height="22px" altimg-valign="-6px" altimg-width="17px" alttext="\phi" display="inline"><mi href="./19.1#p1.t1.r2" title="real or complex argument">ϕ</mi></math>:  real or complex argument</a> and
+<a href="./19.1#p1.t1.r3" title="§19.1 Special Notation ‣ Notation ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m46.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi></math>:  real or complex modulus</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./19.33.E3" title="" class="ltx_ref">http://dlmf.nist.gov/19.33.E3</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./19.33.E3a.tex">TeX</a>, <a href="./19.33.E3b.tex">TeX</a>, <a href="./19.33.E3a.pmml">pMML</a>, <a href="./19.33.E3b.pmml">pMML</a>, <a href="./19.33.E3a.png">png</a>, <a href="./19.33.E3b.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19.33#i.info" title="§19.33(i) Surface Area ‣ §19.33 Triaxial Ellipsoids ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.33(i)</span></a>,
+<a href="./19.33#info" title="§19.33 Triaxial Ellipsoids ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.33</span></a> and
+<a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+<div id="i.p2" class="ltx_para">
+<p class="ltx_p">Application of (<a href="./19.16#E23" title="(19.16.23) ‣ §19.16(iii) Various Cases of 𝑅_{-𝑎}(𝐛;𝐳) ‣ §19.16 Definitions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">19.16.23</span></a>) transforms the last quantity in
+(<a href="./19.30#E5" title="(19.30.5) ‣ §19.30(i) Ellipse ‣ §19.30 Lengths of Plane Curves ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">19.30.5</span></a>) into a two-dimensional analog of (<a href="./19.33#E1" title="(19.33.1) ‣ §19.33(i) Surface Area ‣ §19.33 Triaxial Ellipsoids ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">19.33.1</span></a>).</p>
+</div>
+<div id="i.p3" class="ltx_para">
+<p class="ltx_p">For additional geometrical properties of ellipsoids (and ellipses), see
+<cite class="ltx_cite ltx_citemacro_citet">Carlson (<a href="./bib/C#bib427" title="Normal elliptic integrals of the first and second kinds" class="ltx_ref">1964</a>, p. 417)</cite>.</p>
+</div>
+</section>
+<section id="ii" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§19.33(ii) </span>Potential of a Charged Conducting Ellipsoid</h2>
+<div id="ii.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=applications">applications</a>, <a class="ltx_keyword" href="./search/search?q=capacity">capacity</a>, <a class="ltx_keyword" href="./search/search?q=ellipsoid">ellipsoid</a>, <a class="ltx_keyword" href="./search/search?q=physical">physical</a>, <a class="ltx_keyword" href="./search/search?q=potential">potential</a>, <a class="ltx_keyword" href="./search/search?q=potential%20theory">potential theory</a>, <a class="ltx_keyword" href="./search/search?q=symmetric%20elliptic%20integrals">symmetric elliptic integrals</a>
+</dd>
+<dt>Notes:</dt>
+<dd>See <cite class="ltx_cite ltx_citemacro_citet">Carlson (<a href="./bib/C#bib434" title="Special Functions of Applied Mathematics" class="ltx_ref">1977b</a>, (9.4-10))</cite>.</dd>
+<dt>Permalink:</dt>
+<dd><a href="./19.33.ii" title="" class="ltx_ref">http://dlmf.nist.gov/19.33.ii</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19.33#info" title="§19.33 Triaxial Ellipsoids ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.33</span></a> and
+<a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="ii.p1" class="ltx_para">
+<p class="ltx_p">If a conducting ellipsoid with semiaxes <math class="ltx_Math" altimg="m37.png" altimg-height="22px" altimg-valign="-6px" altimg-width="52px" alttext="a,b,c" display="inline"><mrow><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi></mrow></math> bears an electric charge <math class="ltx_Math" altimg="m14.png" altimg-height="22px" altimg-valign="-6px" altimg-width="21px" alttext="Q" display="inline"><mi href="./19.33#ii.p1" title="charge">Q</mi></math>,
+then the equipotential surfaces in the exterior region are confocal ellipsoids:</p>
+<table id="E4" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">19.33.4</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E4.png" altimg-height="53px" altimg-valign="-18px" altimg-width="285px" alttext="\frac{x^{2}}{a^{2}+\lambda}+\frac{y^{2}}{b^{2}+\lambda}+\frac{z^{2}}{c^{2}+%
+\lambda}=1," display="block"><mrow><mrow><mrow><mfrac><msup><mi>x</mi><mn>2</mn></msup><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><mi>λ</mi></mrow></mfrac><mo>+</mo><mfrac><msup><mi>y</mi><mn>2</mn></msup><mrow><msup><mi>b</mi><mn>2</mn></msup><mo>+</mo><mi>λ</mi></mrow></mfrac><mo>+</mo><mfrac><msup><mi>z</mi><mn>2</mn></msup><mrow><msup><mi>c</mi><mn>2</mn></msup><mo>+</mo><mi>λ</mi></mrow></mfrac></mrow><mo>=</mo><mn>1</mn></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="4"><span class="ltx_constraint"><math class="ltx_Math" altimg="m30.png" altimg-height="21px" altimg-valign="-5px" altimg-width="54px" alttext="\lambda\geq 0" display="inline"><mrow><mi>λ</mi><mo>≥</mo><mn>0</mn></mrow></math>.</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E4.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Permalink:</dt>
+<dd><a href="./19.33.E4" title="" class="ltx_ref">http://dlmf.nist.gov/19.33.E4</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./19.33.E4.tex">TeX</a>, <a href="./19.33.E4.pmml">pMML</a>, <a href="./19.33.E4.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19.33#ii.info" title="§19.33(ii) Potential of a Charged Conducting Ellipsoid ‣ §19.33 Triaxial Ellipsoids ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.33(ii)</span></a>,
+<a href="./19.33#info" title="§19.33 Triaxial Ellipsoids ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.33</span></a> and
+<a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">The potential is
+</p>
+<table id="E5" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">19.33.5</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E5.png" altimg-height="59px" altimg-valign="-9px" altimg-width="345px" alttext="V(\lambda)=QR_{F}\left(a^{2}+\lambda,b^{2}+\lambda,c^{2}+\lambda\right)," display="block"><mrow><mrow><mrow><mi href="./19.33#ii.p1" title="potential">V</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>λ</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi href="./19.33#ii.p1" title="charge">Q</mi><mo>⁢</mo><mrow><msub><mi href="./19.16#E1" title="symmetric elliptic integral of first kind">R</mi><mi href="./19.16#E1" title="symmetric elliptic integral of first kind">F</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><mi>λ</mi></mrow><mo>,</mo><mrow><msup><mi>b</mi><mn>2</mn></msup><mo>+</mo><mi>λ</mi></mrow><mo>,</mo><mrow><msup><mi>c</mi><mn>2</mn></msup><mo>+</mo><mi>λ</mi></mrow><mo>)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E5.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./19.16#E1" title="(19.16.1) ‣ §19.16(i) Symmetric Integrals ‣ §19.16 Definitions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m16.png" altimg-height="25px" altimg-valign="-7px" altimg-width="105px" alttext="R_{F}\left(\NVar{x},\NVar{y},\NVar{z}\right)" display="inline"><mrow><msub><mi href="./19.16#E1" title="symmetric elliptic integral of first kind">R</mi><mi href="./19.16#E1" title="symmetric elliptic integral of first kind">F</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">x</mi><mo>,</mo><mi class="ltx_nvar">y</mi><mo>,</mo><mi class="ltx_nvar">z</mi><mo>)</mo></mrow></mrow></math>: symmetric elliptic integral of first kind</a>,
+<a href="./19.33#ii.p1" title="§19.33(ii) Potential of a Charged Conducting Ellipsoid ‣ §19.33 Triaxial Ellipsoids ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m14.png" altimg-height="22px" altimg-valign="-6px" altimg-width="21px" alttext="Q" display="inline"><mi href="./19.33#ii.p1" title="charge">Q</mi></math>:  charge</a> and
+<a href="./19.33#ii.p1" title="§19.33(ii) Potential of a Charged Conducting Ellipsoid ‣ §19.33 Triaxial Ellipsoids ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m20.png" altimg-height="25px" altimg-valign="-7px" altimg-width="49px" alttext="V(\lambda)" display="inline"><mrow><mi href="./19.33#ii.p1" title="potential">V</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>λ</mi><mo stretchy="false">)</mo></mrow></mrow></math>:  potential</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./19.33.E5" title="" class="ltx_ref">http://dlmf.nist.gov/19.33.E5</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./19.33.E5.tex">TeX</a>, <a href="./19.33.E5.pmml">pMML</a>, <a href="./19.33.E5.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19.33#ii.info" title="§19.33(ii) Potential of a Charged Conducting Ellipsoid ‣ §19.33 Triaxial Ellipsoids ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.33(ii)</span></a>,
+<a href="./19.33#info" title="§19.33 Triaxial Ellipsoids ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.33</span></a> and
+<a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">and the electric capacity <math class="ltx_Math" altimg="m5.png" altimg-height="25px" altimg-valign="-7px" altimg-width="118px" alttext="C=Q/V(0)" display="inline"><mrow><mi href="./19.33#ii.p1" title="electric capacity">C</mi><mo>=</mo><mrow><mi href="./19.33#ii.p1" title="charge">Q</mi><mo>/</mo><mrow><mi href="./19.33#ii.p1" title="potential">V</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></math> is given by</p>
+<table id="E6" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">19.33.6</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E6.png" altimg-height="59px" altimg-valign="-9px" altimg-width="208px" alttext="1/C=R_{F}\left(a^{2},b^{2},c^{2}\right)." display="block"><mrow><mrow><mrow><mn>1</mn><mo>/</mo><mi href="./19.33#ii.p1" title="electric capacity">C</mi></mrow><mo>=</mo><mrow><msub><mi href="./19.16#E1" title="symmetric elliptic integral of first kind">R</mi><mi href="./19.16#E1" title="symmetric elliptic integral of first kind">F</mi></msub><mo>⁡</mo><mrow><mo>(</mo><msup><mi>a</mi><mn>2</mn></msup><mo>,</mo><msup><mi>b</mi><mn>2</mn></msup><mo>,</mo><msup><mi>c</mi><mn>2</mn></msup><mo>)</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E6.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./19.16#E1" title="(19.16.1) ‣ §19.16(i) Symmetric Integrals ‣ §19.16 Definitions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m16.png" altimg-height="25px" altimg-valign="-7px" altimg-width="105px" alttext="R_{F}\left(\NVar{x},\NVar{y},\NVar{z}\right)" display="inline"><mrow><msub><mi href="./19.16#E1" title="symmetric elliptic integral of first kind">R</mi><mi href="./19.16#E1" title="symmetric elliptic integral of first kind">F</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">x</mi><mo>,</mo><mi class="ltx_nvar">y</mi><mo>,</mo><mi class="ltx_nvar">z</mi><mo>)</mo></mrow></mrow></math>: symmetric elliptic integral of first kind</a> and
+<a href="./19.33#ii.p1" title="§19.33(ii) Potential of a Charged Conducting Ellipsoid ‣ §19.33 Triaxial Ellipsoids ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m6.png" altimg-height="18px" altimg-valign="-2px" altimg-width="21px" alttext="C" display="inline"><mi href="./19.33#ii.p1" title="electric capacity">C</mi></math>:  electric capacity</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./19.33.E6" title="" class="ltx_ref">http://dlmf.nist.gov/19.33.E6</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./19.33.E6.tex">TeX</a>, <a href="./19.33.E6.pmml">pMML</a>, <a href="./19.33.E6.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19.33#ii.info" title="§19.33(ii) Potential of a Charged Conducting Ellipsoid ‣ §19.33 Triaxial Ellipsoids ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.33(ii)</span></a>,
+<a href="./19.33#info" title="§19.33 Triaxial Ellipsoids ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.33</span></a> and
+<a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+<div id="ii.p2" class="ltx_para">
+<p class="ltx_p">A conducting elliptic disk is included as the case <math class="ltx_Math" altimg="m41.png" altimg-height="17px" altimg-valign="-2px" altimg-width="51px" alttext="c=0" display="inline"><mrow><mi>c</mi><mo>=</mo><mn>0</mn></mrow></math>.</p>
+</div>
+</section>
+<section id="iii" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§19.33(iii) </span>Depolarization Factors</h2>
+<div id="iii.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=depolarization">depolarization</a>, <a class="ltx_keyword" href="./search/search?q=ellipsoid">ellipsoid</a>
+</dd>
+<dt>Notes:</dt>
+<dd>For the first equality in (<a href="./19.33#E7" title="(19.33.7) ‣ §19.33(iii) Depolarization Factors ‣ §19.33 Triaxial Ellipsoids ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">19.33.7</span></a>) see
+<cite class="ltx_cite ltx_citemacro_citet">Becker and Sauter (<a href="./bib/B#bib227" title="Electromagnetic Fields and Interactions" class="ltx_ref">1964</a>, p. 106)</cite>.</dd>
+<dt>Permalink:</dt>
+<dd><a href="./19.33.iii" title="" class="ltx_ref">http://dlmf.nist.gov/19.33.iii</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19.33#info" title="§19.33 Triaxial Ellipsoids ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.33</span></a> and
+<a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="iii.p1" class="ltx_para">
+<p class="ltx_p">Let a homogeneous magnetic ellipsoid with semiaxes <math class="ltx_Math" altimg="m37.png" altimg-height="22px" altimg-valign="-6px" altimg-width="52px" alttext="a,b,c" display="inline"><mrow><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi></mrow></math>, volume
+<math class="ltx_Math" altimg="m21.png" altimg-height="25px" altimg-valign="-7px" altimg-width="121px" alttext="V=4\pi abc/3" display="inline"><mrow><mi href="./19.33#iii.p1" title="volume">V</mi><mo>=</mo><mrow><mrow><mn>4</mn><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>⁢</mo><mi>a</mi><mo>⁢</mo><mi>b</mi><mo>⁢</mo><mi>c</mi></mrow><mo>/</mo><mn>3</mn></mrow></mrow></math>, and susceptibility <math class="ltx_Math" altimg="m26.png" altimg-height="17px" altimg-valign="-6px" altimg-width="17px" alttext="\chi" display="inline"><mi href="./19.33#iii.p1" title="susceptibility">χ</mi></math> be placed in a previously
+uniform magnetic field <math class="ltx_Math" altimg="m10.png" altimg-height="18px" altimg-valign="-2px" altimg-width="23px" alttext="H" display="inline"><mi href="./19.33#iii.p1" title="magnetic field">H</mi></math> parallel to the principal axis with semiaxis <math class="ltx_Math" altimg="m42.png" altimg-height="13px" altimg-valign="-2px" altimg-width="13px" alttext="c" display="inline"><mi>c</mi></math>.
+The external field and the induced magnetization together produce a uniform
+field inside the ellipsoid with strength <math class="ltx_Math" altimg="m9.png" altimg-height="25px" altimg-valign="-7px" altimg-width="120px" alttext="H/(1+L_{c}\chi)" display="inline"><mrow><mi href="./19.33#iii.p1" title="magnetic field">H</mi><mo>/</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mrow><msub><mi href="./19.33#iii.p2" title="factor">L</mi><mi>c</mi></msub><mo>⁢</mo><mi href="./19.33#iii.p1" title="susceptibility">χ</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></math>, where <math class="ltx_Math" altimg="m13.png" altimg-height="21px" altimg-valign="-5px" altimg-width="27px" alttext="L_{c}" display="inline"><msub><mi href="./19.33#iii.p2" title="factor">L</mi><mi>c</mi></msub></math> is
+the demagnetizing factor, given in cgs units by
+</p>
+<table id="E7" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">19.33.7</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E7.png" altimg-height="82px" altimg-valign="-25px" altimg-width="589px" alttext="L_{c}=2\pi abc\int_{0}^{\infty}\frac{\,\mathrm{d}\lambda}{\sqrt{(a^{2}+\lambda%
+)(b^{2}+\lambda)(c^{2}+\lambda)^{3}}}=VR_{D}\left(a^{2},b^{2},c^{2}\right)." display="block"><mrow><mrow><msub><mi href="./19.33#iii.p2" title="factor">L</mi><mi>c</mi></msub><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>⁢</mo><mi>a</mi><mo>⁢</mo><mi>b</mi><mo>⁢</mo><mi>c</mi><mo>⁢</mo><mrow><msubsup><mo href="./1.4#iv" title="integral">∫</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup><mfrac><mrow><mo href="./1.4#iv" rspace="0em" title="differential of 𝑥">d</mo><mi>λ</mi></mrow><msqrt><mrow><mrow><mo stretchy="false">(</mo><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><mi>λ</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>b</mi><mn>2</mn></msup><mo>+</mo><mi>λ</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><msup><mi>c</mi><mn>2</mn></msup><mo>+</mo><mi>λ</mi></mrow><mo stretchy="false">)</mo></mrow><mn>3</mn></msup></mrow></msqrt></mfrac></mrow></mrow><mo>=</mo><mrow><mi href="./19.33#iii.p1" title="volume">V</mi><mo>⁢</mo><mrow><msub><mi href="./19.16#E5" title="elliptic integral symmetric in only two variables">R</mi><mi href="./19.16#E5" title="elliptic integral symmetric in only two variables">D</mi></msub><mo>⁡</mo><mrow><mo>(</mo><msup><mi>a</mi><mn>2</mn></msup><mo>,</mo><msup><mi>b</mi><mn>2</mn></msup><mo>,</mo><msup><mi>c</mi><mn>2</mn></msup><mo>)</mo></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E7.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./19.16#E5" title="(19.16.5) ‣ §19.16(i) Symmetric Integrals ‣ §19.16 Definitions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m15.png" altimg-height="25px" altimg-valign="-7px" altimg-width="107px" alttext="R_{D}\left(\NVar{x},\NVar{y},\NVar{z}\right)" display="inline"><mrow><msub><mi href="./19.16#E5" title="elliptic integral symmetric in only two variables">R</mi><mi href="./19.16#E5" title="elliptic integral symmetric in only two variables">D</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">x</mi><mo>,</mo><mi class="ltx_nvar">y</mi><mo>,</mo><mi class="ltx_nvar">z</mi><mo>)</mo></mrow></mrow></math>: elliptic integral symmetric in only two variables</a>,
+<a href="./3.12#E1" title="(3.12.1) ‣ §3.12 Mathematical Constants ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m34.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="\pi" display="inline"><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></math>: the ratio of the circumference of a circle to its diameter</a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m32.png" altimg-height="18px" altimg-valign="-2px" altimg-width="28px" alttext="\,\mathrm{d}\NVar{x}" display="inline"><mrow><mo href="./1.4#iv" rspace="0em" title="differential of 𝑥">d</mo><mi class="ltx_nvar">x</mi></mrow></math>: differential of <math class="ltx_Math" altimg="m47.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m29.png" altimg-height="27px" altimg-valign="-8px" altimg-width="18px" alttext="\int" display="inline"><mo href="./1.4#iv" title="integral">∫</mo></math>: integral</a>,
+<a href="./19.33#iii.p2" title="§19.33(iii) Depolarization Factors ‣ §19.33 Triaxial Ellipsoids ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m11.png" altimg-height="21px" altimg-valign="-5px" altimg-width="28px" alttext="L_{a}" display="inline"><msub><mi href="./19.33#iii.p2" title="factor">L</mi><mi>a</mi></msub></math>, <math class="ltx_Math" altimg="m12.png" altimg-height="21px" altimg-valign="-5px" altimg-width="27px" alttext="L_{b}" display="inline"><msub><mi href="./19.33#iii.p2" title="factor">L</mi><mi>b</mi></msub></math>:  factor</a> and
+<a href="./19.33#iii.p1" title="§19.33(iii) Depolarization Factors ‣ §19.33 Triaxial Ellipsoids ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m22.png" altimg-height="18px" altimg-valign="-2px" altimg-width="21px" alttext="V" display="inline"><mi href="./19.33#iii.p1" title="volume">V</mi></math>:  volume</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./19.15#p5" title="§19.15 Advantages of Symmetry ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.15</span></a>,
+<a href="./19.33#iii.info" title="§19.33(iii) Depolarization Factors ‣ §19.33 Triaxial Ellipsoids ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.33(iii)</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./19.33.E7" title="" class="ltx_ref">http://dlmf.nist.gov/19.33.E7</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./19.33.E7.tex">TeX</a>, <a href="./19.33.E7.pmml">pMML</a>, <a href="./19.33.E7.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19.33#iii.info" title="§19.33(iii) Depolarization Factors ‣ §19.33 Triaxial Ellipsoids ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.33(iii)</span></a>,
+<a href="./19.33#info" title="§19.33 Triaxial Ellipsoids ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.33</span></a> and
+<a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+<div id="iii.p2" class="ltx_para">
+<p class="ltx_p">The same result holds for a homogeneous dielectric ellipsoid in an electric
+field. By (<a href="./19.21#E8" title="(19.21.8) ‣ §19.21(ii) Incomplete Integrals ‣ §19.21 Connection Formulas ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">19.21.8</span></a>),</p>
+<table id="E8" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">19.33.8</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E8.png" altimg-height="24px" altimg-valign="-6px" altimg-width="183px" alttext="L_{a}+L_{b}+L_{c}=4\pi," display="block"><mrow><mrow><mrow><msub><mi href="./19.33#iii.p2" title="factor">L</mi><mi>a</mi></msub><mo>+</mo><msub><mi href="./19.33#iii.p2" title="factor">L</mi><mi>b</mi></msub><mo>+</mo><msub><mi href="./19.33#iii.p2" title="factor">L</mi><mi>c</mi></msub></mrow><mo>=</mo><mrow><mn>4</mn><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E8.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./3.12#E1" title="(3.12.1) ‣ §3.12 Mathematical Constants ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m34.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="\pi" display="inline"><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></math>: the ratio of the circumference of a circle to its diameter</a> and
+<a href="./19.33#iii.p2" title="§19.33(iii) Depolarization Factors ‣ §19.33 Triaxial Ellipsoids ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m11.png" altimg-height="21px" altimg-valign="-5px" altimg-width="28px" alttext="L_{a}" display="inline"><msub><mi href="./19.33#iii.p2" title="factor">L</mi><mi>a</mi></msub></math>, <math class="ltx_Math" altimg="m12.png" altimg-height="21px" altimg-valign="-5px" altimg-width="27px" alttext="L_{b}" display="inline"><msub><mi href="./19.33#iii.p2" title="factor">L</mi><mi>b</mi></msub></math>:  factor</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./19.33.E8" title="" class="ltx_ref">http://dlmf.nist.gov/19.33.E8</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./19.33.E8.tex">TeX</a>, <a href="./19.33.E8.pmml">pMML</a>, <a href="./19.33.E8.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19.33#iii.info" title="§19.33(iii) Depolarization Factors ‣ §19.33 Triaxial Ellipsoids ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.33(iii)</span></a>,
+<a href="./19.33#info" title="§19.33 Triaxial Ellipsoids ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.33</span></a> and
+<a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">where <math class="ltx_Math" altimg="m11.png" altimg-height="21px" altimg-valign="-5px" altimg-width="28px" alttext="L_{a}" display="inline"><msub><mi href="./19.33#iii.p2" title="factor">L</mi><mi>a</mi></msub></math> and <math class="ltx_Math" altimg="m12.png" altimg-height="21px" altimg-valign="-5px" altimg-width="27px" alttext="L_{b}" display="inline"><msub><mi href="./19.33#iii.p2" title="factor">L</mi><mi>b</mi></msub></math> are obtained from <math class="ltx_Math" altimg="m13.png" altimg-height="21px" altimg-valign="-5px" altimg-width="27px" alttext="L_{c}" display="inline"><msub><mi href="./19.33#iii.p2" title="factor">L</mi><mi>c</mi></msub></math> by permutation of <math class="ltx_Math" altimg="m38.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="a" display="inline"><mi>a</mi></math>, <math class="ltx_Math" altimg="m40.png" altimg-height="18px" altimg-valign="-2px" altimg-width="13px" alttext="b" display="inline"><mi>b</mi></math>, and
+<math class="ltx_Math" altimg="m42.png" altimg-height="13px" altimg-valign="-2px" altimg-width="13px" alttext="c" display="inline"><mi>c</mi></math>. Expressions in terms of Legendre’s integrals, numerical tables, and
+further references are given by <cite class="ltx_cite ltx_citemacro_citet">Cronemeyer (<a href="./bib/C#bib599" title="Demagnetization factors for general ellipsoids" class="ltx_ref">1991</a>)</cite>.</p>
+</div>
+</section>
+<section id="iv" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§19.33(iv) </span>Self-Energy of an Ellipsoidal Distribution</h2>
+<div id="iv.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=ellipsoid">ellipsoid</a>, <a class="ltx_keyword" href="./search/search?q=self-energy">self-energy</a>
+</dd>
+<dt>Notes:</dt>
+<dd>See <cite class="ltx_cite ltx_citemacro_citet">Carlson (<a href="./bib/C#bib424" title="Ellipsoidal distributions of charge or mass" class="ltx_ref">1961a</a>)</cite> and
+<cite class="ltx_cite ltx_citemacro_citet">Carlson (<a href="./bib/C#bib434" title="Special Functions of Applied Mathematics" class="ltx_ref">1977b</a>, Ex. 9.4-3 and p. 313)</cite>.</dd>
+<dt>Permalink:</dt>
+<dd><a href="./19.33.iv" title="" class="ltx_ref">http://dlmf.nist.gov/19.33.iv</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19.33#info" title="§19.33 Triaxial Ellipsoids ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.33</span></a> and
+<a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="iv.p1" class="ltx_para">
+<p class="ltx_p">Ellipsoidal distributions of charge or mass are used to model certain atomic
+nuclei and some elliptical galaxies. Let the density of charge or mass be
+</p>
+<table id="E9" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">19.33.9</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E9.png" altimg-height="71px" altimg-valign="-15px" altimg-width="441px" alttext="\rho(x,y,z)=f\left(\sqrt{(x^{2}/\alpha^{2})+(y^{2}/\beta^{2})+(z^{2}/\gamma^{2%
+})}\right)," display="block"><mrow><mrow><mrow><mi href="./19.33#iv.p1" title="density">ρ</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi href="./19.33#iv.p1" title="density">f</mi><mo>⁡</mo><mrow><mo>(</mo><msqrt><mrow><mrow><mo stretchy="false">(</mo><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>/</mo><msup><mi href="./19.33#iv.p1" title="positive constant">α</mi><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow><mo>+</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>y</mi><mn>2</mn></msup><mo>/</mo><msup><mi href="./19.33#iv.p1" title="positive constant">β</mi><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow><mo>+</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>z</mi><mn>2</mn></msup><mo>/</mo><msup><mi href="./19.33#iv.p1" title="positive constant">γ</mi><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow></mrow></msqrt><mo>)</mo></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E9.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./19.33#iv.p1" title="§19.33(iv) Self-Energy of an Ellipsoidal Distribution ‣ §19.33 Triaxial Ellipsoids ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m35.png" altimg-height="25px" altimg-valign="-7px" altimg-width="83px" alttext="\rho(x,y,z)" display="inline"><mrow><mi href="./19.33#iv.p1" title="density">ρ</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow></math>:  density</a>,
+<a href="./19.33#iv.p1" title="§19.33(iv) Self-Energy of an Ellipsoidal Distribution ‣ §19.33 Triaxial Ellipsoids ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m43.png" altimg-height="25px" altimg-valign="-7px" altimg-width="40px" alttext="f(t)" display="inline"><mrow><mi href="./19.33#iv.p1" title="density">f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow></math>:  density</a>,
+<a href="./19.33#iv.p1" title="§19.33(iv) Self-Energy of an Ellipsoidal Distribution ‣ §19.33 Triaxial Ellipsoids ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m24.png" altimg-height="13px" altimg-valign="-2px" altimg-width="18px" alttext="\alpha" display="inline"><mi href="./19.33#iv.p1" title="positive constant">α</mi></math>:  positive constant</a>,
+<a href="./19.33#iv.p1" title="§19.33(iv) Self-Energy of an Ellipsoidal Distribution ‣ §19.33 Triaxial Ellipsoids ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m25.png" altimg-height="22px" altimg-valign="-6px" altimg-width="17px" alttext="\beta" display="inline"><mi href="./19.33#iv.p1" title="positive constant">β</mi></math>:  positive constant</a> and
+<a href="./19.33#iv.p1" title="§19.33(iv) Self-Energy of an Ellipsoidal Distribution ‣ §19.33 Triaxial Ellipsoids ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m28.png" altimg-height="17px" altimg-valign="-6px" altimg-width="16px" alttext="\gamma" display="inline"><mi href="./19.33#iv.p1" title="positive constant">γ</mi></math>:  positive constant</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./19.33.E9" title="" class="ltx_ref">http://dlmf.nist.gov/19.33.E9</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./19.33.E9.tex">TeX</a>, <a href="./19.33.E9.pmml">pMML</a>, <a href="./19.33.E9.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19.33#iv.info" title="§19.33(iv) Self-Energy of an Ellipsoidal Distribution ‣ §19.33 Triaxial Ellipsoids ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.33(iv)</span></a>,
+<a href="./19.33#info" title="§19.33 Triaxial Ellipsoids ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.33</span></a> and
+<a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">where <math class="ltx_Math" altimg="m23.png" altimg-height="22px" altimg-valign="-6px" altimg-width="61px" alttext="\alpha,\beta,\gamma" display="inline"><mrow><mi href="./19.33#iv.p1" title="positive constant">α</mi><mo>,</mo><mi href="./19.33#iv.p1" title="positive constant">β</mi><mo>,</mo><mi href="./19.33#iv.p1" title="positive constant">γ</mi></mrow></math> are dimensionless positive constants. The contours
+of constant density are a family of similar, rather than confocal, ellipsoids.
+In suitable units the self-energy of the distribution is given by
+</p>
+<table id="E10" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">19.33.10</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E10.png" altimg-height="60px" altimg-valign="-25px" altimg-width="464px" alttext="U=\frac{1}{2}\int_{{\mathbb{R}}^{6}}\frac{\rho(x,y,z)\rho(x^{\prime},y^{\prime%
+},z^{\prime})\,\mathrm{d}x\,\mathrm{d}y\,\mathrm{d}z\,\mathrm{d}x^{\prime}\,%
+\mathrm{d}y^{\prime}\,\mathrm{d}z^{\prime}}{\sqrt{(x-x^{\prime})^{2}+(y-y^{%
+\prime})^{2}+(z-z^{\prime})^{2}}}." display="block"><mrow><mrow><mi href="./19.33#iv.p1" title="energy">U</mi><mo>=</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mrow><msub><mo href="./1.4#iv" title="integral">∫</mo><msup><mi href="./front/introduction#common.t2.r14" title="real line">ℝ</mi><mn>6</mn></msup></msub><mfrac><mrow><mrow><mi href="./19.33#iv.p1" title="density">ρ</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⁢</mo><mrow><mi href="./19.33#iv.p1" title="density">ρ</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><msup><mi>x</mi><mo>′</mo></msup><mo>,</mo><msup><mi>y</mi><mo>′</mo></msup><mo>,</mo><msup><mi>z</mi><mo>′</mo></msup><mo stretchy="false">)</mo></mrow></mrow><mo lspace="0em">⁢</mo><mrow><mo href="./1.4#iv" rspace="0em" title="differential of 𝑥">d</mo><mi>x</mi></mrow><mo lspace="0em">⁢</mo><mrow><mo href="./1.4#iv" rspace="0em" title="differential of 𝑥">d</mo><mi>y</mi></mrow><mo lspace="0em">⁢</mo><mrow><mo href="./1.4#iv" rspace="0em" title="differential of 𝑥">d</mo><mi>z</mi></mrow><mo lspace="0em">⁢</mo><mrow><mo href="./1.4#iv" rspace="0em" title="differential of 𝑥">d</mo><msup><mi>x</mi><mo>′</mo></msup></mrow><mo lspace="0em">⁢</mo><mrow><mo href="./1.4#iv" rspace="0em" title="differential of 𝑥">d</mo><msup><mi>y</mi><mo>′</mo></msup></mrow><mo lspace="0em">⁢</mo><mrow><mo href="./1.4#iv" rspace="0em" title="differential of 𝑥">d</mo><msup><mi>z</mi><mo>′</mo></msup></mrow></mrow><msqrt><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>−</mo><msup><mi>x</mi><mo>′</mo></msup></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>+</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>y</mi><mo>−</mo><msup><mi>y</mi><mo>′</mo></msup></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>+</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>z</mi><mo>−</mo><msup><mi>z</mi><mo>′</mo></msup></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></msqrt></mfrac></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E10.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m32.png" altimg-height="18px" altimg-valign="-2px" altimg-width="28px" alttext="\,\mathrm{d}\NVar{x}" display="inline"><mrow><mo href="./1.4#iv" rspace="0em" title="differential of 𝑥">d</mo><mi class="ltx_nvar">x</mi></mrow></math>: differential of <math class="ltx_Math" altimg="m47.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m29.png" altimg-height="27px" altimg-valign="-8px" altimg-width="18px" alttext="\int" display="inline"><mo href="./1.4#iv" title="integral">∫</mo></math>: integral</a>,
+<a href="./front/introduction#common.t2.r14" title="Common Notations and Definitions ‣ Mathematical Introduction" class="ltx_ref"><math class="ltx_Math" altimg="m31.png" altimg-height="18px" altimg-valign="-2px" altimg-width="19px" alttext="\mathbb{R}" display="inline"><mi href="./front/introduction#common.t2.r14" title="real line">ℝ</mi></math>: real line</a>,
+<a href="./19.33#iv.p1" title="§19.33(iv) Self-Energy of an Ellipsoidal Distribution ‣ §19.33 Triaxial Ellipsoids ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m35.png" altimg-height="25px" altimg-valign="-7px" altimg-width="83px" alttext="\rho(x,y,z)" display="inline"><mrow><mi href="./19.33#iv.p1" title="density">ρ</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow></math>:  density</a> and
+<a href="./19.33#iv.p1" title="§19.33(iv) Self-Energy of an Ellipsoidal Distribution ‣ §19.33 Triaxial Ellipsoids ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m19.png" altimg-height="18px" altimg-valign="-2px" altimg-width="21px" alttext="U" display="inline"><mi href="./19.33#iv.p1" title="energy">U</mi></math>:  energy</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./19.33.E10" title="" class="ltx_ref">http://dlmf.nist.gov/19.33.E10</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./19.33.E10.tex">TeX</a>, <a href="./19.33.E10.pmml">pMML</a>, <a href="./19.33.E10.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19.33#iv.info" title="§19.33(iv) Self-Energy of an Ellipsoidal Distribution ‣ §19.33 Triaxial Ellipsoids ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.33(iv)</span></a>,
+<a href="./19.33#info" title="§19.33 Triaxial Ellipsoids ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.33</span></a> and
+<a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">Subject to mild conditions on <math class="ltx_Math" altimg="m44.png" altimg-height="22px" altimg-valign="-6px" altimg-width="17px" alttext="f" display="inline"><mi href="./19.33#iv.p1" title="density">f</mi></math> this becomes</p>
+<table id="E11" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">19.33.11</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E11.png" altimg-height="75px" altimg-valign="-21px" altimg-width="398px" alttext="U=\tfrac{1}{2}(\alpha\beta\gamma)^{2}R_{F}\left(\alpha^{2},\beta^{2},\gamma^{2%
+}\right)\int_{0}^{\infty}(g(r))^{2}\,\mathrm{d}r," display="block"><mrow><mrow><mi href="./19.33#iv.p1" title="energy">U</mi><mo>=</mo><mrow><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi href="./19.33#iv.p1" title="positive constant">α</mi><mo>⁢</mo><mi href="./19.33#iv.p1" title="positive constant">β</mi><mo>⁢</mo><mi href="./19.33#iv.p1" title="positive constant">γ</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>⁢</mo><mrow><msub><mi href="./19.16#E1" title="symmetric elliptic integral of first kind">R</mi><mi href="./19.16#E1" title="symmetric elliptic integral of first kind">F</mi></msub><mo>⁡</mo><mrow><mo>(</mo><msup><mi href="./19.33#iv.p1" title="positive constant">α</mi><mn>2</mn></msup><mo>,</mo><msup><mi href="./19.33#iv.p1" title="positive constant">β</mi><mn>2</mn></msup><mo>,</mo><msup><mi href="./19.33#iv.p1" title="positive constant">γ</mi><mn>2</mn></msup><mo>)</mo></mrow></mrow><mo>⁢</mo><mrow><msubsup><mo href="./1.4#iv" rspace="0em" title="integral">∫</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi href="./19.33#iv.p1" title="function">g</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo lspace="0em">⁢</mo><mrow><mo href="./1.4#iv" rspace="0em" title="differential of 𝑥">d</mo><mi>r</mi></mrow></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E11.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./19.16#E1" title="(19.16.1) ‣ §19.16(i) Symmetric Integrals ‣ §19.16 Definitions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m16.png" altimg-height="25px" altimg-valign="-7px" altimg-width="105px" alttext="R_{F}\left(\NVar{x},\NVar{y},\NVar{z}\right)" display="inline"><mrow><msub><mi href="./19.16#E1" title="symmetric elliptic integral of first kind">R</mi><mi href="./19.16#E1" title="symmetric elliptic integral of first kind">F</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">x</mi><mo>,</mo><mi class="ltx_nvar">y</mi><mo>,</mo><mi class="ltx_nvar">z</mi><mo>)</mo></mrow></mrow></math>: symmetric elliptic integral of first kind</a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m32.png" altimg-height="18px" altimg-valign="-2px" altimg-width="28px" alttext="\,\mathrm{d}\NVar{x}" display="inline"><mrow><mo href="./1.4#iv" rspace="0em" title="differential of 𝑥">d</mo><mi class="ltx_nvar">x</mi></mrow></math>: differential of <math class="ltx_Math" altimg="m47.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m29.png" altimg-height="27px" altimg-valign="-8px" altimg-width="18px" alttext="\int" display="inline"><mo href="./1.4#iv" title="integral">∫</mo></math>: integral</a>,
+<a href="./19.33#iv.p1" title="§19.33(iv) Self-Energy of an Ellipsoidal Distribution ‣ §19.33 Triaxial Ellipsoids ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m24.png" altimg-height="13px" altimg-valign="-2px" altimg-width="18px" alttext="\alpha" display="inline"><mi href="./19.33#iv.p1" title="positive constant">α</mi></math>:  positive constant</a>,
+<a href="./19.33#iv.p1" title="§19.33(iv) Self-Energy of an Ellipsoidal Distribution ‣ §19.33 Triaxial Ellipsoids ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m25.png" altimg-height="22px" altimg-valign="-6px" altimg-width="17px" alttext="\beta" display="inline"><mi href="./19.33#iv.p1" title="positive constant">β</mi></math>:  positive constant</a>,
+<a href="./19.33#iv.p1" title="§19.33(iv) Self-Energy of an Ellipsoidal Distribution ‣ §19.33 Triaxial Ellipsoids ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m28.png" altimg-height="17px" altimg-valign="-6px" altimg-width="16px" alttext="\gamma" display="inline"><mi href="./19.33#iv.p1" title="positive constant">γ</mi></math>:  positive constant</a>,
+<a href="./19.33#iv.p1" title="§19.33(iv) Self-Energy of an Ellipsoidal Distribution ‣ §19.33 Triaxial Ellipsoids ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m19.png" altimg-height="18px" altimg-valign="-2px" altimg-width="21px" alttext="U" display="inline"><mi href="./19.33#iv.p1" title="energy">U</mi></math>:  energy</a> and
+<a href="./19.33#iv.p1" title="§19.33(iv) Self-Energy of an Ellipsoidal Distribution ‣ §19.33 Triaxial Ellipsoids ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m45.png" altimg-height="25px" altimg-valign="-7px" altimg-width="41px" alttext="g(r)" display="inline"><mrow><mi href="./19.33#iv.p1" title="function">g</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo stretchy="false">)</mo></mrow></mrow></math>:  function</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./19.33.E11" title="" class="ltx_ref">http://dlmf.nist.gov/19.33.E11</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./19.33.E11.tex">TeX</a>, <a href="./19.33.E11.pmml">pMML</a>, <a href="./19.33.E11.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19.33#iv.info" title="§19.33(iv) Self-Energy of an Ellipsoidal Distribution ‣ §19.33 Triaxial Ellipsoids ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.33(iv)</span></a>,
+<a href="./19.33#info" title="§19.33 Triaxial Ellipsoids ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.33</span></a> and
+<a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">where
+</p>
+<table id="E12" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">19.33.12</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E12.png" altimg-height="55px" altimg-valign="-21px" altimg-width="211px" alttext="g(r)=4\pi\int_{r}^{\infty}f(t)t\,\mathrm{d}t." display="block"><mrow><mrow><mrow><mi href="./19.33#iv.p1" title="function">g</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mn>4</mn><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>⁢</mo><mrow><msubsup><mo href="./1.4#iv" title="integral">∫</mo><mi>r</mi><mi mathvariant="normal">∞</mi></msubsup><mrow><mrow><mi href="./19.33#iv.p1" title="density">f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⁢</mo><mi>t</mi><mo lspace="0em">⁢</mo><mrow><mo href="./1.4#iv" rspace="0em" title="differential of 𝑥">d</mo><mi>t</mi></mrow></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E12.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./3.12#E1" title="(3.12.1) ‣ §3.12 Mathematical Constants ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m34.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="\pi" display="inline"><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></math>: the ratio of the circumference of a circle to its diameter</a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m32.png" altimg-height="18px" altimg-valign="-2px" altimg-width="28px" alttext="\,\mathrm{d}\NVar{x}" display="inline"><mrow><mo href="./1.4#iv" rspace="0em" title="differential of 𝑥">d</mo><mi class="ltx_nvar">x</mi></mrow></math>: differential of <math class="ltx_Math" altimg="m47.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m29.png" altimg-height="27px" altimg-valign="-8px" altimg-width="18px" alttext="\int" display="inline"><mo href="./1.4#iv" title="integral">∫</mo></math>: integral</a>,
+<a href="./19.33#iv.p1" title="§19.33(iv) Self-Energy of an Ellipsoidal Distribution ‣ §19.33 Triaxial Ellipsoids ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m43.png" altimg-height="25px" altimg-valign="-7px" altimg-width="40px" alttext="f(t)" display="inline"><mrow><mi href="./19.33#iv.p1" title="density">f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow></math>:  density</a> and
+<a href="./19.33#iv.p1" title="§19.33(iv) Self-Energy of an Ellipsoidal Distribution ‣ §19.33 Triaxial Ellipsoids ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m45.png" altimg-height="25px" altimg-valign="-7px" altimg-width="41px" alttext="g(r)" display="inline"><mrow><mi href="./19.33#iv.p1" title="function">g</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo stretchy="false">)</mo></mrow></mrow></math>:  function</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./19.33.E12" title="" class="ltx_ref">http://dlmf.nist.gov/19.33.E12</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./19.33.E12.tex">TeX</a>, <a href="./19.33.E12.pmml">pMML</a>, <a href="./19.33.E12.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19.33#iv.info" title="§19.33(iv) Self-Energy of an Ellipsoidal Distribution ‣ §19.33 Triaxial Ellipsoids ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.33(iv)</span></a>,
+<a href="./19.33#info" title="§19.33 Triaxial Ellipsoids ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.33</span></a> and
+<a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+</div>
+<div class="ltx_page_footer">
+<div class="ltx_siblings">
+<a href="./19.32" title="In Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">19.32 </span>Conformal Map onto a Rectangle</span></a><a href="./19.34" title="In Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">19.34 </span>Mutual Inductance of Coaxial Circles</span></a>
+</div>
+<div class="ltx_footer_links ltx_centering">
+<a href="./about/notices">© 2010–2026 NIST</a> / <a href="./about/notices#S2">Disclaimer</a> / <a href="/cdn-cgi/l/email-protection#f0b4bcbdb6dd969595949291939bb09e998384de979f86">Feedback</a>;
+ Version 1.2.7;
+Release date 2026-06-15.</div>
+<span id="pagesettings"></span>
+<div class="ltx_nist_logo"><a href="http://www.nist.gov/"><img src="./style/nistidc.png" width="500" alt="NIST"></a></div>
+<div class="ltx_nist_links ltx_align_right">
+<a href="https://www.nist.gov/privacy-policy">Site Privacy</a> <a href="https://www.nist.gov/oism/accessibility">Accessibility</a> <a href="https://www.nist.gov/privacy">Privacy Program</a> <a href="https://www.nist.gov/oism/copyrights">Copyrights</a> <a href="https://www.commerce.gov/vulnerability-disclosure-policy">Vulnerability Disclosure</a> <a href="https://www.nist.gov/no-fear-act-policy">No Fear Act Policy</a> <a href="https://www.nist.gov/foia">FOIA</a> <a href="https://www.nist.gov/environmental-policy-statement">Environmental Policy</a> <a href="https://www.nist.gov/summary-report-scientific-integrity">Scientific Integrity</a> <a href="https://www.nist.gov/nist-information-quality-standards">Information Quality Standards</a> <a href="https://www.commerce.gov/">Commerce.gov</a> <a href="http://www.science.gov/">Science.gov</a> <a href="http://www.usa.gov/">USA.gov</a>
+</div>
+</div>
+</div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a30b650b4eb1f186',t:'MTc4NzY2OTI3NQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"9ef5b487afff42a68917b2d63593a474"}' crossorigin="anonymous"></script>
+</body>
+</html>

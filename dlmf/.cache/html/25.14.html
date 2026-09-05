@@ -1,0 +1,944 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>DLMF: §25.14 Lerch’s Transcendent ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions</title>
+<link rel="shortcut icon" href="./style/DLMF-16.png" type="image/png">
+<script type="text/javascript"><!--
+	var PATH="DLMF:/25.14";
+	var ROOT="./";
+      //--></script>
+<script type="text/javascript" src="./style/jquery.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/jquery.leaveNotice.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/DLMF.js"><!-- non-empty so ie6 will accept it --></script>
+<script async="" type="text/javascript" id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC&amp;subagency=NIST&amp;pua=UA-37115410-44&amp;yt=true&amp;exts=ppsx,pps,f90,sch,rtf,wrl,txz,m1v,xlsm,msi,xsd,f,tif,eps,mpg,xml,pl,xlt,c"><!-- non-empty so ie6 will accept it --></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-BZB64W4M0L"></script><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-BZB64W4M0L');
+      </script>
+<link rel="stylesheet" type="text/css" href="./style/LaTeXML.css">
+<link rel="stylesheet" type="text/css" href="./style/DLMF.css">
+<link rel="stylesheet" type="text/css" href="./style/print.css" media="print">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="top" href="./" title="DLMF">
+<link rel="copyright" href="./about/notices" title="Copyright">
+<link rel="search" href="./search/search" title="Search">
+<link rel="help" class="ltx_help" href="./help/" title="Help">
+<link rel="up" href="./25#PT3" title="Related Functions ‣ Chapter 25 Zeta and Related Functions">
+<link rel="up up" href="./25" title="Chapter 25 Zeta and Related Functions">
+<link rel="start" href="./" title="">
+<link rel="prev" href="./25.13" title="§25.13 Periodic Zeta Function ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions">
+<link rel="next" href="./25.15" title="§25.15 Dirichlet 𝐿-functions ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions">
+<link rel="section" href="./25.1" title="§25.1 Special Notation ‣ Notation ‣ Chapter 25 Zeta and Related Functions">
+<link rel="section" href="./25.2" title="§25.2 Definition and Expansions ‣ Riemann Zeta Function ‣ Chapter 25 Zeta and Related Functions">
+<link rel="section" href="./25.3" title="§25.3 Graphics ‣ Riemann Zeta Function ‣ Chapter 25 Zeta and Related Functions">
+<link rel="section" href="./25.4" title="§25.4 Reflection Formulas ‣ Riemann Zeta Function ‣ Chapter 25 Zeta and Related Functions">
+<link rel="section" href="./25.5" title="§25.5 Integral Representations ‣ Riemann Zeta Function ‣ Chapter 25 Zeta and Related Functions">
+<link rel="section" href="./25.6" title="§25.6 Integer Arguments ‣ Riemann Zeta Function ‣ Chapter 25 Zeta and Related Functions">
+<link rel="section" href="./25.7" title="§25.7 Integrals ‣ Riemann Zeta Function ‣ Chapter 25 Zeta and Related Functions">
+<link rel="section" href="./25.8" title="§25.8 Sums ‣ Riemann Zeta Function ‣ Chapter 25 Zeta and Related Functions">
+<link rel="section" href="./25.9" title="§25.9 Asymptotic Approximations ‣ Riemann Zeta Function ‣ Chapter 25 Zeta and Related Functions">
+<link rel="section" href="./25.10" title="§25.10 Zeros ‣ Riemann Zeta Function ‣ Chapter 25 Zeta and Related Functions">
+<link rel="section" href="./25.11" title="§25.11 Hurwitz Zeta Function ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions">
+<link rel="section" href="./25.12" title="§25.12 Polylogarithms ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions">
+<link rel="section" href="./25.13" title="§25.13 Periodic Zeta Function ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions">
+<link rel="section" href="./25.15" title="§25.15 Dirichlet 𝐿-functions ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions">
+<link rel="section" href="./25.16" title="§25.16 Mathematical Applications ‣ Applications ‣ Chapter 25 Zeta and Related Functions">
+<link rel="section" href="./25.17" title="§25.17 Physical Applications ‣ Applications ‣ Chapter 25 Zeta and Related Functions">
+<link rel="section" href="./25.18" title="§25.18 Methods of Computation ‣ Computation ‣ Chapter 25 Zeta and Related Functions">
+<link rel="section" href="./25.19" title="§25.19 Tables ‣ Computation ‣ Chapter 25 Zeta and Related Functions">
+<link rel="section" href="./25.20" title="§25.20 Approximations ‣ Computation ‣ Chapter 25 Zeta and Related Functions">
+<link rel="section" href="./25.21" title="§25.21 Software ‣ Computation ‣ Chapter 25 Zeta and Related Functions">
+<link rel="document" href="./front/foreword" title="Foreword">
+<link rel="document" href="./front/preface" title="Preface">
+<link rel="document" href="./front/introduction" title="Mathematical Introduction">
+<link rel="chapter" href="./1" title="Chapter 1 Algebraic and Analytic Methods">
+<link rel="chapter" href="./2" title="Chapter 2 Asymptotic Approximations">
+<link rel="chapter" href="./3" title="Chapter 3 Numerical Methods">
+<link rel="chapter" href="./4" title="Chapter 4 Elementary Functions">
+<link rel="chapter" href="./5" title="Chapter 5 Gamma Function">
+<link rel="chapter" href="./6" title="Chapter 6 Exponential, Logarithmic, Sine, and Cosine Integrals">
+<link rel="chapter" href="./7" title="Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="chapter" href="./8" title="Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="chapter" href="./9" title="Chapter 9 Airy and Related Functions">
+<link rel="chapter" href="./10" title="Chapter 10 Bessel Functions">
+<link rel="chapter" href="./11" title="Chapter 11 Struve and Related Functions">
+<link rel="chapter" href="./12" title="Chapter 12 Parabolic Cylinder Functions">
+<link rel="chapter" href="./13" title="Chapter 13 Confluent Hypergeometric Functions">
+<link rel="chapter" href="./14" title="Chapter 14 Legendre and Related Functions">
+<link rel="chapter" href="./15" title="Chapter 15 Hypergeometric Function">
+<link rel="chapter" href="./16" title="Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="chapter" href="./17" title="Chapter 17 𝑞-Hypergeometric and Related Functions">
+<link rel="chapter" href="./18" title="Chapter 18 Orthogonal Polynomials">
+<link rel="chapter" href="./19" title="Chapter 19 Elliptic Integrals">
+<link rel="chapter" href="./20" title="Chapter 20 Theta Functions">
+<link rel="chapter" href="./21" title="Chapter 21 Multidimensional Theta Functions">
+<link rel="chapter" href="./22" title="Chapter 22 Jacobian Elliptic Functions">
+<link rel="chapter" href="./23" title="Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="chapter" href="./24" title="Chapter 24 Bernoulli and Euler Polynomials">
+<link rel="chapter" href="./25" title="Chapter 25 Zeta and Related Functions">
+<link rel="chapter" href="./26" title="Chapter 26 Combinatorial Analysis">
+<link rel="chapter" href="./27" title="Chapter 27 Functions of Number Theory">
+<link rel="chapter" href="./28" title="Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="chapter" href="./29" title="Chapter 29 Lamé Functions">
+<link rel="chapter" href="./30" title="Chapter 30 Spheroidal Wave Functions">
+<link rel="chapter" href="./31" title="Chapter 31 Heun Functions">
+<link rel="chapter" href="./32" title="Chapter 32 Painlevé Transcendents">
+<link rel="chapter" href="./33" title="Chapter 33 Coulomb Functions">
+<link rel="chapter" href="./34" title="Chapter 34 3⁢𝑗,6⁢𝑗,9⁢𝑗 Symbols">
+<link rel="chapter" href="./35" title="Chapter 35 Functions of Matrix Argument">
+<link rel="chapter" href="./36" title="Chapter 36 Integrals with Coalescing Saddles">
+<link rel="bibliography" href="./bib/" title="Bibliography">
+<link rel="index" href="./idx/" title="Index">
+<link rel="glossary" href="./not/" title="Notations">
+<link rel="document" href="./lof/" title="List of Figures">
+<link rel="document" href="./lot/" title="List of Tables">
+<link rel="document" href="./software/" title="Software Index">
+<link rel="document" href="./errata/" title="Errata">
+<link rel="document" href="./help/" title="Need Help?">
+<link rel="document" href="./search/" title="Advanced Search">
+<link rel="document" href="./about/" title="About the Project">
+<meta name="keywords" lang="en" content="Hurwitz zeta function, Lerch’s transcendent, definition, polylogarithms, properties, relation to Hurwitz zeta function, relation to polylogarithms, relations to other functions">
+</head>
+<body class="color_default textfont_default titlefont_default fontsize_default navbar_default">
+<div class="ltx_page_navbar">
+<div class="ltx_page_navlogo"><a href="./" title="Digital Library of Mathematical Functions"><span>DLMF</span></a></div>
+<div class="ltx_page_navitems">
+<form method="get" action="./search/search">
+<ul>
+<li><a href="./idx/">Index</a></li>
+<li><a href="./not/">Notations</a></li>
+<li><small><input type="text" name="q" value="" size="6" class="ltx_page_navitem_search"><button type="submit">Search</button></small></li>
+<li><a href="./help/" class="ltx_help">Help?</a></li>
+<li><a href="./help/cite">Citing</a></li>
+<li><a href="./help/customize" class="ltx_customize">Customize</a></li>
+<li id="showinfo"><a href="" onclick="showInfo(); return false;" title="Show Annotations">Annotate</a></li>
+<li id="hideinfo"><a href="" onclick="hideInfo(); return false;">UnAnnotate</a></li>
+</ul>
+</form>
+</div>
+<div class="ltx_page_navsponsors">
+<div><a href="./about/" class="ltx_page_navabout">About the Project</a></div>
+</div>
+</div>
+<div class="ltx_page_main">
+<div class="ltx_page_header">
+<a href="./25" title="" class="ltx_ref" rel="up up"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">25 </span>Zeta and Related Functions</span></a><a href="./25#PT3" title="In Chapter 25 Zeta and Related Functions" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title">Related Functions</span></a><a href="./25.13" title="In Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">25.13 </span>Periodic Zeta Function</span></a><a href="./25.15" title="In Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">25.15 </span>Dirichlet <math class="ltx_Math" altimg="m6.png" altimg-height="18px" altimg-valign="-2px" altimg-width="18px" alttext="L" display="inline"><mi href="./25.15#E1" title="Dirichlet 𝐿-function">L</mi></math>-functions</span></a>
+</div>
+<div class="ltx_page_content">
+<section class="ltx_section ltx_authors_multiline ltx_leqno">
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">§25.14 </span>Lerch’s Transcendent</h1>
+<div id="info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Notes:</dt>
+<dd>See <cite class="ltx_cite ltx_citemacro_citet">Erdélyi<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/E#bib751" title="Higher Transcendental Functions. Vol. I" class="ltx_ref">1953a</a>, Section 1.11)</cite>.</dd>
+<dt>Permalink:</dt>
+<dd><a href="./25.14" title="" class="ltx_ref">http://dlmf.nist.gov/25.14</a></dd>
+<dt>Clarification (effective with 1.0.21):</dt>
+<dd>
+For (<a href="./25.14#E1" title="(25.14.1) ‣ §25.14(i) Definition ‣ §25.14 Lerch’s Transcendent ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">25.14.1</span></a>), the previous constraint <math class="ltx_Math" altimg="m47.png" altimg-height="22px" altimg-valign="-6px" altimg-width="167px" alttext="a\neq 0,-1,-2,\dots," display="inline"><mrow><mrow><mi href="./25.1#t1.r4" title="real or complex parameter">a</mi><mo>≠</mo><mrow><mn>0</mn><mo>,</mo><mrow><mo>−</mo><mn>1</mn></mrow><mo>,</mo><mrow><mo>−</mo><mn>2</mn></mrow><mo>,</mo><mi mathvariant="normal">…</mi></mrow></mrow><mo>,</mo></mrow></math> was
+removed and a clarification was added in the text just below.
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./25#info" title="Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.25</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<h6>Contents</h6>
+<ol class="ltx_toclist ltx_toclist_section">
+<li class="ltx_tocentry"><a href="#i"><span class="ltx_tag ltx_tag_subsection">§25.14(i) </span>Definition</a></li>
+<li class="ltx_tocentry"><a href="#ii"><span class="ltx_tag ltx_tag_subsection">§25.14(ii) </span>Properties</a></li>
+</ol>
+<section id="i" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§25.14(i) </span>Definition</h2>
+<div id="i.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=Hurwitz%20zeta%20function">Hurwitz zeta function</a>, <a class="ltx_keyword" href="./search/search?q=Lerch%20transcendent">Lerch’s transcendent</a>, <a class="ltx_keyword" href="./search/search?q=definition">definition</a>, <a class="ltx_keyword" href="./search/search?q=polylogarithms">polylogarithms</a>, <a class="ltx_keyword" href="./search/search?q=relation%20to%20Hurwitz%20zeta%20function">relation to Hurwitz zeta function</a>, <a class="ltx_keyword" href="./search/search?q=relation%20to%20polylogarithms">relation to polylogarithms</a>, <a class="ltx_keyword" href="./search/search?q=relations%20to%20other%20functions">relations to other functions</a>
+</dd>
+<dt>Notes:</dt>
+<dd>See <cite class="ltx_cite ltx_citemacro_citet">Erdélyi<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/E#bib751" title="Higher Transcendental Functions. Vol. I" class="ltx_ref">1953a</a>, Section 1.11)</cite>.</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./errata/#V1.2.1.I2.ix7" title="In Other Changes ‣ Version 1.2.1 (June 15, 2024) ‣ Errata" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Erratum (V1.2.1) for  §<span class="ltx_text ltx_ref_tag">25.14(i)</span></span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./25.14.i" title="" class="ltx_ref">http://dlmf.nist.gov/25.14.i</a></dd>
+<dt>Addition (effective with 1.2.1):</dt>
+<dd>
+Equations (<a href="./25.14#E3_1" title="(25.14.3_1) ‣ §25.14(i) Definition ‣ §25.14 Lerch’s Transcendent ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">25.14.3_1</span></a>), (<a href="./25.14#E3_2" title="(25.14.3_2) ‣ §25.14(i) Definition ‣ §25.14 Lerch’s Transcendent ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">25.14.3_2</span></a>), (<a href="./25.14#E3_3" title="(25.14.3_3) ‣ §25.14(i) Definition ‣ §25.14 Lerch’s Transcendent ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">25.14.3_3</span></a>)
+and some text associated with these equations were added.
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./25.14#info" title="§25.14 Lerch’s Transcendent ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§25.14</span></a> and
+<a href="./25#info" title="Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.25</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="i.p1" class="ltx_para">
+<table id="E1" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">25.14.1</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E1.png" altimg-height="67px" altimg-valign="-28px" altimg-width="244px" alttext="{\Phi\left(z,s,a\right)\equiv\sum_{n=0}^{\infty}\frac{z^{n}}{(a+n)^{s}}}," display="block"><mrow><mrow><mrow><mi href="./25.14#E1" mathvariant="normal" title="Lerch’s transcendent">Φ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./25.1#t1.r6" title="complex variable">z</mi><mo>,</mo><mi href="./25.1#t1.r5" title="complex variable">s</mi><mo>,</mo><mi href="./25.1#t1.r4" title="real or complex parameter">a</mi><mo>)</mo></mrow></mrow><mo href="./front/introduction#common.t1.r9" rspace="0.111em" title="equals by definition">≡</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi href="./25.1#t1.r1" title="nonnegative integer">n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><msup><mi href="./25.1#t1.r6" title="complex variable">z</mi><mi href="./25.1#t1.r1" title="nonnegative integer">n</mi></msup><msup><mrow><mo stretchy="false">(</mo><mrow><mi href="./25.1#t1.r4" title="real or complex parameter">a</mi><mo>+</mo><mi href="./25.1#t1.r1" title="nonnegative integer">n</mi></mrow><mo stretchy="false">)</mo></mrow><mi href="./25.1#t1.r5" title="complex variable">s</mi></msup></mfrac></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="4"><span class="ltx_constraint"><math class="ltx_Math" altimg="m67.png" altimg-height="25px" altimg-valign="-7px" altimg-width="64px" alttext="|z|&lt;1" display="inline"><mrow><mrow><mo stretchy="false">|</mo><mi href="./25.1#t1.r6" title="complex variable">z</mi><mo stretchy="false">|</mo></mrow><mo>&lt;</mo><mn>1</mn></mrow></math>; <math class="ltx_Math" altimg="m14.png" altimg-height="25px" altimg-valign="-7px" altimg-width="136px" alttext="\Re s&gt;1,|z|=1" display="inline"><mrow><mrow><mrow><mi href="./1.9#E2" mathvariant="normal" title="real part">ℜ</mi><mo lspace="0.167em">⁡</mo><mi href="./25.1#t1.r5" title="complex variable">s</mi></mrow><mo>&gt;</mo><mn>1</mn></mrow><mo>,</mo><mrow><mrow><mo stretchy="false">|</mo><mi href="./25.1#t1.r6" title="complex variable">z</mi><mo stretchy="false">|</mo></mrow><mo>=</mo><mn>1</mn></mrow></mrow></math>.</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E1.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Defines:</dt>
+<dd><span class="ltx_text ltx_font_bold"><math class="ltx_Math" altimg="m10.png" altimg-height="25px" altimg-valign="-7px" altimg-width="89px" alttext="\Phi\left(\NVar{z},\NVar{s},\NVar{a}\right)" display="inline"><mrow><mi href="./25.14#E1" mathvariant="normal" title="Lerch’s transcendent">Φ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./25.1#t1.r6" title="complex variable">z</mi><mo>,</mo><mi class="ltx_nvar" href="./25.1#t1.r5" title="complex variable">s</mi><mo>,</mo><mi class="ltx_nvar" href="./25.1#t1.r4" title="real or complex parameter">a</mi><mo>)</mo></mrow></mrow></math>: Lerch’s transcendent</span></dd>
+<dt>Symbols:</dt>
+<dd>
+<a href="./front/introduction#common.t1.r9" title="Common Notations and Definitions ‣ Mathematical Introduction" class="ltx_ref"><math class="ltx_Math" altimg="m20.png" altimg-height="13px" altimg-valign="-2px" altimg-width="20px" alttext="\equiv" display="inline"><mo href="./front/introduction#common.t1.r9" title="equals by definition">≡</mo></math>: equals by definition</a>,
+<a href="./1.9#E2" title="(1.9.2) ‣ Real and Imaginary Parts ‣ §1.9(i) Complex Numbers ‣ §1.9 Calculus of a Complex Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m16.png" altimg-height="18px" altimg-valign="-2px" altimg-width="19px" alttext="\Re" display="inline"><mrow><mi href="./1.9#E2" mathvariant="normal" title="real part">ℜ</mi><mo>⁡</mo></mrow></math>: real part</a>,
+<a href="./25.1#t1.r1" title="§25.1 Special Notation ‣ Notation ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m57.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./25.1#t1.r1" title="nonnegative integer">n</mi></math>:  nonnegative integer</a>,
+<a href="./25.1#t1.r4" title="§25.1 Special Notation ‣ Notation ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m46.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="a" display="inline"><mi href="./25.1#t1.r4" title="real or complex parameter">a</mi></math>:  real or complex parameter</a>,
+<a href="./25.1#t1.r5" title="§25.1 Special Notation ‣ Notation ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m60.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="s" display="inline"><mi href="./25.1#t1.r5" title="complex variable">s</mi></math>:  complex variable</a> and
+<a href="./25.1#t1.r6" title="§25.1 Special Notation ‣ Notation ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m65.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi href="./25.1#t1.r6" title="complex variable">z</mi></math>:  complex variable</a>
+</dd>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=definition">definition</a>, <a class="ltx_keyword" href="./search/search?q=infinite%20series">infinite series</a>, <a class="ltx_keyword" href="./search/search?q=series%20representation">series representation</a>
+</dd>
+<dt>Source:</dt>
+<dd><cite class="ltx_cite ltx_citemacro_citet">Erdélyi<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/E#bib751" title="Higher Transcendental Functions. Vol. I" class="ltx_ref">1953a</a>, (1.11.1), p. 27)</cite></dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./25.14#E2.info" title="In §25.14(i) Definition ‣ §25.14 Lerch’s Transcendent ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">(25.14.2)</span></a>,
+<a href="./25.14#E3.info" title="In §25.14(i) Definition ‣ §25.14 Lerch’s Transcendent ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">(25.14.3)</span></a>,
+<a href="./25.14#ii.p1" title="§25.14(ii) Properties ‣ §25.14 Lerch’s Transcendent ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§25.14(ii)</span></a>,
+<a href="./25.14#info" title="§25.14 Lerch’s Transcendent ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§25.14</span></a>,
+<a href="./errata/#V1.0.21.I2.ix3" title="In Other Changes ‣ Version 1.0.21 (December 15, 2018) ‣ Errata" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Erratum (V1.0.21) for  Equation (<span class="ltx_text ltx_ref_tag">25.14.1</span>)</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./25.14.E1" title="" class="ltx_ref">http://dlmf.nist.gov/25.14.E1</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./25.14.E1.tex">TeX</a>, <a href="./25.14.E1.pmml">pMML</a>, <a href="./25.14.E1.png">png</a>
+</dd>
+<dt>Clarification (effective with 1.0.21):</dt>
+<dd>
+The previous constraint <math class="ltx_Math" altimg="m47.png" altimg-height="22px" altimg-valign="-6px" altimg-width="167px" alttext="a\neq 0,-1,-2,\dots," display="inline"><mrow><mrow><mi href="./25.1#t1.r4" title="real or complex parameter">a</mi><mo>≠</mo><mrow><mn>0</mn><mo>,</mo><mrow><mo>−</mo><mn>1</mn></mrow><mo>,</mo><mrow><mo>−</mo><mn>2</mn></mrow><mo>,</mo><mi mathvariant="normal">…</mi></mrow></mrow><mo>,</mo></mrow></math> was removed.
+A clarification regarding the correct constraints for Lerch’s transcendent
+<math class="ltx_Math" altimg="m11.png" altimg-height="25px" altimg-valign="-7px" altimg-width="89px" alttext="\Phi\left(z,s,a\right)" display="inline"><mrow><mi href="./25.14#E1" mathvariant="normal" title="Lerch’s transcendent">Φ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./25.1#t1.r6" title="complex variable">z</mi><mo>,</mo><mi href="./25.1#t1.r5" title="complex variable">s</mi><mo>,</mo><mi href="./25.1#t1.r4" title="real or complex parameter">a</mi><mo>)</mo></mrow></mrow></math> has been added in the text immediately below.
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./25.14#i.info" title="§25.14(i) Definition ‣ §25.14 Lerch’s Transcendent ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§25.14(i)</span></a>,
+<a href="./25.14#info" title="§25.14 Lerch’s Transcendent ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§25.14</span></a> and
+<a href="./25#info" title="Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.25</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">If <math class="ltx_Math" altimg="m60.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="s" display="inline"><mi href="./25.1#t1.r5" title="complex variable">s</mi></math> is not an integer then <math class="ltx_Math" altimg="m25.png" altimg-height="25px" altimg-valign="-7px" altimg-width="94px" alttext="\left|\operatorname{ph}a\right|&lt;\pi" display="inline"><mrow><mrow><mo>|</mo><mrow><mi href="./1.9#E7" title="phase">ph</mi><mo lspace="0.167em">⁡</mo><mi href="./25.1#t1.r4" title="real or complex parameter">a</mi></mrow><mo>|</mo></mrow><mo>&lt;</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></mrow></math>; if <math class="ltx_Math" altimg="m60.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="s" display="inline"><mi href="./25.1#t1.r5" title="complex variable">s</mi></math> is a positive integer
+then <math class="ltx_Math" altimg="m48.png" altimg-height="22px" altimg-valign="-6px" altimg-width="158px" alttext="a\neq 0,-1,-2,\dots" display="inline"><mrow><mi href="./25.1#t1.r4" title="real or complex parameter">a</mi><mo>≠</mo><mrow><mn>0</mn><mo>,</mo><mrow><mo>−</mo><mn>1</mn></mrow><mo>,</mo><mrow><mo>−</mo><mn>2</mn></mrow><mo>,</mo><mi mathvariant="normal">…</mi></mrow></mrow></math>; if <math class="ltx_Math" altimg="m60.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="s" display="inline"><mi href="./25.1#t1.r5" title="complex variable">s</mi></math> is a non-positive integer then <math class="ltx_Math" altimg="m46.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="a" display="inline"><mi href="./25.1#t1.r4" title="real or complex parameter">a</mi></math> can be any complex number.
+For other values of <math class="ltx_Math" altimg="m65.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi href="./25.1#t1.r6" title="complex variable">z</mi></math>, <math class="ltx_Math" altimg="m11.png" altimg-height="25px" altimg-valign="-7px" altimg-width="89px" alttext="\Phi\left(z,s,a\right)" display="inline"><mrow><mi href="./25.14#E1" mathvariant="normal" title="Lerch’s transcendent">Φ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./25.1#t1.r6" title="complex variable">z</mi><mo>,</mo><mi href="./25.1#t1.r5" title="complex variable">s</mi><mo>,</mo><mi href="./25.1#t1.r4" title="real or complex parameter">a</mi><mo>)</mo></mrow></mrow></math> is defined by analytic
+continuation. This is the notation used in <cite class="ltx_cite ltx_citemacro_citet">Erdélyi<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/E#bib751" title="Higher Transcendental Functions. Vol. I" class="ltx_ref">1953a</a>, p. 27)</cite>.
+<cite class="ltx_cite ltx_citemacro_citet">Lerch (<a href="./bib/L#bib1417" title="Note sur la fonction = ⁢ K ( w , x , s ) ∑ = k 0 ∞ e ⁢ 2 k π i x ( + w k ) s" class="ltx_ref">1887</a>)</cite> used
+<math class="ltx_Math" altimg="m32.png" altimg-height="29px" altimg-valign="-9px" altimg-width="234px" alttext="\mathfrak{K}(a,x,s)=\Phi\left(e^{2\pi ix},s,a\right)" display="inline"><mrow><mrow><mi>𝔎</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./25.1#t1.r4" title="real or complex parameter">a</mi><mo>,</mo><mi href="./25.1#t1.r3" title="real variable">x</mi><mo>,</mo><mi href="./25.1#t1.r5" title="complex variable">s</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi href="./25.14#E1" mathvariant="normal" title="Lerch’s transcendent">Φ</mi><mo>⁡</mo><mrow><mo>(</mo><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mrow><mn>2</mn><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>⁢</mo><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi><mo>⁢</mo><mi href="./25.1#t1.r3" title="real variable">x</mi></mrow></msup><mo>,</mo><mi href="./25.1#t1.r5" title="complex variable">s</mi><mo>,</mo><mi href="./25.1#t1.r4" title="real or complex parameter">a</mi><mo>)</mo></mrow></mrow></mrow></math>.</p>
+</div>
+<div id="i.p2" class="ltx_para">
+<p class="ltx_p">The Hurwitz zeta function <math class="ltx_Math" altimg="m45.png" altimg-height="25px" altimg-valign="-7px" altimg-width="64px" alttext="\zeta\left(s,a\right)" display="inline"><mrow><mi href="./25.11#E1" title="Hurwitz zeta function">ζ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./25.1#t1.r5" title="complex variable">s</mi><mo>,</mo><mi href="./25.1#t1.r4" title="real or complex parameter">a</mi><mo>)</mo></mrow></mrow></math> (§<a href="./25.11" title="§25.11 Hurwitz Zeta Function ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">25.11</span></a>) and the
+polylogarithm <math class="ltx_Math" altimg="m38.png" altimg-height="25px" altimg-valign="-7px" altimg-width="62px" alttext="\operatorname{Li}_{s}\left(z\right)" display="inline"><mrow><msub><mi href="./25.12#E10" title="polylogarithm">Li</mi><mi href="./25.1#t1.r5" title="complex variable">s</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./25.1#t1.r6" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math> (§<a href="./25.12#ii" title="§25.12(ii) Polylogarithms ‣ §25.12 Polylogarithms ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">25.12(ii)</span></a>) are special
+cases:
+</p>
+<table id="E2" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">25.14.2</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E2.png" altimg-height="70px" altimg-valign="-7px" altimg-width="188px" alttext="\zeta\left(s,a\right)=\Phi\left(1,s,a\right)," display="block"><mrow><mrow><mrow><mi href="./25.11#E1" title="Hurwitz zeta function">ζ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./25.1#t1.r5" title="complex variable">s</mi><mo>,</mo><mi href="./25.1#t1.r4" title="real or complex parameter">a</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mi href="./25.14#E1" mathvariant="normal" title="Lerch’s transcendent">Φ</mi><mo>⁡</mo><mrow><mo>(</mo><mn>1</mn><mo>,</mo><mi href="./25.1#t1.r5" title="complex variable">s</mi><mo>,</mo><mi href="./25.1#t1.r4" title="real or complex parameter">a</mi><mo>)</mo></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="4"><span class="ltx_constraint"><math class="ltx_Math" altimg="m15.png" altimg-height="19px" altimg-valign="-3px" altimg-width="67px" alttext="\Re s&gt;1" display="inline"><mrow><mrow><mi href="./1.9#E2" mathvariant="normal" title="real part">ℜ</mi><mo lspace="0.167em">⁡</mo><mi href="./25.1#t1.r5" title="complex variable">s</mi></mrow><mo>&gt;</mo><mn>1</mn></mrow></math>, <math class="ltx_Math" altimg="m48.png" altimg-height="22px" altimg-valign="-6px" altimg-width="158px" alttext="a\neq 0,-1,-2,\dots" display="inline"><mrow><mi href="./25.1#t1.r4" title="real or complex parameter">a</mi><mo>≠</mo><mrow><mn>0</mn><mo>,</mo><mrow><mo>−</mo><mn>1</mn></mrow><mo>,</mo><mrow><mo>−</mo><mn>2</mn></mrow><mo>,</mo><mi mathvariant="normal">…</mi></mrow></mrow></math>,</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E2.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./25.11#E1" title="(25.11.1) ‣ §25.11(i) Definition ‣ §25.11 Hurwitz Zeta Function ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m44.png" altimg-height="25px" altimg-valign="-7px" altimg-width="64px" alttext="\zeta\left(\NVar{s},\NVar{a}\right)" display="inline"><mrow><mi href="./25.11#E1" title="Hurwitz zeta function">ζ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./25.1#t1.r5" title="complex variable">s</mi><mo>,</mo><mi class="ltx_nvar" href="./25.1#t1.r4" title="real or complex parameter">a</mi><mo>)</mo></mrow></mrow></math>: Hurwitz zeta function</a>,
+<a href="./25.14#E1" title="(25.14.1) ‣ §25.14(i) Definition ‣ §25.14 Lerch’s Transcendent ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m10.png" altimg-height="25px" altimg-valign="-7px" altimg-width="89px" alttext="\Phi\left(\NVar{z},\NVar{s},\NVar{a}\right)" display="inline"><mrow><mi href="./25.14#E1" mathvariant="normal" title="Lerch’s transcendent">Φ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./25.1#t1.r6" title="complex variable">z</mi><mo>,</mo><mi class="ltx_nvar" href="./25.1#t1.r5" title="complex variable">s</mi><mo>,</mo><mi class="ltx_nvar" href="./25.1#t1.r4" title="real or complex parameter">a</mi><mo>)</mo></mrow></mrow></math>: Lerch’s transcendent</a>,
+<a href="./1.9#E2" title="(1.9.2) ‣ Real and Imaginary Parts ‣ §1.9(i) Complex Numbers ‣ §1.9 Calculus of a Complex Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m16.png" altimg-height="18px" altimg-valign="-2px" altimg-width="19px" alttext="\Re" display="inline"><mrow><mi href="./1.9#E2" mathvariant="normal" title="real part">ℜ</mi><mo>⁡</mo></mrow></math>: real part</a>,
+<a href="./25.1#t1.r4" title="§25.1 Special Notation ‣ Notation ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m46.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="a" display="inline"><mi href="./25.1#t1.r4" title="real or complex parameter">a</mi></math>:  real or complex parameter</a> and
+<a href="./25.1#t1.r5" title="§25.1 Special Notation ‣ Notation ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m60.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="s" display="inline"><mi href="./25.1#t1.r5" title="complex variable">s</mi></math>:  complex variable</a>
+</dd>
+<dt>Keywords:</dt>
+<dd><a class="ltx_keyword" href="./search/search?q=specialization">specialization</a></dd>
+<dt>Proof sketch:</dt>
+<dd>Derivable from (<a href="./25.11#E1" title="(25.11.1) ‣ §25.11(i) Definition ‣ §25.11 Hurwitz Zeta Function ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">25.11.1</span></a>), (<a href="./25.14#E1" title="(25.14.1) ‣ §25.14(i) Definition ‣ §25.14 Lerch’s Transcendent ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">25.14.1</span></a>).</dd>
+<dt>Permalink:</dt>
+<dd><a href="./25.14.E2" title="" class="ltx_ref">http://dlmf.nist.gov/25.14.E2</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./25.14.E2.tex">TeX</a>, <a href="./25.14.E2.pmml">pMML</a>, <a href="./25.14.E2.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./25.14#i.info" title="§25.14(i) Definition ‣ §25.14 Lerch’s Transcendent ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§25.14(i)</span></a>,
+<a href="./25.14#info" title="§25.14 Lerch’s Transcendent ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§25.14</span></a> and
+<a href="./25#info" title="Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.25</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<table id="E3" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">25.14.3</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E3.png" altimg-height="70px" altimg-valign="-7px" altimg-width="196px" alttext="\operatorname{Li}_{s}\left(z\right)=z\Phi\left(z,s,1\right)," display="block"><mrow><mrow><mrow><msub><mi href="./25.12#E10" title="polylogarithm">Li</mi><mi href="./25.1#t1.r5" title="complex variable">s</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./25.1#t1.r6" title="complex variable">z</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mi href="./25.1#t1.r6" title="complex variable">z</mi><mo>⁢</mo><mrow><mi href="./25.14#E1" mathvariant="normal" title="Lerch’s transcendent">Φ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./25.1#t1.r6" title="complex variable">z</mi><mo>,</mo><mi href="./25.1#t1.r5" title="complex variable">s</mi><mo>,</mo><mn>1</mn><mo>)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="4"><span class="ltx_constraint"><math class="ltx_Math" altimg="m15.png" altimg-height="19px" altimg-valign="-3px" altimg-width="67px" alttext="\Re s&gt;1" display="inline"><mrow><mrow><mi href="./1.9#E2" mathvariant="normal" title="real part">ℜ</mi><mo lspace="0.167em">⁡</mo><mi href="./25.1#t1.r5" title="complex variable">s</mi></mrow><mo>&gt;</mo><mn>1</mn></mrow></math>, <math class="ltx_Math" altimg="m69.png" altimg-height="25px" altimg-valign="-7px" altimg-width="64px" alttext="|z|\leq 1" display="inline"><mrow><mrow><mo stretchy="false">|</mo><mi href="./25.1#t1.r6" title="complex variable">z</mi><mo stretchy="false">|</mo></mrow><mo>≤</mo><mn>1</mn></mrow></math>.</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E3.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./25.14#E1" title="(25.14.1) ‣ §25.14(i) Definition ‣ §25.14 Lerch’s Transcendent ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m10.png" altimg-height="25px" altimg-valign="-7px" altimg-width="89px" alttext="\Phi\left(\NVar{z},\NVar{s},\NVar{a}\right)" display="inline"><mrow><mi href="./25.14#E1" mathvariant="normal" title="Lerch’s transcendent">Φ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./25.1#t1.r6" title="complex variable">z</mi><mo>,</mo><mi class="ltx_nvar" href="./25.1#t1.r5" title="complex variable">s</mi><mo>,</mo><mi class="ltx_nvar" href="./25.1#t1.r4" title="real or complex parameter">a</mi><mo>)</mo></mrow></mrow></math>: Lerch’s transcendent</a>,
+<a href="./25.12#E10" title="(25.12.10) ‣ §25.12(ii) Polylogarithms ‣ §25.12 Polylogarithms ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m37.png" altimg-height="25px" altimg-valign="-7px" altimg-width="62px" alttext="\operatorname{Li}_{\NVar{s}}\left(\NVar{z}\right)" display="inline"><mrow><msub><mi href="./25.12#E10" title="polylogarithm">Li</mi><mi class="ltx_nvar" href="./25.1#t1.r5" title="complex variable">s</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./25.1#t1.r6" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: polylogarithm</a>,
+<a href="./1.9#E2" title="(1.9.2) ‣ Real and Imaginary Parts ‣ §1.9(i) Complex Numbers ‣ §1.9 Calculus of a Complex Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m16.png" altimg-height="18px" altimg-valign="-2px" altimg-width="19px" alttext="\Re" display="inline"><mrow><mi href="./1.9#E2" mathvariant="normal" title="real part">ℜ</mi><mo>⁡</mo></mrow></math>: real part</a>,
+<a href="./25.1#t1.r5" title="§25.1 Special Notation ‣ Notation ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m60.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="s" display="inline"><mi href="./25.1#t1.r5" title="complex variable">s</mi></math>:  complex variable</a> and
+<a href="./25.1#t1.r6" title="§25.1 Special Notation ‣ Notation ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m65.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi href="./25.1#t1.r6" title="complex variable">z</mi></math>:  complex variable</a>
+</dd>
+<dt>Keywords:</dt>
+<dd><a class="ltx_keyword" href="./search/search?q=specialization">specialization</a></dd>
+<dt>Proof sketch:</dt>
+<dd>Derivable from (<a href="./25.12#E10" title="(25.12.10) ‣ §25.12(ii) Polylogarithms ‣ §25.12 Polylogarithms ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">25.12.10</span></a>) and (<a href="./25.14#E1" title="(25.14.1) ‣ §25.14(i) Definition ‣ §25.14 Lerch’s Transcendent ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">25.14.1</span></a>).</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./25.12#E12.info" title="In Integral Representation ‣ §25.12(ii) Polylogarithms ‣ §25.12 Polylogarithms ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">(25.12.12)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./25.14.E3" title="" class="ltx_ref">http://dlmf.nist.gov/25.14.E3</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./25.14.E3.tex">TeX</a>, <a href="./25.14.E3.pmml">pMML</a>, <a href="./25.14.E3.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./25.14#i.info" title="§25.14(i) Definition ‣ §25.14 Lerch’s Transcendent ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§25.14(i)</span></a>,
+<a href="./25.14#info" title="§25.14 Lerch’s Transcendent ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§25.14</span></a> and
+<a href="./25#info" title="Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.25</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+<div id="i.p3" class="ltx_para">
+<table id="E3_1" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">25.14.3_1</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E3_1.png" altimg-height="67px" altimg-valign="-28px" altimg-width="555px" alttext="{z^{a}\Phi\left(z,s,a\right)=\Gamma\left(1-s\right)\left(-\ln z\right)^{s-1}+%
+\sum_{n=0}^{\infty}\zeta\left(s-n,a\right)\frac{\left(\ln z\right)^{n}}{n!}}," display="block"><mrow><mrow><mrow><msup><mi href="./25.1#t1.r6" title="complex variable">z</mi><mi href="./25.1#t1.r4" title="real or complex parameter">a</mi></msup><mo>⁢</mo><mrow><mi href="./25.14#E1" mathvariant="normal" title="Lerch’s transcendent">Φ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./25.1#t1.r6" title="complex variable">z</mi><mo>,</mo><mi href="./25.1#t1.r5" title="complex variable">s</mi><mo>,</mo><mi href="./25.1#t1.r4" title="real or complex parameter">a</mi><mo>)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mrow><mrow><mi href="./5.2#E1" mathvariant="normal" title="gamma function">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mn>1</mn><mo>−</mo><mi href="./25.1#t1.r5" title="complex variable">s</mi></mrow><mo>)</mo></mrow></mrow><mo>⁢</mo><msup><mrow><mo>(</mo><mrow><mo rspace="0.167em">−</mo><mrow><mi href="./4.2#E2" title="principal branch of logarithm function">ln</mi><mo lspace="0.167em">⁡</mo><mi href="./25.1#t1.r6" title="complex variable">z</mi></mrow></mrow><mo>)</mo></mrow><mrow><mi href="./25.1#t1.r5" title="complex variable">s</mi><mo>−</mo><mn>1</mn></mrow></msup></mrow><mo rspace="0.055em">+</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi href="./25.1#t1.r1" title="nonnegative integer">n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><mrow><mi href="./25.11#E1" title="Hurwitz zeta function">ζ</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./25.1#t1.r5" title="complex variable">s</mi><mo>−</mo><mi href="./25.1#t1.r1" title="nonnegative integer">n</mi></mrow><mo>,</mo><mi href="./25.1#t1.r4" title="real or complex parameter">a</mi><mo>)</mo></mrow></mrow><mo>⁢</mo><mfrac><msup><mrow><mo>(</mo><mrow><mi href="./4.2#E2" title="principal branch of logarithm function">ln</mi><mo lspace="0.167em">⁡</mo><mi href="./25.1#t1.r6" title="complex variable">z</mi></mrow><mo>)</mo></mrow><mi href="./25.1#t1.r1" title="nonnegative integer">n</mi></msup><mrow><mi href="./25.1#t1.r1" title="nonnegative integer">n</mi><mo href="./front/introduction#common.t1.r15" title="factorial (as in 𝑛!)">!</mo></mrow></mfrac></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="4"><span class="ltx_constraint"><math class="ltx_Math" altimg="m24.png" altimg-height="25px" altimg-valign="-7px" altimg-width="98px" alttext="\left|\ln z\right|&lt;2\pi" display="inline"><mrow><mrow><mo>|</mo><mrow><mi href="./4.2#E2" title="principal branch of logarithm function">ln</mi><mo lspace="0.167em">⁡</mo><mi href="./25.1#t1.r6" title="complex variable">z</mi></mrow><mo>|</mo></mrow><mo>&lt;</mo><mrow><mn>2</mn><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></mrow></mrow></math>; <math class="ltx_Math" altimg="m61.png" altimg-height="22px" altimg-valign="-6px" altimg-width="125px" alttext="s\not=1,2,3,\ldots" display="inline"><mrow><mi href="./25.1#t1.r5" title="complex variable">s</mi><mo>≠</mo><mrow><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mi mathvariant="normal">…</mi></mrow></mrow></math>, <math class="ltx_Math" altimg="m49.png" altimg-height="22px" altimg-valign="-6px" altimg-width="158px" alttext="a\not=0,-1,-2,\ldots" display="inline"><mrow><mi href="./25.1#t1.r4" title="real or complex parameter">a</mi><mo>≠</mo><mrow><mn>0</mn><mo>,</mo><mrow><mo>−</mo><mn>1</mn></mrow><mo>,</mo><mrow><mo>−</mo><mn>2</mn></mrow><mo>,</mo><mi mathvariant="normal">…</mi></mrow></mrow></math>.</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E3_1.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./5.2#E1" title="(5.2.1) ‣ Euler’s Integral ‣ §5.2(i) Gamma and Psi Functions ‣ §5.2 Definitions ‣ Properties ‣ Chapter 5 Gamma Function" class="ltx_ref"><math class="ltx_Math" altimg="m8.png" altimg-height="25px" altimg-valign="-7px" altimg-width="47px" alttext="\Gamma\left(\NVar{z}\right)" display="inline"><mrow><mi href="./5.2#E1" mathvariant="normal" title="gamma function">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./5.1#t1.r4" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: gamma function</a>,
+<a href="./25.11#E1" title="(25.11.1) ‣ §25.11(i) Definition ‣ §25.11 Hurwitz Zeta Function ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m44.png" altimg-height="25px" altimg-valign="-7px" altimg-width="64px" alttext="\zeta\left(\NVar{s},\NVar{a}\right)" display="inline"><mrow><mi href="./25.11#E1" title="Hurwitz zeta function">ζ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./25.1#t1.r5" title="complex variable">s</mi><mo>,</mo><mi class="ltx_nvar" href="./25.1#t1.r4" title="real or complex parameter">a</mi><mo>)</mo></mrow></mrow></math>: Hurwitz zeta function</a>,
+<a href="./25.14#E1" title="(25.14.1) ‣ §25.14(i) Definition ‣ §25.14 Lerch’s Transcendent ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m10.png" altimg-height="25px" altimg-valign="-7px" altimg-width="89px" alttext="\Phi\left(\NVar{z},\NVar{s},\NVar{a}\right)" display="inline"><mrow><mi href="./25.14#E1" mathvariant="normal" title="Lerch’s transcendent">Φ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./25.1#t1.r6" title="complex variable">z</mi><mo>,</mo><mi class="ltx_nvar" href="./25.1#t1.r5" title="complex variable">s</mi><mo>,</mo><mi class="ltx_nvar" href="./25.1#t1.r4" title="real or complex parameter">a</mi><mo>)</mo></mrow></mrow></math>: Lerch’s transcendent</a>,
+<a href="./3.12#E1" title="(3.12.1) ‣ §3.12 Mathematical Constants ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m40.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="\pi" display="inline"><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></math>: the ratio of the circumference of a circle to its diameter</a>,
+<a href="./front/introduction#common.t1.r15" title="Common Notations and Definitions ‣ Mathematical Introduction" class="ltx_ref"><math class="ltx_Math" altimg="m1.png" altimg-height="18px" altimg-valign="-2px" altimg-width="10px" alttext="!" display="inline"><mo href="./front/introduction#common.t1.r15" title="factorial (as in 𝑛!)">!</mo></math>: factorial (as in <math class="ltx_Math" altimg="m55.png" altimg-height="18px" altimg-valign="-2px" altimg-width="23px" alttext="n!" display="inline"><mrow><mi>n</mi><mo href="./front/introduction#common.t1.r15" title="factorial (as in 𝑛!)">!</mo></mrow></math>)</a>,
+<a href="./4.2#E2" title="(4.2.2) ‣ §4.2(i) The Logarithm ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m29.png" altimg-height="18px" altimg-valign="-2px" altimg-width="36px" alttext="\ln\NVar{z}" display="inline"><mrow><mi href="./4.2#E2" title="principal branch of logarithm function">ln</mi><mo lspace="0.167em">⁡</mo><mi class="ltx_nvar" href="./4.1#t1.r4" title="complex variable">z</mi></mrow></math>: principal branch of logarithm function</a>,
+<a href="./25.1#t1.r1" title="§25.1 Special Notation ‣ Notation ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m57.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./25.1#t1.r1" title="nonnegative integer">n</mi></math>:  nonnegative integer</a>,
+<a href="./25.1#t1.r4" title="§25.1 Special Notation ‣ Notation ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m46.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="a" display="inline"><mi href="./25.1#t1.r4" title="real or complex parameter">a</mi></math>:  real or complex parameter</a>,
+<a href="./25.1#t1.r5" title="§25.1 Special Notation ‣ Notation ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m60.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="s" display="inline"><mi href="./25.1#t1.r5" title="complex variable">s</mi></math>:  complex variable</a> and
+<a href="./25.1#t1.r6" title="§25.1 Special Notation ‣ Notation ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m65.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi href="./25.1#t1.r6" title="complex variable">z</mi></math>:  complex variable</a>
+</dd>
+<dt>Source:</dt>
+<dd><cite class="ltx_cite ltx_citemacro_citet">Erdélyi<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/E#bib751" title="Higher Transcendental Functions. Vol. I" class="ltx_ref">1953a</a>, (1.11.8), p. 29)</cite></dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./25.14#i.info" title="§25.14(i) Definition ‣ §25.14 Lerch’s Transcendent ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§25.14(i)</span></a>,
+<a href="./errata/#V1.2.1.I2.ix7.p1" title="In Other Changes ‣ Version 1.2.1 (June 15, 2024) ‣ Errata" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Erratum (V1.2.1) for  §<span class="ltx_text ltx_ref_tag">25.14(i)</span></span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./25.14.E3_1" title="" class="ltx_ref">http://dlmf.nist.gov/25.14.E3_1</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./25.14.E3_1.tex">TeX</a>, <a href="./25.14.E3_1.pmml">pMML</a>, <a href="./25.14.E3_1.png">png</a>
+</dd>
+<dt>Addition (effective with 1.2.1):</dt>
+<dd>
+This equation was added.
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./25.14#i.info" title="§25.14(i) Definition ‣ §25.14 Lerch’s Transcendent ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§25.14(i)</span></a>,
+<a href="./25.14#info" title="§25.14 Lerch’s Transcendent ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§25.14</span></a> and
+<a href="./25#info" title="Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.25</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">If <math class="ltx_Math" altimg="m59.png" altimg-height="13px" altimg-valign="-2px" altimg-width="60px" alttext="s=m" display="inline"><mrow><mi href="./25.1#t1.r5" title="complex variable">s</mi><mo>=</mo><mi href="./25.1#t1.r1" title="nonnegative integer">m</mi></mrow></math> a positive integer then</p>
+<table id="E3_2" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">25.14.3_2</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E3_2.png" altimg-height="67px" altimg-valign="-28px" altimg-width="746px" alttext="{z^{a}\Phi\left(z,m,a\right)={\sideset{}{{}^{\prime}}{\sum}_{n=0}^{\infty}}%
+\zeta\left(m-n,a\right)\frac{\left(\ln z\right)^{n}}{n!}+\frac{\left(\ln z%
+\right)^{m-1}}{(m-1)!}\left(\psi\left(m\right)-\psi\left(a\right)-\ln\left(-%
+\ln z\right)\right)}," display="block"><mrow><mrow><mrow><msup><mi href="./25.1#t1.r6" title="complex variable">z</mi><mi href="./25.1#t1.r4" title="real or complex parameter">a</mi></msup><mo>⁢</mo><mrow><mi href="./25.14#E1" mathvariant="normal" title="Lerch’s transcendent">Φ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./25.1#t1.r6" title="complex variable">z</mi><mo>,</mo><mi href="./25.1#t1.r1" title="nonnegative integer">m</mi><mo>,</mo><mi href="./25.1#t1.r4" title="real or complex parameter">a</mi><mo>)</mo></mrow></mrow></mrow><mo rspace="0.111em">=</mo><mrow><mrow><munderover><msup><mo movablelimits="false">∑</mo><mo>′</mo></msup><mrow><mrow><mi href="./25.1#t1.r1" title="nonnegative integer">n</mi><mo>=</mo><mn>0</mn></mrow><mphantom><mo>′</mo></mphantom></mrow><mrow><mi mathvariant="normal">∞</mi><mphantom><mo>′</mo></mphantom></mrow></munderover><mo>⁢</mo><mrow><mi href="./25.11#E1" title="Hurwitz zeta function">ζ</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./25.1#t1.r1" title="nonnegative integer">m</mi><mo>−</mo><mi href="./25.1#t1.r1" title="nonnegative integer">n</mi></mrow><mo>,</mo><mi href="./25.1#t1.r4" title="real or complex parameter">a</mi><mo>)</mo></mrow></mrow><mo>⁢</mo><mfrac><msup><mrow><mo>(</mo><mrow><mi href="./4.2#E2" title="principal branch of logarithm function">ln</mi><mo lspace="0.167em">⁡</mo><mi href="./25.1#t1.r6" title="complex variable">z</mi></mrow><mo>)</mo></mrow><mi href="./25.1#t1.r1" title="nonnegative integer">n</mi></msup><mrow><mi href="./25.1#t1.r1" title="nonnegative integer">n</mi><mo href="./front/introduction#common.t1.r15" title="factorial (as in 𝑛!)">!</mo></mrow></mfrac></mrow><mo>+</mo><mrow><mfrac><msup><mrow><mo>(</mo><mrow><mi href="./4.2#E2" title="principal branch of logarithm function">ln</mi><mo lspace="0.167em">⁡</mo><mi href="./25.1#t1.r6" title="complex variable">z</mi></mrow><mo>)</mo></mrow><mrow><mi href="./25.1#t1.r1" title="nonnegative integer">m</mi><mo>−</mo><mn>1</mn></mrow></msup><mrow><mrow><mo stretchy="false">(</mo><mrow><mi href="./25.1#t1.r1" title="nonnegative integer">m</mi><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo href="./front/introduction#common.t1.r15" title="factorial (as in 𝑛!)">!</mo></mrow></mfrac><mo>⁢</mo><mrow><mo>(</mo><mrow><mrow><mi href="./5.2#E2" title="psi (or digamma) function">ψ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./25.1#t1.r1" title="nonnegative integer">m</mi><mo>)</mo></mrow></mrow><mo>−</mo><mrow><mi href="./5.2#E2" title="psi (or digamma) function">ψ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./25.1#t1.r4" title="real or complex parameter">a</mi><mo>)</mo></mrow></mrow><mo>−</mo><mrow><mi href="./4.2#E2" title="principal branch of logarithm function">ln</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mo rspace="0.167em">−</mo><mrow><mi href="./4.2#E2" title="principal branch of logarithm function">ln</mi><mo lspace="0.167em">⁡</mo><mi href="./25.1#t1.r6" title="complex variable">z</mi></mrow></mrow><mo>)</mo></mrow></mrow></mrow><mo>)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="4"><span class="ltx_constraint"><math class="ltx_Math" altimg="m24.png" altimg-height="25px" altimg-valign="-7px" altimg-width="98px" alttext="\left|\ln z\right|&lt;2\pi" display="inline"><mrow><mrow><mo>|</mo><mrow><mi href="./4.2#E2" title="principal branch of logarithm function">ln</mi><mo lspace="0.167em">⁡</mo><mi href="./25.1#t1.r6" title="complex variable">z</mi></mrow><mo>|</mo></mrow><mo>&lt;</mo><mrow><mn>2</mn><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></mrow></mrow></math>; <math class="ltx_Math" altimg="m53.png" altimg-height="21px" altimg-valign="-6px" altimg-width="133px" alttext="m=2,3,4,\ldots" display="inline"><mrow><mi href="./25.1#t1.r1" title="nonnegative integer">m</mi><mo>=</mo><mrow><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>4</mn><mo>,</mo><mi mathvariant="normal">…</mi></mrow></mrow></math>, <math class="ltx_Math" altimg="m49.png" altimg-height="22px" altimg-valign="-6px" altimg-width="158px" alttext="a\not=0,-1,-2,\ldots" display="inline"><mrow><mi href="./25.1#t1.r4" title="real or complex parameter">a</mi><mo>≠</mo><mrow><mn>0</mn><mo>,</mo><mrow><mo>−</mo><mn>1</mn></mrow><mo>,</mo><mrow><mo>−</mo><mn>2</mn></mrow><mo>,</mo><mi mathvariant="normal">…</mi></mrow></mrow></math>.</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E3_2.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./25.11#E1" title="(25.11.1) ‣ §25.11(i) Definition ‣ §25.11 Hurwitz Zeta Function ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m44.png" altimg-height="25px" altimg-valign="-7px" altimg-width="64px" alttext="\zeta\left(\NVar{s},\NVar{a}\right)" display="inline"><mrow><mi href="./25.11#E1" title="Hurwitz zeta function">ζ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./25.1#t1.r5" title="complex variable">s</mi><mo>,</mo><mi class="ltx_nvar" href="./25.1#t1.r4" title="real or complex parameter">a</mi><mo>)</mo></mrow></mrow></math>: Hurwitz zeta function</a>,
+<a href="./25.14#E1" title="(25.14.1) ‣ §25.14(i) Definition ‣ §25.14 Lerch’s Transcendent ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m10.png" altimg-height="25px" altimg-valign="-7px" altimg-width="89px" alttext="\Phi\left(\NVar{z},\NVar{s},\NVar{a}\right)" display="inline"><mrow><mi href="./25.14#E1" mathvariant="normal" title="Lerch’s transcendent">Φ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./25.1#t1.r6" title="complex variable">z</mi><mo>,</mo><mi class="ltx_nvar" href="./25.1#t1.r5" title="complex variable">s</mi><mo>,</mo><mi class="ltx_nvar" href="./25.1#t1.r4" title="real or complex parameter">a</mi><mo>)</mo></mrow></mrow></math>: Lerch’s transcendent</a>,
+<a href="./3.12#E1" title="(3.12.1) ‣ §3.12 Mathematical Constants ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m40.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="\pi" display="inline"><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></math>: the ratio of the circumference of a circle to its diameter</a>,
+<a href="./5.2#E2" title="(5.2.2) ‣ Euler’s Integral ‣ §5.2(i) Gamma and Psi Functions ‣ §5.2 Definitions ‣ Properties ‣ Chapter 5 Gamma Function" class="ltx_ref"><math class="ltx_Math" altimg="m41.png" altimg-height="25px" altimg-valign="-7px" altimg-width="49px" alttext="\psi\left(\NVar{z}\right)" display="inline"><mrow><mi href="./5.2#E2" title="psi (or digamma) function">ψ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./5.1#t1.r4" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: psi (or digamma) function</a>,
+<a href="./front/introduction#common.t1.r15" title="Common Notations and Definitions ‣ Mathematical Introduction" class="ltx_ref"><math class="ltx_Math" altimg="m1.png" altimg-height="18px" altimg-valign="-2px" altimg-width="10px" alttext="!" display="inline"><mo href="./front/introduction#common.t1.r15" title="factorial (as in 𝑛!)">!</mo></math>: factorial (as in <math class="ltx_Math" altimg="m55.png" altimg-height="18px" altimg-valign="-2px" altimg-width="23px" alttext="n!" display="inline"><mrow><mi>n</mi><mo href="./front/introduction#common.t1.r15" title="factorial (as in 𝑛!)">!</mo></mrow></math>)</a>,
+<a href="./4.2#E2" title="(4.2.2) ‣ §4.2(i) The Logarithm ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m29.png" altimg-height="18px" altimg-valign="-2px" altimg-width="36px" alttext="\ln\NVar{z}" display="inline"><mrow><mi href="./4.2#E2" title="principal branch of logarithm function">ln</mi><mo lspace="0.167em">⁡</mo><mi class="ltx_nvar" href="./4.1#t1.r4" title="complex variable">z</mi></mrow></math>: principal branch of logarithm function</a>,
+<a href="./25.1#t1.r1" title="§25.1 Special Notation ‣ Notation ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m54.png" altimg-height="13px" altimg-valign="-2px" altimg-width="23px" alttext="m" display="inline"><mi href="./25.1#t1.r1" title="nonnegative integer">m</mi></math>:  nonnegative integer</a>,
+<a href="./25.1#t1.r1" title="§25.1 Special Notation ‣ Notation ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m57.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./25.1#t1.r1" title="nonnegative integer">n</mi></math>:  nonnegative integer</a>,
+<a href="./25.1#t1.r4" title="§25.1 Special Notation ‣ Notation ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m46.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="a" display="inline"><mi href="./25.1#t1.r4" title="real or complex parameter">a</mi></math>:  real or complex parameter</a> and
+<a href="./25.1#t1.r6" title="§25.1 Special Notation ‣ Notation ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m65.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi href="./25.1#t1.r6" title="complex variable">z</mi></math>:  complex variable</a>
+</dd>
+<dt>Source:</dt>
+<dd><cite class="ltx_cite ltx_citemacro_citet">Erdélyi<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/E#bib751" title="Higher Transcendental Functions. Vol. I" class="ltx_ref">1953a</a>, (1.11.9), p. 30)</cite></dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./25.14#i.info" title="§25.14(i) Definition ‣ §25.14 Lerch’s Transcendent ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§25.14(i)</span></a>,
+<a href="./errata/#V1.2.1.I2.ix7.p1" title="In Other Changes ‣ Version 1.2.1 (June 15, 2024) ‣ Errata" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Erratum (V1.2.1) for  §<span class="ltx_text ltx_ref_tag">25.14(i)</span></span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./25.14.E3_2" title="" class="ltx_ref">http://dlmf.nist.gov/25.14.E3_2</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./25.14.E3_2.tex">TeX</a>, <a href="./25.14.E3_2.pmml">pMML</a>, <a href="./25.14.E3_2.png">png</a>
+</dd>
+<dt>Addition (effective with 1.2.1):</dt>
+<dd>
+This equation was added.
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./25.14#i.info" title="§25.14(i) Definition ‣ §25.14 Lerch’s Transcendent ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§25.14(i)</span></a>,
+<a href="./25.14#info" title="§25.14 Lerch’s Transcendent ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§25.14</span></a> and
+<a href="./25#info" title="Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.25</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">Here the prime signifies that the term for <math class="ltx_Math" altimg="m56.png" altimg-height="19px" altimg-valign="-4px" altimg-width="98px" alttext="n=m-1" display="inline"><mrow><mi href="./25.1#t1.r1" title="nonnegative integer">n</mi><mo>=</mo><mrow><mi href="./25.1#t1.r1" title="nonnegative integer">m</mi><mo>−</mo><mn>1</mn></mrow></mrow></math> is to be omitted. In the case <math class="ltx_Math" altimg="m58.png" altimg-height="17px" altimg-valign="-2px" altimg-width="52px" alttext="s=1" display="inline"><mrow><mi href="./25.1#t1.r5" title="complex variable">s</mi><mo>=</mo><mn>1</mn></mrow></math> we have</p>
+<table id="E3_3" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">25.14.3_3</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E3_3.png" altimg-height="27px" altimg-valign="-7px" altimg-width="284px" alttext="{a\Phi\left(z,1,a\right)=F\left(a,1;a+1;z\right)}," display="block"><mrow><mrow><mrow><mi href="./25.1#t1.r4" title="real or complex parameter">a</mi><mo>⁢</mo><mrow><mi href="./25.14#E1" mathvariant="normal" title="Lerch’s transcendent">Φ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./25.1#t1.r6" title="complex variable">z</mi><mo>,</mo><mn>1</mn><mo>,</mo><mi href="./25.1#t1.r4" title="real or complex parameter">a</mi><mo>)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mi href="./15.2#E1" title="=₂𝐹₁(𝑎,𝑏;𝑐;𝑧) Gauss’ hypergeometric function">F</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./25.1#t1.r4" title="real or complex parameter">a</mi><mo>,</mo><mn>1</mn><mo>;</mo><mrow><mi href="./25.1#t1.r4" title="real or complex parameter">a</mi><mo>+</mo><mn>1</mn></mrow><mo>;</mo><mi href="./25.1#t1.r6" title="complex variable">z</mi><mo>)</mo></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="4"><span class="ltx_constraint"><math class="ltx_Math" altimg="m26.png" altimg-height="25px" altimg-valign="-7px" altimg-width="64px" alttext="\left|z\right|&lt;1" display="inline"><mrow><mrow><mo>|</mo><mi href="./25.1#t1.r6" title="complex variable">z</mi><mo>|</mo></mrow><mo>&lt;</mo><mn>1</mn></mrow></math>.</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E3_3.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./15.2#E1" title="(15.2.1) ‣ §15.2(i) Gauss Series ‣ §15.2 Definitions and Analytical Properties ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><math class="ltx_Math" altimg="m4.png" altimg-height="25px" altimg-valign="-7px" altimg-width="107px" alttext="F\left(\NVar{a},\NVar{b};\NVar{c};\NVar{z}\right)" display="inline"><mrow><mi href="./15.2#E1" title="=₂𝐹₁(𝑎,𝑏;𝑐;𝑧) Gauss’ hypergeometric function">F</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./15.1#p1.t1.r3" title="real or complex parameter">a</mi><mo>,</mo><mi class="ltx_nvar" href="./15.1#p1.t1.r3" title="real or complex parameter">b</mi><mo>;</mo><mi class="ltx_nvar" href="./15.1#p1.t1.r3" title="real or complex parameter">c</mi><mo>;</mo><mi class="ltx_nvar" href="./15.1#p1.t1.r2" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math> or <math class="ltx_Math" altimg="m5.png" altimg-height="42px" altimg-valign="-15px" altimg-width="95px" alttext="F\left({\NVar{a},\NVar{b}\atop\NVar{c}};\NVar{z}\right)" display="inline"><mrow><mi href="./15.2#E1" title="=₂𝐹₁(𝑎,𝑏;𝑐;𝑧) Gauss’ hypergeometric function">F</mi><mo>⁡</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mi class="ltx_nvar" href="./15.1#p1.t1.r3" title="real or complex parameter">a</mi><mo>,</mo><mi class="ltx_nvar" href="./15.1#p1.t1.r3" title="real or complex parameter">b</mi></mrow><mi class="ltx_nvar" href="./15.1#p1.t1.r3" title="real or complex parameter">c</mi></mfrac><mo>;</mo><mi class="ltx_nvar" href="./15.1#p1.t1.r2" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: <math class="ltx_Math" altimg="m2.png" altimg-height="25px" altimg-valign="-7px" altimg-width="145px" alttext="={{}_{2}F_{1}}\left(\NVar{a},\NVar{b};\NVar{c};\NVar{z}\right)" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mmultiscripts><mi href="./16.2" title="=𝐹(𝑎,𝑏;𝑐;𝑧) notation for Gauss’ hypergeometric function">F</mi><mn href="./16.2" title="=𝐹(𝑎,𝑏;𝑐;𝑧) notation for Gauss’ hypergeometric function">1</mn><mrow></mrow><mprescripts></mprescripts><mn href="./16.2" title="=𝐹(𝑎,𝑏;𝑐;𝑧) notation for Gauss’ hypergeometric function">2</mn><mrow></mrow></mmultiscripts><mo>⁡</mo><mrow><mo>(</mo><mrow><mi class="ltx_nvar" href="./15.1#p1.t1.r3" title="real or complex parameter">a</mi><mo>,</mo><mi class="ltx_nvar" href="./15.1#p1.t1.r3" title="real or complex parameter">b</mi></mrow><mo>;</mo><mi class="ltx_nvar" href="./15.1#p1.t1.r3" title="real or complex parameter">c</mi><mo>;</mo><mi class="ltx_nvar" href="./15.1#p1.t1.r2" title="complex variable">z</mi><mo>)</mo></mrow></mrow></mrow></math>
+Gauss’ hypergeometric function</a>,
+<a href="./25.14#E1" title="(25.14.1) ‣ §25.14(i) Definition ‣ §25.14 Lerch’s Transcendent ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m10.png" altimg-height="25px" altimg-valign="-7px" altimg-width="89px" alttext="\Phi\left(\NVar{z},\NVar{s},\NVar{a}\right)" display="inline"><mrow><mi href="./25.14#E1" mathvariant="normal" title="Lerch’s transcendent">Φ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./25.1#t1.r6" title="complex variable">z</mi><mo>,</mo><mi class="ltx_nvar" href="./25.1#t1.r5" title="complex variable">s</mi><mo>,</mo><mi class="ltx_nvar" href="./25.1#t1.r4" title="real or complex parameter">a</mi><mo>)</mo></mrow></mrow></math>: Lerch’s transcendent</a>,
+<a href="./25.1#t1.r4" title="§25.1 Special Notation ‣ Notation ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m46.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="a" display="inline"><mi href="./25.1#t1.r4" title="real or complex parameter">a</mi></math>:  real or complex parameter</a> and
+<a href="./25.1#t1.r6" title="§25.1 Special Notation ‣ Notation ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m65.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi href="./25.1#t1.r6" title="complex variable">z</mi></math>:  complex variable</a>
+</dd>
+<dt>Source:</dt>
+<dd><cite class="ltx_cite ltx_citemacro_citet">Erdélyi<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/E#bib751" title="Higher Transcendental Functions. Vol. I" class="ltx_ref">1953a</a>, (1.11.10), p. 30)</cite></dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./25.14#i.info" title="§25.14(i) Definition ‣ §25.14 Lerch’s Transcendent ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§25.14(i)</span></a>,
+<a href="./errata/#V1.2.1.I2.ix7.p1" title="In Other Changes ‣ Version 1.2.1 (June 15, 2024) ‣ Errata" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Erratum (V1.2.1) for  §<span class="ltx_text ltx_ref_tag">25.14(i)</span></span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./25.14.E3_3" title="" class="ltx_ref">http://dlmf.nist.gov/25.14.E3_3</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./25.14.E3_3.tex">TeX</a>, <a href="./25.14.E3_3.pmml">pMML</a>, <a href="./25.14.E3_3.png">png</a>
+</dd>
+<dt>Addition (effective with 1.2.1):</dt>
+<dd>
+This equation was added.
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./25.14#i.info" title="§25.14(i) Definition ‣ §25.14 Lerch’s Transcendent ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§25.14(i)</span></a>,
+<a href="./25.14#info" title="§25.14 Lerch’s Transcendent ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§25.14</span></a> and
+<a href="./25#info" title="Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.25</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">For hypergeometric function <math class="ltx_Math" altimg="m3.png" altimg-height="18px" altimg-valign="-2px" altimg-width="21px" alttext="F" display="inline"><mi href="./15.2#E1" title="=₂𝐹₁(𝑎,𝑏;𝑐;𝑧) Gauss’ hypergeometric function">F</mi></math> see <a href="./15.2#i" title="§15.2(i) Gauss Series ‣ §15.2 Definitions and Analytical Properties ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">15.2(i)</span></a>.</p>
+</div>
+</section>
+<section id="ii" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§25.14(ii) </span>Properties</h2>
+<div id="ii.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=Lerch%20transcendent">Lerch’s transcendent</a>, <a class="ltx_keyword" href="./search/search?q=properties">properties</a>
+</dd>
+<dt>Notes:</dt>
+<dd>See <cite class="ltx_cite ltx_citemacro_citet">Erdélyi<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/E#bib751" title="Higher Transcendental Functions. Vol. I" class="ltx_ref">1953a</a>, Section 1.11)</cite>.</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./errata/#V1.2.1.I2.ix8" title="In Other Changes ‣ Version 1.2.1 (June 15, 2024) ‣ Errata" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Erratum (V1.2.1) for  §<span class="ltx_text ltx_ref_tag">25.14(ii)</span></span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./25.14.ii" title="" class="ltx_ref">http://dlmf.nist.gov/25.14.ii</a></dd>
+<dt>Addition (effective with 1.2.1):</dt>
+<dd>
+Equations (<a href="./25.14#E7" title="(25.14.7) ‣ §25.14(ii) Properties ‣ §25.14 Lerch’s Transcendent ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">25.14.7</span></a>), (<a href="./25.14#E8" title="(25.14.8) ‣ §25.14(ii) Properties ‣ §25.14 Lerch’s Transcendent ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">25.14.8</span></a>), (<a href="./25.14#E9" title="(25.14.9) ‣ §25.14(ii) Properties ‣ §25.14 Lerch’s Transcendent ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">25.14.9</span></a>)
+and some text associated with these equations were added.
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./25.14#info" title="§25.14 Lerch’s Transcendent ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§25.14</span></a> and
+<a href="./25#info" title="Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.25</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="ii.p1" class="ltx_para">
+<p class="ltx_p">With the conditions of (<a href="./25.14#E1" title="(25.14.1) ‣ §25.14(i) Definition ‣ §25.14 Lerch’s Transcendent ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">25.14.1</span></a>) and <math class="ltx_Math" altimg="m52.png" altimg-height="21px" altimg-valign="-6px" altimg-width="133px" alttext="m=1,2,3,\dots" display="inline"><mrow><mi href="./25.1#t1.r1" title="nonnegative integer">m</mi><mo>=</mo><mrow><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mi mathvariant="normal">…</mi></mrow></mrow></math>,</p>
+<table id="E4" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">25.14.4</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E4.png" altimg-height="110px" altimg-valign="-28px" altimg-width="422px" alttext="\Phi\left(z,s,a\right)=z^{m}\Phi\left(z,s,a+m\right)+\sum_{n=0}^{m-1}\frac{z^{%
+n}}{(a+n)^{s}}." display="block"><mrow><mrow><mrow><mi href="./25.14#E1" mathvariant="normal" title="Lerch’s transcendent">Φ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./25.1#t1.r6" title="complex variable">z</mi><mo>,</mo><mi href="./25.1#t1.r5" title="complex variable">s</mi><mo>,</mo><mi href="./25.1#t1.r4" title="real or complex parameter">a</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mrow><msup><mi href="./25.1#t1.r6" title="complex variable">z</mi><mi href="./25.1#t1.r1" title="nonnegative integer">m</mi></msup><mo>⁢</mo><mrow><mi href="./25.14#E1" mathvariant="normal" title="Lerch’s transcendent">Φ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./25.1#t1.r6" title="complex variable">z</mi><mo>,</mo><mi href="./25.1#t1.r5" title="complex variable">s</mi><mo>,</mo><mrow><mi href="./25.1#t1.r4" title="real or complex parameter">a</mi><mo>+</mo><mi href="./25.1#t1.r1" title="nonnegative integer">m</mi></mrow><mo>)</mo></mrow></mrow></mrow><mo rspace="0.055em">+</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi href="./25.1#t1.r1" title="nonnegative integer">n</mi><mo>=</mo><mn>0</mn></mrow><mrow><mi href="./25.1#t1.r1" title="nonnegative integer">m</mi><mo>−</mo><mn>1</mn></mrow></munderover><mfrac><msup><mi href="./25.1#t1.r6" title="complex variable">z</mi><mi href="./25.1#t1.r1" title="nonnegative integer">n</mi></msup><msup><mrow><mo stretchy="false">(</mo><mrow><mi href="./25.1#t1.r4" title="real or complex parameter">a</mi><mo>+</mo><mi href="./25.1#t1.r1" title="nonnegative integer">n</mi></mrow><mo stretchy="false">)</mo></mrow><mi href="./25.1#t1.r5" title="complex variable">s</mi></msup></mfrac></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E4.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./25.14#E1" title="(25.14.1) ‣ §25.14(i) Definition ‣ §25.14 Lerch’s Transcendent ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m10.png" altimg-height="25px" altimg-valign="-7px" altimg-width="89px" alttext="\Phi\left(\NVar{z},\NVar{s},\NVar{a}\right)" display="inline"><mrow><mi href="./25.14#E1" mathvariant="normal" title="Lerch’s transcendent">Φ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./25.1#t1.r6" title="complex variable">z</mi><mo>,</mo><mi class="ltx_nvar" href="./25.1#t1.r5" title="complex variable">s</mi><mo>,</mo><mi class="ltx_nvar" href="./25.1#t1.r4" title="real or complex parameter">a</mi><mo>)</mo></mrow></mrow></math>: Lerch’s transcendent</a>,
+<a href="./25.1#t1.r1" title="§25.1 Special Notation ‣ Notation ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m54.png" altimg-height="13px" altimg-valign="-2px" altimg-width="23px" alttext="m" display="inline"><mi href="./25.1#t1.r1" title="nonnegative integer">m</mi></math>:  nonnegative integer</a>,
+<a href="./25.1#t1.r1" title="§25.1 Special Notation ‣ Notation ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m57.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./25.1#t1.r1" title="nonnegative integer">n</mi></math>:  nonnegative integer</a>,
+<a href="./25.1#t1.r4" title="§25.1 Special Notation ‣ Notation ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m46.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="a" display="inline"><mi href="./25.1#t1.r4" title="real or complex parameter">a</mi></math>:  real or complex parameter</a>,
+<a href="./25.1#t1.r5" title="§25.1 Special Notation ‣ Notation ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m60.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="s" display="inline"><mi href="./25.1#t1.r5" title="complex variable">s</mi></math>:  complex variable</a> and
+<a href="./25.1#t1.r6" title="§25.1 Special Notation ‣ Notation ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m65.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi href="./25.1#t1.r6" title="complex variable">z</mi></math>:  complex variable</a>
+</dd>
+<dt>Keywords:</dt>
+<dd><a class="ltx_keyword" href="./search/search?q=recurrence">recurrence</a></dd>
+<dt>Source:</dt>
+<dd><cite class="ltx_cite ltx_citemacro_citet">Erdélyi<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/E#bib751" title="Higher Transcendental Functions. Vol. I" class="ltx_ref">1953a</a>, (1.11.2), p. 27)</cite></dd>
+<dt>Permalink:</dt>
+<dd><a href="./25.14.E4" title="" class="ltx_ref">http://dlmf.nist.gov/25.14.E4</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./25.14.E4.tex">TeX</a>, <a href="./25.14.E4.pmml">pMML</a>, <a href="./25.14.E4.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./25.14#ii.info" title="§25.14(ii) Properties ‣ §25.14 Lerch’s Transcendent ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§25.14(ii)</span></a>,
+<a href="./25.14#info" title="§25.14 Lerch’s Transcendent ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§25.14</span></a> and
+<a href="./25#info" title="Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.25</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<table id="E5" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">25.14.5</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E5.png" altimg-height="63px" altimg-valign="-21px" altimg-width="423px" alttext="\Phi\left(z,s,a\right)=\frac{1}{\Gamma\left(s\right)}\int_{0}^{\infty}\frac{x^%
+{s-1}e^{-ax}}{1-ze^{-x}}\,\mathrm{d}x," display="block"><mrow><mrow><mrow><mi href="./25.14#E1" mathvariant="normal" title="Lerch’s transcendent">Φ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./25.1#t1.r6" title="complex variable">z</mi><mo>,</mo><mi href="./25.1#t1.r5" title="complex variable">s</mi><mo>,</mo><mi href="./25.1#t1.r4" title="real or complex parameter">a</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mfrac><mn>1</mn><mrow><mi href="./5.2#E1" mathvariant="normal" title="gamma function">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./25.1#t1.r5" title="complex variable">s</mi><mo>)</mo></mrow></mrow></mfrac><mo>⁢</mo><mrow><msubsup><mo href="./1.4#iv" title="integral">∫</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup><mrow><mfrac><mrow><msup><mi href="./25.1#t1.r3" title="real variable">x</mi><mrow><mi href="./25.1#t1.r5" title="complex variable">s</mi><mo>−</mo><mn>1</mn></mrow></msup><mo>⁢</mo><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mrow><mo>−</mo><mrow><mi href="./25.1#t1.r4" title="real or complex parameter">a</mi><mo>⁢</mo><mi href="./25.1#t1.r3" title="real variable">x</mi></mrow></mrow></msup></mrow><mrow><mn>1</mn><mo>−</mo><mrow><mi href="./25.1#t1.r6" title="complex variable">z</mi><mo>⁢</mo><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mrow><mo>−</mo><mi href="./25.1#t1.r3" title="real variable">x</mi></mrow></msup></mrow></mrow></mfrac><mo lspace="0em">⁢</mo><mrow><mo href="./1.4#iv" rspace="0em" title="differential of 𝑥">d</mo><mi href="./25.1#t1.r3" title="real variable">x</mi></mrow></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="4"><span class="ltx_constraint"><math class="ltx_Math" altimg="m15.png" altimg-height="19px" altimg-valign="-3px" altimg-width="67px" alttext="\Re s&gt;1" display="inline"><mrow><mrow><mi href="./1.9#E2" mathvariant="normal" title="real part">ℜ</mi><mo lspace="0.167em">⁡</mo><mi href="./25.1#t1.r5" title="complex variable">s</mi></mrow><mo>&gt;</mo><mn>1</mn></mrow></math>, <math class="ltx_Math" altimg="m12.png" altimg-height="19px" altimg-valign="-3px" altimg-width="68px" alttext="\Re a&gt;0" display="inline"><mrow><mrow><mi href="./1.9#E2" mathvariant="normal" title="real part">ℜ</mi><mo lspace="0.167em">⁡</mo><mi href="./25.1#t1.r4" title="real or complex parameter">a</mi></mrow><mo>&gt;</mo><mn>0</mn></mrow></math> if <math class="ltx_Math" altimg="m64.png" altimg-height="17px" altimg-valign="-2px" altimg-width="53px" alttext="z=1" display="inline"><mrow><mi href="./25.1#t1.r6" title="complex variable">z</mi><mo>=</mo><mn>1</mn></mrow></math>;
+<math class="ltx_Math" altimg="m13.png" altimg-height="19px" altimg-valign="-3px" altimg-width="67px" alttext="\Re s&gt;0" display="inline"><mrow><mrow><mi href="./1.9#E2" mathvariant="normal" title="real part">ℜ</mi><mo lspace="0.167em">⁡</mo><mi href="./25.1#t1.r5" title="complex variable">s</mi></mrow><mo>&gt;</mo><mn>0</mn></mrow></math>, <math class="ltx_Math" altimg="m12.png" altimg-height="19px" altimg-valign="-3px" altimg-width="68px" alttext="\Re a&gt;0" display="inline"><mrow><mrow><mi href="./1.9#E2" mathvariant="normal" title="real part">ℜ</mi><mo lspace="0.167em">⁡</mo><mi href="./25.1#t1.r4" title="real or complex parameter">a</mi></mrow><mo>&gt;</mo><mn>0</mn></mrow></math> if <math class="ltx_Math" altimg="m66.png" altimg-height="25px" altimg-valign="-7px" altimg-width="129px" alttext="z\in\mathbb{C}\setminus[1,\infty)" display="inline"><mrow><mi href="./25.1#t1.r6" title="complex variable">z</mi><mo href="./front/introduction#common.t1.r10" title="element of">∈</mo><mrow><mi href="./front/introduction#common.t1.r1" title="complex plane">ℂ</mi><mo href="./front/introduction#common.t2.r19" title="set subtraction">∖</mo><mrow><mo href="./front/introduction#common.t2.r1" stretchy="false" title="half-closed interval">[</mo><mn>1</mn><mo href="./front/introduction#common.t2.r1" title="half-closed interval">,</mo><mi mathvariant="normal">∞</mi><mo href="./front/introduction#common.t2.r1" stretchy="false" title="half-closed interval">)</mo></mrow></mrow></mrow></math>.</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E5.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./5.2#E1" title="(5.2.1) ‣ Euler’s Integral ‣ §5.2(i) Gamma and Psi Functions ‣ §5.2 Definitions ‣ Properties ‣ Chapter 5 Gamma Function" class="ltx_ref"><math class="ltx_Math" altimg="m8.png" altimg-height="25px" altimg-valign="-7px" altimg-width="47px" alttext="\Gamma\left(\NVar{z}\right)" display="inline"><mrow><mi href="./5.2#E1" mathvariant="normal" title="gamma function">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./5.1#t1.r4" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: gamma function</a>,
+<a href="./25.14#E1" title="(25.14.1) ‣ §25.14(i) Definition ‣ §25.14 Lerch’s Transcendent ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m10.png" altimg-height="25px" altimg-valign="-7px" altimg-width="89px" alttext="\Phi\left(\NVar{z},\NVar{s},\NVar{a}\right)" display="inline"><mrow><mi href="./25.14#E1" mathvariant="normal" title="Lerch’s transcendent">Φ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./25.1#t1.r6" title="complex variable">z</mi><mo>,</mo><mi class="ltx_nvar" href="./25.1#t1.r5" title="complex variable">s</mi><mo>,</mo><mi class="ltx_nvar" href="./25.1#t1.r4" title="real or complex parameter">a</mi><mo>)</mo></mrow></mrow></math>: Lerch’s transcendent</a>,
+<a href="./front/introduction#common.t2.r1" title="Common Notations and Definitions ‣ Mathematical Introduction" class="ltx_ref"><math class="ltx_Math" altimg="m7.png" altimg-height="25px" altimg-valign="-7px" altimg-width="47px" alttext="[\NVar{a},\NVar{b})" display="inline"><mrow><mo href="./front/introduction#common.t2.r1" stretchy="false" title="half-closed interval">[</mo><mi class="ltx_nvar">a</mi><mo href="./front/introduction#common.t2.r1" title="half-closed interval">,</mo><mi class="ltx_nvar">b</mi><mo href="./front/introduction#common.t2.r1" stretchy="false" title="half-closed interval">)</mo></mrow></math>: half-closed interval</a>,
+<a href="./front/introduction#common.t1.r1" title="Common Notations and Definitions ‣ Mathematical Introduction" class="ltx_ref"><math class="ltx_Math" altimg="m30.png" altimg-height="18px" altimg-valign="-2px" altimg-width="19px" alttext="\mathbb{C}" display="inline"><mi href="./front/introduction#common.t1.r1" title="complex plane">ℂ</mi></math>: complex plane</a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m33.png" altimg-height="18px" altimg-valign="-2px" altimg-width="28px" alttext="\,\mathrm{d}\NVar{x}" display="inline"><mrow><mo href="./1.4#iv" rspace="0em" title="differential of 𝑥">d</mo><mi class="ltx_nvar">x</mi></mrow></math>: differential of <math class="ltx_Math" altimg="m63.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./front/introduction#common.t1.r10" title="Common Notations and Definitions ‣ Mathematical Introduction" class="ltx_ref"><math class="ltx_Math" altimg="m21.png" altimg-height="16px" altimg-valign="-3px" altimg-width="18px" alttext="\in" display="inline"><mo href="./front/introduction#common.t1.r10" title="element of">∈</mo></math>: element of</a>,
+<a href="./4.2#E11" title="(4.2.11) ‣ §4.2(ii) Logarithms to a General Base 𝑎 ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m34.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="\mathrm{e}" display="inline"><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi></math>: base of natural logarithm</a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m22.png" altimg-height="27px" altimg-valign="-8px" altimg-width="18px" alttext="\int" display="inline"><mo href="./1.4#iv" title="integral">∫</mo></math>: integral</a>,
+<a href="./1.9#E2" title="(1.9.2) ‣ Real and Imaginary Parts ‣ §1.9(i) Complex Numbers ‣ §1.9 Calculus of a Complex Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m16.png" altimg-height="18px" altimg-valign="-2px" altimg-width="19px" alttext="\Re" display="inline"><mrow><mi href="./1.9#E2" mathvariant="normal" title="real part">ℜ</mi><mo>⁡</mo></mrow></math>: real part</a>,
+<a href="./front/introduction#common.t2.r19" title="Common Notations and Definitions ‣ Mathematical Introduction" class="ltx_ref"><math class="ltx_Math" altimg="m42.png" altimg-height="25px" altimg-valign="-7px" altimg-width="15px" alttext="\setminus" display="inline"><mo href="./front/introduction#common.t2.r19" title="set subtraction">∖</mo></math>: set subtraction</a>,
+<a href="./25.1#t1.r3" title="§25.1 Special Notation ‣ Notation ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m63.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./25.1#t1.r3" title="real variable">x</mi></math>:  real variable</a>,
+<a href="./25.1#t1.r4" title="§25.1 Special Notation ‣ Notation ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m46.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="a" display="inline"><mi href="./25.1#t1.r4" title="real or complex parameter">a</mi></math>:  real or complex parameter</a>,
+<a href="./25.1#t1.r5" title="§25.1 Special Notation ‣ Notation ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m60.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="s" display="inline"><mi href="./25.1#t1.r5" title="complex variable">s</mi></math>:  complex variable</a> and
+<a href="./25.1#t1.r6" title="§25.1 Special Notation ‣ Notation ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m65.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi href="./25.1#t1.r6" title="complex variable">z</mi></math>:  complex variable</a>
+</dd>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=improper%20integral">improper integral</a>, <a class="ltx_keyword" href="./search/search?q=integral%20representation">integral representation</a>
+</dd>
+<dt>Source:</dt>
+<dd><cite class="ltx_cite ltx_citemacro_citet">Erdélyi<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/E#bib751" title="Higher Transcendental Functions. Vol. I" class="ltx_ref">1953a</a>, (1.11.3), p. 27)</cite></dd>
+<dt>Referenced by:</dt>
+<dd><a href="./errata/#V1.1.4.I1.ix4" title="In Errata ‣ Version 1.1.4 (January 15, 2022) ‣ Errata" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Erratum (V1.1.4) for  Equation (<span class="ltx_text ltx_ref_tag">25.14.5</span>)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./25.14.E5" title="" class="ltx_ref">http://dlmf.nist.gov/25.14.E5</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./25.14.E5.tex">TeX</a>, <a href="./25.14.E5.pmml">pMML</a>, <a href="./25.14.E5.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./25.14#ii.info" title="§25.14(ii) Properties ‣ §25.14 Lerch’s Transcendent ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§25.14(ii)</span></a>,
+<a href="./25.14#info" title="§25.14 Lerch’s Transcendent ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§25.14</span></a> and
+<a href="./25#info" title="Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.25</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<table id="E6" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">25.14.6</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E6.png" altimg-height="62px" altimg-valign="-22px" altimg-width="788px" alttext="\Phi\left(z,s,a\right)=\frac{1}{2}a^{-s}+\int_{0}^{\infty}\frac{z^{x}}{(a+x)^{%
+s}}\,\mathrm{d}x-2\int_{0}^{\infty}\frac{\sin\left(x\ln z-s\operatorname{%
+arctan}\left(x/a\right)\right)}{(a^{2}+x^{2})^{s/2}(e^{2\pi x}-1)}\,\mathrm{d}x," display="block"><mrow><mrow><mrow><mi href="./25.14#E1" mathvariant="normal" title="Lerch’s transcendent">Φ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./25.1#t1.r6" title="complex variable">z</mi><mo>,</mo><mi href="./25.1#t1.r5" title="complex variable">s</mi><mo>,</mo><mi href="./25.1#t1.r4" title="real or complex parameter">a</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><msup><mi href="./25.1#t1.r4" title="real or complex parameter">a</mi><mrow><mo>−</mo><mi href="./25.1#t1.r5" title="complex variable">s</mi></mrow></msup></mrow><mo rspace="0.055em">+</mo><mrow><msubsup><mo href="./1.4#iv" title="integral">∫</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup><mrow><mfrac><msup><mi href="./25.1#t1.r6" title="complex variable">z</mi><mi href="./25.1#t1.r3" title="real variable">x</mi></msup><msup><mrow><mo stretchy="false">(</mo><mrow><mi href="./25.1#t1.r4" title="real or complex parameter">a</mi><mo>+</mo><mi href="./25.1#t1.r3" title="real variable">x</mi></mrow><mo stretchy="false">)</mo></mrow><mi href="./25.1#t1.r5" title="complex variable">s</mi></msup></mfrac><mo lspace="0em">⁢</mo><mrow><mo href="./1.4#iv" rspace="0em" title="differential of 𝑥">d</mo><mi href="./25.1#t1.r3" title="real variable">x</mi></mrow></mrow></mrow></mrow><mo>−</mo><mrow><mn>2</mn><mo>⁢</mo><mrow><msubsup><mo href="./1.4#iv" title="integral">∫</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup><mrow><mfrac><mrow><mi href="./4.14#E1" title="sine function">sin</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mrow><mi href="./25.1#t1.r3" title="real variable">x</mi><mo lspace="0.167em">⁢</mo><mrow><mi href="./4.2#E2" title="principal branch of logarithm function">ln</mi><mo lspace="0.167em">⁡</mo><mi href="./25.1#t1.r6" title="complex variable">z</mi></mrow></mrow><mo>−</mo><mrow><mi href="./25.1#t1.r5" title="complex variable">s</mi><mo lspace="0.167em">⁢</mo><mrow><mi href="./4.23#ii.p1" title="arctangent function">arctan</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./25.1#t1.r3" title="real variable">x</mi><mo>/</mo><mi href="./25.1#t1.r4" title="real or complex parameter">a</mi></mrow><mo>)</mo></mrow></mrow></mrow></mrow><mo>)</mo></mrow></mrow><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><msup><mi href="./25.1#t1.r4" title="real or complex parameter">a</mi><mn>2</mn></msup><mo>+</mo><msup><mi href="./25.1#t1.r3" title="real variable">x</mi><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow><mrow><mi href="./25.1#t1.r5" title="complex variable">s</mi><mo>/</mo><mn>2</mn></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mrow><mn>2</mn><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>⁢</mo><mi href="./25.1#t1.r3" title="real variable">x</mi></mrow></msup><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mfrac><mo lspace="0em">⁢</mo><mrow><mo href="./1.4#iv" rspace="0em" title="differential of 𝑥">d</mo><mi href="./25.1#t1.r3" title="real variable">x</mi></mrow></mrow></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="4"><span class="ltx_constraint"><math class="ltx_Math" altimg="m12.png" altimg-height="19px" altimg-valign="-3px" altimg-width="68px" alttext="\Re a&gt;0" display="inline"><mrow><mrow><mi href="./1.9#E2" mathvariant="normal" title="real part">ℜ</mi><mo lspace="0.167em">⁡</mo><mi href="./25.1#t1.r4" title="real or complex parameter">a</mi></mrow><mo>&gt;</mo><mn>0</mn></mrow></math> if <math class="ltx_Math" altimg="m26.png" altimg-height="25px" altimg-valign="-7px" altimg-width="64px" alttext="\left|z\right|&lt;1" display="inline"><mrow><mrow><mo>|</mo><mi href="./25.1#t1.r6" title="complex variable">z</mi><mo>|</mo></mrow><mo>&lt;</mo><mn>1</mn></mrow></math>;
+<math class="ltx_Math" altimg="m15.png" altimg-height="19px" altimg-valign="-3px" altimg-width="67px" alttext="\Re s&gt;1" display="inline"><mrow><mrow><mi href="./1.9#E2" mathvariant="normal" title="real part">ℜ</mi><mo lspace="0.167em">⁡</mo><mi href="./25.1#t1.r5" title="complex variable">s</mi></mrow><mo>&gt;</mo><mn>1</mn></mrow></math>, <math class="ltx_Math" altimg="m12.png" altimg-height="19px" altimg-valign="-3px" altimg-width="68px" alttext="\Re a&gt;0" display="inline"><mrow><mrow><mi href="./1.9#E2" mathvariant="normal" title="real part">ℜ</mi><mo lspace="0.167em">⁡</mo><mi href="./25.1#t1.r4" title="real or complex parameter">a</mi></mrow><mo>&gt;</mo><mn>0</mn></mrow></math> if <math class="ltx_Math" altimg="m27.png" altimg-height="25px" altimg-valign="-7px" altimg-width="64px" alttext="\left|z\right|=1" display="inline"><mrow><mrow><mo>|</mo><mi href="./25.1#t1.r6" title="complex variable">z</mi><mo>|</mo></mrow><mo>=</mo><mn>1</mn></mrow></math>.</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E6.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./25.14#E1" title="(25.14.1) ‣ §25.14(i) Definition ‣ §25.14 Lerch’s Transcendent ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m10.png" altimg-height="25px" altimg-valign="-7px" altimg-width="89px" alttext="\Phi\left(\NVar{z},\NVar{s},\NVar{a}\right)" display="inline"><mrow><mi href="./25.14#E1" mathvariant="normal" title="Lerch’s transcendent">Φ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./25.1#t1.r6" title="complex variable">z</mi><mo>,</mo><mi class="ltx_nvar" href="./25.1#t1.r5" title="complex variable">s</mi><mo>,</mo><mi class="ltx_nvar" href="./25.1#t1.r4" title="real or complex parameter">a</mi><mo>)</mo></mrow></mrow></math>: Lerch’s transcendent</a>,
+<a href="./3.12#E1" title="(3.12.1) ‣ §3.12 Mathematical Constants ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m40.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="\pi" display="inline"><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></math>: the ratio of the circumference of a circle to its diameter</a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m33.png" altimg-height="18px" altimg-valign="-2px" altimg-width="28px" alttext="\,\mathrm{d}\NVar{x}" display="inline"><mrow><mo href="./1.4#iv" rspace="0em" title="differential of 𝑥">d</mo><mi class="ltx_nvar">x</mi></mrow></math>: differential of <math class="ltx_Math" altimg="m63.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./4.2#E11" title="(4.2.11) ‣ §4.2(ii) Logarithms to a General Base 𝑎 ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m34.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="\mathrm{e}" display="inline"><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi></math>: base of natural logarithm</a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m22.png" altimg-height="27px" altimg-valign="-8px" altimg-width="18px" alttext="\int" display="inline"><mo href="./1.4#iv" title="integral">∫</mo></math>: integral</a>,
+<a href="./4.23#ii.p1" title="§4.23(ii) Principal Values ‣ §4.23 Inverse Trigonometric Functions ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m39.png" altimg-height="17px" altimg-valign="-2px" altimg-width="76px" alttext="\operatorname{arctan}\NVar{z}" display="inline"><mrow><mi href="./4.23#ii.p1" title="arctangent function">arctan</mi><mo lspace="0.167em">⁡</mo><mi class="ltx_nvar" href="./4.1#t1.r4" title="complex variable">z</mi></mrow></math>: arctangent function</a>,
+<a href="./4.2#E2" title="(4.2.2) ‣ §4.2(i) The Logarithm ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m29.png" altimg-height="18px" altimg-valign="-2px" altimg-width="36px" alttext="\ln\NVar{z}" display="inline"><mrow><mi href="./4.2#E2" title="principal branch of logarithm function">ln</mi><mo lspace="0.167em">⁡</mo><mi class="ltx_nvar" href="./4.1#t1.r4" title="complex variable">z</mi></mrow></math>: principal branch of logarithm function</a>,
+<a href="./1.9#E2" title="(1.9.2) ‣ Real and Imaginary Parts ‣ §1.9(i) Complex Numbers ‣ §1.9 Calculus of a Complex Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m16.png" altimg-height="18px" altimg-valign="-2px" altimg-width="19px" alttext="\Re" display="inline"><mrow><mi href="./1.9#E2" mathvariant="normal" title="real part">ℜ</mi><mo>⁡</mo></mrow></math>: real part</a>,
+<a href="./4.14#E1" title="(4.14.1) ‣ §4.14 Definitions and Periodicity ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m43.png" altimg-height="18px" altimg-valign="-2px" altimg-width="44px" alttext="\sin\NVar{z}" display="inline"><mrow><mi href="./4.14#E1" title="sine function">sin</mi><mo lspace="0.167em">⁡</mo><mi class="ltx_nvar" href="./4.1#t1.r4" title="complex variable">z</mi></mrow></math>: sine function</a>,
+<a href="./25.1#t1.r3" title="§25.1 Special Notation ‣ Notation ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m63.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./25.1#t1.r3" title="real variable">x</mi></math>:  real variable</a>,
+<a href="./25.1#t1.r4" title="§25.1 Special Notation ‣ Notation ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m46.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="a" display="inline"><mi href="./25.1#t1.r4" title="real or complex parameter">a</mi></math>:  real or complex parameter</a>,
+<a href="./25.1#t1.r5" title="§25.1 Special Notation ‣ Notation ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m60.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="s" display="inline"><mi href="./25.1#t1.r5" title="complex variable">s</mi></math>:  complex variable</a> and
+<a href="./25.1#t1.r6" title="§25.1 Special Notation ‣ Notation ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m65.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi href="./25.1#t1.r6" title="complex variable">z</mi></math>:  complex variable</a>
+</dd>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=improper%20integral">improper integral</a>, <a class="ltx_keyword" href="./search/search?q=integral%20representation">integral representation</a>
+</dd>
+<dt>Source:</dt>
+<dd><cite class="ltx_cite ltx_citemacro_citet">Erdélyi<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/E#bib751" title="Higher Transcendental Functions. Vol. I" class="ltx_ref">1953a</a>, (1.11.4), p. 28)</cite></dd>
+<dt>Notes:</dt>
+<dd>For the case <math class="ltx_Math" altimg="m26.png" altimg-height="25px" altimg-valign="-7px" altimg-width="64px" alttext="\left|z\right|&lt;1" display="inline"><mrow><mrow><mo>|</mo><mi href="./25.1#t1.r6" title="complex variable">z</mi><mo>|</mo></mrow><mo>&lt;</mo><mn>1</mn></mrow></math> see <cite class="ltx_cite ltx_citemacro_citet">Erdélyi<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/E#bib751" title="Higher Transcendental Functions. Vol. I" class="ltx_ref">1953a</a>, (1.11.4), p. 28)</cite>.
+In the case <math class="ltx_Math" altimg="m27.png" altimg-height="25px" altimg-valign="-7px" altimg-width="64px" alttext="\left|z\right|=1" display="inline"><mrow><mrow><mo>|</mo><mi href="./25.1#t1.r6" title="complex variable">z</mi><mo>|</mo></mrow><mo>=</mo><mn>1</mn></mrow></math> one checks that the first integral converges absolutely
+iff <math class="ltx_Math" altimg="m15.png" altimg-height="19px" altimg-valign="-3px" altimg-width="67px" alttext="\Re s&gt;1" display="inline"><mrow><mrow><mi href="./1.9#E2" mathvariant="normal" title="real part">ℜ</mi><mo lspace="0.167em">⁡</mo><mi href="./25.1#t1.r5" title="complex variable">s</mi></mrow><mo>&gt;</mo><mn>1</mn></mrow></math>.</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./errata/#V1.1.4.I1.ix5" title="In Errata ‣ Version 1.1.4 (January 15, 2022) ‣ Errata" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Erratum (V1.1.4) for  Equation (<span class="ltx_text ltx_ref_tag">25.14.6</span>)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./25.14.E6" title="" class="ltx_ref">http://dlmf.nist.gov/25.14.E6</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./25.14.E6.tex">TeX</a>, <a href="./25.14.E6.pmml">pMML</a>, <a href="./25.14.E6.png">png</a>
+</dd>
+<dt>Clarification (effective with 1.1.4):</dt>
+<dd>
+The constraint which originally read
+“<math class="ltx_Math" altimg="m13.png" altimg-height="19px" altimg-valign="-3px" altimg-width="67px" alttext="\Re s&gt;0" display="inline"><mrow><mrow><mi href="./1.9#E2" mathvariant="normal" title="real part">ℜ</mi><mo lspace="0.167em">⁡</mo><mi href="./25.1#t1.r5" title="complex variable">s</mi></mrow><mo>&gt;</mo><mn>0</mn></mrow></math> if <math class="ltx_Math" altimg="m67.png" altimg-height="25px" altimg-valign="-7px" altimg-width="64px" alttext="|z|&lt;1" display="inline"><mrow><mrow><mo stretchy="false">|</mo><mi href="./25.1#t1.r6" title="complex variable">z</mi><mo stretchy="false">|</mo></mrow><mo>&lt;</mo><mn>1</mn></mrow></math>; <math class="ltx_Math" altimg="m15.png" altimg-height="19px" altimg-valign="-3px" altimg-width="67px" alttext="\Re s&gt;1" display="inline"><mrow><mrow><mi href="./1.9#E2" mathvariant="normal" title="real part">ℜ</mi><mo lspace="0.167em">⁡</mo><mi href="./25.1#t1.r5" title="complex variable">s</mi></mrow><mo>&gt;</mo><mn>1</mn></mrow></math> if <math class="ltx_Math" altimg="m68.png" altimg-height="25px" altimg-valign="-7px" altimg-width="138px" alttext="|z|=1,\Re a&gt;0" display="inline"><mrow><mrow><mrow><mo stretchy="false">|</mo><mi href="./25.1#t1.r6" title="complex variable">z</mi><mo stretchy="false">|</mo></mrow><mo>=</mo><mn>1</mn></mrow><mo>,</mo><mrow><mrow><mi href="./1.9#E2" mathvariant="normal" title="real part">ℜ</mi><mo lspace="0.167em">⁡</mo><mi href="./25.1#t1.r4" title="real or complex parameter">a</mi></mrow><mo>&gt;</mo><mn>0</mn></mrow></mrow></math>” has been improved to be
+“<math class="ltx_Math" altimg="m12.png" altimg-height="19px" altimg-valign="-3px" altimg-width="68px" alttext="\Re a&gt;0" display="inline"><mrow><mrow><mi href="./1.9#E2" mathvariant="normal" title="real part">ℜ</mi><mo lspace="0.167em">⁡</mo><mi href="./25.1#t1.r4" title="real or complex parameter">a</mi></mrow><mo>&gt;</mo><mn>0</mn></mrow></math> if <math class="ltx_Math" altimg="m26.png" altimg-height="25px" altimg-valign="-7px" altimg-width="64px" alttext="\left|z\right|&lt;1" display="inline"><mrow><mrow><mo>|</mo><mi href="./25.1#t1.r6" title="complex variable">z</mi><mo>|</mo></mrow><mo>&lt;</mo><mn>1</mn></mrow></math>;
+<math class="ltx_Math" altimg="m15.png" altimg-height="19px" altimg-valign="-3px" altimg-width="67px" alttext="\Re s&gt;1" display="inline"><mrow><mrow><mi href="./1.9#E2" mathvariant="normal" title="real part">ℜ</mi><mo lspace="0.167em">⁡</mo><mi href="./25.1#t1.r5" title="complex variable">s</mi></mrow><mo>&gt;</mo><mn>1</mn></mrow></math>, <math class="ltx_Math" altimg="m12.png" altimg-height="19px" altimg-valign="-3px" altimg-width="68px" alttext="\Re a&gt;0" display="inline"><mrow><mrow><mi href="./1.9#E2" mathvariant="normal" title="real part">ℜ</mi><mo lspace="0.167em">⁡</mo><mi href="./25.1#t1.r4" title="real or complex parameter">a</mi></mrow><mo>&gt;</mo><mn>0</mn></mrow></math> if <math class="ltx_Math" altimg="m27.png" altimg-height="25px" altimg-valign="-7px" altimg-width="64px" alttext="\left|z\right|=1" display="inline"><mrow><mrow><mo>|</mo><mi href="./25.1#t1.r6" title="complex variable">z</mi><mo>|</mo></mrow><mo>=</mo><mn>1</mn></mrow></math>”.
+
+<p><span class="ltx_font_italic">Suggested 2021-08-23 by Gergő Nemes</span></p>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./25.14#ii.info" title="§25.14(ii) Properties ‣ §25.14 Lerch’s Transcendent ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§25.14(ii)</span></a>,
+<a href="./25.14#info" title="§25.14 Lerch’s Transcendent ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§25.14</span></a> and
+<a href="./25#info" title="Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.25</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+<div id="ii.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">Lerch’s transformation formula</p>
+<table id="E7" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">25.14.7</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_Math ltx_eqn_cell ltx_align_center"><math class="ltx_Math" alttext="\Phi\left(z,s,a\right)=\frac{\mathrm{i}\left(2\pi\right)^{s-1}}{z^{a}}\Gamma%
+\left(1-s\right)\left({\mathrm{e}}^{-\pi\mathrm{i}s/2}\Phi\left({\mathrm{e}}^{%
+-2\pi\mathrm{i}a},1-s,\frac{\ln z}{2\pi\mathrm{i}}\right)-{\mathrm{e}}^{\pi%
+\mathrm{i}(2a+(s/2))}\Phi\left({\mathrm{e}}^{2\pi\mathrm{i}a},1-s,1-\frac{\ln z%
+}{2\pi\mathrm{i}}\right)\right)." display="block"><mrow><mrow><mi href="./25.14#E1" mathvariant="normal" title="Lerch’s transcendent">Φ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./25.1#t1.r6" title="complex variable">z</mi><mo>,</mo><mi href="./25.1#t1.r5" title="complex variable">s</mi><mo>,</mo><mi href="./25.1#t1.r4" title="real or complex parameter">a</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mfrac><mrow><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi><mo>⁢</mo><msup><mrow><mo>(</mo><mrow><mn>2</mn><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></mrow><mo>)</mo></mrow><mrow><mi href="./25.1#t1.r5" title="complex variable">s</mi><mo>−</mo><mn>1</mn></mrow></msup></mrow><msup><mi href="./25.1#t1.r6" title="complex variable">z</mi><mi href="./25.1#t1.r4" title="real or complex parameter">a</mi></msup></mfrac><mo>⁢</mo><mrow><mi href="./5.2#E1" mathvariant="normal" title="gamma function">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mn>1</mn><mo>−</mo><mi href="./25.1#t1.r5" title="complex variable">s</mi></mrow><mo>)</mo></mrow></mrow><mo>⁢</mo><mrow><mo maxsize="2.736em" minsize="2.736em">(</mo><mrow><mtable align="baseline 1" columnalign="left" displaystyle="true"><mtr><mtd class="ltx_align_left"><mrow><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mrow><mo>−</mo><mrow><mrow><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>⁢</mo><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi><mo>⁢</mo><mi href="./25.1#t1.r5" title="complex variable">s</mi></mrow><mo>/</mo><mn>2</mn></mrow></mrow></msup><mo>⁢</mo><mrow><mi href="./25.14#E1" mathvariant="normal" title="Lerch’s transcendent">Φ</mi><mo>⁡</mo><mrow><mo>(</mo><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mrow><mo>−</mo><mrow><mn>2</mn><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>⁢</mo><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi><mo>⁢</mo><mi href="./25.1#t1.r4" title="real or complex parameter">a</mi></mrow></mrow></msup><mo>,</mo><mrow><mn>1</mn><mo>−</mo><mi href="./25.1#t1.r5" title="complex variable">s</mi></mrow><mo>,</mo><mfrac><mrow><mi href="./4.2#E2" title="principal branch of logarithm function">ln</mi><mo lspace="0.167em">⁡</mo><mi href="./25.1#t1.r6" title="complex variable">z</mi></mrow><mrow><mn>2</mn><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>⁢</mo><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></mrow></mfrac><mo>)</mo></mrow></mrow></mrow></mtd></mtr><mtr><mtd class="ltx_align_left"><mspace style="width:2em;" width="2em"></mspace><mo>−</mo><mrow><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mrow><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>⁢</mo><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi href="./25.1#t1.r4" title="real or complex parameter">a</mi></mrow><mo>+</mo><mrow><mo stretchy="false">(</mo><mrow><mi href="./25.1#t1.r5" title="complex variable">s</mi><mo>/</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></msup><mo>⁢</mo><mrow><mi href="./25.14#E1" mathvariant="normal" title="Lerch’s transcendent">Φ</mi><mo>⁡</mo><mrow><mo>(</mo><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mrow><mn>2</mn><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>⁢</mo><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi><mo>⁢</mo><mi href="./25.1#t1.r4" title="real or complex parameter">a</mi></mrow></msup><mo>,</mo><mrow><mn>1</mn><mo>−</mo><mi href="./25.1#t1.r5" title="complex variable">s</mi></mrow><mo>,</mo><mrow><mn>1</mn><mo>−</mo><mfrac><mrow><mi href="./4.2#E2" title="principal branch of logarithm function">ln</mi><mo lspace="0.167em">⁡</mo><mi href="./25.1#t1.r6" title="complex variable">z</mi></mrow><mrow><mn>2</mn><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>⁢</mo><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></mrow></mfrac></mrow><mo>)</mo></mrow></mrow></mrow><mo maxsize="2.736em" minsize="2.736em">)</mo><mo lspace="0em">.</mo></mtd></mtr></mtable></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E7.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./5.2#E1" title="(5.2.1) ‣ Euler’s Integral ‣ §5.2(i) Gamma and Psi Functions ‣ §5.2 Definitions ‣ Properties ‣ Chapter 5 Gamma Function" class="ltx_ref"><math class="ltx_Math" altimg="m8.png" altimg-height="25px" altimg-valign="-7px" altimg-width="47px" alttext="\Gamma\left(\NVar{z}\right)" display="inline"><mrow><mi href="./5.2#E1" mathvariant="normal" title="gamma function">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./5.1#t1.r4" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: gamma function</a>,
+<a href="./25.14#E1" title="(25.14.1) ‣ §25.14(i) Definition ‣ §25.14 Lerch’s Transcendent ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m10.png" altimg-height="25px" altimg-valign="-7px" altimg-width="89px" alttext="\Phi\left(\NVar{z},\NVar{s},\NVar{a}\right)" display="inline"><mrow><mi href="./25.14#E1" mathvariant="normal" title="Lerch’s transcendent">Φ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./25.1#t1.r6" title="complex variable">z</mi><mo>,</mo><mi class="ltx_nvar" href="./25.1#t1.r5" title="complex variable">s</mi><mo>,</mo><mi class="ltx_nvar" href="./25.1#t1.r4" title="real or complex parameter">a</mi><mo>)</mo></mrow></mrow></math>: Lerch’s transcendent</a>,
+<a href="./3.12#E1" title="(3.12.1) ‣ §3.12 Mathematical Constants ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m40.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="\pi" display="inline"><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></math>: the ratio of the circumference of a circle to its diameter</a>,
+<a href="./4.2#E11" title="(4.2.11) ‣ §4.2(ii) Logarithms to a General Base 𝑎 ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m34.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="\mathrm{e}" display="inline"><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi></math>: base of natural logarithm</a>,
+<a href="./1.9#E1" title="(1.9.1) ‣ §1.9(i) Complex Numbers ‣ §1.9 Calculus of a Complex Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m35.png" altimg-height="18px" altimg-valign="-2px" altimg-width="10px" alttext="\mathrm{i}" display="inline"><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></math>: imaginary unit</a>,
+<a href="./4.2#E2" title="(4.2.2) ‣ §4.2(i) The Logarithm ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m29.png" altimg-height="18px" altimg-valign="-2px" altimg-width="36px" alttext="\ln\NVar{z}" display="inline"><mrow><mi href="./4.2#E2" title="principal branch of logarithm function">ln</mi><mo lspace="0.167em">⁡</mo><mi class="ltx_nvar" href="./4.1#t1.r4" title="complex variable">z</mi></mrow></math>: principal branch of logarithm function</a>,
+<a href="./25.1#t1.r4" title="§25.1 Special Notation ‣ Notation ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m46.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="a" display="inline"><mi href="./25.1#t1.r4" title="real or complex parameter">a</mi></math>:  real or complex parameter</a>,
+<a href="./25.1#t1.r5" title="§25.1 Special Notation ‣ Notation ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m60.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="s" display="inline"><mi href="./25.1#t1.r5" title="complex variable">s</mi></math>:  complex variable</a> and
+<a href="./25.1#t1.r6" title="§25.1 Special Notation ‣ Notation ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m65.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi href="./25.1#t1.r6" title="complex variable">z</mi></math>:  complex variable</a>
+</dd>
+<dt>Source:</dt>
+<dd><cite class="ltx_cite ltx_citemacro_citet">Erdélyi<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/E#bib751" title="Higher Transcendental Functions. Vol. I" class="ltx_ref">1953a</a>, (1.11.7), p. 29)</cite></dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./25.14#ii.info" title="§25.14(ii) Properties ‣ §25.14 Lerch’s Transcendent ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§25.14(ii)</span></a>,
+<a href="./errata/#V1.2.1.I2.ix8.p1" title="In Other Changes ‣ Version 1.2.1 (June 15, 2024) ‣ Errata" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Erratum (V1.2.1) for  §<span class="ltx_text ltx_ref_tag">25.14(ii)</span></span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./25.14.E7" title="" class="ltx_ref">http://dlmf.nist.gov/25.14.E7</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./25.14.E7.tex">TeX</a>, <a href="./25.14.E7.pmml">pMML</a>, <a href="./25.14.E7.png">png</a>
+</dd>
+<dt>Addition (effective with 1.2.1):</dt>
+<dd>
+This equation was added.
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./25.14#ii.info" title="§25.14(ii) Properties ‣ §25.14 Lerch’s Transcendent ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§25.14(ii)</span></a>,
+<a href="./25.14#info" title="§25.14 Lerch’s Transcendent ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§25.14</span></a> and
+<a href="./25#info" title="Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.25</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+<div id="ii.p3" class="ltx_para">
+<p class="ltx_p">For these and further properties see <cite class="ltx_cite ltx_citemacro_citet">Erdélyi<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/E#bib751" title="Higher Transcendental Functions. Vol. I" class="ltx_ref">1953a</a>, pp. 27–31)</cite>.</p>
+<table id="E8" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">25.14.8</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E8.png" altimg-height="66px" altimg-valign="-23px" altimg-width="538px" alttext="\Phi\left(-z,s,a\right)=\frac{1}{2\pi\mathrm{i}}\int_{\sigma-\mathrm{i}\infty}%
+^{\sigma+\mathrm{i}\infty}\frac{\Gamma\left(1+t\right)\Gamma\left(-t\right)z^{%
+t}}{\left(a+t\right)^{s}}\,\mathrm{d}t," display="block"><mrow><mrow><mrow><mi href="./25.14#E1" mathvariant="normal" title="Lerch’s transcendent">Φ</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mo>−</mo><mi href="./25.1#t1.r6" title="complex variable">z</mi></mrow><mo>,</mo><mi href="./25.1#t1.r5" title="complex variable">s</mi><mo>,</mo><mi href="./25.1#t1.r4" title="real or complex parameter">a</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mfrac><mn>1</mn><mrow><mn>2</mn><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>⁢</mo><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></mrow></mfrac><mo>⁢</mo><mrow><msubsup><mo href="./1.4#iv" title="integral">∫</mo><mrow><mi>σ</mi><mo>−</mo><mrow><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi><mo>⁢</mo><mi mathvariant="normal">∞</mi></mrow></mrow><mrow><mi>σ</mi><mo>+</mo><mrow><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi><mo>⁢</mo><mi mathvariant="normal">∞</mi></mrow></mrow></msubsup><mrow><mfrac><mrow><mrow><mi href="./5.2#E1" mathvariant="normal" title="gamma function">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mi>t</mi></mrow><mo>)</mo></mrow></mrow><mo>⁢</mo><mrow><mi href="./5.2#E1" mathvariant="normal" title="gamma function">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mo>−</mo><mi>t</mi></mrow><mo>)</mo></mrow></mrow><mo>⁢</mo><msup><mi href="./25.1#t1.r6" title="complex variable">z</mi><mi>t</mi></msup></mrow><msup><mrow><mo>(</mo><mrow><mi href="./25.1#t1.r4" title="real or complex parameter">a</mi><mo>+</mo><mi>t</mi></mrow><mo>)</mo></mrow><mi href="./25.1#t1.r5" title="complex variable">s</mi></msup></mfrac><mo lspace="0em">⁢</mo><mrow><mo href="./1.4#iv" rspace="0em" title="differential of 𝑥">d</mo><mi>t</mi></mrow></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="4"><span class="ltx_constraint"><math class="ltx_Math" altimg="m23.png" altimg-height="25px" altimg-valign="-7px" altimg-width="99px" alttext="\left|\arg z\right|&lt;\pi" display="inline"><mrow><mrow><mo>|</mo><mrow><mi>arg</mi><mo lspace="0.167em">⁡</mo><mi href="./25.1#t1.r6" title="complex variable">z</mi></mrow><mo>|</mo></mrow><mo>&lt;</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></mrow></math>, <math class="ltx_Math" altimg="m17.png" altimg-height="19px" altimg-valign="-3px" altimg-width="68px" alttext="\Re{a}&gt;0" display="inline"><mrow><mrow><mi href="./1.9#E2" mathvariant="normal" title="real part">ℜ</mi><mo lspace="0.167em">⁡</mo><mi href="./25.1#t1.r4" title="real or complex parameter">a</mi></mrow><mo>&gt;</mo><mn>0</mn></mrow></math>,</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E8.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./5.2#E1" title="(5.2.1) ‣ Euler’s Integral ‣ §5.2(i) Gamma and Psi Functions ‣ §5.2 Definitions ‣ Properties ‣ Chapter 5 Gamma Function" class="ltx_ref"><math class="ltx_Math" altimg="m8.png" altimg-height="25px" altimg-valign="-7px" altimg-width="47px" alttext="\Gamma\left(\NVar{z}\right)" display="inline"><mrow><mi href="./5.2#E1" mathvariant="normal" title="gamma function">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./5.1#t1.r4" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: gamma function</a>,
+<a href="./25.14#E1" title="(25.14.1) ‣ §25.14(i) Definition ‣ §25.14 Lerch’s Transcendent ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m10.png" altimg-height="25px" altimg-valign="-7px" altimg-width="89px" alttext="\Phi\left(\NVar{z},\NVar{s},\NVar{a}\right)" display="inline"><mrow><mi href="./25.14#E1" mathvariant="normal" title="Lerch’s transcendent">Φ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./25.1#t1.r6" title="complex variable">z</mi><mo>,</mo><mi class="ltx_nvar" href="./25.1#t1.r5" title="complex variable">s</mi><mo>,</mo><mi class="ltx_nvar" href="./25.1#t1.r4" title="real or complex parameter">a</mi><mo>)</mo></mrow></mrow></math>: Lerch’s transcendent</a>,
+<a href="./3.12#E1" title="(3.12.1) ‣ §3.12 Mathematical Constants ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m40.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="\pi" display="inline"><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></math>: the ratio of the circumference of a circle to its diameter</a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m33.png" altimg-height="18px" altimg-valign="-2px" altimg-width="28px" alttext="\,\mathrm{d}\NVar{x}" display="inline"><mrow><mo href="./1.4#iv" rspace="0em" title="differential of 𝑥">d</mo><mi class="ltx_nvar">x</mi></mrow></math>: differential of <math class="ltx_Math" altimg="m63.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./1.9#E1" title="(1.9.1) ‣ §1.9(i) Complex Numbers ‣ §1.9 Calculus of a Complex Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m35.png" altimg-height="18px" altimg-valign="-2px" altimg-width="10px" alttext="\mathrm{i}" display="inline"><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></math>: imaginary unit</a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m22.png" altimg-height="27px" altimg-valign="-8px" altimg-width="18px" alttext="\int" display="inline"><mo href="./1.4#iv" title="integral">∫</mo></math>: integral</a>,
+<a href="./1.9#E2" title="(1.9.2) ‣ Real and Imaginary Parts ‣ §1.9(i) Complex Numbers ‣ §1.9 Calculus of a Complex Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m16.png" altimg-height="18px" altimg-valign="-2px" altimg-width="19px" alttext="\Re" display="inline"><mrow><mi href="./1.9#E2" mathvariant="normal" title="real part">ℜ</mi><mo>⁡</mo></mrow></math>: real part</a>,
+<a href="./25.1#t1.r4" title="§25.1 Special Notation ‣ Notation ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m46.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="a" display="inline"><mi href="./25.1#t1.r4" title="real or complex parameter">a</mi></math>:  real or complex parameter</a>,
+<a href="./25.1#t1.r5" title="§25.1 Special Notation ‣ Notation ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m60.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="s" display="inline"><mi href="./25.1#t1.r5" title="complex variable">s</mi></math>:  complex variable</a> and
+<a href="./25.1#t1.r6" title="§25.1 Special Notation ‣ Notation ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m65.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi href="./25.1#t1.r6" title="complex variable">z</mi></math>:  complex variable</a>
+</dd>
+<dt>Source:</dt>
+<dd><cite class="ltx_cite ltx_citemacro_citet">Olde Daalhuis (<a href="./bib/O#bib3124" title="Lerch Φ asymptotics" class="ltx_ref">2024</a>, (1.5))</cite></dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./25.14#ii.info" title="§25.14(ii) Properties ‣ §25.14 Lerch’s Transcendent ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§25.14(ii)</span></a>,
+<a href="./errata/#V1.2.1.I2.ix8.p1" title="In Other Changes ‣ Version 1.2.1 (June 15, 2024) ‣ Errata" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Erratum (V1.2.1) for  §<span class="ltx_text ltx_ref_tag">25.14(ii)</span></span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./25.14.E8" title="" class="ltx_ref">http://dlmf.nist.gov/25.14.E8</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./25.14.E8.tex">TeX</a>, <a href="./25.14.E8.pmml">pMML</a>, <a href="./25.14.E8.png">png</a>
+</dd>
+<dt>Addition (effective with 1.2.1):</dt>
+<dd>
+This equation was added.
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./25.14#ii.info" title="§25.14(ii) Properties ‣ §25.14 Lerch’s Transcendent ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§25.14(ii)</span></a>,
+<a href="./25.14#info" title="§25.14 Lerch’s Transcendent ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§25.14</span></a> and
+<a href="./25#info" title="Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.25</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">with <math class="ltx_Math" altimg="m36.png" altimg-height="25px" altimg-valign="-7px" altimg-width="215px" alttext="\max(-\Re{a},-1)&lt;\sigma&lt;0" display="inline"><mrow><mrow><mi>max</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mo rspace="0.167em">−</mo><mrow><mi href="./1.9#E2" mathvariant="normal" title="real part">ℜ</mi><mo lspace="0.167em">⁡</mo><mi href="./25.1#t1.r4" title="real or complex parameter">a</mi></mrow></mrow><mo>,</mo><mrow><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>&lt;</mo><mi>σ</mi><mo>&lt;</mo><mn>0</mn></mrow></math>. This Mellin–Barnes integral representation is used in <cite class="ltx_cite ltx_citemacro_citet">Olde Daalhuis (<a href="./bib/O#bib3124" title="Lerch Φ asymptotics" class="ltx_ref">2024</a>)</cite> to obtain large <math class="ltx_Math" altimg="m28.png" altimg-height="25px" altimg-valign="-7px" altimg-width="26px" alttext="\left|z\right|" display="inline"><mrow><mo>|</mo><mi href="./25.1#t1.r6" title="complex variable">z</mi><mo>|</mo></mrow></math> asymptotic approximations for
+<math class="ltx_Math" altimg="m9.png" altimg-height="25px" altimg-valign="-7px" altimg-width="105px" alttext="\Phi\left(-z,s,a\right)" display="inline"><mrow><mi href="./25.14#E1" mathvariant="normal" title="Lerch’s transcendent">Φ</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mo>−</mo><mi href="./25.1#t1.r6" title="complex variable">z</mi></mrow><mo>,</mo><mi href="./25.1#t1.r5" title="complex variable">s</mi><mo>,</mo><mi href="./25.1#t1.r4" title="real or complex parameter">a</mi><mo>)</mo></mrow></mrow></math>. In the special case <math class="ltx_Math" altimg="m59.png" altimg-height="13px" altimg-valign="-2px" altimg-width="60px" alttext="s=m" display="inline"><mrow><mi href="./25.1#t1.r5" title="complex variable">s</mi><mo>=</mo><mi href="./25.1#t1.r1" title="nonnegative integer">m</mi></mrow></math> an integer these asymptotic approximations simplify</p>
+<table id="E9" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">25.14.9</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E9.png" altimg-height="76px" altimg-valign="-28px" altimg-width="622px" alttext="\Phi\left(-z,m,a\right)=\frac{-\pi}{z^{a}}\sum_{n=0}^{m-1}\frac{b_{n}\left(\ln
+z%
+\right)^{m-n-1}}{\Gamma\left(m-n\right)}-\sum_{n=1}^{\infty}\frac{\left(-z%
+\right)^{-n}}{\left(a-n\right)^{m}}," display="block"><mrow><mrow><mrow><mi href="./25.14#E1" mathvariant="normal" title="Lerch’s transcendent">Φ</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mo>−</mo><mi href="./25.1#t1.r6" title="complex variable">z</mi></mrow><mo>,</mo><mi href="./25.1#t1.r1" title="nonnegative integer">m</mi><mo>,</mo><mi href="./25.1#t1.r4" title="real or complex parameter">a</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mfrac><mrow><mo>−</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></mrow><msup><mi href="./25.1#t1.r6" title="complex variable">z</mi><mi href="./25.1#t1.r4" title="real or complex parameter">a</mi></msup></mfrac><mo>⁢</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi href="./25.1#t1.r1" title="nonnegative integer">n</mi><mo>=</mo><mn>0</mn></mrow><mrow><mi href="./25.1#t1.r1" title="nonnegative integer">m</mi><mo>−</mo><mn>1</mn></mrow></munderover><mfrac><mrow><msub><mi>b</mi><mi href="./25.1#t1.r1" title="nonnegative integer">n</mi></msub><mo>⁢</mo><msup><mrow><mo>(</mo><mrow><mi href="./4.2#E2" title="principal branch of logarithm function">ln</mi><mo lspace="0.167em">⁡</mo><mi href="./25.1#t1.r6" title="complex variable">z</mi></mrow><mo>)</mo></mrow><mrow><mi href="./25.1#t1.r1" title="nonnegative integer">m</mi><mo>−</mo><mi href="./25.1#t1.r1" title="nonnegative integer">n</mi><mo>−</mo><mn>1</mn></mrow></msup></mrow><mrow><mi href="./5.2#E1" mathvariant="normal" title="gamma function">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./25.1#t1.r1" title="nonnegative integer">m</mi><mo>−</mo><mi href="./25.1#t1.r1" title="nonnegative integer">n</mi></mrow><mo>)</mo></mrow></mrow></mfrac></mrow></mrow><mo rspace="0.055em">−</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi href="./25.1#t1.r1" title="nonnegative integer">n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><msup><mrow><mo>(</mo><mrow><mo>−</mo><mi href="./25.1#t1.r6" title="complex variable">z</mi></mrow><mo>)</mo></mrow><mrow><mo>−</mo><mi href="./25.1#t1.r1" title="nonnegative integer">n</mi></mrow></msup><msup><mrow><mo>(</mo><mrow><mi href="./25.1#t1.r4" title="real or complex parameter">a</mi><mo>−</mo><mi href="./25.1#t1.r1" title="nonnegative integer">n</mi></mrow><mo>)</mo></mrow><mi href="./25.1#t1.r1" title="nonnegative integer">m</mi></msup></mfrac></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="4"><span class="ltx_constraint"><math class="ltx_Math" altimg="m23.png" altimg-height="25px" altimg-valign="-7px" altimg-width="99px" alttext="\left|\arg z\right|&lt;\pi" display="inline"><mrow><mrow><mo>|</mo><mrow><mi>arg</mi><mo lspace="0.167em">⁡</mo><mi href="./25.1#t1.r6" title="complex variable">z</mi></mrow><mo>|</mo></mrow><mo>&lt;</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></mrow></math>.</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E9.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./5.2#E1" title="(5.2.1) ‣ Euler’s Integral ‣ §5.2(i) Gamma and Psi Functions ‣ §5.2 Definitions ‣ Properties ‣ Chapter 5 Gamma Function" class="ltx_ref"><math class="ltx_Math" altimg="m8.png" altimg-height="25px" altimg-valign="-7px" altimg-width="47px" alttext="\Gamma\left(\NVar{z}\right)" display="inline"><mrow><mi href="./5.2#E1" mathvariant="normal" title="gamma function">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./5.1#t1.r4" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: gamma function</a>,
+<a href="./25.14#E1" title="(25.14.1) ‣ §25.14(i) Definition ‣ §25.14 Lerch’s Transcendent ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m10.png" altimg-height="25px" altimg-valign="-7px" altimg-width="89px" alttext="\Phi\left(\NVar{z},\NVar{s},\NVar{a}\right)" display="inline"><mrow><mi href="./25.14#E1" mathvariant="normal" title="Lerch’s transcendent">Φ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./25.1#t1.r6" title="complex variable">z</mi><mo>,</mo><mi class="ltx_nvar" href="./25.1#t1.r5" title="complex variable">s</mi><mo>,</mo><mi class="ltx_nvar" href="./25.1#t1.r4" title="real or complex parameter">a</mi><mo>)</mo></mrow></mrow></math>: Lerch’s transcendent</a>,
+<a href="./3.12#E1" title="(3.12.1) ‣ §3.12 Mathematical Constants ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m40.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="\pi" display="inline"><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></math>: the ratio of the circumference of a circle to its diameter</a>,
+<a href="./4.2#E2" title="(4.2.2) ‣ §4.2(i) The Logarithm ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m29.png" altimg-height="18px" altimg-valign="-2px" altimg-width="36px" alttext="\ln\NVar{z}" display="inline"><mrow><mi href="./4.2#E2" title="principal branch of logarithm function">ln</mi><mo lspace="0.167em">⁡</mo><mi class="ltx_nvar" href="./4.1#t1.r4" title="complex variable">z</mi></mrow></math>: principal branch of logarithm function</a>,
+<a href="./25.1#t1.r1" title="§25.1 Special Notation ‣ Notation ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m54.png" altimg-height="13px" altimg-valign="-2px" altimg-width="23px" alttext="m" display="inline"><mi href="./25.1#t1.r1" title="nonnegative integer">m</mi></math>:  nonnegative integer</a>,
+<a href="./25.1#t1.r1" title="§25.1 Special Notation ‣ Notation ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m57.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./25.1#t1.r1" title="nonnegative integer">n</mi></math>:  nonnegative integer</a>,
+<a href="./25.1#t1.r4" title="§25.1 Special Notation ‣ Notation ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m46.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="a" display="inline"><mi href="./25.1#t1.r4" title="real or complex parameter">a</mi></math>:  real or complex parameter</a> and
+<a href="./25.1#t1.r6" title="§25.1 Special Notation ‣ Notation ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m65.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi href="./25.1#t1.r6" title="complex variable">z</mi></math>:  complex variable</a>
+</dd>
+<dt>Source:</dt>
+<dd><cite class="ltx_cite ltx_citemacro_citet">Olde Daalhuis (<a href="./bib/O#bib3124" title="Lerch Φ asymptotics" class="ltx_ref">2024</a>, (1.6))</cite></dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./25.14#ii.info" title="§25.14(ii) Properties ‣ §25.14 Lerch’s Transcendent ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§25.14(ii)</span></a>,
+<a href="./errata/#V1.2.1.I2.ix8.p1" title="In Other Changes ‣ Version 1.2.1 (June 15, 2024) ‣ Errata" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Erratum (V1.2.1) for  §<span class="ltx_text ltx_ref_tag">25.14(ii)</span></span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./25.14.E9" title="" class="ltx_ref">http://dlmf.nist.gov/25.14.E9</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./25.14.E9.tex">TeX</a>, <a href="./25.14.E9.pmml">pMML</a>, <a href="./25.14.E9.png">png</a>
+</dd>
+<dt>Addition (effective with 1.2.1):</dt>
+<dd>
+This equation was added.
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./25.14#ii.info" title="§25.14(ii) Properties ‣ §25.14 Lerch’s Transcendent ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§25.14(ii)</span></a>,
+<a href="./25.14#info" title="§25.14 Lerch’s Transcendent ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§25.14</span></a> and
+<a href="./25#info" title="Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.25</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">The first sum is zero in the case that <math class="ltx_Math" altimg="m54.png" altimg-height="13px" altimg-valign="-2px" altimg-width="23px" alttext="m" display="inline"><mi href="./25.1#t1.r1" title="nonnegative integer">m</mi></math> is a non-positive integer.
+In the case that <math class="ltx_Math" altimg="m54.png" altimg-height="13px" altimg-valign="-2px" altimg-width="23px" alttext="m" display="inline"><mi href="./25.1#t1.r1" title="nonnegative integer">m</mi></math> is a positive integer we have the additional constraint <math class="ltx_Math" altimg="m50.png" altimg-height="22px" altimg-valign="-6px" altimg-width="126px" alttext="a\not=1,2,3,\ldots" display="inline"><mrow><mi href="./25.1#t1.r4" title="real or complex parameter">a</mi><mo>≠</mo><mrow><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mi mathvariant="normal">…</mi></mrow></mrow></math>.
+The coefficients <math class="ltx_Math" altimg="m51.png" altimg-height="21px" altimg-valign="-5px" altimg-width="25px" alttext="b_{n}" display="inline"><msub><mi>b</mi><mi href="./25.1#t1.r1" title="nonnegative integer">n</mi></msub></math> are the Taylor coefficients of <math class="ltx_Math" altimg="m19.png" altimg-height="25px" altimg-valign="-7px" altimg-width="123px" alttext="\csc\left(\pi(t-a)\right)" display="inline"><mrow><mi href="./4.14#E5" title="cosecant function">csc</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>t</mi><mo>−</mo><mi href="./25.1#t1.r4" title="real or complex parameter">a</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>)</mo></mrow></mrow></math> about <math class="ltx_Math" altimg="m62.png" altimg-height="17px" altimg-valign="-2px" altimg-width="50px" alttext="t=0" display="inline"><mrow><mi>t</mi><mo>=</mo><mn>0</mn></mrow></math>.</p>
+</div>
+<div id="ii.p4" class="ltx_para">
+<p class="ltx_p">The small and large <math class="ltx_Math" altimg="m46.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="a" display="inline"><mi href="./25.1#t1.r4" title="real or complex parameter">a</mi></math> asymptotics is discussed in <cite class="ltx_cite ltx_citemacro_citet">Cai and López (<a href="./bib/C#bib3127" title="A note on the asymptotic expansion of the Lerch’s transcendent" class="ltx_ref">2019</a>), Ferreira and López (<a href="./bib/F#bib3125" title="Asymptotic expansions of the Hurwitz-Lerch zeta function" class="ltx_ref">2004</a>), Paris (<a href="./bib/P#bib3128" title="The Stokes phenomenon and the Lerch zeta function" class="ltx_ref">2016</a>)</cite>, and
+the asymptotics as <math class="ltx_Math" altimg="m18.png" altimg-height="20px" altimg-valign="-4px" altimg-width="98px" alttext="\Re{s}\to-\infty" display="inline"><mrow><mrow><mi href="./1.9#E2" mathvariant="normal" title="real part">ℜ</mi><mo lspace="0.167em">⁡</mo><mi href="./25.1#t1.r5" title="complex variable">s</mi></mrow><mo stretchy="false">→</mo><mrow><mo>−</mo><mi mathvariant="normal">∞</mi></mrow></mrow></math> is discussed in <cite class="ltx_cite ltx_citemacro_citet">Navas<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/N#bib3126" title="Asymptotic behavior of the Lerch transcendent function" class="ltx_ref">2013</a>)</cite>.</p>
+</div>
+</section>
+</section>
+</div>
+<div class="ltx_page_footer">
+<div class="ltx_siblings">
+<a href="./25.13" title="In Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">25.13 </span>Periodic Zeta Function</span></a><a href="./25.15" title="In Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">25.15 </span>Dirichlet <math class="ltx_Math" altimg="m6.png" altimg-height="18px" altimg-valign="-2px" altimg-width="18px" alttext="L" display="inline"><mi href="./25.15#E1" title="Dirichlet 𝐿-function">L</mi></math>-functions</span></a>
+</div>
+<div class="ltx_footer_links ltx_centering">
+<a href="./about/notices">© 2010–2026 NIST</a> / <a href="./about/notices#S2">Disclaimer</a> / <a href="/cdn-cgi/l/email-protection#a8ece4e5ee85cecdcdcccac9cbc3e8c6c1dbdc86cfc7de">Feedback</a>;
+ Version 1.2.7;
+Release date 2026-06-15.</div>
+<span id="pagesettings"></span>
+<div class="ltx_nist_logo"><a href="http://www.nist.gov/"><img src="./style/nistidc.png" width="500" alt="NIST"></a></div>
+<div class="ltx_nist_links ltx_align_right">
+<a href="https://www.nist.gov/privacy-policy">Site Privacy</a> <a href="https://www.nist.gov/oism/accessibility">Accessibility</a> <a href="https://www.nist.gov/privacy">Privacy Program</a> <a href="https://www.nist.gov/oism/copyrights">Copyrights</a> <a href="https://www.commerce.gov/vulnerability-disclosure-policy">Vulnerability Disclosure</a> <a href="https://www.nist.gov/no-fear-act-policy">No Fear Act Policy</a> <a href="https://www.nist.gov/foia">FOIA</a> <a href="https://www.nist.gov/environmental-policy-statement">Environmental Policy</a> <a href="https://www.nist.gov/summary-report-scientific-integrity">Scientific Integrity</a> <a href="https://www.nist.gov/nist-information-quality-standards">Information Quality Standards</a> <a href="https://www.commerce.gov/">Commerce.gov</a> <a href="http://www.science.gov/">Science.gov</a> <a href="http://www.usa.gov/">USA.gov</a>
+</div>
+</div>
+</div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"9ef5b487afff42a68917b2d63593a474"}' crossorigin="anonymous"></script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a30dbaf8efbc3418',t:'MTc4NzY5Mzc2Ng=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

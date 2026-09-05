@@ -1,0 +1,1304 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>DLMF: §8.12 Uniform Asymptotic Expansions for Large Parameter ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions</title>
+<link rel="shortcut icon" href="./style/DLMF-16.png" type="image/png">
+<script type="text/javascript"><!--
+	var PATH="DLMF:/8.12";
+	var ROOT="./";
+      //--></script>
+<script type="text/javascript" src="./style/jquery.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/jquery.leaveNotice.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/DLMF.js"><!-- non-empty so ie6 will accept it --></script>
+<script async="" type="text/javascript" id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC&amp;subagency=NIST&amp;pua=UA-37115410-44&amp;yt=true&amp;exts=ppsx,pps,f90,sch,rtf,wrl,txz,m1v,xlsm,msi,xsd,f,tif,eps,mpg,xml,pl,xlt,c"><!-- non-empty so ie6 will accept it --></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-BZB64W4M0L"></script><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-BZB64W4M0L');
+      </script>
+<link rel="stylesheet" type="text/css" href="./style/LaTeXML.css">
+<link rel="stylesheet" type="text/css" href="./style/DLMF.css">
+<link rel="stylesheet" type="text/css" href="./style/print.css" media="print">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="top" href="./" title="DLMF">
+<link rel="copyright" href="./about/notices" title="Copyright">
+<link rel="search" href="./search/search" title="Search">
+<link rel="help" class="ltx_help" href="./help/" title="Help">
+<link rel="up" href="./8#PT2" title="Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="up up" href="./8" title="Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="start" href="./" title="">
+<link rel="prev" href="./8.11" title="§8.11 Asymptotic Approximations and Expansions ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="next" href="./8.13" title="§8.13 Zeros ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.1" title="§8.1 Special Notation ‣ Notation ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.2" title="§8.2 Definitions and Basic Properties ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.3" title="§8.3 Graphics ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.4" title="§8.4 Special Values ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.5" title="§8.5 Confluent Hypergeometric Representations ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.6" title="§8.6 Integral Representations ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.7" title="§8.7 Series Expansions ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.8" title="§8.8 Recurrence Relations and Derivatives ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.9" title="§8.9 Continued Fractions ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.10" title="§8.10 Inequalities ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.11" title="§8.11 Asymptotic Approximations and Expansions ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.13" title="§8.13 Zeros ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.14" title="§8.14 Integrals ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.15" title="§8.15 Sums ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.16" title="§8.16 Generalizations ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.17" title="§8.17 Incomplete Beta Functions ‣ Related Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.18" title="§8.18 Asymptotic Expansions of 𝐼_𝑥(𝑎,𝑏) ‣ Related Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.19" title="§8.19 Generalized Exponential Integral ‣ Related Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.20" title="§8.20 Asymptotic Expansions of 𝐸_𝑝(𝑧) ‣ Related Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.21" title="§8.21 Generalized Sine and Cosine Integrals ‣ Related Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.22" title="§8.22 Mathematical Applications ‣ Applications ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.23" title="§8.23 Statistical Applications ‣ Applications ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.24" title="§8.24 Physical Applications ‣ Applications ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.25" title="§8.25 Methods of Computation ‣ Computation ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.26" title="§8.26 Tables ‣ Computation ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.27" title="§8.27 Approximations ‣ Computation ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.28" title="§8.28 Software ‣ Computation ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="document" href="./front/foreword" title="Foreword">
+<link rel="document" href="./front/preface" title="Preface">
+<link rel="document" href="./front/introduction" title="Mathematical Introduction">
+<link rel="chapter" href="./1" title="Chapter 1 Algebraic and Analytic Methods">
+<link rel="chapter" href="./2" title="Chapter 2 Asymptotic Approximations">
+<link rel="chapter" href="./3" title="Chapter 3 Numerical Methods">
+<link rel="chapter" href="./4" title="Chapter 4 Elementary Functions">
+<link rel="chapter" href="./5" title="Chapter 5 Gamma Function">
+<link rel="chapter" href="./6" title="Chapter 6 Exponential, Logarithmic, Sine, and Cosine Integrals">
+<link rel="chapter" href="./7" title="Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="chapter" href="./8" title="Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="chapter" href="./9" title="Chapter 9 Airy and Related Functions">
+<link rel="chapter" href="./10" title="Chapter 10 Bessel Functions">
+<link rel="chapter" href="./11" title="Chapter 11 Struve and Related Functions">
+<link rel="chapter" href="./12" title="Chapter 12 Parabolic Cylinder Functions">
+<link rel="chapter" href="./13" title="Chapter 13 Confluent Hypergeometric Functions">
+<link rel="chapter" href="./14" title="Chapter 14 Legendre and Related Functions">
+<link rel="chapter" href="./15" title="Chapter 15 Hypergeometric Function">
+<link rel="chapter" href="./16" title="Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="chapter" href="./17" title="Chapter 17 𝑞-Hypergeometric and Related Functions">
+<link rel="chapter" href="./18" title="Chapter 18 Orthogonal Polynomials">
+<link rel="chapter" href="./19" title="Chapter 19 Elliptic Integrals">
+<link rel="chapter" href="./20" title="Chapter 20 Theta Functions">
+<link rel="chapter" href="./21" title="Chapter 21 Multidimensional Theta Functions">
+<link rel="chapter" href="./22" title="Chapter 22 Jacobian Elliptic Functions">
+<link rel="chapter" href="./23" title="Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="chapter" href="./24" title="Chapter 24 Bernoulli and Euler Polynomials">
+<link rel="chapter" href="./25" title="Chapter 25 Zeta and Related Functions">
+<link rel="chapter" href="./26" title="Chapter 26 Combinatorial Analysis">
+<link rel="chapter" href="./27" title="Chapter 27 Functions of Number Theory">
+<link rel="chapter" href="./28" title="Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="chapter" href="./29" title="Chapter 29 Lamé Functions">
+<link rel="chapter" href="./30" title="Chapter 30 Spheroidal Wave Functions">
+<link rel="chapter" href="./31" title="Chapter 31 Heun Functions">
+<link rel="chapter" href="./32" title="Chapter 32 Painlevé Transcendents">
+<link rel="chapter" href="./33" title="Chapter 33 Coulomb Functions">
+<link rel="chapter" href="./34" title="Chapter 34 3⁢𝑗,6⁢𝑗,9⁢𝑗 Symbols">
+<link rel="chapter" href="./35" title="Chapter 35 Functions of Matrix Argument">
+<link rel="chapter" href="./36" title="Chapter 36 Integrals with Coalescing Saddles">
+<link rel="bibliography" href="./bib/" title="Bibliography">
+<link rel="index" href="./idx/" title="Index">
+<link rel="glossary" href="./not/" title="Notations">
+<link rel="document" href="./lof/" title="List of Figures">
+<link rel="document" href="./lot/" title="List of Tables">
+<link rel="document" href="./software/" title="Software Index">
+<link rel="document" href="./errata/" title="Errata">
+<link rel="document" href="./help/" title="Need Help?">
+<link rel="document" href="./search/" title="Advanced Search">
+<link rel="document" href="./about/" title="About the Project">
+<meta name="keywords" lang="en" content="asymptotic approximations and expansions, exponentially-improved, for inverse function, incomplete gamma functions, inverse incomplete gamma function, large variable and/or large parameter, uniform for large parameter">
+</head>
+<body class="color_default textfont_default titlefont_default fontsize_default navbar_default">
+<div class="ltx_page_navbar">
+<div class="ltx_page_navlogo"><a href="./" title="Digital Library of Mathematical Functions"><span>DLMF</span></a></div>
+<div class="ltx_page_navitems">
+<form method="get" action="./search/search">
+<ul>
+<li><a href="./idx/">Index</a></li>
+<li><a href="./not/">Notations</a></li>
+<li><small><input type="text" name="q" value="" size="6" class="ltx_page_navitem_search"><button type="submit">Search</button></small></li>
+<li><a href="./help/" class="ltx_help">Help?</a></li>
+<li><a href="./help/cite">Citing</a></li>
+<li><a href="./help/customize" class="ltx_customize">Customize</a></li>
+<li id="showinfo"><a href="" onclick="showInfo(); return false;" title="Show Annotations">Annotate</a></li>
+<li id="hideinfo"><a href="" onclick="hideInfo(); return false;">UnAnnotate</a></li>
+</ul>
+</form>
+</div>
+<div class="ltx_page_navsponsors">
+<div><a href="./about/" class="ltx_page_navabout">About the Project</a></div>
+</div>
+</div>
+<div class="ltx_page_main">
+<div class="ltx_page_header">
+<a href="./8" title="" class="ltx_ref" rel="up up"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">8 </span>Incomplete Gamma and Related <span class="ltx_text"> </span>Functions</span></a><a href="./8#PT2" title="In Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title">Incomplete Gamma Functions</span></a><a href="./8.11" title="In Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">8.11 </span>Asymptotic Approximations and Expansions</span></a><a href="./8.13" title="In Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">8.13 </span>Zeros</span></a>
+</div>
+<div class="ltx_page_content">
+<section class="ltx_section ltx_authors_multiline ltx_leqno">
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">§8.12 </span>Uniform Asymptotic Expansions for Large Parameter</h1>
+<div id="info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=asymptotic%20approximations%20and%20expansions">asymptotic approximations and expansions</a>, <a class="ltx_keyword" href="./search/search?q=exponentially-improved">exponentially-improved</a>, <a class="ltx_keyword" href="./search/search?q=incomplete%20gamma%20functions">incomplete gamma functions</a>, <a class="ltx_keyword" href="./search/search?q=uniform%20for%20large%20parameter">uniform for large parameter</a>
+</dd>
+<dt>Notes:</dt>
+<dd>See <cite class="ltx_cite ltx_citemacro_citet">Temme (<a href="./bib/T#bib2214" title="The asymptotic expansion of the incomplete gamma functions" class="ltx_ref">1979b</a>, <a href="./bib/T#bib2222" title="Asymptotic inversion of incomplete gamma functions" class="ltx_ref">1992a</a>, <a href="./bib/T#bib2231" title="Uniform asymptotics for the incomplete gamma functions starting from negative values of the parameters" class="ltx_ref">1996a</a>)</cite>,
+<cite class="ltx_cite ltx_citemacro_citet">Paris (<a href="./bib/P#bib1840" title="A uniform asymptotic expansion for the incomplete gamma function" class="ltx_ref">2002b</a>)</cite>, and <cite class="ltx_cite ltx_citemacro_citet">Ferreira<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/F#bib2560" title="Incomplete gamma functions for large values of their variables" class="ltx_ref">2005</a>)</cite>.</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./8.25#iii.p1" title="§8.25(iii) Asymptotic Expansions ‣ §8.25 Methods of Computation ‣ Computation ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§8.25(iii)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./8.12" title="" class="ltx_ref">http://dlmf.nist.gov/8.12</a></dd>
+<dt>Clarification (effective with 1.1.7):</dt>
+<dd>
+Just below (<a href="./8.12#E18" title="(8.12.18) ‣ §8.12 Uniform Asymptotic Expansions for Large Parameter ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">8.12.18</span></a>), <math class="ltx_Math" altimg="m70.png" altimg-height="20px" altimg-valign="-4px" altimg-width="66px" alttext="\Re z-a" display="inline"><mrow><mi href="./1.9#E2" mathvariant="normal" title="real part">ℜ</mi><mo lspace="0.167em">⁡</mo><mrow><mi href="./8.1#p1.t1.r2" title="complex variable">z</mi><mo>−</mo><mi href="./8.1#p1.t1.r3" title="parameter">a</mi></mrow></mrow></math> was replaced
+with <math class="ltx_Math" altimg="m71.png" altimg-height="25px" altimg-valign="-7px" altimg-width="86px" alttext="\Re\left(z-a\right)" display="inline"><mrow><mi href="./1.9#E2" mathvariant="normal" title="real part">ℜ</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./8.1#p1.t1.r2" title="complex variable">z</mi><mo>−</mo><mi href="./8.1#p1.t1.r3" title="parameter">a</mi></mrow><mo>)</mo></mrow></mrow></math>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./8#info" title="Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.8</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="p1" class="ltx_para">
+<p class="ltx_p">Define
+</p>
+<table id="E1" class="ltx_equationgroup ltx_eqn_table">
+<tbody>
+<tr id="Ex1" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="2" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equationgroup ltx_align_left">8.12.1</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m39.png" altimg-height="20px" altimg-valign="-2px" altimg-width="19px" alttext="\displaystyle\lambda" display="inline"><mi href="./8.12#p1" title="𝜆">λ</mi></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m25.png" altimg-height="27px" altimg-valign="-7px" altimg-width="66px" alttext="\displaystyle=z/a," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mi href="./8.1#p1.t1.r2" title="complex variable">z</mi><mo>/</mo><mi href="./8.1#p1.t1.r3" title="parameter">a</mi></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex2" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m37.png" altimg-height="19px" altimg-valign="-6px" altimg-width="18px" alttext="\displaystyle\eta" display="inline"><mi href="./8.12#p1" title="𝜂(𝜆)">η</mi></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m15.png" altimg-height="40px" altimg-valign="-7px" altimg-width="217px" alttext="\displaystyle=\left(2(\lambda-1-\ln\lambda)\right)^{1/2}," display="inline"><mrow><mrow><mi></mi><mo>=</mo><msup><mrow><mo>(</mo><mrow><mn>2</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi href="./8.12#p1" title="𝜆">λ</mi><mo>−</mo><mn>1</mn><mo>−</mo><mrow><mi href="./4.2#E2" title="principal branch of logarithm function">ln</mi><mo lspace="0.167em">⁡</mo><mi href="./8.12#p1" title="𝜆">λ</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>)</mo></mrow><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msup></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E1.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./4.2#E2" title="(4.2.2) ‣ §4.2(i) The Logarithm ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m87.png" altimg-height="18px" altimg-valign="-2px" altimg-width="36px" alttext="\ln\NVar{z}" display="inline"><mrow><mi href="./4.2#E2" title="principal branch of logarithm function">ln</mi><mo lspace="0.167em">⁡</mo><mi class="ltx_nvar" href="./4.1#t1.r4" title="complex variable">z</mi></mrow></math>: principal branch of logarithm function</a>,
+<a href="./8.1#p1.t1.r2" title="§8.1 Special Notation ‣ Notation ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m124.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi href="./8.1#p1.t1.r2" title="complex variable">z</mi></math>:  complex variable</a>,
+<a href="./8.1#p1.t1.r3" title="§8.1 Special Notation ‣ Notation ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m101.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="a" display="inline"><mi href="./8.1#p1.t1.r3" title="parameter">a</mi></math>:  parameter</a>,
+<a href="./8.12#p1" title="§8.12 Uniform Asymptotic Expansions for Large Parameter ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m79.png" altimg-height="25px" altimg-valign="-7px" altimg-width="44px" alttext="\eta(\lambda)" display="inline"><mrow><mi href="./8.12#p1" title="𝜂(𝜆)">η</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./8.12#p1" title="𝜆">λ</mi><mo stretchy="false">)</mo></mrow></mrow></math></a> and
+<a href="./8.12#p1" title="§8.12 Uniform Asymptotic Expansions for Large Parameter ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m84.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="\lambda" display="inline"><mi href="./8.12#p1" title="𝜆">λ</mi></math></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./8.12.E1" title="" class="ltx_ref">http://dlmf.nist.gov/8.12.E1</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./8.12.E1a.tex">TeX</a>, <a href="./8.12.E1b.tex">TeX</a>, <a href="./8.12.E1a.pmml">pMML</a>, <a href="./8.12.E1b.pmml">pMML</a>, <a href="./8.12.E1a.png">png</a>, <a href="./8.12.E1b.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./8.12#info" title="§8.12 Uniform Asymptotic Expansions for Large Parameter ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§8.12</span></a> and
+<a href="./8#info" title="Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.8</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">where the branch of the square root is continuous and satisfies
+<math class="ltx_Math" altimg="m80.png" altimg-height="25px" altimg-valign="-7px" altimg-width="119px" alttext="\eta(\lambda)\sim\lambda-1" display="inline"><mrow><mrow><mi href="./8.12#p1" title="𝜂(𝜆)">η</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./8.12#p1" title="𝜆">λ</mi><mo stretchy="false">)</mo></mrow></mrow><mo href="./2.1#E1" title="asymptotic equality">∼</mo><mrow><mi href="./8.12#p1" title="𝜆">λ</mi><mo>−</mo><mn>1</mn></mrow></mrow></math> as <math class="ltx_Math" altimg="m85.png" altimg-height="18px" altimg-valign="-2px" altimg-width="59px" alttext="\lambda\to 1" display="inline"><mrow><mi href="./8.12#p1" title="𝜆">λ</mi><mo stretchy="false">→</mo><mn>1</mn></mrow></math>. Then</p>
+<table id="E2" class="ltx_equationgroup ltx_eqn_table">
+<tbody>
+<tr id="Ex3" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="2" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equationgroup ltx_align_left">8.12.2</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m40.png" altimg-height="31px" altimg-valign="-9px" altimg-width="40px" alttext="\displaystyle\tfrac{1}{2}\eta^{2}" display="inline"><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><msup><mi href="./8.12#p1" title="𝜂(𝜆)">η</mi><mn>2</mn></msup></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m14.png" altimg-height="24px" altimg-valign="-6px" altimg-width="140px" alttext="\displaystyle=\lambda-1-\ln\lambda," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mi href="./8.12#p1" title="𝜆">λ</mi><mo>−</mo><mn>1</mn><mo>−</mo><mrow><mi href="./4.2#E2" title="principal branch of logarithm function">ln</mi><mo lspace="0.167em">⁡</mo><mi href="./8.12#p1" title="𝜆">λ</mi></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex4" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m38.png" altimg-height="49px" altimg-valign="-16px" altimg-width="35px" alttext="\displaystyle\frac{\mathrm{d}\eta}{\mathrm{d}\lambda}" display="inline"><mstyle displaystyle="true"><mfrac><mrow><mo href="./1.4#E4" rspace="0em" title="derivative of 𝑓 with respect to 𝑥">d</mo><mi href="./8.12#p1" title="𝜂(𝜆)">η</mi></mrow><mrow><mo href="./1.4#E4" rspace="0em" title="derivative of 𝑓 with respect to 𝑥">d</mo><mi href="./8.12#p1" title="𝜆">λ</mi></mrow></mfrac></mstyle></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m13.png" altimg-height="53px" altimg-valign="-20px" altimg-width="87px" alttext="\displaystyle=\frac{\lambda-1}{\lambda\eta}." display="inline"><mrow><mrow><mi></mi><mo>=</mo><mstyle displaystyle="true"><mfrac><mrow><mi href="./8.12#p1" title="𝜆">λ</mi><mo>−</mo><mn>1</mn></mrow><mrow><mi href="./8.12#p1" title="𝜆">λ</mi><mo>⁢</mo><mi href="./8.12#p1" title="𝜂(𝜆)">η</mi></mrow></mfrac></mstyle></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E2.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./1.4#E4" title="(1.4.4) ‣ §1.4(iii) Derivatives ‣ §1.4 Calculus of One Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m82.png" altimg-height="31px" altimg-valign="-9px" altimg-width="28px" alttext="\frac{\mathrm{d}\NVar{f}}{\mathrm{d}\NVar{x}}" display="inline"><mfrac><mrow><mo href="./1.4#E4" rspace="0em" title="derivative of 𝑓 with respect to 𝑥">d</mo><mi class="ltx_nvar">f</mi></mrow><mrow><mo href="./1.4#E4" rspace="0em" title="derivative of 𝑓 with respect to 𝑥">d</mo><mi class="ltx_nvar">x</mi></mrow></mfrac></math>: derivative of <math class="ltx_Math" altimg="m107.png" altimg-height="22px" altimg-valign="-6px" altimg-width="17px" alttext="f" display="inline"><mi>f</mi></math> with respect to <math class="ltx_Math" altimg="m122.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./4.2#E2" title="(4.2.2) ‣ §4.2(i) The Logarithm ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m87.png" altimg-height="18px" altimg-valign="-2px" altimg-width="36px" alttext="\ln\NVar{z}" display="inline"><mrow><mi href="./4.2#E2" title="principal branch of logarithm function">ln</mi><mo lspace="0.167em">⁡</mo><mi class="ltx_nvar" href="./4.1#t1.r4" title="complex variable">z</mi></mrow></math>: principal branch of logarithm function</a>,
+<a href="./8.12#p1" title="§8.12 Uniform Asymptotic Expansions for Large Parameter ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m79.png" altimg-height="25px" altimg-valign="-7px" altimg-width="44px" alttext="\eta(\lambda)" display="inline"><mrow><mi href="./8.12#p1" title="𝜂(𝜆)">η</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./8.12#p1" title="𝜆">λ</mi><mo stretchy="false">)</mo></mrow></mrow></math></a> and
+<a href="./8.12#p1" title="§8.12 Uniform Asymptotic Expansions for Large Parameter ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m84.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="\lambda" display="inline"><mi href="./8.12#p1" title="𝜆">λ</mi></math></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./8.12.E2" title="" class="ltx_ref">http://dlmf.nist.gov/8.12.E2</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./8.12.E2a.tex">TeX</a>, <a href="./8.12.E2b.tex">TeX</a>, <a href="./8.12.E2a.pmml">pMML</a>, <a href="./8.12.E2b.pmml">pMML</a>, <a href="./8.12.E2a.png">png</a>, <a href="./8.12.E2b.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./8.12#info" title="§8.12 Uniform Asymptotic Expansions for Large Parameter ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§8.12</span></a> and
+<a href="./8#info" title="Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.8</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">Also, denote</p>
+<table id="E3" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">8.12.3</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E3.png" altimg-height="84px" altimg-valign="-15px" altimg-width="351px" alttext="P\left(a,z\right)=\tfrac{1}{2}\operatorname{erfc}\left(-\eta\sqrt{a/2}\right)-%
+S(a,\eta)," display="block"><mrow><mrow><mrow><mi href="./8.2#E4" title="normalized incomplete gamma function">P</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>,</mo><mi href="./8.1#p1.t1.r2" title="complex variable">z</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo lspace="0.167em">⁢</mo><mrow><mi href="./7.2#E2" title="complementary error function">erfc</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mo>−</mo><mrow><mi href="./8.12#p1" title="𝜂(𝜆)">η</mi><mo>⁢</mo><msqrt><mrow><mi href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>/</mo><mn>2</mn></mrow></msqrt></mrow></mrow><mo>)</mo></mrow></mrow></mrow><mo>−</mo><mrow><mi href="./8.12#p1" title="function">S</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>,</mo><mi href="./8.12#p1" title="𝜂(𝜆)">η</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E3.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./7.2#E2" title="(7.2.2) ‣ §7.2(i) Error Functions ‣ §7.2 Definitions ‣ Properties ‣ Chapter 7 Error Functions, Dawson’s and Fresnel Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m93.png" altimg-height="18px" altimg-valign="-2px" altimg-width="51px" alttext="\operatorname{erfc}\NVar{z}" display="inline"><mrow><mi href="./7.2#E2" title="complementary error function">erfc</mi><mo lspace="0.167em">⁡</mo><mi class="ltx_nvar" href="./7.1#p1.t1.r2" title="complex variable">z</mi></mrow></math>: complementary error function</a>,
+<a href="./8.2#E4" title="(8.2.4) ‣ §8.2(i) Definitions ‣ §8.2 Definitions and Basic Properties ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m60.png" altimg-height="25px" altimg-valign="-7px" altimg-width="71px" alttext="P\left(\NVar{a},\NVar{z}\right)" display="inline"><mrow><mi href="./8.2#E4" title="normalized incomplete gamma function">P</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>,</mo><mi class="ltx_nvar" href="./8.1#p1.t1.r2" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: normalized incomplete gamma function</a>,
+<a href="./8.1#p1.t1.r2" title="§8.1 Special Notation ‣ Notation ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m124.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi href="./8.1#p1.t1.r2" title="complex variable">z</mi></math>:  complex variable</a>,
+<a href="./8.1#p1.t1.r3" title="§8.1 Special Notation ‣ Notation ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m101.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="a" display="inline"><mi href="./8.1#p1.t1.r3" title="parameter">a</mi></math>:  parameter</a>,
+<a href="./8.12#p1" title="§8.12 Uniform Asymptotic Expansions for Large Parameter ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m79.png" altimg-height="25px" altimg-valign="-7px" altimg-width="44px" alttext="\eta(\lambda)" display="inline"><mrow><mi href="./8.12#p1" title="𝜂(𝜆)">η</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./8.12#p1" title="𝜆">λ</mi><mo stretchy="false">)</mo></mrow></mrow></math></a> and
+<a href="./8.12#p1" title="§8.12 Uniform Asymptotic Expansions for Large Parameter ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m64.png" altimg-height="25px" altimg-valign="-7px" altimg-width="66px" alttext="S(a,\eta)" display="inline"><mrow><mi href="./8.12#p1" title="function">S</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>,</mo><mi href="./8.12#p1" title="𝜂(𝜆)">η</mi><mo stretchy="false">)</mo></mrow></mrow></math>:  function</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./8.12.E3" title="" class="ltx_ref">http://dlmf.nist.gov/8.12.E3</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./8.12.E3.tex">TeX</a>, <a href="./8.12.E3.pmml">pMML</a>, <a href="./8.12.E3.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./8.12#info" title="§8.12 Uniform Asymptotic Expansions for Large Parameter ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§8.12</span></a> and
+<a href="./8#info" title="Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.8</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<table id="E4" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">8.12.4</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E4.png" altimg-height="84px" altimg-valign="-15px" altimg-width="335px" alttext="Q\left(a,z\right)=\tfrac{1}{2}\operatorname{erfc}\left(\eta\sqrt{a/2}\right)+S%
+(a,\eta)," display="block"><mrow><mrow><mrow><mi href="./8.2#E4" title="normalized incomplete gamma function">Q</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>,</mo><mi href="./8.1#p1.t1.r2" title="complex variable">z</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo lspace="0.167em">⁢</mo><mrow><mi href="./7.2#E2" title="complementary error function">erfc</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./8.12#p1" title="𝜂(𝜆)">η</mi><mo>⁢</mo><msqrt><mrow><mi href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>/</mo><mn>2</mn></mrow></msqrt></mrow><mo>)</mo></mrow></mrow></mrow><mo>+</mo><mrow><mi href="./8.12#p1" title="function">S</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>,</mo><mi href="./8.12#p1" title="𝜂(𝜆)">η</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E4.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./7.2#E2" title="(7.2.2) ‣ §7.2(i) Error Functions ‣ §7.2 Definitions ‣ Properties ‣ Chapter 7 Error Functions, Dawson’s and Fresnel Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m93.png" altimg-height="18px" altimg-valign="-2px" altimg-width="51px" alttext="\operatorname{erfc}\NVar{z}" display="inline"><mrow><mi href="./7.2#E2" title="complementary error function">erfc</mi><mo lspace="0.167em">⁡</mo><mi class="ltx_nvar" href="./7.1#p1.t1.r2" title="complex variable">z</mi></mrow></math>: complementary error function</a>,
+<a href="./8.2#E4" title="(8.2.4) ‣ §8.2(i) Definitions ‣ §8.2 Definitions and Basic Properties ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m62.png" altimg-height="25px" altimg-valign="-7px" altimg-width="71px" alttext="Q\left(\NVar{a},\NVar{z}\right)" display="inline"><mrow><mi href="./8.2#E4" title="normalized incomplete gamma function">Q</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>,</mo><mi class="ltx_nvar" href="./8.1#p1.t1.r2" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: normalized incomplete gamma function</a>,
+<a href="./8.1#p1.t1.r2" title="§8.1 Special Notation ‣ Notation ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m124.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi href="./8.1#p1.t1.r2" title="complex variable">z</mi></math>:  complex variable</a>,
+<a href="./8.1#p1.t1.r3" title="§8.1 Special Notation ‣ Notation ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m101.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="a" display="inline"><mi href="./8.1#p1.t1.r3" title="parameter">a</mi></math>:  parameter</a>,
+<a href="./8.12#p1" title="§8.12 Uniform Asymptotic Expansions for Large Parameter ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m79.png" altimg-height="25px" altimg-valign="-7px" altimg-width="44px" alttext="\eta(\lambda)" display="inline"><mrow><mi href="./8.12#p1" title="𝜂(𝜆)">η</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./8.12#p1" title="𝜆">λ</mi><mo stretchy="false">)</mo></mrow></mrow></math></a> and
+<a href="./8.12#p1" title="§8.12 Uniform Asymptotic Expansions for Large Parameter ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m64.png" altimg-height="25px" altimg-valign="-7px" altimg-width="66px" alttext="S(a,\eta)" display="inline"><mrow><mi href="./8.12#p1" title="function">S</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>,</mo><mi href="./8.12#p1" title="𝜂(𝜆)">η</mi><mo stretchy="false">)</mo></mrow></mrow></math>:  function</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./8.12#p4" title="§8.12 Uniform Asymptotic Expansions for Large Parameter ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§8.12</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./8.12.E4" title="" class="ltx_ref">http://dlmf.nist.gov/8.12.E4</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./8.12.E4.tex">TeX</a>, <a href="./8.12.E4.pmml">pMML</a>, <a href="./8.12.E4.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./8.12#info" title="§8.12 Uniform Asymptotic Expansions for Large Parameter ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§8.12</span></a> and
+<a href="./8#info" title="Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.8</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<table id="E5" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">8.12.5</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E5.png" altimg-height="107px" altimg-valign="-21px" altimg-width="536px" alttext="\frac{e^{\pm\pi ia}}{2i\sin\left(\pi a\right)}Q\left(-a,ze^{\pm\pi i}\right)=%
+\pm\tfrac{1}{2}\operatorname{erfc}\left(\pm i\eta\sqrt{a/2}\right)-iT(a,\eta)," display="block"><mrow><mrow><mrow><mfrac><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mrow><mo>±</mo><mrow><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>⁢</mo><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi><mo>⁢</mo><mi href="./8.1#p1.t1.r3" title="parameter">a</mi></mrow></mrow></msup><mrow><mn>2</mn><mo>⁢</mo><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi><mo lspace="0.167em">⁢</mo><mrow><mi href="./4.14#E1" title="sine function">sin</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>⁢</mo><mi href="./8.1#p1.t1.r3" title="parameter">a</mi></mrow><mo>)</mo></mrow></mrow></mrow></mfrac><mo>⁢</mo><mrow><mi href="./8.2#E4" title="normalized incomplete gamma function">Q</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mo>−</mo><mi href="./8.1#p1.t1.r3" title="parameter">a</mi></mrow><mo>,</mo><mrow><mi href="./8.1#p1.t1.r2" title="complex variable">z</mi><mo>⁢</mo><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mrow><mo>±</mo><mrow><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>⁢</mo><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></mrow></mrow></msup></mrow><mo>)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mrow><mo>±</mo><mrow><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo lspace="0.167em">⁢</mo><mrow><mi href="./7.2#E2" title="complementary error function">erfc</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mo>±</mo><mrow><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi><mo>⁢</mo><mi href="./8.12#p1" title="𝜂(𝜆)">η</mi><mo>⁢</mo><msqrt><mrow><mi href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>/</mo><mn>2</mn></mrow></msqrt></mrow></mrow><mo>)</mo></mrow></mrow></mrow></mrow><mo>−</mo><mrow><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi><mo>⁢</mo><mrow><mi href="./8.12#p1" title="function">T</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>,</mo><mi href="./8.12#p1" title="𝜂(𝜆)">η</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E5.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./5.2#E1" title="(5.2.1) ‣ Euler’s Integral ‣ §5.2(i) Gamma and Psi Functions ‣ §5.2 Definitions ‣ Properties ‣ Chapter 5 Gamma Function" class="ltx_ref"><math class="ltx_Math" altimg="m67.png" altimg-height="25px" altimg-valign="-7px" altimg-width="47px" alttext="\Gamma\left(\NVar{z}\right)" display="inline"><mrow><mi href="./5.2#E1" mathvariant="normal" title="gamma function">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./5.1#t1.r4" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: gamma function</a>,
+<a href="./3.12#E1" title="(3.12.1) ‣ §3.12 Mathematical Constants ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m97.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="\pi" display="inline"><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></math>: the ratio of the circumference of a circle to its diameter</a>,
+<a href="./7.2#E2" title="(7.2.2) ‣ §7.2(i) Error Functions ‣ §7.2 Definitions ‣ Properties ‣ Chapter 7 Error Functions, Dawson’s and Fresnel Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m93.png" altimg-height="18px" altimg-valign="-2px" altimg-width="51px" alttext="\operatorname{erfc}\NVar{z}" display="inline"><mrow><mi href="./7.2#E2" title="complementary error function">erfc</mi><mo lspace="0.167em">⁡</mo><mi class="ltx_nvar" href="./7.1#p1.t1.r2" title="complex variable">z</mi></mrow></math>: complementary error function</a>,
+<a href="./4.2#E11" title="(4.2.11) ‣ §4.2(ii) Logarithms to a General Base 𝑎 ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m88.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="\mathrm{e}" display="inline"><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi></math>: base of natural logarithm</a>,
+<a href="./1.9#E1" title="(1.9.1) ‣ §1.9(i) Complex Numbers ‣ §1.9 Calculus of a Complex Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m89.png" altimg-height="18px" altimg-valign="-2px" altimg-width="10px" alttext="\mathrm{i}" display="inline"><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></math>: imaginary unit</a>,
+<a href="./8.2#E2" title="(8.2.2) ‣ §8.2(i) Definitions ‣ §8.2 Definitions and Basic Properties ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m66.png" altimg-height="25px" altimg-valign="-7px" altimg-width="68px" alttext="\Gamma\left(\NVar{a},\NVar{z}\right)" display="inline"><mrow><mi href="./8.2#E2" mathvariant="normal" title="incomplete gamma function">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>,</mo><mi class="ltx_nvar" href="./8.1#p1.t1.r2" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: incomplete gamma function</a>,
+<a href="./8.2#E4" title="(8.2.4) ‣ §8.2(i) Definitions ‣ §8.2 Definitions and Basic Properties ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m62.png" altimg-height="25px" altimg-valign="-7px" altimg-width="71px" alttext="Q\left(\NVar{a},\NVar{z}\right)" display="inline"><mrow><mi href="./8.2#E4" title="normalized incomplete gamma function">Q</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>,</mo><mi class="ltx_nvar" href="./8.1#p1.t1.r2" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: normalized incomplete gamma function</a>,
+<a href="./4.14#E1" title="(4.14.1) ‣ §4.14 Definitions and Periodicity ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m100.png" altimg-height="18px" altimg-valign="-2px" altimg-width="44px" alttext="\sin\NVar{z}" display="inline"><mrow><mi href="./4.14#E1" title="sine function">sin</mi><mo lspace="0.167em">⁡</mo><mi class="ltx_nvar" href="./4.1#t1.r4" title="complex variable">z</mi></mrow></math>: sine function</a>,
+<a href="./8.1#p1.t1.r2" title="§8.1 Special Notation ‣ Notation ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m124.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi href="./8.1#p1.t1.r2" title="complex variable">z</mi></math>:  complex variable</a>,
+<a href="./8.1#p1.t1.r3" title="§8.1 Special Notation ‣ Notation ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m101.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="a" display="inline"><mi href="./8.1#p1.t1.r3" title="parameter">a</mi></math>:  parameter</a>,
+<a href="./8.12#p1" title="§8.12 Uniform Asymptotic Expansions for Large Parameter ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m79.png" altimg-height="25px" altimg-valign="-7px" altimg-width="44px" alttext="\eta(\lambda)" display="inline"><mrow><mi href="./8.12#p1" title="𝜂(𝜆)">η</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./8.12#p1" title="𝜆">λ</mi><mo stretchy="false">)</mo></mrow></mrow></math></a> and
+<a href="./8.12#p1" title="§8.12 Uniform Asymptotic Expansions for Large Parameter ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m65.png" altimg-height="25px" altimg-valign="-7px" altimg-width="67px" alttext="T(a,\eta)" display="inline"><mrow><mi href="./8.12#p1" title="function">T</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>,</mo><mi href="./8.12#p1" title="𝜂(𝜆)">η</mi><mo stretchy="false">)</mo></mrow></mrow></math>:  function</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./errata/#V1.0.16.I3.ix1" title="In Other Changes ‣ Version 1.0.16 (September 18, 2017) ‣ Errata" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Erratum (V1.0.16) for  Equation (<span class="ltx_text ltx_ref_tag">8.12.5</span>)</span></a>,
+<a href="./errata/#V1.0.16.I3.ix1.p1" title="In Other Changes ‣ Version 1.0.16 (September 18, 2017) ‣ Errata" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Erratum (V1.0.16) for  Equation (<span class="ltx_text ltx_ref_tag">8.12.5</span>)</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./8.12.E5" title="" class="ltx_ref">http://dlmf.nist.gov/8.12.E5</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./8.12.E5.tex">TeX</a>, <a href="./8.12.E5.pmml">pMML</a>, <a href="./8.12.E5.png">png</a>
+</dd>
+<dt>Change (effective with 1.0.16):</dt>
+<dd>
+To be consistent with the notation used in (<a href="./8.12#E16" title="(8.12.16) ‣ §8.12 Uniform Asymptotic Expansions for Large Parameter ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">8.12.16</span></a>), the original equation,
+
+<table id="Ex5" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="m29.png" altimg-height="136px" altimg-valign="-16px" altimg-width="327px" alttext="\Gamma\left(a+1\right)\frac{e^{\pm\pi ia}}{2\pi i}\Gamma\left(-a,ze^{\pm\pi i}%
+\right)=\mp\tfrac{1}{2}\operatorname{erfc}\left(\pm i\eta\sqrt{a/2}\right)+iT(%
+a,\eta)," display="block"><mrow><mrow><mrow><mrow><mi href="./5.2#E1" mathvariant="normal" title="gamma function">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>+</mo><mn>1</mn></mrow><mo>)</mo></mrow></mrow><mo>⁢</mo><mfrac><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mrow><mo>±</mo><mrow><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>⁢</mo><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi><mo>⁢</mo><mi href="./8.1#p1.t1.r3" title="parameter">a</mi></mrow></mrow></msup><mrow><mn>2</mn><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>⁢</mo><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></mrow></mfrac><mo>⁢</mo><mrow><mi href="./8.2#E2" mathvariant="normal" title="incomplete gamma function">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mo>−</mo><mi href="./8.1#p1.t1.r3" title="parameter">a</mi></mrow><mo>,</mo><mrow><mi href="./8.1#p1.t1.r2" title="complex variable">z</mi><mo>⁢</mo><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mrow><mo>±</mo><mrow><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>⁢</mo><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></mrow></mrow></msup></mrow><mo>)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mrow><mo>∓</mo><mrow><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo lspace="0.167em">⁢</mo><mrow><mi href="./7.2#E2" title="complementary error function">erfc</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mo>±</mo><mrow><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi><mo>⁢</mo><mi href="./8.12#p1" title="𝜂(𝜆)">η</mi><mo>⁢</mo><msqrt><mrow><mi href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>/</mo><mn>2</mn></mrow></msqrt></mrow></mrow><mo>)</mo></mrow></mrow></mrow></mrow><mo>+</mo><mrow><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi><mo>⁢</mo><mrow><mi href="./8.12#p1" title="function">T</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>,</mo><mi href="./8.12#p1" title="𝜂(𝜆)">η</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+was rewritten.
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./8.12#info" title="§8.12 Uniform Asymptotic Expansions for Large Parameter ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§8.12</span></a> and
+<a href="./8#info" title="Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.8</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">and</p>
+<table id="E6" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">8.12.6</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E6.png" altimg-height="191px" altimg-valign="-28px" altimg-width="445px" alttext="z^{-a}\gamma^{*}\left(-a,-z\right)=\cos\left(\pi a\right)-2\sin\left(\pi a%
+\right)\left(\frac{e^{\frac{1}{2}a\eta^{2}}}{\sqrt{\pi}}F\left(\eta\sqrt{a/2}%
+\right)+T(a,\eta)\right)," display="block"><mrow><mrow><mrow><msup><mi href="./8.1#p1.t1.r2" title="complex variable">z</mi><mrow><mo>−</mo><mi href="./8.1#p1.t1.r3" title="parameter">a</mi></mrow></msup><mo>⁢</mo><mrow><msup><mi href="./8.2#E6" title="incomplete gamma function">γ</mi><mo href="./8.2#E6" title="incomplete gamma function">∗</mo></msup><mo>⁡</mo><mrow><mo>(</mo><mrow><mo>−</mo><mi href="./8.1#p1.t1.r3" title="parameter">a</mi></mrow><mo>,</mo><mrow><mo>−</mo><mi href="./8.1#p1.t1.r2" title="complex variable">z</mi></mrow><mo>)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mrow><mi href="./4.14#E2" title="cosine function">cos</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>⁢</mo><mi href="./8.1#p1.t1.r3" title="parameter">a</mi></mrow><mo>)</mo></mrow></mrow><mo>−</mo><mrow><mn>2</mn><mo lspace="0.167em">⁢</mo><mrow><mi href="./4.14#E1" title="sine function">sin</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>⁢</mo><mi href="./8.1#p1.t1.r3" title="parameter">a</mi></mrow><mo>)</mo></mrow></mrow><mo>⁢</mo><mrow><mo>(</mo><mrow><mrow><mfrac><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mi href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>⁢</mo><msup><mi href="./8.12#p1" title="𝜂(𝜆)">η</mi><mn>2</mn></msup></mrow></msup><msqrt><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></msqrt></mfrac><mo>⁢</mo><mrow><mi href="./7.2#E5" title="Dawson’s integral">F</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./8.12#p1" title="𝜂(𝜆)">η</mi><mo>⁢</mo><msqrt><mrow><mi href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>/</mo><mn>2</mn></mrow></msqrt></mrow><mo>)</mo></mrow></mrow></mrow><mo>+</mo><mrow><mi href="./8.12#p1" title="function">T</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>,</mo><mi href="./8.12#p1" title="𝜂(𝜆)">η</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E6.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./7.2#E5" title="(7.2.5) ‣ §7.2(ii) Dawson’s Integral ‣ §7.2 Definitions ‣ Properties ‣ Chapter 7 Error Functions, Dawson’s and Fresnel Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m56.png" altimg-height="25px" altimg-valign="-7px" altimg-width="51px" alttext="F\left(\NVar{z}\right)" display="inline"><mrow><mi href="./7.2#E5" title="Dawson’s integral">F</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./7.1#p1.t1.r2" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: Dawson’s integral</a>,
+<a href="./3.12#E1" title="(3.12.1) ‣ §3.12 Mathematical Constants ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m97.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="\pi" display="inline"><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></math>: the ratio of the circumference of a circle to its diameter</a>,
+<a href="./4.14#E2" title="(4.14.2) ‣ §4.14 Definitions and Periodicity ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m77.png" altimg-height="13px" altimg-valign="-2px" altimg-width="46px" alttext="\cos\NVar{z}" display="inline"><mrow><mi href="./4.14#E2" title="cosine function">cos</mi><mo lspace="0.167em">⁡</mo><mi class="ltx_nvar" href="./4.1#t1.r4" title="complex variable">z</mi></mrow></math>: cosine function</a>,
+<a href="./4.2#E11" title="(4.2.11) ‣ §4.2(ii) Logarithms to a General Base 𝑎 ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m88.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="\mathrm{e}" display="inline"><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi></math>: base of natural logarithm</a>,
+<a href="./8.2#E6" title="(8.2.6) ‣ §8.2(i) Definitions ‣ §8.2 Definitions and Basic Properties ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m83.png" altimg-height="25px" altimg-valign="-7px" altimg-width="76px" alttext="\gamma^{*}\left(\NVar{a},\NVar{z}\right)" display="inline"><mrow><msup><mi href="./8.2#E6" title="incomplete gamma function">γ</mi><mo href="./8.2#E6" title="incomplete gamma function">∗</mo></msup><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>,</mo><mi class="ltx_nvar" href="./8.1#p1.t1.r2" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: incomplete gamma function</a>,
+<a href="./4.14#E1" title="(4.14.1) ‣ §4.14 Definitions and Periodicity ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m100.png" altimg-height="18px" altimg-valign="-2px" altimg-width="44px" alttext="\sin\NVar{z}" display="inline"><mrow><mi href="./4.14#E1" title="sine function">sin</mi><mo lspace="0.167em">⁡</mo><mi class="ltx_nvar" href="./4.1#t1.r4" title="complex variable">z</mi></mrow></math>: sine function</a>,
+<a href="./8.1#p1.t1.r2" title="§8.1 Special Notation ‣ Notation ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m124.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi href="./8.1#p1.t1.r2" title="complex variable">z</mi></math>:  complex variable</a>,
+<a href="./8.1#p1.t1.r3" title="§8.1 Special Notation ‣ Notation ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m101.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="a" display="inline"><mi href="./8.1#p1.t1.r3" title="parameter">a</mi></math>:  parameter</a>,
+<a href="./8.12#p1" title="§8.12 Uniform Asymptotic Expansions for Large Parameter ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m79.png" altimg-height="25px" altimg-valign="-7px" altimg-width="44px" alttext="\eta(\lambda)" display="inline"><mrow><mi href="./8.12#p1" title="𝜂(𝜆)">η</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./8.12#p1" title="𝜆">λ</mi><mo stretchy="false">)</mo></mrow></mrow></math></a> and
+<a href="./8.12#p1" title="§8.12 Uniform Asymptotic Expansions for Large Parameter ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m65.png" altimg-height="25px" altimg-valign="-7px" altimg-width="67px" alttext="T(a,\eta)" display="inline"><mrow><mi href="./8.12#p1" title="function">T</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>,</mo><mi href="./8.12#p1" title="𝜂(𝜆)">η</mi><mo stretchy="false">)</mo></mrow></mrow></math>:  function</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./8.12.E6" title="" class="ltx_ref">http://dlmf.nist.gov/8.12.E6</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./8.12.E6.tex">TeX</a>, <a href="./8.12.E6.pmml">pMML</a>, <a href="./8.12.E6.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./8.12#info" title="§8.12 Uniform Asymptotic Expansions for Large Parameter ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§8.12</span></a> and
+<a href="./8#info" title="Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.8</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">where <math class="ltx_Math" altimg="m57.png" altimg-height="25px" altimg-valign="-7px" altimg-width="52px" alttext="F\left(x\right)" display="inline"><mrow><mi href="./7.2#E5" title="Dawson’s integral">F</mi><mo>⁡</mo><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math> is Dawson’s integral; see §<a href="./7.2#ii" title="§7.2(ii) Dawson’s Integral ‣ §7.2 Definitions ‣ Properties ‣ Chapter 7 Error Functions, Dawson’s and Fresnel Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">7.2(ii)</span></a>. Then as
+<math class="ltx_Math" altimg="m102.png" altimg-height="13px" altimg-valign="-2px" altimg-width="68px" alttext="a\to\infty" display="inline"><mrow><mi href="./8.1#p1.t1.r3" title="parameter">a</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></math> in the sector <math class="ltx_Math" altimg="m128.png" altimg-height="25px" altimg-valign="-7px" altimg-width="183px" alttext="|\operatorname{ph}a|\leq\pi-\delta(&lt;\pi)" display="inline"><mrow><mrow><mo stretchy="false">|</mo><mrow><mi href="./1.9#E7" title="phase">ph</mi><mo lspace="0.167em">⁡</mo><mi href="./8.1#p1.t1.r3" title="parameter">a</mi></mrow><mo stretchy="false">|</mo></mrow><mo>≤</mo><mrow><mrow><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>−</mo><mi href="./8.1#p1.t1.r5" title="small positive constant">δ</mi></mrow><mspace style="width:0.3888888888888889em;" width="0.3888888888888889em"></mspace><mrow><mo stretchy="false">(</mo><mrow><mi></mi><mo>&lt;</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></math>,
+</p>
+<table id="E7" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">8.12.7</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E7.png" altimg-height="68px" altimg-valign="-29px" altimg-width="286px" alttext="S(a,\eta)\sim\frac{e^{-\frac{1}{2}a\eta^{2}}}{\sqrt{2\pi a}}\sum_{k=0}^{\infty%
+}c_{k}(\eta)a^{-k}," display="block"><mrow><mrow><mrow><mi href="./8.12#p1" title="function">S</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>,</mo><mi href="./8.12#p1" title="𝜂(𝜆)">η</mi><mo stretchy="false">)</mo></mrow></mrow><mo href="./2.1#iii.p1" title="Poincaré asymptotic expansion">∼</mo><mrow><mfrac><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mrow><mo>−</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mi href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>⁢</mo><msup><mi href="./8.12#p1" title="𝜂(𝜆)">η</mi><mn>2</mn></msup></mrow></mrow></msup><msqrt><mrow><mn>2</mn><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>⁢</mo><mi href="./8.1#p1.t1.r3" title="parameter">a</mi></mrow></msqrt></mfrac><mo>⁢</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi href="./8.1#p1.t1.r4" title="nonnegative integer">k</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><mrow><msub><mi href="./8.12#p2" title="coefficients">c</mi><mi href="./8.1#p1.t1.r4" title="nonnegative integer">k</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./8.12#p1" title="𝜂(𝜆)">η</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⁢</mo><msup><mi href="./8.1#p1.t1.r3" title="parameter">a</mi><mrow><mo>−</mo><mi href="./8.1#p1.t1.r4" title="nonnegative integer">k</mi></mrow></msup></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E7.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./2.1#iii.p1" title="§2.1(iii) Asymptotic Expansions ‣ §2.1 Definitions and Elementary Properties ‣ Areas ‣ Chapter 2 Asymptotic Approximations" class="ltx_ref"><math class="ltx_Math" altimg="m99.png" altimg-height="11px" altimg-valign="-2px" altimg-width="20px" alttext="\sim" display="inline"><mo href="./2.1#iii.p1" title="Poincaré asymptotic expansion">∼</mo></math>: Poincaré asymptotic expansion</a>,
+<a href="./3.12#E1" title="(3.12.1) ‣ §3.12 Mathematical Constants ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m97.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="\pi" display="inline"><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></math>: the ratio of the circumference of a circle to its diameter</a>,
+<a href="./4.2#E11" title="(4.2.11) ‣ §4.2(ii) Logarithms to a General Base 𝑎 ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m88.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="\mathrm{e}" display="inline"><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi></math>: base of natural logarithm</a>,
+<a href="./8.1#p1.t1.r3" title="§8.1 Special Notation ‣ Notation ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m101.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="a" display="inline"><mi href="./8.1#p1.t1.r3" title="parameter">a</mi></math>:  parameter</a>,
+<a href="./8.1#p1.t1.r4" title="§8.1 Special Notation ‣ Notation ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m113.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./8.1#p1.t1.r4" title="nonnegative integer">k</mi></math>:  nonnegative integer</a>,
+<a href="./8.12#p1" title="§8.12 Uniform Asymptotic Expansions for Large Parameter ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m79.png" altimg-height="25px" altimg-valign="-7px" altimg-width="44px" alttext="\eta(\lambda)" display="inline"><mrow><mi href="./8.12#p1" title="𝜂(𝜆)">η</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./8.12#p1" title="𝜆">λ</mi><mo stretchy="false">)</mo></mrow></mrow></math></a>,
+<a href="./8.12#p1" title="§8.12 Uniform Asymptotic Expansions for Large Parameter ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m64.png" altimg-height="25px" altimg-valign="-7px" altimg-width="66px" alttext="S(a,\eta)" display="inline"><mrow><mi href="./8.12#p1" title="function">S</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>,</mo><mi href="./8.12#p1" title="𝜂(𝜆)">η</mi><mo stretchy="false">)</mo></mrow></mrow></math>:  function</a> and
+<a href="./8.12#p2" title="§8.12 Uniform Asymptotic Expansions for Large Parameter ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m103.png" altimg-height="25px" altimg-valign="-7px" altimg-width="51px" alttext="c_{k}(\eta)" display="inline"><mrow><msub><mi href="./8.12#p2" title="coefficients">c</mi><mi href="./8.1#p1.t1.r4" title="nonnegative integer">k</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./8.12#p1" title="𝜂(𝜆)">η</mi><mo stretchy="false">)</mo></mrow></mrow></math>:  coefficients</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./8.12#p4" title="§8.12 Uniform Asymptotic Expansions for Large Parameter ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§8.12</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./8.12.E7" title="" class="ltx_ref">http://dlmf.nist.gov/8.12.E7</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./8.12.E7.tex">TeX</a>, <a href="./8.12.E7.pmml">pMML</a>, <a href="./8.12.E7.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./8.12#info" title="§8.12 Uniform Asymptotic Expansions for Large Parameter ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§8.12</span></a> and
+<a href="./8#info" title="Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.8</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<table id="E8" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">8.12.8</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E8.png" altimg-height="68px" altimg-valign="-29px" altimg-width="309px" alttext="T(a,\eta)\sim\frac{e^{\frac{1}{2}a\eta^{2}}}{\sqrt{2\pi a}}\sum_{k=0}^{\infty}%
+c_{k}(\eta)(-a)^{-k}," display="block"><mrow><mrow><mrow><mi href="./8.12#p1" title="function">T</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>,</mo><mi href="./8.12#p1" title="𝜂(𝜆)">η</mi><mo stretchy="false">)</mo></mrow></mrow><mo href="./2.1#iii.p1" title="Poincaré asymptotic expansion">∼</mo><mrow><mfrac><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mi href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>⁢</mo><msup><mi href="./8.12#p1" title="𝜂(𝜆)">η</mi><mn>2</mn></msup></mrow></msup><msqrt><mrow><mn>2</mn><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>⁢</mo><mi href="./8.1#p1.t1.r3" title="parameter">a</mi></mrow></msqrt></mfrac><mo>⁢</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi href="./8.1#p1.t1.r4" title="nonnegative integer">k</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><mrow><msub><mi href="./8.12#p2" title="coefficients">c</mi><mi href="./8.1#p1.t1.r4" title="nonnegative integer">k</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./8.12#p1" title="𝜂(𝜆)">η</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mi href="./8.1#p1.t1.r3" title="parameter">a</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mo>−</mo><mi href="./8.1#p1.t1.r4" title="nonnegative integer">k</mi></mrow></msup></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E8.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./2.1#iii.p1" title="§2.1(iii) Asymptotic Expansions ‣ §2.1 Definitions and Elementary Properties ‣ Areas ‣ Chapter 2 Asymptotic Approximations" class="ltx_ref"><math class="ltx_Math" altimg="m99.png" altimg-height="11px" altimg-valign="-2px" altimg-width="20px" alttext="\sim" display="inline"><mo href="./2.1#iii.p1" title="Poincaré asymptotic expansion">∼</mo></math>: Poincaré asymptotic expansion</a>,
+<a href="./3.12#E1" title="(3.12.1) ‣ §3.12 Mathematical Constants ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m97.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="\pi" display="inline"><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></math>: the ratio of the circumference of a circle to its diameter</a>,
+<a href="./4.2#E11" title="(4.2.11) ‣ §4.2(ii) Logarithms to a General Base 𝑎 ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m88.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="\mathrm{e}" display="inline"><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi></math>: base of natural logarithm</a>,
+<a href="./8.1#p1.t1.r3" title="§8.1 Special Notation ‣ Notation ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m101.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="a" display="inline"><mi href="./8.1#p1.t1.r3" title="parameter">a</mi></math>:  parameter</a>,
+<a href="./8.1#p1.t1.r4" title="§8.1 Special Notation ‣ Notation ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m113.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./8.1#p1.t1.r4" title="nonnegative integer">k</mi></math>:  nonnegative integer</a>,
+<a href="./8.12#p1" title="§8.12 Uniform Asymptotic Expansions for Large Parameter ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m79.png" altimg-height="25px" altimg-valign="-7px" altimg-width="44px" alttext="\eta(\lambda)" display="inline"><mrow><mi href="./8.12#p1" title="𝜂(𝜆)">η</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./8.12#p1" title="𝜆">λ</mi><mo stretchy="false">)</mo></mrow></mrow></math></a>,
+<a href="./8.12#p1" title="§8.12 Uniform Asymptotic Expansions for Large Parameter ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m65.png" altimg-height="25px" altimg-valign="-7px" altimg-width="67px" alttext="T(a,\eta)" display="inline"><mrow><mi href="./8.12#p1" title="function">T</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>,</mo><mi href="./8.12#p1" title="𝜂(𝜆)">η</mi><mo stretchy="false">)</mo></mrow></mrow></math>:  function</a> and
+<a href="./8.12#p2" title="§8.12 Uniform Asymptotic Expansions for Large Parameter ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m103.png" altimg-height="25px" altimg-valign="-7px" altimg-width="51px" alttext="c_{k}(\eta)" display="inline"><mrow><msub><mi href="./8.12#p2" title="coefficients">c</mi><mi href="./8.1#p1.t1.r4" title="nonnegative integer">k</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./8.12#p1" title="𝜂(𝜆)">η</mi><mo stretchy="false">)</mo></mrow></mrow></math>:  coefficients</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./8.12.E8" title="" class="ltx_ref">http://dlmf.nist.gov/8.12.E8</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./8.12.E8.tex">TeX</a>, <a href="./8.12.E8.pmml">pMML</a>, <a href="./8.12.E8.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./8.12#info" title="§8.12 Uniform Asymptotic Expansions for Large Parameter ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§8.12</span></a> and
+<a href="./8#info" title="Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.8</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">in each case uniformly with respect to <math class="ltx_Math" altimg="m84.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="\lambda" display="inline"><mi href="./8.12#p1" title="𝜆">λ</mi></math> in the sector
+<math class="ltx_Math" altimg="m127.png" altimg-height="25px" altimg-valign="-7px" altimg-width="144px" alttext="|\operatorname{ph}\lambda|\leq 2\pi-\delta" display="inline"><mrow><mrow><mo stretchy="false">|</mo><mrow><mi href="./1.9#E7" title="phase">ph</mi><mo lspace="0.167em">⁡</mo><mi href="./8.12#p1" title="𝜆">λ</mi></mrow><mo stretchy="false">|</mo></mrow><mo>≤</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></mrow><mo>−</mo><mi href="./8.1#p1.t1.r5" title="small positive constant">δ</mi></mrow></mrow></math> (<math class="ltx_Math" altimg="m52.png" altimg-height="18px" altimg-valign="-3px" altimg-width="49px" alttext="&lt;2\pi" display="inline"><mrow><mi></mi><mo>&lt;</mo><mrow><mn>2</mn><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></mrow></mrow></math>).</p>
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">With <math class="ltx_Math" altimg="m91.png" altimg-height="22px" altimg-valign="-6px" altimg-width="92px" alttext="\mu=\lambda-1" display="inline"><mrow><mi href="./8.12#p2" title="𝜇">μ</mi><mo>=</mo><mrow><mi href="./8.12#p1" title="𝜆">λ</mi><mo>−</mo><mn>1</mn></mrow></mrow></math>, the coefficients <math class="ltx_Math" altimg="m103.png" altimg-height="25px" altimg-valign="-7px" altimg-width="51px" alttext="c_{k}(\eta)" display="inline"><mrow><msub><mi href="./8.12#p2" title="coefficients">c</mi><mi href="./8.1#p1.t1.r4" title="nonnegative integer">k</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./8.12#p1" title="𝜂(𝜆)">η</mi><mo stretchy="false">)</mo></mrow></mrow></math> are given by
+</p>
+<table id="E9" class="ltx_equationgroup ltx_eqn_table">
+<tbody>
+<tr id="Ex6" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="2" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equationgroup ltx_align_left">8.12.9</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m42.png" altimg-height="27px" altimg-valign="-7px" altimg-width="52px" alttext="\displaystyle c_{0}(\eta)" display="inline"><mrow><msub><mi href="./8.12#p2" title="coefficients">c</mi><mn>0</mn></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./8.12#p1" title="𝜂(𝜆)">η</mi><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m12.png" altimg-height="52px" altimg-valign="-20px" altimg-width="93px" alttext="\displaystyle=\frac{1}{\mu}-\frac{1}{\eta}," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mi href="./8.12#p2" title="𝜇">μ</mi></mfrac></mstyle><mo>−</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><mi href="./8.12#p1" title="𝜂(𝜆)">η</mi></mfrac></mstyle></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex7" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m44.png" altimg-height="27px" altimg-valign="-7px" altimg-width="52px" alttext="\displaystyle c_{1}(\eta)" display="inline"><mrow><msub><mi href="./8.12#p2" title="coefficients">c</mi><mn>1</mn></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./8.12#p1" title="𝜂(𝜆)">η</mi><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m11.png" altimg-height="52px" altimg-valign="-20px" altimg-width="228px" alttext="\displaystyle=\frac{1}{\eta^{3}}-\frac{1}{\mu^{3}}-\frac{1}{\mu^{2}}-\frac{1}{%
+12\mu}," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><msup><mi href="./8.12#p1" title="𝜂(𝜆)">η</mi><mn>3</mn></msup></mfrac></mstyle><mo>−</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><msup><mi href="./8.12#p2" title="𝜇">μ</mi><mn>3</mn></msup></mfrac></mstyle><mo>−</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><msup><mi href="./8.12#p2" title="𝜇">μ</mi><mn>2</mn></msup></mfrac></mstyle><mo>−</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><mrow><mn>12</mn><mo>⁢</mo><mi href="./8.12#p2" title="𝜇">μ</mi></mrow></mfrac></mstyle></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E9.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./8.12#p1" title="§8.12 Uniform Asymptotic Expansions for Large Parameter ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m79.png" altimg-height="25px" altimg-valign="-7px" altimg-width="44px" alttext="\eta(\lambda)" display="inline"><mrow><mi href="./8.12#p1" title="𝜂(𝜆)">η</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./8.12#p1" title="𝜆">λ</mi><mo stretchy="false">)</mo></mrow></mrow></math></a>,
+<a href="./8.12#p2" title="§8.12 Uniform Asymptotic Expansions for Large Parameter ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m92.png" altimg-height="17px" altimg-valign="-6px" altimg-width="17px" alttext="\mu" display="inline"><mi href="./8.12#p2" title="𝜇">μ</mi></math></a> and
+<a href="./8.12#p2" title="§8.12 Uniform Asymptotic Expansions for Large Parameter ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m103.png" altimg-height="25px" altimg-valign="-7px" altimg-width="51px" alttext="c_{k}(\eta)" display="inline"><mrow><msub><mi href="./8.12#p2" title="coefficients">c</mi><mi href="./8.1#p1.t1.r4" title="nonnegative integer">k</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./8.12#p1" title="𝜂(𝜆)">η</mi><mo stretchy="false">)</mo></mrow></mrow></math>:  coefficients</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./8.12#p2" title="§8.12 Uniform Asymptotic Expansions for Large Parameter ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§8.12</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./8.12.E9" title="" class="ltx_ref">http://dlmf.nist.gov/8.12.E9</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./8.12.E9a.tex">TeX</a>, <a href="./8.12.E9b.tex">TeX</a>, <a href="./8.12.E9a.pmml">pMML</a>, <a href="./8.12.E9b.pmml">pMML</a>, <a href="./8.12.E9a.png">png</a>, <a href="./8.12.E9b.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./8.12#info" title="§8.12 Uniform Asymptotic Expansions for Large Parameter ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§8.12</span></a> and
+<a href="./8#info" title="Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.8</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<table id="E10" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">8.12.10</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E10.png" altimg-height="53px" altimg-valign="-20px" altimg-width="301px" alttext="c_{k}(\eta)=\frac{1}{\eta}\frac{\mathrm{d}}{\mathrm{d}\eta}c_{k-1}(\eta)+(-1)^%
+{k}\frac{g_{k}}{\mu}," display="block"><mrow><mrow><mrow><msub><mi href="./8.12#p2" title="coefficients">c</mi><mi href="./8.1#p1.t1.r4" title="nonnegative integer">k</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./8.12#p1" title="𝜂(𝜆)">η</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mfrac><mn>1</mn><mi href="./8.12#p1" title="𝜂(𝜆)">η</mi></mfrac><mo>⁢</mo><mrow><mfrac><mo href="./1.4#E4" title="derivative of 𝑓 with respect to 𝑥">d</mo><mrow><mo href="./1.4#E4" rspace="0em" title="derivative of 𝑓 with respect to 𝑥">d</mo><mi href="./8.12#p1" title="𝜂(𝜆)">η</mi></mrow></mfrac><mo>⁡</mo><mrow><msub><mi href="./8.12#p2" title="coefficients">c</mi><mrow><mi href="./8.1#p1.t1.r4" title="nonnegative integer">k</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./8.12#p1" title="𝜂(𝜆)">η</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>+</mo><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mi href="./8.1#p1.t1.r4" title="nonnegative integer">k</mi></msup><mo>⁢</mo><mfrac><msub><mi href="./8.12#p2" title="coefficients">g</mi><mi href="./8.1#p1.t1.r4" title="nonnegative integer">k</mi></msub><mi href="./8.12#p2" title="𝜇">μ</mi></mfrac></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="4"><span class="ltx_constraint"><math class="ltx_Math" altimg="m111.png" altimg-height="22px" altimg-valign="-6px" altimg-width="107px" alttext="k=1,2,\dots" display="inline"><mrow><mi href="./8.1#p1.t1.r4" title="nonnegative integer">k</mi><mo>=</mo><mrow><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mi mathvariant="normal">…</mi></mrow></mrow></math>,</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E10.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./1.4#E4" title="(1.4.4) ‣ §1.4(iii) Derivatives ‣ §1.4 Calculus of One Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m82.png" altimg-height="31px" altimg-valign="-9px" altimg-width="28px" alttext="\frac{\mathrm{d}\NVar{f}}{\mathrm{d}\NVar{x}}" display="inline"><mfrac><mrow><mo href="./1.4#E4" rspace="0em" title="derivative of 𝑓 with respect to 𝑥">d</mo><mi class="ltx_nvar">f</mi></mrow><mrow><mo href="./1.4#E4" rspace="0em" title="derivative of 𝑓 with respect to 𝑥">d</mo><mi class="ltx_nvar">x</mi></mrow></mfrac></math>: derivative of <math class="ltx_Math" altimg="m107.png" altimg-height="22px" altimg-valign="-6px" altimg-width="17px" alttext="f" display="inline"><mi>f</mi></math> with respect to <math class="ltx_Math" altimg="m122.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./8.1#p1.t1.r4" title="§8.1 Special Notation ‣ Notation ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m113.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./8.1#p1.t1.r4" title="nonnegative integer">k</mi></math>:  nonnegative integer</a>,
+<a href="./8.12#p1" title="§8.12 Uniform Asymptotic Expansions for Large Parameter ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m79.png" altimg-height="25px" altimg-valign="-7px" altimg-width="44px" alttext="\eta(\lambda)" display="inline"><mrow><mi href="./8.12#p1" title="𝜂(𝜆)">η</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./8.12#p1" title="𝜆">λ</mi><mo stretchy="false">)</mo></mrow></mrow></math></a>,
+<a href="./8.12#p2" title="§8.12 Uniform Asymptotic Expansions for Large Parameter ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m92.png" altimg-height="17px" altimg-valign="-6px" altimg-width="17px" alttext="\mu" display="inline"><mi href="./8.12#p2" title="𝜇">μ</mi></math></a>,
+<a href="./8.12#p2" title="§8.12 Uniform Asymptotic Expansions for Large Parameter ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m103.png" altimg-height="25px" altimg-valign="-7px" altimg-width="51px" alttext="c_{k}(\eta)" display="inline"><mrow><msub><mi href="./8.12#p2" title="coefficients">c</mi><mi href="./8.1#p1.t1.r4" title="nonnegative integer">k</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./8.12#p1" title="𝜂(𝜆)">η</mi><mo stretchy="false">)</mo></mrow></mrow></math>:  coefficients</a> and
+<a href="./8.12#p2" title="§8.12 Uniform Asymptotic Expansions for Large Parameter ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m108.png" altimg-height="17px" altimg-valign="-6px" altimg-width="24px" alttext="g_{k}" display="inline"><msub><mi href="./8.12#p2" title="coefficients">g</mi><mi href="./8.1#p1.t1.r4" title="nonnegative integer">k</mi></msub></math>:  coefficients</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./8.12#p2" title="§8.12 Uniform Asymptotic Expansions for Large Parameter ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§8.12</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./8.12.E10" title="" class="ltx_ref">http://dlmf.nist.gov/8.12.E10</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./8.12.E10.tex">TeX</a>, <a href="./8.12.E10.pmml">pMML</a>, <a href="./8.12.E10.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./8.12#info" title="§8.12 Uniform Asymptotic Expansions for Large Parameter ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§8.12</span></a> and
+<a href="./8#info" title="Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.8</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">where <math class="ltx_Math" altimg="m108.png" altimg-height="17px" altimg-valign="-6px" altimg-width="24px" alttext="g_{k}" display="inline"><msub><mi href="./8.12#p2" title="coefficients">g</mi><mi href="./8.1#p1.t1.r4" title="nonnegative integer">k</mi></msub></math>, <math class="ltx_Math" altimg="m110.png" altimg-height="22px" altimg-valign="-6px" altimg-width="126px" alttext="k=0,1,2,\dots" display="inline"><mrow><mi href="./8.1#p1.t1.r4" title="nonnegative integer">k</mi><mo>=</mo><mrow><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mi mathvariant="normal">…</mi></mrow></mrow></math>, are the coefficients that appear in the
+asymptotic expansion (<a href="./5.11#E3" title="(5.11.3) ‣ §5.11(i) Poincaré-Type Expansions ‣ §5.11 Asymptotic Expansions ‣ Properties ‣ Chapter 5 Gamma Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">5.11.3</span></a>) of <math class="ltx_Math" altimg="m69.png" altimg-height="25px" altimg-valign="-7px" altimg-width="47px" alttext="\Gamma\left(z\right)" display="inline"><mrow><mi href="./5.2#E1" mathvariant="normal" title="gamma function">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./8.1#p1.t1.r2" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>. The right-hand
+sides of equations (<a href="./8.12#E9" title="(8.12.9) ‣ §8.12 Uniform Asymptotic Expansions for Large Parameter ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">8.12.9</span></a>), (<a href="./8.12#E10" title="(8.12.10) ‣ §8.12 Uniform Asymptotic Expansions for Large Parameter ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">8.12.10</span></a>) have removable
+singularities at <math class="ltx_Math" altimg="m81.png" altimg-height="21px" altimg-valign="-6px" altimg-width="53px" alttext="\eta=0" display="inline"><mrow><mi href="./8.12#p1" title="𝜂(𝜆)">η</mi><mo>=</mo><mn>0</mn></mrow></math>, and the Maclaurin series expansion of <math class="ltx_Math" altimg="m103.png" altimg-height="25px" altimg-valign="-7px" altimg-width="51px" alttext="c_{k}(\eta)" display="inline"><mrow><msub><mi href="./8.12#p2" title="coefficients">c</mi><mi href="./8.1#p1.t1.r4" title="nonnegative integer">k</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./8.12#p1" title="𝜂(𝜆)">η</mi><mo stretchy="false">)</mo></mrow></mrow></math>
+is given by</p>
+<table id="E11" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">8.12.11</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E11.png" altimg-height="67px" altimg-valign="-28px" altimg-width="180px" alttext="c_{k}(\eta)=\sum_{n=0}^{\infty}d_{k,n}\eta^{n}," display="block"><mrow><mrow><mrow><msub><mi href="./8.12#p2" title="coefficients">c</mi><mi href="./8.1#p1.t1.r4" title="nonnegative integer">k</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./8.12#p1" title="𝜂(𝜆)">η</mi><mo stretchy="false">)</mo></mrow></mrow><mo rspace="0.111em">=</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi href="./8.1#p1.t1.r4" title="nonnegative integer">n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><msub><mi href="./8.12#E19" title="𝑑(±𝜒)">d</mi><mrow><mi href="./8.1#p1.t1.r4" title="nonnegative integer">k</mi><mo>,</mo><mi href="./8.1#p1.t1.r4" title="nonnegative integer">n</mi></mrow></msub><mo>⁢</mo><msup><mi href="./8.12#p1" title="𝜂(𝜆)">η</mi><mi href="./8.1#p1.t1.r4" title="nonnegative integer">n</mi></msup></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="4"><span class="ltx_constraint"><math class="ltx_Math" altimg="m126.png" altimg-height="26px" altimg-valign="-7px" altimg-width="95px" alttext="|\eta|&lt;2\sqrt{\pi}" display="inline"><mrow><mrow><mo stretchy="false">|</mo><mi href="./8.12#p1" title="𝜂(𝜆)">η</mi><mo stretchy="false">|</mo></mrow><mo>&lt;</mo><mrow><mn>2</mn><mo>⁢</mo><msqrt><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></msqrt></mrow></mrow></math>,</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E11.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./3.12#E1" title="(3.12.1) ‣ §3.12 Mathematical Constants ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m97.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="\pi" display="inline"><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></math>: the ratio of the circumference of a circle to its diameter</a>,
+<a href="./8.1#p1.t1.r4" title="§8.1 Special Notation ‣ Notation ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m113.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./8.1#p1.t1.r4" title="nonnegative integer">k</mi></math>:  nonnegative integer</a>,
+<a href="./8.1#p1.t1.r4" title="§8.1 Special Notation ‣ Notation ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m117.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./8.1#p1.t1.r4" title="nonnegative integer">n</mi></math>:  nonnegative integer</a>,
+<a href="./8.12#p1" title="§8.12 Uniform Asymptotic Expansions for Large Parameter ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m79.png" altimg-height="25px" altimg-valign="-7px" altimg-width="44px" alttext="\eta(\lambda)" display="inline"><mrow><mi href="./8.12#p1" title="𝜂(𝜆)">η</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./8.12#p1" title="𝜆">λ</mi><mo stretchy="false">)</mo></mrow></mrow></math></a>,
+<a href="./8.12#E19" title="(8.12.19) ‣ §8.12 Uniform Asymptotic Expansions for Large Parameter ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m104.png" altimg-height="25px" altimg-valign="-7px" altimg-width="60px" alttext="d(\pm\chi)" display="inline"><mrow><mi href="./8.12#E19" title="𝑑(±𝜒)">d</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mo>±</mo><mi href="./8.12#E19" title="𝜒">χ</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></math></a> and
+<a href="./8.12#p2" title="§8.12 Uniform Asymptotic Expansions for Large Parameter ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m103.png" altimg-height="25px" altimg-valign="-7px" altimg-width="51px" alttext="c_{k}(\eta)" display="inline"><mrow><msub><mi href="./8.12#p2" title="coefficients">c</mi><mi href="./8.1#p1.t1.r4" title="nonnegative integer">k</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./8.12#p1" title="𝜂(𝜆)">η</mi><mo stretchy="false">)</mo></mrow></mrow></math>:  coefficients</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./8.12.E11" title="" class="ltx_ref">http://dlmf.nist.gov/8.12.E11</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./8.12.E11.tex">TeX</a>, <a href="./8.12.E11.pmml">pMML</a>, <a href="./8.12.E11.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./8.12#info" title="§8.12 Uniform Asymptotic Expansions for Large Parameter ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§8.12</span></a> and
+<a href="./8#info" title="Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.8</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">where <math class="ltx_Math" altimg="m105.png" altimg-height="29px" altimg-valign="-9px" altimg-width="95px" alttext="d_{0,0}=-\tfrac{1}{3}" display="inline"><mrow><msub><mi href="./8.12#E19" title="𝑑(±𝜒)">d</mi><mrow><mn>0</mn><mo>,</mo><mn>0</mn></mrow></msub><mo>=</mo><mrow><mo>−</mo><mfrac><mn>1</mn><mn>3</mn></mfrac></mrow></mrow></math>,
+</p>
+<table id="E12" class="ltx_equationgroup ltx_eqn_table">
+<tbody>
+<tr id="Ex8" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="4" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equationgroup ltx_align_left">8.12.12</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m50.png" altimg-height="26px" altimg-valign="-8px" altimg-width="42px" alttext="\displaystyle d_{0,n}" display="inline"><msub><mi href="./8.12#E19" title="𝑑(±𝜒)">d</mi><mrow><mn>0</mn><mo>,</mo><mi href="./8.1#p1.t1.r4" title="nonnegative integer">n</mi></mrow></msub></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m2.png" altimg-height="27px" altimg-valign="-7px" altimg-width="144px" alttext="\displaystyle=(n+2)\alpha_{n+2}," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi href="./8.1#p1.t1.r4" title="nonnegative integer">n</mi><mo>+</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><mi href="./8.12#p2" title="𝛼_{𝑛+2}">α</mi><mrow><mi href="./8.1#p1.t1.r4" title="nonnegative integer">n</mi><mo>+</mo><mn>2</mn></mrow></msub></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="4"><span class="ltx_constraint"><math class="ltx_Math" altimg="m119.png" altimg-height="20px" altimg-valign="-5px" altimg-width="55px" alttext="n\geq 1" display="inline"><mrow><mi href="./8.1#p1.t1.r4" title="nonnegative integer">n</mi><mo>≥</mo><mn>1</mn></mrow></math>,</span></td></tr>
+<tr id="Ex9" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m51.png" altimg-height="26px" altimg-valign="-8px" altimg-width="43px" alttext="\displaystyle d_{k,n}" display="inline"><msub><mi href="./8.12#E19" title="𝑑(±𝜒)">d</mi><mrow><mi href="./8.1#p1.t1.r4" title="nonnegative integer">k</mi><mo>,</mo><mi href="./8.1#p1.t1.r4" title="nonnegative integer">n</mi></mrow></msub></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m1.png" altimg-height="31px" altimg-valign="-8px" altimg-width="311px" alttext="\displaystyle=(-1)^{k}g_{k}d_{0,n}+(n+2)d_{k-1,n+2}," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mi href="./8.1#p1.t1.r4" title="nonnegative integer">k</mi></msup><mo>⁢</mo><msub><mi href="./8.12#p2" title="coefficients">g</mi><mi href="./8.1#p1.t1.r4" title="nonnegative integer">k</mi></msub><mo>⁢</mo><msub><mi href="./8.12#E19" title="𝑑(±𝜒)">d</mi><mrow><mn>0</mn><mo>,</mo><mi href="./8.1#p1.t1.r4" title="nonnegative integer">n</mi></mrow></msub></mrow><mo>+</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi href="./8.1#p1.t1.r4" title="nonnegative integer">n</mi><mo>+</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><mi href="./8.12#E19" title="𝑑(±𝜒)">d</mi><mrow><mrow><mi href="./8.1#p1.t1.r4" title="nonnegative integer">k</mi><mo>−</mo><mn>1</mn></mrow><mo>,</mo><mrow><mi href="./8.1#p1.t1.r4" title="nonnegative integer">n</mi><mo>+</mo><mn>2</mn></mrow></mrow></msub></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="4"><span class="ltx_constraint"><math class="ltx_Math" altimg="m118.png" altimg-height="20px" altimg-valign="-5px" altimg-width="55px" alttext="n\geq 0" display="inline"><mrow><mi href="./8.1#p1.t1.r4" title="nonnegative integer">n</mi><mo>≥</mo><mn>0</mn></mrow></math>, <math class="ltx_Math" altimg="m114.png" altimg-height="21px" altimg-valign="-5px" altimg-width="54px" alttext="k\geq 1" display="inline"><mrow><mi href="./8.1#p1.t1.r4" title="nonnegative integer">k</mi><mo>≥</mo><mn>1</mn></mrow></math>,</span></td></tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E12.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./8.1#p1.t1.r4" title="§8.1 Special Notation ‣ Notation ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m113.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./8.1#p1.t1.r4" title="nonnegative integer">k</mi></math>:  nonnegative integer</a>,
+<a href="./8.1#p1.t1.r4" title="§8.1 Special Notation ‣ Notation ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m117.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./8.1#p1.t1.r4" title="nonnegative integer">n</mi></math>:  nonnegative integer</a>,
+<a href="./8.12#E19" title="(8.12.19) ‣ §8.12 Uniform Asymptotic Expansions for Large Parameter ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m104.png" altimg-height="25px" altimg-valign="-7px" altimg-width="60px" alttext="d(\pm\chi)" display="inline"><mrow><mi href="./8.12#E19" title="𝑑(±𝜒)">d</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mo>±</mo><mi href="./8.12#E19" title="𝜒">χ</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></math></a>,
+<a href="./8.12#p2" title="§8.12 Uniform Asymptotic Expansions for Large Parameter ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m108.png" altimg-height="17px" altimg-valign="-6px" altimg-width="24px" alttext="g_{k}" display="inline"><msub><mi href="./8.12#p2" title="coefficients">g</mi><mi href="./8.1#p1.t1.r4" title="nonnegative integer">k</mi></msub></math>:  coefficients</a> and
+<a href="./8.12#p2" title="§8.12 Uniform Asymptotic Expansions for Large Parameter ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m75.png" altimg-height="18px" altimg-valign="-7px" altimg-width="50px" alttext="\alpha_{n+2}" display="inline"><msub><mi href="./8.12#p2" title="𝛼_{𝑛+2}">α</mi><mrow><mi href="./8.1#p1.t1.r4" title="nonnegative integer">n</mi><mo>+</mo><mn>2</mn></mrow></msub></math></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./8.12.E12" title="" class="ltx_ref">http://dlmf.nist.gov/8.12.E12</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./8.12.E12a.tex">TeX</a>, <a href="./8.12.E12b.tex">TeX</a>, <a href="./8.12.E12a.pmml">pMML</a>, <a href="./8.12.E12b.pmml">pMML</a>, <a href="./8.12.E12a.png">png</a>, <a href="./8.12.E12b.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./8.12#info" title="§8.12 Uniform Asymptotic Expansions for Large Parameter ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§8.12</span></a> and
+<a href="./8#info" title="Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.8</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">and <math class="ltx_Math" altimg="m74.png" altimg-height="17px" altimg-valign="-6px" altimg-width="92px" alttext="\alpha_{3},\alpha_{4},\dots" display="inline"><mrow><msub><mi href="./8.12#p2" title="𝛼_{𝑛+2}">α</mi><mn>3</mn></msub><mo>,</mo><msub><mi href="./8.12#p2" title="𝛼_{𝑛+2}">α</mi><mn>4</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi></mrow></math> are defined by
+</p>
+<table id="E13" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">8.12.13</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E13.png" altimg-height="67px" altimg-valign="-28px" altimg-width="265px" alttext="\lambda-1=\eta+\tfrac{1}{3}\eta^{2}+\sum_{n=3}^{\infty}\alpha_{n}\eta^{n}," display="block"><mrow><mrow><mrow><mi href="./8.12#p1" title="𝜆">λ</mi><mo>−</mo><mn>1</mn></mrow><mo>=</mo><mrow><mi href="./8.12#p1" title="𝜂(𝜆)">η</mi><mo>+</mo><mrow><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>3</mn></mfrac></mstyle><mo>⁢</mo><msup><mi href="./8.12#p1" title="𝜂(𝜆)">η</mi><mn>2</mn></msup></mrow><mo rspace="0.055em">+</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi href="./8.1#p1.t1.r4" title="nonnegative integer">n</mi><mo>=</mo><mn>3</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><msub><mi href="./8.12#p2" title="𝛼_{𝑛+2}">α</mi><mi href="./8.1#p1.t1.r4" title="nonnegative integer">n</mi></msub><mo>⁢</mo><msup><mi href="./8.12#p1" title="𝜂(𝜆)">η</mi><mi href="./8.1#p1.t1.r4" title="nonnegative integer">n</mi></msup></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="4"><span class="ltx_constraint"><math class="ltx_Math" altimg="m126.png" altimg-height="26px" altimg-valign="-7px" altimg-width="95px" alttext="|\eta|&lt;2\sqrt{\pi}" display="inline"><mrow><mrow><mo stretchy="false">|</mo><mi href="./8.12#p1" title="𝜂(𝜆)">η</mi><mo stretchy="false">|</mo></mrow><mo>&lt;</mo><mrow><mn>2</mn><mo>⁢</mo><msqrt><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></msqrt></mrow></mrow></math>.</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E13.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./3.12#E1" title="(3.12.1) ‣ §3.12 Mathematical Constants ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m97.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="\pi" display="inline"><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></math>: the ratio of the circumference of a circle to its diameter</a>,
+<a href="./8.1#p1.t1.r4" title="§8.1 Special Notation ‣ Notation ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m117.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./8.1#p1.t1.r4" title="nonnegative integer">n</mi></math>:  nonnegative integer</a>,
+<a href="./8.12#p1" title="§8.12 Uniform Asymptotic Expansions for Large Parameter ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m79.png" altimg-height="25px" altimg-valign="-7px" altimg-width="44px" alttext="\eta(\lambda)" display="inline"><mrow><mi href="./8.12#p1" title="𝜂(𝜆)">η</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./8.12#p1" title="𝜆">λ</mi><mo stretchy="false">)</mo></mrow></mrow></math></a>,
+<a href="./8.12#p1" title="§8.12 Uniform Asymptotic Expansions for Large Parameter ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m84.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="\lambda" display="inline"><mi href="./8.12#p1" title="𝜆">λ</mi></math></a> and
+<a href="./8.12#p2" title="§8.12 Uniform Asymptotic Expansions for Large Parameter ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m75.png" altimg-height="18px" altimg-valign="-7px" altimg-width="50px" alttext="\alpha_{n+2}" display="inline"><msub><mi href="./8.12#p2" title="𝛼_{𝑛+2}">α</mi><mrow><mi href="./8.1#p1.t1.r4" title="nonnegative integer">n</mi><mo>+</mo><mn>2</mn></mrow></msub></math></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./8.12.E13" title="" class="ltx_ref">http://dlmf.nist.gov/8.12.E13</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./8.12.E13.tex">TeX</a>, <a href="./8.12.E13.pmml">pMML</a>, <a href="./8.12.E13.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./8.12#info" title="§8.12 Uniform Asymptotic Expansions for Large Parameter ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§8.12</span></a> and
+<a href="./8#info" title="Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.8</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">In particular,</p>
+<table id="E14" class="ltx_equationgroup ltx_eqn_table">
+<tbody>
+<tr id="Ex10" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="6" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equationgroup ltx_align_left">8.12.14</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m30.png" altimg-height="18px" altimg-valign="-5px" altimg-width="29px" alttext="\displaystyle\alpha_{3}" display="inline"><msub><mi href="./8.12#p2" title="𝛼_{𝑛+2}">α</mi><mn>3</mn></msub></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m21.png" altimg-height="31px" altimg-valign="-9px" altimg-width="56px" alttext="\displaystyle=\tfrac{1}{36}," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mfrac><mn>1</mn><mn>36</mn></mfrac></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex11" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m31.png" altimg-height="18px" altimg-valign="-5px" altimg-width="29px" alttext="\displaystyle\alpha_{4}" display="inline"><msub><mi href="./8.12#p2" title="𝛼_{𝑛+2}">α</mi><mn>4</mn></msub></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m5.png" altimg-height="31px" altimg-valign="-9px" altimg-width="80px" alttext="\displaystyle=-\tfrac{1}{270}," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mo>−</mo><mfrac><mn>1</mn><mn>270</mn></mfrac></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex12" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m32.png" altimg-height="18px" altimg-valign="-5px" altimg-width="29px" alttext="\displaystyle\alpha_{5}" display="inline"><msub><mi href="./8.12#p2" title="𝛼_{𝑛+2}">α</mi><mn>5</mn></msub></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m23.png" altimg-height="31px" altimg-valign="-9px" altimg-width="72px" alttext="\displaystyle=\tfrac{1}{4320}," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mfrac><mn>1</mn><mn>4320</mn></mfrac></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex13" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m33.png" altimg-height="18px" altimg-valign="-5px" altimg-width="29px" alttext="\displaystyle\alpha_{6}" display="inline"><msub><mi href="./8.12#p2" title="𝛼_{𝑛+2}">α</mi><mn>6</mn></msub></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m18.png" altimg-height="31px" altimg-valign="-9px" altimg-width="81px" alttext="\displaystyle=\tfrac{1}{17010}," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mfrac><mn>1</mn><mn>17010</mn></mfrac></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex14" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m34.png" altimg-height="18px" altimg-valign="-5px" altimg-width="29px" alttext="\displaystyle\alpha_{7}" display="inline"><msub><mi href="./8.12#p2" title="𝛼_{𝑛+2}">α</mi><mn>7</mn></msub></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m4.png" altimg-height="31px" altimg-valign="-9px" altimg-width="118px" alttext="\displaystyle=-\tfrac{139}{54\;43200}," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mo>−</mo><mfrac><mn>139</mn><mn>54 43200</mn></mfrac></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex15" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m35.png" altimg-height="18px" altimg-valign="-5px" altimg-width="29px" alttext="\displaystyle\alpha_{8}" display="inline"><msub><mi href="./8.12#p2" title="𝛼_{𝑛+2}">α</mi><mn>8</mn></msub></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m19.png" altimg-height="31px" altimg-valign="-9px" altimg-width="94px" alttext="\displaystyle=\tfrac{1}{2\;04120}." display="inline"><mrow><mrow><mi></mi><mo>=</mo><mfrac><mn>1</mn><mn>2 04120</mn></mfrac></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E14.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd><a href="./8.12#p2" title="§8.12 Uniform Asymptotic Expansions for Large Parameter ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m75.png" altimg-height="18px" altimg-valign="-7px" altimg-width="50px" alttext="\alpha_{n+2}" display="inline"><msub><mi href="./8.12#p2" title="𝛼_{𝑛+2}">α</mi><mrow><mi href="./8.1#p1.t1.r4" title="nonnegative integer">n</mi><mo>+</mo><mn>2</mn></mrow></msub></math></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./8.12.E14" title="" class="ltx_ref">http://dlmf.nist.gov/8.12.E14</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./8.12.E14a.tex">TeX</a>, <a href="./8.12.E14b.tex">TeX</a>, <a href="./8.12.E14c.tex">TeX</a>, <a href="./8.12.E14d.tex">TeX</a>, <a href="./8.12.E14e.tex">TeX</a>, <a href="./8.12.E14f.tex">TeX</a>, <a href="./8.12.E14a.pmml">pMML</a>, <a href="./8.12.E14b.pmml">pMML</a>, <a href="./8.12.E14c.pmml">pMML</a>, <a href="./8.12.E14d.pmml">pMML</a>, <a href="./8.12.E14e.pmml">pMML</a>, <a href="./8.12.E14f.pmml">pMML</a>, <a href="./8.12.E14a.png">png</a>, <a href="./8.12.E14b.png">png</a>, <a href="./8.12.E14c.png">png</a>, <a href="./8.12.E14d.png">png</a>, <a href="./8.12.E14e.png">png</a>, <a href="./8.12.E14f.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./8.12#info" title="§8.12 Uniform Asymptotic Expansions for Large Parameter ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§8.12</span></a> and
+<a href="./8#info" title="Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.8</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">For numerical values of <math class="ltx_Math" altimg="m106.png" altimg-height="24px" altimg-valign="-8px" altimg-width="41px" alttext="d_{k,n}" display="inline"><msub><mi href="./8.12#E19" title="𝑑(±𝜒)">d</mi><mrow><mi href="./8.1#p1.t1.r4" title="nonnegative integer">k</mi><mo>,</mo><mi href="./8.1#p1.t1.r4" title="nonnegative integer">n</mi></mrow></msub></math> to 30D for <math class="ltx_Math" altimg="m109.png" altimg-height="25px" altimg-valign="-7px" altimg-width="91px" alttext="k=0(1)9" display="inline"><mrow><mi href="./8.1#p1.t1.r4" title="nonnegative integer">k</mi><mo>=</mo><mrow><mn>0</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mn>9</mn></mrow></mrow></math> and <math class="ltx_Math" altimg="m116.png" altimg-height="25px" altimg-valign="-7px" altimg-width="108px" alttext="n=0(1)N_{k}" display="inline"><mrow><mi href="./8.1#p1.t1.r4" title="nonnegative integer">n</mi><mo>=</mo><mrow><mn>0</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><mi>N</mi><mi href="./8.1#p1.t1.r4" title="nonnegative integer">k</mi></msub></mrow></mrow></math>,
+where <math class="ltx_Math" altimg="m59.png" altimg-height="25px" altimg-valign="-7px" altimg-width="169px" alttext="N_{k}=28-4\left\lfloor k/2\right\rfloor" display="inline"><mrow><msub><mi>N</mi><mi href="./8.1#p1.t1.r4" title="nonnegative integer">k</mi></msub><mo>=</mo><mrow><mn>28</mn><mo>−</mo><mrow><mn>4</mn><mo>⁢</mo><mrow><mo href="./front/introduction#common.t1.r17" title="floor of 𝑥">⌊</mo><mrow><mi href="./8.1#p1.t1.r4" title="nonnegative integer">k</mi><mo>/</mo><mn>2</mn></mrow><mo href="./front/introduction#common.t1.r17" title="floor of 𝑥">⌋</mo></mrow></mrow></mrow></mrow></math>, see <cite class="ltx_cite ltx_citemacro_citet">DiDonato and Morris (<a href="./bib/D#bib656" title="Computation of the incomplete gamma function ratios and their inverses" class="ltx_ref">1986</a>)</cite>.</p>
+</div>
+<div id="p3" class="ltx_para">
+<p class="ltx_p">Special cases are given by</p>
+<table id="E15" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">8.12.15</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E15.png" altimg-height="74px" altimg-valign="-29px" altimg-width="394px" alttext="Q\left(a,a\right)\sim\frac{1}{2}+\frac{1}{\sqrt{2\pi a}}\sum_{k=0}^{\infty}c_{%
+k}(0)a^{-k}," display="block"><mrow><mrow><mrow><mi href="./8.2#E4" title="normalized incomplete gamma function">Q</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>,</mo><mi href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>)</mo></mrow></mrow><mo href="./2.1#iii.p1" title="Poincaré asymptotic expansion">∼</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>+</mo><mrow><mfrac><mn>1</mn><msqrt><mrow><mn>2</mn><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>⁢</mo><mi href="./8.1#p1.t1.r3" title="parameter">a</mi></mrow></msqrt></mfrac><mo>⁢</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi href="./8.1#p1.t1.r4" title="nonnegative integer">k</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><mrow><msub><mi href="./8.12#p2" title="coefficients">c</mi><mi href="./8.1#p1.t1.r4" title="nonnegative integer">k</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow><mo>⁢</mo><msup><mi href="./8.1#p1.t1.r3" title="parameter">a</mi><mrow><mo>−</mo><mi href="./8.1#p1.t1.r4" title="nonnegative integer">k</mi></mrow></msup></mrow></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="4"><span class="ltx_constraint"><math class="ltx_Math" altimg="m129.png" altimg-height="25px" altimg-valign="-7px" altimg-width="132px" alttext="|\operatorname{ph}a|\leq\pi-\delta" display="inline"><mrow><mrow><mo stretchy="false">|</mo><mrow><mi href="./1.9#E7" title="phase">ph</mi><mo lspace="0.167em">⁡</mo><mi href="./8.1#p1.t1.r3" title="parameter">a</mi></mrow><mo stretchy="false">|</mo></mrow><mo>≤</mo><mrow><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>−</mo><mi href="./8.1#p1.t1.r5" title="small positive constant">δ</mi></mrow></mrow></math>,</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E15.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./2.1#iii.p1" title="§2.1(iii) Asymptotic Expansions ‣ §2.1 Definitions and Elementary Properties ‣ Areas ‣ Chapter 2 Asymptotic Approximations" class="ltx_ref"><math class="ltx_Math" altimg="m99.png" altimg-height="11px" altimg-valign="-2px" altimg-width="20px" alttext="\sim" display="inline"><mo href="./2.1#iii.p1" title="Poincaré asymptotic expansion">∼</mo></math>: Poincaré asymptotic expansion</a>,
+<a href="./3.12#E1" title="(3.12.1) ‣ §3.12 Mathematical Constants ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m97.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="\pi" display="inline"><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></math>: the ratio of the circumference of a circle to its diameter</a>,
+<a href="./8.2#E4" title="(8.2.4) ‣ §8.2(i) Definitions ‣ §8.2 Definitions and Basic Properties ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m62.png" altimg-height="25px" altimg-valign="-7px" altimg-width="71px" alttext="Q\left(\NVar{a},\NVar{z}\right)" display="inline"><mrow><mi href="./8.2#E4" title="normalized incomplete gamma function">Q</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>,</mo><mi class="ltx_nvar" href="./8.1#p1.t1.r2" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: normalized incomplete gamma function</a>,
+<a href="./1.9#E7" title="(1.9.7) ‣ Modulus and Phase ‣ §1.9(i) Complex Numbers ‣ §1.9 Calculus of a Complex Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m96.png" altimg-height="22px" altimg-valign="-6px" altimg-width="27px" alttext="\operatorname{ph}" display="inline"><mi href="./1.9#E7" title="phase">ph</mi></math>: phase</a>,
+<a href="./8.1#p1.t1.r3" title="§8.1 Special Notation ‣ Notation ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m101.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="a" display="inline"><mi href="./8.1#p1.t1.r3" title="parameter">a</mi></math>:  parameter</a>,
+<a href="./8.1#p1.t1.r4" title="§8.1 Special Notation ‣ Notation ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m113.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./8.1#p1.t1.r4" title="nonnegative integer">k</mi></math>:  nonnegative integer</a>,
+<a href="./8.1#p1.t1.r5" title="§8.1 Special Notation ‣ Notation ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m78.png" altimg-height="18px" altimg-valign="-2px" altimg-width="14px" alttext="\delta" display="inline"><mi href="./8.1#p1.t1.r5" title="small positive constant">δ</mi></math>:  small positive constant</a> and
+<a href="./8.12#p2" title="§8.12 Uniform Asymptotic Expansions for Large Parameter ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m103.png" altimg-height="25px" altimg-valign="-7px" altimg-width="51px" alttext="c_{k}(\eta)" display="inline"><mrow><msub><mi href="./8.12#p2" title="coefficients">c</mi><mi href="./8.1#p1.t1.r4" title="nonnegative integer">k</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./8.12#p1" title="𝜂(𝜆)">η</mi><mo stretchy="false">)</mo></mrow></mrow></math>:  coefficients</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./8.12.E15" title="" class="ltx_ref">http://dlmf.nist.gov/8.12.E15</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./8.12.E15.tex">TeX</a>, <a href="./8.12.E15.pmml">pMML</a>, <a href="./8.12.E15.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./8.12#info" title="§8.12 Uniform Asymptotic Expansions for Large Parameter ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§8.12</span></a> and
+<a href="./8#info" title="Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.8</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<table id="E16" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">8.12.16</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E16.png" altimg-height="74px" altimg-valign="-29px" altimg-width="749px" alttext="\frac{e^{\pm\pi ia}}{2i\sin\left(\pi a\right)}Q\left(-a,ae^{\pm\pi i}\right)%
+\sim\pm\frac{1}{2}-\frac{i}{\sqrt{2\pi a}}\sum_{k=0}^{\infty}c_{k}(0)(-a)^{-k}," display="block"><mrow><mrow><mrow><mfrac><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mrow><mo>±</mo><mrow><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>⁢</mo><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi><mo>⁢</mo><mi href="./8.1#p1.t1.r3" title="parameter">a</mi></mrow></mrow></msup><mrow><mn>2</mn><mo>⁢</mo><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi><mo lspace="0.167em">⁢</mo><mrow><mi href="./4.14#E1" title="sine function">sin</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>⁢</mo><mi href="./8.1#p1.t1.r3" title="parameter">a</mi></mrow><mo>)</mo></mrow></mrow></mrow></mfrac><mo>⁢</mo><mrow><mi href="./8.2#E4" title="normalized incomplete gamma function">Q</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mo>−</mo><mi href="./8.1#p1.t1.r3" title="parameter">a</mi></mrow><mo>,</mo><mrow><mi href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>⁢</mo><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mrow><mo>±</mo><mrow><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>⁢</mo><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></mrow></mrow></msup></mrow><mo>)</mo></mrow></mrow></mrow><mo href="./2.1#iii.p1" title="Poincaré asymptotic expansion">∼</mo><mrow><mrow><mo>±</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow><mo>−</mo><mrow><mfrac><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi><msqrt><mrow><mn>2</mn><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>⁢</mo><mi href="./8.1#p1.t1.r3" title="parameter">a</mi></mrow></msqrt></mfrac><mo>⁢</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi href="./8.1#p1.t1.r4" title="nonnegative integer">k</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><mrow><msub><mi href="./8.12#p2" title="coefficients">c</mi><mi href="./8.1#p1.t1.r4" title="nonnegative integer">k</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mi href="./8.1#p1.t1.r3" title="parameter">a</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mo>−</mo><mi href="./8.1#p1.t1.r4" title="nonnegative integer">k</mi></mrow></msup></mrow></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="4"><span class="ltx_constraint"><math class="ltx_Math" altimg="m129.png" altimg-height="25px" altimg-valign="-7px" altimg-width="132px" alttext="|\operatorname{ph}a|\leq\pi-\delta" display="inline"><mrow><mrow><mo stretchy="false">|</mo><mrow><mi href="./1.9#E7" title="phase">ph</mi><mo lspace="0.167em">⁡</mo><mi href="./8.1#p1.t1.r3" title="parameter">a</mi></mrow><mo stretchy="false">|</mo></mrow><mo>≤</mo><mrow><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>−</mo><mi href="./8.1#p1.t1.r5" title="small positive constant">δ</mi></mrow></mrow></math>,</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E16.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./2.1#iii.p1" title="§2.1(iii) Asymptotic Expansions ‣ §2.1 Definitions and Elementary Properties ‣ Areas ‣ Chapter 2 Asymptotic Approximations" class="ltx_ref"><math class="ltx_Math" altimg="m99.png" altimg-height="11px" altimg-valign="-2px" altimg-width="20px" alttext="\sim" display="inline"><mo href="./2.1#iii.p1" title="Poincaré asymptotic expansion">∼</mo></math>: Poincaré asymptotic expansion</a>,
+<a href="./3.12#E1" title="(3.12.1) ‣ §3.12 Mathematical Constants ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m97.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="\pi" display="inline"><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></math>: the ratio of the circumference of a circle to its diameter</a>,
+<a href="./4.2#E11" title="(4.2.11) ‣ §4.2(ii) Logarithms to a General Base 𝑎 ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m88.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="\mathrm{e}" display="inline"><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi></math>: base of natural logarithm</a>,
+<a href="./1.9#E1" title="(1.9.1) ‣ §1.9(i) Complex Numbers ‣ §1.9 Calculus of a Complex Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m89.png" altimg-height="18px" altimg-valign="-2px" altimg-width="10px" alttext="\mathrm{i}" display="inline"><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></math>: imaginary unit</a>,
+<a href="./8.2#E4" title="(8.2.4) ‣ §8.2(i) Definitions ‣ §8.2 Definitions and Basic Properties ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m62.png" altimg-height="25px" altimg-valign="-7px" altimg-width="71px" alttext="Q\left(\NVar{a},\NVar{z}\right)" display="inline"><mrow><mi href="./8.2#E4" title="normalized incomplete gamma function">Q</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>,</mo><mi class="ltx_nvar" href="./8.1#p1.t1.r2" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: normalized incomplete gamma function</a>,
+<a href="./1.9#E7" title="(1.9.7) ‣ Modulus and Phase ‣ §1.9(i) Complex Numbers ‣ §1.9 Calculus of a Complex Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m96.png" altimg-height="22px" altimg-valign="-6px" altimg-width="27px" alttext="\operatorname{ph}" display="inline"><mi href="./1.9#E7" title="phase">ph</mi></math>: phase</a>,
+<a href="./4.14#E1" title="(4.14.1) ‣ §4.14 Definitions and Periodicity ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m100.png" altimg-height="18px" altimg-valign="-2px" altimg-width="44px" alttext="\sin\NVar{z}" display="inline"><mrow><mi href="./4.14#E1" title="sine function">sin</mi><mo lspace="0.167em">⁡</mo><mi class="ltx_nvar" href="./4.1#t1.r4" title="complex variable">z</mi></mrow></math>: sine function</a>,
+<a href="./8.1#p1.t1.r3" title="§8.1 Special Notation ‣ Notation ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m101.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="a" display="inline"><mi href="./8.1#p1.t1.r3" title="parameter">a</mi></math>:  parameter</a>,
+<a href="./8.1#p1.t1.r4" title="§8.1 Special Notation ‣ Notation ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m113.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./8.1#p1.t1.r4" title="nonnegative integer">k</mi></math>:  nonnegative integer</a>,
+<a href="./8.1#p1.t1.r5" title="§8.1 Special Notation ‣ Notation ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m78.png" altimg-height="18px" altimg-valign="-2px" altimg-width="14px" alttext="\delta" display="inline"><mi href="./8.1#p1.t1.r5" title="small positive constant">δ</mi></math>:  small positive constant</a> and
+<a href="./8.12#p2" title="§8.12 Uniform Asymptotic Expansions for Large Parameter ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m103.png" altimg-height="25px" altimg-valign="-7px" altimg-width="51px" alttext="c_{k}(\eta)" display="inline"><mrow><msub><mi href="./8.12#p2" title="coefficients">c</mi><mi href="./8.1#p1.t1.r4" title="nonnegative integer">k</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./8.12#p1" title="𝜂(𝜆)">η</mi><mo stretchy="false">)</mo></mrow></mrow></math>:  coefficients</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./8.12#E5.info" title="In §8.12 Uniform Asymptotic Expansions for Large Parameter ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">(8.12.5)</span></a>,
+<a href="./errata/#V1.0.16.I3.ix1.p1" title="In Other Changes ‣ Version 1.0.16 (September 18, 2017) ‣ Errata" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Erratum (V1.0.16) for  Equation (<span class="ltx_text ltx_ref_tag">8.12.5</span>)</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./8.12.E16" title="" class="ltx_ref">http://dlmf.nist.gov/8.12.E16</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./8.12.E16.tex">TeX</a>, <a href="./8.12.E16.pmml">pMML</a>, <a href="./8.12.E16.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./8.12#info" title="§8.12 Uniform Asymptotic Expansions for Large Parameter ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§8.12</span></a> and
+<a href="./8#info" title="Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.8</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">where</p>
+<table id="E17" class="ltx_equationgroup ltx_eqn_table">
+<tbody>
+<tr id="Ex16" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="6" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equationgroup ltx_align_left">8.12.17</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m41.png" altimg-height="27px" altimg-valign="-7px" altimg-width="51px" alttext="\displaystyle c_{0}(0)" display="inline"><mrow><msub><mi href="./8.12#p2" title="coefficients">c</mi><mn>0</mn></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m6.png" altimg-height="31px" altimg-valign="-9px" altimg-width="64px" alttext="\displaystyle=-\tfrac{1}{3}," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mo>−</mo><mfrac><mn>1</mn><mn>3</mn></mfrac></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex17" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m43.png" altimg-height="27px" altimg-valign="-7px" altimg-width="51px" alttext="\displaystyle c_{1}(0)" display="inline"><mrow><msub><mi href="./8.12#p2" title="coefficients">c</mi><mn>1</mn></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m7.png" altimg-height="31px" altimg-valign="-9px" altimg-width="80px" alttext="\displaystyle=-\tfrac{1}{540}," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mo>−</mo><mfrac><mn>1</mn><mn>540</mn></mfrac></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex18" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m45.png" altimg-height="27px" altimg-valign="-7px" altimg-width="51px" alttext="\displaystyle c_{2}(0)" display="inline"><mrow><msub><mi href="./8.12#p2" title="coefficients">c</mi><mn>2</mn></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m24.png" altimg-height="31px" altimg-valign="-9px" altimg-width="72px" alttext="\displaystyle=\tfrac{25}{6048}," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mfrac><mn>25</mn><mn>6048</mn></mfrac></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex19" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m46.png" altimg-height="27px" altimg-valign="-7px" altimg-width="51px" alttext="\displaystyle c_{3}(0)" display="inline"><mrow><msub><mi href="./8.12#p2" title="coefficients">c</mi><mn>3</mn></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m17.png" altimg-height="31px" altimg-valign="-9px" altimg-width="94px" alttext="\displaystyle=\tfrac{101}{1\;55520}," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mfrac><mn>101</mn><mn>1 55520</mn></mfrac></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex20" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m47.png" altimg-height="27px" altimg-valign="-7px" altimg-width="51px" alttext="\displaystyle c_{4}(0)" display="inline"><mrow><msub><mi href="./8.12#p2" title="coefficients">c</mi><mn>4</mn></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m9.png" altimg-height="31px" altimg-valign="-9px" altimg-width="143px" alttext="\displaystyle=-\tfrac{31\;84811}{36951\;55200}," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mo>−</mo><mfrac><mn>31 84811</mn><mn>36951 55200</mn></mfrac></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex21" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m48.png" altimg-height="27px" altimg-valign="-7px" altimg-width="51px" alttext="\displaystyle c_{5}(0)" display="inline"><mrow><msub><mi href="./8.12#p2" title="coefficients">c</mi><mn>5</mn></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m8.png" altimg-height="31px" altimg-valign="-9px" altimg-width="143px" alttext="\displaystyle=-\tfrac{27\;45493}{81517\;36320}." display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mo>−</mo><mfrac><mn>27 45493</mn><mn>81517 36320</mn></mfrac></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E17.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd><a href="./8.12#p2" title="§8.12 Uniform Asymptotic Expansions for Large Parameter ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m103.png" altimg-height="25px" altimg-valign="-7px" altimg-width="51px" alttext="c_{k}(\eta)" display="inline"><mrow><msub><mi href="./8.12#p2" title="coefficients">c</mi><mi href="./8.1#p1.t1.r4" title="nonnegative integer">k</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./8.12#p1" title="𝜂(𝜆)">η</mi><mo stretchy="false">)</mo></mrow></mrow></math>:  coefficients</a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./8.12.E17" title="" class="ltx_ref">http://dlmf.nist.gov/8.12.E17</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./8.12.E17a.tex">TeX</a>, <a href="./8.12.E17b.tex">TeX</a>, <a href="./8.12.E17c.tex">TeX</a>, <a href="./8.12.E17d.tex">TeX</a>, <a href="./8.12.E17e.tex">TeX</a>, <a href="./8.12.E17f.tex">TeX</a>, <a href="./8.12.E17a.pmml">pMML</a>, <a href="./8.12.E17b.pmml">pMML</a>, <a href="./8.12.E17c.pmml">pMML</a>, <a href="./8.12.E17d.pmml">pMML</a>, <a href="./8.12.E17e.pmml">pMML</a>, <a href="./8.12.E17f.pmml">pMML</a>, <a href="./8.12.E17a.png">png</a>, <a href="./8.12.E17b.png">png</a>, <a href="./8.12.E17c.png">png</a>, <a href="./8.12.E17d.png">png</a>, <a href="./8.12.E17e.png">png</a>, <a href="./8.12.E17f.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./8.12#info" title="§8.12 Uniform Asymptotic Expansions for Large Parameter ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§8.12</span></a> and
+<a href="./8#info" title="Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.8</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+<div id="p4" class="ltx_para">
+<p class="ltx_p">For error bounds for (<a href="./8.12#E7" title="(8.12.7) ‣ §8.12 Uniform Asymptotic Expansions for Large Parameter ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">8.12.7</span></a>) see <cite class="ltx_cite ltx_citemacro_citet">Paris (<a href="./bib/P#bib1838" title="Error bounds for the uniform asymptotic expansion of the incomplete gamma function" class="ltx_ref">2002a</a>)</cite>. For the
+asymptotic behavior of <math class="ltx_Math" altimg="m103.png" altimg-height="25px" altimg-valign="-7px" altimg-width="51px" alttext="c_{k}(\eta)" display="inline"><mrow><msub><mi href="./8.12#p2" title="coefficients">c</mi><mi href="./8.1#p1.t1.r4" title="nonnegative integer">k</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./8.12#p1" title="𝜂(𝜆)">η</mi><mo stretchy="false">)</mo></mrow></mrow></math> as <math class="ltx_Math" altimg="m115.png" altimg-height="18px" altimg-valign="-2px" altimg-width="69px" alttext="k\to\infty" display="inline"><mrow><mi href="./8.1#p1.t1.r4" title="nonnegative integer">k</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></math> see
+<cite class="ltx_cite ltx_citemacro_citet">Dunster<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/D#bib716" title="On the high-order coefficients in the uniform asymptotic expansion for the incomplete gamma function" class="ltx_ref">1998</a>)</cite> and <cite class="ltx_cite ltx_citemacro_citet">Olde Daalhuis (<a href="./bib/O#bib1768" title="On the resurgence properties of the uniform asymptotic expansion of the incomplete gamma function" class="ltx_ref">1998c</a>)</cite>. The last reference
+also includes an exponentially-improved version (§<a href="./2.11#iii" title="§2.11(iii) Exponentially-Improved Expansions ‣ §2.11 Remainder Terms; Stokes Phenomenon ‣ Areas ‣ Chapter 2 Asymptotic Approximations" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.11(iii)</span></a>) of the
+expansions (<a href="./8.12#E4" title="(8.12.4) ‣ §8.12 Uniform Asymptotic Expansions for Large Parameter ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">8.12.4</span></a>) and (<a href="./8.12#E7" title="(8.12.7) ‣ §8.12 Uniform Asymptotic Expansions for Large Parameter ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">8.12.7</span></a>) for
+<math class="ltx_Math" altimg="m63.png" altimg-height="25px" altimg-valign="-7px" altimg-width="71px" alttext="Q\left(a,z\right)" display="inline"><mrow><mi href="./8.2#E4" title="normalized incomplete gamma function">Q</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>,</mo><mi href="./8.1#p1.t1.r2" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>.</p>
+</div>
+<div id="p5" class="ltx_para">
+<p class="ltx_p">A different type of uniform expansion with coefficients that do not possess a
+removable singularity at <math class="ltx_Math" altimg="m123.png" altimg-height="13px" altimg-valign="-2px" altimg-width="54px" alttext="z=a" display="inline"><mrow><mi href="./8.1#p1.t1.r2" title="complex variable">z</mi><mo>=</mo><mi href="./8.1#p1.t1.r3" title="parameter">a</mi></mrow></math> is given by</p>
+<table id="E18" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">8.12.18</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E18.png" altimg-height="76px" altimg-valign="-29px" altimg-width="603px" alttext="\rselection{Q\left(a,z\right)\\
+P\left(a,z\right)}\sim\frac{z^{a-\frac{1}{2}}e^{-z}}{\Gamma\left(a\right)}{%
+\left(d(\pm\chi)\sum_{k=0}^{\infty}\frac{A_{k}(\chi)}{z^{k/2}}\mp\sum_{k=1}^{%
+\infty}\frac{B_{k}(\chi)}{z^{k/2}}\right)}," display="block"><mrow><mrow><mrow><mtable displaystyle="true" rowspacing="0pt"><mtr><mtd><mrow><mi href="./8.2#E4" title="normalized incomplete gamma function">Q</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>,</mo><mi href="./8.1#p1.t1.r2" title="complex variable">z</mi><mo>)</mo></mrow></mrow></mtd></mtr><mtr><mtd><mrow><mi href="./8.2#E4" title="normalized incomplete gamma function">P</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>,</mo><mi href="./8.1#p1.t1.r2" title="complex variable">z</mi><mo>)</mo></mrow></mrow></mtd></mtr></mtable><mo>}</mo></mrow><mo href="./2.1#iii.p1" title="Poincaré asymptotic expansion">∼</mo><mrow><mfrac><mrow><msup><mi href="./8.1#p1.t1.r2" title="complex variable">z</mi><mrow><mi href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>−</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></msup><mo>⁢</mo><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mrow><mo>−</mo><mi href="./8.1#p1.t1.r2" title="complex variable">z</mi></mrow></msup></mrow><mrow><mi href="./5.2#E1" mathvariant="normal" title="gamma function">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>)</mo></mrow></mrow></mfrac><mo>⁢</mo><mrow><mo>(</mo><mrow><mrow><mrow><mi href="./8.12#E19" title="𝑑(±𝜒)">d</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mo>±</mo><mi href="./8.12#E19" title="𝜒">χ</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>⁢</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi href="./8.1#p1.t1.r4" title="nonnegative integer">k</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><mrow><msub><mi href="./8.12#E20" title="𝐴_𝑘(𝜒)">A</mi><mi href="./8.1#p1.t1.r4" title="nonnegative integer">k</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./8.12#E19" title="𝜒">χ</mi><mo stretchy="false">)</mo></mrow></mrow><msup><mi href="./8.1#p1.t1.r2" title="complex variable">z</mi><mrow><mi href="./8.1#p1.t1.r4" title="nonnegative integer">k</mi><mo>/</mo><mn>2</mn></mrow></msup></mfrac></mrow></mrow><mo rspace="0.055em">∓</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi href="./8.1#p1.t1.r4" title="nonnegative integer">k</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><mrow><msub><mi href="./8.12#E20" title="𝐵_𝑘(𝜒)">B</mi><mi href="./8.1#p1.t1.r4" title="nonnegative integer">k</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./8.12#E19" title="𝜒">χ</mi><mo stretchy="false">)</mo></mrow></mrow><msup><mi href="./8.1#p1.t1.r2" title="complex variable">z</mi><mrow><mi href="./8.1#p1.t1.r4" title="nonnegative integer">k</mi><mo>/</mo><mn>2</mn></mrow></msup></mfrac></mrow></mrow><mo>)</mo></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E18.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./5.2#E1" title="(5.2.1) ‣ Euler’s Integral ‣ §5.2(i) Gamma and Psi Functions ‣ §5.2 Definitions ‣ Properties ‣ Chapter 5 Gamma Function" class="ltx_ref"><math class="ltx_Math" altimg="m67.png" altimg-height="25px" altimg-valign="-7px" altimg-width="47px" alttext="\Gamma\left(\NVar{z}\right)" display="inline"><mrow><mi href="./5.2#E1" mathvariant="normal" title="gamma function">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./5.1#t1.r4" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: gamma function</a>,
+<a href="./2.1#iii.p1" title="§2.1(iii) Asymptotic Expansions ‣ §2.1 Definitions and Elementary Properties ‣ Areas ‣ Chapter 2 Asymptotic Approximations" class="ltx_ref"><math class="ltx_Math" altimg="m99.png" altimg-height="11px" altimg-valign="-2px" altimg-width="20px" alttext="\sim" display="inline"><mo href="./2.1#iii.p1" title="Poincaré asymptotic expansion">∼</mo></math>: Poincaré asymptotic expansion</a>,
+<a href="./4.2#E11" title="(4.2.11) ‣ §4.2(ii) Logarithms to a General Base 𝑎 ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m88.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="\mathrm{e}" display="inline"><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi></math>: base of natural logarithm</a>,
+<a href="./8.2#E4" title="(8.2.4) ‣ §8.2(i) Definitions ‣ §8.2 Definitions and Basic Properties ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m60.png" altimg-height="25px" altimg-valign="-7px" altimg-width="71px" alttext="P\left(\NVar{a},\NVar{z}\right)" display="inline"><mrow><mi href="./8.2#E4" title="normalized incomplete gamma function">P</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>,</mo><mi class="ltx_nvar" href="./8.1#p1.t1.r2" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: normalized incomplete gamma function</a>,
+<a href="./8.2#E4" title="(8.2.4) ‣ §8.2(i) Definitions ‣ §8.2 Definitions and Basic Properties ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m62.png" altimg-height="25px" altimg-valign="-7px" altimg-width="71px" alttext="Q\left(\NVar{a},\NVar{z}\right)" display="inline"><mrow><mi href="./8.2#E4" title="normalized incomplete gamma function">Q</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>,</mo><mi class="ltx_nvar" href="./8.1#p1.t1.r2" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: normalized incomplete gamma function</a>,
+<a href="./8.1#p1.t1.r2" title="§8.1 Special Notation ‣ Notation ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m124.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi href="./8.1#p1.t1.r2" title="complex variable">z</mi></math>:  complex variable</a>,
+<a href="./8.1#p1.t1.r3" title="§8.1 Special Notation ‣ Notation ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m101.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="a" display="inline"><mi href="./8.1#p1.t1.r3" title="parameter">a</mi></math>:  parameter</a>,
+<a href="./8.1#p1.t1.r4" title="§8.1 Special Notation ‣ Notation ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m113.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./8.1#p1.t1.r4" title="nonnegative integer">k</mi></math>:  nonnegative integer</a>,
+<a href="./8.12#E19" title="(8.12.19) ‣ §8.12 Uniform Asymptotic Expansions for Large Parameter ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m76.png" altimg-height="17px" altimg-valign="-6px" altimg-width="17px" alttext="\chi" display="inline"><mi href="./8.12#E19" title="𝜒">χ</mi></math></a>,
+<a href="./8.12#E19" title="(8.12.19) ‣ §8.12 Uniform Asymptotic Expansions for Large Parameter ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m104.png" altimg-height="25px" altimg-valign="-7px" altimg-width="60px" alttext="d(\pm\chi)" display="inline"><mrow><mi href="./8.12#E19" title="𝑑(±𝜒)">d</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mo>±</mo><mi href="./8.12#E19" title="𝜒">χ</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></math></a>,
+<a href="./8.12#E20" title="(8.12.20) ‣ §8.12 Uniform Asymptotic Expansions for Large Parameter ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m53.png" altimg-height="25px" altimg-valign="-7px" altimg-width="59px" alttext="A_{k}(\chi)" display="inline"><mrow><msub><mi href="./8.12#E20" title="𝐴_𝑘(𝜒)">A</mi><mi href="./8.1#p1.t1.r4" title="nonnegative integer">k</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./8.12#E19" title="𝜒">χ</mi><mo stretchy="false">)</mo></mrow></mrow></math></a> and
+<a href="./8.12#E20" title="(8.12.20) ‣ §8.12 Uniform Asymptotic Expansions for Large Parameter ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m54.png" altimg-height="25px" altimg-valign="-7px" altimg-width="59px" alttext="B_{k}(\chi)" display="inline"><mrow><msub><mi href="./8.12#E20" title="𝐵_𝑘(𝜒)">B</mi><mi href="./8.1#p1.t1.r4" title="nonnegative integer">k</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./8.12#E19" title="𝜒">χ</mi><mo stretchy="false">)</mo></mrow></mrow></math></a>
+</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./8.12#info" title="§8.12 Uniform Asymptotic Expansions for Large Parameter ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§8.12</span></a>,
+<a href="./errata/#V1.0.16.I1.ix1" title="In Errata ‣ Version 1.0.16 (September 18, 2017) ‣ Errata" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Erratum (V1.0.16) for  Equation (<span class="ltx_text ltx_ref_tag">8.12.18</span>)</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./8.12.E18" title="" class="ltx_ref">http://dlmf.nist.gov/8.12.E18</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./8.12.E18.tex">TeX</a>, <a href="./8.12.E18.pmml">pMML</a>, <a href="./8.12.E18.png">png</a>
+</dd>
+<dt>Errata (effective with 1.0.16):</dt>
+<dd>
+The original <math class="ltx_Math" altimg="m98.png" altimg-height="18px" altimg-valign="-4px" altimg-width="20px" alttext="\pm" display="inline"><mo>±</mo></math> in front of the second summation was replaced by <math class="ltx_Math" altimg="m90.png" altimg-height="18px" altimg-valign="-4px" altimg-width="20px" alttext="\mp" display="inline"><mo>∓</mo></math> to correct an error in <cite class="ltx_cite ltx_citemacro_citet">Paris (<a href="./bib/P#bib1840" title="A uniform asymptotic expansion for the incomplete gamma function" class="ltx_ref">2002b</a>)</cite>; for details see <a href="https://arxiv.org/abs/1611.00548" title="" class="ltx_ref external">https://arxiv.org/abs/1611.00548</a>.
+
+<p><span class="ltx_font_italic">Reported 2017-01-28 by Richard Paris</span></p>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./8.12#info" title="§8.12 Uniform Asymptotic Expansions for Large Parameter ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§8.12</span></a> and
+<a href="./8#info" title="Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.8</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">for <math class="ltx_Math" altimg="m125.png" altimg-height="13px" altimg-valign="-2px" altimg-width="68px" alttext="z\to\infty" display="inline"><mrow><mi href="./8.1#p1.t1.r2" title="complex variable">z</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></math> in <math class="ltx_Math" altimg="m86.png" altimg-height="29px" altimg-valign="-9px" altimg-width="106px" alttext="\left|\operatorname{ph}z\right|&lt;\frac{1}{2}\pi" display="inline"><mrow><mrow><mo>|</mo><mrow><mi href="./1.9#E7" title="phase">ph</mi><mo lspace="0.167em">⁡</mo><mi href="./8.1#p1.t1.r2" title="complex variable">z</mi></mrow><mo>|</mo></mrow><mo>&lt;</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></mrow></mrow></math>, with
+<math class="ltx_Math" altimg="m73.png" altimg-height="25px" altimg-valign="-7px" altimg-width="124px" alttext="\Re\left(z-a\right)\leq 0" display="inline"><mrow><mrow><mi href="./1.9#E2" mathvariant="normal" title="real part">ℜ</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./8.1#p1.t1.r2" title="complex variable">z</mi><mo>−</mo><mi href="./8.1#p1.t1.r3" title="parameter">a</mi></mrow><mo>)</mo></mrow></mrow><mo>≤</mo><mn>0</mn></mrow></math> for <math class="ltx_Math" altimg="m61.png" altimg-height="25px" altimg-valign="-7px" altimg-width="71px" alttext="P\left(a,z\right)" display="inline"><mrow><mi href="./8.2#E4" title="normalized incomplete gamma function">P</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>,</mo><mi href="./8.1#p1.t1.r2" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math> and <math class="ltx_Math" altimg="m72.png" altimg-height="25px" altimg-valign="-7px" altimg-width="124px" alttext="\Re\left(z-a\right)\geq 0" display="inline"><mrow><mrow><mi href="./1.9#E2" mathvariant="normal" title="real part">ℜ</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./8.1#p1.t1.r2" title="complex variable">z</mi><mo>−</mo><mi href="./8.1#p1.t1.r3" title="parameter">a</mi></mrow><mo>)</mo></mrow></mrow><mo>≥</mo><mn>0</mn></mrow></math> for
+<math class="ltx_Math" altimg="m63.png" altimg-height="25px" altimg-valign="-7px" altimg-width="71px" alttext="Q\left(a,z\right)" display="inline"><mrow><mi href="./8.2#E4" title="normalized incomplete gamma function">Q</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>,</mo><mi href="./8.1#p1.t1.r2" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>. Here</p>
+<table id="E19" class="ltx_equationgroup ltx_eqn_table">
+<tbody>
+<tr id="Ex22" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="2" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equationgroup ltx_align_left">8.12.19</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m36.png" altimg-height="19px" altimg-valign="-6px" altimg-width="20px" alttext="\displaystyle\chi" display="inline"><mi href="./8.12#E19" title="𝜒">χ</mi></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m3.png" altimg-height="29px" altimg-valign="-7px" altimg-width="136px" alttext="\displaystyle=(z-a)/\sqrt{z}," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi href="./8.1#p1.t1.r2" title="complex variable">z</mi><mo>−</mo><mi href="./8.1#p1.t1.r3" title="parameter">a</mi></mrow><mo stretchy="false">)</mo></mrow><mo>/</mo><msqrt><mi href="./8.1#p1.t1.r2" title="complex variable">z</mi></msqrt></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex23" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m49.png" altimg-height="27px" altimg-valign="-7px" altimg-width="63px" alttext="\displaystyle d(\pm\chi)" display="inline"><mrow><mi href="./8.12#E19" title="𝑑(±𝜒)">d</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mo>±</mo><mi href="./8.12#E19" title="𝜒">χ</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m16.png" altimg-height="53px" altimg-valign="-15px" altimg-width="268px" alttext="\displaystyle=\sqrt{\tfrac{1}{2}\pi}e^{\chi^{2}/2}\operatorname{erfc}\left(\pm%
+\chi/\sqrt{2}\right)," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><msqrt><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></mrow></msqrt><mo>⁢</mo><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mrow><msup><mi href="./8.12#E19" title="𝜒">χ</mi><mn>2</mn></msup><mo>/</mo><mn>2</mn></mrow></msup><mo lspace="0.167em">⁢</mo><mrow><mi href="./7.2#E2" title="complementary error function">erfc</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mo>±</mo><mrow><mi href="./8.12#E19" title="𝜒">χ</mi><mo>/</mo><msqrt><mn>2</mn></msqrt></mrow></mrow><mo>)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E19.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Defines:</dt>
+<dd>
+<span class="ltx_text"><math class="ltx_Math" altimg="m76.png" altimg-height="17px" altimg-valign="-6px" altimg-width="17px" alttext="\chi" display="inline"><mi href="./8.12#E19" title="𝜒">χ</mi></math> (locally)</span> and
+<span class="ltx_text"><math class="ltx_Math" altimg="m104.png" altimg-height="25px" altimg-valign="-7px" altimg-width="60px" alttext="d(\pm\chi)" display="inline"><mrow><mi href="./8.12#E19" title="𝑑(±𝜒)">d</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mo>±</mo><mi href="./8.12#E19" title="𝜒">χ</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></math> (locally)</span>
+</dd>
+<dt>Symbols:</dt>
+<dd>
+<a href="./3.12#E1" title="(3.12.1) ‣ §3.12 Mathematical Constants ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m97.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="\pi" display="inline"><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></math>: the ratio of the circumference of a circle to its diameter</a>,
+<a href="./7.2#E2" title="(7.2.2) ‣ §7.2(i) Error Functions ‣ §7.2 Definitions ‣ Properties ‣ Chapter 7 Error Functions, Dawson’s and Fresnel Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m93.png" altimg-height="18px" altimg-valign="-2px" altimg-width="51px" alttext="\operatorname{erfc}\NVar{z}" display="inline"><mrow><mi href="./7.2#E2" title="complementary error function">erfc</mi><mo lspace="0.167em">⁡</mo><mi class="ltx_nvar" href="./7.1#p1.t1.r2" title="complex variable">z</mi></mrow></math>: complementary error function</a>,
+<a href="./4.2#E11" title="(4.2.11) ‣ §4.2(ii) Logarithms to a General Base 𝑎 ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m88.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="\mathrm{e}" display="inline"><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi></math>: base of natural logarithm</a>,
+<a href="./8.1#p1.t1.r2" title="§8.1 Special Notation ‣ Notation ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m124.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi href="./8.1#p1.t1.r2" title="complex variable">z</mi></math>:  complex variable</a> and
+<a href="./8.1#p1.t1.r3" title="§8.1 Special Notation ‣ Notation ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m101.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="a" display="inline"><mi href="./8.1#p1.t1.r3" title="parameter">a</mi></math>:  parameter</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./8.12.E19" title="" class="ltx_ref">http://dlmf.nist.gov/8.12.E19</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./8.12.E19a.tex">TeX</a>, <a href="./8.12.E19b.tex">TeX</a>, <a href="./8.12.E19a.pmml">pMML</a>, <a href="./8.12.E19b.pmml">pMML</a>, <a href="./8.12.E19a.png">png</a>, <a href="./8.12.E19b.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./8.12#info" title="§8.12 Uniform Asymptotic Expansions for Large Parameter ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§8.12</span></a> and
+<a href="./8#info" title="Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.8</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">and</p>
+<table id="E20" class="ltx_equationgroup ltx_eqn_table">
+<tbody>
+<tr id="Ex24" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="3" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equationgroup ltx_align_left">8.12.20</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m26.png" altimg-height="27px" altimg-valign="-7px" altimg-width="61px" alttext="\displaystyle A_{0}(\chi)" display="inline"><mrow><msub><mi href="./8.12#E20" title="𝐴_𝑘(𝜒)">A</mi><mn>0</mn></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./8.12#E19" title="𝜒">χ</mi><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m10.png" altimg-height="23px" altimg-valign="-6px" altimg-width="45px" alttext="\displaystyle=1," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mn>1</mn></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex25" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m27.png" altimg-height="27px" altimg-valign="-7px" altimg-width="61px" alttext="\displaystyle A_{1}(\chi)" display="inline"><mrow><msub><mi href="./8.12#E20" title="𝐴_𝑘(𝜒)">A</mi><mn>1</mn></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./8.12#E19" title="𝜒">χ</mi><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m20.png" altimg-height="31px" altimg-valign="-9px" altimg-width="121px" alttext="\displaystyle=\tfrac{1}{2}\chi+\tfrac{1}{6}\chi^{3}," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mi href="./8.12#E19" title="𝜒">χ</mi></mrow><mo>+</mo><mrow><mfrac><mn>1</mn><mn>6</mn></mfrac><mo>⁢</mo><msup><mi href="./8.12#E19" title="𝜒">χ</mi><mn>3</mn></msup></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex26" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m28.png" altimg-height="27px" altimg-valign="-7px" altimg-width="61px" alttext="\displaystyle B_{1}(\chi)" display="inline"><mrow><msub><mi href="./8.12#E20" title="𝐵_𝑘(𝜒)">B</mi><mn>1</mn></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./8.12#E19" title="𝜒">χ</mi><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m22.png" altimg-height="31px" altimg-valign="-9px" altimg-width="108px" alttext="\displaystyle=\tfrac{1}{3}+\tfrac{1}{6}\chi^{2}." display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mfrac><mn>1</mn><mn>3</mn></mfrac><mo>+</mo><mrow><mfrac><mn>1</mn><mn>6</mn></mfrac><mo>⁢</mo><msup><mi href="./8.12#E19" title="𝜒">χ</mi><mn>2</mn></msup></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E20.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Defines:</dt>
+<dd>
+<span class="ltx_text"><math class="ltx_Math" altimg="m53.png" altimg-height="25px" altimg-valign="-7px" altimg-width="59px" alttext="A_{k}(\chi)" display="inline"><mrow><msub><mi href="./8.12#E20" title="𝐴_𝑘(𝜒)">A</mi><mi href="./8.1#p1.t1.r4" title="nonnegative integer">k</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./8.12#E19" title="𝜒">χ</mi><mo stretchy="false">)</mo></mrow></mrow></math> (locally)</span> and
+<span class="ltx_text"><math class="ltx_Math" altimg="m54.png" altimg-height="25px" altimg-valign="-7px" altimg-width="59px" alttext="B_{k}(\chi)" display="inline"><mrow><msub><mi href="./8.12#E20" title="𝐵_𝑘(𝜒)">B</mi><mi href="./8.1#p1.t1.r4" title="nonnegative integer">k</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./8.12#E19" title="𝜒">χ</mi><mo stretchy="false">)</mo></mrow></mrow></math> (locally)</span>
+</dd>
+<dt>Symbols:</dt>
+<dd>
+<a href="./8.1#p1.t1.r4" title="§8.1 Special Notation ‣ Notation ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m113.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./8.1#p1.t1.r4" title="nonnegative integer">k</mi></math>:  nonnegative integer</a> and
+<a href="./8.12#E19" title="(8.12.19) ‣ §8.12 Uniform Asymptotic Expansions for Large Parameter ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m76.png" altimg-height="17px" altimg-valign="-6px" altimg-width="17px" alttext="\chi" display="inline"><mi href="./8.12#E19" title="𝜒">χ</mi></math></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./8.12.E20" title="" class="ltx_ref">http://dlmf.nist.gov/8.12.E20</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./8.12.E20a.tex">TeX</a>, <a href="./8.12.E20b.tex">TeX</a>, <a href="./8.12.E20c.tex">TeX</a>, <a href="./8.12.E20a.pmml">pMML</a>, <a href="./8.12.E20b.pmml">pMML</a>, <a href="./8.12.E20c.pmml">pMML</a>, <a href="./8.12.E20a.png">png</a>, <a href="./8.12.E20b.png">png</a>, <a href="./8.12.E20c.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./8.12#info" title="§8.12 Uniform Asymptotic Expansions for Large Parameter ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§8.12</span></a> and
+<a href="./8#info" title="Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.8</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">Higher coefficients <math class="ltx_Math" altimg="m53.png" altimg-height="25px" altimg-valign="-7px" altimg-width="59px" alttext="A_{k}(\chi)" display="inline"><mrow><msub><mi href="./8.12#E20" title="𝐴_𝑘(𝜒)">A</mi><mi href="./8.1#p1.t1.r4" title="nonnegative integer">k</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./8.12#E19" title="𝜒">χ</mi><mo stretchy="false">)</mo></mrow></mrow></math>, <math class="ltx_Math" altimg="m54.png" altimg-height="25px" altimg-valign="-7px" altimg-width="59px" alttext="B_{k}(\chi)" display="inline"><mrow><msub><mi href="./8.12#E20" title="𝐵_𝑘(𝜒)">B</mi><mi href="./8.1#p1.t1.r4" title="nonnegative integer">k</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./8.12#E19" title="𝜒">χ</mi><mo stretchy="false">)</mo></mrow></mrow></math>, up to <math class="ltx_Math" altimg="m112.png" altimg-height="18px" altimg-valign="-2px" altimg-width="54px" alttext="k=8" display="inline"><mrow><mi href="./8.1#p1.t1.r4" title="nonnegative integer">k</mi><mo>=</mo><mn>8</mn></mrow></math>, are given in
+<cite class="ltx_cite ltx_citemacro_citet">Paris (<a href="./bib/P#bib1840" title="A uniform asymptotic expansion for the incomplete gamma function" class="ltx_ref">2002b</a>)</cite>.</p>
+</div>
+<div id="p6" class="ltx_para">
+<p class="ltx_p">Lastly, a uniform approximation for <math class="ltx_Math" altimg="m68.png" altimg-height="25px" altimg-valign="-7px" altimg-width="80px" alttext="\Gamma\left(a,ax\right)" display="inline"><mrow><mi href="./8.2#E2" mathvariant="normal" title="incomplete gamma function">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>,</mo><mrow><mi href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>⁢</mo><mi>x</mi></mrow><mo>)</mo></mrow></mrow></math> for large <math class="ltx_Math" altimg="m101.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="a" display="inline"><mi href="./8.1#p1.t1.r3" title="parameter">a</mi></math>, with
+error bounds, can be found in <cite class="ltx_cite ltx_citemacro_citet">Dunster (<a href="./bib/D#bib704" title="Asymptotic solutions of second-order linear differential equations having almost coalescent turning points, with an application to the incomplete gamma function" class="ltx_ref">1996a</a>)</cite>.</p>
+</div>
+<div id="p7" class="ltx_para">
+<p class="ltx_p">For other uniform asymptotic approximations of the incomplete gamma functions
+in terms of the function <math class="ltx_Math" altimg="m94.png" altimg-height="18px" altimg-valign="-2px" altimg-width="37px" alttext="\operatorname{erfc}" display="inline"><mi href="./7.2#E2" title="complementary error function">erfc</mi></math> see <cite class="ltx_cite ltx_citemacro_citet">Paris (<a href="./bib/P#bib1840" title="A uniform asymptotic expansion for the incomplete gamma function" class="ltx_ref">2002b</a>)</cite> and
+<cite class="ltx_cite ltx_citemacro_citet">Dunster (<a href="./bib/D#bib704" title="Asymptotic solutions of second-order linear differential equations having almost coalescent turning points, with an application to the incomplete gamma function" class="ltx_ref">1996a</a>)</cite>.</p>
+</div>
+<section id="Px1" class="ltx_paragraph">
+<h2 class="ltx_title ltx_title_paragraph">Inverse Function</h2>
+<div id="Px1.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=asymptotic%20approximations%20and%20expansions">asymptotic approximations and expansions</a>, <a class="ltx_keyword" href="./search/search?q=for%20inverse%20function">for inverse function</a>, <a class="ltx_keyword" href="./search/search?q=incomplete%20gamma%20functions">incomplete gamma functions</a>, <a class="ltx_keyword" href="./search/search?q=inverse%20incomplete%20gamma%20function">inverse incomplete gamma function</a>, <a class="ltx_keyword" href="./search/search?q=large%20variable%20and%2For%20large%20parameter">large variable and/or large parameter</a>, <a class="ltx_keyword" href="./search/search?q=uniform%20for%20large%20parameter">uniform for large parameter</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./8.12#info" title="§8.12 Uniform Asymptotic Expansions for Large Parameter ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§8.12</span></a> and
+<a href="./8#info" title="Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.8</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="Px1.p1" class="ltx_para">
+<p class="ltx_p">For asymptotic expansions, as <math class="ltx_Math" altimg="m102.png" altimg-height="13px" altimg-valign="-2px" altimg-width="68px" alttext="a\to\infty" display="inline"><mrow><mi href="./8.1#p1.t1.r3" title="parameter">a</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></math>, of the <em class="ltx_emph ltx_font_italic">inverse function</em>
+<math class="ltx_Math" altimg="m121.png" altimg-height="25px" altimg-valign="-7px" altimg-width="102px" alttext="x=x(a,q)" display="inline"><mrow><mi>x</mi><mo>=</mo><mrow><mi>x</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>,</mo><mi>q</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math> that satisfies the equation</p>
+<table id="E21" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">8.12.21</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E21.png" altimg-height="40px" altimg-valign="-7px" altimg-width="186px" alttext="Q\left(a,x\right)=q" display="block"><mrow><mrow><mi href="./8.2#E4" title="normalized incomplete gamma function">Q</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>,</mo><mi>x</mi><mo>)</mo></mrow></mrow><mo>=</mo><mi>q</mi></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E21.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./8.2#E4" title="(8.2.4) ‣ §8.2(i) Definitions ‣ §8.2 Definitions and Basic Properties ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m62.png" altimg-height="25px" altimg-valign="-7px" altimg-width="71px" alttext="Q\left(\NVar{a},\NVar{z}\right)" display="inline"><mrow><mi href="./8.2#E4" title="normalized incomplete gamma function">Q</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>,</mo><mi class="ltx_nvar" href="./8.1#p1.t1.r2" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: normalized incomplete gamma function</a> and
+<a href="./8.1#p1.t1.r3" title="§8.1 Special Notation ‣ Notation ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m101.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="a" display="inline"><mi href="./8.1#p1.t1.r3" title="parameter">a</mi></math>:  parameter</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./8.12.E21" title="" class="ltx_ref">http://dlmf.nist.gov/8.12.E21</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./8.12.E21.tex">TeX</a>, <a href="./8.12.E21.pmml">pMML</a>, <a href="./8.12.E21.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./8.12#Px1.info" title="Inverse Function ‣ §8.12 Uniform Asymptotic Expansions for Large Parameter ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§8.12</span></a>,
+<a href="./8.12#info" title="§8.12 Uniform Asymptotic Expansions for Large Parameter ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§8.12</span></a> and
+<a href="./8#info" title="Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.8</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">see <cite class="ltx_cite ltx_citemacro_citet">Temme (<a href="./bib/T#bib2222" title="Asymptotic inversion of incomplete gamma functions" class="ltx_ref">1992a</a>)</cite>. These expansions involve the inverse error function
+<math class="ltx_Math" altimg="m95.png" altimg-height="25px" altimg-valign="-7px" altimg-width="96px" alttext="\operatorname{inverfc}\left(x\right)" display="inline"><mrow><mi href="./7.17#E1" title="inverse complementary error function">inverfc</mi><mo>⁡</mo><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math> (§<a href="./7.17" title="§7.17 Inverse Error Functions ‣ Properties ‣ Chapter 7 Error Functions, Dawson’s and Fresnel Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">7.17</span></a>), and are uniform with respect to
+<math class="ltx_Math" altimg="m120.png" altimg-height="25px" altimg-valign="-7px" altimg-width="81px" alttext="q\in[0,1]" display="inline"><mrow><mi>q</mi><mo href="./front/introduction#common.t1.r10" title="element of">∈</mo><mrow><mo href="./front/introduction#common.t1.r30" stretchy="false" title="closed interval">[</mo><mn>0</mn><mo href="./front/introduction#common.t1.r30" title="closed interval">,</mo><mn>1</mn><mo href="./front/introduction#common.t1.r30" stretchy="false" title="closed interval">]</mo></mrow></mrow></math>. As a special case,</p>
+<table id="E22" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">8.12.22</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E22.png" altimg-height="31px" altimg-valign="-9px" altimg-width="524px" alttext="x(a,\tfrac{1}{2})\sim a-\tfrac{1}{3}+\tfrac{8}{405}a^{-1}+\tfrac{184}{25515}a^%
+{-2}+\tfrac{2248}{34\;44525}a^{-3}+\cdots," display="block"><mrow><mrow><mrow><mi>x</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>,</mo><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo stretchy="false">)</mo></mrow></mrow><mo href="./2.1#iii.p1" title="Poincaré asymptotic expansion">∼</mo><mrow><mrow><mi href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>−</mo><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>3</mn></mfrac></mstyle></mrow><mo>+</mo><mrow><mstyle displaystyle="false"><mfrac><mn>8</mn><mn>405</mn></mfrac></mstyle><mo>⁢</mo><msup><mi href="./8.1#p1.t1.r3" title="parameter">a</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup></mrow><mo>+</mo><mrow><mstyle displaystyle="false"><mfrac><mn>184</mn><mn>25515</mn></mfrac></mstyle><mo>⁢</mo><msup><mi href="./8.1#p1.t1.r3" title="parameter">a</mi><mrow><mo>−</mo><mn>2</mn></mrow></msup></mrow><mo>+</mo><mrow><mstyle displaystyle="false"><mfrac><mn>2248</mn><mn>34 44525</mn></mfrac></mstyle><mo>⁢</mo><msup><mi href="./8.1#p1.t1.r3" title="parameter">a</mi><mrow><mo>−</mo><mn>3</mn></mrow></msup></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="4"><span class="ltx_constraint"><math class="ltx_Math" altimg="m102.png" altimg-height="13px" altimg-valign="-2px" altimg-width="68px" alttext="a\to\infty" display="inline"><mrow><mi href="./8.1#p1.t1.r3" title="parameter">a</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></math>.</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E22.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./2.1#iii.p1" title="§2.1(iii) Asymptotic Expansions ‣ §2.1 Definitions and Elementary Properties ‣ Areas ‣ Chapter 2 Asymptotic Approximations" class="ltx_ref"><math class="ltx_Math" altimg="m99.png" altimg-height="11px" altimg-valign="-2px" altimg-width="20px" alttext="\sim" display="inline"><mo href="./2.1#iii.p1" title="Poincaré asymptotic expansion">∼</mo></math>: Poincaré asymptotic expansion</a> and
+<a href="./8.1#p1.t1.r3" title="§8.1 Special Notation ‣ Notation ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m101.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="a" display="inline"><mi href="./8.1#p1.t1.r3" title="parameter">a</mi></math>:  parameter</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./8.12.E22" title="" class="ltx_ref">http://dlmf.nist.gov/8.12.E22</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./8.12.E22.tex">TeX</a>, <a href="./8.12.E22.pmml">pMML</a>, <a href="./8.12.E22.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./8.12#Px1.info" title="Inverse Function ‣ §8.12 Uniform Asymptotic Expansions for Large Parameter ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§8.12</span></a>,
+<a href="./8.12#info" title="§8.12 Uniform Asymptotic Expansions for Large Parameter ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§8.12</span></a> and
+<a href="./8#info" title="Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.8</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+</div>
+<div class="ltx_page_footer">
+<div class="ltx_siblings">
+<a href="./8.11" title="In Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">8.11 </span>Asymptotic Approximations and Expansions</span></a><a href="./8.13" title="In Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">8.13 </span>Zeros</span></a>
+</div>
+<div class="ltx_footer_links ltx_centering">
+<a href="./about/notices">© 2010–2026 NIST</a> / <a href="./about/notices#S2">Disclaimer</a> / <a href="/cdn-cgi/l/email-protection#81c5cdccc7ace7e4e4e5e3e0e2eac1efe8f2f5afe6eef7">Feedback</a>;
+ Version 1.2.7;
+Release date 2026-06-15.</div>
+<span id="pagesettings"></span>
+<div class="ltx_nist_logo"><a href="http://www.nist.gov/"><img src="./style/nistidc.png" width="500" alt="NIST"></a></div>
+<div class="ltx_nist_links ltx_align_right">
+<a href="https://www.nist.gov/privacy-policy">Site Privacy</a> <a href="https://www.nist.gov/oism/accessibility">Accessibility</a> <a href="https://www.nist.gov/privacy">Privacy Program</a> <a href="https://www.nist.gov/oism/copyrights">Copyrights</a> <a href="https://www.commerce.gov/vulnerability-disclosure-policy">Vulnerability Disclosure</a> <a href="https://www.nist.gov/no-fear-act-policy">No Fear Act Policy</a> <a href="https://www.nist.gov/foia">FOIA</a> <a href="https://www.nist.gov/environmental-policy-statement">Environmental Policy</a> <a href="https://www.nist.gov/summary-report-scientific-integrity">Scientific Integrity</a> <a href="https://www.nist.gov/nist-information-quality-standards">Information Quality Standards</a> <a href="https://www.commerce.gov/">Commerce.gov</a> <a href="http://www.science.gov/">Science.gov</a> <a href="http://www.usa.gov/">USA.gov</a>
+</div>
+</div>
+</div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a30b5236fb4042f8',t:'MTc4NzY2ODUwNA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"9ef5b487afff42a68917b2d63593a474"}' crossorigin="anonymous"></script>
+</body>
+</html>

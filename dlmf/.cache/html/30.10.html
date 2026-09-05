@@ -1,0 +1,176 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>DLMF: §30.10 Series and Integrals ‣ Properties ‣ Chapter 30 Spheroidal Wave Functions</title>
+<link rel="shortcut icon" href="./style/DLMF-16.png" type="image/png">
+<script type="text/javascript"><!--
+	var PATH="DLMF:/30.10";
+	var ROOT="./";
+      //--></script>
+<script type="text/javascript" src="./style/jquery.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/jquery.leaveNotice.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/DLMF.js"><!-- non-empty so ie6 will accept it --></script>
+<script async="" type="text/javascript" id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC&amp;subagency=NIST&amp;pua=UA-37115410-44&amp;yt=true&amp;exts=ppsx,pps,f90,sch,rtf,wrl,txz,m1v,xlsm,msi,xsd,f,tif,eps,mpg,xml,pl,xlt,c"><!-- non-empty so ie6 will accept it --></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-BZB64W4M0L"></script><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-BZB64W4M0L');
+      </script>
+<link rel="stylesheet" type="text/css" href="./style/LaTeXML.css">
+<link rel="stylesheet" type="text/css" href="./style/DLMF.css">
+<link rel="stylesheet" type="text/css" href="./style/print.css" media="print">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="top" href="./" title="DLMF">
+<link rel="copyright" href="./about/notices" title="Copyright">
+<link rel="search" href="./search/search" title="Search">
+<link rel="help" class="ltx_help" href="./help/" title="Help">
+<link rel="up" href="./30#PT2" title="Properties ‣ Chapter 30 Spheroidal Wave Functions">
+<link rel="up up" href="./30" title="Chapter 30 Spheroidal Wave Functions">
+<link rel="start" href="./" title="">
+<link rel="prev" href="./30.9" title="§30.9 Asymptotic Approximations and Expansions ‣ Properties ‣ Chapter 30 Spheroidal Wave Functions">
+<link rel="next" href="./30.11" title="§30.11 Radial Spheroidal Wave Functions ‣ Properties ‣ Chapter 30 Spheroidal Wave Functions">
+<link rel="section" href="./30.1" title="§30.1 Special Notation ‣ Notation ‣ Chapter 30 Spheroidal Wave Functions">
+<link rel="section" href="./30.2" title="§30.2 Differential Equations ‣ Properties ‣ Chapter 30 Spheroidal Wave Functions">
+<link rel="section" href="./30.3" title="§30.3 Eigenvalues ‣ Properties ‣ Chapter 30 Spheroidal Wave Functions">
+<link rel="section" href="./30.4" title="§30.4 Functions of the First Kind ‣ Properties ‣ Chapter 30 Spheroidal Wave Functions">
+<link rel="section" href="./30.5" title="§30.5 Functions of the Second Kind ‣ Properties ‣ Chapter 30 Spheroidal Wave Functions">
+<link rel="section" href="./30.6" title="§30.6 Functions of Complex Argument ‣ Properties ‣ Chapter 30 Spheroidal Wave Functions">
+<link rel="section" href="./30.7" title="§30.7 Graphics ‣ Properties ‣ Chapter 30 Spheroidal Wave Functions">
+<link rel="section" href="./30.8" title="§30.8 Expansions in Series of Ferrers Functions ‣ Properties ‣ Chapter 30 Spheroidal Wave Functions">
+<link rel="section" href="./30.9" title="§30.9 Asymptotic Approximations and Expansions ‣ Properties ‣ Chapter 30 Spheroidal Wave Functions">
+<link rel="section" href="./30.11" title="§30.11 Radial Spheroidal Wave Functions ‣ Properties ‣ Chapter 30 Spheroidal Wave Functions">
+<link rel="section" href="./30.12" title="§30.12 Generalized and Coulomb Spheroidal Functions ‣ Properties ‣ Chapter 30 Spheroidal Wave Functions">
+<link rel="section" href="./30.13" title="§30.13 Wave Equation in Prolate Spheroidal Coordinates ‣ Applications ‣ Chapter 30 Spheroidal Wave Functions">
+<link rel="section" href="./30.14" title="§30.14 Wave Equation in Oblate Spheroidal Coordinates ‣ Applications ‣ Chapter 30 Spheroidal Wave Functions">
+<link rel="section" href="./30.15" title="§30.15 Signal Analysis ‣ Applications ‣ Chapter 30 Spheroidal Wave Functions">
+<link rel="section" href="./30.16" title="§30.16 Methods of Computation ‣ Computation ‣ Chapter 30 Spheroidal Wave Functions">
+<link rel="section" href="./30.17" title="§30.17 Tables ‣ Computation ‣ Chapter 30 Spheroidal Wave Functions">
+<link rel="section" href="./30.18" title="§30.18 Software ‣ Computation ‣ Chapter 30 Spheroidal Wave Functions">
+<link rel="document" href="./front/foreword" title="Foreword">
+<link rel="document" href="./front/preface" title="Preface">
+<link rel="document" href="./front/introduction" title="Mathematical Introduction">
+<link rel="chapter" href="./1" title="Chapter 1 Algebraic and Analytic Methods">
+<link rel="chapter" href="./2" title="Chapter 2 Asymptotic Approximations">
+<link rel="chapter" href="./3" title="Chapter 3 Numerical Methods">
+<link rel="chapter" href="./4" title="Chapter 4 Elementary Functions">
+<link rel="chapter" href="./5" title="Chapter 5 Gamma Function">
+<link rel="chapter" href="./6" title="Chapter 6 Exponential, Logarithmic, Sine, and Cosine Integrals">
+<link rel="chapter" href="./7" title="Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="chapter" href="./8" title="Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="chapter" href="./9" title="Chapter 9 Airy and Related Functions">
+<link rel="chapter" href="./10" title="Chapter 10 Bessel Functions">
+<link rel="chapter" href="./11" title="Chapter 11 Struve and Related Functions">
+<link rel="chapter" href="./12" title="Chapter 12 Parabolic Cylinder Functions">
+<link rel="chapter" href="./13" title="Chapter 13 Confluent Hypergeometric Functions">
+<link rel="chapter" href="./14" title="Chapter 14 Legendre and Related Functions">
+<link rel="chapter" href="./15" title="Chapter 15 Hypergeometric Function">
+<link rel="chapter" href="./16" title="Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="chapter" href="./17" title="Chapter 17 𝑞-Hypergeometric and Related Functions">
+<link rel="chapter" href="./18" title="Chapter 18 Orthogonal Polynomials">
+<link rel="chapter" href="./19" title="Chapter 19 Elliptic Integrals">
+<link rel="chapter" href="./20" title="Chapter 20 Theta Functions">
+<link rel="chapter" href="./21" title="Chapter 21 Multidimensional Theta Functions">
+<link rel="chapter" href="./22" title="Chapter 22 Jacobian Elliptic Functions">
+<link rel="chapter" href="./23" title="Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="chapter" href="./24" title="Chapter 24 Bernoulli and Euler Polynomials">
+<link rel="chapter" href="./25" title="Chapter 25 Zeta and Related Functions">
+<link rel="chapter" href="./26" title="Chapter 26 Combinatorial Analysis">
+<link rel="chapter" href="./27" title="Chapter 27 Functions of Number Theory">
+<link rel="chapter" href="./28" title="Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="chapter" href="./29" title="Chapter 29 Lamé Functions">
+<link rel="chapter" href="./30" title="Chapter 30 Spheroidal Wave Functions">
+<link rel="chapter" href="./31" title="Chapter 31 Heun Functions">
+<link rel="chapter" href="./32" title="Chapter 32 Painlevé Transcendents">
+<link rel="chapter" href="./33" title="Chapter 33 Coulomb Functions">
+<link rel="chapter" href="./34" title="Chapter 34 3⁢𝑗,6⁢𝑗,9⁢𝑗 Symbols">
+<link rel="chapter" href="./35" title="Chapter 35 Functions of Matrix Argument">
+<link rel="chapter" href="./36" title="Chapter 36 Integrals with Coalescing Saddles">
+<link rel="bibliography" href="./bib/" title="Bibliography">
+<link rel="index" href="./idx/" title="Index">
+<link rel="glossary" href="./not/" title="Notations">
+<link rel="document" href="./lof/" title="List of Figures">
+<link rel="document" href="./lot/" title="List of Tables">
+<link rel="document" href="./software/" title="Software Index">
+<link rel="document" href="./errata/" title="Errata">
+<link rel="document" href="./help/" title="Need Help?">
+<link rel="document" href="./search/" title="Advanced Search">
+<link rel="document" href="./about/" title="About the Project">
+<meta name="keywords" lang="en" content="addition theorem, convolutions, expansions in series of spherical Bessel functions, integral equations, integrals, products, spheroidal wave functions">
+</head>
+<body class="color_default textfont_default titlefont_default fontsize_default navbar_default">
+<div class="ltx_page_navbar">
+<div class="ltx_page_navlogo"><a href="./" title="Digital Library of Mathematical Functions"><span>DLMF</span></a></div>
+<div class="ltx_page_navitems">
+<form method="get" action="./search/search">
+<ul>
+<li><a href="./idx/">Index</a></li>
+<li><a href="./not/">Notations</a></li>
+<li><small><input type="text" name="q" value="" size="6" class="ltx_page_navitem_search"><button type="submit">Search</button></small></li>
+<li><a href="./help/" class="ltx_help">Help?</a></li>
+<li><a href="./help/cite">Citing</a></li>
+<li><a href="./help/customize" class="ltx_customize">Customize</a></li>
+<li id="showinfo"><a href="" onclick="showInfo(); return false;" title="Show Annotations">Annotate</a></li>
+<li id="hideinfo"><a href="" onclick="hideInfo(); return false;">UnAnnotate</a></li>
+</ul>
+</form>
+</div>
+<div class="ltx_page_navsponsors">
+<div><a href="./about/" class="ltx_page_navabout">About the Project</a></div>
+</div>
+</div>
+<div class="ltx_page_main">
+<div class="ltx_page_header">
+<a href="./30" title="" class="ltx_ref" rel="up up"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">30 </span>Spheroidal Wave Functions</span></a><a href="./30#PT2" title="In Chapter 30 Spheroidal Wave Functions" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title">Properties</span></a><a href="./30.9" title="In Properties ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">30.9 </span>Asymptotic Approximations and Expansions</span></a><a href="./30.11" title="In Properties ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">30.11 </span>Radial Spheroidal Wave Functions</span></a>
+</div>
+<div class="ltx_page_content">
+<section class="ltx_section ltx_authors_multiline ltx_leqno">
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">§30.10 </span>Series and Integrals</h1>
+<div id="info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=addition%20theorem">addition theorem</a>, <a class="ltx_keyword" href="./search/search?q=convolutions">convolutions</a>, <a class="ltx_keyword" href="./search/search?q=expansions%20in%20series%20of%20spherical%20Bessel%20functions">expansions in series of spherical Bessel functions</a>, <a class="ltx_keyword" href="./search/search?q=integral%20equations">integral equations</a>, <a class="ltx_keyword" href="./search/search?q=integrals">integrals</a>, <a class="ltx_keyword" href="./search/search?q=products">products</a>, <a class="ltx_keyword" href="./search/search?q=spheroidal%20wave%20functions">spheroidal wave functions</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./30.10" title="" class="ltx_ref">http://dlmf.nist.gov/30.10</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./30#info" title="Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.30</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="p1" class="ltx_para">
+<p class="ltx_p">Integrals and integral equations for <math class="ltx_Math" altimg="m1.png" altimg-height="29px" altimg-valign="-9px" altimg-width="106px" alttext="\mathsf{Ps}^{m}_{n}\left(x,\gamma^{2}\right)" display="inline"><mrow><msubsup><mi href="./30.4#i" title="spheroidal wave function of the first kind">𝖯𝗌</mi><mi href="./30.1#p1.t1.r4" title="integer degree">n</mi><mi href="./30.1#p1.t1.r3" title="nonnegative integer">m</mi></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi href="./30.1#p1.t1.r1" title="real variable">x</mi><mo>,</mo><msup><mi href="./30.2#i.p1" title="real parameter">γ</mi><mn>2</mn></msup><mo>)</mo></mrow></mrow></math>
+are given in <cite class="ltx_cite ltx_citemacro_citet">Arscott (<a href="./bib/#bib142" title="Periodic Differential Equations. An Introduction to Mathieu, Lamé, and Allied Functions" class="ltx_ref">1964b</a>, §8.6)</cite>,
+<cite class="ltx_cite ltx_citemacro_citet">Erdélyi<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/E#bib755" title="Higher Transcendental Functions. Vol. III" class="ltx_ref">1955</a>, §16.13)</cite>, <cite class="ltx_cite ltx_citemacro_citet">Flammer (<a href="./bib/F#bib807" title="Spheroidal Wave Functions" class="ltx_ref">1957</a>, Chapter 5)</cite>, and
+<cite class="ltx_cite ltx_citemacro_citet">Meixner (<a href="./bib/M#bib1597" title="Klassifikation, Bezeichnung und Eigenschaften der Sphäroidfunktionen" class="ltx_ref">1951</a>)</cite>. For product formulas and convolutions see
+<cite class="ltx_cite ltx_citemacro_citet">Connett<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/C#bib565" title="Product formulas and convolutions for angular and radial spheroidal wave functions" class="ltx_ref">1993</a>)</cite>. For an addition theorem, see
+<cite class="ltx_cite ltx_citemacro_citet">Meixner and Schäfke (<a href="./bib/M#bib1598" title="Mathieusche Funktionen und Sphäroidfunktionen mit Anwendungen auf physikalische und technische Probleme" class="ltx_ref">1954</a>, p. 300)</cite> and <cite class="ltx_cite ltx_citemacro_citet">King and Van Buren (<a href="./bib/K#bib1273" title="A general addition theorem for spheroidal wave functions" class="ltx_ref">1973</a>)</cite>. For expansions in
+products of spherical Bessel functions, see
+<cite class="ltx_cite ltx_citemacro_citet">Flammer (<a href="./bib/F#bib807" title="Spheroidal Wave Functions" class="ltx_ref">1957</a>, Chapter 6)</cite>.
+</p>
+</div>
+</section>
+</div>
+<div class="ltx_page_footer">
+<div class="ltx_siblings">
+<a href="./30.9" title="In Properties ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">30.9 </span>Asymptotic Approximations and Expansions</span></a><a href="./30.11" title="In Properties ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">30.11 </span>Radial Spheroidal Wave Functions</span></a>
+</div>
+<div class="ltx_footer_links ltx_centering">
+<a href="./about/notices">© 2010–2026 NIST</a> / <a href="./about/notices#S2">Disclaimer</a> / <a href="/cdn-cgi/l/email-protection#e8aca4a5aec58e8d8d8c8a898b83a886819b9cc68f879e">Feedback</a>;
+ Version 1.2.7;
+Release date 2026-06-15.</div>
+<span id="pagesettings"></span>
+<div class="ltx_nist_logo"><a href="http://www.nist.gov/"><img src="./style/nistidc.png" width="500" alt="NIST"></a></div>
+<div class="ltx_nist_links ltx_align_right">
+<a href="https://www.nist.gov/privacy-policy">Site Privacy</a> <a href="https://www.nist.gov/oism/accessibility">Accessibility</a> <a href="https://www.nist.gov/privacy">Privacy Program</a> <a href="https://www.nist.gov/oism/copyrights">Copyrights</a> <a href="https://www.commerce.gov/vulnerability-disclosure-policy">Vulnerability Disclosure</a> <a href="https://www.nist.gov/no-fear-act-policy">No Fear Act Policy</a> <a href="https://www.nist.gov/foia">FOIA</a> <a href="https://www.nist.gov/environmental-policy-statement">Environmental Policy</a> <a href="https://www.nist.gov/summary-report-scientific-integrity">Scientific Integrity</a> <a href="https://www.nist.gov/nist-information-quality-standards">Information Quality Standards</a> <a href="https://www.commerce.gov/">Commerce.gov</a> <a href="http://www.science.gov/">Science.gov</a> <a href="http://www.usa.gov/">USA.gov</a>
+</div>
+</div>
+</div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a30dbd59b87bde9a',t:'MTc4NzY5Mzg2Mw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"9ef5b487afff42a68917b2d63593a474"}' crossorigin="anonymous"></script>
+</body>
+</html>

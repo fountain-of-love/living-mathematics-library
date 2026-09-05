@@ -1,0 +1,920 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>DLMF: §8.3 Graphics ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions</title>
+<link rel="shortcut icon" href="./style/DLMF-16.png" type="image/png">
+<script type="text/javascript"><!--
+	var PATH="DLMF:/8.3";
+	var ROOT="./";
+      //--></script>
+<script type="text/javascript" src="./style/jquery.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/jquery.leaveNotice.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/DLMF.js"><!-- non-empty so ie6 will accept it --></script>
+<script async="" type="text/javascript" id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC&amp;subagency=NIST&amp;pua=UA-37115410-44&amp;yt=true&amp;exts=ppsx,pps,f90,sch,rtf,wrl,txz,m1v,xlsm,msi,xsd,f,tif,eps,mpg,xml,pl,xlt,c"><!-- non-empty so ie6 will accept it --></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-BZB64W4M0L"></script><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-BZB64W4M0L');
+      </script>
+<link rel="stylesheet" type="text/css" href="./style/LaTeXML.css">
+<link rel="stylesheet" type="text/css" href="./style/DLMF.css">
+<link rel="stylesheet" type="text/css" href="./style/print.css" media="print">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="top" href="./" title="DLMF">
+<link rel="copyright" href="./about/notices" title="Copyright">
+<link rel="search" href="./search/search" title="Search">
+<link rel="help" class="ltx_help" href="./help/" title="Help">
+<link rel="up" href="./8#PT2" title="Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="up up" href="./8" title="Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="start" href="./" title="">
+<link rel="prev" href="./8.2" title="§8.2 Definitions and Basic Properties ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="next" href="./8.4" title="§8.4 Special Values ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.1" title="§8.1 Special Notation ‣ Notation ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.2" title="§8.2 Definitions and Basic Properties ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.4" title="§8.4 Special Values ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.5" title="§8.5 Confluent Hypergeometric Representations ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.6" title="§8.6 Integral Representations ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.7" title="§8.7 Series Expansions ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.8" title="§8.8 Recurrence Relations and Derivatives ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.9" title="§8.9 Continued Fractions ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.10" title="§8.10 Inequalities ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.11" title="§8.11 Asymptotic Approximations and Expansions ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.12" title="§8.12 Uniform Asymptotic Expansions for Large Parameter ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.13" title="§8.13 Zeros ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.14" title="§8.14 Integrals ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.15" title="§8.15 Sums ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.16" title="§8.16 Generalizations ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.17" title="§8.17 Incomplete Beta Functions ‣ Related Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.18" title="§8.18 Asymptotic Expansions of 𝐼_𝑥(𝑎,𝑏) ‣ Related Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.19" title="§8.19 Generalized Exponential Integral ‣ Related Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.20" title="§8.20 Asymptotic Expansions of 𝐸_𝑝(𝑧) ‣ Related Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.21" title="§8.21 Generalized Sine and Cosine Integrals ‣ Related Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.22" title="§8.22 Mathematical Applications ‣ Applications ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.23" title="§8.23 Statistical Applications ‣ Applications ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.24" title="§8.24 Physical Applications ‣ Applications ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.25" title="§8.25 Methods of Computation ‣ Computation ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.26" title="§8.26 Tables ‣ Computation ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.27" title="§8.27 Approximations ‣ Computation ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.28" title="§8.28 Software ‣ Computation ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="document" href="./front/foreword" title="Foreword">
+<link rel="document" href="./front/preface" title="Preface">
+<link rel="document" href="./front/introduction" title="Mathematical Introduction">
+<link rel="chapter" href="./1" title="Chapter 1 Algebraic and Analytic Methods">
+<link rel="chapter" href="./2" title="Chapter 2 Asymptotic Approximations">
+<link rel="chapter" href="./3" title="Chapter 3 Numerical Methods">
+<link rel="chapter" href="./4" title="Chapter 4 Elementary Functions">
+<link rel="chapter" href="./5" title="Chapter 5 Gamma Function">
+<link rel="chapter" href="./6" title="Chapter 6 Exponential, Logarithmic, Sine, and Cosine Integrals">
+<link rel="chapter" href="./7" title="Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="chapter" href="./8" title="Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="chapter" href="./9" title="Chapter 9 Airy and Related Functions">
+<link rel="chapter" href="./10" title="Chapter 10 Bessel Functions">
+<link rel="chapter" href="./11" title="Chapter 11 Struve and Related Functions">
+<link rel="chapter" href="./12" title="Chapter 12 Parabolic Cylinder Functions">
+<link rel="chapter" href="./13" title="Chapter 13 Confluent Hypergeometric Functions">
+<link rel="chapter" href="./14" title="Chapter 14 Legendre and Related Functions">
+<link rel="chapter" href="./15" title="Chapter 15 Hypergeometric Function">
+<link rel="chapter" href="./16" title="Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="chapter" href="./17" title="Chapter 17 𝑞-Hypergeometric and Related Functions">
+<link rel="chapter" href="./18" title="Chapter 18 Orthogonal Polynomials">
+<link rel="chapter" href="./19" title="Chapter 19 Elliptic Integrals">
+<link rel="chapter" href="./20" title="Chapter 20 Theta Functions">
+<link rel="chapter" href="./21" title="Chapter 21 Multidimensional Theta Functions">
+<link rel="chapter" href="./22" title="Chapter 22 Jacobian Elliptic Functions">
+<link rel="chapter" href="./23" title="Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="chapter" href="./24" title="Chapter 24 Bernoulli and Euler Polynomials">
+<link rel="chapter" href="./25" title="Chapter 25 Zeta and Related Functions">
+<link rel="chapter" href="./26" title="Chapter 26 Combinatorial Analysis">
+<link rel="chapter" href="./27" title="Chapter 27 Functions of Number Theory">
+<link rel="chapter" href="./28" title="Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="chapter" href="./29" title="Chapter 29 Lamé Functions">
+<link rel="chapter" href="./30" title="Chapter 30 Spheroidal Wave Functions">
+<link rel="chapter" href="./31" title="Chapter 31 Heun Functions">
+<link rel="chapter" href="./32" title="Chapter 32 Painlevé Transcendents">
+<link rel="chapter" href="./33" title="Chapter 33 Coulomb Functions">
+<link rel="chapter" href="./34" title="Chapter 34 3⁢𝑗,6⁢𝑗,9⁢𝑗 Symbols">
+<link rel="chapter" href="./35" title="Chapter 35 Functions of Matrix Argument">
+<link rel="chapter" href="./36" title="Chapter 36 Integrals with Coalescing Saddles">
+<link rel="bibliography" href="./bib/" title="Bibliography">
+<link rel="index" href="./idx/" title="Index">
+<link rel="glossary" href="./not/" title="Notations">
+<link rel="document" href="./lof/" title="List of Figures">
+<link rel="document" href="./lot/" title="List of Tables">
+<link rel="document" href="./software/" title="Software Index">
+<link rel="document" href="./errata/" title="Errata">
+<link rel="document" href="./help/" title="Need Help?">
+<link rel="document" href="./search/" title="Advanced Search">
+<link rel="document" href="./about/" title="About the Project">
+<link rel="sidebar" href="./8.3.F1.mag" title="Figure 8.3.1 ‣ §8.3 Graphics ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="sidebar" href="./8.3.F2.mag" title="Figure 8.3.2 ‣ §8.3 Graphics ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="sidebar" href="./8.3.F3.mag" title="Figure 8.3.3 ‣ §8.3 Graphics ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="sidebar" href="./8.3.F4.mag" title="Figure 8.3.4 ‣ §8.3 Graphics ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="sidebar" href="./8.3.F5.mag" title="Figure 8.3.5 ‣ §8.3 Graphics ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="sidebar" href="./8.3.F6.mag" title="Figure 8.3.6 ‣ §8.3 Graphics ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="sidebar" href="./8.3.F6.viz" title="Figure 8.3.6 ‣ §8.3 Graphics ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="sidebar" href="./8.3.F7.mag" title="Figure 8.3.7 ‣ §8.3 Graphics ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="sidebar" href="./8.3.F7.viz" title="Figure 8.3.7 ‣ §8.3 Graphics ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="sidebar" href="./8.3.F8.mag" title="Figure 8.3.8 ‣ §8.3 Graphics ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="sidebar" href="./8.3.F8.viz" title="Figure 8.3.8 ‣ §8.3 Graphics ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="sidebar" href="./8.3.F9.mag" title="Figure 8.3.9 ‣ §8.3 Graphics ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="sidebar" href="./8.3.F9.viz" title="Figure 8.3.9 ‣ §8.3 Graphics ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="sidebar" href="./8.3.F10.mag" title="Figure 8.3.10 ‣ §8.3 Graphics ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="sidebar" href="./8.3.F10.viz" title="Figure 8.3.10 ‣ §8.3 Graphics ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="sidebar" href="./8.3.F11.mag" title="Figure 8.3.11 ‣ §8.3 Graphics ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="sidebar" href="./8.3.F11.viz" title="Figure 8.3.11 ‣ §8.3 Graphics ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="sidebar" href="./8.3.F12.mag" title="Figure 8.3.12 ‣ §8.3 Graphics ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="sidebar" href="./8.3.F12.viz" title="Figure 8.3.12 ‣ §8.3 Graphics ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="sidebar" href="./8.3.F13.mag" title="Figure 8.3.13 ‣ §8.3 Graphics ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="sidebar" href="./8.3.F13.viz" title="Figure 8.3.13 ‣ §8.3 Graphics ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="sidebar" href="./8.3.F14.mag" title="Figure 8.3.14 ‣ §8.3 Graphics ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="sidebar" href="./8.3.F14.viz" title="Figure 8.3.14 ‣ §8.3 Graphics ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="sidebar" href="./8.3.F15.mag" title="Figure 8.3.15 ‣ §8.3 Graphics ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="sidebar" href="./8.3.F15.viz" title="Figure 8.3.15 ‣ §8.3 Graphics ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="sidebar" href="./8.3.F16.mag" title="Figure 8.3.16 ‣ §8.3 Graphics ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="sidebar" href="./8.3.F16.viz" title="Figure 8.3.16 ‣ §8.3 Graphics ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<meta name="keywords" lang="en" content="complex argument, graphics, incomplete gamma functions, monotonicity properties, real variables">
+</head>
+<body class="color_default textfont_default titlefont_default fontsize_default navbar_default">
+<div class="ltx_page_navbar">
+<div class="ltx_page_navlogo"><a href="./" title="Digital Library of Mathematical Functions"><span>DLMF</span></a></div>
+<div class="ltx_page_navitems">
+<form method="get" action="./search/search">
+<ul>
+<li><a href="./idx/">Index</a></li>
+<li><a href="./not/">Notations</a></li>
+<li><small><input type="text" name="q" value="" size="6" class="ltx_page_navitem_search"><button type="submit">Search</button></small></li>
+<li><a href="./help/" class="ltx_help">Help?</a></li>
+<li><a href="./help/cite">Citing</a></li>
+<li><a href="./help/customize" class="ltx_customize">Customize</a></li>
+<li id="showinfo"><a href="" onclick="showInfo(); return false;" title="Show Annotations">Annotate</a></li>
+<li id="hideinfo"><a href="" onclick="hideInfo(); return false;">UnAnnotate</a></li>
+</ul>
+</form>
+</div>
+<div class="ltx_page_navsponsors">
+<div><a href="./about/" class="ltx_page_navabout">About the Project</a></div>
+</div>
+</div>
+<div class="ltx_page_main">
+<div class="ltx_page_header">
+<a href="./8" title="" class="ltx_ref" rel="up up"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">8 </span>Incomplete Gamma and Related <span class="ltx_text"> </span>Functions</span></a><a href="./8#PT2" title="In Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title">Incomplete Gamma Functions</span></a><a href="./8.2" title="In Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">8.2 </span>Definitions and Basic Properties</span></a><a href="./8.4" title="In Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">8.4 </span>Special Values</span></a>
+</div>
+<div class="ltx_page_content">
+<section class="ltx_section ltx_authors_multiline ltx_leqno">
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">§8.3 </span>Graphics</h1>
+<div id="info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Permalink:</dt>
+<dd><a href="./8.3" title="" class="ltx_ref">http://dlmf.nist.gov/8.3</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./8#info" title="Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.8</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<h6>Contents</h6>
+<ol class="ltx_toclist ltx_toclist_section">
+<li class="ltx_tocentry"><a href="#i"><span class="ltx_tag ltx_tag_subsection">§8.3(i) </span>Real Variables</a></li>
+<li class="ltx_tocentry"><a href="#ii"><span class="ltx_tag ltx_tag_subsection">§8.3(ii) </span>Complex Argument</a></li>
+</ol>
+<section id="i" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§8.3(i) </span>Real Variables</h2>
+<div id="i.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=graphics">graphics</a>, <a class="ltx_keyword" href="./search/search?q=incomplete%20gamma%20functions">incomplete gamma functions</a>, <a class="ltx_keyword" href="./search/search?q=monotonicity%20properties">monotonicity properties</a>, <a class="ltx_keyword" href="./search/search?q=real%20variables">real variables</a>
+</dd>
+<dt>Notes:</dt>
+<dd>These graphics were produced at NIST.</dd>
+<dt>Permalink:</dt>
+<dd><a href="./8.3.i" title="" class="ltx_ref">http://dlmf.nist.gov/8.3.i</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./8.3#info" title="§8.3 Graphics ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§8.3</span></a> and
+<a href="./8#info" title="Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.8</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<figure id="i.fig1" class="ltx_figure">
+<div class="ltx_flex_figure">
+<div class="ltx_flex_cell ltx_flex_size_2">
+<figure id="F1" class="ltx_figure ltx_figure_panel"><a href="./8.3.F1.mag" title="Magnify Figure" class="ltx_magnifiable"><img src="./8/3/F1.png" id="F1.g1" class="ltx_graphics ltx_centering ltx_img_landscape" width="415" height="244" alt="See accompanying text"></a>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 8.3.1: </span><math class="ltx_Math" altimg="m19.png" altimg-height="25px" altimg-valign="-7px" altimg-width="69px" alttext="\Gamma\left(a,x\right)" display="inline"><mrow><mi href="./8.2#E2" mathvariant="normal" title="incomplete gamma function">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>,</mo><mi href="./8.1#p1.t1.r1" title="real variable">x</mi><mo>)</mo></mrow></mrow></math>, <math class="ltx_Math" altimg="m32.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="a" display="inline"><mi href="./8.1#p1.t1.r3" title="parameter">a</mi></math> = 0.25, 1, 2, 2.5, 3.
+
+
+<a href="./8.3.F1.mag" title="Magnify Figure" class="ltx_magnifiable ltx_icon"><span>Magnify</span></a>
+</figcaption>
+<div id="F1.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./8.2#E2" title="(8.2.2) ‣ §8.2(i) Definitions ‣ §8.2 Definitions and Basic Properties ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m17.png" altimg-height="25px" altimg-valign="-7px" altimg-width="68px" alttext="\Gamma\left(\NVar{a},\NVar{z}\right)" display="inline"><mrow><mi href="./8.2#E2" mathvariant="normal" title="incomplete gamma function">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>,</mo><mi class="ltx_nvar" href="./8.1#p1.t1.r2" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: incomplete gamma function</a>,
+<a href="./8.1#p1.t1.r1" title="§8.1 Special Notation ‣ Notation ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m34.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./8.1#p1.t1.r1" title="real variable">x</mi></math>:  real variable</a> and
+<a href="./8.1#p1.t1.r3" title="§8.1 Special Notation ‣ Notation ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m32.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="a" display="inline"><mi href="./8.1#p1.t1.r3" title="parameter">a</mi></math>:  parameter</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./8.3.F1" title="" class="ltx_ref">http://dlmf.nist.gov/8.3.F1</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./8.3.F1.pdf">pdf</a>, <a href="./8.3.F1.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./8.3#i.info" title="§8.3(i) Real Variables ‣ §8.3 Graphics ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§8.3(i)</span></a>,
+<a href="./8.3#info" title="§8.3 Graphics ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§8.3</span></a> and
+<a href="./8#info" title="Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.8</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+</div>
+<div class="ltx_flex_cell ltx_flex_size_2">
+<figure id="F2" class="ltx_figure ltx_figure_panel"><a href="./8.3.F2.mag" title="Magnify Figure" class="ltx_magnifiable"><img src="./8/3/F2.png" id="F2.g1" class="ltx_graphics ltx_centering ltx_img_landscape" width="415" height="244" alt="See accompanying text"></a>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 8.3.2: </span><math class="ltx_Math" altimg="m24.png" altimg-height="25px" altimg-valign="-7px" altimg-width="68px" alttext="\gamma\left(a,x\right)" display="inline"><mrow><mi href="./8.2#E1" title="incomplete gamma function">γ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>,</mo><mi href="./8.1#p1.t1.r1" title="real variable">x</mi><mo>)</mo></mrow></mrow></math>,
+<math class="ltx_Math" altimg="m32.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="a" display="inline"><mi href="./8.1#p1.t1.r3" title="parameter">a</mi></math> = 0.25, 0.5, 0.75, 1.
+
+
+<a href="./8.3.F2.mag" title="Magnify Figure" class="ltx_magnifiable ltx_icon"><span>Magnify</span></a>
+</figcaption>
+<div id="F2.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./8.2#E1" title="(8.2.1) ‣ §8.2(i) Definitions ‣ §8.2 Definitions and Basic Properties ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m23.png" altimg-height="25px" altimg-valign="-7px" altimg-width="67px" alttext="\gamma\left(\NVar{a},\NVar{z}\right)" display="inline"><mrow><mi href="./8.2#E1" title="incomplete gamma function">γ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>,</mo><mi class="ltx_nvar" href="./8.1#p1.t1.r2" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: incomplete gamma function</a>,
+<a href="./8.1#p1.t1.r1" title="§8.1 Special Notation ‣ Notation ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m34.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./8.1#p1.t1.r1" title="real variable">x</mi></math>:  real variable</a> and
+<a href="./8.1#p1.t1.r3" title="§8.1 Special Notation ‣ Notation ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m32.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="a" display="inline"><mi href="./8.1#p1.t1.r3" title="parameter">a</mi></math>:  parameter</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./8.3.F2" title="" class="ltx_ref">http://dlmf.nist.gov/8.3.F2</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./8.3.F2.pdf">pdf</a>, <a href="./8.3.F2.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./8.3#i.info" title="§8.3(i) Real Variables ‣ §8.3 Graphics ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§8.3(i)</span></a>,
+<a href="./8.3#info" title="§8.3 Graphics ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§8.3</span></a> and
+<a href="./8#info" title="Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.8</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+</div>
+</div>
+</figure>
+<figure id="i.fig2" class="ltx_figure">
+<div class="ltx_flex_figure">
+<div class="ltx_flex_cell ltx_flex_size_2">
+<figure id="F3" class="ltx_figure ltx_figure_panel"><a href="./8.3.F3.mag" title="Magnify Figure" class="ltx_magnifiable"><img src="./8/3/F3.png" id="F3.g1" class="ltx_graphics ltx_centering ltx_img_landscape" width="415" height="251" alt="See accompanying text"></a>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 8.3.3: </span><math class="ltx_Math" altimg="m24.png" altimg-height="25px" altimg-valign="-7px" altimg-width="68px" alttext="\gamma\left(a,x\right)" display="inline"><mrow><mi href="./8.2#E1" title="incomplete gamma function">γ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>,</mo><mi href="./8.1#p1.t1.r1" title="real variable">x</mi><mo>)</mo></mrow></mrow></math>,
+<math class="ltx_Math" altimg="m32.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="a" display="inline"><mi href="./8.1#p1.t1.r3" title="parameter">a</mi></math> = 1, 2, 2.5, 3.
+
+
+<a href="./8.3.F3.mag" title="Magnify Figure" class="ltx_magnifiable ltx_icon"><span>Magnify</span></a>
+</figcaption>
+<div id="F3.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./8.2#E1" title="(8.2.1) ‣ §8.2(i) Definitions ‣ §8.2 Definitions and Basic Properties ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m23.png" altimg-height="25px" altimg-valign="-7px" altimg-width="67px" alttext="\gamma\left(\NVar{a},\NVar{z}\right)" display="inline"><mrow><mi href="./8.2#E1" title="incomplete gamma function">γ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>,</mo><mi class="ltx_nvar" href="./8.1#p1.t1.r2" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: incomplete gamma function</a>,
+<a href="./8.1#p1.t1.r1" title="§8.1 Special Notation ‣ Notation ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m34.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./8.1#p1.t1.r1" title="real variable">x</mi></math>:  real variable</a> and
+<a href="./8.1#p1.t1.r3" title="§8.1 Special Notation ‣ Notation ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m32.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="a" display="inline"><mi href="./8.1#p1.t1.r3" title="parameter">a</mi></math>:  parameter</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./8.3.F3" title="" class="ltx_ref">http://dlmf.nist.gov/8.3.F3</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./8.3.F3.pdf">pdf</a>, <a href="./8.3.F3.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./8.3#i.info" title="§8.3(i) Real Variables ‣ §8.3 Graphics ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§8.3(i)</span></a>,
+<a href="./8.3#info" title="§8.3 Graphics ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§8.3</span></a> and
+<a href="./8#info" title="Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.8</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+</div>
+<div class="ltx_flex_cell ltx_flex_size_2">
+<figure id="F4" class="ltx_figure ltx_figure_panel"><a href="./8.3.F4.mag" title="Magnify Figure" class="ltx_magnifiable"><img src="./8/3/F4.png" id="F4.g1" class="ltx_graphics ltx_centering ltx_img_landscape" width="415" height="244" alt="See accompanying text"></a>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 8.3.4: </span><math class="ltx_Math" altimg="m29.png" altimg-height="25px" altimg-valign="-7px" altimg-width="77px" alttext="\gamma^{*}\left(a,x\right)" display="inline"><mrow><msup><mi href="./8.2#E6" title="incomplete gamma function">γ</mi><mo href="./8.2#E6" title="incomplete gamma function">∗</mo></msup><mo>⁡</mo><mrow><mo>(</mo><mi href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>,</mo><mi href="./8.1#p1.t1.r1" title="real variable">x</mi><mo>)</mo></mrow></mrow></math> (= <math class="ltx_Math" altimg="m36.png" altimg-height="26px" altimg-valign="-7px" altimg-width="107px" alttext="x^{-a}P\left(a,x\right)" display="inline"><mrow><msup><mi href="./8.1#p1.t1.r1" title="real variable">x</mi><mrow><mo>−</mo><mi href="./8.1#p1.t1.r3" title="parameter">a</mi></mrow></msup><mo>⁢</mo><mrow><mi href="./8.2#E4" title="normalized incomplete gamma function">P</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>,</mo><mi href="./8.1#p1.t1.r1" title="real variable">x</mi><mo>)</mo></mrow></mrow></mrow></math>),
+<math class="ltx_Math" altimg="m32.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="a" display="inline"><mi href="./8.1#p1.t1.r3" title="parameter">a</mi></math> = 0.25, 0.5, 0.75, 1, 2.
+
+
+<a href="./8.3.F4.mag" title="Magnify Figure" class="ltx_magnifiable ltx_icon"><span>Magnify</span></a>
+</figcaption>
+<div id="F4.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./8.2#E4" title="(8.2.4) ‣ §8.2(i) Definitions ‣ §8.2 Definitions and Basic Properties ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m10.png" altimg-height="25px" altimg-valign="-7px" altimg-width="71px" alttext="P\left(\NVar{a},\NVar{z}\right)" display="inline"><mrow><mi href="./8.2#E4" title="normalized incomplete gamma function">P</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>,</mo><mi class="ltx_nvar" href="./8.1#p1.t1.r2" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: normalized incomplete gamma function</a>,
+<a href="./8.2#E6" title="(8.2.6) ‣ §8.2(i) Definitions ‣ §8.2 Definitions and Basic Properties ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m28.png" altimg-height="25px" altimg-valign="-7px" altimg-width="76px" alttext="\gamma^{*}\left(\NVar{a},\NVar{z}\right)" display="inline"><mrow><msup><mi href="./8.2#E6" title="incomplete gamma function">γ</mi><mo href="./8.2#E6" title="incomplete gamma function">∗</mo></msup><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>,</mo><mi class="ltx_nvar" href="./8.1#p1.t1.r2" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: incomplete gamma function</a>,
+<a href="./8.1#p1.t1.r1" title="§8.1 Special Notation ‣ Notation ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m34.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./8.1#p1.t1.r1" title="real variable">x</mi></math>:  real variable</a> and
+<a href="./8.1#p1.t1.r3" title="§8.1 Special Notation ‣ Notation ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m32.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="a" display="inline"><mi href="./8.1#p1.t1.r3" title="parameter">a</mi></math>:  parameter</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./8.3.F4" title="" class="ltx_ref">http://dlmf.nist.gov/8.3.F4</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./8.3.F4.pdf">pdf</a>, <a href="./8.3.F4.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./8.3#i.info" title="§8.3(i) Real Variables ‣ §8.3 Graphics ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§8.3(i)</span></a>,
+<a href="./8.3#info" title="§8.3 Graphics ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§8.3</span></a> and
+<a href="./8#info" title="Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.8</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+</div>
+</div>
+</figure>
+<figure id="i.fig3" class="ltx_figure">
+<div class="ltx_flex_figure">
+<div class="ltx_flex_cell ltx_flex_size_2">
+<figure id="F5" class="ltx_figure ltx_figure_panel"><a href="./8.3.F5.mag" title="Magnify Figure" class="ltx_magnifiable"><img src="./8/3/F5.png" id="F5.g1" class="ltx_graphics ltx_centering ltx_img_landscape" width="415" height="244" alt="See accompanying text"></a>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 8.3.5: </span><math class="ltx_Math" altimg="m35.png" altimg-height="26px" altimg-valign="-7px" altimg-width="138px" alttext="x^{-a}-\gamma^{*}\left(a,x\right)" display="inline"><mrow><msup><mi href="./8.1#p1.t1.r1" title="real variable">x</mi><mrow><mo>−</mo><mi href="./8.1#p1.t1.r3" title="parameter">a</mi></mrow></msup><mo>−</mo><mrow><msup><mi href="./8.2#E6" title="incomplete gamma function">γ</mi><mo href="./8.2#E6" title="incomplete gamma function">∗</mo></msup><mo>⁡</mo><mrow><mo>(</mo><mi href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>,</mo><mi href="./8.1#p1.t1.r1" title="real variable">x</mi><mo>)</mo></mrow></mrow></mrow></math> (= <math class="ltx_Math" altimg="m37.png" altimg-height="26px" altimg-valign="-7px" altimg-width="107px" alttext="x^{-a}Q\left(a,x\right)" display="inline"><mrow><msup><mi href="./8.1#p1.t1.r1" title="real variable">x</mi><mrow><mo>−</mo><mi href="./8.1#p1.t1.r3" title="parameter">a</mi></mrow></msup><mo>⁢</mo><mrow><mi href="./8.2#E4" title="normalized incomplete gamma function">Q</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>,</mo><mi href="./8.1#p1.t1.r1" title="real variable">x</mi><mo>)</mo></mrow></mrow></mrow></math>),
+<math class="ltx_Math" altimg="m32.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="a" display="inline"><mi href="./8.1#p1.t1.r3" title="parameter">a</mi></math> = 0.25, 0.5, 1, 2.
+
+
+<a href="./8.3.F5.mag" title="Magnify Figure" class="ltx_magnifiable ltx_icon"><span>Magnify</span></a>
+
+<a href="" title="Interactive 3D Visualization" class="ltx_3dgraphic ltx_icon"><span>3D</span></a>
+<a href="./help/vrml/" class="ltx_help" style="font-size:80%">Help</a>
+</figcaption>
+<div id="F5.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./8.2#E4" title="(8.2.4) ‣ §8.2(i) Definitions ‣ §8.2 Definitions and Basic Properties ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m11.png" altimg-height="25px" altimg-valign="-7px" altimg-width="71px" alttext="Q\left(\NVar{a},\NVar{z}\right)" display="inline"><mrow><mi href="./8.2#E4" title="normalized incomplete gamma function">Q</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>,</mo><mi class="ltx_nvar" href="./8.1#p1.t1.r2" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: normalized incomplete gamma function</a>,
+<a href="./8.2#E6" title="(8.2.6) ‣ §8.2(i) Definitions ‣ §8.2 Definitions and Basic Properties ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m28.png" altimg-height="25px" altimg-valign="-7px" altimg-width="76px" alttext="\gamma^{*}\left(\NVar{a},\NVar{z}\right)" display="inline"><mrow><msup><mi href="./8.2#E6" title="incomplete gamma function">γ</mi><mo href="./8.2#E6" title="incomplete gamma function">∗</mo></msup><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>,</mo><mi class="ltx_nvar" href="./8.1#p1.t1.r2" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: incomplete gamma function</a>,
+<a href="./8.1#p1.t1.r1" title="§8.1 Special Notation ‣ Notation ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m34.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./8.1#p1.t1.r1" title="real variable">x</mi></math>:  real variable</a> and
+<a href="./8.1#p1.t1.r3" title="§8.1 Special Notation ‣ Notation ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m32.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="a" display="inline"><mi href="./8.1#p1.t1.r3" title="parameter">a</mi></math>:  parameter</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./8.3.F5" title="" class="ltx_ref">http://dlmf.nist.gov/8.3.F5</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./8.3.F5.pdf">pdf</a>, <a href="./8.3.F5.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./8.3#i.info" title="§8.3(i) Real Variables ‣ §8.3 Graphics ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§8.3(i)</span></a>,
+<a href="./8.3#info" title="§8.3 Graphics ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§8.3</span></a> and
+<a href="./8#info" title="Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.8</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+</div>
+<div class="ltx_flex_cell ltx_flex_size_2">
+<figure id="F6" class="ltx_figure ltx_figure_panel">
+<div class="ltx_vizimg">
+<a href="./8.3.F6.viz" title="Interactive 3D Visualization" class="ltx_3dgraphic"><img src="./8/3/F6.png" id="F6.g1" class="ltx_graphics ltx_centering ltx_img_square" width="415" height="352" alt="See accompanying text"></a>
+</div>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 8.3.6: </span><math class="ltx_Math" altimg="m29.png" altimg-height="25px" altimg-valign="-7px" altimg-width="77px" alttext="\gamma^{*}\left(a,x\right)" display="inline"><mrow><msup><mi href="./8.2#E6" title="incomplete gamma function">γ</mi><mo href="./8.2#E6" title="incomplete gamma function">∗</mo></msup><mo>⁡</mo><mrow><mo>(</mo><mi href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>,</mo><mi href="./8.1#p1.t1.r1" title="real variable">x</mi><mo>)</mo></mrow></mrow></math> (= <math class="ltx_Math" altimg="m36.png" altimg-height="26px" altimg-valign="-7px" altimg-width="107px" alttext="x^{-a}P\left(a,x\right)" display="inline"><mrow><msup><mi href="./8.1#p1.t1.r1" title="real variable">x</mi><mrow><mo>−</mo><mi href="./8.1#p1.t1.r3" title="parameter">a</mi></mrow></msup><mo>⁢</mo><mrow><mi href="./8.2#E4" title="normalized incomplete gamma function">P</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>,</mo><mi href="./8.1#p1.t1.r1" title="real variable">x</mi><mo>)</mo></mrow></mrow></mrow></math>),
+<math class="ltx_Math" altimg="m4.png" altimg-height="20px" altimg-valign="-5px" altimg-width="108px" alttext="-4\leq x\leq 4" display="inline"><mrow><mrow><mo>−</mo><mn>4</mn></mrow><mo>≤</mo><mi href="./8.1#p1.t1.r1" title="real variable">x</mi><mo>≤</mo><mn>4</mn></mrow></math>, <math class="ltx_Math" altimg="m5.png" altimg-height="20px" altimg-valign="-5px" altimg-width="108px" alttext="-5\leq a\leq 4" display="inline"><mrow><mrow><mo>−</mo><mn>5</mn></mrow><mo>≤</mo><mi href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>≤</mo><mn>4</mn></mrow></math>.
+
+
+<a href="./8.3.F6.mag" title="Magnify Figure" class="ltx_magnifiable ltx_icon"><span>Magnify</span></a>
+
+<a href="./8.3.F6.viz" title="Interactive 3D Visualization" class="ltx_3dgraphic ltx_icon"><span>3D</span></a>
+<a href="./help/vrml/" class="ltx_help" style="font-size:80%">Help</a>
+</figcaption>
+<div id="F6.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./8.2#E4" title="(8.2.4) ‣ §8.2(i) Definitions ‣ §8.2 Definitions and Basic Properties ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m10.png" altimg-height="25px" altimg-valign="-7px" altimg-width="71px" alttext="P\left(\NVar{a},\NVar{z}\right)" display="inline"><mrow><mi href="./8.2#E4" title="normalized incomplete gamma function">P</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>,</mo><mi class="ltx_nvar" href="./8.1#p1.t1.r2" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: normalized incomplete gamma function</a>,
+<a href="./8.2#E6" title="(8.2.6) ‣ §8.2(i) Definitions ‣ §8.2 Definitions and Basic Properties ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m28.png" altimg-height="25px" altimg-valign="-7px" altimg-width="76px" alttext="\gamma^{*}\left(\NVar{a},\NVar{z}\right)" display="inline"><mrow><msup><mi href="./8.2#E6" title="incomplete gamma function">γ</mi><mo href="./8.2#E6" title="incomplete gamma function">∗</mo></msup><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>,</mo><mi class="ltx_nvar" href="./8.1#p1.t1.r2" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: incomplete gamma function</a>,
+<a href="./8.1#p1.t1.r1" title="§8.1 Special Notation ‣ Notation ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m34.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./8.1#p1.t1.r1" title="real variable">x</mi></math>:  real variable</a> and
+<a href="./8.1#p1.t1.r3" title="§8.1 Special Notation ‣ Notation ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m32.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="a" display="inline"><mi href="./8.1#p1.t1.r3" title="parameter">a</mi></math>:  parameter</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./8.13#i.p3" title="§8.13(i) 𝑥-Zeros of 𝛾^∗(𝑎,𝑥) ‣ §8.13 Zeros ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§8.13(i)</span></a>,
+<a href="./8.3#i.p1" title="§8.3(i) Real Variables ‣ §8.3 Graphics ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§8.3(i)</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./8.3.F6" title="" class="ltx_ref">http://dlmf.nist.gov/8.3.F6</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./8.3.F6.viz">Vizualization</a>, <a href="./8.3.F6.pdf">pdf</a>, <a href="./8.3.F6.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./8.3#i.info" title="§8.3(i) Real Variables ‣ §8.3 Graphics ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§8.3(i)</span></a>,
+<a href="./8.3#info" title="§8.3 Graphics ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§8.3</span></a> and
+<a href="./8#info" title="Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.8</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+</div>
+</div>
+</figure>
+<div id="i.p1" class="ltx_para">
+<p class="ltx_p">Some monotonicity properties of <math class="ltx_Math" altimg="m29.png" altimg-height="25px" altimg-valign="-7px" altimg-width="77px" alttext="\gamma^{*}\left(a,x\right)" display="inline"><mrow><msup><mi href="./8.2#E6" title="incomplete gamma function">γ</mi><mo href="./8.2#E6" title="incomplete gamma function">∗</mo></msup><mo>⁡</mo><mrow><mo>(</mo><mi href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>,</mo><mi href="./8.1#p1.t1.r1" title="real variable">x</mi><mo>)</mo></mrow></mrow></math> and <math class="ltx_Math" altimg="m19.png" altimg-height="25px" altimg-valign="-7px" altimg-width="69px" alttext="\Gamma\left(a,x\right)" display="inline"><mrow><mi href="./8.2#E2" mathvariant="normal" title="incomplete gamma function">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>,</mo><mi href="./8.1#p1.t1.r1" title="real variable">x</mi><mo>)</mo></mrow></mrow></math>
+in the four quadrants of the (<math class="ltx_Math" altimg="m31.png" altimg-height="17px" altimg-valign="-6px" altimg-width="36px" alttext="a,x" display="inline"><mrow><mi href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>,</mo><mi href="./8.1#p1.t1.r1" title="real variable">x</mi></mrow></math>)-plane in Figure <a href="./8.3#F6" title="Figure 8.3.6 ‣ §8.3(i) Real Variables ‣ §8.3 Graphics ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">8.3.6</span></a> are
+given in <cite class="ltx_cite ltx_citemacro_citet">Erdélyi<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/E#bib752" title="Higher Transcendental Functions. Vol. II" class="ltx_ref">1953b</a>, §9.6)</cite>.</p>
+</div>
+<figure id="F7" class="ltx_figure">
+<div class="ltx_vizimg">
+<a href="./8.3.F7.viz" title="Interactive 3D Visualization" class="ltx_3dgraphic"><img src="./8/3/F7.png" id="F7.g1" class="ltx_graphics ltx_centering ltx_img_landscape" width="415" height="320" alt="See accompanying text"></a>
+</div>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 8.3.7: </span><math class="ltx_Math" altimg="m35.png" altimg-height="26px" altimg-valign="-7px" altimg-width="138px" alttext="x^{-a}-\gamma^{*}\left(a,x\right)" display="inline"><mrow><msup><mi href="./8.1#p1.t1.r1" title="real variable">x</mi><mrow><mo>−</mo><mi href="./8.1#p1.t1.r3" title="parameter">a</mi></mrow></msup><mo>−</mo><mrow><msup><mi href="./8.2#E6" title="incomplete gamma function">γ</mi><mo href="./8.2#E6" title="incomplete gamma function">∗</mo></msup><mo>⁡</mo><mrow><mo>(</mo><mi href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>,</mo><mi href="./8.1#p1.t1.r1" title="real variable">x</mi><mo>)</mo></mrow></mrow></mrow></math> (= <math class="ltx_Math" altimg="m37.png" altimg-height="26px" altimg-valign="-7px" altimg-width="107px" alttext="x^{-a}Q\left(a,x\right)" display="inline"><mrow><msup><mi href="./8.1#p1.t1.r1" title="real variable">x</mi><mrow><mo>−</mo><mi href="./8.1#p1.t1.r3" title="parameter">a</mi></mrow></msup><mo>⁢</mo><mrow><mi href="./8.2#E4" title="normalized incomplete gamma function">Q</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>,</mo><mi href="./8.1#p1.t1.r1" title="real variable">x</mi><mo>)</mo></mrow></mrow></mrow></math>),
+<math class="ltx_Math" altimg="m7.png" altimg-height="20px" altimg-valign="-5px" altimg-width="92px" alttext="0\leq x\leq 4" display="inline"><mrow><mn>0</mn><mo>≤</mo><mi href="./8.1#p1.t1.r1" title="real variable">x</mi><mo>≤</mo><mn>4</mn></mrow></math>, <math class="ltx_Math" altimg="m6.png" altimg-height="20px" altimg-valign="-5px" altimg-width="108px" alttext="-5\leq a\leq 5" display="inline"><mrow><mrow><mo>−</mo><mn>5</mn></mrow><mo>≤</mo><mi href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>≤</mo><mn>5</mn></mrow></math>.
+
+
+<a href="./8.3.F7.mag" title="Magnify Figure" class="ltx_magnifiable ltx_icon"><span>Magnify</span></a>
+
+<a href="./8.3.F7.viz" title="Interactive 3D Visualization" class="ltx_3dgraphic ltx_icon"><span>3D</span></a>
+<a href="./help/vrml/" class="ltx_help" style="font-size:80%">Help</a>
+</figcaption>
+<div id="F7.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./8.2#E4" title="(8.2.4) ‣ §8.2(i) Definitions ‣ §8.2 Definitions and Basic Properties ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m11.png" altimg-height="25px" altimg-valign="-7px" altimg-width="71px" alttext="Q\left(\NVar{a},\NVar{z}\right)" display="inline"><mrow><mi href="./8.2#E4" title="normalized incomplete gamma function">Q</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>,</mo><mi class="ltx_nvar" href="./8.1#p1.t1.r2" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: normalized incomplete gamma function</a>,
+<a href="./8.2#E6" title="(8.2.6) ‣ §8.2(i) Definitions ‣ §8.2 Definitions and Basic Properties ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m28.png" altimg-height="25px" altimg-valign="-7px" altimg-width="76px" alttext="\gamma^{*}\left(\NVar{a},\NVar{z}\right)" display="inline"><mrow><msup><mi href="./8.2#E6" title="incomplete gamma function">γ</mi><mo href="./8.2#E6" title="incomplete gamma function">∗</mo></msup><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>,</mo><mi class="ltx_nvar" href="./8.1#p1.t1.r2" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: incomplete gamma function</a>,
+<a href="./8.1#p1.t1.r1" title="§8.1 Special Notation ‣ Notation ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m34.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./8.1#p1.t1.r1" title="real variable">x</mi></math>:  real variable</a> and
+<a href="./8.1#p1.t1.r3" title="§8.1 Special Notation ‣ Notation ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m32.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="a" display="inline"><mi href="./8.1#p1.t1.r3" title="parameter">a</mi></math>:  parameter</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./8.3.F7" title="" class="ltx_ref">http://dlmf.nist.gov/8.3.F7</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./8.3.F7.viz">Vizualization</a>, <a href="./8.3.F7.pdf">pdf</a>, <a href="./8.3.F7.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./8.3#i.info" title="§8.3(i) Real Variables ‣ §8.3 Graphics ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§8.3(i)</span></a>,
+<a href="./8.3#info" title="§8.3 Graphics ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§8.3</span></a> and
+<a href="./8#info" title="Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.8</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+</section>
+<section id="ii" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§8.3(ii) </span>Complex Argument</h2>
+<div id="ii.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=complex%20argument">complex argument</a>, <a class="ltx_keyword" href="./search/search?q=graphics">graphics</a>, <a class="ltx_keyword" href="./search/search?q=incomplete%20gamma%20functions">incomplete gamma functions</a>
+</dd>
+<dt>Notes:</dt>
+<dd>These graphics were produced at NIST.</dd>
+<dt>Permalink:</dt>
+<dd><a href="./8.3.ii" title="" class="ltx_ref">http://dlmf.nist.gov/8.3.ii</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./8.3#info" title="§8.3 Graphics ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§8.3</span></a> and
+<a href="./8#info" title="Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.8</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="ii.p1" class="ltx_para">
+<p class="ltx_p">In the graphics shown in this subsection, height corresponds to the absolute
+value of the function and color to the phase.
+See <a href="./help/vrml/aboutcolor" title="In Viewing DLMF Interactive 3D Graphics ‣ Need Help?" class="ltx_ref"><span class="ltx_text ltx_ref_title">About Color Map</span></a>.</p>
+</div>
+<figure id="F8" class="ltx_figure">
+<div class="ltx_vizimg">
+<a href="./8.3.F8.viz" title="Interactive 3D Visualization" class="ltx_3dgraphic"><img src="./8/3/F8.png" id="F8.g1" class="ltx_graphics ltx_centering ltx_img_landscape" width="416" height="300" alt="See accompanying text"></a>
+</div>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 8.3.8: </span><math class="ltx_Math" altimg="m13.png" altimg-height="25px" altimg-valign="-7px" altimg-width="138px" alttext="\Gamma\left(0.25,x+iy\right)" display="inline"><mrow><mi href="./8.2#E2" mathvariant="normal" title="incomplete gamma function">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mn>0.25</mn><mo>,</mo><mrow><mi href="./8.1#p1.t1.r1" title="real variable">x</mi><mo>+</mo><mrow><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi><mo>⁢</mo><mi>y</mi></mrow></mrow><mo>)</mo></mrow></mrow></math>,
+<math class="ltx_Math" altimg="m2.png" altimg-height="20px" altimg-valign="-5px" altimg-width="108px" alttext="-3\leq x\leq 3" display="inline"><mrow><mrow><mo>−</mo><mn>3</mn></mrow><mo>≤</mo><mi href="./8.1#p1.t1.r1" title="real variable">x</mi><mo>≤</mo><mn>3</mn></mrow></math>, <math class="ltx_Math" altimg="m3.png" altimg-height="21px" altimg-valign="-6px" altimg-width="107px" alttext="-3\leq y\leq 3" display="inline"><mrow><mrow><mo>−</mo><mn>3</mn></mrow><mo>≤</mo><mi>y</mi><mo>≤</mo><mn>3</mn></mrow></math>.
+Principal value.
+There is a cut along the negative real axis.
+When <math class="ltx_Math" altimg="m33.png" altimg-height="21px" altimg-valign="-6px" altimg-width="93px" alttext="x=y=0" display="inline"><mrow><mi href="./8.1#p1.t1.r1" title="real variable">x</mi><mo>=</mo><mi>y</mi><mo>=</mo><mn>0</mn></mrow></math>,
+<math class="ltx_Math" altimg="m12.png" altimg-height="25px" altimg-valign="-7px" altimg-width="293px" alttext="\Gamma\left(0.25,0\right)=\Gamma\left(0.25\right)=3.625\dotsc" display="inline"><mrow><mrow><mi href="./8.2#E2" mathvariant="normal" title="incomplete gamma function">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mn>0.25</mn><mo>,</mo><mn>0</mn><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mi href="./5.2#E1" mathvariant="normal" title="gamma function">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mn>0.25</mn><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mn>3.625</mn><mo>⁢</mo><mi mathvariant="normal">…</mi></mrow></mrow></math>.
+
+
+<a href="./8.3.F8.mag" title="Magnify Figure" class="ltx_magnifiable ltx_icon"><span>Magnify</span></a>
+
+<a href="./8.3.F8.viz" title="Interactive 3D Visualization" class="ltx_3dgraphic ltx_icon"><span>3D</span></a>
+<a href="./help/vrml/" class="ltx_help" style="font-size:80%">Help</a>
+</figcaption>
+<div id="F8.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./5.2#E1" title="(5.2.1) ‣ Euler’s Integral ‣ §5.2(i) Gamma and Psi Functions ‣ §5.2 Definitions ‣ Properties ‣ Chapter 5 Gamma Function" class="ltx_ref"><math class="ltx_Math" altimg="m18.png" altimg-height="25px" altimg-valign="-7px" altimg-width="47px" alttext="\Gamma\left(\NVar{z}\right)" display="inline"><mrow><mi href="./5.2#E1" mathvariant="normal" title="gamma function">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./5.1#t1.r4" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: gamma function</a>,
+<a href="./1.9#E1" title="(1.9.1) ‣ §1.9(i) Complex Numbers ‣ §1.9 Calculus of a Complex Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m30.png" altimg-height="18px" altimg-valign="-2px" altimg-width="10px" alttext="\mathrm{i}" display="inline"><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></math>: imaginary unit</a>,
+<a href="./8.2#E2" title="(8.2.2) ‣ §8.2(i) Definitions ‣ §8.2 Definitions and Basic Properties ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m17.png" altimg-height="25px" altimg-valign="-7px" altimg-width="68px" alttext="\Gamma\left(\NVar{a},\NVar{z}\right)" display="inline"><mrow><mi href="./8.2#E2" mathvariant="normal" title="incomplete gamma function">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>,</mo><mi class="ltx_nvar" href="./8.1#p1.t1.r2" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: incomplete gamma function</a> and
+<a href="./8.1#p1.t1.r1" title="§8.1 Special Notation ‣ Notation ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m34.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./8.1#p1.t1.r1" title="real variable">x</mi></math>:  real variable</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./8.3.F8" title="" class="ltx_ref">http://dlmf.nist.gov/8.3.F8</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./8.3.F8.viz">Vizualization</a>, <a href="./8.3.F8.pdf">pdf</a>, <a href="./8.3.F8.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./8.3#ii.info" title="§8.3(ii) Complex Argument ‣ §8.3 Graphics ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§8.3(ii)</span></a>,
+<a href="./8.3#info" title="§8.3 Graphics ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§8.3</span></a> and
+<a href="./8#info" title="Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.8</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+<figure id="ii.fig1" class="ltx_figure">
+<div class="ltx_flex_figure">
+<div class="ltx_flex_cell ltx_flex_size_2">
+<figure id="F9" class="ltx_figure ltx_figure_panel">
+<div class="ltx_vizimg">
+<a href="./8.3.F9.viz" title="Interactive 3D Visualization" class="ltx_3dgraphic"><img src="./8/3/F9.png" id="F9.g1" class="ltx_graphics ltx_centering ltx_img_landscape" width="416" height="324" alt="See accompanying text"></a>
+</div>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 8.3.9: </span><math class="ltx_Math" altimg="m20.png" altimg-height="25px" altimg-valign="-7px" altimg-width="137px" alttext="\gamma\left(0.25,x+iy\right)" display="inline"><mrow><mi href="./8.2#E1" title="incomplete gamma function">γ</mi><mo>⁡</mo><mrow><mo>(</mo><mn>0.25</mn><mo>,</mo><mrow><mi href="./8.1#p1.t1.r1" title="real variable">x</mi><mo>+</mo><mrow><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi><mo>⁢</mo><mi>y</mi></mrow></mrow><mo>)</mo></mrow></mrow></math>,
+<math class="ltx_Math" altimg="m2.png" altimg-height="20px" altimg-valign="-5px" altimg-width="108px" alttext="-3\leq x\leq 3" display="inline"><mrow><mrow><mo>−</mo><mn>3</mn></mrow><mo>≤</mo><mi href="./8.1#p1.t1.r1" title="real variable">x</mi><mo>≤</mo><mn>3</mn></mrow></math>, <math class="ltx_Math" altimg="m3.png" altimg-height="21px" altimg-valign="-6px" altimg-width="107px" alttext="-3\leq y\leq 3" display="inline"><mrow><mrow><mo>−</mo><mn>3</mn></mrow><mo>≤</mo><mi>y</mi><mo>≤</mo><mn>3</mn></mrow></math>.
+Principal value.
+There is a cut along the negative real axis.
+
+
+<a href="./8.3.F9.mag" title="Magnify Figure" class="ltx_magnifiable ltx_icon"><span>Magnify</span></a>
+
+<a href="./8.3.F9.viz" title="Interactive 3D Visualization" class="ltx_3dgraphic ltx_icon"><span>3D</span></a>
+<a href="./help/vrml/" class="ltx_help" style="font-size:80%">Help</a>
+</figcaption>
+<div id="F9.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./1.9#E1" title="(1.9.1) ‣ §1.9(i) Complex Numbers ‣ §1.9 Calculus of a Complex Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m30.png" altimg-height="18px" altimg-valign="-2px" altimg-width="10px" alttext="\mathrm{i}" display="inline"><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></math>: imaginary unit</a>,
+<a href="./8.2#E1" title="(8.2.1) ‣ §8.2(i) Definitions ‣ §8.2 Definitions and Basic Properties ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m23.png" altimg-height="25px" altimg-valign="-7px" altimg-width="67px" alttext="\gamma\left(\NVar{a},\NVar{z}\right)" display="inline"><mrow><mi href="./8.2#E1" title="incomplete gamma function">γ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>,</mo><mi class="ltx_nvar" href="./8.1#p1.t1.r2" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: incomplete gamma function</a> and
+<a href="./8.1#p1.t1.r1" title="§8.1 Special Notation ‣ Notation ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m34.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./8.1#p1.t1.r1" title="real variable">x</mi></math>:  real variable</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./8.3.F9" title="" class="ltx_ref">http://dlmf.nist.gov/8.3.F9</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./8.3.F9.viz">Vizualization</a>, <a href="./8.3.F9.pdf">pdf</a>, <a href="./8.3.F9.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./8.3#ii.info" title="§8.3(ii) Complex Argument ‣ §8.3 Graphics ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§8.3(ii)</span></a>,
+<a href="./8.3#info" title="§8.3 Graphics ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§8.3</span></a> and
+<a href="./8#info" title="Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.8</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+</div>
+<div class="ltx_flex_cell ltx_flex_size_2">
+<figure id="F10" class="ltx_figure ltx_figure_panel">
+<div class="ltx_vizimg">
+<a href="./8.3.F10.viz" title="Interactive 3D Visualization" class="ltx_3dgraphic"><img src="./8/3/F10.png" id="F10.g1" class="ltx_graphics ltx_centering ltx_img_landscape" width="415" height="273" alt="See accompanying text"></a>
+</div>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 8.3.10: </span><math class="ltx_Math" altimg="m25.png" altimg-height="25px" altimg-valign="-7px" altimg-width="147px" alttext="\gamma^{*}\left(0.25,x+iy\right)" display="inline"><mrow><msup><mi href="./8.2#E6" title="incomplete gamma function">γ</mi><mo href="./8.2#E6" title="incomplete gamma function">∗</mo></msup><mo>⁡</mo><mrow><mo>(</mo><mn>0.25</mn><mo>,</mo><mrow><mi href="./8.1#p1.t1.r1" title="real variable">x</mi><mo>+</mo><mrow><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi><mo>⁢</mo><mi>y</mi></mrow></mrow><mo>)</mo></mrow></mrow></math>,
+<math class="ltx_Math" altimg="m2.png" altimg-height="20px" altimg-valign="-5px" altimg-width="108px" alttext="-3\leq x\leq 3" display="inline"><mrow><mrow><mo>−</mo><mn>3</mn></mrow><mo>≤</mo><mi href="./8.1#p1.t1.r1" title="real variable">x</mi><mo>≤</mo><mn>3</mn></mrow></math>, <math class="ltx_Math" altimg="m3.png" altimg-height="21px" altimg-valign="-6px" altimg-width="107px" alttext="-3\leq y\leq 3" display="inline"><mrow><mrow><mo>−</mo><mn>3</mn></mrow><mo>≤</mo><mi>y</mi><mo>≤</mo><mn>3</mn></mrow></math>.
+
+
+<a href="./8.3.F10.mag" title="Magnify Figure" class="ltx_magnifiable ltx_icon"><span>Magnify</span></a>
+
+<a href="./8.3.F10.viz" title="Interactive 3D Visualization" class="ltx_3dgraphic ltx_icon"><span>3D</span></a>
+<a href="./help/vrml/" class="ltx_help" style="font-size:80%">Help</a>
+</figcaption>
+<div id="F10.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./1.9#E1" title="(1.9.1) ‣ §1.9(i) Complex Numbers ‣ §1.9 Calculus of a Complex Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m30.png" altimg-height="18px" altimg-valign="-2px" altimg-width="10px" alttext="\mathrm{i}" display="inline"><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></math>: imaginary unit</a>,
+<a href="./8.2#E6" title="(8.2.6) ‣ §8.2(i) Definitions ‣ §8.2 Definitions and Basic Properties ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m28.png" altimg-height="25px" altimg-valign="-7px" altimg-width="76px" alttext="\gamma^{*}\left(\NVar{a},\NVar{z}\right)" display="inline"><mrow><msup><mi href="./8.2#E6" title="incomplete gamma function">γ</mi><mo href="./8.2#E6" title="incomplete gamma function">∗</mo></msup><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>,</mo><mi class="ltx_nvar" href="./8.1#p1.t1.r2" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: incomplete gamma function</a> and
+<a href="./8.1#p1.t1.r1" title="§8.1 Special Notation ‣ Notation ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m34.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./8.1#p1.t1.r1" title="real variable">x</mi></math>:  real variable</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./8.3.F10" title="" class="ltx_ref">http://dlmf.nist.gov/8.3.F10</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./8.3.F10.viz">Vizualization</a>, <a href="./8.3.F10.pdf">pdf</a>, <a href="./8.3.F10.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./8.3#ii.info" title="§8.3(ii) Complex Argument ‣ §8.3 Graphics ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§8.3(ii)</span></a>,
+<a href="./8.3#info" title="§8.3 Graphics ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§8.3</span></a> and
+<a href="./8#info" title="Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.8</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+</div>
+</div>
+</figure>
+<figure id="ii.fig2" class="ltx_figure">
+<div class="ltx_flex_figure">
+<div class="ltx_flex_cell ltx_flex_size_2">
+<figure id="F11" class="ltx_figure ltx_figure_panel">
+<div class="ltx_vizimg">
+<a href="./8.3.F11.viz" title="Interactive 3D Visualization" class="ltx_3dgraphic"><img src="./8/3/F11.png" id="F11.g1" class="ltx_graphics ltx_centering ltx_img_square" width="415" height="343" alt="See accompanying text"></a>
+</div>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 8.3.11: </span><math class="ltx_Math" altimg="m14.png" altimg-height="25px" altimg-valign="-7px" altimg-width="112px" alttext="\Gamma\left(1,x+iy\right)" display="inline"><mrow><mi href="./8.2#E2" mathvariant="normal" title="incomplete gamma function">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mn>1</mn><mo>,</mo><mrow><mi href="./8.1#p1.t1.r1" title="real variable">x</mi><mo>+</mo><mrow><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi><mo>⁢</mo><mi>y</mi></mrow></mrow><mo>)</mo></mrow></mrow></math>,
+<math class="ltx_Math" altimg="m2.png" altimg-height="20px" altimg-valign="-5px" altimg-width="108px" alttext="-3\leq x\leq 3" display="inline"><mrow><mrow><mo>−</mo><mn>3</mn></mrow><mo>≤</mo><mi href="./8.1#p1.t1.r1" title="real variable">x</mi><mo>≤</mo><mn>3</mn></mrow></math>, <math class="ltx_Math" altimg="m3.png" altimg-height="21px" altimg-valign="-6px" altimg-width="107px" alttext="-3\leq y\leq 3" display="inline"><mrow><mrow><mo>−</mo><mn>3</mn></mrow><mo>≤</mo><mi>y</mi><mo>≤</mo><mn>3</mn></mrow></math>.
+
+
+<a href="./8.3.F11.mag" title="Magnify Figure" class="ltx_magnifiable ltx_icon"><span>Magnify</span></a>
+
+<a href="./8.3.F11.viz" title="Interactive 3D Visualization" class="ltx_3dgraphic ltx_icon"><span>3D</span></a>
+<a href="./help/vrml/" class="ltx_help" style="font-size:80%">Help</a>
+</figcaption>
+<div id="F11.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./1.9#E1" title="(1.9.1) ‣ §1.9(i) Complex Numbers ‣ §1.9 Calculus of a Complex Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m30.png" altimg-height="18px" altimg-valign="-2px" altimg-width="10px" alttext="\mathrm{i}" display="inline"><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></math>: imaginary unit</a>,
+<a href="./8.2#E2" title="(8.2.2) ‣ §8.2(i) Definitions ‣ §8.2 Definitions and Basic Properties ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m17.png" altimg-height="25px" altimg-valign="-7px" altimg-width="68px" alttext="\Gamma\left(\NVar{a},\NVar{z}\right)" display="inline"><mrow><mi href="./8.2#E2" mathvariant="normal" title="incomplete gamma function">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>,</mo><mi class="ltx_nvar" href="./8.1#p1.t1.r2" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: incomplete gamma function</a> and
+<a href="./8.1#p1.t1.r1" title="§8.1 Special Notation ‣ Notation ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m34.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./8.1#p1.t1.r1" title="real variable">x</mi></math>:  real variable</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./8.3.F11" title="" class="ltx_ref">http://dlmf.nist.gov/8.3.F11</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./8.3.F11.viz">Vizualization</a>, <a href="./8.3.F11.pdf">pdf</a>, <a href="./8.3.F11.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./8.3#ii.info" title="§8.3(ii) Complex Argument ‣ §8.3 Graphics ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§8.3(ii)</span></a>,
+<a href="./8.3#info" title="§8.3 Graphics ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§8.3</span></a> and
+<a href="./8#info" title="Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.8</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+</div>
+<div class="ltx_flex_cell ltx_flex_size_2">
+<figure id="F12" class="ltx_figure ltx_figure_panel">
+<div class="ltx_vizimg">
+<a href="./8.3.F12.viz" title="Interactive 3D Visualization" class="ltx_3dgraphic"><img src="./8/3/F12.png" id="F12.g1" class="ltx_graphics ltx_centering ltx_img_square" width="416" height="365" alt="See accompanying text"></a>
+</div>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 8.3.12: </span><math class="ltx_Math" altimg="m21.png" altimg-height="25px" altimg-valign="-7px" altimg-width="111px" alttext="\gamma\left(1,x+iy\right)" display="inline"><mrow><mi href="./8.2#E1" title="incomplete gamma function">γ</mi><mo>⁡</mo><mrow><mo>(</mo><mn>1</mn><mo>,</mo><mrow><mi href="./8.1#p1.t1.r1" title="real variable">x</mi><mo>+</mo><mrow><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi><mo>⁢</mo><mi>y</mi></mrow></mrow><mo>)</mo></mrow></mrow></math>,
+<math class="ltx_Math" altimg="m2.png" altimg-height="20px" altimg-valign="-5px" altimg-width="108px" alttext="-3\leq x\leq 3" display="inline"><mrow><mrow><mo>−</mo><mn>3</mn></mrow><mo>≤</mo><mi href="./8.1#p1.t1.r1" title="real variable">x</mi><mo>≤</mo><mn>3</mn></mrow></math>, <math class="ltx_Math" altimg="m3.png" altimg-height="21px" altimg-valign="-6px" altimg-width="107px" alttext="-3\leq y\leq 3" display="inline"><mrow><mrow><mo>−</mo><mn>3</mn></mrow><mo>≤</mo><mi>y</mi><mo>≤</mo><mn>3</mn></mrow></math>.
+
+
+<a href="./8.3.F12.mag" title="Magnify Figure" class="ltx_magnifiable ltx_icon"><span>Magnify</span></a>
+
+<a href="./8.3.F12.viz" title="Interactive 3D Visualization" class="ltx_3dgraphic ltx_icon"><span>3D</span></a>
+<a href="./help/vrml/" class="ltx_help" style="font-size:80%">Help</a>
+</figcaption>
+<div id="F12.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./1.9#E1" title="(1.9.1) ‣ §1.9(i) Complex Numbers ‣ §1.9 Calculus of a Complex Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m30.png" altimg-height="18px" altimg-valign="-2px" altimg-width="10px" alttext="\mathrm{i}" display="inline"><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></math>: imaginary unit</a>,
+<a href="./8.2#E1" title="(8.2.1) ‣ §8.2(i) Definitions ‣ §8.2 Definitions and Basic Properties ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m23.png" altimg-height="25px" altimg-valign="-7px" altimg-width="67px" alttext="\gamma\left(\NVar{a},\NVar{z}\right)" display="inline"><mrow><mi href="./8.2#E1" title="incomplete gamma function">γ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>,</mo><mi class="ltx_nvar" href="./8.1#p1.t1.r2" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: incomplete gamma function</a> and
+<a href="./8.1#p1.t1.r1" title="§8.1 Special Notation ‣ Notation ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m34.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./8.1#p1.t1.r1" title="real variable">x</mi></math>:  real variable</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./8.3.F12" title="" class="ltx_ref">http://dlmf.nist.gov/8.3.F12</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./8.3.F12.viz">Vizualization</a>, <a href="./8.3.F12.pdf">pdf</a>, <a href="./8.3.F12.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./8.3#ii.info" title="§8.3(ii) Complex Argument ‣ §8.3 Graphics ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§8.3(ii)</span></a>,
+<a href="./8.3#info" title="§8.3 Graphics ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§8.3</span></a> and
+<a href="./8#info" title="Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.8</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+</div>
+</div>
+</figure>
+<figure id="ii.fig3" class="ltx_figure">
+<div class="ltx_flex_figure">
+<div class="ltx_flex_cell ltx_flex_size_2">
+<figure id="F13" class="ltx_figure ltx_figure_panel">
+<div class="ltx_vizimg">
+<a href="./8.3.F13.viz" title="Interactive 3D Visualization" class="ltx_3dgraphic"><img src="./8/3/F13.png" id="F13.g1" class="ltx_graphics ltx_centering ltx_img_landscape" width="414" height="303" alt="See accompanying text"></a>
+</div>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 8.3.13: </span><math class="ltx_Math" altimg="m26.png" altimg-height="25px" altimg-valign="-7px" altimg-width="120px" alttext="\gamma^{*}\left(1,x+iy\right)" display="inline"><mrow><msup><mi href="./8.2#E6" title="incomplete gamma function">γ</mi><mo href="./8.2#E6" title="incomplete gamma function">∗</mo></msup><mo>⁡</mo><mrow><mo>(</mo><mn>1</mn><mo>,</mo><mrow><mi href="./8.1#p1.t1.r1" title="real variable">x</mi><mo>+</mo><mrow><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi><mo>⁢</mo><mi>y</mi></mrow></mrow><mo>)</mo></mrow></mrow></math>,
+<math class="ltx_Math" altimg="m2.png" altimg-height="20px" altimg-valign="-5px" altimg-width="108px" alttext="-3\leq x\leq 3" display="inline"><mrow><mrow><mo>−</mo><mn>3</mn></mrow><mo>≤</mo><mi href="./8.1#p1.t1.r1" title="real variable">x</mi><mo>≤</mo><mn>3</mn></mrow></math>, <math class="ltx_Math" altimg="m3.png" altimg-height="21px" altimg-valign="-6px" altimg-width="107px" alttext="-3\leq y\leq 3" display="inline"><mrow><mrow><mo>−</mo><mn>3</mn></mrow><mo>≤</mo><mi>y</mi><mo>≤</mo><mn>3</mn></mrow></math>.
+
+
+<a href="./8.3.F13.mag" title="Magnify Figure" class="ltx_magnifiable ltx_icon"><span>Magnify</span></a>
+
+<a href="./8.3.F13.viz" title="Interactive 3D Visualization" class="ltx_3dgraphic ltx_icon"><span>3D</span></a>
+<a href="./help/vrml/" class="ltx_help" style="font-size:80%">Help</a>
+</figcaption>
+<div id="F13.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./1.9#E1" title="(1.9.1) ‣ §1.9(i) Complex Numbers ‣ §1.9 Calculus of a Complex Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m30.png" altimg-height="18px" altimg-valign="-2px" altimg-width="10px" alttext="\mathrm{i}" display="inline"><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></math>: imaginary unit</a>,
+<a href="./8.2#E6" title="(8.2.6) ‣ §8.2(i) Definitions ‣ §8.2 Definitions and Basic Properties ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m28.png" altimg-height="25px" altimg-valign="-7px" altimg-width="76px" alttext="\gamma^{*}\left(\NVar{a},\NVar{z}\right)" display="inline"><mrow><msup><mi href="./8.2#E6" title="incomplete gamma function">γ</mi><mo href="./8.2#E6" title="incomplete gamma function">∗</mo></msup><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>,</mo><mi class="ltx_nvar" href="./8.1#p1.t1.r2" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: incomplete gamma function</a> and
+<a href="./8.1#p1.t1.r1" title="§8.1 Special Notation ‣ Notation ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m34.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./8.1#p1.t1.r1" title="real variable">x</mi></math>:  real variable</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./8.3.F13" title="" class="ltx_ref">http://dlmf.nist.gov/8.3.F13</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./8.3.F13.viz">Vizualization</a>, <a href="./8.3.F13.pdf">pdf</a>, <a href="./8.3.F13.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./8.3#ii.info" title="§8.3(ii) Complex Argument ‣ §8.3 Graphics ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§8.3(ii)</span></a>,
+<a href="./8.3#info" title="§8.3 Graphics ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§8.3</span></a> and
+<a href="./8#info" title="Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.8</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+</div>
+<div class="ltx_flex_cell ltx_flex_size_2">
+<figure id="F14" class="ltx_figure ltx_figure_panel">
+<div class="ltx_vizimg">
+<a href="./8.3.F14.viz" title="Interactive 3D Visualization" class="ltx_3dgraphic"><img src="./8/3/F14.png" id="F14.g1" class="ltx_graphics ltx_centering ltx_img_square" width="414" height="356" alt="See accompanying text"></a>
+</div>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 8.3.14: </span><math class="ltx_Math" altimg="m16.png" altimg-height="25px" altimg-valign="-7px" altimg-width="128px" alttext="\Gamma\left(2.5,x+iy\right)" display="inline"><mrow><mi href="./8.2#E2" mathvariant="normal" title="incomplete gamma function">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mn>2.5</mn><mo>,</mo><mrow><mi href="./8.1#p1.t1.r1" title="real variable">x</mi><mo>+</mo><mrow><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi><mo>⁢</mo><mi>y</mi></mrow></mrow><mo>)</mo></mrow></mrow></math>,
+<math class="ltx_Math" altimg="m1.png" altimg-height="20px" altimg-valign="-5px" altimg-width="125px" alttext="-2.2\leq x\leq 3" display="inline"><mrow><mrow><mo>−</mo><mn>2.2</mn></mrow><mo>≤</mo><mi href="./8.1#p1.t1.r1" title="real variable">x</mi><mo>≤</mo><mn>3</mn></mrow></math>, <math class="ltx_Math" altimg="m3.png" altimg-height="21px" altimg-valign="-6px" altimg-width="107px" alttext="-3\leq y\leq 3" display="inline"><mrow><mrow><mo>−</mo><mn>3</mn></mrow><mo>≤</mo><mi>y</mi><mo>≤</mo><mn>3</mn></mrow></math>.
+Principal value.
+There is a cut along the negative real axis.
+When <math class="ltx_Math" altimg="m33.png" altimg-height="21px" altimg-valign="-6px" altimg-width="93px" alttext="x=y=0" display="inline"><mrow><mi href="./8.1#p1.t1.r1" title="real variable">x</mi><mo>=</mo><mi>y</mi><mo>=</mo><mn>0</mn></mrow></math>,
+<math class="ltx_Math" altimg="m15.png" altimg-height="25px" altimg-valign="-7px" altimg-width="272px" alttext="\Gamma\left(2.5,0\right)=\Gamma\left(2.5\right)=1.329\dotsc" display="inline"><mrow><mrow><mi href="./8.2#E2" mathvariant="normal" title="incomplete gamma function">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mn>2.5</mn><mo>,</mo><mn>0</mn><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mi href="./5.2#E1" mathvariant="normal" title="gamma function">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mn>2.5</mn><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mn>1.329</mn><mo>⁢</mo><mi mathvariant="normal">…</mi></mrow></mrow></math>.
+
+
+<a href="./8.3.F14.mag" title="Magnify Figure" class="ltx_magnifiable ltx_icon"><span>Magnify</span></a>
+
+<a href="./8.3.F14.viz" title="Interactive 3D Visualization" class="ltx_3dgraphic ltx_icon"><span>3D</span></a>
+<a href="./help/vrml/" class="ltx_help" style="font-size:80%">Help</a>
+</figcaption>
+<div id="F14.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./5.2#E1" title="(5.2.1) ‣ Euler’s Integral ‣ §5.2(i) Gamma and Psi Functions ‣ §5.2 Definitions ‣ Properties ‣ Chapter 5 Gamma Function" class="ltx_ref"><math class="ltx_Math" altimg="m18.png" altimg-height="25px" altimg-valign="-7px" altimg-width="47px" alttext="\Gamma\left(\NVar{z}\right)" display="inline"><mrow><mi href="./5.2#E1" mathvariant="normal" title="gamma function">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./5.1#t1.r4" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: gamma function</a>,
+<a href="./1.9#E1" title="(1.9.1) ‣ §1.9(i) Complex Numbers ‣ §1.9 Calculus of a Complex Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m30.png" altimg-height="18px" altimg-valign="-2px" altimg-width="10px" alttext="\mathrm{i}" display="inline"><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></math>: imaginary unit</a>,
+<a href="./8.2#E2" title="(8.2.2) ‣ §8.2(i) Definitions ‣ §8.2 Definitions and Basic Properties ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m17.png" altimg-height="25px" altimg-valign="-7px" altimg-width="68px" alttext="\Gamma\left(\NVar{a},\NVar{z}\right)" display="inline"><mrow><mi href="./8.2#E2" mathvariant="normal" title="incomplete gamma function">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>,</mo><mi class="ltx_nvar" href="./8.1#p1.t1.r2" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: incomplete gamma function</a> and
+<a href="./8.1#p1.t1.r1" title="§8.1 Special Notation ‣ Notation ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m34.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./8.1#p1.t1.r1" title="real variable">x</mi></math>:  real variable</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./8.3.F14" title="" class="ltx_ref">http://dlmf.nist.gov/8.3.F14</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./8.3.F14.viz">Vizualization</a>, <a href="./8.3.F14.pdf">pdf</a>, <a href="./8.3.F14.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./8.3#ii.info" title="§8.3(ii) Complex Argument ‣ §8.3 Graphics ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§8.3(ii)</span></a>,
+<a href="./8.3#info" title="§8.3 Graphics ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§8.3</span></a> and
+<a href="./8#info" title="Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.8</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+</div>
+</div>
+</figure>
+<figure id="ii.fig4" class="ltx_figure">
+<div class="ltx_flex_figure">
+<div class="ltx_flex_cell ltx_flex_size_2">
+<figure id="F15" class="ltx_figure ltx_figure_panel">
+<div class="ltx_vizimg">
+<a href="./8.3.F15.viz" title="Interactive 3D Visualization" class="ltx_3dgraphic"><img src="./8/3/F15.png" id="F15.g1" class="ltx_graphics ltx_centering ltx_img_square" width="414" height="348" alt="See accompanying text"></a>
+</div>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 8.3.15: </span><math class="ltx_Math" altimg="m22.png" altimg-height="25px" altimg-valign="-7px" altimg-width="127px" alttext="\gamma\left(2.5,x+iy\right)" display="inline"><mrow><mi href="./8.2#E1" title="incomplete gamma function">γ</mi><mo>⁡</mo><mrow><mo>(</mo><mn>2.5</mn><mo>,</mo><mrow><mi href="./8.1#p1.t1.r1" title="real variable">x</mi><mo>+</mo><mrow><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi><mo>⁢</mo><mi>y</mi></mrow></mrow><mo>)</mo></mrow></mrow></math>,
+<math class="ltx_Math" altimg="m1.png" altimg-height="20px" altimg-valign="-5px" altimg-width="125px" alttext="-2.2\leq x\leq 3" display="inline"><mrow><mrow><mo>−</mo><mn>2.2</mn></mrow><mo>≤</mo><mi href="./8.1#p1.t1.r1" title="real variable">x</mi><mo>≤</mo><mn>3</mn></mrow></math>, <math class="ltx_Math" altimg="m3.png" altimg-height="21px" altimg-valign="-6px" altimg-width="107px" alttext="-3\leq y\leq 3" display="inline"><mrow><mrow><mo>−</mo><mn>3</mn></mrow><mo>≤</mo><mi>y</mi><mo>≤</mo><mn>3</mn></mrow></math>.
+Principal value.
+There is a cut along the negative real axis.
+
+
+<a href="./8.3.F15.mag" title="Magnify Figure" class="ltx_magnifiable ltx_icon"><span>Magnify</span></a>
+
+<a href="./8.3.F15.viz" title="Interactive 3D Visualization" class="ltx_3dgraphic ltx_icon"><span>3D</span></a>
+<a href="./help/vrml/" class="ltx_help" style="font-size:80%">Help</a>
+</figcaption>
+<div id="F15.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./1.9#E1" title="(1.9.1) ‣ §1.9(i) Complex Numbers ‣ §1.9 Calculus of a Complex Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m30.png" altimg-height="18px" altimg-valign="-2px" altimg-width="10px" alttext="\mathrm{i}" display="inline"><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></math>: imaginary unit</a>,
+<a href="./8.2#E1" title="(8.2.1) ‣ §8.2(i) Definitions ‣ §8.2 Definitions and Basic Properties ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m23.png" altimg-height="25px" altimg-valign="-7px" altimg-width="67px" alttext="\gamma\left(\NVar{a},\NVar{z}\right)" display="inline"><mrow><mi href="./8.2#E1" title="incomplete gamma function">γ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>,</mo><mi class="ltx_nvar" href="./8.1#p1.t1.r2" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: incomplete gamma function</a> and
+<a href="./8.1#p1.t1.r1" title="§8.1 Special Notation ‣ Notation ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m34.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./8.1#p1.t1.r1" title="real variable">x</mi></math>:  real variable</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./8.3.F15" title="" class="ltx_ref">http://dlmf.nist.gov/8.3.F15</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./8.3.F15.viz">Vizualization</a>, <a href="./8.3.F15.pdf">pdf</a>, <a href="./8.3.F15.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./8.3#ii.info" title="§8.3(ii) Complex Argument ‣ §8.3 Graphics ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§8.3(ii)</span></a>,
+<a href="./8.3#info" title="§8.3 Graphics ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§8.3</span></a> and
+<a href="./8#info" title="Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.8</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+</div>
+<div class="ltx_flex_cell ltx_flex_size_2">
+<figure id="F16" class="ltx_figure ltx_figure_panel">
+<div class="ltx_vizimg">
+<a href="./8.3.F16.viz" title="Interactive 3D Visualization" class="ltx_3dgraphic"><img src="./8/3/F16.png" id="F16.g1" class="ltx_graphics ltx_centering ltx_img_landscape" width="415" height="279" alt="See accompanying text"></a>
+</div>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 8.3.16: </span><math class="ltx_Math" altimg="m27.png" altimg-height="25px" altimg-valign="-7px" altimg-width="136px" alttext="\gamma^{*}\left(2.5,x+iy\right)" display="inline"><mrow><msup><mi href="./8.2#E6" title="incomplete gamma function">γ</mi><mo href="./8.2#E6" title="incomplete gamma function">∗</mo></msup><mo>⁡</mo><mrow><mo>(</mo><mn>2.5</mn><mo>,</mo><mrow><mi href="./8.1#p1.t1.r1" title="real variable">x</mi><mo>+</mo><mrow><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi><mo>⁢</mo><mi>y</mi></mrow></mrow><mo>)</mo></mrow></mrow></math>,
+<math class="ltx_Math" altimg="m2.png" altimg-height="20px" altimg-valign="-5px" altimg-width="108px" alttext="-3\leq x\leq 3" display="inline"><mrow><mrow><mo>−</mo><mn>3</mn></mrow><mo>≤</mo><mi href="./8.1#p1.t1.r1" title="real variable">x</mi><mo>≤</mo><mn>3</mn></mrow></math>, <math class="ltx_Math" altimg="m3.png" altimg-height="21px" altimg-valign="-6px" altimg-width="107px" alttext="-3\leq y\leq 3" display="inline"><mrow><mrow><mo>−</mo><mn>3</mn></mrow><mo>≤</mo><mi>y</mi><mo>≤</mo><mn>3</mn></mrow></math>.
+
+
+<a href="./8.3.F16.mag" title="Magnify Figure" class="ltx_magnifiable ltx_icon"><span>Magnify</span></a>
+
+<a href="./8.3.F16.viz" title="Interactive 3D Visualization" class="ltx_3dgraphic ltx_icon"><span>3D</span></a>
+<a href="./help/vrml/" class="ltx_help" style="font-size:80%">Help</a>
+</figcaption>
+<div id="F16.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./1.9#E1" title="(1.9.1) ‣ §1.9(i) Complex Numbers ‣ §1.9 Calculus of a Complex Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m30.png" altimg-height="18px" altimg-valign="-2px" altimg-width="10px" alttext="\mathrm{i}" display="inline"><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></math>: imaginary unit</a>,
+<a href="./8.2#E6" title="(8.2.6) ‣ §8.2(i) Definitions ‣ §8.2 Definitions and Basic Properties ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m28.png" altimg-height="25px" altimg-valign="-7px" altimg-width="76px" alttext="\gamma^{*}\left(\NVar{a},\NVar{z}\right)" display="inline"><mrow><msup><mi href="./8.2#E6" title="incomplete gamma function">γ</mi><mo href="./8.2#E6" title="incomplete gamma function">∗</mo></msup><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>,</mo><mi class="ltx_nvar" href="./8.1#p1.t1.r2" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: incomplete gamma function</a> and
+<a href="./8.1#p1.t1.r1" title="§8.1 Special Notation ‣ Notation ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m34.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./8.1#p1.t1.r1" title="real variable">x</mi></math>:  real variable</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./8.3.F16" title="" class="ltx_ref">http://dlmf.nist.gov/8.3.F16</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./8.3.F16.viz">Vizualization</a>, <a href="./8.3.F16.pdf">pdf</a>, <a href="./8.3.F16.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./8.3#ii.info" title="§8.3(ii) Complex Argument ‣ §8.3 Graphics ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§8.3(ii)</span></a>,
+<a href="./8.3#info" title="§8.3 Graphics ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§8.3</span></a> and
+<a href="./8#info" title="Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.8</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+</div>
+</div>
+</figure>
+</section>
+</section>
+</div>
+<div class="ltx_page_footer">
+<div class="ltx_siblings">
+<a href="./8.2" title="In Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">8.2 </span>Definitions and Basic Properties</span></a><a href="./8.4" title="In Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">8.4 </span>Special Values</span></a>
+</div>
+<div class="ltx_footer_links ltx_centering">
+<a href="./about/notices">© 2010–2026 NIST</a> / <a href="./about/notices#S2">Disclaimer</a> / <a href="/cdn-cgi/l/email-protection#33777f7e751e5556565751525058735d5a40471d545c45">Feedback</a>;
+ Version 1.2.7;
+Release date 2026-06-15.</div>
+<span id="pagesettings"></span>
+<div class="ltx_nist_logo"><a href="http://www.nist.gov/"><img src="./style/nistidc.png" width="500" alt="NIST"></a></div>
+<div class="ltx_nist_links ltx_align_right">
+<a href="https://www.nist.gov/privacy-policy">Site Privacy</a> <a href="https://www.nist.gov/oism/accessibility">Accessibility</a> <a href="https://www.nist.gov/privacy">Privacy Program</a> <a href="https://www.nist.gov/oism/copyrights">Copyrights</a> <a href="https://www.commerce.gov/vulnerability-disclosure-policy">Vulnerability Disclosure</a> <a href="https://www.nist.gov/no-fear-act-policy">No Fear Act Policy</a> <a href="https://www.nist.gov/foia">FOIA</a> <a href="https://www.nist.gov/environmental-policy-statement">Environmental Policy</a> <a href="https://www.nist.gov/summary-report-scientific-integrity">Scientific Integrity</a> <a href="https://www.nist.gov/nist-information-quality-standards">Information Quality Standards</a> <a href="https://www.commerce.gov/">Commerce.gov</a> <a href="http://www.science.gov/">Science.gov</a> <a href="http://www.usa.gov/">USA.gov</a>
+</div>
+</div>
+</div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"9ef5b487afff42a68917b2d63593a474"}' crossorigin="anonymous"></script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a30b5202c97043b3',t:'MTc4NzY2ODQ5NQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

@@ -1,0 +1,1048 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>DLMF: §19.27 Asymptotic Approximations and Expansions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals</title>
+<link rel="shortcut icon" href="./style/DLMF-16.png" type="image/png">
+<script type="text/javascript"><!--
+	var PATH="DLMF:/19.27";
+	var ROOT="./";
+      //--></script>
+<script type="text/javascript" src="./style/jquery.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/jquery.leaveNotice.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/DLMF.js"><!-- non-empty so ie6 will accept it --></script>
+<script async="" type="text/javascript" id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC&amp;subagency=NIST&amp;pua=UA-37115410-44&amp;yt=true&amp;exts=ppsx,pps,f90,sch,rtf,wrl,txz,m1v,xlsm,msi,xsd,f,tif,eps,mpg,xml,pl,xlt,c"><!-- non-empty so ie6 will accept it --></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-BZB64W4M0L"></script><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-BZB64W4M0L');
+      </script>
+<link rel="stylesheet" type="text/css" href="./style/LaTeXML.css">
+<link rel="stylesheet" type="text/css" href="./style/DLMF.css">
+<link rel="stylesheet" type="text/css" href="./style/print.css" media="print">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="top" href="./" title="DLMF">
+<link rel="copyright" href="./about/notices" title="Copyright">
+<link rel="search" href="./search/search" title="Search">
+<link rel="help" class="ltx_help" href="./help/" title="Help">
+<link rel="up" href="./19#PT3" title="Symmetric Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="up up" href="./19" title="Chapter 19 Elliptic Integrals">
+<link rel="start" href="./" title="">
+<link rel="prev" href="./19.26" title="§19.26 Addition Theorems ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="next" href="./19.28" title="§19.28 Integrals of Elliptic Integrals ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.1" title="§19.1 Special Notation ‣ Notation ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.2" title="§19.2 Definitions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.3" title="§19.3 Graphics ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.4" title="§19.4 Derivatives and Differential Equations ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.5" title="§19.5 Maclaurin and Related Expansions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.6" title="§19.6 Special Cases ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.7" title="§19.7 Connection Formulas ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.8" title="§19.8 Quadratic Transformations ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.9" title="§19.9 Inequalities ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.10" title="§19.10 Relations to Other Functions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.11" title="§19.11 Addition Theorems ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.12" title="§19.12 Asymptotic Approximations ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.13" title="§19.13 Integrals of Elliptic Integrals ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.14" title="§19.14 Reduction of General Elliptic Integrals ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.15" title="§19.15 Advantages of Symmetry ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.16" title="§19.16 Definitions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.17" title="§19.17 Graphics ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.18" title="§19.18 Derivatives and Differential Equations ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.19" title="§19.19 Taylor and Related Series ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.20" title="§19.20 Special Cases ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.21" title="§19.21 Connection Formulas ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.22" title="§19.22 Quadratic Transformations ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.23" title="§19.23 Integral Representations ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.24" title="§19.24 Inequalities ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.25" title="§19.25 Relations to Other Functions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.26" title="§19.26 Addition Theorems ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.28" title="§19.28 Integrals of Elliptic Integrals ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.29" title="§19.29 Reduction of General Elliptic Integrals ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.30" title="§19.30 Lengths of Plane Curves ‣ Applications ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.31" title="§19.31 Probability Distributions ‣ Applications ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.32" title="§19.32 Conformal Map onto a Rectangle ‣ Applications ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.33" title="§19.33 Triaxial Ellipsoids ‣ Applications ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.34" title="§19.34 Mutual Inductance of Coaxial Circles ‣ Applications ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.35" title="§19.35 Other Applications ‣ Applications ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.36" title="§19.36 Methods of Computation ‣ Computation ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.37" title="§19.37 Tables ‣ Computation ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.38" title="§19.38 Approximations ‣ Computation ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.39" title="§19.39 Software ‣ Computation ‣ Chapter 19 Elliptic Integrals">
+<link rel="document" href="./front/foreword" title="Foreword">
+<link rel="document" href="./front/preface" title="Preface">
+<link rel="document" href="./front/introduction" title="Mathematical Introduction">
+<link rel="chapter" href="./1" title="Chapter 1 Algebraic and Analytic Methods">
+<link rel="chapter" href="./2" title="Chapter 2 Asymptotic Approximations">
+<link rel="chapter" href="./3" title="Chapter 3 Numerical Methods">
+<link rel="chapter" href="./4" title="Chapter 4 Elementary Functions">
+<link rel="chapter" href="./5" title="Chapter 5 Gamma Function">
+<link rel="chapter" href="./6" title="Chapter 6 Exponential, Logarithmic, Sine, and Cosine Integrals">
+<link rel="chapter" href="./7" title="Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="chapter" href="./8" title="Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="chapter" href="./9" title="Chapter 9 Airy and Related Functions">
+<link rel="chapter" href="./10" title="Chapter 10 Bessel Functions">
+<link rel="chapter" href="./11" title="Chapter 11 Struve and Related Functions">
+<link rel="chapter" href="./12" title="Chapter 12 Parabolic Cylinder Functions">
+<link rel="chapter" href="./13" title="Chapter 13 Confluent Hypergeometric Functions">
+<link rel="chapter" href="./14" title="Chapter 14 Legendre and Related Functions">
+<link rel="chapter" href="./15" title="Chapter 15 Hypergeometric Function">
+<link rel="chapter" href="./16" title="Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="chapter" href="./17" title="Chapter 17 𝑞-Hypergeometric and Related Functions">
+<link rel="chapter" href="./18" title="Chapter 18 Orthogonal Polynomials">
+<link rel="chapter" href="./19" title="Chapter 19 Elliptic Integrals">
+<link rel="chapter" href="./20" title="Chapter 20 Theta Functions">
+<link rel="chapter" href="./21" title="Chapter 21 Multidimensional Theta Functions">
+<link rel="chapter" href="./22" title="Chapter 22 Jacobian Elliptic Functions">
+<link rel="chapter" href="./23" title="Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="chapter" href="./24" title="Chapter 24 Bernoulli and Euler Polynomials">
+<link rel="chapter" href="./25" title="Chapter 25 Zeta and Related Functions">
+<link rel="chapter" href="./26" title="Chapter 26 Combinatorial Analysis">
+<link rel="chapter" href="./27" title="Chapter 27 Functions of Number Theory">
+<link rel="chapter" href="./28" title="Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="chapter" href="./29" title="Chapter 29 Lamé Functions">
+<link rel="chapter" href="./30" title="Chapter 30 Spheroidal Wave Functions">
+<link rel="chapter" href="./31" title="Chapter 31 Heun Functions">
+<link rel="chapter" href="./32" title="Chapter 32 Painlevé Transcendents">
+<link rel="chapter" href="./33" title="Chapter 33 Coulomb Functions">
+<link rel="chapter" href="./34" title="Chapter 34 3⁢𝑗,6⁢𝑗,9⁢𝑗 Symbols">
+<link rel="chapter" href="./35" title="Chapter 35 Functions of Matrix Argument">
+<link rel="chapter" href="./36" title="Chapter 36 Integrals with Coalescing Saddles">
+<link rel="bibliography" href="./bib/" title="Bibliography">
+<link rel="index" href="./idx/" title="Index">
+<link rel="glossary" href="./not/" title="Notations">
+<link rel="document" href="./lof/" title="List of Figures">
+<link rel="document" href="./lot/" title="List of Tables">
+<link rel="document" href="./software/" title="Software Index">
+<link rel="document" href="./errata/" title="Errata">
+<link rel="document" href="./help/" title="Need Help?">
+<link rel="document" href="./search/" title="Advanced Search">
+<link rel="document" href="./about/" title="About the Project">
+<meta name="keywords" lang="en" content="asymptotic approximations and expansions, symmetric elliptic integrals">
+</head>
+<body class="color_default textfont_default titlefont_default fontsize_default navbar_default">
+<div class="ltx_page_navbar">
+<div class="ltx_page_navlogo"><a href="./" title="Digital Library of Mathematical Functions"><span>DLMF</span></a></div>
+<div class="ltx_page_navitems">
+<form method="get" action="./search/search">
+<ul>
+<li><a href="./idx/">Index</a></li>
+<li><a href="./not/">Notations</a></li>
+<li><small><input type="text" name="q" value="" size="6" class="ltx_page_navitem_search"><button type="submit">Search</button></small></li>
+<li><a href="./help/" class="ltx_help">Help?</a></li>
+<li><a href="./help/cite">Citing</a></li>
+<li><a href="./help/customize" class="ltx_customize">Customize</a></li>
+<li id="showinfo"><a href="" onclick="showInfo(); return false;" title="Show Annotations">Annotate</a></li>
+<li id="hideinfo"><a href="" onclick="hideInfo(); return false;">UnAnnotate</a></li>
+</ul>
+</form>
+</div>
+<div class="ltx_page_navsponsors">
+<div><a href="./about/" class="ltx_page_navabout">About the Project</a></div>
+</div>
+</div>
+<div class="ltx_page_main">
+<div class="ltx_page_header">
+<a href="./19" title="" class="ltx_ref" rel="up up"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">19 </span>Elliptic Integrals</span></a><a href="./19#PT3" title="In Chapter 19 Elliptic Integrals" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title">Symmetric Integrals</span></a><a href="./19.26" title="In Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">19.26 </span>Addition Theorems</span></a><a href="./19.28" title="In Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">19.28 </span>Integrals of Elliptic Integrals</span></a>
+</div>
+<div class="ltx_page_content">
+<section class="ltx_section ltx_authors_multiline ltx_leqno">
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">§19.27 </span>Asymptotic Approximations and Expansions</h1>
+<div id="info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=asymptotic%20approximations%20and%20expansions">asymptotic approximations and expansions</a>, <a class="ltx_keyword" href="./search/search?q=symmetric%20elliptic%20integrals">symmetric elliptic integrals</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./19.27" title="" class="ltx_ref">http://dlmf.nist.gov/19.27</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<h6>Contents</h6>
+<ol class="ltx_toclist ltx_toclist_section">
+<li class="ltx_tocentry"><a href="#i"><span class="ltx_tag ltx_tag_subsection">§19.27(i) </span>Notation</a></li>
+<li class="ltx_tocentry"><a href="#ii"><span class="ltx_tag ltx_tag_subsection">§19.27(ii) </span><math class="ltx_Math" altimg="m31.png" altimg-height="25px" altimg-valign="-7px" altimg-width="105px" alttext="R_{F}\left(x,y,z\right)" display="inline"><mrow><msub><mi href="./19.16#E1" title="symmetric elliptic integral of first kind">R</mi><mi href="./19.16#E1" title="symmetric elliptic integral of first kind">F</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo>)</mo></mrow></mrow></math></a></li>
+<li class="ltx_tocentry"><a href="#iii"><span class="ltx_tag ltx_tag_subsection">§19.27(iii) </span><math class="ltx_Math" altimg="m33.png" altimg-height="25px" altimg-valign="-7px" altimg-width="105px" alttext="R_{G}\left(x,y,z\right)" display="inline"><mrow><msub><mi href="./19.16#E2_5" title="symmetric elliptic integral of second kind">R</mi><mi href="./19.16#E2_5" title="symmetric elliptic integral of second kind">G</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo>)</mo></mrow></mrow></math></a></li>
+<li class="ltx_tocentry"><a href="#iv"><span class="ltx_tag ltx_tag_subsection">§19.27(iv) </span><math class="ltx_Math" altimg="m29.png" altimg-height="25px" altimg-valign="-7px" altimg-width="107px" alttext="R_{D}\left(x,y,z\right)" display="inline"><mrow><msub><mi href="./19.16#E5" title="elliptic integral symmetric in only two variables">R</mi><mi href="./19.16#E5" title="elliptic integral symmetric in only two variables">D</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo>)</mo></mrow></mrow></math></a></li>
+<li class="ltx_tocentry"><a href="#v"><span class="ltx_tag ltx_tag_subsection">§19.27(v) </span><math class="ltx_Math" altimg="m35.png" altimg-height="25px" altimg-valign="-7px" altimg-width="123px" alttext="R_{J}\left(x,y,z,p\right)" display="inline"><mrow><msub><mi href="./19.16#E2" title="symmetric elliptic integral of third kind">R</mi><mi href="./19.16#E2" title="symmetric elliptic integral of third kind">J</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo>,</mo><mi>p</mi><mo>)</mo></mrow></mrow></math></a></li>
+<li class="ltx_tocentry"><a href="#vi"><span class="ltx_tag ltx_tag_subsection">§19.27(vi) </span>Asymptotic Expansions</a></li>
+</ol>
+<section id="i" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§19.27(i) </span>Notation</h2>
+<div id="i.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Referenced by:</dt>
+<dd><a href="./19.27#vi.p1" title="§19.27(vi) Asymptotic Expansions ‣ §19.27 Asymptotic Approximations and Expansions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.27(vi)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./19.27.i" title="" class="ltx_ref">http://dlmf.nist.gov/19.27.i</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19.27#info" title="§19.27 Asymptotic Approximations and Expansions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.27</span></a> and
+<a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="i.p1" class="ltx_para">
+<p class="ltx_p">Throughout this section
+</p>
+<table id="E1" class="ltx_equationgroup ltx_eqn_table">
+<tbody>
+<tr id="Ex1" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="6" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equationgroup ltx_align_left">19.27.1</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m19.png" altimg-height="15px" altimg-valign="-2px" altimg-width="18px" alttext="\displaystyle a" display="inline"><mi href="./19.27#i.p1" title="𝑎">a</mi></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m12.png" altimg-height="31px" altimg-valign="-9px" altimg-width="112px" alttext="\displaystyle=\tfrac{1}{2}(x+y)," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mi>y</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex2" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m20.png" altimg-height="20px" altimg-valign="-2px" altimg-width="16px" alttext="\displaystyle b" display="inline"><mi href="./19.27#i.p1" title="𝑏">b</mi></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m13.png" altimg-height="31px" altimg-valign="-9px" altimg-width="111px" alttext="\displaystyle=\tfrac{1}{2}(y+z)," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>y</mi><mo>+</mo><mi>z</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex3" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m21.png" altimg-height="15px" altimg-valign="-2px" altimg-width="16px" alttext="\displaystyle c" display="inline"><mi href="./19.27#i.p1" title="𝑐">c</mi></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m14.png" altimg-height="31px" altimg-valign="-9px" altimg-width="148px" alttext="\displaystyle=\tfrac{1}{3}(x+y+z)," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mfrac><mn>1</mn><mn>3</mn></mfrac><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mi>y</mi><mo>+</mo><mi>z</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex4" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m22.png" altimg-height="24px" altimg-valign="-6px" altimg-width="19px" alttext="\displaystyle f" display="inline"><mi href="./19.27#i.p1" title="𝑓">f</mi></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m3.png" altimg-height="31px" altimg-valign="-7px" altimg-width="110px" alttext="\displaystyle=(xyz)^{1/3}," display="inline"><mrow><mrow><mi></mi><mo>=</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>⁢</mo><mi>y</mi><mo>⁢</mo><mi>z</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mn>1</mn><mo>/</mo><mn>3</mn></mrow></msup></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex5" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m23.png" altimg-height="19px" altimg-valign="-6px" altimg-width="17px" alttext="\displaystyle g" display="inline"><mi href="./19.27#i.p1" title="𝑔">g</mi></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m2.png" altimg-height="31px" altimg-valign="-7px" altimg-width="99px" alttext="\displaystyle=(xy)^{1/2}," display="inline"><mrow><mrow><mi></mi><mo>=</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>⁢</mo><mi>y</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msup></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex6" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m24.png" altimg-height="20px" altimg-valign="-2px" altimg-width="19px" alttext="\displaystyle h" display="inline"><mi href="./19.27#i.p1" title="ℎ">h</mi></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m4.png" altimg-height="31px" altimg-valign="-7px" altimg-width="98px" alttext="\displaystyle=(yz)^{1/2}." display="inline"><mrow><mrow><mi></mi><mo>=</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>y</mi><mo>⁢</mo><mi>z</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msup></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E1.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./19.27#i.p1" title="§19.27(i) Notation ‣ §19.27 Asymptotic Approximations and Expansions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m42.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="a" display="inline"><mi href="./19.27#i.p1" title="𝑎">a</mi></math></a>,
+<a href="./19.27#i.p1" title="§19.27(i) Notation ‣ §19.27 Asymptotic Approximations and Expansions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m44.png" altimg-height="18px" altimg-valign="-2px" altimg-width="13px" alttext="b" display="inline"><mi href="./19.27#i.p1" title="𝑏">b</mi></math></a>,
+<a href="./19.27#i.p1" title="§19.27(i) Notation ‣ §19.27 Asymptotic Approximations and Expansions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m46.png" altimg-height="13px" altimg-valign="-2px" altimg-width="13px" alttext="c" display="inline"><mi href="./19.27#i.p1" title="𝑐">c</mi></math></a>,
+<a href="./19.27#i.p1" title="§19.27(i) Notation ‣ §19.27 Asymptotic Approximations and Expansions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m47.png" altimg-height="22px" altimg-valign="-6px" altimg-width="17px" alttext="f" display="inline"><mi href="./19.27#i.p1" title="𝑓">f</mi></math></a>,
+<a href="./19.27#i.p1" title="§19.27(i) Notation ‣ §19.27 Asymptotic Approximations and Expansions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m48.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="g" display="inline"><mi href="./19.27#i.p1" title="𝑔">g</mi></math></a> and
+<a href="./19.27#i.p1" title="§19.27(i) Notation ‣ §19.27 Asymptotic Approximations and Expansions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m49.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="h" display="inline"><mi href="./19.27#i.p1" title="ℎ">h</mi></math></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./19.27.E1" title="" class="ltx_ref">http://dlmf.nist.gov/19.27.E1</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./19.27.E1a.tex">TeX</a>, <a href="./19.27.E1b.tex">TeX</a>, <a href="./19.27.E1c.tex">TeX</a>, <a href="./19.27.E1d.tex">TeX</a>, <a href="./19.27.E1e.tex">TeX</a>, <a href="./19.27.E1f.tex">TeX</a>, <a href="./19.27.E1a.pmml">pMML</a>, <a href="./19.27.E1b.pmml">pMML</a>, <a href="./19.27.E1c.pmml">pMML</a>, <a href="./19.27.E1d.pmml">pMML</a>, <a href="./19.27.E1e.pmml">pMML</a>, <a href="./19.27.E1f.pmml">pMML</a>, <a href="./19.27.E1a.png">png</a>, <a href="./19.27.E1b.png">png</a>, <a href="./19.27.E1c.png">png</a>, <a href="./19.27.E1d.png">png</a>, <a href="./19.27.E1e.png">png</a>, <a href="./19.27.E1f.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19.27#i.info" title="§19.27(i) Notation ‣ §19.27 Asymptotic Approximations and Expansions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.27(i)</span></a>,
+<a href="./19.27#info" title="§19.27 Asymptotic Approximations and Expansions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.27</span></a> and
+<a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="ii" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§19.27(ii) </span><math class="ltx_Math" altimg="m31.png" altimg-height="25px" altimg-valign="-7px" altimg-width="105px" alttext="R_{F}\left(x,y,z\right)" display="inline"><mrow><msub><mi href="./19.16#E1" title="symmetric elliptic integral of first kind">R</mi><mi href="./19.16#E1" title="symmetric elliptic integral of first kind">F</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo>)</mo></mrow></mrow></math>
+</h2>
+<div id="ii.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Notes:</dt>
+<dd>Adapted from <cite class="ltx_cite ltx_citemacro_citet">Carlson and Gustafson (<a href="./bib/C#bib452" title="Asymptotic approximations for symmetric elliptic integrals" class="ltx_ref">1994</a>, (26), (32))</cite>.
+With regard to (<a href="./19.27#E2" title="(19.27.2) ‣ §19.27(ii) 𝑅_𝐹(𝑥,𝑦,𝑧) ‣ §19.27 Asymptotic Approximations and Expansions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">19.27.2</span></a>) see also
+<cite class="ltx_cite ltx_citemacro_citet">Carlson and Gustafson (<a href="./bib/C#bib451" title="Asymptotic expansion of the first elliptic integral" class="ltx_ref">1985</a>, (1.15), (1.16), and (3.46))</cite>.</dd>
+<dt>Permalink:</dt>
+<dd><a href="./19.27.ii" title="" class="ltx_ref">http://dlmf.nist.gov/19.27.ii</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19.27#info" title="§19.27 Asymptotic Approximations and Expansions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.27</span></a> and
+<a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="ii.p1" class="ltx_para">
+<p class="ltx_p">Assume <math class="ltx_Math" altimg="m54.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math>, <math class="ltx_Math" altimg="m56.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="y" display="inline"><mi>y</mi></math>, and <math class="ltx_Math" altimg="m59.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi>z</mi></math> are real and nonnegative and at most one of them is 0.
+Then</p>
+<table id="E2" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">19.27.2</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E2.png" altimg-height="149px" altimg-valign="-22px" altimg-width="285px" alttext="R_{F}\left(x,y,z\right)=\frac{1}{2\sqrt{z}}\left(\ln\frac{8z}{a+g}\right)\left%
+(1+O\left(\frac{a}{z}\right)\right)," display="block"><mrow><mrow><mrow><msub><mi href="./19.16#E1" title="symmetric elliptic integral of first kind">R</mi><mi href="./19.16#E1" title="symmetric elliptic integral of first kind">F</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mfrac><mn>1</mn><mrow><mn>2</mn><mo>⁢</mo><msqrt><mi>z</mi></msqrt></mrow></mfrac><mo>⁢</mo><mrow><mo>(</mo><mrow><mi href="./4.2#E2" title="principal branch of logarithm function">ln</mi><mo lspace="0.167em">⁡</mo><mfrac><mrow><mn>8</mn><mo>⁢</mo><mi>z</mi></mrow><mrow><mi href="./19.27#i.p1" title="𝑎">a</mi><mo>+</mo><mi href="./19.27#i.p1" title="𝑔">g</mi></mrow></mfrac></mrow><mo>)</mo></mrow><mo>⁢</mo><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mrow><mi href="./2.1#E3" title="order not exceeding">O</mi><mo>⁡</mo><mrow><mo>(</mo><mfrac><mi href="./19.27#i.p1" title="𝑎">a</mi><mi>z</mi></mfrac><mo>)</mo></mrow></mrow></mrow><mo>)</mo></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="4"><span class="ltx_constraint"><math class="ltx_Math" altimg="m41.png" altimg-height="25px" altimg-valign="-7px" altimg-width="79px" alttext="a/z\to 0" display="inline"><mrow><mrow><mi href="./19.27#i.p1" title="𝑎">a</mi><mo>/</mo><mi>z</mi></mrow><mo stretchy="false">→</mo><mn>0</mn></mrow></math>.</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E2.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./2.1#E3" title="(2.1.3) ‣ §2.1(i) Asymptotic and Order Symbols ‣ §2.1 Definitions and Elementary Properties ‣ Areas ‣ Chapter 2 Asymptotic Approximations" class="ltx_ref"><math class="ltx_Math" altimg="m25.png" altimg-height="25px" altimg-valign="-7px" altimg-width="52px" alttext="O\left(\NVar{x}\right)" display="inline"><mrow><mi href="./2.1#E3" title="order not exceeding">O</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">x</mi><mo>)</mo></mrow></mrow></math>: order not exceeding</a>,
+<a href="./19.16#E1" title="(19.16.1) ‣ §19.16(i) Symmetric Integrals ‣ §19.16 Definitions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m30.png" altimg-height="25px" altimg-valign="-7px" altimg-width="105px" alttext="R_{F}\left(\NVar{x},\NVar{y},\NVar{z}\right)" display="inline"><mrow><msub><mi href="./19.16#E1" title="symmetric elliptic integral of first kind">R</mi><mi href="./19.16#E1" title="symmetric elliptic integral of first kind">F</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">x</mi><mo>,</mo><mi class="ltx_nvar">y</mi><mo>,</mo><mi class="ltx_nvar">z</mi><mo>)</mo></mrow></mrow></math>: symmetric elliptic integral of first kind</a>,
+<a href="./4.2#E2" title="(4.2.2) ‣ §4.2(i) The Logarithm ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m36.png" altimg-height="18px" altimg-valign="-2px" altimg-width="36px" alttext="\ln\NVar{z}" display="inline"><mrow><mi href="./4.2#E2" title="principal branch of logarithm function">ln</mi><mo lspace="0.167em">⁡</mo><mi class="ltx_nvar" href="./4.1#t1.r4" title="complex variable">z</mi></mrow></math>: principal branch of logarithm function</a>,
+<a href="./19.27#i.p1" title="§19.27(i) Notation ‣ §19.27 Asymptotic Approximations and Expansions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m42.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="a" display="inline"><mi href="./19.27#i.p1" title="𝑎">a</mi></math></a> and
+<a href="./19.27#i.p1" title="§19.27(i) Notation ‣ §19.27 Asymptotic Approximations and Expansions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m48.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="g" display="inline"><mi href="./19.27#i.p1" title="𝑔">g</mi></math></a>
+</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./19.20#iii.info" title="§19.20(iii) 𝑅_𝐽(𝑥,𝑦,𝑧,𝑝) ‣ §19.20 Special Cases ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.20(iii)</span></a>,
+<a href="./19.27#ii.info" title="§19.27(ii) 𝑅_𝐹(𝑥,𝑦,𝑧) ‣ §19.27 Asymptotic Approximations and Expansions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.27(ii)</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./19.27.E2" title="" class="ltx_ref">http://dlmf.nist.gov/19.27.E2</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./19.27.E2.tex">TeX</a>, <a href="./19.27.E2.pmml">pMML</a>, <a href="./19.27.E2.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19.27#ii.info" title="§19.27(ii) 𝑅_𝐹(𝑥,𝑦,𝑧) ‣ §19.27 Asymptotic Approximations and Expansions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.27(ii)</span></a>,
+<a href="./19.27#info" title="§19.27 Asymptotic Approximations and Expansions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.27</span></a> and
+<a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<table id="E3" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">19.27.3</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E3.png" altimg-height="151px" altimg-valign="-22px" altimg-width="341px" alttext="R_{F}\left(x,y,z\right)=R_{F}\left(0,y,z\right)-\frac{1}{\sqrt{h}}\left(\sqrt{%
+\frac{x}{h}}+O\left(\frac{x}{h}\right)\right)," display="block"><mrow><mrow><mrow><msub><mi href="./19.16#E1" title="symmetric elliptic integral of first kind">R</mi><mi href="./19.16#E1" title="symmetric elliptic integral of first kind">F</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mrow><msub><mi href="./19.16#E1" title="symmetric elliptic integral of first kind">R</mi><mi href="./19.16#E1" title="symmetric elliptic integral of first kind">F</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mn>0</mn><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo>)</mo></mrow></mrow><mo>−</mo><mrow><mfrac><mn>1</mn><msqrt><mi href="./19.27#i.p1" title="ℎ">h</mi></msqrt></mfrac><mo>⁢</mo><mrow><mo>(</mo><mrow><msqrt><mfrac><mi>x</mi><mi href="./19.27#i.p1" title="ℎ">h</mi></mfrac></msqrt><mo>+</mo><mrow><mi href="./2.1#E3" title="order not exceeding">O</mi><mo>⁡</mo><mrow><mo>(</mo><mfrac><mi>x</mi><mi href="./19.27#i.p1" title="ℎ">h</mi></mfrac><mo>)</mo></mrow></mrow></mrow><mo>)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="4"><span class="ltx_constraint"><math class="ltx_Math" altimg="m53.png" altimg-height="25px" altimg-valign="-7px" altimg-width="81px" alttext="x/h\to 0" display="inline"><mrow><mrow><mi>x</mi><mo>/</mo><mi href="./19.27#i.p1" title="ℎ">h</mi></mrow><mo stretchy="false">→</mo><mn>0</mn></mrow></math>.</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E3.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./2.1#E3" title="(2.1.3) ‣ §2.1(i) Asymptotic and Order Symbols ‣ §2.1 Definitions and Elementary Properties ‣ Areas ‣ Chapter 2 Asymptotic Approximations" class="ltx_ref"><math class="ltx_Math" altimg="m25.png" altimg-height="25px" altimg-valign="-7px" altimg-width="52px" alttext="O\left(\NVar{x}\right)" display="inline"><mrow><mi href="./2.1#E3" title="order not exceeding">O</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">x</mi><mo>)</mo></mrow></mrow></math>: order not exceeding</a>,
+<a href="./19.16#E1" title="(19.16.1) ‣ §19.16(i) Symmetric Integrals ‣ §19.16 Definitions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m30.png" altimg-height="25px" altimg-valign="-7px" altimg-width="105px" alttext="R_{F}\left(\NVar{x},\NVar{y},\NVar{z}\right)" display="inline"><mrow><msub><mi href="./19.16#E1" title="symmetric elliptic integral of first kind">R</mi><mi href="./19.16#E1" title="symmetric elliptic integral of first kind">F</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">x</mi><mo>,</mo><mi class="ltx_nvar">y</mi><mo>,</mo><mi class="ltx_nvar">z</mi><mo>)</mo></mrow></mrow></math>: symmetric elliptic integral of first kind</a> and
+<a href="./19.27#i.p1" title="§19.27(i) Notation ‣ §19.27 Asymptotic Approximations and Expansions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m49.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="h" display="inline"><mi href="./19.27#i.p1" title="ℎ">h</mi></math></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./19.27.E3" title="" class="ltx_ref">http://dlmf.nist.gov/19.27.E3</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./19.27.E3.tex">TeX</a>, <a href="./19.27.E3.pmml">pMML</a>, <a href="./19.27.E3.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19.27#ii.info" title="§19.27(ii) 𝑅_𝐹(𝑥,𝑦,𝑧) ‣ §19.27 Asymptotic Approximations and Expansions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.27(ii)</span></a>,
+<a href="./19.27#info" title="§19.27 Asymptotic Approximations and Expansions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.27</span></a> and
+<a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="iii" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§19.27(iii) </span><math class="ltx_Math" altimg="m33.png" altimg-height="25px" altimg-valign="-7px" altimg-width="105px" alttext="R_{G}\left(x,y,z\right)" display="inline"><mrow><msub><mi href="./19.16#E2_5" title="symmetric elliptic integral of second kind">R</mi><mi href="./19.16#E2_5" title="symmetric elliptic integral of second kind">G</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo>)</mo></mrow></mrow></math>
+</h2>
+<div id="iii.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Notes:</dt>
+<dd>Adapted from <cite class="ltx_cite ltx_citemacro_citet">Carlson and Gustafson (<a href="./bib/C#bib452" title="Asymptotic approximations for symmetric elliptic integrals" class="ltx_ref">1994</a>, (51), (54), (52))</cite>.</dd>
+<dt>Permalink:</dt>
+<dd><a href="./19.27.iii" title="" class="ltx_ref">http://dlmf.nist.gov/19.27.iii</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19.27#info" title="§19.27 Asymptotic Approximations and Expansions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.27</span></a> and
+<a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="iii.p1" class="ltx_para">
+<p class="ltx_p">Assume <math class="ltx_Math" altimg="m54.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math>, <math class="ltx_Math" altimg="m56.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="y" display="inline"><mi>y</mi></math>, and <math class="ltx_Math" altimg="m59.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi>z</mi></math> are real and nonnegative and at most one of them is 0.
+Then</p>
+<table id="E4" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">19.27.4</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E4.png" altimg-height="115px" altimg-valign="-16px" altimg-width="342px" alttext="R_{G}\left(x,y,z\right)=\frac{\sqrt{z}}{2}\left(1+O\left(\frac{a}{z}\ln\frac{z%
+}{a}\right)\right)," display="block"><mrow><mrow><mrow><msub><mi href="./19.16#E2_5" title="symmetric elliptic integral of second kind">R</mi><mi href="./19.16#E2_5" title="symmetric elliptic integral of second kind">G</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mfrac><msqrt><mi>z</mi></msqrt><mn>2</mn></mfrac><mo>⁢</mo><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mrow><mi href="./2.1#E3" title="order not exceeding">O</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mfrac><mi href="./19.27#i.p1" title="𝑎">a</mi><mi>z</mi></mfrac><mo lspace="0.167em">⁢</mo><mrow><mi href="./4.2#E2" title="principal branch of logarithm function">ln</mi><mo lspace="0.167em">⁡</mo><mfrac><mi>z</mi><mi href="./19.27#i.p1" title="𝑎">a</mi></mfrac></mrow></mrow><mo>)</mo></mrow></mrow></mrow><mo>)</mo></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="4"><span class="ltx_constraint"><math class="ltx_Math" altimg="m41.png" altimg-height="25px" altimg-valign="-7px" altimg-width="79px" alttext="a/z\to 0" display="inline"><mrow><mrow><mi href="./19.27#i.p1" title="𝑎">a</mi><mo>/</mo><mi>z</mi></mrow><mo stretchy="false">→</mo><mn>0</mn></mrow></math>.</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E4.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./2.1#E3" title="(2.1.3) ‣ §2.1(i) Asymptotic and Order Symbols ‣ §2.1 Definitions and Elementary Properties ‣ Areas ‣ Chapter 2 Asymptotic Approximations" class="ltx_ref"><math class="ltx_Math" altimg="m25.png" altimg-height="25px" altimg-valign="-7px" altimg-width="52px" alttext="O\left(\NVar{x}\right)" display="inline"><mrow><mi href="./2.1#E3" title="order not exceeding">O</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">x</mi><mo>)</mo></mrow></mrow></math>: order not exceeding</a>,
+<a href="./19.16#E2_5" title="(19.16.2_5) ‣ §19.16(i) Symmetric Integrals ‣ §19.16 Definitions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m32.png" altimg-height="25px" altimg-valign="-7px" altimg-width="105px" alttext="R_{G}\left(\NVar{x},\NVar{y},\NVar{z}\right)" display="inline"><mrow><msub><mi href="./19.16#E2_5" title="symmetric elliptic integral of second kind">R</mi><mi href="./19.16#E2_5" title="symmetric elliptic integral of second kind">G</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">x</mi><mo>,</mo><mi class="ltx_nvar">y</mi><mo>,</mo><mi class="ltx_nvar">z</mi><mo>)</mo></mrow></mrow></math>: symmetric elliptic integral of second kind</a>,
+<a href="./4.2#E2" title="(4.2.2) ‣ §4.2(i) The Logarithm ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m36.png" altimg-height="18px" altimg-valign="-2px" altimg-width="36px" alttext="\ln\NVar{z}" display="inline"><mrow><mi href="./4.2#E2" title="principal branch of logarithm function">ln</mi><mo lspace="0.167em">⁡</mo><mi class="ltx_nvar" href="./4.1#t1.r4" title="complex variable">z</mi></mrow></math>: principal branch of logarithm function</a> and
+<a href="./19.27#i.p1" title="§19.27(i) Notation ‣ §19.27 Asymptotic Approximations and Expansions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m42.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="a" display="inline"><mi href="./19.27#i.p1" title="𝑎">a</mi></math></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./19.27.E4" title="" class="ltx_ref">http://dlmf.nist.gov/19.27.E4</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./19.27.E4.tex">TeX</a>, <a href="./19.27.E4.pmml">pMML</a>, <a href="./19.27.E4.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19.27#iii.info" title="§19.27(iii) 𝑅_𝐺(𝑥,𝑦,𝑧) ‣ §19.27 Asymptotic Approximations and Expansions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.27(iii)</span></a>,
+<a href="./19.27#info" title="§19.27 Asymptotic Approximations and Expansions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.27</span></a> and
+<a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<table id="E5" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">19.27.5</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E5.png" altimg-height="113px" altimg-valign="-15px" altimg-width="277px" alttext="R_{G}\left(x,y,z\right)=R_{G}\left(0,y,z\right)+\sqrt{x}O\left(\sqrt{x/h}%
+\right)," display="block"><mrow><mrow><mrow><msub><mi href="./19.16#E2_5" title="symmetric elliptic integral of second kind">R</mi><mi href="./19.16#E2_5" title="symmetric elliptic integral of second kind">G</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mrow><msub><mi href="./19.16#E2_5" title="symmetric elliptic integral of second kind">R</mi><mi href="./19.16#E2_5" title="symmetric elliptic integral of second kind">G</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mn>0</mn><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo>)</mo></mrow></mrow><mo>+</mo><mrow><msqrt><mi>x</mi></msqrt><mo>⁢</mo><mrow><mi href="./2.1#E3" title="order not exceeding">O</mi><mo>⁡</mo><mrow><mo>(</mo><msqrt><mrow><mi>x</mi><mo>/</mo><mi href="./19.27#i.p1" title="ℎ">h</mi></mrow></msqrt><mo>)</mo></mrow></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="4"><span class="ltx_constraint"><math class="ltx_Math" altimg="m53.png" altimg-height="25px" altimg-valign="-7px" altimg-width="81px" alttext="x/h\to 0" display="inline"><mrow><mrow><mi>x</mi><mo>/</mo><mi href="./19.27#i.p1" title="ℎ">h</mi></mrow><mo stretchy="false">→</mo><mn>0</mn></mrow></math>.</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E5.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./2.1#E3" title="(2.1.3) ‣ §2.1(i) Asymptotic and Order Symbols ‣ §2.1 Definitions and Elementary Properties ‣ Areas ‣ Chapter 2 Asymptotic Approximations" class="ltx_ref"><math class="ltx_Math" altimg="m25.png" altimg-height="25px" altimg-valign="-7px" altimg-width="52px" alttext="O\left(\NVar{x}\right)" display="inline"><mrow><mi href="./2.1#E3" title="order not exceeding">O</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">x</mi><mo>)</mo></mrow></mrow></math>: order not exceeding</a>,
+<a href="./19.16#E2_5" title="(19.16.2_5) ‣ §19.16(i) Symmetric Integrals ‣ §19.16 Definitions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m32.png" altimg-height="25px" altimg-valign="-7px" altimg-width="105px" alttext="R_{G}\left(\NVar{x},\NVar{y},\NVar{z}\right)" display="inline"><mrow><msub><mi href="./19.16#E2_5" title="symmetric elliptic integral of second kind">R</mi><mi href="./19.16#E2_5" title="symmetric elliptic integral of second kind">G</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">x</mi><mo>,</mo><mi class="ltx_nvar">y</mi><mo>,</mo><mi class="ltx_nvar">z</mi><mo>)</mo></mrow></mrow></math>: symmetric elliptic integral of second kind</a> and
+<a href="./19.27#i.p1" title="§19.27(i) Notation ‣ §19.27 Asymptotic Approximations and Expansions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m49.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="h" display="inline"><mi href="./19.27#i.p1" title="ℎ">h</mi></math></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./19.27.E5" title="" class="ltx_ref">http://dlmf.nist.gov/19.27.E5</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./19.27.E5.tex">TeX</a>, <a href="./19.27.E5.pmml">pMML</a>, <a href="./19.27.E5.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19.27#iii.info" title="§19.27(iii) 𝑅_𝐺(𝑥,𝑦,𝑧) ‣ §19.27 Asymptotic Approximations and Expansions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.27(iii)</span></a>,
+<a href="./19.27#info" title="§19.27 Asymptotic Approximations and Expansions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.27</span></a> and
+<a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<table id="E6" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">19.27.6</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E6.png" altimg-height="63px" altimg-valign="-22px" altimg-width="632px" alttext="R_{G}\left(0,y,z\right)={\frac{\sqrt{z}}{2}+\frac{y}{8\sqrt{z}}\left(\ln\left(%
+\frac{16z}{y}\right)-1\right)\*\left(1+O\left(\frac{y}{z}\right)\right)}," display="block"><mrow><mrow><mrow><msub><mi href="./19.16#E2_5" title="symmetric elliptic integral of second kind">R</mi><mi href="./19.16#E2_5" title="symmetric elliptic integral of second kind">G</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mn>0</mn><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mfrac><msqrt><mi>z</mi></msqrt><mn>2</mn></mfrac><mo>+</mo><mrow><mfrac><mi>y</mi><mrow><mn>8</mn><mo>⁢</mo><msqrt><mi>z</mi></msqrt></mrow></mfrac><mo>⁢</mo><mrow><mo>(</mo><mrow><mrow><mi href="./4.2#E2" title="principal branch of logarithm function">ln</mi><mo>⁡</mo><mrow><mo>(</mo><mfrac><mrow><mn>16</mn><mo>⁢</mo><mi>z</mi></mrow><mi>y</mi></mfrac><mo>)</mo></mrow></mrow><mo>−</mo><mn>1</mn></mrow><mo>)</mo></mrow><mo>⁢</mo><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mrow><mi href="./2.1#E3" title="order not exceeding">O</mi><mo>⁡</mo><mrow><mo>(</mo><mfrac><mi>y</mi><mi>z</mi></mfrac><mo>)</mo></mrow></mrow></mrow><mo>)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="4"><span class="ltx_constraint"><math class="ltx_Math" altimg="m55.png" altimg-height="25px" altimg-valign="-7px" altimg-width="79px" alttext="y/z\to 0" display="inline"><mrow><mrow><mi>y</mi><mo>/</mo><mi>z</mi></mrow><mo stretchy="false">→</mo><mn>0</mn></mrow></math>.</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E6.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./2.1#E3" title="(2.1.3) ‣ §2.1(i) Asymptotic and Order Symbols ‣ §2.1 Definitions and Elementary Properties ‣ Areas ‣ Chapter 2 Asymptotic Approximations" class="ltx_ref"><math class="ltx_Math" altimg="m25.png" altimg-height="25px" altimg-valign="-7px" altimg-width="52px" alttext="O\left(\NVar{x}\right)" display="inline"><mrow><mi href="./2.1#E3" title="order not exceeding">O</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">x</mi><mo>)</mo></mrow></mrow></math>: order not exceeding</a>,
+<a href="./19.16#E2_5" title="(19.16.2_5) ‣ §19.16(i) Symmetric Integrals ‣ §19.16 Definitions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m32.png" altimg-height="25px" altimg-valign="-7px" altimg-width="105px" alttext="R_{G}\left(\NVar{x},\NVar{y},\NVar{z}\right)" display="inline"><mrow><msub><mi href="./19.16#E2_5" title="symmetric elliptic integral of second kind">R</mi><mi href="./19.16#E2_5" title="symmetric elliptic integral of second kind">G</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">x</mi><mo>,</mo><mi class="ltx_nvar">y</mi><mo>,</mo><mi class="ltx_nvar">z</mi><mo>)</mo></mrow></mrow></math>: symmetric elliptic integral of second kind</a> and
+<a href="./4.2#E2" title="(4.2.2) ‣ §4.2(i) The Logarithm ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m36.png" altimg-height="18px" altimg-valign="-2px" altimg-width="36px" alttext="\ln\NVar{z}" display="inline"><mrow><mi href="./4.2#E2" title="principal branch of logarithm function">ln</mi><mo lspace="0.167em">⁡</mo><mi class="ltx_nvar" href="./4.1#t1.r4" title="complex variable">z</mi></mrow></math>: principal branch of logarithm function</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./19.27.E6" title="" class="ltx_ref">http://dlmf.nist.gov/19.27.E6</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./19.27.E6.tex">TeX</a>, <a href="./19.27.E6.pmml">pMML</a>, <a href="./19.27.E6.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19.27#iii.info" title="§19.27(iii) 𝑅_𝐺(𝑥,𝑦,𝑧) ‣ §19.27 Asymptotic Approximations and Expansions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.27(iii)</span></a>,
+<a href="./19.27#info" title="§19.27 Asymptotic Approximations and Expansions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.27</span></a> and
+<a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="iv" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§19.27(iv) </span><math class="ltx_Math" altimg="m29.png" altimg-height="25px" altimg-valign="-7px" altimg-width="107px" alttext="R_{D}\left(x,y,z\right)" display="inline"><mrow><msub><mi href="./19.16#E5" title="elliptic integral symmetric in only two variables">R</mi><mi href="./19.16#E5" title="elliptic integral symmetric in only two variables">D</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo>)</mo></mrow></mrow></math>
+</h2>
+<div id="iv.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Notes:</dt>
+<dd>Adapted from <cite class="ltx_cite ltx_citemacro_citet">Carlson and Gustafson (<a href="./bib/C#bib452" title="Asymptotic approximations for symmetric elliptic integrals" class="ltx_ref">1994</a>, (34), (37)–(39))</cite>.</dd>
+<dt>Permalink:</dt>
+<dd><a href="./19.27.iv" title="" class="ltx_ref">http://dlmf.nist.gov/19.27.iv</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19.27#info" title="§19.27 Asymptotic Approximations and Expansions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.27</span></a> and
+<a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="iv.p1" class="ltx_para">
+<p class="ltx_p">Assume <math class="ltx_Math" altimg="m54.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math> and <math class="ltx_Math" altimg="m56.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="y" display="inline"><mi>y</mi></math> are real and nonnegative, at most one of them is 0, and
+<math class="ltx_Math" altimg="m58.png" altimg-height="18px" altimg-valign="-3px" altimg-width="53px" alttext="z&gt;0" display="inline"><mrow><mi>z</mi><mo>&gt;</mo><mn>0</mn></mrow></math>. Then</p>
+<table id="EGx1" class="ltx_equationgroup ltx_eqn_table">
+
+<tbody id="E7">
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">19.27.7</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m17.png" altimg-height="40px" altimg-valign="-7px" altimg-width="125px" alttext="\displaystyle R_{D}\left(x,y,z\right)" display="inline"><mrow><msub><mi href="./19.16#E5" title="elliptic integral symmetric in only two variables">R</mi><mi href="./19.16#E5" title="elliptic integral symmetric in only two variables">D</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m8.png" altimg-height="144px" altimg-valign="-22px" altimg-width="259px" alttext="\displaystyle=\frac{3}{2z^{3/2}}\left(\ln\left(\frac{8z}{a+g}\right)-2\right)%
+\left(1+O\left(\frac{a}{z}\right)\right)," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mstyle displaystyle="true"><mfrac><mn>3</mn><mrow><mn>2</mn><mo>⁢</mo><msup><mi>z</mi><mrow><mn>3</mn><mo>/</mo><mn>2</mn></mrow></msup></mrow></mfrac></mstyle><mo>⁢</mo><mrow><mo>(</mo><mrow><mrow><mi href="./4.2#E2" title="principal branch of logarithm function">ln</mi><mo>⁡</mo><mrow><mo>(</mo><mstyle displaystyle="true"><mfrac><mrow><mn>8</mn><mo>⁢</mo><mi>z</mi></mrow><mrow><mi href="./19.27#i.p1" title="𝑎">a</mi><mo>+</mo><mi href="./19.27#i.p1" title="𝑔">g</mi></mrow></mfrac></mstyle><mo>)</mo></mrow></mrow><mo>−</mo><mn>2</mn></mrow><mo>)</mo></mrow><mo>⁢</mo><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mrow><mi href="./2.1#E3" title="order not exceeding">O</mi><mo>⁡</mo><mrow><mo>(</mo><mstyle displaystyle="true"><mfrac><mi href="./19.27#i.p1" title="𝑎">a</mi><mi>z</mi></mfrac></mstyle><mo>)</mo></mrow></mrow></mrow><mo>)</mo></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="5"><span class="ltx_constraint"><math class="ltx_Math" altimg="m41.png" altimg-height="25px" altimg-valign="-7px" altimg-width="79px" alttext="a/z\to 0" display="inline"><mrow><mrow><mi href="./19.27#i.p1" title="𝑎">a</mi><mo>/</mo><mi>z</mi></mrow><mo stretchy="false">→</mo><mn>0</mn></mrow></math>.</span></td></tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E7.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./2.1#E3" title="(2.1.3) ‣ §2.1(i) Asymptotic and Order Symbols ‣ §2.1 Definitions and Elementary Properties ‣ Areas ‣ Chapter 2 Asymptotic Approximations" class="ltx_ref"><math class="ltx_Math" altimg="m25.png" altimg-height="25px" altimg-valign="-7px" altimg-width="52px" alttext="O\left(\NVar{x}\right)" display="inline"><mrow><mi href="./2.1#E3" title="order not exceeding">O</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">x</mi><mo>)</mo></mrow></mrow></math>: order not exceeding</a>,
+<a href="./19.16#E5" title="(19.16.5) ‣ §19.16(i) Symmetric Integrals ‣ §19.16 Definitions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m28.png" altimg-height="25px" altimg-valign="-7px" altimg-width="107px" alttext="R_{D}\left(\NVar{x},\NVar{y},\NVar{z}\right)" display="inline"><mrow><msub><mi href="./19.16#E5" title="elliptic integral symmetric in only two variables">R</mi><mi href="./19.16#E5" title="elliptic integral symmetric in only two variables">D</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">x</mi><mo>,</mo><mi class="ltx_nvar">y</mi><mo>,</mo><mi class="ltx_nvar">z</mi><mo>)</mo></mrow></mrow></math>: elliptic integral symmetric in only two variables</a>,
+<a href="./4.2#E2" title="(4.2.2) ‣ §4.2(i) The Logarithm ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m36.png" altimg-height="18px" altimg-valign="-2px" altimg-width="36px" alttext="\ln\NVar{z}" display="inline"><mrow><mi href="./4.2#E2" title="principal branch of logarithm function">ln</mi><mo lspace="0.167em">⁡</mo><mi class="ltx_nvar" href="./4.1#t1.r4" title="complex variable">z</mi></mrow></math>: principal branch of logarithm function</a>,
+<a href="./19.27#i.p1" title="§19.27(i) Notation ‣ §19.27 Asymptotic Approximations and Expansions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m42.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="a" display="inline"><mi href="./19.27#i.p1" title="𝑎">a</mi></math></a> and
+<a href="./19.27#i.p1" title="§19.27(i) Notation ‣ §19.27 Asymptotic Approximations and Expansions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m48.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="g" display="inline"><mi href="./19.27#i.p1" title="𝑔">g</mi></math></a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./19.20#iv.info" title="§19.20(iv) 𝑅_𝐷(𝑥,𝑦,𝑧) ‣ §19.20 Special Cases ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.20(iv)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./19.27.E7" title="" class="ltx_ref">http://dlmf.nist.gov/19.27.E7</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./19.27.E7.tex">TeX</a>, <a href="./19.27.E7.pmml">pMML</a>, <a href="./19.27.E7.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19.27#iv.info" title="§19.27(iv) 𝑅_𝐷(𝑥,𝑦,𝑧) ‣ §19.27 Asymptotic Approximations and Expansions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.27(iv)</span></a>,
+<a href="./19.27#info" title="§19.27 Asymptotic Approximations and Expansions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.27</span></a> and
+<a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+<tbody id="E8">
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">19.27.8</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m17.png" altimg-height="40px" altimg-valign="-7px" altimg-width="125px" alttext="\displaystyle R_{D}\left(x,y,z\right)" display="inline"><mrow><msub><mi href="./19.16#E5" title="elliptic integral symmetric in only two variables">R</mi><mi href="./19.16#E5" title="elliptic integral symmetric in only two variables">D</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m9.png" altimg-height="125px" altimg-valign="-23px" altimg-width="244px" alttext="\displaystyle=\frac{3}{\sqrt{xyz}}-\frac{6}{xy}R_{G}\left(x,y,0\right)\left(1+%
+O\left(\frac{z}{g}\right)\right)," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mstyle displaystyle="true"><mfrac><mn>3</mn><msqrt><mrow><mi>x</mi><mo>⁢</mo><mi>y</mi><mo>⁢</mo><mi>z</mi></mrow></msqrt></mfrac></mstyle><mo>−</mo><mrow><mstyle displaystyle="true"><mfrac><mn>6</mn><mrow><mi>x</mi><mo>⁢</mo><mi>y</mi></mrow></mfrac></mstyle><mo>⁢</mo><mrow><msub><mi href="./19.16#E2_5" title="symmetric elliptic integral of second kind">R</mi><mi href="./19.16#E2_5" title="symmetric elliptic integral of second kind">G</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mn>0</mn><mo>)</mo></mrow></mrow><mo>⁢</mo><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mrow><mi href="./2.1#E3" title="order not exceeding">O</mi><mo>⁡</mo><mrow><mo>(</mo><mstyle displaystyle="true"><mfrac><mi>z</mi><mi href="./19.27#i.p1" title="𝑔">g</mi></mfrac></mstyle><mo>)</mo></mrow></mrow></mrow><mo>)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="5"><span class="ltx_constraint"><math class="ltx_Math" altimg="m57.png" altimg-height="25px" altimg-valign="-7px" altimg-width="79px" alttext="z/g\to 0" display="inline"><mrow><mrow><mi>z</mi><mo>/</mo><mi href="./19.27#i.p1" title="𝑔">g</mi></mrow><mo stretchy="false">→</mo><mn>0</mn></mrow></math>.</span></td></tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E8.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./2.1#E3" title="(2.1.3) ‣ §2.1(i) Asymptotic and Order Symbols ‣ §2.1 Definitions and Elementary Properties ‣ Areas ‣ Chapter 2 Asymptotic Approximations" class="ltx_ref"><math class="ltx_Math" altimg="m25.png" altimg-height="25px" altimg-valign="-7px" altimg-width="52px" alttext="O\left(\NVar{x}\right)" display="inline"><mrow><mi href="./2.1#E3" title="order not exceeding">O</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">x</mi><mo>)</mo></mrow></mrow></math>: order not exceeding</a>,
+<a href="./19.16#E5" title="(19.16.5) ‣ §19.16(i) Symmetric Integrals ‣ §19.16 Definitions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m28.png" altimg-height="25px" altimg-valign="-7px" altimg-width="107px" alttext="R_{D}\left(\NVar{x},\NVar{y},\NVar{z}\right)" display="inline"><mrow><msub><mi href="./19.16#E5" title="elliptic integral symmetric in only two variables">R</mi><mi href="./19.16#E5" title="elliptic integral symmetric in only two variables">D</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">x</mi><mo>,</mo><mi class="ltx_nvar">y</mi><mo>,</mo><mi class="ltx_nvar">z</mi><mo>)</mo></mrow></mrow></math>: elliptic integral symmetric in only two variables</a>,
+<a href="./19.16#E2_5" title="(19.16.2_5) ‣ §19.16(i) Symmetric Integrals ‣ §19.16 Definitions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m32.png" altimg-height="25px" altimg-valign="-7px" altimg-width="105px" alttext="R_{G}\left(\NVar{x},\NVar{y},\NVar{z}\right)" display="inline"><mrow><msub><mi href="./19.16#E2_5" title="symmetric elliptic integral of second kind">R</mi><mi href="./19.16#E2_5" title="symmetric elliptic integral of second kind">G</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">x</mi><mo>,</mo><mi class="ltx_nvar">y</mi><mo>,</mo><mi class="ltx_nvar">z</mi><mo>)</mo></mrow></mrow></math>: symmetric elliptic integral of second kind</a> and
+<a href="./19.27#i.p1" title="§19.27(i) Notation ‣ §19.27 Asymptotic Approximations and Expansions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m48.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="g" display="inline"><mi href="./19.27#i.p1" title="𝑔">g</mi></math></a>
+</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./19.20#iv.info" title="§19.20(iv) 𝑅_𝐷(𝑥,𝑦,𝑧) ‣ §19.20 Special Cases ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.20(iv)</span></a>,
+<a href="./19.29#iii.p1" title="§19.29(iii) Examples ‣ §19.29 Reduction of General Elliptic Integrals ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.29(iii)</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./19.27.E8" title="" class="ltx_ref">http://dlmf.nist.gov/19.27.E8</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./19.27.E8.tex">TeX</a>, <a href="./19.27.E8.pmml">pMML</a>, <a href="./19.27.E8.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19.27#iv.info" title="§19.27(iv) 𝑅_𝐷(𝑥,𝑦,𝑧) ‣ §19.27 Asymptotic Approximations and Expansions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.27(iv)</span></a>,
+<a href="./19.27#info" title="§19.27 Asymptotic Approximations and Expansions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.27</span></a> and
+<a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+<tbody id="E9">
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">19.27.9</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m17.png" altimg-height="40px" altimg-valign="-7px" altimg-width="125px" alttext="\displaystyle R_{D}\left(x,y,z\right)" display="inline"><mrow><msub><mi href="./19.16#E5" title="elliptic integral symmetric in only two variables">R</mi><mi href="./19.16#E5" title="elliptic integral symmetric in only two variables">D</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m10.png" altimg-height="93px" altimg-valign="-23px" altimg-width="364px" alttext="\displaystyle=\frac{3}{\sqrt{xz}(\sqrt{y}+\sqrt{z})}\left(1+O\left(\frac{b}{x}%
+\ln\frac{x}{b}\right)\right)," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mstyle displaystyle="true"><mfrac><mn>3</mn><mrow><msqrt><mrow><mi>x</mi><mo>⁢</mo><mi>z</mi></mrow></msqrt><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msqrt><mi>y</mi></msqrt><mo>+</mo><msqrt><mi>z</mi></msqrt></mrow><mo stretchy="false">)</mo></mrow></mrow></mfrac></mstyle><mo>⁢</mo><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mrow><mi href="./2.1#E3" title="order not exceeding">O</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mstyle displaystyle="true"><mfrac><mi href="./19.27#i.p1" title="𝑏">b</mi><mi>x</mi></mfrac></mstyle><mo lspace="0.167em">⁢</mo><mrow><mi href="./4.2#E2" title="principal branch of logarithm function">ln</mi><mo lspace="0.167em">⁡</mo><mstyle displaystyle="true"><mfrac><mi>x</mi><mi href="./19.27#i.p1" title="𝑏">b</mi></mfrac></mstyle></mrow></mrow><mo>)</mo></mrow></mrow></mrow><mo>)</mo></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="5"><span class="ltx_constraint"><math class="ltx_Math" altimg="m43.png" altimg-height="25px" altimg-valign="-7px" altimg-width="78px" alttext="b/x\to 0" display="inline"><mrow><mrow><mi href="./19.27#i.p1" title="𝑏">b</mi><mo>/</mo><mi>x</mi></mrow><mo stretchy="false">→</mo><mn>0</mn></mrow></math>.</span></td></tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E9.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./2.1#E3" title="(2.1.3) ‣ §2.1(i) Asymptotic and Order Symbols ‣ §2.1 Definitions and Elementary Properties ‣ Areas ‣ Chapter 2 Asymptotic Approximations" class="ltx_ref"><math class="ltx_Math" altimg="m25.png" altimg-height="25px" altimg-valign="-7px" altimg-width="52px" alttext="O\left(\NVar{x}\right)" display="inline"><mrow><mi href="./2.1#E3" title="order not exceeding">O</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">x</mi><mo>)</mo></mrow></mrow></math>: order not exceeding</a>,
+<a href="./19.16#E5" title="(19.16.5) ‣ §19.16(i) Symmetric Integrals ‣ §19.16 Definitions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m28.png" altimg-height="25px" altimg-valign="-7px" altimg-width="107px" alttext="R_{D}\left(\NVar{x},\NVar{y},\NVar{z}\right)" display="inline"><mrow><msub><mi href="./19.16#E5" title="elliptic integral symmetric in only two variables">R</mi><mi href="./19.16#E5" title="elliptic integral symmetric in only two variables">D</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">x</mi><mo>,</mo><mi class="ltx_nvar">y</mi><mo>,</mo><mi class="ltx_nvar">z</mi><mo>)</mo></mrow></mrow></math>: elliptic integral symmetric in only two variables</a>,
+<a href="./4.2#E2" title="(4.2.2) ‣ §4.2(i) The Logarithm ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m36.png" altimg-height="18px" altimg-valign="-2px" altimg-width="36px" alttext="\ln\NVar{z}" display="inline"><mrow><mi href="./4.2#E2" title="principal branch of logarithm function">ln</mi><mo lspace="0.167em">⁡</mo><mi class="ltx_nvar" href="./4.1#t1.r4" title="complex variable">z</mi></mrow></math>: principal branch of logarithm function</a> and
+<a href="./19.27#i.p1" title="§19.27(i) Notation ‣ §19.27 Asymptotic Approximations and Expansions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m44.png" altimg-height="18px" altimg-valign="-2px" altimg-width="13px" alttext="b" display="inline"><mi href="./19.27#i.p1" title="𝑏">b</mi></math></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./19.27.E9" title="" class="ltx_ref">http://dlmf.nist.gov/19.27.E9</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./19.27.E9.tex">TeX</a>, <a href="./19.27.E9.pmml">pMML</a>, <a href="./19.27.E9.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19.27#iv.info" title="§19.27(iv) 𝑅_𝐷(𝑥,𝑦,𝑧) ‣ §19.27 Asymptotic Approximations and Expansions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.27(iv)</span></a>,
+<a href="./19.27#info" title="§19.27 Asymptotic Approximations and Expansions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.27</span></a> and
+<a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+<tbody id="E10">
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">19.27.10</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m17.png" altimg-height="40px" altimg-valign="-7px" altimg-width="125px" alttext="\displaystyle R_{D}\left(x,y,z\right)" display="inline"><mrow><msub><mi href="./19.16#E5" title="elliptic integral symmetric in only two variables">R</mi><mi href="./19.16#E5" title="elliptic integral symmetric in only two variables">D</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m5.png" altimg-height="122px" altimg-valign="-22px" altimg-width="249px" alttext="\displaystyle=R_{D}\left(0,y,z\right)-\frac{3\sqrt{x}}{hz}\left(1+O\left(\sqrt%
+{\frac{x}{h}}\right)\right)," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mrow><msub><mi href="./19.16#E5" title="elliptic integral symmetric in only two variables">R</mi><mi href="./19.16#E5" title="elliptic integral symmetric in only two variables">D</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mn>0</mn><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo>)</mo></mrow></mrow><mo>−</mo><mrow><mstyle displaystyle="true"><mfrac><mrow><mn>3</mn><mo>⁢</mo><msqrt><mi>x</mi></msqrt></mrow><mrow><mi href="./19.27#i.p1" title="ℎ">h</mi><mo>⁢</mo><mi>z</mi></mrow></mfrac></mstyle><mo>⁢</mo><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mrow><mi href="./2.1#E3" title="order not exceeding">O</mi><mo>⁡</mo><mrow><mo>(</mo><msqrt><mstyle displaystyle="true"><mfrac><mi>x</mi><mi href="./19.27#i.p1" title="ℎ">h</mi></mfrac></mstyle></msqrt><mo>)</mo></mrow></mrow></mrow><mo>)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="5"><span class="ltx_constraint"><math class="ltx_Math" altimg="m53.png" altimg-height="25px" altimg-valign="-7px" altimg-width="81px" alttext="x/h\to 0" display="inline"><mrow><mrow><mi>x</mi><mo>/</mo><mi href="./19.27#i.p1" title="ℎ">h</mi></mrow><mo stretchy="false">→</mo><mn>0</mn></mrow></math>.</span></td></tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E10.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./2.1#E3" title="(2.1.3) ‣ §2.1(i) Asymptotic and Order Symbols ‣ §2.1 Definitions and Elementary Properties ‣ Areas ‣ Chapter 2 Asymptotic Approximations" class="ltx_ref"><math class="ltx_Math" altimg="m25.png" altimg-height="25px" altimg-valign="-7px" altimg-width="52px" alttext="O\left(\NVar{x}\right)" display="inline"><mrow><mi href="./2.1#E3" title="order not exceeding">O</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">x</mi><mo>)</mo></mrow></mrow></math>: order not exceeding</a>,
+<a href="./19.16#E5" title="(19.16.5) ‣ §19.16(i) Symmetric Integrals ‣ §19.16 Definitions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m28.png" altimg-height="25px" altimg-valign="-7px" altimg-width="107px" alttext="R_{D}\left(\NVar{x},\NVar{y},\NVar{z}\right)" display="inline"><mrow><msub><mi href="./19.16#E5" title="elliptic integral symmetric in only two variables">R</mi><mi href="./19.16#E5" title="elliptic integral symmetric in only two variables">D</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">x</mi><mo>,</mo><mi class="ltx_nvar">y</mi><mo>,</mo><mi class="ltx_nvar">z</mi><mo>)</mo></mrow></mrow></math>: elliptic integral symmetric in only two variables</a> and
+<a href="./19.27#i.p1" title="§19.27(i) Notation ‣ §19.27 Asymptotic Approximations and Expansions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m49.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="h" display="inline"><mi href="./19.27#i.p1" title="ℎ">h</mi></math></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./19.27.E10" title="" class="ltx_ref">http://dlmf.nist.gov/19.27.E10</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./19.27.E10.tex">TeX</a>, <a href="./19.27.E10.pmml">pMML</a>, <a href="./19.27.E10.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19.27#iv.info" title="§19.27(iv) 𝑅_𝐷(𝑥,𝑦,𝑧) ‣ §19.27 Asymptotic Approximations and Expansions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.27(iv)</span></a>,
+<a href="./19.27#info" title="§19.27 Asymptotic Approximations and Expansions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.27</span></a> and
+<a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="v" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§19.27(v) </span><math class="ltx_Math" altimg="m35.png" altimg-height="25px" altimg-valign="-7px" altimg-width="123px" alttext="R_{J}\left(x,y,z,p\right)" display="inline"><mrow><msub><mi href="./19.16#E2" title="symmetric elliptic integral of third kind">R</mi><mi href="./19.16#E2" title="symmetric elliptic integral of third kind">J</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo>,</mo><mi>p</mi><mo>)</mo></mrow></mrow></math>
+</h2>
+<div id="v.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Notes:</dt>
+<dd>Adapted from <cite class="ltx_cite ltx_citemacro_citet">Carlson and Gustafson (<a href="./bib/C#bib452" title="Asymptotic approximations for symmetric elliptic integrals" class="ltx_ref">1994</a>, (40), (42), (44), (47)–(49))</cite>.</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./19.27#vi.p1" title="§19.27(vi) Asymptotic Expansions ‣ §19.27 Asymptotic Approximations and Expansions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.27(vi)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./19.27.v" title="" class="ltx_ref">http://dlmf.nist.gov/19.27.v</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19.27#info" title="§19.27 Asymptotic Approximations and Expansions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.27</span></a> and
+<a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="v.p1" class="ltx_para">
+<p class="ltx_p">Assume <math class="ltx_Math" altimg="m54.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math>, <math class="ltx_Math" altimg="m56.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="y" display="inline"><mi>y</mi></math>, and <math class="ltx_Math" altimg="m59.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi>z</mi></math> are real and nonnegative, at most one of them is 0,
+and <math class="ltx_Math" altimg="m51.png" altimg-height="21px" altimg-valign="-6px" altimg-width="53px" alttext="p&gt;0" display="inline"><mrow><mi>p</mi><mo>&gt;</mo><mn>0</mn></mrow></math>. Then</p>
+<table id="EGx2" class="ltx_equationgroup ltx_eqn_table">
+
+<tbody id="E11">
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">19.27.11</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m18.png" altimg-height="40px" altimg-valign="-7px" altimg-width="142px" alttext="\displaystyle R_{J}\left(x,y,z,p\right)" display="inline"><mrow><msub><mi href="./19.16#E2" title="symmetric elliptic integral of third kind">R</mi><mi href="./19.16#E2" title="symmetric elliptic integral of third kind">J</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo>,</mo><mi>p</mi><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m16.png" altimg-height="57px" altimg-valign="-23px" altimg-width="384px" alttext="\displaystyle={\frac{3}{p}R_{F}\left(x,y,z\right)-\frac{3\pi}{2p^{3/2}}\left(1%
++O\left(\sqrt{\frac{c}{p}}\right)\right)}," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mrow><mstyle displaystyle="true"><mfrac><mn>3</mn><mi>p</mi></mfrac></mstyle><mo>⁢</mo><mrow><msub><mi href="./19.16#E1" title="symmetric elliptic integral of first kind">R</mi><mi href="./19.16#E1" title="symmetric elliptic integral of first kind">F</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo>)</mo></mrow></mrow></mrow><mo>−</mo><mrow><mstyle displaystyle="true"><mfrac><mrow><mn>3</mn><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></mrow><mrow><mn>2</mn><mo>⁢</mo><msup><mi>p</mi><mrow><mn>3</mn><mo>/</mo><mn>2</mn></mrow></msup></mrow></mfrac></mstyle><mo>⁢</mo><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mrow><mi href="./2.1#E3" title="order not exceeding">O</mi><mo>⁡</mo><mrow><mo>(</mo><msqrt><mstyle displaystyle="true"><mfrac><mi href="./19.27#i.p1" title="𝑐">c</mi><mi>p</mi></mfrac></mstyle></msqrt><mo>)</mo></mrow></mrow></mrow><mo>)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="5"><span class="ltx_constraint"><math class="ltx_Math" altimg="m45.png" altimg-height="25px" altimg-valign="-7px" altimg-width="77px" alttext="c/p\to 0" display="inline"><mrow><mrow><mi href="./19.27#i.p1" title="𝑐">c</mi><mo>/</mo><mi>p</mi></mrow><mo stretchy="false">→</mo><mn>0</mn></mrow></math>.</span></td></tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E11.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./2.1#E3" title="(2.1.3) ‣ §2.1(i) Asymptotic and Order Symbols ‣ §2.1 Definitions and Elementary Properties ‣ Areas ‣ Chapter 2 Asymptotic Approximations" class="ltx_ref"><math class="ltx_Math" altimg="m25.png" altimg-height="25px" altimg-valign="-7px" altimg-width="52px" alttext="O\left(\NVar{x}\right)" display="inline"><mrow><mi href="./2.1#E3" title="order not exceeding">O</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">x</mi><mo>)</mo></mrow></mrow></math>: order not exceeding</a>,
+<a href="./19.16#E1" title="(19.16.1) ‣ §19.16(i) Symmetric Integrals ‣ §19.16 Definitions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m30.png" altimg-height="25px" altimg-valign="-7px" altimg-width="105px" alttext="R_{F}\left(\NVar{x},\NVar{y},\NVar{z}\right)" display="inline"><mrow><msub><mi href="./19.16#E1" title="symmetric elliptic integral of first kind">R</mi><mi href="./19.16#E1" title="symmetric elliptic integral of first kind">F</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">x</mi><mo>,</mo><mi class="ltx_nvar">y</mi><mo>,</mo><mi class="ltx_nvar">z</mi><mo>)</mo></mrow></mrow></math>: symmetric elliptic integral of first kind</a>,
+<a href="./19.16#E2" title="(19.16.2) ‣ §19.16(i) Symmetric Integrals ‣ §19.16 Definitions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m34.png" altimg-height="25px" altimg-valign="-7px" altimg-width="123px" alttext="R_{J}\left(\NVar{x},\NVar{y},\NVar{z},\NVar{p}\right)" display="inline"><mrow><msub><mi href="./19.16#E2" title="symmetric elliptic integral of third kind">R</mi><mi href="./19.16#E2" title="symmetric elliptic integral of third kind">J</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">x</mi><mo>,</mo><mi class="ltx_nvar">y</mi><mo>,</mo><mi class="ltx_nvar">z</mi><mo>,</mo><mi class="ltx_nvar">p</mi><mo>)</mo></mrow></mrow></math>: symmetric elliptic integral of third kind</a>,
+<a href="./3.12#E1" title="(3.12.1) ‣ §3.12 Mathematical Constants ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m40.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="\pi" display="inline"><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></math>: the ratio of the circumference of a circle to its diameter</a> and
+<a href="./19.27#i.p1" title="§19.27(i) Notation ‣ §19.27 Asymptotic Approximations and Expansions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m46.png" altimg-height="13px" altimg-valign="-2px" altimg-width="13px" alttext="c" display="inline"><mi href="./19.27#i.p1" title="𝑐">c</mi></math></a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./19.20#iii.info" title="§19.20(iii) 𝑅_𝐽(𝑥,𝑦,𝑧,𝑝) ‣ §19.20 Special Cases ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.20(iii)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./19.27.E11" title="" class="ltx_ref">http://dlmf.nist.gov/19.27.E11</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./19.27.E11.tex">TeX</a>, <a href="./19.27.E11.pmml">pMML</a>, <a href="./19.27.E11.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19.27#v.info" title="§19.27(v) 𝑅_𝐽(𝑥,𝑦,𝑧,𝑝) ‣ §19.27 Asymptotic Approximations and Expansions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.27(v)</span></a>,
+<a href="./19.27#info" title="§19.27 Asymptotic Approximations and Expansions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.27</span></a> and
+<a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+<tbody id="E12">
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">19.27.12</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m18.png" altimg-height="40px" altimg-valign="-7px" altimg-width="142px" alttext="\displaystyle R_{J}\left(x,y,z,p\right)" display="inline"><mrow><msub><mi href="./19.16#E2" title="symmetric elliptic integral of third kind">R</mi><mi href="./19.16#E2" title="symmetric elliptic integral of third kind">J</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo>,</mo><mi>p</mi><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m15.png" altimg-height="58px" altimg-valign="-23px" altimg-width="387px" alttext="\displaystyle={\frac{3}{2\sqrt{xyz}}\left(\ln\left(\frac{4f}{p}\right)-2\right%
+)\left(1+O\left(\frac{p}{f}\right)\right)}," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mstyle displaystyle="true"><mfrac><mn>3</mn><mrow><mn>2</mn><mo>⁢</mo><msqrt><mrow><mi>x</mi><mo>⁢</mo><mi>y</mi><mo>⁢</mo><mi>z</mi></mrow></msqrt></mrow></mfrac></mstyle><mo>⁢</mo><mrow><mo>(</mo><mrow><mrow><mi href="./4.2#E2" title="principal branch of logarithm function">ln</mi><mo>⁡</mo><mrow><mo>(</mo><mstyle displaystyle="true"><mfrac><mrow><mn>4</mn><mo>⁢</mo><mi href="./19.27#i.p1" title="𝑓">f</mi></mrow><mi>p</mi></mfrac></mstyle><mo>)</mo></mrow></mrow><mo>−</mo><mn>2</mn></mrow><mo>)</mo></mrow><mo>⁢</mo><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mrow><mi href="./2.1#E3" title="order not exceeding">O</mi><mo>⁡</mo><mrow><mo>(</mo><mstyle displaystyle="true"><mfrac><mi>p</mi><mi href="./19.27#i.p1" title="𝑓">f</mi></mfrac></mstyle><mo>)</mo></mrow></mrow></mrow><mo>)</mo></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="5"><span class="ltx_constraint"><math class="ltx_Math" altimg="m50.png" altimg-height="25px" altimg-valign="-7px" altimg-width="80px" alttext="p/f\to 0" display="inline"><mrow><mrow><mi>p</mi><mo>/</mo><mi href="./19.27#i.p1" title="𝑓">f</mi></mrow><mo stretchy="false">→</mo><mn>0</mn></mrow></math>.</span></td></tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E12.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./2.1#E3" title="(2.1.3) ‣ §2.1(i) Asymptotic and Order Symbols ‣ §2.1 Definitions and Elementary Properties ‣ Areas ‣ Chapter 2 Asymptotic Approximations" class="ltx_ref"><math class="ltx_Math" altimg="m25.png" altimg-height="25px" altimg-valign="-7px" altimg-width="52px" alttext="O\left(\NVar{x}\right)" display="inline"><mrow><mi href="./2.1#E3" title="order not exceeding">O</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">x</mi><mo>)</mo></mrow></mrow></math>: order not exceeding</a>,
+<a href="./19.16#E2" title="(19.16.2) ‣ §19.16(i) Symmetric Integrals ‣ §19.16 Definitions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m34.png" altimg-height="25px" altimg-valign="-7px" altimg-width="123px" alttext="R_{J}\left(\NVar{x},\NVar{y},\NVar{z},\NVar{p}\right)" display="inline"><mrow><msub><mi href="./19.16#E2" title="symmetric elliptic integral of third kind">R</mi><mi href="./19.16#E2" title="symmetric elliptic integral of third kind">J</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">x</mi><mo>,</mo><mi class="ltx_nvar">y</mi><mo>,</mo><mi class="ltx_nvar">z</mi><mo>,</mo><mi class="ltx_nvar">p</mi><mo>)</mo></mrow></mrow></math>: symmetric elliptic integral of third kind</a>,
+<a href="./4.2#E2" title="(4.2.2) ‣ §4.2(i) The Logarithm ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m36.png" altimg-height="18px" altimg-valign="-2px" altimg-width="36px" alttext="\ln\NVar{z}" display="inline"><mrow><mi href="./4.2#E2" title="principal branch of logarithm function">ln</mi><mo lspace="0.167em">⁡</mo><mi class="ltx_nvar" href="./4.1#t1.r4" title="complex variable">z</mi></mrow></math>: principal branch of logarithm function</a> and
+<a href="./19.27#i.p1" title="§19.27(i) Notation ‣ §19.27 Asymptotic Approximations and Expansions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m47.png" altimg-height="22px" altimg-valign="-6px" altimg-width="17px" alttext="f" display="inline"><mi href="./19.27#i.p1" title="𝑓">f</mi></math></a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./19.20#iii.info" title="§19.20(iii) 𝑅_𝐽(𝑥,𝑦,𝑧,𝑝) ‣ §19.20 Special Cases ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.20(iii)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./19.27.E12" title="" class="ltx_ref">http://dlmf.nist.gov/19.27.E12</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./19.27.E12.tex">TeX</a>, <a href="./19.27.E12.pmml">pMML</a>, <a href="./19.27.E12.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19.27#v.info" title="§19.27(v) 𝑅_𝐽(𝑥,𝑦,𝑧,𝑝) ‣ §19.27 Asymptotic Approximations and Expansions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.27(v)</span></a>,
+<a href="./19.27#info" title="§19.27 Asymptotic Approximations and Expansions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.27</span></a> and
+<a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+<tbody id="E13">
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">19.27.13</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m18.png" altimg-height="40px" altimg-valign="-7px" altimg-width="142px" alttext="\displaystyle R_{J}\left(x,y,z,p\right)" display="inline"><mrow><msub><mi href="./19.16#E2" title="symmetric elliptic integral of third kind">R</mi><mi href="./19.16#E2" title="symmetric elliptic integral of third kind">J</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo>,</mo><mi>p</mi><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m7.png" altimg-height="207px" altimg-valign="-22px" altimg-width="241px" alttext="\displaystyle=\frac{3}{2\sqrt{z}p}\left(\ln\left(\frac{8z}{a+g}\right)-2R_{C}%
+\left(1,\frac{p}{z}\right)+O\left(\left(\frac{a}{z}+\frac{a}{p}\right)\ln\frac%
+{p}{a}\right)\right)," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mstyle displaystyle="true"><mfrac><mn>3</mn><mrow><mn>2</mn><mo>⁢</mo><msqrt><mi>z</mi></msqrt><mo>⁢</mo><mi>p</mi></mrow></mfrac></mstyle><mo>⁢</mo><mrow><mo>(</mo><mrow><mrow><mrow><mi href="./4.2#E2" title="principal branch of logarithm function">ln</mi><mo>⁡</mo><mrow><mo>(</mo><mstyle displaystyle="true"><mfrac><mrow><mn>8</mn><mo>⁢</mo><mi>z</mi></mrow><mrow><mi href="./19.27#i.p1" title="𝑎">a</mi><mo>+</mo><mi href="./19.27#i.p1" title="𝑔">g</mi></mrow></mfrac></mstyle><mo>)</mo></mrow></mrow><mo>−</mo><mrow><mn>2</mn><mo>⁢</mo><mrow><msub><mi href="./19.2#E17" title="Carlson’s combination of inverse circular and inverse hyperbolic functions">R</mi><mi href="./19.2#E17" title="Carlson’s combination of inverse circular and inverse hyperbolic functions">C</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mn>1</mn><mo>,</mo><mstyle displaystyle="true"><mfrac><mi>p</mi><mi>z</mi></mfrac></mstyle><mo>)</mo></mrow></mrow></mrow></mrow><mo>+</mo><mrow><mi href="./2.1#E3" title="order not exceeding">O</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mrow><mo>(</mo><mrow><mstyle displaystyle="true"><mfrac><mi href="./19.27#i.p1" title="𝑎">a</mi><mi>z</mi></mfrac></mstyle><mo>+</mo><mstyle displaystyle="true"><mfrac><mi href="./19.27#i.p1" title="𝑎">a</mi><mi>p</mi></mfrac></mstyle></mrow><mo>)</mo></mrow><mo lspace="0.167em">⁢</mo><mrow><mi href="./4.2#E2" title="principal branch of logarithm function">ln</mi><mo lspace="0.167em">⁡</mo><mstyle displaystyle="true"><mfrac><mi>p</mi><mi href="./19.27#i.p1" title="𝑎">a</mi></mfrac></mstyle></mrow></mrow><mo>)</mo></mrow></mrow></mrow><mo>)</mo></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="5"><span class="ltx_constraint"><math class="ltx_Math" altimg="m38.png" altimg-height="25px" altimg-valign="-7px" altimg-width="229px" alttext="\max(x,y)/\min(z,p)\to 0" display="inline"><mrow><mrow><mrow><mi>max</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>/</mo><mrow><mi>min</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo>,</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">→</mo><mn>0</mn></mrow></math>.</span></td></tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E13.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./2.1#E3" title="(2.1.3) ‣ §2.1(i) Asymptotic and Order Symbols ‣ §2.1 Definitions and Elementary Properties ‣ Areas ‣ Chapter 2 Asymptotic Approximations" class="ltx_ref"><math class="ltx_Math" altimg="m25.png" altimg-height="25px" altimg-valign="-7px" altimg-width="52px" alttext="O\left(\NVar{x}\right)" display="inline"><mrow><mi href="./2.1#E3" title="order not exceeding">O</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">x</mi><mo>)</mo></mrow></mrow></math>: order not exceeding</a>,
+<a href="./19.2#E17" title="(19.2.17) ‣ §19.2(iv) A Related Function: 𝑅_𝐶(𝑥,𝑦) ‣ §19.2 Definitions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m27.png" altimg-height="25px" altimg-valign="-7px" altimg-width="86px" alttext="R_{C}\left(\NVar{x},\NVar{y}\right)" display="inline"><mrow><msub><mi href="./19.2#E17" title="Carlson’s combination of inverse circular and inverse hyperbolic functions">R</mi><mi href="./19.2#E17" title="Carlson’s combination of inverse circular and inverse hyperbolic functions">C</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">x</mi><mo>,</mo><mi class="ltx_nvar">y</mi><mo>)</mo></mrow></mrow></math>: Carlson’s combination of inverse circular and inverse hyperbolic functions</a>,
+<a href="./19.16#E2" title="(19.16.2) ‣ §19.16(i) Symmetric Integrals ‣ §19.16 Definitions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m34.png" altimg-height="25px" altimg-valign="-7px" altimg-width="123px" alttext="R_{J}\left(\NVar{x},\NVar{y},\NVar{z},\NVar{p}\right)" display="inline"><mrow><msub><mi href="./19.16#E2" title="symmetric elliptic integral of third kind">R</mi><mi href="./19.16#E2" title="symmetric elliptic integral of third kind">J</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">x</mi><mo>,</mo><mi class="ltx_nvar">y</mi><mo>,</mo><mi class="ltx_nvar">z</mi><mo>,</mo><mi class="ltx_nvar">p</mi><mo>)</mo></mrow></mrow></math>: symmetric elliptic integral of third kind</a>,
+<a href="./4.2#E2" title="(4.2.2) ‣ §4.2(i) The Logarithm ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m36.png" altimg-height="18px" altimg-valign="-2px" altimg-width="36px" alttext="\ln\NVar{z}" display="inline"><mrow><mi href="./4.2#E2" title="principal branch of logarithm function">ln</mi><mo lspace="0.167em">⁡</mo><mi class="ltx_nvar" href="./4.1#t1.r4" title="complex variable">z</mi></mrow></math>: principal branch of logarithm function</a>,
+<a href="./19.27#i.p1" title="§19.27(i) Notation ‣ §19.27 Asymptotic Approximations and Expansions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m42.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="a" display="inline"><mi href="./19.27#i.p1" title="𝑎">a</mi></math></a> and
+<a href="./19.27#i.p1" title="§19.27(i) Notation ‣ §19.27 Asymptotic Approximations and Expansions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m48.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="g" display="inline"><mi href="./19.27#i.p1" title="𝑔">g</mi></math></a>
+</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./19.12#info" title="§19.12 Asymptotic Approximations ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.12</span></a>,
+<a href="./19.20#iii.info" title="§19.20(iii) 𝑅_𝐽(𝑥,𝑦,𝑧,𝑝) ‣ §19.20 Special Cases ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.20(iii)</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./19.27.E13" title="" class="ltx_ref">http://dlmf.nist.gov/19.27.E13</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./19.27.E13.tex">TeX</a>, <a href="./19.27.E13.pmml">pMML</a>, <a href="./19.27.E13.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19.27#v.info" title="§19.27(v) 𝑅_𝐽(𝑥,𝑦,𝑧,𝑝) ‣ §19.27 Asymptotic Approximations and Expansions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.27(v)</span></a>,
+<a href="./19.27#info" title="§19.27 Asymptotic Approximations and Expansions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.27</span></a> and
+<a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+<tbody id="E14">
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">19.27.14</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m18.png" altimg-height="40px" altimg-valign="-7px" altimg-width="142px" alttext="\displaystyle R_{J}\left(x,y,z,p\right)" display="inline"><mrow><msub><mi href="./19.16#E2" title="symmetric elliptic integral of third kind">R</mi><mi href="./19.16#E2" title="symmetric elliptic integral of third kind">J</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo>,</mo><mi>p</mi><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m11.png" altimg-height="170px" altimg-valign="-23px" altimg-width="178px" alttext="\displaystyle=\frac{3}{\sqrt{yz}}R_{C}\left(x,p\right)-\frac{6}{yz}R_{G}\left(%
+0,y,z\right)+O\left(\frac{\sqrt{x+2p}}{yz}\right)," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mrow><mrow><mstyle displaystyle="true"><mfrac><mn>3</mn><msqrt><mrow><mi>y</mi><mo>⁢</mo><mi>z</mi></mrow></msqrt></mfrac></mstyle><mo>⁢</mo><mrow><msub><mi href="./19.2#E17" title="Carlson’s combination of inverse circular and inverse hyperbolic functions">R</mi><mi href="./19.2#E17" title="Carlson’s combination of inverse circular and inverse hyperbolic functions">C</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi>x</mi><mo>,</mo><mi>p</mi><mo>)</mo></mrow></mrow></mrow><mo>−</mo><mrow><mstyle displaystyle="true"><mfrac><mn>6</mn><mrow><mi>y</mi><mo>⁢</mo><mi>z</mi></mrow></mfrac></mstyle><mo>⁢</mo><mrow><msub><mi href="./19.16#E2_5" title="symmetric elliptic integral of second kind">R</mi><mi href="./19.16#E2_5" title="symmetric elliptic integral of second kind">G</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mn>0</mn><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo>)</mo></mrow></mrow></mrow></mrow><mo>+</mo><mrow><mi href="./2.1#E3" title="order not exceeding">O</mi><mo>⁡</mo><mrow><mo>(</mo><mstyle displaystyle="true"><mfrac><msqrt><mrow><mi>x</mi><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><mi>p</mi></mrow></mrow></msqrt><mrow><mi>y</mi><mo>⁢</mo><mi>z</mi></mrow></mfrac></mstyle><mo>)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="5"><span class="ltx_constraint"><math class="ltx_Math" altimg="m37.png" altimg-height="25px" altimg-valign="-7px" altimg-width="229px" alttext="\max(x,p)/\min(y,z)\to 0" display="inline"><mrow><mrow><mrow><mi>max</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow><mo>/</mo><mrow><mi>min</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">→</mo><mn>0</mn></mrow></math>.</span></td></tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E14.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./2.1#E3" title="(2.1.3) ‣ §2.1(i) Asymptotic and Order Symbols ‣ §2.1 Definitions and Elementary Properties ‣ Areas ‣ Chapter 2 Asymptotic Approximations" class="ltx_ref"><math class="ltx_Math" altimg="m25.png" altimg-height="25px" altimg-valign="-7px" altimg-width="52px" alttext="O\left(\NVar{x}\right)" display="inline"><mrow><mi href="./2.1#E3" title="order not exceeding">O</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">x</mi><mo>)</mo></mrow></mrow></math>: order not exceeding</a>,
+<a href="./19.2#E17" title="(19.2.17) ‣ §19.2(iv) A Related Function: 𝑅_𝐶(𝑥,𝑦) ‣ §19.2 Definitions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m27.png" altimg-height="25px" altimg-valign="-7px" altimg-width="86px" alttext="R_{C}\left(\NVar{x},\NVar{y}\right)" display="inline"><mrow><msub><mi href="./19.2#E17" title="Carlson’s combination of inverse circular and inverse hyperbolic functions">R</mi><mi href="./19.2#E17" title="Carlson’s combination of inverse circular and inverse hyperbolic functions">C</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">x</mi><mo>,</mo><mi class="ltx_nvar">y</mi><mo>)</mo></mrow></mrow></math>: Carlson’s combination of inverse circular and inverse hyperbolic functions</a>,
+<a href="./19.16#E2_5" title="(19.16.2_5) ‣ §19.16(i) Symmetric Integrals ‣ §19.16 Definitions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m32.png" altimg-height="25px" altimg-valign="-7px" altimg-width="105px" alttext="R_{G}\left(\NVar{x},\NVar{y},\NVar{z}\right)" display="inline"><mrow><msub><mi href="./19.16#E2_5" title="symmetric elliptic integral of second kind">R</mi><mi href="./19.16#E2_5" title="symmetric elliptic integral of second kind">G</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">x</mi><mo>,</mo><mi class="ltx_nvar">y</mi><mo>,</mo><mi class="ltx_nvar">z</mi><mo>)</mo></mrow></mrow></math>: symmetric elliptic integral of second kind</a> and
+<a href="./19.16#E2" title="(19.16.2) ‣ §19.16(i) Symmetric Integrals ‣ §19.16 Definitions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m34.png" altimg-height="25px" altimg-valign="-7px" altimg-width="123px" alttext="R_{J}\left(\NVar{x},\NVar{y},\NVar{z},\NVar{p}\right)" display="inline"><mrow><msub><mi href="./19.16#E2" title="symmetric elliptic integral of third kind">R</mi><mi href="./19.16#E2" title="symmetric elliptic integral of third kind">J</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">x</mi><mo>,</mo><mi class="ltx_nvar">y</mi><mo>,</mo><mi class="ltx_nvar">z</mi><mo>,</mo><mi class="ltx_nvar">p</mi><mo>)</mo></mrow></mrow></math>: symmetric elliptic integral of third kind</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./19.20#iii.info" title="§19.20(iii) 𝑅_𝐽(𝑥,𝑦,𝑧,𝑝) ‣ §19.20 Special Cases ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.20(iii)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./19.27.E14" title="" class="ltx_ref">http://dlmf.nist.gov/19.27.E14</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./19.27.E14.tex">TeX</a>, <a href="./19.27.E14.pmml">pMML</a>, <a href="./19.27.E14.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19.27#v.info" title="§19.27(v) 𝑅_𝐽(𝑥,𝑦,𝑧,𝑝) ‣ §19.27 Asymptotic Approximations and Expansions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.27(v)</span></a>,
+<a href="./19.27#info" title="§19.27 Asymptotic Approximations and Expansions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.27</span></a> and
+<a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+<tbody id="E15">
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">19.27.15</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m18.png" altimg-height="40px" altimg-valign="-7px" altimg-width="142px" alttext="\displaystyle R_{J}\left(x,y,z,p\right)" display="inline"><mrow><msub><mi href="./19.16#E2" title="symmetric elliptic integral of third kind">R</mi><mi href="./19.16#E2" title="symmetric elliptic integral of third kind">J</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo>,</mo><mi>p</mi><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m6.png" altimg-height="151px" altimg-valign="-22px" altimg-width="343px" alttext="\displaystyle=R_{J}\left(0,y,z,p\right)-\frac{3\sqrt{x}}{hp}\left(1+O\left(%
+\left(\frac{b}{h}+\frac{h}{p}\right)\sqrt{\frac{x}{h}}\right)\right)," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mrow><msub><mi href="./19.16#E2" title="symmetric elliptic integral of third kind">R</mi><mi href="./19.16#E2" title="symmetric elliptic integral of third kind">J</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mn>0</mn><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo>,</mo><mi>p</mi><mo>)</mo></mrow></mrow><mo>−</mo><mrow><mstyle displaystyle="true"><mfrac><mrow><mn>3</mn><mo>⁢</mo><msqrt><mi>x</mi></msqrt></mrow><mrow><mi href="./19.27#i.p1" title="ℎ">h</mi><mo>⁢</mo><mi>p</mi></mrow></mfrac></mstyle><mo>⁢</mo><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mrow><mi href="./2.1#E3" title="order not exceeding">O</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mrow><mo>(</mo><mrow><mstyle displaystyle="true"><mfrac><mi href="./19.27#i.p1" title="𝑏">b</mi><mi href="./19.27#i.p1" title="ℎ">h</mi></mfrac></mstyle><mo>+</mo><mstyle displaystyle="true"><mfrac><mi href="./19.27#i.p1" title="ℎ">h</mi><mi>p</mi></mfrac></mstyle></mrow><mo>)</mo></mrow><mo>⁢</mo><msqrt><mstyle displaystyle="true"><mfrac><mi>x</mi><mi href="./19.27#i.p1" title="ℎ">h</mi></mfrac></mstyle></msqrt></mrow><mo>)</mo></mrow></mrow></mrow><mo>)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="5"><span class="ltx_constraint"><math class="ltx_Math" altimg="m52.png" altimg-height="25px" altimg-valign="-7px" altimg-width="174px" alttext="x/\min(y,z,p)\to 0" display="inline"><mrow><mrow><mi>x</mi><mo>/</mo><mrow><mi>min</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo>,</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">→</mo><mn>0</mn></mrow></math>.</span></td></tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E15.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./2.1#E3" title="(2.1.3) ‣ §2.1(i) Asymptotic and Order Symbols ‣ §2.1 Definitions and Elementary Properties ‣ Areas ‣ Chapter 2 Asymptotic Approximations" class="ltx_ref"><math class="ltx_Math" altimg="m25.png" altimg-height="25px" altimg-valign="-7px" altimg-width="52px" alttext="O\left(\NVar{x}\right)" display="inline"><mrow><mi href="./2.1#E3" title="order not exceeding">O</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">x</mi><mo>)</mo></mrow></mrow></math>: order not exceeding</a>,
+<a href="./19.16#E2" title="(19.16.2) ‣ §19.16(i) Symmetric Integrals ‣ §19.16 Definitions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m34.png" altimg-height="25px" altimg-valign="-7px" altimg-width="123px" alttext="R_{J}\left(\NVar{x},\NVar{y},\NVar{z},\NVar{p}\right)" display="inline"><mrow><msub><mi href="./19.16#E2" title="symmetric elliptic integral of third kind">R</mi><mi href="./19.16#E2" title="symmetric elliptic integral of third kind">J</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">x</mi><mo>,</mo><mi class="ltx_nvar">y</mi><mo>,</mo><mi class="ltx_nvar">z</mi><mo>,</mo><mi class="ltx_nvar">p</mi><mo>)</mo></mrow></mrow></math>: symmetric elliptic integral of third kind</a>,
+<a href="./19.27#i.p1" title="§19.27(i) Notation ‣ §19.27 Asymptotic Approximations and Expansions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m44.png" altimg-height="18px" altimg-valign="-2px" altimg-width="13px" alttext="b" display="inline"><mi href="./19.27#i.p1" title="𝑏">b</mi></math></a> and
+<a href="./19.27#i.p1" title="§19.27(i) Notation ‣ §19.27 Asymptotic Approximations and Expansions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m49.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="h" display="inline"><mi href="./19.27#i.p1" title="ℎ">h</mi></math></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./19.27.E15" title="" class="ltx_ref">http://dlmf.nist.gov/19.27.E15</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./19.27.E15.tex">TeX</a>, <a href="./19.27.E15.pmml">pMML</a>, <a href="./19.27.E15.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19.27#v.info" title="§19.27(v) 𝑅_𝐽(𝑥,𝑦,𝑧,𝑝) ‣ §19.27 Asymptotic Approximations and Expansions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.27(v)</span></a>,
+<a href="./19.27#info" title="§19.27 Asymptotic Approximations and Expansions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.27</span></a> and
+<a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+<tbody id="E16">
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">19.27.16</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m18.png" altimg-height="40px" altimg-valign="-7px" altimg-width="142px" alttext="\displaystyle R_{J}\left(x,y,z,p\right)" display="inline"><mrow><msub><mi href="./19.16#E2" title="symmetric elliptic integral of third kind">R</mi><mi href="./19.16#E2" title="symmetric elliptic integral of third kind">J</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo>,</mo><mi>p</mi><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m1.png" altimg-height="99px" altimg-valign="-22px" altimg-width="318px" alttext="\displaystyle=(3/\sqrt{x})R_{C}\left((h+p)^{2},2(b+h)p\right)+O\left(\frac{1}{%
+x^{3/2}}\ln\frac{x}{b+h}\right)," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mn>3</mn><mo>/</mo><msqrt><mi>x</mi></msqrt></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><msub><mi href="./19.2#E17" title="Carlson’s combination of inverse circular and inverse hyperbolic functions">R</mi><mi href="./19.2#E17" title="Carlson’s combination of inverse circular and inverse hyperbolic functions">C</mi></msub><mo>⁡</mo><mrow><mo>(</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi href="./19.27#i.p1" title="ℎ">h</mi><mo>+</mo><mi>p</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>,</mo><mrow><mn>2</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi href="./19.27#i.p1" title="𝑏">b</mi><mo>+</mo><mi href="./19.27#i.p1" title="ℎ">h</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>p</mi></mrow><mo>)</mo></mrow></mrow></mrow><mo>+</mo><mrow><mi href="./2.1#E3" title="order not exceeding">O</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><msup><mi>x</mi><mrow><mn>3</mn><mo>/</mo><mn>2</mn></mrow></msup></mfrac></mstyle><mo lspace="0.167em">⁢</mo><mrow><mi href="./4.2#E2" title="principal branch of logarithm function">ln</mi><mo lspace="0.167em">⁡</mo><mstyle displaystyle="true"><mfrac><mi>x</mi><mrow><mi href="./19.27#i.p1" title="𝑏">b</mi><mo>+</mo><mi href="./19.27#i.p1" title="ℎ">h</mi></mrow></mfrac></mstyle></mrow></mrow><mo>)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="5"><span class="ltx_constraint"><math class="ltx_Math" altimg="m39.png" altimg-height="25px" altimg-valign="-7px" altimg-width="174px" alttext="\max(y,z,p)/x\to 0" display="inline"><mrow><mrow><mrow><mi>max</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo>,</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow><mo>/</mo><mi>x</mi></mrow><mo stretchy="false">→</mo><mn>0</mn></mrow></math>.</span></td></tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E16.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./2.1#E3" title="(2.1.3) ‣ §2.1(i) Asymptotic and Order Symbols ‣ §2.1 Definitions and Elementary Properties ‣ Areas ‣ Chapter 2 Asymptotic Approximations" class="ltx_ref"><math class="ltx_Math" altimg="m25.png" altimg-height="25px" altimg-valign="-7px" altimg-width="52px" alttext="O\left(\NVar{x}\right)" display="inline"><mrow><mi href="./2.1#E3" title="order not exceeding">O</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">x</mi><mo>)</mo></mrow></mrow></math>: order not exceeding</a>,
+<a href="./19.2#E17" title="(19.2.17) ‣ §19.2(iv) A Related Function: 𝑅_𝐶(𝑥,𝑦) ‣ §19.2 Definitions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m27.png" altimg-height="25px" altimg-valign="-7px" altimg-width="86px" alttext="R_{C}\left(\NVar{x},\NVar{y}\right)" display="inline"><mrow><msub><mi href="./19.2#E17" title="Carlson’s combination of inverse circular and inverse hyperbolic functions">R</mi><mi href="./19.2#E17" title="Carlson’s combination of inverse circular and inverse hyperbolic functions">C</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">x</mi><mo>,</mo><mi class="ltx_nvar">y</mi><mo>)</mo></mrow></mrow></math>: Carlson’s combination of inverse circular and inverse hyperbolic functions</a>,
+<a href="./19.16#E2" title="(19.16.2) ‣ §19.16(i) Symmetric Integrals ‣ §19.16 Definitions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m34.png" altimg-height="25px" altimg-valign="-7px" altimg-width="123px" alttext="R_{J}\left(\NVar{x},\NVar{y},\NVar{z},\NVar{p}\right)" display="inline"><mrow><msub><mi href="./19.16#E2" title="symmetric elliptic integral of third kind">R</mi><mi href="./19.16#E2" title="symmetric elliptic integral of third kind">J</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">x</mi><mo>,</mo><mi class="ltx_nvar">y</mi><mo>,</mo><mi class="ltx_nvar">z</mi><mo>,</mo><mi class="ltx_nvar">p</mi><mo>)</mo></mrow></mrow></math>: symmetric elliptic integral of third kind</a>,
+<a href="./4.2#E2" title="(4.2.2) ‣ §4.2(i) The Logarithm ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m36.png" altimg-height="18px" altimg-valign="-2px" altimg-width="36px" alttext="\ln\NVar{z}" display="inline"><mrow><mi href="./4.2#E2" title="principal branch of logarithm function">ln</mi><mo lspace="0.167em">⁡</mo><mi class="ltx_nvar" href="./4.1#t1.r4" title="complex variable">z</mi></mrow></math>: principal branch of logarithm function</a>,
+<a href="./19.27#i.p1" title="§19.27(i) Notation ‣ §19.27 Asymptotic Approximations and Expansions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m44.png" altimg-height="18px" altimg-valign="-2px" altimg-width="13px" alttext="b" display="inline"><mi href="./19.27#i.p1" title="𝑏">b</mi></math></a> and
+<a href="./19.27#i.p1" title="§19.27(i) Notation ‣ §19.27 Asymptotic Approximations and Expansions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m49.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="h" display="inline"><mi href="./19.27#i.p1" title="ℎ">h</mi></math></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./19.27.E16" title="" class="ltx_ref">http://dlmf.nist.gov/19.27.E16</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./19.27.E16.tex">TeX</a>, <a href="./19.27.E16.pmml">pMML</a>, <a href="./19.27.E16.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19.27#v.info" title="§19.27(v) 𝑅_𝐽(𝑥,𝑦,𝑧,𝑝) ‣ §19.27 Asymptotic Approximations and Expansions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.27(v)</span></a>,
+<a href="./19.27#info" title="§19.27 Asymptotic Approximations and Expansions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.27</span></a> and
+<a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="vi" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§19.27(vi) </span>Asymptotic Expansions</h2>
+<div id="vi.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=asymptotic%20approximations%20and%20expansions">asymptotic approximations and expansions</a>, <a class="ltx_keyword" href="./search/search?q=symmetric%20elliptic%20integrals">symmetric elliptic integrals</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./2.6#ii.p7" title="§2.6(ii) Stieltjes Transform ‣ §2.6 Distributional Methods ‣ Areas ‣ Chapter 2 Asymptotic Approximations" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§2.6(ii)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./19.27.vi" title="" class="ltx_ref">http://dlmf.nist.gov/19.27.vi</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19.27#info" title="§19.27 Asymptotic Approximations and Expansions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.27</span></a> and
+<a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="vi.p1" class="ltx_para">
+<p class="ltx_p">The approximations in §§<a href="./19.27#i" title="§19.27(i) Notation ‣ §19.27 Asymptotic Approximations and Expansions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">19.27(i)</span></a>–<a href="./19.27#v" title="§19.27(v) 𝑅_𝐽(𝑥,𝑦,𝑧,𝑝) ‣ §19.27 Asymptotic Approximations and Expansions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">19.27(v)</span></a> are
+furnished with upper and lower bounds by <cite class="ltx_cite ltx_citemacro_citet">Carlson and Gustafson (<a href="./bib/C#bib452" title="Asymptotic approximations for symmetric elliptic integrals" class="ltx_ref">1994</a>)</cite>,
+sometimes with two or three approximations of differing accuracies. Although
+they are obtained (with some exceptions) by approximating uniformly the
+integrand of each elliptic integral, some occur also as the leading terms of
+known asymptotic series with error bounds (<cite class="ltx_cite ltx_citemacro_citet">Wong (<a href="./bib/W#bib2437" title="Applications of some recent results in asymptotic expansions" class="ltx_ref">1983</a>, §4)</cite>,
+<cite class="ltx_cite ltx_citemacro_citet">Carlson and Gustafson (<a href="./bib/C#bib451" title="Asymptotic expansion of the first elliptic integral" class="ltx_ref">1985</a>)</cite>, <cite class="ltx_cite ltx_citemacro_citet">López (<a href="./bib/L#bib1449" title="Asymptotic expansions of symmetric standard elliptic integrals" class="ltx_ref">2000</a>, <a href="./bib/L#bib1450" title="Uniform asymptotic expansions of symmetric elliptic integrals" class="ltx_ref">2001</a>)</cite>). These series
+converge but not fast enough, given the complicated nature of their terms, to
+be very useful in practice.</p>
+</div>
+<div id="vi.p2" class="ltx_para">
+<p class="ltx_p">A similar (but more general) situation prevails for
+<math class="ltx_Math" altimg="m26.png" altimg-height="25px" altimg-valign="-7px" altimg-width="96px" alttext="R_{-a}\left(\mathbf{b};\mathbf{z}\right)" display="inline"><mrow><msub><mi href="./19.16#E9" title="multivariate hypergeometric function">R</mi><mrow><mo>−</mo><mi href="./19.27#i.p1" title="𝑎">a</mi></mrow></msub><mo>⁡</mo><mrow><mo>(</mo><mi>𝐛</mi><mo>;</mo><mi>𝐳</mi><mo>)</mo></mrow></mrow></math> when some of the variables
+<math class="ltx_Math" altimg="m60.png" altimg-height="17px" altimg-valign="-6px" altimg-width="90px" alttext="z_{1},\dots,z_{n}" display="inline"><mrow><msub><mi>z</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>z</mi><mi href="./19.1#p1.t1.r1" title="nonnegative integer">n</mi></msub></mrow></math> are smaller in magnitude than the rest;
+see <cite class="ltx_cite ltx_citemacro_citet">Carlson (<a href="./bib/C#bib437" title="The hypergeometric function and the R -function near their branch points" class="ltx_ref">1985</a>, (4.16)–(4.19) and (2.26)–(2.29))</cite>.
+</p>
+</div>
+</section>
+</section>
+</div>
+<div class="ltx_page_footer">
+<div class="ltx_siblings">
+<a href="./19.26" title="In Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">19.26 </span>Addition Theorems</span></a><a href="./19.28" title="In Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">19.28 </span>Integrals of Elliptic Integrals</span></a>
+</div>
+<div class="ltx_footer_links ltx_centering">
+<a href="./about/notices">© 2010–2026 NIST</a> / <a href="./about/notices#S2">Disclaimer</a> / <a href="/cdn-cgi/l/email-protection#41050d0c076c272424252320222a012f2832356f262e37">Feedback</a>;
+ Version 1.2.7;
+Release date 2026-06-15.</div>
+<span id="pagesettings"></span>
+<div class="ltx_nist_logo"><a href="http://www.nist.gov/"><img src="./style/nistidc.png" width="500" alt="NIST"></a></div>
+<div class="ltx_nist_links ltx_align_right">
+<a href="https://www.nist.gov/privacy-policy">Site Privacy</a> <a href="https://www.nist.gov/oism/accessibility">Accessibility</a> <a href="https://www.nist.gov/privacy">Privacy Program</a> <a href="https://www.nist.gov/oism/copyrights">Copyrights</a> <a href="https://www.commerce.gov/vulnerability-disclosure-policy">Vulnerability Disclosure</a> <a href="https://www.nist.gov/no-fear-act-policy">No Fear Act Policy</a> <a href="https://www.nist.gov/foia">FOIA</a> <a href="https://www.nist.gov/environmental-policy-statement">Environmental Policy</a> <a href="https://www.nist.gov/summary-report-scientific-integrity">Scientific Integrity</a> <a href="https://www.nist.gov/nist-information-quality-standards">Information Quality Standards</a> <a href="https://www.commerce.gov/">Commerce.gov</a> <a href="http://www.science.gov/">Science.gov</a> <a href="http://www.usa.gov/">USA.gov</a>
+</div>
+</div>
+</div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a30b64ea2dc90c9e',t:'MTc4NzY2OTI3MA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"9ef5b487afff42a68917b2d63593a474"}' crossorigin="anonymous"></script>
+</body>
+</html>

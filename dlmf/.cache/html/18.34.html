@@ -1,0 +1,1023 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>DLMF: §18.34 Bessel Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials</title>
+<link rel="shortcut icon" href="./style/DLMF-16.png" type="image/png">
+<script type="text/javascript"><!--
+	var PATH="DLMF:/18.34";
+	var ROOT="./";
+      //--></script>
+<script type="text/javascript" src="./style/jquery.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/jquery.leaveNotice.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/DLMF.js"><!-- non-empty so ie6 will accept it --></script>
+<script async="" type="text/javascript" id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC&amp;subagency=NIST&amp;pua=UA-37115410-44&amp;yt=true&amp;exts=ppsx,pps,f90,sch,rtf,wrl,txz,m1v,xlsm,msi,xsd,f,tif,eps,mpg,xml,pl,xlt,c"><!-- non-empty so ie6 will accept it --></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-BZB64W4M0L"></script><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-BZB64W4M0L');
+      </script>
+<link rel="stylesheet" type="text/css" href="./style/LaTeXML.css">
+<link rel="stylesheet" type="text/css" href="./style/DLMF.css">
+<link rel="stylesheet" type="text/css" href="./style/print.css" media="print">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="top" href="./" title="DLMF">
+<link rel="copyright" href="./about/notices" title="Copyright">
+<link rel="search" href="./search/search" title="Search">
+<link rel="help" class="ltx_help" href="./help/" title="Help">
+<link rel="up" href="./18#PT5" title="Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="up up" href="./18" title="Chapter 18 Orthogonal Polynomials">
+<link rel="start" href="./" title="">
+<link rel="prev" href="./18.33" title="§18.33 Polynomials Orthogonal on the Unit Circle ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="next" href="./18.35" title="§18.35 Pollaczek Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.1" title="§18.1 Notation ‣ Notation ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.2" title="§18.2 General Orthogonal Polynomials ‣ General Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.3" title="§18.3 Definitions ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.4" title="§18.4 Graphics ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.5" title="§18.5 Explicit Representations ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.6" title="§18.6 Symmetry, Special Values, and Limits to Monomials ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.7" title="§18.7 Interrelations and Limit Relations ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.8" title="§18.8 Differential Equations ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.9" title="§18.9 Recurrence Relations and Derivatives ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.10" title="§18.10 Integral Representations ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.11" title="§18.11 Relations to Other Functions ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.12" title="§18.12 Generating Functions ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.13" title="§18.13 Continued Fractions ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.14" title="§18.14 Inequalities ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.15" title="§18.15 Asymptotic Approximations ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.16" title="§18.16 Zeros ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.17" title="§18.17 Integrals ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.18" title="§18.18 Sums ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.19" title="§18.19 Hahn Class: Definitions ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.20" title="§18.20 Hahn Class: Explicit Representations ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.21" title="§18.21 Hahn Class: Interrelations ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.22" title="§18.22 Hahn Class: Recurrence Relations and Differences ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.23" title="§18.23 Hahn Class: Generating Functions ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.24" title="§18.24 Hahn Class: Asymptotic Approximations ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.25" title="§18.25 Wilson Class: Definitions ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.26" title="§18.26 Wilson Class: Continued ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.27" title="§18.27 𝑞-Hahn Class ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.28" title="§18.28 Askey–Wilson Class ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.29" title="§18.29 Asymptotic Approximations for 𝑞-Hahn and Askey–Wilson Classes ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.30" title="§18.30 Associated OP’s ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.31" title="§18.31 Bernstein–Szegő Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.32" title="§18.32 OP’s with Respect to Freud Weights ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.33" title="§18.33 Polynomials Orthogonal on the Unit Circle ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.35" title="§18.35 Pollaczek Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.36" title="§18.36 Miscellaneous Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.37" title="§18.37 Classical OP’s in Two or More Variables ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.38" title="§18.38 Mathematical Applications ‣ Applications ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.39" title="§18.39 Applications in the Physical Sciences ‣ Applications ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.40" title="§18.40 Methods of Computation ‣ Computation ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.41" title="§18.41 Tables ‣ Computation ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.42" title="§18.42 Software ‣ Computation ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="document" href="./front/foreword" title="Foreword">
+<link rel="document" href="./front/preface" title="Preface">
+<link rel="document" href="./front/introduction" title="Mathematical Introduction">
+<link rel="chapter" href="./1" title="Chapter 1 Algebraic and Analytic Methods">
+<link rel="chapter" href="./2" title="Chapter 2 Asymptotic Approximations">
+<link rel="chapter" href="./3" title="Chapter 3 Numerical Methods">
+<link rel="chapter" href="./4" title="Chapter 4 Elementary Functions">
+<link rel="chapter" href="./5" title="Chapter 5 Gamma Function">
+<link rel="chapter" href="./6" title="Chapter 6 Exponential, Logarithmic, Sine, and Cosine Integrals">
+<link rel="chapter" href="./7" title="Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="chapter" href="./8" title="Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="chapter" href="./9" title="Chapter 9 Airy and Related Functions">
+<link rel="chapter" href="./10" title="Chapter 10 Bessel Functions">
+<link rel="chapter" href="./11" title="Chapter 11 Struve and Related Functions">
+<link rel="chapter" href="./12" title="Chapter 12 Parabolic Cylinder Functions">
+<link rel="chapter" href="./13" title="Chapter 13 Confluent Hypergeometric Functions">
+<link rel="chapter" href="./14" title="Chapter 14 Legendre and Related Functions">
+<link rel="chapter" href="./15" title="Chapter 15 Hypergeometric Function">
+<link rel="chapter" href="./16" title="Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="chapter" href="./17" title="Chapter 17 𝑞-Hypergeometric and Related Functions">
+<link rel="chapter" href="./18" title="Chapter 18 Orthogonal Polynomials">
+<link rel="chapter" href="./19" title="Chapter 19 Elliptic Integrals">
+<link rel="chapter" href="./20" title="Chapter 20 Theta Functions">
+<link rel="chapter" href="./21" title="Chapter 21 Multidimensional Theta Functions">
+<link rel="chapter" href="./22" title="Chapter 22 Jacobian Elliptic Functions">
+<link rel="chapter" href="./23" title="Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="chapter" href="./24" title="Chapter 24 Bernoulli and Euler Polynomials">
+<link rel="chapter" href="./25" title="Chapter 25 Zeta and Related Functions">
+<link rel="chapter" href="./26" title="Chapter 26 Combinatorial Analysis">
+<link rel="chapter" href="./27" title="Chapter 27 Functions of Number Theory">
+<link rel="chapter" href="./28" title="Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="chapter" href="./29" title="Chapter 29 Lamé Functions">
+<link rel="chapter" href="./30" title="Chapter 30 Spheroidal Wave Functions">
+<link rel="chapter" href="./31" title="Chapter 31 Heun Functions">
+<link rel="chapter" href="./32" title="Chapter 32 Painlevé Transcendents">
+<link rel="chapter" href="./33" title="Chapter 33 Coulomb Functions">
+<link rel="chapter" href="./34" title="Chapter 34 3⁢𝑗,6⁢𝑗,9⁢𝑗 Symbols">
+<link rel="chapter" href="./35" title="Chapter 35 Functions of Matrix Argument">
+<link rel="chapter" href="./36" title="Chapter 36 Integrals with Coalescing Saddles">
+<link rel="bibliography" href="./bib/" title="Bibliography">
+<link rel="index" href="./idx/" title="Index">
+<link rel="glossary" href="./not/" title="Notations">
+<link rel="document" href="./lof/" title="List of Figures">
+<link rel="document" href="./lot/" title="List of Tables">
+<link rel="document" href="./software/" title="Software Index">
+<link rel="document" href="./errata/" title="Errata">
+<link rel="document" href="./help/" title="Need Help?">
+<link rel="document" href="./search/" title="Advanced Search">
+<link rel="document" href="./about/" title="About the Project">
+<meta name="keywords" lang="en" content="Bessel polynomials, Jacobi polynomials, Laguerre polynomials, Romanovski–Bessel polynomials, Whittaker functions, as Bessel polynomials, asymptotic expansions, confluent hypergeometric functions, definition, differential equations, generalized, generalized Bessel polynomials, generalized hypergeometric functions, limiting form, modified Bessel functions, orthogonality properties, recurrence relations, relations to other functions">
+</head>
+<body class="color_default textfont_default titlefont_default fontsize_default navbar_default">
+<div class="ltx_page_navbar">
+<div class="ltx_page_navlogo"><a href="./" title="Digital Library of Mathematical Functions"><span>DLMF</span></a></div>
+<div class="ltx_page_navitems">
+<form method="get" action="./search/search">
+<ul>
+<li><a href="./idx/">Index</a></li>
+<li><a href="./not/">Notations</a></li>
+<li><small><input type="text" name="q" value="" size="6" class="ltx_page_navitem_search"><button type="submit">Search</button></small></li>
+<li><a href="./help/" class="ltx_help">Help?</a></li>
+<li><a href="./help/cite">Citing</a></li>
+<li><a href="./help/customize" class="ltx_customize">Customize</a></li>
+<li id="showinfo"><a href="" onclick="showInfo(); return false;" title="Show Annotations">Annotate</a></li>
+<li id="hideinfo"><a href="" onclick="hideInfo(); return false;">UnAnnotate</a></li>
+</ul>
+</form>
+</div>
+<div class="ltx_page_navsponsors">
+<div><a href="./about/" class="ltx_page_navabout">About the Project</a></div>
+</div>
+</div>
+<div class="ltx_page_main">
+<div class="ltx_page_header">
+<a href="./18" title="" class="ltx_ref" rel="up up"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">18 </span>Orthogonal Polynomials</span></a><a href="./18#PT5" title="In Chapter 18 Orthogonal Polynomials" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title">Other Orthogonal Polynomials</span></a><a href="./18.33" title="In Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">18.33 </span>Polynomials Orthogonal on the Unit Circle</span></a><a href="./18.35" title="In Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">18.35 </span>Pollaczek Polynomials</span></a>
+</div>
+<div class="ltx_page_content">
+<section class="ltx_section ltx_authors_multiline ltx_leqno">
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">§18.34 </span>Bessel Polynomials</h1>
+<div id="info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd><a class="ltx_keyword" href="./search/search?q=Bessel%20polynomials">Bessel polynomials</a></dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./10.49#ii.p2" title="§10.49(ii) Modified Functions ‣ §10.49 Explicit Formulas ‣ Spherical Bessel Functions ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§10.49(ii)</span></a>,
+<a href="./18.3#Px4.p1" title="Bessel polynomials ‣ §18.3 Definitions ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§18.3</span></a>,
+<a href="./3.5#viii.p1" title="§3.5(viii) Complex Gauss Quadrature ‣ §3.5 Quadrature ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§3.5(viii)</span></a>,
+<a href="./errata/#V1.2.0.I2.ix4.I2.ix21" title="In Erratum (V1.2.0) for Chapter 18 Additions ‣ Other Changes ‣ Version 1.2.0 (March 27, 2024) ‣ Errata" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Erratum (V1.2.0) §<span class="ltx_text ltx_ref_tag">18.34</span></span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./18.34" title="" class="ltx_ref">http://dlmf.nist.gov/18.34</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./18#info" title="Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.18</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<h6>Contents</h6>
+<ol class="ltx_toclist ltx_toclist_section">
+<li class="ltx_tocentry"><a href="#i"><span class="ltx_tag ltx_tag_subsection">§18.34(i) </span>Definitions and Recurrence Relation</a></li>
+<li class="ltx_tocentry"><a href="#ii"><span class="ltx_tag ltx_tag_subsection">§18.34(ii) </span>Orthogonality</a></li>
+<li class="ltx_tocentry"><a href="#iii"><span class="ltx_tag ltx_tag_subsection">§18.34(iii) </span>Other Properties</a></li>
+</ol>
+<section id="i" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§18.34(i) </span>Definitions and Recurrence Relation</h2>
+<div id="i.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=Bessel%20polynomials">Bessel polynomials</a>, <a class="ltx_keyword" href="./search/search?q=Laguerre%20polynomials">Laguerre polynomials</a>, <a class="ltx_keyword" href="./search/search?q=Whittaker%20functions">Whittaker functions</a>, <a class="ltx_keyword" href="./search/search?q=confluent%20hypergeometric%20functions">confluent hypergeometric functions</a>, <a class="ltx_keyword" href="./search/search?q=definition">definition</a>, <a class="ltx_keyword" href="./search/search?q=generalized">generalized</a>, <a class="ltx_keyword" href="./search/search?q=generalized%20Bessel%20polynomials">generalized Bessel polynomials</a>, <a class="ltx_keyword" href="./search/search?q=generalized%20hypergeometric%20functions">generalized hypergeometric functions</a>, <a class="ltx_keyword" href="./search/search?q=modified%20Bessel%20functions">modified Bessel functions</a>, <a class="ltx_keyword" href="./search/search?q=recurrence%20relations">recurrence relations</a>, <a class="ltx_keyword" href="./search/search?q=relations%20to%20other%20functions">relations to other functions</a>
+</dd>
+<dt>Notes:</dt>
+<dd>See <cite class="ltx_cite ltx_citemacro_citet">Ismail (<a href="./bib/I#bib2902" title="Classical and Quantum Orthogonal Polynomials in One Variable" class="ltx_ref">2009</a>, (4.10.4)–(4.10.6), (4.10.13))</cite>.</dd>
+<dt>Permalink:</dt>
+<dd><a href="./18.34.i" title="" class="ltx_ref">http://dlmf.nist.gov/18.34.i</a></dd>
+<dt>Addition (effective with 1.2.0):</dt>
+<dd>
+The sentence immediately before (<a href="./18.34#E1" title="(18.34.1) ‣ §18.34(i) Definitions and Recurrence Relation ‣ §18.34 Bessel Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">18.34.1</span></a>) was updated to describe the
+functions used there. A sentence immediately following (<a href="./18.34#E1" title="(18.34.1) ‣ §18.34(i) Definitions and Recurrence Relation ‣ §18.34 Bessel Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">18.34.1</span></a>) was
+added with references. Text was added immediately following (<a href="./18.34#E2" title="(18.34.2) ‣ §18.34(i) Definitions and Recurrence Relation ‣ §18.34 Bessel Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">18.34.2</span></a>).
+Text was added in the sentence above (<a href="./18.34#E4" title="(18.34.4) ‣ §18.34(i) Definitions and Recurrence Relation ‣ §18.34 Bessel Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">18.34.4</span></a>) indicating that the
+the polynomials <math class="ltx_Math" altimg="m44.png" altimg-height="25px" altimg-valign="-7px" altimg-width="92px" alttext="\theta_{n}(x;a,b)" display="inline"><mrow><msub><mi>θ</mi><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./18.2#Px1.p2" title="real variable">x</mi><mo>;</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">)</mo></mrow></mrow></math> are sometimes called <em class="ltx_emph ltx_font_italic">reverse Bessel polynomials</em>.
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./18.34#info" title="§18.34 Bessel Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§18.34</span></a> and
+<a href="./18#info" title="Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.18</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="i.p1" class="ltx_para">
+<p class="ltx_p">For the confluent hypergeometric function <math class="ltx_Math" altimg="m68.png" altimg-height="21px" altimg-valign="-5px" altimg-width="36px" alttext="{{}_{1}F_{1}}" display="inline"><mmultiscripts><mi href="./16.2" title="=𝑀(𝑎,𝑏,𝑧) notation for the Kummer confluent hypergeometric function">F</mi><mn href="./16.2" title="=𝑀(𝑎,𝑏,𝑧) notation for the Kummer confluent hypergeometric function">1</mn><mrow></mrow><mprescripts></mprescripts><mn href="./16.2" title="=𝑀(𝑎,𝑏,𝑧) notation for the Kummer confluent hypergeometric function">1</mn><mrow></mrow></mmultiscripts></math> and the generalized hypergeometric function
+
+<math class="ltx_Math" altimg="m70.png" altimg-height="21px" altimg-valign="-5px" altimg-width="36px" alttext="{{}_{2}F_{0}}" display="inline"><mmultiscripts><mi href="./16.2" title="alternatively {_𝑝}𝐹_𝑞(𝐚;𝐛;𝑧) or {_𝑝}𝐹_𝑞((𝐚¦𝐛);𝑧)generalized hypergeometric function">F</mi><mn>0</mn><mrow></mrow><mprescripts></mprescripts><mn>2</mn><mrow></mrow></mmultiscripts></math>, the Laguerre polynomial
+<math class="ltx_Math" altimg="m24.png" altimg-height="28px" altimg-valign="-4px" altimg-width="43px" alttext="L^{(\alpha)}_{n}" display="inline"><msubsup><mi href="./18.3#T1.t1.r12" title="Laguerre (or generalized Laguerre) polynomial">L</mi><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi><mrow><mo href="./18.3#T1.t1.r12" stretchy="false" title="Laguerre (or generalized Laguerre) polynomial">(</mo><mi>α</mi><mo href="./18.3#T1.t1.r12" stretchy="false" title="Laguerre (or generalized Laguerre) polynomial">)</mo></mrow></msubsup></math> and the Whittaker function
+<math class="ltx_Math" altimg="m29.png" altimg-height="24px" altimg-valign="-8px" altimg-width="50px" alttext="W_{\kappa,\mu}" display="inline"><msub><mi href="./13.14#E3" title="Whittaker confluent hypergeometric function">W</mi><mrow><mi>κ</mi><mo href="./13.14#E3" title="Whittaker confluent hypergeometric function">,</mo><mi>μ</mi></mrow></msub></math> see
+§<a href="./16.2#ii" title="§16.2(ii) Case 𝑝≤𝑞 ‣ §16.2 Definition and Analytic Properties ‣ Generalized Hypergeometric Functions ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">16.2(ii)</span></a>, §<a href="./16.2#iv" title="§16.2(iv) Case 𝑝&gt;𝑞+1 ‣ §16.2 Definition and Analytic Properties ‣ Generalized Hypergeometric Functions ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">16.2(iv)</span></a>, (<a href="./18.5#E12" title="(18.5.12) ‣ Laguerre ‣ §18.5(iii) Finite Power Series, the Hypergeometric Function, and Generalized Hypergeometric Functions ‣ §18.5 Explicit Representations ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">18.5.12</span></a>), and (<a href="./13.14#E3" title="(13.14.3) ‣ Standard Solutions ‣ §13.14(i) Differential Equation ‣ §13.14 Definitions and Basic Properties ‣ Whittaker Functions ‣ Chapter 13 Confluent Hypergeometric Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">13.14.3</span></a>), respectively.</p>
+</div>
+<div id="i.p2" class="ltx_para">
+<table id="E1" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">18.34.1</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_Math ltx_eqn_cell ltx_align_center"><math class="ltx_Math" alttext="y_{n}\left(x;a\right)={{}_{2}F_{0}}\left({-n,n+a-1\atop-};-\frac{x}{2}\right)=%
+{\left(n+a-1\right)_{n}}\left(\frac{x}{2}\right)^{n}{{}_{1}F_{1}}\left({-n%
+\atop-2n-a+2};\frac{2}{x}\right)=n!\left(-\tfrac{1}{2}x\right)^{n}L^{(1-a-2n)}%
+_{n}\left(2x^{-1}\right)=\left(\tfrac{1}{2}x\right)^{1-\frac{1}{2}a}{\mathrm{e%
+}}^{1/x}W_{1-\frac{1}{2}a,\frac{1}{2}(a-1)+n}\left(2x^{-1}\right)." display="block"><mrow><mtable align="baseline 1" columnalign="left" columnspacing="0.1em" displaystyle="true"><mtr><mtd class="ltx_align_left"><mrow><msub><mi href="./18.34#E1" title="Bessel polynomial">y</mi><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./18.2#Px1.p2" title="real variable">x</mi><mo>;</mo><mi>a</mi><mo>)</mo></mrow></mrow></mtd><mtd class="ltx_align_left"><mo>=</mo><mrow><mmultiscripts><mi href="./16.2" title="alternatively {_𝑝}𝐹_𝑞(𝐚;𝐛;𝑧) or {_𝑝}𝐹_𝑞((𝐚¦𝐛);𝑧)generalized hypergeometric function">F</mi><mn>0</mn><mrow></mrow><mprescripts></mprescripts><mn>2</mn><mrow></mrow></mmultiscripts><mo>⁡</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mrow><mo>−</mo><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></mrow><mo>,</mo><mrow><mrow><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi><mo>+</mo><mi>a</mi></mrow><mo>−</mo><mn>1</mn></mrow></mrow><mo>−</mo></mfrac><mo>;</mo><mrow><mo>−</mo><mfrac><mi href="./18.2#Px1.p2" title="real variable">x</mi><mn>2</mn></mfrac></mrow><mo>)</mo></mrow></mrow><mo>=</mo><mrow><msub><mrow><mo href="./5.2#iii" title="Pochhammer’s symbol (or shifted factorial)">(</mo><mrow><mrow><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi><mo>+</mo><mi>a</mi></mrow><mo>−</mo><mn>1</mn></mrow><mo href="./5.2#iii" title="Pochhammer’s symbol (or shifted factorial)">)</mo></mrow><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></msub><mo>⁢</mo><msup><mrow><mo>(</mo><mfrac><mi href="./18.2#Px1.p2" title="real variable">x</mi><mn>2</mn></mfrac><mo>)</mo></mrow><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></msup><mo>⁢</mo><mrow><mmultiscripts><mi href="./16.2" title="=𝑀(𝑎,𝑏,𝑧) notation for the Kummer confluent hypergeometric function">F</mi><mn href="./16.2" title="=𝑀(𝑎,𝑏,𝑧) notation for the Kummer confluent hypergeometric function">1</mn><mrow></mrow><mprescripts></mprescripts><mn href="./16.2" title="=𝑀(𝑎,𝑏,𝑧) notation for the Kummer confluent hypergeometric function">1</mn><mrow></mrow></mmultiscripts><mo>⁡</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mo>−</mo><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></mrow><mrow><mrow><mrow><mo>−</mo><mrow><mn>2</mn><mo>⁢</mo><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></mrow></mrow><mo>−</mo><mi>a</mi></mrow><mo>+</mo><mn>2</mn></mrow></mfrac><mo>;</mo><mfrac><mn>2</mn><mi href="./18.2#Px1.p2" title="real variable">x</mi></mfrac><mo>)</mo></mrow></mrow></mrow></mtd></mtr><mtr><mtd class="ltx_align_left"></mtd><mtd class="ltx_align_left"><mo>=</mo><mrow><mrow><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi><mo href="./front/introduction#common.t1.r15" title="factorial (as in 𝑛!)">!</mo></mrow><mo>⁢</mo><msup><mrow><mo>(</mo><mrow><mo>−</mo><mrow><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>⁢</mo><mi href="./18.2#Px1.p2" title="real variable">x</mi></mrow></mrow><mo>)</mo></mrow><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></msup><mo>⁢</mo><mrow><msubsup><mi href="./18.3#T1.t1.r12" title="Laguerre (or generalized Laguerre) polynomial">L</mi><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi><mrow><mo href="./18.3#T1.t1.r12" stretchy="false" title="Laguerre (or generalized Laguerre) polynomial">(</mo><mrow><mn>1</mn><mo>−</mo><mi>a</mi><mo>−</mo><mrow><mn>2</mn><mo>⁢</mo><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></mrow></mrow><mo href="./18.3#T1.t1.r12" stretchy="false" title="Laguerre (or generalized Laguerre) polynomial">)</mo></mrow></msubsup><mo>⁡</mo><mrow><mo>(</mo><mrow><mn>2</mn><mo>⁢</mo><msup><mi href="./18.2#Px1.p2" title="real variable">x</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup></mrow><mo>)</mo></mrow></mrow></mrow></mtd></mtr><mtr><mtd class="ltx_align_left"></mtd><mtd class="ltx_align_left"><mo>=</mo><mrow><msup><mrow><mo>(</mo><mrow><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>⁢</mo><mi href="./18.2#Px1.p2" title="real variable">x</mi></mrow><mo>)</mo></mrow><mrow><mn>1</mn><mo>−</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mi>a</mi></mrow></mrow></msup><mo>⁢</mo><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mrow><mn>1</mn><mo>/</mo><mi href="./18.2#Px1.p2" title="real variable">x</mi></mrow></msup><mo>⁢</mo><mrow><msub><mi href="./13.14#E3" title="Whittaker confluent hypergeometric function">W</mi><mrow><mrow><mn>1</mn><mo>−</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mi>a</mi></mrow></mrow><mo href="./13.14#E3" title="Whittaker confluent hypergeometric function">,</mo><mrow><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>a</mi><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></mrow></mrow></msub><mo>⁡</mo><mrow><mo>(</mo><mrow><mn>2</mn><mo>⁢</mo><msup><mi href="./18.2#Px1.p2" title="real variable">x</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup></mrow><mo>)</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mtd></mtr></mtable></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E1.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Defines:</dt>
+<dd><span class="ltx_text ltx_font_bold"><math class="ltx_Math" altimg="m63.png" altimg-height="25px" altimg-valign="-7px" altimg-width="77px" alttext="y_{\NVar{n}}\left(\NVar{x};\NVar{a}\right)" display="inline"><mrow><msub><mi href="./18.34#E1" title="Bessel polynomial">y</mi><mi class="ltx_nvar" href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./18.2#Px1.p2" title="real variable">x</mi><mo>;</mo><mi class="ltx_nvar">a</mi><mo>)</mo></mrow></mrow></math>: Bessel polynomial</span></dd>
+<dt>Symbols:</dt>
+<dd>
+<a href="./16.2" title="§16.2 Definition and Analytic Properties ‣ Generalized Hypergeometric Functions ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref"><math class="ltx_Math" altimg="m72.png" altimg-height="26px" altimg-valign="-8px" altimg-width="254px" alttext="{{}_{\NVar{p}}F_{\NVar{q}}}\left(\NVar{a_{1},\dots,a_{p}};\NVar{b_{1},\dots,b_%
+{q}};\NVar{z}\right)" display="inline"><mrow><mmultiscripts><mi href="./16.2" title="alternatively {_𝑝}𝐹_𝑞(𝐚;𝐛;𝑧) or {_𝑝}𝐹_𝑞((𝐚¦𝐛);𝑧)generalized hypergeometric function">F</mi><mi class="ltx_nvar" href="./16.1#t1.r1" title="nonnegative integer">q</mi><mrow></mrow><mprescripts></mprescripts><mi class="ltx_nvar" href="./16.1#t1.r1" title="nonnegative integer">p</mi><mrow></mrow></mmultiscripts><mo>⁡</mo><mrow><mo>(</mo><mrow><msub><mi class="ltx_nvar" href="./16.1#t1.r5" title="real or complex parameters">a</mi><mn class="ltx_nvar">1</mn></msub><mo class="ltx_nvar">,</mo><mi class="ltx_nvar" mathvariant="normal">…</mi><mo class="ltx_nvar">,</mo><msub><mi class="ltx_nvar" href="./16.1#t1.r5" title="real or complex parameters">a</mi><mi class="ltx_nvar" href="./16.1#t1.r1" title="nonnegative integer">p</mi></msub></mrow><mo>;</mo><mrow><msub><mi class="ltx_nvar" href="./16.1#t1.r5" title="real or complex parameters">b</mi><mn class="ltx_nvar">1</mn></msub><mo class="ltx_nvar">,</mo><mi class="ltx_nvar" mathvariant="normal">…</mi><mo class="ltx_nvar">,</mo><msub><mi class="ltx_nvar" href="./16.1#t1.r5" title="real or complex parameters">b</mi><mi class="ltx_nvar" href="./16.1#t1.r1" title="nonnegative integer">q</mi></msub></mrow><mo>;</mo><mi class="ltx_nvar" href="./16.1#t1.r4" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>
+or <math class="ltx_Math" altimg="m74.png" altimg-height="42px" altimg-valign="-15px" altimg-width="149px" alttext="{{}_{\NVar{p}}F_{\NVar{q}}}\left({\NVar{a_{1},\dots,a_{p}}\atop\NVar{b_{1},%
+\dots,b_{q}}};\NVar{z}\right)" display="inline"><mrow><mmultiscripts><mi href="./16.2" title="alternatively {_𝑝}𝐹_𝑞(𝐚;𝐛;𝑧) or {_𝑝}𝐹_𝑞((𝐚¦𝐛);𝑧)generalized hypergeometric function">F</mi><mi class="ltx_nvar" href="./16.1#t1.r1" title="nonnegative integer">q</mi><mrow></mrow><mprescripts></mprescripts><mi class="ltx_nvar" href="./16.1#t1.r1" title="nonnegative integer">p</mi><mrow></mrow></mmultiscripts><mo>⁡</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><msub><mi class="ltx_nvar" href="./16.1#t1.r5" title="real or complex parameters">a</mi><mn class="ltx_nvar">1</mn></msub><mo class="ltx_nvar">,</mo><mi class="ltx_nvar" mathvariant="normal">…</mi><mo class="ltx_nvar">,</mo><msub><mi class="ltx_nvar" href="./16.1#t1.r5" title="real or complex parameters">a</mi><mi class="ltx_nvar" href="./16.1#t1.r1" title="nonnegative integer">p</mi></msub></mrow><mrow><msub><mi class="ltx_nvar" href="./16.1#t1.r5" title="real or complex parameters">b</mi><mn class="ltx_nvar">1</mn></msub><mo class="ltx_nvar">,</mo><mi class="ltx_nvar" mathvariant="normal">…</mi><mo class="ltx_nvar">,</mo><msub><mi class="ltx_nvar" href="./16.1#t1.r5" title="real or complex parameters">b</mi><mi class="ltx_nvar" href="./16.1#t1.r1" title="nonnegative integer">q</mi></msub></mrow></mfrac><mo>;</mo><mi class="ltx_nvar" href="./16.1#t1.r4" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: alternatively <math class="ltx_Math" altimg="m71.png" altimg-height="26px" altimg-valign="-8px" altimg-width="110px" alttext="{{}_{\NVar{p}}F_{\NVar{q}}}\left(\NVar{\mathbf{a}};\NVar{\mathbf{b}};\NVar{z}\right)" display="inline"><mrow><mmultiscripts><mi href="./16.2" title="alternatively {_𝑝}𝐹_𝑞(𝐚;𝐛;𝑧) or {_𝑝}𝐹_𝑞((𝐚¦𝐛);𝑧)generalized hypergeometric function">F</mi><mi class="ltx_nvar" href="./16.1#t1.r1" title="nonnegative integer">q</mi><mrow></mrow><mprescripts></mprescripts><mi class="ltx_nvar" href="./16.1#t1.r1" title="nonnegative integer">p</mi><mrow></mrow></mmultiscripts><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">𝐚</mi><mo>;</mo><mi class="ltx_nvar">𝐛</mi><mo>;</mo><mi class="ltx_nvar" href="./16.1#t1.r4" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math> or
+<math class="ltx_Math" altimg="m73.png" altimg-height="29px" altimg-valign="-9px" altimg-width="94px" alttext="{{}_{\NVar{p}}F_{\NVar{q}}}\left({\NVar{\mathbf{a}}\atop\NVar{\mathbf{b}}};%
+\NVar{z}\right)" display="inline"><mrow><mmultiscripts><mi href="./16.2" title="alternatively {_𝑝}𝐹_𝑞(𝐚;𝐛;𝑧) or {_𝑝}𝐹_𝑞((𝐚¦𝐛);𝑧)generalized hypergeometric function">F</mi><mi class="ltx_nvar" href="./16.1#t1.r1" title="nonnegative integer">q</mi><mrow></mrow><mprescripts></mprescripts><mi class="ltx_nvar" href="./16.1#t1.r1" title="nonnegative integer">p</mi><mrow></mrow></mmultiscripts><mo>⁡</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mi class="ltx_nvar">𝐚</mi><mi class="ltx_nvar">𝐛</mi></mfrac><mo>;</mo><mi class="ltx_nvar" href="./16.1#t1.r4" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>
+<br class="ltx_break">generalized hypergeometric function</a>,
+<a href="./16.2" title="§16.2 Definition and Analytic Properties ‣ Generalized Hypergeometric Functions ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref"><math class="ltx_Math" altimg="m69.png" altimg-height="25px" altimg-valign="-7px" altimg-width="105px" alttext="{{}_{1}F_{1}}\left(\NVar{a};\NVar{b};\NVar{z}\right)" display="inline"><mrow><mmultiscripts><mi href="./16.2" title="=𝑀(𝑎,𝑏,𝑧) notation for the Kummer confluent hypergeometric function">F</mi><mn href="./16.2" title="=𝑀(𝑎,𝑏,𝑧) notation for the Kummer confluent hypergeometric function">1</mn><mrow></mrow><mprescripts></mprescripts><mn href="./16.2" title="=𝑀(𝑎,𝑏,𝑧) notation for the Kummer confluent hypergeometric function">1</mn><mrow></mrow></mmultiscripts><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./16.1#t1.r5" title="real or complex parameters">a</mi><mo>;</mo><mi class="ltx_nvar" href="./16.1#t1.r5" title="real or complex parameters">b</mi><mo>;</mo><mi class="ltx_nvar" href="./16.1#t1.r4" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: <math class="ltx_Math" altimg="m18.png" altimg-height="25px" altimg-valign="-7px" altimg-width="117px" alttext="=M\left(\NVar{a},\NVar{b},\NVar{z}\right)" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mi href="./13.2#E2" title="=₁𝐹₁(𝑎;𝑏;𝑧) Kummer confluent hypergeometric function">M</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./16.1#t1.r5" title="real or complex parameters">a</mi><mo>,</mo><mi class="ltx_nvar" href="./16.1#t1.r5" title="real or complex parameters">b</mi><mo>,</mo><mi class="ltx_nvar" href="./16.1#t1.r4" title="complex variable">z</mi><mo>)</mo></mrow></mrow></mrow></math> notation for the Kummer confluent hypergeometric function</a>,
+<a href="./18.3#T1.t1.r12" title="Table 18.3.1 ‣ §18.3 Definitions ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m23.png" altimg-height="31px" altimg-valign="-7px" altimg-width="75px" alttext="L^{(\NVar{\alpha})}_{\NVar{n}}\left(\NVar{x}\right)" display="inline"><mrow><msubsup><mi href="./18.3#T1.t1.r12" title="Laguerre (or generalized Laguerre) polynomial">L</mi><mi class="ltx_nvar" href="./18.1#i.t1.r6" title="nonnegative integer">n</mi><mrow><mo href="./18.3#T1.t1.r12" stretchy="false" title="Laguerre (or generalized Laguerre) polynomial">(</mo><mi class="ltx_nvar">α</mi><mo href="./18.3#T1.t1.r12" stretchy="false" title="Laguerre (or generalized Laguerre) polynomial">)</mo></mrow></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./18.2#Px1.p2" title="real variable">x</mi><mo>)</mo></mrow></mrow></math>: Laguerre (or generalized Laguerre) polynomial</a>,
+<a href="./5.2#iii" title="§5.2(iii) Pochhammer’s Symbol ‣ §5.2 Definitions ‣ Properties ‣ Chapter 5 Gamma Function" class="ltx_ref"><math class="ltx_Math" altimg="m67.png" altimg-height="26px" altimg-valign="-8px" altimg-width="43px" alttext="{\left(\NVar{a}\right)_{\NVar{n}}}" display="inline"><msub><mrow><mo href="./5.2#iii" title="Pochhammer’s symbol (or shifted factorial)">(</mo><mi class="ltx_nvar" href="./5.1#t1.r5" title="real or complex variable">a</mi><mo href="./5.2#iii" title="Pochhammer’s symbol (or shifted factorial)">)</mo></mrow><mi class="ltx_nvar" href="./5.1#t1.r1" title="nonnegative integer">n</mi></msub></math>: Pochhammer’s symbol (or shifted factorial)</a>,
+<a href="./13.14#E3" title="(13.14.3) ‣ Standard Solutions ‣ §13.14(i) Differential Equation ‣ §13.14 Definitions and Basic Properties ‣ Whittaker Functions ‣ Chapter 13 Confluent Hypergeometric Functions" class="ltx_ref"><math class="ltx_Math" altimg="m28.png" altimg-height="26px" altimg-valign="-8px" altimg-width="80px" alttext="W_{\NVar{\kappa},\NVar{\mu}}\left(\NVar{z}\right)" display="inline"><mrow><msub><mi href="./13.14#E3" title="Whittaker confluent hypergeometric function">W</mi><mrow><mi class="ltx_nvar">κ</mi><mo href="./13.14#E3" title="Whittaker confluent hypergeometric function">,</mo><mi class="ltx_nvar">μ</mi></mrow></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./13.1#p1.t1.r4" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: Whittaker confluent hypergeometric function</a>,
+<a href="./4.2#E11" title="(4.2.11) ‣ §4.2(ii) Logarithms to a General Base 𝑎 ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m38.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="\mathrm{e}" display="inline"><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi></math>: base of natural logarithm</a>,
+<a href="./front/introduction#common.t1.r15" title="Common Notations and Definitions ‣ Mathematical Introduction" class="ltx_ref"><math class="ltx_Math" altimg="m15.png" altimg-height="18px" altimg-valign="-2px" altimg-width="10px" alttext="!" display="inline"><mo href="./front/introduction#common.t1.r15" title="factorial (as in 𝑛!)">!</mo></math>: factorial (as in <math class="ltx_Math" altimg="m53.png" altimg-height="18px" altimg-valign="-2px" altimg-width="23px" alttext="n!" display="inline"><mrow><mi>n</mi><mo href="./front/introduction#common.t1.r15" title="factorial (as in 𝑛!)">!</mo></mrow></math>)</a>,
+<a href="./18.1#i.t1.r6" title="§18.1(i) Special Notation ‣ §18.1 Notation ‣ Notation ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m56.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></math>:  nonnegative integer</a> and
+<a href="./18.2#Px1.p2" title="Orthogonality on Intervals ‣ §18.2(i) Definition ‣ §18.2 General Orthogonal Polynomials ‣ General Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m60.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./18.2#Px1.p2" title="real variable">x</mi></math>:  real variable</a>
+</dd>
+<dt>Proved:</dt>
+<dd>
+<cite class="ltx_cite ltx_citemacro_citet">Grosswald (<a href="./bib/G#bib998" title="Bessel Polynomials" class="ltx_ref">1978</a>, p.38, Theorem 1)</cite>; Combine (<a href="./18.5#E12" title="(18.5.12) ‣ Laguerre ‣ §18.5(iii) Finite Power Series, the Hypergeometric Function, and Generalized Hypergeometric Functions ‣ §18.5 Explicit Representations ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">18.5.12</span></a>) and items (i), (v), (vii) of the
+mentioned theorem for <math class="ltx_Math" altimg="m48.png" altimg-height="18px" altimg-valign="-2px" altimg-width="51px" alttext="b=2" display="inline"><mrow><mi>b</mi><mo>=</mo><mn>2</mn></mrow></math>(proved)</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./18.34#E2.info" title="In §18.34(i) Definitions and Recurrence Relation ‣ §18.34 Bessel Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">(18.34.2)</span></a>,
+<a href="./18.34#E7_1.info" title="In §18.34(iii) Other Properties ‣ §18.34 Bessel Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">(18.34.7_1)</span></a>,
+<a href="./18.34#i.info" title="§18.34(i) Definitions and Recurrence Relation ‣ §18.34 Bessel Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§18.34(i)</span></a>,
+<a href="./18.34#i.p2" title="§18.34(i) Definitions and Recurrence Relation ‣ §18.34 Bessel Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§18.34(i)</span></a>,
+<a href="./errata/#V1.2.0.I1.ix19" title="In Errata ‣ Version 1.2.0 (March 27, 2024) ‣ Errata" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Erratum (V1.2.0) for  Equation (<span class="ltx_text ltx_ref_tag">18.34.1</span>)</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./18.34.E1" title="" class="ltx_ref">http://dlmf.nist.gov/18.34.E1</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./18.34.E1.tex">TeX</a>, <a href="./18.34.E1.pmml">pMML</a>, <a href="./18.34.E1.png">png</a>
+</dd>
+<dt>Addition (effective with 1.2.0):</dt>
+<dd>
+This equation was updated to include the definition of Bessel
+polynomials in terms of Laguerre polynomials and the Whittaker
+confluent hypergeometric function.
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./18.34#i.info" title="§18.34(i) Definitions and Recurrence Relation ‣ §18.34 Bessel Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§18.34(i)</span></a>,
+<a href="./18.34#info" title="§18.34 Bessel Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§18.34</span></a> and
+<a href="./18#info" title="Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.18</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">With the notation of <cite class="ltx_cite ltx_citemacro_citet">Koekoek<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/K#bib2744" title="Hypergeometric Orthogonal Polynomials and Their q -Analogues" class="ltx_ref">2010</a>, (9.13.1))</cite>
+the left-hand side
+of (<a href="./18.34#E1" title="(18.34.1) ‣ §18.34(i) Definitions and Recurrence Relation ‣ §18.34 Bessel Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">18.34.1</span></a>) has to be replaced by
+<math class="ltx_Math" altimg="m64.png" altimg-height="25px" altimg-valign="-7px" altimg-width="113px" alttext="y_{n}\left(x;a-2\right)" display="inline"><mrow><msub><mi href="./18.34#E1" title="Bessel polynomial">y</mi><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./18.2#Px1.p2" title="real variable">x</mi><mo>;</mo><mrow><mi>a</mi><mo>−</mo><mn>2</mn></mrow><mo>)</mo></mrow></mrow></math>.
+
+Other notations in use are given by</p>
+<table id="E2" class="ltx_equationgroup ltx_eqn_table">
+<tbody>
+<tr id="Ex1" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="2" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equationgroup ltx_align_left">18.34.2</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m13.png" altimg-height="27px" altimg-valign="-7px" altimg-width="56px" alttext="\displaystyle y_{n}(x)" display="inline"><mrow><msub><mi>y</mi><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./18.2#Px1.p2" title="real variable">x</mi><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m7.png" altimg-height="72px" altimg-valign="-9px" altimg-width="243px" alttext="\displaystyle=y_{n}\left(x;2\right)=2{\pi}^{-1}x^{-1}{\mathrm{e}}^{1/x}\mathsf%
+{k}_{n}\left(x^{-1}\right)," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><msub><mi href="./18.34#E1" title="Bessel polynomial">y</mi><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./18.2#Px1.p2" title="real variable">x</mi><mo>;</mo><mn>2</mn><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><msup><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo>⁢</mo><msup><mi href="./18.2#Px1.p2" title="real variable">x</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo>⁢</mo><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mrow><mn>1</mn><mo>/</mo><mi href="./18.2#Px1.p2" title="real variable">x</mi></mrow></msup><mo>⁢</mo><mrow><msub><mi href="./10.47#E9" title="modified spherical Bessel function">𝗄</mi><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><msup><mi href="./18.2#Px1.p2" title="real variable">x</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo>)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex2" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m11.png" altimg-height="27px" altimg-valign="-7px" altimg-width="56px" alttext="\displaystyle\theta_{n}(x)" display="inline"><mrow><msub><mi>θ</mi><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./18.2#Px1.p2" title="real variable">x</mi><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m4.png" altimg-height="40px" altimg-valign="-7px" altimg-width="328px" alttext="\displaystyle=x^{n}y_{n}(x^{-1})=2{\pi}^{-1}x^{n+1}{\mathrm{e}}^{x}\mathsf{k}_%
+{n}\left(x\right)," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><msup><mi href="./18.2#Px1.p2" title="real variable">x</mi><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></msup><mo>⁢</mo><mrow><msub><mi>y</mi><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><msup><mi href="./18.2#Px1.p2" title="real variable">x</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><msup><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo>⁢</mo><msup><mi href="./18.2#Px1.p2" title="real variable">x</mi><mrow><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi><mo>+</mo><mn>1</mn></mrow></msup><mo>⁢</mo><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mi href="./18.2#Px1.p2" title="real variable">x</mi></msup><mo>⁢</mo><mrow><msub><mi href="./10.47#E9" title="modified spherical Bessel function">𝗄</mi><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./18.2#Px1.p2" title="real variable">x</mi><mo>)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E2.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./18.34#E1" title="(18.34.1) ‣ §18.34(i) Definitions and Recurrence Relation ‣ §18.34 Bessel Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m63.png" altimg-height="25px" altimg-valign="-7px" altimg-width="77px" alttext="y_{\NVar{n}}\left(\NVar{x};\NVar{a}\right)" display="inline"><mrow><msub><mi href="./18.34#E1" title="Bessel polynomial">y</mi><mi class="ltx_nvar" href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./18.2#Px1.p2" title="real variable">x</mi><mo>;</mo><mi class="ltx_nvar">a</mi><mo>)</mo></mrow></mrow></math>: Bessel polynomial</a>,
+<a href="./3.12#E1" title="(3.12.1) ‣ §3.12 Mathematical Constants ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m43.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="\pi" display="inline"><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></math>: the ratio of the circumference of a circle to its diameter</a>,
+<a href="./4.2#E11" title="(4.2.11) ‣ §4.2(ii) Logarithms to a General Base 𝑎 ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m38.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="\mathrm{e}" display="inline"><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi></math>: base of natural logarithm</a>,
+<a href="./10.47#E9" title="(10.47.9) ‣ Equation (10.47.2) ‣ §10.47(ii) Standard Solutions ‣ §10.47 Definitions and Basic Properties ‣ Spherical Bessel Functions ‣ Chapter 10 Bessel Functions" class="ltx_ref"><math class="ltx_Math" altimg="m40.png" altimg-height="25px" altimg-valign="-7px" altimg-width="56px" alttext="\mathsf{k}_{\NVar{n}}\left(\NVar{z}\right)" display="inline"><mrow><msub><mi href="./10.47#E9" title="modified spherical Bessel function">𝗄</mi><mi class="ltx_nvar" href="./10.1#t1.r1" title="integer">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./10.1#t1.r4" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: modified spherical Bessel function</a>,
+<a href="./18.1#i.t1.r6" title="§18.1(i) Special Notation ‣ §18.1 Notation ‣ Notation ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m56.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></math>:  nonnegative integer</a> and
+<a href="./18.2#Px1.p2" title="Orthogonality on Intervals ‣ §18.2(i) Definition ‣ §18.2 General Orthogonal Polynomials ‣ General Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m60.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./18.2#Px1.p2" title="real variable">x</mi></math>:  real variable</a>
+</dd>
+<dt>Source:</dt>
+<dd><cite class="ltx_cite ltx_citemacro_citet">Grosswald (<a href="./bib/G#bib998" title="Bessel Polynomials" class="ltx_ref">1978</a>, p.7)</cite></dd>
+<dt>Proof sketch:</dt>
+<dd>Combine (<a href="./18.34#E1" title="(18.34.1) ‣ §18.34(i) Definitions and Recurrence Relation ‣ §18.34 Bessel Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">18.34.1</span></a>),
+(<a href="./13.18#E9" title="(13.18.9) ‣ §13.18(iii) Modified Bessel Functions ‣ §13.18 Relations to Other Functions ‣ Whittaker Functions ‣ Chapter 13 Confluent Hypergeometric Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">13.18.9</span></a>) and (<a href="./10.47#E9" title="(10.47.9) ‣ Equation (10.47.2) ‣ §10.47(ii) Standard Solutions ‣ §10.47 Definitions and Basic Properties ‣ Spherical Bessel Functions ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">10.47.9</span></a>).</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./18.34#i.info" title="§18.34(i) Definitions and Recurrence Relation ‣ §18.34 Bessel Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§18.34(i)</span></a>,
+<a href="./18.34#i.p2" title="§18.34(i) Definitions and Recurrence Relation ‣ §18.34 Bessel Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§18.34(i)</span></a>,
+<a href="./errata/#V1.2.0.I1.ix20" title="In Errata ‣ Version 1.2.0 (March 27, 2024) ‣ Errata" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Erratum (V1.2.0) for  Equation (<span class="ltx_text ltx_ref_tag">18.34.2</span>)</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./18.34.E2" title="" class="ltx_ref">http://dlmf.nist.gov/18.34.E2</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./18.34.E2a.tex">TeX</a>, <a href="./18.34.E2b.tex">TeX</a>, <a href="./18.34.E2a.pmml">pMML</a>, <a href="./18.34.E2b.pmml">pMML</a>, <a href="./18.34.E2a.png">png</a>, <a href="./18.34.E2b.png">png</a>
+</dd>
+<dt>Addition (effective with 1.2.0):</dt>
+<dd>
+This equation was updated to include definitions in terms
+of the modified spherical Bessel function of the second kind.
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./18.34#i.info" title="§18.34(i) Definitions and Recurrence Relation ‣ §18.34 Bessel Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§18.34(i)</span></a>,
+<a href="./18.34#info" title="§18.34 Bessel Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§18.34</span></a> and
+<a href="./18#info" title="Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.18</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">where <math class="ltx_Math" altimg="m41.png" altimg-height="21px" altimg-valign="-5px" altimg-width="26px" alttext="\mathsf{k}_{n}" display="inline"><msub><mi href="./10.47#E9" title="modified spherical Bessel function">𝗄</mi><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></msub></math> is a modified spherical Bessel function
+(<a href="./10.49#E9" title="(10.49.9) ‣ §10.49(ii) Modified Functions ‣ §10.49 Explicit Formulas ‣ Spherical Bessel Functions ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">10.49.9</span></a>),
+
+and</p>
+<table id="E3" class="ltx_equationgroup ltx_eqn_table">
+<tbody>
+<tr id="Ex3" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="2" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equationgroup ltx_align_left">18.34.3</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m14.png" altimg-height="27px" altimg-valign="-7px" altimg-width="94px" alttext="\displaystyle y_{n}(x;a,b)" display="inline"><mrow><msub><mi>y</mi><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./18.2#Px1.p2" title="real variable">x</mi><mo>;</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m6.png" altimg-height="40px" altimg-valign="-7px" altimg-width="146px" alttext="\displaystyle=y_{n}\left(2x/b;a\right)," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><msub><mi href="./18.34#E1" title="Bessel polynomial">y</mi><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi href="./18.2#Px1.p2" title="real variable">x</mi></mrow><mo>/</mo><mi>b</mi></mrow><mo>;</mo><mi>a</mi><mo>)</mo></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex4" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m12.png" altimg-height="27px" altimg-valign="-7px" altimg-width="94px" alttext="\displaystyle\theta_{n}(x;a,b)" display="inline"><mrow><msub><mi>θ</mi><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./18.2#Px1.p2" title="real variable">x</mi><mo>;</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m5.png" altimg-height="29px" altimg-valign="-7px" altimg-width="168px" alttext="\displaystyle=x^{n}y_{n}(x^{-1};a,b)." display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><msup><mi href="./18.2#Px1.p2" title="real variable">x</mi><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></msup><mo>⁢</mo><mrow><msub><mi>y</mi><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><msup><mi href="./18.2#Px1.p2" title="real variable">x</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo>;</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E3.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./18.34#E1" title="(18.34.1) ‣ §18.34(i) Definitions and Recurrence Relation ‣ §18.34 Bessel Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m63.png" altimg-height="25px" altimg-valign="-7px" altimg-width="77px" alttext="y_{\NVar{n}}\left(\NVar{x};\NVar{a}\right)" display="inline"><mrow><msub><mi href="./18.34#E1" title="Bessel polynomial">y</mi><mi class="ltx_nvar" href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./18.2#Px1.p2" title="real variable">x</mi><mo>;</mo><mi class="ltx_nvar">a</mi><mo>)</mo></mrow></mrow></math>: Bessel polynomial</a>,
+<a href="./18.1#i.t1.r6" title="§18.1(i) Special Notation ‣ §18.1 Notation ‣ Notation ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m56.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></math>:  nonnegative integer</a> and
+<a href="./18.2#Px1.p2" title="Orthogonality on Intervals ‣ §18.2(i) Definition ‣ §18.2 General Orthogonal Polynomials ‣ General Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m60.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./18.2#Px1.p2" title="real variable">x</mi></math>:  real variable</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./18.34#i.p2" title="§18.34(i) Definitions and Recurrence Relation ‣ §18.34 Bessel Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§18.34(i)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./18.34.E3" title="" class="ltx_ref">http://dlmf.nist.gov/18.34.E3</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./18.34.E3a.tex">TeX</a>, <a href="./18.34.E3b.tex">TeX</a>, <a href="./18.34.E3a.pmml">pMML</a>, <a href="./18.34.E3b.pmml">pMML</a>, <a href="./18.34.E3a.png">png</a>, <a href="./18.34.E3b.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./18.34#i.info" title="§18.34(i) Definitions and Recurrence Relation ‣ §18.34 Bessel Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§18.34(i)</span></a>,
+<a href="./18.34#info" title="§18.34 Bessel Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§18.34</span></a> and
+<a href="./18#info" title="Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.18</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">Often only the polynomials (<a href="./18.34#E2" title="(18.34.2) ‣ §18.34(i) Definitions and Recurrence Relation ‣ §18.34 Bessel Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">18.34.2</span></a>) are called <em class="ltx_emph ltx_font_italic">Bessel
+polynomials</em>, while the polynomials (<a href="./18.34#E1" title="(18.34.1) ‣ §18.34(i) Definitions and Recurrence Relation ‣ §18.34 Bessel Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">18.34.1</span></a>) and
+(<a href="./18.34#E3" title="(18.34.3) ‣ §18.34(i) Definitions and Recurrence Relation ‣ §18.34 Bessel Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">18.34.3</span></a>) are called <em class="ltx_emph ltx_font_italic">generalized Bessel polynomials</em>.
+
+Sometimes the polynomials <math class="ltx_Math" altimg="m44.png" altimg-height="25px" altimg-valign="-7px" altimg-width="92px" alttext="\theta_{n}(x;a,b)" display="inline"><mrow><msub><mi>θ</mi><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./18.2#Px1.p2" title="real variable">x</mi><mo>;</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">)</mo></mrow></mrow></math> are called
+<em class="ltx_emph ltx_font_italic">reverse Bessel polynomials</em>.
+
+See also §<a href="./10.49#ii" title="§10.49(ii) Modified Functions ‣ §10.49 Explicit Formulas ‣ Spherical Bessel Functions ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">10.49(ii)</span></a>.
+</p>
+<table id="E4" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">18.34.4</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E4.png" altimg-height="99px" altimg-valign="-7px" altimg-width="309px" alttext="y_{n+1}\left(x;a\right)=(A_{n}x+B_{n})y_{n}\left(x;a\right)-C_{n}y_{n-1}\left(%
+x;a\right)," display="block"><mrow><mrow><mrow><msub><mi href="./18.34#E1" title="Bessel polynomial">y</mi><mrow><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./18.2#Px1.p2" title="real variable">x</mi><mo>;</mo><mi>a</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mrow><msub><mi href="./18.34#E5" title="coefficient">A</mi><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></msub><mo>⁢</mo><mi href="./18.2#Px1.p2" title="real variable">x</mi></mrow><mo>+</mo><msub><mi href="./18.34#E5" title="coefficient">B</mi><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></msub></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><msub><mi href="./18.34#E1" title="Bessel polynomial">y</mi><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./18.2#Px1.p2" title="real variable">x</mi><mo>;</mo><mi>a</mi><mo>)</mo></mrow></mrow></mrow><mo>−</mo><mrow><msub><mi href="./18.34#E5" title="coefficient">C</mi><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></msub><mo>⁢</mo><mrow><msub><mi href="./18.34#E1" title="Bessel polynomial">y</mi><mrow><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./18.2#Px1.p2" title="real variable">x</mi><mo>;</mo><mi>a</mi><mo>)</mo></mrow></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E4.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./18.34#E1" title="(18.34.1) ‣ §18.34(i) Definitions and Recurrence Relation ‣ §18.34 Bessel Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m63.png" altimg-height="25px" altimg-valign="-7px" altimg-width="77px" alttext="y_{\NVar{n}}\left(\NVar{x};\NVar{a}\right)" display="inline"><mrow><msub><mi href="./18.34#E1" title="Bessel polynomial">y</mi><mi class="ltx_nvar" href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./18.2#Px1.p2" title="real variable">x</mi><mo>;</mo><mi class="ltx_nvar">a</mi><mo>)</mo></mrow></mrow></math>: Bessel polynomial</a>,
+<a href="./18.1#i.t1.r6" title="§18.1(i) Special Notation ‣ §18.1 Notation ‣ Notation ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m56.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></math>:  nonnegative integer</a>,
+<a href="./18.2#Px1.p2" title="Orthogonality on Intervals ‣ §18.2(i) Definition ‣ §18.2 General Orthogonal Polynomials ‣ General Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m60.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./18.2#Px1.p2" title="real variable">x</mi></math>:  real variable</a>,
+<a href="./18.34#E5" title="(18.34.5) ‣ §18.34(i) Definitions and Recurrence Relation ‣ §18.34 Bessel Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m20.png" altimg-height="21px" altimg-valign="-5px" altimg-width="31px" alttext="A_{n}" display="inline"><msub><mi href="./18.34#E5" title="coefficient">A</mi><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></msub></math>:  coefficient</a>,
+<a href="./18.34#E5" title="(18.34.5) ‣ §18.34(i) Definitions and Recurrence Relation ‣ §18.34 Bessel Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m21.png" altimg-height="21px" altimg-valign="-5px" altimg-width="31px" alttext="B_{n}" display="inline"><msub><mi href="./18.34#E5" title="coefficient">B</mi><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></msub></math>:  coefficient</a> and
+<a href="./18.34#E5" title="(18.34.5) ‣ §18.34(i) Definitions and Recurrence Relation ‣ §18.34 Bessel Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m22.png" altimg-height="21px" altimg-valign="-5px" altimg-width="30px" alttext="C_{n}" display="inline"><msub><mi href="./18.34#E5" title="coefficient">C</mi><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></msub></math>:  coefficient</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./18.34#i.info" title="§18.34(i) Definitions and Recurrence Relation ‣ §18.34 Bessel Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§18.34(i)</span></a>,
+<a href="./18.34#ii.p1" title="§18.34(ii) Orthogonality ‣ §18.34 Bessel Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§18.34(ii)</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./18.34.E4" title="" class="ltx_ref">http://dlmf.nist.gov/18.34.E4</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./18.34.E4.tex">TeX</a>, <a href="./18.34.E4.pmml">pMML</a>, <a href="./18.34.E4.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./18.34#i.info" title="§18.34(i) Definitions and Recurrence Relation ‣ §18.34 Bessel Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§18.34(i)</span></a>,
+<a href="./18.34#info" title="§18.34 Bessel Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§18.34</span></a> and
+<a href="./18#info" title="Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.18</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">where</p>
+<table id="E5" class="ltx_equationgroup ltx_eqn_table">
+<tbody>
+<tr id="Ex5" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="3" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equationgroup ltx_align_left">18.34.5</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m8.png" altimg-height="23px" altimg-valign="-5px" altimg-width="33px" alttext="\displaystyle A_{n}" display="inline"><msub><mi href="./18.34#E5" title="coefficient">A</mi><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></msub></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m1.png" altimg-height="56px" altimg-valign="-21px" altimg-width="226px" alttext="\displaystyle=\frac{(2n+a)(2n+a-1)}{2(n+a-1)}," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mstyle displaystyle="true"><mfrac><mrow><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></mrow><mo>+</mo><mi>a</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mrow><mn>2</mn><mo>⁢</mo><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></mrow><mo>+</mo><mi>a</mi></mrow><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mrow><mn>2</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi><mo>+</mo><mi>a</mi></mrow><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mfrac></mstyle></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex6" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m9.png" altimg-height="23px" altimg-valign="-5px" altimg-width="34px" alttext="\displaystyle B_{n}" display="inline"><msub><mi href="./18.34#E5" title="coefficient">B</mi><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></msub></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m2.png" altimg-height="56px" altimg-valign="-21px" altimg-width="251px" alttext="\displaystyle=\frac{(a-2)(2n+a-1)}{(n+a-1)(2n+a-2)}," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mstyle displaystyle="true"><mfrac><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>a</mi><mo>−</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mrow><mn>2</mn><mo>⁢</mo><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></mrow><mo>+</mo><mi>a</mi></mrow><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mrow><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi><mo>+</mo><mi>a</mi></mrow><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mrow><mn>2</mn><mo>⁢</mo><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></mrow><mo>+</mo><mi>a</mi></mrow><mo>−</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mfrac></mstyle></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex7" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m10.png" altimg-height="23px" altimg-valign="-5px" altimg-width="33px" alttext="\displaystyle C_{n}" display="inline"><msub><mi href="./18.34#E5" title="coefficient">C</mi><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></msub></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m3.png" altimg-height="56px" altimg-valign="-21px" altimg-width="251px" alttext="\displaystyle=\frac{-n(2n+a)}{(n+a-1)(2n+a-2)}." display="inline"><mrow><mrow><mi></mi><mo>=</mo><mstyle displaystyle="true"><mfrac><mrow><mo>−</mo><mrow><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></mrow><mo>+</mo><mi>a</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mrow><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi><mo>+</mo><mi>a</mi></mrow><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mrow><mn>2</mn><mo>⁢</mo><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></mrow><mo>+</mo><mi>a</mi></mrow><mo>−</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mfrac></mstyle></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E5.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Defines:</dt>
+<dd>
+<span class="ltx_text"><math class="ltx_Math" altimg="m20.png" altimg-height="21px" altimg-valign="-5px" altimg-width="31px" alttext="A_{n}" display="inline"><msub><mi href="./18.34#E5" title="coefficient">A</mi><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></msub></math>:  coefficient (locally)</span>,
+<span class="ltx_text"><math class="ltx_Math" altimg="m21.png" altimg-height="21px" altimg-valign="-5px" altimg-width="31px" alttext="B_{n}" display="inline"><msub><mi href="./18.34#E5" title="coefficient">B</mi><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></msub></math>:  coefficient (locally)</span> and
+<span class="ltx_text"><math class="ltx_Math" altimg="m22.png" altimg-height="21px" altimg-valign="-5px" altimg-width="30px" alttext="C_{n}" display="inline"><msub><mi href="./18.34#E5" title="coefficient">C</mi><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></msub></math>:  coefficient (locally)</span>
+</dd>
+<dt>Symbols:</dt>
+<dd><a href="./18.1#i.t1.r6" title="§18.1(i) Special Notation ‣ §18.1 Notation ‣ Notation ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m56.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></math>:  nonnegative integer</a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./18.34.E5" title="" class="ltx_ref">http://dlmf.nist.gov/18.34.E5</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./18.34.E5a.tex">TeX</a>, <a href="./18.34.E5b.tex">TeX</a>, <a href="./18.34.E5c.tex">TeX</a>, <a href="./18.34.E5a.pmml">pMML</a>, <a href="./18.34.E5b.pmml">pMML</a>, <a href="./18.34.E5c.pmml">pMML</a>, <a href="./18.34.E5a.png">png</a>, <a href="./18.34.E5b.png">png</a>, <a href="./18.34.E5c.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./18.34#i.info" title="§18.34(i) Definitions and Recurrence Relation ‣ §18.34 Bessel Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§18.34(i)</span></a>,
+<a href="./18.34#info" title="§18.34 Bessel Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§18.34</span></a> and
+<a href="./18#info" title="Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.18</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="ii" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§18.34(ii) </span>Orthogonality</h2>
+<div id="ii.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=Bessel%20polynomials">Bessel polynomials</a>, <a class="ltx_keyword" href="./search/search?q=Romanovski%E2%80%93Bessel%20polynomials">Romanovski–Bessel polynomials</a>, <a class="ltx_keyword" href="./search/search?q=orthogonality%20properties">orthogonality properties</a>
+</dd>
+<dt>Notes:</dt>
+<dd>See <cite class="ltx_cite ltx_citemacro_citet">Ismail (<a href="./bib/I#bib2902" title="Classical and Quantum Orthogonal Polynomials in One Variable" class="ltx_ref">2009</a>, (4.10.9))</cite>.</dd>
+<dt>Permalink:</dt>
+<dd><a href="./18.34.ii" title="" class="ltx_ref">http://dlmf.nist.gov/18.34.ii</a></dd>
+<dt>Addition (effective with 1.2.0):</dt>
+<dd>
+Equation (<a href="./18.34#E5_5" title="(18.34.5_5) ‣ §18.34(ii) Orthogonality ‣ §18.34 Bessel Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">18.34.5_5</span></a>), two sentences above it and a paragraph below it were added.
+A sentence below (<a href="./18.34#E6" title="(18.34.6) ‣ §18.34(ii) Orthogonality ‣ §18.34 Bessel Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">18.34.6</span></a>) was added.
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./18.34#info" title="§18.34 Bessel Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§18.34</span></a> and
+<a href="./18#info" title="Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.18</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="ii.p1" class="ltx_para">
+<p class="ltx_p">The product <math class="ltx_Math" altimg="m19.png" altimg-height="23px" altimg-valign="-7px" altimg-width="105px" alttext="A_{n-1}A_{n}C_{n}" display="inline"><mrow><msub><mi>A</mi><mrow><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>⁢</mo><msub><mi>A</mi><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></msub><mo>⁢</mo><msub><mi>C</mi><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></msub></mrow></math> of coefficients in (<a href="./18.34#E4" title="(18.34.4) ‣ §18.34(i) Definitions and Recurrence Relation ‣ §18.34 Bessel Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">18.34.4</span></a>)
+is positive if and only if <math class="ltx_Math" altimg="m54.png" altimg-height="29px" altimg-valign="-9px" altimg-width="121px" alttext="n&lt;\tfrac{1}{2}(1-a)" display="inline"><mrow><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi><mo>&lt;</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>−</mo><mi>a</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></math>. Hence the full system
+of polynomials <math class="ltx_Math" altimg="m65.png" altimg-height="25px" altimg-valign="-7px" altimg-width="77px" alttext="y_{n}\left(x;a\right)" display="inline"><mrow><msub><mi href="./18.34#E1" title="Bessel polynomial">y</mi><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./18.2#Px1.p2" title="real variable">x</mi><mo>;</mo><mi>a</mi><mo>)</mo></mrow></mrow></math> cannot be orthogonal on the
+line with respect to a positive weight function, but this is possible
+for a finite system of such polynomials,
+the <em class="ltx_emph ltx_font_italic">Romanovski–Bessel polynomials</em>, if <math class="ltx_Math" altimg="m45.png" altimg-height="18px" altimg-valign="-3px" altimg-width="53px" alttext="a&lt;1" display="inline"><mrow><mi>a</mi><mo>&lt;</mo><mn>1</mn></mrow></math>:
+</p>
+<table id="E5_5" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">18.34.5_5</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E5_5.png" altimg-height="118px" altimg-valign="-22px" altimg-width="535px" alttext="\frac{2^{1-a}}{\Gamma\left(1-a\right)}\int_{0}^{\infty}y_{n}\left(x;a\right)y_%
+{m}\left(x;a\right)x^{a-2}{\mathrm{e}}^{-2x^{-1}}\,\mathrm{d}x=\frac{1-a}{1-a-%
+2n}\,\frac{n!}{{\left(2-a-n\right)_{n}}}\,\delta_{n,m}," display="block"><mrow><mrow><mrow><mfrac><msup><mn>2</mn><mrow><mn>1</mn><mo>−</mo><mi>a</mi></mrow></msup><mrow><mi href="./5.2#E1" mathvariant="normal" title="gamma function">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mn>1</mn><mo>−</mo><mi>a</mi></mrow><mo>)</mo></mrow></mrow></mfrac><mo>⁢</mo><mrow><msubsup><mo href="./1.4#iv" title="integral">∫</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup><mrow><mrow><msub><mi href="./18.34#E1" title="Bessel polynomial">y</mi><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./18.2#Px1.p2" title="real variable">x</mi><mo>;</mo><mi>a</mi><mo>)</mo></mrow></mrow><mo>⁢</mo><mrow><msub><mi href="./18.34#E1" title="Bessel polynomial">y</mi><mi href="./18.1#i.t1.r5" title="nonnegative integer">m</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./18.2#Px1.p2" title="real variable">x</mi><mo>;</mo><mi>a</mi><mo>)</mo></mrow></mrow><mo>⁢</mo><msup><mi href="./18.2#Px1.p2" title="real variable">x</mi><mrow><mi>a</mi><mo>−</mo><mn>2</mn></mrow></msup><mo>⁢</mo><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mrow><mo>−</mo><mrow><mn>2</mn><mo>⁢</mo><msup><mi href="./18.2#Px1.p2" title="real variable">x</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup></mrow></mrow></msup><mo lspace="0em">⁢</mo><mrow><mo href="./1.4#iv" rspace="0em" title="differential of 𝑥">d</mo><mi href="./18.2#Px1.p2" title="real variable">x</mi></mrow></mrow></mrow></mrow><mo>=</mo><mrow><mfrac><mrow><mn>1</mn><mo>−</mo><mi>a</mi></mrow><mrow><mn>1</mn><mo>−</mo><mi>a</mi><mo>−</mo><mrow><mn>2</mn><mo>⁢</mo><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></mrow></mrow></mfrac><mo lspace="0.170em">⁢</mo><mfrac><mrow><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi><mo href="./front/introduction#common.t1.r15" title="factorial (as in 𝑛!)">!</mo></mrow><msub><mrow><mo href="./5.2#iii" title="Pochhammer’s symbol (or shifted factorial)">(</mo><mrow><mn>2</mn><mo>−</mo><mi>a</mi><mo>−</mo><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></mrow><mo href="./5.2#iii" title="Pochhammer’s symbol (or shifted factorial)">)</mo></mrow><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></msub></mfrac><mo lspace="0.170em">⁢</mo><msub><mi href="./front/introduction#common.t1.r4" title="Kronecker delta">δ</mi><mrow><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi><mo href="./front/introduction#common.t1.r4" title="Kronecker delta">,</mo><mi href="./18.1#i.t1.r5" title="nonnegative integer">m</mi></mrow></msub></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="4"><span class="ltx_constraint"><math class="ltx_Math" altimg="m50.png" altimg-height="25px" altimg-valign="-7px" altimg-width="321px" alttext="m,n=0,1,\dots,N=\lceil-\ifrac{(1+a)}{2}\rceil" display="inline"><mrow><mrow><mrow><mi href="./18.1#i.t1.r5" title="nonnegative integer">m</mi><mo>,</mo><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></mrow><mo>=</mo><mn>0</mn></mrow><mo>,</mo><mrow><mrow><mn>1</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi href="./18.1#i.t1.r7" title="positive integer">N</mi></mrow><mo>=</mo><mrow><mo href="./front/introduction#common.t1.r18" stretchy="false" title="ceiling of 𝑥">⌈</mo><mrow><mo>−</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>a</mi></mrow><mo stretchy="false">)</mo></mrow><mo lspace="0em" rspace="0em" stretchy="true" symmetric="true">/</mo><mn>2</mn></mrow></mrow><mo href="./front/introduction#common.t1.r18" stretchy="false" title="ceiling of 𝑥">⌉</mo></mrow></mrow></mrow></math>.</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E5_5.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./18.34#E1" title="(18.34.1) ‣ §18.34(i) Definitions and Recurrence Relation ‣ §18.34 Bessel Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m63.png" altimg-height="25px" altimg-valign="-7px" altimg-width="77px" alttext="y_{\NVar{n}}\left(\NVar{x};\NVar{a}\right)" display="inline"><mrow><msub><mi href="./18.34#E1" title="Bessel polynomial">y</mi><mi class="ltx_nvar" href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./18.2#Px1.p2" title="real variable">x</mi><mo>;</mo><mi class="ltx_nvar">a</mi><mo>)</mo></mrow></mrow></math>: Bessel polynomial</a>,
+<a href="./5.2#E1" title="(5.2.1) ‣ Euler’s Integral ‣ §5.2(i) Gamma and Psi Functions ‣ §5.2 Definitions ‣ Properties ‣ Chapter 5 Gamma Function" class="ltx_ref"><math class="ltx_Math" altimg="m30.png" altimg-height="25px" altimg-valign="-7px" altimg-width="47px" alttext="\Gamma\left(\NVar{z}\right)" display="inline"><mrow><mi href="./5.2#E1" mathvariant="normal" title="gamma function">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./5.1#t1.r4" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: gamma function</a>,
+<a href="./front/introduction#common.t1.r4" title="Common Notations and Definitions ‣ Mathematical Introduction" class="ltx_ref"><math class="ltx_Math" altimg="m31.png" altimg-height="24px" altimg-valign="-8px" altimg-width="36px" alttext="\delta_{\NVar{j},\NVar{k}}" display="inline"><msub><mi href="./front/introduction#common.t1.r4" title="Kronecker delta">δ</mi><mrow><mi class="ltx_nvar">j</mi><mo href="./front/introduction#common.t1.r4" title="Kronecker delta">,</mo><mi class="ltx_nvar">k</mi></mrow></msub></math>: Kronecker delta</a>,
+<a href="./5.2#iii" title="§5.2(iii) Pochhammer’s Symbol ‣ §5.2 Definitions ‣ Properties ‣ Chapter 5 Gamma Function" class="ltx_ref"><math class="ltx_Math" altimg="m67.png" altimg-height="26px" altimg-valign="-8px" altimg-width="43px" alttext="{\left(\NVar{a}\right)_{\NVar{n}}}" display="inline"><msub><mrow><mo href="./5.2#iii" title="Pochhammer’s symbol (or shifted factorial)">(</mo><mi class="ltx_nvar" href="./5.1#t1.r5" title="real or complex variable">a</mi><mo href="./5.2#iii" title="Pochhammer’s symbol (or shifted factorial)">)</mo></mrow><mi class="ltx_nvar" href="./5.1#t1.r1" title="nonnegative integer">n</mi></msub></math>: Pochhammer’s symbol (or shifted factorial)</a>,
+<a href="./front/introduction#common.t1.r18" title="Common Notations and Definitions ‣ Mathematical Introduction" class="ltx_ref"><math class="ltx_Math" altimg="m35.png" altimg-height="25px" altimg-valign="-7px" altimg-width="35px" alttext="\left\lceil\NVar{x}\right\rceil" display="inline"><mrow><mo href="./front/introduction#common.t1.r18" title="ceiling of 𝑥">⌈</mo><mi class="ltx_nvar">x</mi><mo href="./front/introduction#common.t1.r18" title="ceiling of 𝑥">⌉</mo></mrow></math>: ceiling of <math class="ltx_Math" altimg="m60.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m36.png" altimg-height="18px" altimg-valign="-2px" altimg-width="28px" alttext="\,\mathrm{d}\NVar{x}" display="inline"><mrow><mo href="./1.4#iv" rspace="0em" title="differential of 𝑥">d</mo><mi class="ltx_nvar">x</mi></mrow></math>: differential of <math class="ltx_Math" altimg="m60.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./4.2#E11" title="(4.2.11) ‣ §4.2(ii) Logarithms to a General Base 𝑎 ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m38.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="\mathrm{e}" display="inline"><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi></math>: base of natural logarithm</a>,
+<a href="./front/introduction#common.t1.r15" title="Common Notations and Definitions ‣ Mathematical Introduction" class="ltx_ref"><math class="ltx_Math" altimg="m15.png" altimg-height="18px" altimg-valign="-2px" altimg-width="10px" alttext="!" display="inline"><mo href="./front/introduction#common.t1.r15" title="factorial (as in 𝑛!)">!</mo></math>: factorial (as in <math class="ltx_Math" altimg="m53.png" altimg-height="18px" altimg-valign="-2px" altimg-width="23px" alttext="n!" display="inline"><mrow><mi>n</mi><mo href="./front/introduction#common.t1.r15" title="factorial (as in 𝑛!)">!</mo></mrow></math>)</a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m33.png" altimg-height="27px" altimg-valign="-8px" altimg-width="18px" alttext="\int" display="inline"><mo href="./1.4#iv" title="integral">∫</mo></math>: integral</a>,
+<a href="./18.1#i.t1.r7" title="§18.1(i) Special Notation ‣ §18.1 Notation ‣ Notation ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m25.png" altimg-height="18px" altimg-valign="-2px" altimg-width="23px" alttext="N" display="inline"><mi href="./18.1#i.t1.r7" title="positive integer">N</mi></math>:  positive integer</a>,
+<a href="./18.1#i.t1.r5" title="§18.1(i) Special Notation ‣ §18.1 Notation ‣ Notation ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m52.png" altimg-height="13px" altimg-valign="-2px" altimg-width="23px" alttext="m" display="inline"><mi href="./18.1#i.t1.r5" title="nonnegative integer">m</mi></math>:  nonnegative integer</a>,
+<a href="./18.1#i.t1.r6" title="§18.1(i) Special Notation ‣ §18.1 Notation ‣ Notation ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m56.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></math>:  nonnegative integer</a> and
+<a href="./18.2#Px1.p2" title="Orthogonality on Intervals ‣ §18.2(i) Definition ‣ §18.2 General Orthogonal Polynomials ‣ General Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m60.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./18.2#Px1.p2" title="real variable">x</mi></math>:  real variable</a>
+</dd>
+<dt>Proved:</dt>
+<dd>
+<cite class="ltx_cite ltx_citemacro_citet">Lesky (<a href="./bib/L#bib3043" title="Endliche und unendliche Systeme von kontinuierlichen klassischen Orthogonalpolynomen" class="ltx_ref">1996</a>, p.183, case a.3))</cite>(proved)</dd>
+<dt>Sources:</dt>
+<dd>
+<cite class="ltx_cite ltx_citemacro_citet">Romanovski (<a href="./bib/R#bib3072" title="Sur quelques classes nouvelles de polynômes orthogonaux" class="ltx_ref">1929</a>, Type V)</cite>; <cite class="ltx_cite ltx_citemacro_citet">Koekoek<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/K#bib2744" title="Hypergeometric Orthogonal Polynomials and Their q -Analogues" class="ltx_ref">2010</a>, (9.13.2))</cite>
+</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./18.34#E7_3.info" title="In §18.34(iii) Other Properties ‣ §18.34 Bessel Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">(18.34.7_3)</span></a>,
+<a href="./18.34#ii.info" title="§18.34(ii) Orthogonality ‣ §18.34 Bessel Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§18.34(ii)</span></a>,
+<a href="./18.34#iii.p1" title="§18.34(iii) Other Properties ‣ §18.34 Bessel Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§18.34(iii)</span></a>,
+<a href="./errata/#V1.2.0.I2.ix4.I2.ix21.p1" title="In Erratum (V1.2.0) for Chapter 18 Additions ‣ Other Changes ‣ Version 1.2.0 (March 27, 2024) ‣ Errata" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Erratum (V1.2.0) §<span class="ltx_text ltx_ref_tag">18.34</span></span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./18.34.E5_5" title="" class="ltx_ref">http://dlmf.nist.gov/18.34.E5_5</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./18.34.E5_5.tex">TeX</a>, <a href="./18.34.E5_5.pmml">pMML</a>, <a href="./18.34.E5_5.png">png</a>
+</dd>
+<dt>Addition (effective with 1.2.0):</dt>
+<dd>
+This equation was added.
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./18.34#ii.info" title="§18.34(ii) Orthogonality ‣ §18.34 Bessel Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§18.34(ii)</span></a>,
+<a href="./18.34#info" title="§18.34 Bessel Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§18.34</span></a> and
+<a href="./18#info" title="Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.18</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">The full system satisfies orthogonality with respect to a (not positive definite) moment functional; see <cite class="ltx_cite ltx_citemacro_citet">Evans<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/E#bib762" title="Real orthogonalizing weights for Bessel polynomials" class="ltx_ref">1993</a>, (2.7))</cite> for the simple expression of the moments <math class="ltx_Math" altimg="m42.png" altimg-height="17px" altimg-valign="-6px" altimg-width="28px" alttext="\mu_{n}" display="inline"><msub><mi>μ</mi><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></msub></math>.
+Explicit (but complicated) weight functions <math class="ltx_Math" altimg="m59.png" altimg-height="25px" altimg-valign="-7px" altimg-width="48px" alttext="w(x)" display="inline"><mrow><mi href="./18.1#i.t1.r12" title="weight function">w</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./18.2#Px1.p2" title="real variable">x</mi><mo stretchy="false">)</mo></mrow></mrow></math> taking both positive and negative values have been found such that (<a href="./18.2#E26" title="(18.2.26) ‣ §18.2(ix) Moments ‣ §18.2 General Orthogonal Polynomials ‣ General Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">18.2.26</span></a>) holds with <math class="ltx_Math" altimg="m37.png" altimg-height="25px" altimg-valign="-7px" altimg-width="154px" alttext="\,\mathrm{d}\mu(x)=w(x)\,\mathrm{d}x" display="inline"><mrow><mrow><mo href="./1.4#iv" rspace="0em" title="differential of 𝑥">d</mo><mrow><mi>μ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi href="./18.2#Px1.p2" title="real variable">x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mrow><mi href="./18.1#i.t1.r12" title="weight function">w</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./18.2#Px1.p2" title="real variable">x</mi><mo stretchy="false">)</mo></mrow></mrow><mo lspace="0em">⁢</mo><mrow><mo href="./1.4#iv" rspace="0em" title="differential of 𝑥">d</mo><mi href="./18.2#Px1.p2" title="real variable">x</mi></mrow></mrow></mrow></math>;
+see <cite class="ltx_cite ltx_citemacro_citet">Durán (<a href="./bib/D#bib717" title="Functions with given moments and weight functions for orthogonal polynomials" class="ltx_ref">1993</a>)</cite>, <cite class="ltx_cite ltx_citemacro_citet">Evans<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/E#bib762" title="Real orthogonalizing weights for Bessel polynomials" class="ltx_ref">1993</a>)</cite>, and <cite class="ltx_cite ltx_citemacro_citet">Maroni (<a href="./bib/M#bib1553" title="An integral representation for the Bessel form" class="ltx_ref">1995</a>)</cite>.</p>
+</div>
+<div id="ii.p2" class="ltx_para">
+<p class="ltx_p">Orthogonality of the full system on the unit circle can be given with a much simpler weight function:
+</p>
+<table id="E6" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">18.34.6</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E6.png" altimg-height="120px" altimg-valign="-25px" altimg-width="477px" alttext="\frac{1}{2\pi\mathrm{i}}\int_{|z|=1}z^{a-2}y_{n}\left(z;a\right)y_{m}\left(z;a%
+\right){\mathrm{e}}^{-2/z}\,\mathrm{d}z=\frac{(-1)^{n+a-1}n!\,2^{a-1}}{(n+a-2)%
+!(2n+a-1)}\delta_{n,m}," display="block"><mrow><mrow><mrow><mfrac><mn>1</mn><mrow><mn>2</mn><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>⁢</mo><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></mrow></mfrac><mo>⁢</mo><mrow><msub><mo href="./1.4#iv" title="integral">∫</mo><mrow><mrow><mo stretchy="false">|</mo><mi href="./18.1#i.t1.r2" title="complex variable">z</mi><mo stretchy="false">|</mo></mrow><mo>=</mo><mn>1</mn></mrow></msub><mrow><msup><mi href="./18.1#i.t1.r2" title="complex variable">z</mi><mrow><mi>a</mi><mo>−</mo><mn>2</mn></mrow></msup><mo>⁢</mo><mrow><msub><mi href="./18.34#E1" title="Bessel polynomial">y</mi><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./18.1#i.t1.r2" title="complex variable">z</mi><mo>;</mo><mi>a</mi><mo>)</mo></mrow></mrow><mo>⁢</mo><mrow><msub><mi href="./18.34#E1" title="Bessel polynomial">y</mi><mi href="./18.1#i.t1.r5" title="nonnegative integer">m</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./18.1#i.t1.r2" title="complex variable">z</mi><mo>;</mo><mi>a</mi><mo>)</mo></mrow></mrow><mo>⁢</mo><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mrow><mo>−</mo><mrow><mn>2</mn><mo>/</mo><mi href="./18.1#i.t1.r2" title="complex variable">z</mi></mrow></mrow></msup><mo lspace="0em">⁢</mo><mrow><mo href="./1.4#iv" rspace="0em" title="differential of 𝑥">d</mo><mi href="./18.1#i.t1.r2" title="complex variable">z</mi></mrow></mrow></mrow></mrow><mo>=</mo><mrow><mfrac><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mrow><mrow><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi><mo>+</mo><mi>a</mi></mrow><mo>−</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mrow><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi><mo href="./front/introduction#common.t1.r15" title="factorial (as in 𝑛!)">!</mo></mrow><mo>⁢</mo><msup><mn> 2</mn><mrow><mi>a</mi><mo>−</mo><mn>1</mn></mrow></msup></mrow><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mrow><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi><mo>+</mo><mi>a</mi></mrow><mo>−</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow><mo href="./front/introduction#common.t1.r15" title="factorial (as in 𝑛!)">!</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mrow><mn>2</mn><mo>⁢</mo><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></mrow><mo>+</mo><mi>a</mi></mrow><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mfrac><mo>⁢</mo><msub><mi href="./front/introduction#common.t1.r4" title="Kronecker delta">δ</mi><mrow><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi><mo href="./front/introduction#common.t1.r4" title="Kronecker delta">,</mo><mi href="./18.1#i.t1.r5" title="nonnegative integer">m</mi></mrow></msub></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="4"><span class="ltx_constraint"><math class="ltx_Math" altimg="m46.png" altimg-height="21px" altimg-valign="-6px" altimg-width="106px" alttext="a=1,2,\dots" display="inline"><mrow><mi>a</mi><mo>=</mo><mrow><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mi mathvariant="normal">…</mi></mrow></mrow></math>,</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E6.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./18.34#E1" title="(18.34.1) ‣ §18.34(i) Definitions and Recurrence Relation ‣ §18.34 Bessel Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m63.png" altimg-height="25px" altimg-valign="-7px" altimg-width="77px" alttext="y_{\NVar{n}}\left(\NVar{x};\NVar{a}\right)" display="inline"><mrow><msub><mi href="./18.34#E1" title="Bessel polynomial">y</mi><mi class="ltx_nvar" href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./18.2#Px1.p2" title="real variable">x</mi><mo>;</mo><mi class="ltx_nvar">a</mi><mo>)</mo></mrow></mrow></math>: Bessel polynomial</a>,
+<a href="./front/introduction#common.t1.r4" title="Common Notations and Definitions ‣ Mathematical Introduction" class="ltx_ref"><math class="ltx_Math" altimg="m31.png" altimg-height="24px" altimg-valign="-8px" altimg-width="36px" alttext="\delta_{\NVar{j},\NVar{k}}" display="inline"><msub><mi href="./front/introduction#common.t1.r4" title="Kronecker delta">δ</mi><mrow><mi class="ltx_nvar">j</mi><mo href="./front/introduction#common.t1.r4" title="Kronecker delta">,</mo><mi class="ltx_nvar">k</mi></mrow></msub></math>: Kronecker delta</a>,
+<a href="./3.12#E1" title="(3.12.1) ‣ §3.12 Mathematical Constants ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m43.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="\pi" display="inline"><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></math>: the ratio of the circumference of a circle to its diameter</a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m36.png" altimg-height="18px" altimg-valign="-2px" altimg-width="28px" alttext="\,\mathrm{d}\NVar{x}" display="inline"><mrow><mo href="./1.4#iv" rspace="0em" title="differential of 𝑥">d</mo><mi class="ltx_nvar">x</mi></mrow></math>: differential of <math class="ltx_Math" altimg="m60.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./4.2#E11" title="(4.2.11) ‣ §4.2(ii) Logarithms to a General Base 𝑎 ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m38.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="\mathrm{e}" display="inline"><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi></math>: base of natural logarithm</a>,
+<a href="./front/introduction#common.t1.r15" title="Common Notations and Definitions ‣ Mathematical Introduction" class="ltx_ref"><math class="ltx_Math" altimg="m15.png" altimg-height="18px" altimg-valign="-2px" altimg-width="10px" alttext="!" display="inline"><mo href="./front/introduction#common.t1.r15" title="factorial (as in 𝑛!)">!</mo></math>: factorial (as in <math class="ltx_Math" altimg="m53.png" altimg-height="18px" altimg-valign="-2px" altimg-width="23px" alttext="n!" display="inline"><mrow><mi>n</mi><mo href="./front/introduction#common.t1.r15" title="factorial (as in 𝑛!)">!</mo></mrow></math>)</a>,
+<a href="./1.9#E1" title="(1.9.1) ‣ §1.9(i) Complex Numbers ‣ §1.9 Calculus of a Complex Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m39.png" altimg-height="18px" altimg-valign="-2px" altimg-width="10px" alttext="\mathrm{i}" display="inline"><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></math>: imaginary unit</a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m33.png" altimg-height="27px" altimg-valign="-8px" altimg-width="18px" alttext="\int" display="inline"><mo href="./1.4#iv" title="integral">∫</mo></math>: integral</a>,
+<a href="./18.1#i.t1.r2" title="§18.1(i) Special Notation ‣ §18.1 Notation ‣ Notation ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m66.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi href="./18.1#i.t1.r2" title="complex variable">z</mi></math>:  complex variable</a>,
+<a href="./18.1#i.t1.r5" title="§18.1(i) Special Notation ‣ §18.1 Notation ‣ Notation ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m52.png" altimg-height="13px" altimg-valign="-2px" altimg-width="23px" alttext="m" display="inline"><mi href="./18.1#i.t1.r5" title="nonnegative integer">m</mi></math>:  nonnegative integer</a> and
+<a href="./18.1#i.t1.r6" title="§18.1(i) Special Notation ‣ §18.1 Notation ‣ Notation ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m56.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></math>:  nonnegative integer</a>
+</dd>
+<dt>Proved:</dt>
+<dd>
+<cite class="ltx_cite ltx_citemacro_citet">Grosswald (<a href="./bib/G#bib998" title="Bessel Polynomials" class="ltx_ref">1978</a>, p.32, Corollary 16)</cite>(proved)</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./18.34#ii.info" title="§18.34(ii) Orthogonality ‣ §18.34 Bessel Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§18.34(ii)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./18.34.E6" title="" class="ltx_ref">http://dlmf.nist.gov/18.34.E6</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./18.34.E6.tex">TeX</a>, <a href="./18.34.E6.pmml">pMML</a>, <a href="./18.34.E6.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./18.34#ii.info" title="§18.34(ii) Orthogonality ‣ §18.34 Bessel Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§18.34(ii)</span></a>,
+<a href="./18.34#info" title="§18.34 Bessel Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§18.34</span></a> and
+<a href="./18#info" title="Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.18</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">the integration path being taken in the positive rotational sense.
+
+See <cite class="ltx_cite ltx_citemacro_citet">Ismail (<a href="./bib/I#bib2902" title="Classical and Quantum Orthogonal Polynomials in One Variable" class="ltx_ref">2009</a>, (4.10.9))</cite> for orthogonality on the unit
+circle for general values of <math class="ltx_Math" altimg="m47.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="a" display="inline"><mi>a</mi></math>.</p>
+</div>
+</section>
+<section id="iii" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§18.34(iii) </span>Other Properties</h2>
+<div id="iii.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=Bessel%20polynomials">Bessel polynomials</a>, <a class="ltx_keyword" href="./search/search?q=Jacobi%20polynomials">Jacobi polynomials</a>, <a class="ltx_keyword" href="./search/search?q=as%20Bessel%20polynomials">as Bessel polynomials</a>, <a class="ltx_keyword" href="./search/search?q=asymptotic%20expansions">asymptotic expansions</a>, <a class="ltx_keyword" href="./search/search?q=differential%20equations">differential equations</a>, <a class="ltx_keyword" href="./search/search?q=limiting%20form">limiting form</a>, <a class="ltx_keyword" href="./search/search?q=relations%20to%20other%20functions">relations to other functions</a>
+</dd>
+<dt>Notes:</dt>
+<dd>See <cite class="ltx_cite ltx_citemacro_citet">Ismail (<a href="./bib/I#bib2902" title="Classical and Quantum Orthogonal Polynomials in One Variable" class="ltx_ref">2009</a>, (4.10.7), (4.10.10))</cite>.</dd>
+<dt>Permalink:</dt>
+<dd><a href="./18.34.iii" title="" class="ltx_ref">http://dlmf.nist.gov/18.34.iii</a></dd>
+<dt>Addition (effective with 1.2.0):</dt>
+<dd>
+Equations (<a href="./18.34#E7_1" title="(18.34.7_1) ‣ §18.34(iii) Other Properties ‣ §18.34 Bessel Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">18.34.7_1</span></a>)–(<a href="./18.34#E7_3" title="(18.34.7_3) ‣ §18.34(iii) Other Properties ‣ §18.34 Bessel Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">18.34.7_3</span></a>) and descriptive text
+were added. A sentence immediately below (<a href="./18.34#E8" title="(18.34.8) ‣ §18.34(iii) Other Properties ‣ §18.34 Bessel Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">18.34.8</span></a>) was added.
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./18.34#info" title="§18.34 Bessel Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§18.34</span></a> and
+<a href="./18#info" title="Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.18</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="iii.p1" class="ltx_para ltx_noindent">
+<table id="E7" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">18.34.7</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E7.png" altimg-height="99px" altimg-valign="-7px" altimg-width="279px" alttext="x^{2}y_{n}''\left(x;a\right)+(ax+2)y_{n}'\left(x;a\right)-n(n+a-1)y_{n}\left(x%
+;a\right)=0," display="block"><mrow><mrow><mrow><mrow><mrow><msup><mi href="./18.2#Px1.p2" title="real variable">x</mi><mn>2</mn></msup><mo>⁢</mo><mrow><msubsup><mi href="./18.34#E1" title="Bessel polynomial">y</mi><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi><mo>′′</mo></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi href="./18.2#Px1.p2" title="real variable">x</mi><mo>;</mo><mi>a</mi><mo>)</mo></mrow></mrow></mrow><mo>+</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>a</mi><mo>⁢</mo><mi href="./18.2#Px1.p2" title="real variable">x</mi></mrow><mo>+</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><msubsup><mi href="./18.34#E1" title="Bessel polynomial">y</mi><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi><mo>′</mo></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi href="./18.2#Px1.p2" title="real variable">x</mi><mo>;</mo><mi>a</mi><mo>)</mo></mrow></mrow></mrow></mrow><mo>−</mo><mrow><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi><mo>+</mo><mi>a</mi></mrow><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><msub><mi href="./18.34#E1" title="Bessel polynomial">y</mi><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./18.2#Px1.p2" title="real variable">x</mi><mo>;</mo><mi>a</mi><mo>)</mo></mrow></mrow></mrow></mrow><mo>=</mo><mn>0</mn></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E7.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./18.34#E1" title="(18.34.1) ‣ §18.34(i) Definitions and Recurrence Relation ‣ §18.34 Bessel Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m63.png" altimg-height="25px" altimg-valign="-7px" altimg-width="77px" alttext="y_{\NVar{n}}\left(\NVar{x};\NVar{a}\right)" display="inline"><mrow><msub><mi href="./18.34#E1" title="Bessel polynomial">y</mi><mi class="ltx_nvar" href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./18.2#Px1.p2" title="real variable">x</mi><mo>;</mo><mi class="ltx_nvar">a</mi><mo>)</mo></mrow></mrow></math>: Bessel polynomial</a>,
+<a href="./18.1#i.t1.r6" title="§18.1(i) Special Notation ‣ §18.1 Notation ‣ Notation ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m56.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></math>:  nonnegative integer</a> and
+<a href="./18.2#Px1.p2" title="Orthogonality on Intervals ‣ §18.2(i) Definition ‣ §18.2 General Orthogonal Polynomials ‣ General Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m60.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./18.2#Px1.p2" title="real variable">x</mi></math>:  real variable</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./18.34#E7_2.info" title="In §18.34(iii) Other Properties ‣ §18.34 Bessel Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">(18.34.7_2)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./18.34.E7" title="" class="ltx_ref">http://dlmf.nist.gov/18.34.E7</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./18.34.E7.tex">TeX</a>, <a href="./18.34.E7.pmml">pMML</a>, <a href="./18.34.E7.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./18.34#iii.info" title="§18.34(iii) Other Properties ‣ §18.34 Bessel Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§18.34(iii)</span></a>,
+<a href="./18.34#info" title="§18.34 Bessel Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§18.34</span></a> and
+<a href="./18#info" title="Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.18</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">where primes denote derivatives with respect to <math class="ltx_Math" altimg="m60.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./18.2#Px1.p2" title="real variable">x</mi></math>.
+
+With functions</p>
+<table id="E7_1" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">18.34.7_1</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_Math ltx_eqn_cell ltx_align_center"><math class="ltx_Math" alttext="\phi_{n}(x;\lambda)={\mathrm{e}}^{-\lambda\,{\mathrm{e}}^{-x}}\left(2\lambda\,%
+{\mathrm{e}}^{-x}\right)^{\lambda-\frac{1}{2}}\ifrac{y_{n}\left(\lambda^{-1}{%
+\mathrm{e}}^{x};2-2\lambda\right)}{n!}=(-1)^{n}{\mathrm{e}}^{-\lambda\,{%
+\mathrm{e}}^{-x}}\left(2\lambda\,{\mathrm{e}}^{-x}\right)^{\lambda-n-\frac{1}{%
+2}}L^{(2\lambda-2n-1)}_{n}\left(2\lambda\,{\mathrm{e}}^{-x}\right)=(2\lambda)^%
+{-\frac{1}{2}}\,{\mathrm{e}}^{x/2}\,W_{\lambda,n+\frac{1}{2}-\lambda}\left(2%
+\lambda{\mathrm{e}}^{-x}\right)/n!\,," display="block"><mrow><mtable align="baseline 1" columnalign="left" columnspacing="0.1em" displaystyle="true"><mtr><mtd class="ltx_align_left"><mrow><msub><mi>ϕ</mi><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi href="./18.2#Px1.p2" title="real variable">x</mi><mo>;</mo><mi>λ</mi><mo stretchy="false">)</mo></mrow></mrow></mtd><mtd class="ltx_align_left"><mo>=</mo><mrow><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mrow><mo>−</mo><mrow><mi>λ</mi><mo lspace="0.170em">⁢</mo><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mrow><mo>−</mo><mi href="./18.2#Px1.p2" title="real variable">x</mi></mrow></msup></mrow></mrow></msup><mo>⁢</mo><msup><mrow><mo>(</mo><mrow><mn>2</mn><mo>⁢</mo><mi>λ</mi><mo lspace="0.170em">⁢</mo><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mrow><mo>−</mo><mi href="./18.2#Px1.p2" title="real variable">x</mi></mrow></msup></mrow><mo>)</mo></mrow><mrow><mi>λ</mi><mo>−</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></msup><mo>⁢</mo><mrow><mrow><msub><mi href="./18.34#E1" title="Bessel polynomial">y</mi><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mrow><msup><mi>λ</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo>⁢</mo><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mi href="./18.2#Px1.p2" title="real variable">x</mi></msup></mrow><mo>;</mo><mrow><mn>2</mn><mo>−</mo><mrow><mn>2</mn><mo>⁢</mo><mi>λ</mi></mrow></mrow><mo>)</mo></mrow></mrow><mo lspace="0em" rspace="0em" stretchy="true" symmetric="true">/</mo><mrow><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi><mo href="./front/introduction#common.t1.r15" title="factorial (as in 𝑛!)">!</mo></mrow></mrow></mrow></mtd></mtr><mtr><mtd class="ltx_align_left"></mtd><mtd class="ltx_align_left"><mo>=</mo><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></msup><mo>⁢</mo><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mrow><mo>−</mo><mrow><mi>λ</mi><mo lspace="0.170em">⁢</mo><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mrow><mo>−</mo><mi href="./18.2#Px1.p2" title="real variable">x</mi></mrow></msup></mrow></mrow></msup><mo>⁢</mo><msup><mrow><mo>(</mo><mrow><mn>2</mn><mo>⁢</mo><mi>λ</mi><mo lspace="0.170em">⁢</mo><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mrow><mo>−</mo><mi href="./18.2#Px1.p2" title="real variable">x</mi></mrow></msup></mrow><mo>)</mo></mrow><mrow><mi>λ</mi><mo>−</mo><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi><mo>−</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></msup><mo>⁢</mo><mrow><msubsup><mi href="./18.3#T1.t1.r12" title="Laguerre (or generalized Laguerre) polynomial">L</mi><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi><mrow><mo href="./18.3#T1.t1.r12" stretchy="false" title="Laguerre (or generalized Laguerre) polynomial">(</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>λ</mi></mrow><mo>−</mo><mrow><mn>2</mn><mo>⁢</mo><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></mrow><mo>−</mo><mn>1</mn></mrow><mo href="./18.3#T1.t1.r12" stretchy="false" title="Laguerre (or generalized Laguerre) polynomial">)</mo></mrow></msubsup><mo>⁡</mo><mrow><mo>(</mo><mrow><mn>2</mn><mo>⁢</mo><mi>λ</mi><mo lspace="0.170em">⁢</mo><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mrow><mo>−</mo><mi href="./18.2#Px1.p2" title="real variable">x</mi></mrow></msup></mrow><mo>)</mo></mrow></mrow></mrow></mtd></mtr><mtr><mtd class="ltx_align_left"></mtd><mtd class="ltx_align_left"><mo>=</mo><mrow><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mn>2</mn><mo>⁢</mo><mi>λ</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mo>−</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></msup><mo>⁢</mo><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mrow><mi href="./18.2#Px1.p2" title="real variable">x</mi><mo>/</mo><mn>2</mn></mrow></msup><mo>⁢</mo><mrow><msub><mi href="./13.14#E3" title="Whittaker confluent hypergeometric function">W</mi><mrow><mi>λ</mi><mo href="./13.14#E3" title="Whittaker confluent hypergeometric function">,</mo><mrow><mrow><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow><mo>−</mo><mi>λ</mi></mrow></mrow></msub><mo>⁡</mo><mrow><mo>(</mo><mrow><mn>2</mn><mo>⁢</mo><mi>λ</mi><mo>⁢</mo><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mrow><mo>−</mo><mi href="./18.2#Px1.p2" title="real variable">x</mi></mrow></msup></mrow><mo>)</mo></mrow></mrow></mrow><mo>/</mo><mrow><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi><mo href="./front/introduction#common.t1.r15" rspace="0.170em" title="factorial (as in 𝑛!)">!</mo></mrow></mrow><mo>,</mo></mtd></mtr></mtable></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="4"><span class="ltx_constraint"><math class="ltx_Math" altimg="m55.png" altimg-height="29px" altimg-valign="-9px" altimg-width="237px" alttext="n=0,1,\dots,N=\left\lceil\lambda-\frac{3}{2}\right\rceil" display="inline"><mrow><mrow><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi><mo>=</mo><mrow><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mi mathvariant="normal">…</mi></mrow></mrow><mo>,</mo><mrow><mi href="./18.1#i.t1.r7" title="positive integer">N</mi><mo>=</mo><mrow><mo href="./front/introduction#common.t1.r18" title="ceiling of 𝑥">⌈</mo><mrow><mi>λ</mi><mo>−</mo><mfrac><mn>3</mn><mn>2</mn></mfrac></mrow><mo href="./front/introduction#common.t1.r18" title="ceiling of 𝑥">⌉</mo></mrow></mrow></mrow></math>,
+<math class="ltx_Math" altimg="m34.png" altimg-height="29px" altimg-valign="-9px" altimg-width="57px" alttext="\lambda&gt;\frac{1}{2}" display="inline"><mrow><mi>λ</mi><mo>&gt;</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></math>,</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E7_1.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./18.34#E1" title="(18.34.1) ‣ §18.34(i) Definitions and Recurrence Relation ‣ §18.34 Bessel Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m63.png" altimg-height="25px" altimg-valign="-7px" altimg-width="77px" alttext="y_{\NVar{n}}\left(\NVar{x};\NVar{a}\right)" display="inline"><mrow><msub><mi href="./18.34#E1" title="Bessel polynomial">y</mi><mi class="ltx_nvar" href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./18.2#Px1.p2" title="real variable">x</mi><mo>;</mo><mi class="ltx_nvar">a</mi><mo>)</mo></mrow></mrow></math>: Bessel polynomial</a>,
+<a href="./18.3#T1.t1.r12" title="Table 18.3.1 ‣ §18.3 Definitions ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m23.png" altimg-height="31px" altimg-valign="-7px" altimg-width="75px" alttext="L^{(\NVar{\alpha})}_{\NVar{n}}\left(\NVar{x}\right)" display="inline"><mrow><msubsup><mi href="./18.3#T1.t1.r12" title="Laguerre (or generalized Laguerre) polynomial">L</mi><mi class="ltx_nvar" href="./18.1#i.t1.r6" title="nonnegative integer">n</mi><mrow><mo href="./18.3#T1.t1.r12" stretchy="false" title="Laguerre (or generalized Laguerre) polynomial">(</mo><mi class="ltx_nvar">α</mi><mo href="./18.3#T1.t1.r12" stretchy="false" title="Laguerre (or generalized Laguerre) polynomial">)</mo></mrow></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./18.2#Px1.p2" title="real variable">x</mi><mo>)</mo></mrow></mrow></math>: Laguerre (or generalized Laguerre) polynomial</a>,
+<a href="./13.14#E3" title="(13.14.3) ‣ Standard Solutions ‣ §13.14(i) Differential Equation ‣ §13.14 Definitions and Basic Properties ‣ Whittaker Functions ‣ Chapter 13 Confluent Hypergeometric Functions" class="ltx_ref"><math class="ltx_Math" altimg="m28.png" altimg-height="26px" altimg-valign="-8px" altimg-width="80px" alttext="W_{\NVar{\kappa},\NVar{\mu}}\left(\NVar{z}\right)" display="inline"><mrow><msub><mi href="./13.14#E3" title="Whittaker confluent hypergeometric function">W</mi><mrow><mi class="ltx_nvar">κ</mi><mo href="./13.14#E3" title="Whittaker confluent hypergeometric function">,</mo><mi class="ltx_nvar">μ</mi></mrow></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./13.1#p1.t1.r4" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: Whittaker confluent hypergeometric function</a>,
+<a href="./front/introduction#common.t1.r18" title="Common Notations and Definitions ‣ Mathematical Introduction" class="ltx_ref"><math class="ltx_Math" altimg="m35.png" altimg-height="25px" altimg-valign="-7px" altimg-width="35px" alttext="\left\lceil\NVar{x}\right\rceil" display="inline"><mrow><mo href="./front/introduction#common.t1.r18" title="ceiling of 𝑥">⌈</mo><mi class="ltx_nvar">x</mi><mo href="./front/introduction#common.t1.r18" title="ceiling of 𝑥">⌉</mo></mrow></math>: ceiling of <math class="ltx_Math" altimg="m60.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./4.2#E11" title="(4.2.11) ‣ §4.2(ii) Logarithms to a General Base 𝑎 ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m38.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="\mathrm{e}" display="inline"><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi></math>: base of natural logarithm</a>,
+<a href="./front/introduction#common.t1.r15" title="Common Notations and Definitions ‣ Mathematical Introduction" class="ltx_ref"><math class="ltx_Math" altimg="m15.png" altimg-height="18px" altimg-valign="-2px" altimg-width="10px" alttext="!" display="inline"><mo href="./front/introduction#common.t1.r15" title="factorial (as in 𝑛!)">!</mo></math>: factorial (as in <math class="ltx_Math" altimg="m53.png" altimg-height="18px" altimg-valign="-2px" altimg-width="23px" alttext="n!" display="inline"><mrow><mi>n</mi><mo href="./front/introduction#common.t1.r15" title="factorial (as in 𝑛!)">!</mo></mrow></math>)</a>,
+<a href="./18.1#i.t1.r7" title="§18.1(i) Special Notation ‣ §18.1 Notation ‣ Notation ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m25.png" altimg-height="18px" altimg-valign="-2px" altimg-width="23px" alttext="N" display="inline"><mi href="./18.1#i.t1.r7" title="positive integer">N</mi></math>:  positive integer</a>,
+<a href="./18.1#i.t1.r6" title="§18.1(i) Special Notation ‣ §18.1 Notation ‣ Notation ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m56.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></math>:  nonnegative integer</a> and
+<a href="./18.2#Px1.p2" title="Orthogonality on Intervals ‣ §18.2(i) Definition ‣ §18.2 General Orthogonal Polynomials ‣ General Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m60.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./18.2#Px1.p2" title="real variable">x</mi></math>:  real variable</a>
+</dd>
+<dt>Proof sketch:</dt>
+<dd>The second and third equality follow from
+(<a href="./18.34#E1" title="(18.34.1) ‣ §18.34(i) Definitions and Recurrence Relation ‣ §18.34 Bessel Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">18.34.1</span></a>).</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./18.34#E7_2.info" title="In §18.34(iii) Other Properties ‣ §18.34 Bessel Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">(18.34.7_2)</span></a>,
+<a href="./18.34#E7_3.info" title="In §18.34(iii) Other Properties ‣ §18.34 Bessel Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">(18.34.7_3)</span></a>,
+<a href="./18.34#iii.info" title="§18.34(iii) Other Properties ‣ §18.34 Bessel Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§18.34(iii)</span></a>,
+<a href="./18.39#E17.info" title="In 1D Quantum Systems with Analytically Known Stationary States ‣ §18.39(i) Quantum Mechanics ‣ §18.39 Applications in the Physical Sciences ‣ Applications ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">(18.39.17)</span></a>,
+<a href="./18.39#E18.info" title="In 1D Quantum Systems with Analytically Known Stationary States ‣ §18.39(i) Quantum Mechanics ‣ §18.39 Applications in the Physical Sciences ‣ Applications ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">(18.39.18)</span></a>,
+<a href="./18.39#Px3.p3" title="1D Quantum Systems with Analytically Known Stationary States ‣ §18.39(i) Quantum Mechanics ‣ §18.39 Applications in the Physical Sciences ‣ Applications ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§18.39(i)</span></a>,
+<a href="./errata/#V1.2.0.I2.ix4.I2.ix21.p1" title="In Erratum (V1.2.0) for Chapter 18 Additions ‣ Other Changes ‣ Version 1.2.0 (March 27, 2024) ‣ Errata" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Erratum (V1.2.0) §<span class="ltx_text ltx_ref_tag">18.34</span></span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./18.34.E7_1" title="" class="ltx_ref">http://dlmf.nist.gov/18.34.E7_1</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./18.34.E7_1.tex">TeX</a>, <a href="./18.34.E7_1.pmml">pMML</a>, <a href="./18.34.E7_1.png">png</a>
+</dd>
+<dt>Addition (effective with 1.2.0):</dt>
+<dd>
+This equation was added.
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./18.34#iii.info" title="§18.34(iii) Other Properties ‣ §18.34 Bessel Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§18.34(iii)</span></a>,
+<a href="./18.34#info" title="§18.34 Bessel Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§18.34</span></a> and
+<a href="./18#info" title="Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.18</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">expressed in terms of Romanovski–Bessel polynomials, Laguerre
+polynomials or Whittaker functions, we have</p>
+<table id="E7_2" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">18.34.7_2</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E7_2.png" altimg-height="158px" altimg-valign="-22px" altimg-width="318px" alttext="\left(\frac{{\mathrm{d}}^{2}}{{\mathrm{d}x}^{2}}-\lambda^{2}\left({\mathrm{e}}%
+^{-2x}-2{\mathrm{e}}^{-x}\right)-\left(\lambda-\left(n+\tfrac{1}{2}\right)%
+\right)^{2}\right)\phi_{n}(x;\lambda)=0." display="block"><mrow><mrow><mrow><mrow><mo>(</mo><mrow><mfrac><msup><mo href="./1.4#E4" title="derivative of 𝑓 with respect to 𝑥">d</mo><mn>2</mn></msup><msup><mrow><mo href="./1.4#E4" rspace="0em" title="derivative of 𝑓 with respect to 𝑥">d</mo><mi href="./18.2#Px1.p2" title="real variable">x</mi></mrow><mn href="./1.4#E4" title="derivative of 𝑓 with respect to 𝑥">2</mn></msup></mfrac><mo>−</mo><mrow><msup><mi>λ</mi><mn>2</mn></msup><mo>⁢</mo><mrow><mo>(</mo><mrow><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mrow><mo>−</mo><mrow><mn>2</mn><mo>⁢</mo><mi href="./18.2#Px1.p2" title="real variable">x</mi></mrow></mrow></msup><mo>−</mo><mrow><mn>2</mn><mo>⁢</mo><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mrow><mo>−</mo><mi href="./18.2#Px1.p2" title="real variable">x</mi></mrow></msup></mrow></mrow><mo>)</mo></mrow></mrow><mo>−</mo><msup><mrow><mo>(</mo><mrow><mi>λ</mi><mo>−</mo><mrow><mo>(</mo><mrow><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi><mo>+</mo><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle></mrow><mo>)</mo></mrow></mrow><mo>)</mo></mrow><mn>2</mn></msup></mrow><mo>)</mo></mrow><mo>⁢</mo><msub><mi>ϕ</mi><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi href="./18.2#Px1.p2" title="real variable">x</mi><mo>;</mo><mi>λ</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E7_2.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./1.4#E4" title="(1.4.4) ‣ §1.4(iii) Derivatives ‣ §1.4 Calculus of One Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m32.png" altimg-height="31px" altimg-valign="-9px" altimg-width="28px" alttext="\frac{\mathrm{d}\NVar{f}}{\mathrm{d}\NVar{x}}" display="inline"><mfrac><mrow><mo href="./1.4#E4" rspace="0em" title="derivative of 𝑓 with respect to 𝑥">d</mo><mi class="ltx_nvar">f</mi></mrow><mrow><mo href="./1.4#E4" rspace="0em" title="derivative of 𝑓 with respect to 𝑥">d</mo><mi class="ltx_nvar">x</mi></mrow></mfrac></math>: derivative of <math class="ltx_Math" altimg="m49.png" altimg-height="22px" altimg-valign="-6px" altimg-width="17px" alttext="f" display="inline"><mi>f</mi></math> with respect to <math class="ltx_Math" altimg="m60.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./4.2#E11" title="(4.2.11) ‣ §4.2(ii) Logarithms to a General Base 𝑎 ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m38.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="\mathrm{e}" display="inline"><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi></math>: base of natural logarithm</a>,
+<a href="./18.1#i.t1.r6" title="§18.1(i) Special Notation ‣ §18.1 Notation ‣ Notation ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m56.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></math>:  nonnegative integer</a> and
+<a href="./18.2#Px1.p2" title="Orthogonality on Intervals ‣ §18.2(i) Definition ‣ §18.2 General Orthogonal Polynomials ‣ General Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m60.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./18.2#Px1.p2" title="real variable">x</mi></math>:  real variable</a>
+</dd>
+<dt>Proof sketch:</dt>
+<dd>This follows by straightforward computation from
+(<a href="./18.34#E7" title="(18.34.7) ‣ §18.34(iii) Other Properties ‣ §18.34 Bessel Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">18.34.7</span></a>) and (<a href="./18.34#E7_1" title="(18.34.7_1) ‣ §18.34(iii) Other Properties ‣ §18.34 Bessel Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">18.34.7_1</span></a>).</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./18.39#E17.info" title="In 1D Quantum Systems with Analytically Known Stationary States ‣ §18.39(i) Quantum Mechanics ‣ §18.39 Applications in the Physical Sciences ‣ Applications ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">(18.39.17)</span></a>,
+<a href="./18.39#E18.info" title="In 1D Quantum Systems with Analytically Known Stationary States ‣ §18.39(i) Quantum Mechanics ‣ §18.39 Applications in the Physical Sciences ‣ Applications ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">(18.39.18)</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./18.34.E7_2" title="" class="ltx_ref">http://dlmf.nist.gov/18.34.E7_2</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./18.34.E7_2.tex">TeX</a>, <a href="./18.34.E7_2.pmml">pMML</a>, <a href="./18.34.E7_2.png">png</a>
+</dd>
+<dt>Addition (effective with 1.2.0):</dt>
+<dd>
+This equation was added.
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./18.34#iii.info" title="§18.34(iii) Other Properties ‣ §18.34 Bessel Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§18.34(iii)</span></a>,
+<a href="./18.34#info" title="§18.34 Bessel Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§18.34</span></a> and
+<a href="./18#info" title="Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.18</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">and</p>
+<table id="E7_3" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">18.34.7_3</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E7_3.png" altimg-height="57px" altimg-valign="-23px" altimg-width="456px" alttext="\int_{-\infty}^{\infty}\phi_{n}(x;\lambda)\phi_{m}(x;\lambda)\,\mathrm{d}x=%
+\frac{\Gamma\left(2\lambda-n\right)}{(2\lambda-2n-1)\,n!}\,\delta_{n,m}," display="block"><mrow><mrow><mrow><msubsup><mo href="./1.4#iv" title="integral">∫</mo><mrow><mo>−</mo><mi mathvariant="normal">∞</mi></mrow><mi mathvariant="normal">∞</mi></msubsup><mrow><msub><mi>ϕ</mi><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi href="./18.2#Px1.p2" title="real variable">x</mi><mo>;</mo><mi>λ</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><mi>ϕ</mi><mi href="./18.1#i.t1.r5" title="nonnegative integer">m</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi href="./18.2#Px1.p2" title="real variable">x</mi><mo>;</mo><mi>λ</mi><mo stretchy="false">)</mo></mrow><mo lspace="0em">⁢</mo><mrow><mo href="./1.4#iv" rspace="0em" title="differential of 𝑥">d</mo><mi href="./18.2#Px1.p2" title="real variable">x</mi></mrow></mrow></mrow><mo>=</mo><mrow><mfrac><mrow><mi href="./5.2#E1" mathvariant="normal" title="gamma function">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>λ</mi></mrow><mo>−</mo><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></mrow><mo>)</mo></mrow></mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>λ</mi></mrow><mo>−</mo><mrow><mn>2</mn><mo>⁢</mo><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></mrow><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi><mo href="./front/introduction#common.t1.r15" title="factorial (as in 𝑛!)">!</mo></mrow></mrow></mfrac><mo lspace="0.170em">⁢</mo><msub><mi href="./front/introduction#common.t1.r4" title="Kronecker delta">δ</mi><mrow><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi><mo href="./front/introduction#common.t1.r4" title="Kronecker delta">,</mo><mi href="./18.1#i.t1.r5" title="nonnegative integer">m</mi></mrow></msub></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="4"><span class="ltx_constraint"><math class="ltx_Math" altimg="m51.png" altimg-height="29px" altimg-valign="-9px" altimg-width="265px" alttext="m,n=0,1,\dots,N=\left\lceil\lambda-\frac{3}{2}\right\rceil" display="inline"><mrow><mrow><mrow><mi href="./18.1#i.t1.r5" title="nonnegative integer">m</mi><mo>,</mo><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></mrow><mo>=</mo><mn>0</mn></mrow><mo>,</mo><mrow><mrow><mn>1</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi href="./18.1#i.t1.r7" title="positive integer">N</mi></mrow><mo>=</mo><mrow><mo href="./front/introduction#common.t1.r18" title="ceiling of 𝑥">⌈</mo><mrow><mi>λ</mi><mo>−</mo><mfrac><mn>3</mn><mn>2</mn></mfrac></mrow><mo href="./front/introduction#common.t1.r18" title="ceiling of 𝑥">⌉</mo></mrow></mrow></mrow></math>.</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E7_3.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./5.2#E1" title="(5.2.1) ‣ Euler’s Integral ‣ §5.2(i) Gamma and Psi Functions ‣ §5.2 Definitions ‣ Properties ‣ Chapter 5 Gamma Function" class="ltx_ref"><math class="ltx_Math" altimg="m30.png" altimg-height="25px" altimg-valign="-7px" altimg-width="47px" alttext="\Gamma\left(\NVar{z}\right)" display="inline"><mrow><mi href="./5.2#E1" mathvariant="normal" title="gamma function">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./5.1#t1.r4" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: gamma function</a>,
+<a href="./front/introduction#common.t1.r4" title="Common Notations and Definitions ‣ Mathematical Introduction" class="ltx_ref"><math class="ltx_Math" altimg="m31.png" altimg-height="24px" altimg-valign="-8px" altimg-width="36px" alttext="\delta_{\NVar{j},\NVar{k}}" display="inline"><msub><mi href="./front/introduction#common.t1.r4" title="Kronecker delta">δ</mi><mrow><mi class="ltx_nvar">j</mi><mo href="./front/introduction#common.t1.r4" title="Kronecker delta">,</mo><mi class="ltx_nvar">k</mi></mrow></msub></math>: Kronecker delta</a>,
+<a href="./front/introduction#common.t1.r18" title="Common Notations and Definitions ‣ Mathematical Introduction" class="ltx_ref"><math class="ltx_Math" altimg="m35.png" altimg-height="25px" altimg-valign="-7px" altimg-width="35px" alttext="\left\lceil\NVar{x}\right\rceil" display="inline"><mrow><mo href="./front/introduction#common.t1.r18" title="ceiling of 𝑥">⌈</mo><mi class="ltx_nvar">x</mi><mo href="./front/introduction#common.t1.r18" title="ceiling of 𝑥">⌉</mo></mrow></math>: ceiling of <math class="ltx_Math" altimg="m60.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m36.png" altimg-height="18px" altimg-valign="-2px" altimg-width="28px" alttext="\,\mathrm{d}\NVar{x}" display="inline"><mrow><mo href="./1.4#iv" rspace="0em" title="differential of 𝑥">d</mo><mi class="ltx_nvar">x</mi></mrow></math>: differential of <math class="ltx_Math" altimg="m60.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./front/introduction#common.t1.r15" title="Common Notations and Definitions ‣ Mathematical Introduction" class="ltx_ref"><math class="ltx_Math" altimg="m15.png" altimg-height="18px" altimg-valign="-2px" altimg-width="10px" alttext="!" display="inline"><mo href="./front/introduction#common.t1.r15" title="factorial (as in 𝑛!)">!</mo></math>: factorial (as in <math class="ltx_Math" altimg="m53.png" altimg-height="18px" altimg-valign="-2px" altimg-width="23px" alttext="n!" display="inline"><mrow><mi>n</mi><mo href="./front/introduction#common.t1.r15" title="factorial (as in 𝑛!)">!</mo></mrow></math>)</a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m33.png" altimg-height="27px" altimg-valign="-8px" altimg-width="18px" alttext="\int" display="inline"><mo href="./1.4#iv" title="integral">∫</mo></math>: integral</a>,
+<a href="./18.1#i.t1.r7" title="§18.1(i) Special Notation ‣ §18.1 Notation ‣ Notation ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m25.png" altimg-height="18px" altimg-valign="-2px" altimg-width="23px" alttext="N" display="inline"><mi href="./18.1#i.t1.r7" title="positive integer">N</mi></math>:  positive integer</a>,
+<a href="./18.1#i.t1.r5" title="§18.1(i) Special Notation ‣ §18.1 Notation ‣ Notation ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m52.png" altimg-height="13px" altimg-valign="-2px" altimg-width="23px" alttext="m" display="inline"><mi href="./18.1#i.t1.r5" title="nonnegative integer">m</mi></math>:  nonnegative integer</a>,
+<a href="./18.1#i.t1.r6" title="§18.1(i) Special Notation ‣ §18.1 Notation ‣ Notation ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m56.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></math>:  nonnegative integer</a> and
+<a href="./18.2#Px1.p2" title="Orthogonality on Intervals ‣ §18.2(i) Definition ‣ §18.2 General Orthogonal Polynomials ‣ General Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m60.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./18.2#Px1.p2" title="real variable">x</mi></math>:  real variable</a>
+</dd>
+<dt>Proof sketch:</dt>
+<dd>This follows by straightforward computation from
+(<a href="./18.34#E5_5" title="(18.34.5_5) ‣ §18.34(ii) Orthogonality ‣ §18.34 Bessel Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">18.34.5_5</span></a>) and (<a href="./18.34#E7_1" title="(18.34.7_1) ‣ §18.34(iii) Other Properties ‣ §18.34 Bessel Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">18.34.7_1</span></a>).</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./18.34#iii.info" title="§18.34(iii) Other Properties ‣ §18.34 Bessel Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§18.34(iii)</span></a>,
+<a href="./18.39#E17.info" title="In 1D Quantum Systems with Analytically Known Stationary States ‣ §18.39(i) Quantum Mechanics ‣ §18.39 Applications in the Physical Sciences ‣ Applications ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">(18.39.17)</span></a>,
+<a href="./18.39#Px3.p3" title="1D Quantum Systems with Analytically Known Stationary States ‣ §18.39(i) Quantum Mechanics ‣ §18.39 Applications in the Physical Sciences ‣ Applications ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§18.39(i)</span></a>,
+<a href="./errata/#V1.2.0.I2.ix4.I2.ix21.p1" title="In Erratum (V1.2.0) for Chapter 18 Additions ‣ Other Changes ‣ Version 1.2.0 (March 27, 2024) ‣ Errata" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Erratum (V1.2.0) §<span class="ltx_text ltx_ref_tag">18.34</span></span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./18.34.E7_3" title="" class="ltx_ref">http://dlmf.nist.gov/18.34.E7_3</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./18.34.E7_3.tex">TeX</a>, <a href="./18.34.E7_3.pmml">pMML</a>, <a href="./18.34.E7_3.png">png</a>
+</dd>
+<dt>Addition (effective with 1.2.0):</dt>
+<dd>
+This equation was added.
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./18.34#iii.info" title="§18.34(iii) Other Properties ‣ §18.34 Bessel Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§18.34(iii)</span></a>,
+<a href="./18.34#info" title="§18.34 Bessel Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§18.34</span></a> and
+<a href="./18#info" title="Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.18</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<table id="E8" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">18.34.8</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E8.png" altimg-height="94px" altimg-valign="-27px" altimg-width="354px" alttext="\lim_{\alpha\to\infty}\frac{P^{(\alpha,a-\alpha-2)}_{n}\left(1+\alpha x\right)%
+}{P^{(\alpha,a-\alpha-2)}_{n}\left(1\right)}=y_{n}\left(x;a\right)." display="block"><mrow><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>α</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mfrac><mrow><msubsup><mi href="./18.3#T1.t1.r2" title="Jacobi polynomial">P</mi><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi><mrow><mo href="./18.3#T1.t1.r2" stretchy="false" title="Jacobi polynomial">(</mo><mi>α</mi><mo href="./18.3#T1.t1.r2" title="Jacobi polynomial">,</mo><mrow><mi>a</mi><mo>−</mo><mi>α</mi><mo>−</mo><mn>2</mn></mrow><mo href="./18.3#T1.t1.r2" stretchy="false" title="Jacobi polynomial">)</mo></mrow></msubsup><mo>⁡</mo><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mrow><mi>α</mi><mo>⁢</mo><mi href="./18.2#Px1.p2" title="real variable">x</mi></mrow></mrow><mo>)</mo></mrow></mrow><mrow><msubsup><mi href="./18.3#T1.t1.r2" title="Jacobi polynomial">P</mi><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi><mrow><mo href="./18.3#T1.t1.r2" stretchy="false" title="Jacobi polynomial">(</mo><mi>α</mi><mo href="./18.3#T1.t1.r2" title="Jacobi polynomial">,</mo><mrow><mi>a</mi><mo>−</mo><mi>α</mi><mo>−</mo><mn>2</mn></mrow><mo href="./18.3#T1.t1.r2" stretchy="false" title="Jacobi polynomial">)</mo></mrow></msubsup><mo>⁡</mo><mrow><mo>(</mo><mn>1</mn><mo>)</mo></mrow></mrow></mfrac></mrow><mo>=</mo><mrow><msub><mi href="./18.34#E1" title="Bessel polynomial">y</mi><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./18.2#Px1.p2" title="real variable">x</mi><mo>;</mo><mi>a</mi><mo>)</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E8.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./18.34#E1" title="(18.34.1) ‣ §18.34(i) Definitions and Recurrence Relation ‣ §18.34 Bessel Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m63.png" altimg-height="25px" altimg-valign="-7px" altimg-width="77px" alttext="y_{\NVar{n}}\left(\NVar{x};\NVar{a}\right)" display="inline"><mrow><msub><mi href="./18.34#E1" title="Bessel polynomial">y</mi><mi class="ltx_nvar" href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./18.2#Px1.p2" title="real variable">x</mi><mo>;</mo><mi class="ltx_nvar">a</mi><mo>)</mo></mrow></mrow></math>: Bessel polynomial</a>,
+<a href="./18.3#T1.t1.r2" title="Table 18.3.1 ‣ §18.3 Definitions ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m26.png" altimg-height="31px" altimg-valign="-7px" altimg-width="92px" alttext="P^{(\NVar{\alpha},\NVar{\beta})}_{\NVar{n}}\left(\NVar{x}\right)" display="inline"><mrow><msubsup><mi href="./18.3#T1.t1.r2" title="Jacobi polynomial">P</mi><mi class="ltx_nvar" href="./18.1#i.t1.r6" title="nonnegative integer">n</mi><mrow><mo href="./18.3#T1.t1.r2" stretchy="false" title="Jacobi polynomial">(</mo><mi class="ltx_nvar">α</mi><mo href="./18.3#T1.t1.r2" title="Jacobi polynomial">,</mo><mi class="ltx_nvar">β</mi><mo href="./18.3#T1.t1.r2" stretchy="false" title="Jacobi polynomial">)</mo></mrow></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./18.2#Px1.p2" title="real variable">x</mi><mo>)</mo></mrow></mrow></math>: Jacobi polynomial</a>,
+<a href="./18.1#i.t1.r6" title="§18.1(i) Special Notation ‣ §18.1 Notation ‣ Notation ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m56.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></math>:  nonnegative integer</a> and
+<a href="./18.2#Px1.p2" title="Orthogonality on Intervals ‣ §18.2(i) Definition ‣ §18.2 General Orthogonal Polynomials ‣ General Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><math class="ltx_Math" altimg="m60.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./18.2#Px1.p2" title="real variable">x</mi></math>:  real variable</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./18.34#iii.info" title="§18.34(iii) Other Properties ‣ §18.34 Bessel Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§18.34(iii)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./18.34.E8" title="" class="ltx_ref">http://dlmf.nist.gov/18.34.E8</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./18.34.E8.tex">TeX</a>, <a href="./18.34.E8.pmml">pMML</a>, <a href="./18.34.E8.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./18.34#iii.info" title="§18.34(iii) Other Properties ‣ §18.34 Bessel Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§18.34(iii)</span></a>,
+<a href="./18.34#info" title="§18.34 Bessel Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§18.34</span></a> and
+<a href="./18#info" title="Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.18</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">In this limit the finite system of Jacobi polynomials
+<math class="ltx_Math" altimg="m27.png" altimg-height="31px" altimg-valign="-7px" altimg-width="92px" alttext="P^{(\alpha,\beta)}_{n}\left(x\right)" display="inline"><mrow><msubsup><mi href="./18.3#T1.t1.r2" title="Jacobi polynomial">P</mi><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi><mrow><mo href="./18.3#T1.t1.r2" stretchy="false" title="Jacobi polynomial">(</mo><mi>α</mi><mo href="./18.3#T1.t1.r2" title="Jacobi polynomial">,</mo><mi>β</mi><mo href="./18.3#T1.t1.r2" stretchy="false" title="Jacobi polynomial">)</mo></mrow></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi href="./18.2#Px1.p2" title="real variable">x</mi><mo>)</mo></mrow></mrow></math> which is orthogonal on <math class="ltx_Math" altimg="m17.png" altimg-height="25px" altimg-valign="-7px" altimg-width="61px" alttext="(1,\infty)" display="inline"><mrow><mo href="./front/introduction#common.t1.r29" stretchy="false" title="open interval">(</mo><mn>1</mn><mo href="./front/introduction#common.t1.r29" title="open interval">,</mo><mi mathvariant="normal">∞</mi><mo href="./front/introduction#common.t1.r29" stretchy="false" title="open interval">)</mo></mrow></math>
+(see §<a href="./18.3" title="§18.3 Definitions ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">18.3</span></a>) tends to the finite system of
+Romanovski–Bessel polynomials which is orthogonal on <math class="ltx_Math" altimg="m16.png" altimg-height="25px" altimg-valign="-7px" altimg-width="61px" alttext="(0,\infty)" display="inline"><mrow><mo href="./front/introduction#common.t1.r29" stretchy="false" title="open interval">(</mo><mn>0</mn><mo href="./front/introduction#common.t1.r29" title="open interval">,</mo><mi mathvariant="normal">∞</mi><mo href="./front/introduction#common.t1.r29" stretchy="false" title="open interval">)</mo></mrow></math>
+(see (<a href="./18.34#E5_5" title="(18.34.5_5) ‣ §18.34(ii) Orthogonality ‣ §18.34 Bessel Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">18.34.5_5</span></a>)).</p>
+</div>
+<div id="iii.p2" class="ltx_para">
+<p class="ltx_p">For uniform asymptotic expansions of <math class="ltx_Math" altimg="m65.png" altimg-height="25px" altimg-valign="-7px" altimg-width="77px" alttext="y_{n}\left(x;a\right)" display="inline"><mrow><msub><mi href="./18.34#E1" title="Bessel polynomial">y</mi><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./18.2#Px1.p2" title="real variable">x</mi><mo>;</mo><mi>a</mi><mo>)</mo></mrow></mrow></math> as <math class="ltx_Math" altimg="m57.png" altimg-height="13px" altimg-valign="-2px" altimg-width="70px" alttext="n\to\infty" display="inline"><mrow><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></math>
+in terms of Airy functions (§<a href="./9.2" title="§9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">9.2</span></a>) see <cite class="ltx_cite ltx_citemacro_citet">Wong and Zhang (<a href="./bib/W#bib2447" title="Asymptotic expansions of the generalized Bessel polynomials" class="ltx_ref">1997</a>)</cite> and
+<cite class="ltx_cite ltx_citemacro_citet">Dunster (<a href="./bib/D#bib710" title="Uniform asymptotic expansions for the reverse generalized Bessel polynomials, and related functions" class="ltx_ref">2001c</a>)</cite>. For uniform asymptotic expansions in terms of
+Hermite polynomials see <cite class="ltx_cite ltx_citemacro_citet">López and Temme (<a href="./bib/L#bib1454" title="Hermite polynomials in asymptotic representations of generalized Bernoulli, Euler, Bessel, and Buchholz polynomials" class="ltx_ref">1999b</a>)</cite>.</p>
+</div>
+<div id="iii.p3" class="ltx_para">
+<p class="ltx_p">For further information on Bessel polynomials see §<a href="./10.49#ii" title="§10.49(ii) Modified Functions ‣ §10.49 Explicit Formulas ‣ Spherical Bessel Functions ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">10.49(ii)</span></a>.</p>
+</div>
+</section>
+</section>
+</div>
+<div class="ltx_page_footer">
+<div class="ltx_siblings">
+<a href="./18.33" title="In Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">18.33 </span>Polynomials Orthogonal on the Unit Circle</span></a><a href="./18.35" title="In Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">18.35 </span>Pollaczek Polynomials</span></a>
+</div>
+<div class="ltx_footer_links ltx_centering">
+<a href="./about/notices">© 2010–2026 NIST</a> / <a href="./about/notices#S2">Disclaimer</a> / <a href="/cdn-cgi/l/email-protection#32767e7f741f5457575650535159725c5b41461c555d44">Feedback</a>;
+ Version 1.2.7;
+Release date 2026-06-15.</div>
+<span id="pagesettings"></span>
+<div class="ltx_nist_logo"><a href="http://www.nist.gov/"><img src="./style/nistidc.png" width="500" alt="NIST"></a></div>
+<div class="ltx_nist_links ltx_align_right">
+<a href="https://www.nist.gov/privacy-policy">Site Privacy</a> <a href="https://www.nist.gov/oism/accessibility">Accessibility</a> <a href="https://www.nist.gov/privacy">Privacy Program</a> <a href="https://www.nist.gov/oism/copyrights">Copyrights</a> <a href="https://www.commerce.gov/vulnerability-disclosure-policy">Vulnerability Disclosure</a> <a href="https://www.nist.gov/no-fear-act-policy">No Fear Act Policy</a> <a href="https://www.nist.gov/foia">FOIA</a> <a href="https://www.nist.gov/environmental-policy-statement">Environmental Policy</a> <a href="https://www.nist.gov/summary-report-scientific-integrity">Scientific Integrity</a> <a href="https://www.nist.gov/nist-information-quality-standards">Information Quality Standards</a> <a href="https://www.commerce.gov/">Commerce.gov</a> <a href="http://www.science.gov/">Science.gov</a> <a href="http://www.usa.gov/">USA.gov</a>
+</div>
+</div>
+</div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a30b64171db41648',t:'MTc4NzY2OTIzNg=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"9ef5b487afff42a68917b2d63593a474"}' crossorigin="anonymous"></script>
+</body>
+</html>

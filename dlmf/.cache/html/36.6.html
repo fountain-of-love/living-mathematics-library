@@ -1,0 +1,532 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>DLMF: §36.6 Scaling Relations ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles</title>
+<link rel="shortcut icon" href="./style/DLMF-16.png" type="image/png">
+<script type="text/javascript"><!--
+	var PATH="DLMF:/36.6";
+	var ROOT="./";
+      //--></script>
+<script type="text/javascript" src="./style/jquery.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/jquery.leaveNotice.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/DLMF.js"><!-- non-empty so ie6 will accept it --></script>
+<script async="" type="text/javascript" id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC&amp;subagency=NIST&amp;pua=UA-37115410-44&amp;yt=true&amp;exts=ppsx,pps,f90,sch,rtf,wrl,txz,m1v,xlsm,msi,xsd,f,tif,eps,mpg,xml,pl,xlt,c"><!-- non-empty so ie6 will accept it --></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-BZB64W4M0L"></script><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-BZB64W4M0L');
+      </script>
+<link rel="stylesheet" type="text/css" href="./style/LaTeXML.css">
+<link rel="stylesheet" type="text/css" href="./style/DLMF.css">
+<link rel="stylesheet" type="text/css" href="./style/print.css" media="print">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="top" href="./" title="DLMF">
+<link rel="copyright" href="./about/notices" title="Copyright">
+<link rel="search" href="./search/search" title="Search">
+<link rel="help" class="ltx_help" href="./help/" title="Help">
+<link rel="up" href="./36#PT2" title="Properties ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="up up" href="./36" title="Chapter 36 Integrals with Coalescing Saddles">
+<link rel="start" href="./" title="">
+<link rel="prev" href="./36.5" title="§36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="next" href="./36.7" title="§36.7 Zeros ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="section" href="./36.1" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="section" href="./36.2" title="§36.2 Catastrophes and Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="section" href="./36.3" title="§36.3 Visualizations of Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="section" href="./36.4" title="§36.4 Bifurcation Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="section" href="./36.5" title="§36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="section" href="./36.7" title="§36.7 Zeros ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="section" href="./36.8" title="§36.8 Convergent Series Expansions ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="section" href="./36.9" title="§36.9 Integral Identities ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="section" href="./36.10" title="§36.10 Differential Equations ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="section" href="./36.11" title="§36.11 Leading-Order Asymptotics ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="section" href="./36.12" title="§36.12 Uniform Approximation of Integrals ‣ Applications ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="section" href="./36.13" title="§36.13 Kelvin’s Ship-Wave Pattern ‣ Applications ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="section" href="./36.14" title="§36.14 Other Physical Applications ‣ Applications ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="section" href="./36.15" title="§36.15 Methods of Computation ‣ Computation ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="document" href="./front/foreword" title="Foreword">
+<link rel="document" href="./front/preface" title="Preface">
+<link rel="document" href="./front/introduction" title="Mathematical Introduction">
+<link rel="chapter" href="./1" title="Chapter 1 Algebraic and Analytic Methods">
+<link rel="chapter" href="./2" title="Chapter 2 Asymptotic Approximations">
+<link rel="chapter" href="./3" title="Chapter 3 Numerical Methods">
+<link rel="chapter" href="./4" title="Chapter 4 Elementary Functions">
+<link rel="chapter" href="./5" title="Chapter 5 Gamma Function">
+<link rel="chapter" href="./6" title="Chapter 6 Exponential, Logarithmic, Sine, and Cosine Integrals">
+<link rel="chapter" href="./7" title="Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="chapter" href="./8" title="Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="chapter" href="./9" title="Chapter 9 Airy and Related Functions">
+<link rel="chapter" href="./10" title="Chapter 10 Bessel Functions">
+<link rel="chapter" href="./11" title="Chapter 11 Struve and Related Functions">
+<link rel="chapter" href="./12" title="Chapter 12 Parabolic Cylinder Functions">
+<link rel="chapter" href="./13" title="Chapter 13 Confluent Hypergeometric Functions">
+<link rel="chapter" href="./14" title="Chapter 14 Legendre and Related Functions">
+<link rel="chapter" href="./15" title="Chapter 15 Hypergeometric Function">
+<link rel="chapter" href="./16" title="Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="chapter" href="./17" title="Chapter 17 𝑞-Hypergeometric and Related Functions">
+<link rel="chapter" href="./18" title="Chapter 18 Orthogonal Polynomials">
+<link rel="chapter" href="./19" title="Chapter 19 Elliptic Integrals">
+<link rel="chapter" href="./20" title="Chapter 20 Theta Functions">
+<link rel="chapter" href="./21" title="Chapter 21 Multidimensional Theta Functions">
+<link rel="chapter" href="./22" title="Chapter 22 Jacobian Elliptic Functions">
+<link rel="chapter" href="./23" title="Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="chapter" href="./24" title="Chapter 24 Bernoulli and Euler Polynomials">
+<link rel="chapter" href="./25" title="Chapter 25 Zeta and Related Functions">
+<link rel="chapter" href="./26" title="Chapter 26 Combinatorial Analysis">
+<link rel="chapter" href="./27" title="Chapter 27 Functions of Number Theory">
+<link rel="chapter" href="./28" title="Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="chapter" href="./29" title="Chapter 29 Lamé Functions">
+<link rel="chapter" href="./30" title="Chapter 30 Spheroidal Wave Functions">
+<link rel="chapter" href="./31" title="Chapter 31 Heun Functions">
+<link rel="chapter" href="./32" title="Chapter 32 Painlevé Transcendents">
+<link rel="chapter" href="./33" title="Chapter 33 Coulomb Functions">
+<link rel="chapter" href="./34" title="Chapter 34 3⁢𝑗,6⁢𝑗,9⁢𝑗 Symbols">
+<link rel="chapter" href="./35" title="Chapter 35 Functions of Matrix Argument">
+<link rel="chapter" href="./36" title="Chapter 36 Integrals with Coalescing Saddles">
+<link rel="bibliography" href="./bib/" title="Bibliography">
+<link rel="index" href="./idx/" title="Index">
+<link rel="glossary" href="./not/" title="Notations">
+<link rel="document" href="./lof/" title="List of Figures">
+<link rel="document" href="./lot/" title="List of Tables">
+<link rel="document" href="./software/" title="Software Index">
+<link rel="document" href="./errata/" title="Errata">
+<link rel="document" href="./help/" title="Need Help?">
+<link rel="document" href="./search/" title="Advanced Search">
+<link rel="document" href="./about/" title="About the Project">
+<meta name="keywords" lang="en" content="Pearcey integral, diffraction catastrophes, elliptic umbilic canonical integral, for diffraction catastrophes, hyperbolic umbilic canonical integral, scaling laws, swallowtail canonical integral">
+</head>
+<body class="color_default textfont_default titlefont_default fontsize_default navbar_default">
+<div class="ltx_page_navbar">
+<div class="ltx_page_navlogo"><a href="./" title="Digital Library of Mathematical Functions"><span>DLMF</span></a></div>
+<div class="ltx_page_navitems">
+<form method="get" action="./search/search">
+<ul>
+<li><a href="./idx/">Index</a></li>
+<li><a href="./not/">Notations</a></li>
+<li><small><input type="text" name="q" value="" size="6" class="ltx_page_navitem_search"><button type="submit">Search</button></small></li>
+<li><a href="./help/" class="ltx_help">Help?</a></li>
+<li><a href="./help/cite">Citing</a></li>
+<li><a href="./help/customize" class="ltx_customize">Customize</a></li>
+<li id="showinfo"><a href="" onclick="showInfo(); return false;" title="Show Annotations">Annotate</a></li>
+<li id="hideinfo"><a href="" onclick="hideInfo(); return false;">UnAnnotate</a></li>
+</ul>
+</form>
+</div>
+<div class="ltx_page_navsponsors">
+<div><a href="./about/" class="ltx_page_navabout">About the Project</a></div>
+</div>
+</div>
+<div class="ltx_page_main">
+<div class="ltx_page_header">
+<a href="./36" title="" class="ltx_ref" rel="up up"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">36 </span>Integrals with Coalescing Saddles</span></a><a href="./36#PT2" title="In Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title">Properties</span></a><a href="./36.5" title="In Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">36.5 </span>Stokes Sets</span></a><a href="./36.7" title="In Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">36.7 </span>Zeros</span></a>
+</div>
+<div class="ltx_page_content">
+<section class="ltx_section ltx_authors_multiline ltx_leqno">
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">§36.6 </span>Scaling Relations</h1>
+<div id="info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=Pearcey%20integral">Pearcey integral</a>, <a class="ltx_keyword" href="./search/search?q=diffraction%20catastrophes">diffraction catastrophes</a>, <a class="ltx_keyword" href="./search/search?q=elliptic%20umbilic%20canonical%20integral">elliptic umbilic canonical integral</a>, <a class="ltx_keyword" href="./search/search?q=for%20diffraction%20catastrophes">for diffraction catastrophes</a>, <a class="ltx_keyword" href="./search/search?q=hyperbolic%20umbilic%20canonical%20integral">hyperbolic umbilic canonical integral</a>, <a class="ltx_keyword" href="./search/search?q=scaling%20laws">scaling laws</a>, <a class="ltx_keyword" href="./search/search?q=swallowtail%20canonical%20integral">swallowtail canonical integral</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./36.6" title="" class="ltx_ref">http://dlmf.nist.gov/36.6</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./36#info" title="Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.36</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<section id="Px1" class="ltx_paragraph">
+<h2 class="ltx_title ltx_title_paragraph">Diffraction Catastrophe Scaling</h2>
+<div id="Px1.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./36.6#info" title="§36.6 Scaling Relations ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.6</span></a> and
+<a href="./36#info" title="Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.36</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="Px1.p1" class="ltx_para">
+<table id="E1" class="ltx_equationgroup ltx_eqn_table">
+<tbody>
+<tr id="Ex1" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="2" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equationgroup ltx_align_left">36.6.1</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m13.png" altimg-height="27px" altimg-valign="-7px" altimg-width="88px" alttext="\displaystyle\Psi_{K}(\mathbf{x};k)" display="inline"><mrow><msub><mi href="./36.2#E10" mathvariant="normal" title="diffraction catastrophe">Ψ</mi><mi href="./36.1#t1.r3" title="codimension">K</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>𝐱</mi><mo>;</mo><mi href="./36.1#t1.r2" title="variable">k</mi><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m11.png" altimg-height="40px" altimg-valign="-7px" altimg-width="171px" alttext="\displaystyle=k^{\beta_{K}}\Psi_{K}\left(\mathbf{y}(k)\right)," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><msup><mi href="./36.1#t1.r2" title="variable">k</mi><msub><mi>β</mi><mi href="./36.1#t1.r3" title="codimension">K</mi></msub></msup><mo>⁢</mo><mrow><msub><mi href="./36.2#E4" mathvariant="normal" title="canonical integral function">Ψ</mi><mi href="./36.1#t1.r3" title="codimension">K</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mrow><mi>𝐲</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi href="./36.1#t1.r2" title="variable">k</mi><mo stretchy="false">)</mo></mrow></mrow><mo>)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex2" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m12.png" altimg-height="31px" altimg-valign="-7px" altimg-width="98px" alttext="\displaystyle\Psi^{(\mathrm{U})}(\mathbf{x};k)" display="inline"><mrow><msup><mi href="./36.2#E11" mathvariant="normal" title="umbilic canonical integral function">Ψ</mi><mrow><mo href="./36.2#E11" stretchy="false" title="umbilic canonical integral function">(</mo><mi href="./36.2#E11" mathvariant="normal" title="umbilic canonical integral function">U</mi><mo href="./36.2#E11" stretchy="false" title="umbilic canonical integral function">)</mo></mrow></msup><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>𝐱</mi><mo>;</mo><mi href="./36.1#t1.r2" title="variable">k</mi><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m10.png" altimg-height="49px" altimg-valign="-15px" altimg-width="226px" alttext="\displaystyle=k^{\beta^{(\mathrm{U})}}\Psi^{(\mathrm{U})}\left(\mathbf{y}^{(%
+\mathrm{U})}(k)\right)," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><msup><mi href="./36.1#t1.r2" title="variable">k</mi><msup><mi>β</mi><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">U</mi><mo stretchy="false">)</mo></mrow></msup></msup><mo>⁢</mo><mrow><msup><mi href="./36.2#E5" mathvariant="normal" title="umbilic canonical integral function">Ψ</mi><mrow><mo href="./36.2#E5" stretchy="false" title="umbilic canonical integral function">(</mo><mi href="./36.2#E5" mathvariant="normal" title="umbilic canonical integral function">U</mi><mo href="./36.2#E5" stretchy="false" title="umbilic canonical integral function">)</mo></mrow></msup><mo>⁡</mo><mrow><mo>(</mo><mrow><msup><mi>𝐲</mi><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">U</mi><mo stretchy="false">)</mo></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi href="./36.1#t1.r2" title="variable">k</mi><mo stretchy="false">)</mo></mrow></mrow><mo>)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E1.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./36.2#E4" title="(36.2.4) ‣ Canonical Integrals ‣ §36.2(i) Definitions ‣ §36.2 Catastrophes and Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m31.png" altimg-height="25px" altimg-valign="-7px" altimg-width="69px" alttext="\Psi_{\NVar{K}}\left(\NVar{\mathbf{x}}\right)" display="inline"><mrow><msub><mi href="./36.2#E4" mathvariant="normal" title="canonical integral function">Ψ</mi><mi class="ltx_nvar" href="./36.1#t1.r3" title="codimension">K</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">𝐱</mi><mo>)</mo></mrow></mrow></math>: canonical integral function</a>,
+<a href="./36.2#E10" title="(36.2.10) ‣ Diffraction Catastrophes ‣ §36.2(i) Definitions ‣ §36.2 Catastrophes and Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m30.png" altimg-height="25px" altimg-valign="-7px" altimg-width="86px" alttext="\Psi_{\NVar{K}}(\NVar{\mathbf{x}};k)" display="inline"><mrow><msub><mi href="./36.2#E10" mathvariant="normal" title="diffraction catastrophe">Ψ</mi><mi class="ltx_nvar" href="./36.1#t1.r3" title="codimension">K</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi class="ltx_nvar">𝐱</mi><mo>;</mo><mi href="./36.1#t1.r2" title="variable">k</mi><mo stretchy="false">)</mo></mrow></mrow></math>: diffraction catastrophe</a>,
+<a href="./36.2#E11" title="(36.2.11) ‣ Diffraction Catastrophes ‣ §36.2(i) Definitions ‣ §36.2 Catastrophes and Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m26.png" altimg-height="28px" altimg-valign="-7px" altimg-width="96px" alttext="\Psi^{(\mathrm{U})}(\NVar{\mathbf{x}};\NVar{k})" display="inline"><mrow><msup><mi href="./36.2#E11" mathvariant="normal" title="umbilic canonical integral function">Ψ</mi><mrow><mo href="./36.2#E11" stretchy="false" title="umbilic canonical integral function">(</mo><mi href="./36.2#E11" mathvariant="normal" title="umbilic canonical integral function">U</mi><mo href="./36.2#E11" stretchy="false" title="umbilic canonical integral function">)</mo></mrow></msup><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi class="ltx_nvar">𝐱</mi><mo>;</mo><mi class="ltx_nvar" href="./36.1#t1.r2" title="variable">k</mi><mo stretchy="false">)</mo></mrow></mrow></math>: umbilic canonical integral function</a>,
+<a href="./36.2#E5" title="(36.2.5) ‣ Canonical Integrals ‣ §36.2(i) Definitions ‣ §36.2 Catastrophes and Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m28.png" altimg-height="28px" altimg-valign="-7px" altimg-width="79px" alttext="\Psi^{(\mathrm{U})}\left(\NVar{\mathbf{x}}\right)" display="inline"><mrow><msup><mi href="./36.2#E5" mathvariant="normal" title="umbilic canonical integral function">Ψ</mi><mrow><mo href="./36.2#E5" stretchy="false" title="umbilic canonical integral function">(</mo><mi href="./36.2#E5" mathvariant="normal" title="umbilic canonical integral function">U</mi><mo href="./36.2#E5" stretchy="false" title="umbilic canonical integral function">)</mo></mrow></msup><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">𝐱</mi><mo>)</mo></mrow></mrow></math>: umbilic canonical integral function</a>,
+<a href="./36.1#t1.r2" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m49.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./36.1#t1.r2" title="variable">k</mi></math>:  variable</a> and
+<a href="./36.1#t1.r3" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m25.png" altimg-height="18px" altimg-valign="-2px" altimg-width="23px" alttext="K" display="inline"><mi href="./36.1#t1.r3" title="codimension">K</mi></math>:  codimension</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./36.6.E1" title="" class="ltx_ref">http://dlmf.nist.gov/36.6.E1</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./36.6.E1a.tex">TeX</a>, <a href="./36.6.E1b.tex">TeX</a>, <a href="./36.6.E1a.pmml">pMML</a>, <a href="./36.6.E1b.pmml">pMML</a>, <a href="./36.6.E1a.png">png</a>, <a href="./36.6.E1b.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./36.6#Px1.info" title="Diffraction Catastrophe Scaling ‣ §36.6 Scaling Relations ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.6</span></a>,
+<a href="./36.6#info" title="§36.6 Scaling Relations ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.6</span></a> and
+<a href="./36#info" title="Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.36</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">where</p>
+<table id="E2" class="ltx_equationgroup ltx_eqn_table">
+<tbody>
+<tr id="Ex3" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="2" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equationgroup ltx_align_left">36.6.2</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m19.png" altimg-height="27px" altimg-valign="-7px" altimg-width="139px" alttext="\displaystyle\text{cuspoids: }\mathbf{y}(k)" display="inline"><mrow><mtext>cuspoids: </mtext><mo>⁢</mo><mi>𝐲</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi href="./36.1#t1.r2" title="variable">k</mi><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m4.png" altimg-height="40px" altimg-valign="-7px" altimg-width="316px" alttext="\displaystyle=\left(x_{1}k^{\gamma_{1K}},x_{2}k^{\gamma_{2K}},\dots,x_{K}k^{%
+\gamma_{KK}}\right)," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mo>(</mo><mrow><msub><mi href="./36.1#t1.r4" title="real parameter">x</mi><mn>1</mn></msub><mo>⁢</mo><msup><mi href="./36.1#t1.r2" title="variable">k</mi><msub><mi>γ</mi><mrow><mn>1</mn><mo>⁢</mo><mi href="./36.1#t1.r3" title="codimension">K</mi></mrow></msub></msup></mrow><mo>,</mo><mrow><msub><mi href="./36.1#t1.r4" title="real parameter">x</mi><mn>2</mn></msub><mo>⁢</mo><msup><mi href="./36.1#t1.r2" title="variable">k</mi><msub><mi>γ</mi><mrow><mn>2</mn><mo>⁢</mo><mi href="./36.1#t1.r3" title="codimension">K</mi></mrow></msub></msup></mrow><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mrow><msub><mi href="./36.1#t1.r4" title="real parameter">x</mi><mi href="./36.1#t1.r3" title="codimension">K</mi></msub><mo>⁢</mo><msup><mi href="./36.1#t1.r2" title="variable">k</mi><msub><mi>γ</mi><mrow><mi href="./36.1#t1.r3" title="codimension">K</mi><mo>⁢</mo><mi href="./36.1#t1.r3" title="codimension">K</mi></mrow></msub></msup></mrow><mo>)</mo></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex4" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m23.png" altimg-height="31px" altimg-valign="-7px" altimg-width="163px" alttext="\displaystyle\text{umbilics: }\mathbf{y}^{(\mathrm{U})}(k)" display="inline"><mrow><mtext>umbilics: </mtext><mo>⁢</mo><msup><mi>𝐲</mi><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">U</mi><mo stretchy="false">)</mo></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi href="./36.1#t1.r2" title="variable">k</mi><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m5.png" altimg-height="49px" altimg-valign="-15px" altimg-width="233px" alttext="\displaystyle=\left(xk^{2/3},yk^{2/3},zk^{1/3}\right)." display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mo>(</mo><mrow><mi href="./36.1#t1.r4" title="real parameter">x</mi><mo>⁢</mo><msup><mi href="./36.1#t1.r2" title="variable">k</mi><mrow><mn>2</mn><mo>/</mo><mn>3</mn></mrow></msup></mrow><mo>,</mo><mrow><mi href="./36.1#t1.r4" title="real parameter">y</mi><mo>⁢</mo><msup><mi href="./36.1#t1.r2" title="variable">k</mi><mrow><mn>2</mn><mo>/</mo><mn>3</mn></mrow></msup></mrow><mo>,</mo><mrow><mi href="./36.1#t1.r4" title="real parameter">z</mi><mo>⁢</mo><msup><mi href="./36.1#t1.r2" title="variable">k</mi><mrow><mn>1</mn><mo>/</mo><mn>3</mn></mrow></msup></mrow><mo>)</mo></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E2.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./36.1#t1.r4" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m54.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="y" display="inline"><mi href="./36.1#t1.r4" title="real parameter">y</mi></math>:  real parameter</a>,
+<a href="./36.1#t1.r4" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m55.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi href="./36.1#t1.r4" title="real parameter">z</mi></math>:  real parameter</a>,
+<a href="./36.1#t1.r2" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m49.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./36.1#t1.r2" title="variable">k</mi></math>:  variable</a>,
+<a href="./36.1#t1.r3" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m25.png" altimg-height="18px" altimg-valign="-2px" altimg-width="23px" alttext="K" display="inline"><mi href="./36.1#t1.r3" title="codimension">K</mi></math>:  codimension</a>,
+<a href="./36.1#t1.r4" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m52.png" altimg-height="16px" altimg-valign="-5px" altimg-width="23px" alttext="x_{i}" display="inline"><msub><mi href="./36.1#t1.r4" title="real parameter">x</mi><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></msub></math>:  real parameter</a> and
+<a href="./36.1#t1.r4" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m51.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./36.1#t1.r4" title="real parameter">x</mi></math>:  real parameter</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./36.6.E2" title="" class="ltx_ref">http://dlmf.nist.gov/36.6.E2</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./36.6.E2a.tex">TeX</a>, <a href="./36.6.E2b.tex">TeX</a>, <a href="./36.6.E2a.pmml">pMML</a>, <a href="./36.6.E2b.pmml">pMML</a>, <a href="./36.6.E2a.png">png</a>, <a href="./36.6.E2b.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./36.6#Px1.info" title="Diffraction Catastrophe Scaling ‣ §36.6 Scaling Relations ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.6</span></a>,
+<a href="./36.6#info" title="§36.6 Scaling Relations ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.6</span></a> and
+<a href="./36#info" title="Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.36</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="Px2" class="ltx_paragraph">
+<h2 class="ltx_title ltx_title_paragraph">Indices for <math class="ltx_Math" altimg="m49.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./36.1#t1.r2" title="variable">k</mi></math>-Scaling of Magnitude of <math class="ltx_Math" altimg="m29.png" altimg-height="21px" altimg-valign="-5px" altimg-width="36px" alttext="\Psi_{K}" display="inline"><msub><mi href="./36.2#E4" mathvariant="normal" title="canonical integral function">Ψ</mi><mi href="./36.1#t1.r3" title="codimension">K</mi></msub></math> or
+<math class="ltx_Math" altimg="m27.png" altimg-height="23px" altimg-valign="-2px" altimg-width="47px" alttext="\Psi^{(\mathrm{U})}" display="inline"><msup><mi href="./36.2#E5" mathvariant="normal" title="umbilic canonical integral function">Ψ</mi><mrow><mo href="./36.2#E5" stretchy="false" title="umbilic canonical integral function">(</mo><mi href="./36.2#E5" mathvariant="normal" title="umbilic canonical integral function">U</mi><mo href="./36.2#E5" stretchy="false" title="umbilic canonical integral function">)</mo></mrow></msup></math> (Singularity Index)</h2>
+<div id="Px2.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./36.6#info" title="§36.6 Scaling Relations ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.6</span></a> and
+<a href="./36#info" title="Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.36</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="Px2.p1" class="ltx_para">
+<table id="E3" class="ltx_equationgroup ltx_eqn_table">
+<tbody>
+<tr id="Ex5" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="2" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equationgroup ltx_align_left">36.6.3</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m16.png" altimg-height="24px" altimg-valign="-6px" altimg-width="126px" alttext="\displaystyle\text{cuspoids: }\beta_{K}" display="inline"><mrow><mtext>cuspoids: </mtext><mo>⁢</mo><msub><mi>β</mi><mi href="./36.1#t1.r3" title="codimension">K</mi></msub></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m2.png" altimg-height="54px" altimg-valign="-21px" altimg-width="121px" alttext="\displaystyle=\dfrac{K}{2(K+2)}," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mstyle displaystyle="true"><mfrac><mi href="./36.1#t1.r3" title="codimension">K</mi><mrow><mn>2</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi href="./36.1#t1.r3" title="codimension">K</mi><mo>+</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mfrac></mstyle></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex6" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m20.png" altimg-height="30px" altimg-valign="-6px" altimg-width="135px" alttext="\displaystyle\text{umbilics: }\beta^{(\mathrm{U})}" display="inline"><mrow><mtext>umbilics: </mtext><mo>⁢</mo><msup><mi>β</mi><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">U</mi><mo stretchy="false">)</mo></mrow></msup></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m3.png" altimg-height="48px" altimg-valign="-16px" altimg-width="50px" alttext="\displaystyle=\frac{1}{3}." display="inline"><mrow><mrow><mi></mi><mo>=</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>3</mn></mfrac></mstyle></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E3.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd><a href="./36.1#t1.r3" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m25.png" altimg-height="18px" altimg-valign="-2px" altimg-width="23px" alttext="K" display="inline"><mi href="./36.1#t1.r3" title="codimension">K</mi></math>:  codimension</a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./36.6.E3" title="" class="ltx_ref">http://dlmf.nist.gov/36.6.E3</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./36.6.E3a.tex">TeX</a>, <a href="./36.6.E3b.tex">TeX</a>, <a href="./36.6.E3a.pmml">pMML</a>, <a href="./36.6.E3b.pmml">pMML</a>, <a href="./36.6.E3a.png">png</a>, <a href="./36.6.E3b.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./36.6#Px2.info" title="Indices for 𝑘-Scaling of Magnitude of Ψ_𝐾 or Ψ⁽ᵁ⁾ (Singularity Index) ‣ §36.6 Scaling Relations ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.6</span></a>,
+<a href="./36.6#info" title="§36.6 Scaling Relations ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.6</span></a> and
+<a href="./36#info" title="Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.36</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="Px3" class="ltx_paragraph">
+<h2 class="ltx_title ltx_title_paragraph">Indices for <math class="ltx_Math" altimg="m49.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./36.1#t1.r2" title="variable">k</mi></math>-Scaling of Coordinates <math class="ltx_Math" altimg="m53.png" altimg-height="16px" altimg-valign="-5px" altimg-width="32px" alttext="x_{m}" display="inline"><msub><mi href="./36.1#t1.r4" title="real parameter">x</mi><mi href="./36.1#t1.r1" title="integer">m</mi></msub></math>
+</h2>
+<div id="Px3.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./36.6#info" title="§36.6 Scaling Relations ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.6</span></a> and
+<a href="./36#info" title="Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.36</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="Px3.p1" class="ltx_para">
+<table id="E4" class="ltx_equationgroup ltx_eqn_table">
+<tbody>
+<tr id="Ex7" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="4" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equationgroup ltx_align_left">36.6.4</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m18.png" altimg-height="24px" altimg-valign="-6px" altimg-width="140px" alttext="\displaystyle\text{cuspoids: }\gamma_{mK}" display="inline"><mrow><mtext>cuspoids: </mtext><mo>⁢</mo><msub><mi>γ</mi><mrow><mi href="./36.1#t1.r1" title="integer">m</mi><mo>⁢</mo><mi href="./36.1#t1.r3" title="codimension">K</mi></mrow></msub></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m1.png" altimg-height="45px" altimg-valign="-18px" altimg-width="130px" alttext="\displaystyle=1-\dfrac{m}{K+2}," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mn>1</mn><mo>−</mo><mstyle displaystyle="true"><mfrac><mi href="./36.1#t1.r1" title="integer">m</mi><mrow><mi href="./36.1#t1.r3" title="codimension">K</mi><mo>+</mo><mn>2</mn></mrow></mfrac></mstyle></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex8" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m22.png" altimg-height="31px" altimg-valign="-7px" altimg-width="134px" alttext="\displaystyle\text{umbilics: }\gamma_{x}^{(\mathrm{U})}" display="inline"><mrow><mtext>umbilics: </mtext><mo>⁢</mo><msubsup><mi>γ</mi><mi href="./36.1#t1.r4" title="real parameter">x</mi><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">U</mi><mo stretchy="false">)</mo></mrow></msubsup></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m9.png" altimg-height="31px" altimg-valign="-9px" altimg-width="48px" alttext="\displaystyle=\tfrac{2}{3}," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mfrac><mn>2</mn><mn>3</mn></mfrac></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex9" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m14.png" altimg-height="34px" altimg-valign="-10px" altimg-width="45px" alttext="\displaystyle\gamma_{y}^{(\mathrm{U})}" display="inline"><msubsup><mi>γ</mi><mi href="./36.1#t1.r4" title="real parameter">y</mi><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">U</mi><mo stretchy="false">)</mo></mrow></msubsup></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m9.png" altimg-height="31px" altimg-valign="-9px" altimg-width="48px" alttext="\displaystyle=\tfrac{2}{3}," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mfrac><mn>2</mn><mn>3</mn></mfrac></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex10" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m15.png" altimg-height="31px" altimg-valign="-7px" altimg-width="45px" alttext="\displaystyle\gamma_{z}^{(\mathrm{U})}" display="inline"><msubsup><mi>γ</mi><mi href="./36.1#t1.r4" title="real parameter">z</mi><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">U</mi><mo stretchy="false">)</mo></mrow></msubsup></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m8.png" altimg-height="31px" altimg-valign="-9px" altimg-width="48px" alttext="\displaystyle=\tfrac{1}{3}." display="inline"><mrow><mrow><mi></mi><mo>=</mo><mfrac><mn>1</mn><mn>3</mn></mfrac></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E4.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./36.1#t1.r4" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m54.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="y" display="inline"><mi href="./36.1#t1.r4" title="real parameter">y</mi></math>:  real parameter</a>,
+<a href="./36.1#t1.r4" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m55.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi href="./36.1#t1.r4" title="real parameter">z</mi></math>:  real parameter</a>,
+<a href="./36.1#t1.r1" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m50.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./36.1#t1.r1" title="integer">n</mi></math>:  integer</a>,
+<a href="./36.1#t1.r3" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m25.png" altimg-height="18px" altimg-valign="-2px" altimg-width="23px" alttext="K" display="inline"><mi href="./36.1#t1.r3" title="codimension">K</mi></math>:  codimension</a> and
+<a href="./36.1#t1.r4" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m51.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./36.1#t1.r4" title="real parameter">x</mi></math>:  real parameter</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./36.6.E4" title="" class="ltx_ref">http://dlmf.nist.gov/36.6.E4</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./36.6.E4a.tex">TeX</a>, <a href="./36.6.E4b.tex">TeX</a>, <a href="./36.6.E4c.tex">TeX</a>, <a href="./36.6.E4d.tex">TeX</a>, <a href="./36.6.E4a.pmml">pMML</a>, <a href="./36.6.E4b.pmml">pMML</a>, <a href="./36.6.E4c.pmml">pMML</a>, <a href="./36.6.E4d.pmml">pMML</a>, <a href="./36.6.E4a.png">png</a>, <a href="./36.6.E4b.png">png</a>, <a href="./36.6.E4c.png">png</a>, <a href="./36.6.E4d.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./36.6#Px3.info" title="Indices for 𝑘-Scaling of Coordinates 𝑥_𝑚 ‣ §36.6 Scaling Relations ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.6</span></a>,
+<a href="./36.6#info" title="§36.6 Scaling Relations ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.6</span></a> and
+<a href="./36#info" title="Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.36</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="Px4" class="ltx_paragraph">
+<h2 class="ltx_title ltx_title_paragraph">Indices for <math class="ltx_Math" altimg="m49.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./36.1#t1.r2" title="variable">k</mi></math>-Scaling of <math class="ltx_Math" altimg="m48.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="\mathbf{x}" display="inline"><mi>𝐱</mi></math> Hypervolume</h2>
+<div id="Px4.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./36.6#info" title="§36.6 Scaling Relations ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.6</span></a> and
+<a href="./36#info" title="Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.36</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="Px4.p1" class="ltx_para">
+<table id="E5" class="ltx_equationgroup ltx_eqn_table">
+<tbody>
+<tr id="Ex11" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="2" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equationgroup ltx_align_left">36.6.5</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m17.png" altimg-height="24px" altimg-valign="-6px" altimg-width="125px" alttext="\displaystyle\text{cuspoids: }\gamma_{K}" display="inline"><mrow><mtext>cuspoids: </mtext><mo>⁢</mo><msub><mi>γ</mi><mi href="./36.1#t1.r3" title="codimension">K</mi></msub></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m7.png" altimg-height="71px" altimg-valign="-28px" altimg-width="238px" alttext="\displaystyle=\sum_{m=1}^{K}\gamma_{mK}=\dfrac{K(K+3)}{2(K+2)}," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi href="./36.1#t1.r1" title="integer">m</mi><mo>=</mo><mn>1</mn></mrow><mi href="./36.1#t1.r3" title="codimension">K</mi></munderover></mstyle><msub><mi>γ</mi><mrow><mi href="./36.1#t1.r1" title="integer">m</mi><mo>⁢</mo><mi href="./36.1#t1.r3" title="codimension">K</mi></mrow></msub></mrow><mo>=</mo><mstyle displaystyle="true"><mfrac><mrow><mi href="./36.1#t1.r3" title="codimension">K</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi href="./36.1#t1.r3" title="codimension">K</mi><mo>+</mo><mn>3</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mrow><mn>2</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi href="./36.1#t1.r3" title="codimension">K</mi><mo>+</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mfrac></mstyle></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex12" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m21.png" altimg-height="30px" altimg-valign="-6px" altimg-width="134px" alttext="\displaystyle\text{umbilics: }\gamma^{(\mathrm{U})}" display="inline"><mrow><mtext>umbilics: </mtext><mo>⁢</mo><msup><mi>γ</mi><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">U</mi><mo stretchy="false">)</mo></mrow></msup></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m6.png" altimg-height="70px" altimg-valign="-28px" altimg-width="153px" alttext="\displaystyle=\sum_{m=1}^{3}\gamma_{m}^{(\mathrm{U})}=\tfrac{5}{3}." display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi href="./36.1#t1.r1" title="integer">m</mi><mo>=</mo><mn>1</mn></mrow><mn>3</mn></munderover></mstyle><msubsup><mi>γ</mi><mi href="./36.1#t1.r1" title="integer">m</mi><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">U</mi><mo stretchy="false">)</mo></mrow></msubsup></mrow><mo>=</mo><mfrac><mn>5</mn><mn>3</mn></mfrac></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E5.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./36.1#t1.r1" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m50.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./36.1#t1.r1" title="integer">n</mi></math>:  integer</a> and
+<a href="./36.1#t1.r3" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m25.png" altimg-height="18px" altimg-valign="-2px" altimg-width="23px" alttext="K" display="inline"><mi href="./36.1#t1.r3" title="codimension">K</mi></math>:  codimension</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./36.6.E5" title="" class="ltx_ref">http://dlmf.nist.gov/36.6.E5</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./36.6.E5a.tex">TeX</a>, <a href="./36.6.E5b.tex">TeX</a>, <a href="./36.6.E5a.pmml">pMML</a>, <a href="./36.6.E5b.pmml">pMML</a>, <a href="./36.6.E5a.png">png</a>, <a href="./36.6.E5b.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./36.6#Px4.info" title="Indices for 𝑘-Scaling of 𝐱 Hypervolume ‣ §36.6 Scaling Relations ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.6</span></a>,
+<a href="./36.6#info" title="§36.6 Scaling Relations ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.6</span></a> and
+<a href="./36#info" title="Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.36</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+<figure id="T1" class="ltx_table">
+<figcaption class="ltx_caption"><span class="ltx_tag ltx_tag_table">Table 36.6.1: </span>Special cases of scaling exponents for cuspoids.
+
+</figcaption>
+<table id="T1.t1" class="ltx_tabular ltx_centering ltx_guessed_headers ltx_align_middle">
+<thead class="ltx_thead">
+<tr id="T1.t1.r1" class="ltx_tr">
+<th class="ltx_td ltx_align_center ltx_th ltx_th_column ltx_th_row ltx_border_tt" style="padding-top:1.5pt;padding-bottom:1.5pt;">singularity</th>
+<th class="ltx_td ltx_align_center ltx_th ltx_th_column ltx_border_tt" style="padding-top:1.5pt;padding-bottom:1.5pt;"><math class="ltx_Math" altimg="m25.png" altimg-height="18px" altimg-valign="-2px" altimg-width="23px" alttext="K" display="inline"><mi href="./36.1#t1.r3" title="codimension">K</mi></math></th>
+<th class="ltx_td ltx_align_center ltx_th ltx_th_column ltx_border_tt" style="padding-top:1.5pt;padding-bottom:1.5pt;"><math class="ltx_Math" altimg="m32.png" altimg-height="22px" altimg-valign="-6px" altimg-width="32px" alttext="\beta_{K}" display="inline"><msub><mi>β</mi><mi href="./36.1#t1.r3" title="codimension">K</mi></msub></math></th>
+<th class="ltx_td ltx_align_center ltx_th ltx_th_column ltx_border_tt" style="padding-top:1.5pt;padding-bottom:1.5pt;"><math class="ltx_Math" altimg="m44.png" altimg-height="17px" altimg-valign="-6px" altimg-width="39px" alttext="\gamma_{1K}" display="inline"><msub><mi>γ</mi><mrow><mn>1</mn><mo>⁢</mo><mi href="./36.1#t1.r3" title="codimension">K</mi></mrow></msub></math></th>
+<th class="ltx_td ltx_align_center ltx_th ltx_th_column ltx_border_tt" style="padding-top:1.5pt;padding-bottom:1.5pt;"><math class="ltx_Math" altimg="m45.png" altimg-height="17px" altimg-valign="-6px" altimg-width="39px" alttext="\gamma_{2K}" display="inline"><msub><mi>γ</mi><mrow><mn>2</mn><mo>⁢</mo><mi href="./36.1#t1.r3" title="codimension">K</mi></mrow></msub></math></th>
+<th class="ltx_td ltx_align_center ltx_th ltx_th_column ltx_border_tt" style="padding-top:1.5pt;padding-bottom:1.5pt;"><math class="ltx_Math" altimg="m46.png" altimg-height="17px" altimg-valign="-6px" altimg-width="39px" alttext="\gamma_{3K}" display="inline"><msub><mi>γ</mi><mrow><mn>3</mn><mo>⁢</mo><mi href="./36.1#t1.r3" title="codimension">K</mi></mrow></msub></math></th>
+<th class="ltx_td ltx_align_center ltx_th ltx_th_column ltx_border_tt" style="padding-top:1.5pt;padding-bottom:1.5pt;"><math class="ltx_Math" altimg="m47.png" altimg-height="17px" altimg-valign="-6px" altimg-width="31px" alttext="\gamma_{K}" display="inline"><msub><mi>γ</mi><mi href="./36.1#t1.r3" title="codimension">K</mi></msub></math></th>
+</tr>
+</thead>
+<tbody class="ltx_tbody">
+<tr id="T1.t1.r2" class="ltx_tr">
+<th class="ltx_td ltx_align_center ltx_th ltx_th_row ltx_border_t" style="padding-top:1.5pt;padding-bottom:1.5pt;">fold</th>
+<td class="ltx_td ltx_align_center ltx_border_t" style="padding-top:1.5pt;padding-bottom:1.5pt;">1</td>
+<td class="ltx_td ltx_align_center ltx_border_t" style="padding-top:1.5pt;padding-bottom:1.5pt;"><math class="ltx_Math" altimg="m35.png" altimg-height="29px" altimg-valign="-9px" altimg-width="18px" alttext="\frac{1}{6}" display="inline"><mfrac><mn>1</mn><mn>6</mn></mfrac></math></td>
+<td class="ltx_td ltx_align_center ltx_border_t" style="padding-top:1.5pt;padding-bottom:1.5pt;"><math class="ltx_Math" altimg="m36.png" altimg-height="29px" altimg-valign="-9px" altimg-width="18px" alttext="\frac{2}{3}" display="inline"><mfrac><mn>2</mn><mn>3</mn></mfrac></math></td>
+<td class="ltx_td ltx_align_center ltx_border_t" style="padding-top:1.5pt;padding-bottom:1.5pt;"><math class="ltx_Math" altimg="m24.png" altimg-height="18px" altimg-valign="-4px" altimg-width="20px" alttext="-" display="inline"><mo>−</mo></math></td>
+<td class="ltx_td ltx_align_center ltx_border_t" style="padding-top:1.5pt;padding-bottom:1.5pt;"><math class="ltx_Math" altimg="m24.png" altimg-height="18px" altimg-valign="-4px" altimg-width="20px" alttext="-" display="inline"><mo>−</mo></math></td>
+<td class="ltx_td ltx_align_center ltx_border_t" style="padding-top:1.5pt;padding-bottom:1.5pt;"><math class="ltx_Math" altimg="m36.png" altimg-height="29px" altimg-valign="-9px" altimg-width="18px" alttext="\frac{2}{3}" display="inline"><mfrac><mn>2</mn><mn>3</mn></mfrac></math></td>
+</tr>
+<tr id="T1.t1.r3" class="ltx_tr">
+<th class="ltx_td ltx_align_center ltx_th ltx_th_row" style="padding-top:1.5pt;padding-bottom:1.5pt;">cusp</th>
+<td class="ltx_td ltx_align_center" style="padding-top:1.5pt;padding-bottom:1.5pt;">2</td>
+<td class="ltx_td ltx_align_center" style="padding-top:1.5pt;padding-bottom:1.5pt;"><math class="ltx_Math" altimg="m34.png" altimg-height="29px" altimg-valign="-9px" altimg-width="18px" alttext="\frac{1}{4}" display="inline"><mfrac><mn>1</mn><mn>4</mn></mfrac></math></td>
+<td class="ltx_td ltx_align_center" style="padding-top:1.5pt;padding-bottom:1.5pt;"><math class="ltx_Math" altimg="m39.png" altimg-height="29px" altimg-valign="-9px" altimg-width="18px" alttext="\frac{3}{4}" display="inline"><mfrac><mn>3</mn><mn>4</mn></mfrac></math></td>
+<td class="ltx_td ltx_align_center" style="padding-top:1.5pt;padding-bottom:1.5pt;"><math class="ltx_Math" altimg="m33.png" altimg-height="29px" altimg-valign="-9px" altimg-width="18px" alttext="\frac{1}{2}" display="inline"><mfrac><mn>1</mn><mn>2</mn></mfrac></math></td>
+<td class="ltx_td ltx_align_center" style="padding-top:1.5pt;padding-bottom:1.5pt;"><math class="ltx_Math" altimg="m24.png" altimg-height="18px" altimg-valign="-4px" altimg-width="20px" alttext="-" display="inline"><mo>−</mo></math></td>
+<td class="ltx_td ltx_align_center" style="padding-top:1.5pt;padding-bottom:1.5pt;"><math class="ltx_Math" altimg="m42.png" altimg-height="29px" altimg-valign="-9px" altimg-width="18px" alttext="\frac{5}{4}" display="inline"><mfrac><mn>5</mn><mn>4</mn></mfrac></math></td>
+</tr>
+<tr id="T1.t1.r4" class="ltx_tr">
+<th class="ltx_td ltx_align_center ltx_th ltx_th_row ltx_border_b" style="padding-top:1.5pt;padding-bottom:1.5pt;">swallowtail</th>
+<td class="ltx_td ltx_align_center ltx_border_b" style="padding-top:1.5pt;padding-bottom:1.5pt;">3</td>
+<td class="ltx_td ltx_align_center ltx_border_b" style="padding-top:1.5pt;padding-bottom:1.5pt;"><math class="ltx_Math" altimg="m38.png" altimg-height="29px" altimg-valign="-9px" altimg-width="26px" alttext="\frac{3}{10}" display="inline"><mfrac><mn>3</mn><mn>10</mn></mfrac></math></td>
+<td class="ltx_td ltx_align_center ltx_border_b" style="padding-top:1.5pt;padding-bottom:1.5pt;"><math class="ltx_Math" altimg="m41.png" altimg-height="29px" altimg-valign="-9px" altimg-width="18px" alttext="\frac{4}{5}" display="inline"><mfrac><mn>4</mn><mn>5</mn></mfrac></math></td>
+<td class="ltx_td ltx_align_center ltx_border_b" style="padding-top:1.5pt;padding-bottom:1.5pt;"><math class="ltx_Math" altimg="m40.png" altimg-height="29px" altimg-valign="-9px" altimg-width="18px" alttext="\frac{3}{5}" display="inline"><mfrac><mn>3</mn><mn>5</mn></mfrac></math></td>
+<td class="ltx_td ltx_align_center ltx_border_b" style="padding-top:1.5pt;padding-bottom:1.5pt;"><math class="ltx_Math" altimg="m37.png" altimg-height="29px" altimg-valign="-9px" altimg-width="18px" alttext="\frac{2}{5}" display="inline"><mfrac><mn>2</mn><mn>5</mn></mfrac></math></td>
+<td class="ltx_td ltx_align_center ltx_border_b" style="padding-top:1.5pt;padding-bottom:1.5pt;"><math class="ltx_Math" altimg="m43.png" altimg-height="29px" altimg-valign="-9px" altimg-width="18px" alttext="\frac{9}{5}" display="inline"><mfrac><mn>9</mn><mn>5</mn></mfrac></math></td>
+</tr>
+</tbody>
+</table>
+<div id="T1.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd><a href="./36.1#t1.r3" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m25.png" altimg-height="18px" altimg-valign="-2px" altimg-width="23px" alttext="K" display="inline"><mi href="./36.1#t1.r3" title="codimension">K</mi></math>:  codimension</a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./36.6.T1" title="" class="ltx_ref">http://dlmf.nist.gov/36.6.T1</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./36.6#Px4.info" title="Indices for 𝑘-Scaling of 𝐱 Hypervolume ‣ §36.6 Scaling Relations ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.6</span></a>,
+<a href="./36.6#info" title="§36.6 Scaling Relations ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.6</span></a> and
+<a href="./36#info" title="Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.36</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+<div id="Px4.p2" class="ltx_para">
+<p class="ltx_p">For the results in this section and more extensive lists of exponents see
+<cite class="ltx_cite ltx_citemacro_citet">Berry (<a href="./bib/B#bib252" title="Focusing and twinkling: Critical exponents from catastrophes in non-Gaussian random short waves" class="ltx_ref">1977</a>)</cite> and <cite class="ltx_cite ltx_citemacro_citet">Varčenko (<a href="./bib/V#bib2321" title="Newton polyhedra and estimates of oscillatory integrals" class="ltx_ref">1976</a>)</cite>.</p>
+</div>
+</section>
+</section>
+</div>
+<div class="ltx_page_footer">
+<div class="ltx_siblings">
+<a href="./36.5" title="In Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">36.5 </span>Stokes Sets</span></a><a href="./36.7" title="In Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">36.7 </span>Zeros</span></a>
+</div>
+<div class="ltx_footer_links ltx_centering">
+<a href="./about/notices">© 2010–2026 NIST</a> / <a href="./about/notices#S2">Disclaimer</a> / <a href="/cdn-cgi/l/email-protection#5a1e16171c773c3f3f3e383b39311a3433292e743d352c">Feedback</a>;
+ Version 1.2.7;
+Release date 2026-06-15.</div>
+<span id="pagesettings"></span>
+<div class="ltx_nist_logo"><a href="http://www.nist.gov/"><img src="./style/nistidc.png" width="500" alt="NIST"></a></div>
+<div class="ltx_nist_links ltx_align_right">
+<a href="https://www.nist.gov/privacy-policy">Site Privacy</a> <a href="https://www.nist.gov/oism/accessibility">Accessibility</a> <a href="https://www.nist.gov/privacy">Privacy Program</a> <a href="https://www.nist.gov/oism/copyrights">Copyrights</a> <a href="https://www.commerce.gov/vulnerability-disclosure-policy">Vulnerability Disclosure</a> <a href="https://www.nist.gov/no-fear-act-policy">No Fear Act Policy</a> <a href="https://www.nist.gov/foia">FOIA</a> <a href="https://www.nist.gov/environmental-policy-statement">Environmental Policy</a> <a href="https://www.nist.gov/summary-report-scientific-integrity">Scientific Integrity</a> <a href="https://www.nist.gov/nist-information-quality-standards">Information Quality Standards</a> <a href="https://www.commerce.gov/">Commerce.gov</a> <a href="http://www.science.gov/">Science.gov</a> <a href="http://www.usa.gov/">USA.gov</a>
+</div>
+</div>
+</div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"9ef5b487afff42a68917b2d63593a474"}' crossorigin="anonymous"></script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a30dbf6d5f2086ba',t:'MTc4NzY5Mzk0OQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

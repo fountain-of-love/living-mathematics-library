@@ -1,0 +1,361 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>DLMF: §8.26 Tables ‣ Computation ‣ Chapter 8 Incomplete Gamma and Related Functions</title>
+<link rel="shortcut icon" href="./style/DLMF-16.png" type="image/png">
+<script type="text/javascript"><!--
+	var PATH="DLMF:/8.26";
+	var ROOT="./";
+      //--></script>
+<script type="text/javascript" src="./style/jquery.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/jquery.leaveNotice.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/DLMF.js"><!-- non-empty so ie6 will accept it --></script>
+<script async="" type="text/javascript" id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC&amp;subagency=NIST&amp;pua=UA-37115410-44&amp;yt=true&amp;exts=ppsx,pps,f90,sch,rtf,wrl,txz,m1v,xlsm,msi,xsd,f,tif,eps,mpg,xml,pl,xlt,c"><!-- non-empty so ie6 will accept it --></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-BZB64W4M0L"></script><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-BZB64W4M0L');
+      </script>
+<link rel="stylesheet" type="text/css" href="./style/LaTeXML.css">
+<link rel="stylesheet" type="text/css" href="./style/DLMF.css">
+<link rel="stylesheet" type="text/css" href="./style/print.css" media="print">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="top" href="./" title="DLMF">
+<link rel="copyright" href="./about/notices" title="Copyright">
+<link rel="search" href="./search/search" title="Search">
+<link rel="help" class="ltx_help" href="./help/" title="Help">
+<link rel="up" href="./8#PT5" title="Computation ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="up up" href="./8" title="Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="start" href="./" title="">
+<link rel="prev" href="./8.25" title="§8.25 Methods of Computation ‣ Computation ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="next" href="./8.27" title="§8.27 Approximations ‣ Computation ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.1" title="§8.1 Special Notation ‣ Notation ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.2" title="§8.2 Definitions and Basic Properties ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.3" title="§8.3 Graphics ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.4" title="§8.4 Special Values ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.5" title="§8.5 Confluent Hypergeometric Representations ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.6" title="§8.6 Integral Representations ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.7" title="§8.7 Series Expansions ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.8" title="§8.8 Recurrence Relations and Derivatives ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.9" title="§8.9 Continued Fractions ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.10" title="§8.10 Inequalities ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.11" title="§8.11 Asymptotic Approximations and Expansions ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.12" title="§8.12 Uniform Asymptotic Expansions for Large Parameter ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.13" title="§8.13 Zeros ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.14" title="§8.14 Integrals ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.15" title="§8.15 Sums ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.16" title="§8.16 Generalizations ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.17" title="§8.17 Incomplete Beta Functions ‣ Related Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.18" title="§8.18 Asymptotic Expansions of 𝐼_𝑥(𝑎,𝑏) ‣ Related Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.19" title="§8.19 Generalized Exponential Integral ‣ Related Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.20" title="§8.20 Asymptotic Expansions of 𝐸_𝑝(𝑧) ‣ Related Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.21" title="§8.21 Generalized Sine and Cosine Integrals ‣ Related Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.22" title="§8.22 Mathematical Applications ‣ Applications ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.23" title="§8.23 Statistical Applications ‣ Applications ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.24" title="§8.24 Physical Applications ‣ Applications ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.25" title="§8.25 Methods of Computation ‣ Computation ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.27" title="§8.27 Approximations ‣ Computation ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.28" title="§8.28 Software ‣ Computation ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="document" href="./front/foreword" title="Foreword">
+<link rel="document" href="./front/preface" title="Preface">
+<link rel="document" href="./front/introduction" title="Mathematical Introduction">
+<link rel="chapter" href="./1" title="Chapter 1 Algebraic and Analytic Methods">
+<link rel="chapter" href="./2" title="Chapter 2 Asymptotic Approximations">
+<link rel="chapter" href="./3" title="Chapter 3 Numerical Methods">
+<link rel="chapter" href="./4" title="Chapter 4 Elementary Functions">
+<link rel="chapter" href="./5" title="Chapter 5 Gamma Function">
+<link rel="chapter" href="./6" title="Chapter 6 Exponential, Logarithmic, Sine, and Cosine Integrals">
+<link rel="chapter" href="./7" title="Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="chapter" href="./8" title="Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="chapter" href="./9" title="Chapter 9 Airy and Related Functions">
+<link rel="chapter" href="./10" title="Chapter 10 Bessel Functions">
+<link rel="chapter" href="./11" title="Chapter 11 Struve and Related Functions">
+<link rel="chapter" href="./12" title="Chapter 12 Parabolic Cylinder Functions">
+<link rel="chapter" href="./13" title="Chapter 13 Confluent Hypergeometric Functions">
+<link rel="chapter" href="./14" title="Chapter 14 Legendre and Related Functions">
+<link rel="chapter" href="./15" title="Chapter 15 Hypergeometric Function">
+<link rel="chapter" href="./16" title="Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="chapter" href="./17" title="Chapter 17 𝑞-Hypergeometric and Related Functions">
+<link rel="chapter" href="./18" title="Chapter 18 Orthogonal Polynomials">
+<link rel="chapter" href="./19" title="Chapter 19 Elliptic Integrals">
+<link rel="chapter" href="./20" title="Chapter 20 Theta Functions">
+<link rel="chapter" href="./21" title="Chapter 21 Multidimensional Theta Functions">
+<link rel="chapter" href="./22" title="Chapter 22 Jacobian Elliptic Functions">
+<link rel="chapter" href="./23" title="Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="chapter" href="./24" title="Chapter 24 Bernoulli and Euler Polynomials">
+<link rel="chapter" href="./25" title="Chapter 25 Zeta and Related Functions">
+<link rel="chapter" href="./26" title="Chapter 26 Combinatorial Analysis">
+<link rel="chapter" href="./27" title="Chapter 27 Functions of Number Theory">
+<link rel="chapter" href="./28" title="Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="chapter" href="./29" title="Chapter 29 Lamé Functions">
+<link rel="chapter" href="./30" title="Chapter 30 Spheroidal Wave Functions">
+<link rel="chapter" href="./31" title="Chapter 31 Heun Functions">
+<link rel="chapter" href="./32" title="Chapter 32 Painlevé Transcendents">
+<link rel="chapter" href="./33" title="Chapter 33 Coulomb Functions">
+<link rel="chapter" href="./34" title="Chapter 34 3⁢𝑗,6⁢𝑗,9⁢𝑗 Symbols">
+<link rel="chapter" href="./35" title="Chapter 35 Functions of Matrix Argument">
+<link rel="chapter" href="./36" title="Chapter 36 Integrals with Coalescing Saddles">
+<link rel="bibliography" href="./bib/" title="Bibliography">
+<link rel="index" href="./idx/" title="Index">
+<link rel="glossary" href="./not/" title="Notations">
+<link rel="document" href="./lof/" title="List of Figures">
+<link rel="document" href="./lot/" title="List of Tables">
+<link rel="document" href="./software/" title="Software Index">
+<link rel="document" href="./errata/" title="Errata">
+<link rel="document" href="./help/" title="Need Help?">
+<link rel="document" href="./search/" title="Advanced Search">
+<link rel="document" href="./about/" title="About the Project">
+<meta name="keywords" lang="en" content="generalized exponential integral, incomplete beta functions, incomplete gamma functions, tables">
+</head>
+<body class="color_default textfont_default titlefont_default fontsize_default navbar_default">
+<div class="ltx_page_navbar">
+<div class="ltx_page_navlogo"><a href="./" title="Digital Library of Mathematical Functions"><span>DLMF</span></a></div>
+<div class="ltx_page_navitems">
+<form method="get" action="./search/search">
+<ul>
+<li><a href="./idx/">Index</a></li>
+<li><a href="./not/">Notations</a></li>
+<li><small><input type="text" name="q" value="" size="6" class="ltx_page_navitem_search"><button type="submit">Search</button></small></li>
+<li><a href="./help/" class="ltx_help">Help?</a></li>
+<li><a href="./help/cite">Citing</a></li>
+<li><a href="./help/customize" class="ltx_customize">Customize</a></li>
+<li id="showinfo"><a href="" onclick="showInfo(); return false;" title="Show Annotations">Annotate</a></li>
+<li id="hideinfo"><a href="" onclick="hideInfo(); return false;">UnAnnotate</a></li>
+</ul>
+</form>
+</div>
+<div class="ltx_page_navsponsors">
+<div><a href="./about/" class="ltx_page_navabout">About the Project</a></div>
+</div>
+</div>
+<div class="ltx_page_main">
+<div class="ltx_page_header">
+<a href="./8" title="" class="ltx_ref" rel="up up"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">8 </span>Incomplete Gamma and Related <span class="ltx_text"> </span>Functions</span></a><a href="./8#PT5" title="In Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title">Computation</span></a><a href="./8.25" title="In Computation ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">8.25 </span>Methods of Computation</span></a><a href="./8.27" title="In Computation ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">8.27 </span>Approximations</span></a>
+</div>
+<div class="ltx_page_content">
+<section class="ltx_section ltx_authors_multiline ltx_leqno">
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">§8.26 </span>Tables</h1>
+<div id="info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Permalink:</dt>
+<dd><a href="./8.26" title="" class="ltx_ref">http://dlmf.nist.gov/8.26</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./8#info" title="Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.8</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<h6>Contents</h6>
+<ol class="ltx_toclist ltx_toclist_section">
+<li class="ltx_tocentry"><a href="#i"><span class="ltx_tag ltx_tag_subsection">§8.26(i) </span>Introduction</a></li>
+<li class="ltx_tocentry"><a href="#ii"><span class="ltx_tag ltx_tag_subsection">§8.26(ii) </span>Incomplete Gamma Functions</a></li>
+<li class="ltx_tocentry"><a href="#iii"><span class="ltx_tag ltx_tag_subsection">§8.26(iii) </span>Incomplete Beta Functions</a></li>
+<li class="ltx_tocentry"><a href="#iv"><span class="ltx_tag ltx_tag_subsection">§8.26(iv) </span>Generalized Exponential Integral</a></li>
+</ol>
+<section id="i" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§8.26(i) </span>Introduction</h2>
+<div id="i.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Permalink:</dt>
+<dd><a href="./8.26.i" title="" class="ltx_ref">http://dlmf.nist.gov/8.26.i</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./8.26#info" title="§8.26 Tables ‣ Computation ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§8.26</span></a> and
+<a href="./8#info" title="Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.8</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="i.p1" class="ltx_para">
+<p class="ltx_p">For tables published before 1961 see <cite class="ltx_cite ltx_citemacro_citet">Fletcher<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/F#bib810" title="An Index of Mathematical Tables. Vols. I, II" class="ltx_ref">1962</a>)</cite> and
+<cite class="ltx_cite ltx_citemacro_citet">Lebedev and Fedorova (<a href="./bib/L#bib1392" title="A Guide to Mathematical Tables" class="ltx_ref">1960</a>)</cite>.</p>
+</div>
+</section>
+<section id="ii" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§8.26(ii) </span>Incomplete Gamma Functions</h2>
+<div id="ii.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=incomplete%20gamma%20functions">incomplete gamma functions</a>, <a class="ltx_keyword" href="./search/search?q=tables">tables</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./8.26.ii" title="" class="ltx_ref">http://dlmf.nist.gov/8.26.ii</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./8.26#info" title="§8.26 Tables ‣ Computation ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§8.26</span></a> and
+<a href="./8#info" title="Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.8</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="ii.p1" class="ltx_para">
+<ul id="I1" class="ltx_itemize">
+<li id="I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="I1.i1.p1" class="ltx_para">
+<p class="ltx_p"><cite class="ltx_cite ltx_citemacro_citet">Khamis (<a href="./bib/K#bib1262" title="Tables of the Incomplete Gamma Function Ratio: The Chi-square Integral, the Poisson Distribution" class="ltx_ref">1965</a>)</cite> tabulates <math class="ltx_Math" altimg="m11.png" altimg-height="25px" altimg-valign="-7px" altimg-width="72px" alttext="P\left(a,x\right)" display="inline"><mrow><mi href="./8.2#E4" title="normalized incomplete gamma function">P</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>,</mo><mi href="./8.1#p1.t1.r1" title="real variable">x</mi><mo>)</mo></mrow></mrow></math> for
+<math class="ltx_Math" altimg="m16.png" altimg-height="25px" altimg-valign="-7px" altimg-width="260px" alttext="a=0.05(.05)10(.1)20(.25)70" display="inline"><mrow><mi href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>=</mo><mrow><mn>0.05</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>.05</mn><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mn>10</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>.1</mn><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mn>20</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>.25</mn><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mn>70</mn></mrow></mrow></math>, <math class="ltx_Math" altimg="m2.png" altimg-height="20px" altimg-valign="-5px" altimg-width="160px" alttext="0.0001\leq x\leq 250" display="inline"><mrow><mn>0.0001</mn><mo>≤</mo><mi href="./8.1#p1.t1.r1" title="real variable">x</mi><mo>≤</mo><mn>250</mn></mrow></math> to 10D.</p>
+</div>
+</li>
+<li id="I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="I1.i2.p1" class="ltx_para">
+<p class="ltx_p"><cite class="ltx_cite ltx_citemacro_citet">Pagurova (<a href="./bib/P#bib1825" title="Tablitsy nepolnoi gamma-funktsii" class="ltx_ref">1963</a>)</cite> tabulates <math class="ltx_Math" altimg="m11.png" altimg-height="25px" altimg-valign="-7px" altimg-width="72px" alttext="P\left(a,x\right)" display="inline"><mrow><mi href="./8.2#E4" title="normalized incomplete gamma function">P</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>,</mo><mi href="./8.1#p1.t1.r1" title="real variable">x</mi><mo>)</mo></mrow></mrow></math> and <math class="ltx_Math" altimg="m12.png" altimg-height="25px" altimg-valign="-7px" altimg-width="72px" alttext="Q\left(a,x\right)" display="inline"><mrow><mi href="./8.2#E4" title="normalized incomplete gamma function">Q</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>,</mo><mi href="./8.1#p1.t1.r1" title="real variable">x</mi><mo>)</mo></mrow></mrow></math> (with
+different notation) for <math class="ltx_Math" altimg="m15.png" altimg-height="25px" altimg-valign="-7px" altimg-width="106px" alttext="a=0(.05)3" display="inline"><mrow><mi href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>=</mo><mrow><mn>0</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>.05</mn><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mn>3</mn></mrow></mrow></math>, <math class="ltx_Math" altimg="m36.png" altimg-height="25px" altimg-valign="-7px" altimg-width="107px" alttext="x=0(.05)1" display="inline"><mrow><mi href="./8.1#p1.t1.r1" title="real variable">x</mi><mo>=</mo><mrow><mn>0</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>.05</mn><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mn>1</mn></mrow></mrow></math> to 7D.</p>
+</div>
+</li>
+<li id="I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="I1.i3.p1" class="ltx_para">
+<p class="ltx_p"><cite class="ltx_cite ltx_citemacro_citet">Pearson (<a href="./bib/P#bib1863" title="Tables of the Incomplete Γ -function" class="ltx_ref">1965</a>)</cite> tabulates the function <math class="ltx_Math" altimg="m8.png" altimg-height="25px" altimg-valign="-7px" altimg-width="63px" alttext="I(u,p)" display="inline"><mrow><mi>I</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>u</mi><mo>,</mo><mi href="./8.1#p1.t1.r3" title="parameter">p</mi><mo stretchy="false">)</mo></mrow></mrow></math> (<math class="ltx_Math" altimg="m4.png" altimg-height="25px" altimg-valign="-7px" altimg-width="129px" alttext="=P\left(p+1,u\right)" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mi href="./8.2#E4" title="normalized incomplete gamma function">P</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./8.1#p1.t1.r3" title="parameter">p</mi><mo>+</mo><mn>1</mn></mrow><mo>,</mo><mi>u</mi><mo>)</mo></mrow></mrow></mrow></math>)
+for <math class="ltx_Math" altimg="m29.png" altimg-height="25px" altimg-valign="-7px" altimg-width="218px" alttext="p=-1(.05)0(.1)5(.2)50" display="inline"><mrow><mi href="./8.1#p1.t1.r3" title="parameter">p</mi><mo>=</mo><mrow><mo>−</mo><mrow><mn>1</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>.05</mn><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mn>0</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>.1</mn><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mn>5</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>.2</mn><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mn>50</mn></mrow></mrow></mrow></math>, <math class="ltx_Math" altimg="m33.png" altimg-height="26px" altimg-valign="-8px" altimg-width="108px" alttext="u=0(.1)u_{p}" display="inline"><mrow><mi>u</mi><mo>=</mo><mrow><mn>0</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>.1</mn><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><mi>u</mi><mi href="./8.1#p1.t1.r3" title="parameter">p</mi></msub></mrow></mrow></math> to 7D, where <math class="ltx_Math" altimg="m9.png" altimg-height="26px" altimg-valign="-8px" altimg-width="74px" alttext="I(u,u_{p})" display="inline"><mrow><mi>I</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>u</mi><mo>,</mo><msub><mi>u</mi><mi href="./8.1#p1.t1.r3" title="parameter">p</mi></msub><mo stretchy="false">)</mo></mrow></mrow></math> rounds
+off to 1 to 7D; also <math class="ltx_Math" altimg="m8.png" altimg-height="25px" altimg-valign="-7px" altimg-width="63px" alttext="I(u,p)" display="inline"><mrow><mi>I</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>u</mi><mo>,</mo><mi href="./8.1#p1.t1.r3" title="parameter">p</mi><mo stretchy="false">)</mo></mrow></mrow></math> for <math class="ltx_Math" altimg="m28.png" altimg-height="25px" altimg-valign="-7px" altimg-width="174px" alttext="p=-0.75(.01)-1" display="inline"><mrow><mi href="./8.1#p1.t1.r3" title="parameter">p</mi><mo>=</mo><mrow><mrow><mo>−</mo><mrow><mn>0.75</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>.01</mn><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>−</mo><mn>1</mn></mrow></mrow></math>, <math class="ltx_Math" altimg="m32.png" altimg-height="25px" altimg-valign="-7px" altimg-width="97px" alttext="u=0(.1)6" display="inline"><mrow><mi>u</mi><mo>=</mo><mrow><mn>0</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>.1</mn><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mn>6</mn></mrow></mrow></math> to 5D.</p>
+</div>
+</li>
+<li id="I1.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="I1.i4.p1" class="ltx_para">
+<p class="ltx_p"><cite class="ltx_cite ltx_citemacro_citet">Zhang and Jin (<a href="./bib/Z#bib2493" title="Computation of Special Functions" class="ltx_ref">1996</a>, Table 3.8)</cite> tabulates <math class="ltx_Math" altimg="m13.png" altimg-height="25px" altimg-valign="-7px" altimg-width="68px" alttext="\gamma\left(a,x\right)" display="inline"><mrow><mi href="./8.2#E1" title="incomplete gamma function">γ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>,</mo><mi href="./8.1#p1.t1.r1" title="real variable">x</mi><mo>)</mo></mrow></mrow></math> for
+<math class="ltx_Math" altimg="m17.png" altimg-height="21px" altimg-valign="-6px" altimg-width="259px" alttext="a=0.5,1,3,5,10,25,50,100" display="inline"><mrow><mi href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>=</mo><mrow><mn>0.5</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>5</mn><mo>,</mo><mn>10</mn><mo>,</mo><mn>25</mn><mo>,</mo><mn>50</mn><mo>,</mo><mn>100</mn></mrow></mrow></math>, <math class="ltx_Math" altimg="m37.png" altimg-height="25px" altimg-valign="-7px" altimg-width="271px" alttext="x=0(.1)1(1)3,5(5)30,50,100" display="inline"><mrow><mi href="./8.1#p1.t1.r1" title="real variable">x</mi><mo>=</mo><mrow><mrow><mn>0</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>.1</mn><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mn>1</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mn>3</mn></mrow><mo>,</mo><mrow><mn>5</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>5</mn><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mn>30</mn></mrow><mo>,</mo><mn>50</mn><mo>,</mo><mn>100</mn></mrow></mrow></math> to 8D or 8S.</p>
+</div>
+</li>
+</ul>
+</div>
+</section>
+<section id="iii" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§8.26(iii) </span>Incomplete Beta Functions</h2>
+<div id="iii.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=incomplete%20beta%20functions">incomplete beta functions</a>, <a class="ltx_keyword" href="./search/search?q=tables">tables</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./8.26.iii" title="" class="ltx_ref">http://dlmf.nist.gov/8.26.iii</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./8.26#info" title="§8.26 Tables ‣ Computation ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§8.26</span></a> and
+<a href="./8#info" title="Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.8</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="iii.p1" class="ltx_para">
+<ul id="I2" class="ltx_itemize">
+<li id="I2.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="I2.i1.p1" class="ltx_para">
+<p class="ltx_p"><cite class="ltx_cite ltx_citemacro_citet">Pearson (<a href="./bib/P#bib1864" title="Tables of the Incomplete Beta-function" class="ltx_ref">1968</a>)</cite> tabulates <math class="ltx_Math" altimg="m10.png" altimg-height="25px" altimg-valign="-7px" altimg-width="73px" alttext="I_{x}\left(a,b\right)" display="inline"><mrow><msub><mi href="./8.17#E2" title="incomplete beta function">I</mi><mi href="./8.1#p1.t1.r1" title="real variable">x</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>,</mo><mi>b</mi><mo>)</mo></mrow></mrow></math> for <math class="ltx_Math" altimg="m39.png" altimg-height="25px" altimg-valign="-7px" altimg-width="134px" alttext="x=0.01(.01)1" display="inline"><mrow><mi href="./8.1#p1.t1.r1" title="real variable">x</mi><mo>=</mo><mrow><mn>0.01</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>.01</mn><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mn>1</mn></mrow></mrow></math>,
+<math class="ltx_Math" altimg="m14.png" altimg-height="25px" altimg-valign="-7px" altimg-width="188px" alttext="a,b=0.5(.5)11(1)50" display="inline"><mrow><mrow><mi href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>,</mo><mi>b</mi></mrow><mo>=</mo><mrow><mn>0.5</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>.5</mn><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mn>11</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mn>50</mn></mrow></mrow></math>, with <math class="ltx_Math" altimg="m20.png" altimg-height="21px" altimg-valign="-5px" altimg-width="52px" alttext="b\leq a" display="inline"><mrow><mi>b</mi><mo>≤</mo><mi href="./8.1#p1.t1.r3" title="parameter">a</mi></mrow></math>, to 7D.
+</p>
+</div>
+</li>
+<li id="I2.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="I2.i2.p1" class="ltx_para">
+<p class="ltx_p"><cite class="ltx_cite ltx_citemacro_citet">Zhang and Jin (<a href="./bib/Z#bib2493" title="Computation of Special Functions" class="ltx_ref">1996</a>, Table 3.9)</cite> tabulates <math class="ltx_Math" altimg="m10.png" altimg-height="25px" altimg-valign="-7px" altimg-width="73px" alttext="I_{x}\left(a,b\right)" display="inline"><mrow><msub><mi href="./8.17#E2" title="incomplete beta function">I</mi><mi href="./8.1#p1.t1.r1" title="real variable">x</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>,</mo><mi>b</mi><mo>)</mo></mrow></mrow></math> for
+<math class="ltx_Math" altimg="m36.png" altimg-height="25px" altimg-valign="-7px" altimg-width="107px" alttext="x=0(.05)1" display="inline"><mrow><mi href="./8.1#p1.t1.r1" title="real variable">x</mi><mo>=</mo><mrow><mn>0</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>.05</mn><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mn>1</mn></mrow></mrow></math>, <math class="ltx_Math" altimg="m18.png" altimg-height="21px" altimg-valign="-6px" altimg-width="158px" alttext="a=0.5,1,3,5,10" display="inline"><mrow><mi href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>=</mo><mrow><mn>0.5</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>5</mn><mo>,</mo><mn>10</mn></mrow></mrow></math>, <math class="ltx_Math" altimg="m19.png" altimg-height="22px" altimg-valign="-6px" altimg-width="81px" alttext="b=1,10" display="inline"><mrow><mi>b</mi><mo>=</mo><mrow><mn>1</mn><mo>,</mo><mn>10</mn></mrow></mrow></math> to 8D.</p>
+</div>
+</li>
+</ul>
+</div>
+</section>
+<section id="iv" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§8.26(iv) </span>Generalized Exponential Integral</h2>
+<div id="iv.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=generalized%20exponential%20integral">generalized exponential integral</a>, <a class="ltx_keyword" href="./search/search?q=tables">tables</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./8.26.iv" title="" class="ltx_ref">http://dlmf.nist.gov/8.26.iv</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./8.26#info" title="§8.26 Tables ‣ Computation ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§8.26</span></a> and
+<a href="./8#info" title="Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.8</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="iv.p1" class="ltx_para">
+<ul id="I3" class="ltx_itemize">
+<li id="I3.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="I3.i1.p1" class="ltx_para">
+<p class="ltx_p"><cite class="ltx_cite ltx_citemacro_citet">Abramowitz and Stegun (<a href="./bib/#bib24" title="Handbook of Mathematical Functions with Formulas, Graphs, and Mathematical Tables" class="ltx_ref">1964</a>, pp. 245–248)</cite> tabulates <math class="ltx_Math" altimg="m5.png" altimg-height="25px" altimg-valign="-7px" altimg-width="62px" alttext="E_{n}\left(x\right)" display="inline"><mrow><msub><mi href="./8.19#E1" title="generalized exponential integral">E</mi><mi href="./8.1#p1.t1.r4" title="nonnegative integer">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./8.1#p1.t1.r1" title="real variable">x</mi><mo>)</mo></mrow></mrow></math> for
+<math class="ltx_Math" altimg="m27.png" altimg-height="21px" altimg-valign="-6px" altimg-width="154px" alttext="n=2,3,4,10,20" display="inline"><mrow><mi href="./8.1#p1.t1.r4" title="nonnegative integer">n</mi><mo>=</mo><mrow><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>10</mn><mo>,</mo><mn>20</mn></mrow></mrow></math>, <math class="ltx_Math" altimg="m35.png" altimg-height="25px" altimg-valign="-7px" altimg-width="107px" alttext="x=0(.01)2" display="inline"><mrow><mi href="./8.1#p1.t1.r1" title="real variable">x</mi><mo>=</mo><mrow><mn>0</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>.01</mn><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mn>2</mn></mrow></mrow></math> to 7D; also <math class="ltx_Math" altimg="m1.png" altimg-height="25px" altimg-valign="-7px" altimg-width="148px" alttext="(x+n)e^{x}E_{n}\left(x\right)" display="inline"><mrow><mrow><mo stretchy="false">(</mo><mrow><mi href="./8.1#p1.t1.r1" title="real variable">x</mi><mo>+</mo><mi href="./8.1#p1.t1.r4" title="nonnegative integer">n</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mi href="./8.1#p1.t1.r1" title="real variable">x</mi></msup><mo>⁢</mo><mrow><msub><mi href="./8.19#E1" title="generalized exponential integral">E</mi><mi href="./8.1#p1.t1.r4" title="nonnegative integer">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./8.1#p1.t1.r1" title="real variable">x</mi><mo>)</mo></mrow></mrow></mrow></math> for
+<math class="ltx_Math" altimg="m27.png" altimg-height="21px" altimg-valign="-6px" altimg-width="154px" alttext="n=2,3,4,10,20" display="inline"><mrow><mi href="./8.1#p1.t1.r4" title="nonnegative integer">n</mi><mo>=</mo><mrow><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>10</mn><mo>,</mo><mn>20</mn></mrow></mrow></math>, <math class="ltx_Math" altimg="m43.png" altimg-height="26px" altimg-valign="-7px" altimg-width="215px" alttext="x^{-1}=0(.01)0.1(.05)0.5" display="inline"><mrow><msup><mi href="./8.1#p1.t1.r1" title="real variable">x</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo>=</mo><mrow><mn>0</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>.01</mn><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mn>0.1</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>.05</mn><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mn>0.5</mn></mrow></mrow></math> to 6S.</p>
+</div>
+</li>
+<li id="I3.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="I3.i2.p1" class="ltx_para">
+<p class="ltx_p"><cite class="ltx_cite ltx_citemacro_citet">Chiccoli<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/C#bib486" title="On the evaluation of generalized exponential integrals ⁢ E v ( x )" class="ltx_ref">1988</a>)</cite> presents a short table of <math class="ltx_Math" altimg="m6.png" altimg-height="26px" altimg-valign="-8px" altimg-width="61px" alttext="E_{p}\left(x\right)" display="inline"><mrow><msub><mi href="./8.19#E1" title="generalized exponential integral">E</mi><mi href="./8.1#p1.t1.r3" title="parameter">p</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./8.1#p1.t1.r1" title="real variable">x</mi><mo>)</mo></mrow></mrow></math> for
+<math class="ltx_Math" altimg="m30.png" altimg-height="29px" altimg-valign="-9px" altimg-width="137px" alttext="p=-\tfrac{9}{2}(1)-\tfrac{1}{2}" display="inline"><mrow><mi href="./8.1#p1.t1.r3" title="parameter">p</mi><mo>=</mo><mrow><mrow><mo>−</mo><mrow><mfrac><mn>9</mn><mn>2</mn></mfrac><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>−</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></mrow></math>, <math class="ltx_Math" altimg="m3.png" altimg-height="20px" altimg-valign="-5px" altimg-width="113px" alttext="0\leq x\leq 200" display="inline"><mrow><mn>0</mn><mo>≤</mo><mi href="./8.1#p1.t1.r1" title="real variable">x</mi><mo>≤</mo><mn>200</mn></mrow></math> to 14S.
+</p>
+</div>
+</li>
+<li id="I3.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="I3.i3.p1" class="ltx_para">
+<p class="ltx_p"><cite class="ltx_cite ltx_citemacro_citet">Pagurova (<a href="./bib/P#bib1824" title="Tables of the Exponential Integral = ⁢ E ν ( x ) ∫ 1 ∞ ⁢ e - ⁢ x u u - ν d u" class="ltx_ref">1961</a>)</cite> tabulates <math class="ltx_Math" altimg="m5.png" altimg-height="25px" altimg-valign="-7px" altimg-width="62px" alttext="E_{n}\left(x\right)" display="inline"><mrow><msub><mi href="./8.19#E1" title="generalized exponential integral">E</mi><mi href="./8.1#p1.t1.r4" title="nonnegative integer">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./8.1#p1.t1.r1" title="real variable">x</mi><mo>)</mo></mrow></mrow></math> for <math class="ltx_Math" altimg="m23.png" altimg-height="25px" altimg-valign="-7px" altimg-width="102px" alttext="n=0(1)20" display="inline"><mrow><mi href="./8.1#p1.t1.r4" title="nonnegative integer">n</mi><mo>=</mo><mrow><mn>0</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mn>20</mn></mrow></mrow></math>,
+<math class="ltx_Math" altimg="m34.png" altimg-height="25px" altimg-valign="-7px" altimg-width="160px" alttext="x=0(.01)2(.1)10" display="inline"><mrow><mi href="./8.1#p1.t1.r1" title="real variable">x</mi><mo>=</mo><mrow><mn>0</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>.01</mn><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mn>2</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>.1</mn><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mn>10</mn></mrow></mrow></math> to 4-9S; <math class="ltx_Math" altimg="m21.png" altimg-height="25px" altimg-valign="-7px" altimg-width="82px" alttext="e^{x}E_{n}\left(x\right)" display="inline"><mrow><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mi href="./8.1#p1.t1.r1" title="real variable">x</mi></msup><mo>⁢</mo><mrow><msub><mi href="./8.19#E1" title="generalized exponential integral">E</mi><mi href="./8.1#p1.t1.r4" title="nonnegative integer">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./8.1#p1.t1.r1" title="real variable">x</mi><mo>)</mo></mrow></mrow></mrow></math> for <math class="ltx_Math" altimg="m26.png" altimg-height="25px" altimg-valign="-7px" altimg-width="102px" alttext="n=2(1)10" display="inline"><mrow><mi href="./8.1#p1.t1.r4" title="nonnegative integer">n</mi><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mn>10</mn></mrow></mrow></math>,
+<math class="ltx_Math" altimg="m42.png" altimg-height="25px" altimg-valign="-7px" altimg-width="118px" alttext="x=10(.1)20" display="inline"><mrow><mi href="./8.1#p1.t1.r1" title="real variable">x</mi><mo>=</mo><mrow><mn>10</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>.1</mn><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mn>20</mn></mrow></mrow></math> to 7D; <math class="ltx_Math" altimg="m22.png" altimg-height="26px" altimg-valign="-8px" altimg-width="81px" alttext="e^{x}E_{p}\left(x\right)" display="inline"><mrow><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mi href="./8.1#p1.t1.r1" title="real variable">x</mi></msup><mo>⁢</mo><mrow><msub><mi href="./8.19#E1" title="generalized exponential integral">E</mi><mi href="./8.1#p1.t1.r3" title="parameter">p</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./8.1#p1.t1.r1" title="real variable">x</mi><mo>)</mo></mrow></mrow></mrow></math> for <math class="ltx_Math" altimg="m31.png" altimg-height="25px" altimg-valign="-7px" altimg-width="95px" alttext="p=0(.1)1" display="inline"><mrow><mi href="./8.1#p1.t1.r3" title="parameter">p</mi><mo>=</mo><mrow><mn>0</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>.1</mn><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mn>1</mn></mrow></mrow></math>,
+<math class="ltx_Math" altimg="m41.png" altimg-height="25px" altimg-valign="-7px" altimg-width="250px" alttext="x=0.01(.01)7(.05)12(.1)20" display="inline"><mrow><mi href="./8.1#p1.t1.r1" title="real variable">x</mi><mo>=</mo><mrow><mn>0.01</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>.01</mn><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mn>7</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>.05</mn><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mn>12</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>.1</mn><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mn>20</mn></mrow></mrow></math> to 7S or 7D.</p>
+</div>
+</li>
+<li id="I3.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="I3.i4.p1" class="ltx_para">
+<p class="ltx_p"><cite class="ltx_cite ltx_citemacro_citet">Stankiewicz (<a href="./bib/S#bib2154" title="Tables of the integro-exponential functions" class="ltx_ref">1968</a>)</cite> tabulates <math class="ltx_Math" altimg="m5.png" altimg-height="25px" altimg-valign="-7px" altimg-width="62px" alttext="E_{n}\left(x\right)" display="inline"><mrow><msub><mi href="./8.19#E1" title="generalized exponential integral">E</mi><mi href="./8.1#p1.t1.r4" title="nonnegative integer">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./8.1#p1.t1.r1" title="real variable">x</mi><mo>)</mo></mrow></mrow></math> for <math class="ltx_Math" altimg="m24.png" altimg-height="25px" altimg-valign="-7px" altimg-width="102px" alttext="n=1(1)10" display="inline"><mrow><mi href="./8.1#p1.t1.r4" title="nonnegative integer">n</mi><mo>=</mo><mrow><mn>1</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mn>10</mn></mrow></mrow></math>,
+<math class="ltx_Math" altimg="m40.png" altimg-height="25px" altimg-valign="-7px" altimg-width="134px" alttext="x=0.01(.01)5" display="inline"><mrow><mi href="./8.1#p1.t1.r1" title="real variable">x</mi><mo>=</mo><mrow><mn>0.01</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>.01</mn><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mn>5</mn></mrow></mrow></math> to 7D.</p>
+</div>
+</li>
+<li id="I3.i5" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="I3.i5.p1" class="ltx_para">
+<p class="ltx_p"><cite class="ltx_cite ltx_citemacro_citet">Zhang and Jin (<a href="./bib/Z#bib2493" title="Computation of Special Functions" class="ltx_ref">1996</a>, Table 19.1)</cite> tabulates <math class="ltx_Math" altimg="m5.png" altimg-height="25px" altimg-valign="-7px" altimg-width="62px" alttext="E_{n}\left(x\right)" display="inline"><mrow><msub><mi href="./8.19#E1" title="generalized exponential integral">E</mi><mi href="./8.1#p1.t1.r4" title="nonnegative integer">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./8.1#p1.t1.r1" title="real variable">x</mi><mo>)</mo></mrow></mrow></math> for
+<math class="ltx_Math" altimg="m25.png" altimg-height="21px" altimg-valign="-6px" altimg-width="204px" alttext="n=1,2,3,5,10,15,20" display="inline"><mrow><mi href="./8.1#p1.t1.r4" title="nonnegative integer">n</mi><mo>=</mo><mrow><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>5</mn><mo>,</mo><mn>10</mn><mo>,</mo><mn>15</mn><mo>,</mo><mn>20</mn></mrow></mrow></math>, <math class="ltx_Math" altimg="m38.png" altimg-height="25px" altimg-valign="-7px" altimg-width="352px" alttext="x=0(.1)1,1.5,2,3,5,10,20,30,50,100" display="inline"><mrow><mi href="./8.1#p1.t1.r1" title="real variable">x</mi><mo>=</mo><mrow><mrow><mn>0</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>.1</mn><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mn>1</mn></mrow><mo>,</mo><mn>1.5</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>5</mn><mo>,</mo><mn>10</mn><mo>,</mo><mn>20</mn><mo>,</mo><mn>30</mn><mo>,</mo><mn>50</mn><mo>,</mo><mn>100</mn></mrow></mrow></math> to 7D or 8S.</p>
+</div>
+</li>
+</ul>
+</div>
+</section>
+</section>
+</div>
+<div class="ltx_page_footer">
+<div class="ltx_siblings">
+<a href="./8.25" title="In Computation ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">8.25 </span>Methods of Computation</span></a><a href="./8.27" title="In Computation ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">8.27 </span>Approximations</span></a>
+</div>
+<div class="ltx_footer_links ltx_centering">
+<a href="./about/notices">© 2010–2026 NIST</a> / <a href="./about/notices#S2">Disclaimer</a> / <a href="/cdn-cgi/l/email-protection#682c24252e450e0d0d0c0a090b032806011b1c460f071e">Feedback</a>;
+ Version 1.2.7;
+Release date 2026-06-15.</div>
+<span id="pagesettings"></span>
+<div class="ltx_nist_logo"><a href="http://www.nist.gov/"><img src="./style/nistidc.png" width="500" alt="NIST"></a></div>
+<div class="ltx_nist_links ltx_align_right">
+<a href="https://www.nist.gov/privacy-policy">Site Privacy</a> <a href="https://www.nist.gov/oism/accessibility">Accessibility</a> <a href="https://www.nist.gov/privacy">Privacy Program</a> <a href="https://www.nist.gov/oism/copyrights">Copyrights</a> <a href="https://www.commerce.gov/vulnerability-disclosure-policy">Vulnerability Disclosure</a> <a href="https://www.nist.gov/no-fear-act-policy">No Fear Act Policy</a> <a href="https://www.nist.gov/foia">FOIA</a> <a href="https://www.nist.gov/environmental-policy-statement">Environmental Policy</a> <a href="https://www.nist.gov/summary-report-scientific-integrity">Scientific Integrity</a> <a href="https://www.nist.gov/nist-information-quality-standards">Information Quality Standards</a> <a href="https://www.commerce.gov/">Commerce.gov</a> <a href="http://www.science.gov/">Science.gov</a> <a href="http://www.usa.gov/">USA.gov</a>
+</div>
+</div>
+</div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a30b52808fcdb3e5',t:'MTc4NzY2ODUxNQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"9ef5b487afff42a68917b2d63593a474"}' crossorigin="anonymous"></script>
+</body>
+</html>

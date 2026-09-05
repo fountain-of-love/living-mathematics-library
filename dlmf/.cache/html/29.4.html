@@ -1,0 +1,1562 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>DLMF: §29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions</title>
+<link rel="shortcut icon" href="./style/DLMF-16.png" type="image/png">
+<script type="text/javascript"><!--
+	var PATH="DLMF:/29.4";
+	var ROOT="./";
+      //--></script>
+<script type="text/javascript" src="./style/jquery.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/jquery.leaveNotice.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/DLMF.js"><!-- non-empty so ie6 will accept it --></script>
+<script async="" type="text/javascript" id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC&amp;subagency=NIST&amp;pua=UA-37115410-44&amp;yt=true&amp;exts=ppsx,pps,f90,sch,rtf,wrl,txz,m1v,xlsm,msi,xsd,f,tif,eps,mpg,xml,pl,xlt,c"><!-- non-empty so ie6 will accept it --></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-BZB64W4M0L"></script><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-BZB64W4M0L');
+      </script>
+<link rel="stylesheet" type="text/css" href="./style/LaTeXML.css">
+<link rel="stylesheet" type="text/css" href="./style/DLMF.css">
+<link rel="stylesheet" type="text/css" href="./style/print.css" media="print">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="top" href="./" title="DLMF">
+<link rel="copyright" href="./about/notices" title="Copyright">
+<link rel="search" href="./search/search" title="Search">
+<link rel="help" class="ltx_help" href="./help/" title="Help">
+<link rel="up" href="./29#PT2" title="Lamé Functions ‣ Chapter 29 Lamé Functions">
+<link rel="up up" href="./29" title="Chapter 29 Lamé Functions">
+<link rel="start" href="./" title="">
+<link rel="prev" href="./29.3" title="§29.3 Definitions and Basic Properties ‣ Lamé Functions ‣ Chapter 29 Lamé Functions">
+<link rel="next" href="./29.5" title="§29.5 Special Cases and Limiting Forms ‣ Lamé Functions ‣ Chapter 29 Lamé Functions">
+<link rel="section" href="./29.1" title="§29.1 Special Notation ‣ Notation ‣ Chapter 29 Lamé Functions">
+<link rel="section" href="./29.2" title="§29.2 Differential Equations ‣ Lamé Functions ‣ Chapter 29 Lamé Functions">
+<link rel="section" href="./29.3" title="§29.3 Definitions and Basic Properties ‣ Lamé Functions ‣ Chapter 29 Lamé Functions">
+<link rel="section" href="./29.5" title="§29.5 Special Cases and Limiting Forms ‣ Lamé Functions ‣ Chapter 29 Lamé Functions">
+<link rel="section" href="./29.6" title="§29.6 Fourier Series ‣ Lamé Functions ‣ Chapter 29 Lamé Functions">
+<link rel="section" href="./29.7" title="§29.7 Asymptotic Expansions ‣ Lamé Functions ‣ Chapter 29 Lamé Functions">
+<link rel="section" href="./29.8" title="§29.8 Integral Equations ‣ Lamé Functions ‣ Chapter 29 Lamé Functions">
+<link rel="section" href="./29.9" title="§29.9 Stability ‣ Lamé Functions ‣ Chapter 29 Lamé Functions">
+<link rel="section" href="./29.10" title="§29.10 Lamé Functions with Imaginary Periods ‣ Lamé Functions ‣ Chapter 29 Lamé Functions">
+<link rel="section" href="./29.11" title="§29.11 Lamé Wave Equation ‣ Lamé Functions ‣ Chapter 29 Lamé Functions">
+<link rel="section" href="./29.12" title="§29.12 Definitions ‣ Lamé Polynomials ‣ Chapter 29 Lamé Functions">
+<link rel="section" href="./29.13" title="§29.13 Graphics ‣ Lamé Polynomials ‣ Chapter 29 Lamé Functions">
+<link rel="section" href="./29.14" title="§29.14 Orthogonality ‣ Lamé Polynomials ‣ Chapter 29 Lamé Functions">
+<link rel="section" href="./29.15" title="§29.15 Fourier Series and Chebyshev Series ‣ Lamé Polynomials ‣ Chapter 29 Lamé Functions">
+<link rel="section" href="./29.16" title="§29.16 Asymptotic Expansions ‣ Lamé Polynomials ‣ Chapter 29 Lamé Functions">
+<link rel="section" href="./29.17" title="§29.17 Other Solutions ‣ Lamé Polynomials ‣ Chapter 29 Lamé Functions">
+<link rel="section" href="./29.18" title="§29.18 Mathematical Applications ‣ Applications ‣ Chapter 29 Lamé Functions">
+<link rel="section" href="./29.19" title="§29.19 Physical Applications ‣ Applications ‣ Chapter 29 Lamé Functions">
+<link rel="section" href="./29.20" title="§29.20 Methods of Computation ‣ Computation ‣ Chapter 29 Lamé Functions">
+<link rel="section" href="./29.21" title="§29.21 Tables ‣ Computation ‣ Chapter 29 Lamé Functions">
+<link rel="section" href="./29.22" title="§29.22 Software ‣ Computation ‣ Chapter 29 Lamé Functions">
+<link rel="document" href="./front/foreword" title="Foreword">
+<link rel="document" href="./front/preface" title="Preface">
+<link rel="document" href="./front/introduction" title="Mathematical Introduction">
+<link rel="chapter" href="./1" title="Chapter 1 Algebraic and Analytic Methods">
+<link rel="chapter" href="./2" title="Chapter 2 Asymptotic Approximations">
+<link rel="chapter" href="./3" title="Chapter 3 Numerical Methods">
+<link rel="chapter" href="./4" title="Chapter 4 Elementary Functions">
+<link rel="chapter" href="./5" title="Chapter 5 Gamma Function">
+<link rel="chapter" href="./6" title="Chapter 6 Exponential, Logarithmic, Sine, and Cosine Integrals">
+<link rel="chapter" href="./7" title="Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="chapter" href="./8" title="Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="chapter" href="./9" title="Chapter 9 Airy and Related Functions">
+<link rel="chapter" href="./10" title="Chapter 10 Bessel Functions">
+<link rel="chapter" href="./11" title="Chapter 11 Struve and Related Functions">
+<link rel="chapter" href="./12" title="Chapter 12 Parabolic Cylinder Functions">
+<link rel="chapter" href="./13" title="Chapter 13 Confluent Hypergeometric Functions">
+<link rel="chapter" href="./14" title="Chapter 14 Legendre and Related Functions">
+<link rel="chapter" href="./15" title="Chapter 15 Hypergeometric Function">
+<link rel="chapter" href="./16" title="Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="chapter" href="./17" title="Chapter 17 𝑞-Hypergeometric and Related Functions">
+<link rel="chapter" href="./18" title="Chapter 18 Orthogonal Polynomials">
+<link rel="chapter" href="./19" title="Chapter 19 Elliptic Integrals">
+<link rel="chapter" href="./20" title="Chapter 20 Theta Functions">
+<link rel="chapter" href="./21" title="Chapter 21 Multidimensional Theta Functions">
+<link rel="chapter" href="./22" title="Chapter 22 Jacobian Elliptic Functions">
+<link rel="chapter" href="./23" title="Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="chapter" href="./24" title="Chapter 24 Bernoulli and Euler Polynomials">
+<link rel="chapter" href="./25" title="Chapter 25 Zeta and Related Functions">
+<link rel="chapter" href="./26" title="Chapter 26 Combinatorial Analysis">
+<link rel="chapter" href="./27" title="Chapter 27 Functions of Number Theory">
+<link rel="chapter" href="./28" title="Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="chapter" href="./29" title="Chapter 29 Lamé Functions">
+<link rel="chapter" href="./30" title="Chapter 30 Spheroidal Wave Functions">
+<link rel="chapter" href="./31" title="Chapter 31 Heun Functions">
+<link rel="chapter" href="./32" title="Chapter 32 Painlevé Transcendents">
+<link rel="chapter" href="./33" title="Chapter 33 Coulomb Functions">
+<link rel="chapter" href="./34" title="Chapter 34 3⁢𝑗,6⁢𝑗,9⁢𝑗 Symbols">
+<link rel="chapter" href="./35" title="Chapter 35 Functions of Matrix Argument">
+<link rel="chapter" href="./36" title="Chapter 36 Integrals with Coalescing Saddles">
+<link rel="bibliography" href="./bib/" title="Bibliography">
+<link rel="index" href="./idx/" title="Index">
+<link rel="glossary" href="./not/" title="Notations">
+<link rel="document" href="./lof/" title="List of Figures">
+<link rel="document" href="./lot/" title="List of Tables">
+<link rel="document" href="./software/" title="Software Index">
+<link rel="document" href="./errata/" title="Errata">
+<link rel="document" href="./help/" title="Need Help?">
+<link rel="document" href="./search/" title="Advanced Search">
+<link rel="document" href="./about/" title="About the Project">
+<link rel="sidebar" href="./29.4.F1.mag" title="Figure 29.4.1 ‣ §29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions">
+<link rel="sidebar" href="./29.4.F2.mag" title="Figure 29.4.2 ‣ §29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions">
+<link rel="sidebar" href="./29.4.F3.mag" title="Figure 29.4.3 ‣ §29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions">
+<link rel="sidebar" href="./29.4.F4.mag" title="Figure 29.4.4 ‣ §29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions">
+<link rel="sidebar" href="./29.4.F5.mag" title="Figure 29.4.5 ‣ §29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions">
+<link rel="sidebar" href="./29.4.F6.mag" title="Figure 29.4.6 ‣ §29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions">
+<link rel="sidebar" href="./29.4.F7.mag" title="Figure 29.4.7 ‣ §29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions">
+<link rel="sidebar" href="./29.4.F8.mag" title="Figure 29.4.8 ‣ §29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions">
+<link rel="sidebar" href="./29.4.F9.mag" title="Figure 29.4.9 ‣ §29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions">
+<link rel="sidebar" href="./29.4.F9.viz" title="Figure 29.4.9 ‣ §29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions">
+<link rel="sidebar" href="./29.4.F10.mag" title="Figure 29.4.10 ‣ §29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions">
+<link rel="sidebar" href="./29.4.F10.viz" title="Figure 29.4.10 ‣ §29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions">
+<link rel="sidebar" href="./29.4.F11.mag" title="Figure 29.4.11 ‣ §29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions">
+<link rel="sidebar" href="./29.4.F11.viz" title="Figure 29.4.11 ‣ §29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions">
+<link rel="sidebar" href="./29.4.F12.mag" title="Figure 29.4.12 ‣ §29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions">
+<link rel="sidebar" href="./29.4.F12.viz" title="Figure 29.4.12 ‣ §29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions">
+<link rel="sidebar" href="./29.4.F13.mag" title="Figure 29.4.13 ‣ §29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions">
+<link rel="sidebar" href="./29.4.F14.mag" title="Figure 29.4.14 ‣ §29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions">
+<link rel="sidebar" href="./29.4.F15.mag" title="Figure 29.4.15 ‣ §29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions">
+<link rel="sidebar" href="./29.4.F16.mag" title="Figure 29.4.16 ‣ §29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions">
+<link rel="sidebar" href="./29.4.F17.mag" title="Figure 29.4.17 ‣ §29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions">
+<link rel="sidebar" href="./29.4.F18.mag" title="Figure 29.4.18 ‣ §29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions">
+<link rel="sidebar" href="./29.4.F19.mag" title="Figure 29.4.19 ‣ §29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions">
+<link rel="sidebar" href="./29.4.F20.mag" title="Figure 29.4.20 ‣ §29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions">
+<link rel="sidebar" href="./29.4.F21.mag" title="Figure 29.4.21 ‣ §29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions">
+<link rel="sidebar" href="./29.4.F22.mag" title="Figure 29.4.22 ‣ §29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions">
+<link rel="sidebar" href="./29.4.F23.mag" title="Figure 29.4.23 ‣ §29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions">
+<link rel="sidebar" href="./29.4.F24.mag" title="Figure 29.4.24 ‣ §29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions">
+<link rel="sidebar" href="./29.4.F25.mag" title="Figure 29.4.25 ‣ §29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions">
+<link rel="sidebar" href="./29.4.F25.viz" title="Figure 29.4.25 ‣ §29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions">
+<link rel="sidebar" href="./29.4.F26.mag" title="Figure 29.4.26 ‣ §29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions">
+<link rel="sidebar" href="./29.4.F26.viz" title="Figure 29.4.26 ‣ §29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions">
+<link rel="sidebar" href="./29.4.F27.mag" title="Figure 29.4.27 ‣ §29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions">
+<link rel="sidebar" href="./29.4.F27.viz" title="Figure 29.4.27 ‣ §29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions">
+<link rel="sidebar" href="./29.4.F28.mag" title="Figure 29.4.28 ‣ §29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions">
+<link rel="sidebar" href="./29.4.F28.viz" title="Figure 29.4.28 ‣ §29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions">
+<link rel="sidebar" href="./29.4.F29.mag" title="Figure 29.4.29 ‣ §29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions">
+<link rel="sidebar" href="./29.4.F29.viz" title="Figure 29.4.29 ‣ §29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions">
+<link rel="sidebar" href="./29.4.F30.mag" title="Figure 29.4.30 ‣ §29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions">
+<link rel="sidebar" href="./29.4.F30.viz" title="Figure 29.4.30 ‣ §29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions">
+<link rel="sidebar" href="./29.4.F31.mag" title="Figure 29.4.31 ‣ §29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions">
+<link rel="sidebar" href="./29.4.F31.viz" title="Figure 29.4.31 ‣ §29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions">
+<link rel="sidebar" href="./29.4.F32.mag" title="Figure 29.4.32 ‣ §29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions">
+<link rel="sidebar" href="./29.4.F32.viz" title="Figure 29.4.32 ‣ §29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions">
+<meta name="keywords" lang="en" content="Lamé functions, eigenvalues, graphics">
+</head>
+<body class="color_default textfont_default titlefont_default fontsize_default navbar_default">
+<div class="ltx_page_navbar">
+<div class="ltx_page_navlogo"><a href="./" title="Digital Library of Mathematical Functions"><span>DLMF</span></a></div>
+<div class="ltx_page_navitems">
+<form method="get" action="./search/search">
+<ul>
+<li><a href="./idx/">Index</a></li>
+<li><a href="./not/">Notations</a></li>
+<li><small><input type="text" name="q" value="" size="6" class="ltx_page_navitem_search"><button type="submit">Search</button></small></li>
+<li><a href="./help/" class="ltx_help">Help?</a></li>
+<li><a href="./help/cite">Citing</a></li>
+<li><a href="./help/customize" class="ltx_customize">Customize</a></li>
+<li id="showinfo"><a href="" onclick="showInfo(); return false;" title="Show Annotations">Annotate</a></li>
+<li id="hideinfo"><a href="" onclick="hideInfo(); return false;">UnAnnotate</a></li>
+</ul>
+</form>
+</div>
+<div class="ltx_page_navsponsors">
+<div><a href="./about/" class="ltx_page_navabout">About the Project</a></div>
+</div>
+</div>
+<div class="ltx_page_main">
+<div class="ltx_page_header">
+<a href="./29" title="" class="ltx_ref" rel="up up"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">29 </span>Lamé Functions</span></a><a href="./29#PT2" title="In Chapter 29 Lamé Functions" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title">Lamé Functions</span></a><a href="./29.3" title="In Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">29.3 </span>Definitions and Basic Properties</span></a><a href="./29.5" title="In Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">29.5 </span>Special Cases and Limiting Forms</span></a>
+</div>
+<div class="ltx_page_content">
+<section class="ltx_section ltx_authors_multiline ltx_leqno">
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">§29.4 </span>Graphics</h1>
+<div id="info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Permalink:</dt>
+<dd><a href="./29.4" title="" class="ltx_ref">http://dlmf.nist.gov/29.4</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./29#info" title="Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.29</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<h6>Contents</h6>
+<ol class="ltx_toclist ltx_toclist_section">
+<li class="ltx_tocentry"><a href="#i"><span class="ltx_tag ltx_tag_subsection">§29.4(i) </span>Eigenvalues of Lamé’s Equation: Line Graphs</a></li>
+<li class="ltx_tocentry"><a href="#ii"><span class="ltx_tag ltx_tag_subsection">§29.4(ii) </span>Eigenvalues of Lamé’s Equation: Surfaces</a></li>
+<li class="ltx_tocentry"><a href="#iii"><span class="ltx_tag ltx_tag_subsection">§29.4(iii) </span>Lamé Functions: Line Graphs</a></li>
+<li class="ltx_tocentry"><a href="#iv"><span class="ltx_tag ltx_tag_subsection">§29.4(iv) </span>Lamé Functions: Surfaces</a></li>
+</ol>
+<section id="i" class="ltx_subsection ltx_pruned_first">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§29.4(i) </span>Eigenvalues of Lamé’s Equation: Line Graphs</h2>
+<div id="i.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=Lam%C3%A9%20functions">Lamé functions</a>, <a class="ltx_keyword" href="./search/search?q=eigenvalues">eigenvalues</a>, <a class="ltx_keyword" href="./search/search?q=graphics">graphics</a>
+</dd>
+<dt>Notes:</dt>
+<dd>These graphs were produced at NIST.</dd>
+<dt>Permalink:</dt>
+<dd><a href="./29.4.i" title="" class="ltx_ref">http://dlmf.nist.gov/29.4.i</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./29.4#info" title="§29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§29.4</span></a> and
+<a href="./29#info" title="Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.29</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<figure id="F1" class="ltx_figure"><a href="./29.4.F1.mag" title="Magnify Figure" class="ltx_magnifiable"><img src="./29/4/F1.png" id="F1.g1" class="ltx_graphics ltx_centering ltx_img_landscape" width="415" height="249" alt="See accompanying text"></a>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 29.4.1: </span><math class="ltx_Math" altimg="m38.png" altimg-height="25px" altimg-valign="-7px" altimg-width="77px" alttext="a^{m}_{\nu}\left(0.5\right)" display="inline"><mrow><msubsup><mi href="./29.3#i.p1" title="eigenvalues of Lamé’s equation">a</mi><mi href="./29.1#t1.r4" title="real parameter">ν</mi><mi href="./29.1#t1.r1" title="nonnegative integer">m</mi></msubsup><mo>⁡</mo><mrow><mo>(</mo><mn>0.5</mn><mo>)</mo></mrow></mrow></math>, <math class="ltx_Math" altimg="m46.png" altimg-height="26px" altimg-valign="-7px" altimg-width="96px" alttext="b^{m+1}_{\nu}\left(0.5\right)" display="inline"><mrow><msubsup><mi href="./29.3#i.p1" title="eigenvalues of Lamé’s equation">b</mi><mi href="./29.1#t1.r4" title="real parameter">ν</mi><mrow><mi href="./29.1#t1.r1" title="nonnegative integer">m</mi><mo>+</mo><mn>1</mn></mrow></msubsup><mo>⁡</mo><mrow><mo>(</mo><mn>0.5</mn><mo>)</mo></mrow></mrow></math>
+as functions of <math class="ltx_Math" altimg="m28.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="\nu" display="inline"><mi href="./29.1#t1.r4" title="real parameter">ν</mi></math> for <math class="ltx_Math" altimg="m50.png" altimg-height="21px" altimg-valign="-6px" altimg-width="119px" alttext="m=0,1,2,3" display="inline"><mrow><mi href="./29.1#t1.r1" title="nonnegative integer">m</mi><mo>=</mo><mrow><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn></mrow></mrow></math>.
+
+
+<a href="./29.4.F1.mag" title="Magnify Figure" class="ltx_magnifiable ltx_icon"><span>Magnify</span></a>
+</figcaption>
+<div id="F1.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./29.3#i.p1" title="§29.3(i) Eigenvalues ‣ §29.3 Definitions and Basic Properties ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m34.png" altimg-height="29px" altimg-valign="-9px" altimg-width="70px" alttext="a^{\NVar{n}}_{\NVar{\nu}}\left(\NVar{k^{2}}\right)" display="inline"><mrow><msubsup><mi href="./29.3#i.p1" title="eigenvalues of Lamé’s equation">a</mi><mi class="ltx_nvar" href="./29.1#t1.r4" title="real parameter">ν</mi><mi class="ltx_nvar" href="./29.1#t1.r1" title="nonnegative integer">n</mi></msubsup><mo>⁡</mo><mrow><mo>(</mo><msup><mi class="ltx_nvar" href="./29.1#t1.r4" title="real parameter">k</mi><mn class="ltx_nvar">2</mn></msup><mo>)</mo></mrow></mrow></math>: eigenvalues of Lamé’s equation</a>,
+<a href="./29.3#i.p1" title="§29.3(i) Eigenvalues ‣ §29.3 Definitions and Basic Properties ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m42.png" altimg-height="29px" altimg-valign="-9px" altimg-width="68px" alttext="b^{\NVar{n}}_{\NVar{\nu}}\left(\NVar{k^{2}}\right)" display="inline"><mrow><msubsup><mi href="./29.3#i.p1" title="eigenvalues of Lamé’s equation">b</mi><mi class="ltx_nvar" href="./29.1#t1.r4" title="real parameter">ν</mi><mi class="ltx_nvar" href="./29.1#t1.r1" title="nonnegative integer">n</mi></msubsup><mo>⁡</mo><mrow><mo>(</mo><msup><mi class="ltx_nvar" href="./29.1#t1.r4" title="real parameter">k</mi><mn class="ltx_nvar">2</mn></msup><mo>)</mo></mrow></mrow></math>: eigenvalues of Lamé’s equation</a>,
+<a href="./29.1#t1.r1" title="§29.1 Special Notation ‣ Notation ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m53.png" altimg-height="13px" altimg-valign="-2px" altimg-width="23px" alttext="m" display="inline"><mi href="./29.1#t1.r1" title="nonnegative integer">m</mi></math>:  nonnegative integer</a> and
+<a href="./29.1#t1.r4" title="§29.1 Special Notation ‣ Notation ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m28.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="\nu" display="inline"><mi href="./29.1#t1.r4" title="real parameter">ν</mi></math>:  real parameter</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./29.4.F1" title="" class="ltx_ref">http://dlmf.nist.gov/29.4.F1</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./29.4.F1.pdf">pdf</a>, <a href="./29.4.F1.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./29.4#i.info" title="§29.4(i) Eigenvalues of Lamé’s Equation: Line Graphs ‣ §29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§29.4(i)</span></a>,
+<a href="./29.4#info" title="§29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§29.4</span></a> and
+<a href="./29#info" title="Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.29</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+<div class="ltx_pagination ltx_role_newpage"></div>
+<figure id="i.fig1" class="ltx_figure">
+<div class="ltx_flex_figure">
+<div class="ltx_flex_cell ltx_flex_size_2">
+<figure id="F2" class="ltx_figure ltx_figure_panel"><a href="./29.4.F2.mag" title="Magnify Figure" class="ltx_magnifiable"><img src="./29/4/F2.png" id="F2.g1" class="ltx_graphics ltx_centering ltx_img_landscape" width="415" height="227" alt="See accompanying text"></a>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 29.4.2: </span><math class="ltx_Math" altimg="m32.png" altimg-height="26px" altimg-valign="-7px" altimg-width="162px" alttext="a^{3}_{\nu}\left(0.5\right)-b^{3}_{\nu}\left(0.5\right)" display="inline"><mrow><mrow><msubsup><mi href="./29.3#i.p1" title="eigenvalues of Lamé’s equation">a</mi><mi href="./29.1#t1.r4" title="real parameter">ν</mi><mn>3</mn></msubsup><mo>⁡</mo><mrow><mo>(</mo><mn>0.5</mn><mo>)</mo></mrow></mrow><mo>−</mo><mrow><msubsup><mi href="./29.3#i.p1" title="eigenvalues of Lamé’s equation">b</mi><mi href="./29.1#t1.r4" title="real parameter">ν</mi><mn>3</mn></msubsup><mo>⁡</mo><mrow><mo>(</mo><mn>0.5</mn><mo>)</mo></mrow></mrow></mrow></math>
+as a function of <math class="ltx_Math" altimg="m28.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="\nu" display="inline"><mi href="./29.1#t1.r4" title="real parameter">ν</mi></math>.
+
+
+<a href="./29.4.F2.mag" title="Magnify Figure" class="ltx_magnifiable ltx_icon"><span>Magnify</span></a>
+</figcaption>
+<div id="F2.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./29.3#i.p1" title="§29.3(i) Eigenvalues ‣ §29.3 Definitions and Basic Properties ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m34.png" altimg-height="29px" altimg-valign="-9px" altimg-width="70px" alttext="a^{\NVar{n}}_{\NVar{\nu}}\left(\NVar{k^{2}}\right)" display="inline"><mrow><msubsup><mi href="./29.3#i.p1" title="eigenvalues of Lamé’s equation">a</mi><mi class="ltx_nvar" href="./29.1#t1.r4" title="real parameter">ν</mi><mi class="ltx_nvar" href="./29.1#t1.r1" title="nonnegative integer">n</mi></msubsup><mo>⁡</mo><mrow><mo>(</mo><msup><mi class="ltx_nvar" href="./29.1#t1.r4" title="real parameter">k</mi><mn class="ltx_nvar">2</mn></msup><mo>)</mo></mrow></mrow></math>: eigenvalues of Lamé’s equation</a>,
+<a href="./29.3#i.p1" title="§29.3(i) Eigenvalues ‣ §29.3 Definitions and Basic Properties ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m42.png" altimg-height="29px" altimg-valign="-9px" altimg-width="68px" alttext="b^{\NVar{n}}_{\NVar{\nu}}\left(\NVar{k^{2}}\right)" display="inline"><mrow><msubsup><mi href="./29.3#i.p1" title="eigenvalues of Lamé’s equation">b</mi><mi class="ltx_nvar" href="./29.1#t1.r4" title="real parameter">ν</mi><mi class="ltx_nvar" href="./29.1#t1.r1" title="nonnegative integer">n</mi></msubsup><mo>⁡</mo><mrow><mo>(</mo><msup><mi class="ltx_nvar" href="./29.1#t1.r4" title="real parameter">k</mi><mn class="ltx_nvar">2</mn></msup><mo>)</mo></mrow></mrow></math>: eigenvalues of Lamé’s equation</a> and
+<a href="./29.1#t1.r4" title="§29.1 Special Notation ‣ Notation ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m28.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="\nu" display="inline"><mi href="./29.1#t1.r4" title="real parameter">ν</mi></math>:  real parameter</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./29.4.F2" title="" class="ltx_ref">http://dlmf.nist.gov/29.4.F2</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./29.4.F2.pdf">pdf</a>, <a href="./29.4.F2.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./29.4#i.info" title="§29.4(i) Eigenvalues of Lamé’s Equation: Line Graphs ‣ §29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§29.4(i)</span></a>,
+<a href="./29.4#info" title="§29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§29.4</span></a> and
+<a href="./29#info" title="Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.29</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+</div>
+<div class="ltx_flex_cell ltx_flex_size_2">
+<figure id="F3" class="ltx_figure ltx_figure_panel"><a href="./29.4.F3.mag" title="Magnify Figure" class="ltx_magnifiable"><img src="./29/4/F3.png" id="F3.g1" class="ltx_graphics ltx_centering ltx_img_landscape" width="416" height="239" alt="See accompanying text"></a>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 29.4.3: </span><math class="ltx_Math" altimg="m35.png" altimg-height="29px" altimg-valign="-9px" altimg-width="81px" alttext="a^{m}_{1.5}\left(k^{2}\right)" display="inline"><mrow><msubsup><mi href="./29.3#i.p1" title="eigenvalues of Lamé’s equation">a</mi><mn>1.5</mn><mi href="./29.1#t1.r1" title="nonnegative integer">m</mi></msubsup><mo>⁡</mo><mrow><mo>(</mo><msup><mi href="./29.1#t1.r4" title="real parameter">k</mi><mn>2</mn></msup><mo>)</mo></mrow></mrow></math>, <math class="ltx_Math" altimg="m43.png" altimg-height="30px" altimg-valign="-9px" altimg-width="93px" alttext="b^{m+1}_{1.5}\left(k^{2}\right)" display="inline"><mrow><msubsup><mi href="./29.3#i.p1" title="eigenvalues of Lamé’s equation">b</mi><mn>1.5</mn><mrow><mi href="./29.1#t1.r1" title="nonnegative integer">m</mi><mo>+</mo><mn>1</mn></mrow></msubsup><mo>⁡</mo><mrow><mo>(</mo><msup><mi href="./29.1#t1.r4" title="real parameter">k</mi><mn>2</mn></msup><mo>)</mo></mrow></mrow></math>
+as functions of <math class="ltx_Math" altimg="m49.png" altimg-height="21px" altimg-valign="-2px" altimg-width="25px" alttext="k^{2}" display="inline"><msup><mi href="./29.1#t1.r4" title="real parameter">k</mi><mn>2</mn></msup></math> for <math class="ltx_Math" altimg="m51.png" altimg-height="21px" altimg-valign="-6px" altimg-width="100px" alttext="m=0,1,2" display="inline"><mrow><mi href="./29.1#t1.r1" title="nonnegative integer">m</mi><mo>=</mo><mrow><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn></mrow></mrow></math>.
+
+
+<a href="./29.4.F3.mag" title="Magnify Figure" class="ltx_magnifiable ltx_icon"><span>Magnify</span></a>
+</figcaption>
+<div id="F3.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./29.3#i.p1" title="§29.3(i) Eigenvalues ‣ §29.3 Definitions and Basic Properties ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m34.png" altimg-height="29px" altimg-valign="-9px" altimg-width="70px" alttext="a^{\NVar{n}}_{\NVar{\nu}}\left(\NVar{k^{2}}\right)" display="inline"><mrow><msubsup><mi href="./29.3#i.p1" title="eigenvalues of Lamé’s equation">a</mi><mi class="ltx_nvar" href="./29.1#t1.r4" title="real parameter">ν</mi><mi class="ltx_nvar" href="./29.1#t1.r1" title="nonnegative integer">n</mi></msubsup><mo>⁡</mo><mrow><mo>(</mo><msup><mi class="ltx_nvar" href="./29.1#t1.r4" title="real parameter">k</mi><mn class="ltx_nvar">2</mn></msup><mo>)</mo></mrow></mrow></math>: eigenvalues of Lamé’s equation</a>,
+<a href="./29.3#i.p1" title="§29.3(i) Eigenvalues ‣ §29.3 Definitions and Basic Properties ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m42.png" altimg-height="29px" altimg-valign="-9px" altimg-width="68px" alttext="b^{\NVar{n}}_{\NVar{\nu}}\left(\NVar{k^{2}}\right)" display="inline"><mrow><msubsup><mi href="./29.3#i.p1" title="eigenvalues of Lamé’s equation">b</mi><mi class="ltx_nvar" href="./29.1#t1.r4" title="real parameter">ν</mi><mi class="ltx_nvar" href="./29.1#t1.r1" title="nonnegative integer">n</mi></msubsup><mo>⁡</mo><mrow><mo>(</mo><msup><mi class="ltx_nvar" href="./29.1#t1.r4" title="real parameter">k</mi><mn class="ltx_nvar">2</mn></msup><mo>)</mo></mrow></mrow></math>: eigenvalues of Lamé’s equation</a>,
+<a href="./29.1#t1.r1" title="§29.1 Special Notation ‣ Notation ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m53.png" altimg-height="13px" altimg-valign="-2px" altimg-width="23px" alttext="m" display="inline"><mi href="./29.1#t1.r1" title="nonnegative integer">m</mi></math>:  nonnegative integer</a> and
+<a href="./29.1#t1.r4" title="§29.1 Special Notation ‣ Notation ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m48.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./29.1#t1.r4" title="real parameter">k</mi></math>:  real parameter</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./29.4.F3" title="" class="ltx_ref">http://dlmf.nist.gov/29.4.F3</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./29.4.F3.pdf">pdf</a>, <a href="./29.4.F3.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./29.4#i.info" title="§29.4(i) Eigenvalues of Lamé’s Equation: Line Graphs ‣ §29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§29.4(i)</span></a>,
+<a href="./29.4#info" title="§29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§29.4</span></a> and
+<a href="./29#info" title="Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.29</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+</div>
+</div>
+</figure>
+<figure id="i.fig2" class="ltx_figure">
+<div class="ltx_flex_figure">
+<div class="ltx_flex_cell ltx_flex_size_2">
+<figure id="F4" class="ltx_figure ltx_figure_panel"><a href="./29.4.F4.mag" title="Magnify Figure" class="ltx_magnifiable"><img src="./29/4/F4.png" id="F4.g1" class="ltx_graphics ltx_centering ltx_img_landscape" width="415" height="247" alt="See accompanying text"></a>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 29.4.4: </span><math class="ltx_Math" altimg="m37.png" altimg-height="25px" altimg-valign="-7px" altimg-width="77px" alttext="a^{m}_{\nu}\left(0.1\right)" display="inline"><mrow><msubsup><mi href="./29.3#i.p1" title="eigenvalues of Lamé’s equation">a</mi><mi href="./29.1#t1.r4" title="real parameter">ν</mi><mi href="./29.1#t1.r1" title="nonnegative integer">m</mi></msubsup><mo>⁡</mo><mrow><mo>(</mo><mn>0.1</mn><mo>)</mo></mrow></mrow></math>, <math class="ltx_Math" altimg="m45.png" altimg-height="26px" altimg-valign="-7px" altimg-width="96px" alttext="b^{m+1}_{\nu}\left(0.1\right)" display="inline"><mrow><msubsup><mi href="./29.3#i.p1" title="eigenvalues of Lamé’s equation">b</mi><mi href="./29.1#t1.r4" title="real parameter">ν</mi><mrow><mi href="./29.1#t1.r1" title="nonnegative integer">m</mi><mo>+</mo><mn>1</mn></mrow></msubsup><mo>⁡</mo><mrow><mo>(</mo><mn>0.1</mn><mo>)</mo></mrow></mrow></math>
+as functions of <math class="ltx_Math" altimg="m28.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="\nu" display="inline"><mi href="./29.1#t1.r4" title="real parameter">ν</mi></math> for <math class="ltx_Math" altimg="m50.png" altimg-height="21px" altimg-valign="-6px" altimg-width="119px" alttext="m=0,1,2,3" display="inline"><mrow><mi href="./29.1#t1.r1" title="nonnegative integer">m</mi><mo>=</mo><mrow><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn></mrow></mrow></math>.
+
+
+<a href="./29.4.F4.mag" title="Magnify Figure" class="ltx_magnifiable ltx_icon"><span>Magnify</span></a>
+</figcaption>
+<div id="F4.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./29.3#i.p1" title="§29.3(i) Eigenvalues ‣ §29.3 Definitions and Basic Properties ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m34.png" altimg-height="29px" altimg-valign="-9px" altimg-width="70px" alttext="a^{\NVar{n}}_{\NVar{\nu}}\left(\NVar{k^{2}}\right)" display="inline"><mrow><msubsup><mi href="./29.3#i.p1" title="eigenvalues of Lamé’s equation">a</mi><mi class="ltx_nvar" href="./29.1#t1.r4" title="real parameter">ν</mi><mi class="ltx_nvar" href="./29.1#t1.r1" title="nonnegative integer">n</mi></msubsup><mo>⁡</mo><mrow><mo>(</mo><msup><mi class="ltx_nvar" href="./29.1#t1.r4" title="real parameter">k</mi><mn class="ltx_nvar">2</mn></msup><mo>)</mo></mrow></mrow></math>: eigenvalues of Lamé’s equation</a>,
+<a href="./29.3#i.p1" title="§29.3(i) Eigenvalues ‣ §29.3 Definitions and Basic Properties ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m42.png" altimg-height="29px" altimg-valign="-9px" altimg-width="68px" alttext="b^{\NVar{n}}_{\NVar{\nu}}\left(\NVar{k^{2}}\right)" display="inline"><mrow><msubsup><mi href="./29.3#i.p1" title="eigenvalues of Lamé’s equation">b</mi><mi class="ltx_nvar" href="./29.1#t1.r4" title="real parameter">ν</mi><mi class="ltx_nvar" href="./29.1#t1.r1" title="nonnegative integer">n</mi></msubsup><mo>⁡</mo><mrow><mo>(</mo><msup><mi class="ltx_nvar" href="./29.1#t1.r4" title="real parameter">k</mi><mn class="ltx_nvar">2</mn></msup><mo>)</mo></mrow></mrow></math>: eigenvalues of Lamé’s equation</a>,
+<a href="./29.1#t1.r1" title="§29.1 Special Notation ‣ Notation ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m53.png" altimg-height="13px" altimg-valign="-2px" altimg-width="23px" alttext="m" display="inline"><mi href="./29.1#t1.r1" title="nonnegative integer">m</mi></math>:  nonnegative integer</a> and
+<a href="./29.1#t1.r4" title="§29.1 Special Notation ‣ Notation ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m28.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="\nu" display="inline"><mi href="./29.1#t1.r4" title="real parameter">ν</mi></math>:  real parameter</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./29.4.F4" title="" class="ltx_ref">http://dlmf.nist.gov/29.4.F4</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./29.4.F4.pdf">pdf</a>, <a href="./29.4.F4.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./29.4#i.info" title="§29.4(i) Eigenvalues of Lamé’s Equation: Line Graphs ‣ §29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§29.4(i)</span></a>,
+<a href="./29.4#info" title="§29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§29.4</span></a> and
+<a href="./29#info" title="Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.29</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+</div>
+<div class="ltx_flex_cell ltx_flex_size_2">
+<figure id="F5" class="ltx_figure ltx_figure_panel"><a href="./29.4.F5.mag" title="Magnify Figure" class="ltx_magnifiable"><img src="./29/4/F5.png" id="F5.g1" class="ltx_graphics ltx_centering ltx_img_landscape" width="416" height="246" alt="See accompanying text"></a>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 29.4.5: </span><math class="ltx_Math" altimg="m39.png" altimg-height="25px" altimg-valign="-7px" altimg-width="77px" alttext="a^{m}_{\nu}\left(0.9\right)" display="inline"><mrow><msubsup><mi href="./29.3#i.p1" title="eigenvalues of Lamé’s equation">a</mi><mi href="./29.1#t1.r4" title="real parameter">ν</mi><mi href="./29.1#t1.r1" title="nonnegative integer">m</mi></msubsup><mo>⁡</mo><mrow><mo>(</mo><mn>0.9</mn><mo>)</mo></mrow></mrow></math>, <math class="ltx_Math" altimg="m47.png" altimg-height="26px" altimg-valign="-7px" altimg-width="96px" alttext="b^{m+1}_{\nu}\left(0.9\right)" display="inline"><mrow><msubsup><mi href="./29.3#i.p1" title="eigenvalues of Lamé’s equation">b</mi><mi href="./29.1#t1.r4" title="real parameter">ν</mi><mrow><mi href="./29.1#t1.r1" title="nonnegative integer">m</mi><mo>+</mo><mn>1</mn></mrow></msubsup><mo>⁡</mo><mrow><mo>(</mo><mn>0.9</mn><mo>)</mo></mrow></mrow></math>
+as functions of <math class="ltx_Math" altimg="m28.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="\nu" display="inline"><mi href="./29.1#t1.r4" title="real parameter">ν</mi></math> for <math class="ltx_Math" altimg="m50.png" altimg-height="21px" altimg-valign="-6px" altimg-width="119px" alttext="m=0,1,2,3" display="inline"><mrow><mi href="./29.1#t1.r1" title="nonnegative integer">m</mi><mo>=</mo><mrow><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn></mrow></mrow></math>.
+
+
+<a href="./29.4.F5.mag" title="Magnify Figure" class="ltx_magnifiable ltx_icon"><span>Magnify</span></a>
+</figcaption>
+<div id="F5.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./29.3#i.p1" title="§29.3(i) Eigenvalues ‣ §29.3 Definitions and Basic Properties ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m34.png" altimg-height="29px" altimg-valign="-9px" altimg-width="70px" alttext="a^{\NVar{n}}_{\NVar{\nu}}\left(\NVar{k^{2}}\right)" display="inline"><mrow><msubsup><mi href="./29.3#i.p1" title="eigenvalues of Lamé’s equation">a</mi><mi class="ltx_nvar" href="./29.1#t1.r4" title="real parameter">ν</mi><mi class="ltx_nvar" href="./29.1#t1.r1" title="nonnegative integer">n</mi></msubsup><mo>⁡</mo><mrow><mo>(</mo><msup><mi class="ltx_nvar" href="./29.1#t1.r4" title="real parameter">k</mi><mn class="ltx_nvar">2</mn></msup><mo>)</mo></mrow></mrow></math>: eigenvalues of Lamé’s equation</a>,
+<a href="./29.3#i.p1" title="§29.3(i) Eigenvalues ‣ §29.3 Definitions and Basic Properties ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m42.png" altimg-height="29px" altimg-valign="-9px" altimg-width="68px" alttext="b^{\NVar{n}}_{\NVar{\nu}}\left(\NVar{k^{2}}\right)" display="inline"><mrow><msubsup><mi href="./29.3#i.p1" title="eigenvalues of Lamé’s equation">b</mi><mi class="ltx_nvar" href="./29.1#t1.r4" title="real parameter">ν</mi><mi class="ltx_nvar" href="./29.1#t1.r1" title="nonnegative integer">n</mi></msubsup><mo>⁡</mo><mrow><mo>(</mo><msup><mi class="ltx_nvar" href="./29.1#t1.r4" title="real parameter">k</mi><mn class="ltx_nvar">2</mn></msup><mo>)</mo></mrow></mrow></math>: eigenvalues of Lamé’s equation</a>,
+<a href="./29.1#t1.r1" title="§29.1 Special Notation ‣ Notation ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m53.png" altimg-height="13px" altimg-valign="-2px" altimg-width="23px" alttext="m" display="inline"><mi href="./29.1#t1.r1" title="nonnegative integer">m</mi></math>:  nonnegative integer</a> and
+<a href="./29.1#t1.r4" title="§29.1 Special Notation ‣ Notation ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m28.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="\nu" display="inline"><mi href="./29.1#t1.r4" title="real parameter">ν</mi></math>:  real parameter</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./29.4.F5" title="" class="ltx_ref">http://dlmf.nist.gov/29.4.F5</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./29.4.F5.pdf">pdf</a>, <a href="./29.4.F5.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./29.4#i.info" title="§29.4(i) Eigenvalues of Lamé’s Equation: Line Graphs ‣ §29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§29.4(i)</span></a>,
+<a href="./29.4#info" title="§29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§29.4</span></a> and
+<a href="./29#info" title="Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.29</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+</div>
+</div>
+</figure>
+<figure id="i.fig3" class="ltx_figure">
+<div class="ltx_flex_figure">
+<div class="ltx_flex_cell ltx_flex_size_2">
+<figure id="F6" class="ltx_figure ltx_figure_panel"><a href="./29.4.F6.mag" title="Magnify Figure" class="ltx_magnifiable"><img src="./29/4/F6.png" id="F6.g1" class="ltx_graphics ltx_centering ltx_img_landscape" width="415" height="232" alt="See accompanying text"></a>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 29.4.6: </span><math class="ltx_Math" altimg="m31.png" altimg-height="26px" altimg-valign="-7px" altimg-width="162px" alttext="a^{2}_{\nu}\left(0.5\right)-b^{2}_{\nu}\left(0.5\right)" display="inline"><mrow><mrow><msubsup><mi href="./29.3#i.p1" title="eigenvalues of Lamé’s equation">a</mi><mi href="./29.1#t1.r4" title="real parameter">ν</mi><mn>2</mn></msubsup><mo>⁡</mo><mrow><mo>(</mo><mn>0.5</mn><mo>)</mo></mrow></mrow><mo>−</mo><mrow><msubsup><mi href="./29.3#i.p1" title="eigenvalues of Lamé’s equation">b</mi><mi href="./29.1#t1.r4" title="real parameter">ν</mi><mn>2</mn></msubsup><mo>⁡</mo><mrow><mo>(</mo><mn>0.5</mn><mo>)</mo></mrow></mrow></mrow></math>
+as a function of <math class="ltx_Math" altimg="m28.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="\nu" display="inline"><mi href="./29.1#t1.r4" title="real parameter">ν</mi></math>.
+
+
+<a href="./29.4.F6.mag" title="Magnify Figure" class="ltx_magnifiable ltx_icon"><span>Magnify</span></a>
+</figcaption>
+<div id="F6.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./29.3#i.p1" title="§29.3(i) Eigenvalues ‣ §29.3 Definitions and Basic Properties ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m34.png" altimg-height="29px" altimg-valign="-9px" altimg-width="70px" alttext="a^{\NVar{n}}_{\NVar{\nu}}\left(\NVar{k^{2}}\right)" display="inline"><mrow><msubsup><mi href="./29.3#i.p1" title="eigenvalues of Lamé’s equation">a</mi><mi class="ltx_nvar" href="./29.1#t1.r4" title="real parameter">ν</mi><mi class="ltx_nvar" href="./29.1#t1.r1" title="nonnegative integer">n</mi></msubsup><mo>⁡</mo><mrow><mo>(</mo><msup><mi class="ltx_nvar" href="./29.1#t1.r4" title="real parameter">k</mi><mn class="ltx_nvar">2</mn></msup><mo>)</mo></mrow></mrow></math>: eigenvalues of Lamé’s equation</a>,
+<a href="./29.3#i.p1" title="§29.3(i) Eigenvalues ‣ §29.3 Definitions and Basic Properties ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m42.png" altimg-height="29px" altimg-valign="-9px" altimg-width="68px" alttext="b^{\NVar{n}}_{\NVar{\nu}}\left(\NVar{k^{2}}\right)" display="inline"><mrow><msubsup><mi href="./29.3#i.p1" title="eigenvalues of Lamé’s equation">b</mi><mi class="ltx_nvar" href="./29.1#t1.r4" title="real parameter">ν</mi><mi class="ltx_nvar" href="./29.1#t1.r1" title="nonnegative integer">n</mi></msubsup><mo>⁡</mo><mrow><mo>(</mo><msup><mi class="ltx_nvar" href="./29.1#t1.r4" title="real parameter">k</mi><mn class="ltx_nvar">2</mn></msup><mo>)</mo></mrow></mrow></math>: eigenvalues of Lamé’s equation</a> and
+<a href="./29.1#t1.r4" title="§29.1 Special Notation ‣ Notation ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m28.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="\nu" display="inline"><mi href="./29.1#t1.r4" title="real parameter">ν</mi></math>:  real parameter</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./29.4.F6" title="" class="ltx_ref">http://dlmf.nist.gov/29.4.F6</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./29.4.F6.pdf">pdf</a>, <a href="./29.4.F6.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./29.4#i.info" title="§29.4(i) Eigenvalues of Lamé’s Equation: Line Graphs ‣ §29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§29.4(i)</span></a>,
+<a href="./29.4#info" title="§29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§29.4</span></a> and
+<a href="./29#info" title="Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.29</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+</div>
+<div class="ltx_flex_cell ltx_flex_size_2">
+<figure id="F7" class="ltx_figure ltx_figure_panel"><a href="./29.4.F7.mag" title="Magnify Figure" class="ltx_magnifiable"><img src="./29/4/F7.png" id="F7.g1" class="ltx_graphics ltx_centering ltx_img_landscape" width="416" height="225" alt="See accompanying text"></a>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 29.4.7: </span><math class="ltx_Math" altimg="m33.png" altimg-height="26px" altimg-valign="-7px" altimg-width="162px" alttext="a^{4}_{\nu}\left(0.5\right)-b^{4}_{\nu}\left(0.5\right)" display="inline"><mrow><mrow><msubsup><mi href="./29.3#i.p1" title="eigenvalues of Lamé’s equation">a</mi><mi href="./29.1#t1.r4" title="real parameter">ν</mi><mn>4</mn></msubsup><mo>⁡</mo><mrow><mo>(</mo><mn>0.5</mn><mo>)</mo></mrow></mrow><mo>−</mo><mrow><msubsup><mi href="./29.3#i.p1" title="eigenvalues of Lamé’s equation">b</mi><mi href="./29.1#t1.r4" title="real parameter">ν</mi><mn>4</mn></msubsup><mo>⁡</mo><mrow><mo>(</mo><mn>0.5</mn><mo>)</mo></mrow></mrow></mrow></math>
+as a function of <math class="ltx_Math" altimg="m28.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="\nu" display="inline"><mi href="./29.1#t1.r4" title="real parameter">ν</mi></math>.
+
+
+<a href="./29.4.F7.mag" title="Magnify Figure" class="ltx_magnifiable ltx_icon"><span>Magnify</span></a>
+</figcaption>
+<div id="F7.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./29.3#i.p1" title="§29.3(i) Eigenvalues ‣ §29.3 Definitions and Basic Properties ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m34.png" altimg-height="29px" altimg-valign="-9px" altimg-width="70px" alttext="a^{\NVar{n}}_{\NVar{\nu}}\left(\NVar{k^{2}}\right)" display="inline"><mrow><msubsup><mi href="./29.3#i.p1" title="eigenvalues of Lamé’s equation">a</mi><mi class="ltx_nvar" href="./29.1#t1.r4" title="real parameter">ν</mi><mi class="ltx_nvar" href="./29.1#t1.r1" title="nonnegative integer">n</mi></msubsup><mo>⁡</mo><mrow><mo>(</mo><msup><mi class="ltx_nvar" href="./29.1#t1.r4" title="real parameter">k</mi><mn class="ltx_nvar">2</mn></msup><mo>)</mo></mrow></mrow></math>: eigenvalues of Lamé’s equation</a>,
+<a href="./29.3#i.p1" title="§29.3(i) Eigenvalues ‣ §29.3 Definitions and Basic Properties ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m42.png" altimg-height="29px" altimg-valign="-9px" altimg-width="68px" alttext="b^{\NVar{n}}_{\NVar{\nu}}\left(\NVar{k^{2}}\right)" display="inline"><mrow><msubsup><mi href="./29.3#i.p1" title="eigenvalues of Lamé’s equation">b</mi><mi class="ltx_nvar" href="./29.1#t1.r4" title="real parameter">ν</mi><mi class="ltx_nvar" href="./29.1#t1.r1" title="nonnegative integer">n</mi></msubsup><mo>⁡</mo><mrow><mo>(</mo><msup><mi class="ltx_nvar" href="./29.1#t1.r4" title="real parameter">k</mi><mn class="ltx_nvar">2</mn></msup><mo>)</mo></mrow></mrow></math>: eigenvalues of Lamé’s equation</a> and
+<a href="./29.1#t1.r4" title="§29.1 Special Notation ‣ Notation ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m28.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="\nu" display="inline"><mi href="./29.1#t1.r4" title="real parameter">ν</mi></math>:  real parameter</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./29.4.F7" title="" class="ltx_ref">http://dlmf.nist.gov/29.4.F7</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./29.4.F7.pdf">pdf</a>, <a href="./29.4.F7.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./29.4#i.info" title="§29.4(i) Eigenvalues of Lamé’s Equation: Line Graphs ‣ §29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§29.4(i)</span></a>,
+<a href="./29.4#info" title="§29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§29.4</span></a> and
+<a href="./29#info" title="Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.29</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+</div>
+</div>
+</figure>
+<figure id="F8" class="ltx_figure"><a href="./29.4.F8.mag" title="Magnify Figure" class="ltx_magnifiable"><img src="./29/4/F8.png" id="F8.g1" class="ltx_graphics ltx_centering ltx_img_landscape" width="414" height="237" alt="See accompanying text"></a>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 29.4.8: </span><math class="ltx_Math" altimg="m36.png" altimg-height="29px" altimg-valign="-9px" altimg-width="81px" alttext="a^{m}_{2.5}\left(k^{2}\right)" display="inline"><mrow><msubsup><mi href="./29.3#i.p1" title="eigenvalues of Lamé’s equation">a</mi><mn>2.5</mn><mi href="./29.1#t1.r1" title="nonnegative integer">m</mi></msubsup><mo>⁡</mo><mrow><mo>(</mo><msup><mi href="./29.1#t1.r4" title="real parameter">k</mi><mn>2</mn></msup><mo>)</mo></mrow></mrow></math>, <math class="ltx_Math" altimg="m44.png" altimg-height="30px" altimg-valign="-9px" altimg-width="93px" alttext="b^{m+1}_{2.5}\left(k^{2}\right)" display="inline"><mrow><msubsup><mi href="./29.3#i.p1" title="eigenvalues of Lamé’s equation">b</mi><mn>2.5</mn><mrow><mi href="./29.1#t1.r1" title="nonnegative integer">m</mi><mo>+</mo><mn>1</mn></mrow></msubsup><mo>⁡</mo><mrow><mo>(</mo><msup><mi href="./29.1#t1.r4" title="real parameter">k</mi><mn>2</mn></msup><mo>)</mo></mrow></mrow></math>
+as functions of <math class="ltx_Math" altimg="m49.png" altimg-height="21px" altimg-valign="-2px" altimg-width="25px" alttext="k^{2}" display="inline"><msup><mi href="./29.1#t1.r4" title="real parameter">k</mi><mn>2</mn></msup></math> for <math class="ltx_Math" altimg="m51.png" altimg-height="21px" altimg-valign="-6px" altimg-width="100px" alttext="m=0,1,2" display="inline"><mrow><mi href="./29.1#t1.r1" title="nonnegative integer">m</mi><mo>=</mo><mrow><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn></mrow></mrow></math>.
+
+
+<a href="./29.4.F8.mag" title="Magnify Figure" class="ltx_magnifiable ltx_icon"><span>Magnify</span></a>
+</figcaption>
+<div id="F8.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./29.3#i.p1" title="§29.3(i) Eigenvalues ‣ §29.3 Definitions and Basic Properties ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m34.png" altimg-height="29px" altimg-valign="-9px" altimg-width="70px" alttext="a^{\NVar{n}}_{\NVar{\nu}}\left(\NVar{k^{2}}\right)" display="inline"><mrow><msubsup><mi href="./29.3#i.p1" title="eigenvalues of Lamé’s equation">a</mi><mi class="ltx_nvar" href="./29.1#t1.r4" title="real parameter">ν</mi><mi class="ltx_nvar" href="./29.1#t1.r1" title="nonnegative integer">n</mi></msubsup><mo>⁡</mo><mrow><mo>(</mo><msup><mi class="ltx_nvar" href="./29.1#t1.r4" title="real parameter">k</mi><mn class="ltx_nvar">2</mn></msup><mo>)</mo></mrow></mrow></math>: eigenvalues of Lamé’s equation</a>,
+<a href="./29.3#i.p1" title="§29.3(i) Eigenvalues ‣ §29.3 Definitions and Basic Properties ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m42.png" altimg-height="29px" altimg-valign="-9px" altimg-width="68px" alttext="b^{\NVar{n}}_{\NVar{\nu}}\left(\NVar{k^{2}}\right)" display="inline"><mrow><msubsup><mi href="./29.3#i.p1" title="eigenvalues of Lamé’s equation">b</mi><mi class="ltx_nvar" href="./29.1#t1.r4" title="real parameter">ν</mi><mi class="ltx_nvar" href="./29.1#t1.r1" title="nonnegative integer">n</mi></msubsup><mo>⁡</mo><mrow><mo>(</mo><msup><mi class="ltx_nvar" href="./29.1#t1.r4" title="real parameter">k</mi><mn class="ltx_nvar">2</mn></msup><mo>)</mo></mrow></mrow></math>: eigenvalues of Lamé’s equation</a>,
+<a href="./29.1#t1.r1" title="§29.1 Special Notation ‣ Notation ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m53.png" altimg-height="13px" altimg-valign="-2px" altimg-width="23px" alttext="m" display="inline"><mi href="./29.1#t1.r1" title="nonnegative integer">m</mi></math>:  nonnegative integer</a> and
+<a href="./29.1#t1.r4" title="§29.1 Special Notation ‣ Notation ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m48.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./29.1#t1.r4" title="real parameter">k</mi></math>:  real parameter</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./29.4.F8" title="" class="ltx_ref">http://dlmf.nist.gov/29.4.F8</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./29.4.F8.pdf">pdf</a>, <a href="./29.4.F8.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./29.4#i.info" title="§29.4(i) Eigenvalues of Lamé’s Equation: Line Graphs ‣ §29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§29.4(i)</span></a>,
+<a href="./29.4#info" title="§29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§29.4</span></a> and
+<a href="./29#info" title="Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.29</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+</section>
+<section id="ii" class="ltx_subsection ltx_pruned_first">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§29.4(ii) </span>Eigenvalues of Lamé’s Equation: Surfaces</h2>
+<div id="ii.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=Lam%C3%A9%20functions">Lamé functions</a>, <a class="ltx_keyword" href="./search/search?q=eigenvalues">eigenvalues</a>, <a class="ltx_keyword" href="./search/search?q=graphics">graphics</a>
+</dd>
+<dt>Notes:</dt>
+<dd>These surfaces were produced at NIST.</dd>
+<dt>Permalink:</dt>
+<dd><a href="./29.4.ii" title="" class="ltx_ref">http://dlmf.nist.gov/29.4.ii</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./29.4#info" title="§29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§29.4</span></a> and
+<a href="./29#info" title="Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.29</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<figure id="ii.fig1" class="ltx_figure">
+<div class="ltx_flex_figure">
+<div class="ltx_flex_cell ltx_flex_size_2">
+<figure id="F9" class="ltx_figure ltx_figure_panel">
+<div class="ltx_vizimg">
+<a href="./29.4.F9.viz" title="Interactive 3D Visualization" class="ltx_3dgraphic"><img src="./29/4/F9.png" id="F9.g1" class="ltx_graphics ltx_centering ltx_img_landscape" width="415" height="288" alt="See accompanying text"></a>
+</div>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 29.4.9: </span><math class="ltx_Math" altimg="m29.png" altimg-height="29px" altimg-valign="-9px" altimg-width="69px" alttext="a^{0}_{\nu}\left(k^{2}\right)" display="inline"><mrow><msubsup><mi href="./29.3#i.p1" title="eigenvalues of Lamé’s equation">a</mi><mi href="./29.1#t1.r4" title="real parameter">ν</mi><mn>0</mn></msubsup><mo>⁡</mo><mrow><mo>(</mo><msup><mi href="./29.1#t1.r4" title="real parameter">k</mi><mn>2</mn></msup><mo>)</mo></mrow></mrow></math>
+as a function of <math class="ltx_Math" altimg="m28.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="\nu" display="inline"><mi href="./29.1#t1.r4" title="real parameter">ν</mi></math> and <math class="ltx_Math" altimg="m49.png" altimg-height="21px" altimg-valign="-2px" altimg-width="25px" alttext="k^{2}" display="inline"><msup><mi href="./29.1#t1.r4" title="real parameter">k</mi><mn>2</mn></msup></math>.
+
+
+<a href="./29.4.F9.mag" title="Magnify Figure" class="ltx_magnifiable ltx_icon"><span>Magnify</span></a>
+
+<a href="./29.4.F9.viz" title="Interactive 3D Visualization" class="ltx_3dgraphic ltx_icon"><span>3D</span></a>
+<a href="./help/vrml/" class="ltx_help" style="font-size:80%">Help</a>
+</figcaption>
+<div id="F9.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./29.3#i.p1" title="§29.3(i) Eigenvalues ‣ §29.3 Definitions and Basic Properties ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m34.png" altimg-height="29px" altimg-valign="-9px" altimg-width="70px" alttext="a^{\NVar{n}}_{\NVar{\nu}}\left(\NVar{k^{2}}\right)" display="inline"><mrow><msubsup><mi href="./29.3#i.p1" title="eigenvalues of Lamé’s equation">a</mi><mi class="ltx_nvar" href="./29.1#t1.r4" title="real parameter">ν</mi><mi class="ltx_nvar" href="./29.1#t1.r1" title="nonnegative integer">n</mi></msubsup><mo>⁡</mo><mrow><mo>(</mo><msup><mi class="ltx_nvar" href="./29.1#t1.r4" title="real parameter">k</mi><mn class="ltx_nvar">2</mn></msup><mo>)</mo></mrow></mrow></math>: eigenvalues of Lamé’s equation</a>,
+<a href="./29.1#t1.r4" title="§29.1 Special Notation ‣ Notation ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m48.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./29.1#t1.r4" title="real parameter">k</mi></math>:  real parameter</a> and
+<a href="./29.1#t1.r4" title="§29.1 Special Notation ‣ Notation ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m28.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="\nu" display="inline"><mi href="./29.1#t1.r4" title="real parameter">ν</mi></math>:  real parameter</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./29.4.F9" title="" class="ltx_ref">http://dlmf.nist.gov/29.4.F9</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./29.4.F9.viz">Vizualization</a>, <a href="./29.4.F9.pdf">pdf</a>, <a href="./29.4.F9.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./29.4#ii.info" title="§29.4(ii) Eigenvalues of Lamé’s Equation: Surfaces ‣ §29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§29.4(ii)</span></a>,
+<a href="./29.4#info" title="§29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§29.4</span></a> and
+<a href="./29#info" title="Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.29</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+</div>
+<div class="ltx_flex_cell ltx_flex_size_2">
+<figure id="F10" class="ltx_figure ltx_figure_panel">
+<div class="ltx_vizimg">
+<a href="./29.4.F10.viz" title="Interactive 3D Visualization" class="ltx_3dgraphic"><img src="./29/4/F10.png" id="F10.g1" class="ltx_graphics ltx_centering ltx_img_landscape" width="415" height="284" alt="See accompanying text"></a>
+</div>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 29.4.10: </span><math class="ltx_Math" altimg="m40.png" altimg-height="29px" altimg-valign="-9px" altimg-width="67px" alttext="b^{1}_{\nu}\left(k^{2}\right)" display="inline"><mrow><msubsup><mi href="./29.3#i.p1" title="eigenvalues of Lamé’s equation">b</mi><mi href="./29.1#t1.r4" title="real parameter">ν</mi><mn>1</mn></msubsup><mo>⁡</mo><mrow><mo>(</mo><msup><mi href="./29.1#t1.r4" title="real parameter">k</mi><mn>2</mn></msup><mo>)</mo></mrow></mrow></math>
+as a function of <math class="ltx_Math" altimg="m28.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="\nu" display="inline"><mi href="./29.1#t1.r4" title="real parameter">ν</mi></math> and <math class="ltx_Math" altimg="m49.png" altimg-height="21px" altimg-valign="-2px" altimg-width="25px" alttext="k^{2}" display="inline"><msup><mi href="./29.1#t1.r4" title="real parameter">k</mi><mn>2</mn></msup></math>.
+
+
+<a href="./29.4.F10.mag" title="Magnify Figure" class="ltx_magnifiable ltx_icon"><span>Magnify</span></a>
+
+<a href="./29.4.F10.viz" title="Interactive 3D Visualization" class="ltx_3dgraphic ltx_icon"><span>3D</span></a>
+<a href="./help/vrml/" class="ltx_help" style="font-size:80%">Help</a>
+</figcaption>
+<div id="F10.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./29.3#i.p1" title="§29.3(i) Eigenvalues ‣ §29.3 Definitions and Basic Properties ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m42.png" altimg-height="29px" altimg-valign="-9px" altimg-width="68px" alttext="b^{\NVar{n}}_{\NVar{\nu}}\left(\NVar{k^{2}}\right)" display="inline"><mrow><msubsup><mi href="./29.3#i.p1" title="eigenvalues of Lamé’s equation">b</mi><mi class="ltx_nvar" href="./29.1#t1.r4" title="real parameter">ν</mi><mi class="ltx_nvar" href="./29.1#t1.r1" title="nonnegative integer">n</mi></msubsup><mo>⁡</mo><mrow><mo>(</mo><msup><mi class="ltx_nvar" href="./29.1#t1.r4" title="real parameter">k</mi><mn class="ltx_nvar">2</mn></msup><mo>)</mo></mrow></mrow></math>: eigenvalues of Lamé’s equation</a>,
+<a href="./29.1#t1.r4" title="§29.1 Special Notation ‣ Notation ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m48.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./29.1#t1.r4" title="real parameter">k</mi></math>:  real parameter</a> and
+<a href="./29.1#t1.r4" title="§29.1 Special Notation ‣ Notation ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m28.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="\nu" display="inline"><mi href="./29.1#t1.r4" title="real parameter">ν</mi></math>:  real parameter</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./29.4.F10" title="" class="ltx_ref">http://dlmf.nist.gov/29.4.F10</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./29.4.F10.viz">Vizualization</a>, <a href="./29.4.F10.pdf">pdf</a>, <a href="./29.4.F10.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./29.4#ii.info" title="§29.4(ii) Eigenvalues of Lamé’s Equation: Surfaces ‣ §29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§29.4(ii)</span></a>,
+<a href="./29.4#info" title="§29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§29.4</span></a> and
+<a href="./29#info" title="Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.29</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+</div>
+</div>
+</figure>
+<figure id="ii.fig2" class="ltx_figure">
+<div class="ltx_flex_figure">
+<div class="ltx_flex_cell ltx_flex_size_2">
+<figure id="F11" class="ltx_figure ltx_figure_panel">
+<div class="ltx_vizimg">
+<a href="./29.4.F11.viz" title="Interactive 3D Visualization" class="ltx_3dgraphic"><img src="./29/4/F11.png" id="F11.g1" class="ltx_graphics ltx_centering ltx_img_landscape" width="415" height="298" alt="See accompanying text"></a>
+</div>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 29.4.11: </span><math class="ltx_Math" altimg="m30.png" altimg-height="29px" altimg-valign="-9px" altimg-width="69px" alttext="a^{1}_{\nu}\left(k^{2}\right)" display="inline"><mrow><msubsup><mi href="./29.3#i.p1" title="eigenvalues of Lamé’s equation">a</mi><mi href="./29.1#t1.r4" title="real parameter">ν</mi><mn>1</mn></msubsup><mo>⁡</mo><mrow><mo>(</mo><msup><mi href="./29.1#t1.r4" title="real parameter">k</mi><mn>2</mn></msup><mo>)</mo></mrow></mrow></math>
+as a function of <math class="ltx_Math" altimg="m28.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="\nu" display="inline"><mi href="./29.1#t1.r4" title="real parameter">ν</mi></math> and <math class="ltx_Math" altimg="m49.png" altimg-height="21px" altimg-valign="-2px" altimg-width="25px" alttext="k^{2}" display="inline"><msup><mi href="./29.1#t1.r4" title="real parameter">k</mi><mn>2</mn></msup></math>.
+
+
+<a href="./29.4.F11.mag" title="Magnify Figure" class="ltx_magnifiable ltx_icon"><span>Magnify</span></a>
+
+<a href="./29.4.F11.viz" title="Interactive 3D Visualization" class="ltx_3dgraphic ltx_icon"><span>3D</span></a>
+<a href="./help/vrml/" class="ltx_help" style="font-size:80%">Help</a>
+</figcaption>
+<div id="F11.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./29.3#i.p1" title="§29.3(i) Eigenvalues ‣ §29.3 Definitions and Basic Properties ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m34.png" altimg-height="29px" altimg-valign="-9px" altimg-width="70px" alttext="a^{\NVar{n}}_{\NVar{\nu}}\left(\NVar{k^{2}}\right)" display="inline"><mrow><msubsup><mi href="./29.3#i.p1" title="eigenvalues of Lamé’s equation">a</mi><mi class="ltx_nvar" href="./29.1#t1.r4" title="real parameter">ν</mi><mi class="ltx_nvar" href="./29.1#t1.r1" title="nonnegative integer">n</mi></msubsup><mo>⁡</mo><mrow><mo>(</mo><msup><mi class="ltx_nvar" href="./29.1#t1.r4" title="real parameter">k</mi><mn class="ltx_nvar">2</mn></msup><mo>)</mo></mrow></mrow></math>: eigenvalues of Lamé’s equation</a>,
+<a href="./29.1#t1.r4" title="§29.1 Special Notation ‣ Notation ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m48.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./29.1#t1.r4" title="real parameter">k</mi></math>:  real parameter</a> and
+<a href="./29.1#t1.r4" title="§29.1 Special Notation ‣ Notation ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m28.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="\nu" display="inline"><mi href="./29.1#t1.r4" title="real parameter">ν</mi></math>:  real parameter</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./29.4.F11" title="" class="ltx_ref">http://dlmf.nist.gov/29.4.F11</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./29.4.F11.viz">Vizualization</a>, <a href="./29.4.F11.pdf">pdf</a>, <a href="./29.4.F11.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./29.4#ii.info" title="§29.4(ii) Eigenvalues of Lamé’s Equation: Surfaces ‣ §29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§29.4(ii)</span></a>,
+<a href="./29.4#info" title="§29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§29.4</span></a> and
+<a href="./29#info" title="Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.29</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+</div>
+<div class="ltx_flex_cell ltx_flex_size_2">
+<figure id="F12" class="ltx_figure ltx_figure_panel">
+<div class="ltx_vizimg">
+<a href="./29.4.F12.viz" title="Interactive 3D Visualization" class="ltx_3dgraphic"><img src="./29/4/F12.png" id="F12.g1" class="ltx_graphics ltx_centering ltx_img_landscape" width="415" height="290" alt="See accompanying text"></a>
+</div>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 29.4.12: </span><math class="ltx_Math" altimg="m41.png" altimg-height="29px" altimg-valign="-9px" altimg-width="67px" alttext="b^{2}_{\nu}\left(k^{2}\right)" display="inline"><mrow><msubsup><mi href="./29.3#i.p1" title="eigenvalues of Lamé’s equation">b</mi><mi href="./29.1#t1.r4" title="real parameter">ν</mi><mn>2</mn></msubsup><mo>⁡</mo><mrow><mo>(</mo><msup><mi href="./29.1#t1.r4" title="real parameter">k</mi><mn>2</mn></msup><mo>)</mo></mrow></mrow></math>
+as a function of <math class="ltx_Math" altimg="m28.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="\nu" display="inline"><mi href="./29.1#t1.r4" title="real parameter">ν</mi></math> and <math class="ltx_Math" altimg="m49.png" altimg-height="21px" altimg-valign="-2px" altimg-width="25px" alttext="k^{2}" display="inline"><msup><mi href="./29.1#t1.r4" title="real parameter">k</mi><mn>2</mn></msup></math>.
+
+
+<a href="./29.4.F12.mag" title="Magnify Figure" class="ltx_magnifiable ltx_icon"><span>Magnify</span></a>
+
+<a href="./29.4.F12.viz" title="Interactive 3D Visualization" class="ltx_3dgraphic ltx_icon"><span>3D</span></a>
+<a href="./help/vrml/" class="ltx_help" style="font-size:80%">Help</a>
+</figcaption>
+<div id="F12.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./29.3#i.p1" title="§29.3(i) Eigenvalues ‣ §29.3 Definitions and Basic Properties ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m42.png" altimg-height="29px" altimg-valign="-9px" altimg-width="68px" alttext="b^{\NVar{n}}_{\NVar{\nu}}\left(\NVar{k^{2}}\right)" display="inline"><mrow><msubsup><mi href="./29.3#i.p1" title="eigenvalues of Lamé’s equation">b</mi><mi class="ltx_nvar" href="./29.1#t1.r4" title="real parameter">ν</mi><mi class="ltx_nvar" href="./29.1#t1.r1" title="nonnegative integer">n</mi></msubsup><mo>⁡</mo><mrow><mo>(</mo><msup><mi class="ltx_nvar" href="./29.1#t1.r4" title="real parameter">k</mi><mn class="ltx_nvar">2</mn></msup><mo>)</mo></mrow></mrow></math>: eigenvalues of Lamé’s equation</a>,
+<a href="./29.1#t1.r4" title="§29.1 Special Notation ‣ Notation ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m48.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./29.1#t1.r4" title="real parameter">k</mi></math>:  real parameter</a> and
+<a href="./29.1#t1.r4" title="§29.1 Special Notation ‣ Notation ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m28.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="\nu" display="inline"><mi href="./29.1#t1.r4" title="real parameter">ν</mi></math>:  real parameter</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./29.4.F12" title="" class="ltx_ref">http://dlmf.nist.gov/29.4.F12</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./29.4.F12.viz">Vizualization</a>, <a href="./29.4.F12.pdf">pdf</a>, <a href="./29.4.F12.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./29.4#ii.info" title="§29.4(ii) Eigenvalues of Lamé’s Equation: Surfaces ‣ §29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§29.4(ii)</span></a>,
+<a href="./29.4#info" title="§29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§29.4</span></a> and
+<a href="./29#info" title="Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.29</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+</div>
+</div>
+</figure>
+</section>
+<section id="iii" class="ltx_subsection ltx_pruned_first">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§29.4(iii) </span>Lamé Functions: Line Graphs</h2>
+<div id="iii.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=Lam%C3%A9%20functions">Lamé functions</a>, <a class="ltx_keyword" href="./search/search?q=graphics">graphics</a>
+</dd>
+<dt>Notes:</dt>
+<dd>These graphs were produced at NIST.</dd>
+<dt>Permalink:</dt>
+<dd><a href="./29.4.iii" title="" class="ltx_ref">http://dlmf.nist.gov/29.4.iii</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./29.4#info" title="§29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§29.4</span></a> and
+<a href="./29#info" title="Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.29</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<figure id="iii.fig1" class="ltx_figure">
+<div class="ltx_flex_figure">
+<div class="ltx_flex_cell ltx_flex_size_2">
+<figure id="F13" class="ltx_figure ltx_figure_panel"><a href="./29.4.F13.mag" title="Magnify Figure" class="ltx_magnifiable"><img src="./29/4/F13.png" id="F13.g1" class="ltx_graphics ltx_centering ltx_img_landscape" width="416" height="243" alt="See accompanying text"></a>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 29.4.13: </span><math class="ltx_Math" altimg="m12.png" altimg-height="25px" altimg-valign="-7px" altimg-width="119px" alttext="\mathit{Ec}^{m}_{1.5}\left(x,0.5\right)" display="inline"><mrow><msubsup><mi href="./29.3#iv.p1" title="Lamé function">𝐸𝑐</mi><mn>1.5</mn><mi href="./29.1#t1.r1" title="nonnegative integer">m</mi></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi href="./29.1#t1.r2" title="real variable">x</mi><mo>,</mo><mn>0.5</mn><mo>)</mo></mrow></mrow></math> for
+<math class="ltx_Math" altimg="m1.png" altimg-height="21px" altimg-valign="-5px" altimg-width="147px" alttext="-2K\leq x\leq 2K" display="inline"><mrow><mrow><mo>−</mo><mrow><mn>2</mn><mo>⁢</mo><mrow><mi href="./19.2#E8" title="Legendre’s complete elliptic integral of the first kind">K</mi><mo>⁡</mo></mrow></mrow></mrow><mo>≤</mo><mi href="./29.1#t1.r2" title="real variable">x</mi><mo>≤</mo><mrow><mn>2</mn><mo>⁢</mo><mrow><mi href="./19.2#E8" title="Legendre’s complete elliptic integral of the first kind">K</mi><mo>⁡</mo></mrow></mrow></mrow></math>, <math class="ltx_Math" altimg="m51.png" altimg-height="21px" altimg-valign="-6px" altimg-width="100px" alttext="m=0,1,2" display="inline"><mrow><mi href="./29.1#t1.r1" title="nonnegative integer">m</mi><mo>=</mo><mrow><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn></mrow></mrow></math>.
+<math class="ltx_Math" altimg="m3.png" altimg-height="18px" altimg-valign="-2px" altimg-width="147px" alttext="K=1.85407\dotsc" display="inline"><mrow><mrow><mi href="./19.2#E8" title="Legendre’s complete elliptic integral of the first kind">K</mi><mo>⁡</mo></mrow><mo>=</mo><mrow><mn>1.85407</mn><mo>⁢</mo><mi mathvariant="normal">…</mi></mrow></mrow></math>.
+
+
+<a href="./29.4.F13.mag" title="Magnify Figure" class="ltx_magnifiable ltx_icon"><span>Magnify</span></a>
+</figcaption>
+<div id="F13.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./29.3#iv.p1" title="§29.3(iv) Lamé Functions ‣ §29.3 Definitions and Basic Properties ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m10.png" altimg-height="29px" altimg-valign="-9px" altimg-width="108px" alttext="\mathit{Ec}^{\NVar{m}}_{\NVar{\nu}}\left(\NVar{z},\NVar{k^{2}}\right)" display="inline"><mrow><msubsup><mi href="./29.3#iv.p1" title="Lamé function">𝐸𝑐</mi><mi class="ltx_nvar" href="./29.1#t1.r4" title="real parameter">ν</mi><mi class="ltx_nvar" href="./29.1#t1.r1" title="nonnegative integer">m</mi></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./29.1#t1.r3" title="complex variable">z</mi><mo>,</mo><msup><mi class="ltx_nvar" href="./29.1#t1.r4" title="real parameter">k</mi><mn class="ltx_nvar">2</mn></msup><mo>)</mo></mrow></mrow></math>: Lamé function</a>,
+<a href="./19.2#E8" title="(19.2.8) ‣ §19.2(ii) Legendre’s Integrals ‣ §19.2 Definitions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m5.png" altimg-height="25px" altimg-valign="-7px" altimg-width="54px" alttext="K\left(\NVar{k}\right)" display="inline"><mrow><mi href="./19.2#E8" title="Legendre’s complete elliptic integral of the first kind">K</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mo>)</mo></mrow></mrow></math>: Legendre’s complete elliptic integral of the first kind</a>,
+<a href="./29.1#t1.r1" title="§29.1 Special Notation ‣ Notation ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m53.png" altimg-height="13px" altimg-valign="-2px" altimg-width="23px" alttext="m" display="inline"><mi href="./29.1#t1.r1" title="nonnegative integer">m</mi></math>:  nonnegative integer</a>,
+<a href="./29.1#t1.r2" title="§29.1 Special Notation ‣ Notation ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m54.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./29.1#t1.r2" title="real variable">x</mi></math>:  real variable</a> and
+<a href="./29.1#t1.r4" title="§29.1 Special Notation ‣ Notation ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m48.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./29.1#t1.r4" title="real parameter">k</mi></math>:  real parameter</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./29.4.F13" title="" class="ltx_ref">http://dlmf.nist.gov/29.4.F13</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./29.4.F13.pdf">pdf</a>, <a href="./29.4.F13.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./29.4#iii.info" title="§29.4(iii) Lamé Functions: Line Graphs ‣ §29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§29.4(iii)</span></a>,
+<a href="./29.4#info" title="§29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§29.4</span></a> and
+<a href="./29#info" title="Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.29</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+</div>
+<div class="ltx_flex_cell ltx_flex_size_2">
+<figure id="F14" class="ltx_figure ltx_figure_panel"><a href="./29.4.F14.mag" title="Magnify Figure" class="ltx_magnifiable"><img src="./29/4/F14.png" id="F14.g1" class="ltx_graphics ltx_centering ltx_img_landscape" width="415" height="241" alt="See accompanying text"></a>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 29.4.14: </span><math class="ltx_Math" altimg="m23.png" altimg-height="25px" altimg-valign="-7px" altimg-width="118px" alttext="\mathit{Es}^{m}_{1.5}\left(x,0.5\right)" display="inline"><mrow><msubsup><mi href="./29.3#iv.p1" title="Lamé function">𝐸𝑠</mi><mn>1.5</mn><mi href="./29.1#t1.r1" title="nonnegative integer">m</mi></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi href="./29.1#t1.r2" title="real variable">x</mi><mo>,</mo><mn>0.5</mn><mo>)</mo></mrow></mrow></math> for
+<math class="ltx_Math" altimg="m1.png" altimg-height="21px" altimg-valign="-5px" altimg-width="147px" alttext="-2K\leq x\leq 2K" display="inline"><mrow><mrow><mo>−</mo><mrow><mn>2</mn><mo>⁢</mo><mrow><mi href="./19.2#E8" title="Legendre’s complete elliptic integral of the first kind">K</mi><mo>⁡</mo></mrow></mrow></mrow><mo>≤</mo><mi href="./29.1#t1.r2" title="real variable">x</mi><mo>≤</mo><mrow><mn>2</mn><mo>⁢</mo><mrow><mi href="./19.2#E8" title="Legendre’s complete elliptic integral of the first kind">K</mi><mo>⁡</mo></mrow></mrow></mrow></math>, <math class="ltx_Math" altimg="m52.png" altimg-height="21px" altimg-valign="-6px" altimg-width="100px" alttext="m=1,2,3" display="inline"><mrow><mi href="./29.1#t1.r1" title="nonnegative integer">m</mi><mo>=</mo><mrow><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn></mrow></mrow></math>.
+<math class="ltx_Math" altimg="m3.png" altimg-height="18px" altimg-valign="-2px" altimg-width="147px" alttext="K=1.85407\dotsc" display="inline"><mrow><mrow><mi href="./19.2#E8" title="Legendre’s complete elliptic integral of the first kind">K</mi><mo>⁡</mo></mrow><mo>=</mo><mrow><mn>1.85407</mn><mo>⁢</mo><mi mathvariant="normal">…</mi></mrow></mrow></math>.
+
+
+<a href="./29.4.F14.mag" title="Magnify Figure" class="ltx_magnifiable ltx_icon"><span>Magnify</span></a>
+</figcaption>
+<div id="F14.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./29.3#iv.p1" title="§29.3(iv) Lamé Functions ‣ §29.3 Definitions and Basic Properties ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m21.png" altimg-height="29px" altimg-valign="-9px" altimg-width="107px" alttext="\mathit{Es}^{\NVar{m}}_{\NVar{\nu}}\left(\NVar{z},\NVar{k^{2}}\right)" display="inline"><mrow><msubsup><mi href="./29.3#iv.p1" title="Lamé function">𝐸𝑠</mi><mi class="ltx_nvar" href="./29.1#t1.r4" title="real parameter">ν</mi><mi class="ltx_nvar" href="./29.1#t1.r1" title="nonnegative integer">m</mi></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./29.1#t1.r3" title="complex variable">z</mi><mo>,</mo><msup><mi class="ltx_nvar" href="./29.1#t1.r4" title="real parameter">k</mi><mn class="ltx_nvar">2</mn></msup><mo>)</mo></mrow></mrow></math>: Lamé function</a>,
+<a href="./19.2#E8" title="(19.2.8) ‣ §19.2(ii) Legendre’s Integrals ‣ §19.2 Definitions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m5.png" altimg-height="25px" altimg-valign="-7px" altimg-width="54px" alttext="K\left(\NVar{k}\right)" display="inline"><mrow><mi href="./19.2#E8" title="Legendre’s complete elliptic integral of the first kind">K</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mo>)</mo></mrow></mrow></math>: Legendre’s complete elliptic integral of the first kind</a>,
+<a href="./29.1#t1.r1" title="§29.1 Special Notation ‣ Notation ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m53.png" altimg-height="13px" altimg-valign="-2px" altimg-width="23px" alttext="m" display="inline"><mi href="./29.1#t1.r1" title="nonnegative integer">m</mi></math>:  nonnegative integer</a>,
+<a href="./29.1#t1.r2" title="§29.1 Special Notation ‣ Notation ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m54.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./29.1#t1.r2" title="real variable">x</mi></math>:  real variable</a> and
+<a href="./29.1#t1.r4" title="§29.1 Special Notation ‣ Notation ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m48.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./29.1#t1.r4" title="real parameter">k</mi></math>:  real parameter</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./29.4.F14" title="" class="ltx_ref">http://dlmf.nist.gov/29.4.F14</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./29.4.F14.pdf">pdf</a>, <a href="./29.4.F14.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./29.4#iii.info" title="§29.4(iii) Lamé Functions: Line Graphs ‣ §29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§29.4(iii)</span></a>,
+<a href="./29.4#info" title="§29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§29.4</span></a> and
+<a href="./29#info" title="Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.29</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+</div>
+</div>
+</figure>
+<figure id="iii.fig2" class="ltx_figure">
+<div class="ltx_flex_figure">
+<div class="ltx_flex_cell ltx_flex_size_2">
+<figure id="F15" class="ltx_figure ltx_figure_panel"><a href="./29.4.F15.mag" title="Magnify Figure" class="ltx_magnifiable"><img src="./29/4/F15.png" id="F15.g1" class="ltx_graphics ltx_centering ltx_img_landscape" width="415" height="237" alt="See accompanying text"></a>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 29.4.15: </span><math class="ltx_Math" altimg="m11.png" altimg-height="25px" altimg-valign="-7px" altimg-width="119px" alttext="\mathit{Ec}^{m}_{1.5}\left(x,0.1\right)" display="inline"><mrow><msubsup><mi href="./29.3#iv.p1" title="Lamé function">𝐸𝑐</mi><mn>1.5</mn><mi href="./29.1#t1.r1" title="nonnegative integer">m</mi></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi href="./29.1#t1.r2" title="real variable">x</mi><mo>,</mo><mn>0.1</mn><mo>)</mo></mrow></mrow></math> for
+<math class="ltx_Math" altimg="m1.png" altimg-height="21px" altimg-valign="-5px" altimg-width="147px" alttext="-2K\leq x\leq 2K" display="inline"><mrow><mrow><mo>−</mo><mrow><mn>2</mn><mo>⁢</mo><mrow><mi href="./19.2#E8" title="Legendre’s complete elliptic integral of the first kind">K</mi><mo>⁡</mo></mrow></mrow></mrow><mo>≤</mo><mi href="./29.1#t1.r2" title="real variable">x</mi><mo>≤</mo><mrow><mn>2</mn><mo>⁢</mo><mrow><mi href="./19.2#E8" title="Legendre’s complete elliptic integral of the first kind">K</mi><mo>⁡</mo></mrow></mrow></mrow></math>, <math class="ltx_Math" altimg="m51.png" altimg-height="21px" altimg-valign="-6px" altimg-width="100px" alttext="m=0,1,2" display="inline"><mrow><mi href="./29.1#t1.r1" title="nonnegative integer">m</mi><mo>=</mo><mrow><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn></mrow></mrow></math>.
+<math class="ltx_Math" altimg="m2.png" altimg-height="18px" altimg-valign="-2px" altimg-width="147px" alttext="K=1.61244\dotsc" display="inline"><mrow><mrow><mi href="./19.2#E8" title="Legendre’s complete elliptic integral of the first kind">K</mi><mo>⁡</mo></mrow><mo>=</mo><mrow><mn>1.61244</mn><mo>⁢</mo><mi mathvariant="normal">…</mi></mrow></mrow></math>.
+
+
+<a href="./29.4.F15.mag" title="Magnify Figure" class="ltx_magnifiable ltx_icon"><span>Magnify</span></a>
+</figcaption>
+<div id="F15.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./29.3#iv.p1" title="§29.3(iv) Lamé Functions ‣ §29.3 Definitions and Basic Properties ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m10.png" altimg-height="29px" altimg-valign="-9px" altimg-width="108px" alttext="\mathit{Ec}^{\NVar{m}}_{\NVar{\nu}}\left(\NVar{z},\NVar{k^{2}}\right)" display="inline"><mrow><msubsup><mi href="./29.3#iv.p1" title="Lamé function">𝐸𝑐</mi><mi class="ltx_nvar" href="./29.1#t1.r4" title="real parameter">ν</mi><mi class="ltx_nvar" href="./29.1#t1.r1" title="nonnegative integer">m</mi></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./29.1#t1.r3" title="complex variable">z</mi><mo>,</mo><msup><mi class="ltx_nvar" href="./29.1#t1.r4" title="real parameter">k</mi><mn class="ltx_nvar">2</mn></msup><mo>)</mo></mrow></mrow></math>: Lamé function</a>,
+<a href="./19.2#E8" title="(19.2.8) ‣ §19.2(ii) Legendre’s Integrals ‣ §19.2 Definitions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m5.png" altimg-height="25px" altimg-valign="-7px" altimg-width="54px" alttext="K\left(\NVar{k}\right)" display="inline"><mrow><mi href="./19.2#E8" title="Legendre’s complete elliptic integral of the first kind">K</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mo>)</mo></mrow></mrow></math>: Legendre’s complete elliptic integral of the first kind</a>,
+<a href="./29.1#t1.r1" title="§29.1 Special Notation ‣ Notation ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m53.png" altimg-height="13px" altimg-valign="-2px" altimg-width="23px" alttext="m" display="inline"><mi href="./29.1#t1.r1" title="nonnegative integer">m</mi></math>:  nonnegative integer</a>,
+<a href="./29.1#t1.r2" title="§29.1 Special Notation ‣ Notation ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m54.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./29.1#t1.r2" title="real variable">x</mi></math>:  real variable</a> and
+<a href="./29.1#t1.r4" title="§29.1 Special Notation ‣ Notation ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m48.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./29.1#t1.r4" title="real parameter">k</mi></math>:  real parameter</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./29.4.F15" title="" class="ltx_ref">http://dlmf.nist.gov/29.4.F15</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./29.4.F15.pdf">pdf</a>, <a href="./29.4.F15.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./29.4#iii.info" title="§29.4(iii) Lamé Functions: Line Graphs ‣ §29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§29.4(iii)</span></a>,
+<a href="./29.4#info" title="§29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§29.4</span></a> and
+<a href="./29#info" title="Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.29</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+</div>
+<div class="ltx_flex_cell ltx_flex_size_2">
+<figure id="F16" class="ltx_figure ltx_figure_panel"><a href="./29.4.F16.mag" title="Magnify Figure" class="ltx_magnifiable"><img src="./29/4/F16.png" id="F16.g1" class="ltx_graphics ltx_centering ltx_img_landscape" width="416" height="240" alt="See accompanying text"></a>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 29.4.16: </span><math class="ltx_Math" altimg="m22.png" altimg-height="25px" altimg-valign="-7px" altimg-width="118px" alttext="\mathit{Es}^{m}_{1.5}\left(x,0.1\right)" display="inline"><mrow><msubsup><mi href="./29.3#iv.p1" title="Lamé function">𝐸𝑠</mi><mn>1.5</mn><mi href="./29.1#t1.r1" title="nonnegative integer">m</mi></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi href="./29.1#t1.r2" title="real variable">x</mi><mo>,</mo><mn>0.1</mn><mo>)</mo></mrow></mrow></math> for
+<math class="ltx_Math" altimg="m1.png" altimg-height="21px" altimg-valign="-5px" altimg-width="147px" alttext="-2K\leq x\leq 2K" display="inline"><mrow><mrow><mo>−</mo><mrow><mn>2</mn><mo>⁢</mo><mrow><mi href="./19.2#E8" title="Legendre’s complete elliptic integral of the first kind">K</mi><mo>⁡</mo></mrow></mrow></mrow><mo>≤</mo><mi href="./29.1#t1.r2" title="real variable">x</mi><mo>≤</mo><mrow><mn>2</mn><mo>⁢</mo><mrow><mi href="./19.2#E8" title="Legendre’s complete elliptic integral of the first kind">K</mi><mo>⁡</mo></mrow></mrow></mrow></math>, <math class="ltx_Math" altimg="m52.png" altimg-height="21px" altimg-valign="-6px" altimg-width="100px" alttext="m=1,2,3" display="inline"><mrow><mi href="./29.1#t1.r1" title="nonnegative integer">m</mi><mo>=</mo><mrow><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn></mrow></mrow></math>.
+<math class="ltx_Math" altimg="m2.png" altimg-height="18px" altimg-valign="-2px" altimg-width="147px" alttext="K=1.61244\dotsc" display="inline"><mrow><mrow><mi href="./19.2#E8" title="Legendre’s complete elliptic integral of the first kind">K</mi><mo>⁡</mo></mrow><mo>=</mo><mrow><mn>1.61244</mn><mo>⁢</mo><mi mathvariant="normal">…</mi></mrow></mrow></math>.
+
+
+<a href="./29.4.F16.mag" title="Magnify Figure" class="ltx_magnifiable ltx_icon"><span>Magnify</span></a>
+</figcaption>
+<div id="F16.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./29.3#iv.p1" title="§29.3(iv) Lamé Functions ‣ §29.3 Definitions and Basic Properties ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m21.png" altimg-height="29px" altimg-valign="-9px" altimg-width="107px" alttext="\mathit{Es}^{\NVar{m}}_{\NVar{\nu}}\left(\NVar{z},\NVar{k^{2}}\right)" display="inline"><mrow><msubsup><mi href="./29.3#iv.p1" title="Lamé function">𝐸𝑠</mi><mi class="ltx_nvar" href="./29.1#t1.r4" title="real parameter">ν</mi><mi class="ltx_nvar" href="./29.1#t1.r1" title="nonnegative integer">m</mi></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./29.1#t1.r3" title="complex variable">z</mi><mo>,</mo><msup><mi class="ltx_nvar" href="./29.1#t1.r4" title="real parameter">k</mi><mn class="ltx_nvar">2</mn></msup><mo>)</mo></mrow></mrow></math>: Lamé function</a>,
+<a href="./19.2#E8" title="(19.2.8) ‣ §19.2(ii) Legendre’s Integrals ‣ §19.2 Definitions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m5.png" altimg-height="25px" altimg-valign="-7px" altimg-width="54px" alttext="K\left(\NVar{k}\right)" display="inline"><mrow><mi href="./19.2#E8" title="Legendre’s complete elliptic integral of the first kind">K</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mo>)</mo></mrow></mrow></math>: Legendre’s complete elliptic integral of the first kind</a>,
+<a href="./29.1#t1.r1" title="§29.1 Special Notation ‣ Notation ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m53.png" altimg-height="13px" altimg-valign="-2px" altimg-width="23px" alttext="m" display="inline"><mi href="./29.1#t1.r1" title="nonnegative integer">m</mi></math>:  nonnegative integer</a>,
+<a href="./29.1#t1.r2" title="§29.1 Special Notation ‣ Notation ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m54.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./29.1#t1.r2" title="real variable">x</mi></math>:  real variable</a> and
+<a href="./29.1#t1.r4" title="§29.1 Special Notation ‣ Notation ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m48.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./29.1#t1.r4" title="real parameter">k</mi></math>:  real parameter</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./29.4.F16" title="" class="ltx_ref">http://dlmf.nist.gov/29.4.F16</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./29.4.F16.pdf">pdf</a>, <a href="./29.4.F16.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./29.4#iii.info" title="§29.4(iii) Lamé Functions: Line Graphs ‣ §29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§29.4(iii)</span></a>,
+<a href="./29.4#info" title="§29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§29.4</span></a> and
+<a href="./29#info" title="Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.29</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+</div>
+</div>
+</figure>
+<figure id="iii.fig3" class="ltx_figure">
+<div class="ltx_flex_figure">
+<div class="ltx_flex_cell ltx_flex_size_2">
+<figure id="F17" class="ltx_figure ltx_figure_panel"><a href="./29.4.F17.mag" title="Magnify Figure" class="ltx_magnifiable"><img src="./29/4/F17.png" id="F17.g1" class="ltx_graphics ltx_centering ltx_img_landscape" width="415" height="244" alt="See accompanying text"></a>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 29.4.17: </span><math class="ltx_Math" altimg="m13.png" altimg-height="25px" altimg-valign="-7px" altimg-width="119px" alttext="\mathit{Ec}^{m}_{1.5}\left(x,0.9\right)" display="inline"><mrow><msubsup><mi href="./29.3#iv.p1" title="Lamé function">𝐸𝑐</mi><mn>1.5</mn><mi href="./29.1#t1.r1" title="nonnegative integer">m</mi></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi href="./29.1#t1.r2" title="real variable">x</mi><mo>,</mo><mn>0.9</mn><mo>)</mo></mrow></mrow></math> for
+<math class="ltx_Math" altimg="m1.png" altimg-height="21px" altimg-valign="-5px" altimg-width="147px" alttext="-2K\leq x\leq 2K" display="inline"><mrow><mrow><mo>−</mo><mrow><mn>2</mn><mo>⁢</mo><mrow><mi href="./19.2#E8" title="Legendre’s complete elliptic integral of the first kind">K</mi><mo>⁡</mo></mrow></mrow></mrow><mo>≤</mo><mi href="./29.1#t1.r2" title="real variable">x</mi><mo>≤</mo><mrow><mn>2</mn><mo>⁢</mo><mrow><mi href="./19.2#E8" title="Legendre’s complete elliptic integral of the first kind">K</mi><mo>⁡</mo></mrow></mrow></mrow></math>, <math class="ltx_Math" altimg="m51.png" altimg-height="21px" altimg-valign="-6px" altimg-width="100px" alttext="m=0,1,2" display="inline"><mrow><mi href="./29.1#t1.r1" title="nonnegative integer">m</mi><mo>=</mo><mrow><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn></mrow></mrow></math>.
+<math class="ltx_Math" altimg="m4.png" altimg-height="18px" altimg-valign="-2px" altimg-width="147px" alttext="K=2.57809\dotsc" display="inline"><mrow><mrow><mi href="./19.2#E8" title="Legendre’s complete elliptic integral of the first kind">K</mi><mo>⁡</mo></mrow><mo>=</mo><mrow><mn>2.57809</mn><mo>⁢</mo><mi mathvariant="normal">…</mi></mrow></mrow></math>.
+
+
+<a href="./29.4.F17.mag" title="Magnify Figure" class="ltx_magnifiable ltx_icon"><span>Magnify</span></a>
+</figcaption>
+<div id="F17.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./29.3#iv.p1" title="§29.3(iv) Lamé Functions ‣ §29.3 Definitions and Basic Properties ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m10.png" altimg-height="29px" altimg-valign="-9px" altimg-width="108px" alttext="\mathit{Ec}^{\NVar{m}}_{\NVar{\nu}}\left(\NVar{z},\NVar{k^{2}}\right)" display="inline"><mrow><msubsup><mi href="./29.3#iv.p1" title="Lamé function">𝐸𝑐</mi><mi class="ltx_nvar" href="./29.1#t1.r4" title="real parameter">ν</mi><mi class="ltx_nvar" href="./29.1#t1.r1" title="nonnegative integer">m</mi></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./29.1#t1.r3" title="complex variable">z</mi><mo>,</mo><msup><mi class="ltx_nvar" href="./29.1#t1.r4" title="real parameter">k</mi><mn class="ltx_nvar">2</mn></msup><mo>)</mo></mrow></mrow></math>: Lamé function</a>,
+<a href="./19.2#E8" title="(19.2.8) ‣ §19.2(ii) Legendre’s Integrals ‣ §19.2 Definitions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m5.png" altimg-height="25px" altimg-valign="-7px" altimg-width="54px" alttext="K\left(\NVar{k}\right)" display="inline"><mrow><mi href="./19.2#E8" title="Legendre’s complete elliptic integral of the first kind">K</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mo>)</mo></mrow></mrow></math>: Legendre’s complete elliptic integral of the first kind</a>,
+<a href="./29.1#t1.r1" title="§29.1 Special Notation ‣ Notation ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m53.png" altimg-height="13px" altimg-valign="-2px" altimg-width="23px" alttext="m" display="inline"><mi href="./29.1#t1.r1" title="nonnegative integer">m</mi></math>:  nonnegative integer</a>,
+<a href="./29.1#t1.r2" title="§29.1 Special Notation ‣ Notation ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m54.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./29.1#t1.r2" title="real variable">x</mi></math>:  real variable</a> and
+<a href="./29.1#t1.r4" title="§29.1 Special Notation ‣ Notation ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m48.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./29.1#t1.r4" title="real parameter">k</mi></math>:  real parameter</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./29.4.F17" title="" class="ltx_ref">http://dlmf.nist.gov/29.4.F17</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./29.4.F17.pdf">pdf</a>, <a href="./29.4.F17.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./29.4#iii.info" title="§29.4(iii) Lamé Functions: Line Graphs ‣ §29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§29.4(iii)</span></a>,
+<a href="./29.4#info" title="§29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§29.4</span></a> and
+<a href="./29#info" title="Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.29</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+</div>
+<div class="ltx_flex_cell ltx_flex_size_2">
+<figure id="F18" class="ltx_figure ltx_figure_panel"><a href="./29.4.F18.mag" title="Magnify Figure" class="ltx_magnifiable"><img src="./29/4/F18.png" id="F18.g1" class="ltx_graphics ltx_centering ltx_img_landscape" width="416" height="240" alt="See accompanying text"></a>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 29.4.18: </span><math class="ltx_Math" altimg="m24.png" altimg-height="25px" altimg-valign="-7px" altimg-width="118px" alttext="\mathit{Es}^{m}_{1.5}\left(x,0.9\right)" display="inline"><mrow><msubsup><mi href="./29.3#iv.p1" title="Lamé function">𝐸𝑠</mi><mn>1.5</mn><mi href="./29.1#t1.r1" title="nonnegative integer">m</mi></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi href="./29.1#t1.r2" title="real variable">x</mi><mo>,</mo><mn>0.9</mn><mo>)</mo></mrow></mrow></math> for
+<math class="ltx_Math" altimg="m1.png" altimg-height="21px" altimg-valign="-5px" altimg-width="147px" alttext="-2K\leq x\leq 2K" display="inline"><mrow><mrow><mo>−</mo><mrow><mn>2</mn><mo>⁢</mo><mrow><mi href="./19.2#E8" title="Legendre’s complete elliptic integral of the first kind">K</mi><mo>⁡</mo></mrow></mrow></mrow><mo>≤</mo><mi href="./29.1#t1.r2" title="real variable">x</mi><mo>≤</mo><mrow><mn>2</mn><mo>⁢</mo><mrow><mi href="./19.2#E8" title="Legendre’s complete elliptic integral of the first kind">K</mi><mo>⁡</mo></mrow></mrow></mrow></math>, <math class="ltx_Math" altimg="m52.png" altimg-height="21px" altimg-valign="-6px" altimg-width="100px" alttext="m=1,2,3" display="inline"><mrow><mi href="./29.1#t1.r1" title="nonnegative integer">m</mi><mo>=</mo><mrow><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn></mrow></mrow></math>.
+<math class="ltx_Math" altimg="m4.png" altimg-height="18px" altimg-valign="-2px" altimg-width="147px" alttext="K=2.57809\dotsc" display="inline"><mrow><mrow><mi href="./19.2#E8" title="Legendre’s complete elliptic integral of the first kind">K</mi><mo>⁡</mo></mrow><mo>=</mo><mrow><mn>2.57809</mn><mo>⁢</mo><mi mathvariant="normal">…</mi></mrow></mrow></math>.
+
+
+<a href="./29.4.F18.mag" title="Magnify Figure" class="ltx_magnifiable ltx_icon"><span>Magnify</span></a>
+</figcaption>
+<div id="F18.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./29.3#iv.p1" title="§29.3(iv) Lamé Functions ‣ §29.3 Definitions and Basic Properties ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m21.png" altimg-height="29px" altimg-valign="-9px" altimg-width="107px" alttext="\mathit{Es}^{\NVar{m}}_{\NVar{\nu}}\left(\NVar{z},\NVar{k^{2}}\right)" display="inline"><mrow><msubsup><mi href="./29.3#iv.p1" title="Lamé function">𝐸𝑠</mi><mi class="ltx_nvar" href="./29.1#t1.r4" title="real parameter">ν</mi><mi class="ltx_nvar" href="./29.1#t1.r1" title="nonnegative integer">m</mi></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./29.1#t1.r3" title="complex variable">z</mi><mo>,</mo><msup><mi class="ltx_nvar" href="./29.1#t1.r4" title="real parameter">k</mi><mn class="ltx_nvar">2</mn></msup><mo>)</mo></mrow></mrow></math>: Lamé function</a>,
+<a href="./19.2#E8" title="(19.2.8) ‣ §19.2(ii) Legendre’s Integrals ‣ §19.2 Definitions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m5.png" altimg-height="25px" altimg-valign="-7px" altimg-width="54px" alttext="K\left(\NVar{k}\right)" display="inline"><mrow><mi href="./19.2#E8" title="Legendre’s complete elliptic integral of the first kind">K</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mo>)</mo></mrow></mrow></math>: Legendre’s complete elliptic integral of the first kind</a>,
+<a href="./29.1#t1.r1" title="§29.1 Special Notation ‣ Notation ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m53.png" altimg-height="13px" altimg-valign="-2px" altimg-width="23px" alttext="m" display="inline"><mi href="./29.1#t1.r1" title="nonnegative integer">m</mi></math>:  nonnegative integer</a>,
+<a href="./29.1#t1.r2" title="§29.1 Special Notation ‣ Notation ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m54.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./29.1#t1.r2" title="real variable">x</mi></math>:  real variable</a> and
+<a href="./29.1#t1.r4" title="§29.1 Special Notation ‣ Notation ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m48.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./29.1#t1.r4" title="real parameter">k</mi></math>:  real parameter</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./29.4.F18" title="" class="ltx_ref">http://dlmf.nist.gov/29.4.F18</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./29.4.F18.pdf">pdf</a>, <a href="./29.4.F18.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./29.4#iii.info" title="§29.4(iii) Lamé Functions: Line Graphs ‣ §29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§29.4(iii)</span></a>,
+<a href="./29.4#info" title="§29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§29.4</span></a> and
+<a href="./29#info" title="Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.29</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+</div>
+</div>
+</figure>
+<figure id="iii.fig4" class="ltx_figure">
+<div class="ltx_flex_figure">
+<div class="ltx_flex_cell ltx_flex_size_2">
+<figure id="F19" class="ltx_figure ltx_figure_panel"><a href="./29.4.F19.mag" title="Magnify Figure" class="ltx_magnifiable"><img src="./29/4/F19.png" id="F19.g1" class="ltx_graphics ltx_centering ltx_img_landscape" width="415" height="240" alt="See accompanying text"></a>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 29.4.19: </span><math class="ltx_Math" altimg="m14.png" altimg-height="25px" altimg-valign="-7px" altimg-width="119px" alttext="\mathit{Ec}^{m}_{2.5}\left(x,0.1\right)" display="inline"><mrow><msubsup><mi href="./29.3#iv.p1" title="Lamé function">𝐸𝑐</mi><mn>2.5</mn><mi href="./29.1#t1.r1" title="nonnegative integer">m</mi></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi href="./29.1#t1.r2" title="real variable">x</mi><mo>,</mo><mn>0.1</mn><mo>)</mo></mrow></mrow></math> for
+<math class="ltx_Math" altimg="m1.png" altimg-height="21px" altimg-valign="-5px" altimg-width="147px" alttext="-2K\leq x\leq 2K" display="inline"><mrow><mrow><mo>−</mo><mrow><mn>2</mn><mo>⁢</mo><mrow><mi href="./19.2#E8" title="Legendre’s complete elliptic integral of the first kind">K</mi><mo>⁡</mo></mrow></mrow></mrow><mo>≤</mo><mi href="./29.1#t1.r2" title="real variable">x</mi><mo>≤</mo><mrow><mn>2</mn><mo>⁢</mo><mrow><mi href="./19.2#E8" title="Legendre’s complete elliptic integral of the first kind">K</mi><mo>⁡</mo></mrow></mrow></mrow></math>, <math class="ltx_Math" altimg="m51.png" altimg-height="21px" altimg-valign="-6px" altimg-width="100px" alttext="m=0,1,2" display="inline"><mrow><mi href="./29.1#t1.r1" title="nonnegative integer">m</mi><mo>=</mo><mrow><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn></mrow></mrow></math>.
+<math class="ltx_Math" altimg="m2.png" altimg-height="18px" altimg-valign="-2px" altimg-width="147px" alttext="K=1.61244\dotsc" display="inline"><mrow><mrow><mi href="./19.2#E8" title="Legendre’s complete elliptic integral of the first kind">K</mi><mo>⁡</mo></mrow><mo>=</mo><mrow><mn>1.61244</mn><mo>⁢</mo><mi mathvariant="normal">…</mi></mrow></mrow></math>.
+
+
+<a href="./29.4.F19.mag" title="Magnify Figure" class="ltx_magnifiable ltx_icon"><span>Magnify</span></a>
+</figcaption>
+<div id="F19.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./29.3#iv.p1" title="§29.3(iv) Lamé Functions ‣ §29.3 Definitions and Basic Properties ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m10.png" altimg-height="29px" altimg-valign="-9px" altimg-width="108px" alttext="\mathit{Ec}^{\NVar{m}}_{\NVar{\nu}}\left(\NVar{z},\NVar{k^{2}}\right)" display="inline"><mrow><msubsup><mi href="./29.3#iv.p1" title="Lamé function">𝐸𝑐</mi><mi class="ltx_nvar" href="./29.1#t1.r4" title="real parameter">ν</mi><mi class="ltx_nvar" href="./29.1#t1.r1" title="nonnegative integer">m</mi></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./29.1#t1.r3" title="complex variable">z</mi><mo>,</mo><msup><mi class="ltx_nvar" href="./29.1#t1.r4" title="real parameter">k</mi><mn class="ltx_nvar">2</mn></msup><mo>)</mo></mrow></mrow></math>: Lamé function</a>,
+<a href="./19.2#E8" title="(19.2.8) ‣ §19.2(ii) Legendre’s Integrals ‣ §19.2 Definitions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m5.png" altimg-height="25px" altimg-valign="-7px" altimg-width="54px" alttext="K\left(\NVar{k}\right)" display="inline"><mrow><mi href="./19.2#E8" title="Legendre’s complete elliptic integral of the first kind">K</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mo>)</mo></mrow></mrow></math>: Legendre’s complete elliptic integral of the first kind</a>,
+<a href="./29.1#t1.r1" title="§29.1 Special Notation ‣ Notation ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m53.png" altimg-height="13px" altimg-valign="-2px" altimg-width="23px" alttext="m" display="inline"><mi href="./29.1#t1.r1" title="nonnegative integer">m</mi></math>:  nonnegative integer</a>,
+<a href="./29.1#t1.r2" title="§29.1 Special Notation ‣ Notation ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m54.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./29.1#t1.r2" title="real variable">x</mi></math>:  real variable</a> and
+<a href="./29.1#t1.r4" title="§29.1 Special Notation ‣ Notation ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m48.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./29.1#t1.r4" title="real parameter">k</mi></math>:  real parameter</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./29.4.F19" title="" class="ltx_ref">http://dlmf.nist.gov/29.4.F19</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./29.4.F19.pdf">pdf</a>, <a href="./29.4.F19.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./29.4#iii.info" title="§29.4(iii) Lamé Functions: Line Graphs ‣ §29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§29.4(iii)</span></a>,
+<a href="./29.4#info" title="§29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§29.4</span></a> and
+<a href="./29#info" title="Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.29</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+</div>
+<div class="ltx_flex_cell ltx_flex_size_2">
+<figure id="F20" class="ltx_figure ltx_figure_panel"><a href="./29.4.F20.mag" title="Magnify Figure" class="ltx_magnifiable"><img src="./29/4/F20.png" id="F20.g1" class="ltx_graphics ltx_centering ltx_img_landscape" width="415" height="239" alt="See accompanying text"></a>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 29.4.20: </span><math class="ltx_Math" altimg="m25.png" altimg-height="25px" altimg-valign="-7px" altimg-width="118px" alttext="\mathit{Es}^{m}_{2.5}\left(x,0.1\right)" display="inline"><mrow><msubsup><mi href="./29.3#iv.p1" title="Lamé function">𝐸𝑠</mi><mn>2.5</mn><mi href="./29.1#t1.r1" title="nonnegative integer">m</mi></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi href="./29.1#t1.r2" title="real variable">x</mi><mo>,</mo><mn>0.1</mn><mo>)</mo></mrow></mrow></math> for
+<math class="ltx_Math" altimg="m1.png" altimg-height="21px" altimg-valign="-5px" altimg-width="147px" alttext="-2K\leq x\leq 2K" display="inline"><mrow><mrow><mo>−</mo><mrow><mn>2</mn><mo>⁢</mo><mrow><mi href="./19.2#E8" title="Legendre’s complete elliptic integral of the first kind">K</mi><mo>⁡</mo></mrow></mrow></mrow><mo>≤</mo><mi href="./29.1#t1.r2" title="real variable">x</mi><mo>≤</mo><mrow><mn>2</mn><mo>⁢</mo><mrow><mi href="./19.2#E8" title="Legendre’s complete elliptic integral of the first kind">K</mi><mo>⁡</mo></mrow></mrow></mrow></math>, <math class="ltx_Math" altimg="m52.png" altimg-height="21px" altimg-valign="-6px" altimg-width="100px" alttext="m=1,2,3" display="inline"><mrow><mi href="./29.1#t1.r1" title="nonnegative integer">m</mi><mo>=</mo><mrow><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn></mrow></mrow></math>.
+<math class="ltx_Math" altimg="m2.png" altimg-height="18px" altimg-valign="-2px" altimg-width="147px" alttext="K=1.61244\dotsc" display="inline"><mrow><mrow><mi href="./19.2#E8" title="Legendre’s complete elliptic integral of the first kind">K</mi><mo>⁡</mo></mrow><mo>=</mo><mrow><mn>1.61244</mn><mo>⁢</mo><mi mathvariant="normal">…</mi></mrow></mrow></math>.
+
+
+<a href="./29.4.F20.mag" title="Magnify Figure" class="ltx_magnifiable ltx_icon"><span>Magnify</span></a>
+</figcaption>
+<div id="F20.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./29.3#iv.p1" title="§29.3(iv) Lamé Functions ‣ §29.3 Definitions and Basic Properties ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m21.png" altimg-height="29px" altimg-valign="-9px" altimg-width="107px" alttext="\mathit{Es}^{\NVar{m}}_{\NVar{\nu}}\left(\NVar{z},\NVar{k^{2}}\right)" display="inline"><mrow><msubsup><mi href="./29.3#iv.p1" title="Lamé function">𝐸𝑠</mi><mi class="ltx_nvar" href="./29.1#t1.r4" title="real parameter">ν</mi><mi class="ltx_nvar" href="./29.1#t1.r1" title="nonnegative integer">m</mi></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./29.1#t1.r3" title="complex variable">z</mi><mo>,</mo><msup><mi class="ltx_nvar" href="./29.1#t1.r4" title="real parameter">k</mi><mn class="ltx_nvar">2</mn></msup><mo>)</mo></mrow></mrow></math>: Lamé function</a>,
+<a href="./19.2#E8" title="(19.2.8) ‣ §19.2(ii) Legendre’s Integrals ‣ §19.2 Definitions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m5.png" altimg-height="25px" altimg-valign="-7px" altimg-width="54px" alttext="K\left(\NVar{k}\right)" display="inline"><mrow><mi href="./19.2#E8" title="Legendre’s complete elliptic integral of the first kind">K</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mo>)</mo></mrow></mrow></math>: Legendre’s complete elliptic integral of the first kind</a>,
+<a href="./29.1#t1.r1" title="§29.1 Special Notation ‣ Notation ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m53.png" altimg-height="13px" altimg-valign="-2px" altimg-width="23px" alttext="m" display="inline"><mi href="./29.1#t1.r1" title="nonnegative integer">m</mi></math>:  nonnegative integer</a>,
+<a href="./29.1#t1.r2" title="§29.1 Special Notation ‣ Notation ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m54.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./29.1#t1.r2" title="real variable">x</mi></math>:  real variable</a> and
+<a href="./29.1#t1.r4" title="§29.1 Special Notation ‣ Notation ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m48.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./29.1#t1.r4" title="real parameter">k</mi></math>:  real parameter</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./29.4.F20" title="" class="ltx_ref">http://dlmf.nist.gov/29.4.F20</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./29.4.F20.pdf">pdf</a>, <a href="./29.4.F20.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./29.4#iii.info" title="§29.4(iii) Lamé Functions: Line Graphs ‣ §29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§29.4(iii)</span></a>,
+<a href="./29.4#info" title="§29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§29.4</span></a> and
+<a href="./29#info" title="Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.29</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+</div>
+</div>
+</figure>
+<figure id="iii.fig5" class="ltx_figure">
+<div class="ltx_flex_figure">
+<div class="ltx_flex_cell ltx_flex_size_2">
+<figure id="F21" class="ltx_figure ltx_figure_panel"><a href="./29.4.F21.mag" title="Magnify Figure" class="ltx_magnifiable"><img src="./29/4/F21.png" id="F21.g1" class="ltx_graphics ltx_centering ltx_img_landscape" width="415" height="244" alt="See accompanying text"></a>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 29.4.21: </span><math class="ltx_Math" altimg="m15.png" altimg-height="25px" altimg-valign="-7px" altimg-width="119px" alttext="\mathit{Ec}^{m}_{2.5}\left(x,0.5\right)" display="inline"><mrow><msubsup><mi href="./29.3#iv.p1" title="Lamé function">𝐸𝑐</mi><mn>2.5</mn><mi href="./29.1#t1.r1" title="nonnegative integer">m</mi></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi href="./29.1#t1.r2" title="real variable">x</mi><mo>,</mo><mn>0.5</mn><mo>)</mo></mrow></mrow></math> for
+<math class="ltx_Math" altimg="m1.png" altimg-height="21px" altimg-valign="-5px" altimg-width="147px" alttext="-2K\leq x\leq 2K" display="inline"><mrow><mrow><mo>−</mo><mrow><mn>2</mn><mo>⁢</mo><mrow><mi href="./19.2#E8" title="Legendre’s complete elliptic integral of the first kind">K</mi><mo>⁡</mo></mrow></mrow></mrow><mo>≤</mo><mi href="./29.1#t1.r2" title="real variable">x</mi><mo>≤</mo><mrow><mn>2</mn><mo>⁢</mo><mrow><mi href="./19.2#E8" title="Legendre’s complete elliptic integral of the first kind">K</mi><mo>⁡</mo></mrow></mrow></mrow></math>, <math class="ltx_Math" altimg="m51.png" altimg-height="21px" altimg-valign="-6px" altimg-width="100px" alttext="m=0,1,2" display="inline"><mrow><mi href="./29.1#t1.r1" title="nonnegative integer">m</mi><mo>=</mo><mrow><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn></mrow></mrow></math>.
+<math class="ltx_Math" altimg="m3.png" altimg-height="18px" altimg-valign="-2px" altimg-width="147px" alttext="K=1.85407\dotsc" display="inline"><mrow><mrow><mi href="./19.2#E8" title="Legendre’s complete elliptic integral of the first kind">K</mi><mo>⁡</mo></mrow><mo>=</mo><mrow><mn>1.85407</mn><mo>⁢</mo><mi mathvariant="normal">…</mi></mrow></mrow></math>.
+
+
+<a href="./29.4.F21.mag" title="Magnify Figure" class="ltx_magnifiable ltx_icon"><span>Magnify</span></a>
+</figcaption>
+<div id="F21.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./29.3#iv.p1" title="§29.3(iv) Lamé Functions ‣ §29.3 Definitions and Basic Properties ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m10.png" altimg-height="29px" altimg-valign="-9px" altimg-width="108px" alttext="\mathit{Ec}^{\NVar{m}}_{\NVar{\nu}}\left(\NVar{z},\NVar{k^{2}}\right)" display="inline"><mrow><msubsup><mi href="./29.3#iv.p1" title="Lamé function">𝐸𝑐</mi><mi class="ltx_nvar" href="./29.1#t1.r4" title="real parameter">ν</mi><mi class="ltx_nvar" href="./29.1#t1.r1" title="nonnegative integer">m</mi></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./29.1#t1.r3" title="complex variable">z</mi><mo>,</mo><msup><mi class="ltx_nvar" href="./29.1#t1.r4" title="real parameter">k</mi><mn class="ltx_nvar">2</mn></msup><mo>)</mo></mrow></mrow></math>: Lamé function</a>,
+<a href="./19.2#E8" title="(19.2.8) ‣ §19.2(ii) Legendre’s Integrals ‣ §19.2 Definitions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m5.png" altimg-height="25px" altimg-valign="-7px" altimg-width="54px" alttext="K\left(\NVar{k}\right)" display="inline"><mrow><mi href="./19.2#E8" title="Legendre’s complete elliptic integral of the first kind">K</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mo>)</mo></mrow></mrow></math>: Legendre’s complete elliptic integral of the first kind</a>,
+<a href="./29.1#t1.r1" title="§29.1 Special Notation ‣ Notation ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m53.png" altimg-height="13px" altimg-valign="-2px" altimg-width="23px" alttext="m" display="inline"><mi href="./29.1#t1.r1" title="nonnegative integer">m</mi></math>:  nonnegative integer</a>,
+<a href="./29.1#t1.r2" title="§29.1 Special Notation ‣ Notation ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m54.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./29.1#t1.r2" title="real variable">x</mi></math>:  real variable</a> and
+<a href="./29.1#t1.r4" title="§29.1 Special Notation ‣ Notation ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m48.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./29.1#t1.r4" title="real parameter">k</mi></math>:  real parameter</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./29.4.F21" title="" class="ltx_ref">http://dlmf.nist.gov/29.4.F21</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./29.4.F21.pdf">pdf</a>, <a href="./29.4.F21.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./29.4#iii.info" title="§29.4(iii) Lamé Functions: Line Graphs ‣ §29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§29.4(iii)</span></a>,
+<a href="./29.4#info" title="§29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§29.4</span></a> and
+<a href="./29#info" title="Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.29</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+</div>
+<div class="ltx_flex_cell ltx_flex_size_2">
+<figure id="F22" class="ltx_figure ltx_figure_panel"><a href="./29.4.F22.mag" title="Magnify Figure" class="ltx_magnifiable"><img src="./29/4/F22.png" id="F22.g1" class="ltx_graphics ltx_centering ltx_img_landscape" width="416" height="244" alt="See accompanying text"></a>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 29.4.22: </span><math class="ltx_Math" altimg="m26.png" altimg-height="25px" altimg-valign="-7px" altimg-width="118px" alttext="\mathit{Es}^{m}_{2.5}\left(x,0.5\right)" display="inline"><mrow><msubsup><mi href="./29.3#iv.p1" title="Lamé function">𝐸𝑠</mi><mn>2.5</mn><mi href="./29.1#t1.r1" title="nonnegative integer">m</mi></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi href="./29.1#t1.r2" title="real variable">x</mi><mo>,</mo><mn>0.5</mn><mo>)</mo></mrow></mrow></math> for
+<math class="ltx_Math" altimg="m1.png" altimg-height="21px" altimg-valign="-5px" altimg-width="147px" alttext="-2K\leq x\leq 2K" display="inline"><mrow><mrow><mo>−</mo><mrow><mn>2</mn><mo>⁢</mo><mrow><mi href="./19.2#E8" title="Legendre’s complete elliptic integral of the first kind">K</mi><mo>⁡</mo></mrow></mrow></mrow><mo>≤</mo><mi href="./29.1#t1.r2" title="real variable">x</mi><mo>≤</mo><mrow><mn>2</mn><mo>⁢</mo><mrow><mi href="./19.2#E8" title="Legendre’s complete elliptic integral of the first kind">K</mi><mo>⁡</mo></mrow></mrow></mrow></math>, <math class="ltx_Math" altimg="m52.png" altimg-height="21px" altimg-valign="-6px" altimg-width="100px" alttext="m=1,2,3" display="inline"><mrow><mi href="./29.1#t1.r1" title="nonnegative integer">m</mi><mo>=</mo><mrow><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn></mrow></mrow></math>.
+<math class="ltx_Math" altimg="m3.png" altimg-height="18px" altimg-valign="-2px" altimg-width="147px" alttext="K=1.85407\dotsc" display="inline"><mrow><mrow><mi href="./19.2#E8" title="Legendre’s complete elliptic integral of the first kind">K</mi><mo>⁡</mo></mrow><mo>=</mo><mrow><mn>1.85407</mn><mo>⁢</mo><mi mathvariant="normal">…</mi></mrow></mrow></math>.
+
+
+<a href="./29.4.F22.mag" title="Magnify Figure" class="ltx_magnifiable ltx_icon"><span>Magnify</span></a>
+</figcaption>
+<div id="F22.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./29.3#iv.p1" title="§29.3(iv) Lamé Functions ‣ §29.3 Definitions and Basic Properties ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m21.png" altimg-height="29px" altimg-valign="-9px" altimg-width="107px" alttext="\mathit{Es}^{\NVar{m}}_{\NVar{\nu}}\left(\NVar{z},\NVar{k^{2}}\right)" display="inline"><mrow><msubsup><mi href="./29.3#iv.p1" title="Lamé function">𝐸𝑠</mi><mi class="ltx_nvar" href="./29.1#t1.r4" title="real parameter">ν</mi><mi class="ltx_nvar" href="./29.1#t1.r1" title="nonnegative integer">m</mi></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./29.1#t1.r3" title="complex variable">z</mi><mo>,</mo><msup><mi class="ltx_nvar" href="./29.1#t1.r4" title="real parameter">k</mi><mn class="ltx_nvar">2</mn></msup><mo>)</mo></mrow></mrow></math>: Lamé function</a>,
+<a href="./19.2#E8" title="(19.2.8) ‣ §19.2(ii) Legendre’s Integrals ‣ §19.2 Definitions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m5.png" altimg-height="25px" altimg-valign="-7px" altimg-width="54px" alttext="K\left(\NVar{k}\right)" display="inline"><mrow><mi href="./19.2#E8" title="Legendre’s complete elliptic integral of the first kind">K</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mo>)</mo></mrow></mrow></math>: Legendre’s complete elliptic integral of the first kind</a>,
+<a href="./29.1#t1.r1" title="§29.1 Special Notation ‣ Notation ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m53.png" altimg-height="13px" altimg-valign="-2px" altimg-width="23px" alttext="m" display="inline"><mi href="./29.1#t1.r1" title="nonnegative integer">m</mi></math>:  nonnegative integer</a>,
+<a href="./29.1#t1.r2" title="§29.1 Special Notation ‣ Notation ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m54.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./29.1#t1.r2" title="real variable">x</mi></math>:  real variable</a> and
+<a href="./29.1#t1.r4" title="§29.1 Special Notation ‣ Notation ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m48.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./29.1#t1.r4" title="real parameter">k</mi></math>:  real parameter</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./29.4.F22" title="" class="ltx_ref">http://dlmf.nist.gov/29.4.F22</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./29.4.F22.pdf">pdf</a>, <a href="./29.4.F22.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./29.4#iii.info" title="§29.4(iii) Lamé Functions: Line Graphs ‣ §29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§29.4(iii)</span></a>,
+<a href="./29.4#info" title="§29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§29.4</span></a> and
+<a href="./29#info" title="Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.29</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+</div>
+</div>
+</figure>
+<figure id="iii.fig6" class="ltx_figure">
+<div class="ltx_flex_figure">
+<div class="ltx_flex_cell ltx_flex_size_2">
+<figure id="F23" class="ltx_figure ltx_figure_panel"><a href="./29.4.F23.mag" title="Magnify Figure" class="ltx_magnifiable"><img src="./29/4/F23.png" id="F23.g1" class="ltx_graphics ltx_centering ltx_img_landscape" width="415" height="244" alt="See accompanying text"></a>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 29.4.23: </span><math class="ltx_Math" altimg="m16.png" altimg-height="25px" altimg-valign="-7px" altimg-width="119px" alttext="\mathit{Ec}^{m}_{2.5}\left(x,0.9\right)" display="inline"><mrow><msubsup><mi href="./29.3#iv.p1" title="Lamé function">𝐸𝑐</mi><mn>2.5</mn><mi href="./29.1#t1.r1" title="nonnegative integer">m</mi></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi href="./29.1#t1.r2" title="real variable">x</mi><mo>,</mo><mn>0.9</mn><mo>)</mo></mrow></mrow></math> for
+<math class="ltx_Math" altimg="m1.png" altimg-height="21px" altimg-valign="-5px" altimg-width="147px" alttext="-2K\leq x\leq 2K" display="inline"><mrow><mrow><mo>−</mo><mrow><mn>2</mn><mo>⁢</mo><mrow><mi href="./19.2#E8" title="Legendre’s complete elliptic integral of the first kind">K</mi><mo>⁡</mo></mrow></mrow></mrow><mo>≤</mo><mi href="./29.1#t1.r2" title="real variable">x</mi><mo>≤</mo><mrow><mn>2</mn><mo>⁢</mo><mrow><mi href="./19.2#E8" title="Legendre’s complete elliptic integral of the first kind">K</mi><mo>⁡</mo></mrow></mrow></mrow></math>, <math class="ltx_Math" altimg="m51.png" altimg-height="21px" altimg-valign="-6px" altimg-width="100px" alttext="m=0,1,2" display="inline"><mrow><mi href="./29.1#t1.r1" title="nonnegative integer">m</mi><mo>=</mo><mrow><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn></mrow></mrow></math>.
+<math class="ltx_Math" altimg="m4.png" altimg-height="18px" altimg-valign="-2px" altimg-width="147px" alttext="K=2.57809\dotsc" display="inline"><mrow><mrow><mi href="./19.2#E8" title="Legendre’s complete elliptic integral of the first kind">K</mi><mo>⁡</mo></mrow><mo>=</mo><mrow><mn>2.57809</mn><mo>⁢</mo><mi mathvariant="normal">…</mi></mrow></mrow></math>.
+
+
+<a href="./29.4.F23.mag" title="Magnify Figure" class="ltx_magnifiable ltx_icon"><span>Magnify</span></a>
+</figcaption>
+<div id="F23.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./29.3#iv.p1" title="§29.3(iv) Lamé Functions ‣ §29.3 Definitions and Basic Properties ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m10.png" altimg-height="29px" altimg-valign="-9px" altimg-width="108px" alttext="\mathit{Ec}^{\NVar{m}}_{\NVar{\nu}}\left(\NVar{z},\NVar{k^{2}}\right)" display="inline"><mrow><msubsup><mi href="./29.3#iv.p1" title="Lamé function">𝐸𝑐</mi><mi class="ltx_nvar" href="./29.1#t1.r4" title="real parameter">ν</mi><mi class="ltx_nvar" href="./29.1#t1.r1" title="nonnegative integer">m</mi></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./29.1#t1.r3" title="complex variable">z</mi><mo>,</mo><msup><mi class="ltx_nvar" href="./29.1#t1.r4" title="real parameter">k</mi><mn class="ltx_nvar">2</mn></msup><mo>)</mo></mrow></mrow></math>: Lamé function</a>,
+<a href="./19.2#E8" title="(19.2.8) ‣ §19.2(ii) Legendre’s Integrals ‣ §19.2 Definitions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m5.png" altimg-height="25px" altimg-valign="-7px" altimg-width="54px" alttext="K\left(\NVar{k}\right)" display="inline"><mrow><mi href="./19.2#E8" title="Legendre’s complete elliptic integral of the first kind">K</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mo>)</mo></mrow></mrow></math>: Legendre’s complete elliptic integral of the first kind</a>,
+<a href="./29.1#t1.r1" title="§29.1 Special Notation ‣ Notation ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m53.png" altimg-height="13px" altimg-valign="-2px" altimg-width="23px" alttext="m" display="inline"><mi href="./29.1#t1.r1" title="nonnegative integer">m</mi></math>:  nonnegative integer</a>,
+<a href="./29.1#t1.r2" title="§29.1 Special Notation ‣ Notation ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m54.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./29.1#t1.r2" title="real variable">x</mi></math>:  real variable</a> and
+<a href="./29.1#t1.r4" title="§29.1 Special Notation ‣ Notation ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m48.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./29.1#t1.r4" title="real parameter">k</mi></math>:  real parameter</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./29.4.F23" title="" class="ltx_ref">http://dlmf.nist.gov/29.4.F23</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./29.4.F23.pdf">pdf</a>, <a href="./29.4.F23.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./29.4#iii.info" title="§29.4(iii) Lamé Functions: Line Graphs ‣ §29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§29.4(iii)</span></a>,
+<a href="./29.4#info" title="§29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§29.4</span></a> and
+<a href="./29#info" title="Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.29</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+</div>
+<div class="ltx_flex_cell ltx_flex_size_2">
+<figure id="F24" class="ltx_figure ltx_figure_panel"><a href="./29.4.F24.mag" title="Magnify Figure" class="ltx_magnifiable"><img src="./29/4/F24.png" id="F24.g1" class="ltx_graphics ltx_centering ltx_img_landscape" width="416" height="237" alt="See accompanying text"></a>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 29.4.24: </span><math class="ltx_Math" altimg="m27.png" altimg-height="25px" altimg-valign="-7px" altimg-width="118px" alttext="\mathit{Es}^{m}_{2.5}\left(x,0.9\right)" display="inline"><mrow><msubsup><mi href="./29.3#iv.p1" title="Lamé function">𝐸𝑠</mi><mn>2.5</mn><mi href="./29.1#t1.r1" title="nonnegative integer">m</mi></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi href="./29.1#t1.r2" title="real variable">x</mi><mo>,</mo><mn>0.9</mn><mo>)</mo></mrow></mrow></math> for
+<math class="ltx_Math" altimg="m1.png" altimg-height="21px" altimg-valign="-5px" altimg-width="147px" alttext="-2K\leq x\leq 2K" display="inline"><mrow><mrow><mo>−</mo><mrow><mn>2</mn><mo>⁢</mo><mrow><mi href="./19.2#E8" title="Legendre’s complete elliptic integral of the first kind">K</mi><mo>⁡</mo></mrow></mrow></mrow><mo>≤</mo><mi href="./29.1#t1.r2" title="real variable">x</mi><mo>≤</mo><mrow><mn>2</mn><mo>⁢</mo><mrow><mi href="./19.2#E8" title="Legendre’s complete elliptic integral of the first kind">K</mi><mo>⁡</mo></mrow></mrow></mrow></math>, <math class="ltx_Math" altimg="m52.png" altimg-height="21px" altimg-valign="-6px" altimg-width="100px" alttext="m=1,2,3" display="inline"><mrow><mi href="./29.1#t1.r1" title="nonnegative integer">m</mi><mo>=</mo><mrow><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn></mrow></mrow></math>.
+<math class="ltx_Math" altimg="m4.png" altimg-height="18px" altimg-valign="-2px" altimg-width="147px" alttext="K=2.57809\dotsc" display="inline"><mrow><mrow><mi href="./19.2#E8" title="Legendre’s complete elliptic integral of the first kind">K</mi><mo>⁡</mo></mrow><mo>=</mo><mrow><mn>2.57809</mn><mo>⁢</mo><mi mathvariant="normal">…</mi></mrow></mrow></math>.
+
+
+<a href="./29.4.F24.mag" title="Magnify Figure" class="ltx_magnifiable ltx_icon"><span>Magnify</span></a>
+</figcaption>
+<div id="F24.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./29.3#iv.p1" title="§29.3(iv) Lamé Functions ‣ §29.3 Definitions and Basic Properties ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m21.png" altimg-height="29px" altimg-valign="-9px" altimg-width="107px" alttext="\mathit{Es}^{\NVar{m}}_{\NVar{\nu}}\left(\NVar{z},\NVar{k^{2}}\right)" display="inline"><mrow><msubsup><mi href="./29.3#iv.p1" title="Lamé function">𝐸𝑠</mi><mi class="ltx_nvar" href="./29.1#t1.r4" title="real parameter">ν</mi><mi class="ltx_nvar" href="./29.1#t1.r1" title="nonnegative integer">m</mi></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./29.1#t1.r3" title="complex variable">z</mi><mo>,</mo><msup><mi class="ltx_nvar" href="./29.1#t1.r4" title="real parameter">k</mi><mn class="ltx_nvar">2</mn></msup><mo>)</mo></mrow></mrow></math>: Lamé function</a>,
+<a href="./19.2#E8" title="(19.2.8) ‣ §19.2(ii) Legendre’s Integrals ‣ §19.2 Definitions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m5.png" altimg-height="25px" altimg-valign="-7px" altimg-width="54px" alttext="K\left(\NVar{k}\right)" display="inline"><mrow><mi href="./19.2#E8" title="Legendre’s complete elliptic integral of the first kind">K</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mo>)</mo></mrow></mrow></math>: Legendre’s complete elliptic integral of the first kind</a>,
+<a href="./29.1#t1.r1" title="§29.1 Special Notation ‣ Notation ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m53.png" altimg-height="13px" altimg-valign="-2px" altimg-width="23px" alttext="m" display="inline"><mi href="./29.1#t1.r1" title="nonnegative integer">m</mi></math>:  nonnegative integer</a>,
+<a href="./29.1#t1.r2" title="§29.1 Special Notation ‣ Notation ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m54.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./29.1#t1.r2" title="real variable">x</mi></math>:  real variable</a> and
+<a href="./29.1#t1.r4" title="§29.1 Special Notation ‣ Notation ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m48.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./29.1#t1.r4" title="real parameter">k</mi></math>:  real parameter</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./29.4.F24" title="" class="ltx_ref">http://dlmf.nist.gov/29.4.F24</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./29.4.F24.pdf">pdf</a>, <a href="./29.4.F24.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./29.4#iii.info" title="§29.4(iii) Lamé Functions: Line Graphs ‣ §29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§29.4(iii)</span></a>,
+<a href="./29.4#info" title="§29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§29.4</span></a> and
+<a href="./29#info" title="Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.29</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+</div>
+</div>
+</figure>
+</section>
+<section id="iv" class="ltx_subsection ltx_pruned_first">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§29.4(iv) </span>Lamé Functions: Surfaces</h2>
+<div id="iv.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=Lam%C3%A9%20functions">Lamé functions</a>, <a class="ltx_keyword" href="./search/search?q=graphics">graphics</a>
+</dd>
+<dt>Notes:</dt>
+<dd>These surfaces were produced at NIST.</dd>
+<dt>Permalink:</dt>
+<dd><a href="./29.4.iv" title="" class="ltx_ref">http://dlmf.nist.gov/29.4.iv</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./29.4#info" title="§29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§29.4</span></a> and
+<a href="./29#info" title="Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.29</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<figure id="iv.fig1" class="ltx_figure">
+<div class="ltx_flex_figure">
+<div class="ltx_flex_cell ltx_flex_size_2">
+<figure id="F25" class="ltx_figure ltx_figure_panel">
+<div class="ltx_vizimg">
+<a href="./29.4.F25.viz" title="Interactive 3D Visualization" class="ltx_3dgraphic"><img src="./29/4/F25.png" id="F25.g1" class="ltx_graphics ltx_centering ltx_img_landscape" width="415" height="306" alt="See accompanying text"></a>
+</div>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 29.4.25: </span><math class="ltx_Math" altimg="m6.png" altimg-height="30px" altimg-valign="-9px" altimg-width="116px" alttext="\mathit{Ec}^{0}_{1.5}\left(x,k^{2}\right)" display="inline"><mrow><msubsup><mi href="./29.3#iv.p1" title="Lamé function">𝐸𝑐</mi><mn>1.5</mn><mn>0</mn></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi href="./29.1#t1.r2" title="real variable">x</mi><mo>,</mo><msup><mi href="./29.1#t1.r4" title="real parameter">k</mi><mn>2</mn></msup><mo>)</mo></mrow></mrow></math> as a function of <math class="ltx_Math" altimg="m54.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./29.1#t1.r2" title="real variable">x</mi></math> and <math class="ltx_Math" altimg="m49.png" altimg-height="21px" altimg-valign="-2px" altimg-width="25px" alttext="k^{2}" display="inline"><msup><mi href="./29.1#t1.r4" title="real parameter">k</mi><mn>2</mn></msup></math>.
+
+
+<a href="./29.4.F25.mag" title="Magnify Figure" class="ltx_magnifiable ltx_icon"><span>Magnify</span></a>
+
+<a href="./29.4.F25.viz" title="Interactive 3D Visualization" class="ltx_3dgraphic ltx_icon"><span>3D</span></a>
+<a href="./help/vrml/" class="ltx_help" style="font-size:80%">Help</a>
+</figcaption>
+<div id="F25.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./29.3#iv.p1" title="§29.3(iv) Lamé Functions ‣ §29.3 Definitions and Basic Properties ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m10.png" altimg-height="29px" altimg-valign="-9px" altimg-width="108px" alttext="\mathit{Ec}^{\NVar{m}}_{\NVar{\nu}}\left(\NVar{z},\NVar{k^{2}}\right)" display="inline"><mrow><msubsup><mi href="./29.3#iv.p1" title="Lamé function">𝐸𝑐</mi><mi class="ltx_nvar" href="./29.1#t1.r4" title="real parameter">ν</mi><mi class="ltx_nvar" href="./29.1#t1.r1" title="nonnegative integer">m</mi></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./29.1#t1.r3" title="complex variable">z</mi><mo>,</mo><msup><mi class="ltx_nvar" href="./29.1#t1.r4" title="real parameter">k</mi><mn class="ltx_nvar">2</mn></msup><mo>)</mo></mrow></mrow></math>: Lamé function</a>,
+<a href="./29.1#t1.r2" title="§29.1 Special Notation ‣ Notation ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m54.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./29.1#t1.r2" title="real variable">x</mi></math>:  real variable</a> and
+<a href="./29.1#t1.r4" title="§29.1 Special Notation ‣ Notation ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m48.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./29.1#t1.r4" title="real parameter">k</mi></math>:  real parameter</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./29.4.F25" title="" class="ltx_ref">http://dlmf.nist.gov/29.4.F25</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./29.4.F25.viz">Vizualization</a>, <a href="./29.4.F25.pdf">pdf</a>, <a href="./29.4.F25.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./29.4#iv.info" title="§29.4(iv) Lamé Functions: Surfaces ‣ §29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§29.4(iv)</span></a>,
+<a href="./29.4#info" title="§29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§29.4</span></a> and
+<a href="./29#info" title="Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.29</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+</div>
+<div class="ltx_flex_cell ltx_flex_size_2">
+<figure id="F26" class="ltx_figure ltx_figure_panel">
+<div class="ltx_vizimg">
+<a href="./29.4.F26.viz" title="Interactive 3D Visualization" class="ltx_3dgraphic"><img src="./29/4/F26.png" id="F26.g1" class="ltx_graphics ltx_centering ltx_img_landscape" width="415" height="320" alt="See accompanying text"></a>
+</div>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 29.4.26: </span><math class="ltx_Math" altimg="m17.png" altimg-height="30px" altimg-valign="-9px" altimg-width="115px" alttext="\mathit{Es}^{1}_{1.5}\left(x,k^{2}\right)" display="inline"><mrow><msubsup><mi href="./29.3#iv.p1" title="Lamé function">𝐸𝑠</mi><mn>1.5</mn><mn>1</mn></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi href="./29.1#t1.r2" title="real variable">x</mi><mo>,</mo><msup><mi href="./29.1#t1.r4" title="real parameter">k</mi><mn>2</mn></msup><mo>)</mo></mrow></mrow></math> as a function of <math class="ltx_Math" altimg="m54.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./29.1#t1.r2" title="real variable">x</mi></math> and <math class="ltx_Math" altimg="m49.png" altimg-height="21px" altimg-valign="-2px" altimg-width="25px" alttext="k^{2}" display="inline"><msup><mi href="./29.1#t1.r4" title="real parameter">k</mi><mn>2</mn></msup></math>.
+
+
+<a href="./29.4.F26.mag" title="Magnify Figure" class="ltx_magnifiable ltx_icon"><span>Magnify</span></a>
+
+<a href="./29.4.F26.viz" title="Interactive 3D Visualization" class="ltx_3dgraphic ltx_icon"><span>3D</span></a>
+<a href="./help/vrml/" class="ltx_help" style="font-size:80%">Help</a>
+</figcaption>
+<div id="F26.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./29.3#iv.p1" title="§29.3(iv) Lamé Functions ‣ §29.3 Definitions and Basic Properties ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m21.png" altimg-height="29px" altimg-valign="-9px" altimg-width="107px" alttext="\mathit{Es}^{\NVar{m}}_{\NVar{\nu}}\left(\NVar{z},\NVar{k^{2}}\right)" display="inline"><mrow><msubsup><mi href="./29.3#iv.p1" title="Lamé function">𝐸𝑠</mi><mi class="ltx_nvar" href="./29.1#t1.r4" title="real parameter">ν</mi><mi class="ltx_nvar" href="./29.1#t1.r1" title="nonnegative integer">m</mi></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./29.1#t1.r3" title="complex variable">z</mi><mo>,</mo><msup><mi class="ltx_nvar" href="./29.1#t1.r4" title="real parameter">k</mi><mn class="ltx_nvar">2</mn></msup><mo>)</mo></mrow></mrow></math>: Lamé function</a>,
+<a href="./29.1#t1.r2" title="§29.1 Special Notation ‣ Notation ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m54.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./29.1#t1.r2" title="real variable">x</mi></math>:  real variable</a> and
+<a href="./29.1#t1.r4" title="§29.1 Special Notation ‣ Notation ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m48.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./29.1#t1.r4" title="real parameter">k</mi></math>:  real parameter</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./29.4.F26" title="" class="ltx_ref">http://dlmf.nist.gov/29.4.F26</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./29.4.F26.viz">Vizualization</a>, <a href="./29.4.F26.pdf">pdf</a>, <a href="./29.4.F26.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./29.4#iv.info" title="§29.4(iv) Lamé Functions: Surfaces ‣ §29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§29.4(iv)</span></a>,
+<a href="./29.4#info" title="§29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§29.4</span></a> and
+<a href="./29#info" title="Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.29</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+</div>
+</div>
+</figure>
+<figure id="iv.fig2" class="ltx_figure">
+<div class="ltx_flex_figure">
+<div class="ltx_flex_cell ltx_flex_size_2">
+<figure id="F27" class="ltx_figure ltx_figure_panel">
+<div class="ltx_vizimg">
+<a href="./29.4.F27.viz" title="Interactive 3D Visualization" class="ltx_3dgraphic"><img src="./29/4/F27.png" id="F27.g1" class="ltx_graphics ltx_centering ltx_img_landscape" width="415" height="327" alt="See accompanying text"></a>
+</div>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 29.4.27: </span><math class="ltx_Math" altimg="m8.png" altimg-height="30px" altimg-valign="-9px" altimg-width="116px" alttext="\mathit{Ec}^{1}_{1.5}\left(x,k^{2}\right)" display="inline"><mrow><msubsup><mi href="./29.3#iv.p1" title="Lamé function">𝐸𝑐</mi><mn>1.5</mn><mn>1</mn></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi href="./29.1#t1.r2" title="real variable">x</mi><mo>,</mo><msup><mi href="./29.1#t1.r4" title="real parameter">k</mi><mn>2</mn></msup><mo>)</mo></mrow></mrow></math> as a function of <math class="ltx_Math" altimg="m54.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./29.1#t1.r2" title="real variable">x</mi></math> and <math class="ltx_Math" altimg="m49.png" altimg-height="21px" altimg-valign="-2px" altimg-width="25px" alttext="k^{2}" display="inline"><msup><mi href="./29.1#t1.r4" title="real parameter">k</mi><mn>2</mn></msup></math>.
+
+
+<a href="./29.4.F27.mag" title="Magnify Figure" class="ltx_magnifiable ltx_icon"><span>Magnify</span></a>
+
+<a href="./29.4.F27.viz" title="Interactive 3D Visualization" class="ltx_3dgraphic ltx_icon"><span>3D</span></a>
+<a href="./help/vrml/" class="ltx_help" style="font-size:80%">Help</a>
+</figcaption>
+<div id="F27.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./29.3#iv.p1" title="§29.3(iv) Lamé Functions ‣ §29.3 Definitions and Basic Properties ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m10.png" altimg-height="29px" altimg-valign="-9px" altimg-width="108px" alttext="\mathit{Ec}^{\NVar{m}}_{\NVar{\nu}}\left(\NVar{z},\NVar{k^{2}}\right)" display="inline"><mrow><msubsup><mi href="./29.3#iv.p1" title="Lamé function">𝐸𝑐</mi><mi class="ltx_nvar" href="./29.1#t1.r4" title="real parameter">ν</mi><mi class="ltx_nvar" href="./29.1#t1.r1" title="nonnegative integer">m</mi></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./29.1#t1.r3" title="complex variable">z</mi><mo>,</mo><msup><mi class="ltx_nvar" href="./29.1#t1.r4" title="real parameter">k</mi><mn class="ltx_nvar">2</mn></msup><mo>)</mo></mrow></mrow></math>: Lamé function</a>,
+<a href="./29.1#t1.r2" title="§29.1 Special Notation ‣ Notation ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m54.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./29.1#t1.r2" title="real variable">x</mi></math>:  real variable</a> and
+<a href="./29.1#t1.r4" title="§29.1 Special Notation ‣ Notation ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m48.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./29.1#t1.r4" title="real parameter">k</mi></math>:  real parameter</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./29.4.F27" title="" class="ltx_ref">http://dlmf.nist.gov/29.4.F27</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./29.4.F27.viz">Vizualization</a>, <a href="./29.4.F27.pdf">pdf</a>, <a href="./29.4.F27.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./29.4#iv.info" title="§29.4(iv) Lamé Functions: Surfaces ‣ §29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§29.4(iv)</span></a>,
+<a href="./29.4#info" title="§29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§29.4</span></a> and
+<a href="./29#info" title="Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.29</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+</div>
+<div class="ltx_flex_cell ltx_flex_size_2">
+<figure id="F28" class="ltx_figure ltx_figure_panel">
+<div class="ltx_vizimg">
+<a href="./29.4.F28.viz" title="Interactive 3D Visualization" class="ltx_3dgraphic"><img src="./29/4/F28.png" id="F28.g1" class="ltx_graphics ltx_centering ltx_img_landscape" width="415" height="331" alt="See accompanying text"></a>
+</div>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 29.4.28: </span><math class="ltx_Math" altimg="m19.png" altimg-height="30px" altimg-valign="-9px" altimg-width="115px" alttext="\mathit{Es}^{2}_{1.5}\left(x,k^{2}\right)" display="inline"><mrow><msubsup><mi href="./29.3#iv.p1" title="Lamé function">𝐸𝑠</mi><mn>1.5</mn><mn>2</mn></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi href="./29.1#t1.r2" title="real variable">x</mi><mo>,</mo><msup><mi href="./29.1#t1.r4" title="real parameter">k</mi><mn>2</mn></msup><mo>)</mo></mrow></mrow></math> as a function of <math class="ltx_Math" altimg="m54.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./29.1#t1.r2" title="real variable">x</mi></math> and <math class="ltx_Math" altimg="m49.png" altimg-height="21px" altimg-valign="-2px" altimg-width="25px" alttext="k^{2}" display="inline"><msup><mi href="./29.1#t1.r4" title="real parameter">k</mi><mn>2</mn></msup></math>.
+
+
+<a href="./29.4.F28.mag" title="Magnify Figure" class="ltx_magnifiable ltx_icon"><span>Magnify</span></a>
+
+<a href="./29.4.F28.viz" title="Interactive 3D Visualization" class="ltx_3dgraphic ltx_icon"><span>3D</span></a>
+<a href="./help/vrml/" class="ltx_help" style="font-size:80%">Help</a>
+</figcaption>
+<div id="F28.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./29.3#iv.p1" title="§29.3(iv) Lamé Functions ‣ §29.3 Definitions and Basic Properties ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m21.png" altimg-height="29px" altimg-valign="-9px" altimg-width="107px" alttext="\mathit{Es}^{\NVar{m}}_{\NVar{\nu}}\left(\NVar{z},\NVar{k^{2}}\right)" display="inline"><mrow><msubsup><mi href="./29.3#iv.p1" title="Lamé function">𝐸𝑠</mi><mi class="ltx_nvar" href="./29.1#t1.r4" title="real parameter">ν</mi><mi class="ltx_nvar" href="./29.1#t1.r1" title="nonnegative integer">m</mi></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./29.1#t1.r3" title="complex variable">z</mi><mo>,</mo><msup><mi class="ltx_nvar" href="./29.1#t1.r4" title="real parameter">k</mi><mn class="ltx_nvar">2</mn></msup><mo>)</mo></mrow></mrow></math>: Lamé function</a>,
+<a href="./29.1#t1.r2" title="§29.1 Special Notation ‣ Notation ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m54.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./29.1#t1.r2" title="real variable">x</mi></math>:  real variable</a> and
+<a href="./29.1#t1.r4" title="§29.1 Special Notation ‣ Notation ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m48.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./29.1#t1.r4" title="real parameter">k</mi></math>:  real parameter</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./29.4.F28" title="" class="ltx_ref">http://dlmf.nist.gov/29.4.F28</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./29.4.F28.viz">Vizualization</a>, <a href="./29.4.F28.pdf">pdf</a>, <a href="./29.4.F28.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./29.4#iv.info" title="§29.4(iv) Lamé Functions: Surfaces ‣ §29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§29.4(iv)</span></a>,
+<a href="./29.4#info" title="§29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§29.4</span></a> and
+<a href="./29#info" title="Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.29</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+</div>
+</div>
+</figure>
+<figure id="iv.fig3" class="ltx_figure">
+<div class="ltx_flex_figure">
+<div class="ltx_flex_cell ltx_flex_size_2">
+<figure id="F29" class="ltx_figure ltx_figure_panel">
+<div class="ltx_vizimg">
+<a href="./29.4.F29.viz" title="Interactive 3D Visualization" class="ltx_3dgraphic"><img src="./29/4/F29.png" id="F29.g1" class="ltx_graphics ltx_centering ltx_img_landscape" width="415" height="327" alt="See accompanying text"></a>
+</div>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 29.4.29: </span><math class="ltx_Math" altimg="m7.png" altimg-height="30px" altimg-valign="-9px" altimg-width="116px" alttext="\mathit{Ec}^{0}_{2.5}\left(x,k^{2}\right)" display="inline"><mrow><msubsup><mi href="./29.3#iv.p1" title="Lamé function">𝐸𝑐</mi><mn>2.5</mn><mn>0</mn></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi href="./29.1#t1.r2" title="real variable">x</mi><mo>,</mo><msup><mi href="./29.1#t1.r4" title="real parameter">k</mi><mn>2</mn></msup><mo>)</mo></mrow></mrow></math> as a function of <math class="ltx_Math" altimg="m54.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./29.1#t1.r2" title="real variable">x</mi></math> and <math class="ltx_Math" altimg="m49.png" altimg-height="21px" altimg-valign="-2px" altimg-width="25px" alttext="k^{2}" display="inline"><msup><mi href="./29.1#t1.r4" title="real parameter">k</mi><mn>2</mn></msup></math>.
+
+
+<a href="./29.4.F29.mag" title="Magnify Figure" class="ltx_magnifiable ltx_icon"><span>Magnify</span></a>
+
+<a href="./29.4.F29.viz" title="Interactive 3D Visualization" class="ltx_3dgraphic ltx_icon"><span>3D</span></a>
+<a href="./help/vrml/" class="ltx_help" style="font-size:80%">Help</a>
+</figcaption>
+<div id="F29.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./29.3#iv.p1" title="§29.3(iv) Lamé Functions ‣ §29.3 Definitions and Basic Properties ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m10.png" altimg-height="29px" altimg-valign="-9px" altimg-width="108px" alttext="\mathit{Ec}^{\NVar{m}}_{\NVar{\nu}}\left(\NVar{z},\NVar{k^{2}}\right)" display="inline"><mrow><msubsup><mi href="./29.3#iv.p1" title="Lamé function">𝐸𝑐</mi><mi class="ltx_nvar" href="./29.1#t1.r4" title="real parameter">ν</mi><mi class="ltx_nvar" href="./29.1#t1.r1" title="nonnegative integer">m</mi></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./29.1#t1.r3" title="complex variable">z</mi><mo>,</mo><msup><mi class="ltx_nvar" href="./29.1#t1.r4" title="real parameter">k</mi><mn class="ltx_nvar">2</mn></msup><mo>)</mo></mrow></mrow></math>: Lamé function</a>,
+<a href="./29.1#t1.r2" title="§29.1 Special Notation ‣ Notation ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m54.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./29.1#t1.r2" title="real variable">x</mi></math>:  real variable</a> and
+<a href="./29.1#t1.r4" title="§29.1 Special Notation ‣ Notation ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m48.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./29.1#t1.r4" title="real parameter">k</mi></math>:  real parameter</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./29.4.F29" title="" class="ltx_ref">http://dlmf.nist.gov/29.4.F29</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./29.4.F29.viz">Vizualization</a>, <a href="./29.4.F29.pdf">pdf</a>, <a href="./29.4.F29.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./29.4#iv.info" title="§29.4(iv) Lamé Functions: Surfaces ‣ §29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§29.4(iv)</span></a>,
+<a href="./29.4#info" title="§29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§29.4</span></a> and
+<a href="./29#info" title="Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.29</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+</div>
+<div class="ltx_flex_cell ltx_flex_size_2">
+<figure id="F30" class="ltx_figure ltx_figure_panel">
+<div class="ltx_vizimg">
+<a href="./29.4.F30.viz" title="Interactive 3D Visualization" class="ltx_3dgraphic"><img src="./29/4/F30.png" id="F30.g1" class="ltx_graphics ltx_centering ltx_img_square" width="415" height="336" alt="See accompanying text"></a>
+</div>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 29.4.30: </span><math class="ltx_Math" altimg="m18.png" altimg-height="30px" altimg-valign="-9px" altimg-width="115px" alttext="\mathit{Es}^{1}_{2.5}\left(x,k^{2}\right)" display="inline"><mrow><msubsup><mi href="./29.3#iv.p1" title="Lamé function">𝐸𝑠</mi><mn>2.5</mn><mn>1</mn></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi href="./29.1#t1.r2" title="real variable">x</mi><mo>,</mo><msup><mi href="./29.1#t1.r4" title="real parameter">k</mi><mn>2</mn></msup><mo>)</mo></mrow></mrow></math> as a function of <math class="ltx_Math" altimg="m54.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./29.1#t1.r2" title="real variable">x</mi></math> and <math class="ltx_Math" altimg="m49.png" altimg-height="21px" altimg-valign="-2px" altimg-width="25px" alttext="k^{2}" display="inline"><msup><mi href="./29.1#t1.r4" title="real parameter">k</mi><mn>2</mn></msup></math>.
+
+
+<a href="./29.4.F30.mag" title="Magnify Figure" class="ltx_magnifiable ltx_icon"><span>Magnify</span></a>
+
+<a href="./29.4.F30.viz" title="Interactive 3D Visualization" class="ltx_3dgraphic ltx_icon"><span>3D</span></a>
+<a href="./help/vrml/" class="ltx_help" style="font-size:80%">Help</a>
+</figcaption>
+<div id="F30.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./29.3#iv.p1" title="§29.3(iv) Lamé Functions ‣ §29.3 Definitions and Basic Properties ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m21.png" altimg-height="29px" altimg-valign="-9px" altimg-width="107px" alttext="\mathit{Es}^{\NVar{m}}_{\NVar{\nu}}\left(\NVar{z},\NVar{k^{2}}\right)" display="inline"><mrow><msubsup><mi href="./29.3#iv.p1" title="Lamé function">𝐸𝑠</mi><mi class="ltx_nvar" href="./29.1#t1.r4" title="real parameter">ν</mi><mi class="ltx_nvar" href="./29.1#t1.r1" title="nonnegative integer">m</mi></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./29.1#t1.r3" title="complex variable">z</mi><mo>,</mo><msup><mi class="ltx_nvar" href="./29.1#t1.r4" title="real parameter">k</mi><mn class="ltx_nvar">2</mn></msup><mo>)</mo></mrow></mrow></math>: Lamé function</a>,
+<a href="./29.1#t1.r2" title="§29.1 Special Notation ‣ Notation ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m54.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./29.1#t1.r2" title="real variable">x</mi></math>:  real variable</a> and
+<a href="./29.1#t1.r4" title="§29.1 Special Notation ‣ Notation ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m48.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./29.1#t1.r4" title="real parameter">k</mi></math>:  real parameter</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./29.4.F30" title="" class="ltx_ref">http://dlmf.nist.gov/29.4.F30</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./29.4.F30.viz">Vizualization</a>, <a href="./29.4.F30.pdf">pdf</a>, <a href="./29.4.F30.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./29.4#iv.info" title="§29.4(iv) Lamé Functions: Surfaces ‣ §29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§29.4(iv)</span></a>,
+<a href="./29.4#info" title="§29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§29.4</span></a> and
+<a href="./29#info" title="Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.29</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+</div>
+</div>
+</figure>
+<figure id="iv.fig4" class="ltx_figure">
+<div class="ltx_flex_figure">
+<div class="ltx_flex_cell ltx_flex_size_2">
+<figure id="F31" class="ltx_figure ltx_figure_panel">
+<div class="ltx_vizimg">
+<a href="./29.4.F31.viz" title="Interactive 3D Visualization" class="ltx_3dgraphic"><img src="./29/4/F31.png" id="F31.g1" class="ltx_graphics ltx_centering ltx_img_landscape" width="415" height="328" alt="See accompanying text"></a>
+</div>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 29.4.31: </span><math class="ltx_Math" altimg="m9.png" altimg-height="30px" altimg-valign="-9px" altimg-width="116px" alttext="\mathit{Ec}^{1}_{2.5}\left(x,k^{2}\right)" display="inline"><mrow><msubsup><mi href="./29.3#iv.p1" title="Lamé function">𝐸𝑐</mi><mn>2.5</mn><mn>1</mn></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi href="./29.1#t1.r2" title="real variable">x</mi><mo>,</mo><msup><mi href="./29.1#t1.r4" title="real parameter">k</mi><mn>2</mn></msup><mo>)</mo></mrow></mrow></math> as a function of <math class="ltx_Math" altimg="m54.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./29.1#t1.r2" title="real variable">x</mi></math> and <math class="ltx_Math" altimg="m49.png" altimg-height="21px" altimg-valign="-2px" altimg-width="25px" alttext="k^{2}" display="inline"><msup><mi href="./29.1#t1.r4" title="real parameter">k</mi><mn>2</mn></msup></math>.
+
+
+<a href="./29.4.F31.mag" title="Magnify Figure" class="ltx_magnifiable ltx_icon"><span>Magnify</span></a>
+
+<a href="./29.4.F31.viz" title="Interactive 3D Visualization" class="ltx_3dgraphic ltx_icon"><span>3D</span></a>
+<a href="./help/vrml/" class="ltx_help" style="font-size:80%">Help</a>
+</figcaption>
+<div id="F31.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./29.3#iv.p1" title="§29.3(iv) Lamé Functions ‣ §29.3 Definitions and Basic Properties ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m10.png" altimg-height="29px" altimg-valign="-9px" altimg-width="108px" alttext="\mathit{Ec}^{\NVar{m}}_{\NVar{\nu}}\left(\NVar{z},\NVar{k^{2}}\right)" display="inline"><mrow><msubsup><mi href="./29.3#iv.p1" title="Lamé function">𝐸𝑐</mi><mi class="ltx_nvar" href="./29.1#t1.r4" title="real parameter">ν</mi><mi class="ltx_nvar" href="./29.1#t1.r1" title="nonnegative integer">m</mi></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./29.1#t1.r3" title="complex variable">z</mi><mo>,</mo><msup><mi class="ltx_nvar" href="./29.1#t1.r4" title="real parameter">k</mi><mn class="ltx_nvar">2</mn></msup><mo>)</mo></mrow></mrow></math>: Lamé function</a>,
+<a href="./29.1#t1.r2" title="§29.1 Special Notation ‣ Notation ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m54.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./29.1#t1.r2" title="real variable">x</mi></math>:  real variable</a> and
+<a href="./29.1#t1.r4" title="§29.1 Special Notation ‣ Notation ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m48.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./29.1#t1.r4" title="real parameter">k</mi></math>:  real parameter</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./29.4.F31" title="" class="ltx_ref">http://dlmf.nist.gov/29.4.F31</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./29.4.F31.viz">Vizualization</a>, <a href="./29.4.F31.pdf">pdf</a>, <a href="./29.4.F31.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./29.4#iv.info" title="§29.4(iv) Lamé Functions: Surfaces ‣ §29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§29.4(iv)</span></a>,
+<a href="./29.4#info" title="§29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§29.4</span></a> and
+<a href="./29#info" title="Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.29</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+</div>
+<div class="ltx_flex_cell ltx_flex_size_2">
+<figure id="F32" class="ltx_figure ltx_figure_panel">
+<div class="ltx_vizimg">
+<a href="./29.4.F32.viz" title="Interactive 3D Visualization" class="ltx_3dgraphic"><img src="./29/4/F32.png" id="F32.g1" class="ltx_graphics ltx_centering ltx_img_landscape" width="415" height="329" alt="See accompanying text"></a>
+</div>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 29.4.32: </span><math class="ltx_Math" altimg="m20.png" altimg-height="30px" altimg-valign="-9px" altimg-width="115px" alttext="\mathit{Es}^{2}_{2.5}\left(x,k^{2}\right)" display="inline"><mrow><msubsup><mi href="./29.3#iv.p1" title="Lamé function">𝐸𝑠</mi><mn>2.5</mn><mn>2</mn></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi href="./29.1#t1.r2" title="real variable">x</mi><mo>,</mo><msup><mi href="./29.1#t1.r4" title="real parameter">k</mi><mn>2</mn></msup><mo>)</mo></mrow></mrow></math> as a function of <math class="ltx_Math" altimg="m54.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./29.1#t1.r2" title="real variable">x</mi></math> and <math class="ltx_Math" altimg="m49.png" altimg-height="21px" altimg-valign="-2px" altimg-width="25px" alttext="k^{2}" display="inline"><msup><mi href="./29.1#t1.r4" title="real parameter">k</mi><mn>2</mn></msup></math>.
+
+
+<a href="./29.4.F32.mag" title="Magnify Figure" class="ltx_magnifiable ltx_icon"><span>Magnify</span></a>
+
+<a href="./29.4.F32.viz" title="Interactive 3D Visualization" class="ltx_3dgraphic ltx_icon"><span>3D</span></a>
+<a href="./help/vrml/" class="ltx_help" style="font-size:80%">Help</a>
+</figcaption>
+<div id="F32.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./29.3#iv.p1" title="§29.3(iv) Lamé Functions ‣ §29.3 Definitions and Basic Properties ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m21.png" altimg-height="29px" altimg-valign="-9px" altimg-width="107px" alttext="\mathit{Es}^{\NVar{m}}_{\NVar{\nu}}\left(\NVar{z},\NVar{k^{2}}\right)" display="inline"><mrow><msubsup><mi href="./29.3#iv.p1" title="Lamé function">𝐸𝑠</mi><mi class="ltx_nvar" href="./29.1#t1.r4" title="real parameter">ν</mi><mi class="ltx_nvar" href="./29.1#t1.r1" title="nonnegative integer">m</mi></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./29.1#t1.r3" title="complex variable">z</mi><mo>,</mo><msup><mi class="ltx_nvar" href="./29.1#t1.r4" title="real parameter">k</mi><mn class="ltx_nvar">2</mn></msup><mo>)</mo></mrow></mrow></math>: Lamé function</a>,
+<a href="./29.1#t1.r2" title="§29.1 Special Notation ‣ Notation ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m54.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./29.1#t1.r2" title="real variable">x</mi></math>:  real variable</a> and
+<a href="./29.1#t1.r4" title="§29.1 Special Notation ‣ Notation ‣ Chapter 29 Lamé Functions" class="ltx_ref"><math class="ltx_Math" altimg="m48.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./29.1#t1.r4" title="real parameter">k</mi></math>:  real parameter</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./29.4.F32" title="" class="ltx_ref">http://dlmf.nist.gov/29.4.F32</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./29.4.F32.viz">Vizualization</a>, <a href="./29.4.F32.pdf">pdf</a>, <a href="./29.4.F32.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./29.4#iv.info" title="§29.4(iv) Lamé Functions: Surfaces ‣ §29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§29.4(iv)</span></a>,
+<a href="./29.4#info" title="§29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§29.4</span></a> and
+<a href="./29#info" title="Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.29</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+</div>
+</div>
+</figure>
+</section>
+</section>
+</div>
+<div class="ltx_page_footer">
+<div class="ltx_siblings">
+<a href="./29.3" title="In Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">29.3 </span>Definitions and Basic Properties</span></a><a href="./29.5" title="In Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">29.5 </span>Special Cases and Limiting Forms</span></a>
+</div>
+<div class="ltx_footer_links ltx_centering">
+<a href="./about/notices">© 2010–2026 NIST</a> / <a href="./about/notices#S2">Disclaimer</a> / <a href="/cdn-cgi/l/email-protection#4c0800010a612a2929282e2d2f270c22253f38622b233a">Feedback</a>;
+ Version 1.2.7;
+Release date 2026-06-15.</div>
+<span id="pagesettings"></span>
+<div class="ltx_nist_logo"><a href="http://www.nist.gov/"><img src="./style/nistidc.png" width="500" alt="NIST"></a></div>
+<div class="ltx_nist_links ltx_align_right">
+<a href="https://www.nist.gov/privacy-policy">Site Privacy</a> <a href="https://www.nist.gov/oism/accessibility">Accessibility</a> <a href="https://www.nist.gov/privacy">Privacy Program</a> <a href="https://www.nist.gov/oism/copyrights">Copyrights</a> <a href="https://www.commerce.gov/vulnerability-disclosure-policy">Vulnerability Disclosure</a> <a href="https://www.nist.gov/no-fear-act-policy">No Fear Act Policy</a> <a href="https://www.nist.gov/foia">FOIA</a> <a href="https://www.nist.gov/environmental-policy-statement">Environmental Policy</a> <a href="https://www.nist.gov/summary-report-scientific-integrity">Scientific Integrity</a> <a href="https://www.nist.gov/nist-information-quality-standards">Information Quality Standards</a> <a href="https://www.commerce.gov/">Commerce.gov</a> <a href="http://www.science.gov/">Science.gov</a> <a href="http://www.usa.gov/">USA.gov</a>
+</div>
+</div>
+</div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a30dbccaca10c431',t:'MTc4NzY5Mzg0MQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"9ef5b487afff42a68917b2d63593a474"}' crossorigin="anonymous"></script>
+</body>
+</html>

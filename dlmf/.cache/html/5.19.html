@@ -1,0 +1,460 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>DLMF: §5.19 Mathematical Applications ‣ Applications ‣ Chapter 5 Gamma Function</title>
+<link rel="shortcut icon" href="./style/DLMF-16.png" type="image/png">
+<script type="text/javascript"><!--
+	var PATH="DLMF:/5.19";
+	var ROOT="./";
+      //--></script>
+<script type="text/javascript" src="./style/jquery.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/jquery.leaveNotice.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/DLMF.js"><!-- non-empty so ie6 will accept it --></script>
+<script async="" type="text/javascript" id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC&amp;subagency=NIST&amp;pua=UA-37115410-44&amp;yt=true&amp;exts=ppsx,pps,f90,sch,rtf,wrl,txz,m1v,xlsm,msi,xsd,f,tif,eps,mpg,xml,pl,xlt,c"><!-- non-empty so ie6 will accept it --></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-BZB64W4M0L"></script><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-BZB64W4M0L');
+      </script>
+<link rel="stylesheet" type="text/css" href="./style/LaTeXML.css">
+<link rel="stylesheet" type="text/css" href="./style/DLMF.css">
+<link rel="stylesheet" type="text/css" href="./style/print.css" media="print">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="top" href="./" title="DLMF">
+<link rel="copyright" href="./about/notices" title="Copyright">
+<link rel="search" href="./search/search" title="Search">
+<link rel="help" class="ltx_help" href="./help/" title="Help">
+<link rel="up" href="./5#PT3" title="Applications ‣ Chapter 5 Gamma Function">
+<link rel="up up" href="./5" title="Chapter 5 Gamma Function">
+<link rel="start" href="./" title="">
+<link rel="prev" href="./5.18" title="§5.18 𝑞-Gamma and 𝑞-Beta Functions ‣ Properties ‣ Chapter 5 Gamma Function">
+<link rel="next" href="./5.20" title="§5.20 Physical Applications ‣ Applications ‣ Chapter 5 Gamma Function">
+<link rel="section" href="./5.1" title="§5.1 Special Notation ‣ Notation ‣ Chapter 5 Gamma Function">
+<link rel="section" href="./5.2" title="§5.2 Definitions ‣ Properties ‣ Chapter 5 Gamma Function">
+<link rel="section" href="./5.3" title="§5.3 Graphics ‣ Properties ‣ Chapter 5 Gamma Function">
+<link rel="section" href="./5.4" title="§5.4 Special Values and Extrema ‣ Properties ‣ Chapter 5 Gamma Function">
+<link rel="section" href="./5.5" title="§5.5 Functional Relations ‣ Properties ‣ Chapter 5 Gamma Function">
+<link rel="section" href="./5.6" title="§5.6 Inequalities ‣ Properties ‣ Chapter 5 Gamma Function">
+<link rel="section" href="./5.7" title="§5.7 Series Expansions ‣ Properties ‣ Chapter 5 Gamma Function">
+<link rel="section" href="./5.8" title="§5.8 Infinite Products ‣ Properties ‣ Chapter 5 Gamma Function">
+<link rel="section" href="./5.9" title="§5.9 Integral Representations ‣ Properties ‣ Chapter 5 Gamma Function">
+<link rel="section" href="./5.10" title="§5.10 Continued Fractions ‣ Properties ‣ Chapter 5 Gamma Function">
+<link rel="section" href="./5.11" title="§5.11 Asymptotic Expansions ‣ Properties ‣ Chapter 5 Gamma Function">
+<link rel="section" href="./5.12" title="§5.12 Beta Function ‣ Properties ‣ Chapter 5 Gamma Function">
+<link rel="section" href="./5.13" title="§5.13 Integrals ‣ Properties ‣ Chapter 5 Gamma Function">
+<link rel="section" href="./5.14" title="§5.14 Multidimensional Integrals ‣ Properties ‣ Chapter 5 Gamma Function">
+<link rel="section" href="./5.15" title="§5.15 Polygamma Functions ‣ Properties ‣ Chapter 5 Gamma Function">
+<link rel="section" href="./5.16" title="§5.16 Sums ‣ Properties ‣ Chapter 5 Gamma Function">
+<link rel="section" href="./5.17" title="§5.17 Barnes’ 𝐺-Function (Double Gamma Function) ‣ Properties ‣ Chapter 5 Gamma Function">
+<link rel="section" href="./5.18" title="§5.18 𝑞-Gamma and 𝑞-Beta Functions ‣ Properties ‣ Chapter 5 Gamma Function">
+<link rel="section" href="./5.20" title="§5.20 Physical Applications ‣ Applications ‣ Chapter 5 Gamma Function">
+<link rel="section" href="./5.21" title="§5.21 Methods of Computation ‣ Computation ‣ Chapter 5 Gamma Function">
+<link rel="section" href="./5.22" title="§5.22 Tables ‣ Computation ‣ Chapter 5 Gamma Function">
+<link rel="section" href="./5.23" title="§5.23 Approximations ‣ Computation ‣ Chapter 5 Gamma Function">
+<link rel="section" href="./5.24" title="§5.24 Software ‣ Computation ‣ Chapter 5 Gamma Function">
+<link rel="sidebar" href="./5.SB1" title="Sidebar 5.SB1: Gamma &amp; Digamma Phase Plots ‣ Chapter 5 Gamma Function">
+<link rel="document" href="./front/foreword" title="Foreword">
+<link rel="document" href="./front/preface" title="Preface">
+<link rel="document" href="./front/introduction" title="Mathematical Introduction">
+<link rel="chapter" href="./1" title="Chapter 1 Algebraic and Analytic Methods">
+<link rel="chapter" href="./2" title="Chapter 2 Asymptotic Approximations">
+<link rel="chapter" href="./3" title="Chapter 3 Numerical Methods">
+<link rel="chapter" href="./4" title="Chapter 4 Elementary Functions">
+<link rel="chapter" href="./5" title="Chapter 5 Gamma Function">
+<link rel="chapter" href="./6" title="Chapter 6 Exponential, Logarithmic, Sine, and Cosine Integrals">
+<link rel="chapter" href="./7" title="Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="chapter" href="./8" title="Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="chapter" href="./9" title="Chapter 9 Airy and Related Functions">
+<link rel="chapter" href="./10" title="Chapter 10 Bessel Functions">
+<link rel="chapter" href="./11" title="Chapter 11 Struve and Related Functions">
+<link rel="chapter" href="./12" title="Chapter 12 Parabolic Cylinder Functions">
+<link rel="chapter" href="./13" title="Chapter 13 Confluent Hypergeometric Functions">
+<link rel="chapter" href="./14" title="Chapter 14 Legendre and Related Functions">
+<link rel="chapter" href="./15" title="Chapter 15 Hypergeometric Function">
+<link rel="chapter" href="./16" title="Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="chapter" href="./17" title="Chapter 17 𝑞-Hypergeometric and Related Functions">
+<link rel="chapter" href="./18" title="Chapter 18 Orthogonal Polynomials">
+<link rel="chapter" href="./19" title="Chapter 19 Elliptic Integrals">
+<link rel="chapter" href="./20" title="Chapter 20 Theta Functions">
+<link rel="chapter" href="./21" title="Chapter 21 Multidimensional Theta Functions">
+<link rel="chapter" href="./22" title="Chapter 22 Jacobian Elliptic Functions">
+<link rel="chapter" href="./23" title="Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="chapter" href="./24" title="Chapter 24 Bernoulli and Euler Polynomials">
+<link rel="chapter" href="./25" title="Chapter 25 Zeta and Related Functions">
+<link rel="chapter" href="./26" title="Chapter 26 Combinatorial Analysis">
+<link rel="chapter" href="./27" title="Chapter 27 Functions of Number Theory">
+<link rel="chapter" href="./28" title="Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="chapter" href="./29" title="Chapter 29 Lamé Functions">
+<link rel="chapter" href="./30" title="Chapter 30 Spheroidal Wave Functions">
+<link rel="chapter" href="./31" title="Chapter 31 Heun Functions">
+<link rel="chapter" href="./32" title="Chapter 32 Painlevé Transcendents">
+<link rel="chapter" href="./33" title="Chapter 33 Coulomb Functions">
+<link rel="chapter" href="./34" title="Chapter 34 3⁢𝑗,6⁢𝑗,9⁢𝑗 Symbols">
+<link rel="chapter" href="./35" title="Chapter 35 Functions of Matrix Argument">
+<link rel="chapter" href="./36" title="Chapter 36 Integrals with Coalescing Saddles">
+<link rel="bibliography" href="./bib/" title="Bibliography">
+<link rel="index" href="./idx/" title="Index">
+<link rel="glossary" href="./not/" title="Notations">
+<link rel="document" href="./lof/" title="List of Figures">
+<link rel="document" href="./lot/" title="List of Tables">
+<link rel="document" href="./software/" title="Software Index">
+<link rel="document" href="./errata/" title="Errata">
+<link rel="document" href="./help/" title="Need Help?">
+<link rel="document" href="./search/" title="Advanced Search">
+<link rel="document" href="./about/" title="About the Project">
+<meta name="keywords" lang="en" content="-dimensional sphere, Mellin–Barnes integrals, applications, gamma function, mathematical, psi function, rational functions, summation">
+</head>
+<body class="color_default textfont_default titlefont_default fontsize_default navbar_default">
+<div class="ltx_page_navbar">
+<div class="ltx_page_navlogo"><a href="./" title="Digital Library of Mathematical Functions"><span>DLMF</span></a></div>
+<div class="ltx_page_navitems">
+<form method="get" action="./search/search">
+<ul>
+<li><a href="./idx/">Index</a></li>
+<li><a href="./not/">Notations</a></li>
+<li><small><input type="text" name="q" value="" size="6" class="ltx_page_navitem_search"><button type="submit">Search</button></small></li>
+<li><a href="./help/" class="ltx_help">Help?</a></li>
+<li><a href="./help/cite">Citing</a></li>
+<li><a href="./help/customize" class="ltx_customize">Customize</a></li>
+<li id="showinfo"><a href="" onclick="showInfo(); return false;" title="Show Annotations">Annotate</a></li>
+<li id="hideinfo"><a href="" onclick="hideInfo(); return false;">UnAnnotate</a></li>
+</ul>
+</form>
+</div>
+<div class="ltx_page_navsponsors">
+<div><a href="./about/" class="ltx_page_navabout">About the Project</a></div>
+</div>
+</div>
+<div class="ltx_page_main">
+<div class="ltx_page_header">
+<a href="./5" title="" class="ltx_ref" rel="up up"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">5 </span>Gamma Function</span></a><a href="./5#PT3" title="In Chapter 5 Gamma Function" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title">Applications</span></a><a href="./5.18" title="In Properties ‣ Chapter 5 Gamma Function" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">5.18 </span><math class="ltx_Math" altimg="m20.png" altimg-height="17px" altimg-valign="-6px" altimg-width="14px" alttext="q" display="inline"><mi href="./5.1#t1.r5" title="real or complex variable">q</mi></math>-Gamma and <math class="ltx_Math" altimg="m20.png" altimg-height="17px" altimg-valign="-6px" altimg-width="14px" alttext="q" display="inline"><mi href="./5.1#t1.r5" title="real or complex variable">q</mi></math>-Beta Functions</span></a><a href="./5.20" title="In Applications ‣ Chapter 5 Gamma Function" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">5.20 </span>Physical Applications</span></a>
+</div>
+<div class="ltx_page_content">
+<section class="ltx_section ltx_authors_multiline ltx_leqno">
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">§5.19 </span>Mathematical Applications</h1>
+<div id="info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=applications">applications</a>, <a class="ltx_keyword" href="./search/search?q=gamma%20function">gamma function</a>, <a class="ltx_keyword" href="./search/search?q=mathematical">mathematical</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./5.19" title="" class="ltx_ref">http://dlmf.nist.gov/5.19</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./5#info" title="Chapter 5 Gamma Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.5</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<h6>Contents</h6>
+<ol class="ltx_toclist ltx_toclist_section">
+<li class="ltx_tocentry"><a href="#i"><span class="ltx_tag ltx_tag_subsection">§5.19(i) </span>Summation of Rational Functions</a></li>
+<li class="ltx_tocentry"><a href="#ii"><span class="ltx_tag ltx_tag_subsection">§5.19(ii) </span>Mellin–Barnes Integrals</a></li>
+<li class="ltx_tocentry"><a href="#iii"><span class="ltx_tag ltx_tag_subsection">§5.19(iii) </span><math class="ltx_Math" altimg="m19.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./5.1#t1.r1" title="nonnegative integer">n</mi></math>-Dimensional Sphere</a></li>
+</ol>
+<section id="i" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§5.19(i) </span>Summation of Rational Functions</h2>
+<div id="i.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=applications">applications</a>, <a class="ltx_keyword" href="./search/search?q=mathematical">mathematical</a>, <a class="ltx_keyword" href="./search/search?q=psi%20function">psi function</a>, <a class="ltx_keyword" href="./search/search?q=rational%20functions">rational functions</a>, <a class="ltx_keyword" href="./search/search?q=summation">summation</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./5.19.i" title="" class="ltx_ref">http://dlmf.nist.gov/5.19.i</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./5.19#info" title="§5.19 Mathematical Applications ‣ Applications ‣ Chapter 5 Gamma Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§5.19</span></a> and
+<a href="./5#info" title="Chapter 5 Gamma Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.5</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="i.p1" class="ltx_para">
+<p class="ltx_p">As shown in <cite class="ltx_cite ltx_citemacro_citet">Temme (<a href="./bib/T#bib2230" title="Special Functions: An Introduction to the Classical Functions of Mathematical Physics" class="ltx_ref">1996b</a>, §3.4)</cite>, the results given in
+§<a href="./5.7#ii" title="§5.7(ii) Other Series ‣ §5.7 Series Expansions ‣ Properties ‣ Chapter 5 Gamma Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">5.7(ii)</span></a> can be used to sum infinite series of rational functions.</p>
+</div>
+<section id="Px1" class="ltx_paragraph">
+<h3 class="ltx_title ltx_title_paragraph">Example</h3>
+<div id="Px1.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./5.19#i.info" title="§5.19(i) Summation of Rational Functions ‣ §5.19 Mathematical Applications ‣ Applications ‣ Chapter 5 Gamma Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§5.19(i)</span></a>,
+<a href="./5.19#info" title="§5.19 Mathematical Applications ‣ Applications ‣ Chapter 5 Gamma Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§5.19</span></a> and
+<a href="./5#info" title="Chapter 5 Gamma Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.5</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="Px1.p1" class="ltx_para">
+<table id="E1" class="ltx_equationgroup ltx_eqn_table">
+<tbody>
+<tr id="Ex1" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="2" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equationgroup ltx_align_left">5.19.1</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m5.png" altimg-height="20px" altimg-valign="-2px" altimg-width="21px" alttext="\displaystyle S" display="inline"><mi>S</mi></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m4.png" altimg-height="68px" altimg-valign="-29px" altimg-width="89px" alttext="\displaystyle=\sum_{k=0}^{\infty}a_{k}," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi href="./5.1#t1.r2" title="nonnegative integer">k</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover></mstyle><msub><mi href="./5.1#t1.r5" title="real or complex variable">a</mi><mi href="./5.1#t1.r2" title="nonnegative integer">k</mi></msub></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex2" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m7.png" altimg-height="18px" altimg-valign="-5px" altimg-width="28px" alttext="\displaystyle a_{k}" display="inline"><msub><mi href="./5.1#t1.r5" title="real or complex variable">a</mi><mi href="./5.1#t1.r2" title="nonnegative integer">k</mi></msub></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m3.png" altimg-height="54px" altimg-valign="-21px" altimg-width="250px" alttext="\displaystyle=\frac{k}{(3k+2)(2k+1)(k+1)}." display="inline"><mrow><mrow><mi></mi><mo>=</mo><mstyle displaystyle="true"><mfrac><mi href="./5.1#t1.r2" title="nonnegative integer">k</mi><mrow><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>3</mn><mo>⁢</mo><mi href="./5.1#t1.r2" title="nonnegative integer">k</mi></mrow><mo>+</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi href="./5.1#t1.r2" title="nonnegative integer">k</mi></mrow><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi href="./5.1#t1.r2" title="nonnegative integer">k</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mfrac></mstyle></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E1.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./5.1#t1.r2" title="§5.1 Special Notation ‣ Notation ‣ Chapter 5 Gamma Function" class="ltx_ref"><math class="ltx_Math" altimg="m18.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./5.1#t1.r2" title="nonnegative integer">k</mi></math>:  nonnegative integer</a> and
+<a href="./5.1#t1.r5" title="§5.1 Special Notation ‣ Notation ‣ Chapter 5 Gamma Function" class="ltx_ref"><math class="ltx_Math" altimg="m16.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="a" display="inline"><mi href="./5.1#t1.r5" title="real or complex variable">a</mi></math>:  real or complex variable</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./5.19.E1" title="" class="ltx_ref">http://dlmf.nist.gov/5.19.E1</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./5.19.E1a.tex">TeX</a>, <a href="./5.19.E1b.tex">TeX</a>, <a href="./5.19.E1a.pmml">pMML</a>, <a href="./5.19.E1b.pmml">pMML</a>, <a href="./5.19.E1a.png">png</a>, <a href="./5.19.E1b.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./5.19#Px1.info" title="Example ‣ §5.19(i) Summation of Rational Functions ‣ §5.19 Mathematical Applications ‣ Applications ‣ Chapter 5 Gamma Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§5.19(i)</span></a>,
+<a href="./5.19#i.info" title="§5.19(i) Summation of Rational Functions ‣ §5.19 Mathematical Applications ‣ Applications ‣ Chapter 5 Gamma Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§5.19(i)</span></a>,
+<a href="./5.19#info" title="§5.19 Mathematical Applications ‣ Applications ‣ Chapter 5 Gamma Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§5.19</span></a> and
+<a href="./5#info" title="Chapter 5 Gamma Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.5</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">By decomposition into partial fractions (§<a href="./1.2#iii" title="§1.2(iii) Partial Fractions ‣ §1.2 Elementary Algebra ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.2(iii)</span></a>)</p>
+<table id="E2" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">5.19.2</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E2.png" altimg-height="136px" altimg-valign="-24px" altimg-width="459px" alttext="a_{k}=\frac{2}{k+\frac{2}{3}}-\frac{1}{k+\frac{1}{2}}-\frac{1}{k+1}=\left(%
+\frac{1}{k+1}-\frac{1}{k+\frac{1}{2}}\right)-2\left(\frac{1}{k+1}-\frac{1}{k+%
+\frac{2}{3}}\right)." display="block"><mrow><mrow><msub><mi href="./5.1#t1.r5" title="real or complex variable">a</mi><mi href="./5.1#t1.r2" title="nonnegative integer">k</mi></msub><mo>=</mo><mrow><mfrac><mn>2</mn><mrow><mi href="./5.1#t1.r2" title="nonnegative integer">k</mi><mo>+</mo><mfrac><mn>2</mn><mn>3</mn></mfrac></mrow></mfrac><mo>−</mo><mfrac><mn>1</mn><mrow><mi href="./5.1#t1.r2" title="nonnegative integer">k</mi><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></mfrac><mo>−</mo><mfrac><mn>1</mn><mrow><mi href="./5.1#t1.r2" title="nonnegative integer">k</mi><mo>+</mo><mn>1</mn></mrow></mfrac></mrow><mo>=</mo><mrow><mrow><mo>(</mo><mrow><mfrac><mn>1</mn><mrow><mi href="./5.1#t1.r2" title="nonnegative integer">k</mi><mo>+</mo><mn>1</mn></mrow></mfrac><mo>−</mo><mfrac><mn>1</mn><mrow><mi href="./5.1#t1.r2" title="nonnegative integer">k</mi><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></mfrac></mrow><mo>)</mo></mrow><mo>−</mo><mrow><mn>2</mn><mo>⁢</mo><mrow><mo>(</mo><mrow><mfrac><mn>1</mn><mrow><mi href="./5.1#t1.r2" title="nonnegative integer">k</mi><mo>+</mo><mn>1</mn></mrow></mfrac><mo>−</mo><mfrac><mn>1</mn><mrow><mi href="./5.1#t1.r2" title="nonnegative integer">k</mi><mo>+</mo><mfrac><mn>2</mn><mn>3</mn></mfrac></mrow></mfrac></mrow><mo>)</mo></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E2.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./5.1#t1.r2" title="§5.1 Special Notation ‣ Notation ‣ Chapter 5 Gamma Function" class="ltx_ref"><math class="ltx_Math" altimg="m18.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./5.1#t1.r2" title="nonnegative integer">k</mi></math>:  nonnegative integer</a> and
+<a href="./5.1#t1.r5" title="§5.1 Special Notation ‣ Notation ‣ Chapter 5 Gamma Function" class="ltx_ref"><math class="ltx_Math" altimg="m16.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="a" display="inline"><mi href="./5.1#t1.r5" title="real or complex variable">a</mi></math>:  real or complex variable</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./5.19.E2" title="" class="ltx_ref">http://dlmf.nist.gov/5.19.E2</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./5.19.E2.tex">TeX</a>, <a href="./5.19.E2.pmml">pMML</a>, <a href="./5.19.E2.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./5.19#Px1.info" title="Example ‣ §5.19(i) Summation of Rational Functions ‣ §5.19 Mathematical Applications ‣ Applications ‣ Chapter 5 Gamma Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§5.19(i)</span></a>,
+<a href="./5.19#i.info" title="§5.19(i) Summation of Rational Functions ‣ §5.19 Mathematical Applications ‣ Applications ‣ Chapter 5 Gamma Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§5.19(i)</span></a>,
+<a href="./5.19#info" title="§5.19 Mathematical Applications ‣ Applications ‣ Chapter 5 Gamma Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§5.19</span></a> and
+<a href="./5#info" title="Chapter 5 Gamma Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.5</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">Hence from (<a href="./5.7#E6" title="(5.7.6) ‣ §5.7(ii) Other Series ‣ §5.7 Series Expansions ‣ Properties ‣ Chapter 5 Gamma Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">5.7.6</span></a>), (<a href="./5.4#E13" title="(5.4.13) ‣ §5.4(ii) Psi Function ‣ §5.4 Special Values and Extrema ‣ Properties ‣ Chapter 5 Gamma Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">5.4.13</span></a>), and (<a href="./5.4#E19" title="(5.4.19) ‣ §5.4(ii) Psi Function ‣ §5.4 Special Values and Extrema ‣ Properties ‣ Chapter 5 Gamma Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">5.4.19</span></a>)</p>
+<table id="E3" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">5.19.3</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E3.png" altimg-height="91px" altimg-valign="-9px" altimg-width="377px" alttext="S=\psi\left(\tfrac{1}{2}\right)-2\psi\left(\tfrac{2}{3}\right)-\gamma=3\ln 3-2%
+\ln 2-\tfrac{1}{3}\pi\sqrt{3}." display="block"><mrow><mrow><mi>S</mi><mo>=</mo><mrow><mrow><mi href="./5.2#E2" title="psi (or digamma) function">ψ</mi><mo>⁡</mo><mrow><mo>(</mo><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>)</mo></mrow></mrow><mo>−</mo><mrow><mn>2</mn><mo>⁢</mo><mrow><mi href="./5.2#E2" title="psi (or digamma) function">ψ</mi><mo>⁡</mo><mrow><mo>(</mo><mstyle displaystyle="false"><mfrac><mn>2</mn><mn>3</mn></mfrac></mstyle><mo>)</mo></mrow></mrow></mrow><mo>−</mo><mi href="./5.2#E3" title="Euler’s constant">γ</mi></mrow><mo>=</mo><mrow><mrow><mn>3</mn><mo lspace="0.167em">⁢</mo><mrow><mi href="./4.2#E2" title="principal branch of logarithm function">ln</mi><mo lspace="0.167em">⁡</mo><mn>3</mn></mrow></mrow><mo>−</mo><mrow><mn>2</mn><mo lspace="0.167em">⁢</mo><mrow><mi href="./4.2#E2" title="principal branch of logarithm function">ln</mi><mo lspace="0.167em">⁡</mo><mn>2</mn></mrow></mrow><mo>−</mo><mrow><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>3</mn></mfrac></mstyle><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>⁢</mo><msqrt><mn>3</mn></msqrt></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E3.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./5.2#E3" title="(5.2.3) ‣ §5.2(ii) Euler’s Constant ‣ §5.2 Definitions ‣ Properties ‣ Chapter 5 Gamma Function" class="ltx_ref"><math class="ltx_Math" altimg="m12.png" altimg-height="17px" altimg-valign="-6px" altimg-width="16px" alttext="\gamma" display="inline"><mi href="./5.2#E3" title="Euler’s constant">γ</mi></math>: Euler’s constant</a>,
+<a href="./3.12#E1" title="(3.12.1) ‣ §3.12 Mathematical Constants ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m14.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="\pi" display="inline"><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></math>: the ratio of the circumference of a circle to its diameter</a>,
+<a href="./5.2#E2" title="(5.2.2) ‣ Euler’s Integral ‣ §5.2(i) Gamma and Psi Functions ‣ §5.2 Definitions ‣ Properties ‣ Chapter 5 Gamma Function" class="ltx_ref"><math class="ltx_Math" altimg="m15.png" altimg-height="25px" altimg-valign="-7px" altimg-width="49px" alttext="\psi\left(\NVar{z}\right)" display="inline"><mrow><mi href="./5.2#E2" title="psi (or digamma) function">ψ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./5.1#t1.r4" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: psi (or digamma) function</a> and
+<a href="./4.2#E2" title="(4.2.2) ‣ §4.2(i) The Logarithm ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m13.png" altimg-height="18px" altimg-valign="-2px" altimg-width="36px" alttext="\ln\NVar{z}" display="inline"><mrow><mi href="./4.2#E2" title="principal branch of logarithm function">ln</mi><mo lspace="0.167em">⁡</mo><mi class="ltx_nvar" href="./4.1#t1.r4" title="complex variable">z</mi></mrow></math>: principal branch of logarithm function</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./5.19.E3" title="" class="ltx_ref">http://dlmf.nist.gov/5.19.E3</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./5.19.E3.tex">TeX</a>, <a href="./5.19.E3.pmml">pMML</a>, <a href="./5.19.E3.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./5.19#Px1.info" title="Example ‣ §5.19(i) Summation of Rational Functions ‣ §5.19 Mathematical Applications ‣ Applications ‣ Chapter 5 Gamma Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§5.19(i)</span></a>,
+<a href="./5.19#i.info" title="§5.19(i) Summation of Rational Functions ‣ §5.19 Mathematical Applications ‣ Applications ‣ Chapter 5 Gamma Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§5.19(i)</span></a>,
+<a href="./5.19#info" title="§5.19 Mathematical Applications ‣ Applications ‣ Chapter 5 Gamma Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§5.19</span></a> and
+<a href="./5#info" title="Chapter 5 Gamma Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.5</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+<section id="ii" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§5.19(ii) </span>Mellin–Barnes Integrals</h2>
+<div id="ii.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd><a class="ltx_keyword" href="./search/search?q=Mellin%E2%80%93Barnes%20integrals">Mellin–Barnes integrals</a></dd>
+<dt>Referenced by:</dt>
+<dd><a href="./35.8#v.p1" title="§35.8(v) Mellin–Barnes Integrals ‣ §35.8 Generalized Hypergeometric Functions of Matrix Argument ‣ Properties ‣ Chapter 35 Functions of Matrix Argument" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§35.8(v)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./5.19.ii" title="" class="ltx_ref">http://dlmf.nist.gov/5.19.ii</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./5.19#info" title="§5.19 Mathematical Applications ‣ Applications ‣ Chapter 5 Gamma Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§5.19</span></a> and
+<a href="./5#info" title="Chapter 5 Gamma Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.5</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="ii.p1" class="ltx_para">
+<p class="ltx_p">Many special functions <math class="ltx_Math" altimg="m17.png" altimg-height="25px" altimg-valign="-7px" altimg-width="43px" alttext="f(z)" display="inline"><mrow><mi>f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./5.1#t1.r4" title="complex variable">z</mi><mo stretchy="false">)</mo></mrow></mrow></math> can be represented as a <em class="ltx_emph ltx_font_italic">Mellin–Barnes
+integral</em>, that is, an integral of a product of gamma functions, reciprocals
+of gamma functions, and a power of <math class="ltx_Math" altimg="m23.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi href="./5.1#t1.r4" title="complex variable">z</mi></math>, the integration contour being
+doubly-infinite and eventually parallel to the imaginary axis at both ends. The left-hand
+side of (<a href="./5.13#E1" title="(5.13.1) ‣ §5.13 Integrals ‣ Properties ‣ Chapter 5 Gamma Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">5.13.1</span></a>) is a typical example. By translating the contour
+parallel to itself and summing the residues of the integrand, asymptotic
+expansions of <math class="ltx_Math" altimg="m17.png" altimg-height="25px" altimg-valign="-7px" altimg-width="43px" alttext="f(z)" display="inline"><mrow><mi>f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./5.1#t1.r4" title="complex variable">z</mi><mo stretchy="false">)</mo></mrow></mrow></math> for large <math class="ltx_Math" altimg="m25.png" altimg-height="25px" altimg-valign="-7px" altimg-width="26px" alttext="|z|" display="inline"><mrow><mo stretchy="false">|</mo><mi href="./5.1#t1.r4" title="complex variable">z</mi><mo stretchy="false">|</mo></mrow></math>, or small <math class="ltx_Math" altimg="m25.png" altimg-height="25px" altimg-valign="-7px" altimg-width="26px" alttext="|z|" display="inline"><mrow><mo stretchy="false">|</mo><mi href="./5.1#t1.r4" title="complex variable">z</mi><mo stretchy="false">|</mo></mrow></math>, can be obtained complete
+with an integral representation of the error term. For further information
+and examples see §<a href="./2.5" title="§2.5 Mellin Transform Methods ‣ Areas ‣ Chapter 2 Asymptotic Approximations" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.5</span></a> and
+<cite class="ltx_cite ltx_citemacro_citet">Paris and Kaminski (<a href="./bib/P#bib1845" title="Asymptotics and Mellin-Barnes Integrals" class="ltx_ref">2001</a>, Chapters 5, 6, and 8)</cite>.</p>
+</div>
+</section>
+<section id="iii" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§5.19(iii) </span><math class="ltx_Math" altimg="m19.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./5.1#t1.r1" title="nonnegative integer">n</mi></math>-Dimensional Sphere</h2>
+<div id="iii.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=gamma%20function">gamma function</a>, <a class="ltx_keyword" href="./search/search?q=n-dimensional%20sphere"><math class="ltx_Math" altimg="m19.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./5.1#t1.r1" title="nonnegative integer">n</mi></math>-dimensional sphere</a>
+</dd>
+<dt>Notes:</dt>
+<dd>See <cite class="ltx_cite ltx_citemacro_citet">Stein and Shakarchi (<a href="./bib/S#bib2165" title="Fourier Analysis: An Introduction" class="ltx_ref">2003</a>, pp. 208–209)</cite> and <cite class="ltx_cite ltx_citemacro_citet">Robnik (<a href="./bib/R#bib1963" title="An extremum property of the n -dimensional sphere" class="ltx_ref">1980</a>)</cite>.
+The formula for <math class="ltx_Math" altimg="m10.png" altimg-height="18px" altimg-valign="-2px" altimg-width="21px" alttext="V" display="inline"><mi href="./5.19#iii.p1" title="volume">V</mi></math> can also be verified by setting <math class="ltx_Math" altimg="m22.png" altimg-height="26px" altimg-valign="-7px" altimg-width="118px" alttext="t_{k}=(x_{k}/r)^{2}" display="inline"><mrow><msub><mi>t</mi><mi href="./5.1#t1.r2" title="nonnegative integer">k</mi></msub><mo>=</mo><msup><mrow><mo stretchy="false">(</mo><mrow><msub><mi href="./5.1#t1.r3" title="real variable">x</mi><mi href="./5.1#t1.r2" title="nonnegative integer">k</mi></msub><mo>/</mo><mi href="./5.19#iii.p1" title="radius">r</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></math> and
+<math class="ltx_Math" altimg="m24.png" altimg-height="29px" altimg-valign="-9px" altimg-width="202px" alttext="z_{k}=\tfrac{1}{2},k=1,2,\dots,n" display="inline"><mrow><mrow><msub><mi href="./5.1#t1.r4" title="complex variable">z</mi><mi href="./5.1#t1.r2" title="nonnegative integer">k</mi></msub><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow><mo>,</mo><mrow><mi href="./5.1#t1.r2" title="nonnegative integer">k</mi><mo>=</mo><mrow><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi href="./5.1#t1.r1" title="nonnegative integer">n</mi></mrow></mrow></mrow></math>, in (<a href="./5.14#E1" title="(5.14.1) ‣ §5.14 Multidimensional Integrals ‣ Properties ‣ Chapter 5 Gamma Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">5.14.1</span></a>). The
+formula for <math class="ltx_Math" altimg="m9.png" altimg-height="18px" altimg-valign="-2px" altimg-width="18px" alttext="S" display="inline"><mi href="./5.19#iii.p1" title="surface">S</mi></math> can be verified in a similar way from (<a href="./5.14#E2" title="(5.14.2) ‣ §5.14 Multidimensional Integrals ‣ Properties ‣ Chapter 5 Gamma Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">5.14.2</span></a>),
+or derived by differentiating the formula for <math class="ltx_Math" altimg="m10.png" altimg-height="18px" altimg-valign="-2px" altimg-width="21px" alttext="V" display="inline"><mi href="./5.19#iii.p1" title="volume">V</mi></math>.</dd>
+<dt>Permalink:</dt>
+<dd><a href="./5.19.iii" title="" class="ltx_ref">http://dlmf.nist.gov/5.19.iii</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./5.19#info" title="§5.19 Mathematical Applications ‣ Applications ‣ Chapter 5 Gamma Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§5.19</span></a> and
+<a href="./5#info" title="Chapter 5 Gamma Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.5</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="iii.p1" class="ltx_para">
+<p class="ltx_p">The volume <math class="ltx_Math" altimg="m10.png" altimg-height="18px" altimg-valign="-2px" altimg-width="21px" alttext="V" display="inline"><mi href="./5.19#iii.p1" title="volume">V</mi></math> and surface area <math class="ltx_Math" altimg="m9.png" altimg-height="18px" altimg-valign="-2px" altimg-width="18px" alttext="S" display="inline"><mi href="./5.19#iii.p1" title="surface">S</mi></math> of the <math class="ltx_Math" altimg="m19.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./5.1#t1.r1" title="nonnegative integer">n</mi></math>-dimensional sphere of radius
+<math class="ltx_Math" altimg="m21.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="r" display="inline"><mi href="./5.19#iii.p1" title="radius">r</mi></math> are given by
+</p>
+<table id="E4" class="ltx_equationgroup ltx_eqn_table">
+<tbody>
+<tr id="Ex3" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="2" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equationgroup ltx_align_left">5.19.4</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m6.png" altimg-height="20px" altimg-valign="-2px" altimg-width="23px" alttext="\displaystyle V" display="inline"><mi href="./5.19#iii.p1" title="volume">V</mi></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m2.png" altimg-height="63px" altimg-valign="-25px" altimg-width="136px" alttext="\displaystyle=\frac{\pi^{\frac{1}{2}n}r^{n}}{\Gamma\left(\frac{1}{2}n+1\right)}," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mstyle displaystyle="true"><mfrac><mrow><msup><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mi href="./5.1#t1.r1" title="nonnegative integer">n</mi></mrow></msup><mo>⁢</mo><msup><mi href="./5.19#iii.p1" title="radius">r</mi><mi href="./5.1#t1.r1" title="nonnegative integer">n</mi></msup></mrow><mrow><mi href="./5.2#E1" mathvariant="normal" title="gamma function">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mi href="./5.1#t1.r1" title="nonnegative integer">n</mi></mrow><mo>+</mo><mn>1</mn></mrow><mo>)</mo></mrow></mrow></mfrac></mstyle></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex4" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m5.png" altimg-height="20px" altimg-valign="-2px" altimg-width="21px" alttext="\displaystyle S" display="inline"><mi href="./5.19#iii.p1" title="surface">S</mi></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m1.png" altimg-height="63px" altimg-valign="-25px" altimg-width="186px" alttext="\displaystyle=\frac{2\pi^{\frac{1}{2}n}r^{n-1}}{\Gamma\left(\frac{1}{2}n\right%
+)}=\frac{n}{r}V." display="inline"><mrow><mrow><mi></mi><mo>=</mo><mstyle displaystyle="true"><mfrac><mrow><mn>2</mn><mo>⁢</mo><msup><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mi href="./5.1#t1.r1" title="nonnegative integer">n</mi></mrow></msup><mo>⁢</mo><msup><mi href="./5.19#iii.p1" title="radius">r</mi><mrow><mi href="./5.1#t1.r1" title="nonnegative integer">n</mi><mo>−</mo><mn>1</mn></mrow></msup></mrow><mrow><mi href="./5.2#E1" mathvariant="normal" title="gamma function">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mi href="./5.1#t1.r1" title="nonnegative integer">n</mi></mrow><mo>)</mo></mrow></mrow></mfrac></mstyle><mo>=</mo><mrow><mstyle displaystyle="true"><mfrac><mi href="./5.1#t1.r1" title="nonnegative integer">n</mi><mi href="./5.19#iii.p1" title="radius">r</mi></mfrac></mstyle><mo>⁢</mo><mi href="./5.19#iii.p1" title="volume">V</mi></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E4.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./5.2#E1" title="(5.2.1) ‣ Euler’s Integral ‣ §5.2(i) Gamma and Psi Functions ‣ §5.2 Definitions ‣ Properties ‣ Chapter 5 Gamma Function" class="ltx_ref"><math class="ltx_Math" altimg="m11.png" altimg-height="25px" altimg-valign="-7px" altimg-width="47px" alttext="\Gamma\left(\NVar{z}\right)" display="inline"><mrow><mi href="./5.2#E1" mathvariant="normal" title="gamma function">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./5.1#t1.r4" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: gamma function</a>,
+<a href="./3.12#E1" title="(3.12.1) ‣ §3.12 Mathematical Constants ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m14.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="\pi" display="inline"><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></math>: the ratio of the circumference of a circle to its diameter</a>,
+<a href="./5.1#t1.r1" title="§5.1 Special Notation ‣ Notation ‣ Chapter 5 Gamma Function" class="ltx_ref"><math class="ltx_Math" altimg="m19.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./5.1#t1.r1" title="nonnegative integer">n</mi></math>:  nonnegative integer</a>,
+<a href="./5.19#iii.p1" title="§5.19(iii) 𝑛-Dimensional Sphere ‣ §5.19 Mathematical Applications ‣ Applications ‣ Chapter 5 Gamma Function" class="ltx_ref"><math class="ltx_Math" altimg="m10.png" altimg-height="18px" altimg-valign="-2px" altimg-width="21px" alttext="V" display="inline"><mi href="./5.19#iii.p1" title="volume">V</mi></math>:  volume</a>,
+<a href="./5.19#iii.p1" title="§5.19(iii) 𝑛-Dimensional Sphere ‣ §5.19 Mathematical Applications ‣ Applications ‣ Chapter 5 Gamma Function" class="ltx_ref"><math class="ltx_Math" altimg="m9.png" altimg-height="18px" altimg-valign="-2px" altimg-width="18px" alttext="S" display="inline"><mi href="./5.19#iii.p1" title="surface">S</mi></math>:  surface</a> and
+<a href="./5.19#iii.p1" title="§5.19(iii) 𝑛-Dimensional Sphere ‣ §5.19 Mathematical Applications ‣ Applications ‣ Chapter 5 Gamma Function" class="ltx_ref"><math class="ltx_Math" altimg="m21.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="r" display="inline"><mi href="./5.19#iii.p1" title="radius">r</mi></math>:  radius</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./5.19.E4" title="" class="ltx_ref">http://dlmf.nist.gov/5.19.E4</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./5.19.E4a.tex">TeX</a>, <a href="./5.19.E4b.tex">TeX</a>, <a href="./5.19.E4a.pmml">pMML</a>, <a href="./5.19.E4b.pmml">pMML</a>, <a href="./5.19.E4a.png">png</a>, <a href="./5.19.E4b.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./5.19#iii.info" title="§5.19(iii) 𝑛-Dimensional Sphere ‣ §5.19 Mathematical Applications ‣ Applications ‣ Chapter 5 Gamma Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§5.19(iii)</span></a>,
+<a href="./5.19#info" title="§5.19 Mathematical Applications ‣ Applications ‣ Chapter 5 Gamma Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§5.19</span></a> and
+<a href="./5#info" title="Chapter 5 Gamma Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.5</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+</div>
+<div class="ltx_page_footer">
+<div class="ltx_siblings">
+<a href="./5.18" title="In Properties ‣ Chapter 5 Gamma Function" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">5.18 </span><math class="ltx_Math" altimg="m20.png" altimg-height="17px" altimg-valign="-6px" altimg-width="14px" alttext="q" display="inline"><mi href="./5.1#t1.r5" title="real or complex variable">q</mi></math>-Gamma and <math class="ltx_Math" altimg="m20.png" altimg-height="17px" altimg-valign="-6px" altimg-width="14px" alttext="q" display="inline"><mi href="./5.1#t1.r5" title="real or complex variable">q</mi></math>-Beta Functions</span></a><a href="./5.20" title="In Applications ‣ Chapter 5 Gamma Function" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">5.20 </span>Physical Applications</span></a>
+</div>
+<div class="ltx_footer_links ltx_centering">
+<a href="./about/notices">© 2010–2026 NIST</a> / <a href="./about/notices#S2">Disclaimer</a> / <a href="/cdn-cgi/l/email-protection#0b4f47464d266d6e6e6f696a68604b6562787f256c647d">Feedback</a>;
+ Version 1.2.7;
+Release date 2026-06-15.</div>
+<span id="pagesettings"></span>
+<div class="ltx_nist_logo"><a href="http://www.nist.gov/"><img src="./style/nistidc.png" width="500" alt="NIST"></a></div>
+<div class="ltx_nist_links ltx_align_right">
+<a href="https://www.nist.gov/privacy-policy">Site Privacy</a> <a href="https://www.nist.gov/oism/accessibility">Accessibility</a> <a href="https://www.nist.gov/privacy">Privacy Program</a> <a href="https://www.nist.gov/oism/copyrights">Copyrights</a> <a href="https://www.commerce.gov/vulnerability-disclosure-policy">Vulnerability Disclosure</a> <a href="https://www.nist.gov/no-fear-act-policy">No Fear Act Policy</a> <a href="https://www.nist.gov/foia">FOIA</a> <a href="https://www.nist.gov/environmental-policy-statement">Environmental Policy</a> <a href="https://www.nist.gov/summary-report-scientific-integrity">Scientific Integrity</a> <a href="https://www.nist.gov/nist-information-quality-standards">Information Quality Standards</a> <a href="https://www.commerce.gov/">Commerce.gov</a> <a href="http://www.science.gov/">Science.gov</a> <a href="http://www.usa.gov/">USA.gov</a>
+</div>
+</div>
+</div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a30b50925b81d751',t:'MTc4NzY2ODQzNg=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"9ef5b487afff42a68917b2d63593a474"}' crossorigin="anonymous"></script>
+</body>
+</html>

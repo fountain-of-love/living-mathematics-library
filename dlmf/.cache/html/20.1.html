@@ -1,0 +1,314 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>DLMF: §20.1 Special Notation ‣ Notation ‣ Chapter 20 Theta Functions</title>
+<link rel="shortcut icon" href="./style/DLMF-16.png" type="image/png">
+<script type="text/javascript"><!--
+	var PATH="DLMF:/20.1";
+	var ROOT="./";
+      //--></script>
+<script type="text/javascript" src="./style/jquery.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/jquery.leaveNotice.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/DLMF.js"><!-- non-empty so ie6 will accept it --></script>
+<script async="" type="text/javascript" id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC&amp;subagency=NIST&amp;pua=UA-37115410-44&amp;yt=true&amp;exts=ppsx,pps,f90,sch,rtf,wrl,txz,m1v,xlsm,msi,xsd,f,tif,eps,mpg,xml,pl,xlt,c"><!-- non-empty so ie6 will accept it --></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-BZB64W4M0L"></script><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-BZB64W4M0L');
+      </script>
+<link rel="stylesheet" type="text/css" href="./style/LaTeXML.css">
+<link rel="stylesheet" type="text/css" href="./style/DLMF.css">
+<link rel="stylesheet" type="text/css" href="./style/print.css" media="print">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="top" href="./" title="DLMF">
+<link rel="copyright" href="./about/notices" title="Copyright">
+<link rel="search" href="./search/search" title="Search">
+<link rel="help" class="ltx_help" href="./help/" title="Help">
+<link rel="up" href="./20#PT1" title="Notation ‣ Chapter 20 Theta Functions">
+<link rel="up up" href="./20" title="Chapter 20 Theta Functions">
+<link rel="start" href="./" title="">
+<link rel="prev" href="./20" title="Chapter 20 Theta Functions">
+<link rel="next" href="./20.2" title="§20.2 Definitions and Periodic Properties ‣ Properties ‣ Chapter 20 Theta Functions">
+<link rel="section" href="./20.2" title="§20.2 Definitions and Periodic Properties ‣ Properties ‣ Chapter 20 Theta Functions">
+<link rel="section" href="./20.3" title="§20.3 Graphics ‣ Properties ‣ Chapter 20 Theta Functions">
+<link rel="section" href="./20.4" title="§20.4 Values at 𝑧 = 0 ‣ Properties ‣ Chapter 20 Theta Functions">
+<link rel="section" href="./20.5" title="§20.5 Infinite Products and Related Results ‣ Properties ‣ Chapter 20 Theta Functions">
+<link rel="section" href="./20.6" title="§20.6 Power Series ‣ Properties ‣ Chapter 20 Theta Functions">
+<link rel="section" href="./20.7" title="§20.7 Identities ‣ Properties ‣ Chapter 20 Theta Functions">
+<link rel="section" href="./20.8" title="§20.8 Watson’s Expansions ‣ Properties ‣ Chapter 20 Theta Functions">
+<link rel="section" href="./20.9" title="§20.9 Relations to Other Functions ‣ Properties ‣ Chapter 20 Theta Functions">
+<link rel="section" href="./20.10" title="§20.10 Integrals ‣ Properties ‣ Chapter 20 Theta Functions">
+<link rel="section" href="./20.11" title="§20.11 Generalizations and Analogs ‣ Properties ‣ Chapter 20 Theta Functions">
+<link rel="section" href="./20.12" title="§20.12 Mathematical Applications ‣ Applications ‣ Chapter 20 Theta Functions">
+<link rel="section" href="./20.13" title="§20.13 Physical Applications ‣ Applications ‣ Chapter 20 Theta Functions">
+<link rel="section" href="./20.14" title="§20.14 Methods of Computation ‣ Computation ‣ Chapter 20 Theta Functions">
+<link rel="section" href="./20.15" title="§20.15 Tables ‣ Computation ‣ Chapter 20 Theta Functions">
+<link rel="section" href="./20.16" title="§20.16 Software ‣ Computation ‣ Chapter 20 Theta Functions">
+<link rel="document" href="./front/foreword" title="Foreword">
+<link rel="document" href="./front/preface" title="Preface">
+<link rel="document" href="./front/introduction" title="Mathematical Introduction">
+<link rel="chapter" href="./1" title="Chapter 1 Algebraic and Analytic Methods">
+<link rel="chapter" href="./2" title="Chapter 2 Asymptotic Approximations">
+<link rel="chapter" href="./3" title="Chapter 3 Numerical Methods">
+<link rel="chapter" href="./4" title="Chapter 4 Elementary Functions">
+<link rel="chapter" href="./5" title="Chapter 5 Gamma Function">
+<link rel="chapter" href="./6" title="Chapter 6 Exponential, Logarithmic, Sine, and Cosine Integrals">
+<link rel="chapter" href="./7" title="Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="chapter" href="./8" title="Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="chapter" href="./9" title="Chapter 9 Airy and Related Functions">
+<link rel="chapter" href="./10" title="Chapter 10 Bessel Functions">
+<link rel="chapter" href="./11" title="Chapter 11 Struve and Related Functions">
+<link rel="chapter" href="./12" title="Chapter 12 Parabolic Cylinder Functions">
+<link rel="chapter" href="./13" title="Chapter 13 Confluent Hypergeometric Functions">
+<link rel="chapter" href="./14" title="Chapter 14 Legendre and Related Functions">
+<link rel="chapter" href="./15" title="Chapter 15 Hypergeometric Function">
+<link rel="chapter" href="./16" title="Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="chapter" href="./17" title="Chapter 17 𝑞-Hypergeometric and Related Functions">
+<link rel="chapter" href="./18" title="Chapter 18 Orthogonal Polynomials">
+<link rel="chapter" href="./19" title="Chapter 19 Elliptic Integrals">
+<link rel="chapter" href="./20" title="Chapter 20 Theta Functions">
+<link rel="chapter" href="./21" title="Chapter 21 Multidimensional Theta Functions">
+<link rel="chapter" href="./22" title="Chapter 22 Jacobian Elliptic Functions">
+<link rel="chapter" href="./23" title="Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="chapter" href="./24" title="Chapter 24 Bernoulli and Euler Polynomials">
+<link rel="chapter" href="./25" title="Chapter 25 Zeta and Related Functions">
+<link rel="chapter" href="./26" title="Chapter 26 Combinatorial Analysis">
+<link rel="chapter" href="./27" title="Chapter 27 Functions of Number Theory">
+<link rel="chapter" href="./28" title="Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="chapter" href="./29" title="Chapter 29 Lamé Functions">
+<link rel="chapter" href="./30" title="Chapter 30 Spheroidal Wave Functions">
+<link rel="chapter" href="./31" title="Chapter 31 Heun Functions">
+<link rel="chapter" href="./32" title="Chapter 32 Painlevé Transcendents">
+<link rel="chapter" href="./33" title="Chapter 33 Coulomb Functions">
+<link rel="chapter" href="./34" title="Chapter 34 3⁢𝑗,6⁢𝑗,9⁢𝑗 Symbols">
+<link rel="chapter" href="./35" title="Chapter 35 Functions of Matrix Argument">
+<link rel="chapter" href="./36" title="Chapter 36 Integrals with Coalescing Saddles">
+<link rel="bibliography" href="./bib/" title="Bibliography">
+<link rel="index" href="./idx/" title="Index">
+<link rel="glossary" href="./not/" title="Notations">
+<link rel="document" href="./lof/" title="List of Figures">
+<link rel="document" href="./lot/" title="List of Tables">
+<link rel="document" href="./software/" title="Software Index">
+<link rel="document" href="./errata/" title="Errata">
+<link rel="document" href="./help/" title="Need Help?">
+<link rel="document" href="./search/" title="Advanced Search">
+<link rel="document" href="./about/" title="About the Project">
+<meta name="keywords" lang="en" content="Jacobi’s original notation, McKean and Moll’s, McKean and Moll’s theta functions, Neville’s, Neville’s theta functions, lattice parameter, nome, notation, rectangular case, theta functions">
+</head>
+<body class="color_default textfont_default titlefont_default fontsize_default navbar_default">
+<div class="ltx_page_navbar">
+<div class="ltx_page_navlogo"><a href="./" title="Digital Library of Mathematical Functions"><span>DLMF</span></a></div>
+<div class="ltx_page_navitems">
+<form method="get" action="./search/search">
+<ul>
+<li><a href="./idx/">Index</a></li>
+<li><a href="./not/">Notations</a></li>
+<li><small><input type="text" name="q" value="" size="6" class="ltx_page_navitem_search"><button type="submit">Search</button></small></li>
+<li><a href="./help/" class="ltx_help">Help?</a></li>
+<li><a href="./help/cite">Citing</a></li>
+<li><a href="./help/customize" class="ltx_customize">Customize</a></li>
+<li id="showinfo"><a href="" onclick="showInfo(); return false;" title="Show Annotations">Annotate</a></li>
+<li id="hideinfo"><a href="" onclick="hideInfo(); return false;">UnAnnotate</a></li>
+</ul>
+</form>
+</div>
+<div class="ltx_page_navsponsors">
+<div><a href="./about/" class="ltx_page_navabout">About the Project</a></div>
+</div>
+</div>
+<div class="ltx_page_main">
+<div class="ltx_page_header">
+<a href="./20" title="" class="ltx_ref" rel="up up"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">20 </span>Theta Functions</span></a><a href="./20#PT1" title="In Chapter 20 Theta Functions" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title">Notation</span></a><a href="./20" title="" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">20 </span>Theta Functions</span></a><a href="./20.2" title="In Properties ‣ Chapter 20 Theta Functions" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">20.2 </span>Definitions and Periodic Properties</span></a>
+</div>
+<div class="ltx_page_content">
+<section class="ltx_section ltx_authors_multiline ltx_leqno">
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">§20.1 </span>Special Notation</h1>
+<div id="info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=lattice%20parameter">lattice parameter</a>, <a class="ltx_keyword" href="./search/search?q=nome">nome</a>, <a class="ltx_keyword" href="./search/search?q=notation">notation</a>, <a class="ltx_keyword" href="./search/search?q=rectangular%20case">rectangular case</a>, <a class="ltx_keyword" href="./search/search?q=theta%20functions">theta functions</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./20.11#v.p1" title="§20.11(v) Permutation Symmetry ‣ §20.11 Generalizations and Analogs ‣ Properties ‣ Chapter 20 Theta Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§20.11(v)</span></a>,
+<a href="./20.15#p4" title="§20.15 Tables ‣ Computation ‣ Chapter 20 Theta Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§20.15</span></a>,
+<a href="./20.7#ii.p2" title="§20.7(ii) Addition Formulas ‣ §20.7 Identities ‣ Properties ‣ Chapter 20 Theta Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§20.7(ii)</span></a>,
+<a href="./22.1#t1.r6" title="§22.1 Special Notation ‣ Notation ‣ Chapter 22 Jacobian Elliptic Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§22.1</span></a>,
+<a href="./22.2#Px1.p3" title="Glaisher’s Notation ‣ §22.2 Definitions ‣ Properties ‣ Chapter 22 Jacobian Elliptic Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§22.2</span></a>,
+<a href="./23.15#i.p1" title="§23.15(i) General Modular Functions ‣ §23.15 Definitions ‣ Modular Functions ‣ Chapter 23 Weierstrass Elliptic and Modular Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§23.15(i)</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./20.1" title="" class="ltx_ref">http://dlmf.nist.gov/20.1</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./20#info" title="Chapter 20 Theta Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.20</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="p1" class="ltx_para">
+<p class="ltx_p">(For other notation see <a href="./front/introduction#notations" title="In Mathematical Introduction" class="ltx_ref"><span class="ltx_text ltx_ref_title">Notation for the Special Functions</span></a>.)</p>
+</div>
+<div id="p2" class="ltx_para">
+<table id="t1" class="ltx_tabular ltx_align_left ltx_guessed_headers ltx_align_middle">
+<tbody class="ltx_tbody">
+<tr id="t1.r1" class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row">
+<math class="ltx_Math" altimg="m43.png" altimg-height="13px" altimg-valign="-2px" altimg-width="23px" alttext="m" display="inline"><mi href="./20.1#t1.r2" title="integer">m</mi></math>, <math class="ltx_Math" altimg="m44.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./20.1#t1.r2" title="integer">n</mi></math>
+</th>
+<td class="ltx_td ltx_nopad_r ltx_align_justify">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p">integers.</span>
+</span>
+</td>
+</tr>
+<tr id="t1.r2" class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row">
+<math class="ltx_Math" altimg="m49.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi href="./20.1#t1.r3" title="complex">z</mi></math> <math class="ltx_Math" altimg="m1.png" altimg-height="25px" altimg-valign="-7px" altimg-width="55px" alttext="(\in\mathbb{C})" display="inline"><mrow><mo stretchy="false">(</mo><mrow><mi></mi><mo href="./front/introduction#common.t1.r10" title="element of">∈</mo><mi href="./front/introduction#common.t1.r1" title="complex plane">ℂ</mi></mrow><mo stretchy="false">)</mo></mrow></math>
+</th>
+<td class="ltx_td ltx_nopad_r ltx_align_justify">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p">the argument.</span>
+</span>
+</td>
+</tr>
+<tr id="t1.r3" class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row">
+<math class="ltx_Math" altimg="m22.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="\tau" display="inline"><mi href="./20.1#t1.r4" title="lattice parameter">τ</mi></math> <math class="ltx_Math" altimg="m1.png" altimg-height="25px" altimg-valign="-7px" altimg-width="55px" alttext="(\in\mathbb{C})" display="inline"><mrow><mo stretchy="false">(</mo><mrow><mi></mi><mo href="./front/introduction#common.t1.r10" title="element of">∈</mo><mi href="./front/introduction#common.t1.r1" title="complex plane">ℂ</mi></mrow><mo stretchy="false">)</mo></mrow></math>
+</th>
+<td class="ltx_td ltx_nopad_r ltx_align_justify">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p">the lattice parameter, <math class="ltx_Math" altimg="m7.png" altimg-height="19px" altimg-valign="-3px" altimg-width="69px" alttext="\Im\tau&gt;0" display="inline"><mrow><mrow><mi href="./1.9#E2" mathvariant="normal" title="imaginary part">ℑ</mi><mo lspace="0.167em">⁡</mo><mi href="./20.1#t1.r4" title="lattice parameter">τ</mi></mrow><mo>&gt;</mo><mn>0</mn></mrow></math>.</span>
+</span>
+</td>
+</tr>
+<tr id="t1.r4" class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row">
+<math class="ltx_Math" altimg="m46.png" altimg-height="17px" altimg-valign="-6px" altimg-width="14px" alttext="q" display="inline"><mi href="./20.1#t1.r4" title="nome">q</mi></math> <math class="ltx_Math" altimg="m1.png" altimg-height="25px" altimg-valign="-7px" altimg-width="55px" alttext="(\in\mathbb{C})" display="inline"><mrow><mo stretchy="false">(</mo><mrow><mi></mi><mo href="./front/introduction#common.t1.r10" title="element of">∈</mo><mi href="./front/introduction#common.t1.r1" title="complex plane">ℂ</mi></mrow><mo stretchy="false">)</mo></mrow></math>
+</th>
+<td class="ltx_td ltx_nopad_r ltx_align_justify">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p">the nome,
+<math class="ltx_Math" altimg="m45.png" altimg-height="25px" altimg-valign="-6px" altimg-width="78px" alttext="q=e^{i\pi\tau}" display="inline"><mrow><mi href="./20.1#t1.r4" title="nome">q</mi><mo>=</mo><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mrow><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>⁢</mo><mi href="./20.1#t1.r4" title="lattice parameter">τ</mi></mrow></msup></mrow></math>, <math class="ltx_Math" altimg="m2.png" altimg-height="25px" altimg-valign="-7px" altimg-width="102px" alttext="0&lt;\left|q\right|&lt;1" display="inline"><mrow><mn>0</mn><mo>&lt;</mo><mrow><mo>|</mo><mi href="./20.1#t1.r4" title="nome">q</mi><mo>|</mo></mrow><mo>&lt;</mo><mn>1</mn></mrow></math>. Since <math class="ltx_Math" altimg="m22.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="\tau" display="inline"><mi href="./20.1#t1.r4" title="lattice parameter">τ</mi></math> is not a single-valued
+function of <math class="ltx_Math" altimg="m46.png" altimg-height="17px" altimg-valign="-6px" altimg-width="14px" alttext="q" display="inline"><mi href="./20.1#t1.r4" title="nome">q</mi></math>, it is assumed that <math class="ltx_Math" altimg="m22.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="\tau" display="inline"><mi href="./20.1#t1.r4" title="lattice parameter">τ</mi></math> is known, even when <math class="ltx_Math" altimg="m46.png" altimg-height="17px" altimg-valign="-6px" altimg-width="14px" alttext="q" display="inline"><mi href="./20.1#t1.r4" title="nome">q</mi></math>
+is specified. Most applications concern the rectangular case
+<math class="ltx_Math" altimg="m8.png" altimg-height="18px" altimg-valign="-2px" altimg-width="69px" alttext="\Re\tau=0" display="inline"><mrow><mrow><mi href="./1.9#E2" mathvariant="normal" title="real part">ℜ</mi><mo lspace="0.167em">⁡</mo><mi href="./20.1#t1.r4" title="lattice parameter">τ</mi></mrow><mo>=</mo><mn>0</mn></mrow></math>, <math class="ltx_Math" altimg="m7.png" altimg-height="19px" altimg-valign="-3px" altimg-width="69px" alttext="\Im\tau&gt;0" display="inline"><mrow><mrow><mi href="./1.9#E2" mathvariant="normal" title="imaginary part">ℑ</mi><mo lspace="0.167em">⁡</mo><mi href="./20.1#t1.r4" title="lattice parameter">τ</mi></mrow><mo>&gt;</mo><mn>0</mn></mrow></math>, so that <math class="ltx_Math" altimg="m3.png" altimg-height="21px" altimg-valign="-6px" altimg-width="90px" alttext="0&lt;q&lt;1" display="inline"><mrow><mn>0</mn><mo>&lt;</mo><mi href="./20.1#t1.r4" title="nome">q</mi><mo>&lt;</mo><mn>1</mn></mrow></math> and
+<math class="ltx_Math" altimg="m22.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="\tau" display="inline"><mi href="./20.1#t1.r4" title="lattice parameter">τ</mi></math> and <math class="ltx_Math" altimg="m46.png" altimg-height="17px" altimg-valign="-6px" altimg-width="14px" alttext="q" display="inline"><mi href="./20.1#t1.r4" title="nome">q</mi></math> are uniquely related.</span>
+</span>
+</td>
+</tr>
+<tr id="t1.r5" class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row"><math class="ltx_Math" altimg="m47.png" altimg-height="22px" altimg-valign="-6px" altimg-width="26px" alttext="q^{\alpha}" display="inline"><msup><mi href="./20.1#t1.r4" title="nome">q</mi><mi>α</mi></msup></math></th>
+<td class="ltx_td ltx_nopad_r ltx_align_justify">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p"><math class="ltx_Math" altimg="m41.png" altimg-height="21px" altimg-valign="-2px" altimg-width="51px" alttext="e^{i\alpha\pi\tau}" display="inline"><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mrow><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi><mo>⁢</mo><mi>α</mi><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>⁢</mo><mi href="./20.1#t1.r4" title="lattice parameter">τ</mi></mrow></msup></math> for <math class="ltx_Math" altimg="m13.png" altimg-height="19px" altimg-valign="-3px" altimg-width="58px" alttext="\alpha\in\mathbb{R}" display="inline"><mrow><mi>α</mi><mo href="./front/introduction#common.t1.r10" title="element of">∈</mo><mi href="./front/introduction#common.t2.r14" title="real line">ℝ</mi></mrow></math> (resolving
+issues of choice of branch).</span>
+</span>
+</td>
+</tr>
+<tr id="t1.r6" class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row"><math class="ltx_Math" altimg="m4.png" altimg-height="25px" altimg-valign="-7px" altimg-width="59px" alttext="S_{1}/S_{2}" display="inline"><mrow><msub><mi>S</mi><mn>1</mn></msub><mo href="./21.1#t1.r18" title="set of elements modulo an element">/</mo><msub><mi>S</mi><mn>2</mn></msub></mrow></math></th>
+<td class="ltx_td ltx_nopad_r ltx_align_justify">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p">set of all elements of <math class="ltx_Math" altimg="m5.png" altimg-height="21px" altimg-valign="-5px" altimg-width="26px" alttext="S_{1}" display="inline"><msub><mi>S</mi><mn>1</mn></msub></math>, modulo elements of <math class="ltx_Math" altimg="m6.png" altimg-height="21px" altimg-valign="-5px" altimg-width="26px" alttext="S_{2}" display="inline"><msub><mi>S</mi><mn>2</mn></msub></math>. Thus two elements
+of <math class="ltx_Math" altimg="m4.png" altimg-height="25px" altimg-valign="-7px" altimg-width="59px" alttext="S_{1}/S_{2}" display="inline"><mrow><msub><mi>S</mi><mn>1</mn></msub><mo href="./21.1#t1.r18" title="set of elements modulo an element">/</mo><msub><mi>S</mi><mn>2</mn></msub></mrow></math> are equivalent if they are both in <math class="ltx_Math" altimg="m5.png" altimg-height="21px" altimg-valign="-5px" altimg-width="26px" alttext="S_{1}" display="inline"><msub><mi>S</mi><mn>1</mn></msub></math> and their difference
+is in <math class="ltx_Math" altimg="m6.png" altimg-height="21px" altimg-valign="-5px" altimg-width="26px" alttext="S_{2}" display="inline"><msub><mi>S</mi><mn>2</mn></msub></math>. (For an example see §<a href="./20.12#ii" title="§20.12(ii) Uniformization and Embedding of Complex Tori ‣ §20.12 Mathematical Applications ‣ Applications ‣ Chapter 20 Theta Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">20.12(ii)</span></a>.)</span>
+</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="p3" class="ltx_para">
+<p class="ltx_p">The main functions treated in this chapter are the theta functions
+<math class="ltx_Math" altimg="m34.png" altimg-height="26px" altimg-valign="-8px" altimg-width="166px" alttext="\theta_{j}\left(z\middle|\tau\right)=\theta_{j}\left(z,q\right)" display="inline"><mrow><mrow><msub><mi href="./20.2#i" title="theta function">θ</mi><mi>j</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./20.1#t1.r3" title="complex">z</mi><mo lspace="0em" rspace="0em" stretchy="true">|</mo><mi href="./20.1#t1.r4" title="lattice parameter">τ</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><msub><mi href="./20.2#i" title="theta function">θ</mi><mi>j</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./20.1#t1.r3" title="complex">z</mi><mo>,</mo><mi href="./20.1#t1.r4" title="nome">q</mi><mo>)</mo></mrow></mrow></mrow></math> where
+<math class="ltx_Math" altimg="m42.png" altimg-height="22px" altimg-valign="-6px" altimg-width="111px" alttext="j=1,2,3,4" display="inline"><mrow><mi>j</mi><mo>=</mo><mrow><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>4</mn></mrow></mrow></math> and <math class="ltx_Math" altimg="m45.png" altimg-height="25px" altimg-valign="-6px" altimg-width="78px" alttext="q=e^{i\pi\tau}" display="inline"><mrow><mi href="./20.1#t1.r4" title="nome">q</mi><mo>=</mo><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mrow><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>⁢</mo><mi href="./20.1#t1.r4" title="lattice parameter">τ</mi></mrow></msup></mrow></math>. When <math class="ltx_Math" altimg="m22.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="\tau" display="inline"><mi href="./20.1#t1.r4" title="lattice parameter">τ</mi></math> is fixed the notation
+is often abbreviated in the literature as <math class="ltx_Math" altimg="m32.png" altimg-height="26px" altimg-valign="-8px" altimg-width="49px" alttext="\theta_{j}(z)" display="inline"><mrow><msub><mi href="./20.2#i" title="theta function">θ</mi><mi>j</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./20.1#t1.r3" title="complex">z</mi><mo stretchy="false">)</mo></mrow></mrow></math>, or even
+as simply <math class="ltx_Math" altimg="m33.png" altimg-height="24px" altimg-valign="-8px" altimg-width="23px" alttext="\theta_{j}" display="inline"><msub><mi href="./20.2#i" title="theta function">θ</mi><mi>j</mi></msub></math>, it being then understood that the argument
+is the primary variable. Sometimes the theta functions are called the
+Jacobian or classical theta functions to distinguish them from
+generalizations; compare Chapter <a href="./21" title="Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">21</span></a>.</p>
+</div>
+<div id="p4" class="ltx_para">
+<p class="ltx_p">Primes on the <math class="ltx_Math" altimg="m23.png" altimg-height="18px" altimg-valign="-2px" altimg-width="15px" alttext="\theta" display="inline"><mi href="./20.2#i" title="theta function">θ</mi></math> symbols indicate derivatives with respect to the
+argument of the <math class="ltx_Math" altimg="m23.png" altimg-height="18px" altimg-valign="-2px" altimg-width="15px" alttext="\theta" display="inline"><mi href="./20.2#i" title="theta function">θ</mi></math> function.</p>
+</div>
+<section id="Px1" class="ltx_paragraph">
+<h2 class="ltx_title ltx_title_paragraph">Other Notations</h2>
+<div id="Px1.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=Jacobi%20original%20notation">Jacobi’s original notation</a>, <a class="ltx_keyword" href="./search/search?q=McKean%20and%20Moll%E2%80%99s">McKean and Moll’s</a>, <a class="ltx_keyword" href="./search/search?q=McKean%20and%20Moll%20theta%20functions">McKean and Moll’s theta functions</a>, <a class="ltx_keyword" href="./search/search?q=Neville%E2%80%99s">Neville’s</a>, <a class="ltx_keyword" href="./search/search?q=Neville%20theta%20functions">Neville’s theta functions</a>, <a class="ltx_keyword" href="./search/search?q=theta%20functions">theta functions</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./20.1#info" title="§20.1 Special Notation ‣ Notation ‣ Chapter 20 Theta Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§20.1</span></a> and
+<a href="./20#info" title="Chapter 20 Theta Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.20</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="Px1.p1" class="ltx_para">
+<p class="ltx_p">Jacobi’s original notation:
+<math class="ltx_Math" altimg="m10.png" altimg-height="25px" altimg-valign="-7px" altimg-width="64px" alttext="\Theta(z|\tau)" display="inline"><mrow><mi mathvariant="normal">Θ</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./20.1#t1.r3" title="complex">z</mi><mo fence="false" lspace="0em" rspace="0.167em" separator="true">|</mo><mi href="./20.1#t1.r4" title="lattice parameter">τ</mi><mo stretchy="false">)</mo></mrow></mrow></math>, <math class="ltx_Math" altimg="m12.png" altimg-height="25px" altimg-valign="-7px" altimg-width="74px" alttext="\Theta_{1}(z|\tau)" display="inline"><mrow><msub><mi mathvariant="normal">Θ</mi><mn>1</mn></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./20.1#t1.r3" title="complex">z</mi><mo fence="false" lspace="0em" rspace="0.167em" separator="true">|</mo><mi href="./20.1#t1.r4" title="lattice parameter">τ</mi><mo stretchy="false">)</mo></mrow></mrow></math>,
+<math class="ltx_Math" altimg="m18.png" altimg-height="25px" altimg-valign="-7px" altimg-width="64px" alttext="\mathrm{H}(z|\tau)" display="inline"><mrow><mi mathvariant="normal">H</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./20.1#t1.r3" title="complex">z</mi><mo fence="false" lspace="0em" rspace="0.167em" separator="true">|</mo><mi href="./20.1#t1.r4" title="lattice parameter">τ</mi><mo stretchy="false">)</mo></mrow></mrow></math>, <math class="ltx_Math" altimg="m21.png" altimg-height="25px" altimg-valign="-7px" altimg-width="73px" alttext="\mathrm{H}_{1}(z|\tau)" display="inline"><mrow><msub><mi mathvariant="normal">H</mi><mn>1</mn></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./20.1#t1.r3" title="complex">z</mi><mo fence="false" lspace="0em" rspace="0.167em" separator="true">|</mo><mi href="./20.1#t1.r4" title="lattice parameter">τ</mi><mo stretchy="false">)</mo></mrow></mrow></math>, respectively, for
+<math class="ltx_Math" altimg="m27.png" altimg-height="25px" altimg-valign="-7px" altimg-width="72px" alttext="\theta_{4}\left(u\middle|\tau\right)" display="inline"><mrow><msub><mi href="./20.2#i" title="theta function">θ</mi><mn>4</mn></msub><mo>⁡</mo><mrow><mo>(</mo><mi>u</mi><mo lspace="0em" rspace="0em" stretchy="true">|</mo><mi href="./20.1#t1.r4" title="lattice parameter">τ</mi><mo>)</mo></mrow></mrow></math>, <math class="ltx_Math" altimg="m26.png" altimg-height="25px" altimg-valign="-7px" altimg-width="72px" alttext="\theta_{3}\left(u\middle|\tau\right)" display="inline"><mrow><msub><mi href="./20.2#i" title="theta function">θ</mi><mn>3</mn></msub><mo>⁡</mo><mrow><mo>(</mo><mi>u</mi><mo lspace="0em" rspace="0em" stretchy="true">|</mo><mi href="./20.1#t1.r4" title="lattice parameter">τ</mi><mo>)</mo></mrow></mrow></math>,
+<math class="ltx_Math" altimg="m24.png" altimg-height="25px" altimg-valign="-7px" altimg-width="72px" alttext="\theta_{1}\left(u\middle|\tau\right)" display="inline"><mrow><msub><mi href="./20.2#i" title="theta function">θ</mi><mn>1</mn></msub><mo>⁡</mo><mrow><mo>(</mo><mi>u</mi><mo lspace="0em" rspace="0em" stretchy="true">|</mo><mi href="./20.1#t1.r4" title="lattice parameter">τ</mi><mo>)</mo></mrow></mrow></math>, <math class="ltx_Math" altimg="m25.png" altimg-height="25px" altimg-valign="-7px" altimg-width="72px" alttext="\theta_{2}\left(u\middle|\tau\right)" display="inline"><mrow><msub><mi href="./20.2#i" title="theta function">θ</mi><mn>2</mn></msub><mo>⁡</mo><mrow><mo>(</mo><mi>u</mi><mo lspace="0em" rspace="0em" stretchy="true">|</mo><mi href="./20.1#t1.r4" title="lattice parameter">τ</mi><mo>)</mo></mrow></mrow></math>,
+where <math class="ltx_Math" altimg="m48.png" altimg-height="28px" altimg-valign="-7px" altimg-width="140px" alttext="u=z/{\theta_{3}}^{2}\left(0\middle|\tau\right)" display="inline"><mrow><mi>u</mi><mo>=</mo><mrow><mi href="./20.1#t1.r3" title="complex">z</mi><mo>/</mo><mrow><msubsup><mi href="./20.2#i" title="theta function">θ</mi><mn>3</mn><mn>2</mn></msubsup><mo>⁡</mo><mrow><mo>(</mo><mn>0</mn><mo lspace="0em" rspace="0em" stretchy="true">|</mo><mi href="./20.1#t1.r4" title="lattice parameter">τ</mi><mo>)</mo></mrow></mrow></mrow></mrow></math>.
+Here the symbol <math class="ltx_Math" altimg="m19.png" altimg-height="18px" altimg-valign="-2px" altimg-width="20px" alttext="\mathrm{H}" display="inline"><mi mathvariant="normal">H</mi></math> denotes capital eta. See, for example,
+<cite class="ltx_cite ltx_citemacro_citet">Whittaker and Watson (<a href="./bib/W#bib2404" title="A Course of Modern Analysis" class="ltx_ref">1927</a>, p. 479)</cite> and
+<cite class="ltx_cite ltx_citemacro_citet">Copson (<a href="./bib/C#bib580" title="An Introduction to the Theory of Functions of a Complex Variable" class="ltx_ref">1935</a>, pp. 405, 411)</cite>.</p>
+</div>
+<div id="Px1.p2" class="ltx_para">
+<p class="ltx_p">Neville’s notation:
+<math class="ltx_Math" altimg="m38.png" altimg-height="25px" altimg-valign="-7px" altimg-width="67px" alttext="\theta_{s}(z|\tau)" display="inline"><mrow><msub><mi>θ</mi><mi>s</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./20.1#t1.r3" title="complex">z</mi><mo fence="false" lspace="0em" rspace="0.167em" separator="true">|</mo><mi href="./20.1#t1.r4" title="lattice parameter">τ</mi><mo stretchy="false">)</mo></mrow></mrow></math>, <math class="ltx_Math" altimg="m29.png" altimg-height="25px" altimg-valign="-7px" altimg-width="66px" alttext="\theta_{c}(z|\tau)" display="inline"><mrow><msub><mi>θ</mi><mi>c</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./20.1#t1.r3" title="complex">z</mi><mo fence="false" lspace="0em" rspace="0.167em" separator="true">|</mo><mi href="./20.1#t1.r4" title="lattice parameter">τ</mi><mo stretchy="false">)</mo></mrow></mrow></math>,
+<math class="ltx_Math" altimg="m31.png" altimg-height="25px" altimg-valign="-7px" altimg-width="68px" alttext="\theta_{d}(z|\tau)" display="inline"><mrow><msub><mi>θ</mi><mi>d</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./20.1#t1.r3" title="complex">z</mi><mo fence="false" lspace="0em" rspace="0.167em" separator="true">|</mo><mi href="./20.1#t1.r4" title="lattice parameter">τ</mi><mo stretchy="false">)</mo></mrow></mrow></math>, <math class="ltx_Math" altimg="m36.png" altimg-height="25px" altimg-valign="-7px" altimg-width="69px" alttext="\theta_{n}(z|\tau)" display="inline"><mrow><msub><mi>θ</mi><mi href="./20.1#t1.r2" title="integer">n</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./20.1#t1.r3" title="complex">z</mi><mo fence="false" lspace="0em" rspace="0.167em" separator="true">|</mo><mi href="./20.1#t1.r4" title="lattice parameter">τ</mi><mo stretchy="false">)</mo></mrow></mrow></math>, respectively, for
+<math class="ltx_Math" altimg="m50.png" altimg-height="28px" altimg-valign="-7px" altimg-width="233px" alttext="{\theta_{3}}^{2}\left(0\middle|\tau\right)\ifrac{\theta_{1}\left(u\middle|\tau%
+\right)}{\theta_{1}'\left(0\middle|\tau\right)}" display="inline"><mrow><mrow><msubsup><mi href="./20.2#i" title="theta function">θ</mi><mn>3</mn><mn>2</mn></msubsup><mo>⁡</mo><mrow><mo>(</mo><mn>0</mn><mo lspace="0em" rspace="0em" stretchy="true">|</mo><mi href="./20.1#t1.r4" title="lattice parameter">τ</mi><mo>)</mo></mrow></mrow><mo>⁢</mo><mrow><mrow><msub><mi href="./20.2#i" title="theta function">θ</mi><mn>1</mn></msub><mo>⁡</mo><mrow><mo>(</mo><mi>u</mi><mo lspace="0em" rspace="0em" stretchy="true">|</mo><mi href="./20.1#t1.r4" title="lattice parameter">τ</mi><mo>)</mo></mrow></mrow><mo lspace="0em" rspace="0em" stretchy="true" symmetric="true">/</mo><mrow><msubsup><mi href="./20.2#i" title="theta function">θ</mi><mn>1</mn><mo>′</mo></msubsup><mo>⁡</mo><mrow><mo>(</mo><mn>0</mn><mo lspace="0em" rspace="0em" stretchy="true">|</mo><mi href="./20.1#t1.r4" title="lattice parameter">τ</mi><mo>)</mo></mrow></mrow></mrow></mrow></math>,
+<math class="ltx_Math" altimg="m14.png" altimg-height="25px" altimg-valign="-7px" altimg-width="154px" alttext="\ifrac{\theta_{2}\left(u\middle|\tau\right)}{\theta_{2}\left(0\middle|\tau%
+\right)}" display="inline"><mrow><mrow><msub><mi href="./20.2#i" title="theta function">θ</mi><mn>2</mn></msub><mo>⁡</mo><mrow><mo>(</mo><mi>u</mi><mo lspace="0em" rspace="0em" stretchy="true">|</mo><mi href="./20.1#t1.r4" title="lattice parameter">τ</mi><mo>)</mo></mrow></mrow><mo lspace="0em" rspace="0em" stretchy="true" symmetric="true">/</mo><mrow><msub><mi href="./20.2#i" title="theta function">θ</mi><mn>2</mn></msub><mo>⁡</mo><mrow><mo>(</mo><mn>0</mn><mo lspace="0em" rspace="0em" stretchy="true">|</mo><mi href="./20.1#t1.r4" title="lattice parameter">τ</mi><mo>)</mo></mrow></mrow></mrow></math>,
+<math class="ltx_Math" altimg="m15.png" altimg-height="25px" altimg-valign="-7px" altimg-width="154px" alttext="\ifrac{\theta_{3}\left(u\middle|\tau\right)}{\theta_{3}\left(0\middle|\tau%
+\right)}" display="inline"><mrow><mrow><msub><mi href="./20.2#i" title="theta function">θ</mi><mn>3</mn></msub><mo>⁡</mo><mrow><mo>(</mo><mi>u</mi><mo lspace="0em" rspace="0em" stretchy="true">|</mo><mi href="./20.1#t1.r4" title="lattice parameter">τ</mi><mo>)</mo></mrow></mrow><mo lspace="0em" rspace="0em" stretchy="true" symmetric="true">/</mo><mrow><msub><mi href="./20.2#i" title="theta function">θ</mi><mn>3</mn></msub><mo>⁡</mo><mrow><mo>(</mo><mn>0</mn><mo lspace="0em" rspace="0em" stretchy="true">|</mo><mi href="./20.1#t1.r4" title="lattice parameter">τ</mi><mo>)</mo></mrow></mrow></mrow></math>,
+<math class="ltx_Math" altimg="m16.png" altimg-height="25px" altimg-valign="-7px" altimg-width="154px" alttext="\ifrac{\theta_{4}\left(u\middle|\tau\right)}{\theta_{4}\left(0\middle|\tau%
+\right)}" display="inline"><mrow><mrow><msub><mi href="./20.2#i" title="theta function">θ</mi><mn>4</mn></msub><mo>⁡</mo><mrow><mo>(</mo><mi>u</mi><mo lspace="0em" rspace="0em" stretchy="true">|</mo><mi href="./20.1#t1.r4" title="lattice parameter">τ</mi><mo>)</mo></mrow></mrow><mo lspace="0em" rspace="0em" stretchy="true" symmetric="true">/</mo><mrow><msub><mi href="./20.2#i" title="theta function">θ</mi><mn>4</mn></msub><mo>⁡</mo><mrow><mo>(</mo><mn>0</mn><mo lspace="0em" rspace="0em" stretchy="true">|</mo><mi href="./20.1#t1.r4" title="lattice parameter">τ</mi><mo>)</mo></mrow></mrow></mrow></math>,
+where again <math class="ltx_Math" altimg="m48.png" altimg-height="28px" altimg-valign="-7px" altimg-width="140px" alttext="u=z/{\theta_{3}}^{2}\left(0\middle|\tau\right)" display="inline"><mrow><mi>u</mi><mo>=</mo><mrow><mi href="./20.1#t1.r3" title="complex">z</mi><mo>/</mo><mrow><msubsup><mi href="./20.2#i" title="theta function">θ</mi><mn>3</mn><mn>2</mn></msubsup><mo>⁡</mo><mrow><mo>(</mo><mn>0</mn><mo lspace="0em" rspace="0em" stretchy="true">|</mo><mi href="./20.1#t1.r4" title="lattice parameter">τ</mi><mo>)</mo></mrow></mrow></mrow></mrow></math>. This notation
+simplifies the relationship of the theta functions to Jacobian elliptic
+functions (§<a href="./22.2" title="§22.2 Definitions ‣ Properties ‣ Chapter 22 Jacobian Elliptic Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">22.2</span></a>); see <cite class="ltx_cite ltx_citemacro_citet">Neville (<a href="./bib/N#bib1713" title="Jacobian Elliptic Functions" class="ltx_ref">1951</a>)</cite>.</p>
+</div>
+<div id="Px1.p3" class="ltx_para">
+<p class="ltx_p">McKean and Moll’s notation:
+<math class="ltx_Math" altimg="m40.png" altimg-height="26px" altimg-valign="-8px" altimg-width="175px" alttext="\vartheta_{j}(z|\tau)=\theta_{j}\left(\pi z\middle|\tau\right)" display="inline"><mrow><mrow><msub><mi>ϑ</mi><mi>j</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./20.1#t1.r3" title="complex">z</mi><mo fence="false" lspace="0em" rspace="0.167em" separator="true">|</mo><mi href="./20.1#t1.r4" title="lattice parameter">τ</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msub><mi href="./20.2#i" title="theta function">θ</mi><mi>j</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>⁢</mo><mi href="./20.1#t1.r3" title="complex">z</mi></mrow><mo lspace="0em" rspace="0em" stretchy="true">|</mo><mi href="./20.1#t1.r4" title="lattice parameter">τ</mi><mo>)</mo></mrow></mrow></mrow></math>, <math class="ltx_Math" altimg="m42.png" altimg-height="22px" altimg-valign="-6px" altimg-width="111px" alttext="j=1,2,3,4" display="inline"><mrow><mi>j</mi><mo>=</mo><mrow><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>4</mn></mrow></mrow></math>.
+See <cite class="ltx_cite ltx_citemacro_citet">McKean and Moll (<a href="./bib/M#bib1582" title="Elliptic Curves" class="ltx_ref">1999</a>, p. 125)</cite>.</p>
+</div>
+<div id="Px1.p4" class="ltx_para">
+<p class="ltx_p">Additional notations that have been used in the literature are summarized
+in <cite class="ltx_cite ltx_citemacro_citet">Whittaker and Watson (<a href="./bib/W#bib2404" title="A Course of Modern Analysis" class="ltx_ref">1927</a>, p. 487)</cite>.</p>
+</div>
+</section>
+</section>
+</div>
+<div class="ltx_page_footer">
+<div class="ltx_siblings">
+<a href="./20" title="" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">20 </span>Theta Functions</span></a><a href="./20.2" title="In Properties ‣ Chapter 20 Theta Functions" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">20.2 </span>Definitions and Periodic Properties</span></a>
+</div>
+<div class="ltx_footer_links ltx_centering">
+<a href="./about/notices">© 2010–2026 NIST</a> / <a href="./about/notices#S2">Disclaimer</a> / <a href="/cdn-cgi/l/email-protection#dd9991909bf0bbb8b8b9bfbcbeb69db3b4aea9f3bab2ab">Feedback</a>;
+ Version 1.2.7;
+Release date 2026-06-15.</div>
+<span id="pagesettings"></span>
+<div class="ltx_nist_logo"><a href="http://www.nist.gov/"><img src="./style/nistidc.png" width="500" alt="NIST"></a></div>
+<div class="ltx_nist_links ltx_align_right">
+<a href="https://www.nist.gov/privacy-policy">Site Privacy</a> <a href="https://www.nist.gov/oism/accessibility">Accessibility</a> <a href="https://www.nist.gov/privacy">Privacy Program</a> <a href="https://www.nist.gov/oism/copyrights">Copyrights</a> <a href="https://www.commerce.gov/vulnerability-disclosure-policy">Vulnerability Disclosure</a> <a href="https://www.nist.gov/no-fear-act-policy">No Fear Act Policy</a> <a href="https://www.nist.gov/foia">FOIA</a> <a href="https://www.nist.gov/environmental-policy-statement">Environmental Policy</a> <a href="https://www.nist.gov/summary-report-scientific-integrity">Scientific Integrity</a> <a href="https://www.nist.gov/nist-information-quality-standards">Information Quality Standards</a> <a href="https://www.commerce.gov/">Commerce.gov</a> <a href="http://www.science.gov/">Science.gov</a> <a href="http://www.usa.gov/">USA.gov</a>
+</div>
+</div>
+</div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"9ef5b487afff42a68917b2d63593a474"}' crossorigin="anonymous"></script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a30b652d0dd96a52',t:'MTc4NzY2OTI4MA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

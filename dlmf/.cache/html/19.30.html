@@ -1,0 +1,859 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>DLMF: §19.30 Lengths of Plane Curves ‣ Applications ‣ Chapter 19 Elliptic Integrals</title>
+<link rel="shortcut icon" href="./style/DLMF-16.png" type="image/png">
+<script type="text/javascript"><!--
+	var PATH="DLMF:/19.30";
+	var ROOT="./";
+      //--></script>
+<script type="text/javascript" src="./style/jquery.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/jquery.leaveNotice.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/DLMF.js"><!-- non-empty so ie6 will accept it --></script>
+<script async="" type="text/javascript" id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC&amp;subagency=NIST&amp;pua=UA-37115410-44&amp;yt=true&amp;exts=ppsx,pps,f90,sch,rtf,wrl,txz,m1v,xlsm,msi,xsd,f,tif,eps,mpg,xml,pl,xlt,c"><!-- non-empty so ie6 will accept it --></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-BZB64W4M0L"></script><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-BZB64W4M0L');
+      </script>
+<link rel="stylesheet" type="text/css" href="./style/LaTeXML.css">
+<link rel="stylesheet" type="text/css" href="./style/DLMF.css">
+<link rel="stylesheet" type="text/css" href="./style/print.css" media="print">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="top" href="./" title="DLMF">
+<link rel="copyright" href="./about/notices" title="Copyright">
+<link rel="search" href="./search/search" title="Search">
+<link rel="help" class="ltx_help" href="./help/" title="Help">
+<link rel="up" href="./19#PT4" title="Applications ‣ Chapter 19 Elliptic Integrals">
+<link rel="up up" href="./19" title="Chapter 19 Elliptic Integrals">
+<link rel="start" href="./" title="">
+<link rel="prev" href="./19.29" title="§19.29 Reduction of General Elliptic Integrals ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="next" href="./19.31" title="§19.31 Probability Distributions ‣ Applications ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.1" title="§19.1 Special Notation ‣ Notation ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.2" title="§19.2 Definitions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.3" title="§19.3 Graphics ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.4" title="§19.4 Derivatives and Differential Equations ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.5" title="§19.5 Maclaurin and Related Expansions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.6" title="§19.6 Special Cases ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.7" title="§19.7 Connection Formulas ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.8" title="§19.8 Quadratic Transformations ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.9" title="§19.9 Inequalities ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.10" title="§19.10 Relations to Other Functions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.11" title="§19.11 Addition Theorems ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.12" title="§19.12 Asymptotic Approximations ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.13" title="§19.13 Integrals of Elliptic Integrals ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.14" title="§19.14 Reduction of General Elliptic Integrals ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.15" title="§19.15 Advantages of Symmetry ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.16" title="§19.16 Definitions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.17" title="§19.17 Graphics ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.18" title="§19.18 Derivatives and Differential Equations ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.19" title="§19.19 Taylor and Related Series ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.20" title="§19.20 Special Cases ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.21" title="§19.21 Connection Formulas ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.22" title="§19.22 Quadratic Transformations ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.23" title="§19.23 Integral Representations ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.24" title="§19.24 Inequalities ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.25" title="§19.25 Relations to Other Functions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.26" title="§19.26 Addition Theorems ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.27" title="§19.27 Asymptotic Approximations and Expansions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.28" title="§19.28 Integrals of Elliptic Integrals ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.29" title="§19.29 Reduction of General Elliptic Integrals ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.31" title="§19.31 Probability Distributions ‣ Applications ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.32" title="§19.32 Conformal Map onto a Rectangle ‣ Applications ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.33" title="§19.33 Triaxial Ellipsoids ‣ Applications ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.34" title="§19.34 Mutual Inductance of Coaxial Circles ‣ Applications ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.35" title="§19.35 Other Applications ‣ Applications ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.36" title="§19.36 Methods of Computation ‣ Computation ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.37" title="§19.37 Tables ‣ Computation ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.38" title="§19.38 Approximations ‣ Computation ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.39" title="§19.39 Software ‣ Computation ‣ Chapter 19 Elliptic Integrals">
+<link rel="document" href="./front/foreword" title="Foreword">
+<link rel="document" href="./front/preface" title="Preface">
+<link rel="document" href="./front/introduction" title="Mathematical Introduction">
+<link rel="chapter" href="./1" title="Chapter 1 Algebraic and Analytic Methods">
+<link rel="chapter" href="./2" title="Chapter 2 Asymptotic Approximations">
+<link rel="chapter" href="./3" title="Chapter 3 Numerical Methods">
+<link rel="chapter" href="./4" title="Chapter 4 Elementary Functions">
+<link rel="chapter" href="./5" title="Chapter 5 Gamma Function">
+<link rel="chapter" href="./6" title="Chapter 6 Exponential, Logarithmic, Sine, and Cosine Integrals">
+<link rel="chapter" href="./7" title="Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="chapter" href="./8" title="Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="chapter" href="./9" title="Chapter 9 Airy and Related Functions">
+<link rel="chapter" href="./10" title="Chapter 10 Bessel Functions">
+<link rel="chapter" href="./11" title="Chapter 11 Struve and Related Functions">
+<link rel="chapter" href="./12" title="Chapter 12 Parabolic Cylinder Functions">
+<link rel="chapter" href="./13" title="Chapter 13 Confluent Hypergeometric Functions">
+<link rel="chapter" href="./14" title="Chapter 14 Legendre and Related Functions">
+<link rel="chapter" href="./15" title="Chapter 15 Hypergeometric Function">
+<link rel="chapter" href="./16" title="Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="chapter" href="./17" title="Chapter 17 𝑞-Hypergeometric and Related Functions">
+<link rel="chapter" href="./18" title="Chapter 18 Orthogonal Polynomials">
+<link rel="chapter" href="./19" title="Chapter 19 Elliptic Integrals">
+<link rel="chapter" href="./20" title="Chapter 20 Theta Functions">
+<link rel="chapter" href="./21" title="Chapter 21 Multidimensional Theta Functions">
+<link rel="chapter" href="./22" title="Chapter 22 Jacobian Elliptic Functions">
+<link rel="chapter" href="./23" title="Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="chapter" href="./24" title="Chapter 24 Bernoulli and Euler Polynomials">
+<link rel="chapter" href="./25" title="Chapter 25 Zeta and Related Functions">
+<link rel="chapter" href="./26" title="Chapter 26 Combinatorial Analysis">
+<link rel="chapter" href="./27" title="Chapter 27 Functions of Number Theory">
+<link rel="chapter" href="./28" title="Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="chapter" href="./29" title="Chapter 29 Lamé Functions">
+<link rel="chapter" href="./30" title="Chapter 30 Spheroidal Wave Functions">
+<link rel="chapter" href="./31" title="Chapter 31 Heun Functions">
+<link rel="chapter" href="./32" title="Chapter 32 Painlevé Transcendents">
+<link rel="chapter" href="./33" title="Chapter 33 Coulomb Functions">
+<link rel="chapter" href="./34" title="Chapter 34 3⁢𝑗,6⁢𝑗,9⁢𝑗 Symbols">
+<link rel="chapter" href="./35" title="Chapter 35 Functions of Matrix Argument">
+<link rel="chapter" href="./36" title="Chapter 36 Integrals with Coalescing Saddles">
+<link rel="bibliography" href="./bib/" title="Bibliography">
+<link rel="index" href="./idx/" title="Index">
+<link rel="glossary" href="./not/" title="Notations">
+<link rel="document" href="./lof/" title="List of Figures">
+<link rel="document" href="./lot/" title="List of Tables">
+<link rel="document" href="./software/" title="Software Index">
+<link rel="document" href="./errata/" title="Errata">
+<link rel="document" href="./help/" title="Need Help?">
+<link rel="document" href="./search/" title="Advanced Search">
+<link rel="document" href="./about/" title="About the Project">
+<meta name="keywords" lang="en" content="Bernoulli’s lemniscate, ellipse, elliptic integrals, hyperbola, lengths of plane curves, plane curves">
+</head>
+<body class="color_default textfont_default titlefont_default fontsize_default navbar_default">
+<div class="ltx_page_navbar">
+<div class="ltx_page_navlogo"><a href="./" title="Digital Library of Mathematical Functions"><span>DLMF</span></a></div>
+<div class="ltx_page_navitems">
+<form method="get" action="./search/search">
+<ul>
+<li><a href="./idx/">Index</a></li>
+<li><a href="./not/">Notations</a></li>
+<li><small><input type="text" name="q" value="" size="6" class="ltx_page_navitem_search"><button type="submit">Search</button></small></li>
+<li><a href="./help/" class="ltx_help">Help?</a></li>
+<li><a href="./help/cite">Citing</a></li>
+<li><a href="./help/customize" class="ltx_customize">Customize</a></li>
+<li id="showinfo"><a href="" onclick="showInfo(); return false;" title="Show Annotations">Annotate</a></li>
+<li id="hideinfo"><a href="" onclick="hideInfo(); return false;">UnAnnotate</a></li>
+</ul>
+</form>
+</div>
+<div class="ltx_page_navsponsors">
+<div><a href="./about/" class="ltx_page_navabout">About the Project</a></div>
+</div>
+</div>
+<div class="ltx_page_main">
+<div class="ltx_page_header">
+<a href="./19" title="" class="ltx_ref" rel="up up"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">19 </span>Elliptic Integrals</span></a><a href="./19#PT4" title="In Chapter 19 Elliptic Integrals" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title">Applications</span></a><a href="./19.29" title="In Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">19.29 </span>Reduction of General Elliptic Integrals</span></a><a href="./19.31" title="In Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">19.31 </span>Probability Distributions</span></a>
+</div>
+<div class="ltx_page_content">
+<section class="ltx_section ltx_authors_multiline ltx_leqno">
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">§19.30 </span>Lengths of Plane Curves</h1>
+<div id="info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=elliptic%20integrals">elliptic integrals</a>, <a class="ltx_keyword" href="./search/search?q=plane%20curves">plane curves</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./19.30" title="" class="ltx_ref">http://dlmf.nist.gov/19.30</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<h6>Contents</h6>
+<ol class="ltx_toclist ltx_toclist_section">
+<li class="ltx_tocentry"><a href="#i"><span class="ltx_tag ltx_tag_subsection">§19.30(i) </span>Ellipse</a></li>
+<li class="ltx_tocentry"><a href="#ii"><span class="ltx_tag ltx_tag_subsection">§19.30(ii) </span>Hyperbola</a></li>
+<li class="ltx_tocentry"><a href="#iii"><span class="ltx_tag ltx_tag_subsection">§19.30(iii) </span>Bernoulli’s Lemniscate</a></li>
+</ol>
+<section id="i" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§19.30(i) </span>Ellipse</h2>
+<div id="i.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=ellipse">ellipse</a>, <a class="ltx_keyword" href="./search/search?q=elliptic%20integrals">elliptic integrals</a>, <a class="ltx_keyword" href="./search/search?q=lengths%20of%20plane%20curves">lengths of plane curves</a>
+</dd>
+<dt>Notes:</dt>
+<dd>See <cite class="ltx_cite ltx_citemacro_citet">Carlson (<a href="./bib/C#bib434" title="Special Functions of Applied Mathematics" class="ltx_ref">1977b</a>, §9.4)</cite>.
+For (<a href="./19.30#E5" title="(19.30.5) ‣ §19.30(i) Ellipse ‣ §19.30 Lengths of Plane Curves ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">19.30.5</span></a>) see (<a href="./19.25#E1" title="(19.25.1) ‣ §19.25(i) Legendre’s Integrals as Symmetric Integrals ‣ §19.25 Relations to Other Functions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">19.25.1</span></a>).
+For (<a href="./19.30#E6" title="(19.30.6) ‣ §19.30(i) Ellipse ‣ §19.30 Lengths of Plane Curves ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">19.30.6</span></a>) use (<a href="./19.4#E6" title="(19.4.6) ‣ §19.4(i) Derivatives ‣ §19.4 Derivatives and Differential Equations ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">19.4.6</span></a>).</dd>
+<dt>Permalink:</dt>
+<dd><a href="./19.30.i" title="" class="ltx_ref">http://dlmf.nist.gov/19.30.i</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19.30#info" title="§19.30 Lengths of Plane Curves ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.30</span></a> and
+<a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="i.p1" class="ltx_para">
+<p class="ltx_p">The arclength <math class="ltx_Math" altimg="m62.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="s" display="inline"><mi href="./19.30#i.p1" title="arclength">s</mi></math> of the ellipse</p>
+<table id="E1" class="ltx_equationgroup ltx_eqn_table">
+<tbody>
+<tr id="Ex1" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="3" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equationgroup ltx_align_left">19.30.1</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m9.png" altimg-height="15px" altimg-valign="-2px" altimg-width="18px" alttext="\displaystyle x" display="inline"><mi>x</mi></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m2.png" altimg-height="24px" altimg-valign="-6px" altimg-width="90px" alttext="\displaystyle=a\sin\phi," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mi>a</mi><mo lspace="0.167em">⁢</mo><mrow><mi href="./4.14#E1" title="sine function">sin</mi><mo lspace="0.167em">⁡</mo><mi href="./19.1#p1.t1.r2" title="real or complex argument">ϕ</mi></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex2" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m10.png" altimg-height="19px" altimg-valign="-6px" altimg-width="18px" alttext="\displaystyle y" display="inline"><mi>y</mi></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell">
+<math class="ltx_Math" altimg="m4.png" altimg-height="24px" altimg-valign="-6px" altimg-width="85px" alttext="\displaystyle=b\cos\phi" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mi>b</mi><mo lspace="0.167em">⁢</mo><mrow><mi href="./4.14#E2" title="cosine function">cos</mi><mo lspace="0.167em">⁡</mo><mi href="./19.1#p1.t1.r2" title="real or complex argument">ϕ</mi></mrow></mrow></mrow></math>,</td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="4"><span class="ltx_constraint"><math class="ltx_Math" altimg="m12.png" altimg-height="22px" altimg-valign="-6px" altimg-width="105px" alttext="0\leq\phi\leq 2\pi" display="inline"><mrow><mn>0</mn><mo>≤</mo><mi href="./19.1#p1.t1.r2" title="real or complex argument">ϕ</mi><mo>≤</mo><mrow><mn>2</mn><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></mrow></mrow></math>,</span></td></tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E1.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./3.12#E1" title="(3.12.1) ‣ §3.12 Mathematical Constants ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m41.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="\pi" display="inline"><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></math>: the ratio of the circumference of a circle to its diameter</a>,
+<a href="./4.14#E2" title="(4.14.2) ‣ §4.14 Definitions and Periodicity ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m29.png" altimg-height="13px" altimg-valign="-2px" altimg-width="46px" alttext="\cos\NVar{z}" display="inline"><mrow><mi href="./4.14#E2" title="cosine function">cos</mi><mo lspace="0.167em">⁡</mo><mi class="ltx_nvar" href="./4.1#t1.r4" title="complex variable">z</mi></mrow></math>: cosine function</a>,
+<a href="./4.14#E1" title="(4.14.1) ‣ §4.14 Definitions and Periodicity ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m43.png" altimg-height="18px" altimg-valign="-2px" altimg-width="44px" alttext="\sin\NVar{z}" display="inline"><mrow><mi href="./4.14#E1" title="sine function">sin</mi><mo lspace="0.167em">⁡</mo><mi class="ltx_nvar" href="./4.1#t1.r4" title="complex variable">z</mi></mrow></math>: sine function</a> and
+<a href="./19.1#p1.t1.r2" title="§19.1 Special Notation ‣ Notation ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m40.png" altimg-height="22px" altimg-valign="-6px" altimg-width="17px" alttext="\phi" display="inline"><mi href="./19.1#p1.t1.r2" title="real or complex argument">ϕ</mi></math>:  real or complex argument</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./19.30.E1" title="" class="ltx_ref">http://dlmf.nist.gov/19.30.E1</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./19.30.E1a.tex">TeX</a>, <a href="./19.30.E1b.tex">TeX</a>, <a href="./19.30.E1a.pmml">pMML</a>, <a href="./19.30.E1b.pmml">pMML</a>, <a href="./19.30.E1a.png">png</a>, <a href="./19.30.E1b.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19.30#i.info" title="§19.30(i) Ellipse ‣ §19.30 Lengths of Plane Curves ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.30(i)</span></a>,
+<a href="./19.30#info" title="§19.30 Lengths of Plane Curves ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.30</span></a> and
+<a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">with <math class="ltx_Math" altimg="m45.png" altimg-height="19px" altimg-valign="-3px" altimg-width="52px" alttext="a&gt;b" display="inline"><mrow><mi>a</mi><mo>&gt;</mo><mi>b</mi></mrow></math>, is given by
+</p>
+<table id="E2" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">19.30.2</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E2.png" altimg-height="59px" altimg-valign="-21px" altimg-width="247px" alttext="s=a\int_{0}^{\phi}\sqrt{1-k^{2}{\sin}^{2}\theta}\,\mathrm{d}\theta." display="block"><mrow><mrow><mi href="./19.30#i.p1" title="arclength">s</mi><mo>=</mo><mrow><mi>a</mi><mo>⁢</mo><mrow><msubsup><mo href="./1.4#iv" title="integral">∫</mo><mn>0</mn><mi href="./19.1#p1.t1.r2" title="real or complex argument">ϕ</mi></msubsup><mrow><msqrt><mrow><mn>1</mn><mo>−</mo><mrow><msup><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mn>2</mn></msup><mo lspace="0.167em">⁢</mo><mrow><msup><mi href="./4.14#E1" title="sine function">sin</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow></mrow></mrow></msqrt><mo lspace="0em">⁢</mo><mrow><mo href="./1.4#iv" rspace="0em" title="differential of 𝑥">d</mo><mi>θ</mi></mrow></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E2.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m35.png" altimg-height="18px" altimg-valign="-2px" altimg-width="28px" alttext="\,\mathrm{d}\NVar{x}" display="inline"><mrow><mo href="./1.4#iv" rspace="0em" title="differential of 𝑥">d</mo><mi class="ltx_nvar">x</mi></mrow></math>: differential of <math class="ltx_Math" altimg="m63.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m32.png" altimg-height="27px" altimg-valign="-8px" altimg-width="18px" alttext="\int" display="inline"><mo href="./1.4#iv" title="integral">∫</mo></math>: integral</a>,
+<a href="./4.14#E1" title="(4.14.1) ‣ §4.14 Definitions and Periodicity ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m43.png" altimg-height="18px" altimg-valign="-2px" altimg-width="44px" alttext="\sin\NVar{z}" display="inline"><mrow><mi href="./4.14#E1" title="sine function">sin</mi><mo lspace="0.167em">⁡</mo><mi class="ltx_nvar" href="./4.1#t1.r4" title="complex variable">z</mi></mrow></math>: sine function</a>,
+<a href="./19.1#p1.t1.r2" title="§19.1 Special Notation ‣ Notation ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m40.png" altimg-height="22px" altimg-valign="-6px" altimg-width="17px" alttext="\phi" display="inline"><mi href="./19.1#p1.t1.r2" title="real or complex argument">ϕ</mi></math>:  real or complex argument</a>,
+<a href="./19.1#p1.t1.r3" title="§19.1 Special Notation ‣ Notation ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m56.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi></math>:  real or complex modulus</a> and
+<a href="./19.30#i.p1" title="§19.30(i) Ellipse ‣ §19.30 Lengths of Plane Curves ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m62.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="s" display="inline"><mi href="./19.30#i.p1" title="arclength">s</mi></math>:  arclength</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./19.30.E2" title="" class="ltx_ref">http://dlmf.nist.gov/19.30.E2</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./19.30.E2.tex">TeX</a>, <a href="./19.30.E2.pmml">pMML</a>, <a href="./19.30.E2.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19.30#i.info" title="§19.30(i) Ellipse ‣ §19.30 Lengths of Plane Curves ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.30(i)</span></a>,
+<a href="./19.30#info" title="§19.30 Lengths of Plane Curves ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.30</span></a> and
+<a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">When <math class="ltx_Math" altimg="m13.png" altimg-height="29px" altimg-valign="-9px" altimg-width="108px" alttext="0\leq\phi\leq\tfrac{1}{2}\pi" display="inline"><mrow><mn>0</mn><mo>≤</mo><mi href="./19.1#p1.t1.r2" title="real or complex argument">ϕ</mi><mo>≤</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></mrow></mrow></math>,</p>
+<table id="E3" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">19.30.3</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E3.png" altimg-height="59px" altimg-valign="-9px" altimg-width="587px" alttext="s/a=E\left(\phi,k\right)={R_{F}\left(c-1,c-k^{2},c\right)-\tfrac{1}{3}k^{2}R_{%
+D}\left(c-1,c-k^{2},c\right)}," display="block"><mrow><mrow><mrow><mi href="./19.30#i.p1" title="arclength">s</mi><mo>/</mo><mi>a</mi></mrow><mo>=</mo><mrow><mi href="./19.2#E5" title="Legendre’s incomplete elliptic integral of the second kind">E</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./19.1#p1.t1.r2" title="real or complex argument">ϕ</mi><mo>,</mo><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mrow><msub><mi href="./19.16#E1" title="symmetric elliptic integral of first kind">R</mi><mi href="./19.16#E1" title="symmetric elliptic integral of first kind">F</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mrow><mi>c</mi><mo>−</mo><mn>1</mn></mrow><mo>,</mo><mrow><mi>c</mi><mo>−</mo><msup><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mn>2</mn></msup></mrow><mo>,</mo><mi>c</mi><mo>)</mo></mrow></mrow><mo>−</mo><mrow><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>3</mn></mfrac></mstyle><mo>⁢</mo><msup><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mn>2</mn></msup><mo>⁢</mo><mrow><msub><mi href="./19.16#E5" title="elliptic integral symmetric in only two variables">R</mi><mi href="./19.16#E5" title="elliptic integral symmetric in only two variables">D</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mrow><mi>c</mi><mo>−</mo><mn>1</mn></mrow><mo>,</mo><mrow><mi>c</mi><mo>−</mo><msup><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mn>2</mn></msup></mrow><mo>,</mo><mi>c</mi><mo>)</mo></mrow></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E3.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./19.16#E5" title="(19.16.5) ‣ §19.16(i) Symmetric Integrals ‣ §19.16 Definitions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m26.png" altimg-height="25px" altimg-valign="-7px" altimg-width="107px" alttext="R_{D}\left(\NVar{x},\NVar{y},\NVar{z}\right)" display="inline"><mrow><msub><mi href="./19.16#E5" title="elliptic integral symmetric in only two variables">R</mi><mi href="./19.16#E5" title="elliptic integral symmetric in only two variables">D</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">x</mi><mo>,</mo><mi class="ltx_nvar">y</mi><mo>,</mo><mi class="ltx_nvar">z</mi><mo>)</mo></mrow></mrow></math>: elliptic integral symmetric in only two variables</a>,
+<a href="./19.16#E1" title="(19.16.1) ‣ §19.16(i) Symmetric Integrals ‣ §19.16 Definitions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m27.png" altimg-height="25px" altimg-valign="-7px" altimg-width="105px" alttext="R_{F}\left(\NVar{x},\NVar{y},\NVar{z}\right)" display="inline"><mrow><msub><mi href="./19.16#E1" title="symmetric elliptic integral of first kind">R</mi><mi href="./19.16#E1" title="symmetric elliptic integral of first kind">F</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">x</mi><mo>,</mo><mi class="ltx_nvar">y</mi><mo>,</mo><mi class="ltx_nvar">z</mi><mo>)</mo></mrow></mrow></math>: symmetric elliptic integral of first kind</a>,
+<a href="./19.2#E5" title="(19.2.5) ‣ §19.2(ii) Legendre’s Integrals ‣ §19.2 Definitions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m16.png" altimg-height="25px" altimg-valign="-7px" altimg-width="73px" alttext="E\left(\NVar{\phi},\NVar{k}\right)" display="inline"><mrow><mi href="./19.2#E5" title="Legendre’s incomplete elliptic integral of the second kind">E</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./19.1#p1.t1.r2" title="real or complex argument">ϕ</mi><mo>,</mo><mi class="ltx_nvar" href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mo>)</mo></mrow></mrow></math>: Legendre’s incomplete elliptic integral of the second kind</a>,
+<a href="./19.1#p1.t1.r2" title="§19.1 Special Notation ‣ Notation ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m40.png" altimg-height="22px" altimg-valign="-6px" altimg-width="17px" alttext="\phi" display="inline"><mi href="./19.1#p1.t1.r2" title="real or complex argument">ϕ</mi></math>:  real or complex argument</a>,
+<a href="./19.1#p1.t1.r3" title="§19.1 Special Notation ‣ Notation ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m56.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi></math>:  real or complex modulus</a> and
+<a href="./19.30#i.p1" title="§19.30(i) Ellipse ‣ §19.30 Lengths of Plane Curves ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m62.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="s" display="inline"><mi href="./19.30#i.p1" title="arclength">s</mi></math>:  arclength</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./19.30#i.p2" title="§19.30(i) Ellipse ‣ §19.30 Lengths of Plane Curves ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.30(i)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./19.30.E3" title="" class="ltx_ref">http://dlmf.nist.gov/19.30.E3</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./19.30.E3.tex">TeX</a>, <a href="./19.30.E3.pmml">pMML</a>, <a href="./19.30.E3.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19.30#i.info" title="§19.30(i) Ellipse ‣ §19.30 Lengths of Plane Curves ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.30(i)</span></a>,
+<a href="./19.30#info" title="§19.30 Lengths of Plane Curves ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.30</span></a> and
+<a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">where</p>
+</div>
+<div id="i.p2" class="ltx_para">
+<table id="E4" class="ltx_equationgroup ltx_eqn_table">
+<tbody>
+<tr id="Ex3" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="2" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equationgroup ltx_align_left">19.30.4</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m8.png" altimg-height="24px" altimg-valign="-2px" altimg-width="27px" alttext="\displaystyle k^{2}" display="inline"><msup><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mn>2</mn></msup></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m1.png" altimg-height="29px" altimg-valign="-7px" altimg-width="135px" alttext="\displaystyle=1-(b^{2}/a^{2})," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mn>1</mn><mo>−</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>b</mi><mn>2</mn></msup><mo>/</mo><msup><mi>a</mi><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex4" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m7.png" altimg-height="15px" altimg-valign="-2px" altimg-width="16px" alttext="\displaystyle c" display="inline"><mi>c</mi></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m6.png" altimg-height="28px" altimg-valign="-6px" altimg-width="83px" alttext="\displaystyle={\csc}^{2}\phi." display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><msup><mi href="./4.14#E5" title="cosecant function">csc</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi href="./19.1#p1.t1.r2" title="real or complex argument">ϕ</mi></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E4.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./4.14#E5" title="(4.14.5) ‣ §4.14 Definitions and Periodicity ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m30.png" altimg-height="13px" altimg-valign="-2px" altimg-width="45px" alttext="\csc\NVar{z}" display="inline"><mrow><mi href="./4.14#E5" title="cosecant function">csc</mi><mo lspace="0.167em">⁡</mo><mi class="ltx_nvar" href="./4.1#t1.r4" title="complex variable">z</mi></mrow></math>: cosecant function</a>,
+<a href="./19.1#p1.t1.r2" title="§19.1 Special Notation ‣ Notation ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m40.png" altimg-height="22px" altimg-valign="-6px" altimg-width="17px" alttext="\phi" display="inline"><mi href="./19.1#p1.t1.r2" title="real or complex argument">ϕ</mi></math>:  real or complex argument</a> and
+<a href="./19.1#p1.t1.r3" title="§19.1 Special Notation ‣ Notation ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m56.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi></math>:  real or complex modulus</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./19.30.E4" title="" class="ltx_ref">http://dlmf.nist.gov/19.30.E4</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./19.30.E4a.tex">TeX</a>, <a href="./19.30.E4b.tex">TeX</a>, <a href="./19.30.E4a.pmml">pMML</a>, <a href="./19.30.E4b.pmml">pMML</a>, <a href="./19.30.E4a.png">png</a>, <a href="./19.30.E4b.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19.30#i.info" title="§19.30(i) Ellipse ‣ §19.30 Lengths of Plane Curves ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.30(i)</span></a>,
+<a href="./19.30#info" title="§19.30 Lengths of Plane Curves ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.30</span></a> and
+<a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">Cancellation on the second right-hand side of (<a href="./19.30#E3" title="(19.30.3) ‣ §19.30(i) Ellipse ‣ §19.30 Lengths of Plane Curves ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">19.30.3</span></a>) can be avoided by
+use of (<a href="./19.25#E10" title="(19.25.10) ‣ §19.25(i) Legendre’s Integrals as Symmetric Integrals ‣ §19.25 Relations to Other Functions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">19.25.10</span></a>).</p>
+</div>
+<div id="i.p3" class="ltx_para">
+<p class="ltx_p">The length of the ellipse is
+</p>
+<table id="E5" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">19.30.5</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E5.png" altimg-height="150px" altimg-valign="-9px" altimg-width="284px" alttext="L(a,b)=4aE\left(k\right)=8aR_{G}\left(0,b^{2}/a^{2},1\right)=8R_{G}\left(0,a^{%
+2},b^{2}\right)=8abR_{G}\left(0,a^{-2},b^{-2}\right)," display="block"><mrow><mrow><mrow><mi href="./19.30#i.p3" title="length">L</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mn>4</mn><mo>⁢</mo><mi>a</mi><mo>⁢</mo><mrow><mi href="./19.2#E8" title="Legendre’s complete elliptic integral of the second kind">E</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mo>)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mn>8</mn><mo>⁢</mo><mi>a</mi><mo>⁢</mo><mrow><msub><mi href="./19.16#E2_5" title="symmetric elliptic integral of second kind">R</mi><mi href="./19.16#E2_5" title="symmetric elliptic integral of second kind">G</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mn>0</mn><mo>,</mo><mrow><msup><mi>b</mi><mn>2</mn></msup><mo>/</mo><msup><mi>a</mi><mn>2</mn></msup></mrow><mo>,</mo><mn>1</mn><mo>)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mn>8</mn><mo>⁢</mo><mrow><msub><mi href="./19.16#E2_5" title="symmetric elliptic integral of second kind">R</mi><mi href="./19.16#E2_5" title="symmetric elliptic integral of second kind">G</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mn>0</mn><mo>,</mo><msup><mi>a</mi><mn>2</mn></msup><mo>,</mo><msup><mi>b</mi><mn>2</mn></msup><mo>)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mn>8</mn><mo>⁢</mo><mi>a</mi><mo>⁢</mo><mi>b</mi><mo>⁢</mo><mrow><msub><mi href="./19.16#E2_5" title="symmetric elliptic integral of second kind">R</mi><mi href="./19.16#E2_5" title="symmetric elliptic integral of second kind">G</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mn>0</mn><mo>,</mo><msup><mi>a</mi><mrow><mo>−</mo><mn>2</mn></mrow></msup><mo>,</mo><msup><mi>b</mi><mrow><mo>−</mo><mn>2</mn></mrow></msup><mo>)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E5.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./19.16#E2_5" title="(19.16.2_5) ‣ §19.16(i) Symmetric Integrals ‣ §19.16 Definitions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m28.png" altimg-height="25px" altimg-valign="-7px" altimg-width="105px" alttext="R_{G}\left(\NVar{x},\NVar{y},\NVar{z}\right)" display="inline"><mrow><msub><mi href="./19.16#E2_5" title="symmetric elliptic integral of second kind">R</mi><mi href="./19.16#E2_5" title="symmetric elliptic integral of second kind">G</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">x</mi><mo>,</mo><mi class="ltx_nvar">y</mi><mo>,</mo><mi class="ltx_nvar">z</mi><mo>)</mo></mrow></mrow></math>: symmetric elliptic integral of second kind</a>,
+<a href="./19.2#E8" title="(19.2.8) ‣ §19.2(ii) Legendre’s Integrals ‣ §19.2 Definitions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m17.png" altimg-height="25px" altimg-valign="-7px" altimg-width="52px" alttext="E\left(\NVar{k}\right)" display="inline"><mrow><mi href="./19.2#E8" title="Legendre’s complete elliptic integral of the second kind">E</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mo>)</mo></mrow></mrow></math>: Legendre’s complete elliptic integral of the second kind</a>,
+<a href="./19.1#p1.t1.r3" title="§19.1 Special Notation ‣ Notation ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m56.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi></math>:  real or complex modulus</a> and
+<a href="./19.30#i.p3" title="§19.30(i) Ellipse ‣ §19.30 Lengths of Plane Curves ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m23.png" altimg-height="25px" altimg-valign="-7px" altimg-width="64px" alttext="L(a,b)" display="inline"><mrow><mi href="./19.30#i.p3" title="length">L</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">)</mo></mrow></mrow></math>:  length</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./19.15#p5" title="§19.15 Advantages of Symmetry ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.15</span></a>,
+<a href="./19.24#i.info" title="§19.24(i) Complete Integrals ‣ §19.24 Inequalities ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.24(i)</span></a>,
+<a href="./19.30#i.info" title="§19.30(i) Ellipse ‣ §19.30 Lengths of Plane Curves ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.30(i)</span></a>,
+<a href="./19.33#i.p2" title="§19.33(i) Surface Area ‣ §19.33 Triaxial Ellipsoids ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.33(i)</span></a>,
+<a href="./19.9#i.info" title="§19.9(i) Complete Integrals ‣ §19.9 Inequalities ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.9(i)</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./19.30.E5" title="" class="ltx_ref">http://dlmf.nist.gov/19.30.E5</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./19.30.E5.tex">TeX</a>, <a href="./19.30.E5.pmml">pMML</a>, <a href="./19.30.E5.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19.30#i.info" title="§19.30(i) Ellipse ‣ §19.30 Lengths of Plane Curves ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.30(i)</span></a>,
+<a href="./19.30#info" title="§19.30 Lengths of Plane Curves ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.30</span></a> and
+<a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">showing the symmetry in <math class="ltx_Math" altimg="m46.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="a" display="inline"><mi>a</mi></math> and <math class="ltx_Math" altimg="m50.png" altimg-height="18px" altimg-valign="-2px" altimg-width="13px" alttext="b" display="inline"><mi>b</mi></math>. Approximations and inequalities for
+<math class="ltx_Math" altimg="m23.png" altimg-height="25px" altimg-valign="-7px" altimg-width="64px" alttext="L(a,b)" display="inline"><mrow><mi href="./19.30#i.p3" title="length">L</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">)</mo></mrow></mrow></math> are given in §<a href="./19.9#i" title="§19.9(i) Complete Integrals ‣ §19.9 Inequalities ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">19.9(i)</span></a>.</p>
+</div>
+<div id="i.p4" class="ltx_para">
+<p class="ltx_p">Let <math class="ltx_Math" altimg="m48.png" altimg-height="21px" altimg-valign="-2px" altimg-width="25px" alttext="a^{2}" display="inline"><msup><mi>a</mi><mn>2</mn></msup></math> and <math class="ltx_Math" altimg="m52.png" altimg-height="21px" altimg-valign="-2px" altimg-width="23px" alttext="b^{2}" display="inline"><msup><mi>b</mi><mn>2</mn></msup></math> be replaced respectively by <math class="ltx_Math" altimg="m47.png" altimg-height="23px" altimg-valign="-4px" altimg-width="62px" alttext="a^{2}+\lambda" display="inline"><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><mi>λ</mi></mrow></math> and
+<math class="ltx_Math" altimg="m51.png" altimg-height="23px" altimg-valign="-4px" altimg-width="60px" alttext="b^{2}+\lambda" display="inline"><mrow><msup><mi>b</mi><mn>2</mn></msup><mo>+</mo><mi>λ</mi></mrow></math>, where <math class="ltx_Math" altimg="m34.png" altimg-height="26px" altimg-valign="-7px" altimg-width="122px" alttext="\lambda\in(-b^{2},\infty)" display="inline"><mrow><mi>λ</mi><mo href="./front/introduction#common.t1.r10" title="element of">∈</mo><mrow><mo href="./front/introduction#common.t1.r29" stretchy="false" title="open interval">(</mo><mrow><mo>−</mo><msup><mi>b</mi><mn>2</mn></msup></mrow><mo href="./front/introduction#common.t1.r29" title="open interval">,</mo><mi mathvariant="normal">∞</mi><mo href="./front/introduction#common.t1.r29" stretchy="false" title="open interval">)</mo></mrow></mrow></math>, to produce a family of
+confocal ellipses. As <math class="ltx_Math" altimg="m33.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="\lambda" display="inline"><mi>λ</mi></math> increases, the eccentricity <math class="ltx_Math" altimg="m56.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi></math> decreases and
+the rate of change of arclength for a fixed value of <math class="ltx_Math" altimg="m40.png" altimg-height="22px" altimg-valign="-6px" altimg-width="17px" alttext="\phi" display="inline"><mi href="./19.1#p1.t1.r2" title="real or complex argument">ϕ</mi></math> is given by</p>
+<table id="E6" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">19.30.6</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E6.png" altimg-height="123px" altimg-valign="-21px" altimg-width="379px" alttext="\frac{\partial s}{\partial(1/k)}=\sqrt{a^{2}-b^{2}}F\left(\phi,k\right)=\sqrt{%
+a^{2}-b^{2}}R_{F}\left(c-1,c-k^{2},c\right)," display="block"><mrow><mrow><mfrac><mrow><mo href="./1.5#E3" rspace="0em" title="partial derivative of 𝑓 with respect to 𝑥">∂</mo><mi href="./19.30#i.p1" title="arclength">s</mi></mrow><mrow><mo href="./1.5#E3" rspace="0em" title="partial derivative of 𝑓 with respect to 𝑥">∂</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>/</mo><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mfrac><mo>=</mo><mrow><msqrt><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>−</mo><msup><mi>b</mi><mn>2</mn></msup></mrow></msqrt><mo>⁢</mo><mrow><mi href="./19.2#E4" title="Legendre’s incomplete elliptic integral of the first kind">F</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./19.1#p1.t1.r2" title="real or complex argument">ϕ</mi><mo>,</mo><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mo>)</mo></mrow></mrow></mrow><mo>=</mo><mrow><msqrt><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>−</mo><msup><mi>b</mi><mn>2</mn></msup></mrow></msqrt><mo>⁢</mo><mrow><msub><mi href="./19.16#E1" title="symmetric elliptic integral of first kind">R</mi><mi href="./19.16#E1" title="symmetric elliptic integral of first kind">F</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mrow><mi>c</mi><mo>−</mo><mn>1</mn></mrow><mo>,</mo><mrow><mi>c</mi><mo>−</mo><msup><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mn>2</mn></msup></mrow><mo>,</mo><mi>c</mi><mo>)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="4"><span class="ltx_constraint"><math class="ltx_Math" altimg="m57.png" altimg-height="26px" altimg-valign="-7px" altimg-width="217px" alttext="k^{2}=(a^{2}-b^{2})/(a^{2}+\lambda)" display="inline"><mrow><msup><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mn>2</mn></msup><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>−</mo><msup><mi>b</mi><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow><mo>/</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><mi>λ</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></math>, <math class="ltx_Math" altimg="m54.png" altimg-height="25px" altimg-valign="-6px" altimg-width="89px" alttext="c={\csc}^{2}\phi" display="inline"><mrow><mi>c</mi><mo>=</mo><mrow><msup><mi href="./4.14#E5" title="cosecant function">csc</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi href="./19.1#p1.t1.r2" title="real or complex argument">ϕ</mi></mrow></mrow></math>.</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E6.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./19.16#E1" title="(19.16.1) ‣ §19.16(i) Symmetric Integrals ‣ §19.16 Definitions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m27.png" altimg-height="25px" altimg-valign="-7px" altimg-width="105px" alttext="R_{F}\left(\NVar{x},\NVar{y},\NVar{z}\right)" display="inline"><mrow><msub><mi href="./19.16#E1" title="symmetric elliptic integral of first kind">R</mi><mi href="./19.16#E1" title="symmetric elliptic integral of first kind">F</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">x</mi><mo>,</mo><mi class="ltx_nvar">y</mi><mo>,</mo><mi class="ltx_nvar">z</mi><mo>)</mo></mrow></mrow></math>: symmetric elliptic integral of first kind</a>,
+<a href="./4.14#E5" title="(4.14.5) ‣ §4.14 Definitions and Periodicity ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m30.png" altimg-height="13px" altimg-valign="-2px" altimg-width="45px" alttext="\csc\NVar{z}" display="inline"><mrow><mi href="./4.14#E5" title="cosecant function">csc</mi><mo lspace="0.167em">⁡</mo><mi class="ltx_nvar" href="./4.1#t1.r4" title="complex variable">z</mi></mrow></math>: cosecant function</a>,
+<a href="./19.2#E4" title="(19.2.4) ‣ §19.2(ii) Legendre’s Integrals ‣ §19.2 Definitions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m19.png" altimg-height="25px" altimg-valign="-7px" altimg-width="73px" alttext="F\left(\NVar{\phi},\NVar{k}\right)" display="inline"><mrow><mi href="./19.2#E4" title="Legendre’s incomplete elliptic integral of the first kind">F</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./19.1#p1.t1.r2" title="real or complex argument">ϕ</mi><mo>,</mo><mi class="ltx_nvar" href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mo>)</mo></mrow></mrow></math>: Legendre’s incomplete elliptic integral of the first kind</a>,
+<a href="./1.5#E3" title="(1.5.3) ‣ §1.5(i) Partial Derivatives ‣ §1.5 Calculus of Two or More Variables ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m31.png" altimg-height="31px" altimg-valign="-9px" altimg-width="29px" alttext="\frac{\partial\NVar{f}}{\partial\NVar{x}}" display="inline"><mfrac><mrow><mo href="./1.5#E3" rspace="0em" title="partial derivative of 𝑓 with respect to 𝑥">∂</mo><mi class="ltx_nvar">f</mi></mrow><mrow><mo href="./1.5#E3" rspace="0em" title="partial derivative of 𝑓 with respect to 𝑥">∂</mo><mi class="ltx_nvar">x</mi></mrow></mfrac></math>: partial derivative of <math class="ltx_Math" altimg="m55.png" altimg-height="22px" altimg-valign="-6px" altimg-width="17px" alttext="f" display="inline"><mi>f</mi></math> with respect to <math class="ltx_Math" altimg="m63.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./1.5#E3" title="(1.5.3) ‣ §1.5(i) Partial Derivatives ‣ §1.5 Calculus of Two or More Variables ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m38.png" altimg-height="18px" altimg-valign="-2px" altimg-width="28px" alttext="\,\partial\NVar{x}" display="inline"><mrow><mo href="./1.5#E3" rspace="0em" title="partial differential of 𝑥">∂</mo><mi class="ltx_nvar">x</mi></mrow></math>: partial differential of <math class="ltx_Math" altimg="m63.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./19.1#p1.t1.r2" title="§19.1 Special Notation ‣ Notation ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m40.png" altimg-height="22px" altimg-valign="-6px" altimg-width="17px" alttext="\phi" display="inline"><mi href="./19.1#p1.t1.r2" title="real or complex argument">ϕ</mi></math>:  real or complex argument</a>,
+<a href="./19.1#p1.t1.r3" title="§19.1 Special Notation ‣ Notation ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m56.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi></math>:  real or complex modulus</a> and
+<a href="./19.30#i.p1" title="§19.30(i) Ellipse ‣ §19.30 Lengths of Plane Curves ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m62.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="s" display="inline"><mi href="./19.30#i.p1" title="arclength">s</mi></math>:  arclength</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./19.30#i.info" title="§19.30(i) Ellipse ‣ §19.30 Lengths of Plane Curves ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.30(i)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./19.30.E6" title="" class="ltx_ref">http://dlmf.nist.gov/19.30.E6</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./19.30.E6.tex">TeX</a>, <a href="./19.30.E6.pmml">pMML</a>, <a href="./19.30.E6.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19.30#i.info" title="§19.30(i) Ellipse ‣ §19.30 Lengths of Plane Curves ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.30(i)</span></a>,
+<a href="./19.30#info" title="§19.30 Lengths of Plane Curves ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.30</span></a> and
+<a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="ii" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§19.30(ii) </span>Hyperbola</h2>
+<div id="ii.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=elliptic%20integrals">elliptic integrals</a>, <a class="ltx_keyword" href="./search/search?q=hyperbola">hyperbola</a>, <a class="ltx_keyword" href="./search/search?q=lengths%20of%20plane%20curves">lengths of plane curves</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./19.30.ii" title="" class="ltx_ref">http://dlmf.nist.gov/19.30.ii</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19.30#info" title="§19.30 Lengths of Plane Curves ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.30</span></a> and
+<a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="ii.p1" class="ltx_para">
+<p class="ltx_p">The arclength <math class="ltx_Math" altimg="m62.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="s" display="inline"><mi href="./19.30#ii.p1" title="arclength">s</mi></math> of the hyperbola</p>
+<table id="E7" class="ltx_equationgroup ltx_eqn_table">
+<tbody>
+<tr id="Ex5" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="3" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equationgroup ltx_align_left">19.30.7</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m9.png" altimg-height="15px" altimg-valign="-2px" altimg-width="18px" alttext="\displaystyle x" display="inline"><mi>x</mi></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m3.png" altimg-height="29px" altimg-valign="-6px" altimg-width="106px" alttext="\displaystyle=a\sqrt{t+1}," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mi>a</mi><mo>⁢</mo><msqrt><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msqrt></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex6" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m10.png" altimg-height="19px" altimg-valign="-6px" altimg-width="18px" alttext="\displaystyle y" display="inline"><mi>y</mi></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell">
+<math class="ltx_Math" altimg="m5.png" altimg-height="28px" altimg-valign="-4px" altimg-width="62px" alttext="\displaystyle=b\sqrt{t}" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mi>b</mi><mo>⁢</mo><msqrt><mi>t</mi></msqrt></mrow></mrow></math>,</td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="4"><span class="ltx_constraint"><math class="ltx_Math" altimg="m11.png" altimg-height="20px" altimg-valign="-5px" altimg-width="98px" alttext="0\leq t&lt;\infty" display="inline"><mrow><mn>0</mn><mo>≤</mo><mi>t</mi><mo>&lt;</mo><mi mathvariant="normal">∞</mi></mrow></math>,</span></td></tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E7.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Permalink:</dt>
+<dd><a href="./19.30.E7" title="" class="ltx_ref">http://dlmf.nist.gov/19.30.E7</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./19.30.E7a.tex">TeX</a>, <a href="./19.30.E7b.tex">TeX</a>, <a href="./19.30.E7a.pmml">pMML</a>, <a href="./19.30.E7b.pmml">pMML</a>, <a href="./19.30.E7a.png">png</a>, <a href="./19.30.E7b.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19.30#ii.info" title="§19.30(ii) Hyperbola ‣ §19.30 Lengths of Plane Curves ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.30(ii)</span></a>,
+<a href="./19.30#info" title="§19.30 Lengths of Plane Curves ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.30</span></a> and
+<a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">is given by
+</p>
+<table id="E8" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">19.30.8</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E8.png" altimg-height="70px" altimg-valign="-26px" altimg-width="314px" alttext="s=\frac{1}{2}\int_{0}^{y^{2}/b^{2}}\sqrt{\frac{(a^{2}+b^{2})t+b^{2}}{t(t+1)}}%
+\,\mathrm{d}t." display="block"><mrow><mrow><mi href="./19.30#ii.p1" title="arclength">s</mi><mo>=</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mrow><msubsup><mo href="./1.4#iv" title="integral">∫</mo><mn>0</mn><mrow><msup><mi>y</mi><mn>2</mn></msup><mo>/</mo><msup><mi>b</mi><mn>2</mn></msup></mrow></msubsup><mrow><msqrt><mfrac><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>t</mi></mrow><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup></mrow><mrow><mi>t</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mfrac></msqrt><mo lspace="0em">⁢</mo><mrow><mo href="./1.4#iv" rspace="0em" title="differential of 𝑥">d</mo><mi>t</mi></mrow></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E8.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m35.png" altimg-height="18px" altimg-valign="-2px" altimg-width="28px" alttext="\,\mathrm{d}\NVar{x}" display="inline"><mrow><mo href="./1.4#iv" rspace="0em" title="differential of 𝑥">d</mo><mi class="ltx_nvar">x</mi></mrow></math>: differential of <math class="ltx_Math" altimg="m63.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m32.png" altimg-height="27px" altimg-valign="-8px" altimg-width="18px" alttext="\int" display="inline"><mo href="./1.4#iv" title="integral">∫</mo></math>: integral</a> and
+<a href="./19.30#ii.p1" title="§19.30(ii) Hyperbola ‣ §19.30 Lengths of Plane Curves ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m62.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="s" display="inline"><mi href="./19.30#ii.p1" title="arclength">s</mi></math>:  arclength</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./19.30.E8" title="" class="ltx_ref">http://dlmf.nist.gov/19.30.E8</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./19.30.E8.tex">TeX</a>, <a href="./19.30.E8.pmml">pMML</a>, <a href="./19.30.E8.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19.30#ii.info" title="§19.30(ii) Hyperbola ‣ §19.30 Lengths of Plane Curves ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.30(ii)</span></a>,
+<a href="./19.30#info" title="§19.30 Lengths of Plane Curves ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.30</span></a> and
+<a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">From (<a href="./19.29#E7" title="(19.29.7) ‣ §19.29(i) Reduction Theorems ‣ §19.29 Reduction of General Elliptic Integrals ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">19.29.7</span></a>), with <math class="ltx_Math" altimg="m49.png" altimg-height="20px" altimg-valign="-5px" altimg-width="62px" alttext="a_{\delta}=1" display="inline"><mrow><msub><mi>a</mi><mi href="./19.29#i.p1" title="parameter">δ</mi></msub><mo>=</mo><mn>1</mn></mrow></math> and <math class="ltx_Math" altimg="m53.png" altimg-height="21px" altimg-valign="-5px" altimg-width="60px" alttext="b_{\delta}=0" display="inline"><mrow><msub><mi>b</mi><mi href="./19.29#i.p1" title="parameter">δ</mi></msub><mo>=</mo><mn>0</mn></mrow></math>,</p>
+<table id="E9" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">19.30.9</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E9.png" altimg-height="72px" altimg-valign="-18px" altimg-width="600px" alttext="s=\tfrac{1}{2}I(\mathbf{e}_{1})=-\tfrac{1}{3}a^{2}b^{2}R_{D}\left(r,r+b^{2}+a^%
+{2},r+b^{2}\right)+y\sqrt{\frac{r+b^{2}+a^{2}}{r+b^{2}}}," display="block"><mrow><mrow><mi href="./19.30#ii.p1" title="arclength">s</mi><mo>=</mo><mrow><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>⁢</mo><mrow><mi href="./19.29#ii.p1" title="integral">I</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><msub><mi>𝐞</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mrow><mo>−</mo><mrow><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>3</mn></mfrac></mstyle><mo>⁢</mo><msup><mi>a</mi><mn>2</mn></msup><mo>⁢</mo><msup><mi>b</mi><mn>2</mn></msup><mo>⁢</mo><mrow><msub><mi href="./19.16#E5" title="elliptic integral symmetric in only two variables">R</mi><mi href="./19.16#E5" title="elliptic integral symmetric in only two variables">D</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi>r</mi><mo>,</mo><mrow><mi>r</mi><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup><mo>+</mo><msup><mi>a</mi><mn>2</mn></msup></mrow><mo>,</mo><mrow><mi>r</mi><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup></mrow><mo>)</mo></mrow></mrow></mrow></mrow><mo>+</mo><mrow><mi>y</mi><mo>⁢</mo><msqrt><mfrac><mrow><mi>r</mi><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup><mo>+</mo><msup><mi>a</mi><mn>2</mn></msup></mrow><mrow><mi>r</mi><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup></mrow></mfrac></msqrt></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="4"><span class="ltx_constraint"><math class="ltx_Math" altimg="m60.png" altimg-height="26px" altimg-valign="-7px" altimg-width="91px" alttext="r=b^{4}/y^{2}" display="inline"><mrow><mi>r</mi><mo>=</mo><mrow><msup><mi>b</mi><mn>4</mn></msup><mo>/</mo><msup><mi>y</mi><mn>2</mn></msup></mrow></mrow></math>.</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E9.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./19.16#E5" title="(19.16.5) ‣ §19.16(i) Symmetric Integrals ‣ §19.16 Definitions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m26.png" altimg-height="25px" altimg-valign="-7px" altimg-width="107px" alttext="R_{D}\left(\NVar{x},\NVar{y},\NVar{z}\right)" display="inline"><mrow><msub><mi href="./19.16#E5" title="elliptic integral symmetric in only two variables">R</mi><mi href="./19.16#E5" title="elliptic integral symmetric in only two variables">D</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">x</mi><mo>,</mo><mi class="ltx_nvar">y</mi><mo>,</mo><mi class="ltx_nvar">z</mi><mo>)</mo></mrow></mrow></math>: elliptic integral symmetric in only two variables</a>,
+<a href="./19.29#ii.p1" title="§19.29(ii) Reduction to Basic Integrals ‣ §19.29 Reduction of General Elliptic Integrals ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m21.png" altimg-height="25px" altimg-valign="-7px" altimg-width="51px" alttext="I(\mathbf{m})" display="inline"><mrow><mi href="./19.29#ii.p1" title="integral">I</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>𝐦</mi><mo stretchy="false">)</mo></mrow></mrow></math>:  integral</a> and
+<a href="./19.30#ii.p1" title="§19.30(ii) Hyperbola ‣ §19.30 Lengths of Plane Curves ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m62.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="s" display="inline"><mi href="./19.30#ii.p1" title="arclength">s</mi></math>:  arclength</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./19.30.E9" title="" class="ltx_ref">http://dlmf.nist.gov/19.30.E9</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./19.30.E9.tex">TeX</a>, <a href="./19.30.E9.pmml">pMML</a>, <a href="./19.30.E9.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19.30#ii.info" title="§19.30(ii) Hyperbola ‣ §19.30 Lengths of Plane Curves ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.30(ii)</span></a>,
+<a href="./19.30#info" title="§19.30 Lengths of Plane Curves ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.30</span></a> and
+<a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+<div id="ii.p2" class="ltx_para">
+<p class="ltx_p">For <math class="ltx_Math" altimg="m62.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="s" display="inline"><mi href="./19.30#ii.p1" title="arclength">s</mi></math> in terms of <math class="ltx_Math" altimg="m18.png" altimg-height="25px" altimg-valign="-7px" altimg-width="73px" alttext="E\left(\phi,k\right)" display="inline"><mrow><mi href="./19.2#E5" title="Legendre’s incomplete elliptic integral of the second kind">E</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./19.1#p1.t1.r2" title="real or complex argument">ϕ</mi><mo>,</mo><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mo>)</mo></mrow></mrow></math>, <math class="ltx_Math" altimg="m20.png" altimg-height="25px" altimg-valign="-7px" altimg-width="73px" alttext="F\left(\phi,k\right)" display="inline"><mrow><mi href="./19.2#E4" title="Legendre’s incomplete elliptic integral of the first kind">F</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./19.1#p1.t1.r2" title="real or complex argument">ϕ</mi><mo>,</mo><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mo>)</mo></mrow></mrow></math>, and an
+algebraic term, see <cite class="ltx_cite ltx_citemacro_citet">Byrd and Friedman (<a href="./bib/B#bib400" title="Handbook of Elliptic Integrals for Engineers and Scientists" class="ltx_ref">1971</a>, p. 3)</cite>. See
+<cite class="ltx_cite ltx_citemacro_citet">Carlson (<a href="./bib/C#bib434" title="Special Functions of Applied Mathematics" class="ltx_ref">1977b</a>, Ex. 9.4-1 and (9.4-4))</cite> for arclengths of hyperbolas
+and ellipses in terms of <math class="ltx_Math" altimg="m25.png" altimg-height="23px" altimg-valign="-7px" altimg-width="43px" alttext="R_{-a}" display="inline"><msub><mi href="./19.16#E9" title="multivariate hypergeometric function">R</mi><mrow><mo>−</mo><mi>a</mi></mrow></msub></math> that differ only in the sign of <math class="ltx_Math" altimg="m52.png" altimg-height="21px" altimg-valign="-2px" altimg-width="23px" alttext="b^{2}" display="inline"><msup><mi>b</mi><mn>2</mn></msup></math>.</p>
+</div>
+</section>
+<section id="iii" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§19.30(iii) </span>Bernoulli’s Lemniscate</h2>
+<div id="iii.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=Bernoulli%20lemniscate">Bernoulli’s lemniscate</a>, <a class="ltx_keyword" href="./search/search?q=elliptic%20integrals">elliptic integrals</a>, <a class="ltx_keyword" href="./search/search?q=lengths%20of%20plane%20curves">lengths of plane curves</a>, <a class="ltx_keyword" href="./search/search?q=plane%20curves">plane curves</a>
+</dd>
+<dt>Notes:</dt>
+<dd>See <cite class="ltx_cite ltx_citemacro_citet">Carlson (<a href="./bib/C#bib434" title="Special Functions of Applied Mathematics" class="ltx_ref">1977b</a>, Ex. 8.3-7, with solution on p. 312)</cite>.</dd>
+<dt>Permalink:</dt>
+<dd><a href="./19.30.iii" title="" class="ltx_ref">http://dlmf.nist.gov/19.30.iii</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19.30#info" title="§19.30 Lengths of Plane Curves ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.30</span></a> and
+<a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="iii.p1" class="ltx_para">
+<p class="ltx_p">For <math class="ltx_Math" altimg="m15.png" altimg-height="29px" altimg-valign="-9px" altimg-width="106px" alttext="0\leq\theta\leq\tfrac{1}{4}\pi" display="inline"><mrow><mn>0</mn><mo>≤</mo><mi>θ</mi><mo>≤</mo><mrow><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></mrow></mrow></math>, the arclength <math class="ltx_Math" altimg="m62.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="s" display="inline"><mi href="./19.30#iii.p1" title="arclength">s</mi></math> of Bernoulli’s
+lemniscate
+</p>
+<table id="E10" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">19.30.10</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E10.png" altimg-height="58px" altimg-valign="-7px" altimg-width="165px" alttext="r^{2}=2a^{2}\cos\left(2\theta\right)," display="block"><mrow><mrow><msup><mi href="./19.30#iii.p1" title="length">r</mi><mn>2</mn></msup><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><msup><mi>a</mi><mn>2</mn></msup><mo lspace="0.167em">⁢</mo><mrow><mi href="./4.14#E2" title="cosine function">cos</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mn>2</mn><mo>⁢</mo><mi>θ</mi></mrow><mo>)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="4"><span class="ltx_constraint"><math class="ltx_Math" altimg="m14.png" altimg-height="21px" altimg-valign="-5px" altimg-width="103px" alttext="0\leq\theta\leq 2\pi" display="inline"><mrow><mn>0</mn><mo>≤</mo><mi>θ</mi><mo>≤</mo><mrow><mn>2</mn><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></mrow></mrow></math>,</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E10.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./3.12#E1" title="(3.12.1) ‣ §3.12 Mathematical Constants ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m41.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="\pi" display="inline"><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></math>: the ratio of the circumference of a circle to its diameter</a>,
+<a href="./4.14#E2" title="(4.14.2) ‣ §4.14 Definitions and Periodicity ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m29.png" altimg-height="13px" altimg-valign="-2px" altimg-width="46px" alttext="\cos\NVar{z}" display="inline"><mrow><mi href="./4.14#E2" title="cosine function">cos</mi><mo lspace="0.167em">⁡</mo><mi class="ltx_nvar" href="./4.1#t1.r4" title="complex variable">z</mi></mrow></math>: cosine function</a> and
+<a href="./19.30#iii.p1" title="§19.30(iii) Bernoulli’s Lemniscate ‣ §19.30 Lengths of Plane Curves ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m61.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="r" display="inline"><mi href="./19.30#iii.p1" title="length">r</mi></math>:  length</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./19.30.E10" title="" class="ltx_ref">http://dlmf.nist.gov/19.30.E10</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./19.30.E10.tex">TeX</a>, <a href="./19.30.E10.pmml">pMML</a>, <a href="./19.30.E10.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19.30#iii.info" title="§19.30(iii) Bernoulli’s Lemniscate ‣ §19.30 Lengths of Plane Curves ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.30(iii)</span></a>,
+<a href="./19.30#info" title="§19.30 Lengths of Plane Curves ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.30</span></a> and
+<a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">is given by
+</p>
+<table id="E11" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">19.30.11</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E11.png" altimg-height="70px" altimg-valign="-21px" altimg-width="461px" alttext="s=2a^{2}\int_{0}^{r}\frac{\,\mathrm{d}t}{\sqrt{4a^{4}-t^{4}}}=\sqrt{2a^{2}}R_{%
+F}\left(q-1,q,q+1\right)," display="block"><mrow><mrow><mi href="./19.30#iii.p1" title="arclength">s</mi><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><msup><mi>a</mi><mn>2</mn></msup><mo>⁢</mo><mrow><msubsup><mo href="./1.4#iv" title="integral">∫</mo><mn>0</mn><mi href="./19.30#iii.p1" title="length">r</mi></msubsup><mfrac><mrow><mo href="./1.4#iv" rspace="0em" title="differential of 𝑥">d</mo><mi>t</mi></mrow><msqrt><mrow><mrow><mn>4</mn><mo>⁢</mo><msup><mi>a</mi><mn>4</mn></msup></mrow><mo>−</mo><msup><mi>t</mi><mn>4</mn></msup></mrow></msqrt></mfrac></mrow></mrow><mo>=</mo><mrow><msqrt><mrow><mn>2</mn><mo>⁢</mo><msup><mi>a</mi><mn>2</mn></msup></mrow></msqrt><mo>⁢</mo><mrow><msub><mi href="./19.16#E1" title="symmetric elliptic integral of first kind">R</mi><mi href="./19.16#E1" title="symmetric elliptic integral of first kind">F</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./19.30#iii.p1" title="𝑞">q</mi><mo>−</mo><mn>1</mn></mrow><mo>,</mo><mi href="./19.30#iii.p1" title="𝑞">q</mi><mo>,</mo><mrow><mi href="./19.30#iii.p1" title="𝑞">q</mi><mo>+</mo><mn>1</mn></mrow><mo>)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="4"><span class="ltx_constraint"><math class="ltx_Math" altimg="m58.png" altimg-height="26px" altimg-valign="-7px" altimg-width="197px" alttext="q=2a^{2}/r^{2}=\sec\left(2\theta\right)" display="inline"><mrow><mi href="./19.30#iii.p1" title="𝑞">q</mi><mo>=</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><msup><mi>a</mi><mn>2</mn></msup></mrow><mo>/</mo><msup><mi href="./19.30#iii.p1" title="length">r</mi><mn>2</mn></msup></mrow><mo>=</mo><mrow><mi href="./4.14#E6" title="secant function">sec</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mn>2</mn><mo>⁢</mo><mi>θ</mi></mrow><mo>)</mo></mrow></mrow></mrow></math>,</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E11.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./19.16#E1" title="(19.16.1) ‣ §19.16(i) Symmetric Integrals ‣ §19.16 Definitions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m27.png" altimg-height="25px" altimg-valign="-7px" altimg-width="105px" alttext="R_{F}\left(\NVar{x},\NVar{y},\NVar{z}\right)" display="inline"><mrow><msub><mi href="./19.16#E1" title="symmetric elliptic integral of first kind">R</mi><mi href="./19.16#E1" title="symmetric elliptic integral of first kind">F</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">x</mi><mo>,</mo><mi class="ltx_nvar">y</mi><mo>,</mo><mi class="ltx_nvar">z</mi><mo>)</mo></mrow></mrow></math>: symmetric elliptic integral of first kind</a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m35.png" altimg-height="18px" altimg-valign="-2px" altimg-width="28px" alttext="\,\mathrm{d}\NVar{x}" display="inline"><mrow><mo href="./1.4#iv" rspace="0em" title="differential of 𝑥">d</mo><mi class="ltx_nvar">x</mi></mrow></math>: differential of <math class="ltx_Math" altimg="m63.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m32.png" altimg-height="27px" altimg-valign="-8px" altimg-width="18px" alttext="\int" display="inline"><mo href="./1.4#iv" title="integral">∫</mo></math>: integral</a>,
+<a href="./4.14#E6" title="(4.14.6) ‣ §4.14 Definitions and Periodicity ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m42.png" altimg-height="13px" altimg-valign="-2px" altimg-width="45px" alttext="\sec\NVar{z}" display="inline"><mrow><mi href="./4.14#E6" title="secant function">sec</mi><mo lspace="0.167em">⁡</mo><mi class="ltx_nvar" href="./4.1#t1.r4" title="complex variable">z</mi></mrow></math>: secant function</a>,
+<a href="./19.30#iii.p1" title="§19.30(iii) Bernoulli’s Lemniscate ‣ §19.30 Lengths of Plane Curves ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m61.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="r" display="inline"><mi href="./19.30#iii.p1" title="length">r</mi></math>:  length</a>,
+<a href="./19.30#iii.p1" title="§19.30(iii) Bernoulli’s Lemniscate ‣ §19.30 Lengths of Plane Curves ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m59.png" altimg-height="17px" altimg-valign="-6px" altimg-width="14px" alttext="q" display="inline"><mi href="./19.30#iii.p1" title="𝑞">q</mi></math></a> and
+<a href="./19.30#iii.p1" title="§19.30(iii) Bernoulli’s Lemniscate ‣ §19.30 Lengths of Plane Curves ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m62.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="s" display="inline"><mi href="./19.30#iii.p1" title="arclength">s</mi></math>:  arclength</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./19.30.E11" title="" class="ltx_ref">http://dlmf.nist.gov/19.30.E11</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./19.30.E11.tex">TeX</a>, <a href="./19.30.E11.pmml">pMML</a>, <a href="./19.30.E11.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19.30#iii.info" title="§19.30(iii) Bernoulli’s Lemniscate ‣ §19.30 Lengths of Plane Curves ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.30(iii)</span></a>,
+<a href="./19.30#info" title="§19.30 Lengths of Plane Curves ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.30</span></a> and
+<a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">or equivalently,</p>
+<table id="E12" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">19.30.12</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E12.png" altimg-height="58px" altimg-valign="-15px" altimg-width="179px" alttext="s=aF\left(\phi,1/\sqrt{2}\right)," display="block"><mrow><mrow><mi href="./19.30#iii.p1" title="arclength">s</mi><mo>=</mo><mrow><mi>a</mi><mo>⁢</mo><mrow><mi href="./19.2#E4" title="Legendre’s incomplete elliptic integral of the first kind">F</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./19.1#p1.t1.r2" title="real or complex argument">ϕ</mi><mo>,</mo><mrow><mn>1</mn><mo>/</mo><msqrt><mn>2</mn></msqrt></mrow><mo>)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="4"><span class="ltx_constraint"><math class="ltx_Math" altimg="m39.png" altimg-height="30px" altimg-valign="-8px" altimg-width="351px" alttext="\phi=\operatorname{arcsin}\sqrt{2/(q+1)}=\operatorname{arccos}\left(\tan\theta\right)" display="inline"><mrow><mi href="./19.1#p1.t1.r2" title="real or complex argument">ϕ</mi><mo>=</mo><mrow><mi href="./4.23#ii.p1" title="arcsine function">arcsin</mi><mo lspace="0.167em">⁡</mo><msqrt><mrow><mn>2</mn><mo>/</mo><mrow><mo stretchy="false">(</mo><mrow><mi href="./19.30#iii.p1" title="𝑞">q</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></msqrt></mrow><mo>=</mo><mrow><mi href="./4.23#ii.p1" title="arccosine function">arccos</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./4.14#E4" title="tangent function">tan</mi><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow><mo>)</mo></mrow></mrow></mrow></math>.</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E12.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./19.2#E4" title="(19.2.4) ‣ §19.2(ii) Legendre’s Integrals ‣ §19.2 Definitions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m19.png" altimg-height="25px" altimg-valign="-7px" altimg-width="73px" alttext="F\left(\NVar{\phi},\NVar{k}\right)" display="inline"><mrow><mi href="./19.2#E4" title="Legendre’s incomplete elliptic integral of the first kind">F</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./19.1#p1.t1.r2" title="real or complex argument">ϕ</mi><mo>,</mo><mi class="ltx_nvar" href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mo>)</mo></mrow></mrow></math>: Legendre’s incomplete elliptic integral of the first kind</a>,
+<a href="./4.23#ii.p1" title="§4.23(ii) Principal Values ‣ §4.23 Inverse Trigonometric Functions ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m36.png" altimg-height="13px" altimg-valign="-2px" altimg-width="74px" alttext="\operatorname{arccos}\NVar{z}" display="inline"><mrow><mi href="./4.23#ii.p1" title="arccosine function">arccos</mi><mo lspace="0.167em">⁡</mo><mi class="ltx_nvar" href="./4.1#t1.r4" title="complex variable">z</mi></mrow></math>: arccosine function</a>,
+<a href="./4.23#ii.p1" title="§4.23(ii) Principal Values ‣ §4.23 Inverse Trigonometric Functions ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m37.png" altimg-height="18px" altimg-valign="-2px" altimg-width="72px" alttext="\operatorname{arcsin}\NVar{z}" display="inline"><mrow><mi href="./4.23#ii.p1" title="arcsine function">arcsin</mi><mo lspace="0.167em">⁡</mo><mi class="ltx_nvar" href="./4.1#t1.r4" title="complex variable">z</mi></mrow></math>: arcsine function</a>,
+<a href="./4.14#E4" title="(4.14.4) ‣ §4.14 Definitions and Periodicity ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m44.png" altimg-height="17px" altimg-valign="-2px" altimg-width="48px" alttext="\tan\NVar{z}" display="inline"><mrow><mi href="./4.14#E4" title="tangent function">tan</mi><mo lspace="0.167em">⁡</mo><mi class="ltx_nvar" href="./4.1#t1.r4" title="complex variable">z</mi></mrow></math>: tangent function</a>,
+<a href="./19.1#p1.t1.r2" title="§19.1 Special Notation ‣ Notation ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m40.png" altimg-height="22px" altimg-valign="-6px" altimg-width="17px" alttext="\phi" display="inline"><mi href="./19.1#p1.t1.r2" title="real or complex argument">ϕ</mi></math>:  real or complex argument</a>,
+<a href="./19.30#iii.p1" title="§19.30(iii) Bernoulli’s Lemniscate ‣ §19.30 Lengths of Plane Curves ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m59.png" altimg-height="17px" altimg-valign="-6px" altimg-width="14px" alttext="q" display="inline"><mi href="./19.30#iii.p1" title="𝑞">q</mi></math></a> and
+<a href="./19.30#iii.p1" title="§19.30(iii) Bernoulli’s Lemniscate ‣ §19.30 Lengths of Plane Curves ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m62.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="s" display="inline"><mi href="./19.30#iii.p1" title="arclength">s</mi></math>:  arclength</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./19.30.E12" title="" class="ltx_ref">http://dlmf.nist.gov/19.30.E12</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./19.30.E12.tex">TeX</a>, <a href="./19.30.E12.pmml">pMML</a>, <a href="./19.30.E12.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19.30#iii.info" title="§19.30(iii) Bernoulli’s Lemniscate ‣ §19.30 Lengths of Plane Curves ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.30(iii)</span></a>,
+<a href="./19.30#info" title="§19.30 Lengths of Plane Curves ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.30</span></a> and
+<a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">The perimeter length <math class="ltx_Math" altimg="m24.png" altimg-height="18px" altimg-valign="-2px" altimg-width="21px" alttext="P" display="inline"><mi href="./19.30#iii.p1" title="length">P</mi></math> of the lemniscate is given by
+</p>
+<table id="E13" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">19.30.13</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E13.png" altimg-height="98px" altimg-valign="-15px" altimg-width="592px" alttext="P=4\sqrt{2a^{2}}R_{F}\left(0,1,2\right)=\sqrt{2a^{2}}\times 5.24411\;51\ldots=%
+4aK\left(1/\sqrt{2}\right)=a\times 7.41629\;87\dots." display="block"><mrow><mrow><mi href="./19.30#iii.p1" title="length">P</mi><mo>=</mo><mrow><mn>4</mn><mo>⁢</mo><msqrt><mrow><mn>2</mn><mo>⁢</mo><msup><mi>a</mi><mn>2</mn></msup></mrow></msqrt><mo>⁢</mo><mrow><msub><mi href="./19.16#E1" title="symmetric elliptic integral of first kind">R</mi><mi href="./19.16#E1" title="symmetric elliptic integral of first kind">F</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mrow><msqrt><mrow><mn>2</mn><mo>⁢</mo><msup><mi>a</mi><mn>2</mn></msup></mrow></msqrt><mo lspace="0.222em" rspace="0.222em">×</mo><mn>5.24411 51</mn></mrow><mo>⁢</mo><mi mathvariant="normal">…</mi></mrow><mo>=</mo><mrow><mn>4</mn><mo>⁢</mo><mi>a</mi><mo>⁢</mo><mrow><mi href="./19.2#E8" title="Legendre’s complete elliptic integral of the first kind">K</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mn>1</mn><mo>/</mo><msqrt><mn>2</mn></msqrt></mrow><mo>)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mrow><mi>a</mi><mo lspace="0.222em" rspace="0.222em">×</mo><mn>7.41629 87</mn></mrow><mo>⁢</mo><mi mathvariant="normal">…</mi></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E13.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./19.16#E1" title="(19.16.1) ‣ §19.16(i) Symmetric Integrals ‣ §19.16 Definitions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m27.png" altimg-height="25px" altimg-valign="-7px" altimg-width="105px" alttext="R_{F}\left(\NVar{x},\NVar{y},\NVar{z}\right)" display="inline"><mrow><msub><mi href="./19.16#E1" title="symmetric elliptic integral of first kind">R</mi><mi href="./19.16#E1" title="symmetric elliptic integral of first kind">F</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">x</mi><mo>,</mo><mi class="ltx_nvar">y</mi><mo>,</mo><mi class="ltx_nvar">z</mi><mo>)</mo></mrow></mrow></math>: symmetric elliptic integral of first kind</a>,
+<a href="./19.2#E8" title="(19.2.8) ‣ §19.2(ii) Legendre’s Integrals ‣ §19.2 Definitions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m22.png" altimg-height="25px" altimg-valign="-7px" altimg-width="54px" alttext="K\left(\NVar{k}\right)" display="inline"><mrow><mi href="./19.2#E8" title="Legendre’s complete elliptic integral of the first kind">K</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mo>)</mo></mrow></mrow></math>: Legendre’s complete elliptic integral of the first kind</a> and
+<a href="./19.30#iii.p1" title="§19.30(iii) Bernoulli’s Lemniscate ‣ §19.30 Lengths of Plane Curves ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m24.png" altimg-height="18px" altimg-valign="-2px" altimg-width="21px" alttext="P" display="inline"><mi href="./19.30#iii.p1" title="length">P</mi></math>:  length</a>
+</dd>
+<dt>Notes:</dt>
+<dd>For more digits see <a href="https://oeis.org/A064853" title="" class="ltx_ref ltx_href external">OEIS Sequence A064853</a>;
+see also <cite class="ltx_cite ltx_citemacro_citet">Sloane (<a href="./bib/S#bib2115" title="The On-Line Encyclopedia of Integer Sequences" class="ltx_ref">2003</a>)</cite>.</dd>
+<dt>Permalink:</dt>
+<dd><a href="./19.30.E13" title="" class="ltx_ref">http://dlmf.nist.gov/19.30.E13</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./19.30.E13.tex">TeX</a>, <a href="./19.30.E13.pmml">pMML</a>, <a href="./19.30.E13.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19.30#iii.info" title="§19.30(iii) Bernoulli’s Lemniscate ‣ §19.30 Lengths of Plane Curves ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.30(iii)</span></a>,
+<a href="./19.30#info" title="§19.30 Lengths of Plane Curves ‣ Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.30</span></a> and
+<a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+<div id="iii.p2" class="ltx_para">
+<p class="ltx_p">For other plane curves with arclength representable by an elliptic integral
+see <cite class="ltx_cite ltx_citemacro_citet">Greenhill (<a href="./bib/G#bib983" title="The Applications of Elliptic Functions" class="ltx_ref">1892</a>, p. 190)</cite> and <cite class="ltx_cite ltx_citemacro_citet">Bowman (<a href="./bib/B#bib325" title="Introduction to Elliptic Functions with Applications" class="ltx_ref">1953</a>, pp. 32–33)</cite>.
+</p>
+</div>
+</section>
+</section>
+</div>
+<div class="ltx_page_footer">
+<div class="ltx_siblings">
+<a href="./19.29" title="In Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">19.29 </span>Reduction of General Elliptic Integrals</span></a><a href="./19.31" title="In Applications ‣ Chapter 19 Elliptic Integrals" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">19.31 </span>Probability Distributions</span></a>
+</div>
+<div class="ltx_footer_links ltx_centering">
+<a href="./about/notices">© 2010–2026 NIST</a> / <a href="./about/notices#S2">Disclaimer</a> / <a href="/cdn-cgi/l/email-protection#2d6961606b004b4848494f4c4e466d43445e59034a425b">Feedback</a>;
+ Version 1.2.7;
+Release date 2026-06-15.</div>
+<span id="pagesettings"></span>
+<div class="ltx_nist_logo"><a href="http://www.nist.gov/"><img src="./style/nistidc.png" width="500" alt="NIST"></a></div>
+<div class="ltx_nist_links ltx_align_right">
+<a href="https://www.nist.gov/privacy-policy">Site Privacy</a> <a href="https://www.nist.gov/oism/accessibility">Accessibility</a> <a href="https://www.nist.gov/privacy">Privacy Program</a> <a href="https://www.nist.gov/oism/copyrights">Copyrights</a> <a href="https://www.commerce.gov/vulnerability-disclosure-policy">Vulnerability Disclosure</a> <a href="https://www.nist.gov/no-fear-act-policy">No Fear Act Policy</a> <a href="https://www.nist.gov/foia">FOIA</a> <a href="https://www.nist.gov/environmental-policy-statement">Environmental Policy</a> <a href="https://www.nist.gov/summary-report-scientific-integrity">Scientific Integrity</a> <a href="https://www.nist.gov/nist-information-quality-standards">Information Quality Standards</a> <a href="https://www.commerce.gov/">Commerce.gov</a> <a href="http://www.science.gov/">Science.gov</a> <a href="http://www.usa.gov/">USA.gov</a>
+</div>
+</div>
+</div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"9ef5b487afff42a68917b2d63593a474"}' crossorigin="anonymous"></script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a30b64fd2a4a41ed',t:'MTc4NzY2OTI3Mw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

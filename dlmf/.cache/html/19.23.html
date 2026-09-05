@@ -1,0 +1,752 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>DLMF: §19.23 Integral Representations ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals</title>
+<link rel="shortcut icon" href="./style/DLMF-16.png" type="image/png">
+<script type="text/javascript"><!--
+	var PATH="DLMF:/19.23";
+	var ROOT="./";
+      //--></script>
+<script type="text/javascript" src="./style/jquery.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/jquery.leaveNotice.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/DLMF.js"><!-- non-empty so ie6 will accept it --></script>
+<script async="" type="text/javascript" id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC&amp;subagency=NIST&amp;pua=UA-37115410-44&amp;yt=true&amp;exts=ppsx,pps,f90,sch,rtf,wrl,txz,m1v,xlsm,msi,xsd,f,tif,eps,mpg,xml,pl,xlt,c"><!-- non-empty so ie6 will accept it --></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-BZB64W4M0L"></script><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-BZB64W4M0L');
+      </script>
+<link rel="stylesheet" type="text/css" href="./style/LaTeXML.css">
+<link rel="stylesheet" type="text/css" href="./style/DLMF.css">
+<link rel="stylesheet" type="text/css" href="./style/print.css" media="print">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="top" href="./" title="DLMF">
+<link rel="copyright" href="./about/notices" title="Copyright">
+<link rel="search" href="./search/search" title="Search">
+<link rel="help" class="ltx_help" href="./help/" title="Help">
+<link rel="up" href="./19#PT3" title="Symmetric Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="up up" href="./19" title="Chapter 19 Elliptic Integrals">
+<link rel="start" href="./" title="">
+<link rel="prev" href="./19.22" title="§19.22 Quadratic Transformations ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="next" href="./19.24" title="§19.24 Inequalities ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.1" title="§19.1 Special Notation ‣ Notation ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.2" title="§19.2 Definitions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.3" title="§19.3 Graphics ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.4" title="§19.4 Derivatives and Differential Equations ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.5" title="§19.5 Maclaurin and Related Expansions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.6" title="§19.6 Special Cases ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.7" title="§19.7 Connection Formulas ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.8" title="§19.8 Quadratic Transformations ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.9" title="§19.9 Inequalities ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.10" title="§19.10 Relations to Other Functions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.11" title="§19.11 Addition Theorems ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.12" title="§19.12 Asymptotic Approximations ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.13" title="§19.13 Integrals of Elliptic Integrals ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.14" title="§19.14 Reduction of General Elliptic Integrals ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.15" title="§19.15 Advantages of Symmetry ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.16" title="§19.16 Definitions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.17" title="§19.17 Graphics ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.18" title="§19.18 Derivatives and Differential Equations ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.19" title="§19.19 Taylor and Related Series ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.20" title="§19.20 Special Cases ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.21" title="§19.21 Connection Formulas ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.22" title="§19.22 Quadratic Transformations ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.24" title="§19.24 Inequalities ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.25" title="§19.25 Relations to Other Functions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.26" title="§19.26 Addition Theorems ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.27" title="§19.27 Asymptotic Approximations and Expansions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.28" title="§19.28 Integrals of Elliptic Integrals ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.29" title="§19.29 Reduction of General Elliptic Integrals ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.30" title="§19.30 Lengths of Plane Curves ‣ Applications ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.31" title="§19.31 Probability Distributions ‣ Applications ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.32" title="§19.32 Conformal Map onto a Rectangle ‣ Applications ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.33" title="§19.33 Triaxial Ellipsoids ‣ Applications ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.34" title="§19.34 Mutual Inductance of Coaxial Circles ‣ Applications ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.35" title="§19.35 Other Applications ‣ Applications ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.36" title="§19.36 Methods of Computation ‣ Computation ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.37" title="§19.37 Tables ‣ Computation ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.38" title="§19.38 Approximations ‣ Computation ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.39" title="§19.39 Software ‣ Computation ‣ Chapter 19 Elliptic Integrals">
+<link rel="document" href="./front/foreword" title="Foreword">
+<link rel="document" href="./front/preface" title="Preface">
+<link rel="document" href="./front/introduction" title="Mathematical Introduction">
+<link rel="chapter" href="./1" title="Chapter 1 Algebraic and Analytic Methods">
+<link rel="chapter" href="./2" title="Chapter 2 Asymptotic Approximations">
+<link rel="chapter" href="./3" title="Chapter 3 Numerical Methods">
+<link rel="chapter" href="./4" title="Chapter 4 Elementary Functions">
+<link rel="chapter" href="./5" title="Chapter 5 Gamma Function">
+<link rel="chapter" href="./6" title="Chapter 6 Exponential, Logarithmic, Sine, and Cosine Integrals">
+<link rel="chapter" href="./7" title="Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="chapter" href="./8" title="Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="chapter" href="./9" title="Chapter 9 Airy and Related Functions">
+<link rel="chapter" href="./10" title="Chapter 10 Bessel Functions">
+<link rel="chapter" href="./11" title="Chapter 11 Struve and Related Functions">
+<link rel="chapter" href="./12" title="Chapter 12 Parabolic Cylinder Functions">
+<link rel="chapter" href="./13" title="Chapter 13 Confluent Hypergeometric Functions">
+<link rel="chapter" href="./14" title="Chapter 14 Legendre and Related Functions">
+<link rel="chapter" href="./15" title="Chapter 15 Hypergeometric Function">
+<link rel="chapter" href="./16" title="Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="chapter" href="./17" title="Chapter 17 𝑞-Hypergeometric and Related Functions">
+<link rel="chapter" href="./18" title="Chapter 18 Orthogonal Polynomials">
+<link rel="chapter" href="./19" title="Chapter 19 Elliptic Integrals">
+<link rel="chapter" href="./20" title="Chapter 20 Theta Functions">
+<link rel="chapter" href="./21" title="Chapter 21 Multidimensional Theta Functions">
+<link rel="chapter" href="./22" title="Chapter 22 Jacobian Elliptic Functions">
+<link rel="chapter" href="./23" title="Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="chapter" href="./24" title="Chapter 24 Bernoulli and Euler Polynomials">
+<link rel="chapter" href="./25" title="Chapter 25 Zeta and Related Functions">
+<link rel="chapter" href="./26" title="Chapter 26 Combinatorial Analysis">
+<link rel="chapter" href="./27" title="Chapter 27 Functions of Number Theory">
+<link rel="chapter" href="./28" title="Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="chapter" href="./29" title="Chapter 29 Lamé Functions">
+<link rel="chapter" href="./30" title="Chapter 30 Spheroidal Wave Functions">
+<link rel="chapter" href="./31" title="Chapter 31 Heun Functions">
+<link rel="chapter" href="./32" title="Chapter 32 Painlevé Transcendents">
+<link rel="chapter" href="./33" title="Chapter 33 Coulomb Functions">
+<link rel="chapter" href="./34" title="Chapter 34 3⁢𝑗,6⁢𝑗,9⁢𝑗 Symbols">
+<link rel="chapter" href="./35" title="Chapter 35 Functions of Matrix Argument">
+<link rel="chapter" href="./36" title="Chapter 36 Integrals with Coalescing Saddles">
+<link rel="bibliography" href="./bib/" title="Bibliography">
+<link rel="index" href="./idx/" title="Index">
+<link rel="glossary" href="./not/" title="Notations">
+<link rel="document" href="./lof/" title="List of Figures">
+<link rel="document" href="./lot/" title="List of Tables">
+<link rel="document" href="./software/" title="Software Index">
+<link rel="document" href="./errata/" title="Errata">
+<link rel="document" href="./help/" title="Need Help?">
+<link rel="document" href="./search/" title="Advanced Search">
+<link rel="document" href="./about/" title="About the Project">
+<meta name="keywords" lang="en" content="integral representations, symmetric elliptic integrals">
+</head>
+<body class="color_default textfont_default titlefont_default fontsize_default navbar_default">
+<div class="ltx_page_navbar">
+<div class="ltx_page_navlogo"><a href="./" title="Digital Library of Mathematical Functions"><span>DLMF</span></a></div>
+<div class="ltx_page_navitems">
+<form method="get" action="./search/search">
+<ul>
+<li><a href="./idx/">Index</a></li>
+<li><a href="./not/">Notations</a></li>
+<li><small><input type="text" name="q" value="" size="6" class="ltx_page_navitem_search"><button type="submit">Search</button></small></li>
+<li><a href="./help/" class="ltx_help">Help?</a></li>
+<li><a href="./help/cite">Citing</a></li>
+<li><a href="./help/customize" class="ltx_customize">Customize</a></li>
+<li id="showinfo"><a href="" onclick="showInfo(); return false;" title="Show Annotations">Annotate</a></li>
+<li id="hideinfo"><a href="" onclick="hideInfo(); return false;">UnAnnotate</a></li>
+</ul>
+</form>
+</div>
+<div class="ltx_page_navsponsors">
+<div><a href="./about/" class="ltx_page_navabout">About the Project</a></div>
+</div>
+</div>
+<div class="ltx_page_main">
+<div class="ltx_page_header">
+<a href="./19" title="" class="ltx_ref" rel="up up"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">19 </span>Elliptic Integrals</span></a><a href="./19#PT3" title="In Chapter 19 Elliptic Integrals" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title">Symmetric Integrals</span></a><a href="./19.22" title="In Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">19.22 </span>Quadratic Transformations</span></a><a href="./19.24" title="In Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">19.24 </span>Inequalities</span></a>
+</div>
+<div class="ltx_page_content">
+<section class="ltx_section ltx_authors_multiline ltx_leqno">
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">§19.23 </span>Integral Representations</h1>
+<div id="info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=integral%20representations">integral representations</a>, <a class="ltx_keyword" href="./search/search?q=symmetric%20elliptic%20integrals">symmetric elliptic integrals</a>
+</dd>
+<dt>Notes:</dt>
+<dd>For (<a href="./19.23#E8" title="(19.23.8) ‣ §19.23 Integral Representations ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">19.23.8</span></a>) and (<a href="./19.23#E9" title="(19.23.9) ‣ §19.23 Integral Representations ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">19.23.9</span></a>) see
+<cite class="ltx_cite ltx_citemacro_citet">Carlson (<a href="./bib/C#bib434" title="Special Functions of Applied Mathematics" class="ltx_ref">1977b</a>, Exercises 5.9-19, 5.9-20, and p. 306)</cite>. By
+§<a href="./19.16#iii" title="§19.16(iii) Various Cases of 𝑅_{-𝑎}(𝐛;𝐳) ‣ §19.16 Definitions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">19.16(iii)</span></a>, (<a href="./19.23#E8" title="(19.23.8) ‣ §19.23 Integral Representations ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">19.23.8</span></a>) implies (<a href="./19.23#E1" title="(19.23.1) ‣ §19.23 Integral Representations ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">19.23.1</span></a>)–(<a href="./19.23#E3" title="(19.23.3) ‣ §19.23 Integral Representations ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">19.23.3</span></a>),
+and (<a href="./19.23#E9" title="(19.23.9) ‣ §19.23 Integral Representations ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">19.23.9</span></a>) implies
+(<a href="./19.23#E6" title="(19.23.6) ‣ §19.23 Integral Representations ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">19.23.6</span></a>). Use (<a href="./19.23#E8" title="(19.23.8) ‣ §19.23 Integral Representations ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">19.23.8</span></a>) to integrate over <math class="ltx_Math" altimg="m30.png" altimg-height="18px" altimg-valign="-2px" altimg-width="15px" alttext="\theta" display="inline"><mi>θ</mi></math> in
+(<a href="./19.23#E6" title="(19.23.6) ‣ §19.23 Integral Representations ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">19.23.6</span></a>) and then permute variables to prove
+(<a href="./19.23#E5" title="(19.23.5) ‣ §19.23 Integral Representations ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">19.23.5</span></a>). To prove (<a href="./19.23#E4" title="(19.23.4) ‣ §19.23 Integral Representations ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">19.23.4</span></a>) put <math class="ltx_Math" altimg="m42.png" altimg-height="17px" altimg-valign="-2px" altimg-width="53px" alttext="z=0" display="inline"><mrow><mi>z</mi><mo>=</mo><mn>0</mn></mrow></math> in
+(<a href="./19.23#E5" title="(19.23.5) ‣ §19.23 Integral Representations ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">19.23.5</span></a>), relabel variables, and substitute
+<math class="ltx_Math" altimg="m15.png" altimg-height="18px" altimg-valign="-2px" altimg-width="122px" alttext="\cos\theta=\operatorname{sech}t" display="inline"><mrow><mrow><mi href="./4.14#E2" title="cosine function">cos</mi><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow><mo>=</mo><mrow><mi href="./4.28#E6" title="hyperbolic secant function">sech</mi><mo lspace="0.167em">⁡</mo><mi>t</mi></mrow></mrow></math>. For (<a href="./19.23#E10" title="(19.23.10) ‣ §19.23 Integral Representations ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">19.23.10</span></a>) see
+<cite class="ltx_cite ltx_citemacro_citet">Carlson (<a href="./bib/C#bib434" title="Special Functions of Applied Mathematics" class="ltx_ref">1977b</a>, (6.8-2))</cite>.</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./errata/#V1.1.0.I2.ix2.p1" title="In Other Changes ‣ Version 1.1.0 (December 15, 2020) ‣ Errata" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Erratum (V1.1.0) for  Rearrangement</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./19.23" title="" class="ltx_ref">http://dlmf.nist.gov/19.23</a></dd>
+<dt>Rearrangement (effective with 1.1.0):</dt>
+<dd>
+The integral representation (<a href="./19.23#E6_5" title="(19.23.6_5) ‣ §19.23 Integral Representations ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">19.23.6_5</span></a>), which was previously (<a href="./19.16#E3" title="(19.16.3) ‣ §19.16(i) Symmetric Integrals ‣ §19.16 Definitions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">19.16.3</span></a>),
+is a better fit here.
+Likewise, (<a href="./19.23#E7" title="(19.23.7) ‣ §19.23 Integral Representations ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">19.23.7</span></a>) has been moved to (<a href="./19.16#E2_5" title="(19.16.2_5) ‣ §19.16(i) Symmetric Integrals ‣ §19.16 Definitions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">19.16.2_5</span></a>).
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="p1" class="ltx_para">
+<p class="ltx_p">In (<a href="./19.23#E1" title="(19.23.1) ‣ §19.23 Integral Representations ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">19.23.1</span></a>)–(<a href="./19.23#E3" title="(19.23.3) ‣ §19.23 Integral Representations ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">19.23.3</span></a>) we assume <math class="ltx_Math" altimg="m9.png" altimg-height="22px" altimg-valign="-6px" altimg-width="68px" alttext="\Re y&gt;0" display="inline"><mrow><mrow><mi href="./1.9#E2" mathvariant="normal" title="real part">ℜ</mi><mo lspace="0.167em">⁡</mo><mi>y</mi></mrow><mo>&gt;</mo><mn>0</mn></mrow></math> and
+<math class="ltx_Math" altimg="m10.png" altimg-height="19px" altimg-valign="-3px" altimg-width="68px" alttext="\Re z&gt;0" display="inline"><mrow><mrow><mi href="./1.9#E2" mathvariant="normal" title="real part">ℜ</mi><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow><mo>&gt;</mo><mn>0</mn></mrow></math>.</p>
+<table id="E1" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">19.23.1</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E1.png" altimg-height="65px" altimg-valign="-21px" altimg-width="513px" alttext="R_{F}\left(0,y,z\right)=\int_{0}^{\pi/2}(y{\cos}^{2}\theta+z{\sin}^{2}\theta)^%
+{-1/2}\,\mathrm{d}\theta," display="block"><mrow><mrow><mrow><msub><mi href="./19.16#E1" title="symmetric elliptic integral of first kind">R</mi><mi href="./19.16#E1" title="symmetric elliptic integral of first kind">F</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mn>0</mn><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo>)</mo></mrow></mrow><mo rspace="0.111em">=</mo><mrow><msubsup><mo href="./1.4#iv" rspace="0em" title="integral">∫</mo><mn>0</mn><mrow><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>/</mo><mn>2</mn></mrow></msubsup><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>y</mi><mo lspace="0.167em">⁢</mo><mrow><msup><mi href="./4.14#E2" title="cosine function">cos</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow></mrow><mo>+</mo><mrow><mi>z</mi><mo lspace="0.167em">⁢</mo><mrow><msup><mi href="./4.14#E1" title="sine function">sin</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow></mrow></mrow><mo stretchy="false">)</mo></mrow><mrow><mo>−</mo><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></mrow></msup><mo lspace="0em">⁢</mo><mrow><mo href="./1.4#iv" rspace="0em" title="differential of 𝑥">d</mo><mi>θ</mi></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E1.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./19.16#E1" title="(19.16.1) ‣ §19.16(i) Symmetric Integrals ‣ §19.16 Definitions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m4.png" altimg-height="25px" altimg-valign="-7px" altimg-width="105px" alttext="R_{F}\left(\NVar{x},\NVar{y},\NVar{z}\right)" display="inline"><mrow><msub><mi href="./19.16#E1" title="symmetric elliptic integral of first kind">R</mi><mi href="./19.16#E1" title="symmetric elliptic integral of first kind">F</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">x</mi><mo>,</mo><mi class="ltx_nvar">y</mi><mo>,</mo><mi class="ltx_nvar">z</mi><mo>)</mo></mrow></mrow></math>: symmetric elliptic integral of first kind</a>,
+<a href="./3.12#E1" title="(3.12.1) ‣ §3.12 Mathematical Constants ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m25.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="\pi" display="inline"><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></math>: the ratio of the circumference of a circle to its diameter</a>,
+<a href="./4.14#E2" title="(4.14.2) ‣ §4.14 Definitions and Periodicity ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m14.png" altimg-height="13px" altimg-valign="-2px" altimg-width="46px" alttext="\cos\NVar{z}" display="inline"><mrow><mi href="./4.14#E2" title="cosine function">cos</mi><mo lspace="0.167em">⁡</mo><mi class="ltx_nvar" href="./4.1#t1.r4" title="complex variable">z</mi></mrow></math>: cosine function</a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m23.png" altimg-height="18px" altimg-valign="-2px" altimg-width="28px" alttext="\,\mathrm{d}\NVar{x}" display="inline"><mrow><mo href="./1.4#iv" rspace="0em" title="differential of 𝑥">d</mo><mi class="ltx_nvar">x</mi></mrow></math>: differential of <math class="ltx_Math" altimg="m40.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m19.png" altimg-height="27px" altimg-valign="-8px" altimg-width="18px" alttext="\int" display="inline"><mo href="./1.4#iv" title="integral">∫</mo></math>: integral</a> and
+<a href="./4.14#E1" title="(4.14.1) ‣ §4.14 Definitions and Periodicity ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m27.png" altimg-height="18px" altimg-valign="-2px" altimg-width="44px" alttext="\sin\NVar{z}" display="inline"><mrow><mi href="./4.14#E1" title="sine function">sin</mi><mo lspace="0.167em">⁡</mo><mi class="ltx_nvar" href="./4.1#t1.r4" title="complex variable">z</mi></mrow></math>: sine function</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./19.23#info" title="§19.23 Integral Representations ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.23</span></a>,
+<a href="./19.23#p1" title="§19.23 Integral Representations ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.23</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./19.23.E1" title="" class="ltx_ref">http://dlmf.nist.gov/19.23.E1</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./19.23.E1.tex">TeX</a>, <a href="./19.23.E1.pmml">pMML</a>, <a href="./19.23.E1.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19.23#info" title="§19.23 Integral Representations ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.23</span></a> and
+<a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<table id="E2" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">19.23.2</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E2.png" altimg-height="65px" altimg-valign="-21px" altimg-width="520px" alttext="R_{G}\left(0,y,z\right)=\frac{1}{2}\int_{0}^{\pi/2}(y{\cos}^{2}\theta+z{\sin}^%
+{2}\theta)^{1/2}\,\mathrm{d}\theta," display="block"><mrow><mrow><mrow><msub><mi href="./19.16#E2_5" title="symmetric elliptic integral of second kind">R</mi><mi href="./19.16#E2_5" title="symmetric elliptic integral of second kind">G</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mn>0</mn><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mrow><msubsup><mo href="./1.4#iv" rspace="0em" title="integral">∫</mo><mn>0</mn><mrow><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>/</mo><mn>2</mn></mrow></msubsup><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>y</mi><mo lspace="0.167em">⁢</mo><mrow><msup><mi href="./4.14#E2" title="cosine function">cos</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow></mrow><mo>+</mo><mrow><mi>z</mi><mo lspace="0.167em">⁢</mo><mrow><msup><mi href="./4.14#E1" title="sine function">sin</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow></mrow></mrow><mo stretchy="false">)</mo></mrow><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msup><mo lspace="0em">⁢</mo><mrow><mo href="./1.4#iv" rspace="0em" title="differential of 𝑥">d</mo><mi>θ</mi></mrow></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E2.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./19.16#E2_5" title="(19.16.2_5) ‣ §19.16(i) Symmetric Integrals ‣ §19.16 Definitions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m5.png" altimg-height="25px" altimg-valign="-7px" altimg-width="105px" alttext="R_{G}\left(\NVar{x},\NVar{y},\NVar{z}\right)" display="inline"><mrow><msub><mi href="./19.16#E2_5" title="symmetric elliptic integral of second kind">R</mi><mi href="./19.16#E2_5" title="symmetric elliptic integral of second kind">G</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">x</mi><mo>,</mo><mi class="ltx_nvar">y</mi><mo>,</mo><mi class="ltx_nvar">z</mi><mo>)</mo></mrow></mrow></math>: symmetric elliptic integral of second kind</a>,
+<a href="./3.12#E1" title="(3.12.1) ‣ §3.12 Mathematical Constants ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m25.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="\pi" display="inline"><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></math>: the ratio of the circumference of a circle to its diameter</a>,
+<a href="./4.14#E2" title="(4.14.2) ‣ §4.14 Definitions and Periodicity ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m14.png" altimg-height="13px" altimg-valign="-2px" altimg-width="46px" alttext="\cos\NVar{z}" display="inline"><mrow><mi href="./4.14#E2" title="cosine function">cos</mi><mo lspace="0.167em">⁡</mo><mi class="ltx_nvar" href="./4.1#t1.r4" title="complex variable">z</mi></mrow></math>: cosine function</a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m23.png" altimg-height="18px" altimg-valign="-2px" altimg-width="28px" alttext="\,\mathrm{d}\NVar{x}" display="inline"><mrow><mo href="./1.4#iv" rspace="0em" title="differential of 𝑥">d</mo><mi class="ltx_nvar">x</mi></mrow></math>: differential of <math class="ltx_Math" altimg="m40.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m19.png" altimg-height="27px" altimg-valign="-8px" altimg-width="18px" alttext="\int" display="inline"><mo href="./1.4#iv" title="integral">∫</mo></math>: integral</a> and
+<a href="./4.14#E1" title="(4.14.1) ‣ §4.14 Definitions and Periodicity ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m27.png" altimg-height="18px" altimg-valign="-2px" altimg-width="44px" alttext="\sin\NVar{z}" display="inline"><mrow><mi href="./4.14#E1" title="sine function">sin</mi><mo lspace="0.167em">⁡</mo><mi class="ltx_nvar" href="./4.1#t1.r4" title="complex variable">z</mi></mrow></math>: sine function</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./19.23.E2" title="" class="ltx_ref">http://dlmf.nist.gov/19.23.E2</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./19.23.E2.tex">TeX</a>, <a href="./19.23.E2.pmml">pMML</a>, <a href="./19.23.E2.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19.23#info" title="§19.23 Integral Representations ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.23</span></a> and
+<a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<table id="E3" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">19.23.3</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E3.png" altimg-height="65px" altimg-valign="-21px" altimg-width="575px" alttext="R_{D}\left(0,y,z\right)=3\int_{0}^{\pi/2}(y{\cos}^{2}\theta+z{\sin}^{2}\theta)%
+^{-3/2}{\sin}^{2}\theta\,\mathrm{d}\theta." display="block"><mrow><mrow><mrow><msub><mi href="./19.16#E5" title="elliptic integral symmetric in only two variables">R</mi><mi href="./19.16#E5" title="elliptic integral symmetric in only two variables">D</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mn>0</mn><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mn>3</mn><mo>⁢</mo><mrow><msubsup><mo href="./1.4#iv" rspace="0em" title="integral">∫</mo><mn>0</mn><mrow><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>/</mo><mn>2</mn></mrow></msubsup><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>y</mi><mo lspace="0.167em">⁢</mo><mrow><msup><mi href="./4.14#E2" title="cosine function">cos</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow></mrow><mo>+</mo><mrow><mi>z</mi><mo lspace="0.167em">⁢</mo><mrow><msup><mi href="./4.14#E1" title="sine function">sin</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow></mrow></mrow><mo stretchy="false">)</mo></mrow><mrow><mo>−</mo><mrow><mn>3</mn><mo>/</mo><mn>2</mn></mrow></mrow></msup><mo lspace="0.167em">⁢</mo><mrow><msup><mi href="./4.14#E1" title="sine function">sin</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow><mo lspace="0em">⁢</mo><mrow><mo href="./1.4#iv" rspace="0em" title="differential of 𝑥">d</mo><mi>θ</mi></mrow></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E3.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./19.16#E5" title="(19.16.5) ‣ §19.16(i) Symmetric Integrals ‣ §19.16 Definitions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m3.png" altimg-height="25px" altimg-valign="-7px" altimg-width="107px" alttext="R_{D}\left(\NVar{x},\NVar{y},\NVar{z}\right)" display="inline"><mrow><msub><mi href="./19.16#E5" title="elliptic integral symmetric in only two variables">R</mi><mi href="./19.16#E5" title="elliptic integral symmetric in only two variables">D</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">x</mi><mo>,</mo><mi class="ltx_nvar">y</mi><mo>,</mo><mi class="ltx_nvar">z</mi><mo>)</mo></mrow></mrow></math>: elliptic integral symmetric in only two variables</a>,
+<a href="./3.12#E1" title="(3.12.1) ‣ §3.12 Mathematical Constants ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m25.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="\pi" display="inline"><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></math>: the ratio of the circumference of a circle to its diameter</a>,
+<a href="./4.14#E2" title="(4.14.2) ‣ §4.14 Definitions and Periodicity ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m14.png" altimg-height="13px" altimg-valign="-2px" altimg-width="46px" alttext="\cos\NVar{z}" display="inline"><mrow><mi href="./4.14#E2" title="cosine function">cos</mi><mo lspace="0.167em">⁡</mo><mi class="ltx_nvar" href="./4.1#t1.r4" title="complex variable">z</mi></mrow></math>: cosine function</a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m23.png" altimg-height="18px" altimg-valign="-2px" altimg-width="28px" alttext="\,\mathrm{d}\NVar{x}" display="inline"><mrow><mo href="./1.4#iv" rspace="0em" title="differential of 𝑥">d</mo><mi class="ltx_nvar">x</mi></mrow></math>: differential of <math class="ltx_Math" altimg="m40.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m19.png" altimg-height="27px" altimg-valign="-8px" altimg-width="18px" alttext="\int" display="inline"><mo href="./1.4#iv" title="integral">∫</mo></math>: integral</a> and
+<a href="./4.14#E1" title="(4.14.1) ‣ §4.14 Definitions and Periodicity ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m27.png" altimg-height="18px" altimg-valign="-2px" altimg-width="44px" alttext="\sin\NVar{z}" display="inline"><mrow><mi href="./4.14#E1" title="sine function">sin</mi><mo lspace="0.167em">⁡</mo><mi class="ltx_nvar" href="./4.1#t1.r4" title="complex variable">z</mi></mrow></math>: sine function</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./19.23#info" title="§19.23 Integral Representations ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.23</span></a>,
+<a href="./19.23#p1" title="§19.23 Integral Representations ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.23</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./19.23.E3" title="" class="ltx_ref">http://dlmf.nist.gov/19.23.E3</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./19.23.E3.tex">TeX</a>, <a href="./19.23.E3.pmml">pMML</a>, <a href="./19.23.E3.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19.23#info" title="§19.23 Integral Representations ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.23</span></a> and
+<a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<table id="E4" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">19.23.4</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E4.png" altimg-height="154px" altimg-valign="-21px" altimg-width="402px" alttext="R_{F}\left(0,y,z\right)=\frac{2}{\pi}\int_{0}^{\pi/2}R_{C}\left(y,z{\cos}^{2}%
+\theta\right)\,\mathrm{d}\theta=\frac{2}{\pi}\int_{0}^{\infty}R_{C}\left(y{%
+\cosh}^{2}t,z\right)\,\mathrm{d}t." display="block"><mrow><mrow><mrow><msub><mi href="./19.16#E1" title="symmetric elliptic integral of first kind">R</mi><mi href="./19.16#E1" title="symmetric elliptic integral of first kind">F</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mn>0</mn><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mfrac><mn>2</mn><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></mfrac><mo>⁢</mo><mrow><msubsup><mo href="./1.4#iv" title="integral">∫</mo><mn>0</mn><mrow><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>/</mo><mn>2</mn></mrow></msubsup><mrow><mrow><msub><mi href="./19.2#E17" title="Carlson’s combination of inverse circular and inverse hyperbolic functions">R</mi><mi href="./19.2#E17" title="Carlson’s combination of inverse circular and inverse hyperbolic functions">C</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi>y</mi><mo>,</mo><mrow><mi>z</mi><mo lspace="0.167em">⁢</mo><mrow><msup><mi href="./4.14#E2" title="cosine function">cos</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow></mrow><mo>)</mo></mrow></mrow><mo lspace="0em">⁢</mo><mrow><mo href="./1.4#iv" rspace="0em" title="differential of 𝑥">d</mo><mi>θ</mi></mrow></mrow></mrow></mrow><mo>=</mo><mrow><mfrac><mn>2</mn><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></mfrac><mo>⁢</mo><mrow><msubsup><mo href="./1.4#iv" title="integral">∫</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup><mrow><mrow><msub><mi href="./19.2#E17" title="Carlson’s combination of inverse circular and inverse hyperbolic functions">R</mi><mi href="./19.2#E17" title="Carlson’s combination of inverse circular and inverse hyperbolic functions">C</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mrow><mi>y</mi><mo lspace="0.167em">⁢</mo><mrow><msup><mi href="./4.28#E2" title="hyperbolic cosine function">cosh</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>t</mi></mrow></mrow><mo>,</mo><mi>z</mi><mo>)</mo></mrow></mrow><mo lspace="0em">⁢</mo><mrow><mo href="./1.4#iv" rspace="0em" title="differential of 𝑥">d</mo><mi>t</mi></mrow></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E4.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./19.2#E17" title="(19.2.17) ‣ §19.2(iv) A Related Function: 𝑅_𝐶(𝑥,𝑦) ‣ §19.2 Definitions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m2.png" altimg-height="25px" altimg-valign="-7px" altimg-width="86px" alttext="R_{C}\left(\NVar{x},\NVar{y}\right)" display="inline"><mrow><msub><mi href="./19.2#E17" title="Carlson’s combination of inverse circular and inverse hyperbolic functions">R</mi><mi href="./19.2#E17" title="Carlson’s combination of inverse circular and inverse hyperbolic functions">C</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">x</mi><mo>,</mo><mi class="ltx_nvar">y</mi><mo>)</mo></mrow></mrow></math>: Carlson’s combination of inverse circular and inverse hyperbolic functions</a>,
+<a href="./19.16#E1" title="(19.16.1) ‣ §19.16(i) Symmetric Integrals ‣ §19.16 Definitions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m4.png" altimg-height="25px" altimg-valign="-7px" altimg-width="105px" alttext="R_{F}\left(\NVar{x},\NVar{y},\NVar{z}\right)" display="inline"><mrow><msub><mi href="./19.16#E1" title="symmetric elliptic integral of first kind">R</mi><mi href="./19.16#E1" title="symmetric elliptic integral of first kind">F</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">x</mi><mo>,</mo><mi class="ltx_nvar">y</mi><mo>,</mo><mi class="ltx_nvar">z</mi><mo>)</mo></mrow></mrow></math>: symmetric elliptic integral of first kind</a>,
+<a href="./3.12#E1" title="(3.12.1) ‣ §3.12 Mathematical Constants ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m25.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="\pi" display="inline"><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></math>: the ratio of the circumference of a circle to its diameter</a>,
+<a href="./4.14#E2" title="(4.14.2) ‣ §4.14 Definitions and Periodicity ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m14.png" altimg-height="13px" altimg-valign="-2px" altimg-width="46px" alttext="\cos\NVar{z}" display="inline"><mrow><mi href="./4.14#E2" title="cosine function">cos</mi><mo lspace="0.167em">⁡</mo><mi class="ltx_nvar" href="./4.1#t1.r4" title="complex variable">z</mi></mrow></math>: cosine function</a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m23.png" altimg-height="18px" altimg-valign="-2px" altimg-width="28px" alttext="\,\mathrm{d}\NVar{x}" display="inline"><mrow><mo href="./1.4#iv" rspace="0em" title="differential of 𝑥">d</mo><mi class="ltx_nvar">x</mi></mrow></math>: differential of <math class="ltx_Math" altimg="m40.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./4.28#E2" title="(4.28.2) ‣ §4.28 Definitions and Periodicity ‣ Hyperbolic Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m17.png" altimg-height="18px" altimg-valign="-2px" altimg-width="58px" alttext="\cosh\NVar{z}" display="inline"><mrow><mi href="./4.28#E2" title="hyperbolic cosine function">cosh</mi><mo lspace="0.167em">⁡</mo><mi class="ltx_nvar" href="./4.1#t1.r4" title="complex variable">z</mi></mrow></math>: hyperbolic cosine function</a> and
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m19.png" altimg-height="27px" altimg-valign="-8px" altimg-width="18px" alttext="\int" display="inline"><mo href="./1.4#iv" title="integral">∫</mo></math>: integral</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./19.23#info" title="§19.23 Integral Representations ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.23</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./19.23.E4" title="" class="ltx_ref">http://dlmf.nist.gov/19.23.E4</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./19.23.E4.tex">TeX</a>, <a href="./19.23.E4.pmml">pMML</a>, <a href="./19.23.E4.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19.23#info" title="§19.23 Integral Representations ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.23</span></a> and
+<a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<table id="E5" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">19.23.5</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E5.png" altimg-height="100px" altimg-valign="-21px" altimg-width="456px" alttext="R_{F}\left(x,y,z\right)=\frac{2}{\pi}\int_{0}^{\pi/2}R_{C}\left(x,y{\cos}^{2}%
+\theta+z{\sin}^{2}\theta\right)\,\mathrm{d}\theta," display="block"><mrow><mrow><mrow><msub><mi href="./19.16#E1" title="symmetric elliptic integral of first kind">R</mi><mi href="./19.16#E1" title="symmetric elliptic integral of first kind">F</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mfrac><mn>2</mn><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></mfrac><mo>⁢</mo><mrow><msubsup><mo href="./1.4#iv" title="integral">∫</mo><mn>0</mn><mrow><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>/</mo><mn>2</mn></mrow></msubsup><mrow><mrow><msub><mi href="./19.2#E17" title="Carlson’s combination of inverse circular and inverse hyperbolic functions">R</mi><mi href="./19.2#E17" title="Carlson’s combination of inverse circular and inverse hyperbolic functions">C</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi>x</mi><mo>,</mo><mrow><mrow><mi>y</mi><mo lspace="0.167em">⁢</mo><mrow><msup><mi href="./4.14#E2" title="cosine function">cos</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow></mrow><mo>+</mo><mrow><mi>z</mi><mo lspace="0.167em">⁢</mo><mrow><msup><mi href="./4.14#E1" title="sine function">sin</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow></mrow></mrow><mo>)</mo></mrow></mrow><mo lspace="0em">⁢</mo><mrow><mo href="./1.4#iv" rspace="0em" title="differential of 𝑥">d</mo><mi>θ</mi></mrow></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="4"><span class="ltx_constraint"><math class="ltx_Math" altimg="m9.png" altimg-height="22px" altimg-valign="-6px" altimg-width="68px" alttext="\Re y&gt;0" display="inline"><mrow><mrow><mi href="./1.9#E2" mathvariant="normal" title="real part">ℜ</mi><mo lspace="0.167em">⁡</mo><mi>y</mi></mrow><mo>&gt;</mo><mn>0</mn></mrow></math>, <math class="ltx_Math" altimg="m10.png" altimg-height="19px" altimg-valign="-3px" altimg-width="68px" alttext="\Re z&gt;0" display="inline"><mrow><mrow><mi href="./1.9#E2" mathvariant="normal" title="real part">ℜ</mi><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow><mo>&gt;</mo><mn>0</mn></mrow></math>,</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E5.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./19.2#E17" title="(19.2.17) ‣ §19.2(iv) A Related Function: 𝑅_𝐶(𝑥,𝑦) ‣ §19.2 Definitions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m2.png" altimg-height="25px" altimg-valign="-7px" altimg-width="86px" alttext="R_{C}\left(\NVar{x},\NVar{y}\right)" display="inline"><mrow><msub><mi href="./19.2#E17" title="Carlson’s combination of inverse circular and inverse hyperbolic functions">R</mi><mi href="./19.2#E17" title="Carlson’s combination of inverse circular and inverse hyperbolic functions">C</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">x</mi><mo>,</mo><mi class="ltx_nvar">y</mi><mo>)</mo></mrow></mrow></math>: Carlson’s combination of inverse circular and inverse hyperbolic functions</a>,
+<a href="./19.16#E1" title="(19.16.1) ‣ §19.16(i) Symmetric Integrals ‣ §19.16 Definitions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m4.png" altimg-height="25px" altimg-valign="-7px" altimg-width="105px" alttext="R_{F}\left(\NVar{x},\NVar{y},\NVar{z}\right)" display="inline"><mrow><msub><mi href="./19.16#E1" title="symmetric elliptic integral of first kind">R</mi><mi href="./19.16#E1" title="symmetric elliptic integral of first kind">F</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">x</mi><mo>,</mo><mi class="ltx_nvar">y</mi><mo>,</mo><mi class="ltx_nvar">z</mi><mo>)</mo></mrow></mrow></math>: symmetric elliptic integral of first kind</a>,
+<a href="./3.12#E1" title="(3.12.1) ‣ §3.12 Mathematical Constants ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m25.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="\pi" display="inline"><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></math>: the ratio of the circumference of a circle to its diameter</a>,
+<a href="./4.14#E2" title="(4.14.2) ‣ §4.14 Definitions and Periodicity ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m14.png" altimg-height="13px" altimg-valign="-2px" altimg-width="46px" alttext="\cos\NVar{z}" display="inline"><mrow><mi href="./4.14#E2" title="cosine function">cos</mi><mo lspace="0.167em">⁡</mo><mi class="ltx_nvar" href="./4.1#t1.r4" title="complex variable">z</mi></mrow></math>: cosine function</a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m23.png" altimg-height="18px" altimg-valign="-2px" altimg-width="28px" alttext="\,\mathrm{d}\NVar{x}" display="inline"><mrow><mo href="./1.4#iv" rspace="0em" title="differential of 𝑥">d</mo><mi class="ltx_nvar">x</mi></mrow></math>: differential of <math class="ltx_Math" altimg="m40.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m19.png" altimg-height="27px" altimg-valign="-8px" altimg-width="18px" alttext="\int" display="inline"><mo href="./1.4#iv" title="integral">∫</mo></math>: integral</a>,
+<a href="./1.9#E2" title="(1.9.2) ‣ Real and Imaginary Parts ‣ §1.9(i) Complex Numbers ‣ §1.9 Calculus of a Complex Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m13.png" altimg-height="18px" altimg-valign="-2px" altimg-width="19px" alttext="\Re" display="inline"><mrow><mi href="./1.9#E2" mathvariant="normal" title="real part">ℜ</mi><mo>⁡</mo></mrow></math>: real part</a> and
+<a href="./4.14#E1" title="(4.14.1) ‣ §4.14 Definitions and Periodicity ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m27.png" altimg-height="18px" altimg-valign="-2px" altimg-width="44px" alttext="\sin\NVar{z}" display="inline"><mrow><mi href="./4.14#E1" title="sine function">sin</mi><mo lspace="0.167em">⁡</mo><mi class="ltx_nvar" href="./4.1#t1.r4" title="complex variable">z</mi></mrow></math>: sine function</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./19.2#iv.info" title="§19.2(iv) A Related Function: 𝑅_𝐶(𝑥,𝑦) ‣ §19.2 Definitions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.2(iv)</span></a>,
+<a href="./19.23#info" title="§19.23 Integral Representations ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.23</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./19.23.E5" title="" class="ltx_ref">http://dlmf.nist.gov/19.23.E5</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./19.23.E5.tex">TeX</a>, <a href="./19.23.E5.pmml">pMML</a>, <a href="./19.23.E5.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19.23#info" title="§19.23 Integral Representations ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.23</span></a> and
+<a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<table id="E6" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">19.23.6</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E6.png" altimg-height="66px" altimg-valign="-23px" altimg-width="725px" alttext="4\pi R_{F}\left(x,y,z\right)=\int_{0}^{2\pi}\!\!\!\!\int_{0}^{\pi}\frac{\sin%
+\theta\,\mathrm{d}\theta\,\mathrm{d}\phi}{(x{\sin}^{2}\theta{\cos}^{2}\phi+y{%
+\sin}^{2}\theta{\sin}^{2}\phi+z{\cos}^{2}\theta)^{1/2}}," display="block"><mrow><mrow><mrow><mn>4</mn><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>⁢</mo><mrow><msub><mi href="./19.16#E1" title="symmetric elliptic integral of first kind">R</mi><mi href="./19.16#E1" title="symmetric elliptic integral of first kind">F</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo>)</mo></mrow></mrow></mrow><mo rspace="0.111em">=</mo><mrow><msubsup><mo href="./1.4#iv" rspace="0em" title="integral">∫</mo><mn>0</mn><mrow><mn>2</mn><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></mrow></msubsup><mrow><msubsup><mo href="./1.4#iv" title="integral">∫</mo><mn>0</mn><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></msubsup><mfrac><mrow><mrow><mi href="./4.14#E1" title="sine function">sin</mi><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow><mo lspace="0em">⁢</mo><mrow><mo href="./1.4#iv" rspace="0em" title="differential of 𝑥">d</mo><mi>θ</mi></mrow><mo lspace="0em">⁢</mo><mrow><mo href="./1.4#iv" rspace="0em" title="differential of 𝑥">d</mo><mi href="./19.1#p1.t1.r2" title="real or complex argument">ϕ</mi></mrow></mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>x</mi><mo lspace="0.167em">⁢</mo><mrow><msup><mi href="./4.14#E1" title="sine function">sin</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow><mo lspace="0.167em">⁢</mo><mrow><msup><mi href="./4.14#E2" title="cosine function">cos</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi href="./19.1#p1.t1.r2" title="real or complex argument">ϕ</mi></mrow></mrow><mo>+</mo><mrow><mi>y</mi><mo lspace="0.167em">⁢</mo><mrow><msup><mi href="./4.14#E1" title="sine function">sin</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow><mo lspace="0.167em">⁢</mo><mrow><msup><mi href="./4.14#E1" title="sine function">sin</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi href="./19.1#p1.t1.r2" title="real or complex argument">ϕ</mi></mrow></mrow><mo>+</mo><mrow><mi>z</mi><mo lspace="0.167em">⁢</mo><mrow><msup><mi href="./4.14#E2" title="cosine function">cos</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow></mrow></mrow><mo stretchy="false">)</mo></mrow><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msup></mfrac></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E6.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./19.16#E1" title="(19.16.1) ‣ §19.16(i) Symmetric Integrals ‣ §19.16 Definitions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m4.png" altimg-height="25px" altimg-valign="-7px" altimg-width="105px" alttext="R_{F}\left(\NVar{x},\NVar{y},\NVar{z}\right)" display="inline"><mrow><msub><mi href="./19.16#E1" title="symmetric elliptic integral of first kind">R</mi><mi href="./19.16#E1" title="symmetric elliptic integral of first kind">F</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">x</mi><mo>,</mo><mi class="ltx_nvar">y</mi><mo>,</mo><mi class="ltx_nvar">z</mi><mo>)</mo></mrow></mrow></math>: symmetric elliptic integral of first kind</a>,
+<a href="./3.12#E1" title="(3.12.1) ‣ §3.12 Mathematical Constants ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m25.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="\pi" display="inline"><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></math>: the ratio of the circumference of a circle to its diameter</a>,
+<a href="./4.14#E2" title="(4.14.2) ‣ §4.14 Definitions and Periodicity ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m14.png" altimg-height="13px" altimg-valign="-2px" altimg-width="46px" alttext="\cos\NVar{z}" display="inline"><mrow><mi href="./4.14#E2" title="cosine function">cos</mi><mo lspace="0.167em">⁡</mo><mi class="ltx_nvar" href="./4.1#t1.r4" title="complex variable">z</mi></mrow></math>: cosine function</a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m23.png" altimg-height="18px" altimg-valign="-2px" altimg-width="28px" alttext="\,\mathrm{d}\NVar{x}" display="inline"><mrow><mo href="./1.4#iv" rspace="0em" title="differential of 𝑥">d</mo><mi class="ltx_nvar">x</mi></mrow></math>: differential of <math class="ltx_Math" altimg="m40.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m19.png" altimg-height="27px" altimg-valign="-8px" altimg-width="18px" alttext="\int" display="inline"><mo href="./1.4#iv" title="integral">∫</mo></math>: integral</a>,
+<a href="./4.14#E1" title="(4.14.1) ‣ §4.14 Definitions and Periodicity ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m27.png" altimg-height="18px" altimg-valign="-2px" altimg-width="44px" alttext="\sin\NVar{z}" display="inline"><mrow><mi href="./4.14#E1" title="sine function">sin</mi><mo lspace="0.167em">⁡</mo><mi class="ltx_nvar" href="./4.1#t1.r4" title="complex variable">z</mi></mrow></math>: sine function</a> and
+<a href="./19.1#p1.t1.r2" title="§19.1 Special Notation ‣ Notation ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m24.png" altimg-height="22px" altimg-valign="-6px" altimg-width="17px" alttext="\phi" display="inline"><mi href="./19.1#p1.t1.r2" title="real or complex argument">ϕ</mi></math>:  real or complex argument</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./19.16#ii.p1" title="§19.16(ii) 𝑅_{-𝑎}(𝐛;𝐳) ‣ §19.16 Definitions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.16(ii)</span></a>,
+<a href="./19.23#info" title="§19.23 Integral Representations ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.23</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./19.23.E6" title="" class="ltx_ref">http://dlmf.nist.gov/19.23.E6</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./19.23.E6.tex">TeX</a>, <a href="./19.23.E6.pmml">pMML</a>, <a href="./19.23.E6.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19.23#info" title="§19.23 Integral Representations ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.23</span></a> and
+<a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+<div id="p2" class="ltx_para">
+<table id="E6_5" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">19.23.6_5</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E6_5.png" altimg-height="98px" altimg-valign="-21px" altimg-width="694px" alttext="R_{G}\left(x,y,z\right)=\frac{1}{4\pi}\int_{0}^{2\pi}\!\!\!\!\int_{0}^{\pi}%
+\left(x{\sin}^{2}\theta{\cos}^{2}\phi+y{\sin}^{2}\theta{\sin}^{2}\phi+z{\cos}^%
+{2}\theta\right)^{1/2}\sin\theta\,\mathrm{d}\theta\,\mathrm{d}\phi," display="block"><mrow><mrow><mrow><msub><mi href="./19.16#E2_5" title="symmetric elliptic integral of second kind">R</mi><mi href="./19.16#E2_5" title="symmetric elliptic integral of second kind">G</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mfrac><mn>1</mn><mrow><mn>4</mn><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></mrow></mfrac><mo>⁢</mo><mrow><msubsup><mo href="./1.4#iv" rspace="0em" title="integral">∫</mo><mn>0</mn><mrow><mn>2</mn><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></mrow></msubsup><mrow><msubsup><mo href="./1.4#iv" rspace="0em" title="integral">∫</mo><mn>0</mn><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></msubsup><mrow><msup><mrow><mo>(</mo><mrow><mrow><mi>x</mi><mo lspace="0.167em">⁢</mo><mrow><msup><mi href="./4.14#E1" title="sine function">sin</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow><mo lspace="0.167em">⁢</mo><mrow><msup><mi href="./4.14#E2" title="cosine function">cos</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi href="./19.1#p1.t1.r2" title="real or complex argument">ϕ</mi></mrow></mrow><mo>+</mo><mrow><mi>y</mi><mo lspace="0.167em">⁢</mo><mrow><msup><mi href="./4.14#E1" title="sine function">sin</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow><mo lspace="0.167em">⁢</mo><mrow><msup><mi href="./4.14#E1" title="sine function">sin</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi href="./19.1#p1.t1.r2" title="real or complex argument">ϕ</mi></mrow></mrow><mo>+</mo><mrow><mi>z</mi><mo lspace="0.167em">⁢</mo><mrow><msup><mi href="./4.14#E2" title="cosine function">cos</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow></mrow></mrow><mo>)</mo></mrow><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msup><mo lspace="0.167em">⁢</mo><mrow><mi href="./4.14#E1" title="sine function">sin</mi><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow><mo lspace="0em">⁢</mo><mrow><mo href="./1.4#iv" rspace="0em" title="differential of 𝑥">d</mo><mi>θ</mi></mrow><mo lspace="0em">⁢</mo><mrow><mo href="./1.4#iv" rspace="0em" title="differential of 𝑥">d</mo><mi href="./19.1#p1.t1.r2" title="real or complex argument">ϕ</mi></mrow></mrow></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E6_5.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./19.16#E2_5" title="(19.16.2_5) ‣ §19.16(i) Symmetric Integrals ‣ §19.16 Definitions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m5.png" altimg-height="25px" altimg-valign="-7px" altimg-width="105px" alttext="R_{G}\left(\NVar{x},\NVar{y},\NVar{z}\right)" display="inline"><mrow><msub><mi href="./19.16#E2_5" title="symmetric elliptic integral of second kind">R</mi><mi href="./19.16#E2_5" title="symmetric elliptic integral of second kind">G</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">x</mi><mo>,</mo><mi class="ltx_nvar">y</mi><mo>,</mo><mi class="ltx_nvar">z</mi><mo>)</mo></mrow></mrow></math>: symmetric elliptic integral of second kind</a>,
+<a href="./3.12#E1" title="(3.12.1) ‣ §3.12 Mathematical Constants ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m25.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="\pi" display="inline"><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></math>: the ratio of the circumference of a circle to its diameter</a>,
+<a href="./4.14#E2" title="(4.14.2) ‣ §4.14 Definitions and Periodicity ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m14.png" altimg-height="13px" altimg-valign="-2px" altimg-width="46px" alttext="\cos\NVar{z}" display="inline"><mrow><mi href="./4.14#E2" title="cosine function">cos</mi><mo lspace="0.167em">⁡</mo><mi class="ltx_nvar" href="./4.1#t1.r4" title="complex variable">z</mi></mrow></math>: cosine function</a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m23.png" altimg-height="18px" altimg-valign="-2px" altimg-width="28px" alttext="\,\mathrm{d}\NVar{x}" display="inline"><mrow><mo href="./1.4#iv" rspace="0em" title="differential of 𝑥">d</mo><mi class="ltx_nvar">x</mi></mrow></math>: differential of <math class="ltx_Math" altimg="m40.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m19.png" altimg-height="27px" altimg-valign="-8px" altimg-width="18px" alttext="\int" display="inline"><mo href="./1.4#iv" title="integral">∫</mo></math>: integral</a>,
+<a href="./4.14#E1" title="(4.14.1) ‣ §4.14 Definitions and Periodicity ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m27.png" altimg-height="18px" altimg-valign="-2px" altimg-width="44px" alttext="\sin\NVar{z}" display="inline"><mrow><mi href="./4.14#E1" title="sine function">sin</mi><mo lspace="0.167em">⁡</mo><mi class="ltx_nvar" href="./4.1#t1.r4" title="complex variable">z</mi></mrow></math>: sine function</a> and
+<a href="./19.1#p1.t1.r2" title="§19.1 Special Notation ‣ Notation ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m24.png" altimg-height="22px" altimg-valign="-6px" altimg-width="17px" alttext="\phi" display="inline"><mi href="./19.1#p1.t1.r2" title="real or complex argument">ϕ</mi></math>:  real or complex argument</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./19.16#E3" title="In §19.16(i) Symmetric Integrals ‣ §19.16 Definitions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">(19.16.3)</span></a>,
+<a href="./19.16#E3.info" title="In §19.16(i) Symmetric Integrals ‣ §19.16 Definitions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">(19.16.3)</span></a>,
+<a href="./19.16#i.info" title="§19.16(i) Symmetric Integrals ‣ §19.16 Definitions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.16(i)</span></a>,
+<a href="./19.16#ii.info" title="§19.16(ii) 𝑅_{-𝑎}(𝐛;𝐳) ‣ §19.16 Definitions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.16(ii)</span></a>,
+<a href="./19.16#ii.p1" title="§19.16(ii) 𝑅_{-𝑎}(𝐛;𝐳) ‣ §19.16 Definitions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.16(ii)</span></a>,
+<a href="./19.20#ii.info" title="§19.20(ii) 𝑅_𝐺(𝑥,𝑦,𝑧) ‣ §19.20 Special Cases ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.20(ii)</span></a>,
+<a href="./19.23#info" title="§19.23 Integral Representations ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.23</span></a>,
+<a href="./19.23#p6" title="§19.23 Integral Representations ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.23</span></a>,
+<a href="./19.25#vi.info" title="§19.25(vi) Weierstrass Elliptic Functions ‣ §19.25 Relations to Other Functions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.25(vi)</span></a>,
+<a href="./errata/#V1.1.0.I2.ix2.p1" title="In Other Changes ‣ Version 1.1.0 (December 15, 2020) ‣ Errata" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Erratum (V1.1.0) for  Rearrangement</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./19.23.E6_5" title="" class="ltx_ref">http://dlmf.nist.gov/19.23.E6_5</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./19.23.E6_5.tex">TeX</a>, <a href="./19.23.E6_5.pmml">pMML</a>, <a href="./19.23.E6_5.png">png</a>
+</dd>
+<dt>Rearrangement (effective with 1.1.0):</dt>
+<dd>
+This equation, which was originally (<a href="./19.16#E3" title="(19.16.3) ‣ §19.16(i) Symmetric Integrals ‣ §19.16 Definitions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">19.16.3</span></a>), was moved here.
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19.23#info" title="§19.23 Integral Representations ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.23</span></a> and
+<a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">where <math class="ltx_Math" altimg="m40.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math>, <math class="ltx_Math" altimg="m41.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="y" display="inline"><mi>y</mi></math>, and <math class="ltx_Math" altimg="m43.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi>z</mi></math> have positive real parts—except that at most one of
+them may be 0.</p>
+</div>
+<div id="p3" class="ltx_para">
+<p class="ltx_p">In (<a href="./19.23#E8" title="(19.23.8) ‣ §19.23 Integral Representations ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">19.23.8</span></a>)–(<a href="./19.23#E10" title="(19.23.10) ‣ §19.23 Integral Representations ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">19.23.10</span></a>) one or more of the variables may
+be 0 if the integral converges. In (<a href="./19.23#E8" title="(19.23.8) ‣ §19.23 Integral Representations ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">19.23.8</span></a>) <math class="ltx_Math" altimg="m37.png" altimg-height="17px" altimg-valign="-2px" altimg-width="55px" alttext="n=2" display="inline"><mrow><mi href="./19.1#p1.t1.r1" title="nonnegative integer">n</mi><mo>=</mo><mn>2</mn></mrow></math>, and in
+(<a href="./19.23#E9" title="(19.23.9) ‣ §19.23 Integral Representations ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">19.23.9</span></a>) <math class="ltx_Math" altimg="m38.png" altimg-height="17px" altimg-valign="-2px" altimg-width="55px" alttext="n=3" display="inline"><mrow><mi href="./19.1#p1.t1.r1" title="nonnegative integer">n</mi><mo>=</mo><mn>3</mn></mrow></math>. Also, in (<a href="./19.23#E8" title="(19.23.8) ‣ §19.23 Integral Representations ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">19.23.8</span></a>) and (<a href="./19.23#E10" title="(19.23.10) ‣ §19.23 Integral Representations ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">19.23.10</span></a>)
+<math class="ltx_Math" altimg="m21.png" altimg-height="18px" altimg-valign="-2px" altimg-width="19px" alttext="\mathrm{B}" display="inline"><mi href="./5.12#E1" mathvariant="normal" title="beta function">B</mi></math> denotes the beta function (§<a href="./5.12" title="§5.12 Beta Function ‣ Properties ‣ Chapter 5 Gamma Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">5.12</span></a>).</p>
+</div>
+<div id="p4" class="ltx_para">
+<table id="E7" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="0" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">19.23.7</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><span class="ltx_text ltx_markedasmath">Moved to (<a href="./19.16#E2_5" title="(19.16.2_5) ‣ §19.16(i) Symmetric Integrals ‣ §19.16 Definitions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">19.16.2_5</span></a>).</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="3">
+<div id="E7.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./19.16#E2_5.info" title="In §19.16(i) Symmetric Integrals ‣ §19.16 Definitions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">(19.16.2_5)</span></a>,
+<a href="./19.16#i.info" title="§19.16(i) Symmetric Integrals ‣ §19.16 Definitions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.16(i)</span></a>,
+<a href="./19.23#info" title="§19.23 Integral Representations ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.23</span></a>,
+<a href="./errata/#V1.1.0.I2.ix2.p1" title="In Other Changes ‣ Version 1.1.0 (December 15, 2020) ‣ Errata" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Erratum (V1.1.0) for  Rearrangement</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./19.23.E7" title="" class="ltx_ref">http://dlmf.nist.gov/19.23.E7</a></dd>
+<dt>Rearrangement (effective with 1.1.0):</dt>
+<dd>
+This equation has been moved to (<a href="./19.16#E2_5" title="(19.16.2_5) ‣ §19.16(i) Symmetric Integrals ‣ §19.16 Definitions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">19.16.2_5</span></a>).
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19.23#info" title="§19.23 Integral Representations ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.23</span></a> and
+<a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<table id="E8" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">19.23.8</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_Math ltx_eqn_cell ltx_align_center"><math class="ltx_Math" alttext="R_{-a}\left(\mathbf{b};\mathbf{z}\right)=\frac{2}{\mathrm{B}\left(b_{1},b_{2}%
+\right)}\int_{0}^{\pi/2}{(z_{1}{\cos}^{2}\theta+z_{2}{\sin}^{2}\theta)}^{-a}\*%
+(\cos\theta)^{2b_{1}-1}(\sin\theta)^{2b_{2}-1}\,\mathrm{d}\theta," display="block"><mrow><mrow><msub><mi href="./19.16#E9" title="multivariate hypergeometric function">R</mi><mrow><mo>−</mo><mi>a</mi></mrow></msub><mo>⁡</mo><mrow><mo>(</mo><mi>𝐛</mi><mo>;</mo><mi>𝐳</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mfrac><mn>2</mn><mrow><mi href="./5.12#E1" mathvariant="normal" title="beta function">B</mi><mo>⁡</mo><mrow><mo>(</mo><msub><mi>b</mi><mn>1</mn></msub><mo>,</mo><msub><mi>b</mi><mn>2</mn></msub><mo>)</mo></mrow></mrow></mfrac><mo>⁢</mo><mrow><msubsup><mo href="./1.4#iv" rspace="0em" title="integral">∫</mo><mn>0</mn><mrow><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>/</mo><mn>2</mn></mrow></msubsup><mrow><mtable align="baseline 1" columnalign="left" displaystyle="true"><mtr><mtd class="ltx_align_left"><msup><mrow><mo stretchy="false">(</mo><mrow><mrow><msub><mi>z</mi><mn>1</mn></msub><mo lspace="0.167em">⁢</mo><mrow><msup><mi href="./4.14#E2" title="cosine function">cos</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow></mrow><mo>+</mo><mrow><msub><mi>z</mi><mn>2</mn></msub><mo lspace="0.167em">⁢</mo><mrow><msup><mi href="./4.14#E1" title="sine function">sin</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow></mrow></mrow><mo stretchy="false">)</mo></mrow><mrow><mo>−</mo><mi>a</mi></mrow></msup></mtd></mtr><mtr><mtd class="ltx_align_left"><mspace style="width:2em;" width="2em"></mspace><mo>×</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi href="./4.14#E2" title="cosine function">cos</mi><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mrow><mn>2</mn><mo>⁢</mo><msub><mi>b</mi><mn>1</mn></msub></mrow><mo>−</mo><mn>1</mn></mrow></msup><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi href="./4.14#E1" title="sine function">sin</mi><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mrow><mn>2</mn><mo>⁢</mo><msub><mi>b</mi><mn>2</mn></msub></mrow><mo>−</mo><mn>1</mn></mrow></msup><mo lspace="0em">⁢</mo><mrow><mo href="./1.4#iv" rspace="0em" title="differential of 𝑥">d</mo><mi>θ</mi></mrow><mo>,</mo></mtd></mtr></mtable></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="4"><span class="ltx_constraint"><math class="ltx_Math" altimg="m33.png" altimg-height="22px" altimg-valign="-6px" altimg-width="88px" alttext="b_{1},b_{2}&gt;0" display="inline"><mrow><mrow><msub><mi>b</mi><mn>1</mn></msub><mo>,</mo><msub><mi>b</mi><mn>2</mn></msub></mrow><mo>&gt;</mo><mn>0</mn></mrow></math>; <math class="ltx_Math" altimg="m11.png" altimg-height="22px" altimg-valign="-6px" altimg-width="119px" alttext="\Re z_{1},\Re z_{2}&gt;0" display="inline"><mrow><mrow><mrow><mi href="./1.9#E2" mathvariant="normal" title="real part">ℜ</mi><mo lspace="0.167em">⁡</mo><msub><mi>z</mi><mn>1</mn></msub></mrow><mo>,</mo><mrow><mi href="./1.9#E2" mathvariant="normal" title="real part">ℜ</mi><mo lspace="0.167em">⁡</mo><msub><mi>z</mi><mn>2</mn></msub></mrow></mrow><mo>&gt;</mo><mn>0</mn></mrow></math>.</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E8.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./19.16#E9" title="(19.16.9) ‣ §19.16(ii) 𝑅_{-𝑎}(𝐛;𝐳) ‣ §19.16 Definitions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m7.png" altimg-height="25px" altimg-valign="-7px" altimg-width="242px" alttext="R_{\NVar{-a}}\left(\NVar{b_{1}},\dots,\NVar{b_{n}};\NVar{z_{1}},\dots,\NVar{z_%
+{n}}\right)" display="inline"><mrow><msub><mi href="./19.16#E9" title="multivariate hypergeometric function">R</mi><mrow><mo class="ltx_nvar">−</mo><mi class="ltx_nvar">a</mi></mrow></msub><mo>⁡</mo><mrow><mo>(</mo><mrow><msub><mi class="ltx_nvar">b</mi><mn class="ltx_nvar">1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi class="ltx_nvar">b</mi><mi class="ltx_nvar" href="./19.1#p1.t1.r1" title="nonnegative integer">n</mi></msub></mrow><mo>;</mo><mrow><msub><mi class="ltx_nvar">z</mi><mn class="ltx_nvar">1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi class="ltx_nvar">z</mi><mi class="ltx_nvar" href="./19.1#p1.t1.r1" title="nonnegative integer">n</mi></msub></mrow><mo>)</mo></mrow></mrow></math> or <math class="ltx_Math" altimg="m6.png" altimg-height="25px" altimg-valign="-7px" altimg-width="96px" alttext="R_{\NVar{-a}}\left(\NVar{\mathbf{b}};\NVar{\mathbf{z}}\right)" display="inline"><mrow><msub><mi href="./19.16#E9" title="multivariate hypergeometric function">R</mi><mrow><mo class="ltx_nvar">−</mo><mi class="ltx_nvar">a</mi></mrow></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">𝐛</mi><mo>;</mo><mi class="ltx_nvar">𝐳</mi><mo>)</mo></mrow></mrow></math>: multivariate hypergeometric function</a>,
+<a href="./5.12#E1" title="(5.12.1) ‣ Euler’s Beta Integral ‣ §5.12 Beta Function ‣ Properties ‣ Chapter 5 Gamma Function" class="ltx_ref"><math class="ltx_Math" altimg="m22.png" altimg-height="25px" altimg-valign="-7px" altimg-width="68px" alttext="\mathrm{B}\left(\NVar{a},\NVar{b}\right)" display="inline"><mrow><mi href="./5.12#E1" mathvariant="normal" title="beta function">B</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./5.1#t1.r5" title="real or complex variable">a</mi><mo>,</mo><mi class="ltx_nvar" href="./5.1#t1.r5" title="real or complex variable">b</mi><mo>)</mo></mrow></mrow></math>: beta function</a>,
+<a href="./3.12#E1" title="(3.12.1) ‣ §3.12 Mathematical Constants ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m25.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="\pi" display="inline"><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></math>: the ratio of the circumference of a circle to its diameter</a>,
+<a href="./4.14#E2" title="(4.14.2) ‣ §4.14 Definitions and Periodicity ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m14.png" altimg-height="13px" altimg-valign="-2px" altimg-width="46px" alttext="\cos\NVar{z}" display="inline"><mrow><mi href="./4.14#E2" title="cosine function">cos</mi><mo lspace="0.167em">⁡</mo><mi class="ltx_nvar" href="./4.1#t1.r4" title="complex variable">z</mi></mrow></math>: cosine function</a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m23.png" altimg-height="18px" altimg-valign="-2px" altimg-width="28px" alttext="\,\mathrm{d}\NVar{x}" display="inline"><mrow><mo href="./1.4#iv" rspace="0em" title="differential of 𝑥">d</mo><mi class="ltx_nvar">x</mi></mrow></math>: differential of <math class="ltx_Math" altimg="m40.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m19.png" altimg-height="27px" altimg-valign="-8px" altimg-width="18px" alttext="\int" display="inline"><mo href="./1.4#iv" title="integral">∫</mo></math>: integral</a>,
+<a href="./1.9#E2" title="(1.9.2) ‣ Real and Imaginary Parts ‣ §1.9(i) Complex Numbers ‣ §1.9 Calculus of a Complex Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m13.png" altimg-height="18px" altimg-valign="-2px" altimg-width="19px" alttext="\Re" display="inline"><mrow><mi href="./1.9#E2" mathvariant="normal" title="real part">ℜ</mi><mo>⁡</mo></mrow></math>: real part</a> and
+<a href="./4.14#E1" title="(4.14.1) ‣ §4.14 Definitions and Periodicity ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m27.png" altimg-height="18px" altimg-valign="-2px" altimg-width="44px" alttext="\sin\NVar{z}" display="inline"><mrow><mi href="./4.14#E1" title="sine function">sin</mi><mo lspace="0.167em">⁡</mo><mi class="ltx_nvar" href="./4.1#t1.r4" title="complex variable">z</mi></mrow></math>: sine function</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./19.2#iv.info" title="§19.2(iv) A Related Function: 𝑅_𝐶(𝑥,𝑦) ‣ §19.2 Definitions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.2(iv)</span></a>,
+<a href="./19.23#info" title="§19.23 Integral Representations ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.23</span></a>,
+<a href="./19.23#p3" title="§19.23 Integral Representations ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.23</span></a>,
+<a href="./19.23#p6" title="§19.23 Integral Representations ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.23</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./19.23.E8" title="" class="ltx_ref">http://dlmf.nist.gov/19.23.E8</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./19.23.E8.tex">TeX</a>, <a href="./19.23.E8.pmml">pMML</a>, <a href="./19.23.E8.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19.23#info" title="§19.23 Integral Representations ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.23</span></a> and
+<a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+<div id="p5" class="ltx_para">
+<p class="ltx_p">With <math class="ltx_Math" altimg="m36.png" altimg-height="22px" altimg-valign="-6px" altimg-width="69px" alttext="l_{1},l_{2},l_{3}" display="inline"><mrow><msub><mi href="./19.1#p1.t1.r1" title="nonnegative integer">l</mi><mn>1</mn></msub><mo>,</mo><msub><mi href="./19.1#p1.t1.r1" title="nonnegative integer">l</mi><mn>2</mn></msub><mo>,</mo><msub><mi href="./19.1#p1.t1.r1" title="nonnegative integer">l</mi><mn>3</mn></msub></mrow></math> denoting any permutation of <math class="ltx_Math" altimg="m28.png" altimg-height="22px" altimg-valign="-6px" altimg-width="91px" alttext="\sin\theta\cos\phi" display="inline"><mrow><mrow><mi href="./4.14#E1" title="sine function">sin</mi><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow><mo lspace="0.167em">⁢</mo><mrow><mi href="./4.14#E2" title="cosine function">cos</mi><mo lspace="0.167em">⁡</mo><mi href="./19.1#p1.t1.r2" title="real or complex argument">ϕ</mi></mrow></mrow></math>,
+<math class="ltx_Math" altimg="m29.png" altimg-height="22px" altimg-valign="-6px" altimg-width="88px" alttext="\sin\theta\sin\phi" display="inline"><mrow><mrow><mi href="./4.14#E1" title="sine function">sin</mi><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow><mo lspace="0.167em">⁢</mo><mrow><mi href="./4.14#E1" title="sine function">sin</mi><mo lspace="0.167em">⁡</mo><mi href="./19.1#p1.t1.r2" title="real or complex argument">ϕ</mi></mrow></mrow></math>, <math class="ltx_Math" altimg="m16.png" altimg-height="18px" altimg-valign="-2px" altimg-width="46px" alttext="\cos\theta" display="inline"><mrow><mi href="./4.14#E2" title="cosine function">cos</mi><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow></math>,</p>
+<table id="E9" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">19.23.9</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E9.png" altimg-height="125px" altimg-valign="-34px" altimg-width="697px" alttext="R_{-a}\left(\mathbf{b};\mathbf{z}\right)=\frac{4\Gamma\left(b_{1}+b_{2}+b_{3}%
+\right)}{\Gamma\left(b_{1}\right)\Gamma\left(b_{2}\right)\Gamma\left(b_{3}%
+\right)}\int_{0}^{\pi/2}\!\!\!\!\int_{0}^{\pi/2}\left(\sum_{j=1}^{3}z_{j}l_{j}%
+^{2}\right)^{-a}\*\prod_{j=1}^{3}l_{j}^{2b_{j}-1}\sin\theta\,\mathrm{d}\theta%
+\,\mathrm{d}\phi," display="block"><mrow><mrow><mrow><msub><mi href="./19.16#E9" title="multivariate hypergeometric function">R</mi><mrow><mo>−</mo><mi>a</mi></mrow></msub><mo>⁡</mo><mrow><mo>(</mo><mi>𝐛</mi><mo>;</mo><mi>𝐳</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mfrac><mrow><mn>4</mn><mo>⁢</mo><mrow><mi href="./5.2#E1" mathvariant="normal" title="gamma function">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><msub><mi>b</mi><mn>1</mn></msub><mo>+</mo><msub><mi>b</mi><mn>2</mn></msub><mo>+</mo><msub><mi>b</mi><mn>3</mn></msub></mrow><mo>)</mo></mrow></mrow></mrow><mrow><mrow><mi href="./5.2#E1" mathvariant="normal" title="gamma function">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><msub><mi>b</mi><mn>1</mn></msub><mo>)</mo></mrow></mrow><mo>⁢</mo><mrow><mi href="./5.2#E1" mathvariant="normal" title="gamma function">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><msub><mi>b</mi><mn>2</mn></msub><mo>)</mo></mrow></mrow><mo>⁢</mo><mrow><mi href="./5.2#E1" mathvariant="normal" title="gamma function">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><msub><mi>b</mi><mn>3</mn></msub><mo>)</mo></mrow></mrow></mrow></mfrac><mo>⁢</mo><mrow><msubsup><mo href="./1.4#iv" rspace="0em" title="integral">∫</mo><mn>0</mn><mrow><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>/</mo><mn>2</mn></mrow></msubsup><mrow><msubsup><mo href="./1.4#iv" rspace="0em" title="integral">∫</mo><mn>0</mn><mrow><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>/</mo><mn>2</mn></mrow></msubsup><mrow><msup><mrow><mo>(</mo><mrow><munderover><mo lspace="0em" movablelimits="false">∑</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mn>3</mn></munderover><mrow><msub><mi>z</mi><mi>j</mi></msub><mo>⁢</mo><msubsup><mi href="./19.1#p1.t1.r1" title="nonnegative integer">l</mi><mi>j</mi><mn>2</mn></msubsup></mrow></mrow><mo>)</mo></mrow><mrow><mo>−</mo><mi>a</mi></mrow></msup><mo>⁢</mo><mrow><munderover><mo movablelimits="false">∏</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mn>3</mn></munderover><mrow><msubsup><mi href="./19.1#p1.t1.r1" title="nonnegative integer">l</mi><mi>j</mi><mrow><mrow><mn>2</mn><mo>⁢</mo><msub><mi>b</mi><mi>j</mi></msub></mrow><mo>−</mo><mn>1</mn></mrow></msubsup><mo lspace="0.167em">⁢</mo><mrow><mi href="./4.14#E1" title="sine function">sin</mi><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow><mo lspace="0em">⁢</mo><mrow><mo href="./1.4#iv" rspace="0em" title="differential of 𝑥">d</mo><mi>θ</mi></mrow><mo lspace="0em">⁢</mo><mrow><mo href="./1.4#iv" rspace="0em" title="differential of 𝑥">d</mo><mi href="./19.1#p1.t1.r2" title="real or complex argument">ϕ</mi></mrow></mrow></mrow></mrow></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="4"><span class="ltx_constraint"><math class="ltx_Math" altimg="m34.png" altimg-height="24px" altimg-valign="-8px" altimg-width="60px" alttext="b_{j}&gt;0" display="inline"><mrow><msub><mi>b</mi><mi>j</mi></msub><mo>&gt;</mo><mn>0</mn></mrow></math>, <math class="ltx_Math" altimg="m12.png" altimg-height="24px" altimg-valign="-8px" altimg-width="76px" alttext="\Re z_{j}&gt;0" display="inline"><mrow><mrow><mi href="./1.9#E2" mathvariant="normal" title="real part">ℜ</mi><mo lspace="0.167em">⁡</mo><msub><mi>z</mi><mi>j</mi></msub></mrow><mo>&gt;</mo><mn>0</mn></mrow></math>.</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E9.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./19.16#E9" title="(19.16.9) ‣ §19.16(ii) 𝑅_{-𝑎}(𝐛;𝐳) ‣ §19.16 Definitions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m7.png" altimg-height="25px" altimg-valign="-7px" altimg-width="242px" alttext="R_{\NVar{-a}}\left(\NVar{b_{1}},\dots,\NVar{b_{n}};\NVar{z_{1}},\dots,\NVar{z_%
+{n}}\right)" display="inline"><mrow><msub><mi href="./19.16#E9" title="multivariate hypergeometric function">R</mi><mrow><mo class="ltx_nvar">−</mo><mi class="ltx_nvar">a</mi></mrow></msub><mo>⁡</mo><mrow><mo>(</mo><mrow><msub><mi class="ltx_nvar">b</mi><mn class="ltx_nvar">1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi class="ltx_nvar">b</mi><mi class="ltx_nvar" href="./19.1#p1.t1.r1" title="nonnegative integer">n</mi></msub></mrow><mo>;</mo><mrow><msub><mi class="ltx_nvar">z</mi><mn class="ltx_nvar">1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi class="ltx_nvar">z</mi><mi class="ltx_nvar" href="./19.1#p1.t1.r1" title="nonnegative integer">n</mi></msub></mrow><mo>)</mo></mrow></mrow></math> or <math class="ltx_Math" altimg="m6.png" altimg-height="25px" altimg-valign="-7px" altimg-width="96px" alttext="R_{\NVar{-a}}\left(\NVar{\mathbf{b}};\NVar{\mathbf{z}}\right)" display="inline"><mrow><msub><mi href="./19.16#E9" title="multivariate hypergeometric function">R</mi><mrow><mo class="ltx_nvar">−</mo><mi class="ltx_nvar">a</mi></mrow></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">𝐛</mi><mo>;</mo><mi class="ltx_nvar">𝐳</mi><mo>)</mo></mrow></mrow></math>: multivariate hypergeometric function</a>,
+<a href="./5.2#E1" title="(5.2.1) ‣ Euler’s Integral ‣ §5.2(i) Gamma and Psi Functions ‣ §5.2 Definitions ‣ Properties ‣ Chapter 5 Gamma Function" class="ltx_ref"><math class="ltx_Math" altimg="m8.png" altimg-height="25px" altimg-valign="-7px" altimg-width="47px" alttext="\Gamma\left(\NVar{z}\right)" display="inline"><mrow><mi href="./5.2#E1" mathvariant="normal" title="gamma function">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./5.1#t1.r4" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: gamma function</a>,
+<a href="./3.12#E1" title="(3.12.1) ‣ §3.12 Mathematical Constants ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m25.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="\pi" display="inline"><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></math>: the ratio of the circumference of a circle to its diameter</a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m23.png" altimg-height="18px" altimg-valign="-2px" altimg-width="28px" alttext="\,\mathrm{d}\NVar{x}" display="inline"><mrow><mo href="./1.4#iv" rspace="0em" title="differential of 𝑥">d</mo><mi class="ltx_nvar">x</mi></mrow></math>: differential of <math class="ltx_Math" altimg="m40.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m19.png" altimg-height="27px" altimg-valign="-8px" altimg-width="18px" alttext="\int" display="inline"><mo href="./1.4#iv" title="integral">∫</mo></math>: integral</a>,
+<a href="./1.9#E2" title="(1.9.2) ‣ Real and Imaginary Parts ‣ §1.9(i) Complex Numbers ‣ §1.9 Calculus of a Complex Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m13.png" altimg-height="18px" altimg-valign="-2px" altimg-width="19px" alttext="\Re" display="inline"><mrow><mi href="./1.9#E2" mathvariant="normal" title="real part">ℜ</mi><mo>⁡</mo></mrow></math>: real part</a>,
+<a href="./4.14#E1" title="(4.14.1) ‣ §4.14 Definitions and Periodicity ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m27.png" altimg-height="18px" altimg-valign="-2px" altimg-width="44px" alttext="\sin\NVar{z}" display="inline"><mrow><mi href="./4.14#E1" title="sine function">sin</mi><mo lspace="0.167em">⁡</mo><mi class="ltx_nvar" href="./4.1#t1.r4" title="complex variable">z</mi></mrow></math>: sine function</a>,
+<a href="./19.1#p1.t1.r1" title="§19.1 Special Notation ‣ Notation ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m35.png" altimg-height="18px" altimg-valign="-2px" altimg-width="11px" alttext="l" display="inline"><mi href="./19.1#p1.t1.r1" title="nonnegative integer">l</mi></math>:  nonnegative integer</a> and
+<a href="./19.1#p1.t1.r2" title="§19.1 Special Notation ‣ Notation ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m24.png" altimg-height="22px" altimg-valign="-6px" altimg-width="17px" alttext="\phi" display="inline"><mi href="./19.1#p1.t1.r2" title="real or complex argument">ϕ</mi></math>:  real or complex argument</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./19.23#info" title="§19.23 Integral Representations ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.23</span></a>,
+<a href="./19.23#p3" title="§19.23 Integral Representations ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.23</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./19.23.E9" title="" class="ltx_ref">http://dlmf.nist.gov/19.23.E9</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./19.23.E9.tex">TeX</a>, <a href="./19.23.E9.pmml">pMML</a>, <a href="./19.23.E9.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19.23#info" title="§19.23 Integral Representations ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.23</span></a> and
+<a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<table id="E10" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">19.23.10</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E10.png" altimg-height="76px" altimg-valign="-31px" altimg-width="697px" alttext="R_{-a}\left(\mathbf{b};\mathbf{z}\right)=\frac{1}{\mathrm{B}\left(a,a^{\prime}%
+\right)}\int_{0}^{1}u^{a-1}(1-u)^{a^{\prime}-1}\*\prod_{j=1}^{n}(1-u+uz_{j})^{%
+-b_{j}}\,\mathrm{d}u," display="block"><mrow><mrow><mrow><msub><mi href="./19.16#E9" title="multivariate hypergeometric function">R</mi><mrow><mo>−</mo><mi>a</mi></mrow></msub><mo>⁡</mo><mrow><mo>(</mo><mi>𝐛</mi><mo>;</mo><mi>𝐳</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mfrac><mn>1</mn><mrow><mi href="./5.12#E1" mathvariant="normal" title="beta function">B</mi><mo>⁡</mo><mrow><mo>(</mo><mi>a</mi><mo>,</mo><msup><mi>a</mi><mo>′</mo></msup><mo>)</mo></mrow></mrow></mfrac><mo>⁢</mo><mrow><msubsup><mo href="./1.4#iv" title="integral">∫</mo><mn>0</mn><mn>1</mn></msubsup><mrow><msup><mi>u</mi><mrow><mi>a</mi><mo>−</mo><mn>1</mn></mrow></msup><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>−</mo><mi>u</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><msup><mi>a</mi><mo>′</mo></msup><mo>−</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mrow><munderover><mo movablelimits="false" rspace="0em">∏</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mi href="./19.1#p1.t1.r1" title="nonnegative integer">n</mi></munderover><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>1</mn><mo>−</mo><mi>u</mi></mrow><mo>+</mo><mrow><mi>u</mi><mo>⁢</mo><msub><mi>z</mi><mi>j</mi></msub></mrow></mrow><mo stretchy="false">)</mo></mrow><mrow><mo>−</mo><msub><mi>b</mi><mi>j</mi></msub></mrow></msup><mo lspace="0em">⁢</mo><mrow><mo href="./1.4#iv" rspace="0em" title="differential of 𝑥">d</mo><mi>u</mi></mrow></mrow></mrow></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="4"><span class="ltx_constraint"><math class="ltx_Math" altimg="m32.png" altimg-height="24px" altimg-valign="-6px" altimg-width="79px" alttext="a,a^{\prime}&gt;0" display="inline"><mrow><mrow><mi>a</mi><mo>,</mo><msup><mi>a</mi><mo>′</mo></msup></mrow><mo>&gt;</mo><mn>0</mn></mrow></math>; <math class="ltx_Math" altimg="m31.png" altimg-height="30px" altimg-valign="-11px" altimg-width="158px" alttext="a+a^{\prime}=\sum_{j=1}^{n}b_{j}" display="inline"><mrow><mrow><mi>a</mi><mo>+</mo><msup><mi>a</mi><mo>′</mo></msup></mrow><mo rspace="0.111em">=</mo><mrow><msubsup><mo>∑</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mi href="./19.1#p1.t1.r1" title="nonnegative integer">n</mi></msubsup><msub><mi>b</mi><mi>j</mi></msub></mrow></mrow></math>;
+<math class="ltx_Math" altimg="m44.png" altimg-height="26px" altimg-valign="-8px" altimg-width="153px" alttext="z_{j}\in\mathbb{C}\setminus(-\infty,0]" display="inline"><mrow><msub><mi>z</mi><mi>j</mi></msub><mo href="./front/introduction#common.t1.r10" title="element of">∈</mo><mrow><mi href="./front/introduction#common.t1.r1" title="complex plane">ℂ</mi><mo href="./front/introduction#common.t2.r19" title="set subtraction">∖</mo><mrow><mo href="./front/introduction#common.t2.r1" stretchy="false" title="half-closed interval">(</mo><mrow><mo>−</mo><mi mathvariant="normal">∞</mi></mrow><mo href="./front/introduction#common.t2.r1" title="half-closed interval">,</mo><mn>0</mn><mo href="./front/introduction#common.t2.r1" stretchy="false" title="half-closed interval">]</mo></mrow></mrow></mrow></math>.</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E10.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./19.16#E9" title="(19.16.9) ‣ §19.16(ii) 𝑅_{-𝑎}(𝐛;𝐳) ‣ §19.16 Definitions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m7.png" altimg-height="25px" altimg-valign="-7px" altimg-width="242px" alttext="R_{\NVar{-a}}\left(\NVar{b_{1}},\dots,\NVar{b_{n}};\NVar{z_{1}},\dots,\NVar{z_%
+{n}}\right)" display="inline"><mrow><msub><mi href="./19.16#E9" title="multivariate hypergeometric function">R</mi><mrow><mo class="ltx_nvar">−</mo><mi class="ltx_nvar">a</mi></mrow></msub><mo>⁡</mo><mrow><mo>(</mo><mrow><msub><mi class="ltx_nvar">b</mi><mn class="ltx_nvar">1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi class="ltx_nvar">b</mi><mi class="ltx_nvar" href="./19.1#p1.t1.r1" title="nonnegative integer">n</mi></msub></mrow><mo>;</mo><mrow><msub><mi class="ltx_nvar">z</mi><mn class="ltx_nvar">1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi class="ltx_nvar">z</mi><mi class="ltx_nvar" href="./19.1#p1.t1.r1" title="nonnegative integer">n</mi></msub></mrow><mo>)</mo></mrow></mrow></math> or <math class="ltx_Math" altimg="m6.png" altimg-height="25px" altimg-valign="-7px" altimg-width="96px" alttext="R_{\NVar{-a}}\left(\NVar{\mathbf{b}};\NVar{\mathbf{z}}\right)" display="inline"><mrow><msub><mi href="./19.16#E9" title="multivariate hypergeometric function">R</mi><mrow><mo class="ltx_nvar">−</mo><mi class="ltx_nvar">a</mi></mrow></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">𝐛</mi><mo>;</mo><mi class="ltx_nvar">𝐳</mi><mo>)</mo></mrow></mrow></math>: multivariate hypergeometric function</a>,
+<a href="./5.12#E1" title="(5.12.1) ‣ Euler’s Beta Integral ‣ §5.12 Beta Function ‣ Properties ‣ Chapter 5 Gamma Function" class="ltx_ref"><math class="ltx_Math" altimg="m22.png" altimg-height="25px" altimg-valign="-7px" altimg-width="68px" alttext="\mathrm{B}\left(\NVar{a},\NVar{b}\right)" display="inline"><mrow><mi href="./5.12#E1" mathvariant="normal" title="beta function">B</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./5.1#t1.r5" title="real or complex variable">a</mi><mo>,</mo><mi class="ltx_nvar" href="./5.1#t1.r5" title="real or complex variable">b</mi><mo>)</mo></mrow></mrow></math>: beta function</a>,
+<a href="./front/introduction#common.t1.r1" title="Common Notations and Definitions ‣ Mathematical Introduction" class="ltx_ref"><math class="ltx_Math" altimg="m20.png" altimg-height="18px" altimg-valign="-2px" altimg-width="19px" alttext="\mathbb{C}" display="inline"><mi href="./front/introduction#common.t1.r1" title="complex plane">ℂ</mi></math>: complex plane</a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m23.png" altimg-height="18px" altimg-valign="-2px" altimg-width="28px" alttext="\,\mathrm{d}\NVar{x}" display="inline"><mrow><mo href="./1.4#iv" rspace="0em" title="differential of 𝑥">d</mo><mi class="ltx_nvar">x</mi></mrow></math>: differential of <math class="ltx_Math" altimg="m40.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./front/introduction#common.t1.r10" title="Common Notations and Definitions ‣ Mathematical Introduction" class="ltx_ref"><math class="ltx_Math" altimg="m18.png" altimg-height="16px" altimg-valign="-3px" altimg-width="18px" alttext="\in" display="inline"><mo href="./front/introduction#common.t1.r10" title="element of">∈</mo></math>: element of</a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m19.png" altimg-height="27px" altimg-valign="-8px" altimg-width="18px" alttext="\int" display="inline"><mo href="./1.4#iv" title="integral">∫</mo></math>: integral</a>,
+<a href="./front/introduction#common.t2.r1" title="Common Notations and Definitions ‣ Mathematical Introduction" class="ltx_ref"><math class="ltx_Math" altimg="m1.png" altimg-height="25px" altimg-valign="-7px" altimg-width="47px" alttext="(\NVar{a},\NVar{b}]" display="inline"><mrow><mo href="./front/introduction#common.t2.r1" stretchy="false" title="half-closed interval">(</mo><mi class="ltx_nvar">a</mi><mo href="./front/introduction#common.t2.r1" title="half-closed interval">,</mo><mi class="ltx_nvar">b</mi><mo href="./front/introduction#common.t2.r1" stretchy="false" title="half-closed interval">]</mo></mrow></math>: half-closed interval</a>,
+<a href="./front/introduction#common.t2.r19" title="Common Notations and Definitions ‣ Mathematical Introduction" class="ltx_ref"><math class="ltx_Math" altimg="m26.png" altimg-height="25px" altimg-valign="-7px" altimg-width="15px" alttext="\setminus" display="inline"><mo href="./front/introduction#common.t2.r19" title="set subtraction">∖</mo></math>: set subtraction</a> and
+<a href="./19.1#p1.t1.r1" title="§19.1 Special Notation ‣ Notation ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m39.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./19.1#p1.t1.r1" title="nonnegative integer">n</mi></math>:  nonnegative integer</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./19.19#info" title="§19.19 Taylor and Related Series ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.19</span></a>,
+<a href="./19.23#info" title="§19.23 Integral Representations ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.23</span></a>,
+<a href="./19.23#p3" title="§19.23 Integral Representations ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.23</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./19.23.E10" title="" class="ltx_ref">http://dlmf.nist.gov/19.23.E10</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./19.23.E10.tex">TeX</a>, <a href="./19.23.E10.pmml">pMML</a>, <a href="./19.23.E10.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19.23#info" title="§19.23 Integral Representations ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.23</span></a> and
+<a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+<div id="p6" class="ltx_para">
+<p class="ltx_p">For generalizations of (<a href="./19.23#E6_5" title="(19.23.6_5) ‣ §19.23 Integral Representations ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">19.23.6_5</span></a>) and (<a href="./19.23#E8" title="(19.23.8) ‣ §19.23 Integral Representations ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">19.23.8</span></a>) see
+<cite class="ltx_cite ltx_citemacro_citet">Carlson (<a href="./bib/C#bib427" title="Normal elliptic integrals of the first and second kinds" class="ltx_ref">1964</a>, (6.2), (6.12), and (6.1))</cite>.</p>
+</div>
+</section>
+</div>
+<div class="ltx_page_footer">
+<div class="ltx_siblings">
+<a href="./19.22" title="In Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">19.22 </span>Quadratic Transformations</span></a><a href="./19.24" title="In Symmetric Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">19.24 </span>Inequalities</span></a>
+</div>
+<div class="ltx_footer_links ltx_centering">
+<a href="./about/notices">© 2010–2026 NIST</a> / <a href="./about/notices#S2">Disclaimer</a> / <a href="/cdn-cgi/l/email-protection#1e5a52535833787b7b7a7c7f7d755e70776d6a30797168">Feedback</a>;
+ Version 1.2.7;
+Release date 2026-06-15.</div>
+<span id="pagesettings"></span>
+<div class="ltx_nist_logo"><a href="http://www.nist.gov/"><img src="./style/nistidc.png" width="500" alt="NIST"></a></div>
+<div class="ltx_nist_links ltx_align_right">
+<a href="https://www.nist.gov/privacy-policy">Site Privacy</a> <a href="https://www.nist.gov/oism/accessibility">Accessibility</a> <a href="https://www.nist.gov/privacy">Privacy Program</a> <a href="https://www.nist.gov/oism/copyrights">Copyrights</a> <a href="https://www.commerce.gov/vulnerability-disclosure-policy">Vulnerability Disclosure</a> <a href="https://www.nist.gov/no-fear-act-policy">No Fear Act Policy</a> <a href="https://www.nist.gov/foia">FOIA</a> <a href="https://www.nist.gov/environmental-policy-statement">Environmental Policy</a> <a href="https://www.nist.gov/summary-report-scientific-integrity">Scientific Integrity</a> <a href="https://www.nist.gov/nist-information-quality-standards">Information Quality Standards</a> <a href="https://www.commerce.gov/">Commerce.gov</a> <a href="http://www.science.gov/">Science.gov</a> <a href="http://www.usa.gov/">USA.gov</a>
+</div>
+</div>
+</div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"9ef5b487afff42a68917b2d63593a474"}' crossorigin="anonymous"></script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a30b64ceadecb15a',t:'MTc4NzY2OTI2NQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

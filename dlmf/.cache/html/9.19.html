@@ -1,0 +1,355 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>DLMF: §9.19 Approximations ‣ Computation ‣ Chapter 9 Airy and Related Functions</title>
+<link rel="shortcut icon" href="./style/DLMF-16.png" type="image/png">
+<script type="text/javascript"><!--
+	var PATH="DLMF:/9.19";
+	var ROOT="./";
+      //--></script>
+<script type="text/javascript" src="./style/jquery.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/jquery.leaveNotice.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/DLMF.js"><!-- non-empty so ie6 will accept it --></script>
+<script async="" type="text/javascript" id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC&amp;subagency=NIST&amp;pua=UA-37115410-44&amp;yt=true&amp;exts=ppsx,pps,f90,sch,rtf,wrl,txz,m1v,xlsm,msi,xsd,f,tif,eps,mpg,xml,pl,xlt,c"><!-- non-empty so ie6 will accept it --></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-BZB64W4M0L"></script><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-BZB64W4M0L');
+      </script>
+<link rel="stylesheet" type="text/css" href="./style/LaTeXML.css">
+<link rel="stylesheet" type="text/css" href="./style/DLMF.css">
+<link rel="stylesheet" type="text/css" href="./style/print.css" media="print">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="top" href="./" title="DLMF">
+<link rel="copyright" href="./about/notices" title="Copyright">
+<link rel="search" href="./search/search" title="Search">
+<link rel="help" class="ltx_help" href="./help/" title="Help">
+<link rel="up" href="./9#PT5" title="Computation ‣ Chapter 9 Airy and Related Functions">
+<link rel="up up" href="./9" title="Chapter 9 Airy and Related Functions">
+<link rel="start" href="./" title="">
+<link rel="prev" href="./9.18" title="§9.18 Tables ‣ Computation ‣ Chapter 9 Airy and Related Functions">
+<link rel="next" href="./9.20" title="§9.20 Software ‣ Computation ‣ Chapter 9 Airy and Related Functions">
+<link rel="section" href="./9.1" title="§9.1 Special Notation ‣ Notation ‣ Chapter 9 Airy and Related Functions">
+<link rel="section" href="./9.2" title="§9.2 Differential Equation ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions">
+<link rel="section" href="./9.3" title="§9.3 Graphics ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions">
+<link rel="section" href="./9.4" title="§9.4 Maclaurin Series ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions">
+<link rel="section" href="./9.5" title="§9.5 Integral Representations ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions">
+<link rel="section" href="./9.6" title="§9.6 Relations to Other Functions ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions">
+<link rel="section" href="./9.7" title="§9.7 Asymptotic Expansions ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions">
+<link rel="section" href="./9.8" title="§9.8 Modulus and Phase ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions">
+<link rel="section" href="./9.9" title="§9.9 Zeros ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions">
+<link rel="section" href="./9.10" title="§9.10 Integrals ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions">
+<link rel="section" href="./9.11" title="§9.11 Products ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions">
+<link rel="section" href="./9.12" title="§9.12 Scorer Functions ‣ Related Functions ‣ Chapter 9 Airy and Related Functions">
+<link rel="section" href="./9.13" title="§9.13 Generalized Airy Functions ‣ Related Functions ‣ Chapter 9 Airy and Related Functions">
+<link rel="section" href="./9.14" title="§9.14 Incomplete Airy Functions ‣ Related Functions ‣ Chapter 9 Airy and Related Functions">
+<link rel="section" href="./9.15" title="§9.15 Mathematical Applications ‣ Applications ‣ Chapter 9 Airy and Related Functions">
+<link rel="section" href="./9.16" title="§9.16 Physical Applications ‣ Applications ‣ Chapter 9 Airy and Related Functions">
+<link rel="section" href="./9.17" title="§9.17 Methods of Computation ‣ Computation ‣ Chapter 9 Airy and Related Functions">
+<link rel="section" href="./9.18" title="§9.18 Tables ‣ Computation ‣ Chapter 9 Airy and Related Functions">
+<link rel="section" href="./9.20" title="§9.20 Software ‣ Computation ‣ Chapter 9 Airy and Related Functions">
+<link rel="sidebar" href="./9.SB1" title="Sidebar 9.SB1: Supernumerary Rainbows ‣ Chapter 9 Airy and Related Functions">
+<link rel="sidebar" href="./9.SB2" title="Sidebar 9.SB2: Interference Patterns in Caustics ‣ Chapter 9 Airy and Related Functions">
+<link rel="document" href="./front/foreword" title="Foreword">
+<link rel="document" href="./front/preface" title="Preface">
+<link rel="document" href="./front/introduction" title="Mathematical Introduction">
+<link rel="chapter" href="./1" title="Chapter 1 Algebraic and Analytic Methods">
+<link rel="chapter" href="./2" title="Chapter 2 Asymptotic Approximations">
+<link rel="chapter" href="./3" title="Chapter 3 Numerical Methods">
+<link rel="chapter" href="./4" title="Chapter 4 Elementary Functions">
+<link rel="chapter" href="./5" title="Chapter 5 Gamma Function">
+<link rel="chapter" href="./6" title="Chapter 6 Exponential, Logarithmic, Sine, and Cosine Integrals">
+<link rel="chapter" href="./7" title="Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="chapter" href="./8" title="Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="chapter" href="./9" title="Chapter 9 Airy and Related Functions">
+<link rel="chapter" href="./10" title="Chapter 10 Bessel Functions">
+<link rel="chapter" href="./11" title="Chapter 11 Struve and Related Functions">
+<link rel="chapter" href="./12" title="Chapter 12 Parabolic Cylinder Functions">
+<link rel="chapter" href="./13" title="Chapter 13 Confluent Hypergeometric Functions">
+<link rel="chapter" href="./14" title="Chapter 14 Legendre and Related Functions">
+<link rel="chapter" href="./15" title="Chapter 15 Hypergeometric Function">
+<link rel="chapter" href="./16" title="Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="chapter" href="./17" title="Chapter 17 𝑞-Hypergeometric and Related Functions">
+<link rel="chapter" href="./18" title="Chapter 18 Orthogonal Polynomials">
+<link rel="chapter" href="./19" title="Chapter 19 Elliptic Integrals">
+<link rel="chapter" href="./20" title="Chapter 20 Theta Functions">
+<link rel="chapter" href="./21" title="Chapter 21 Multidimensional Theta Functions">
+<link rel="chapter" href="./22" title="Chapter 22 Jacobian Elliptic Functions">
+<link rel="chapter" href="./23" title="Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="chapter" href="./24" title="Chapter 24 Bernoulli and Euler Polynomials">
+<link rel="chapter" href="./25" title="Chapter 25 Zeta and Related Functions">
+<link rel="chapter" href="./26" title="Chapter 26 Combinatorial Analysis">
+<link rel="chapter" href="./27" title="Chapter 27 Functions of Number Theory">
+<link rel="chapter" href="./28" title="Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="chapter" href="./29" title="Chapter 29 Lamé Functions">
+<link rel="chapter" href="./30" title="Chapter 30 Spheroidal Wave Functions">
+<link rel="chapter" href="./31" title="Chapter 31 Heun Functions">
+<link rel="chapter" href="./32" title="Chapter 32 Painlevé Transcendents">
+<link rel="chapter" href="./33" title="Chapter 33 Coulomb Functions">
+<link rel="chapter" href="./34" title="Chapter 34 3⁢𝑗,6⁢𝑗,9⁢𝑗 Symbols">
+<link rel="chapter" href="./35" title="Chapter 35 Functions of Matrix Argument">
+<link rel="chapter" href="./36" title="Chapter 36 Integrals with Coalescing Saddles">
+<link rel="bibliography" href="./bib/" title="Bibliography">
+<link rel="index" href="./idx/" title="Index">
+<link rel="glossary" href="./not/" title="Notations">
+<link rel="document" href="./lof/" title="List of Figures">
+<link rel="document" href="./lot/" title="List of Tables">
+<link rel="document" href="./software/" title="Software Index">
+<link rel="document" href="./errata/" title="Errata">
+<link rel="document" href="./help/" title="Need Help?">
+<link rel="document" href="./search/" title="Advanced Search">
+<link rel="document" href="./about/" title="About the Project">
+<meta name="keywords" lang="en" content="Airy functions, Scorer functions, approximations, expansions in Chebyshev series, in terms of elementary functions, in the complex plane, integrals">
+</head>
+<body class="color_default textfont_default titlefont_default fontsize_default navbar_default">
+<div class="ltx_page_navbar">
+<div class="ltx_page_navlogo"><a href="./" title="Digital Library of Mathematical Functions"><span>DLMF</span></a></div>
+<div class="ltx_page_navitems">
+<form method="get" action="./search/search">
+<ul>
+<li><a href="./idx/">Index</a></li>
+<li><a href="./not/">Notations</a></li>
+<li><small><input type="text" name="q" value="" size="6" class="ltx_page_navitem_search"><button type="submit">Search</button></small></li>
+<li><a href="./help/" class="ltx_help">Help?</a></li>
+<li><a href="./help/cite">Citing</a></li>
+<li><a href="./help/customize" class="ltx_customize">Customize</a></li>
+<li id="showinfo"><a href="" onclick="showInfo(); return false;" title="Show Annotations">Annotate</a></li>
+<li id="hideinfo"><a href="" onclick="hideInfo(); return false;">UnAnnotate</a></li>
+</ul>
+</form>
+</div>
+<div class="ltx_page_navsponsors">
+<div><a href="./about/" class="ltx_page_navabout">About the Project</a></div>
+</div>
+</div>
+<div class="ltx_page_main">
+<div class="ltx_page_header">
+<a href="./9" title="" class="ltx_ref" rel="up up"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">9 </span>Airy and Related Functions</span></a><a href="./9#PT5" title="In Chapter 9 Airy and Related Functions" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title">Computation</span></a><a href="./9.18" title="In Computation ‣ Chapter 9 Airy and Related Functions" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">9.18 </span>Tables</span></a><a href="./9.20" title="In Computation ‣ Chapter 9 Airy and Related Functions" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">9.20 </span>Software</span></a>
+</div>
+<div class="ltx_page_content">
+<section class="ltx_section ltx_authors_multiline ltx_leqno">
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">§9.19 </span>Approximations</h1>
+<div id="info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Permalink:</dt>
+<dd><a href="./9.19" title="" class="ltx_ref">http://dlmf.nist.gov/9.19</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./9#info" title="Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.9</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<h6>Contents</h6>
+<ol class="ltx_toclist ltx_toclist_section">
+<li class="ltx_tocentry"><a href="#i"><span class="ltx_tag ltx_tag_subsection">§9.19(i) </span>Approximations in Terms of Elementary Functions</a></li>
+<li class="ltx_tocentry"><a href="#ii"><span class="ltx_tag ltx_tag_subsection">§9.19(ii) </span>Expansions in Chebyshev Series</a></li>
+<li class="ltx_tocentry"><a href="#iii"><span class="ltx_tag ltx_tag_subsection">§9.19(iii) </span>Approximations in the Complex Plane</a></li>
+<li class="ltx_tocentry"><a href="#iv"><span class="ltx_tag ltx_tag_subsection">§9.19(iv) </span>Scorer Functions</a></li>
+</ol>
+<section id="i" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§9.19(i) </span>Approximations in Terms of Elementary Functions</h2>
+<div id="i.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=Airy%20functions">Airy functions</a>, <a class="ltx_keyword" href="./search/search?q=approximations">approximations</a>, <a class="ltx_keyword" href="./search/search?q=in%20terms%20of%20elementary%20functions">in terms of elementary functions</a>, <a class="ltx_keyword" href="./search/search?q=integrals">integrals</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./9.19.i" title="" class="ltx_ref">http://dlmf.nist.gov/9.19.i</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./9.19#info" title="§9.19 Approximations ‣ Computation ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§9.19</span></a> and
+<a href="./9#info" title="Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.9</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="i.p1" class="ltx_para">
+<ul id="I1" class="ltx_itemize">
+<li id="I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="I1.i1.p1" class="ltx_para">
+<p class="ltx_p"><cite class="ltx_cite ltx_citemacro_citet">Martín<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/M#bib1558" title="Two-point quasi-fractional approximations to the Airy function ⁢ Ai ( x )" class="ltx_ref">1992</a>)</cite> provides two simple formulas for approximating
+<math class="ltx_Math" altimg="m15.png" altimg-height="25px" altimg-valign="-7px" altimg-width="57px" alttext="\operatorname{Ai}\left(x\right)" display="inline"><mrow><mi href="./9.2#i" title="Airy function">Ai</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#t1.r2" title="real variable">x</mi><mo>)</mo></mrow></mrow></math> to graphical accuracy, one for <math class="ltx_Math" altimg="m1.png" altimg-height="20px" altimg-valign="-5px" altimg-width="119px" alttext="-\infty&lt;x\leq 0" display="inline"><mrow><mrow><mo>−</mo><mi mathvariant="normal">∞</mi></mrow><mo>&lt;</mo><mi href="./9.1#t1.r2" title="real variable">x</mi><mo>≤</mo><mn>0</mn></mrow></math>,
+the other for <math class="ltx_Math" altimg="m4.png" altimg-height="20px" altimg-valign="-5px" altimg-width="103px" alttext="0\leq x&lt;\infty" display="inline"><mrow><mn>0</mn><mo>≤</mo><mi href="./9.1#t1.r2" title="real variable">x</mi><mo>&lt;</mo><mi mathvariant="normal">∞</mi></mrow></math>.</p>
+</div>
+</li>
+<li id="I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="I1.i2.p1" class="ltx_para">
+<p class="ltx_p"><cite class="ltx_cite ltx_citemacro_citet">Moshier (<a href="./bib/M#bib1664" title="Methods and Programs for Mathematical Functions" class="ltx_ref">1989</a>, §6.14)</cite> provides minimax rational approximations
+for calculating <math class="ltx_Math" altimg="m15.png" altimg-height="25px" altimg-valign="-7px" altimg-width="57px" alttext="\operatorname{Ai}\left(x\right)" display="inline"><mrow><mi href="./9.2#i" title="Airy function">Ai</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#t1.r2" title="real variable">x</mi><mo>)</mo></mrow></mrow></math>, <math class="ltx_Math" altimg="m13.png" altimg-height="27px" altimg-valign="-7px" altimg-width="63px" alttext="\operatorname{Ai}'\left(x\right)" display="inline"><mrow><msup><mi href="./9.2#i" title="Airy function">Ai</mi><mo>′</mo></msup><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#t1.r2" title="real variable">x</mi><mo>)</mo></mrow></mrow></math>, <math class="ltx_Math" altimg="m19.png" altimg-height="25px" altimg-valign="-7px" altimg-width="56px" alttext="\operatorname{Bi}\left(x\right)" display="inline"><mrow><mi href="./9.2#i" title="Airy function">Bi</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#t1.r2" title="real variable">x</mi><mo>)</mo></mrow></mrow></math>, <math class="ltx_Math" altimg="m17.png" altimg-height="27px" altimg-valign="-7px" altimg-width="62px" alttext="\operatorname{Bi}'\left(x\right)" display="inline"><mrow><msup><mi href="./9.2#i" title="Airy function">Bi</mi><mo>′</mo></msup><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#t1.r2" title="real variable">x</mi><mo>)</mo></mrow></mrow></math>.
+They are in terms of the variable
+<math class="ltx_Math" altimg="m26.png" altimg-height="22px" altimg-valign="-6px" altimg-width="15px" alttext="\zeta" display="inline"><mi>ζ</mi></math>, where
+<math class="ltx_Math" altimg="m25.png" altimg-height="30px" altimg-valign="-9px" altimg-width="94px" alttext="\zeta=\tfrac{2}{3}x^{3/2}" display="inline"><mrow><mi>ζ</mi><mo>=</mo><mrow><mfrac><mn>2</mn><mn>3</mn></mfrac><mo>⁢</mo><msup><mi href="./9.1#t1.r2" title="real variable">x</mi><mrow><mn>3</mn><mo>/</mo><mn>2</mn></mrow></msup></mrow></mrow></math> when <math class="ltx_Math" altimg="m32.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./9.1#t1.r2" title="real variable">x</mi></math> is positive,
+<math class="ltx_Math" altimg="m24.png" altimg-height="30px" altimg-valign="-9px" altimg-width="126px" alttext="\zeta=\tfrac{2}{3}(-x)^{3/2}" display="inline"><mrow><mi>ζ</mi><mo>=</mo><mrow><mfrac><mn>2</mn><mn>3</mn></mfrac><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mi href="./9.1#t1.r2" title="real variable">x</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mn>3</mn><mo>/</mo><mn>2</mn></mrow></msup></mrow></mrow></math> when <math class="ltx_Math" altimg="m32.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./9.1#t1.r2" title="real variable">x</mi></math> is negative,
+and <math class="ltx_Math" altimg="m23.png" altimg-height="22px" altimg-valign="-6px" altimg-width="53px" alttext="\zeta=0" display="inline"><mrow><mi>ζ</mi><mo>=</mo><mn>0</mn></mrow></math> when <math class="ltx_Math" altimg="m31.png" altimg-height="17px" altimg-valign="-2px" altimg-width="54px" alttext="x=0" display="inline"><mrow><mi href="./9.1#t1.r2" title="real variable">x</mi><mo>=</mo><mn>0</mn></mrow></math>.
+The approximations apply when <math class="ltx_Math" altimg="m6.png" altimg-height="22px" altimg-valign="-6px" altimg-width="101px" alttext="2\leq\zeta&lt;\infty" display="inline"><mrow><mn>2</mn><mo>≤</mo><mi>ζ</mi><mo>&lt;</mo><mi mathvariant="normal">∞</mi></mrow></math>, that is,
+when <math class="ltx_Math" altimg="m7.png" altimg-height="25px" altimg-valign="-5px" altimg-width="129px" alttext="3^{2/3}\leq x&lt;\infty" display="inline"><mrow><msup><mn>3</mn><mrow><mn>2</mn><mo>/</mo><mn>3</mn></mrow></msup><mo>≤</mo><mi href="./9.1#t1.r2" title="real variable">x</mi><mo>&lt;</mo><mi mathvariant="normal">∞</mi></mrow></math> or <math class="ltx_Math" altimg="m3.png" altimg-height="25px" altimg-valign="-5px" altimg-width="161px" alttext="-\infty&lt;x\leq-3^{2/3}" display="inline"><mrow><mrow><mo>−</mo><mi mathvariant="normal">∞</mi></mrow><mo>&lt;</mo><mi href="./9.1#t1.r2" title="real variable">x</mi><mo>≤</mo><mrow><mo>−</mo><msup><mn>3</mn><mrow><mn>2</mn><mo>/</mo><mn>3</mn></mrow></msup></mrow></mrow></math>.
+The precision in the coefficients is 21S.</p>
+</div>
+</li>
+</ul>
+</div>
+</section>
+<section id="ii" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§9.19(ii) </span>Expansions in Chebyshev Series</h2>
+<div id="ii.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=Airy%20functions">Airy functions</a>, <a class="ltx_keyword" href="./search/search?q=approximations">approximations</a>, <a class="ltx_keyword" href="./search/search?q=expansions%20in%20Chebyshev%20series">expansions in Chebyshev series</a>, <a class="ltx_keyword" href="./search/search?q=integrals">integrals</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./9.19.ii" title="" class="ltx_ref">http://dlmf.nist.gov/9.19.ii</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./9.19#info" title="§9.19 Approximations ‣ Computation ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§9.19</span></a> and
+<a href="./9#info" title="Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.9</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="ii.p1" class="ltx_para">
+<p class="ltx_p">These expansions are for real arguments <math class="ltx_Math" altimg="m32.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./9.1#t1.r2" title="real variable">x</mi></math> and are supplied in sets of four
+for each function, corresponding to intervals <math class="ltx_Math" altimg="m2.png" altimg-height="20px" altimg-valign="-5px" altimg-width="119px" alttext="-\infty&lt;x\leq a" display="inline"><mrow><mrow><mo>−</mo><mi mathvariant="normal">∞</mi></mrow><mo>&lt;</mo><mi href="./9.1#t1.r2" title="real variable">x</mi><mo>≤</mo><mi>a</mi></mrow></math>,
+<math class="ltx_Math" altimg="m28.png" altimg-height="20px" altimg-valign="-5px" altimg-width="93px" alttext="a\leq x\leq 0" display="inline"><mrow><mi>a</mi><mo>≤</mo><mi href="./9.1#t1.r2" title="real variable">x</mi><mo>≤</mo><mn>0</mn></mrow></math>, <math class="ltx_Math" altimg="m5.png" altimg-height="21px" altimg-valign="-5px" altimg-width="91px" alttext="0\leq x\leq b" display="inline"><mrow><mn>0</mn><mo>≤</mo><mi href="./9.1#t1.r2" title="real variable">x</mi><mo>≤</mo><mi>b</mi></mrow></math>, <math class="ltx_Math" altimg="m30.png" altimg-height="21px" altimg-valign="-5px" altimg-width="101px" alttext="b\leq x&lt;\infty" display="inline"><mrow><mi>b</mi><mo>≤</mo><mi href="./9.1#t1.r2" title="real variable">x</mi><mo>&lt;</mo><mi mathvariant="normal">∞</mi></mrow></math>. The constants <math class="ltx_Math" altimg="m27.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="a" display="inline"><mi>a</mi></math> and
+<math class="ltx_Math" altimg="m29.png" altimg-height="18px" altimg-valign="-2px" altimg-width="13px" alttext="b" display="inline"><mi>b</mi></math> are chosen numerically, with a view to equalizing the effort required for
+summing the series.</p>
+<ul id="I2" class="ltx_itemize">
+<li id="I2.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="I2.i1.p1" class="ltx_para">
+<p class="ltx_p"><cite class="ltx_cite ltx_citemacro_citet">Prince (<a href="./bib/P#bib1900" title="Algorithm 498: Airy functions using Chebyshev series approximations" class="ltx_ref">1975</a>)</cite> covers <math class="ltx_Math" altimg="m15.png" altimg-height="25px" altimg-valign="-7px" altimg-width="57px" alttext="\operatorname{Ai}\left(x\right)" display="inline"><mrow><mi href="./9.2#i" title="Airy function">Ai</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#t1.r2" title="real variable">x</mi><mo>)</mo></mrow></mrow></math>, <math class="ltx_Math" altimg="m13.png" altimg-height="27px" altimg-valign="-7px" altimg-width="63px" alttext="\operatorname{Ai}'\left(x\right)" display="inline"><mrow><msup><mi href="./9.2#i" title="Airy function">Ai</mi><mo>′</mo></msup><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#t1.r2" title="real variable">x</mi><mo>)</mo></mrow></mrow></math>,
+<math class="ltx_Math" altimg="m19.png" altimg-height="25px" altimg-valign="-7px" altimg-width="56px" alttext="\operatorname{Bi}\left(x\right)" display="inline"><mrow><mi href="./9.2#i" title="Airy function">Bi</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#t1.r2" title="real variable">x</mi><mo>)</mo></mrow></mrow></math>, <math class="ltx_Math" altimg="m17.png" altimg-height="27px" altimg-valign="-7px" altimg-width="62px" alttext="\operatorname{Bi}'\left(x\right)" display="inline"><mrow><msup><mi href="./9.2#i" title="Airy function">Bi</mi><mo>′</mo></msup><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#t1.r2" title="real variable">x</mi><mo>)</mo></mrow></mrow></math>. The Chebyshev coefficients are given to 10-11D.
+Fortran programs are included. See also <cite class="ltx_cite ltx_citemacro_citet">Razaz and Schonfelder (<a href="./bib/R#bib1932" title="Remark on Algorithm 498: Airy functions using Chebyshev series approximations" class="ltx_ref">1981</a>)</cite>.</p>
+</div>
+</li>
+<li id="I2.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="I2.i2.p1" class="ltx_para">
+<p class="ltx_p"><cite class="ltx_cite ltx_citemacro_citet">Németh (<a href="./bib/N#bib1707" title="Mathematical Approximation of Special Functions" class="ltx_ref">1992</a>, Chapter 8)</cite> covers <math class="ltx_Math" altimg="m15.png" altimg-height="25px" altimg-valign="-7px" altimg-width="57px" alttext="\operatorname{Ai}\left(x\right)" display="inline"><mrow><mi href="./9.2#i" title="Airy function">Ai</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#t1.r2" title="real variable">x</mi><mo>)</mo></mrow></mrow></math>, <math class="ltx_Math" altimg="m13.png" altimg-height="27px" altimg-valign="-7px" altimg-width="63px" alttext="\operatorname{Ai}'\left(x\right)" display="inline"><mrow><msup><mi href="./9.2#i" title="Airy function">Ai</mi><mo>′</mo></msup><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#t1.r2" title="real variable">x</mi><mo>)</mo></mrow></mrow></math>,
+<math class="ltx_Math" altimg="m19.png" altimg-height="25px" altimg-valign="-7px" altimg-width="56px" alttext="\operatorname{Bi}\left(x\right)" display="inline"><mrow><mi href="./9.2#i" title="Airy function">Bi</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#t1.r2" title="real variable">x</mi><mo>)</mo></mrow></mrow></math>, <math class="ltx_Math" altimg="m17.png" altimg-height="27px" altimg-valign="-7px" altimg-width="62px" alttext="\operatorname{Bi}'\left(x\right)" display="inline"><mrow><msup><mi href="./9.2#i" title="Airy function">Bi</mi><mo>′</mo></msup><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#t1.r2" title="real variable">x</mi><mo>)</mo></mrow></mrow></math>, and integrals <math class="ltx_Math" altimg="m10.png" altimg-height="29px" altimg-valign="-9px" altimg-width="106px" alttext="\int_{0}^{x}\operatorname{Ai}\left(t\right)\,\mathrm{d}t" display="inline"><mrow><msubsup><mo href="./1.4#iv" title="integral">∫</mo><mn>0</mn><mi href="./9.1#t1.r2" title="real variable">x</mi></msubsup><mrow><mrow><mi href="./9.2#i" title="Airy function">Ai</mi><mo>⁡</mo><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow></mrow><mo lspace="0em">⁢</mo><mrow><mo href="./1.4#iv" rspace="0em" title="differential of 𝑥">d</mo><mi>t</mi></mrow></mrow></mrow></math>,
+<math class="ltx_Math" altimg="m11.png" altimg-height="29px" altimg-valign="-9px" altimg-width="106px" alttext="\int_{0}^{x}\operatorname{Bi}\left(t\right)\,\mathrm{d}t" display="inline"><mrow><msubsup><mo href="./1.4#iv" title="integral">∫</mo><mn>0</mn><mi href="./9.1#t1.r2" title="real variable">x</mi></msubsup><mrow><mrow><mi href="./9.2#i" title="Airy function">Bi</mi><mo>⁡</mo><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow></mrow><mo lspace="0em">⁢</mo><mrow><mo href="./1.4#iv" rspace="0em" title="differential of 𝑥">d</mo><mi>t</mi></mrow></mrow></mrow></math>,
+<math class="ltx_Math" altimg="m8.png" altimg-height="29px" altimg-valign="-9px" altimg-width="159px" alttext="\int_{0}^{x}\int_{0}^{v}\operatorname{Ai}\left(t\right)\,\mathrm{d}t\,\mathrm{%
+d}v" display="inline"><mrow><msubsup><mo href="./1.4#iv" title="integral">∫</mo><mn>0</mn><mi href="./9.1#t1.r2" title="real variable">x</mi></msubsup><mrow><msubsup><mo href="./1.4#iv" lspace="0.167em" title="integral">∫</mo><mn>0</mn><mi>v</mi></msubsup><mrow><mrow><mi href="./9.2#i" title="Airy function">Ai</mi><mo>⁡</mo><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow></mrow><mo lspace="0em">⁢</mo><mrow><mo href="./1.4#iv" rspace="0em" title="differential of 𝑥">d</mo><mi>t</mi></mrow><mo lspace="0em">⁢</mo><mrow><mo href="./1.4#iv" rspace="0em" title="differential of 𝑥">d</mo><mi>v</mi></mrow></mrow></mrow></mrow></math>,
+<math class="ltx_Math" altimg="m9.png" altimg-height="29px" altimg-valign="-9px" altimg-width="159px" alttext="\int_{0}^{x}\int_{0}^{v}\operatorname{Bi}\left(t\right)\,\mathrm{d}t\,\mathrm{%
+d}v" display="inline"><mrow><msubsup><mo href="./1.4#iv" title="integral">∫</mo><mn>0</mn><mi href="./9.1#t1.r2" title="real variable">x</mi></msubsup><mrow><msubsup><mo href="./1.4#iv" lspace="0.167em" title="integral">∫</mo><mn>0</mn><mi>v</mi></msubsup><mrow><mrow><mi href="./9.2#i" title="Airy function">Bi</mi><mo>⁡</mo><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow></mrow><mo lspace="0em">⁢</mo><mrow><mo href="./1.4#iv" rspace="0em" title="differential of 𝑥">d</mo><mi>t</mi></mrow><mo lspace="0em">⁢</mo><mrow><mo href="./1.4#iv" rspace="0em" title="differential of 𝑥">d</mo><mi>v</mi></mrow></mrow></mrow></mrow></math>
+(see also (<a href="./9.10#E20" title="(9.10.20) ‣ §9.10(viii) Repeated Integrals ‣ §9.10 Integrals ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">9.10.20</span></a>) and (<a href="./9.10#E21" title="(9.10.21) ‣ §9.10(viii) Repeated Integrals ‣ §9.10 Integrals ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">9.10.21</span></a>)). The Chebyshev
+coefficients are given to 15D. Chebyshev coefficients are also given for
+expansions of the second and higher (real) zeros of <math class="ltx_Math" altimg="m15.png" altimg-height="25px" altimg-valign="-7px" altimg-width="57px" alttext="\operatorname{Ai}\left(x\right)" display="inline"><mrow><mi href="./9.2#i" title="Airy function">Ai</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#t1.r2" title="real variable">x</mi><mo>)</mo></mrow></mrow></math>,
+<math class="ltx_Math" altimg="m13.png" altimg-height="27px" altimg-valign="-7px" altimg-width="63px" alttext="\operatorname{Ai}'\left(x\right)" display="inline"><mrow><msup><mi href="./9.2#i" title="Airy function">Ai</mi><mo>′</mo></msup><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#t1.r2" title="real variable">x</mi><mo>)</mo></mrow></mrow></math>, <math class="ltx_Math" altimg="m19.png" altimg-height="25px" altimg-valign="-7px" altimg-width="56px" alttext="\operatorname{Bi}\left(x\right)" display="inline"><mrow><mi href="./9.2#i" title="Airy function">Bi</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#t1.r2" title="real variable">x</mi><mo>)</mo></mrow></mrow></math>, <math class="ltx_Math" altimg="m17.png" altimg-height="27px" altimg-valign="-7px" altimg-width="62px" alttext="\operatorname{Bi}'\left(x\right)" display="inline"><mrow><msup><mi href="./9.2#i" title="Airy function">Bi</mi><mo>′</mo></msup><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#t1.r2" title="real variable">x</mi><mo>)</mo></mrow></mrow></math>, again to 15D.</p>
+</div>
+</li>
+<li id="I2.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="I2.i3.p1" class="ltx_para">
+<p class="ltx_p"><cite class="ltx_cite ltx_citemacro_citet">Razaz and Schonfelder (<a href="./bib/R#bib1931" title="High precision Chebyshev expansions for Airy functions and their derivatives" class="ltx_ref">1980</a>)</cite> covers <math class="ltx_Math" altimg="m15.png" altimg-height="25px" altimg-valign="-7px" altimg-width="57px" alttext="\operatorname{Ai}\left(x\right)" display="inline"><mrow><mi href="./9.2#i" title="Airy function">Ai</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#t1.r2" title="real variable">x</mi><mo>)</mo></mrow></mrow></math>, <math class="ltx_Math" altimg="m13.png" altimg-height="27px" altimg-valign="-7px" altimg-width="63px" alttext="\operatorname{Ai}'\left(x\right)" display="inline"><mrow><msup><mi href="./9.2#i" title="Airy function">Ai</mi><mo>′</mo></msup><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#t1.r2" title="real variable">x</mi><mo>)</mo></mrow></mrow></math>, <math class="ltx_Math" altimg="m19.png" altimg-height="25px" altimg-valign="-7px" altimg-width="56px" alttext="\operatorname{Bi}\left(x\right)" display="inline"><mrow><mi href="./9.2#i" title="Airy function">Bi</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#t1.r2" title="real variable">x</mi><mo>)</mo></mrow></mrow></math>,
+<math class="ltx_Math" altimg="m17.png" altimg-height="27px" altimg-valign="-7px" altimg-width="62px" alttext="\operatorname{Bi}'\left(x\right)" display="inline"><mrow><msup><mi href="./9.2#i" title="Airy function">Bi</mi><mo>′</mo></msup><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#t1.r2" title="real variable">x</mi><mo>)</mo></mrow></mrow></math>. The Chebyshev coefficients are given to 30D.</p>
+</div>
+</li>
+</ul>
+</div>
+</section>
+<section id="iii" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§9.19(iii) </span>Approximations in the Complex Plane</h2>
+<div id="iii.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=Airy%20functions">Airy functions</a>, <a class="ltx_keyword" href="./search/search?q=approximations">approximations</a>, <a class="ltx_keyword" href="./search/search?q=in%20the%20complex%20plane">in the complex plane</a>, <a class="ltx_keyword" href="./search/search?q=integrals">integrals</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./9.19.iii" title="" class="ltx_ref">http://dlmf.nist.gov/9.19.iii</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./9.19#info" title="§9.19 Approximations ‣ Computation ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§9.19</span></a> and
+<a href="./9#info" title="Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.9</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="iii.p1" class="ltx_para">
+<ul id="I3" class="ltx_itemize">
+<li id="I3.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="I3.i1.p1" class="ltx_para">
+<p class="ltx_p"><cite class="ltx_cite ltx_citemacro_citet">Corless<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/C#bib584" title="Numerical evaluation of Airy functions with complex arguments" class="ltx_ref">1992</a>)</cite> describe a method of approximation based on
+subdividing <math class="ltx_Math" altimg="m12.png" altimg-height="18px" altimg-valign="-2px" altimg-width="19px" alttext="\mathbb{C}" display="inline"><mi href="./front/introduction#common.t1.r1" title="complex plane">ℂ</mi></math> into a triangular mesh, with values of <math class="ltx_Math" altimg="m16.png" altimg-height="25px" altimg-valign="-7px" altimg-width="56px" alttext="\operatorname{Ai}\left(z\right)" display="inline"><mrow><mi href="./9.2#i" title="Airy function">Ai</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#t1.r3" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>,
+<math class="ltx_Math" altimg="m14.png" altimg-height="27px" altimg-valign="-7px" altimg-width="62px" alttext="\operatorname{Ai}'\left(z\right)" display="inline"><mrow><msup><mi href="./9.2#i" title="Airy function">Ai</mi><mo>′</mo></msup><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#t1.r3" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math> stored at the nodes. <math class="ltx_Math" altimg="m16.png" altimg-height="25px" altimg-valign="-7px" altimg-width="56px" alttext="\operatorname{Ai}\left(z\right)" display="inline"><mrow><mi href="./9.2#i" title="Airy function">Ai</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#t1.r3" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math> and <math class="ltx_Math" altimg="m14.png" altimg-height="27px" altimg-valign="-7px" altimg-width="62px" alttext="\operatorname{Ai}'\left(z\right)" display="inline"><mrow><msup><mi href="./9.2#i" title="Airy function">Ai</mi><mo>′</mo></msup><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#t1.r3" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math> are then
+computed from Taylor-series expansions centered at one of the nearest nodes.
+The Taylor coefficients are generated by recursion, starting from the stored
+values of <math class="ltx_Math" altimg="m16.png" altimg-height="25px" altimg-valign="-7px" altimg-width="56px" alttext="\operatorname{Ai}\left(z\right)" display="inline"><mrow><mi href="./9.2#i" title="Airy function">Ai</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#t1.r3" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>, <math class="ltx_Math" altimg="m14.png" altimg-height="27px" altimg-valign="-7px" altimg-width="62px" alttext="\operatorname{Ai}'\left(z\right)" display="inline"><mrow><msup><mi href="./9.2#i" title="Airy function">Ai</mi><mo>′</mo></msup><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#t1.r3" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math> at the node. Similarly for
+<math class="ltx_Math" altimg="m20.png" altimg-height="25px" altimg-valign="-7px" altimg-width="55px" alttext="\operatorname{Bi}\left(z\right)" display="inline"><mrow><mi href="./9.2#i" title="Airy function">Bi</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#t1.r3" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>, <math class="ltx_Math" altimg="m18.png" altimg-height="27px" altimg-valign="-7px" altimg-width="61px" alttext="\operatorname{Bi}'\left(z\right)" display="inline"><mrow><msup><mi href="./9.2#i" title="Airy function">Bi</mi><mo>′</mo></msup><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#t1.r3" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>.</p>
+</div>
+</li>
+</ul>
+</div>
+</section>
+<section id="iv" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§9.19(iv) </span>Scorer Functions</h2>
+<div id="iv.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=Scorer%20functions">Scorer functions</a>, <a class="ltx_keyword" href="./search/search?q=approximations">approximations</a>, <a class="ltx_keyword" href="./search/search?q=expansions%20in%20Chebyshev%20series">expansions in Chebyshev series</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./9.19.iv" title="" class="ltx_ref">http://dlmf.nist.gov/9.19.iv</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./9.19#info" title="§9.19 Approximations ‣ Computation ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§9.19</span></a> and
+<a href="./9#info" title="Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.9</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="iv.p1" class="ltx_para">
+<ul id="I4" class="ltx_itemize">
+<li id="I4.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="I4.i1.p1" class="ltx_para">
+<p class="ltx_p"><cite class="ltx_cite ltx_citemacro_citet">MacLeod (<a href="./bib/M#bib1523" title="Computation of inhomogeneous Airy functions" class="ltx_ref">1994</a>)</cite> supplies Chebyshev-series expansions to cover
+<math class="ltx_Math" altimg="m21.png" altimg-height="25px" altimg-valign="-7px" altimg-width="58px" alttext="\operatorname{Gi}\left(x\right)" display="inline"><mrow><mi href="./9.12#E4" title="Scorer function (inhomogeneous Airy function)">Gi</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#t1.r2" title="real variable">x</mi><mo>)</mo></mrow></mrow></math> for <math class="ltx_Math" altimg="m4.png" altimg-height="20px" altimg-valign="-5px" altimg-width="103px" alttext="0\leq x&lt;\infty" display="inline"><mrow><mn>0</mn><mo>≤</mo><mi href="./9.1#t1.r2" title="real variable">x</mi><mo>&lt;</mo><mi mathvariant="normal">∞</mi></mrow></math> and <math class="ltx_Math" altimg="m22.png" altimg-height="25px" altimg-valign="-7px" altimg-width="57px" alttext="\operatorname{Hi}\left(x\right)" display="inline"><mrow><mi href="./9.12#E5" title="Scorer function (inhomogeneous Airy function)">Hi</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./9.1#t1.r2" title="real variable">x</mi><mo>)</mo></mrow></mrow></math> for
+<math class="ltx_Math" altimg="m1.png" altimg-height="20px" altimg-valign="-5px" altimg-width="119px" alttext="-\infty&lt;x\leq 0" display="inline"><mrow><mrow><mo>−</mo><mi mathvariant="normal">∞</mi></mrow><mo>&lt;</mo><mi href="./9.1#t1.r2" title="real variable">x</mi><mo>≤</mo><mn>0</mn></mrow></math>. The Chebyshev coefficients are given to 20D.</p>
+</div>
+</li>
+</ul>
+</div>
+</section>
+</section>
+</div>
+<div class="ltx_page_footer">
+<div class="ltx_siblings">
+<a href="./9.18" title="In Computation ‣ Chapter 9 Airy and Related Functions" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">9.18 </span>Tables</span></a><a href="./9.20" title="In Computation ‣ Chapter 9 Airy and Related Functions" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">9.20 </span>Software</span></a>
+</div>
+<div class="ltx_footer_links ltx_centering">
+<a href="./about/notices">© 2010–2026 NIST</a> / <a href="./about/notices#S2">Disclaimer</a> / <a href="/cdn-cgi/l/email-protection#ade9e1e0eb80cbc8c8c9cfcccec6edc3c4ded983cac2db">Feedback</a>;
+ Version 1.2.7;
+Release date 2026-06-15.</div>
+<span id="pagesettings"></span>
+<div class="ltx_nist_logo"><a href="http://www.nist.gov/"><img src="./style/nistidc.png" width="500" alt="NIST"></a></div>
+<div class="ltx_nist_links ltx_align_right">
+<a href="https://www.nist.gov/privacy-policy">Site Privacy</a> <a href="https://www.nist.gov/oism/accessibility">Accessibility</a> <a href="https://www.nist.gov/privacy">Privacy Program</a> <a href="https://www.nist.gov/oism/copyrights">Copyrights</a> <a href="https://www.commerce.gov/vulnerability-disclosure-policy">Vulnerability Disclosure</a> <a href="https://www.nist.gov/no-fear-act-policy">No Fear Act Policy</a> <a href="https://www.nist.gov/foia">FOIA</a> <a href="https://www.nist.gov/environmental-policy-statement">Environmental Policy</a> <a href="https://www.nist.gov/summary-report-scientific-integrity">Scientific Integrity</a> <a href="https://www.nist.gov/nist-information-quality-standards">Information Quality Standards</a> <a href="https://www.commerce.gov/">Commerce.gov</a> <a href="http://www.science.gov/">Science.gov</a> <a href="http://www.usa.gov/">USA.gov</a>
+</div>
+</div>
+</div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a30b52f7c80bc359',t:'MTc4NzY2ODUzNQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"9ef5b487afff42a68917b2d63593a474"}' crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,1068 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>DLMF: §21.7 Riemann Surfaces ‣ Applications ‣ Chapter 21 Multidimensional Theta Functions</title>
+<link rel="shortcut icon" href="./style/DLMF-16.png" type="image/png">
+<script type="text/javascript"><!--
+	var PATH="DLMF:/21.7";
+	var ROOT="./";
+      //--></script>
+<script type="text/javascript" src="./style/jquery.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/jquery.leaveNotice.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/DLMF.js"><!-- non-empty so ie6 will accept it --></script>
+<script async="" type="text/javascript" id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC&amp;subagency=NIST&amp;pua=UA-37115410-44&amp;yt=true&amp;exts=ppsx,pps,f90,sch,rtf,wrl,txz,m1v,xlsm,msi,xsd,f,tif,eps,mpg,xml,pl,xlt,c"><!-- non-empty so ie6 will accept it --></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-BZB64W4M0L"></script><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-BZB64W4M0L');
+      </script>
+<link rel="stylesheet" type="text/css" href="./style/LaTeXML.css">
+<link rel="stylesheet" type="text/css" href="./style/DLMF.css">
+<link rel="stylesheet" type="text/css" href="./style/print.css" media="print">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="top" href="./" title="DLMF">
+<link rel="copyright" href="./about/notices" title="Copyright">
+<link rel="search" href="./search/search" title="Search">
+<link rel="help" class="ltx_help" href="./help/" title="Help">
+<link rel="up" href="./21#PT3" title="Applications ‣ Chapter 21 Multidimensional Theta Functions">
+<link rel="up up" href="./21" title="Chapter 21 Multidimensional Theta Functions">
+<link rel="start" href="./" title="">
+<link rel="prev" href="./21.6" title="§21.6 Products ‣ Properties ‣ Chapter 21 Multidimensional Theta Functions">
+<link rel="next" href="./21.8" title="§21.8 Abelian Functions ‣ Applications ‣ Chapter 21 Multidimensional Theta Functions">
+<link rel="section" href="./21.1" title="§21.1 Special Notation ‣ Notation ‣ Chapter 21 Multidimensional Theta Functions">
+<link rel="section" href="./21.2" title="§21.2 Definitions ‣ Properties ‣ Chapter 21 Multidimensional Theta Functions">
+<link rel="section" href="./21.3" title="§21.3 Symmetry and Quasi-Periodicity ‣ Properties ‣ Chapter 21 Multidimensional Theta Functions">
+<link rel="section" href="./21.4" title="§21.4 Graphics ‣ Properties ‣ Chapter 21 Multidimensional Theta Functions">
+<link rel="section" href="./21.5" title="§21.5 Modular Transformations ‣ Properties ‣ Chapter 21 Multidimensional Theta Functions">
+<link rel="section" href="./21.6" title="§21.6 Products ‣ Properties ‣ Chapter 21 Multidimensional Theta Functions">
+<link rel="section" href="./21.8" title="§21.8 Abelian Functions ‣ Applications ‣ Chapter 21 Multidimensional Theta Functions">
+<link rel="section" href="./21.9" title="§21.9 Integrable Equations ‣ Applications ‣ Chapter 21 Multidimensional Theta Functions">
+<link rel="section" href="./21.10" title="§21.10 Methods of Computation ‣ Computation ‣ Chapter 21 Multidimensional Theta Functions">
+<link rel="section" href="./21.11" title="§21.11 Software ‣ Computation ‣ Chapter 21 Multidimensional Theta Functions">
+<link rel="sidebar" href="./21.SB1" title="Sidebar 21.SB1: Periodic Surface Waves ‣ Chapter 21 Multidimensional Theta Functions">
+<link rel="sidebar" href="./21.SB2" title="Sidebar 21.SB2: A two-phase solution of the Kadomtsev–Petviashvili equation (21.9.3) ‣ Chapter 21 Multidimensional Theta Functions">
+<link rel="document" href="./front/foreword" title="Foreword">
+<link rel="document" href="./front/preface" title="Preface">
+<link rel="document" href="./front/introduction" title="Mathematical Introduction">
+<link rel="chapter" href="./1" title="Chapter 1 Algebraic and Analytic Methods">
+<link rel="chapter" href="./2" title="Chapter 2 Asymptotic Approximations">
+<link rel="chapter" href="./3" title="Chapter 3 Numerical Methods">
+<link rel="chapter" href="./4" title="Chapter 4 Elementary Functions">
+<link rel="chapter" href="./5" title="Chapter 5 Gamma Function">
+<link rel="chapter" href="./6" title="Chapter 6 Exponential, Logarithmic, Sine, and Cosine Integrals">
+<link rel="chapter" href="./7" title="Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="chapter" href="./8" title="Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="chapter" href="./9" title="Chapter 9 Airy and Related Functions">
+<link rel="chapter" href="./10" title="Chapter 10 Bessel Functions">
+<link rel="chapter" href="./11" title="Chapter 11 Struve and Related Functions">
+<link rel="chapter" href="./12" title="Chapter 12 Parabolic Cylinder Functions">
+<link rel="chapter" href="./13" title="Chapter 13 Confluent Hypergeometric Functions">
+<link rel="chapter" href="./14" title="Chapter 14 Legendre and Related Functions">
+<link rel="chapter" href="./15" title="Chapter 15 Hypergeometric Function">
+<link rel="chapter" href="./16" title="Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="chapter" href="./17" title="Chapter 17 𝑞-Hypergeometric and Related Functions">
+<link rel="chapter" href="./18" title="Chapter 18 Orthogonal Polynomials">
+<link rel="chapter" href="./19" title="Chapter 19 Elliptic Integrals">
+<link rel="chapter" href="./20" title="Chapter 20 Theta Functions">
+<link rel="chapter" href="./21" title="Chapter 21 Multidimensional Theta Functions">
+<link rel="chapter" href="./22" title="Chapter 22 Jacobian Elliptic Functions">
+<link rel="chapter" href="./23" title="Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="chapter" href="./24" title="Chapter 24 Bernoulli and Euler Polynomials">
+<link rel="chapter" href="./25" title="Chapter 25 Zeta and Related Functions">
+<link rel="chapter" href="./26" title="Chapter 26 Combinatorial Analysis">
+<link rel="chapter" href="./27" title="Chapter 27 Functions of Number Theory">
+<link rel="chapter" href="./28" title="Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="chapter" href="./29" title="Chapter 29 Lamé Functions">
+<link rel="chapter" href="./30" title="Chapter 30 Spheroidal Wave Functions">
+<link rel="chapter" href="./31" title="Chapter 31 Heun Functions">
+<link rel="chapter" href="./32" title="Chapter 32 Painlevé Transcendents">
+<link rel="chapter" href="./33" title="Chapter 33 Coulomb Functions">
+<link rel="chapter" href="./34" title="Chapter 34 3⁢𝑗,6⁢𝑗,9⁢𝑗 Symbols">
+<link rel="chapter" href="./35" title="Chapter 35 Functions of Matrix Argument">
+<link rel="chapter" href="./36" title="Chapter 36 Integrals with Coalescing Saddles">
+<link rel="bibliography" href="./bib/" title="Bibliography">
+<link rel="index" href="./idx/" title="Index">
+<link rel="glossary" href="./not/" title="Notations">
+<link rel="document" href="./lof/" title="List of Figures">
+<link rel="document" href="./lot/" title="List of Tables">
+<link rel="document" href="./software/" title="Software Index">
+<link rel="document" href="./errata/" title="Errata">
+<link rel="document" href="./help/" title="Need Help?">
+<link rel="document" href="./search/" title="Advanced Search">
+<link rel="document" href="./about/" title="About the Project">
+<link rel="sidebar" href="./21.7.F1.mag" title="Figure 21.7.1 ‣ §21.7 Riemann Surfaces ‣ Applications ‣ Chapter 21 Multidimensional Theta Functions">
+<meta name="keywords" lang="en" content="Fay’s trisecant identity, Frobenius’ identity, Riemann surface, Riemann theta functions with characteristics, algebraic curves, connection with Riemann theta functions, cycle, cycles, definition, generalizations, genus, handle, holomorphic differentials, hyperelliptic, intersection indices, plane algebraic curves, prime form">
+</head>
+<body class="color_default textfont_default titlefont_default fontsize_default navbar_default">
+<div class="ltx_page_navbar">
+<div class="ltx_page_navlogo"><a href="./" title="Digital Library of Mathematical Functions"><span>DLMF</span></a></div>
+<div class="ltx_page_navitems">
+<form method="get" action="./search/search">
+<ul>
+<li><a href="./idx/">Index</a></li>
+<li><a href="./not/">Notations</a></li>
+<li><small><input type="text" name="q" value="" size="6" class="ltx_page_navitem_search"><button type="submit">Search</button></small></li>
+<li><a href="./help/" class="ltx_help">Help?</a></li>
+<li><a href="./help/cite">Citing</a></li>
+<li><a href="./help/customize" class="ltx_customize">Customize</a></li>
+<li id="showinfo"><a href="" onclick="showInfo(); return false;" title="Show Annotations">Annotate</a></li>
+<li id="hideinfo"><a href="" onclick="hideInfo(); return false;">UnAnnotate</a></li>
+</ul>
+</form>
+</div>
+<div class="ltx_page_navsponsors">
+<div><a href="./about/" class="ltx_page_navabout">About the Project</a></div>
+</div>
+</div>
+<div class="ltx_page_main">
+<div class="ltx_page_header">
+<a href="./21" title="" class="ltx_ref" rel="up up"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">21 </span>Multidimensional Theta Functions</span></a><a href="./21#PT3" title="In Chapter 21 Multidimensional Theta Functions" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title">Applications</span></a><a href="./21.6" title="In Properties ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">21.6 </span>Products</span></a><a href="./21.8" title="In Applications ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">21.8 </span>Abelian Functions</span></a>
+</div>
+<div class="ltx_page_content">
+<section class="ltx_section ltx_authors_multiline ltx_leqno">
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">§21.7 </span>Riemann Surfaces</h1>
+<div id="info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd><a class="ltx_keyword" href="./search/search?q=Riemann%20surface">Riemann surface</a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./21.7" title="" class="ltx_ref">http://dlmf.nist.gov/21.7</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./21#info" title="Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.21</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<h6>Contents</h6>
+<ol class="ltx_toclist ltx_toclist_section">
+<li class="ltx_tocentry"><a href="#i"><span class="ltx_tag ltx_tag_subsection">§21.7(i) </span>Connection of Riemann Theta Functions to Riemann Surfaces</a></li>
+<li class="ltx_tocentry"><a href="#ii"><span class="ltx_tag ltx_tag_subsection">§21.7(ii) </span>Fay’s Trisecant Identity</a></li>
+<li class="ltx_tocentry"><a href="#iii"><span class="ltx_tag ltx_tag_subsection">§21.7(iii) </span>Frobenius’ Identity</a></li>
+</ol>
+<section id="i" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§21.7(i) </span>Connection of Riemann Theta Functions to Riemann Surfaces</h2>
+<div id="i.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=Riemann%20surface">Riemann surface</a>, <a class="ltx_keyword" href="./search/search?q=algebraic%20curves">algebraic curves</a>, <a class="ltx_keyword" href="./search/search?q=connection%20with%20Riemann%20theta%20functions">connection with Riemann theta functions</a>, <a class="ltx_keyword" href="./search/search?q=cycle">cycle</a>, <a class="ltx_keyword" href="./search/search?q=cycles">cycles</a>, <a class="ltx_keyword" href="./search/search?q=definition">definition</a>, <a class="ltx_keyword" href="./search/search?q=genus">genus</a>, <a class="ltx_keyword" href="./search/search?q=handle">handle</a>, <a class="ltx_keyword" href="./search/search?q=holomorphic%20differentials">holomorphic differentials</a>, <a class="ltx_keyword" href="./search/search?q=intersection%20indices">intersection indices</a>, <a class="ltx_keyword" href="./search/search?q=plane%20algebraic%20curves">plane algebraic curves</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./21.1#t1.r19" title="§21.1 Special Notation ‣ Notation ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§21.1</span></a>,
+<a href="./21.4#F5" title="In §21.4 Graphics ‣ Properties ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Figure 21.4.5</span></a>,
+<a href="./21.4.F5.mag" title="In §21.4 Graphics ‣ Properties ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Figure 21.4.5</span></a>,
+<a href="./21.4.F5.viz" title="In §21.4 Graphics ‣ Properties ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Figure 21.4.5</span></a>,
+<a href="./21.4#p1" title="§21.4 Graphics ‣ Properties ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§21.4</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./21.7.i" title="" class="ltx_ref">http://dlmf.nist.gov/21.7.i</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./21.7#info" title="§21.7 Riemann Surfaces ‣ Applications ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§21.7</span></a> and
+<a href="./21#info" title="Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.21</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="i.p1" class="ltx_para">
+<p class="ltx_p">In almost all applications, a Riemann theta function is associated with a
+compact Riemann surface. Although there are other ways to
+represent Riemann surfaces (see e.g. <cite class="ltx_cite ltx_citemacro_citet">Belokolos<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/B#bib232" title="Algebro-geometric Approach to Nonlinear Integrable Problems" class="ltx_ref">1994</a>, §2.1)</cite>), they
+are obtainable from <em class="ltx_emph ltx_font_italic">plane algebraic curves</em>
+(<cite class="ltx_cite ltx_citemacro_citet">Springer (<a href="./bib/S#bib2146" title="Introduction to Riemann Surfaces" class="ltx_ref">1957</a>)</cite>, or <cite class="ltx_cite ltx_citemacro_citet">Riemann (<a href="./bib/R#bib1950" title="Grundlagen für eine allgemeine Theorie der Functionen einer veränderlichen complexen Grösse" class="ltx_ref">1851</a>)</cite>). Consider the set of points in <math class="ltx_Math" altimg="m86.png" altimg-height="21px" altimg-valign="-2px" altimg-width="29px" alttext="{\mathbb{C}}^{2}" display="inline"><msup><mi href="./front/introduction#common.t1.r1" title="complex plane">ℂ</mi><mn>2</mn></msup></math> that
+satisfy the equation</p>
+<table id="E1" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">21.7.1</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E1.png" altimg-height="27px" altimg-valign="-7px" altimg-width="117px" alttext="P(\lambda,\mu)=0," display="block"><mrow><mrow><mrow><mi href="./21.7#i.p1" title="polynomial">P</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>λ</mi><mo>,</mo><mi>μ</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E1.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd><a href="./21.7#i.p1" title="§21.7(i) Connection of Riemann Theta Functions to Riemann Surfaces ‣ §21.7 Riemann Surfaces ‣ Applications ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><math class="ltx_Math" altimg="m15.png" altimg-height="25px" altimg-valign="-7px" altimg-width="70px" alttext="P(\lambda,\mu)" display="inline"><mrow><mi href="./21.7#i.p1" title="polynomial">P</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>λ</mi><mo>,</mo><mi>μ</mi><mo stretchy="false">)</mo></mrow></mrow></math>:  polynomial</a></dd>
+<dt>Referenced by:</dt>
+<dd><a href="./21.7#i.p1" title="§21.7(i) Connection of Riemann Theta Functions to Riemann Surfaces ‣ §21.7 Riemann Surfaces ‣ Applications ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§21.7(i)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./21.7.E1" title="" class="ltx_ref">http://dlmf.nist.gov/21.7.E1</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./21.7.E1.tex">TeX</a>, <a href="./21.7.E1.pmml">pMML</a>, <a href="./21.7.E1.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./21.7#i.info" title="§21.7(i) Connection of Riemann Theta Functions to Riemann Surfaces ‣ §21.7 Riemann Surfaces ‣ Applications ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§21.7(i)</span></a>,
+<a href="./21.7#info" title="§21.7 Riemann Surfaces ‣ Applications ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§21.7</span></a> and
+<a href="./21#info" title="Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.21</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">where <math class="ltx_Math" altimg="m15.png" altimg-height="25px" altimg-valign="-7px" altimg-width="70px" alttext="P(\lambda,\mu)" display="inline"><mrow><mi href="./21.7#i.p1" title="polynomial">P</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>λ</mi><mo>,</mo><mi>μ</mi><mo stretchy="false">)</mo></mrow></mrow></math> is a polynomial in <math class="ltx_Math" altimg="m52.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="\lambda" display="inline"><mi>λ</mi></math> and <math class="ltx_Math" altimg="m59.png" altimg-height="17px" altimg-valign="-6px" altimg-width="17px" alttext="\mu" display="inline"><mi>μ</mi></math> that does not
+factor over <math class="ltx_Math" altimg="m86.png" altimg-height="21px" altimg-valign="-2px" altimg-width="29px" alttext="{\mathbb{C}}^{2}" display="inline"><msup><mi href="./front/introduction#common.t1.r1" title="complex plane">ℂ</mi><mn>2</mn></msup></math>. Equation (<a href="./21.7#E1" title="(21.7.1) ‣ §21.7(i) Connection of Riemann Theta Functions to Riemann Surfaces ‣ §21.7 Riemann Surfaces ‣ Applications ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">21.7.1</span></a>) determines a plane
+algebraic curve in <math class="ltx_Math" altimg="m86.png" altimg-height="21px" altimg-valign="-2px" altimg-width="29px" alttext="{\mathbb{C}}^{2}" display="inline"><msup><mi href="./front/introduction#common.t1.r1" title="complex plane">ℂ</mi><mn>2</mn></msup></math>, which is made compact by adding its points at
+infinity. To accomplish this we write (<a href="./21.7#E1" title="(21.7.1) ‣ §21.7(i) Connection of Riemann Theta Functions to Riemann Surfaces ‣ §21.7 Riemann Surfaces ‣ Applications ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">21.7.1</span></a>) in terms of
+homogeneous coordinates:</p>
+<table id="E2" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">21.7.2</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E2.png" altimg-height="30px" altimg-valign="-7px" altimg-width="137px" alttext="\tilde{P}(\tilde{\lambda},\tilde{\mu},\tilde{\eta})=0," display="block"><mrow><mrow><mrow><mover accent="true"><mi href="./21.7#E2" title="polynomial">P</mi><mo href="./21.7#E2" title="polynomial">~</mo></mover><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mover accent="true"><mi>λ</mi><mo>~</mo></mover><mo>,</mo><mover accent="true"><mi>μ</mi><mo>~</mo></mover><mo>,</mo><mover accent="true"><mi>η</mi><mo>~</mo></mover><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E2.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Defines:</dt>
+<dd><span class="ltx_text"><math class="ltx_Math" altimg="m70.png" altimg-height="29px" altimg-valign="-7px" altimg-width="70px" alttext="\tilde{P}(\tilde{\lambda},\tilde{\mu})" display="inline"><mrow><mover accent="true"><mi href="./21.7#E2" title="polynomial">P</mi><mo href="./21.7#E2" title="polynomial">~</mo></mover><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mover accent="true"><mi>λ</mi><mo>~</mo></mover><mo>,</mo><mover accent="true"><mi>μ</mi><mo>~</mo></mover><mo stretchy="false">)</mo></mrow></mrow></math>:  polynomial (locally)</span></dd>
+<dt>Permalink:</dt>
+<dd><a href="./21.7.E2" title="" class="ltx_ref">http://dlmf.nist.gov/21.7.E2</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./21.7.E2.tex">TeX</a>, <a href="./21.7.E2.pmml">pMML</a>, <a href="./21.7.E2.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./21.7#i.info" title="§21.7(i) Connection of Riemann Theta Functions to Riemann Surfaces ‣ §21.7 Riemann Surfaces ‣ Applications ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§21.7(i)</span></a>,
+<a href="./21.7#info" title="§21.7 Riemann Surfaces ‣ Applications ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§21.7</span></a> and
+<a href="./21#info" title="Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.21</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">by setting <math class="ltx_Math" altimg="m51.png" altimg-height="29px" altimg-valign="-7px" altimg-width="78px" alttext="\lambda=\tilde{\lambda}/\tilde{\eta}" display="inline"><mrow><mi>λ</mi><mo>=</mo><mrow><mover accent="true"><mi>λ</mi><mo>~</mo></mover><mo>/</mo><mover accent="true"><mi>η</mi><mo>~</mo></mover></mrow></mrow></math>,
+<math class="ltx_Math" altimg="m58.png" altimg-height="25px" altimg-valign="-7px" altimg-width="78px" alttext="\mu=\tilde{\mu}/\tilde{\eta}" display="inline"><mrow><mi>μ</mi><mo>=</mo><mrow><mover accent="true"><mi>μ</mi><mo>~</mo></mover><mo>/</mo><mover accent="true"><mi>η</mi><mo>~</mo></mover></mrow></mrow></math>, and then clearing fractions. This compact
+curve may have singular points, that is, points at which the gradient of
+<math class="ltx_Math" altimg="m71.png" altimg-height="23px" altimg-valign="-2px" altimg-width="21px" alttext="\tilde{P}" display="inline"><mover accent="true"><mi href="./21.7#E2" title="polynomial">P</mi><mo href="./21.7#E2" title="polynomial">~</mo></mover></math> vanishes. Removing the singularities of this curve gives rise to a
+two-dimensional connected manifold with a complex-analytic structure, that is, a <em class="ltx_emph ltx_font_italic">Riemann
+surface. All compact Riemann surfaces can be obtained this
+way.</em></p>
+</div>
+<div id="i.p2" class="ltx_para">
+<p class="ltx_p">Since a Riemann surface <math class="ltx_Math" altimg="m28.png" altimg-height="18px" altimg-valign="-2px" altimg-width="17px" alttext="\Gamma" display="inline"><mi href="./21.7#i" mathvariant="normal" title="Riemann surface">Γ</mi></math> is a two-dimensional manifold that is
+orientable (owing to its analytic structure), its only topological invariant is
+its <em class="ltx_emph ltx_font_italic">genus</em> <math class="ltx_Math" altimg="m79.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="g" display="inline"><mi href="./21.1#t1.r1" title="positive integer">g</mi></math> (the number of <em class="ltx_emph ltx_font_italic">handles</em> in the surface). On this
+surface, we choose <math class="ltx_Math" altimg="m9.png" altimg-height="21px" altimg-valign="-6px" altimg-width="25px" alttext="2g" display="inline"><mrow><mn>2</mn><mo>⁢</mo><mi href="./21.1#t1.r1" title="positive integer">g</mi></mrow></math> <em class="ltx_emph ltx_font_italic">cycles</em> (that is, closed oriented curves, each
+with at most a finite number of singular points) <math class="ltx_Math" altimg="m72.png" altimg-height="19px" altimg-valign="-8px" altimg-width="24px" alttext="a_{j}" display="inline"><msub><mi href="./21.7#i.p2" title="cycles">a</mi><mi>j</mi></msub></math>, <math class="ltx_Math" altimg="m73.png" altimg-height="24px" altimg-valign="-8px" altimg-width="22px" alttext="b_{j}" display="inline"><msub><mi href="./21.7#i.p2" title="cycles">b</mi><mi>j</mi></msub></math>,
+<math class="ltx_Math" altimg="m83.png" altimg-height="22px" altimg-valign="-6px" altimg-width="128px" alttext="j=1,2,\dots,g" display="inline"><mrow><mi>j</mi><mo>=</mo><mrow><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi href="./21.1#t1.r1" title="positive integer">g</mi></mrow></mrow></math>, such that their
+<em class="ltx_emph ltx_font_italic">intersection indices</em> satisfy</p>
+<table id="E3" class="ltx_equationgroup ltx_eqn_table">
+<tbody>
+<tr id="Ex1" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="3" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equationgroup ltx_align_left">21.7.3</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m3.png" altimg-height="21px" altimg-valign="-8px" altimg-width="67px" alttext="\displaystyle a_{j}\circ a_{k}" display="inline"><mrow><msub><mi href="./21.7#i.p2" title="cycles">a</mi><mi>j</mi></msub><mo lspace="0.222em" rspace="0.222em">∘</mo><msub><mi href="./21.7#i.p2" title="cycles">a</mi><mi>k</mi></msub></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m1.png" altimg-height="23px" altimg-valign="-6px" altimg-width="45px" alttext="\displaystyle=0," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mn>0</mn></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex2" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m5.png" altimg-height="26px" altimg-valign="-8px" altimg-width="63px" alttext="\displaystyle b_{j}\circ b_{k}" display="inline"><mrow><msub><mi href="./21.7#i.p2" title="cycles">b</mi><mi>j</mi></msub><mo lspace="0.222em" rspace="0.222em">∘</mo><msub><mi href="./21.7#i.p2" title="cycles">b</mi><mi>k</mi></msub></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m1.png" altimg-height="23px" altimg-valign="-6px" altimg-width="45px" alttext="\displaystyle=0," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mn>0</mn></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex3" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m4.png" altimg-height="26px" altimg-valign="-8px" altimg-width="65px" alttext="\displaystyle a_{j}\circ b_{k}" display="inline"><mrow><msub><mi href="./21.7#i.p2" title="cycles">a</mi><mi>j</mi></msub><mo lspace="0.222em" rspace="0.222em">∘</mo><msub><mi href="./21.7#i.p2" title="cycles">b</mi><mi>k</mi></msub></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m2.png" altimg-height="26px" altimg-valign="-8px" altimg-width="65px" alttext="\displaystyle=\delta_{j,k}." display="inline"><mrow><mrow><mi></mi><mo>=</mo><msub><mi href="./front/introduction#common.t1.r4" title="Kronecker delta">δ</mi><mrow><mi>j</mi><mo href="./front/introduction#common.t1.r4" title="Kronecker delta">,</mo><mi>k</mi></mrow></msub></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E3.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./front/introduction#common.t1.r4" title="Common Notations and Definitions ‣ Mathematical Introduction" class="ltx_ref"><math class="ltx_Math" altimg="m46.png" altimg-height="24px" altimg-valign="-8px" altimg-width="36px" alttext="\delta_{\NVar{j},\NVar{k}}" display="inline"><msub><mi href="./front/introduction#common.t1.r4" title="Kronecker delta">δ</mi><mrow><mi class="ltx_nvar">j</mi><mo href="./front/introduction#common.t1.r4" title="Kronecker delta">,</mo><mi class="ltx_nvar">k</mi></mrow></msub></math>: Kronecker delta</a>,
+<a href="./21.7#i.p2" title="§21.7(i) Connection of Riemann Theta Functions to Riemann Surfaces ‣ §21.7 Riemann Surfaces ‣ Applications ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><math class="ltx_Math" altimg="m72.png" altimg-height="19px" altimg-valign="-8px" altimg-width="24px" alttext="a_{j}" display="inline"><msub><mi href="./21.7#i.p2" title="cycles">a</mi><mi>j</mi></msub></math>:  cycles</a> and
+<a href="./21.7#i.p2" title="§21.7(i) Connection of Riemann Theta Functions to Riemann Surfaces ‣ §21.7 Riemann Surfaces ‣ Applications ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><math class="ltx_Math" altimg="m73.png" altimg-height="24px" altimg-valign="-8px" altimg-width="22px" alttext="b_{j}" display="inline"><msub><mi href="./21.7#i.p2" title="cycles">b</mi><mi>j</mi></msub></math>:  cycles</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./21.7.E3" title="" class="ltx_ref">http://dlmf.nist.gov/21.7.E3</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./21.7.E3a.tex">TeX</a>, <a href="./21.7.E3b.tex">TeX</a>, <a href="./21.7.E3c.tex">TeX</a>, <a href="./21.7.E3a.pmml">pMML</a>, <a href="./21.7.E3b.pmml">pMML</a>, <a href="./21.7.E3c.pmml">pMML</a>, <a href="./21.7.E3a.png">png</a>, <a href="./21.7.E3b.png">png</a>, <a href="./21.7.E3c.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./21.7#i.info" title="§21.7(i) Connection of Riemann Theta Functions to Riemann Surfaces ‣ §21.7 Riemann Surfaces ‣ Applications ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§21.7(i)</span></a>,
+<a href="./21.7#info" title="§21.7 Riemann Surfaces ‣ Applications ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§21.7</span></a> and
+<a href="./21#info" title="Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.21</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">For example, Figure <a href="./21.7#F1" title="Figure 21.7.1 ‣ §21.7(i) Connection of Riemann Theta Functions to Riemann Surfaces ‣ §21.7 Riemann Surfaces ‣ Applications ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">21.7.1</span></a> depicts a genus 2 surface.</p>
+</div>
+<figure id="F1" class="ltx_figure"><a href="./21.7.F1.mag" title="Magnify Figure" class="ltx_magnifiable"><img src="./21/7/F1.png" id="F1.g1" class="ltx_graphics ltx_centering ltx_img_landscape" width="277" height="191" alt="See accompanying text"></a>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 21.7.1: </span>A basis of cycles for a genus 2 surface.
+
+
+<a href="./21.7.F1.mag" title="Magnify Figure" class="ltx_magnifiable ltx_icon"><span>Magnify</span></a>
+</figcaption>
+<div id="F1.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Referenced by:</dt>
+<dd><a href="./21.7#i.p2" title="§21.7(i) Connection of Riemann Theta Functions to Riemann Surfaces ‣ §21.7 Riemann Surfaces ‣ Applications ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§21.7(i)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./21.7.F1" title="" class="ltx_ref">http://dlmf.nist.gov/21.7.F1</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./21.7.F1.pdf">pdf</a>, <a href="./21.7.F1.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./21.7#i.info" title="§21.7(i) Connection of Riemann Theta Functions to Riemann Surfaces ‣ §21.7 Riemann Surfaces ‣ Applications ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§21.7(i)</span></a>,
+<a href="./21.7#info" title="§21.7 Riemann Surfaces ‣ Applications ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§21.7</span></a> and
+<a href="./21#info" title="Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.21</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+<div id="i.p3" class="ltx_para">
+<p class="ltx_p">On a Riemann surface of genus <math class="ltx_Math" altimg="m79.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="g" display="inline"><mi href="./21.1#t1.r1" title="positive integer">g</mi></math>, there are <math class="ltx_Math" altimg="m79.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="g" display="inline"><mi href="./21.1#t1.r1" title="positive integer">g</mi></math> linearly independent
+<em class="ltx_emph ltx_font_italic">holomorphic differentials</em> <math class="ltx_Math" altimg="m62.png" altimg-height="19px" altimg-valign="-8px" altimg-width="26px" alttext="\omega_{j}" display="inline"><msub><mi href="./21.1#t1.r20" title="differential">ω</mi><mi>j</mi></msub></math>, <math class="ltx_Math" altimg="m83.png" altimg-height="22px" altimg-valign="-6px" altimg-width="128px" alttext="j=1,2,\dots,g" display="inline"><mrow><mi>j</mi><mo>=</mo><mrow><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi href="./21.1#t1.r1" title="positive integer">g</mi></mrow></mrow></math>. If a local
+coordinate <math class="ltx_Math" altimg="m85.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi>z</mi></math> is chosen on the Riemann surface, then the local coordinate
+representation of these holomorphic differentials is given by</p>
+<table id="E4" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">21.7.4</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E4.png" altimg-height="28px" altimg-valign="-8px" altimg-width="133px" alttext="\omega_{j}=f_{j}(z)\,\mathrm{d}z," display="block"><mrow><mrow><msub><mi href="./21.1#t1.r20" title="differential">ω</mi><mi>j</mi></msub><mo>=</mo><mrow><mrow><msub><mi href="./21.7#i.p3" title="analytic functions">f</mi><mi>j</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mo lspace="0em">⁢</mo><mrow><mo href="./1.4#iv" rspace="0em" title="differential of 𝑥">d</mo><mi>z</mi></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="4"><span class="ltx_constraint"><math class="ltx_Math" altimg="m83.png" altimg-height="22px" altimg-valign="-6px" altimg-width="128px" alttext="j=1,2,\dots,g" display="inline"><mrow><mi>j</mi><mo>=</mo><mrow><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi href="./21.1#t1.r1" title="positive integer">g</mi></mrow></mrow></math>,</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E4.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m57.png" altimg-height="18px" altimg-valign="-2px" altimg-width="28px" alttext="\,\mathrm{d}\NVar{x}" display="inline"><mrow><mo href="./1.4#iv" rspace="0em" title="differential of 𝑥">d</mo><mi class="ltx_nvar">x</mi></mrow></math>: differential of <math class="ltx_Math" altimg="m84.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./21.1#t1.r1" title="§21.1 Special Notation ‣ Notation ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><math class="ltx_Math" altimg="m79.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="g" display="inline"><mi href="./21.1#t1.r1" title="positive integer">g</mi></math>:  positive integer</a>,
+<a href="./21.1#t1.r20" title="§21.1 Special Notation ‣ Notation ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><math class="ltx_Math" altimg="m61.png" altimg-height="13px" altimg-valign="-2px" altimg-width="18px" alttext="\omega" display="inline"><mi href="./21.1#t1.r20" title="differential">ω</mi></math>:  differential</a> and
+<a href="./21.7#i.p3" title="§21.7(i) Connection of Riemann Theta Functions to Riemann Surfaces ‣ §21.7 Riemann Surfaces ‣ Applications ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><math class="ltx_Math" altimg="m75.png" altimg-height="26px" altimg-valign="-8px" altimg-width="50px" alttext="f_{j}(z)" display="inline"><mrow><msub><mi href="./21.7#i.p3" title="analytic functions">f</mi><mi>j</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow></math>:  analytic functions</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./21.7.E4" title="" class="ltx_ref">http://dlmf.nist.gov/21.7.E4</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./21.7.E4.tex">TeX</a>, <a href="./21.7.E4.pmml">pMML</a>, <a href="./21.7.E4.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./21.7#i.info" title="§21.7(i) Connection of Riemann Theta Functions to Riemann Surfaces ‣ §21.7 Riemann Surfaces ‣ Applications ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§21.7(i)</span></a>,
+<a href="./21.7#info" title="§21.7 Riemann Surfaces ‣ Applications ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§21.7</span></a> and
+<a href="./21#info" title="Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.21</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">where <math class="ltx_Math" altimg="m75.png" altimg-height="26px" altimg-valign="-8px" altimg-width="50px" alttext="f_{j}(z)" display="inline"><mrow><msub><mi href="./21.7#i.p3" title="analytic functions">f</mi><mi>j</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow></math>, <math class="ltx_Math" altimg="m83.png" altimg-height="22px" altimg-valign="-6px" altimg-width="128px" alttext="j=1,2,\dots,g" display="inline"><mrow><mi>j</mi><mo>=</mo><mrow><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi href="./21.1#t1.r1" title="positive integer">g</mi></mrow></mrow></math> are analytic functions. Thus the
+differentials <math class="ltx_Math" altimg="m62.png" altimg-height="19px" altimg-valign="-8px" altimg-width="26px" alttext="\omega_{j}" display="inline"><msub><mi href="./21.1#t1.r20" title="differential">ω</mi><mi>j</mi></msub></math>, <math class="ltx_Math" altimg="m83.png" altimg-height="22px" altimg-valign="-6px" altimg-width="128px" alttext="j=1,2,\dots,g" display="inline"><mrow><mi>j</mi><mo>=</mo><mrow><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi href="./21.1#t1.r1" title="positive integer">g</mi></mrow></mrow></math> have no singularities on <math class="ltx_Math" altimg="m28.png" altimg-height="18px" altimg-valign="-2px" altimg-width="17px" alttext="\Gamma" display="inline"><mi href="./21.7#i" mathvariant="normal" title="Riemann surface">Γ</mi></math>.
+Note that for the purposes of integrating these holomorphic differentials, all
+cycles on the surface are a linear combination of the cycles <math class="ltx_Math" altimg="m72.png" altimg-height="19px" altimg-valign="-8px" altimg-width="24px" alttext="a_{j}" display="inline"><msub><mi href="./21.7#i.p2" title="cycles">a</mi><mi>j</mi></msub></math>, <math class="ltx_Math" altimg="m73.png" altimg-height="24px" altimg-valign="-8px" altimg-width="22px" alttext="b_{j}" display="inline"><msub><mi href="./21.7#i.p2" title="cycles">b</mi><mi>j</mi></msub></math>,
+<math class="ltx_Math" altimg="m83.png" altimg-height="22px" altimg-valign="-6px" altimg-width="128px" alttext="j=1,2,\dots,g" display="inline"><mrow><mi>j</mi><mo>=</mo><mrow><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi href="./21.1#t1.r1" title="positive integer">g</mi></mrow></mrow></math>. The <math class="ltx_Math" altimg="m62.png" altimg-height="19px" altimg-valign="-8px" altimg-width="26px" alttext="\omega_{j}" display="inline"><msub><mi href="./21.1#t1.r20" title="differential">ω</mi><mi>j</mi></msub></math> are normalized so that</p>
+<table id="E5" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">21.7.5</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E5.png" altimg-height="56px" altimg-valign="-23px" altimg-width="127px" alttext="\oint_{a_{k}}\omega_{j}=\delta_{j,k}," display="block"><mrow><mrow><mrow><msub><mo>∮</mo><msub><mi href="./21.7#i.p2" title="cycles">a</mi><mi>k</mi></msub></msub><msub><mi href="./21.1#t1.r20" title="differential">ω</mi><mi>j</mi></msub></mrow><mo>=</mo><msub><mi href="./front/introduction#common.t1.r4" title="Kronecker delta">δ</mi><mrow><mi>j</mi><mo href="./front/introduction#common.t1.r4" title="Kronecker delta">,</mo><mi>k</mi></mrow></msub></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="4"><span class="ltx_constraint"><math class="ltx_Math" altimg="m80.png" altimg-height="22px" altimg-valign="-6px" altimg-width="148px" alttext="j,k=1,2,\dots,g" display="inline"><mrow><mrow><mrow><mi>j</mi><mo>,</mo><mi>k</mi></mrow><mo>=</mo><mn>1</mn></mrow><mo>,</mo><mrow><mn>2</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi href="./21.1#t1.r1" title="positive integer">g</mi></mrow></mrow></math>.</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E5.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./front/introduction#common.t1.r4" title="Common Notations and Definitions ‣ Mathematical Introduction" class="ltx_ref"><math class="ltx_Math" altimg="m46.png" altimg-height="24px" altimg-valign="-8px" altimg-width="36px" alttext="\delta_{\NVar{j},\NVar{k}}" display="inline"><msub><mi href="./front/introduction#common.t1.r4" title="Kronecker delta">δ</mi><mrow><mi class="ltx_nvar">j</mi><mo href="./front/introduction#common.t1.r4" title="Kronecker delta">,</mo><mi class="ltx_nvar">k</mi></mrow></msub></math>: Kronecker delta</a>,
+<a href="./21.1#t1.r1" title="§21.1 Special Notation ‣ Notation ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><math class="ltx_Math" altimg="m79.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="g" display="inline"><mi href="./21.1#t1.r1" title="positive integer">g</mi></math>:  positive integer</a>,
+<a href="./21.1#t1.r20" title="§21.1 Special Notation ‣ Notation ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><math class="ltx_Math" altimg="m61.png" altimg-height="13px" altimg-valign="-2px" altimg-width="18px" alttext="\omega" display="inline"><mi href="./21.1#t1.r20" title="differential">ω</mi></math>:  differential</a> and
+<a href="./21.7#i.p2" title="§21.7(i) Connection of Riemann Theta Functions to Riemann Surfaces ‣ §21.7 Riemann Surfaces ‣ Applications ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><math class="ltx_Math" altimg="m72.png" altimg-height="19px" altimg-valign="-8px" altimg-width="24px" alttext="a_{j}" display="inline"><msub><mi href="./21.7#i.p2" title="cycles">a</mi><mi>j</mi></msub></math>:  cycles</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./21.7.E5" title="" class="ltx_ref">http://dlmf.nist.gov/21.7.E5</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./21.7.E5.tex">TeX</a>, <a href="./21.7.E5.pmml">pMML</a>, <a href="./21.7.E5.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./21.7#i.info" title="§21.7(i) Connection of Riemann Theta Functions to Riemann Surfaces ‣ §21.7 Riemann Surfaces ‣ Applications ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§21.7(i)</span></a>,
+<a href="./21.7#info" title="§21.7 Riemann Surfaces ‣ Applications ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§21.7</span></a> and
+<a href="./21#info" title="Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.21</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">Then the matrix defined by</p>
+<table id="E6" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">21.7.6</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E6.png" altimg-height="56px" altimg-valign="-23px" altimg-width="127px" alttext="\Omega_{jk}=\oint_{b_{k}}\omega_{j}," display="block"><mrow><mrow><msub><mi mathvariant="normal">Ω</mi><mrow><mi>j</mi><mo>⁢</mo><mi>k</mi></mrow></msub><mo rspace="0.111em">=</mo><mrow><msub><mo>∮</mo><msub><mi href="./21.7#i.p2" title="cycles">b</mi><mi>k</mi></msub></msub><msub><mi href="./21.1#t1.r20" title="differential">ω</mi><mi>j</mi></msub></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="4"><span class="ltx_constraint"><math class="ltx_Math" altimg="m80.png" altimg-height="22px" altimg-valign="-6px" altimg-width="148px" alttext="j,k=1,2,\dots,g" display="inline"><mrow><mrow><mrow><mi>j</mi><mo>,</mo><mi>k</mi></mrow><mo>=</mo><mn>1</mn></mrow><mo>,</mo><mrow><mn>2</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi href="./21.1#t1.r1" title="positive integer">g</mi></mrow></mrow></math>,</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E6.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./21.1#t1.r1" title="§21.1 Special Notation ‣ Notation ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><math class="ltx_Math" altimg="m79.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="g" display="inline"><mi href="./21.1#t1.r1" title="positive integer">g</mi></math>:  positive integer</a>,
+<a href="./21.1#t1.r20" title="§21.1 Special Notation ‣ Notation ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><math class="ltx_Math" altimg="m61.png" altimg-height="13px" altimg-valign="-2px" altimg-width="18px" alttext="\omega" display="inline"><mi href="./21.1#t1.r20" title="differential">ω</mi></math>:  differential</a> and
+<a href="./21.7#i.p2" title="§21.7(i) Connection of Riemann Theta Functions to Riemann Surfaces ‣ §21.7 Riemann Surfaces ‣ Applications ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><math class="ltx_Math" altimg="m73.png" altimg-height="24px" altimg-valign="-8px" altimg-width="22px" alttext="b_{j}" display="inline"><msub><mi href="./21.7#i.p2" title="cycles">b</mi><mi>j</mi></msub></math>:  cycles</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./21.7.E6" title="" class="ltx_ref">http://dlmf.nist.gov/21.7.E6</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./21.7.E6.tex">TeX</a>, <a href="./21.7.E6.pmml">pMML</a>, <a href="./21.7.E6.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./21.7#i.info" title="§21.7(i) Connection of Riemann Theta Functions to Riemann Surfaces ‣ §21.7 Riemann Surfaces ‣ Applications ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§21.7(i)</span></a>,
+<a href="./21.7#info" title="§21.7 Riemann Surfaces ‣ Applications ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§21.7</span></a> and
+<a href="./21#info" title="Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.21</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">is a Riemann matrix and it is used to define the corresponding Riemann theta
+function. <em class="ltx_emph ltx_font_italic">In this way, we associate a Riemann theta function with every
+compact Riemann surface <math class="ltx_Math" altimg="m28.png" altimg-height="18px" altimg-valign="-2px" altimg-width="17px" alttext="\Gamma" display="inline"><mi href="./21.7#i" mathvariant="normal" title="Riemann surface">Γ</mi></math>.</em></p>
+</div>
+<div id="i.p4" class="ltx_para">
+<p class="ltx_p">Riemann theta functions originating from Riemann surfaces are special in the
+sense that a general <math class="ltx_Math" altimg="m79.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="g" display="inline"><mi href="./21.1#t1.r1" title="positive integer">g</mi></math>-dimensional Riemann theta function depends on
+<math class="ltx_Math" altimg="m76.png" altimg-height="25px" altimg-valign="-7px" altimg-width="98px" alttext="g(g+1)/2" display="inline"><mrow><mrow><mi href="./21.1#t1.r1" title="positive integer">g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi href="./21.1#t1.r1" title="positive integer">g</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>/</mo><mn>2</mn></mrow></math> complex parameters. In contrast, a <math class="ltx_Math" altimg="m79.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="g" display="inline"><mi href="./21.1#t1.r1" title="positive integer">g</mi></math>-dimensional Riemann theta
+function arising from a compact Riemann surface of genus <math class="ltx_Math" altimg="m79.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="g" display="inline"><mi href="./21.1#t1.r1" title="positive integer">g</mi></math> (<math class="ltx_Math" altimg="m11.png" altimg-height="18px" altimg-valign="-3px" altimg-width="37px" alttext="&gt;1" display="inline"><mrow><mi></mi><mo>&gt;</mo><mn>1</mn></mrow></math>)
+depends on at most <math class="ltx_Math" altimg="m10.png" altimg-height="21px" altimg-valign="-6px" altimg-width="61px" alttext="3g-3" display="inline"><mrow><mrow><mn>3</mn><mo>⁢</mo><mi href="./21.1#t1.r1" title="positive integer">g</mi></mrow><mo>−</mo><mn>3</mn></mrow></math> complex parameters (one complex parameter for the
+case <math class="ltx_Math" altimg="m78.png" altimg-height="21px" altimg-valign="-6px" altimg-width="53px" alttext="g=1" display="inline"><mrow><mi href="./21.1#t1.r1" title="positive integer">g</mi><mo>=</mo><mn>1</mn></mrow></math>). These special Riemann theta functions satisfy many special
+identities, two of which appear in the following subsections. For more
+information, see <cite class="ltx_cite ltx_citemacro_citet">Dubrovin (<a href="./bib/D#bib685" title="Theta functions and non-linear equations" class="ltx_ref">1981</a>)</cite>, <cite class="ltx_cite ltx_citemacro_citet">Brieskorn and Knörrer (<a href="./bib/B#bib353" title="Plane Algebraic Curves" class="ltx_ref">1986</a>, §9.3)</cite>,
+<cite class="ltx_cite ltx_citemacro_citet">Belokolos<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/B#bib232" title="Algebro-geometric Approach to Nonlinear Integrable Problems" class="ltx_ref">1994</a>, Chapter 2)</cite>, and
+<cite class="ltx_cite ltx_citemacro_citet">Mumford (<a href="./bib/M#bib1682" title="Tata Lectures on Theta. II" class="ltx_ref">1984</a>, §2.2–2.3)</cite>.</p>
+</div>
+</section>
+<section id="ii" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§21.7(ii) </span>Fay’s Trisecant Identity</h2>
+<div id="ii.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=Fay%20trisecant%20identity">Fay’s trisecant identity</a>, <a class="ltx_keyword" href="./search/search?q=Riemann%20surface">Riemann surface</a>, <a class="ltx_keyword" href="./search/search?q=Riemann%20theta%20functions%20with%20characteristics">Riemann theta functions with characteristics</a>, <a class="ltx_keyword" href="./search/search?q=generalizations">generalizations</a>, <a class="ltx_keyword" href="./search/search?q=prime%20form">prime form</a>
+</dd>
+<dt>Notes:</dt>
+<dd>See <cite class="ltx_cite ltx_citemacro_citet">Mumford (<a href="./bib/M#bib1682" title="Tata Lectures on Theta. II" class="ltx_ref">1984</a>, pp. 207-260)</cite>.</dd>
+<dt>Permalink:</dt>
+<dd><a href="./21.7.ii" title="" class="ltx_ref">http://dlmf.nist.gov/21.7.ii</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./21.7#info" title="§21.7 Riemann Surfaces ‣ Applications ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§21.7</span></a> and
+<a href="./21#info" title="Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.21</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="ii.p1" class="ltx_para">
+<p class="ltx_p">Let <math class="ltx_Math" altimg="m30.png" altimg-height="13px" altimg-valign="-2px" altimg-width="20px" alttext="\boldsymbol{{\alpha}}" display="inline"><mi href="./21.1#t1.r6" title="𝑔-dimensional vector">𝜶</mi></math>, <math class="ltx_Math" altimg="m33.png" altimg-height="22px" altimg-valign="-6px" altimg-width="19px" alttext="\boldsymbol{{\beta}}" display="inline"><mi href="./21.1#t1.r6" title="𝑔-dimensional vector">𝜷</mi></math> be such that</p>
+</div>
+<div id="ii.p2" class="ltx_para">
+<table id="E7" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">21.7.7</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E7.png" altimg-height="148px" altimg-valign="-22px" altimg-width="352px" alttext="\left(\frac{\partial}{\partial z_{1}}\theta\genfrac{[}{]}{0.0pt}{}{\boldsymbol%
+{{\alpha}}}{\boldsymbol{{\beta}}}\left(\mathbf{z}\middle|\boldsymbol{{\Omega}}%
+\right)\Big|_{\mathbf{z}=\boldsymbol{{0}}},\dots,\frac{\partial}{\partial z_{g%
+}}\theta\genfrac{[}{]}{0.0pt}{}{\boldsymbol{{\alpha}}}{\boldsymbol{{\beta}}}%
+\left(\mathbf{z}\middle|\boldsymbol{{\Omega}}\right)\Big|_{\mathbf{z}=%
+\boldsymbol{{0}}}\right)\neq\boldsymbol{{0}}." display="block"><mrow><mrow><mrow><mo>(</mo><msub><mrow><mrow><mfrac><mo href="./1.5#E3" title="partial derivative of 𝑓 with respect to 𝑥">∂</mo><mrow><mo href="./1.5#E3" rspace="0em" title="partial derivative of 𝑓 with respect to 𝑥">∂</mo><msub><mi>z</mi><mn>1</mn></msub></mrow></mfrac><mo>⁡</mo><mrow><mrow><mi href="./21.2#E5" title="Riemann theta function with characteristics">θ</mi><mo href="./21.2#E5" title="Riemann theta function with characteristics">⁢</mo><mrow><mo href="./21.2#E5" title="Riemann theta function with characteristics">[</mo><mfrac linethickness="0.0pt"><mi href="./21.1#t1.r6" title="𝑔-dimensional vector">𝜶</mi><mi href="./21.1#t1.r6" title="𝑔-dimensional vector">𝜷</mi></mfrac><mo href="./21.2#E5" title="Riemann theta function with characteristics">]</mo></mrow></mrow><mo>⁡</mo><mrow><mo>(</mo><mi>𝐳</mi><mo lspace="0em" rspace="0em" stretchy="true">|</mo><mi href="./21.1#t1.r5" title="a Riemann matrix">𝛀</mi><mo>)</mo></mrow></mrow></mrow><mo maxsize="1.600em" minsize="1.600em" stretchy="true">|</mo></mrow><mrow><mi>𝐳</mi><mo>=</mo><mn>𝟎</mn></mrow></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mrow><mrow><mfrac><mo href="./1.5#E3" title="partial derivative of 𝑓 with respect to 𝑥">∂</mo><mrow><mo href="./1.5#E3" rspace="0em" title="partial derivative of 𝑓 with respect to 𝑥">∂</mo><msub><mi>z</mi><mi href="./21.1#t1.r1" title="positive integer">g</mi></msub></mrow></mfrac><mo>⁡</mo><mrow><mrow><mi href="./21.2#E5" title="Riemann theta function with characteristics">θ</mi><mo href="./21.2#E5" title="Riemann theta function with characteristics">⁢</mo><mrow><mo href="./21.2#E5" title="Riemann theta function with characteristics">[</mo><mfrac linethickness="0.0pt"><mi href="./21.1#t1.r6" title="𝑔-dimensional vector">𝜶</mi><mi href="./21.1#t1.r6" title="𝑔-dimensional vector">𝜷</mi></mfrac><mo href="./21.2#E5" title="Riemann theta function with characteristics">]</mo></mrow></mrow><mo>⁡</mo><mrow><mo>(</mo><mi>𝐳</mi><mo lspace="0em" rspace="0em" stretchy="true">|</mo><mi href="./21.1#t1.r5" title="a Riemann matrix">𝛀</mi><mo>)</mo></mrow></mrow></mrow><mo maxsize="1.600em" minsize="1.600em" stretchy="true">|</mo></mrow><mrow><mi>𝐳</mi><mo>=</mo><mn>𝟎</mn></mrow></msub><mo>)</mo></mrow><mo>≠</mo><mn>𝟎</mn></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E7.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./21.2#E5" title="(21.2.5) ‣ §21.2(ii) Riemann Theta Functions with Characteristics ‣ §21.2 Definitions ‣ Properties ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><math class="ltx_Math" altimg="m68.png" altimg-height="32px" altimg-valign="-12px" altimg-width="98px" alttext="\theta\genfrac{[}{]}{0.0pt}{}{\NVar{\boldsymbol{{\alpha}}}}{\NVar{\boldsymbol{%
+{\beta}}}}\left(\NVar{\mathbf{z}}\middle|\NVar{\boldsymbol{{\Omega}}}\right)" display="inline"><mrow><mrow><mi href="./21.2#E5" title="Riemann theta function with characteristics">θ</mi><mo href="./21.2#E5" title="Riemann theta function with characteristics">⁢</mo><mrow><mo href="./21.2#E5" title="Riemann theta function with characteristics">[</mo><mfrac linethickness="0.0pt"><mi class="ltx_nvar" href="./21.1#t1.r6" title="𝑔-dimensional vector">𝜶</mi><mi class="ltx_nvar" href="./21.1#t1.r6" title="𝑔-dimensional vector">𝜷</mi></mfrac><mo href="./21.2#E5" title="Riemann theta function with characteristics">]</mo></mrow></mrow><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">𝐳</mi><mo lspace="0em" rspace="0em" stretchy="true">|</mo><mi class="ltx_nvar" href="./21.1#t1.r5" title="a Riemann matrix">𝛀</mi><mo>)</mo></mrow></mrow></math>: Riemann theta function with characteristics</a>,
+<a href="./1.5#E3" title="(1.5.3) ‣ §1.5(i) Partial Derivatives ‣ §1.5 Calculus of Two or More Variables ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m47.png" altimg-height="31px" altimg-valign="-9px" altimg-width="29px" alttext="\frac{\partial\NVar{f}}{\partial\NVar{x}}" display="inline"><mfrac><mrow><mo href="./1.5#E3" rspace="0em" title="partial derivative of 𝑓 with respect to 𝑥">∂</mo><mi class="ltx_nvar">f</mi></mrow><mrow><mo href="./1.5#E3" rspace="0em" title="partial derivative of 𝑓 with respect to 𝑥">∂</mo><mi class="ltx_nvar">x</mi></mrow></mfrac></math>: partial derivative of <math class="ltx_Math" altimg="m74.png" altimg-height="22px" altimg-valign="-6px" altimg-width="17px" alttext="f" display="inline"><mi>f</mi></math> with respect to <math class="ltx_Math" altimg="m84.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./1.5#E3" title="(1.5.3) ‣ §1.5(i) Partial Derivatives ‣ §1.5 Calculus of Two or More Variables ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m63.png" altimg-height="18px" altimg-valign="-2px" altimg-width="28px" alttext="\,\partial\NVar{x}" display="inline"><mrow><mo href="./1.5#E3" rspace="0em" title="partial differential of 𝑥">∂</mo><mi class="ltx_nvar">x</mi></mrow></math>: partial differential of <math class="ltx_Math" altimg="m84.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./21.1#t1.r1" title="§21.1 Special Notation ‣ Notation ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><math class="ltx_Math" altimg="m79.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="g" display="inline"><mi href="./21.1#t1.r1" title="positive integer">g</mi></math>:  positive integer</a>,
+<a href="./21.1#t1.r5" title="§21.1 Special Notation ‣ Notation ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><math class="ltx_Math" altimg="m29.png" altimg-height="18px" altimg-valign="-2px" altimg-width="22px" alttext="\boldsymbol{{\Omega}}" display="inline"><mi href="./21.1#t1.r5" title="a Riemann matrix">𝛀</mi></math>:  a Riemann matrix</a>,
+<a href="./21.1#t1.r6" title="§21.1 Special Notation ‣ Notation ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><math class="ltx_Math" altimg="m30.png" altimg-height="13px" altimg-valign="-2px" altimg-width="20px" alttext="\boldsymbol{{\alpha}}" display="inline"><mi href="./21.1#t1.r6" title="𝑔-dimensional vector">𝜶</mi></math>:  <math class="ltx_Math" altimg="m79.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="g" display="inline"><mi href="./21.1#t1.r1" title="positive integer">g</mi></math>-dimensional vector</a> and
+<a href="./21.1#t1.r6" title="§21.1 Special Notation ‣ Notation ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><math class="ltx_Math" altimg="m33.png" altimg-height="22px" altimg-valign="-6px" altimg-width="19px" alttext="\boldsymbol{{\beta}}" display="inline"><mi href="./21.1#t1.r6" title="𝑔-dimensional vector">𝜷</mi></math>:  <math class="ltx_Math" altimg="m79.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="g" display="inline"><mi href="./21.1#t1.r1" title="positive integer">g</mi></math>-dimensional vector</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./21.7.E7" title="" class="ltx_ref">http://dlmf.nist.gov/21.7.E7</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./21.7.E7.tex">TeX</a>, <a href="./21.7.E7.pmml">pMML</a>, <a href="./21.7.E7.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./21.7#ii.info" title="§21.7(ii) Fay’s Trisecant Identity ‣ §21.7 Riemann Surfaces ‣ Applications ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§21.7(ii)</span></a>,
+<a href="./21.7#info" title="§21.7 Riemann Surfaces ‣ Applications ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§21.7</span></a> and
+<a href="./21#info" title="Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.21</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">Define the holomorphic differential</p>
+<table id="E8" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">21.7.8</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E8.png" altimg-height="95px" altimg-valign="-31px" altimg-width="284px" alttext="\zeta=\sum_{j=1}^{g}\omega_{j}\frac{\partial}{\partial z_{j}}\theta\genfrac{[}%
+{]}{0.0pt}{}{\boldsymbol{{\alpha}}}{\boldsymbol{{\beta}}}\left(\mathbf{z}%
+\middle|\boldsymbol{{\Omega}}\right)\Big|_{\mathbf{z}=\boldsymbol{{0}}}." display="block"><mrow><mrow><mi>ζ</mi><mo rspace="0.111em">=</mo><msub><mrow><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mi href="./21.1#t1.r1" title="positive integer">g</mi></munderover><mrow><msub><mi href="./21.1#t1.r20" title="differential">ω</mi><mi>j</mi></msub><mo>⁢</mo><mrow><mfrac><mo href="./1.5#E3" title="partial derivative of 𝑓 with respect to 𝑥">∂</mo><mrow><mo href="./1.5#E3" rspace="0em" title="partial derivative of 𝑓 with respect to 𝑥">∂</mo><msub><mi>z</mi><mi>j</mi></msub></mrow></mfrac><mo>⁡</mo><mrow><mrow><mi href="./21.2#E5" title="Riemann theta function with characteristics">θ</mi><mo href="./21.2#E5" title="Riemann theta function with characteristics">⁢</mo><mrow><mo href="./21.2#E5" title="Riemann theta function with characteristics">[</mo><mfrac linethickness="0.0pt"><mi href="./21.1#t1.r6" title="𝑔-dimensional vector">𝜶</mi><mi href="./21.1#t1.r6" title="𝑔-dimensional vector">𝜷</mi></mfrac><mo href="./21.2#E5" title="Riemann theta function with characteristics">]</mo></mrow></mrow><mo>⁡</mo><mrow><mo>(</mo><mi>𝐳</mi><mo lspace="0em" rspace="0em" stretchy="true">|</mo><mi href="./21.1#t1.r5" title="a Riemann matrix">𝛀</mi><mo>)</mo></mrow></mrow></mrow></mrow></mrow><mo maxsize="1.600em" minsize="1.600em" stretchy="true">|</mo></mrow><mrow><mi>𝐳</mi><mo>=</mo><mn>𝟎</mn></mrow></msub></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E8.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./21.2#E5" title="(21.2.5) ‣ §21.2(ii) Riemann Theta Functions with Characteristics ‣ §21.2 Definitions ‣ Properties ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><math class="ltx_Math" altimg="m68.png" altimg-height="32px" altimg-valign="-12px" altimg-width="98px" alttext="\theta\genfrac{[}{]}{0.0pt}{}{\NVar{\boldsymbol{{\alpha}}}}{\NVar{\boldsymbol{%
+{\beta}}}}\left(\NVar{\mathbf{z}}\middle|\NVar{\boldsymbol{{\Omega}}}\right)" display="inline"><mrow><mrow><mi href="./21.2#E5" title="Riemann theta function with characteristics">θ</mi><mo href="./21.2#E5" title="Riemann theta function with characteristics">⁢</mo><mrow><mo href="./21.2#E5" title="Riemann theta function with characteristics">[</mo><mfrac linethickness="0.0pt"><mi class="ltx_nvar" href="./21.1#t1.r6" title="𝑔-dimensional vector">𝜶</mi><mi class="ltx_nvar" href="./21.1#t1.r6" title="𝑔-dimensional vector">𝜷</mi></mfrac><mo href="./21.2#E5" title="Riemann theta function with characteristics">]</mo></mrow></mrow><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">𝐳</mi><mo lspace="0em" rspace="0em" stretchy="true">|</mo><mi class="ltx_nvar" href="./21.1#t1.r5" title="a Riemann matrix">𝛀</mi><mo>)</mo></mrow></mrow></math>: Riemann theta function with characteristics</a>,
+<a href="./1.5#E3" title="(1.5.3) ‣ §1.5(i) Partial Derivatives ‣ §1.5 Calculus of Two or More Variables ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m47.png" altimg-height="31px" altimg-valign="-9px" altimg-width="29px" alttext="\frac{\partial\NVar{f}}{\partial\NVar{x}}" display="inline"><mfrac><mrow><mo href="./1.5#E3" rspace="0em" title="partial derivative of 𝑓 with respect to 𝑥">∂</mo><mi class="ltx_nvar">f</mi></mrow><mrow><mo href="./1.5#E3" rspace="0em" title="partial derivative of 𝑓 with respect to 𝑥">∂</mo><mi class="ltx_nvar">x</mi></mrow></mfrac></math>: partial derivative of <math class="ltx_Math" altimg="m74.png" altimg-height="22px" altimg-valign="-6px" altimg-width="17px" alttext="f" display="inline"><mi>f</mi></math> with respect to <math class="ltx_Math" altimg="m84.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./1.5#E3" title="(1.5.3) ‣ §1.5(i) Partial Derivatives ‣ §1.5 Calculus of Two or More Variables ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m63.png" altimg-height="18px" altimg-valign="-2px" altimg-width="28px" alttext="\,\partial\NVar{x}" display="inline"><mrow><mo href="./1.5#E3" rspace="0em" title="partial differential of 𝑥">∂</mo><mi class="ltx_nvar">x</mi></mrow></math>: partial differential of <math class="ltx_Math" altimg="m84.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./21.1#t1.r1" title="§21.1 Special Notation ‣ Notation ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><math class="ltx_Math" altimg="m79.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="g" display="inline"><mi href="./21.1#t1.r1" title="positive integer">g</mi></math>:  positive integer</a>,
+<a href="./21.1#t1.r5" title="§21.1 Special Notation ‣ Notation ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><math class="ltx_Math" altimg="m29.png" altimg-height="18px" altimg-valign="-2px" altimg-width="22px" alttext="\boldsymbol{{\Omega}}" display="inline"><mi href="./21.1#t1.r5" title="a Riemann matrix">𝛀</mi></math>:  a Riemann matrix</a>,
+<a href="./21.1#t1.r6" title="§21.1 Special Notation ‣ Notation ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><math class="ltx_Math" altimg="m30.png" altimg-height="13px" altimg-valign="-2px" altimg-width="20px" alttext="\boldsymbol{{\alpha}}" display="inline"><mi href="./21.1#t1.r6" title="𝑔-dimensional vector">𝜶</mi></math>:  <math class="ltx_Math" altimg="m79.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="g" display="inline"><mi href="./21.1#t1.r1" title="positive integer">g</mi></math>-dimensional vector</a>,
+<a href="./21.1#t1.r6" title="§21.1 Special Notation ‣ Notation ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><math class="ltx_Math" altimg="m33.png" altimg-height="22px" altimg-valign="-6px" altimg-width="19px" alttext="\boldsymbol{{\beta}}" display="inline"><mi href="./21.1#t1.r6" title="𝑔-dimensional vector">𝜷</mi></math>:  <math class="ltx_Math" altimg="m79.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="g" display="inline"><mi href="./21.1#t1.r1" title="positive integer">g</mi></math>-dimensional vector</a> and
+<a href="./21.1#t1.r20" title="§21.1 Special Notation ‣ Notation ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><math class="ltx_Math" altimg="m61.png" altimg-height="13px" altimg-valign="-2px" altimg-width="18px" alttext="\omega" display="inline"><mi href="./21.1#t1.r20" title="differential">ω</mi></math>:  differential</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./21.7.E8" title="" class="ltx_ref">http://dlmf.nist.gov/21.7.E8</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./21.7.E8.tex">TeX</a>, <a href="./21.7.E8.pmml">pMML</a>, <a href="./21.7.E8.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./21.7#ii.info" title="§21.7(ii) Fay’s Trisecant Identity ‣ §21.7 Riemann Surfaces ‣ Applications ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§21.7(ii)</span></a>,
+<a href="./21.7#info" title="§21.7 Riemann Surfaces ‣ Applications ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§21.7</span></a> and
+<a href="./21#info" title="Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.21</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">Then the <em class="ltx_emph ltx_font_italic">prime form</em> on the corresponding compact Riemann
+surface <math class="ltx_Math" altimg="m28.png" altimg-height="18px" altimg-valign="-2px" altimg-width="17px" alttext="\Gamma" display="inline"><mi href="./21.7#i" mathvariant="normal" title="Riemann surface">Γ</mi></math> is defined by</p>
+<table id="E9" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">21.7.9</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E9.png" altimg-height="165px" altimg-valign="-28px" altimg-width="307px" alttext="E(P_{1},P_{2})=\theta\genfrac{[}{]}{0.0pt}{}{\boldsymbol{{\alpha}}}{%
+\boldsymbol{{\beta}}}\left(\int_{P_{1}}^{P_{2}}\boldsymbol{{\omega}}\middle|%
+\boldsymbol{{\Omega}}\right)\Bigg/\left(\sqrt{\zeta(P_{1})}\sqrt{\zeta(P_{2})}%
+\right)," display="block"><mrow><mrow><mrow><mi href="./21.7#E9" title="prime form">E</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><msub><mi href="./21.7#ii.p2" title="points">P</mi><mn>1</mn></msub><mo>,</mo><msub><mi href="./21.7#ii.p2" title="points">P</mi><mn>2</mn></msub><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mrow><mi href="./21.2#E5" title="Riemann theta function with characteristics">θ</mi><mo href="./21.2#E5" title="Riemann theta function with characteristics">⁢</mo><mrow><mo href="./21.2#E5" title="Riemann theta function with characteristics">[</mo><mfrac linethickness="0.0pt"><mi href="./21.1#t1.r6" title="𝑔-dimensional vector">𝜶</mi><mi href="./21.1#t1.r6" title="𝑔-dimensional vector">𝜷</mi></mfrac><mo href="./21.2#E5" title="Riemann theta function with characteristics">]</mo></mrow></mrow><mo>⁡</mo><mrow><mo>(</mo><mrow><msubsup><mo href="./1.4#iv" lspace="0em" title="integral">∫</mo><msub><mi href="./21.7#ii.p2" title="points">P</mi><mn>1</mn></msub><msub><mi href="./21.7#ii.p2" title="points">P</mi><mn>2</mn></msub></msubsup><mi href="./21.7#ii.p2" title="vector of differentials">𝝎</mi></mrow><mo lspace="0em" rspace="0em" stretchy="true">|</mo><mi href="./21.1#t1.r5" title="a Riemann matrix">𝛀</mi><mo>)</mo></mrow></mrow><mo maxsize="2.600em" minsize="2.600em" stretchy="true" symmetric="true">/</mo><mrow><mo>(</mo><mrow><msqrt><mrow><mi>ζ</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><msub><mi href="./21.7#ii.p2" title="points">P</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mrow></mrow></msqrt><mo>⁢</mo><msqrt><mrow><mi>ζ</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><msub><mi href="./21.7#ii.p2" title="points">P</mi><mn>2</mn></msub><mo stretchy="false">)</mo></mrow></mrow></msqrt></mrow><mo>)</mo></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E9.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Defines:</dt>
+<dd><span class="ltx_text"><math class="ltx_Math" altimg="m14.png" altimg-height="25px" altimg-valign="-7px" altimg-width="91px" alttext="E(\NVar{P_{1}},\NVar{P_{2}})" display="inline"><mrow><mi href="./21.7#E9" title="prime form">E</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><msub><mi class="ltx_nvar" href="./21.7#ii.p2" title="points">P</mi><mn class="ltx_nvar">1</mn></msub><mo>,</mo><msub><mi class="ltx_nvar" href="./21.7#ii.p2" title="points">P</mi><mn class="ltx_nvar">2</mn></msub><mo stretchy="false">)</mo></mrow></mrow></math>:  prime form (locally)</span></dd>
+<dt>Symbols:</dt>
+<dd>
+<a href="./21.2#E5" title="(21.2.5) ‣ §21.2(ii) Riemann Theta Functions with Characteristics ‣ §21.2 Definitions ‣ Properties ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><math class="ltx_Math" altimg="m68.png" altimg-height="32px" altimg-valign="-12px" altimg-width="98px" alttext="\theta\genfrac{[}{]}{0.0pt}{}{\NVar{\boldsymbol{{\alpha}}}}{\NVar{\boldsymbol{%
+{\beta}}}}\left(\NVar{\mathbf{z}}\middle|\NVar{\boldsymbol{{\Omega}}}\right)" display="inline"><mrow><mrow><mi href="./21.2#E5" title="Riemann theta function with characteristics">θ</mi><mo href="./21.2#E5" title="Riemann theta function with characteristics">⁢</mo><mrow><mo href="./21.2#E5" title="Riemann theta function with characteristics">[</mo><mfrac linethickness="0.0pt"><mi class="ltx_nvar" href="./21.1#t1.r6" title="𝑔-dimensional vector">𝜶</mi><mi class="ltx_nvar" href="./21.1#t1.r6" title="𝑔-dimensional vector">𝜷</mi></mfrac><mo href="./21.2#E5" title="Riemann theta function with characteristics">]</mo></mrow></mrow><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">𝐳</mi><mo lspace="0em" rspace="0em" stretchy="true">|</mo><mi class="ltx_nvar" href="./21.1#t1.r5" title="a Riemann matrix">𝛀</mi><mo>)</mo></mrow></mrow></math>: Riemann theta function with characteristics</a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m49.png" altimg-height="27px" altimg-valign="-8px" altimg-width="18px" alttext="\int" display="inline"><mo href="./1.4#iv" title="integral">∫</mo></math>: integral</a>,
+<a href="./21.1#t1.r5" title="§21.1 Special Notation ‣ Notation ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><math class="ltx_Math" altimg="m29.png" altimg-height="18px" altimg-valign="-2px" altimg-width="22px" alttext="\boldsymbol{{\Omega}}" display="inline"><mi href="./21.1#t1.r5" title="a Riemann matrix">𝛀</mi></math>:  a Riemann matrix</a>,
+<a href="./21.1#t1.r6" title="§21.1 Special Notation ‣ Notation ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><math class="ltx_Math" altimg="m30.png" altimg-height="13px" altimg-valign="-2px" altimg-width="20px" alttext="\boldsymbol{{\alpha}}" display="inline"><mi href="./21.1#t1.r6" title="𝑔-dimensional vector">𝜶</mi></math>:  <math class="ltx_Math" altimg="m79.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="g" display="inline"><mi href="./21.1#t1.r1" title="positive integer">g</mi></math>-dimensional vector</a>,
+<a href="./21.1#t1.r6" title="§21.1 Special Notation ‣ Notation ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><math class="ltx_Math" altimg="m33.png" altimg-height="22px" altimg-valign="-6px" altimg-width="19px" alttext="\boldsymbol{{\beta}}" display="inline"><mi href="./21.1#t1.r6" title="𝑔-dimensional vector">𝜷</mi></math>:  <math class="ltx_Math" altimg="m79.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="g" display="inline"><mi href="./21.1#t1.r1" title="positive integer">g</mi></math>-dimensional vector</a>,
+<a href="./21.7#ii.p2" title="§21.7(ii) Fay’s Trisecant Identity ‣ §21.7 Riemann Surfaces ‣ Applications ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><math class="ltx_Math" altimg="m17.png" altimg-height="22px" altimg-valign="-6px" altimg-width="59px" alttext="P_{1},P_{2}" display="inline"><mrow><msub><mi href="./21.7#ii.p2" title="points">P</mi><mn>1</mn></msub><mo>,</mo><msub><mi href="./21.7#ii.p2" title="points">P</mi><mn>2</mn></msub></mrow></math>:  points</a> and
+<a href="./21.7#ii.p2" title="§21.7(ii) Fay’s Trisecant Identity ‣ §21.7 Riemann Surfaces ‣ Applications ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><math class="ltx_Math" altimg="m43.png" altimg-height="13px" altimg-valign="-2px" altimg-width="20px" alttext="\boldsymbol{{\omega}}" display="inline"><mi href="./21.7#ii.p2" title="vector of differentials">𝝎</mi></math>:  vector of differentials</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./21.7.E9" title="" class="ltx_ref">http://dlmf.nist.gov/21.7.E9</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./21.7.E9.tex">TeX</a>, <a href="./21.7.E9.pmml">pMML</a>, <a href="./21.7.E9.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./21.7#ii.info" title="§21.7(ii) Fay’s Trisecant Identity ‣ §21.7 Riemann Surfaces ‣ Applications ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§21.7(ii)</span></a>,
+<a href="./21.7#info" title="§21.7 Riemann Surfaces ‣ Applications ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§21.7</span></a> and
+<a href="./21#info" title="Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.21</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">where <math class="ltx_Math" altimg="m18.png" altimg-height="21px" altimg-valign="-5px" altimg-width="27px" alttext="P_{1}" display="inline"><msub><mi href="./21.7#ii.p2" title="points">P</mi><mn>1</mn></msub></math> and <math class="ltx_Math" altimg="m19.png" altimg-height="21px" altimg-valign="-5px" altimg-width="27px" alttext="P_{2}" display="inline"><msub><mi href="./21.7#ii.p2" title="points">P</mi><mn>2</mn></msub></math> are points on <math class="ltx_Math" altimg="m28.png" altimg-height="18px" altimg-valign="-2px" altimg-width="17px" alttext="\Gamma" display="inline"><mi href="./21.7#i" mathvariant="normal" title="Riemann surface">Γ</mi></math>,
+<math class="ltx_Math" altimg="m42.png" altimg-height="26px" altimg-valign="-8px" altimg-width="186px" alttext="\boldsymbol{{\omega}}=(\omega_{1},\omega_{2},\dots,\omega_{g})" display="inline"><mrow><mi href="./21.7#ii.p2" title="vector of differentials">𝝎</mi><mo>=</mo><mrow><mo stretchy="false">(</mo><msub><mi href="./21.1#t1.r20" title="differential">ω</mi><mn>1</mn></msub><mo>,</mo><msub><mi href="./21.1#t1.r20" title="differential">ω</mi><mn>2</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi href="./21.1#t1.r20" title="differential">ω</mi><mi href="./21.1#t1.r1" title="positive integer">g</mi></msub><mo stretchy="false">)</mo></mrow></mrow></math>, and the path of
+integration on <math class="ltx_Math" altimg="m28.png" altimg-height="18px" altimg-valign="-2px" altimg-width="17px" alttext="\Gamma" display="inline"><mi href="./21.7#i" mathvariant="normal" title="Riemann surface">Γ</mi></math> from <math class="ltx_Math" altimg="m18.png" altimg-height="21px" altimg-valign="-5px" altimg-width="27px" alttext="P_{1}" display="inline"><msub><mi href="./21.7#ii.p2" title="points">P</mi><mn>1</mn></msub></math> to <math class="ltx_Math" altimg="m19.png" altimg-height="21px" altimg-valign="-5px" altimg-width="27px" alttext="P_{2}" display="inline"><msub><mi href="./21.7#ii.p2" title="points">P</mi><mn>2</mn></msub></math> is identical for all components.
+Here <math class="ltx_Math" altimg="m65.png" altimg-height="30px" altimg-valign="-8px" altimg-width="68px" alttext="\sqrt{\zeta(P)}" display="inline"><msqrt><mrow><mi>ζ</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./21.7#ii.p2" title="points">P</mi><mo stretchy="false">)</mo></mrow></mrow></msqrt></math> is such that <math class="ltx_Math" altimg="m66.png" altimg-height="34px" altimg-valign="-8px" altimg-width="148px" alttext="\sqrt{\zeta(P)}^{2}=\zeta(P)" display="inline"><mrow><msup><msqrt><mrow><mi>ζ</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./21.7#ii.p2" title="points">P</mi><mo stretchy="false">)</mo></mrow></mrow></msqrt><mn>2</mn></msup><mo>=</mo><mrow><mi>ζ</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./21.7#ii.p2" title="points">P</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math>,
+<math class="ltx_Math" altimg="m16.png" altimg-height="19px" altimg-valign="-3px" altimg-width="59px" alttext="P\in\Gamma" display="inline"><mrow><mi href="./21.7#ii.p2" title="points">P</mi><mo href="./front/introduction#common.t1.r10" title="element of">∈</mo><mi href="./21.7#i" mathvariant="normal" title="Riemann surface">Γ</mi></mrow></math>. Either branch of the square roots may be chosen, as
+long as the branch is consistent across <math class="ltx_Math" altimg="m28.png" altimg-height="18px" altimg-valign="-2px" altimg-width="17px" alttext="\Gamma" display="inline"><mi href="./21.7#i" mathvariant="normal" title="Riemann surface">Γ</mi></math>. For all
+<math class="ltx_Math" altimg="m54.png" altimg-height="19px" altimg-valign="-3px" altimg-width="65px" alttext="\mathbf{z}\in{\mathbb{C}}^{g}" display="inline"><mrow><mi>𝐳</mi><mo href="./front/introduction#common.t1.r10" title="element of">∈</mo><msup><mi href="./front/introduction#common.t1.r1" title="complex plane">ℂ</mi><mi href="./21.1#t1.r1" title="positive integer">g</mi></msup></mrow></math>, and all <math class="ltx_Math" altimg="m18.png" altimg-height="21px" altimg-valign="-5px" altimg-width="27px" alttext="P_{1}" display="inline"><msub><mi href="./21.7#ii.p2" title="points">P</mi><mn>1</mn></msub></math>, <math class="ltx_Math" altimg="m19.png" altimg-height="21px" altimg-valign="-5px" altimg-width="27px" alttext="P_{2}" display="inline"><msub><mi href="./21.7#ii.p2" title="points">P</mi><mn>2</mn></msub></math>, <math class="ltx_Math" altimg="m20.png" altimg-height="21px" altimg-valign="-5px" altimg-width="27px" alttext="P_{3}" display="inline"><msub><mi href="./21.7#ii.p2" title="points">P</mi><mn>3</mn></msub></math>, <math class="ltx_Math" altimg="m21.png" altimg-height="21px" altimg-valign="-5px" altimg-width="27px" alttext="P_{4}" display="inline"><msub><mi href="./21.7#ii.p2" title="points">P</mi><mn>4</mn></msub></math> on <math class="ltx_Math" altimg="m28.png" altimg-height="18px" altimg-valign="-2px" altimg-width="17px" alttext="\Gamma" display="inline"><mi href="./21.7#i" mathvariant="normal" title="Riemann surface">Γ</mi></math>,
+Fay’s identity is given by</p>
+</div>
+<div id="ii.p3" class="ltx_para">
+<table id="E10" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">21.7.10</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_Math ltx_eqn_cell ltx_align_center"><math class="ltx_Math" alttext="\theta\left(\mathbf{z}+\int_{P_{1}}^{P_{3}}\boldsymbol{{\omega}}\middle|%
+\boldsymbol{{\Omega}}\right)\theta\left(\mathbf{z}+\int_{P_{2}}^{P_{4}}%
+\boldsymbol{{\omega}}\middle|\boldsymbol{{\Omega}}\right)E(P_{3},P_{2})E(P_{1}%
+,P_{4})+\theta\left(\mathbf{z}+\int_{P_{2}}^{P_{3}}\boldsymbol{{\omega}}%
+\middle|\boldsymbol{{\Omega}}\right)\theta\left(\mathbf{z}+\int_{P_{1}}^{P_{4}%
+}\boldsymbol{{\omega}}\middle|\boldsymbol{{\Omega}}\right)E(P_{3},P_{1})E(P_{4%
+},P_{2})=\theta\left(\mathbf{z}\middle|\boldsymbol{{\Omega}}\right)\theta\left%
+(\mathbf{z}+\int_{P_{1}}^{P_{3}}\boldsymbol{{\omega}}+\int_{P_{2}}^{P_{4}}%
+\boldsymbol{{\omega}}\middle|\boldsymbol{{\Omega}}\right)E(P_{1},P_{2})E(P_{3}%
+,P_{4})," display="block"><mrow><mtable align="baseline 1" columnalign="left" displaystyle="true"><mtr><mtd class="ltx_align_left"><mrow><mtable align="baseline 1" columnalign="left" displaystyle="true"><mtr><mtd class="ltx_align_left"><mrow><mrow><mi href="./21.2#E1" title="Riemann theta function">θ</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi>𝐳</mi><mo rspace="0.055em">+</mo><mrow><msubsup><mo href="./1.4#iv" title="integral">∫</mo><msub><mi href="./21.7#ii.p2" title="points">P</mi><mn>1</mn></msub><msub><mi href="./21.7#ii.p2" title="points">P</mi><mn>3</mn></msub></msubsup><mi href="./21.7#ii.p2" title="vector of differentials">𝝎</mi></mrow></mrow><mo lspace="0em" rspace="0em" stretchy="true">|</mo><mi href="./21.1#t1.r5" title="a Riemann matrix">𝛀</mi><mo>)</mo></mrow></mrow><mo>⁢</mo><mrow><mi href="./21.2#E1" title="Riemann theta function">θ</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi>𝐳</mi><mo rspace="0.055em">+</mo><mrow><msubsup><mo href="./1.4#iv" title="integral">∫</mo><msub><mi href="./21.7#ii.p2" title="points">P</mi><mn>2</mn></msub><msub><mi href="./21.7#ii.p2" title="points">P</mi><mn>4</mn></msub></msubsup><mi href="./21.7#ii.p2" title="vector of differentials">𝝎</mi></mrow></mrow><mo lspace="0em" rspace="0em" stretchy="true">|</mo><mi href="./21.1#t1.r5" title="a Riemann matrix">𝛀</mi><mo>)</mo></mrow></mrow><mo>⁢</mo><mrow><mi href="./21.7#E9" title="prime form">E</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><msub><mi href="./21.7#ii.p2" title="points">P</mi><mn>3</mn></msub><mo>,</mo><msub><mi href="./21.7#ii.p2" title="points">P</mi><mn>2</mn></msub><mo stretchy="false">)</mo></mrow></mrow><mo>⁢</mo><mrow><mi href="./21.7#E9" title="prime form">E</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><msub><mi href="./21.7#ii.p2" title="points">P</mi><mn>1</mn></msub><mo>,</mo><msub><mi href="./21.7#ii.p2" title="points">P</mi><mn>4</mn></msub><mo stretchy="false">)</mo></mrow></mrow></mrow></mtd></mtr><mtr><mtd class="ltx_align_left"><mspace style="width:2em;" width="2em"></mspace><mo>+</mo><mrow><mrow><mi href="./21.2#E1" title="Riemann theta function">θ</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi>𝐳</mi><mo rspace="0.055em">+</mo><mrow><msubsup><mo href="./1.4#iv" title="integral">∫</mo><msub><mi href="./21.7#ii.p2" title="points">P</mi><mn>2</mn></msub><msub><mi href="./21.7#ii.p2" title="points">P</mi><mn>3</mn></msub></msubsup><mi href="./21.7#ii.p2" title="vector of differentials">𝝎</mi></mrow></mrow><mo lspace="0em" rspace="0em" stretchy="true">|</mo><mi href="./21.1#t1.r5" title="a Riemann matrix">𝛀</mi><mo>)</mo></mrow></mrow><mo>⁢</mo><mrow><mi href="./21.2#E1" title="Riemann theta function">θ</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi>𝐳</mi><mo rspace="0.055em">+</mo><mrow><msubsup><mo href="./1.4#iv" title="integral">∫</mo><msub><mi href="./21.7#ii.p2" title="points">P</mi><mn>1</mn></msub><msub><mi href="./21.7#ii.p2" title="points">P</mi><mn>4</mn></msub></msubsup><mi href="./21.7#ii.p2" title="vector of differentials">𝝎</mi></mrow></mrow><mo lspace="0em" rspace="0em" stretchy="true">|</mo><mi href="./21.1#t1.r5" title="a Riemann matrix">𝛀</mi><mo>)</mo></mrow></mrow><mo>⁢</mo><mrow><mi href="./21.7#E9" title="prime form">E</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><msub><mi href="./21.7#ii.p2" title="points">P</mi><mn>3</mn></msub><mo>,</mo><msub><mi href="./21.7#ii.p2" title="points">P</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mrow></mrow><mo>⁢</mo><mrow><mi href="./21.7#E9" title="prime form">E</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><msub><mi href="./21.7#ii.p2" title="points">P</mi><mn>4</mn></msub><mo>,</mo><msub><mi href="./21.7#ii.p2" title="points">P</mi><mn>2</mn></msub><mo stretchy="false">)</mo></mrow></mrow></mrow></mtd></mtr></mtable></mrow></mtd></mtr><mtr><mtd class="ltx_align_left"><mspace style="width:2em;" width="2em"></mspace><mo>=</mo><mrow><mrow><mi href="./21.2#E1" title="Riemann theta function">θ</mi><mo>⁡</mo><mrow><mo>(</mo><mi>𝐳</mi><mo lspace="0em" rspace="0em" stretchy="true">|</mo><mi href="./21.1#t1.r5" title="a Riemann matrix">𝛀</mi><mo>)</mo></mrow></mrow><mo>⁢</mo><mrow><mi href="./21.2#E1" title="Riemann theta function">θ</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi>𝐳</mi><mo rspace="0.055em">+</mo><mrow><msubsup><mo href="./1.4#iv" title="integral">∫</mo><msub><mi href="./21.7#ii.p2" title="points">P</mi><mn>1</mn></msub><msub><mi href="./21.7#ii.p2" title="points">P</mi><mn>3</mn></msub></msubsup><mi href="./21.7#ii.p2" title="vector of differentials">𝝎</mi></mrow><mo rspace="0.055em">+</mo><mrow><msubsup><mo href="./1.4#iv" title="integral">∫</mo><msub><mi href="./21.7#ii.p2" title="points">P</mi><mn>2</mn></msub><msub><mi href="./21.7#ii.p2" title="points">P</mi><mn>4</mn></msub></msubsup><mi href="./21.7#ii.p2" title="vector of differentials">𝝎</mi></mrow></mrow><mo lspace="0em" rspace="0em" stretchy="true">|</mo><mi href="./21.1#t1.r5" title="a Riemann matrix">𝛀</mi><mo>)</mo></mrow></mrow><mo>⁢</mo><mrow><mi href="./21.7#E9" title="prime form">E</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><msub><mi href="./21.7#ii.p2" title="points">P</mi><mn>1</mn></msub><mo>,</mo><msub><mi href="./21.7#ii.p2" title="points">P</mi><mn>2</mn></msub><mo stretchy="false">)</mo></mrow></mrow><mo>⁢</mo><mrow><mi href="./21.7#E9" title="prime form">E</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><msub><mi href="./21.7#ii.p2" title="points">P</mi><mn>3</mn></msub><mo>,</mo><msub><mi href="./21.7#ii.p2" title="points">P</mi><mn>4</mn></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>,</mo></mtd></mtr></mtable></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E10.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./21.2#E1" title="(21.2.1) ‣ §21.2(i) Riemann Theta Functions ‣ §21.2 Definitions ‣ Properties ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><math class="ltx_Math" altimg="m69.png" altimg-height="25px" altimg-valign="-7px" altimg-width="68px" alttext="\theta\left(\NVar{\mathbf{z}}\middle|\NVar{\boldsymbol{{\Omega}}}\right)" display="inline"><mrow><mi href="./21.2#E1" title="Riemann theta function">θ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">𝐳</mi><mo lspace="0em" rspace="0em" stretchy="true">|</mo><mi class="ltx_nvar" href="./21.1#t1.r5" title="a Riemann matrix">𝛀</mi><mo>)</mo></mrow></mrow></math>: Riemann theta function</a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m49.png" altimg-height="27px" altimg-valign="-8px" altimg-width="18px" alttext="\int" display="inline"><mo href="./1.4#iv" title="integral">∫</mo></math>: integral</a>,
+<a href="./21.1#t1.r5" title="§21.1 Special Notation ‣ Notation ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><math class="ltx_Math" altimg="m29.png" altimg-height="18px" altimg-valign="-2px" altimg-width="22px" alttext="\boldsymbol{{\Omega}}" display="inline"><mi href="./21.1#t1.r5" title="a Riemann matrix">𝛀</mi></math>:  a Riemann matrix</a>,
+<a href="./21.7#E9" title="(21.7.9) ‣ §21.7(ii) Fay’s Trisecant Identity ‣ §21.7 Riemann Surfaces ‣ Applications ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><math class="ltx_Math" altimg="m14.png" altimg-height="25px" altimg-valign="-7px" altimg-width="91px" alttext="E(\NVar{P_{1}},\NVar{P_{2}})" display="inline"><mrow><mi href="./21.7#E9" title="prime form">E</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><msub><mi class="ltx_nvar" href="./21.7#ii.p2" title="points">P</mi><mn class="ltx_nvar">1</mn></msub><mo>,</mo><msub><mi class="ltx_nvar" href="./21.7#ii.p2" title="points">P</mi><mn class="ltx_nvar">2</mn></msub><mo stretchy="false">)</mo></mrow></mrow></math>:  prime form</a>,
+<a href="./21.7#ii.p2" title="§21.7(ii) Fay’s Trisecant Identity ‣ §21.7 Riemann Surfaces ‣ Applications ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><math class="ltx_Math" altimg="m17.png" altimg-height="22px" altimg-valign="-6px" altimg-width="59px" alttext="P_{1},P_{2}" display="inline"><mrow><msub><mi href="./21.7#ii.p2" title="points">P</mi><mn>1</mn></msub><mo>,</mo><msub><mi href="./21.7#ii.p2" title="points">P</mi><mn>2</mn></msub></mrow></math>:  points</a> and
+<a href="./21.7#ii.p2" title="§21.7(ii) Fay’s Trisecant Identity ‣ §21.7 Riemann Surfaces ‣ Applications ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><math class="ltx_Math" altimg="m43.png" altimg-height="13px" altimg-valign="-2px" altimg-width="20px" alttext="\boldsymbol{{\omega}}" display="inline"><mi href="./21.7#ii.p2" title="vector of differentials">𝝎</mi></math>:  vector of differentials</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./21.7#ii.p4" title="§21.7(ii) Fay’s Trisecant Identity ‣ §21.7 Riemann Surfaces ‣ Applications ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§21.7(ii)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./21.7.E10" title="" class="ltx_ref">http://dlmf.nist.gov/21.7.E10</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./21.7.E10.tex">TeX</a>, <a href="./21.7.E10.pmml">pMML</a>, <a href="./21.7.E10.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./21.7#ii.info" title="§21.7(ii) Fay’s Trisecant Identity ‣ §21.7 Riemann Surfaces ‣ Applications ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§21.7(ii)</span></a>,
+<a href="./21.7#info" title="§21.7 Riemann Surfaces ‣ Applications ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§21.7</span></a> and
+<a href="./21#info" title="Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.21</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+<div id="ii.p4" class="ltx_para">
+<p class="ltx_p">where again all integration paths are identical for all components.
+Generalizations of this identity are given in <cite class="ltx_cite ltx_citemacro_citet">Fay (<a href="./bib/F#bib778" title="Theta Functions on Riemann Surfaces" class="ltx_ref">1973</a>, Chapter 2)</cite>.
+Fay derives (<a href="./21.7#E10" title="(21.7.10) ‣ §21.7(ii) Fay’s Trisecant Identity ‣ §21.7 Riemann Surfaces ‣ Applications ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">21.7.10</span></a>) as a special case of a more general class of
+addition theorems for Riemann theta functions on Riemann surfaces.
+</p>
+</div>
+</section>
+<section id="iii" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§21.7(iii) </span>Frobenius’ Identity</h2>
+<div id="iii.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=Frobenius%E2%80%99%20identity">Frobenius’ identity</a>, <a class="ltx_keyword" href="./search/search?q=Riemann%20surface">Riemann surface</a>, <a class="ltx_keyword" href="./search/search?q=Riemann%20theta%20functions%20with%20characteristics">Riemann theta functions with characteristics</a>, <a class="ltx_keyword" href="./search/search?q=algebraic%20curves">algebraic curves</a>, <a class="ltx_keyword" href="./search/search?q=hyperelliptic">hyperelliptic</a>
+</dd>
+<dt>Notes:</dt>
+<dd>See <cite class="ltx_cite ltx_citemacro_citet">Mumford (<a href="./bib/M#bib1682" title="Tata Lectures on Theta. II" class="ltx_ref">1984</a>, pp. 106–120)</cite>.</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./20.11#iv.p1" title="§20.11(iv) Theta Functions with Characteristics ‣ §20.11 Generalizations and Analogs ‣ Properties ‣ Chapter 20 Theta Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§20.11(iv)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./21.7.iii" title="" class="ltx_ref">http://dlmf.nist.gov/21.7.iii</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./21.7#info" title="§21.7 Riemann Surfaces ‣ Applications ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§21.7</span></a> and
+<a href="./21#info" title="Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.21</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="iii.p1" class="ltx_para">
+<p class="ltx_p">Let <math class="ltx_Math" altimg="m28.png" altimg-height="18px" altimg-valign="-2px" altimg-width="17px" alttext="\Gamma" display="inline"><mi href="./21.7#i" mathvariant="normal" title="Riemann surface">Γ</mi></math> be a <em class="ltx_emph ltx_font_italic">hyperelliptic Riemann surface</em>. These are Riemann
+surfaces that may be obtained from algebraic curves of the form</p>
+<table id="E11" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">21.7.11</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E11.png" altimg-height="29px" altimg-valign="-7px" altimg-width="107px" alttext="\mu^{2}=Q(\lambda)," display="block"><mrow><mrow><msup><mi>μ</mi><mn>2</mn></msup><mo>=</mo><mrow><mi href="./21.7#iii.p1" title="polynomial">Q</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>λ</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E11.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd><a href="./21.7#iii.p1" title="§21.7(iii) Frobenius’ Identity ‣ §21.7 Riemann Surfaces ‣ Applications ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><math class="ltx_Math" altimg="m24.png" altimg-height="25px" altimg-valign="-7px" altimg-width="49px" alttext="Q(\lambda)" display="inline"><mrow><mi href="./21.7#iii.p1" title="polynomial">Q</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>λ</mi><mo stretchy="false">)</mo></mrow></mrow></math>:  polynomial</a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./21.7.E11" title="" class="ltx_ref">http://dlmf.nist.gov/21.7.E11</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./21.7.E11.tex">TeX</a>, <a href="./21.7.E11.pmml">pMML</a>, <a href="./21.7.E11.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./21.7#iii.info" title="§21.7(iii) Frobenius’ Identity ‣ §21.7 Riemann Surfaces ‣ Applications ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§21.7(iii)</span></a>,
+<a href="./21.7#info" title="§21.7 Riemann Surfaces ‣ Applications ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§21.7</span></a> and
+<a href="./21#info" title="Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.21</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">where <math class="ltx_Math" altimg="m24.png" altimg-height="25px" altimg-valign="-7px" altimg-width="49px" alttext="Q(\lambda)" display="inline"><mrow><mi href="./21.7#iii.p1" title="polynomial">Q</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>λ</mi><mo stretchy="false">)</mo></mrow></mrow></math> is a polynomial in <math class="ltx_Math" altimg="m52.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="\lambda" display="inline"><mi>λ</mi></math> of odd degree <math class="ltx_Math" altimg="m8.png" altimg-height="21px" altimg-valign="-6px" altimg-width="61px" alttext="2g+1" display="inline"><mrow><mrow><mn>2</mn><mo>⁢</mo><mi href="./21.1#t1.r1" title="positive integer">g</mi></mrow><mo>+</mo><mn>1</mn></mrow></math> <math class="ltx_Math" altimg="m6.png" altimg-height="25px" altimg-valign="-7px" altimg-width="53px" alttext="(\geq 5)" display="inline"><mrow><mo stretchy="false">(</mo><mrow><mi></mi><mo>≥</mo><mn>5</mn></mrow><mo stretchy="false">)</mo></mrow></math>.
+The genus of this surface is <math class="ltx_Math" altimg="m79.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="g" display="inline"><mi href="./21.1#t1.r1" title="positive integer">g</mi></math>. The zeros <math class="ltx_Math" altimg="m53.png" altimg-height="24px" altimg-valign="-8px" altimg-width="25px" alttext="\lambda_{j}" display="inline"><msub><mi>λ</mi><mi>j</mi></msub></math>, <math class="ltx_Math" altimg="m82.png" altimg-height="22px" altimg-valign="-6px" altimg-width="175px" alttext="j=1,2,\dots,2g+1" display="inline"><mrow><mi>j</mi><mo>=</mo><mrow><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi href="./21.1#t1.r1" title="positive integer">g</mi></mrow><mo>+</mo><mn>1</mn></mrow></mrow></mrow></math> of
+<math class="ltx_Math" altimg="m24.png" altimg-height="25px" altimg-valign="-7px" altimg-width="49px" alttext="Q(\lambda)" display="inline"><mrow><mi href="./21.7#iii.p1" title="polynomial">Q</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>λ</mi><mo stretchy="false">)</mo></mrow></mrow></math> specify the finite branch points <math class="ltx_Math" altimg="m23.png" altimg-height="24px" altimg-valign="-8px" altimg-width="26px" alttext="P_{j}" display="inline"><msub><mi href="./21.7#iii.p1" title="branch points">P</mi><mi>j</mi></msub></math>, that is, points at which
+<math class="ltx_Math" altimg="m60.png" altimg-height="23px" altimg-valign="-8px" altimg-width="64px" alttext="\mu_{j}=0" display="inline"><mrow><msub><mi>μ</mi><mi>j</mi></msub><mo>=</mo><mn>0</mn></mrow></math>, on the Riemann surface. Denote the set of all branch
+points by <math class="ltx_Math" altimg="m12.png" altimg-height="26px" altimg-valign="-8px" altimg-width="263px" alttext="B=\{P_{1},P_{2},\dots,P_{2g+1},P_{\infty}\}" display="inline"><mrow><mi href="./21.7#iii.p1" title="set of branch points">B</mi><mo>=</mo><mrow><mo stretchy="false">{</mo><msub><mi href="./21.7#iii.p1" title="branch points">P</mi><mn>1</mn></msub><mo>,</mo><msub><mi href="./21.7#iii.p1" title="branch points">P</mi><mn>2</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi href="./21.7#iii.p1" title="branch points">P</mi><mrow><mrow><mn>2</mn><mo>⁢</mo><mi href="./21.1#t1.r1" title="positive integer">g</mi></mrow><mo>+</mo><mn>1</mn></mrow></msub><mo>,</mo><msub><mi href="./21.7#iii.p1" title="branch points">P</mi><mi mathvariant="normal">∞</mi></msub><mo stretchy="false">}</mo></mrow></mrow></math>. Consider a fixed
+subset <math class="ltx_Math" altimg="m27.png" altimg-height="18px" altimg-valign="-2px" altimg-width="21px" alttext="U" display="inline"><mi href="./21.7#iii.p1" title="subset of 𝐵">U</mi></math> of <math class="ltx_Math" altimg="m13.png" altimg-height="18px" altimg-valign="-2px" altimg-width="21px" alttext="B" display="inline"><mi href="./21.7#iii.p1" title="set of branch points">B</mi></math>, such that the number of elements <math class="ltx_Math" altimg="m87.png" altimg-height="25px" altimg-valign="-7px" altimg-width="32px" alttext="|U|" display="inline"><mrow><mo stretchy="false">|</mo><mi href="./21.7#iii.p1" title="subset of 𝐵">U</mi><mo stretchy="false">|</mo></mrow></math> in the set <math class="ltx_Math" altimg="m27.png" altimg-height="18px" altimg-valign="-2px" altimg-width="21px" alttext="U" display="inline"><mi href="./21.7#iii.p1" title="subset of 𝐵">U</mi></math> is
+<math class="ltx_Math" altimg="m77.png" altimg-height="21px" altimg-valign="-6px" altimg-width="51px" alttext="g+1" display="inline"><mrow><mi href="./21.1#t1.r1" title="positive integer">g</mi><mo>+</mo><mn>1</mn></mrow></math>, and <math class="ltx_Math" altimg="m22.png" altimg-height="23px" altimg-valign="-5px" altimg-width="77px" alttext="P_{\infty}\notin U" display="inline"><mrow><msub><mi href="./21.7#iii.p1" title="branch points">P</mi><mi mathvariant="normal">∞</mi></msub><mo href="./front/introduction#common.t1.r11" title="not an element of">∉</mo><mi href="./21.7#iii.p1" title="subset of 𝐵">U</mi></mrow></math>. Next, define an isomorphism <math class="ltx_Math" altimg="m39.png" altimg-height="17px" altimg-valign="-6px" altimg-width="18px" alttext="\boldsymbol{{\eta}}" display="inline"><mi>𝜼</mi></math> which maps every
+subset <math class="ltx_Math" altimg="m25.png" altimg-height="18px" altimg-valign="-2px" altimg-width="19px" alttext="T" display="inline"><mi href="./21.7#iii.p1" title="subset of 𝐵">T</mi></math> of <math class="ltx_Math" altimg="m13.png" altimg-height="18px" altimg-valign="-2px" altimg-width="21px" alttext="B" display="inline"><mi href="./21.7#iii.p1" title="set of branch points">B</mi></math> with an even number of elements to a <math class="ltx_Math" altimg="m9.png" altimg-height="21px" altimg-valign="-6px" altimg-width="25px" alttext="2g" display="inline"><mrow><mn>2</mn><mo>⁢</mo><mi href="./21.1#t1.r1" title="positive integer">g</mi></mrow></math>-dimensional vector
+<math class="ltx_Math" altimg="m38.png" altimg-height="25px" altimg-valign="-7px" altimg-width="49px" alttext="\boldsymbol{{\eta}}(T)" display="inline"><mrow><mi>𝜼</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./21.7#iii.p1" title="subset of 𝐵">T</mi><mo stretchy="false">)</mo></mrow></mrow></math> with elements either <math class="ltx_Math" altimg="m7.png" altimg-height="17px" altimg-valign="-2px" altimg-width="15px" alttext="0" display="inline"><mn>0</mn></math> or <math class="ltx_Math" altimg="m67.png" altimg-height="29px" altimg-valign="-9px" altimg-width="18px" alttext="\tfrac{1}{2}" display="inline"><mfrac><mn>1</mn><mn>2</mn></mfrac></math>. Define the
+operation</p>
+<table id="E12" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">21.7.12</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E12.png" altimg-height="27px" altimg-valign="-7px" altimg-width="292px" alttext="T_{1}\ominus T_{2}=(T_{1}\cup T_{2})\setminus(T_{1}\cap T_{2})." display="block"><mrow><mrow><mrow><msub><mi href="./21.7#iii.p1" title="subset of 𝐵">T</mi><mn>1</mn></msub><mo>⊖</mo><msub><mi href="./21.7#iii.p1" title="subset of 𝐵">T</mi><mn>2</mn></msub></mrow><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><msub><mi href="./21.7#iii.p1" title="subset of 𝐵">T</mi><mn>1</mn></msub><mo href="./front/introduction#common.t1.r28" title="union">∪</mo><msub><mi href="./21.7#iii.p1" title="subset of 𝐵">T</mi><mn>2</mn></msub></mrow><mo stretchy="false">)</mo></mrow><mo href="./front/introduction#common.t2.r19" title="set subtraction">∖</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi href="./21.7#iii.p1" title="subset of 𝐵">T</mi><mn>1</mn></msub><mo href="./front/introduction#common.t1.r27" title="intersection">∩</mo><msub><mi href="./21.7#iii.p1" title="subset of 𝐵">T</mi><mn>2</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E12.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./front/introduction#common.t1.r27" title="Common Notations and Definitions ‣ Mathematical Introduction" class="ltx_ref"><math class="ltx_Math" altimg="m44.png" altimg-height="15px" altimg-valign="-2px" altimg-width="18px" alttext="\cap" display="inline"><mo href="./front/introduction#common.t1.r27" title="intersection">∩</mo></math>: intersection</a>,
+<a href="./front/introduction#common.t2.r19" title="Common Notations and Definitions ‣ Mathematical Introduction" class="ltx_ref"><math class="ltx_Math" altimg="m64.png" altimg-height="25px" altimg-valign="-7px" altimg-width="15px" alttext="\setminus" display="inline"><mo href="./front/introduction#common.t2.r19" title="set subtraction">∖</mo></math>: set subtraction</a>,
+<a href="./front/introduction#common.t1.r28" title="Common Notations and Definitions ‣ Mathematical Introduction" class="ltx_ref"><math class="ltx_Math" altimg="m45.png" altimg-height="15px" altimg-valign="-2px" altimg-width="18px" alttext="\cup" display="inline"><mo href="./front/introduction#common.t1.r28" title="union">∪</mo></math>: union</a> and
+<a href="./21.7#iii.p1" title="§21.7(iii) Frobenius’ Identity ‣ §21.7 Riemann Surfaces ‣ Applications ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><math class="ltx_Math" altimg="m25.png" altimg-height="18px" altimg-valign="-2px" altimg-width="19px" alttext="T" display="inline"><mi href="./21.7#iii.p1" title="subset of 𝐵">T</mi></math>:  subset of <math class="ltx_Math" altimg="m13.png" altimg-height="18px" altimg-valign="-2px" altimg-width="21px" alttext="B" display="inline"><mi href="./21.7#iii.p1" title="set of branch points">B</mi></math></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./21.7.E12" title="" class="ltx_ref">http://dlmf.nist.gov/21.7.E12</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./21.7.E12.tex">TeX</a>, <a href="./21.7.E12.pmml">pMML</a>, <a href="./21.7.E12.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./21.7#iii.info" title="§21.7(iii) Frobenius’ Identity ‣ §21.7 Riemann Surfaces ‣ Applications ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§21.7(iii)</span></a>,
+<a href="./21.7#info" title="§21.7 Riemann Surfaces ‣ Applications ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§21.7</span></a> and
+<a href="./21#info" title="Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.21</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">Also, <math class="ltx_Math" altimg="m26.png" altimg-height="25px" altimg-valign="-7px" altimg-width="107px" alttext="T^{c}=B\setminus T" display="inline"><mrow><msup><mi href="./21.7#iii.p1" title="subset of 𝐵">T</mi><mi>c</mi></msup><mo>=</mo><mrow><mi href="./21.7#iii.p1" title="set of branch points">B</mi><mo href="./front/introduction#common.t2.r19" title="set subtraction">∖</mo><mi href="./21.7#iii.p1" title="subset of 𝐵">T</mi></mrow></mrow></math>,
+<math class="ltx_Math" altimg="m40.png" altimg-height="27px" altimg-valign="-8px" altimg-width="310px" alttext="\boldsymbol{{\eta}}^{1}(T)=(\eta_{1}(T),\eta_{2}(T),\dots,\eta_{g}(T))" display="inline"><mrow><mrow><msup><mi>𝜼</mi><mn>1</mn></msup><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./21.7#iii.p1" title="subset of 𝐵">T</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>η</mi><mn>1</mn></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./21.7#iii.p1" title="subset of 𝐵">T</mi><mo stretchy="false">)</mo></mrow></mrow><mo>,</mo><mrow><msub><mi>η</mi><mn>2</mn></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./21.7#iii.p1" title="subset of 𝐵">T</mi><mo stretchy="false">)</mo></mrow></mrow><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mrow><msub><mi>η</mi><mi href="./21.1#t1.r1" title="positive integer">g</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./21.7#iii.p1" title="subset of 𝐵">T</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></math>, and
+<math class="ltx_Math" altimg="m41.png" altimg-height="27px" altimg-valign="-8px" altimg-width="361px" alttext="\boldsymbol{{\eta}}^{2}(T)=(\eta_{g+1}(T),\eta_{g+2}(T),\dots,\eta_{2g}(T))" display="inline"><mrow><mrow><msup><mi>𝜼</mi><mn>2</mn></msup><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./21.7#iii.p1" title="subset of 𝐵">T</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>η</mi><mrow><mi href="./21.1#t1.r1" title="positive integer">g</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./21.7#iii.p1" title="subset of 𝐵">T</mi><mo stretchy="false">)</mo></mrow></mrow><mo>,</mo><mrow><msub><mi>η</mi><mrow><mi href="./21.1#t1.r1" title="positive integer">g</mi><mo>+</mo><mn>2</mn></mrow></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./21.7#iii.p1" title="subset of 𝐵">T</mi><mo stretchy="false">)</mo></mrow></mrow><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mrow><msub><mi>η</mi><mrow><mn>2</mn><mo>⁢</mo><mi href="./21.1#t1.r1" title="positive integer">g</mi></mrow></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./21.7#iii.p1" title="subset of 𝐵">T</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></math>. Then the
+isomorphism is determined completely by:</p>
+<table id="E13" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">21.7.13</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E13.png" altimg-height="27px" altimg-valign="-7px" altimg-width="137px" alttext="\boldsymbol{{\eta}}(T)=\boldsymbol{{\eta}}(T^{c})," display="block"><mrow><mrow><mrow><mi>𝜼</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./21.7#iii.p1" title="subset of 𝐵">T</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>𝜼</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><msup><mi href="./21.7#iii.p1" title="subset of 𝐵">T</mi><mi>c</mi></msup><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E13.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd><a href="./21.7#iii.p1" title="§21.7(iii) Frobenius’ Identity ‣ §21.7 Riemann Surfaces ‣ Applications ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><math class="ltx_Math" altimg="m25.png" altimg-height="18px" altimg-valign="-2px" altimg-width="19px" alttext="T" display="inline"><mi href="./21.7#iii.p1" title="subset of 𝐵">T</mi></math>:  subset of <math class="ltx_Math" altimg="m13.png" altimg-height="18px" altimg-valign="-2px" altimg-width="21px" alttext="B" display="inline"><mi href="./21.7#iii.p1" title="set of branch points">B</mi></math></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./21.7.E13" title="" class="ltx_ref">http://dlmf.nist.gov/21.7.E13</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./21.7.E13.tex">TeX</a>, <a href="./21.7.E13.pmml">pMML</a>, <a href="./21.7.E13.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./21.7#iii.info" title="§21.7(iii) Frobenius’ Identity ‣ §21.7 Riemann Surfaces ‣ Applications ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§21.7(iii)</span></a>,
+<a href="./21.7#info" title="§21.7 Riemann Surfaces ‣ Applications ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§21.7</span></a> and
+<a href="./21#info" title="Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.21</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<table id="E14" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">21.7.14</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E14.png" altimg-height="27px" altimg-valign="-7px" altimg-width="265px" alttext="\boldsymbol{{\eta}}(T_{1}\ominus T_{2})=\boldsymbol{{\eta}}(T_{1})+\boldsymbol%
+{{\eta}}(T_{2})," display="block"><mrow><mrow><mrow><mi>𝜼</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi href="./21.7#iii.p1" title="subset of 𝐵">T</mi><mn>1</mn></msub><mo>⊖</mo><msub><mi href="./21.7#iii.p1" title="subset of 𝐵">T</mi><mn>2</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>𝜼</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><msub><mi href="./21.7#iii.p1" title="subset of 𝐵">T</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>𝜼</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><msub><mi href="./21.7#iii.p1" title="subset of 𝐵">T</mi><mn>2</mn></msub><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E14.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd><a href="./21.7#iii.p1" title="§21.7(iii) Frobenius’ Identity ‣ §21.7 Riemann Surfaces ‣ Applications ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><math class="ltx_Math" altimg="m25.png" altimg-height="18px" altimg-valign="-2px" altimg-width="19px" alttext="T" display="inline"><mi href="./21.7#iii.p1" title="subset of 𝐵">T</mi></math>:  subset of <math class="ltx_Math" altimg="m13.png" altimg-height="18px" altimg-valign="-2px" altimg-width="21px" alttext="B" display="inline"><mi href="./21.7#iii.p1" title="set of branch points">B</mi></math></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./21.7.E14" title="" class="ltx_ref">http://dlmf.nist.gov/21.7.E14</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./21.7.E14.tex">TeX</a>, <a href="./21.7.E14.pmml">pMML</a>, <a href="./21.7.E14.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./21.7#iii.info" title="§21.7(iii) Frobenius’ Identity ‣ §21.7 Riemann Surfaces ‣ Applications ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§21.7(iii)</span></a>,
+<a href="./21.7#info" title="§21.7 Riemann Surfaces ‣ Applications ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§21.7</span></a> and
+<a href="./21#info" title="Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.21</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<table id="E15" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">21.7.15</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E15.png" altimg-height="60px" altimg-valign="-9px" altimg-width="443px" alttext="4\boldsymbol{{\eta}}^{1}(T)\cdot\boldsymbol{{\eta}}^{2}(T)=\tfrac{1}{2}\left(|%
+T\ominus U|-g-1\right)\pmod{2}," display="block"><mrow><mrow><mrow><mrow><mn>4</mn><mo>⁢</mo><mrow><msup><mi>𝜼</mi><mn>1</mn></msup><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./21.7#iii.p1" title="subset of 𝐵">T</mi><mo rspace="0.055em" stretchy="false">)</mo></mrow></mrow></mrow><mo rspace="0.222em">⋅</mo><mrow><msup><mi>𝜼</mi><mn>2</mn></msup><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./21.7#iii.p1" title="subset of 𝐵">T</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mrow><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>⁢</mo><mrow><mo>(</mo><mrow><mrow><mo stretchy="false">|</mo><mrow><mi href="./21.7#iii.p1" title="subset of 𝐵">T</mi><mo>⊖</mo><mi href="./21.7#iii.p1" title="subset of 𝐵">U</mi></mrow><mo stretchy="false">|</mo></mrow><mo>−</mo><mi href="./21.1#t1.r1" title="positive integer">g</mi><mo>−</mo><mn>1</mn></mrow><mo>)</mo></mrow></mrow><mspace style="width:0.949em;" width="0.949em"></mspace><mrow><mo stretchy="false">(</mo><mrow><mo lspace="0em" movablelimits="false" rspace="0.167em">mod</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E15.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./21.1#t1.r1" title="§21.1 Special Notation ‣ Notation ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><math class="ltx_Math" altimg="m79.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="g" display="inline"><mi href="./21.1#t1.r1" title="positive integer">g</mi></math>:  positive integer</a>,
+<a href="./21.7#iii.p1" title="§21.7(iii) Frobenius’ Identity ‣ §21.7 Riemann Surfaces ‣ Applications ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><math class="ltx_Math" altimg="m27.png" altimg-height="18px" altimg-valign="-2px" altimg-width="21px" alttext="U" display="inline"><mi href="./21.7#iii.p1" title="subset of 𝐵">U</mi></math>:  subset of <math class="ltx_Math" altimg="m13.png" altimg-height="18px" altimg-valign="-2px" altimg-width="21px" alttext="B" display="inline"><mi href="./21.7#iii.p1" title="set of branch points">B</mi></math></a> and
+<a href="./21.7#iii.p1" title="§21.7(iii) Frobenius’ Identity ‣ §21.7 Riemann Surfaces ‣ Applications ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><math class="ltx_Math" altimg="m25.png" altimg-height="18px" altimg-valign="-2px" altimg-width="19px" alttext="T" display="inline"><mi href="./21.7#iii.p1" title="subset of 𝐵">T</mi></math>:  subset of <math class="ltx_Math" altimg="m13.png" altimg-height="18px" altimg-valign="-2px" altimg-width="21px" alttext="B" display="inline"><mi href="./21.7#iii.p1" title="set of branch points">B</mi></math></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./21.7.E15" title="" class="ltx_ref">http://dlmf.nist.gov/21.7.E15</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./21.7.E15.tex">TeX</a>, <a href="./21.7.E15.pmml">pMML</a>, <a href="./21.7.E15.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./21.7#iii.info" title="§21.7(iii) Frobenius’ Identity ‣ §21.7 Riemann Surfaces ‣ Applications ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§21.7(iii)</span></a>,
+<a href="./21.7#info" title="§21.7 Riemann Surfaces ‣ Applications ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§21.7</span></a> and
+<a href="./21#info" title="Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.21</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<table id="E16" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">21.7.16</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E16.png" altimg-height="29px" altimg-valign="-7px" altimg-width="534px" alttext="4(\boldsymbol{{\eta}}^{1}(T_{1})\cdot\boldsymbol{{\eta}}^{2}(T_{2})-%
+\boldsymbol{{\eta}}^{2}(T_{1})\cdot\boldsymbol{{\eta}}^{1}(T_{2}))=|T_{1}\cap T%
+_{2}|\pmod{2}." display="block"><mrow><mrow><mrow><mn>4</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mrow><msup><mi>𝜼</mi><mn>1</mn></msup><mo>⁡</mo><mrow><mo stretchy="false">(</mo><msub><mi href="./21.7#iii.p1" title="subset of 𝐵">T</mi><mn>1</mn></msub><mo rspace="0.055em" stretchy="false">)</mo></mrow></mrow><mo rspace="0.222em">⋅</mo><mrow><msup><mi>𝜼</mi><mn>2</mn></msup><mo>⁡</mo><mrow><mo stretchy="false">(</mo><msub><mi href="./21.7#iii.p1" title="subset of 𝐵">T</mi><mn>2</mn></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>−</mo><mrow><mrow><msup><mi>𝜼</mi><mn>2</mn></msup><mo>⁡</mo><mrow><mo stretchy="false">(</mo><msub><mi href="./21.7#iii.p1" title="subset of 𝐵">T</mi><mn>1</mn></msub><mo rspace="0.055em" stretchy="false">)</mo></mrow></mrow><mo rspace="0.222em">⋅</mo><mrow><msup><mi>𝜼</mi><mn>1</mn></msup><mo>⁡</mo><mrow><mo stretchy="false">(</mo><msub><mi href="./21.7#iii.p1" title="subset of 𝐵">T</mi><mn>2</mn></msub><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mo stretchy="false">|</mo><mrow><msub><mi href="./21.7#iii.p1" title="subset of 𝐵">T</mi><mn>1</mn></msub><mo href="./front/introduction#common.t1.r27" title="intersection">∩</mo><msub><mi href="./21.7#iii.p1" title="subset of 𝐵">T</mi><mn>2</mn></msub></mrow><mo stretchy="false">|</mo></mrow><mspace style="width:0.949em;" width="0.949em"></mspace><mrow><mo stretchy="false">(</mo><mrow><mo lspace="0em" movablelimits="false" rspace="0.167em">mod</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E16.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./front/introduction#common.t1.r27" title="Common Notations and Definitions ‣ Mathematical Introduction" class="ltx_ref"><math class="ltx_Math" altimg="m44.png" altimg-height="15px" altimg-valign="-2px" altimg-width="18px" alttext="\cap" display="inline"><mo href="./front/introduction#common.t1.r27" title="intersection">∩</mo></math>: intersection</a> and
+<a href="./21.7#iii.p1" title="§21.7(iii) Frobenius’ Identity ‣ §21.7 Riemann Surfaces ‣ Applications ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><math class="ltx_Math" altimg="m25.png" altimg-height="18px" altimg-valign="-2px" altimg-width="19px" alttext="T" display="inline"><mi href="./21.7#iii.p1" title="subset of 𝐵">T</mi></math>:  subset of <math class="ltx_Math" altimg="m13.png" altimg-height="18px" altimg-valign="-2px" altimg-width="21px" alttext="B" display="inline"><mi href="./21.7#iii.p1" title="set of branch points">B</mi></math></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./21.7.E16" title="" class="ltx_ref">http://dlmf.nist.gov/21.7.E16</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./21.7.E16.tex">TeX</a>, <a href="./21.7.E16.pmml">pMML</a>, <a href="./21.7.E16.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./21.7#iii.info" title="§21.7(iii) Frobenius’ Identity ‣ §21.7 Riemann Surfaces ‣ Applications ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§21.7(iii)</span></a>,
+<a href="./21.7#info" title="§21.7 Riemann Surfaces ‣ Applications ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§21.7</span></a> and
+<a href="./21#info" title="Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.21</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+<div id="iii.p2" class="ltx_para">
+<p class="ltx_p">Furthermore, let <math class="ltx_Math" altimg="m36.png" altimg-height="25px" altimg-valign="-7px" altimg-width="104px" alttext="\boldsymbol{{\eta}}(P_{\infty})=\boldsymbol{{0}}" display="inline"><mrow><mrow><mi>𝜼</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><msub><mi href="./21.7#iii.p1" title="branch points">P</mi><mi mathvariant="normal">∞</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>𝟎</mn></mrow></math> and
+<math class="ltx_Math" altimg="m37.png" altimg-height="26px" altimg-valign="-8px" altimg-width="196px" alttext="\boldsymbol{{\eta}}(P_{j})=\boldsymbol{{\eta}}(\{P_{j},P_{\infty}\})" display="inline"><mrow><mrow><mi>𝜼</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><msub><mi href="./21.7#iii.p1" title="branch points">P</mi><mi>j</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>𝜼</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mo stretchy="false">{</mo><msub><mi href="./21.7#iii.p1" title="branch points">P</mi><mi>j</mi></msub><mo>,</mo><msub><mi href="./21.7#iii.p1" title="branch points">P</mi><mi mathvariant="normal">∞</mi></msub><mo stretchy="false">}</mo></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></math>. Then for all
+<math class="ltx_Math" altimg="m56.png" altimg-height="24px" altimg-valign="-8px" altimg-width="74px" alttext="\mathbf{z}_{j}\in{\mathbb{C}}^{g}" display="inline"><mrow><msub><mi>𝐳</mi><mi>j</mi></msub><mo href="./front/introduction#common.t1.r10" title="element of">∈</mo><msup><mi href="./front/introduction#common.t1.r1" title="complex plane">ℂ</mi><mi href="./21.1#t1.r1" title="positive integer">g</mi></msup></mrow></math>, <math class="ltx_Math" altimg="m81.png" altimg-height="22px" altimg-valign="-6px" altimg-width="111px" alttext="j=1,2,3,4" display="inline"><mrow><mi>j</mi><mo>=</mo><mrow><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>4</mn></mrow></mrow></math>, such that
+<math class="ltx_Math" altimg="m55.png" altimg-height="20px" altimg-valign="-5px" altimg-width="198px" alttext="\mathbf{z}_{1}+\mathbf{z}_{2}+\mathbf{z}_{3}+\mathbf{z}_{4}=0" display="inline"><mrow><mrow><msub><mi>𝐳</mi><mn>1</mn></msub><mo>+</mo><msub><mi>𝐳</mi><mn>2</mn></msub><mo>+</mo><msub><mi>𝐳</mi><mn>3</mn></msub><mo>+</mo><msub><mi>𝐳</mi><mn>4</mn></msub></mrow><mo>=</mo><mn>0</mn></mrow></math>, and for all
+<math class="ltx_Math" altimg="m32.png" altimg-height="19px" altimg-valign="-8px" altimg-width="29px" alttext="\boldsymbol{{\alpha}}_{j}" display="inline"><msub><mi href="./21.1#t1.r6" title="𝑔-dimensional vector">𝜶</mi><mi>j</mi></msub></math>, <math class="ltx_Math" altimg="m35.png" altimg-height="26px" altimg-valign="-10px" altimg-width="27px" alttext="\boldsymbol{{\beta}}_{j}" display="inline"><msub><mi href="./21.1#t1.r6" title="𝑔-dimensional vector">𝜷</mi><mi>j</mi></msub></math> <math class="ltx_Math" altimg="m50.png" altimg-height="19px" altimg-valign="-3px" altimg-width="49px" alttext="\in{\mathbb{R}}^{g}" display="inline"><mrow><mi></mi><mo href="./front/introduction#common.t1.r10" title="element of">∈</mo><msup><mi href="./front/introduction#common.t2.r14" title="real line">ℝ</mi><mi href="./21.1#t1.r1" title="positive integer">g</mi></msup></mrow></math>, such that
+<math class="ltx_Math" altimg="m31.png" altimg-height="20px" altimg-valign="-5px" altimg-width="219px" alttext="\boldsymbol{{\alpha}}_{1}+\boldsymbol{{\alpha}}_{2}+\boldsymbol{{\alpha}}_{3}+%
+\boldsymbol{{\alpha}}_{4}=0" display="inline"><mrow><mrow><msub><mi href="./21.1#t1.r6" title="𝑔-dimensional vector">𝜶</mi><mn>1</mn></msub><mo>+</mo><msub><mi href="./21.1#t1.r6" title="𝑔-dimensional vector">𝜶</mi><mn>2</mn></msub><mo>+</mo><msub><mi href="./21.1#t1.r6" title="𝑔-dimensional vector">𝜶</mi><mn>3</mn></msub><mo>+</mo><msub><mi href="./21.1#t1.r6" title="𝑔-dimensional vector">𝜶</mi><mn>4</mn></msub></mrow><mo>=</mo><mn>0</mn></mrow></math> and
+<math class="ltx_Math" altimg="m34.png" altimg-height="23px" altimg-valign="-7px" altimg-width="213px" alttext="\boldsymbol{{\beta}}_{1}+\boldsymbol{{\beta}}_{2}+\boldsymbol{{\beta}}_{3}+%
+\boldsymbol{{\beta}}_{4}=0" display="inline"><mrow><mrow><msub><mi href="./21.1#t1.r6" title="𝑔-dimensional vector">𝜷</mi><mn>1</mn></msub><mo>+</mo><msub><mi href="./21.1#t1.r6" title="𝑔-dimensional vector">𝜷</mi><mn>2</mn></msub><mo>+</mo><msub><mi href="./21.1#t1.r6" title="𝑔-dimensional vector">𝜷</mi><mn>3</mn></msub><mo>+</mo><msub><mi href="./21.1#t1.r6" title="𝑔-dimensional vector">𝜷</mi><mn>4</mn></msub></mrow><mo>=</mo><mn>0</mn></mrow></math>, we have <em class="ltx_emph ltx_font_italic">Frobenius’ identity</em>:</p>
+<table id="E17" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">21.7.17</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E17.png" altimg-height="155px" altimg-valign="-33px" altimg-width="349px" alttext="\sum_{P_{j}\in U}\prod_{k=1}^{4}\theta\genfrac{[}{]}{0.0pt}{}{\boldsymbol{{%
+\alpha}}_{k}+\boldsymbol{{\eta}}^{1}(P_{j})}{\boldsymbol{{\beta}}_{k}+%
+\boldsymbol{{\eta}}^{2}(P_{j})}\left(\mathbf{z}_{k}\middle|\boldsymbol{{\Omega%
+}}\right)=\sum_{P_{j}\in U^{c}}\prod_{k=1}^{4}\theta\genfrac{[}{]}{0.0pt}{}{%
+\boldsymbol{{\alpha}}_{k}+\boldsymbol{{\eta}}^{1}(P_{j})}{\boldsymbol{{\beta}}%
+_{k}+\boldsymbol{{\eta}}^{2}(P_{j})}\left(\mathbf{z}_{k}\middle|\boldsymbol{{%
+\Omega}}\right)." display="block"><mrow><mrow><mrow><munder><mo movablelimits="false">∑</mo><mrow><msub><mi href="./21.7#iii.p1" title="branch points">P</mi><mi>j</mi></msub><mo href="./front/introduction#common.t1.r10" title="element of">∈</mo><mi href="./21.7#iii.p1" title="subset of 𝐵">U</mi></mrow></munder><mrow><munderover><mo lspace="0.167em" movablelimits="false">∏</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mn>4</mn></munderover><mrow><mrow><mi href="./21.2#E5" title="Riemann theta function with characteristics">θ</mi><mo href="./21.2#E5" title="Riemann theta function with characteristics">⁢</mo><mrow><mo href="./21.2#E5" title="Riemann theta function with characteristics">[</mo><mfrac linethickness="0.0pt"><mrow><msub><mi href="./21.1#t1.r6" title="𝑔-dimensional vector">𝜶</mi><mi>k</mi></msub><mo>+</mo><mrow><msup><mi>𝜼</mi><mn>1</mn></msup><mo>⁡</mo><mrow><mo stretchy="false">(</mo><msub><mi href="./21.7#iii.p1" title="branch points">P</mi><mi>j</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><mrow><msub><mi href="./21.1#t1.r6" title="𝑔-dimensional vector">𝜷</mi><mi>k</mi></msub><mo>+</mo><mrow><msup><mi>𝜼</mi><mn>2</mn></msup><mo>⁡</mo><mrow><mo stretchy="false">(</mo><msub><mi href="./21.7#iii.p1" title="branch points">P</mi><mi>j</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow></mfrac><mo href="./21.2#E5" title="Riemann theta function with characteristics">]</mo></mrow></mrow><mo>⁡</mo><mrow><mo>(</mo><msub><mi>𝐳</mi><mi>k</mi></msub><mo lspace="0em" rspace="0em" stretchy="true">|</mo><mi href="./21.1#t1.r5" title="a Riemann matrix">𝛀</mi><mo>)</mo></mrow></mrow></mrow></mrow><mo rspace="0.111em">=</mo><mrow><munder><mo movablelimits="false" rspace="0em">∑</mo><mrow><msub><mi href="./21.7#iii.p1" title="branch points">P</mi><mi>j</mi></msub><mo href="./front/introduction#common.t1.r10" title="element of">∈</mo><msup><mi href="./21.7#iii.p1" title="subset of 𝐵">U</mi><mi>c</mi></msup></mrow></munder><mrow><munderover><mo movablelimits="false">∏</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mn>4</mn></munderover><mrow><mrow><mi href="./21.2#E5" title="Riemann theta function with characteristics">θ</mi><mo href="./21.2#E5" title="Riemann theta function with characteristics">⁢</mo><mrow><mo href="./21.2#E5" title="Riemann theta function with characteristics">[</mo><mfrac linethickness="0.0pt"><mrow><msub><mi href="./21.1#t1.r6" title="𝑔-dimensional vector">𝜶</mi><mi>k</mi></msub><mo>+</mo><mrow><msup><mi>𝜼</mi><mn>1</mn></msup><mo>⁡</mo><mrow><mo stretchy="false">(</mo><msub><mi href="./21.7#iii.p1" title="branch points">P</mi><mi>j</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><mrow><msub><mi href="./21.1#t1.r6" title="𝑔-dimensional vector">𝜷</mi><mi>k</mi></msub><mo>+</mo><mrow><msup><mi>𝜼</mi><mn>2</mn></msup><mo>⁡</mo><mrow><mo stretchy="false">(</mo><msub><mi href="./21.7#iii.p1" title="branch points">P</mi><mi>j</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow></mfrac><mo href="./21.2#E5" title="Riemann theta function with characteristics">]</mo></mrow></mrow><mo>⁡</mo><mrow><mo>(</mo><msub><mi>𝐳</mi><mi>k</mi></msub><mo lspace="0em" rspace="0em" stretchy="true">|</mo><mi href="./21.1#t1.r5" title="a Riemann matrix">𝛀</mi><mo>)</mo></mrow></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E17.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./21.2#E5" title="(21.2.5) ‣ §21.2(ii) Riemann Theta Functions with Characteristics ‣ §21.2 Definitions ‣ Properties ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><math class="ltx_Math" altimg="m68.png" altimg-height="32px" altimg-valign="-12px" altimg-width="98px" alttext="\theta\genfrac{[}{]}{0.0pt}{}{\NVar{\boldsymbol{{\alpha}}}}{\NVar{\boldsymbol{%
+{\beta}}}}\left(\NVar{\mathbf{z}}\middle|\NVar{\boldsymbol{{\Omega}}}\right)" display="inline"><mrow><mrow><mi href="./21.2#E5" title="Riemann theta function with characteristics">θ</mi><mo href="./21.2#E5" title="Riemann theta function with characteristics">⁢</mo><mrow><mo href="./21.2#E5" title="Riemann theta function with characteristics">[</mo><mfrac linethickness="0.0pt"><mi class="ltx_nvar" href="./21.1#t1.r6" title="𝑔-dimensional vector">𝜶</mi><mi class="ltx_nvar" href="./21.1#t1.r6" title="𝑔-dimensional vector">𝜷</mi></mfrac><mo href="./21.2#E5" title="Riemann theta function with characteristics">]</mo></mrow></mrow><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">𝐳</mi><mo lspace="0em" rspace="0em" stretchy="true">|</mo><mi class="ltx_nvar" href="./21.1#t1.r5" title="a Riemann matrix">𝛀</mi><mo>)</mo></mrow></mrow></math>: Riemann theta function with characteristics</a>,
+<a href="./front/introduction#common.t1.r10" title="Common Notations and Definitions ‣ Mathematical Introduction" class="ltx_ref"><math class="ltx_Math" altimg="m48.png" altimg-height="16px" altimg-valign="-3px" altimg-width="18px" alttext="\in" display="inline"><mo href="./front/introduction#common.t1.r10" title="element of">∈</mo></math>: element of</a>,
+<a href="./21.1#t1.r5" title="§21.1 Special Notation ‣ Notation ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><math class="ltx_Math" altimg="m29.png" altimg-height="18px" altimg-valign="-2px" altimg-width="22px" alttext="\boldsymbol{{\Omega}}" display="inline"><mi href="./21.1#t1.r5" title="a Riemann matrix">𝛀</mi></math>:  a Riemann matrix</a>,
+<a href="./21.1#t1.r6" title="§21.1 Special Notation ‣ Notation ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><math class="ltx_Math" altimg="m30.png" altimg-height="13px" altimg-valign="-2px" altimg-width="20px" alttext="\boldsymbol{{\alpha}}" display="inline"><mi href="./21.1#t1.r6" title="𝑔-dimensional vector">𝜶</mi></math>:  <math class="ltx_Math" altimg="m79.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="g" display="inline"><mi href="./21.1#t1.r1" title="positive integer">g</mi></math>-dimensional vector</a>,
+<a href="./21.1#t1.r6" title="§21.1 Special Notation ‣ Notation ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><math class="ltx_Math" altimg="m33.png" altimg-height="22px" altimg-valign="-6px" altimg-width="19px" alttext="\boldsymbol{{\beta}}" display="inline"><mi href="./21.1#t1.r6" title="𝑔-dimensional vector">𝜷</mi></math>:  <math class="ltx_Math" altimg="m79.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="g" display="inline"><mi href="./21.1#t1.r1" title="positive integer">g</mi></math>-dimensional vector</a>,
+<a href="./21.7#iii.p1" title="§21.7(iii) Frobenius’ Identity ‣ §21.7 Riemann Surfaces ‣ Applications ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><math class="ltx_Math" altimg="m23.png" altimg-height="24px" altimg-valign="-8px" altimg-width="26px" alttext="P_{j}" display="inline"><msub><mi href="./21.7#iii.p1" title="branch points">P</mi><mi>j</mi></msub></math>:  branch points</a> and
+<a href="./21.7#iii.p1" title="§21.7(iii) Frobenius’ Identity ‣ §21.7 Riemann Surfaces ‣ Applications ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><math class="ltx_Math" altimg="m27.png" altimg-height="18px" altimg-valign="-2px" altimg-width="21px" alttext="U" display="inline"><mi href="./21.7#iii.p1" title="subset of 𝐵">U</mi></math>:  subset of <math class="ltx_Math" altimg="m13.png" altimg-height="18px" altimg-valign="-2px" altimg-width="21px" alttext="B" display="inline"><mi href="./21.7#iii.p1" title="set of branch points">B</mi></math></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./21.7.E17" title="" class="ltx_ref">http://dlmf.nist.gov/21.7.E17</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./21.7.E17.tex">TeX</a>, <a href="./21.7.E17.pmml">pMML</a>, <a href="./21.7.E17.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./21.7#iii.info" title="§21.7(iii) Frobenius’ Identity ‣ §21.7 Riemann Surfaces ‣ Applications ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§21.7(iii)</span></a>,
+<a href="./21.7#info" title="§21.7 Riemann Surfaces ‣ Applications ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§21.7</span></a> and
+<a href="./21#info" title="Chapter 21 Multidimensional Theta Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.21</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+</div>
+<div class="ltx_page_footer">
+<div class="ltx_siblings">
+<a href="./21.6" title="In Properties ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">21.6 </span>Products</span></a><a href="./21.8" title="In Applications ‣ Chapter 21 Multidimensional Theta Functions" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">21.8 </span>Abelian Functions</span></a>
+</div>
+<div class="ltx_footer_links ltx_centering">
+<a href="./about/notices">© 2010–2026 NIST</a> / <a href="./about/notices#S2">Disclaimer</a> / <a href="/cdn-cgi/l/email-protection#5e1a12131873383b3b3a3c3f3d351e30372d2a70393128">Feedback</a>;
+ Version 1.2.7;
+Release date 2026-06-15.</div>
+<span id="pagesettings"></span>
+<div class="ltx_nist_logo"><a href="http://www.nist.gov/"><img src="./style/nistidc.png" width="500" alt="NIST"></a></div>
+<div class="ltx_nist_links ltx_align_right">
+<a href="https://www.nist.gov/privacy-policy">Site Privacy</a> <a href="https://www.nist.gov/oism/accessibility">Accessibility</a> <a href="https://www.nist.gov/privacy">Privacy Program</a> <a href="https://www.nist.gov/oism/copyrights">Copyrights</a> <a href="https://www.commerce.gov/vulnerability-disclosure-policy">Vulnerability Disclosure</a> <a href="https://www.nist.gov/no-fear-act-policy">No Fear Act Policy</a> <a href="https://www.nist.gov/foia">FOIA</a> <a href="https://www.nist.gov/environmental-policy-statement">Environmental Policy</a> <a href="https://www.nist.gov/summary-report-scientific-integrity">Scientific Integrity</a> <a href="https://www.nist.gov/nist-information-quality-standards">Information Quality Standards</a> <a href="https://www.commerce.gov/">Commerce.gov</a> <a href="http://www.science.gov/">Science.gov</a> <a href="http://www.usa.gov/">USA.gov</a>
+</div>
+</div>
+</div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"9ef5b487afff42a68917b2d63593a474"}' crossorigin="anonymous"></script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a30b659c9d4523f3',t:'MTc4NzY2OTI5OA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

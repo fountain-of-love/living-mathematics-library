@@ -1,0 +1,397 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>DLMF: §14.16 Zeros ‣ Real Arguments ‣ Chapter 14 Legendre and Related Functions</title>
+<link rel="shortcut icon" href="./style/DLMF-16.png" type="image/png">
+<script type="text/javascript"><!--
+	var PATH="DLMF:/14.16";
+	var ROOT="./";
+      //--></script>
+<script type="text/javascript" src="./style/jquery.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/jquery.leaveNotice.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/DLMF.js"><!-- non-empty so ie6 will accept it --></script>
+<script async="" type="text/javascript" id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC&amp;subagency=NIST&amp;pua=UA-37115410-44&amp;yt=true&amp;exts=ppsx,pps,f90,sch,rtf,wrl,txz,m1v,xlsm,msi,xsd,f,tif,eps,mpg,xml,pl,xlt,c"><!-- non-empty so ie6 will accept it --></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-BZB64W4M0L"></script><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-BZB64W4M0L');
+      </script>
+<link rel="stylesheet" type="text/css" href="./style/LaTeXML.css">
+<link rel="stylesheet" type="text/css" href="./style/DLMF.css">
+<link rel="stylesheet" type="text/css" href="./style/print.css" media="print">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="top" href="./" title="DLMF">
+<link rel="copyright" href="./about/notices" title="Copyright">
+<link rel="search" href="./search/search" title="Search">
+<link rel="help" class="ltx_help" href="./help/" title="Help">
+<link rel="up" href="./14#PT2" title="Real Arguments ‣ Chapter 14 Legendre and Related Functions">
+<link rel="up up" href="./14" title="Chapter 14 Legendre and Related Functions">
+<link rel="start" href="./" title="">
+<link rel="prev" href="./14.15" title="§14.15 Uniform Asymptotic Approximations ‣ Real Arguments ‣ Chapter 14 Legendre and Related Functions">
+<link rel="next" href="./14.17" title="§14.17 Integrals ‣ Real Arguments ‣ Chapter 14 Legendre and Related Functions">
+<link rel="section" href="./14.1" title="§14.1 Special Notation ‣ Notation ‣ Chapter 14 Legendre and Related Functions">
+<link rel="section" href="./14.2" title="§14.2 Differential Equations ‣ Real Arguments ‣ Chapter 14 Legendre and Related Functions">
+<link rel="section" href="./14.3" title="§14.3 Definitions and Hypergeometric Representations ‣ Real Arguments ‣ Chapter 14 Legendre and Related Functions">
+<link rel="section" href="./14.4" title="§14.4 Graphics ‣ Real Arguments ‣ Chapter 14 Legendre and Related Functions">
+<link rel="section" href="./14.5" title="§14.5 Special Values ‣ Real Arguments ‣ Chapter 14 Legendre and Related Functions">
+<link rel="section" href="./14.6" title="§14.6 Integer Order ‣ Real Arguments ‣ Chapter 14 Legendre and Related Functions">
+<link rel="section" href="./14.7" title="§14.7 Integer Degree and Order ‣ Real Arguments ‣ Chapter 14 Legendre and Related Functions">
+<link rel="section" href="./14.8" title="§14.8 Behavior at Singularities ‣ Real Arguments ‣ Chapter 14 Legendre and Related Functions">
+<link rel="section" href="./14.9" title="§14.9 Connection Formulas ‣ Real Arguments ‣ Chapter 14 Legendre and Related Functions">
+<link rel="section" href="./14.10" title="§14.10 Recurrence Relations and Derivatives ‣ Real Arguments ‣ Chapter 14 Legendre and Related Functions">
+<link rel="section" href="./14.11" title="§14.11 Derivatives with Respect to Degree or Order ‣ Real Arguments ‣ Chapter 14 Legendre and Related Functions">
+<link rel="section" href="./14.12" title="§14.12 Integral Representations ‣ Real Arguments ‣ Chapter 14 Legendre and Related Functions">
+<link rel="section" href="./14.13" title="§14.13 Trigonometric Expansions ‣ Real Arguments ‣ Chapter 14 Legendre and Related Functions">
+<link rel="section" href="./14.14" title="§14.14 Continued Fractions ‣ Real Arguments ‣ Chapter 14 Legendre and Related Functions">
+<link rel="section" href="./14.15" title="§14.15 Uniform Asymptotic Approximations ‣ Real Arguments ‣ Chapter 14 Legendre and Related Functions">
+<link rel="section" href="./14.17" title="§14.17 Integrals ‣ Real Arguments ‣ Chapter 14 Legendre and Related Functions">
+<link rel="section" href="./14.18" title="§14.18 Sums ‣ Real Arguments ‣ Chapter 14 Legendre and Related Functions">
+<link rel="section" href="./14.19" title="§14.19 Toroidal (or Ring) Functions ‣ Real Arguments ‣ Chapter 14 Legendre and Related Functions">
+<link rel="section" href="./14.20" title="§14.20 Conical (or Mehler) Functions ‣ Real Arguments ‣ Chapter 14 Legendre and Related Functions">
+<link rel="section" href="./14.21" title="§14.21 Definitions and Basic Properties ‣ Complex Arguments ‣ Chapter 14 Legendre and Related Functions">
+<link rel="section" href="./14.22" title="§14.22 Graphics ‣ Complex Arguments ‣ Chapter 14 Legendre and Related Functions">
+<link rel="section" href="./14.23" title="§14.23 Values on the Cut ‣ Complex Arguments ‣ Chapter 14 Legendre and Related Functions">
+<link rel="section" href="./14.24" title="§14.24 Analytic Continuation ‣ Complex Arguments ‣ Chapter 14 Legendre and Related Functions">
+<link rel="section" href="./14.25" title="§14.25 Integral Representations ‣ Complex Arguments ‣ Chapter 14 Legendre and Related Functions">
+<link rel="section" href="./14.26" title="§14.26 Uniform Asymptotic Expansions ‣ Complex Arguments ‣ Chapter 14 Legendre and Related Functions">
+<link rel="section" href="./14.27" title="§14.27 Zeros ‣ Complex Arguments ‣ Chapter 14 Legendre and Related Functions">
+<link rel="section" href="./14.28" title="§14.28 Sums ‣ Complex Arguments ‣ Chapter 14 Legendre and Related Functions">
+<link rel="section" href="./14.29" title="§14.29 Generalizations ‣ Complex Arguments ‣ Chapter 14 Legendre and Related Functions">
+<link rel="section" href="./14.30" title="§14.30 Spherical and Spheroidal Harmonics ‣ Applications ‣ Chapter 14 Legendre and Related Functions">
+<link rel="section" href="./14.31" title="§14.31 Other Applications ‣ Applications ‣ Chapter 14 Legendre and Related Functions">
+<link rel="section" href="./14.32" title="§14.32 Methods of Computation ‣ Computation ‣ Chapter 14 Legendre and Related Functions">
+<link rel="section" href="./14.33" title="§14.33 Tables ‣ Computation ‣ Chapter 14 Legendre and Related Functions">
+<link rel="section" href="./14.34" title="§14.34 Software ‣ Computation ‣ Chapter 14 Legendre and Related Functions">
+<link rel="document" href="./front/foreword" title="Foreword">
+<link rel="document" href="./front/preface" title="Preface">
+<link rel="document" href="./front/introduction" title="Mathematical Introduction">
+<link rel="chapter" href="./1" title="Chapter 1 Algebraic and Analytic Methods">
+<link rel="chapter" href="./2" title="Chapter 2 Asymptotic Approximations">
+<link rel="chapter" href="./3" title="Chapter 3 Numerical Methods">
+<link rel="chapter" href="./4" title="Chapter 4 Elementary Functions">
+<link rel="chapter" href="./5" title="Chapter 5 Gamma Function">
+<link rel="chapter" href="./6" title="Chapter 6 Exponential, Logarithmic, Sine, and Cosine Integrals">
+<link rel="chapter" href="./7" title="Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="chapter" href="./8" title="Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="chapter" href="./9" title="Chapter 9 Airy and Related Functions">
+<link rel="chapter" href="./10" title="Chapter 10 Bessel Functions">
+<link rel="chapter" href="./11" title="Chapter 11 Struve and Related Functions">
+<link rel="chapter" href="./12" title="Chapter 12 Parabolic Cylinder Functions">
+<link rel="chapter" href="./13" title="Chapter 13 Confluent Hypergeometric Functions">
+<link rel="chapter" href="./14" title="Chapter 14 Legendre and Related Functions">
+<link rel="chapter" href="./15" title="Chapter 15 Hypergeometric Function">
+<link rel="chapter" href="./16" title="Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="chapter" href="./17" title="Chapter 17 𝑞-Hypergeometric and Related Functions">
+<link rel="chapter" href="./18" title="Chapter 18 Orthogonal Polynomials">
+<link rel="chapter" href="./19" title="Chapter 19 Elliptic Integrals">
+<link rel="chapter" href="./20" title="Chapter 20 Theta Functions">
+<link rel="chapter" href="./21" title="Chapter 21 Multidimensional Theta Functions">
+<link rel="chapter" href="./22" title="Chapter 22 Jacobian Elliptic Functions">
+<link rel="chapter" href="./23" title="Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="chapter" href="./24" title="Chapter 24 Bernoulli and Euler Polynomials">
+<link rel="chapter" href="./25" title="Chapter 25 Zeta and Related Functions">
+<link rel="chapter" href="./26" title="Chapter 26 Combinatorial Analysis">
+<link rel="chapter" href="./27" title="Chapter 27 Functions of Number Theory">
+<link rel="chapter" href="./28" title="Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="chapter" href="./29" title="Chapter 29 Lamé Functions">
+<link rel="chapter" href="./30" title="Chapter 30 Spheroidal Wave Functions">
+<link rel="chapter" href="./31" title="Chapter 31 Heun Functions">
+<link rel="chapter" href="./32" title="Chapter 32 Painlevé Transcendents">
+<link rel="chapter" href="./33" title="Chapter 33 Coulomb Functions">
+<link rel="chapter" href="./34" title="Chapter 34 3⁢𝑗,6⁢𝑗,9⁢𝑗 Symbols">
+<link rel="chapter" href="./35" title="Chapter 35 Functions of Matrix Argument">
+<link rel="chapter" href="./36" title="Chapter 36 Integrals with Coalescing Saddles">
+<link rel="bibliography" href="./bib/" title="Bibliography">
+<link rel="index" href="./idx/" title="Index">
+<link rel="glossary" href="./not/" title="Notations">
+<link rel="document" href="./lof/" title="List of Figures">
+<link rel="document" href="./lot/" title="List of Tables">
+<link rel="document" href="./software/" title="Software Index">
+<link rel="document" href="./errata/" title="Errata">
+<link rel="document" href="./help/" title="Need Help?">
+<link rel="document" href="./search/" title="Advanced Search">
+<link rel="document" href="./about/" title="About the Project">
+<meta name="keywords" lang="en" content="Ferrers functions, associated Legendre functions, zeros">
+</head>
+<body class="color_default textfont_default titlefont_default fontsize_default navbar_default">
+<div class="ltx_page_navbar">
+<div class="ltx_page_navlogo"><a href="./" title="Digital Library of Mathematical Functions"><span>DLMF</span></a></div>
+<div class="ltx_page_navitems">
+<form method="get" action="./search/search">
+<ul>
+<li><a href="./idx/">Index</a></li>
+<li><a href="./not/">Notations</a></li>
+<li><small><input type="text" name="q" value="" size="6" class="ltx_page_navitem_search"><button type="submit">Search</button></small></li>
+<li><a href="./help/" class="ltx_help">Help?</a></li>
+<li><a href="./help/cite">Citing</a></li>
+<li><a href="./help/customize" class="ltx_customize">Customize</a></li>
+<li id="showinfo"><a href="" onclick="showInfo(); return false;" title="Show Annotations">Annotate</a></li>
+<li id="hideinfo"><a href="" onclick="hideInfo(); return false;">UnAnnotate</a></li>
+</ul>
+</form>
+</div>
+<div class="ltx_page_navsponsors">
+<div><a href="./about/" class="ltx_page_navabout">About the Project</a></div>
+</div>
+</div>
+<div class="ltx_page_main">
+<div class="ltx_page_header">
+<a href="./14" title="" class="ltx_ref" rel="up up"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">14 </span>Legendre and Related Functions</span></a><a href="./14#PT2" title="In Chapter 14 Legendre and Related Functions" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title">Real Arguments</span></a><a href="./14.15" title="In Real Arguments ‣ Chapter 14 Legendre and Related Functions" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">14.15 </span>Uniform Asymptotic Approximations</span></a><a href="./14.17" title="In Real Arguments ‣ Chapter 14 Legendre and Related Functions" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">14.17 </span>Integrals</span></a>
+</div>
+<div class="ltx_page_content">
+<section class="ltx_section ltx_authors_multiline ltx_leqno">
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">§14.16 </span>Zeros</h1>
+<div id="info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Permalink:</dt>
+<dd><a href="./14.16" title="" class="ltx_ref">http://dlmf.nist.gov/14.16</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./14#info" title="Chapter 14 Legendre and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.14</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<h6>Contents</h6>
+<ol class="ltx_toclist ltx_toclist_section">
+<li class="ltx_tocentry"><a href="#i"><span class="ltx_tag ltx_tag_subsection">§14.16(i) </span>Notation</a></li>
+<li class="ltx_tocentry"><a href="#ii"><span class="ltx_tag ltx_tag_subsection">§14.16(ii) </span>Interval <math class="ltx_Math" altimg="m8.png" altimg-height="19px" altimg-valign="-4px" altimg-width="108px" alttext="-1&lt;x&lt;1" display="inline"><mrow><mrow><mo>−</mo><mn>1</mn></mrow><mo>&lt;</mo><mi href="./14.1#p1.t1.r1" title="real variable">x</mi><mo>&lt;</mo><mn>1</mn></mrow></math></a></li>
+<li class="ltx_tocentry"><a href="#iii"><span class="ltx_tag ltx_tag_subsection">§14.16(iii) </span>Interval <math class="ltx_Math" altimg="m11.png" altimg-height="18px" altimg-valign="-3px" altimg-width="103px" alttext="1&lt;x&lt;\infty" display="inline"><mrow><mn>1</mn><mo>&lt;</mo><mi href="./14.1#p1.t1.r1" title="real variable">x</mi><mo>&lt;</mo><mi mathvariant="normal">∞</mi></mrow></math></a></li>
+</ol>
+<section id="i" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§14.16(i) </span>Notation</h2>
+<div id="i.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Permalink:</dt>
+<dd><a href="./14.16.i" title="" class="ltx_ref">http://dlmf.nist.gov/14.16.i</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./14.16#info" title="§14.16 Zeros ‣ Real Arguments ‣ Chapter 14 Legendre and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§14.16</span></a> and
+<a href="./14#info" title="Chapter 14 Legendre and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.14</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="i.p1" class="ltx_para">
+<p class="ltx_p">Throughout this section we assume that <math class="ltx_Math" altimg="m33.png" altimg-height="17px" altimg-valign="-6px" altimg-width="17px" alttext="\mu" display="inline"><mi href="./14.1#p1.t1.r4" title="general order">μ</mi></math> and <math class="ltx_Math" altimg="m41.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="\nu" display="inline"><mi href="./14.1#p1.t1.r4" title="general degree">ν</mi></math> are real, and when they
+are not integers we write</p>
+<table id="E1" class="ltx_equationgroup ltx_eqn_table">
+<tbody>
+<tr id="Ex1" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="2" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equationgroup ltx_align_left">14.16.1</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m3.png" altimg-height="19px" altimg-valign="-6px" altimg-width="19px" alttext="\displaystyle\mu" display="inline"><mi href="./14.1#p1.t1.r4" title="general order">μ</mi></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m1.png" altimg-height="26px" altimg-valign="-8px" altimg-width="98px" alttext="\displaystyle=m+\delta_{\mu}," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mi href="./14.1#p1.t1.r3" title="nonnegative integer">m</mi><mo>+</mo><msub><mi href="./14.16#i.p1" title="𝛿_𝜇">δ</mi><mi href="./14.1#p1.t1.r4" title="general order">μ</mi></msub></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex2" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m4.png" altimg-height="15px" altimg-valign="-2px" altimg-width="18px" alttext="\displaystyle\nu" display="inline"><mi href="./14.1#p1.t1.r4" title="general degree">ν</mi></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m2.png" altimg-height="24px" altimg-valign="-6px" altimg-width="92px" alttext="\displaystyle=n+\delta_{\nu}," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mi href="./14.1#p1.t1.r3" title="nonnegative integer">n</mi><mo>+</mo><msub><mi href="./14.16#i.p1" title="𝛿_𝜇">δ</mi><mi href="./14.1#p1.t1.r4" title="general degree">ν</mi></msub></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E1.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./14.1#p1.t1.r3" title="§14.1 Special Notation ‣ Notation ‣ Chapter 14 Legendre and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m47.png" altimg-height="13px" altimg-valign="-2px" altimg-width="23px" alttext="m" display="inline"><mi href="./14.1#p1.t1.r3" title="nonnegative integer">m</mi></math>:  nonnegative integer</a>,
+<a href="./14.1#p1.t1.r3" title="§14.1 Special Notation ‣ Notation ‣ Chapter 14 Legendre and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m51.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./14.1#p1.t1.r3" title="nonnegative integer">n</mi></math>:  nonnegative integer</a>,
+<a href="./14.1#p1.t1.r4" title="§14.1 Special Notation ‣ Notation ‣ Chapter 14 Legendre and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m33.png" altimg-height="17px" altimg-valign="-6px" altimg-width="17px" alttext="\mu" display="inline"><mi href="./14.1#p1.t1.r4" title="general order">μ</mi></math>:  general order</a>,
+<a href="./14.1#p1.t1.r4" title="§14.1 Special Notation ‣ Notation ‣ Chapter 14 Legendre and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m41.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="\nu" display="inline"><mi href="./14.1#p1.t1.r4" title="general degree">ν</mi></math>:  general degree</a> and
+<a href="./14.16#i.p1" title="§14.16(i) Notation ‣ §14.16 Zeros ‣ Real Arguments ‣ Chapter 14 Legendre and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m18.png" altimg-height="24px" altimg-valign="-8px" altimg-width="25px" alttext="\delta_{\mu}" display="inline"><msub><mi href="./14.16#i.p1" title="𝛿_𝜇">δ</mi><mi href="./14.1#p1.t1.r4" title="general order">μ</mi></msub></math></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./14.16.E1" title="" class="ltx_ref">http://dlmf.nist.gov/14.16.E1</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./14.16.E1a.tex">TeX</a>, <a href="./14.16.E1b.tex">TeX</a>, <a href="./14.16.E1a.pmml">pMML</a>, <a href="./14.16.E1b.pmml">pMML</a>, <a href="./14.16.E1a.png">png</a>, <a href="./14.16.E1b.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./14.16#i.info" title="§14.16(i) Notation ‣ §14.16 Zeros ‣ Real Arguments ‣ Chapter 14 Legendre and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§14.16(i)</span></a>,
+<a href="./14.16#info" title="§14.16 Zeros ‣ Real Arguments ‣ Chapter 14 Legendre and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§14.16</span></a> and
+<a href="./14#info" title="Chapter 14 Legendre and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.14</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">where <math class="ltx_Math" altimg="m47.png" altimg-height="13px" altimg-valign="-2px" altimg-width="23px" alttext="m" display="inline"><mi href="./14.1#p1.t1.r3" title="nonnegative integer">m</mi></math>, <math class="ltx_Math" altimg="m53.png" altimg-height="19px" altimg-valign="-3px" altimg-width="56px" alttext="n\in\mathbb{Z}" display="inline"><mrow><mi href="./14.1#p1.t1.r3" title="nonnegative integer">n</mi><mo href="./front/introduction#common.t1.r10" title="element of">∈</mo><mi href="./front/introduction#common.t2.r20" title="set of all integers">ℤ</mi></mrow></math> and <math class="ltx_Math" altimg="m18.png" altimg-height="24px" altimg-valign="-8px" altimg-width="25px" alttext="\delta_{\mu}" display="inline"><msub><mi href="./14.16#i.p1" title="𝛿_𝜇">δ</mi><mi href="./14.1#p1.t1.r4" title="general order">μ</mi></msub></math>, <math class="ltx_Math" altimg="m20.png" altimg-height="25px" altimg-valign="-7px" altimg-width="95px" alttext="\delta_{\nu}\in(0,1)" display="inline"><mrow><msub><mi href="./14.16#i.p1" title="𝛿_𝜇">δ</mi><mi href="./14.1#p1.t1.r4" title="general degree">ν</mi></msub><mo href="./front/introduction#common.t1.r10" title="element of">∈</mo><mrow><mo href="./front/introduction#common.t1.r29" stretchy="false" title="open interval">(</mo><mn>0</mn><mo href="./front/introduction#common.t1.r29" title="open interval">,</mo><mn>1</mn><mo href="./front/introduction#common.t1.r29" stretchy="false" title="open interval">)</mo></mrow></mrow></math>. For
+all cases concerning <math class="ltx_Math" altimg="m24.png" altimg-height="25px" altimg-valign="-7px" altimg-width="60px" alttext="\mathsf{P}^{\mu}_{\nu}\left(x\right)" display="inline"><mrow><msubsup><mi href="./14.3#E1" title="Ferrers function of the first kind">𝖯</mi><mi href="./14.1#p1.t1.r4" title="general degree">ν</mi><mi href="./14.1#p1.t1.r4" title="general order">μ</mi></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi href="./14.1#p1.t1.r1" title="real variable">x</mi><mo>)</mo></mrow></mrow></math> and <math class="ltx_Math" altimg="m14.png" altimg-height="25px" altimg-valign="-7px" altimg-width="63px" alttext="P^{\mu}_{\nu}\left(x\right)" display="inline"><mrow><msubsup><mi href="./14.21#i.p1" title="associated Legendre function of the first kind">P</mi><mi href="./14.1#p1.t1.r4" title="general degree">ν</mi><mi href="./14.1#p1.t1.r4" title="general order">μ</mi></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi href="./14.1#p1.t1.r1" title="real variable">x</mi><mo>)</mo></mrow></mrow></math>
+we assume that <math class="ltx_Math" altimg="m42.png" altimg-height="29px" altimg-valign="-9px" altimg-width="73px" alttext="\nu\geq-\frac{1}{2}" display="inline"><mrow><mi href="./14.1#p1.t1.r4" title="general degree">ν</mi><mo>≥</mo><mrow><mo>−</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></mrow></math> without loss of generality (see
+(<a href="./14.9#E5" title="(14.9.5) ‣ §14.9(i) Connections Between 𝖯^{±𝜇}_𝜈(𝑥), 𝖯^{±𝜇}_{-𝜈-1}(𝑥), 𝖰^{±𝜇}_𝜈(𝑥), 𝖰^𝜇_{-𝜈-1}(𝑥) ‣ §14.9 Connection Formulas ‣ Real Arguments ‣ Chapter 14 Legendre and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">14.9.5</span></a>) and (<a href="./14.9#E11" title="(14.9.11) ‣ §14.9(iii) Connections Between 𝑃^{±𝜇}_𝜈(𝑥), 𝑃^{±𝜇}_{-𝜈-1}(𝑥), 𝑸^{±𝜇}_𝜈(𝑥), 𝑸^𝜇_{-𝜈-1}(𝑥) ‣ §14.9 Connection Formulas ‣ Real Arguments ‣ Chapter 14 Legendre and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">14.9.11</span></a>)).</p>
+</div>
+</section>
+<section id="ii" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§14.16(ii) </span>Interval <math class="ltx_Math" altimg="m8.png" altimg-height="19px" altimg-valign="-4px" altimg-width="108px" alttext="-1&lt;x&lt;1" display="inline"><mrow><mrow><mo>−</mo><mn>1</mn></mrow><mo>&lt;</mo><mi href="./14.1#p1.t1.r1" title="real variable">x</mi><mo>&lt;</mo><mn>1</mn></mrow></math>
+</h2>
+<div id="ii.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=Ferrers%20functions">Ferrers functions</a>, <a class="ltx_keyword" href="./search/search?q=zeros">zeros</a>
+</dd>
+<dt>Notes:</dt>
+<dd>See <cite class="ltx_cite ltx_citemacro_citet">Hobson (<a href="./bib/H#bib1092" title="The Theory of Spherical and Ellipsoidal Harmonics" class="ltx_ref">1931</a>, pp. 386–388 and 399–401)</cite>.</dd>
+<dt>Permalink:</dt>
+<dd><a href="./14.16.ii" title="" class="ltx_ref">http://dlmf.nist.gov/14.16.ii</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./14.16#info" title="§14.16 Zeros ‣ Real Arguments ‣ Chapter 14 Legendre and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§14.16</span></a> and
+<a href="./14#info" title="Chapter 14 Legendre and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.14</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="ii.p1" class="ltx_para">
+<p class="ltx_p">The number of zeros of <math class="ltx_Math" altimg="m24.png" altimg-height="25px" altimg-valign="-7px" altimg-width="60px" alttext="\mathsf{P}^{\mu}_{\nu}\left(x\right)" display="inline"><mrow><msubsup><mi href="./14.3#E1" title="Ferrers function of the first kind">𝖯</mi><mi href="./14.1#p1.t1.r4" title="general degree">ν</mi><mi href="./14.1#p1.t1.r4" title="general order">μ</mi></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi href="./14.1#p1.t1.r1" title="real variable">x</mi><mo>)</mo></mrow></mrow></math> in the interval <math class="ltx_Math" altimg="m5.png" altimg-height="25px" altimg-valign="-7px" altimg-width="67px" alttext="(-1,1)" display="inline"><mrow><mo href="./front/introduction#common.t1.r29" stretchy="false" title="open interval">(</mo><mrow><mo>−</mo><mn>1</mn></mrow><mo href="./front/introduction#common.t1.r29" title="open interval">,</mo><mn>1</mn><mo href="./front/introduction#common.t1.r29" stretchy="false" title="open interval">)</mo></mrow></math> is
+<math class="ltx_Math" altimg="m29.png" altimg-height="25px" altimg-valign="-7px" altimg-width="158px" alttext="\max(\lceil\nu-|\mu|\rceil,0)" display="inline"><mrow><mi>max</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mo href="./front/introduction#common.t1.r18" stretchy="false" title="ceiling of 𝑥">⌈</mo><mrow><mi href="./14.1#p1.t1.r4" title="general degree">ν</mi><mo>−</mo><mrow><mo stretchy="false">|</mo><mi href="./14.1#p1.t1.r4" title="general order">μ</mi><mo stretchy="false">|</mo></mrow></mrow><mo href="./front/introduction#common.t1.r18" stretchy="false" title="ceiling of 𝑥">⌉</mo></mrow><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow></math> if any of the following sets of
+conditions hold:</p>
+<ul id="I1" class="ltx_itemize">
+<li id="I1.ix1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(a)</span> 
+<div id="I1.ix1.p1" class="ltx_para">
+<p class="ltx_p"><math class="ltx_Math" altimg="m34.png" altimg-height="21px" altimg-valign="-6px" altimg-width="55px" alttext="\mu\leq 0" display="inline"><mrow><mi href="./14.1#p1.t1.r4" title="general order">μ</mi><mo>≤</mo><mn>0</mn></mrow></math>.</p>
+</div>
+</li>
+<li id="I1.ix2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(b)</span> 
+<div id="I1.ix2.p1" class="ltx_para">
+<p class="ltx_p"><math class="ltx_Math" altimg="m31.png" altimg-height="21px" altimg-valign="-6px" altimg-width="55px" alttext="\mu&gt;0" display="inline"><mrow><mi href="./14.1#p1.t1.r4" title="general order">μ</mi><mo>&gt;</mo><mn>0</mn></mrow></math>, <math class="ltx_Math" altimg="m52.png" altimg-height="20px" altimg-valign="-5px" altimg-width="63px" alttext="n\geq m" display="inline"><mrow><mi href="./14.1#p1.t1.r3" title="nonnegative integer">n</mi><mo>≥</mo><mi href="./14.1#p1.t1.r3" title="nonnegative integer">m</mi></mrow></math>, and <math class="ltx_Math" altimg="m19.png" altimg-height="24px" altimg-valign="-8px" altimg-width="72px" alttext="\delta_{\nu}&gt;\delta_{\mu}" display="inline"><mrow><msub><mi href="./14.16#i.p1" title="𝛿_𝜇">δ</mi><mi href="./14.1#p1.t1.r4" title="general degree">ν</mi></msub><mo>&gt;</mo><msub><mi href="./14.16#i.p1" title="𝛿_𝜇">δ</mi><mi href="./14.1#p1.t1.r4" title="general order">μ</mi></msub></mrow></math>.</p>
+</div>
+</li>
+<li id="I1.ix3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(c)</span> 
+<div id="I1.ix3.p1" class="ltx_para">
+<p class="ltx_p"><math class="ltx_Math" altimg="m31.png" altimg-height="21px" altimg-valign="-6px" altimg-width="55px" alttext="\mu&gt;0" display="inline"><mrow><mi href="./14.1#p1.t1.r4" title="general order">μ</mi><mo>&gt;</mo><mn>0</mn></mrow></math>, <math class="ltx_Math" altimg="m49.png" altimg-height="16px" altimg-valign="-3px" altimg-width="63px" alttext="n&lt;m" display="inline"><mrow><mi href="./14.1#p1.t1.r3" title="nonnegative integer">n</mi><mo>&lt;</mo><mi href="./14.1#p1.t1.r3" title="nonnegative integer">m</mi></mrow></math>, and <math class="ltx_Math" altimg="m46.png" altimg-height="18px" altimg-valign="-4px" altimg-width="60px" alttext="m-n" display="inline"><mrow><mi href="./14.1#p1.t1.r3" title="nonnegative integer">m</mi><mo>−</mo><mi href="./14.1#p1.t1.r3" title="nonnegative integer">n</mi></mrow></math> is odd.</p>
+</div>
+</li>
+<li id="I1.ix4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(d)</span> 
+<div id="I1.ix4.p1" class="ltx_para">
+<p class="ltx_p"><math class="ltx_Math" altimg="m38.png" altimg-height="21px" altimg-valign="-6px" altimg-width="146px" alttext="\nu=0,1,2,3,\dots" display="inline"><mrow><mi href="./14.1#p1.t1.r4" title="general degree">ν</mi><mo>=</mo><mrow><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mi mathvariant="normal">…</mi></mrow></mrow></math>.</p>
+</div>
+</li>
+</ul>
+</div>
+<div id="ii.p2" class="ltx_para">
+<p class="ltx_p">The number of zeros of <math class="ltx_Math" altimg="m24.png" altimg-height="25px" altimg-valign="-7px" altimg-width="60px" alttext="\mathsf{P}^{\mu}_{\nu}\left(x\right)" display="inline"><mrow><msubsup><mi href="./14.3#E1" title="Ferrers function of the first kind">𝖯</mi><mi href="./14.1#p1.t1.r4" title="general degree">ν</mi><mi href="./14.1#p1.t1.r4" title="general order">μ</mi></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi href="./14.1#p1.t1.r1" title="real variable">x</mi><mo>)</mo></mrow></mrow></math> in the interval <math class="ltx_Math" altimg="m5.png" altimg-height="25px" altimg-valign="-7px" altimg-width="67px" alttext="(-1,1)" display="inline"><mrow><mo href="./front/introduction#common.t1.r29" stretchy="false" title="open interval">(</mo><mrow><mo>−</mo><mn>1</mn></mrow><mo href="./front/introduction#common.t1.r29" title="open interval">,</mo><mn>1</mn><mo href="./front/introduction#common.t1.r29" stretchy="false" title="open interval">)</mo></mrow></math> is
+<math class="ltx_Math" altimg="m27.png" altimg-height="25px" altimg-valign="-7px" altimg-width="194px" alttext="\max(\lceil\nu-|\mu|\rceil,0)+1" display="inline"><mrow><mrow><mi>max</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mo href="./front/introduction#common.t1.r18" stretchy="false" title="ceiling of 𝑥">⌈</mo><mrow><mi href="./14.1#p1.t1.r4" title="general degree">ν</mi><mo>−</mo><mrow><mo stretchy="false">|</mo><mi href="./14.1#p1.t1.r4" title="general order">μ</mi><mo stretchy="false">|</mo></mrow></mrow><mo href="./front/introduction#common.t1.r18" stretchy="false" title="ceiling of 𝑥">⌉</mo></mrow><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mn>1</mn></mrow></math> if either of the following sets of
+conditions holds:</p>
+<ul id="I2" class="ltx_itemize">
+<li id="I2.ix1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(a)</span> 
+<div id="I2.ix1.p1" class="ltx_para">
+<p class="ltx_p"><math class="ltx_Math" altimg="m31.png" altimg-height="21px" altimg-valign="-6px" altimg-width="55px" alttext="\mu&gt;0" display="inline"><mrow><mi href="./14.1#p1.t1.r4" title="general order">μ</mi><mo>&gt;</mo><mn>0</mn></mrow></math>, <math class="ltx_Math" altimg="m50.png" altimg-height="16px" altimg-valign="-3px" altimg-width="63px" alttext="n&gt;m" display="inline"><mrow><mi href="./14.1#p1.t1.r3" title="nonnegative integer">n</mi><mo>&gt;</mo><mi href="./14.1#p1.t1.r3" title="nonnegative integer">m</mi></mrow></math>, and <math class="ltx_Math" altimg="m21.png" altimg-height="24px" altimg-valign="-8px" altimg-width="72px" alttext="\delta_{\nu}\leq\delta_{\mu}" display="inline"><mrow><msub><mi href="./14.16#i.p1" title="𝛿_𝜇">δ</mi><mi href="./14.1#p1.t1.r4" title="general degree">ν</mi></msub><mo>≤</mo><msub><mi href="./14.16#i.p1" title="𝛿_𝜇">δ</mi><mi href="./14.1#p1.t1.r4" title="general order">μ</mi></msub></mrow></math>.</p>
+</div>
+</li>
+<li id="I2.ix2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(b)</span> 
+<div id="I2.ix2.p1" class="ltx_para">
+<p class="ltx_p"><math class="ltx_Math" altimg="m31.png" altimg-height="21px" altimg-valign="-6px" altimg-width="55px" alttext="\mu&gt;0" display="inline"><mrow><mi href="./14.1#p1.t1.r4" title="general order">μ</mi><mo>&gt;</mo><mn>0</mn></mrow></math>, <math class="ltx_Math" altimg="m49.png" altimg-height="16px" altimg-valign="-3px" altimg-width="63px" alttext="n&lt;m" display="inline"><mrow><mi href="./14.1#p1.t1.r3" title="nonnegative integer">n</mi><mo>&lt;</mo><mi href="./14.1#p1.t1.r3" title="nonnegative integer">m</mi></mrow></math>, and <math class="ltx_Math" altimg="m46.png" altimg-height="18px" altimg-valign="-4px" altimg-width="60px" alttext="m-n" display="inline"><mrow><mi href="./14.1#p1.t1.r3" title="nonnegative integer">m</mi><mo>−</mo><mi href="./14.1#p1.t1.r3" title="nonnegative integer">n</mi></mrow></math> is even.</p>
+</div>
+</li>
+</ul>
+</div>
+<div id="ii.p3" class="ltx_para">
+<p class="ltx_p">The zeros of <math class="ltx_Math" altimg="m25.png" altimg-height="25px" altimg-valign="-7px" altimg-width="62px" alttext="\mathsf{Q}^{\mu}_{\nu}\left(x\right)" display="inline"><mrow><msubsup><mi href="./14.3#E2" title="Ferrers function of the second kind">𝖰</mi><mi href="./14.1#p1.t1.r4" title="general degree">ν</mi><mi href="./14.1#p1.t1.r4" title="general order">μ</mi></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi href="./14.1#p1.t1.r1" title="real variable">x</mi><mo>)</mo></mrow></mrow></math> in the interval <math class="ltx_Math" altimg="m5.png" altimg-height="25px" altimg-valign="-7px" altimg-width="67px" alttext="(-1,1)" display="inline"><mrow><mo href="./front/introduction#common.t1.r29" stretchy="false" title="open interval">(</mo><mrow><mo>−</mo><mn>1</mn></mrow><mo href="./front/introduction#common.t1.r29" title="open interval">,</mo><mn>1</mn><mo href="./front/introduction#common.t1.r29" stretchy="false" title="open interval">)</mo></mrow></math> interlace those
+of <math class="ltx_Math" altimg="m24.png" altimg-height="25px" altimg-valign="-7px" altimg-width="60px" alttext="\mathsf{P}^{\mu}_{\nu}\left(x\right)" display="inline"><mrow><msubsup><mi href="./14.3#E1" title="Ferrers function of the first kind">𝖯</mi><mi href="./14.1#p1.t1.r4" title="general degree">ν</mi><mi href="./14.1#p1.t1.r4" title="general order">μ</mi></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi href="./14.1#p1.t1.r1" title="real variable">x</mi><mo>)</mo></mrow></mrow></math>. <math class="ltx_Math" altimg="m25.png" altimg-height="25px" altimg-valign="-7px" altimg-width="62px" alttext="\mathsf{Q}^{\mu}_{\nu}\left(x\right)" display="inline"><mrow><msubsup><mi href="./14.3#E2" title="Ferrers function of the second kind">𝖰</mi><mi href="./14.1#p1.t1.r4" title="general degree">ν</mi><mi href="./14.1#p1.t1.r4" title="general order">μ</mi></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi href="./14.1#p1.t1.r1" title="real variable">x</mi><mo>)</mo></mrow></mrow></math> has
+<math class="ltx_Math" altimg="m28.png" altimg-height="25px" altimg-valign="-7px" altimg-width="195px" alttext="\max(\lceil\nu-|\mu|\rceil,0)+k" display="inline"><mrow><mrow><mi>max</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mo href="./front/introduction#common.t1.r18" stretchy="false" title="ceiling of 𝑥">⌈</mo><mrow><mi href="./14.1#p1.t1.r4" title="general degree">ν</mi><mo>−</mo><mrow><mo stretchy="false">|</mo><mi href="./14.1#p1.t1.r4" title="general order">μ</mi><mo stretchy="false">|</mo></mrow></mrow><mo href="./front/introduction#common.t1.r18" stretchy="false" title="ceiling of 𝑥">⌉</mo></mrow><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mi>k</mi></mrow></math> zeros in the interval <math class="ltx_Math" altimg="m5.png" altimg-height="25px" altimg-valign="-7px" altimg-width="67px" alttext="(-1,1)" display="inline"><mrow><mo href="./front/introduction#common.t1.r29" stretchy="false" title="open interval">(</mo><mrow><mo>−</mo><mn>1</mn></mrow><mo href="./front/introduction#common.t1.r29" title="open interval">,</mo><mn>1</mn><mo href="./front/introduction#common.t1.r29" stretchy="false" title="open interval">)</mo></mrow></math>, where
+<math class="ltx_Math" altimg="m45.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi>k</mi></math> can take one of the values <math class="ltx_Math" altimg="m9.png" altimg-height="19px" altimg-valign="-4px" altimg-width="31px" alttext="-1" display="inline"><mrow><mo>−</mo><mn>1</mn></mrow></math>, <math class="ltx_Math" altimg="m10.png" altimg-height="17px" altimg-valign="-2px" altimg-width="15px" alttext="0" display="inline"><mn>0</mn></math>, <math class="ltx_Math" altimg="m12.png" altimg-height="17px" altimg-valign="-2px" altimg-width="15px" alttext="1" display="inline"><mn>1</mn></math>, <math class="ltx_Math" altimg="m13.png" altimg-height="17px" altimg-valign="-2px" altimg-width="15px" alttext="2" display="inline"><mn>2</mn></math>, subject to
+<math class="ltx_Math" altimg="m28.png" altimg-height="25px" altimg-valign="-7px" altimg-width="195px" alttext="\max(\lceil\nu-|\mu|\rceil,0)+k" display="inline"><mrow><mrow><mi>max</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mo href="./front/introduction#common.t1.r18" stretchy="false" title="ceiling of 𝑥">⌈</mo><mrow><mi href="./14.1#p1.t1.r4" title="general degree">ν</mi><mo>−</mo><mrow><mo stretchy="false">|</mo><mi href="./14.1#p1.t1.r4" title="general order">μ</mi><mo stretchy="false">|</mo></mrow></mrow><mo href="./front/introduction#common.t1.r18" stretchy="false" title="ceiling of 𝑥">⌉</mo></mrow><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mi>k</mi></mrow></math> being even or odd according as
+<math class="ltx_Math" altimg="m17.png" altimg-height="25px" altimg-valign="-7px" altimg-width="76px" alttext="\cos\left(\nu\pi\right)" display="inline"><mrow><mi href="./4.14#E2" title="cosine function">cos</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./14.1#p1.t1.r4" title="general degree">ν</mi><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></mrow><mo>)</mo></mrow></mrow></math> and <math class="ltx_Math" altimg="m16.png" altimg-height="25px" altimg-valign="-7px" altimg-width="77px" alttext="\cos\left(\mu\pi\right)" display="inline"><mrow><mi href="./4.14#E2" title="cosine function">cos</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./14.1#p1.t1.r4" title="general order">μ</mi><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></mrow><mo>)</mo></mrow></mrow></math> have opposite signs or the same sign. In
+the special case <math class="ltx_Math" altimg="m30.png" altimg-height="21px" altimg-valign="-6px" altimg-width="55px" alttext="\mu=0" display="inline"><mrow><mi href="./14.1#p1.t1.r4" title="general order">μ</mi><mo>=</mo><mn>0</mn></mrow></math> and <math class="ltx_Math" altimg="m39.png" altimg-height="21px" altimg-valign="-6px" altimg-width="186px" alttext="\nu=n=0,1,2,3,\dots" display="inline"><mrow><mrow><mi href="./14.1#p1.t1.r4" title="general degree">ν</mi><mo>=</mo><mi href="./14.1#p1.t1.r3" title="nonnegative integer">n</mi><mo>=</mo><mn>0</mn></mrow><mo>,</mo><mrow><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mi mathvariant="normal">…</mi></mrow></mrow></math>, <math class="ltx_Math" altimg="m26.png" altimg-height="25px" altimg-valign="-7px" altimg-width="62px" alttext="\mathsf{Q}_{n}\left(x\right)" display="inline"><mrow><msub><mi href="./14.2#ii.p2" title="Ferrers function of the second kind">𝖰</mi><mi href="./14.1#p1.t1.r3" title="nonnegative integer">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./14.1#p1.t1.r1" title="real variable">x</mi><mo>)</mo></mrow></mrow></math>
+has <math class="ltx_Math" altimg="m48.png" altimg-height="19px" altimg-valign="-4px" altimg-width="53px" alttext="n+1" display="inline"><mrow><mi href="./14.1#p1.t1.r3" title="nonnegative integer">n</mi><mo>+</mo><mn>1</mn></mrow></math> zeros in the interval <math class="ltx_Math" altimg="m8.png" altimg-height="19px" altimg-valign="-4px" altimg-width="108px" alttext="-1&lt;x&lt;1" display="inline"><mrow><mrow><mo>−</mo><mn>1</mn></mrow><mo>&lt;</mo><mi href="./14.1#p1.t1.r1" title="real variable">x</mi><mo>&lt;</mo><mn>1</mn></mrow></math>.</p>
+</div>
+<div id="ii.p4" class="ltx_para">
+<p class="ltx_p">For uniform asymptotic approximations for the zeros of <math class="ltx_Math" altimg="m23.png" altimg-height="26px" altimg-valign="-7px" altimg-width="78px" alttext="\mathsf{P}^{-m}_{n}\left(x\right)" display="inline"><mrow><msubsup><mi href="./14.3#E1" title="Ferrers function of the first kind">𝖯</mi><mi href="./14.1#p1.t1.r3" title="nonnegative integer">n</mi><mrow><mo>−</mo><mi href="./14.1#p1.t1.r3" title="nonnegative integer">m</mi></mrow></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi href="./14.1#p1.t1.r1" title="real variable">x</mi><mo>)</mo></mrow></mrow></math>
+in the interval <math class="ltx_Math" altimg="m8.png" altimg-height="19px" altimg-valign="-4px" altimg-width="108px" alttext="-1&lt;x&lt;1" display="inline"><mrow><mrow><mo>−</mo><mn>1</mn></mrow><mo>&lt;</mo><mi href="./14.1#p1.t1.r1" title="real variable">x</mi><mo>&lt;</mo><mn>1</mn></mrow></math> when <math class="ltx_Math" altimg="m54.png" altimg-height="13px" altimg-valign="-2px" altimg-width="70px" alttext="n\to\infty" display="inline"><mrow><mi href="./14.1#p1.t1.r3" title="nonnegative integer">n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></math> with <math class="ltx_Math" altimg="m47.png" altimg-height="13px" altimg-valign="-2px" altimg-width="23px" alttext="m" display="inline"><mi href="./14.1#p1.t1.r3" title="nonnegative integer">m</mi></math> <math class="ltx_Math" altimg="m7.png" altimg-height="25px" altimg-valign="-7px" altimg-width="53px" alttext="(\geq 0)" display="inline"><mrow><mo stretchy="false">(</mo><mrow><mi></mi><mo>≥</mo><mn>0</mn></mrow><mo stretchy="false">)</mo></mrow></math> fixed, see
+<cite class="ltx_cite ltx_citemacro_citet">Olver (<a href="./bib/O#bib1809" title="Asymptotics and Special Functions" class="ltx_ref">1997b</a>, p. 469)</cite>.</p>
+</div>
+</section>
+<section id="iii" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§14.16(iii) </span>Interval <math class="ltx_Math" altimg="m11.png" altimg-height="18px" altimg-valign="-3px" altimg-width="103px" alttext="1&lt;x&lt;\infty" display="inline"><mrow><mn>1</mn><mo>&lt;</mo><mi href="./14.1#p1.t1.r1" title="real variable">x</mi><mo>&lt;</mo><mi mathvariant="normal">∞</mi></mrow></math>
+</h2>
+<div id="iii.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=associated%20Legendre%20functions">associated Legendre functions</a>, <a class="ltx_keyword" href="./search/search?q=zeros">zeros</a>
+</dd>
+<dt>Notes:</dt>
+<dd>See <cite class="ltx_cite ltx_citemacro_citet">Hobson (<a href="./bib/H#bib1092" title="The Theory of Spherical and Ellipsoidal Harmonics" class="ltx_ref">1931</a>, pp. 388–389 and 399)</cite>.</dd>
+<dt>Permalink:</dt>
+<dd><a href="./14.16.iii" title="" class="ltx_ref">http://dlmf.nist.gov/14.16.iii</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./14.16#info" title="§14.16 Zeros ‣ Real Arguments ‣ Chapter 14 Legendre and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§14.16</span></a> and
+<a href="./14#info" title="Chapter 14 Legendre and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.14</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="iii.p1" class="ltx_para">
+<p class="ltx_p"><math class="ltx_Math" altimg="m14.png" altimg-height="25px" altimg-valign="-7px" altimg-width="63px" alttext="P^{\mu}_{\nu}\left(x\right)" display="inline"><mrow><msubsup><mi href="./14.21#i.p1" title="associated Legendre function of the first kind">P</mi><mi href="./14.1#p1.t1.r4" title="general degree">ν</mi><mi href="./14.1#p1.t1.r4" title="general order">μ</mi></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi href="./14.1#p1.t1.r1" title="real variable">x</mi><mo>)</mo></mrow></mrow></math> has exactly one zero in the interval <math class="ltx_Math" altimg="m6.png" altimg-height="25px" altimg-valign="-7px" altimg-width="61px" alttext="(1,\infty)" display="inline"><mrow><mo href="./front/introduction#common.t1.r29" stretchy="false" title="open interval">(</mo><mn>1</mn><mo href="./front/introduction#common.t1.r29" title="open interval">,</mo><mi mathvariant="normal">∞</mi><mo href="./front/introduction#common.t1.r29" stretchy="false" title="open interval">)</mo></mrow></math> if
+either of the following sets of conditions holds:</p>
+<ul id="I3" class="ltx_itemize">
+<li id="I3.ix1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(a)</span> 
+<div id="I3.ix1.p1" class="ltx_para">
+<p class="ltx_p"><math class="ltx_Math" altimg="m31.png" altimg-height="21px" altimg-valign="-6px" altimg-width="55px" alttext="\mu&gt;0" display="inline"><mrow><mi href="./14.1#p1.t1.r4" title="general order">μ</mi><mo>&gt;</mo><mn>0</mn></mrow></math>, <math class="ltx_Math" altimg="m32.png" altimg-height="19px" altimg-valign="-6px" altimg-width="56px" alttext="\mu&gt;\nu" display="inline"><mrow><mi href="./14.1#p1.t1.r4" title="general order">μ</mi><mo>&gt;</mo><mi href="./14.1#p1.t1.r4" title="general degree">ν</mi></mrow></math>, <math class="ltx_Math" altimg="m36.png" altimg-height="24px" altimg-valign="-6px" altimg-width="56px" alttext="\mu\notin\mathbb{Z}" display="inline"><mrow><mi href="./14.1#p1.t1.r4" title="general order">μ</mi><mo href="./front/introduction#common.t1.r11" title="not an element of">∉</mo><mi href="./front/introduction#common.t2.r20" title="set of all integers">ℤ</mi></mrow></math>, and
+<math class="ltx_Math" altimg="m43.png" altimg-height="25px" altimg-valign="-7px" altimg-width="128px" alttext="\sin\left((\mu-\nu)\pi\right)" display="inline"><mrow><mi href="./4.14#E1" title="sine function">sin</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi href="./14.1#p1.t1.r4" title="general order">μ</mi><mo>−</mo><mi href="./14.1#p1.t1.r4" title="general degree">ν</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></mrow><mo>)</mo></mrow></mrow></math> and <math class="ltx_Math" altimg="m44.png" altimg-height="25px" altimg-valign="-7px" altimg-width="74px" alttext="\sin\left(\mu\pi\right)" display="inline"><mrow><mi href="./4.14#E1" title="sine function">sin</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./14.1#p1.t1.r4" title="general order">μ</mi><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></mrow><mo>)</mo></mrow></mrow></math> have opposite signs.</p>
+</div>
+</li>
+<li id="I3.ix2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(b)</span> 
+<div id="I3.ix2.p1" class="ltx_para">
+<p class="ltx_p"><math class="ltx_Math" altimg="m35.png" altimg-height="21px" altimg-valign="-6px" altimg-width="56px" alttext="\mu\leq\nu" display="inline"><mrow><mi href="./14.1#p1.t1.r4" title="general order">μ</mi><mo>≤</mo><mi href="./14.1#p1.t1.r4" title="general degree">ν</mi></mrow></math>, <math class="ltx_Math" altimg="m36.png" altimg-height="24px" altimg-valign="-6px" altimg-width="56px" alttext="\mu\notin\mathbb{Z}" display="inline"><mrow><mi href="./14.1#p1.t1.r4" title="general order">μ</mi><mo href="./front/introduction#common.t1.r11" title="not an element of">∉</mo><mi href="./front/introduction#common.t2.r20" title="set of all integers">ℤ</mi></mrow></math>, and <math class="ltx_Math" altimg="m22.png" altimg-height="25px" altimg-valign="-7px" altimg-width="35px" alttext="\lfloor\mu\rfloor" display="inline"><mrow><mo href="./front/introduction#common.t1.r17" stretchy="false" title="floor of 𝑥">⌊</mo><mi href="./14.1#p1.t1.r4" title="general order">μ</mi><mo href="./front/introduction#common.t1.r17" stretchy="false" title="floor of 𝑥">⌋</mo></mrow></math> is
+odd.</p>
+</div>
+</li>
+</ul>
+</div>
+<div id="iii.p2" class="ltx_para">
+<p class="ltx_p">For all other values of <math class="ltx_Math" altimg="m33.png" altimg-height="17px" altimg-valign="-6px" altimg-width="17px" alttext="\mu" display="inline"><mi href="./14.1#p1.t1.r4" title="general order">μ</mi></math> and <math class="ltx_Math" altimg="m41.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="\nu" display="inline"><mi href="./14.1#p1.t1.r4" title="general degree">ν</mi></math> (with <math class="ltx_Math" altimg="m42.png" altimg-height="29px" altimg-valign="-9px" altimg-width="73px" alttext="\nu\geq-\frac{1}{2}" display="inline"><mrow><mi href="./14.1#p1.t1.r4" title="general degree">ν</mi><mo>≥</mo><mrow><mo>−</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></mrow></math>)
+<math class="ltx_Math" altimg="m14.png" altimg-height="25px" altimg-valign="-7px" altimg-width="63px" alttext="P^{\mu}_{\nu}\left(x\right)" display="inline"><mrow><msubsup><mi href="./14.21#i.p1" title="associated Legendre function of the first kind">P</mi><mi href="./14.1#p1.t1.r4" title="general degree">ν</mi><mi href="./14.1#p1.t1.r4" title="general order">μ</mi></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi href="./14.1#p1.t1.r1" title="real variable">x</mi><mo>)</mo></mrow></mrow></math> has no zeros in the interval <math class="ltx_Math" altimg="m6.png" altimg-height="25px" altimg-valign="-7px" altimg-width="61px" alttext="(1,\infty)" display="inline"><mrow><mo href="./front/introduction#common.t1.r29" stretchy="false" title="open interval">(</mo><mn>1</mn><mo href="./front/introduction#common.t1.r29" title="open interval">,</mo><mi mathvariant="normal">∞</mi><mo href="./front/introduction#common.t1.r29" stretchy="false" title="open interval">)</mo></mrow></math>.</p>
+</div>
+<div id="iii.p3" class="ltx_para">
+<p class="ltx_p"><math class="ltx_Math" altimg="m15.png" altimg-height="25px" altimg-valign="-7px" altimg-width="65px" alttext="\boldsymbol{Q}^{\mu}_{\nu}\left(x\right)" display="inline"><mrow><msubsup><mi href="./14.21#i.p1" title="Olver’s associated Legendre function">𝑸</mi><mi href="./14.1#p1.t1.r4" title="general degree">ν</mi><mi href="./14.1#p1.t1.r4" title="general order">μ</mi></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi href="./14.1#p1.t1.r1" title="real variable">x</mi><mo>)</mo></mrow></mrow></math> has no zeros in the interval <math class="ltx_Math" altimg="m6.png" altimg-height="25px" altimg-valign="-7px" altimg-width="61px" alttext="(1,\infty)" display="inline"><mrow><mo href="./front/introduction#common.t1.r29" stretchy="false" title="open interval">(</mo><mn>1</mn><mo href="./front/introduction#common.t1.r29" title="open interval">,</mo><mi mathvariant="normal">∞</mi><mo href="./front/introduction#common.t1.r29" stretchy="false" title="open interval">)</mo></mrow></math> when
+<math class="ltx_Math" altimg="m40.png" altimg-height="19px" altimg-valign="-4px" altimg-width="70px" alttext="\nu&gt;-1" display="inline"><mrow><mi href="./14.1#p1.t1.r4" title="general degree">ν</mi><mo>&gt;</mo><mrow><mo>−</mo><mn>1</mn></mrow></mrow></math>, and at most one zero in the interval <math class="ltx_Math" altimg="m6.png" altimg-height="25px" altimg-valign="-7px" altimg-width="61px" alttext="(1,\infty)" display="inline"><mrow><mo href="./front/introduction#common.t1.r29" stretchy="false" title="open interval">(</mo><mn>1</mn><mo href="./front/introduction#common.t1.r29" title="open interval">,</mo><mi mathvariant="normal">∞</mi><mo href="./front/introduction#common.t1.r29" stretchy="false" title="open interval">)</mo></mrow></math> when <math class="ltx_Math" altimg="m37.png" altimg-height="19px" altimg-valign="-4px" altimg-width="70px" alttext="\nu&lt;-1" display="inline"><mrow><mi href="./14.1#p1.t1.r4" title="general degree">ν</mi><mo>&lt;</mo><mrow><mo>−</mo><mn>1</mn></mrow></mrow></math>.</p>
+</div>
+</section>
+</section>
+</div>
+<div class="ltx_page_footer">
+<div class="ltx_siblings">
+<a href="./14.15" title="In Real Arguments ‣ Chapter 14 Legendre and Related Functions" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">14.15 </span>Uniform Asymptotic Approximations</span></a><a href="./14.17" title="In Real Arguments ‣ Chapter 14 Legendre and Related Functions" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">14.17 </span>Integrals</span></a>
+</div>
+<div class="ltx_footer_links ltx_centering">
+<a href="./about/notices">© 2010–2026 NIST</a> / <a href="./about/notices#S2">Disclaimer</a> / <a href="/cdn-cgi/l/email-protection#0f4b43424922696a6a6b6d6e6c644f61667c7b21686079">Feedback</a>;
+ Version 1.2.7;
+Release date 2026-06-15.</div>
+<span id="pagesettings"></span>
+<div class="ltx_nist_logo"><a href="http://www.nist.gov/"><img src="./style/nistidc.png" width="500" alt="NIST"></a></div>
+<div class="ltx_nist_links ltx_align_right">
+<a href="https://www.nist.gov/privacy-policy">Site Privacy</a> <a href="https://www.nist.gov/oism/accessibility">Accessibility</a> <a href="https://www.nist.gov/privacy">Privacy Program</a> <a href="https://www.nist.gov/oism/copyrights">Copyrights</a> <a href="https://www.commerce.gov/vulnerability-disclosure-policy">Vulnerability Disclosure</a> <a href="https://www.nist.gov/no-fear-act-policy">No Fear Act Policy</a> <a href="https://www.nist.gov/foia">FOIA</a> <a href="https://www.nist.gov/environmental-policy-statement">Environmental Policy</a> <a href="https://www.nist.gov/summary-report-scientific-integrity">Scientific Integrity</a> <a href="https://www.nist.gov/nist-information-quality-standards">Information Quality Standards</a> <a href="https://www.commerce.gov/">Commerce.gov</a> <a href="http://www.science.gov/">Science.gov</a> <a href="http://www.usa.gov/">USA.gov</a>
+</div>
+</div>
+</div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"9ef5b487afff42a68917b2d63593a474"}' crossorigin="anonymous"></script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a30b6159b82e43dc',t:'MTc4NzY2OTEyNA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

@@ -1,0 +1,631 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>DLMF: §28.1 Special Notation ‣ Notation ‣ Chapter 28 Mathieu Functions and Hill’s Equation</title>
+<link rel="shortcut icon" href="./style/DLMF-16.png" type="image/png">
+<script type="text/javascript"><!--
+	var PATH="DLMF:/28.1";
+	var ROOT="./";
+      //--></script>
+<script type="text/javascript" src="./style/jquery.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/jquery.leaveNotice.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/DLMF.js"><!-- non-empty so ie6 will accept it --></script>
+<script async="" type="text/javascript" id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC&amp;subagency=NIST&amp;pua=UA-37115410-44&amp;yt=true&amp;exts=ppsx,pps,f90,sch,rtf,wrl,txz,m1v,xlsm,msi,xsd,f,tif,eps,mpg,xml,pl,xlt,c"><!-- non-empty so ie6 will accept it --></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-BZB64W4M0L"></script><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-BZB64W4M0L');
+      </script>
+<link rel="stylesheet" type="text/css" href="./style/LaTeXML.css">
+<link rel="stylesheet" type="text/css" href="./style/DLMF.css">
+<link rel="stylesheet" type="text/css" href="./style/print.css" media="print">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="top" href="./" title="DLMF">
+<link rel="copyright" href="./about/notices" title="Copyright">
+<link rel="search" href="./search/search" title="Search">
+<link rel="help" class="ltx_help" href="./help/" title="Help">
+<link rel="up" href="./28#PT1" title="Notation ‣ Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="up up" href="./28" title="Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="start" href="./" title="">
+<link rel="prev" href="./28" title="Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="next" href="./28.2" title="§28.2 Definitions and Basic Properties ‣ Mathieu Functions of Integer Order ‣ Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="section" href="./28.2" title="§28.2 Definitions and Basic Properties ‣ Mathieu Functions of Integer Order ‣ Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="section" href="./28.3" title="§28.3 Graphics ‣ Mathieu Functions of Integer Order ‣ Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="section" href="./28.4" title="§28.4 Fourier Series ‣ Mathieu Functions of Integer Order ‣ Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="section" href="./28.5" title="§28.5 Second Solutions fe_𝑛, ge_𝑛 ‣ Mathieu Functions of Integer Order ‣ Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="section" href="./28.6" title="§28.6 Expansions for Small 𝑞 ‣ Mathieu Functions of Integer Order ‣ Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="section" href="./28.7" title="§28.7 Analytic Continuation of Eigenvalues ‣ Mathieu Functions of Integer Order ‣ Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="section" href="./28.8" title="§28.8 Asymptotic Expansions for Large 𝑞 ‣ Mathieu Functions of Integer Order ‣ Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="section" href="./28.9" title="§28.9 Zeros ‣ Mathieu Functions of Integer Order ‣ Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="section" href="./28.10" title="§28.10 Integral Equations ‣ Mathieu Functions of Integer Order ‣ Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="section" href="./28.11" title="§28.11 Expansions in Series of Mathieu Functions ‣ Mathieu Functions of Integer Order ‣ Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="section" href="./28.12" title="§28.12 Definitions and Basic Properties ‣ Mathieu Functions of Noninteger Order ‣ Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="section" href="./28.13" title="§28.13 Graphics ‣ Mathieu Functions of Noninteger Order ‣ Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="section" href="./28.14" title="§28.14 Fourier Series ‣ Mathieu Functions of Noninteger Order ‣ Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="section" href="./28.15" title="§28.15 Expansions for Small 𝑞 ‣ Mathieu Functions of Noninteger Order ‣ Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="section" href="./28.16" title="§28.16 Asymptotic Expansions for Large 𝑞 ‣ Mathieu Functions of Noninteger Order ‣ Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="section" href="./28.17" title="§28.17 Stability as 𝑥→±∞ ‣ Mathieu Functions of Noninteger Order ‣ Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="section" href="./28.18" title="§28.18 Integrals and Integral Equations ‣ Mathieu Functions of Noninteger Order ‣ Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="section" href="./28.19" title="§28.19 Expansions in Series of me_{𝜈+2⁢𝑛} Functions ‣ Mathieu Functions of Noninteger Order ‣ Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="section" href="./28.20" title="§28.20 Definitions and Basic Properties ‣ Modified Mathieu Functions ‣ Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="section" href="./28.21" title="§28.21 Graphics ‣ Modified Mathieu Functions ‣ Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="section" href="./28.22" title="§28.22 Connection Formulas ‣ Modified Mathieu Functions ‣ Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="section" href="./28.23" title="§28.23 Expansions in Series of Bessel Functions ‣ Modified Mathieu Functions ‣ Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="section" href="./28.24" title="§28.24 Expansions in Series of Cross-Products of Bessel Functions or Modified Bessel Functions ‣ Modified Mathieu Functions ‣ Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="section" href="./28.25" title="§28.25 Asymptotic Expansions for Large ℜ𝑧 ‣ Modified Mathieu Functions ‣ Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="section" href="./28.26" title="§28.26 Asymptotic Approximations for Large 𝑞 ‣ Modified Mathieu Functions ‣ Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="section" href="./28.27" title="§28.27 Addition Theorems ‣ Modified Mathieu Functions ‣ Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="section" href="./28.28" title="§28.28 Integrals, Integral Representations, and Integral Equations ‣ Modified Mathieu Functions ‣ Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="section" href="./28.29" title="§28.29 Definitions and Basic Properties ‣ Hill’s Equation ‣ Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="section" href="./28.30" title="§28.30 Expansions in Series of Eigenfunctions ‣ Hill’s Equation ‣ Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="section" href="./28.31" title="§28.31 Equations of Whittaker–Hill and Ince ‣ Hill’s Equation ‣ Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="section" href="./28.32" title="§28.32 Mathematical Applications ‣ Applications ‣ Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="section" href="./28.33" title="§28.33 Physical Applications ‣ Applications ‣ Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="section" href="./28.34" title="§28.34 Methods of Computation ‣ Computation ‣ Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="section" href="./28.35" title="§28.35 Tables ‣ Computation ‣ Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="section" href="./28.36" title="§28.36 Software ‣ Computation ‣ Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="document" href="./front/foreword" title="Foreword">
+<link rel="document" href="./front/preface" title="Preface">
+<link rel="document" href="./front/introduction" title="Mathematical Introduction">
+<link rel="chapter" href="./1" title="Chapter 1 Algebraic and Analytic Methods">
+<link rel="chapter" href="./2" title="Chapter 2 Asymptotic Approximations">
+<link rel="chapter" href="./3" title="Chapter 3 Numerical Methods">
+<link rel="chapter" href="./4" title="Chapter 4 Elementary Functions">
+<link rel="chapter" href="./5" title="Chapter 5 Gamma Function">
+<link rel="chapter" href="./6" title="Chapter 6 Exponential, Logarithmic, Sine, and Cosine Integrals">
+<link rel="chapter" href="./7" title="Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="chapter" href="./8" title="Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="chapter" href="./9" title="Chapter 9 Airy and Related Functions">
+<link rel="chapter" href="./10" title="Chapter 10 Bessel Functions">
+<link rel="chapter" href="./11" title="Chapter 11 Struve and Related Functions">
+<link rel="chapter" href="./12" title="Chapter 12 Parabolic Cylinder Functions">
+<link rel="chapter" href="./13" title="Chapter 13 Confluent Hypergeometric Functions">
+<link rel="chapter" href="./14" title="Chapter 14 Legendre and Related Functions">
+<link rel="chapter" href="./15" title="Chapter 15 Hypergeometric Function">
+<link rel="chapter" href="./16" title="Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="chapter" href="./17" title="Chapter 17 𝑞-Hypergeometric and Related Functions">
+<link rel="chapter" href="./18" title="Chapter 18 Orthogonal Polynomials">
+<link rel="chapter" href="./19" title="Chapter 19 Elliptic Integrals">
+<link rel="chapter" href="./20" title="Chapter 20 Theta Functions">
+<link rel="chapter" href="./21" title="Chapter 21 Multidimensional Theta Functions">
+<link rel="chapter" href="./22" title="Chapter 22 Jacobian Elliptic Functions">
+<link rel="chapter" href="./23" title="Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="chapter" href="./24" title="Chapter 24 Bernoulli and Euler Polynomials">
+<link rel="chapter" href="./25" title="Chapter 25 Zeta and Related Functions">
+<link rel="chapter" href="./26" title="Chapter 26 Combinatorial Analysis">
+<link rel="chapter" href="./27" title="Chapter 27 Functions of Number Theory">
+<link rel="chapter" href="./28" title="Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="chapter" href="./29" title="Chapter 29 Lamé Functions">
+<link rel="chapter" href="./30" title="Chapter 30 Spheroidal Wave Functions">
+<link rel="chapter" href="./31" title="Chapter 31 Heun Functions">
+<link rel="chapter" href="./32" title="Chapter 32 Painlevé Transcendents">
+<link rel="chapter" href="./33" title="Chapter 33 Coulomb Functions">
+<link rel="chapter" href="./34" title="Chapter 34 3⁢𝑗,6⁢𝑗,9⁢𝑗 Symbols">
+<link rel="chapter" href="./35" title="Chapter 35 Functions of Matrix Argument">
+<link rel="chapter" href="./36" title="Chapter 36 Integrals with Coalescing Saddles">
+<link rel="bibliography" href="./bib/" title="Bibliography">
+<link rel="index" href="./idx/" title="Index">
+<link rel="glossary" href="./not/" title="Notations">
+<link rel="document" href="./lof/" title="List of Figures">
+<link rel="document" href="./lot/" title="List of Tables">
+<link rel="document" href="./software/" title="Software Index">
+<link rel="document" href="./errata/" title="Errata">
+<link rel="document" href="./help/" title="Need Help?">
+<link rel="document" href="./search/" title="Advanced Search">
+<link rel="document" href="./about/" title="About the Project">
+<meta name="keywords" lang="en" content="Mathieu functions, Mathieu’s equation, definition, eigenvalues (or characteristic values), joining factors, modified Mathieu functions, notation, parameters, radial Mathieu functions, second solutions">
+</head>
+<body class="color_default textfont_default titlefont_default fontsize_default navbar_default">
+<div class="ltx_page_navbar">
+<div class="ltx_page_navlogo"><a href="./" title="Digital Library of Mathematical Functions"><span>DLMF</span></a></div>
+<div class="ltx_page_navitems">
+<form method="get" action="./search/search">
+<ul>
+<li><a href="./idx/">Index</a></li>
+<li><a href="./not/">Notations</a></li>
+<li><small><input type="text" name="q" value="" size="6" class="ltx_page_navitem_search"><button type="submit">Search</button></small></li>
+<li><a href="./help/" class="ltx_help">Help?</a></li>
+<li><a href="./help/cite">Citing</a></li>
+<li><a href="./help/customize" class="ltx_customize">Customize</a></li>
+<li id="showinfo"><a href="" onclick="showInfo(); return false;" title="Show Annotations">Annotate</a></li>
+<li id="hideinfo"><a href="" onclick="hideInfo(); return false;">UnAnnotate</a></li>
+</ul>
+</form>
+</div>
+<div class="ltx_page_navsponsors">
+<div><a href="./about/" class="ltx_page_navabout">About the Project</a></div>
+</div>
+</div>
+<div class="ltx_page_main">
+<div class="ltx_page_header">
+<a href="./28" title="" class="ltx_ref" rel="up up"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">28 </span>Mathieu Functions and Hill’s Equation</span></a><a href="./28#PT1" title="In Chapter 28 Mathieu Functions and Hill’s Equation" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title">Notation</span></a><a href="./28" title="" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">28 </span>Mathieu Functions and Hill’s Equation</span></a><a href="./28.2" title="In Mathieu Functions of Integer Order ‣ Chapter 28 Mathieu Functions and Hill’s Equation" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">28.2 </span>Definitions and Basic Properties</span></a>
+</div>
+<div class="ltx_page_content">
+<section class="ltx_section ltx_authors_multiline ltx_leqno">
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">§28.1 </span>Special Notation</h1>
+<div id="info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=Mathieu%20functions">Mathieu functions</a>, <a class="ltx_keyword" href="./search/search?q=Mathieu%20equation">Mathieu’s equation</a>, <a class="ltx_keyword" href="./search/search?q=definition">definition</a>, <a class="ltx_keyword" href="./search/search?q=eigenvalues%20%28or%20characteristic%20values%29">eigenvalues (or characteristic values)</a>, <a class="ltx_keyword" href="./search/search?q=joining%20factors">joining factors</a>, <a class="ltx_keyword" href="./search/search?q=modified%20Mathieu%20functions">modified Mathieu functions</a>, <a class="ltx_keyword" href="./search/search?q=notation">notation</a>, <a class="ltx_keyword" href="./search/search?q=parameters">parameters</a>, <a class="ltx_keyword" href="./search/search?q=radial%20Mathieu%20functions">radial Mathieu functions</a>, <a class="ltx_keyword" href="./search/search?q=second%20solutions">second solutions</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./28.35#I1.i7.p1" title="In §28.35(i) Real Variables ‣ §28.35 Tables ‣ Computation ‣ Chapter 28 Mathieu Functions and Hill’s Equation" class="ltx_ref"><span class="ltx_text ltx_ref_tag">7th item</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./28.1" title="" class="ltx_ref">http://dlmf.nist.gov/28.1</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./28#info" title="Chapter 28 Mathieu Functions and Hill’s Equation" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.28</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="p1" class="ltx_para">
+<p class="ltx_p">(For other notation see <a href="./front/introduction#notations" title="In Mathematical Introduction" class="ltx_ref"><span class="ltx_text ltx_ref_title">Notation for the Special Functions</span></a>.)</p>
+</div>
+<div id="p2" class="ltx_para">
+<table id="t1" class="ltx_tabular ltx_align_left ltx_guessed_headers ltx_align_middle">
+<tbody class="ltx_tbody">
+<tr id="t1.r1" class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row"><math class="ltx_Math" altimg="m98.png" altimg-height="17px" altimg-valign="-6px" altimg-width="44px" alttext="m,n" display="inline"><mrow><mi href="./28.1#t1.r1" title="integer">m</mi><mo>,</mo><mi href="./28.1#t1.r1" title="integer">n</mi></mrow></math></th>
+<td class="ltx_td ltx_nopad_r ltx_align_justify">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p">integers.</span>
+</span>
+</td>
+</tr>
+<tr id="t1.r2" class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row"><math class="ltx_Math" altimg="m104.png" altimg-height="17px" altimg-valign="-6px" altimg-width="36px" alttext="x,y" display="inline"><mrow><mi href="./28.1#t1.r2" title="real variable">x</mi><mo>,</mo><mi href="./28.1#t1.r2" title="real variable">y</mi></mrow></math></th>
+<td class="ltx_td ltx_nopad_r ltx_align_justify">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p">real variables.</span>
+</span>
+</td>
+</tr>
+<tr id="t1.r3" class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row"><math class="ltx_Math" altimg="m108.png" altimg-height="22px" altimg-valign="-6px" altimg-width="96px" alttext="z=x+\mathrm{i}y" display="inline"><mrow><mi href="./28.1#t1.r3" title="complex variable">z</mi><mo>=</mo><mrow><mi href="./28.1#t1.r2" title="real variable">x</mi><mo>+</mo><mrow><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi><mo>⁢</mo><mi href="./28.1#t1.r2" title="real variable">y</mi></mrow></mrow></mrow></math></th>
+<td class="ltx_td ltx_nopad_r ltx_align_justify">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p">complex variable.</span>
+</span>
+</td>
+</tr>
+<tr id="t1.r4" class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row"><math class="ltx_Math" altimg="m67.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="\nu" display="inline"><mi href="./28.1#t1.r4" title="complex parameter">ν</mi></math></th>
+<td class="ltx_td ltx_nopad_r ltx_align_justify">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p">order of the Mathieu function or modified Mathieu function.
+(When <math class="ltx_Math" altimg="m67.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="\nu" display="inline"><mi href="./28.1#t1.r4" title="complex parameter">ν</mi></math> is an integer it is often replaced by <math class="ltx_Math" altimg="m100.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./28.1#t1.r1" title="integer">n</mi></math>.)</span>
+</span>
+</td>
+</tr>
+<tr id="t1.r5" class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row"><math class="ltx_Math" altimg="m42.png" altimg-height="18px" altimg-valign="-2px" altimg-width="14px" alttext="\delta" display="inline"><mi href="./28.1#t1.r5" title="arbitrary small positive constant">δ</mi></math></th>
+<td class="ltx_td ltx_nopad_r ltx_align_justify">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p">arbitrary small positive number.</span>
+</span>
+</td>
+</tr>
+<tr id="t1.r6" class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row"><math class="ltx_Math" altimg="m86.png" altimg-height="22px" altimg-valign="-6px" altimg-width="56px" alttext="a,q,h" display="inline"><mrow><mi href="./28.1#t1.r6" title="parameter">a</mi><mo>,</mo><mi href="./28.1#t1.r6" title="parameter">q</mi><mo>,</mo><mi href="./28.1#t1.r6" title="parameter">h</mi></mrow></math></th>
+<td class="ltx_td ltx_nopad_r ltx_align_justify">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p">real or complex parameters of
+Mathieu’s equation with <math class="ltx_Math" altimg="m101.png" altimg-height="25px" altimg-valign="-6px" altimg-width="63px" alttext="q=h^{2}" display="inline"><mrow><mi href="./28.1#t1.r6" title="parameter">q</mi><mo>=</mo><msup><mi href="./28.1#t1.r6" title="parameter">h</mi><mn>2</mn></msup></mrow></math>.
+</span>
+</span>
+</td>
+</tr>
+<tr id="t1.r7" class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row">primes</th>
+<td class="ltx_td ltx_nopad_r ltx_align_justify">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p">unless indicated otherwise, derivatives with respect to the argument</span>
+</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="p3" class="ltx_para">
+<p class="ltx_p">The main functions treated in this chapter are the Mathieu functions</p>
+<table id="p3.t1" class="ltx_tabular ltx_centering ltx_align_middle">
+<tbody class="ltx_tbody">
+<tr id="p3.t1.r1" class="ltx_tr">
+<td class="ltx_td ltx_align_right" style="padding-left:2.1pt;padding-right:2.1pt;">
+<math class="ltx_Math" altimg="m77.png" altimg-height="25px" altimg-valign="-7px" altimg-width="82px" alttext="\operatorname{ce}_{\nu}\left(z,q\right)" display="inline"><mrow><msub><mi href="./28.2#vi.p1" title="Mathieu function">ce</mi><mi href="./28.1#t1.r4" title="complex parameter">ν</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./28.1#t1.r3" title="complex variable">z</mi><mo>,</mo><mi href="./28.1#t1.r6" title="parameter">q</mi><mo>)</mo></mrow></mrow></math>,</td>
+<td class="ltx_td ltx_align_right" style="padding-left:2.1pt;padding-right:2.1pt;">
+<math class="ltx_Math" altimg="m84.png" altimg-height="25px" altimg-valign="-7px" altimg-width="81px" alttext="\operatorname{se}_{\nu}\left(z,q\right)" display="inline"><mrow><msub><mi href="./28.2#vi.p1" title="Mathieu function">se</mi><mi href="./28.1#t1.r4" title="complex parameter">ν</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./28.1#t1.r3" title="complex variable">z</mi><mo>,</mo><mi href="./28.1#t1.r6" title="parameter">q</mi><mo>)</mo></mrow></mrow></math>,</td>
+<td class="ltx_td ltx_align_right" style="padding-left:2.1pt;padding-right:2.1pt;">
+<math class="ltx_Math" altimg="m79.png" altimg-height="25px" altimg-valign="-7px" altimg-width="81px" alttext="\operatorname{fe}_{n}\left(z,q\right)" display="inline"><mrow><msub><mi href="./28.5#E1" title="second solution, Mathieu’s equation">fe</mi><mi href="./28.1#t1.r1" title="integer">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./28.1#t1.r3" title="complex variable">z</mi><mo>,</mo><mi href="./28.1#t1.r6" title="parameter">q</mi><mo>)</mo></mrow></mrow></math>,</td>
+<td class="ltx_td ltx_align_right" style="padding-left:2.1pt;padding-right:2.1pt;">
+<math class="ltx_Math" altimg="m81.png" altimg-height="25px" altimg-valign="-7px" altimg-width="85px" alttext="\operatorname{ge}_{n}\left(z,q\right)" display="inline"><mrow><msub><mi href="./28.5#E2" title="second solution, Mathieu’s equation">ge</mi><mi href="./28.1#t1.r1" title="integer">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./28.1#t1.r3" title="complex variable">z</mi><mo>,</mo><mi href="./28.1#t1.r6" title="parameter">q</mi><mo>)</mo></mrow></mrow></math>,</td>
+<td class="ltx_td ltx_align_right" style="padding-left:2.1pt;padding-right:2.1pt;">
+<math class="ltx_Math" altimg="m83.png" altimg-height="25px" altimg-valign="-7px" altimg-width="91px" alttext="\operatorname{me}_{\nu}\left(z,q\right)" display="inline"><mrow><msub><mi href="./28.12#ii.p2" title="Mathieu function">me</mi><mi href="./28.1#t1.r4" title="complex parameter">ν</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./28.1#t1.r3" title="complex variable">z</mi><mo>,</mo><mi href="./28.1#t1.r6" title="parameter">q</mi><mo>)</mo></mrow></mrow></math>,</td>
+</tr>
+</tbody>
+</table>
+<p class="ltx_p">and the modified Mathieu functions</p>
+<table id="p3.t2" class="ltx_tabular ltx_centering ltx_align_middle">
+<tbody class="ltx_tbody">
+<tr id="p3.t2.r1" class="ltx_tr">
+<td class="ltx_td ltx_align_center" style="padding-left:4.5pt;padding-right:4.5pt;">
+<math class="ltx_Math" altimg="m68.png" altimg-height="25px" altimg-valign="-7px" altimg-width="88px" alttext="\operatorname{Ce}_{\nu}\left(z,q\right)" display="inline"><mrow><msub><mi href="./28.20#E3" title="modified Mathieu function">Ce</mi><mi href="./28.1#t1.r4" title="complex parameter">ν</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./28.1#t1.r3" title="complex variable">z</mi><mo>,</mo><mi href="./28.1#t1.r6" title="parameter">q</mi><mo>)</mo></mrow></mrow></math>,</td>
+<td class="ltx_td ltx_align_center" style="padding-left:4.5pt;padding-right:4.5pt;">
+<math class="ltx_Math" altimg="m76.png" altimg-height="25px" altimg-valign="-7px" altimg-width="85px" alttext="\operatorname{Se}_{\nu}\left(z,q\right)" display="inline"><mrow><msub><mi href="./28.20#E4" title="modified Mathieu function">Se</mi><mi href="./28.1#t1.r4" title="complex parameter">ν</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./28.1#t1.r3" title="complex variable">z</mi><mo>,</mo><mi href="./28.1#t1.r6" title="parameter">q</mi><mo>)</mo></mrow></mrow></math>,</td>
+<td class="ltx_td ltx_align_center" style="padding-left:4.5pt;padding-right:4.5pt;">
+<math class="ltx_Math" altimg="m69.png" altimg-height="25px" altimg-valign="-7px" altimg-width="86px" alttext="\operatorname{Fe}_{n}\left(z,q\right)" display="inline"><mrow><msub><mi href="./28.20#E6" title="modified Mathieu function">Fe</mi><mi href="./28.1#t1.r1" title="integer">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./28.1#t1.r3" title="complex variable">z</mi><mo>,</mo><mi href="./28.1#t1.r6" title="parameter">q</mi><mo>)</mo></mrow></mrow></math>,</td>
+<td class="ltx_td ltx_align_center" style="padding-left:4.5pt;padding-right:4.5pt;">
+<math class="ltx_Math" altimg="m70.png" altimg-height="25px" altimg-valign="-7px" altimg-width="91px" alttext="\operatorname{Ge}_{n}\left(z,q\right)" display="inline"><mrow><msub><mi href="./28.20#E7" title="modified Mathieu function">Ge</mi><mi href="./28.1#t1.r1" title="integer">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./28.1#t1.r3" title="complex variable">z</mi><mo>,</mo><mi href="./28.1#t1.r6" title="parameter">q</mi><mo>)</mo></mrow></mrow></math>,</td>
+</tr>
+<tr id="p3.t2.r2" class="ltx_tr">
+<td class="ltx_td ltx_align_center" style="padding-left:4.5pt;padding-right:4.5pt;">
+<math class="ltx_Math" altimg="m75.png" altimg-height="25px" altimg-valign="-7px" altimg-width="92px" alttext="\operatorname{Me}_{\nu}\left(z,q\right)" display="inline"><mrow><msub><mi href="./28.20#E5" title="modified Mathieu function">Me</mi><mi href="./28.1#t1.r4" title="complex parameter">ν</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./28.1#t1.r3" title="complex variable">z</mi><mo>,</mo><mi href="./28.1#t1.r6" title="parameter">q</mi><mo>)</mo></mrow></mrow></math>,</td>
+<td class="ltx_td ltx_align_center" style="padding-left:4.5pt;padding-right:4.5pt;">
+<math class="ltx_Math" altimg="m114.png" altimg-height="31px" altimg-valign="-7px" altimg-width="96px" alttext="{\operatorname{M}^{(j)}_{\nu}}\left(z,h\right)" display="inline"><mrow><msubsup><mi href="./28.20#iii.p1" mathvariant="normal" title="modified Mathieu function">M</mi><mi href="./28.1#t1.r4" title="complex parameter">ν</mi><mrow><mo href="./28.20#iii.p1" stretchy="false" title="modified Mathieu function">(</mo><mi href="./28.1#t1.r1" title="integer">j</mi><mo href="./28.20#iii.p1" stretchy="false" title="modified Mathieu function">)</mo></mrow></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi href="./28.1#t1.r3" title="complex variable">z</mi><mo>,</mo><mi href="./28.1#t1.r6" title="parameter">h</mi><mo>)</mo></mrow></mrow></math>,</td>
+<td class="ltx_td ltx_align_center" style="padding-left:4.5pt;padding-right:4.5pt;">
+<math class="ltx_Math" altimg="m110.png" altimg-height="29px" altimg-valign="-7px" altimg-width="106px" alttext="{\operatorname{Mc}^{(j)}_{n}}\left(z,h\right)" display="inline"><mrow><msubsup><mi href="./28.20#E15" title="radial Mathieu function">Mc</mi><mi href="./28.1#t1.r1" title="integer">n</mi><mrow><mo href="./28.20#E15" stretchy="false" title="radial Mathieu function">(</mo><mi href="./28.1#t1.r1" title="integer">j</mi><mo href="./28.20#E15" stretchy="false" title="radial Mathieu function">)</mo></mrow></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi href="./28.1#t1.r3" title="complex variable">z</mi><mo>,</mo><mi href="./28.1#t1.r6" title="parameter">h</mi><mo>)</mo></mrow></mrow></math>,</td>
+<td class="ltx_td ltx_align_center" style="padding-left:4.5pt;padding-right:4.5pt;">
+<math class="ltx_Math" altimg="m112.png" altimg-height="29px" altimg-valign="-7px" altimg-width="105px" alttext="{\operatorname{Ms}^{(j)}_{n}}\left(z,h\right)" display="inline"><mrow><msubsup><mi href="./28.20#E16" title="radial Mathieu function">Ms</mi><mi href="./28.1#t1.r1" title="integer">n</mi><mrow><mo href="./28.20#E16" stretchy="false" title="radial Mathieu function">(</mo><mi href="./28.1#t1.r1" title="integer">j</mi><mo href="./28.20#E16" stretchy="false" title="radial Mathieu function">)</mo></mrow></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi href="./28.1#t1.r3" title="complex variable">z</mi><mo>,</mo><mi href="./28.1#t1.r6" title="parameter">h</mi><mo>)</mo></mrow></mrow></math>,</td>
+</tr>
+<tr id="p3.t2.r3" class="ltx_tr">
+<td class="ltx_td ltx_align_center" style="padding-left:4.5pt;padding-right:4.5pt;">
+<math class="ltx_Math" altimg="m71.png" altimg-height="25px" altimg-valign="-7px" altimg-width="84px" alttext="\operatorname{Ie}_{n}\left(z,h\right)" display="inline"><mrow><msub><mi href="./28.20#E17" title="modified Mathieu function">Ie</mi><mi href="./28.1#t1.r1" title="integer">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./28.1#t1.r3" title="complex variable">z</mi><mo>,</mo><mi href="./28.1#t1.r6" title="parameter">h</mi><mo>)</mo></mrow></mrow></math>,</td>
+<td class="ltx_td ltx_align_center" style="padding-left:4.5pt;padding-right:4.5pt;">
+<math class="ltx_Math" altimg="m72.png" altimg-height="25px" altimg-valign="-7px" altimg-width="85px" alttext="\operatorname{Io}_{n}\left(z,h\right)" display="inline"><mrow><msub><mi href="./28.20#E18" title="modified Mathieu function">Io</mi><mi href="./28.1#t1.r1" title="integer">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./28.1#t1.r3" title="complex variable">z</mi><mo>,</mo><mi href="./28.1#t1.r6" title="parameter">h</mi><mo>)</mo></mrow></mrow></math>,</td>
+<td class="ltx_td ltx_align_center" style="padding-left:4.5pt;padding-right:4.5pt;">
+<math class="ltx_Math" altimg="m73.png" altimg-height="25px" altimg-valign="-7px" altimg-width="92px" alttext="\operatorname{Ke}_{n}\left(z,h\right)" display="inline"><mrow><msub><mi href="./28.20#E19" title="modified Mathieu function">Ke</mi><mi href="./28.1#t1.r1" title="integer">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./28.1#t1.r3" title="complex variable">z</mi><mo>,</mo><mi href="./28.1#t1.r6" title="parameter">h</mi><mo>)</mo></mrow></mrow></math>,</td>
+<td class="ltx_td ltx_align_center" style="padding-left:4.5pt;padding-right:4.5pt;">
+<math class="ltx_Math" altimg="m74.png" altimg-height="25px" altimg-valign="-7px" altimg-width="93px" alttext="\operatorname{Ko}_{n}\left(z,h\right)" display="inline"><mrow><msub><mi href="./28.20#E20" title="modified Mathieu function">Ko</mi><mi href="./28.1#t1.r1" title="integer">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./28.1#t1.r3" title="complex variable">z</mi><mo>,</mo><mi href="./28.1#t1.r6" title="parameter">h</mi><mo>)</mo></mrow></mrow></math>.</td>
+</tr>
+</tbody>
+</table>
+<p class="ltx_p">The functions <math class="ltx_Math" altimg="m110.png" altimg-height="29px" altimg-valign="-7px" altimg-width="106px" alttext="{\operatorname{Mc}^{(j)}_{n}}\left(z,h\right)" display="inline"><mrow><msubsup><mi href="./28.20#E15" title="radial Mathieu function">Mc</mi><mi href="./28.1#t1.r1" title="integer">n</mi><mrow><mo href="./28.20#E15" stretchy="false" title="radial Mathieu function">(</mo><mi href="./28.1#t1.r1" title="integer">j</mi><mo href="./28.20#E15" stretchy="false" title="radial Mathieu function">)</mo></mrow></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi href="./28.1#t1.r3" title="complex variable">z</mi><mo>,</mo><mi href="./28.1#t1.r6" title="parameter">h</mi><mo>)</mo></mrow></mrow></math> and <math class="ltx_Math" altimg="m112.png" altimg-height="29px" altimg-valign="-7px" altimg-width="105px" alttext="{\operatorname{Ms}^{(j)}_{n}}\left(z,h\right)" display="inline"><mrow><msubsup><mi href="./28.20#E16" title="radial Mathieu function">Ms</mi><mi href="./28.1#t1.r1" title="integer">n</mi><mrow><mo href="./28.20#E16" stretchy="false" title="radial Mathieu function">(</mo><mi href="./28.1#t1.r1" title="integer">j</mi><mo href="./28.20#E16" stretchy="false" title="radial Mathieu function">)</mo></mrow></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi href="./28.1#t1.r3" title="complex variable">z</mi><mo>,</mo><mi href="./28.1#t1.r6" title="parameter">h</mi><mo>)</mo></mrow></mrow></math> are also
+known as the radial Mathieu functions.</p>
+</div>
+<div id="p4" class="ltx_para">
+<p class="ltx_p">The eigenvalues of Mathieu’s equation are denoted by</p>
+<table id="EGx1" class="ltx_equationgroup ltx_eqn_table">
+
+<tbody id="Ex1"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="m88.png" altimg-height="25px" altimg-valign="-7px" altimg-width="65px" alttext="a_{n}\left(q\right)," display="inline"><mrow><mrow><msub><mi href="./28.2#v.p1" title="eigenvalues of Mathieu equation">a</mi><mi href="./28.1#t1.r1" title="integer">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./28.1#t1.r6" title="parameter">q</mi><mo>)</mo></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ex2"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="m89.png" altimg-height="25px" altimg-valign="-7px" altimg-width="63px" alttext="b_{n}\left(q\right)," display="inline"><mrow><mrow><msub><mi href="./28.2#v.p1" title="eigenvalues of Mathieu equation">b</mi><mi href="./28.1#t1.r1" title="integer">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./28.1#t1.r6" title="parameter">q</mi><mo>)</mo></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ex3"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="m44.png" altimg-height="25px" altimg-valign="-7px" altimg-width="66px" alttext="\lambda_{\nu}\left(q\right)." display="inline"><mrow><mrow><msub><mi href="./28.12#i.p2" title="eigenvalues of Mathieu equation">λ</mi><mi href="./28.1#t1.r4" title="complex parameter">ν</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./28.1#t1.r6" title="parameter">q</mi><mo>)</mo></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="p5" class="ltx_para">
+<p class="ltx_p">The notation for the joining factors is</p>
+<table id="EGx2" class="ltx_equationgroup ltx_eqn_table">
+
+<tbody id="Ex4"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="m93.png" altimg-height="26px" altimg-valign="-8px" altimg-width="73px" alttext="g_{\mathit{e},n}(h)," display="inline"><mrow><mrow><msub><mi href="./28.22#EGx2" title="joining factors">g</mi><mrow><mi>e</mi><mo>,</mo><mi href="./28.1#t1.r1" title="integer">n</mi></mrow></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./28.1#t1.r6" title="parameter">h</mi><mo stretchy="false">)</mo></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ex5"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="m94.png" altimg-height="26px" altimg-valign="-8px" altimg-width="74px" alttext="g_{\mathit{o},n}(h)," display="inline"><mrow><mrow><msub><mi href="./28.22#EGx2" title="joining factors">g</mi><mrow><mi>o</mi><mo>,</mo><mi href="./28.1#t1.r1" title="integer">n</mi></mrow></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./28.1#t1.r6" title="parameter">h</mi><mo stretchy="false">)</mo></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ex6"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="m91.png" altimg-height="26px" altimg-valign="-8px" altimg-width="74px" alttext="f_{\mathit{e},n}(h)," display="inline"><mrow><mrow><msub><mi href="./28.22#EGx2" title="joining factors">f</mi><mrow><mi>e</mi><mo>,</mo><mi href="./28.1#t1.r1" title="integer">n</mi></mrow></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./28.1#t1.r6" title="parameter">h</mi><mo stretchy="false">)</mo></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ex7"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="m92.png" altimg-height="26px" altimg-valign="-8px" altimg-width="74px" alttext="f_{\mathit{o},n}(h)." display="inline"><mrow><mrow><msub><mi href="./28.22#EGx2" title="joining factors">f</mi><mrow><mi>o</mi><mo>,</mo><mi href="./28.1#t1.r1" title="integer">n</mi></mrow></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./28.1#t1.r6" title="parameter">h</mi><mo stretchy="false">)</mo></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="p6" class="ltx_para">
+<p class="ltx_p">Alternative notations for the parameters <math class="ltx_Math" altimg="m87.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="a" display="inline"><mi href="./28.1#t1.r6" title="parameter">a</mi></math> and <math class="ltx_Math" altimg="m102.png" altimg-height="17px" altimg-valign="-6px" altimg-width="14px" alttext="q" display="inline"><mi href="./28.1#t1.r6" title="parameter">q</mi></math> are shown in Table
+<a href="./28.1#T1" title="Table 28.1.1 ‣ §28.1 Special Notation ‣ Notation ‣ Chapter 28 Mathieu Functions and Hill’s Equation" class="ltx_ref"><span class="ltx_text ltx_ref_tag">28.1.1</span></a>.</p>
+</div>
+<figure id="T1" class="ltx_table">
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_table">Table 28.1.1: </span>Notations for parameters in Mathieu’s equation.
+</figcaption>
+<table id="T1.t1" class="ltx_tabular ltx_centering ltx_guessed_headers ltx_align_middle">
+<thead class="ltx_thead">
+<tr id="T1.t1.r1" class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_column ltx_th_row ltx_border_tt" style="padding-top:1.5pt;padding-bottom:1.5pt;">Reference</th>
+<th class="ltx_td ltx_align_center ltx_th ltx_th_column ltx_border_tt" style="padding-top:1.5pt;padding-bottom:1.5pt;"><math class="ltx_Math" altimg="m87.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="a" display="inline"><mi href="./28.1#t1.r6" title="parameter">a</mi></math></th>
+<th class="ltx_td ltx_align_center ltx_th ltx_th_column ltx_border_tt" style="padding-top:1.5pt;padding-bottom:1.5pt;"><math class="ltx_Math" altimg="m102.png" altimg-height="17px" altimg-valign="-6px" altimg-width="14px" alttext="q" display="inline"><mi href="./28.1#t1.r6" title="parameter">q</mi></math></th>
+</tr>
+</thead>
+<tbody class="ltx_tbody">
+<tr id="T1.t1.r2" class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_t" style="padding-top:1.5pt;padding-bottom:1.5pt;"><cite class="ltx_cite ltx_citemacro_citet">Erdélyi<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/E#bib755" title="Higher Transcendental Functions. Vol. III" class="ltx_ref">1955</a>)</cite></th>
+<td class="ltx_td ltx_align_center ltx_border_t" style="padding-top:1.5pt;padding-bottom:1.5pt;"><math class="ltx_Math" altimg="m95.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="h" display="inline"><mi href="./28.1#t1.r6" title="parameter">h</mi></math></td>
+<td class="ltx_td ltx_align_center ltx_border_t" style="padding-top:1.5pt;padding-bottom:1.5pt;"><math class="ltx_Math" altimg="m85.png" altimg-height="18px" altimg-valign="-2px" altimg-width="15px" alttext="\theta" display="inline"><mi>θ</mi></math></td>
+</tr>
+<tr id="T1.t1.r3" class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_T" style="padding-top:1.5pt;padding-bottom:1.5pt;"><cite class="ltx_cite ltx_citemacro_citet">Meixner and Schäfke (<a href="./bib/M#bib1598" title="Mathieusche Funktionen und Sphäroidfunktionen mit Anwendungen auf physikalische und technische Probleme" class="ltx_ref">1954</a>)</cite></th>
+<td class="ltx_td ltx_align_center ltx_border_T" style="padding-top:1.5pt;padding-bottom:1.5pt;"><math class="ltx_Math" altimg="m43.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="\lambda" display="inline"><mi>λ</mi></math></td>
+<td class="ltx_td ltx_align_center ltx_border_T" style="padding-top:1.5pt;padding-bottom:1.5pt;"><math class="ltx_Math" altimg="m96.png" altimg-height="21px" altimg-valign="-2px" altimg-width="26px" alttext="h^{2}" display="inline"><msup><mi href="./28.1#t1.r6" title="parameter">h</mi><mn>2</mn></msup></math></td>
+</tr>
+<tr id="T1.t1.r4" class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_T" style="padding-top:1.5pt;padding-bottom:1.5pt;"><cite class="ltx_cite ltx_citemacro_citet">Moon and Spencer (<a href="./bib/M#bib1648" title="Field Theory Handbook. Including Coordinate Systems, Differential Equations and Their Solutions" class="ltx_ref">1971</a>)</cite></th>
+<td class="ltx_td ltx_align_center ltx_border_T" style="padding-top:1.5pt;padding-bottom:1.5pt;"><math class="ltx_Math" altimg="m43.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="\lambda" display="inline"><mi>λ</mi></math></td>
+<td class="ltx_td ltx_align_center ltx_border_T" style="padding-top:1.5pt;padding-bottom:1.5pt;"><math class="ltx_Math" altimg="m102.png" altimg-height="17px" altimg-valign="-6px" altimg-width="14px" alttext="q" display="inline"><mi href="./28.1#t1.r6" title="parameter">q</mi></math></td>
+</tr>
+<tr id="T1.t1.r5" class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_T" style="padding-top:1.5pt;padding-bottom:1.5pt;"><cite class="ltx_cite ltx_citemacro_citet">Strutt (<a href="./bib/S#bib2182" title="Lamésche, Mathieusche, und verwandte Funktionen in Physik und Technik" class="ltx_ref">1932</a>)</cite></th>
+<td class="ltx_td ltx_align_center ltx_border_T" style="padding-top:1.5pt;padding-bottom:1.5pt;"><math class="ltx_Math" altimg="m43.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="\lambda" display="inline"><mi>λ</mi></math></td>
+<td class="ltx_td ltx_align_center ltx_border_T" style="padding-top:1.5pt;padding-bottom:1.5pt;"><math class="ltx_Math" altimg="m96.png" altimg-height="21px" altimg-valign="-2px" altimg-width="26px" alttext="h^{2}" display="inline"><msup><mi href="./28.1#t1.r6" title="parameter">h</mi><mn>2</mn></msup></math></td>
+</tr>
+<tr id="T1.t1.r6" class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_T ltx_border_b" style="padding-top:1.5pt;padding-bottom:1.5pt;"><cite class="ltx_cite ltx_citemacro_citet">Whittaker and Watson (<a href="./bib/W#bib2404" title="A Course of Modern Analysis" class="ltx_ref">1927</a>)</cite></th>
+<td class="ltx_td ltx_align_center ltx_border_T ltx_border_b" style="padding-top:1.5pt;padding-bottom:1.5pt;"><math class="ltx_Math" altimg="m87.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="a" display="inline"><mi href="./28.1#t1.r6" title="parameter">a</mi></math></td>
+<td class="ltx_td ltx_align_center ltx_border_T ltx_border_b" style="padding-top:1.5pt;padding-bottom:1.5pt;"><math class="ltx_Math" altimg="m39.png" altimg-height="21px" altimg-valign="-6px" altimg-width="25px" alttext="8q" display="inline"><mrow><mn>8</mn><mo>⁢</mo><mi href="./28.1#t1.r6" title="parameter">q</mi></mrow></math></td>
+</tr>
+</tbody>
+</table>
+<div id="T1.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./28.1#t1.r6" title="§28.1 Special Notation ‣ Notation ‣ Chapter 28 Mathieu Functions and Hill’s Equation" class="ltx_ref"><math class="ltx_Math" altimg="m101.png" altimg-height="25px" altimg-valign="-6px" altimg-width="63px" alttext="q=h^{2}" display="inline"><mrow><mi href="./28.1#t1.r6" title="parameter">q</mi><mo>=</mo><msup><mi href="./28.1#t1.r6" title="parameter">h</mi><mn>2</mn></msup></mrow></math>:  parameter</a>,
+<a href="./28.1#t1.r6" title="§28.1 Special Notation ‣ Notation ‣ Chapter 28 Mathieu Functions and Hill’s Equation" class="ltx_ref"><math class="ltx_Math" altimg="m95.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="h" display="inline"><mi href="./28.1#t1.r6" title="parameter">h</mi></math>:  parameter</a> and
+<a href="./28.1#t1.r6" title="§28.1 Special Notation ‣ Notation ‣ Chapter 28 Mathieu Functions and Hill’s Equation" class="ltx_ref"><math class="ltx_Math" altimg="m87.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="a" display="inline"><mi href="./28.1#t1.r6" title="parameter">a</mi></math>:  parameter</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./28.1#p6" title="§28.1 Special Notation ‣ Notation ‣ Chapter 28 Mathieu Functions and Hill’s Equation" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§28.1</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./28.1.T1" title="" class="ltx_ref">http://dlmf.nist.gov/28.1.T1</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./28.1#info" title="§28.1 Special Notation ‣ Notation ‣ Chapter 28 Mathieu Functions and Hill’s Equation" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§28.1</span></a> and
+<a href="./28#info" title="Chapter 28 Mathieu Functions and Hill’s Equation" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.28</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+<div id="p7" class="ltx_para">
+<p class="ltx_p">Alternative notations for the functions are as follows.</p>
+</div>
+<section id="Px1" class="ltx_paragraph">
+<h2 class="ltx_title ltx_title_paragraph">
+<cite class="ltx_cite ltx_citemacro_citet">Arscott (<a href="./bib/#bib142" title="Periodic Differential Equations. An Introduction to Mathieu, Lamé, and Allied Functions" class="ltx_ref">1964b</a>)</cite> and <cite class="ltx_cite ltx_citemacro_citet">McLachlan (<a href="./bib/M#bib1585" title="Theory and Application of Mathieu Functions" class="ltx_ref">1947</a>)</cite>
+</h2>
+<div id="Px1.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./28.1#info" title="§28.1 Special Notation ‣ Notation ‣ Chapter 28 Mathieu Functions and Hill’s Equation" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§28.1</span></a> and
+<a href="./28#info" title="Chapter 28 Mathieu Functions and Hill’s Equation" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.28</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="Px1.p1" class="ltx_para">
+<table id="EGx3" class="ltx_equationgroup ltx_eqn_table">
+
+<tbody id="Ex8"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m15.png" altimg-height="27px" altimg-valign="-7px" altimg-width="96px" alttext="\displaystyle\mathrm{Fey}_{n}(z,q)" display="inline"><mrow><msub><mi>Fey</mi><mi href="./28.1#t1.r1" title="integer">n</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./28.1#t1.r3" title="complex variable">z</mi><mo>,</mo><mi href="./28.1#t1.r6" title="parameter">q</mi><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m9.png" altimg-height="82px" altimg-valign="-14px" altimg-width="226px" alttext="\displaystyle=\sqrt{\tfrac{1}{2}\pi}g_{\mathit{e},n}(h)\operatorname{ce}_{n}%
+\left(0,q\right){\operatorname{Mc}^{(2)}_{n}}\left(z,h\right)," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><msqrt><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></mrow></msqrt><mo>⁢</mo><mrow><msub><mi href="./28.22#EGx2" title="joining factors">g</mi><mrow><mi>e</mi><mo>,</mo><mi href="./28.1#t1.r1" title="integer">n</mi></mrow></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./28.1#t1.r6" title="parameter">h</mi><mo stretchy="false">)</mo></mrow></mrow><mo lspace="0.167em">⁢</mo><mrow><msub><mi href="./28.2#vi.p1" title="Mathieu function">ce</mi><mi href="./28.1#t1.r1" title="integer">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mn>0</mn><mo>,</mo><mi href="./28.1#t1.r6" title="parameter">q</mi><mo>)</mo></mrow></mrow><mo lspace="0.167em">⁢</mo><mrow><msubsup><mi href="./28.20#E15" title="radial Mathieu function">Mc</mi><mi href="./28.1#t1.r1" title="integer">n</mi><mrow><mo href="./28.20#E15" stretchy="false" title="radial Mathieu function">(</mo><mn>2</mn><mo href="./28.20#E15" stretchy="false" title="radial Mathieu function">)</mo></mrow></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi href="./28.1#t1.r3" title="complex variable">z</mi><mo>,</mo><mi href="./28.1#t1.r6" title="parameter">h</mi><mo>)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ex9"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m19.png" altimg-height="31px" altimg-valign="-7px" altimg-width="116px" alttext="\displaystyle\mathrm{Me}_{n}^{(1,2)}(z,q)" display="inline"><mrow><msubsup><mi>Me</mi><mi href="./28.1#t1.r1" title="integer">n</mi><mrow><mo href="./front/introduction#common.t1.r29" stretchy="false" title="open interval">(</mo><mn>1</mn><mo href="./front/introduction#common.t1.r29" title="open interval">,</mo><mn>2</mn><mo href="./front/introduction#common.t1.r29" stretchy="false" title="open interval">)</mo></mrow></msubsup><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./28.1#t1.r3" title="complex variable">z</mi><mo>,</mo><mi href="./28.1#t1.r6" title="parameter">q</mi><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m10.png" altimg-height="82px" altimg-valign="-14px" altimg-width="226px" alttext="\displaystyle=\sqrt{\tfrac{1}{2}\pi}g_{\mathit{e},n}(h)\operatorname{ce}_{n}%
+\left(0,q\right){\operatorname{Mc}^{(3,4)}_{n}}\left(z,h\right)," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><msqrt><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></mrow></msqrt><mo>⁢</mo><mrow><msub><mi href="./28.22#EGx2" title="joining factors">g</mi><mrow><mi>e</mi><mo>,</mo><mi href="./28.1#t1.r1" title="integer">n</mi></mrow></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./28.1#t1.r6" title="parameter">h</mi><mo stretchy="false">)</mo></mrow></mrow><mo lspace="0.167em">⁢</mo><mrow><msub><mi href="./28.2#vi.p1" title="Mathieu function">ce</mi><mi href="./28.1#t1.r1" title="integer">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mn>0</mn><mo>,</mo><mi href="./28.1#t1.r6" title="parameter">q</mi><mo>)</mo></mrow></mrow><mo lspace="0.167em">⁢</mo><mrow><msubsup><mi href="./28.20#E15" title="radial Mathieu function">Mc</mi><mi href="./28.1#t1.r1" title="integer">n</mi><mrow><mo href="./28.20#E15" stretchy="false" title="radial Mathieu function">(</mo><mrow><mn>3</mn><mo>,</mo><mn>4</mn></mrow><mo href="./28.20#E15" stretchy="false" title="radial Mathieu function">)</mo></mrow></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi href="./28.1#t1.r3" title="complex variable">z</mi><mo>,</mo><mi href="./28.1#t1.r6" title="parameter">h</mi><mo>)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ex10"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m17.png" altimg-height="27px" altimg-valign="-7px" altimg-width="101px" alttext="\displaystyle\mathrm{Gey}_{n}(z,q)" display="inline"><mrow><msub><mi>Gey</mi><mi href="./28.1#t1.r1" title="integer">n</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./28.1#t1.r3" title="complex variable">z</mi><mo>,</mo><mi href="./28.1#t1.r6" title="parameter">q</mi><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m11.png" altimg-height="82px" altimg-valign="-14px" altimg-width="226px" alttext="\displaystyle=\sqrt{\tfrac{1}{2}\pi}g_{\mathit{o},n}(h)\operatorname{se}_{n}'%
+\left(0,q\right){\operatorname{Ms}^{(2)}_{n}}\left(z,h\right)," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><msqrt><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></mrow></msqrt><mo>⁢</mo><mrow><msub><mi href="./28.22#EGx2" title="joining factors">g</mi><mrow><mi>o</mi><mo>,</mo><mi href="./28.1#t1.r1" title="integer">n</mi></mrow></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./28.1#t1.r6" title="parameter">h</mi><mo stretchy="false">)</mo></mrow></mrow><mo lspace="0.167em">⁢</mo><mrow><msubsup><mi href="./28.2#vi.p1" title="Mathieu function">se</mi><mi href="./28.1#t1.r1" title="integer">n</mi><mo>′</mo></msubsup><mo>⁡</mo><mrow><mo>(</mo><mn>0</mn><mo>,</mo><mi href="./28.1#t1.r6" title="parameter">q</mi><mo>)</mo></mrow></mrow><mo lspace="0.167em">⁢</mo><mrow><msubsup><mi href="./28.20#E16" title="radial Mathieu function">Ms</mi><mi href="./28.1#t1.r1" title="integer">n</mi><mrow><mo href="./28.20#E16" stretchy="false" title="radial Mathieu function">(</mo><mn>2</mn><mo href="./28.20#E16" stretchy="false" title="radial Mathieu function">)</mo></mrow></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi href="./28.1#t1.r3" title="complex variable">z</mi><mo>,</mo><mi href="./28.1#t1.r6" title="parameter">h</mi><mo>)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ex11"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m21.png" altimg-height="31px" altimg-valign="-7px" altimg-width="113px" alttext="\displaystyle\mathrm{Ne}_{n}^{(1,2)}(z,q)" display="inline"><mrow><msubsup><mi>Ne</mi><mi href="./28.1#t1.r1" title="integer">n</mi><mrow><mo href="./front/introduction#common.t1.r29" stretchy="false" title="open interval">(</mo><mn>1</mn><mo href="./front/introduction#common.t1.r29" title="open interval">,</mo><mn>2</mn><mo href="./front/introduction#common.t1.r29" stretchy="false" title="open interval">)</mo></mrow></msubsup><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./28.1#t1.r3" title="complex variable">z</mi><mo>,</mo><mi href="./28.1#t1.r6" title="parameter">q</mi><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m12.png" altimg-height="82px" altimg-valign="-14px" altimg-width="226px" alttext="\displaystyle=\sqrt{\tfrac{1}{2}\pi}g_{\mathit{o},n}(h)\operatorname{se}_{n}'%
+\left(0,q\right){\operatorname{Ms}^{(3,4)}_{n}}\left(z,h\right)." display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><msqrt><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></mrow></msqrt><mo>⁢</mo><mrow><msub><mi href="./28.22#EGx2" title="joining factors">g</mi><mrow><mi>o</mi><mo>,</mo><mi href="./28.1#t1.r1" title="integer">n</mi></mrow></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./28.1#t1.r6" title="parameter">h</mi><mo stretchy="false">)</mo></mrow></mrow><mo lspace="0.167em">⁢</mo><mrow><msubsup><mi href="./28.2#vi.p1" title="Mathieu function">se</mi><mi href="./28.1#t1.r1" title="integer">n</mi><mo>′</mo></msubsup><mo>⁡</mo><mrow><mo>(</mo><mn>0</mn><mo>,</mo><mi href="./28.1#t1.r6" title="parameter">q</mi><mo>)</mo></mrow></mrow><mo lspace="0.167em">⁢</mo><mrow><msubsup><mi href="./28.20#E16" title="radial Mathieu function">Ms</mi><mi href="./28.1#t1.r1" title="integer">n</mi><mrow><mo href="./28.20#E16" stretchy="false" title="radial Mathieu function">(</mo><mrow><mn>3</mn><mo>,</mo><mn>4</mn></mrow><mo href="./28.20#E16" stretchy="false" title="radial Mathieu function">)</mo></mrow></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi href="./28.1#t1.r3" title="complex variable">z</mi><mo>,</mo><mi href="./28.1#t1.r6" title="parameter">h</mi><mo>)</mo></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p"><cite class="ltx_cite ltx_citemacro_citet">Arscott (<a href="./bib/#bib142" title="Periodic Differential Equations. An Introduction to Mathieu, Lamé, and Allied Functions" class="ltx_ref">1964b</a>)</cite> also uses <math class="ltx_Math" altimg="m38.png" altimg-height="22px" altimg-valign="-6px" altimg-width="39px" alttext="-\mathrm{i}\mu" display="inline"><mrow><mo>−</mo><mrow><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi><mo>⁢</mo><mi>μ</mi></mrow></mrow></math> for <math class="ltx_Math" altimg="m67.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="\nu" display="inline"><mi href="./28.1#t1.r4" title="complex parameter">ν</mi></math>.</p>
+</div>
+</section>
+<section id="Px2" class="ltx_paragraph">
+<h2 class="ltx_title ltx_title_paragraph"><cite class="ltx_cite ltx_citemacro_citet">Campbell (<a href="./bib/C#bib410" title="Théorie Générale de L’Équation de Mathieu et de quelques autres Équations différentielles de la mécanique" class="ltx_ref">1955</a>)</cite></h2>
+<div id="Px2.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./28.1#info" title="§28.1 Special Notation ‣ Notation ‣ Chapter 28 Mathieu Functions and Hill’s Equation" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§28.1</span></a> and
+<a href="./28#info" title="Chapter 28 Mathieu Functions and Hill’s Equation" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.28</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="Px2.p1" class="ltx_para">
+<table id="Sx2.EGx1" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="Ex12"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m31.png" altimg-height="23px" altimg-valign="-5px" altimg-width="35px" alttext="\displaystyle\mathrm{in}_{n}" display="inline"><msub><mi>in</mi><mi href="./28.1#t1.r1" title="integer">n</mi></msub></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m7.png" altimg-height="24px" altimg-valign="-6px" altimg-width="61px" alttext="\displaystyle=\operatorname{fe}_{n}," display="inline"><mrow><mrow><mi></mi><mo>=</mo><msub><mi href="./28.5#E1" title="second solution, Mathieu’s equation">fe</mi><mi href="./28.1#t1.r1" title="integer">n</mi></msub></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m27.png" altimg-height="23px" altimg-valign="-5px" altimg-width="48px" alttext="\displaystyle\mathrm{ceh}_{n}" display="inline"><msub><mi>ceh</mi><mi href="./28.1#t1.r1" title="integer">n</mi></msub></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m3.png" altimg-height="24px" altimg-valign="-6px" altimg-width="70px" alttext="\displaystyle=\operatorname{Ce}_{n}," display="inline"><mrow><mrow><mi></mi><mo>=</mo><msub><mi href="./28.20#E3" title="modified Mathieu function">Ce</mi><mi href="./28.1#t1.r1" title="integer">n</mi></msub></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m29.png" altimg-height="23px" altimg-valign="-5px" altimg-width="47px" alttext="\displaystyle\mathrm{inh}_{n}" display="inline"><msub><mi>inh</mi><mi href="./28.1#t1.r1" title="integer">n</mi></msub></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m4.png" altimg-height="24px" altimg-valign="-6px" altimg-width="67px" alttext="\displaystyle=\operatorname{Fe}_{n}," display="inline"><mrow><mrow><mi></mi><mo>=</mo><msub><mi href="./28.20#E6" title="modified Mathieu function">Fe</mi><mi href="./28.1#t1.r1" title="integer">n</mi></msub></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ex13"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m35.png" altimg-height="25px" altimg-valign="-7px" altimg-width="36px" alttext="\displaystyle\mathrm{jn}_{n}" display="inline"><msub><mi>jn</mi><mi href="./28.1#t1.r1" title="integer">n</mi></msub></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m8.png" altimg-height="20px" altimg-valign="-7px" altimg-width="65px" alttext="\displaystyle=\operatorname{ge}_{n}," display="inline"><mrow><mrow><mi></mi><mo>=</mo><msub><mi href="./28.5#E2" title="second solution, Mathieu’s equation">ge</mi><mi href="./28.1#t1.r1" title="integer">n</mi></msub></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m37.png" altimg-height="23px" altimg-valign="-5px" altimg-width="47px" alttext="\displaystyle\mathrm{seh}_{n}" display="inline"><msub><mi>seh</mi><mi href="./28.1#t1.r1" title="integer">n</mi></msub></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m6.png" altimg-height="24px" altimg-valign="-6px" altimg-width="66px" alttext="\displaystyle=\operatorname{Se}_{n}," display="inline"><mrow><mrow><mi></mi><mo>=</mo><msub><mi href="./28.20#E4" title="modified Mathieu function">Se</mi><mi href="./28.1#t1.r1" title="integer">n</mi></msub></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m33.png" altimg-height="25px" altimg-valign="-7px" altimg-width="47px" alttext="\displaystyle\mathrm{jnh}_{n}" display="inline"><msub><mi>jnh</mi><mi href="./28.1#t1.r1" title="integer">n</mi></msub></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m5.png" altimg-height="23px" altimg-valign="-5px" altimg-width="75px" alttext="\displaystyle=\operatorname{Ge}_{n}." display="inline"><mrow><mrow><mi></mi><mo>=</mo><msub><mi href="./28.20#E7" title="modified Mathieu function">Ge</mi><mi href="./28.1#t1.r1" title="integer">n</mi></msub></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+</section>
+<section id="Px3" class="ltx_paragraph">
+<h2 class="ltx_title ltx_title_paragraph"><cite class="ltx_cite ltx_citemacro_citet">Abramowitz and Stegun (<a href="./bib/#bib24" title="Handbook of Mathematical Functions with Formulas, Graphs, and Mathematical Tables" class="ltx_ref">1964</a>, Chapter 20)</cite></h2>
+<div id="Px3.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./28.1#info" title="§28.1 Special Notation ‣ Notation ‣ Chapter 28 Mathieu Functions and Hill’s Equation" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§28.1</span></a> and
+<a href="./28#info" title="Chapter 28 Mathieu Functions and Hill’s Equation" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.28</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="Px3.p1" class="ltx_para">
+<table id="Ex14" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="m13.png" altimg-height="56px" altimg-valign="-7px" altimg-width="182px" alttext="F_{\nu}(z)=\operatorname{Me}_{\nu}\left(z,q\right)." display="block"><mrow><mrow><mrow><msub><mi>F</mi><mi href="./28.1#t1.r4" title="complex parameter">ν</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./28.1#t1.r3" title="complex variable">z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msub><mi href="./28.20#E5" title="modified Mathieu function">Me</mi><mi href="./28.1#t1.r4" title="complex parameter">ν</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./28.1#t1.r3" title="complex variable">z</mi><mo>,</mo><mi href="./28.1#t1.r6" title="parameter">q</mi><mo>)</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+</section>
+<section id="Px4" class="ltx_paragraph">
+<h2 class="ltx_title ltx_title_paragraph"><cite class="ltx_cite ltx_citemacro_citet">National Bureau of Standards (<a href="./bib/N#bib1701" title="Tables Relating to Mathieu Functions: Characteristic Values, Coefficients, and Joining Factors" class="ltx_ref">1967</a>)</cite></h2>
+<div id="Px4.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./28.1#info" title="§28.1 Special Notation ‣ Notation ‣ Chapter 28 Mathieu Functions and Hill’s Equation" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§28.1</span></a> and
+<a href="./28#info" title="Chapter 28 Mathieu Functions and Hill’s Equation" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.28</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="Px4.p1" class="ltx_para">
+<p class="ltx_p">With <math class="ltx_Math" altimg="m103.png" altimg-height="21px" altimg-valign="-6px" altimg-width="62px" alttext="s=4q" display="inline"><mrow><mi>s</mi><mo>=</mo><mrow><mn>4</mn><mo>⁢</mo><mi href="./28.1#t1.r6" title="parameter">q</mi></mrow></mrow></math>,</p>
+<table id="EGx4" class="ltx_equationgroup ltx_eqn_table">
+
+<tbody id="Ex15"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m23.png" altimg-height="27px" altimg-valign="-7px" altimg-width="84px" alttext="\displaystyle\mathrm{Se}_{n}(s,z)" display="inline"><mrow><msub><mi href="./28.1#Px5" title="alternative notation">Se</mi><mi href="./28.1#t1.r1" title="integer">n</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>s</mi><mo>,</mo><mi href="./28.1#t1.r3" title="complex variable">z</mi><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m1.png" altimg-height="56px" altimg-valign="-21px" altimg-width="118px" alttext="\displaystyle=\dfrac{\operatorname{ce}_{n}\left(z,q\right)}{\operatorname{ce}_%
+{n}\left(0,q\right)}," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mstyle displaystyle="true"><mfrac><mrow><msub><mi href="./28.2#vi.p1" title="Mathieu function">ce</mi><mi href="./28.1#t1.r1" title="integer">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./28.1#t1.r3" title="complex variable">z</mi><mo>,</mo><mi href="./28.1#t1.r6" title="parameter">q</mi><mo>)</mo></mrow></mrow><mrow><msub><mi href="./28.2#vi.p1" title="Mathieu function">ce</mi><mi href="./28.1#t1.r1" title="integer">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mn>0</mn><mo>,</mo><mi href="./28.1#t1.r6" title="parameter">q</mi><mo>)</mo></mrow></mrow></mfrac></mstyle></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ex16"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m25.png" altimg-height="27px" altimg-valign="-7px" altimg-width="85px" alttext="\displaystyle\mathrm{So}_{n}(s,z)" display="inline"><mrow><msub><mi href="./28.1#Px5" title="alternative notation">So</mi><mi href="./28.1#t1.r1" title="integer">n</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>s</mi><mo>,</mo><mi href="./28.1#t1.r3" title="complex variable">z</mi><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m2.png" altimg-height="56px" altimg-valign="-21px" altimg-width="117px" alttext="\displaystyle=\dfrac{\operatorname{se}_{n}\left(z,q\right)}{\operatorname{se}_%
+{n}'\left(0,q\right)}." display="inline"><mrow><mrow><mi></mi><mo>=</mo><mstyle displaystyle="true"><mfrac><mrow><msub><mi href="./28.2#vi.p1" title="Mathieu function">se</mi><mi href="./28.1#t1.r1" title="integer">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./28.1#t1.r3" title="complex variable">z</mi><mo>,</mo><mi href="./28.1#t1.r6" title="parameter">q</mi><mo>)</mo></mrow></mrow><mrow><msubsup><mi href="./28.2#vi.p1" title="Mathieu function">se</mi><mi href="./28.1#t1.r1" title="integer">n</mi><mo>′</mo></msubsup><mo>⁡</mo><mrow><mo>(</mo><mn>0</mn><mo>,</mo><mi href="./28.1#t1.r6" title="parameter">q</mi><mo>)</mo></mrow></mrow></mfrac></mstyle></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+</section>
+<section id="Px5" class="ltx_paragraph">
+<h2 class="ltx_title ltx_title_paragraph"><cite class="ltx_cite ltx_citemacro_citet">Stratton<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/S#bib2175" title="Elliptic Cylinder and Spheroidal Wave Functions, Including Tables of Separation Constants and Coefficients" class="ltx_ref">1941</a>)</cite></h2>
+<div id="Px5.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./28.1#info" title="§28.1 Special Notation ‣ Notation ‣ Chapter 28 Mathieu Functions and Hill’s Equation" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§28.1</span></a> and
+<a href="./28#info" title="Chapter 28 Mathieu Functions and Hill’s Equation" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.28</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="Px5.p1" class="ltx_para">
+<p class="ltx_p">With <math class="ltx_Math" altimg="m90.png" altimg-height="25px" altimg-valign="-9px" altimg-width="79px" alttext="c=2\sqrt{q}" display="inline"><mrow><mi href="./28.1#Px5.p1" title="𝑐=2⁢√𝑞">c</mi><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><msqrt><mi href="./28.1#t1.r6" title="parameter">q</mi></msqrt></mrow></mrow></math>,
+</p>
+<table id="EGx5" class="ltx_equationgroup ltx_eqn_table">
+
+<tbody id="Ex17"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m22.png" altimg-height="27px" altimg-valign="-7px" altimg-width="84px" alttext="\displaystyle\mathrm{Se}_{n}(c,z)" display="inline"><mrow><msub><mi href="./28.1#Px5" title="alternative notation">Se</mi><mi href="./28.1#t1.r1" title="integer">n</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./28.1#Px5.p1" title="𝑐=2⁢√𝑞">c</mi><mo>,</mo><mi href="./28.1#t1.r3" title="complex variable">z</mi><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m1.png" altimg-height="56px" altimg-valign="-21px" altimg-width="118px" alttext="\displaystyle=\dfrac{\operatorname{ce}_{n}\left(z,q\right)}{\operatorname{ce}_%
+{n}\left(0,q\right)}," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mstyle displaystyle="true"><mfrac><mrow><msub><mi href="./28.2#vi.p1" title="Mathieu function">ce</mi><mi href="./28.1#t1.r1" title="integer">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./28.1#t1.r3" title="complex variable">z</mi><mo>,</mo><mi href="./28.1#t1.r6" title="parameter">q</mi><mo>)</mo></mrow></mrow><mrow><msub><mi href="./28.2#vi.p1" title="Mathieu function">ce</mi><mi href="./28.1#t1.r1" title="integer">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mn>0</mn><mo>,</mo><mi href="./28.1#t1.r6" title="parameter">q</mi><mo>)</mo></mrow></mrow></mfrac></mstyle></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ex18"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m24.png" altimg-height="27px" altimg-valign="-7px" altimg-width="85px" alttext="\displaystyle\mathrm{So}_{n}(c,z)" display="inline"><mrow><msub><mi href="./28.1#Px5" title="alternative notation">So</mi><mi href="./28.1#t1.r1" title="integer">n</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./28.1#Px5.p1" title="𝑐=2⁢√𝑞">c</mi><mo>,</mo><mi href="./28.1#t1.r3" title="complex variable">z</mi><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m2.png" altimg-height="56px" altimg-valign="-21px" altimg-width="117px" alttext="\displaystyle=\dfrac{\operatorname{se}_{n}\left(z,q\right)}{\operatorname{se}_%
+{n}'\left(0,q\right)}." display="inline"><mrow><mrow><mi></mi><mo>=</mo><mstyle displaystyle="true"><mfrac><mrow><msub><mi href="./28.2#vi.p1" title="Mathieu function">se</mi><mi href="./28.1#t1.r1" title="integer">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./28.1#t1.r3" title="complex variable">z</mi><mo>,</mo><mi href="./28.1#t1.r6" title="parameter">q</mi><mo>)</mo></mrow></mrow><mrow><msubsup><mi href="./28.2#vi.p1" title="Mathieu function">se</mi><mi href="./28.1#t1.r1" title="integer">n</mi><mo>′</mo></msubsup><mo>⁡</mo><mrow><mo>(</mo><mn>0</mn><mo>,</mo><mi href="./28.1#t1.r6" title="parameter">q</mi><mo>)</mo></mrow></mrow></mfrac></mstyle></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+</section>
+<section id="Px6" class="ltx_paragraph">
+<h2 class="ltx_title ltx_title_paragraph"><cite class="ltx_cite ltx_citemacro_citet">Zhang and Jin (<a href="./bib/Z#bib2493" title="Computation of Special Functions" class="ltx_ref">1996</a>)</cite></h2>
+<div id="Px6.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./28.1#info" title="§28.1 Special Notation ‣ Notation ‣ Chapter 28 Mathieu Functions and Hill’s Equation" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§28.1</span></a> and
+<a href="./28#info" title="Chapter 28 Mathieu Functions and Hill’s Equation" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.28</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="Px6.p1" class="ltx_para">
+<p class="ltx_p">The radial functions <math class="ltx_Math" altimg="m110.png" altimg-height="29px" altimg-valign="-7px" altimg-width="106px" alttext="{\operatorname{Mc}^{(j)}_{n}}\left(z,h\right)" display="inline"><mrow><msubsup><mi href="./28.20#E15" title="radial Mathieu function">Mc</mi><mi href="./28.1#t1.r1" title="integer">n</mi><mrow><mo href="./28.20#E15" stretchy="false" title="radial Mathieu function">(</mo><mi href="./28.1#t1.r1" title="integer">j</mi><mo href="./28.20#E15" stretchy="false" title="radial Mathieu function">)</mo></mrow></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi href="./28.1#t1.r3" title="complex variable">z</mi><mo>,</mo><mi href="./28.1#t1.r6" title="parameter">h</mi><mo>)</mo></mrow></mrow></math> and <math class="ltx_Math" altimg="m112.png" altimg-height="29px" altimg-valign="-7px" altimg-width="105px" alttext="{\operatorname{Ms}^{(j)}_{n}}\left(z,h\right)" display="inline"><mrow><msubsup><mi href="./28.20#E16" title="radial Mathieu function">Ms</mi><mi href="./28.1#t1.r1" title="integer">n</mi><mrow><mo href="./28.20#E16" stretchy="false" title="radial Mathieu function">(</mo><mi href="./28.1#t1.r1" title="integer">j</mi><mo href="./28.20#E16" stretchy="false" title="radial Mathieu function">)</mo></mrow></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi href="./28.1#t1.r3" title="complex variable">z</mi><mo>,</mo><mi href="./28.1#t1.r6" title="parameter">h</mi><mo>)</mo></mrow></mrow></math>
+are denoted by <math class="ltx_Math" altimg="m111.png" altimg-height="29px" altimg-valign="-7px" altimg-width="104px" alttext="{\operatorname{Mc}^{(j)}_{n}}\left(z,q\right)" display="inline"><mrow><msubsup><mi href="./28.20#E15" title="radial Mathieu function">Mc</mi><mi href="./28.1#t1.r1" title="integer">n</mi><mrow><mo href="./28.20#E15" stretchy="false" title="radial Mathieu function">(</mo><mi href="./28.1#t1.r1" title="integer">j</mi><mo href="./28.20#E15" stretchy="false" title="radial Mathieu function">)</mo></mrow></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi href="./28.1#t1.r3" title="complex variable">z</mi><mo>,</mo><mi href="./28.1#t1.r6" title="parameter">q</mi><mo>)</mo></mrow></mrow></math> and <math class="ltx_Math" altimg="m113.png" altimg-height="29px" altimg-valign="-7px" altimg-width="103px" alttext="{\operatorname{Ms}^{(j)}_{n}}\left(z,q\right)" display="inline"><mrow><msubsup><mi href="./28.20#E16" title="radial Mathieu function">Ms</mi><mi href="./28.1#t1.r1" title="integer">n</mi><mrow><mo href="./28.20#E16" stretchy="false" title="radial Mathieu function">(</mo><mi href="./28.1#t1.r1" title="integer">j</mi><mo href="./28.20#E16" stretchy="false" title="radial Mathieu function">)</mo></mrow></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi href="./28.1#t1.r3" title="complex variable">z</mi><mo>,</mo><mi href="./28.1#t1.r6" title="parameter">q</mi><mo>)</mo></mrow></mrow></math>,
+respectively.</p>
+</div>
+</section>
+</section>
+</div>
+<div class="ltx_page_footer">
+<div class="ltx_siblings">
+<a href="./28" title="" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">28 </span>Mathieu Functions and Hill’s Equation</span></a><a href="./28.2" title="In Mathieu Functions of Integer Order ‣ Chapter 28 Mathieu Functions and Hill’s Equation" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">28.2 </span>Definitions and Basic Properties</span></a>
+</div>
+<div class="ltx_footer_links ltx_centering">
+<a href="./about/notices">© 2010–2026 NIST</a> / <a href="./about/notices#S2">Disclaimer</a> / <a href="/cdn-cgi/l/email-protection#eeaaa2a3a8c3888b8b8a8c8f8d85ae80879d9ac0898198">Feedback</a>;
+ Version 1.2.7;
+Release date 2026-06-15.</div>
+<span id="pagesettings"></span>
+<div class="ltx_nist_logo"><a href="http://www.nist.gov/"><img src="./style/nistidc.png" width="500" alt="NIST"></a></div>
+<div class="ltx_nist_links ltx_align_right">
+<a href="https://www.nist.gov/privacy-policy">Site Privacy</a> <a href="https://www.nist.gov/oism/accessibility">Accessibility</a> <a href="https://www.nist.gov/privacy">Privacy Program</a> <a href="https://www.nist.gov/oism/copyrights">Copyrights</a> <a href="https://www.commerce.gov/vulnerability-disclosure-policy">Vulnerability Disclosure</a> <a href="https://www.nist.gov/no-fear-act-policy">No Fear Act Policy</a> <a href="https://www.nist.gov/foia">FOIA</a> <a href="https://www.nist.gov/environmental-policy-statement">Environmental Policy</a> <a href="https://www.nist.gov/summary-report-scientific-integrity">Scientific Integrity</a> <a href="https://www.nist.gov/nist-information-quality-standards">Information Quality Standards</a> <a href="https://www.commerce.gov/">Commerce.gov</a> <a href="http://www.science.gov/">Science.gov</a> <a href="http://www.usa.gov/">USA.gov</a>
+</div>
+</div>
+</div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"9ef5b487afff42a68917b2d63593a474"}' crossorigin="anonymous"></script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a30dbbf6b8ce41db',t:'MTc4NzY5MzgwNw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

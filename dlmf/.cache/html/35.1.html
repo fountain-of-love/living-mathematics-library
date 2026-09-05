@@ -1,0 +1,401 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>DLMF: §35.1 Special Notation ‣ Notation ‣ Chapter 35 Functions of Matrix Argument</title>
+<link rel="shortcut icon" href="./style/DLMF-16.png" type="image/png">
+<script type="text/javascript"><!--
+	var PATH="DLMF:/35.1";
+	var ROOT="./";
+      //--></script>
+<script type="text/javascript" src="./style/jquery.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/jquery.leaveNotice.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/DLMF.js"><!-- non-empty so ie6 will accept it --></script>
+<script async="" type="text/javascript" id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC&amp;subagency=NIST&amp;pua=UA-37115410-44&amp;yt=true&amp;exts=ppsx,pps,f90,sch,rtf,wrl,txz,m1v,xlsm,msi,xsd,f,tif,eps,mpg,xml,pl,xlt,c"><!-- non-empty so ie6 will accept it --></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-BZB64W4M0L"></script><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-BZB64W4M0L');
+      </script>
+<link rel="stylesheet" type="text/css" href="./style/LaTeXML.css">
+<link rel="stylesheet" type="text/css" href="./style/DLMF.css">
+<link rel="stylesheet" type="text/css" href="./style/print.css" media="print">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="top" href="./" title="DLMF">
+<link rel="copyright" href="./about/notices" title="Copyright">
+<link rel="search" href="./search/search" title="Search">
+<link rel="help" class="ltx_help" href="./help/" title="Help">
+<link rel="up" href="./35#PT1" title="Notation ‣ Chapter 35 Functions of Matrix Argument">
+<link rel="up up" href="./35" title="Chapter 35 Functions of Matrix Argument">
+<link rel="start" href="./" title="">
+<link rel="prev" href="./35" title="Chapter 35 Functions of Matrix Argument">
+<link rel="next" href="./35.2" title="§35.2 Laplace Transform ‣ Properties ‣ Chapter 35 Functions of Matrix Argument">
+<link rel="section" href="./35.2" title="§35.2 Laplace Transform ‣ Properties ‣ Chapter 35 Functions of Matrix Argument">
+<link rel="section" href="./35.3" title="§35.3 Multivariate Gamma and Beta Functions ‣ Properties ‣ Chapter 35 Functions of Matrix Argument">
+<link rel="section" href="./35.4" title="§35.4 Partitions and Zonal Polynomials ‣ Properties ‣ Chapter 35 Functions of Matrix Argument">
+<link rel="section" href="./35.5" title="§35.5 Bessel Functions of Matrix Argument ‣ Properties ‣ Chapter 35 Functions of Matrix Argument">
+<link rel="section" href="./35.6" title="§35.6 Confluent Hypergeometric Functions of Matrix Argument ‣ Properties ‣ Chapter 35 Functions of Matrix Argument">
+<link rel="section" href="./35.7" title="§35.7 Gaussian Hypergeometric Function of Matrix Argument ‣ Properties ‣ Chapter 35 Functions of Matrix Argument">
+<link rel="section" href="./35.8" title="§35.8 Generalized Hypergeometric Functions of Matrix Argument ‣ Properties ‣ Chapter 35 Functions of Matrix Argument">
+<link rel="section" href="./35.9" title="§35.9 Applications ‣ Applications ‣ Chapter 35 Functions of Matrix Argument">
+<link rel="section" href="./35.10" title="§35.10 Methods of Computation ‣ Computation ‣ Chapter 35 Functions of Matrix Argument">
+<link rel="section" href="./35.11" title="§35.11 Tables ‣ Computation ‣ Chapter 35 Functions of Matrix Argument">
+<link rel="section" href="./35.12" title="§35.12 Software ‣ Computation ‣ Chapter 35 Functions of Matrix Argument">
+<link rel="document" href="./front/foreword" title="Foreword">
+<link rel="document" href="./front/preface" title="Preface">
+<link rel="document" href="./front/introduction" title="Mathematical Introduction">
+<link rel="chapter" href="./1" title="Chapter 1 Algebraic and Analytic Methods">
+<link rel="chapter" href="./2" title="Chapter 2 Asymptotic Approximations">
+<link rel="chapter" href="./3" title="Chapter 3 Numerical Methods">
+<link rel="chapter" href="./4" title="Chapter 4 Elementary Functions">
+<link rel="chapter" href="./5" title="Chapter 5 Gamma Function">
+<link rel="chapter" href="./6" title="Chapter 6 Exponential, Logarithmic, Sine, and Cosine Integrals">
+<link rel="chapter" href="./7" title="Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="chapter" href="./8" title="Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="chapter" href="./9" title="Chapter 9 Airy and Related Functions">
+<link rel="chapter" href="./10" title="Chapter 10 Bessel Functions">
+<link rel="chapter" href="./11" title="Chapter 11 Struve and Related Functions">
+<link rel="chapter" href="./12" title="Chapter 12 Parabolic Cylinder Functions">
+<link rel="chapter" href="./13" title="Chapter 13 Confluent Hypergeometric Functions">
+<link rel="chapter" href="./14" title="Chapter 14 Legendre and Related Functions">
+<link rel="chapter" href="./15" title="Chapter 15 Hypergeometric Function">
+<link rel="chapter" href="./16" title="Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="chapter" href="./17" title="Chapter 17 𝑞-Hypergeometric and Related Functions">
+<link rel="chapter" href="./18" title="Chapter 18 Orthogonal Polynomials">
+<link rel="chapter" href="./19" title="Chapter 19 Elliptic Integrals">
+<link rel="chapter" href="./20" title="Chapter 20 Theta Functions">
+<link rel="chapter" href="./21" title="Chapter 21 Multidimensional Theta Functions">
+<link rel="chapter" href="./22" title="Chapter 22 Jacobian Elliptic Functions">
+<link rel="chapter" href="./23" title="Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="chapter" href="./24" title="Chapter 24 Bernoulli and Euler Polynomials">
+<link rel="chapter" href="./25" title="Chapter 25 Zeta and Related Functions">
+<link rel="chapter" href="./26" title="Chapter 26 Combinatorial Analysis">
+<link rel="chapter" href="./27" title="Chapter 27 Functions of Number Theory">
+<link rel="chapter" href="./28" title="Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="chapter" href="./29" title="Chapter 29 Lamé Functions">
+<link rel="chapter" href="./30" title="Chapter 30 Spheroidal Wave Functions">
+<link rel="chapter" href="./31" title="Chapter 31 Heun Functions">
+<link rel="chapter" href="./32" title="Chapter 32 Painlevé Transcendents">
+<link rel="chapter" href="./33" title="Chapter 33 Coulomb Functions">
+<link rel="chapter" href="./34" title="Chapter 34 3⁢𝑗,6⁢𝑗,9⁢𝑗 Symbols">
+<link rel="chapter" href="./35" title="Chapter 35 Functions of Matrix Argument">
+<link rel="chapter" href="./36" title="Chapter 36 Integrals with Coalescing Saddles">
+<link rel="bibliography" href="./bib/" title="Bibliography">
+<link rel="index" href="./idx/" title="Index">
+<link rel="glossary" href="./not/" title="Notations">
+<link rel="document" href="./lof/" title="List of Figures">
+<link rel="document" href="./lot/" title="List of Tables">
+<link rel="document" href="./software/" title="Software Index">
+<link rel="document" href="./errata/" title="Errata">
+<link rel="document" href="./help/" title="Need Help?">
+<link rel="document" href="./search/" title="Advanced Search">
+<link rel="document" href="./about/" title="About the Project">
+<meta name="keywords" lang="en" content="Bessel functions, Gaussian hypergeometric function, beta function, confluent hypergeometric functions, first kind, functions, functions of matrix argument, gamma function, generalized hypergeometric functions, hypergeometric function, hypergeometric functions of matrix argument, multivariate, multivariate beta function, multivariate gamma function, notation, of matrix argument, of the first and second kinds, polynomials, second kind, zonal">
+</head>
+<body class="color_default textfont_default titlefont_default fontsize_default navbar_default">
+<div class="ltx_page_navbar">
+<div class="ltx_page_navlogo"><a href="./" title="Digital Library of Mathematical Functions"><span>DLMF</span></a></div>
+<div class="ltx_page_navitems">
+<form method="get" action="./search/search">
+<ul>
+<li><a href="./idx/">Index</a></li>
+<li><a href="./not/">Notations</a></li>
+<li><small><input type="text" name="q" value="" size="6" class="ltx_page_navitem_search"><button type="submit">Search</button></small></li>
+<li><a href="./help/" class="ltx_help">Help?</a></li>
+<li><a href="./help/cite">Citing</a></li>
+<li><a href="./help/customize" class="ltx_customize">Customize</a></li>
+<li id="showinfo"><a href="" onclick="showInfo(); return false;" title="Show Annotations">Annotate</a></li>
+<li id="hideinfo"><a href="" onclick="hideInfo(); return false;">UnAnnotate</a></li>
+</ul>
+</form>
+</div>
+<div class="ltx_page_navsponsors">
+<div><a href="./about/" class="ltx_page_navabout">About the Project</a></div>
+</div>
+</div>
+<div class="ltx_page_main">
+<div class="ltx_page_header">
+<a href="./35" title="" class="ltx_ref" rel="up up"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">35 </span>Functions of Matrix Argument</span></a><a href="./35#PT1" title="In Chapter 35 Functions of Matrix Argument" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title">Notation</span></a><a href="./35" title="" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">35 </span>Functions of Matrix Argument</span></a><a href="./35.2" title="In Properties ‣ Chapter 35 Functions of Matrix Argument" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">35.2 </span>Laplace Transform</span></a>
+</div>
+<div class="ltx_page_content">
+<section class="ltx_section ltx_authors_multiline ltx_leqno">
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">§35.1 </span>Special Notation</h1>
+<div id="info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=Bessel%20functions">Bessel functions</a>, <a class="ltx_keyword" href="./search/search?q=Gaussian%20hypergeometric%20function">Gaussian hypergeometric function</a>, <a class="ltx_keyword" href="./search/search?q=beta%20function">beta function</a>, <a class="ltx_keyword" href="./search/search?q=confluent%20hypergeometric%20functions">confluent hypergeometric functions</a>, <a class="ltx_keyword" href="./search/search?q=first%20kind">first kind</a>, <a class="ltx_keyword" href="./search/search?q=functions">functions</a>, <a class="ltx_keyword" href="./search/search?q=functions%20of%20matrix%20argument">functions of matrix argument</a>, <a class="ltx_keyword" href="./search/search?q=gamma%20function">gamma function</a>, <a class="ltx_keyword" href="./search/search?q=generalized%20hypergeometric%20functions">generalized hypergeometric functions</a>, <a class="ltx_keyword" href="./search/search?q=hypergeometric%20function">hypergeometric function</a>, <a class="ltx_keyword" href="./search/search?q=hypergeometric%20functions%20of%20matrix%20argument">hypergeometric functions of matrix argument</a>, <a class="ltx_keyword" href="./search/search?q=multivariate">multivariate</a>, <a class="ltx_keyword" href="./search/search?q=multivariate%20beta%20function">multivariate beta function</a>, <a class="ltx_keyword" href="./search/search?q=multivariate%20gamma%20function">multivariate gamma function</a>, <a class="ltx_keyword" href="./search/search?q=notation">notation</a>, <a class="ltx_keyword" href="./search/search?q=of%20matrix%20argument">of matrix argument</a>, <a class="ltx_keyword" href="./search/search?q=of%20the%20first%20and%20second%20kinds">of the first and second kinds</a>, <a class="ltx_keyword" href="./search/search?q=polynomials">polynomials</a>, <a class="ltx_keyword" href="./search/search?q=second%20kind">second kind</a>, <a class="ltx_keyword" href="./search/search?q=zonal">zonal</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./35.1" title="" class="ltx_ref">http://dlmf.nist.gov/35.1</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./35#info" title="Chapter 35 Functions of Matrix Argument" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.35</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="p1" class="ltx_para">
+<p class="ltx_p">(For other notation see <a href="./front/introduction#notations" title="In Mathematical Introduction" class="ltx_ref"><span class="ltx_text ltx_ref_title">Notation for the Special Functions</span></a>.)</p>
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">All matrices are of order <math class="ltx_Math" altimg="m57.png" altimg-height="18px" altimg-valign="-4px" altimg-width="66px" alttext="m\times m" display="inline"><mrow><mi href="./35.1#t1.r3" title="positive integer">m</mi><mo lspace="0.222em" rspace="0.222em">×</mo><mi href="./35.1#t1.r3" title="positive integer">m</mi></mrow></math>, unless specified otherwise. All
+fractional or complex powers are principal values.</p>
+</div>
+<div id="p3" class="ltx_para">
+<table id="t1" class="ltx_tabular ltx_align_left ltx_guessed_headers ltx_align_middle">
+<tbody class="ltx_tbody">
+<tr id="t1.r1" class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row"><math class="ltx_Math" altimg="m47.png" altimg-height="22px" altimg-valign="-6px" altimg-width="33px" alttext="a,b" display="inline"><mrow><mi href="./35.1#t1.r1" title="complex variable">a</mi><mo>,</mo><mi href="./35.1#t1.r1" title="complex variable">b</mi></mrow></math></th>
+<td class="ltx_td ltx_nopad_r ltx_align_justify">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p">complex variables.</span>
+</span>
+</td>
+</tr>
+<tr id="t1.r2" class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row"><math class="ltx_Math" altimg="m52.png" altimg-height="22px" altimg-valign="-6px" altimg-width="72px" alttext="j,k,p,q" display="inline"><mrow><mi href="./35.1#t1.r2" title="nonnegative integer">j</mi><mo>,</mo><mi href="./35.1#t1.r2" title="nonnegative integer">k</mi><mo>,</mo><mi href="./35.1#t1.r2" title="nonnegative integer">p</mi><mo>,</mo><mi href="./35.1#t1.r2" title="nonnegative integer">q</mi></mrow></math></th>
+<td class="ltx_td ltx_nopad_r ltx_align_justify">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p">nonnegative integers.</span>
+</span>
+</td>
+</tr>
+<tr id="t1.r3" class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row"><math class="ltx_Math" altimg="m56.png" altimg-height="13px" altimg-valign="-2px" altimg-width="23px" alttext="m" display="inline"><mi href="./35.1#t1.r3" title="positive integer">m</mi></math></th>
+<td class="ltx_td ltx_nopad_r ltx_align_justify">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p">positive integer.</span>
+</span>
+</td>
+</tr>
+<tr id="t1.r4" class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row"><math class="ltx_Math" altimg="m64.png" altimg-height="26px" altimg-valign="-8px" altimg-width="38px" alttext="{\left[a\right]_{\kappa}}" display="inline"><msub><mrow><mo href="./35.4#E1" title="partitional shifted factorial">[</mo><mi href="./35.1#t1.r1" title="complex variable">a</mi><mo href="./35.4#E1" title="partitional shifted factorial">]</mo></mrow><mi href="./35.4#i.p1" title="vector of nonnegative integers">κ</mi></msub></math></th>
+<td class="ltx_td ltx_nopad_r ltx_align_justify">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p">partitional shifted factorial (§<a href="./35.4#i" title="§35.4(i) Definitions ‣ §35.4 Partitions and Zonal Polynomials ‣ Properties ‣ Chapter 35 Functions of Matrix Argument" class="ltx_ref"><span class="ltx_text ltx_ref_tag">35.4(i)</span></a>).</span>
+</span>
+</td>
+</tr>
+<tr id="t1.r5" class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row"><math class="ltx_Math" altimg="m19.png" altimg-height="17px" altimg-valign="-2px" altimg-width="16px" alttext="\boldsymbol{{0}}" display="inline"><mi href="./35.1#t1.r5" title="matrix of zeros">𝟎</mi></math></th>
+<td class="ltx_td ltx_nopad_r ltx_align_justify">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p">zero matrix.</span>
+</span>
+</td>
+</tr>
+<tr id="t1.r6" class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row"><math class="ltx_Math" altimg="m24.png" altimg-height="18px" altimg-valign="-2px" altimg-width="13px" alttext="\mathbf{I}" display="inline"><mi href="./35.1#t1.r6" title="identity matrix">𝐈</mi></math></th>
+<td class="ltx_td ltx_nopad_r ltx_align_justify">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p">identity matrix.</span>
+</span>
+</td>
+</tr>
+<tr id="t1.r7" class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row"><math class="ltx_Math" altimg="m18.png" altimg-height="18px" altimg-valign="-2px" altimg-width="20px" alttext="\boldsymbol{\mathcal{S}}" display="inline"><mi class="ltx_font_mathcaligraphic" href="./35.1#t1.r7" title="space of real symmetric matrices">𝓢</mi></math></th>
+<td class="ltx_td ltx_nopad_r ltx_align_justify">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p">space of all real symmetric matrices.</span>
+</span>
+</td>
+</tr>
+<tr id="t1.r8" class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row"><math class="ltx_Math" altimg="m26.png" altimg-height="22px" altimg-valign="-6px" altimg-width="71px" alttext="\mathbf{S},\mathbf{T},\mathbf{X}" display="inline"><mrow><mi href="./35.1#t1.r8" title="real symmetric matrix">𝐒</mi><mo>,</mo><mi href="./35.1#t1.r8" title="real symmetric matrix">𝐓</mi><mo>,</mo><mi href="./35.1#t1.r8" title="real symmetric matrix">𝐗</mi></mrow></math></th>
+<td class="ltx_td ltx_nopad_r ltx_align_justify">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p">real symmetric matrices.</span>
+</span>
+</td>
+</tr>
+<tr id="t1.r9" class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row"><math class="ltx_Math" altimg="m44.png" altimg-height="18px" altimg-valign="-2px" altimg-width="42px" alttext="\operatorname{tr}{\mathbf{X}}" display="inline"><mrow><mi href="./1.2#E62" title="trace of matrix">tr</mi><mo lspace="0.167em">⁡</mo><mi href="./35.1#t1.r8" title="real symmetric matrix">𝐗</mi></mrow></math></th>
+<td class="ltx_td ltx_nopad_r ltx_align_justify">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p">trace of <math class="ltx_Math" altimg="m32.png" altimg-height="18px" altimg-valign="-2px" altimg-width="22px" alttext="\mathbf{X}" display="inline"><mi href="./35.1#t1.r8" title="real symmetric matrix">𝐗</mi></math>.</span>
+</span>
+</td>
+</tr>
+<tr id="t1.r10" class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row"><math class="ltx_Math" altimg="m43.png" altimg-height="25px" altimg-valign="-7px" altimg-width="67px" alttext="\operatorname{etr}\left(\mathbf{X}\right)" display="inline"><mrow><mi href="./1.2#E77" title="exponential of trace">etr</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./35.1#t1.r8" title="real symmetric matrix">𝐗</mi><mo>)</mo></mrow></mrow></math></th>
+<td class="ltx_td ltx_nopad_r ltx_align_justify">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p"><math class="ltx_Math" altimg="m20.png" altimg-height="25px" altimg-valign="-7px" altimg-width="93px" alttext="\exp\left(\operatorname{tr}{\mathbf{X}}\right)" display="inline"><mrow><mi href="./4.2#E19" title="exponential function">exp</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./1.2#E62" title="trace of matrix">tr</mi><mo lspace="0.167em">⁡</mo><mi href="./35.1#t1.r8" title="real symmetric matrix">𝐗</mi></mrow><mo>)</mo></mrow></mrow></math>.</span>
+</span>
+</td>
+</tr>
+<tr id="t1.r11" class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row"><math class="ltx_Math" altimg="m22.png" altimg-height="25px" altimg-valign="-7px" altimg-width="34px" alttext="\left|\mathbf{X}\right|" display="inline"><mrow><mo href="./35.1#t1.r11" title="determinant">|</mo><mi href="./35.1#t1.r8" title="real symmetric matrix">𝐗</mi><mo href="./35.1#t1.r11" title="determinant">|</mo></mrow></math></th>
+<td class="ltx_td ltx_nopad_r ltx_align_justify">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p">determinant of <math class="ltx_Math" altimg="m32.png" altimg-height="18px" altimg-valign="-2px" altimg-width="22px" alttext="\mathbf{X}" display="inline"><mi href="./35.1#t1.r8" title="real symmetric matrix">𝐗</mi></math> (except when
+<math class="ltx_Math" altimg="m55.png" altimg-height="17px" altimg-valign="-2px" altimg-width="61px" alttext="m=1" display="inline"><mrow><mi href="./35.1#t1.r3" title="positive integer">m</mi><mo>=</mo><mn>1</mn></mrow></math> where it means either
+determinant or absolute value,
+depending on the context).</span>
+</span>
+</td>
+</tr>
+<tr id="t1.r12" class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row"><math class="ltx_Math" altimg="m69.png" altimg-height="26px" altimg-valign="-8px" altimg-width="59px" alttext="|(\mathbf{X})_{j}|" display="inline"><mrow><mo href="./35.1#t1.r12" stretchy="false" title="principal minor">|</mo><msub><mrow><mo href="./35.1#t1.r12" stretchy="false" title="principal minor">(</mo><mi href="./35.1#t1.r8" title="real symmetric matrix">𝐗</mi><mo href="./35.1#t1.r12" stretchy="false" title="principal minor">)</mo></mrow><mi href="./35.1#t1.r2" title="nonnegative integer">j</mi></msub><mo href="./35.1#t1.r12" stretchy="false" title="principal minor">|</mo></mrow></math></th>
+<td class="ltx_td ltx_nopad_r ltx_align_justify">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p"><math class="ltx_Math" altimg="m53.png" altimg-height="22px" altimg-valign="-6px" altimg-width="14px" alttext="j" display="inline"><mi href="./35.1#t1.r2" title="nonnegative integer">j</mi></math>th principal minor of <math class="ltx_Math" altimg="m32.png" altimg-height="18px" altimg-valign="-2px" altimg-width="22px" alttext="\mathbf{X}" display="inline"><mi href="./35.1#t1.r8" title="real symmetric matrix">𝐗</mi></math>.</span>
+</span>
+</td>
+</tr>
+<tr id="t1.r13" class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row"><math class="ltx_Math" altimg="m62.png" altimg-height="19px" altimg-valign="-8px" altimg-width="38px" alttext="x_{j,k}" display="inline"><msub><mi>x</mi><mrow><mi href="./35.1#t1.r2" title="nonnegative integer">j</mi><mo>,</mo><mi href="./35.1#t1.r2" title="nonnegative integer">k</mi></mrow></msub></math></th>
+<td class="ltx_td ltx_nopad_r ltx_align_justify">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p"><math class="ltx_Math" altimg="m4.png" altimg-height="25px" altimg-valign="-7px" altimg-width="50px" alttext="(j,k)" display="inline"><mrow><mo href="./front/introduction#common.t1.r29" stretchy="false" title="open interval">(</mo><mi href="./35.1#t1.r2" title="nonnegative integer">j</mi><mo href="./front/introduction#common.t1.r29" title="open interval">,</mo><mi href="./35.1#t1.r2" title="nonnegative integer">k</mi><mo href="./front/introduction#common.t1.r29" stretchy="false" title="open interval">)</mo></mrow></math>th element of <math class="ltx_Math" altimg="m32.png" altimg-height="18px" altimg-valign="-2px" altimg-width="22px" alttext="\mathbf{X}" display="inline"><mi href="./35.1#t1.r8" title="real symmetric matrix">𝐗</mi></math>.</span>
+</span>
+</td>
+</tr>
+<tr id="t1.r14" class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row"><math class="ltx_Math" altimg="m42.png" altimg-height="18px" altimg-valign="-2px" altimg-width="34px" alttext="\,\mathrm{d}{\mathbf{X}}" display="inline"><mrow><mo href="./35.1#t1.r14" rspace="0em" title="differential of matrix">d</mo><mi href="./35.1#t1.r8" title="real symmetric matrix">𝐗</mi></mrow></math></th>
+<td class="ltx_td ltx_nopad_r ltx_align_justify">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p"><math class="ltx_Math" altimg="m45.png" altimg-height="29px" altimg-valign="-11px" altimg-width="156px" alttext="\prod_{1\leq j\leq k\leq m}\,\mathrm{d}x_{j,k}" display="inline"><mrow><msub><mo>∏</mo><mrow><mn>1</mn><mo>≤</mo><mi href="./35.1#t1.r2" title="nonnegative integer">j</mi><mo>≤</mo><mi href="./35.1#t1.r2" title="nonnegative integer">k</mi><mo>≤</mo><mi href="./35.1#t1.r3" title="positive integer">m</mi></mrow></msub><msub><mrow><mo href="./1.4#iv" lspace="0.167em" rspace="0em" title="differential of 𝑥">d</mo><mi>x</mi></mrow><mrow><mi href="./35.1#t1.r2" title="nonnegative integer">j</mi><mo>,</mo><mi href="./35.1#t1.r2" title="nonnegative integer">k</mi></mrow></msub></mrow></math>.</span>
+</span>
+</td>
+</tr>
+<tr id="t1.r15" class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row"><math class="ltx_Math" altimg="m63.png" altimg-height="18px" altimg-valign="-2px" altimg-width="22px" alttext="{\boldsymbol{\Omega}}" display="inline"><mi href="./35.1#t1.r15" title="space of positive-definite real symmetric matrices">𝛀</mi></math></th>
+<td class="ltx_td ltx_nopad_r ltx_align_justify">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p">space of positive-definite real
+symmetric matrices.</span>
+</span>
+</td>
+</tr>
+<tr id="t1.r16" class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row"><math class="ltx_Math" altimg="m60.png" altimg-height="21px" altimg-valign="-6px" altimg-width="90px" alttext="t_{1},\dots,t_{m}" display="inline"><mrow><msub><mi href="./35.1#t1.r16" title="eigenvalues">t</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi href="./35.1#t1.r16" title="eigenvalues">t</mi><mi href="./35.1#t1.r3" title="positive integer">m</mi></msub></mrow></math></th>
+<td class="ltx_td ltx_nopad_r ltx_align_justify">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p">eigenvalues of <math class="ltx_Math" altimg="m29.png" altimg-height="18px" altimg-valign="-2px" altimg-width="21px" alttext="\mathbf{T}" display="inline"><mi href="./35.1#t1.r8" title="real symmetric matrix">𝐓</mi></math>.</span>
+</span>
+</td>
+</tr>
+<tr id="t1.r17" class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row"><math class="ltx_Math" altimg="m46.png" altimg-height="25px" altimg-valign="-7px" altimg-width="42px" alttext="\|\mathbf{T}\|" display="inline"><mrow><mo href="./35.1#t1.r17" stretchy="false" title="spectral norm">‖</mo><mi href="./35.1#t1.r8" title="real symmetric matrix">𝐓</mi><mo href="./35.1#t1.r17" stretchy="false" title="spectral norm">‖</mo></mrow></math></th>
+<td class="ltx_td ltx_nopad_r ltx_align_justify">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p">spectral norm of <math class="ltx_Math" altimg="m29.png" altimg-height="18px" altimg-valign="-2px" altimg-width="21px" alttext="\mathbf{T}" display="inline"><mi href="./35.1#t1.r8" title="real symmetric matrix">𝐓</mi></math>.</span>
+</span>
+</td>
+</tr>
+<tr id="t1.r18" class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row"><math class="ltx_Math" altimg="m31.png" altimg-height="19px" altimg-valign="-3px" altimg-width="67px" alttext="\mathbf{X}&gt;\mathbf{T}" display="inline"><mrow><mi href="./35.1#t1.r8" title="real symmetric matrix">𝐗</mi><mo href="./35.1#t1.r18" title="greater-than for matrices">&gt;</mo><mi href="./35.1#t1.r8" title="real symmetric matrix">𝐓</mi></mrow></math></th>
+<td class="ltx_td ltx_nopad_r ltx_align_justify">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p"><math class="ltx_Math" altimg="m30.png" altimg-height="20px" altimg-valign="-4px" altimg-width="64px" alttext="\mathbf{X}-\mathbf{T}" display="inline"><mrow><mi href="./35.1#t1.r8" title="real symmetric matrix">𝐗</mi><mo>−</mo><mi href="./35.1#t1.r8" title="real symmetric matrix">𝐓</mi></mrow></math>
+is positive definite.
+Similarly, <math class="ltx_Math" altimg="m28.png" altimg-height="19px" altimg-valign="-3px" altimg-width="67px" alttext="\mathbf{T}&lt;\mathbf{X}" display="inline"><mrow><mi href="./35.1#t1.r8" title="real symmetric matrix">𝐓</mi><mo href="./35.1#t1.r18" title="less-than for matrices">&lt;</mo><mi href="./35.1#t1.r8" title="real symmetric matrix">𝐗</mi></mrow></math> is equivalent.</span>
+</span>
+</td>
+</tr>
+<tr id="t1.r19" class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row"><math class="ltx_Math" altimg="m34.png" altimg-height="18px" altimg-valign="-2px" altimg-width="19px" alttext="\mathbf{Z}" display="inline"><mi href="./35.1#t1.r19" title="complex symmetric matrix">𝐙</mi></math></th>
+<td class="ltx_td ltx_nopad_r ltx_align_justify">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p">complex symmetric matrix.</span>
+</span>
+</td>
+</tr>
+<tr id="t1.r20" class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row"><math class="ltx_Math" altimg="m51.png" altimg-height="25px" altimg-valign="-7px" altimg-width="51px" alttext="f(\mathbf{X})" display="inline"><mrow><mi href="./35.1#t1.r20" title="complex function of matrix">f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./35.1#t1.r8" title="real symmetric matrix">𝐗</mi><mo stretchy="false">)</mo></mrow></mrow></math></th>
+<td class="ltx_td ltx_nopad_r ltx_align_justify">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p">complex-valued function with
+<math class="ltx_Math" altimg="m33.png" altimg-height="19px" altimg-valign="-3px" altimg-width="65px" alttext="\mathbf{X}\in{\boldsymbol{\Omega}}" display="inline"><mrow><mi href="./35.1#t1.r8" title="real symmetric matrix">𝐗</mi><mo href="./front/introduction#common.t1.r10" title="element of">∈</mo><mi href="./35.1#t1.r15" title="space of positive-definite real symmetric matrices">𝛀</mi></mrow></math>.</span>
+</span>
+</td>
+</tr>
+<tr id="t1.r21" class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row"><math class="ltx_Math" altimg="m25.png" altimg-height="25px" altimg-valign="-7px" altimg-width="57px" alttext="\mathbf{O}(m)" display="inline"><mrow><mi href="./35.1#t1.r21" title="space of orthogonal matrices">𝐎</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./35.1#t1.r3" title="positive integer">m</mi><mo stretchy="false">)</mo></mrow></mrow></math></th>
+<td class="ltx_td ltx_nopad_r ltx_align_justify">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p">space of orthogonal matrices.</span>
+</span>
+</td>
+</tr>
+<tr id="t1.r22" class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row"><math class="ltx_Math" altimg="m23.png" altimg-height="18px" altimg-valign="-2px" altimg-width="23px" alttext="\mathbf{H}" display="inline"><mi href="./35.1#t1.r22" title="orthogonal matrix">𝐇</mi></math></th>
+<td class="ltx_td ltx_nopad_r ltx_align_justify">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p">orthogonal matrix.</span>
+</span>
+</td>
+</tr>
+<tr id="t1.r23" class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row"><math class="ltx_Math" altimg="m41.png" altimg-height="18px" altimg-valign="-2px" altimg-width="35px" alttext="\mathrm{d}{\mathbf{H}}" display="inline"><mrow><mi href="./35.1#t1.r23" mathvariant="normal" title="normalized Haar measure">d</mi><mo>⁢</mo><mi href="./35.1#t1.r22" title="orthogonal matrix">𝐇</mi></mrow></math></th>
+<td class="ltx_td ltx_nopad_r ltx_align_justify">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p">normalized Haar measure on <math class="ltx_Math" altimg="m25.png" altimg-height="25px" altimg-valign="-7px" altimg-width="57px" alttext="\mathbf{O}(m)" display="inline"><mrow><mi href="./35.1#t1.r21" title="space of orthogonal matrices">𝐎</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./35.1#t1.r3" title="positive integer">m</mi><mo stretchy="false">)</mo></mrow></mrow></math>.</span>
+</span>
+</td>
+</tr>
+<tr id="t1.r24" class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row"><math class="ltx_Math" altimg="m11.png" altimg-height="25px" altimg-valign="-7px" altimg-width="65px" alttext="Z_{\kappa}\left(\mathbf{T}\right)" display="inline"><mrow><msub><mi href="./35.4#i.p3" title="zonal polynomial">Z</mi><mi href="./35.4#i.p1" title="vector of nonnegative integers">κ</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./35.1#t1.r8" title="real symmetric matrix">𝐓</mi><mo>)</mo></mrow></mrow></math></th>
+<td class="ltx_td ltx_nopad_r ltx_align_justify">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p">zonal polynomials.</span>
+</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="p4" class="ltx_para">
+<p class="ltx_p">The main functions treated in this chapter are the multivariate gamma and beta
+functions, respectively <math class="ltx_Math" altimg="m12.png" altimg-height="25px" altimg-valign="-7px" altimg-width="64px" alttext="\Gamma_{m}\left(a\right)" display="inline"><mrow><msub><mi href="./35.3#i" mathvariant="normal" title="multivariate gamma function">Γ</mi><mi href="./35.1#t1.r3" title="positive integer">m</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./35.1#t1.r1" title="complex variable">a</mi><mo>)</mo></mrow></mrow></math> and <math class="ltx_Math" altimg="m39.png" altimg-height="25px" altimg-valign="-7px" altimg-width="83px" alttext="\mathrm{B}_{m}\left(a,b\right)" display="inline"><mrow><msub><mi href="./35.3#E3" mathvariant="normal" title="multivariate beta function">B</mi><mi href="./35.1#t1.r3" title="positive integer">m</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./35.1#t1.r1" title="complex variable">a</mi><mo>,</mo><mi href="./35.1#t1.r1" title="complex variable">b</mi><mo>)</mo></mrow></mrow></math>, and
+the special functions of matrix argument: Bessel (of the first kind)
+<math class="ltx_Math" altimg="m7.png" altimg-height="25px" altimg-valign="-7px" altimg-width="66px" alttext="A_{\nu}\left(\mathbf{T}\right)" display="inline"><mrow><msub><mi href="./35.5#i" title="Bessel function (1st kind) of matrix">A</mi><mi>ν</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./35.1#t1.r8" title="real symmetric matrix">𝐓</mi><mo>)</mo></mrow></mrow></math> and (of the second kind)
+<math class="ltx_Math" altimg="m8.png" altimg-height="25px" altimg-valign="-7px" altimg-width="67px" alttext="B_{\nu}\left(\mathbf{T}\right)" display="inline"><mrow><msub><mi href="./35.5#E3" title="Bessel function (2nd kind) of matrix">B</mi><mi>ν</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./35.1#t1.r8" title="real symmetric matrix">𝐓</mi><mo>)</mo></mrow></mrow></math>; confluent hypergeometric (of the first kind)
+<math class="ltx_Math" altimg="m65.png" altimg-height="25px" altimg-valign="-7px" altimg-width="111px" alttext="{{}_{1}F_{1}}\left(a;b;\mathbf{T}\right)" display="inline"><mrow><mmultiscripts><mi href="./35.8#E1" title="generalized hypergeometric function of matrix">F</mi><mn>1</mn><mrow></mrow><mprescripts></mprescripts><mn>1</mn><mrow></mrow></mmultiscripts><mo>⁡</mo><mrow><mo>(</mo><mi href="./35.1#t1.r1" title="complex variable">a</mi><mo>;</mo><mi href="./35.1#t1.r1" title="complex variable">b</mi><mo>;</mo><mi href="./35.1#t1.r8" title="real symmetric matrix">𝐓</mi><mo>)</mo></mrow></mrow></math> or
+<math class="ltx_Math" altimg="m1.png" altimg-height="50px" altimg-valign="-16px" altimg-width="125px" alttext="\displaystyle{{}_{1}F_{1}}\left({a\atop b};\mathbf{T}\right)" display="inline"><mrow><mmultiscripts><mi href="./35.8#E1" title="generalized hypergeometric function of matrix">F</mi><mn>1</mn><mrow></mrow><mprescripts></mprescripts><mn>1</mn><mrow></mrow></mmultiscripts><mo>⁡</mo><mrow><mo>(</mo><mstyle displaystyle="true"><mfrac linethickness="0pt"><mi href="./35.1#t1.r1" title="complex variable">a</mi><mi href="./35.1#t1.r1" title="complex variable">b</mi></mfrac></mstyle><mo>;</mo><mi href="./35.1#t1.r8" title="real symmetric matrix">𝐓</mi><mo>)</mo></mrow></mrow></math> and (of the second kind)
+<math class="ltx_Math" altimg="m17.png" altimg-height="25px" altimg-valign="-7px" altimg-width="95px" alttext="\Psi\left(a;b;\mathbf{T}\right)" display="inline"><mrow><mi href="./35.6#E2" mathvariant="normal" title="confluent hypergeometric function (2nd kind) of matrix">Ψ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./35.1#t1.r1" title="complex variable">a</mi><mo>;</mo><mi href="./35.1#t1.r1" title="complex variable">b</mi><mo>;</mo><mi href="./35.1#t1.r8" title="real symmetric matrix">𝐓</mi><mo>)</mo></mrow></mrow></math>; Gaussian hypergeometric
+<math class="ltx_Math" altimg="m66.png" altimg-height="25px" altimg-valign="-7px" altimg-width="150px" alttext="{{}_{2}F_{1}}\left(a_{1},a_{2};b;\mathbf{T}\right)" display="inline"><mrow><mmultiscripts><mi href="./35.8#E1" title="generalized hypergeometric function of matrix">F</mi><mn>1</mn><mrow></mrow><mprescripts></mprescripts><mn>2</mn><mrow></mrow></mmultiscripts><mo>⁡</mo><mrow><mo>(</mo><mrow><msub><mi href="./35.1#t1.r1" title="complex variable">a</mi><mn>1</mn></msub><mo>,</mo><msub><mi href="./35.1#t1.r1" title="complex variable">a</mi><mn>2</mn></msub></mrow><mo>;</mo><mi href="./35.1#t1.r1" title="complex variable">b</mi><mo>;</mo><mi href="./35.1#t1.r8" title="real symmetric matrix">𝐓</mi><mo>)</mo></mrow></mrow></math> or
+<math class="ltx_Math" altimg="m2.png" altimg-height="50px" altimg-valign="-16px" altimg-width="164px" alttext="\displaystyle{{}_{2}F_{1}}\left({a_{1},a_{2}\atop b};\mathbf{T}\right)" display="inline"><mrow><mmultiscripts><mi href="./35.8#E1" title="generalized hypergeometric function of matrix">F</mi><mn>1</mn><mrow></mrow><mprescripts></mprescripts><mn>2</mn><mrow></mrow></mmultiscripts><mo>⁡</mo><mrow><mo>(</mo><mstyle displaystyle="true"><mfrac linethickness="0pt"><mrow><msub><mi href="./35.1#t1.r1" title="complex variable">a</mi><mn>1</mn></msub><mo>,</mo><msub><mi href="./35.1#t1.r1" title="complex variable">a</mi><mn>2</mn></msub></mrow><mi href="./35.1#t1.r1" title="complex variable">b</mi></mfrac></mstyle><mo>;</mo><mi href="./35.1#t1.r8" title="real symmetric matrix">𝐓</mi><mo>)</mo></mrow></mrow></math>; generalized
+hypergeometric <math class="ltx_Math" altimg="m67.png" altimg-height="26px" altimg-valign="-8px" altimg-width="260px" alttext="{{}_{p}F_{q}}\left(a_{1},\dots,a_{p};b_{1},\dots,b_{q};\mathbf{T}\right)" display="inline"><mrow><mmultiscripts><mi href="./35.8#E1" title="generalized hypergeometric function of matrix">F</mi><mi href="./35.1#t1.r2" title="nonnegative integer">q</mi><mrow></mrow><mprescripts></mprescripts><mi href="./35.1#t1.r2" title="nonnegative integer">p</mi><mrow></mrow></mmultiscripts><mo>⁡</mo><mrow><mo>(</mo><mrow><msub><mi href="./35.1#t1.r1" title="complex variable">a</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi href="./35.1#t1.r1" title="complex variable">a</mi><mi href="./35.1#t1.r2" title="nonnegative integer">p</mi></msub></mrow><mo>;</mo><mrow><msub><mi href="./35.1#t1.r1" title="complex variable">b</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi href="./35.1#t1.r1" title="complex variable">b</mi><mi href="./35.1#t1.r2" title="nonnegative integer">q</mi></msub></mrow><mo>;</mo><mi href="./35.1#t1.r8" title="real symmetric matrix">𝐓</mi><mo>)</mo></mrow></mrow></math> or
+<math class="ltx_Math" altimg="m3.png" altimg-height="63px" altimg-valign="-22px" altimg-width="207px" alttext="\displaystyle{{}_{p}F_{q}}\left({a_{1},\dots,a_{p}\atop b_{1},\dots,b_{q}};%
+\mathbf{T}\right)" display="inline"><mrow><mmultiscripts><mi href="./35.8#E1" title="generalized hypergeometric function of matrix">F</mi><mi href="./35.1#t1.r2" title="nonnegative integer">q</mi><mrow></mrow><mprescripts></mprescripts><mi href="./35.1#t1.r2" title="nonnegative integer">p</mi><mrow></mrow></mmultiscripts><mo>⁡</mo><mrow><mo>(</mo><mstyle displaystyle="true"><mfrac linethickness="0pt"><mrow><msub><mi href="./35.1#t1.r1" title="complex variable">a</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi href="./35.1#t1.r1" title="complex variable">a</mi><mi href="./35.1#t1.r2" title="nonnegative integer">p</mi></msub></mrow><mrow><msub><mi href="./35.1#t1.r1" title="complex variable">b</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi href="./35.1#t1.r1" title="complex variable">b</mi><mi href="./35.1#t1.r2" title="nonnegative integer">q</mi></msub></mrow></mfrac></mstyle><mo>;</mo><mi href="./35.1#t1.r8" title="real symmetric matrix">𝐓</mi><mo>)</mo></mrow></mrow></math>.</p>
+</div>
+<div id="p5" class="ltx_para">
+<p class="ltx_p">An alternative notation for the multivariate gamma function is
+<math class="ltx_Math" altimg="m16.png" altimg-height="29px" altimg-valign="-9px" altimg-width="261px" alttext="\Pi_{m}(a)=\Gamma_{m}\left(a+\tfrac{1}{2}(m+1)\right)" display="inline"><mrow><mrow><msub><mi mathvariant="normal">Π</mi><mi href="./35.1#t1.r3" title="positive integer">m</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./35.1#t1.r1" title="complex variable">a</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msub><mi href="./35.3#i" mathvariant="normal" title="multivariate gamma function">Γ</mi><mi href="./35.1#t1.r3" title="positive integer">m</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./35.1#t1.r1" title="complex variable">a</mi><mo>+</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi href="./35.1#t1.r3" title="positive integer">m</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>)</mo></mrow></mrow></mrow></math>
+(<cite class="ltx_cite ltx_citemacro_citet">Herz (<a href="./bib/H#bib1074" title="Bessel functions of matrix argument" class="ltx_ref">1955</a>, p. 480)</cite>). Related notations for the
+Bessel functions are
+<math class="ltx_Math" altimg="m36.png" altimg-height="30px" altimg-valign="-12px" altimg-width="295px" alttext="\mathcal{J}_{\nu+\frac{1}{2}(m+1)}(\mathbf{T})=A_{\nu}\left(\mathbf{T}\right)/%
+A_{\nu}\left(\boldsymbol{{0}}\right)" display="inline"><mrow><mrow><msub><mi class="ltx_font_mathcaligraphic">𝒥</mi><mrow><mi>ν</mi><mo>+</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi href="./35.1#t1.r3" title="positive integer">m</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./35.1#t1.r8" title="real symmetric matrix">𝐓</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><msub><mi href="./35.5#i" title="Bessel function (1st kind) of matrix">A</mi><mi>ν</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./35.1#t1.r8" title="real symmetric matrix">𝐓</mi><mo>)</mo></mrow></mrow><mo>/</mo><mrow><msub><mi href="./35.5#i" title="Bessel function (1st kind) of matrix">A</mi><mi>ν</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./35.1#t1.r5" title="matrix of zeros">𝟎</mi><mo>)</mo></mrow></mrow></mrow></mrow></math>
+(<cite class="ltx_cite ltx_citemacro_citet">Faraut and Korányi (<a href="./bib/F#bib775" title="Analysis on Symmetric Cones" class="ltx_ref">1994</a>, pp. 320–329)</cite>),
+<math class="ltx_Math" altimg="m10.png" altimg-height="26px" altimg-valign="-7px" altimg-width="335px" alttext="K_{m}(0,\dots,0,\nu\mathpunct{|}\mathbf{S},\mathbf{T})=\left|\mathbf{T}\right|%
+^{\nu}B_{\nu}\left(\mathbf{S}\mathbf{T}\right)" display="inline"><mrow><mrow><msub><mi>K</mi><mi href="./35.1#t1.r3" title="positive integer">m</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mn>0</mn><mo>,</mo><mi>ν</mi><mo fence="false" lspace="0em" rspace="0.167em" separator="true">|</mo><mi href="./35.1#t1.r8" title="real symmetric matrix">𝐒</mi><mo>,</mo><mi href="./35.1#t1.r8" title="real symmetric matrix">𝐓</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msup><mrow><mo href="./35.1#t1.r11" title="determinant">|</mo><mi href="./35.1#t1.r8" title="real symmetric matrix">𝐓</mi><mo href="./35.1#t1.r11" title="determinant">|</mo></mrow><mi>ν</mi></msup><mo>⁢</mo><mrow><msub><mi href="./35.5#E3" title="Bessel function (2nd kind) of matrix">B</mi><mi>ν</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./35.1#t1.r8" title="real symmetric matrix">𝐒</mi><mo>⁢</mo><mi href="./35.1#t1.r8" title="real symmetric matrix">𝐓</mi></mrow><mo>)</mo></mrow></mrow></mrow></mrow></math>
+(<cite class="ltx_cite ltx_citemacro_citet">Terras (<a href="./bib/T#bib2238" title="Harmonic Analysis on Symmetric Spaces and Applications. II" class="ltx_ref">1988</a>, pp. 49–64)</cite>), and
+<math class="ltx_Math" altimg="m38.png" altimg-height="26px" altimg-valign="-7px" altimg-width="208px" alttext="\mathcal{K}_{\nu}(\mathbf{T})=\left|\mathbf{T}\right|^{\nu}B_{\nu}\left(%
+\mathbf{S}\mathbf{T}\right)" display="inline"><mrow><mrow><msub><mi class="ltx_font_mathcaligraphic">𝒦</mi><mi>ν</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./35.1#t1.r8" title="real symmetric matrix">𝐓</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msup><mrow><mo href="./35.1#t1.r11" title="determinant">|</mo><mi href="./35.1#t1.r8" title="real symmetric matrix">𝐓</mi><mo href="./35.1#t1.r11" title="determinant">|</mo></mrow><mi>ν</mi></msup><mo>⁢</mo><mrow><msub><mi href="./35.5#E3" title="Bessel function (2nd kind) of matrix">B</mi><mi>ν</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./35.1#t1.r8" title="real symmetric matrix">𝐒</mi><mo>⁢</mo><mi href="./35.1#t1.r8" title="real symmetric matrix">𝐓</mi></mrow><mo>)</mo></mrow></mrow></mrow></mrow></math>
+(<cite class="ltx_cite ltx_citemacro_citet">Faraut and Korányi (<a href="./bib/F#bib775" title="Analysis on Symmetric Cones" class="ltx_ref">1994</a>, pp. 357–358)</cite>).</p>
+</div>
+</section>
+</div>
+<div class="ltx_page_footer">
+<div class="ltx_siblings">
+<a href="./35" title="" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">35 </span>Functions of Matrix Argument</span></a><a href="./35.2" title="In Properties ‣ Chapter 35 Functions of Matrix Argument" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">35.2 </span>Laplace Transform</span></a>
+</div>
+<div class="ltx_footer_links ltx_centering">
+<a href="./about/notices">© 2010–2026 NIST</a> / <a href="./about/notices#S2">Disclaimer</a> / <a href="/cdn-cgi/l/email-protection#783c34353e551e1d1d1c1a191b133816110b0c561f170e">Feedback</a>;
+ Version 1.2.7;
+Release date 2026-06-15.</div>
+<span id="pagesettings"></span>
+<div class="ltx_nist_logo"><a href="http://www.nist.gov/"><img src="./style/nistidc.png" width="500" alt="NIST"></a></div>
+<div class="ltx_nist_links ltx_align_right">
+<a href="https://www.nist.gov/privacy-policy">Site Privacy</a> <a href="https://www.nist.gov/oism/accessibility">Accessibility</a> <a href="https://www.nist.gov/privacy">Privacy Program</a> <a href="https://www.nist.gov/oism/copyrights">Copyrights</a> <a href="https://www.commerce.gov/vulnerability-disclosure-policy">Vulnerability Disclosure</a> <a href="https://www.nist.gov/no-fear-act-policy">No Fear Act Policy</a> <a href="https://www.nist.gov/foia">FOIA</a> <a href="https://www.nist.gov/environmental-policy-statement">Environmental Policy</a> <a href="https://www.nist.gov/summary-report-scientific-integrity">Scientific Integrity</a> <a href="https://www.nist.gov/nist-information-quality-standards">Information Quality Standards</a> <a href="https://www.commerce.gov/">Commerce.gov</a> <a href="http://www.science.gov/">Science.gov</a> <a href="http://www.usa.gov/">USA.gov</a>
+</div>
+</div>
+</div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a30dbf122aad9cb4',t:'MTc4NzY5MzkzNA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"9ef5b487afff42a68917b2d63593a474"}' crossorigin="anonymous"></script>
+</body>
+</html>

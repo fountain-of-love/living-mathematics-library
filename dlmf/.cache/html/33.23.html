@@ -1,0 +1,410 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>DLMF: §33.23 Methods of Computation ‣ Computation ‣ Chapter 33 Coulomb Functions</title>
+<link rel="shortcut icon" href="./style/DLMF-16.png" type="image/png">
+<script type="text/javascript"><!--
+	var PATH="DLMF:/33.23";
+	var ROOT="./";
+      //--></script>
+<script type="text/javascript" src="./style/jquery.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/jquery.leaveNotice.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/DLMF.js"><!-- non-empty so ie6 will accept it --></script>
+<script async="" type="text/javascript" id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC&amp;subagency=NIST&amp;pua=UA-37115410-44&amp;yt=true&amp;exts=ppsx,pps,f90,sch,rtf,wrl,txz,m1v,xlsm,msi,xsd,f,tif,eps,mpg,xml,pl,xlt,c"><!-- non-empty so ie6 will accept it --></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-BZB64W4M0L"></script><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-BZB64W4M0L');
+      </script>
+<link rel="stylesheet" type="text/css" href="./style/LaTeXML.css">
+<link rel="stylesheet" type="text/css" href="./style/DLMF.css">
+<link rel="stylesheet" type="text/css" href="./style/print.css" media="print">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="top" href="./" title="DLMF">
+<link rel="copyright" href="./about/notices" title="Copyright">
+<link rel="search" href="./search/search" title="Search">
+<link rel="help" class="ltx_help" href="./help/" title="Help">
+<link rel="up" href="./33#PT5" title="Computation ‣ Chapter 33 Coulomb Functions">
+<link rel="up up" href="./33" title="Chapter 33 Coulomb Functions">
+<link rel="start" href="./" title="">
+<link rel="prev" href="./33.22" title="§33.22 Particle Scattering and Atomic and Molecular Spectra ‣ Physical Applications ‣ Chapter 33 Coulomb Functions">
+<link rel="next" href="./33.24" title="§33.24 Tables ‣ Computation ‣ Chapter 33 Coulomb Functions">
+<link rel="section" href="./33.1" title="§33.1 Special Notation ‣ Notation ‣ Chapter 33 Coulomb Functions">
+<link rel="section" href="./33.2" title="§33.2 Definitions and Basic Properties ‣ Variables 𝜌,𝜂 ‣ Chapter 33 Coulomb Functions">
+<link rel="section" href="./33.3" title="§33.3 Graphics ‣ Variables 𝜌,𝜂 ‣ Chapter 33 Coulomb Functions">
+<link rel="section" href="./33.4" title="§33.4 Recurrence Relations and Derivatives ‣ Variables 𝜌,𝜂 ‣ Chapter 33 Coulomb Functions">
+<link rel="section" href="./33.5" title="§33.5 Limiting Forms for Small 𝜌, Small |𝜂|, or Large ℓ ‣ Variables 𝜌,𝜂 ‣ Chapter 33 Coulomb Functions">
+<link rel="section" href="./33.6" title="§33.6 Power-Series Expansions in 𝜌 ‣ Variables 𝜌,𝜂 ‣ Chapter 33 Coulomb Functions">
+<link rel="section" href="./33.7" title="§33.7 Integral Representations ‣ Variables 𝜌,𝜂 ‣ Chapter 33 Coulomb Functions">
+<link rel="section" href="./33.8" title="§33.8 Continued Fractions ‣ Variables 𝜌,𝜂 ‣ Chapter 33 Coulomb Functions">
+<link rel="section" href="./33.9" title="§33.9 Expansions in Series of Bessel Functions ‣ Variables 𝜌,𝜂 ‣ Chapter 33 Coulomb Functions">
+<link rel="section" href="./33.10" title="§33.10 Limiting Forms for Large 𝜌 or Large |𝜂| ‣ Variables 𝜌,𝜂 ‣ Chapter 33 Coulomb Functions">
+<link rel="section" href="./33.11" title="§33.11 Asymptotic Expansions for Large 𝜌 ‣ Variables 𝜌,𝜂 ‣ Chapter 33 Coulomb Functions">
+<link rel="section" href="./33.12" title="§33.12 Asymptotic Expansions for Large 𝜂 ‣ Variables 𝜌,𝜂 ‣ Chapter 33 Coulomb Functions">
+<link rel="section" href="./33.13" title="§33.13 Complex Variable and Parameters ‣ Variables 𝜌,𝜂 ‣ Chapter 33 Coulomb Functions">
+<link rel="section" href="./33.14" title="§33.14 Definitions and Basic Properties ‣ Variables 𝑟,ϵ ‣ Chapter 33 Coulomb Functions">
+<link rel="section" href="./33.15" title="§33.15 Graphics ‣ Variables 𝑟,ϵ ‣ Chapter 33 Coulomb Functions">
+<link rel="section" href="./33.16" title="§33.16 Connection Formulas ‣ Variables 𝑟,ϵ ‣ Chapter 33 Coulomb Functions">
+<link rel="section" href="./33.17" title="§33.17 Recurrence Relations and Derivatives ‣ Variables 𝑟,ϵ ‣ Chapter 33 Coulomb Functions">
+<link rel="section" href="./33.18" title="§33.18 Limiting Forms for Large ℓ ‣ Variables 𝑟,ϵ ‣ Chapter 33 Coulomb Functions">
+<link rel="section" href="./33.19" title="§33.19 Power-Series Expansions in 𝑟 ‣ Variables 𝑟,ϵ ‣ Chapter 33 Coulomb Functions">
+<link rel="section" href="./33.20" title="§33.20 Expansions for Small |ϵ| ‣ Variables 𝑟,ϵ ‣ Chapter 33 Coulomb Functions">
+<link rel="section" href="./33.21" title="§33.21 Asymptotic Approximations for Large |𝑟| ‣ Variables 𝑟,ϵ ‣ Chapter 33 Coulomb Functions">
+<link rel="section" href="./33.22" title="§33.22 Particle Scattering and Atomic and Molecular Spectra ‣ Physical Applications ‣ Chapter 33 Coulomb Functions">
+<link rel="section" href="./33.24" title="§33.24 Tables ‣ Computation ‣ Chapter 33 Coulomb Functions">
+<link rel="section" href="./33.25" title="§33.25 Approximations ‣ Computation ‣ Chapter 33 Coulomb Functions">
+<link rel="section" href="./33.26" title="§33.26 Software ‣ Computation ‣ Chapter 33 Coulomb Functions">
+<link rel="document" href="./front/foreword" title="Foreword">
+<link rel="document" href="./front/preface" title="Preface">
+<link rel="document" href="./front/introduction" title="Mathematical Introduction">
+<link rel="chapter" href="./1" title="Chapter 1 Algebraic and Analytic Methods">
+<link rel="chapter" href="./2" title="Chapter 2 Asymptotic Approximations">
+<link rel="chapter" href="./3" title="Chapter 3 Numerical Methods">
+<link rel="chapter" href="./4" title="Chapter 4 Elementary Functions">
+<link rel="chapter" href="./5" title="Chapter 5 Gamma Function">
+<link rel="chapter" href="./6" title="Chapter 6 Exponential, Logarithmic, Sine, and Cosine Integrals">
+<link rel="chapter" href="./7" title="Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="chapter" href="./8" title="Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="chapter" href="./9" title="Chapter 9 Airy and Related Functions">
+<link rel="chapter" href="./10" title="Chapter 10 Bessel Functions">
+<link rel="chapter" href="./11" title="Chapter 11 Struve and Related Functions">
+<link rel="chapter" href="./12" title="Chapter 12 Parabolic Cylinder Functions">
+<link rel="chapter" href="./13" title="Chapter 13 Confluent Hypergeometric Functions">
+<link rel="chapter" href="./14" title="Chapter 14 Legendre and Related Functions">
+<link rel="chapter" href="./15" title="Chapter 15 Hypergeometric Function">
+<link rel="chapter" href="./16" title="Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="chapter" href="./17" title="Chapter 17 𝑞-Hypergeometric and Related Functions">
+<link rel="chapter" href="./18" title="Chapter 18 Orthogonal Polynomials">
+<link rel="chapter" href="./19" title="Chapter 19 Elliptic Integrals">
+<link rel="chapter" href="./20" title="Chapter 20 Theta Functions">
+<link rel="chapter" href="./21" title="Chapter 21 Multidimensional Theta Functions">
+<link rel="chapter" href="./22" title="Chapter 22 Jacobian Elliptic Functions">
+<link rel="chapter" href="./23" title="Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="chapter" href="./24" title="Chapter 24 Bernoulli and Euler Polynomials">
+<link rel="chapter" href="./25" title="Chapter 25 Zeta and Related Functions">
+<link rel="chapter" href="./26" title="Chapter 26 Combinatorial Analysis">
+<link rel="chapter" href="./27" title="Chapter 27 Functions of Number Theory">
+<link rel="chapter" href="./28" title="Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="chapter" href="./29" title="Chapter 29 Lamé Functions">
+<link rel="chapter" href="./30" title="Chapter 30 Spheroidal Wave Functions">
+<link rel="chapter" href="./31" title="Chapter 31 Heun Functions">
+<link rel="chapter" href="./32" title="Chapter 32 Painlevé Transcendents">
+<link rel="chapter" href="./33" title="Chapter 33 Coulomb Functions">
+<link rel="chapter" href="./34" title="Chapter 34 3⁢𝑗,6⁢𝑗,9⁢𝑗 Symbols">
+<link rel="chapter" href="./35" title="Chapter 35 Functions of Matrix Argument">
+<link rel="chapter" href="./36" title="Chapter 36 Integrals with Coalescing Saddles">
+<link rel="bibliography" href="./bib/" title="Bibliography">
+<link rel="index" href="./idx/" title="Index">
+<link rel="glossary" href="./not/" title="Notations">
+<link rel="document" href="./lof/" title="List of Figures">
+<link rel="document" href="./lot/" title="List of Tables">
+<link rel="document" href="./software/" title="Software Index">
+<link rel="document" href="./errata/" title="Errata">
+<link rel="document" href="./help/" title="Need Help?">
+<link rel="document" href="./search/" title="Advanced Search">
+<link rel="document" href="./about/" title="About the Project">
+<meta name="keywords" lang="en" content="Coulomb functions: variables , Coulomb functions: variables , Coulomb functions: variables , Coulomb phase shift, WKBJ approximations, computation">
+</head>
+<body class="color_default textfont_default titlefont_default fontsize_default navbar_default">
+<div class="ltx_page_navbar">
+<div class="ltx_page_navlogo"><a href="./" title="Digital Library of Mathematical Functions"><span>DLMF</span></a></div>
+<div class="ltx_page_navitems">
+<form method="get" action="./search/search">
+<ul>
+<li><a href="./idx/">Index</a></li>
+<li><a href="./not/">Notations</a></li>
+<li><small><input type="text" name="q" value="" size="6" class="ltx_page_navitem_search"><button type="submit">Search</button></small></li>
+<li><a href="./help/" class="ltx_help">Help?</a></li>
+<li><a href="./help/cite">Citing</a></li>
+<li><a href="./help/customize" class="ltx_customize">Customize</a></li>
+<li id="showinfo"><a href="" onclick="showInfo(); return false;" title="Show Annotations">Annotate</a></li>
+<li id="hideinfo"><a href="" onclick="hideInfo(); return false;">UnAnnotate</a></li>
+</ul>
+</form>
+</div>
+<div class="ltx_page_navsponsors">
+<div><a href="./about/" class="ltx_page_navabout">About the Project</a></div>
+</div>
+</div>
+<div class="ltx_page_main">
+<div class="ltx_page_header">
+<a href="./33" title="" class="ltx_ref" rel="up up"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">33 </span>Coulomb Functions</span></a><a href="./33#PT5" title="In Chapter 33 Coulomb Functions" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title">Computation</span></a><a href="./33.22" title="In Physical Applications ‣ Chapter 33 Coulomb Functions" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">33.22 </span>Particle Scattering and Atomic and Molecular Spectra</span></a><a href="./33.24" title="In Computation ‣ Chapter 33 Coulomb Functions" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">33.24 </span>Tables</span></a>
+</div>
+<div class="ltx_page_content">
+<section class="ltx_section ltx_authors_multiline ltx_leqno">
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">§33.23 </span>Methods of Computation</h1>
+<div id="info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=Coulomb%20functions%3A%20variables%20r%2C%CF%B5">Coulomb functions: variables <math class="ltx_Math" altimg="m21.png" altimg-height="17px" altimg-valign="-6px" altimg-width="31px" alttext="r,\epsilon" display="inline"><mrow><mi href="./33.1#p1.t1.r2" title="real variable">r</mi><mo>,</mo><mi href="./33.1#p1.t1.r4" title="real parameter">ϵ</mi></mrow></math></a>, <a class="ltx_keyword" href="./search/search?q=Coulomb%20functions%3A%20variables%20%CF%81%2C%CE%B7">Coulomb functions: variables <math class="ltx_Math" altimg="m17.png" altimg-height="17px" altimg-valign="-6px" altimg-width="35px" alttext="\rho,\eta" display="inline"><mrow><mi href="./33.1#p1.t1.r3" title="nonnegative real variable">ρ</mi><mo>,</mo><mi href="./33.1#p1.t1.r4" title="real parameter">η</mi></mrow></math></a>, <a class="ltx_keyword" href="./search/search?q=Coulomb%20phase%20shift">Coulomb phase shift</a>, <a class="ltx_keyword" href="./search/search?q=computation">computation</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./33.23" title="" class="ltx_ref">http://dlmf.nist.gov/33.23</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./33#info" title="Chapter 33 Coulomb Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.33</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<h6>Contents</h6>
+<ol class="ltx_toclist ltx_toclist_section">
+<li class="ltx_tocentry"><a href="#i"><span class="ltx_tag ltx_tag_subsection">§33.23(i) </span>Methods for the Confluent Hypergeometric Functions</a></li>
+<li class="ltx_tocentry"><a href="#ii"><span class="ltx_tag ltx_tag_subsection">§33.23(ii) </span>Series Solutions</a></li>
+<li class="ltx_tocentry"><a href="#iii"><span class="ltx_tag ltx_tag_subsection">§33.23(iii) </span>Integration of Defining Differential Equations</a></li>
+<li class="ltx_tocentry"><a href="#iv"><span class="ltx_tag ltx_tag_subsection">§33.23(iv) </span>Recurrence Relations</a></li>
+<li class="ltx_tocentry"><a href="#v"><span class="ltx_tag ltx_tag_subsection">§33.23(v) </span>Continued Fractions</a></li>
+<li class="ltx_tocentry"><a href="#vi"><span class="ltx_tag ltx_tag_subsection">§33.23(vi) </span>Other Numerical Methods</a></li>
+<li class="ltx_tocentry"><a href="#vii"><span class="ltx_tag ltx_tag_subsection">§33.23(vii) </span>WKBJ Approximations</a></li>
+</ol>
+<section id="i" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§33.23(i) </span>Methods for the Confluent Hypergeometric Functions</h2>
+<div id="i.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Permalink:</dt>
+<dd><a href="./33.23.i" title="" class="ltx_ref">http://dlmf.nist.gov/33.23.i</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./33.23#info" title="§33.23 Methods of Computation ‣ Computation ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§33.23</span></a> and
+<a href="./33#info" title="Chapter 33 Coulomb Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.33</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="i.p1" class="ltx_para">
+<p class="ltx_p">The methods used for computing the Coulomb functions described below are
+similar to those in §<a href="./13.29" title="§13.29 Methods of Computation ‣ Computation ‣ Chapter 13 Confluent Hypergeometric Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">13.29</span></a>.</p>
+</div>
+</section>
+<section id="ii" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§33.23(ii) </span>Series Solutions</h2>
+<div id="ii.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Permalink:</dt>
+<dd><a href="./33.23.ii" title="" class="ltx_ref">http://dlmf.nist.gov/33.23.ii</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./33.23#info" title="§33.23 Methods of Computation ‣ Computation ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§33.23</span></a> and
+<a href="./33#info" title="Chapter 33 Coulomb Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.33</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="ii.p1" class="ltx_para">
+<p class="ltx_p">The power-series expansions of §§<a href="./33.6" title="§33.6 Power-Series Expansions in 𝜌 ‣ Variables 𝜌,𝜂 ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">33.6</span></a> and <a href="./33.19" title="§33.19 Power-Series Expansions in 𝑟 ‣ Variables 𝑟,ϵ ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">33.19</span></a>
+converge for all finite values of the radii <math class="ltx_Math" altimg="m20.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="\rho" display="inline"><mi href="./33.1#p1.t1.r3" title="nonnegative real variable">ρ</mi></math> and <math class="ltx_Math" altimg="m22.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="r" display="inline"><mi href="./33.1#p1.t1.r2" title="real variable">r</mi></math>, respectively, and
+may be used to compute the regular and irregular solutions. Cancellation
+errors increase with increases in <math class="ltx_Math" altimg="m20.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="\rho" display="inline"><mi href="./33.1#p1.t1.r3" title="nonnegative real variable">ρ</mi></math> and <math class="ltx_Math" altimg="m27.png" altimg-height="25px" altimg-valign="-7px" altimg-width="26px" alttext="|r|" display="inline"><mrow><mo stretchy="false">|</mo><mi href="./33.1#p1.t1.r2" title="real variable">r</mi><mo stretchy="false">|</mo></mrow></math>, and may be estimated by
+comparing the final sum of the series with the largest partial sum. Use of
+extended-precision arithmetic increases the radial range that yields accurate
+results, but eventually other methods must be employed, for example, the
+asymptotic expansions of §§<a href="./33.11" title="§33.11 Asymptotic Expansions for Large 𝜌 ‣ Variables 𝜌,𝜂 ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">33.11</span></a> and <a href="./33.21" title="§33.21 Asymptotic Approximations for Large |𝑟| ‣ Variables 𝑟,ϵ ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">33.21</span></a>.</p>
+</div>
+</section>
+<section id="iii" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§33.23(iii) </span>Integration of Defining Differential Equations</h2>
+<div id="iii.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Notes:</dt>
+<dd>Stable integration directions for the differential equations are
+determined by comparison of the asymptotic behavior of the solutions as
+the radii tend to infinity and also as the radii tend to zero
+(§§<a href="./33.11" title="§33.11 Asymptotic Expansions for Large 𝜌 ‣ Variables 𝜌,𝜂 ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">33.11</span></a>, <a href="./33.21" title="§33.21 Asymptotic Approximations for Large |𝑟| ‣ Variables 𝑟,ϵ ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">33.21</span></a>; §§<a href="./33.6" title="§33.6 Power-Series Expansions in 𝜌 ‣ Variables 𝜌,𝜂 ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">33.6</span></a>,
+<a href="./33.19" title="§33.19 Power-Series Expansions in 𝑟 ‣ Variables 𝑟,ϵ ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">33.19</span></a>).</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./33.23#iv.p1" title="§33.23(iv) Recurrence Relations ‣ §33.23 Methods of Computation ‣ Computation ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§33.23(iv)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./33.23.iii" title="" class="ltx_ref">http://dlmf.nist.gov/33.23.iii</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./33.23#info" title="§33.23 Methods of Computation ‣ Computation ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§33.23</span></a> and
+<a href="./33#info" title="Chapter 33 Coulomb Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.33</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="iii.p1" class="ltx_para">
+<p class="ltx_p">When numerical values of the Coulomb functions are available for some radii,
+their values for other radii may be obtained by direct numerical integration of
+equations (<a href="./33.2#E1" title="(33.2.1) ‣ §33.2(i) Coulomb Wave Equation ‣ §33.2 Definitions and Basic Properties ‣ Variables 𝜌,𝜂 ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">33.2.1</span></a>) or (<a href="./33.14#E1" title="(33.14.1) ‣ §33.14(i) Coulomb Wave Equation ‣ §33.14 Definitions and Basic Properties ‣ Variables 𝑟,ϵ ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">33.14.1</span></a>), provided that the
+integration is carried out in a stable direction (§<a href="./3.7" title="§3.7 Ordinary Differential Equations ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.7</span></a>). Thus the
+regular solutions can be computed from the power-series expansions
+(§§<a href="./33.6" title="§33.6 Power-Series Expansions in 𝜌 ‣ Variables 𝜌,𝜂 ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">33.6</span></a>, <a href="./33.19" title="§33.19 Power-Series Expansions in 𝑟 ‣ Variables 𝑟,ϵ ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">33.19</span></a>) for small values of the radii and
+then integrated in the direction of increasing values of the radii. On the other
+hand, the irregular solutions of §§<a href="./33.2#iii" title="§33.2(iii) Irregular Solutions 𝐺_ℓ(𝜂,𝜌),𝐻^±_ℓ(𝜂,𝜌) ‣ §33.2 Definitions and Basic Properties ‣ Variables 𝜌,𝜂 ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">33.2(iii)</span></a> and
+<a href="./33.14#iii" title="§33.14(iii) Irregular Solution ℎ(ϵ,ℓ;𝑟) ‣ §33.14 Definitions and Basic Properties ‣ Variables 𝑟,ϵ ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">33.14(iii)</span></a> need to be integrated in the direction of decreasing
+radii beginning, for example, with values obtained from asymptotic expansions
+(§§<a href="./33.11" title="§33.11 Asymptotic Expansions for Large 𝜌 ‣ Variables 𝜌,𝜂 ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">33.11</span></a> and <a href="./33.21" title="§33.21 Asymptotic Approximations for Large |𝑟| ‣ Variables 𝑟,ϵ ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">33.21</span></a>).</p>
+</div>
+</section>
+<section id="iv" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§33.23(iv) </span>Recurrence Relations</h2>
+<div id="iv.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Notes:</dt>
+<dd>Stable recurrence directions for §<a href="./33.4" title="§33.4 Recurrence Relations and Derivatives ‣ Variables 𝜌,𝜂 ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">33.4</span></a> are determined by the
+asymptotic form of
+<math class="ltx_Math" altimg="m8.png" altimg-height="25px" altimg-valign="-7px" altimg-width="165px" alttext="F_{\ell}\left(\eta,\rho\right)/G_{\ell}\left(\eta,\rho\right)" display="inline"><mrow><mrow><msub><mi href="./33.2#E3" title="regular Coulomb radial function">F</mi><mi href="./33.1#p1.t1.r1" mathvariant="normal" title="nonnegative integer">ℓ</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./33.1#p1.t1.r4" title="real parameter">η</mi><mo>,</mo><mi href="./33.1#p1.t1.r3" title="nonnegative real variable">ρ</mi><mo>)</mo></mrow></mrow><mo>/</mo><mrow><msub><mi href="./33.2#E11" title="irregular Coulomb radial function">G</mi><mi href="./33.1#p1.t1.r1" mathvariant="normal" title="nonnegative integer">ℓ</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./33.1#p1.t1.r4" title="real parameter">η</mi><mo>,</mo><mi href="./33.1#p1.t1.r3" title="nonnegative real variable">ρ</mi><mo>)</mo></mrow></mrow></mrow></math> as
+<math class="ltx_Math" altimg="m13.png" altimg-height="18px" altimg-valign="-2px" altimg-width="66px" alttext="\ell\to\infty" display="inline"><mrow><mi href="./33.1#p1.t1.r1" mathvariant="normal" title="nonnegative integer">ℓ</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></math>; see (<a href="./33.5#E8" title="(33.5.8) ‣ §33.5(iv) Large ℓ ‣ §33.5 Limiting Forms for Small 𝜌, Small |𝜂|, or Large ℓ ‣ Variables 𝜌,𝜂 ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">33.5.8</span></a>) and
+(<a href="./33.5#E9" title="(33.5.9) ‣ §33.5(iv) Large ℓ ‣ §33.5 Limiting Forms for Small 𝜌, Small |𝜂|, or Large ℓ ‣ Variables 𝜌,𝜂 ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">33.5.9</span></a>).
+For §<a href="./33.17" title="§33.17 Recurrence Relations and Derivatives ‣ Variables 𝑟,ϵ ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">33.17</span></a> see §<a href="./33.18" title="§33.18 Limiting Forms for Large ℓ ‣ Variables 𝑟,ϵ ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">33.18</span></a>.</dd>
+<dt>Permalink:</dt>
+<dd><a href="./33.23.iv" title="" class="ltx_ref">http://dlmf.nist.gov/33.23.iv</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./33.23#info" title="§33.23 Methods of Computation ‣ Computation ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§33.23</span></a> and
+<a href="./33#info" title="Chapter 33 Coulomb Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.33</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="iv.p1" class="ltx_para">
+<p class="ltx_p">In a similar manner to §<a href="./33.23#iii" title="§33.23(iii) Integration of Defining Differential Equations ‣ §33.23 Methods of Computation ‣ Computation ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">33.23(iii)</span></a> the recurrence relations of §§<a href="./33.4" title="§33.4 Recurrence Relations and Derivatives ‣ Variables 𝜌,𝜂 ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">33.4</span></a> or <a href="./33.17" title="§33.17 Recurrence Relations and Derivatives ‣ Variables 𝑟,ϵ ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">33.17</span></a> can be used for a range of values of the
+integer <math class="ltx_Math" altimg="m12.png" altimg-height="18px" altimg-valign="-2px" altimg-width="13px" alttext="\ell" display="inline"><mi href="./33.1#p1.t1.r1" mathvariant="normal" title="nonnegative integer">ℓ</mi></math>, provided that the recurrence is carried out in a stable
+direction (§<a href="./3.6" title="§3.6 Linear Difference Equations ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.6</span></a>). This implies decreasing <math class="ltx_Math" altimg="m12.png" altimg-height="18px" altimg-valign="-2px" altimg-width="13px" alttext="\ell" display="inline"><mi href="./33.1#p1.t1.r1" mathvariant="normal" title="nonnegative integer">ℓ</mi></math> for the regular
+solutions and increasing <math class="ltx_Math" altimg="m12.png" altimg-height="18px" altimg-valign="-2px" altimg-width="13px" alttext="\ell" display="inline"><mi href="./33.1#p1.t1.r1" mathvariant="normal" title="nonnegative integer">ℓ</mi></math> for the irregular solutions of §§<a href="./33.2#iii" title="§33.2(iii) Irregular Solutions 𝐺_ℓ(𝜂,𝜌),𝐻^±_ℓ(𝜂,𝜌) ‣ §33.2 Definitions and Basic Properties ‣ Variables 𝜌,𝜂 ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">33.2(iii)</span></a> and <a href="./33.14#iii" title="§33.14(iii) Irregular Solution ℎ(ϵ,ℓ;𝑟) ‣ §33.14 Definitions and Basic Properties ‣ Variables 𝑟,ϵ ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">33.14(iii)</span></a>.</p>
+</div>
+</section>
+<section id="v" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§33.23(v) </span>Continued Fractions</h2>
+<div id="v.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Referenced by:</dt>
+<dd><a href="./3.10#Px8.p4" title="Steed’s Algorithm ‣ §3.10(iii) Numerical Evaluation of Continued Fractions ‣ §3.10 Continued Fractions ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§3.10(iii)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./33.23.v" title="" class="ltx_ref">http://dlmf.nist.gov/33.23.v</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./33.23#info" title="§33.23 Methods of Computation ‣ Computation ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§33.23</span></a> and
+<a href="./33#info" title="Chapter 33 Coulomb Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.33</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="v.p1" class="ltx_para">
+<p class="ltx_p">§<a href="./33.8" title="§33.8 Continued Fractions ‣ Variables 𝜌,𝜂 ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">33.8</span></a> supplies continued fractions for
+<math class="ltx_Math" altimg="m6.png" altimg-height="26px" altimg-valign="-8px" altimg-width="58px" alttext="F_{\ell}'/F_{\ell}" display="inline"><mrow><msubsup><mi href="./33.2#E3" title="regular Coulomb radial function">F</mi><mi href="./33.1#p1.t1.r1" mathvariant="normal" title="nonnegative integer">ℓ</mi><mo>′</mo></msubsup><mo>/</mo><msub><mi href="./33.2#E3" title="regular Coulomb radial function">F</mi><mi href="./33.1#p1.t1.r1" mathvariant="normal" title="nonnegative integer">ℓ</mi></msub></mrow></math> and
+<math class="ltx_Math" altimg="m23.png" altimg-height="31px" altimg-valign="-8px" altimg-width="86px" alttext="{H^{\pm}_{\ell}}'/{H^{\pm}_{\ell}}" display="inline"><mrow><mmultiscripts><mi href="./33.2#E7" title="irregular Coulomb radial functions">H</mi><mi href="./33.1#p1.t1.r1" mathvariant="normal" title="nonnegative integer">ℓ</mi><mo>±</mo><mrow></mrow><mo>′</mo></mmultiscripts><mo>/</mo><msubsup><mi href="./33.2#E7" title="irregular Coulomb radial functions">H</mi><mi href="./33.1#p1.t1.r1" mathvariant="normal" title="nonnegative integer">ℓ</mi><mo>±</mo></msubsup></mrow></math>. Combined with the Wronskians
+(<a href="./33.2#E12" title="(33.2.12) ‣ §33.2(iv) Wronskians and Cross-Product ‣ §33.2 Definitions and Basic Properties ‣ Variables 𝜌,𝜂 ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">33.2.12</span></a>), the values of <math class="ltx_Math" altimg="m7.png" altimg-height="21px" altimg-valign="-5px" altimg-width="26px" alttext="F_{\ell}" display="inline"><msub><mi href="./33.2#E3" title="regular Coulomb radial function">F</mi><mi href="./33.1#p1.t1.r1" mathvariant="normal" title="nonnegative integer">ℓ</mi></msub></math>, <math class="ltx_Math" altimg="m10.png" altimg-height="21px" altimg-valign="-5px" altimg-width="29px" alttext="G_{\ell}" display="inline"><msub><mi href="./33.2#E11" title="irregular Coulomb radial function">G</mi><mi href="./33.1#p1.t1.r1" mathvariant="normal" title="nonnegative integer">ℓ</mi></msub></math>, and
+their derivatives can be extracted. Inside the turning points, that is, when
+<math class="ltx_Math" altimg="m18.png" altimg-height="26px" altimg-valign="-8px" altimg-width="119px" alttext="\rho&lt;\rho_{\operatorname{tp}}\left(\eta,\ell\right)" display="inline"><mrow><mi href="./33.1#p1.t1.r3" title="nonnegative real variable">ρ</mi><mo>&lt;</mo><mrow><msub><mi href="./33.2#E2" title="outer turning point for Coulomb radial functions">ρ</mi><mi href="./33.2#E2" title="outer turning point for Coulomb radial functions">tp</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./33.1#p1.t1.r4" title="real parameter">η</mi><mo>,</mo><mi href="./33.1#p1.t1.r1" mathvariant="normal" title="nonnegative integer">ℓ</mi><mo>)</mo></mrow></mrow></mrow></math>, there can be a loss of precision by a
+factor of approximately <math class="ltx_Math" altimg="m24.png" altimg-height="26px" altimg-valign="-7px" altimg-width="49px" alttext="|G_{\ell}|^{2}" display="inline"><msup><mrow><mo stretchy="false">|</mo><msub><mi href="./33.2#E11" title="irregular Coulomb radial function">G</mi><mi href="./33.1#p1.t1.r1" mathvariant="normal" title="nonnegative integer">ℓ</mi></msub><mo stretchy="false">|</mo></mrow><mn>2</mn></msup></math>.</p>
+</div>
+</section>
+<section id="vi" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§33.23(vi) </span>Other Numerical Methods</h2>
+<div id="vi.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Permalink:</dt>
+<dd><a href="./33.23.vi" title="" class="ltx_ref">http://dlmf.nist.gov/33.23.vi</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./33.23#info" title="§33.23 Methods of Computation ‣ Computation ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§33.23</span></a> and
+<a href="./33#info" title="Chapter 33 Coulomb Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.33</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="vi.p1" class="ltx_para">
+<p class="ltx_p"><cite class="ltx_cite ltx_citemacro_citet">Curtis (<a href="./bib/C#bib605" title="Coulomb Wave Functions" class="ltx_ref">1964a</a>, §10)</cite> describes the use of series, radial integration,
+and other methods to generate the tables listed in §<a href="./33.24" title="§33.24 Tables ‣ Computation ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">33.24</span></a>.</p>
+</div>
+<div id="vi.p2" class="ltx_para">
+<p class="ltx_p"><cite class="ltx_cite ltx_citemacro_citet">Bardin<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/B#bib191" title="Coulomb functions in entire ( η , ρ )-plane" class="ltx_ref">1972</a>)</cite> describes ten different methods for the calculation of
+<math class="ltx_Math" altimg="m7.png" altimg-height="21px" altimg-valign="-5px" altimg-width="26px" alttext="F_{\ell}" display="inline"><msub><mi href="./33.2#E3" title="regular Coulomb radial function">F</mi><mi href="./33.1#p1.t1.r1" mathvariant="normal" title="nonnegative integer">ℓ</mi></msub></math> and <math class="ltx_Math" altimg="m10.png" altimg-height="21px" altimg-valign="-5px" altimg-width="29px" alttext="G_{\ell}" display="inline"><msub><mi href="./33.2#E11" title="irregular Coulomb radial function">G</mi><mi href="./33.1#p1.t1.r1" mathvariant="normal" title="nonnegative integer">ℓ</mi></msub></math>, valid in different regions of the
+(<math class="ltx_Math" altimg="m14.png" altimg-height="17px" altimg-valign="-6px" altimg-width="35px" alttext="\eta,\rho" display="inline"><mrow><mi href="./33.1#p1.t1.r4" title="real parameter">η</mi><mo>,</mo><mi href="./33.1#p1.t1.r3" title="nonnegative real variable">ρ</mi></mrow></math>)-plane.</p>
+</div>
+<div id="vi.p3" class="ltx_para">
+<p class="ltx_p"><cite class="ltx_cite ltx_citemacro_citet">Thompson and Barnett (<a href="./bib/T#bib2243" title="COULCC: A continued-fraction algorithm for Coulomb functions of complex order with complex arguments" class="ltx_ref">1985</a>, <a href="./bib/T#bib2244" title="Coulomb and Bessel functions of complex arguments and order" class="ltx_ref">1986</a>)</cite> and
+<cite class="ltx_cite ltx_citemacro_citet">Thompson (<a href="./bib/T#bib2242" title="Erratum to “COULCC: A continued-fraction algorithm for Coulomb functions of complex order with complex arguments”" class="ltx_ref">2004</a>)</cite> use
+combinations of series, continued fractions, and Padé-accelerated asymptotic
+expansions (§<a href="./3.11#iv" title="§3.11(iv) Padé Approximations ‣ §3.11 Approximation Techniques ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.11(iv)</span></a>) for the analytic continuations of Coulomb
+functions.</p>
+</div>
+<div id="vi.p4" class="ltx_para">
+<p class="ltx_p"><cite class="ltx_cite ltx_citemacro_citet">Noble (<a href="./bib/N#bib1726" title="Evaluation of negative energy Coulomb (Whittaker) functions" class="ltx_ref">2004</a>)</cite> obtains double-precision accuracy for
+<math class="ltx_Math" altimg="m11.png" altimg-height="26px" altimg-valign="-8px" altimg-width="103px" alttext="W_{-\eta,\mu}\left(2\rho\right)" display="inline"><mrow><msub><mi href="./13.14#E3" title="Whittaker confluent hypergeometric function">W</mi><mrow><mrow><mo>−</mo><mi href="./33.1#p1.t1.r4" title="real parameter">η</mi></mrow><mo href="./13.14#E3" title="Whittaker confluent hypergeometric function">,</mo><mi>μ</mi></mrow></msub><mo>⁡</mo><mrow><mo>(</mo><mrow><mn>2</mn><mo>⁢</mo><mi href="./33.1#p1.t1.r3" title="nonnegative real variable">ρ</mi></mrow><mo>)</mo></mrow></mrow></math> for a wide range of parameters using a combination
+of recurrence techniques, power-series expansions, and numerical quadrature;
+compare (<a href="./33.2#E7" title="(33.2.7) ‣ §33.2(iii) Irregular Solutions 𝐺_ℓ(𝜂,𝜌),𝐻^±_ℓ(𝜂,𝜌) ‣ §33.2 Definitions and Basic Properties ‣ Variables 𝜌,𝜂 ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">33.2.7</span></a>).</p>
+</div>
+</section>
+<section id="vii" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§33.23(vii) </span>WKBJ Approximations</h2>
+<div id="vii.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=Coulomb%20functions%3A%20variables%20%CF%81%2C%CE%B7">Coulomb functions: variables <math class="ltx_Math" altimg="m17.png" altimg-height="17px" altimg-valign="-6px" altimg-width="35px" alttext="\rho,\eta" display="inline"><mrow><mi href="./33.1#p1.t1.r3" title="nonnegative real variable">ρ</mi><mo>,</mo><mi href="./33.1#p1.t1.r4" title="real parameter">η</mi></mrow></math></a>, <a class="ltx_keyword" href="./search/search?q=WKBJ%20approximations">WKBJ approximations</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./33.22#vi.p1" title="§33.22(vi) Solutions Inside the Turning Point ‣ §33.22 Particle Scattering and Atomic and Molecular Spectra ‣ Physical Applications ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§33.22(vi)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./33.23.vii" title="" class="ltx_ref">http://dlmf.nist.gov/33.23.vii</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./33.23#info" title="§33.23 Methods of Computation ‣ Computation ‣ Chapter 33 Coulomb Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§33.23</span></a> and
+<a href="./33#info" title="Chapter 33 Coulomb Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.33</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="vii.p1" class="ltx_para">
+<p class="ltx_p">WKBJ approximations (§<a href="./2.7#iii" title="§2.7(iii) Liouville–Green (WKBJ) Approximation ‣ §2.7 Differential Equations ‣ Areas ‣ Chapter 2 Asymptotic Approximations" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.7(iii)</span></a>) for <math class="ltx_Math" altimg="m19.png" altimg-height="26px" altimg-valign="-8px" altimg-width="119px" alttext="\rho&gt;\rho_{\operatorname{tp}}\left(\eta,\ell\right)" display="inline"><mrow><mi href="./33.1#p1.t1.r3" title="nonnegative real variable">ρ</mi><mo>&gt;</mo><mrow><msub><mi href="./33.2#E2" title="outer turning point for Coulomb radial functions">ρ</mi><mi href="./33.2#E2" title="outer turning point for Coulomb radial functions">tp</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./33.1#p1.t1.r4" title="real parameter">η</mi><mo>,</mo><mi href="./33.1#p1.t1.r1" mathvariant="normal" title="nonnegative integer">ℓ</mi><mo>)</mo></mrow></mrow></mrow></math> are presented in
+<cite class="ltx_cite ltx_citemacro_citet">Hull and Breit (<a href="./bib/H#bib1110" title="Coulomb Wave Functions" class="ltx_ref">1959</a>)</cite> and
+<cite class="ltx_cite ltx_citemacro_citeauthor"><a href="./bib/S#bib2037" title="The determination of phases of wave functions" class="ltx_ref">Seaton and Peach</a></cite> (<cite class="ltx_cite ltx_citemacro_citeyear"><a href="./bib/S#bib2037" title="The determination of phases of wave functions" class="ltx_ref">1962</a></cite>: in Eq. (12) <math class="ltx_Math" altimg="m2.png" altimg-height="25px" altimg-valign="-7px" altimg-width="85px" alttext="(\rho-c)/c" display="inline"><mrow><mrow><mo stretchy="false">(</mo><mrow><mi href="./33.1#p1.t1.r3" title="nonnegative real variable">ρ</mi><mo>−</mo><mi>c</mi></mrow><mo stretchy="false">)</mo></mrow><mo>/</mo><mi>c</mi></mrow></math> should be <math class="ltx_Math" altimg="m1.png" altimg-height="25px" altimg-valign="-7px" altimg-width="87px" alttext="(\rho-c)/\rho" display="inline"><mrow><mrow><mo stretchy="false">(</mo><mrow><mi href="./33.1#p1.t1.r3" title="nonnegative real variable">ρ</mi><mo>−</mo><mi>c</mi></mrow><mo stretchy="false">)</mo></mrow><mo>/</mo><mi href="./33.1#p1.t1.r3" title="nonnegative real variable">ρ</mi></mrow></math>).
+A set of consistent second-order WKBJ formulas is given by
+<cite class="ltx_cite ltx_citemacro_citeauthor"><a href="./bib/B#bib383" title="The determination of phases and amplitudes of wave functions" class="ltx_ref">Burgess</a></cite> (<cite class="ltx_cite ltx_citemacro_citeyear"><a href="./bib/B#bib383" title="The determination of phases and amplitudes of wave functions" class="ltx_ref">1963</a></cite>: in Eq. (16) <math class="ltx_Math" altimg="m3.png" altimg-height="23px" altimg-valign="-4px" altimg-width="72px" alttext="3\kappa^{2}+2" display="inline"><mrow><mrow><mn>3</mn><mo>⁢</mo><msup><mi>κ</mi><mn>2</mn></msup></mrow><mo>+</mo><mn>2</mn></mrow></math> should be <math class="ltx_Math" altimg="m4.png" altimg-height="23px" altimg-valign="-4px" altimg-width="81px" alttext="3\kappa^{2}c+2" display="inline"><mrow><mrow><mn>3</mn><mo>⁢</mo><msup><mi>κ</mi><mn>2</mn></msup><mo>⁢</mo><mi>c</mi></mrow><mo>+</mo><mn>2</mn></mrow></math>).
+<cite class="ltx_cite ltx_citemacro_citet">Seaton (<a href="./bib/S#bib2033" title="The accuracy of iterated JWBK approximations for Coulomb radial functions" class="ltx_ref">1984</a>)</cite> estimates the
+accuracies of these approximations.</p>
+</div>
+<div id="vii.p2" class="ltx_para">
+<p class="ltx_p"><cite class="ltx_cite ltx_citemacro_citet">Hull and Breit (<a href="./bib/H#bib1110" title="Coulomb Wave Functions" class="ltx_ref">1959</a>)</cite> and <cite class="ltx_cite ltx_citemacro_citet">Barnett (<a href="./bib/B#bib198" title="KLEIN: Coulomb functions for real λ and positive energy to high accuracy" class="ltx_ref">1981b</a>)</cite> give WKBJ approximations
+for <math class="ltx_Math" altimg="m5.png" altimg-height="21px" altimg-valign="-5px" altimg-width="27px" alttext="F_{0}" display="inline"><msub><mi href="./33.2#E3" title="regular Coulomb radial function">F</mi><mn>0</mn></msub></math> and <math class="ltx_Math" altimg="m9.png" altimg-height="21px" altimg-valign="-5px" altimg-width="30px" alttext="G_{0}" display="inline"><msub><mi href="./33.2#E11" title="irregular Coulomb radial function">G</mi><mn>0</mn></msub></math> in the region inside the turning point:
+<math class="ltx_Math" altimg="m18.png" altimg-height="26px" altimg-valign="-8px" altimg-width="119px" alttext="\rho&lt;\rho_{\operatorname{tp}}\left(\eta,\ell\right)" display="inline"><mrow><mi href="./33.1#p1.t1.r3" title="nonnegative real variable">ρ</mi><mo>&lt;</mo><mrow><msub><mi href="./33.2#E2" title="outer turning point for Coulomb radial functions">ρ</mi><mi href="./33.2#E2" title="outer turning point for Coulomb radial functions">tp</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./33.1#p1.t1.r4" title="real parameter">η</mi><mo>,</mo><mi href="./33.1#p1.t1.r1" mathvariant="normal" title="nonnegative integer">ℓ</mi><mo>)</mo></mrow></mrow></mrow></math>.</p>
+</div>
+</section>
+</section>
+</div>
+<div class="ltx_page_footer">
+<div class="ltx_siblings">
+<a href="./33.22" title="In Physical Applications ‣ Chapter 33 Coulomb Functions" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">33.22 </span>Particle Scattering and Atomic and Molecular Spectra</span></a><a href="./33.24" title="In Computation ‣ Chapter 33 Coulomb Functions" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">33.24 </span>Tables</span></a>
+</div>
+<div class="ltx_footer_links ltx_centering">
+<a href="./about/notices">© 2010–2026 NIST</a> / <a href="./about/notices#S2">Disclaimer</a> / <a href="/cdn-cgi/l/email-protection#1f5b53525932797a7a7b7d7e7c745f71766c6b31787069">Feedback</a>;
+ Version 1.2.7;
+Release date 2026-06-15.</div>
+<span id="pagesettings"></span>
+<div class="ltx_nist_logo"><a href="http://www.nist.gov/"><img src="./style/nistidc.png" width="500" alt="NIST"></a></div>
+<div class="ltx_nist_links ltx_align_right">
+<a href="https://www.nist.gov/privacy-policy">Site Privacy</a> <a href="https://www.nist.gov/oism/accessibility">Accessibility</a> <a href="https://www.nist.gov/privacy">Privacy Program</a> <a href="https://www.nist.gov/oism/copyrights">Copyrights</a> <a href="https://www.commerce.gov/vulnerability-disclosure-policy">Vulnerability Disclosure</a> <a href="https://www.nist.gov/no-fear-act-policy">No Fear Act Policy</a> <a href="https://www.nist.gov/foia">FOIA</a> <a href="https://www.nist.gov/environmental-policy-statement">Environmental Policy</a> <a href="https://www.nist.gov/summary-report-scientific-integrity">Scientific Integrity</a> <a href="https://www.nist.gov/nist-information-quality-standards">Information Quality Standards</a> <a href="https://www.commerce.gov/">Commerce.gov</a> <a href="http://www.science.gov/">Science.gov</a> <a href="http://www.usa.gov/">USA.gov</a>
+</div>
+</div>
+</div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a30dbeb4df13dcf2',t:'MTc4NzY5MzkxOQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"9ef5b487afff42a68917b2d63593a474"}' crossorigin="anonymous"></script>
+</body>
+</html>

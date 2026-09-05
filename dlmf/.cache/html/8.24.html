@@ -1,0 +1,272 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>DLMF: §8.24 Physical Applications ‣ Applications ‣ Chapter 8 Incomplete Gamma and Related Functions</title>
+<link rel="shortcut icon" href="./style/DLMF-16.png" type="image/png">
+<script type="text/javascript"><!--
+	var PATH="DLMF:/8.24";
+	var ROOT="./";
+      //--></script>
+<script type="text/javascript" src="./style/jquery.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/jquery.leaveNotice.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/DLMF.js"><!-- non-empty so ie6 will accept it --></script>
+<script async="" type="text/javascript" id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC&amp;subagency=NIST&amp;pua=UA-37115410-44&amp;yt=true&amp;exts=ppsx,pps,f90,sch,rtf,wrl,txz,m1v,xlsm,msi,xsd,f,tif,eps,mpg,xml,pl,xlt,c"><!-- non-empty so ie6 will accept it --></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-BZB64W4M0L"></script><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-BZB64W4M0L');
+      </script>
+<link rel="stylesheet" type="text/css" href="./style/LaTeXML.css">
+<link rel="stylesheet" type="text/css" href="./style/DLMF.css">
+<link rel="stylesheet" type="text/css" href="./style/print.css" media="print">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="top" href="./" title="DLMF">
+<link rel="copyright" href="./about/notices" title="Copyright">
+<link rel="search" href="./search/search" title="Search">
+<link rel="help" class="ltx_help" href="./help/" title="Help">
+<link rel="up" href="./8#PT4" title="Applications ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="up up" href="./8" title="Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="start" href="./" title="">
+<link rel="prev" href="./8.23" title="§8.23 Statistical Applications ‣ Applications ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="next" href="./8.25" title="§8.25 Methods of Computation ‣ Computation ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.1" title="§8.1 Special Notation ‣ Notation ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.2" title="§8.2 Definitions and Basic Properties ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.3" title="§8.3 Graphics ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.4" title="§8.4 Special Values ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.5" title="§8.5 Confluent Hypergeometric Representations ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.6" title="§8.6 Integral Representations ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.7" title="§8.7 Series Expansions ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.8" title="§8.8 Recurrence Relations and Derivatives ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.9" title="§8.9 Continued Fractions ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.10" title="§8.10 Inequalities ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.11" title="§8.11 Asymptotic Approximations and Expansions ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.12" title="§8.12 Uniform Asymptotic Expansions for Large Parameter ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.13" title="§8.13 Zeros ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.14" title="§8.14 Integrals ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.15" title="§8.15 Sums ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.16" title="§8.16 Generalizations ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.17" title="§8.17 Incomplete Beta Functions ‣ Related Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.18" title="§8.18 Asymptotic Expansions of 𝐼_𝑥(𝑎,𝑏) ‣ Related Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.19" title="§8.19 Generalized Exponential Integral ‣ Related Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.20" title="§8.20 Asymptotic Expansions of 𝐸_𝑝(𝑧) ‣ Related Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.21" title="§8.21 Generalized Sine and Cosine Integrals ‣ Related Functions ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.22" title="§8.22 Mathematical Applications ‣ Applications ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.23" title="§8.23 Statistical Applications ‣ Applications ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.25" title="§8.25 Methods of Computation ‣ Computation ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.26" title="§8.26 Tables ‣ Computation ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.27" title="§8.27 Approximations ‣ Computation ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="section" href="./8.28" title="§8.28 Software ‣ Computation ‣ Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="document" href="./front/foreword" title="Foreword">
+<link rel="document" href="./front/preface" title="Preface">
+<link rel="document" href="./front/introduction" title="Mathematical Introduction">
+<link rel="chapter" href="./1" title="Chapter 1 Algebraic and Analytic Methods">
+<link rel="chapter" href="./2" title="Chapter 2 Asymptotic Approximations">
+<link rel="chapter" href="./3" title="Chapter 3 Numerical Methods">
+<link rel="chapter" href="./4" title="Chapter 4 Elementary Functions">
+<link rel="chapter" href="./5" title="Chapter 5 Gamma Function">
+<link rel="chapter" href="./6" title="Chapter 6 Exponential, Logarithmic, Sine, and Cosine Integrals">
+<link rel="chapter" href="./7" title="Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="chapter" href="./8" title="Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="chapter" href="./9" title="Chapter 9 Airy and Related Functions">
+<link rel="chapter" href="./10" title="Chapter 10 Bessel Functions">
+<link rel="chapter" href="./11" title="Chapter 11 Struve and Related Functions">
+<link rel="chapter" href="./12" title="Chapter 12 Parabolic Cylinder Functions">
+<link rel="chapter" href="./13" title="Chapter 13 Confluent Hypergeometric Functions">
+<link rel="chapter" href="./14" title="Chapter 14 Legendre and Related Functions">
+<link rel="chapter" href="./15" title="Chapter 15 Hypergeometric Function">
+<link rel="chapter" href="./16" title="Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="chapter" href="./17" title="Chapter 17 𝑞-Hypergeometric and Related Functions">
+<link rel="chapter" href="./18" title="Chapter 18 Orthogonal Polynomials">
+<link rel="chapter" href="./19" title="Chapter 19 Elliptic Integrals">
+<link rel="chapter" href="./20" title="Chapter 20 Theta Functions">
+<link rel="chapter" href="./21" title="Chapter 21 Multidimensional Theta Functions">
+<link rel="chapter" href="./22" title="Chapter 22 Jacobian Elliptic Functions">
+<link rel="chapter" href="./23" title="Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="chapter" href="./24" title="Chapter 24 Bernoulli and Euler Polynomials">
+<link rel="chapter" href="./25" title="Chapter 25 Zeta and Related Functions">
+<link rel="chapter" href="./26" title="Chapter 26 Combinatorial Analysis">
+<link rel="chapter" href="./27" title="Chapter 27 Functions of Number Theory">
+<link rel="chapter" href="./28" title="Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="chapter" href="./29" title="Chapter 29 Lamé Functions">
+<link rel="chapter" href="./30" title="Chapter 30 Spheroidal Wave Functions">
+<link rel="chapter" href="./31" title="Chapter 31 Heun Functions">
+<link rel="chapter" href="./32" title="Chapter 32 Painlevé Transcendents">
+<link rel="chapter" href="./33" title="Chapter 33 Coulomb Functions">
+<link rel="chapter" href="./34" title="Chapter 34 3⁢𝑗,6⁢𝑗,9⁢𝑗 Symbols">
+<link rel="chapter" href="./35" title="Chapter 35 Functions of Matrix Argument">
+<link rel="chapter" href="./36" title="Chapter 36 Integrals with Coalescing Saddles">
+<link rel="bibliography" href="./bib/" title="Bibliography">
+<link rel="index" href="./idx/" title="Index">
+<link rel="glossary" href="./not/" title="Notations">
+<link rel="document" href="./lof/" title="List of Figures">
+<link rel="document" href="./lot/" title="List of Tables">
+<link rel="document" href="./software/" title="Software Index">
+<link rel="document" href="./errata/" title="Errata">
+<link rel="document" href="./help/" title="Need Help?">
+<link rel="document" href="./search/" title="Advanced Search">
+<link rel="document" href="./about/" title="About the Project">
+<meta name="keywords" lang="en" content="Monte Carlo sampling, applications, cosmology, ecological systems, generalized exponential integral, incomplete beta functions, incomplete gamma functions, packing analysis, physical, population biology, quantum chemistry, radiative equilibrium, relaxation times for proteins, statistical mechanics, transport equilibrium, wave acoustics">
+</head>
+<body class="color_default textfont_default titlefont_default fontsize_default navbar_default">
+<div class="ltx_page_navbar">
+<div class="ltx_page_navlogo"><a href="./" title="Digital Library of Mathematical Functions"><span>DLMF</span></a></div>
+<div class="ltx_page_navitems">
+<form method="get" action="./search/search">
+<ul>
+<li><a href="./idx/">Index</a></li>
+<li><a href="./not/">Notations</a></li>
+<li><small><input type="text" name="q" value="" size="6" class="ltx_page_navitem_search"><button type="submit">Search</button></small></li>
+<li><a href="./help/" class="ltx_help">Help?</a></li>
+<li><a href="./help/cite">Citing</a></li>
+<li><a href="./help/customize" class="ltx_customize">Customize</a></li>
+<li id="showinfo"><a href="" onclick="showInfo(); return false;" title="Show Annotations">Annotate</a></li>
+<li id="hideinfo"><a href="" onclick="hideInfo(); return false;">UnAnnotate</a></li>
+</ul>
+</form>
+</div>
+<div class="ltx_page_navsponsors">
+<div><a href="./about/" class="ltx_page_navabout">About the Project</a></div>
+</div>
+</div>
+<div class="ltx_page_main">
+<div class="ltx_page_header">
+<a href="./8" title="" class="ltx_ref" rel="up up"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">8 </span>Incomplete Gamma and Related <span class="ltx_text"> </span>Functions</span></a><a href="./8#PT4" title="In Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title">Applications</span></a><a href="./8.23" title="In Applications ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">8.23 </span>Statistical Applications</span></a><a href="./8.25" title="In Computation ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">8.25 </span>Methods of Computation</span></a>
+</div>
+<div class="ltx_page_content">
+<section class="ltx_section ltx_authors_multiline ltx_leqno">
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">§8.24 </span>Physical Applications</h1>
+<div id="info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=applications">applications</a>, <a class="ltx_keyword" href="./search/search?q=generalized%20exponential%20integral">generalized exponential integral</a>, <a class="ltx_keyword" href="./search/search?q=incomplete%20beta%20functions">incomplete beta functions</a>, <a class="ltx_keyword" href="./search/search?q=incomplete%20gamma%20functions">incomplete gamma functions</a>, <a class="ltx_keyword" href="./search/search?q=physical">physical</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./8.24" title="" class="ltx_ref">http://dlmf.nist.gov/8.24</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./8#info" title="Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.8</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<h6>Contents</h6>
+<ol class="ltx_toclist ltx_toclist_section">
+<li class="ltx_tocentry"><a href="#i"><span class="ltx_tag ltx_tag_subsection">§8.24(i) </span>Incomplete Gamma Functions</a></li>
+<li class="ltx_tocentry"><a href="#ii"><span class="ltx_tag ltx_tag_subsection">§8.24(ii) </span>Incomplete Beta Functions</a></li>
+<li class="ltx_tocentry"><a href="#iii"><span class="ltx_tag ltx_tag_subsection">§8.24(iii) </span>Generalized Exponential Integral</a></li>
+</ol>
+<section id="i" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§8.24(i) </span>Incomplete Gamma Functions</h2>
+<div id="i.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=ecological%20systems">ecological systems</a>, <a class="ltx_keyword" href="./search/search?q=incomplete%20gamma%20functions">incomplete gamma functions</a>, <a class="ltx_keyword" href="./search/search?q=population%20biology">population biology</a>, <a class="ltx_keyword" href="./search/search?q=quantum%20chemistry">quantum chemistry</a>, <a class="ltx_keyword" href="./search/search?q=relaxation%20times%20for%20proteins">relaxation times for proteins</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./8.24.i" title="" class="ltx_ref">http://dlmf.nist.gov/8.24.i</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./8.24#info" title="§8.24 Physical Applications ‣ Applications ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§8.24</span></a> and
+<a href="./8#info" title="Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.8</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="i.p1" class="ltx_para">
+<p class="ltx_p">The function <math class="ltx_Math" altimg="m4.png" altimg-height="25px" altimg-valign="-7px" altimg-width="68px" alttext="\gamma\left(a,x\right)" display="inline"><mrow><mi href="./8.2#E1" title="incomplete gamma function">γ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>,</mo><mi href="./8.1#p1.t1.r1" title="real variable">x</mi><mo>)</mo></mrow></mrow></math> appears in: discussions of power-law relaxation
+times in complex physical systems (<cite class="ltx_cite ltx_citemacro_citet">Sornette (<a href="./bib/S#bib2615" title="Multiplicative processes and power laws" class="ltx_ref">1998</a>)</cite>); logarithmic
+oscillations in relaxation times for proteins (<cite class="ltx_cite ltx_citemacro_citet">Metzler<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/M#bib2614" title="Hierarchies and logarithmic oscillations in the temporal relaxation patterns of proteins and other complex systems" class="ltx_ref">1999</a>)</cite>);
+Gaussian orbitals and exponential (Slater) orbitals in quantum chemistry
+(<cite class="ltx_cite ltx_citemacro_citet">Shavitt (<a href="./bib/S#bib2621" title="The Gaussian Function in Calculations of Statistical Mechanics and Quantum Mechanics" class="ltx_ref">1963</a>)</cite>, <cite class="ltx_cite ltx_citemacro_citet">Shavitt and Karplus (<a href="./bib/S#bib2622" title="Gaussian-transform method for molecular integrals. I. Formulation for energy integrals" class="ltx_ref">1965</a>)</cite>); population biology and
+ecological systems (<cite class="ltx_cite ltx_citemacro_citet">Camacho<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/C#bib2616" title="Analytical solution of a model for complex food webs" class="ltx_ref">2002</a>)</cite>).</p>
+</div>
+</section>
+<section id="ii" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§8.24(ii) </span>Incomplete Beta Functions</h2>
+<div id="ii.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=Monte%20Carlo%20sampling">Monte Carlo sampling</a>, <a class="ltx_keyword" href="./search/search?q=cosmology">cosmology</a>, <a class="ltx_keyword" href="./search/search?q=incomplete%20beta%20functions">incomplete beta functions</a>, <a class="ltx_keyword" href="./search/search?q=packing%20analysis">packing analysis</a>, <a class="ltx_keyword" href="./search/search?q=statistical%20mechanics">statistical mechanics</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./8.24.ii" title="" class="ltx_ref">http://dlmf.nist.gov/8.24.ii</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./8.24#info" title="§8.24 Physical Applications ‣ Applications ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§8.24</span></a> and
+<a href="./8#info" title="Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.8</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="ii.p1" class="ltx_para">
+<p class="ltx_p">The function <math class="ltx_Math" altimg="m3.png" altimg-height="25px" altimg-valign="-7px" altimg-width="73px" alttext="I_{x}\left(a,b\right)" display="inline"><mrow><msub><mi href="./8.17#E2" title="incomplete beta function">I</mi><mi href="./8.1#p1.t1.r1" title="real variable">x</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./8.1#p1.t1.r3" title="parameter">a</mi><mo>,</mo><mi>b</mi><mo>)</mo></mrow></mrow></math> appears in: Monte Carlo sampling in
+statistical mechanics (<cite class="ltx_cite ltx_citemacro_citet">Kofke (<a href="./bib/K#bib2617" title="Comment on “The incomplete beta function law for parallel tempering sampling of classical canonical systems” [J. Chem. Phys. 120, 4119 (2004)]" class="ltx_ref">2004</a>)</cite>); analysis of packings of soft or
+granular objects (<cite class="ltx_cite ltx_citemacro_citet">Prellberg and Owczarek (<a href="./bib/P#bib2619" title="Stacking models of vesicles and compact clusters" class="ltx_ref">1995</a>)</cite>); growth formulas in cosmology
+(<cite class="ltx_cite ltx_citemacro_citet">Hamilton (<a href="./bib/H#bib2618" title="Formulae for growth factors in expanding universes containing matter and a cosmological constant" class="ltx_ref">2001</a>)</cite>).</p>
+</div>
+</section>
+<section id="iii" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§8.24(iii) </span>Generalized Exponential Integral</h2>
+<div id="iii.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=generalized%20exponential%20integral">generalized exponential integral</a>, <a class="ltx_keyword" href="./search/search?q=quantum%20chemistry">quantum chemistry</a>, <a class="ltx_keyword" href="./search/search?q=radiative%20equilibrium">radiative equilibrium</a>, <a class="ltx_keyword" href="./search/search?q=transport%20equilibrium">transport equilibrium</a>, <a class="ltx_keyword" href="./search/search?q=wave%20acoustics">wave acoustics</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./8.24.iii" title="" class="ltx_ref">http://dlmf.nist.gov/8.24.iii</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./8.24#info" title="§8.24 Physical Applications ‣ Applications ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§8.24</span></a> and
+<a href="./8#info" title="Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.8</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="iii.p1" class="ltx_para">
+<p class="ltx_p">The function <math class="ltx_Math" altimg="m1.png" altimg-height="26px" altimg-valign="-8px" altimg-width="61px" alttext="E_{p}\left(x\right)" display="inline"><mrow><msub><mi href="./8.19#E1" title="generalized exponential integral">E</mi><mi href="./8.1#p1.t1.r3" title="parameter">p</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./8.1#p1.t1.r1" title="real variable">x</mi><mo>)</mo></mrow></mrow></math>, with <math class="ltx_Math" altimg="m5.png" altimg-height="21px" altimg-valign="-6px" altimg-width="53px" alttext="p&gt;0" display="inline"><mrow><mi href="./8.1#p1.t1.r3" title="parameter">p</mi><mo>&gt;</mo><mn>0</mn></mrow></math>, appears in theories of transport
+and radiative equilibrium (<cite class="ltx_cite ltx_citemacro_citet">Hopf (<a href="./bib/H#bib1096" title="Mathematical Problems of Radiative Equilibrium" class="ltx_ref">1934</a>)</cite>, <cite class="ltx_cite ltx_citemacro_citet">Kourganoff (<a href="./bib/K#bib1338" title="Basic Methods in Transfer Problems. Radiative Equilibrium and Neutron Diffusion" class="ltx_ref">1952</a>)</cite>,
+<cite class="ltx_cite ltx_citemacro_citet">Altaç (<a href="./bib/#bib2657" title="Integrals involving Bickley and Bessel functions in radiative transfer, and generalized exponential integral functions" class="ltx_ref">1996</a>)</cite>).</p>
+</div>
+<div id="iii.p2" class="ltx_para">
+<p class="ltx_p">With more general values of <math class="ltx_Math" altimg="m6.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="p" display="inline"><mi href="./8.1#p1.t1.r3" title="parameter">p</mi></math>, <math class="ltx_Math" altimg="m1.png" altimg-height="26px" altimg-valign="-8px" altimg-width="61px" alttext="E_{p}\left(x\right)" display="inline"><mrow><msub><mi href="./8.19#E1" title="generalized exponential integral">E</mi><mi href="./8.1#p1.t1.r3" title="parameter">p</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./8.1#p1.t1.r1" title="real variable">x</mi><mo>)</mo></mrow></mrow></math> supplies fundamental
+auxiliary functions that are used in the computation of molecular electronic
+integrals in quantum chemistry (<cite class="ltx_cite ltx_citemacro_citet">Harris (<a href="./bib/H#bib2613" title="Analytic evaluation of two-center STO electron repulsion integrals via ellipsoidal expansion" class="ltx_ref">2002</a>)</cite>, <cite class="ltx_cite ltx_citemacro_citet">Shavitt (<a href="./bib/S#bib2621" title="The Gaussian Function in Calculations of Statistical Mechanics and Quantum Mechanics" class="ltx_ref">1963</a>)</cite>), and also
+wave acoustics of overlapping sound beams (<cite class="ltx_cite ltx_citemacro_citet">Ding (<a href="./bib/D#bib2620" title="A simplified algorithm for the second-order sound fields" class="ltx_ref">2000</a>)</cite>).</p>
+</div>
+</section>
+</section>
+</div>
+<div class="ltx_page_footer">
+<div class="ltx_siblings">
+<a href="./8.23" title="In Applications ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">8.23 </span>Statistical Applications</span></a><a href="./8.25" title="In Computation ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">8.25 </span>Methods of Computation</span></a>
+</div>
+<div class="ltx_footer_links ltx_centering">
+<a href="./about/notices">© 2010–2026 NIST</a> / <a href="./about/notices#S2">Disclaimer</a> / <a href="/cdn-cgi/l/email-protection#c88c84858ee5aeadadacaaa9aba388a6a1bbbce6afa7be">Feedback</a>;
+ Version 1.2.7;
+Release date 2026-06-15.</div>
+<span id="pagesettings"></span>
+<div class="ltx_nist_logo"><a href="http://www.nist.gov/"><img src="./style/nistidc.png" width="500" alt="NIST"></a></div>
+<div class="ltx_nist_links ltx_align_right">
+<a href="https://www.nist.gov/privacy-policy">Site Privacy</a> <a href="https://www.nist.gov/oism/accessibility">Accessibility</a> <a href="https://www.nist.gov/privacy">Privacy Program</a> <a href="https://www.nist.gov/oism/copyrights">Copyrights</a> <a href="https://www.commerce.gov/vulnerability-disclosure-policy">Vulnerability Disclosure</a> <a href="https://www.nist.gov/no-fear-act-policy">No Fear Act Policy</a> <a href="https://www.nist.gov/foia">FOIA</a> <a href="https://www.nist.gov/environmental-policy-statement">Environmental Policy</a> <a href="https://www.nist.gov/summary-report-scientific-integrity">Scientific Integrity</a> <a href="https://www.nist.gov/nist-information-quality-standards">Information Quality Standards</a> <a href="https://www.commerce.gov/">Commerce.gov</a> <a href="http://www.science.gov/">Science.gov</a> <a href="http://www.usa.gov/">USA.gov</a>
+</div>
+</div>
+</div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"9ef5b487afff42a68917b2d63593a474"}' crossorigin="anonymous"></script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a30b5276fd4d8dd0',t:'MTc4NzY2ODUxNA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

@@ -1,0 +1,324 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>DLMF: §11.13 Methods of Computation ‣ Computation ‣ Chapter 11 Struve and Related Functions</title>
+<link rel="shortcut icon" href="./style/DLMF-16.png" type="image/png">
+<script type="text/javascript"><!--
+	var PATH="DLMF:/11.13";
+	var ROOT="./";
+      //--></script>
+<script type="text/javascript" src="./style/jquery.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/jquery.leaveNotice.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/DLMF.js"><!-- non-empty so ie6 will accept it --></script>
+<script async="" type="text/javascript" id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC&amp;subagency=NIST&amp;pua=UA-37115410-44&amp;yt=true&amp;exts=ppsx,pps,f90,sch,rtf,wrl,txz,m1v,xlsm,msi,xsd,f,tif,eps,mpg,xml,pl,xlt,c"><!-- non-empty so ie6 will accept it --></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-BZB64W4M0L"></script><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-BZB64W4M0L');
+      </script>
+<link rel="stylesheet" type="text/css" href="./style/LaTeXML.css">
+<link rel="stylesheet" type="text/css" href="./style/DLMF.css">
+<link rel="stylesheet" type="text/css" href="./style/print.css" media="print">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="top" href="./" title="DLMF">
+<link rel="copyright" href="./about/notices" title="Copyright">
+<link rel="search" href="./search/search" title="Search">
+<link rel="help" class="ltx_help" href="./help/" title="Help">
+<link rel="up" href="./11#PT5" title="Computation ‣ Chapter 11 Struve and Related Functions">
+<link rel="up up" href="./11" title="Chapter 11 Struve and Related Functions">
+<link rel="start" href="./" title="">
+<link rel="prev" href="./11.12" title="§11.12 Physical Applications ‣ Applications ‣ Chapter 11 Struve and Related Functions">
+<link rel="next" href="./11.14" title="§11.14 Tables ‣ Computation ‣ Chapter 11 Struve and Related Functions">
+<link rel="section" href="./11.1" title="§11.1 Special Notation ‣ Notation ‣ Chapter 11 Struve and Related Functions">
+<link rel="section" href="./11.2" title="§11.2 Definitions ‣ Struve and Modified Struve Functions ‣ Chapter 11 Struve and Related Functions">
+<link rel="section" href="./11.3" title="§11.3 Graphics ‣ Struve and Modified Struve Functions ‣ Chapter 11 Struve and Related Functions">
+<link rel="section" href="./11.4" title="§11.4 Basic Properties ‣ Struve and Modified Struve Functions ‣ Chapter 11 Struve and Related Functions">
+<link rel="section" href="./11.5" title="§11.5 Integral Representations ‣ Struve and Modified Struve Functions ‣ Chapter 11 Struve and Related Functions">
+<link rel="section" href="./11.6" title="§11.6 Asymptotic Expansions ‣ Struve and Modified Struve Functions ‣ Chapter 11 Struve and Related Functions">
+<link rel="section" href="./11.7" title="§11.7 Integrals and Sums ‣ Struve and Modified Struve Functions ‣ Chapter 11 Struve and Related Functions">
+<link rel="section" href="./11.8" title="§11.8 Analogs to Kelvin Functions ‣ Struve and Modified Struve Functions ‣ Chapter 11 Struve and Related Functions">
+<link rel="section" href="./11.9" title="§11.9 Lommel Functions ‣ Related Functions ‣ Chapter 11 Struve and Related Functions">
+<link rel="section" href="./11.10" title="§11.10 Anger–Weber Functions ‣ Related Functions ‣ Chapter 11 Struve and Related Functions">
+<link rel="section" href="./11.11" title="§11.11 Asymptotic Expansions of Anger–Weber Functions ‣ Related Functions ‣ Chapter 11 Struve and Related Functions">
+<link rel="section" href="./11.12" title="§11.12 Physical Applications ‣ Applications ‣ Chapter 11 Struve and Related Functions">
+<link rel="section" href="./11.14" title="§11.14 Tables ‣ Computation ‣ Chapter 11 Struve and Related Functions">
+<link rel="section" href="./11.15" title="§11.15 Approximations ‣ Computation ‣ Chapter 11 Struve and Related Functions">
+<link rel="section" href="./11.16" title="§11.16 Software ‣ Computation ‣ Chapter 11 Struve and Related Functions">
+<link rel="document" href="./front/foreword" title="Foreword">
+<link rel="document" href="./front/preface" title="Preface">
+<link rel="document" href="./front/introduction" title="Mathematical Introduction">
+<link rel="chapter" href="./1" title="Chapter 1 Algebraic and Analytic Methods">
+<link rel="chapter" href="./2" title="Chapter 2 Asymptotic Approximations">
+<link rel="chapter" href="./3" title="Chapter 3 Numerical Methods">
+<link rel="chapter" href="./4" title="Chapter 4 Elementary Functions">
+<link rel="chapter" href="./5" title="Chapter 5 Gamma Function">
+<link rel="chapter" href="./6" title="Chapter 6 Exponential, Logarithmic, Sine, and Cosine Integrals">
+<link rel="chapter" href="./7" title="Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="chapter" href="./8" title="Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="chapter" href="./9" title="Chapter 9 Airy and Related Functions">
+<link rel="chapter" href="./10" title="Chapter 10 Bessel Functions">
+<link rel="chapter" href="./11" title="Chapter 11 Struve and Related Functions">
+<link rel="chapter" href="./12" title="Chapter 12 Parabolic Cylinder Functions">
+<link rel="chapter" href="./13" title="Chapter 13 Confluent Hypergeometric Functions">
+<link rel="chapter" href="./14" title="Chapter 14 Legendre and Related Functions">
+<link rel="chapter" href="./15" title="Chapter 15 Hypergeometric Function">
+<link rel="chapter" href="./16" title="Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="chapter" href="./17" title="Chapter 17 𝑞-Hypergeometric and Related Functions">
+<link rel="chapter" href="./18" title="Chapter 18 Orthogonal Polynomials">
+<link rel="chapter" href="./19" title="Chapter 19 Elliptic Integrals">
+<link rel="chapter" href="./20" title="Chapter 20 Theta Functions">
+<link rel="chapter" href="./21" title="Chapter 21 Multidimensional Theta Functions">
+<link rel="chapter" href="./22" title="Chapter 22 Jacobian Elliptic Functions">
+<link rel="chapter" href="./23" title="Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="chapter" href="./24" title="Chapter 24 Bernoulli and Euler Polynomials">
+<link rel="chapter" href="./25" title="Chapter 25 Zeta and Related Functions">
+<link rel="chapter" href="./26" title="Chapter 26 Combinatorial Analysis">
+<link rel="chapter" href="./27" title="Chapter 27 Functions of Number Theory">
+<link rel="chapter" href="./28" title="Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="chapter" href="./29" title="Chapter 29 Lamé Functions">
+<link rel="chapter" href="./30" title="Chapter 30 Spheroidal Wave Functions">
+<link rel="chapter" href="./31" title="Chapter 31 Heun Functions">
+<link rel="chapter" href="./32" title="Chapter 32 Painlevé Transcendents">
+<link rel="chapter" href="./33" title="Chapter 33 Coulomb Functions">
+<link rel="chapter" href="./34" title="Chapter 34 3⁢𝑗,6⁢𝑗,9⁢𝑗 Symbols">
+<link rel="chapter" href="./35" title="Chapter 35 Functions of Matrix Argument">
+<link rel="chapter" href="./36" title="Chapter 36 Integrals with Coalescing Saddles">
+<link rel="bibliography" href="./bib/" title="Bibliography">
+<link rel="index" href="./idx/" title="Index">
+<link rel="glossary" href="./not/" title="Notations">
+<link rel="document" href="./lof/" title="List of Figures">
+<link rel="document" href="./lot/" title="List of Tables">
+<link rel="document" href="./software/" title="Software Index">
+<link rel="document" href="./errata/" title="Errata">
+<link rel="document" href="./help/" title="Need Help?">
+<link rel="document" href="./search/" title="Advanced Search">
+<link rel="document" href="./about/" title="About the Project">
+<meta name="keywords" lang="en" content="Anger–Weber functions, Lommel functions, Struve functions and modified Struve functions, computation">
+</head>
+<body class="color_default textfont_default titlefont_default fontsize_default navbar_default">
+<div class="ltx_page_navbar">
+<div class="ltx_page_navlogo"><a href="./" title="Digital Library of Mathematical Functions"><span>DLMF</span></a></div>
+<div class="ltx_page_navitems">
+<form method="get" action="./search/search">
+<ul>
+<li><a href="./idx/">Index</a></li>
+<li><a href="./not/">Notations</a></li>
+<li><small><input type="text" name="q" value="" size="6" class="ltx_page_navitem_search"><button type="submit">Search</button></small></li>
+<li><a href="./help/" class="ltx_help">Help?</a></li>
+<li><a href="./help/cite">Citing</a></li>
+<li><a href="./help/customize" class="ltx_customize">Customize</a></li>
+<li id="showinfo"><a href="" onclick="showInfo(); return false;" title="Show Annotations">Annotate</a></li>
+<li id="hideinfo"><a href="" onclick="hideInfo(); return false;">UnAnnotate</a></li>
+</ul>
+</form>
+</div>
+<div class="ltx_page_navsponsors">
+<div><a href="./about/" class="ltx_page_navabout">About the Project</a></div>
+</div>
+</div>
+<div class="ltx_page_main">
+<div class="ltx_page_header">
+<a href="./11" title="" class="ltx_ref" rel="up up"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">11 </span>Struve and Related Functions</span></a><a href="./11#PT5" title="In Chapter 11 Struve and Related Functions" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title">Computation</span></a><a href="./11.12" title="In Applications ‣ Chapter 11 Struve and Related Functions" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">11.12 </span>Physical Applications</span></a><a href="./11.14" title="In Computation ‣ Chapter 11 Struve and Related Functions" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">11.14 </span>Tables</span></a>
+</div>
+<div class="ltx_page_content">
+<section class="ltx_section ltx_authors_multiline ltx_leqno">
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">§11.13 </span>Methods of Computation</h1>
+<div id="info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Permalink:</dt>
+<dd><a href="./11.13" title="" class="ltx_ref">http://dlmf.nist.gov/11.13</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./11#info" title="Chapter 11 Struve and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.11</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<h6>Contents</h6>
+<ol class="ltx_toclist ltx_toclist_section">
+<li class="ltx_tocentry"><a href="#i"><span class="ltx_tag ltx_tag_subsection">§11.13(i) </span>Introduction</a></li>
+<li class="ltx_tocentry"><a href="#ii"><span class="ltx_tag ltx_tag_subsection">§11.13(ii) </span>Series Expansions</a></li>
+<li class="ltx_tocentry"><a href="#iii"><span class="ltx_tag ltx_tag_subsection">§11.13(iii) </span>Quadrature</a></li>
+<li class="ltx_tocentry"><a href="#iv"><span class="ltx_tag ltx_tag_subsection">§11.13(iv) </span>Differential Equations</a></li>
+<li class="ltx_tocentry"><a href="#v"><span class="ltx_tag ltx_tag_subsection">§11.13(v) </span>Difference Equations</a></li>
+</ol>
+<section id="i" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§11.13(i) </span>Introduction</h2>
+<div id="i.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=Anger%E2%80%93Weber%20functions">Anger–Weber functions</a>, <a class="ltx_keyword" href="./search/search?q=Lommel%20functions">Lommel functions</a>, <a class="ltx_keyword" href="./search/search?q=Struve%20functions%20and%20modified%20Struve%20functions">Struve functions and modified Struve functions</a>, <a class="ltx_keyword" href="./search/search?q=computation">computation</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./errata/#V1.0.16.I3.ix5" title="In Other Changes ‣ Version 1.0.16 (September 18, 2017) ‣ Errata" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Erratum (V1.0.16) for  Subsection §<span class="ltx_text ltx_ref_tag">11.13(i)</span></span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./11.13.i" title="" class="ltx_ref">http://dlmf.nist.gov/11.13.i</a></dd>
+<dt>Addition (effective with 1.0.16):</dt>
+<dd>
+A reference to <cite class="ltx_cite ltx_citemacro_citet">Aarts and Janssen (<a href="./bib/#bib2895" title="Efficient approximation of the Struve functions H n occurring in the calculation of sound radiation quantities" class="ltx_ref">2016</a>)</cite> was added in this subsection.
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./11.13#info" title="§11.13 Methods of Computation ‣ Computation ‣ Chapter 11 Struve and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§11.13</span></a> and
+<a href="./11#info" title="Chapter 11 Struve and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.11</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="i.p1" class="ltx_para">
+<p class="ltx_p">Subsequent subsections treat the computation of Struve functions. The treatment
+of Lommel and Anger–Weber functions is similar. For a review of methods for the computation of <math class="ltx_Math" altimg="m5.png" altimg-height="25px" altimg-valign="-7px" altimg-width="63px" alttext="\mathbf{H}_{\nu}\left(z\right)" display="inline"><mrow><msub><mi href="./11.2#E1" title="Struve function">𝐇</mi><mi href="./11.1#p1.t1.r3" title="real or complex order">ν</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./11.1#p1.t1.r2" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math> see <cite class="ltx_cite ltx_citemacro_citet">Zanovello (<a href="./bib/Z#bib2480" title="Sul calcolo numerico della funzione di Struve ⁢ H ν ( z )" class="ltx_ref">1975</a>)</cite>. For simple
+and effective approximations to <math class="ltx_Math" altimg="m2.png" altimg-height="25px" altimg-valign="-7px" altimg-width="62px" alttext="\mathbf{H}_{0}\left(z\right)" display="inline"><mrow><msub><mi href="./11.2#E1" title="Struve function">𝐇</mi><mn>0</mn></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./11.1#p1.t1.r2" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math> and <math class="ltx_Math" altimg="m3.png" altimg-height="25px" altimg-valign="-7px" altimg-width="62px" alttext="\mathbf{H}_{1}\left(z\right)" display="inline"><mrow><msub><mi href="./11.2#E1" title="Struve function">𝐇</mi><mn>1</mn></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./11.1#p1.t1.r2" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>
+see <cite class="ltx_cite ltx_citemacro_citet">Aarts and Janssen (<a href="./bib/#bib2895" title="Efficient approximation of the Struve functions H n occurring in the calculation of sound radiation quantities" class="ltx_ref">2016</a>)</cite>.</p>
+</div>
+</section>
+<section id="ii" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§11.13(ii) </span>Series Expansions</h2>
+<div id="ii.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Permalink:</dt>
+<dd><a href="./11.13.ii" title="" class="ltx_ref">http://dlmf.nist.gov/11.13.ii</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./11.13#info" title="§11.13 Methods of Computation ‣ Computation ‣ Chapter 11 Struve and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§11.13</span></a> and
+<a href="./11#info" title="Chapter 11 Struve and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.11</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="ii.p1" class="ltx_para">
+<p class="ltx_p">Although the power-series expansions (<a href="./11.2#E1" title="(11.2.1) ‣ §11.2(i) Power-Series Expansions ‣ §11.2 Definitions ‣ Struve and Modified Struve Functions ‣ Chapter 11 Struve and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">11.2.1</span></a>) and (<a href="./11.2#E2" title="(11.2.2) ‣ §11.2(i) Power-Series Expansions ‣ §11.2 Definitions ‣ Struve and Modified Struve Functions ‣ Chapter 11 Struve and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">11.2.2</span></a>),
+and the Bessel-function expansions of §<a href="./11.4#iv" title="§11.4(iv) Expansions in Series of Bessel Functions ‣ §11.4 Basic Properties ‣ Struve and Modified Struve Functions ‣ Chapter 11 Struve and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">11.4(iv)</span></a> converge for all
+finite values of <math class="ltx_Math" altimg="m16.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi href="./11.1#p1.t1.r2" title="complex variable">z</mi></math>, they are cumbersome to use when <math class="ltx_Math" altimg="m18.png" altimg-height="25px" altimg-valign="-7px" altimg-width="26px" alttext="|z|" display="inline"><mrow><mo stretchy="false">|</mo><mi href="./11.1#p1.t1.r2" title="complex variable">z</mi><mo stretchy="false">|</mo></mrow></math> is large owing to
+slowness of convergence and cancellation. For large <math class="ltx_Math" altimg="m18.png" altimg-height="25px" altimg-valign="-7px" altimg-width="26px" alttext="|z|" display="inline"><mrow><mo stretchy="false">|</mo><mi href="./11.1#p1.t1.r2" title="complex variable">z</mi><mo stretchy="false">|</mo></mrow></math> and/or <math class="ltx_Math" altimg="m17.png" altimg-height="25px" altimg-valign="-7px" altimg-width="27px" alttext="|\nu|" display="inline"><mrow><mo stretchy="false">|</mo><mi href="./11.1#p1.t1.r3" title="real or complex order">ν</mi><mo stretchy="false">|</mo></mrow></math> the
+asymptotic expansions given in §<a href="./11.6" title="§11.6 Asymptotic Expansions ‣ Struve and Modified Struve Functions ‣ Chapter 11 Struve and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">11.6</span></a> should be used instead.</p>
+</div>
+</section>
+<section id="iii" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§11.13(iii) </span>Quadrature</h2>
+<div id="iii.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Permalink:</dt>
+<dd><a href="./11.13.iii" title="" class="ltx_ref">http://dlmf.nist.gov/11.13.iii</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./11.13#info" title="§11.13 Methods of Computation ‣ Computation ‣ Chapter 11 Struve and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§11.13</span></a> and
+<a href="./11#info" title="Chapter 11 Struve and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.11</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="iii.p1" class="ltx_para">
+<p class="ltx_p">For numerical purposes the most convenient of the representations given in
+§<a href="./11.5" title="§11.5 Integral Representations ‣ Struve and Modified Struve Functions ‣ Chapter 11 Struve and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">11.5</span></a>, at least for real variables, include the integrals
+(<a href="./11.5#E2" title="(11.5.2) ‣ §11.5(i) Integrals Along the Real Line ‣ §11.5 Integral Representations ‣ Struve and Modified Struve Functions ‣ Chapter 11 Struve and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">11.5.2</span></a>)–(<a href="./11.5#E5" title="(11.5.5) ‣ §11.5(i) Integrals Along the Real Line ‣ §11.5 Integral Representations ‣ Struve and Modified Struve Functions ‣ Chapter 11 Struve and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">11.5.5</span></a>) for <math class="ltx_Math" altimg="m7.png" altimg-height="25px" altimg-valign="-7px" altimg-width="64px" alttext="\mathbf{K}_{\nu}\left(z\right)" display="inline"><mrow><msub><mi href="./11.2#E5" title="Struve function">𝐊</mi><mi href="./11.1#p1.t1.r3" title="real or complex order">ν</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./11.1#p1.t1.r2" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math> and
+<math class="ltx_Math" altimg="m11.png" altimg-height="25px" altimg-valign="-7px" altimg-width="67px" alttext="\mathbf{M}_{\nu}\left(z\right)" display="inline"><mrow><msub><mi href="./11.2#E6" title="modified Struve function">𝐌</mi><mi href="./11.1#p1.t1.r3" title="real or complex order">ν</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./11.1#p1.t1.r2" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>. Subsequently <math class="ltx_Math" altimg="m5.png" altimg-height="25px" altimg-valign="-7px" altimg-width="63px" alttext="\mathbf{H}_{\nu}\left(z\right)" display="inline"><mrow><msub><mi href="./11.2#E1" title="Struve function">𝐇</mi><mi href="./11.1#p1.t1.r3" title="real or complex order">ν</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./11.1#p1.t1.r2" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math> and <math class="ltx_Math" altimg="m9.png" altimg-height="25px" altimg-valign="-7px" altimg-width="59px" alttext="\mathbf{L}_{\nu}\left(z\right)" display="inline"><mrow><msub><mi href="./11.2#E2" title="modified Struve function">𝐋</mi><mi href="./11.1#p1.t1.r3" title="real or complex order">ν</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./11.1#p1.t1.r2" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>
+are obtainable via (<a href="./11.2#E5" title="(11.2.5) ‣ §11.2(i) Power-Series Expansions ‣ §11.2 Definitions ‣ Struve and Modified Struve Functions ‣ Chapter 11 Struve and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">11.2.5</span></a>) and (<a href="./11.2#E6" title="(11.2.6) ‣ §11.2(i) Power-Series Expansions ‣ §11.2 Definitions ‣ Struve and Modified Struve Functions ‣ Chapter 11 Struve and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">11.2.6</span></a>). Other integrals
+that appear in §<a href="./11.5#i" title="§11.5(i) Integrals Along the Real Line ‣ §11.5 Integral Representations ‣ Struve and Modified Struve Functions ‣ Chapter 11 Struve and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">11.5(i)</span></a> have highly oscillatory integrands unless <math class="ltx_Math" altimg="m16.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi href="./11.1#p1.t1.r2" title="complex variable">z</mi></math>
+is small.</p>
+</div>
+<div id="iii.p2" class="ltx_para">
+<p class="ltx_p">For complex variables the methods described in §§<a href="./3.5#viii" title="§3.5(viii) Complex Gauss Quadrature ‣ §3.5 Quadrature ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5(viii)</span></a> and
+<a href="./3.5#ix" title="§3.5(ix) Other Contour Integrals ‣ §3.5 Quadrature ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5(ix)</span></a> are available.</p>
+</div>
+</section>
+<section id="iv" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§11.13(iv) </span>Differential Equations</h2>
+<div id="iv.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Referenced by:</dt>
+<dd><a href="./11.13#v.p1" title="§11.13(v) Difference Equations ‣ §11.13 Methods of Computation ‣ Computation ‣ Chapter 11 Struve and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§11.13(v)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./11.13.iv" title="" class="ltx_ref">http://dlmf.nist.gov/11.13.iv</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./11.13#info" title="§11.13 Methods of Computation ‣ Computation ‣ Chapter 11 Struve and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§11.13</span></a> and
+<a href="./11#info" title="Chapter 11 Struve and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.11</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="iv.p1" class="ltx_para">
+<p class="ltx_p">A comprehensive approach is to integrate the defining inhomogeneous
+differential equations (<a href="./11.2#E7" title="(11.2.7) ‣ Struve’s Equation ‣ §11.2(ii) Differential Equations ‣ §11.2 Definitions ‣ Struve and Modified Struve Functions ‣ Chapter 11 Struve and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">11.2.7</span></a>) and (<a href="./11.2#E9" title="(11.2.9) ‣ Modified Struve’s Equation ‣ §11.2(ii) Differential Equations ‣ §11.2 Definitions ‣ Struve and Modified Struve Functions ‣ Chapter 11 Struve and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">11.2.9</span></a>) numerically,
+using methods described in §<a href="./3.7" title="§3.7 Ordinary Differential Equations ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.7</span></a>. To insure stability the
+integration path must be chosen so that as we proceed along it the wanted
+solution grows in magnitude at least as rapidly as the complementary solutions.</p>
+</div>
+<div id="iv.p2" class="ltx_para">
+<p class="ltx_p">Suppose <math class="ltx_Math" altimg="m13.png" altimg-height="20px" altimg-valign="-5px" altimg-width="54px" alttext="\nu\geq 0" display="inline"><mrow><mi href="./11.1#p1.t1.r3" title="real or complex order">ν</mi><mo>≥</mo><mn>0</mn></mrow></math> and <math class="ltx_Math" altimg="m15.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./11.1#p1.t1.r1" title="real variable">x</mi></math> is real and positive. Then from the limiting forms
+for small argument (§§<a href="./11.2#i" title="§11.2(i) Power-Series Expansions ‣ §11.2 Definitions ‣ Struve and Modified Struve Functions ‣ Chapter 11 Struve and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">11.2(i)</span></a>, <a href="./10.7#i" title="§10.7(i) 𝑧→0 ‣ §10.7 Limiting Forms ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">10.7(i)</span></a>,
+<a href="./10.30#i" title="§10.30(i) 𝑧→0 ‣ §10.30 Limiting Forms ‣ Modified Bessel Functions ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">10.30(i)</span></a>), limiting forms for large argument
+(§§<a href="./11.6#i" title="§11.6(i) Large |𝑧|, Fixed 𝜈 ‣ §11.6 Asymptotic Expansions ‣ Struve and Modified Struve Functions ‣ Chapter 11 Struve and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">11.6(i)</span></a>, <a href="./10.7#ii" title="§10.7(ii) 𝑧→∞ ‣ §10.7 Limiting Forms ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">10.7(ii)</span></a>, <a href="./10.30#ii" title="§10.30(ii) 𝑧→∞ ‣ §10.30 Limiting Forms ‣ Modified Bessel Functions ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">10.30(ii)</span></a>), and the
+connection formulas (<a href="./11.2#E5" title="(11.2.5) ‣ §11.2(i) Power-Series Expansions ‣ §11.2 Definitions ‣ Struve and Modified Struve Functions ‣ Chapter 11 Struve and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">11.2.5</span></a>) and (<a href="./11.2#E6" title="(11.2.6) ‣ §11.2(i) Power-Series Expansions ‣ §11.2 Definitions ‣ Struve and Modified Struve Functions ‣ Chapter 11 Struve and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">11.2.6</span></a>), it is seen that
+<math class="ltx_Math" altimg="m4.png" altimg-height="25px" altimg-valign="-7px" altimg-width="65px" alttext="\mathbf{H}_{\nu}\left(x\right)" display="inline"><mrow><msub><mi href="./11.2#E1" title="Struve function">𝐇</mi><mi href="./11.1#p1.t1.r3" title="real or complex order">ν</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./11.1#p1.t1.r1" title="real variable">x</mi><mo>)</mo></mrow></mrow></math> and <math class="ltx_Math" altimg="m8.png" altimg-height="25px" altimg-valign="-7px" altimg-width="60px" alttext="\mathbf{L}_{\nu}\left(x\right)" display="inline"><mrow><msub><mi href="./11.2#E2" title="modified Struve function">𝐋</mi><mi href="./11.1#p1.t1.r3" title="real or complex order">ν</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./11.1#p1.t1.r1" title="real variable">x</mi><mo>)</mo></mrow></mrow></math> can be computed in a stable manner
+by integrating forwards, that is, from the origin toward infinity. The solution
+<math class="ltx_Math" altimg="m6.png" altimg-height="25px" altimg-valign="-7px" altimg-width="65px" alttext="\mathbf{K}_{\nu}\left(x\right)" display="inline"><mrow><msub><mi href="./11.2#E5" title="Struve function">𝐊</mi><mi href="./11.1#p1.t1.r3" title="real or complex order">ν</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./11.1#p1.t1.r1" title="real variable">x</mi><mo>)</mo></mrow></mrow></math> needs to be integrated backwards for small <math class="ltx_Math" altimg="m15.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./11.1#p1.t1.r1" title="real variable">x</mi></math>, and either
+forwards or backwards for large <math class="ltx_Math" altimg="m15.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./11.1#p1.t1.r1" title="real variable">x</mi></math> depending whether or not <math class="ltx_Math" altimg="m12.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="\nu" display="inline"><mi href="./11.1#p1.t1.r3" title="real or complex order">ν</mi></math> exceeds
+<math class="ltx_Math" altimg="m14.png" altimg-height="29px" altimg-valign="-9px" altimg-width="18px" alttext="\tfrac{1}{2}" display="inline"><mfrac><mn>1</mn><mn>2</mn></mfrac></math>. For <math class="ltx_Math" altimg="m10.png" altimg-height="25px" altimg-valign="-7px" altimg-width="69px" alttext="\mathbf{M}_{\nu}\left(x\right)" display="inline"><mrow><msub><mi href="./11.2#E6" title="modified Struve function">𝐌</mi><mi href="./11.1#p1.t1.r3" title="real or complex order">ν</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./11.1#p1.t1.r1" title="real variable">x</mi><mo>)</mo></mrow></mrow></math> both forward and backward integration
+are unstable, and boundary-value methods are required (§<a href="./3.7#iii" title="§3.7(iii) Taylor-Series Method: Boundary-Value Problems ‣ §3.7 Ordinary Differential Equations ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.7(iii)</span></a>).</p>
+</div>
+</section>
+<section id="v" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§11.13(v) </span>Difference Equations</h2>
+<div id="v.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Permalink:</dt>
+<dd><a href="./11.13.v" title="" class="ltx_ref">http://dlmf.nist.gov/11.13.v</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./11.13#info" title="§11.13 Methods of Computation ‣ Computation ‣ Chapter 11 Struve and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§11.13</span></a> and
+<a href="./11#info" title="Chapter 11 Struve and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.11</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="v.p1" class="ltx_para">
+<p class="ltx_p">Sequences of values of <math class="ltx_Math" altimg="m5.png" altimg-height="25px" altimg-valign="-7px" altimg-width="63px" alttext="\mathbf{H}_{\nu}\left(z\right)" display="inline"><mrow><msub><mi href="./11.2#E1" title="Struve function">𝐇</mi><mi href="./11.1#p1.t1.r3" title="real or complex order">ν</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./11.1#p1.t1.r2" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math> and <math class="ltx_Math" altimg="m9.png" altimg-height="25px" altimg-valign="-7px" altimg-width="59px" alttext="\mathbf{L}_{\nu}\left(z\right)" display="inline"><mrow><msub><mi href="./11.2#E2" title="modified Struve function">𝐋</mi><mi href="./11.1#p1.t1.r3" title="real or complex order">ν</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./11.1#p1.t1.r2" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>, with <math class="ltx_Math" altimg="m16.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi href="./11.1#p1.t1.r2" title="complex variable">z</mi></math>
+fixed, can be computed by application of the inhomogeneous difference equations
+(<a href="./11.4#E23" title="(11.4.23) ‣ §11.4(v) Recurrence Relations and Derivatives ‣ §11.4 Basic Properties ‣ Struve and Modified Struve Functions ‣ Chapter 11 Struve and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">11.4.23</span></a>) and (<a href="./11.4#E25" title="(11.4.25) ‣ §11.4(v) Recurrence Relations and Derivatives ‣ §11.4 Basic Properties ‣ Struve and Modified Struve Functions ‣ Chapter 11 Struve and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">11.4.25</span></a>). There are similar problems to those
+described in §<a href="./11.13#iv" title="§11.13(iv) Differential Equations ‣ §11.13 Methods of Computation ‣ Computation ‣ Chapter 11 Struve and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">11.13(iv)</span></a> concerning stability. In consequence
+forward recurrence, backward recurrence, or boundary-value methods may be
+necessary. See §<a href="./3.6" title="§3.6 Linear Difference Equations ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.6</span></a> for implementation of these methods, and with
+the Weber function <math class="ltx_Math" altimg="m1.png" altimg-height="25px" altimg-valign="-7px" altimg-width="63px" alttext="\mathbf{E}_{n}\left(x\right)" display="inline"><mrow><msub><mi href="./11.10#E2" title="Weber function">𝐄</mi><mi href="./11.1#p1.t1.r4" title="integer order">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./11.1#p1.t1.r1" title="real variable">x</mi><mo>)</mo></mrow></mrow></math> as an example.</p>
+</div>
+</section>
+</section>
+</div>
+<div class="ltx_page_footer">
+<div class="ltx_siblings">
+<a href="./11.12" title="In Applications ‣ Chapter 11 Struve and Related Functions" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">11.12 </span>Physical Applications</span></a><a href="./11.14" title="In Computation ‣ Chapter 11 Struve and Related Functions" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">11.14 </span>Tables</span></a>
+</div>
+<div class="ltx_footer_links ltx_centering">
+<a href="./about/notices">© 2010–2026 NIST</a> / <a href="./about/notices#S2">Disclaimer</a> / <a href="/cdn-cgi/l/email-protection#20646c6d660d464545444241434b604e4953540e474f56">Feedback</a>;
+ Version 1.2.7;
+Release date 2026-06-15.</div>
+<span id="pagesettings"></span>
+<div class="ltx_nist_logo"><a href="http://www.nist.gov/"><img src="./style/nistidc.png" width="500" alt="NIST"></a></div>
+<div class="ltx_nist_links ltx_align_right">
+<a href="https://www.nist.gov/privacy-policy">Site Privacy</a> <a href="https://www.nist.gov/oism/accessibility">Accessibility</a> <a href="https://www.nist.gov/privacy">Privacy Program</a> <a href="https://www.nist.gov/oism/copyrights">Copyrights</a> <a href="https://www.commerce.gov/vulnerability-disclosure-policy">Vulnerability Disclosure</a> <a href="https://www.nist.gov/no-fear-act-policy">No Fear Act Policy</a> <a href="https://www.nist.gov/foia">FOIA</a> <a href="https://www.nist.gov/environmental-policy-statement">Environmental Policy</a> <a href="https://www.nist.gov/summary-report-scientific-integrity">Scientific Integrity</a> <a href="https://www.nist.gov/nist-information-quality-standards">Information Quality Standards</a> <a href="https://www.commerce.gov/">Commerce.gov</a> <a href="http://www.science.gov/">Science.gov</a> <a href="http://www.usa.gov/">USA.gov</a>
+</div>
+</div>
+</div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a30b5fb96f1641f8',t:'MTc4NzY2OTA1Nw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"9ef5b487afff42a68917b2d63593a474"}' crossorigin="anonymous"></script>
+</body>
+</html>

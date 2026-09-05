@@ -1,0 +1,1459 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>DLMF: §1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods</title>
+<link rel="shortcut icon" href="./style/DLMF-16.png" type="image/png">
+<script type="text/javascript"><!--
+	var PATH="DLMF:/1.3";
+	var ROOT="./";
+      //--></script>
+<script type="text/javascript" src="./style/jquery.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/jquery.leaveNotice.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/DLMF.js"><!-- non-empty so ie6 will accept it --></script>
+<script async="" type="text/javascript" id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC&amp;subagency=NIST&amp;pua=UA-37115410-44&amp;yt=true&amp;exts=ppsx,pps,f90,sch,rtf,wrl,txz,m1v,xlsm,msi,xsd,f,tif,eps,mpg,xml,pl,xlt,c"><!-- non-empty so ie6 will accept it --></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-BZB64W4M0L"></script><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-BZB64W4M0L');
+      </script>
+<link rel="stylesheet" type="text/css" href="./style/LaTeXML.css">
+<link rel="stylesheet" type="text/css" href="./style/DLMF.css">
+<link rel="stylesheet" type="text/css" href="./style/print.css" media="print">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="top" href="./" title="DLMF">
+<link rel="copyright" href="./about/notices" title="Copyright">
+<link rel="search" href="./search/search" title="Search">
+<link rel="help" class="ltx_help" href="./help/" title="Help">
+<link rel="up" href="./1#PT2" title="Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods">
+<link rel="up up" href="./1" title="Chapter 1 Algebraic and Analytic Methods">
+<link rel="start" href="./" title="">
+<link rel="prev" href="./1.2" title="§1.2 Elementary Algebra ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods">
+<link rel="next" href="./1.4" title="§1.4 Calculus of One Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods">
+<link rel="section" href="./1.1" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods">
+<link rel="section" href="./1.2" title="§1.2 Elementary Algebra ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods">
+<link rel="section" href="./1.4" title="§1.4 Calculus of One Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods">
+<link rel="section" href="./1.5" title="§1.5 Calculus of Two or More Variables ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods">
+<link rel="section" href="./1.6" title="§1.6 Vectors and Vector-Valued Functions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods">
+<link rel="section" href="./1.7" title="§1.7 Inequalities ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods">
+<link rel="section" href="./1.8" title="§1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods">
+<link rel="section" href="./1.9" title="§1.9 Calculus of a Complex Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods">
+<link rel="section" href="./1.10" title="§1.10 Functions of a Complex Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods">
+<link rel="section" href="./1.11" title="§1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods">
+<link rel="section" href="./1.12" title="§1.12 Continued Fractions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods">
+<link rel="section" href="./1.13" title="§1.13 Differential Equations ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods">
+<link rel="section" href="./1.14" title="§1.14 Integral Transforms ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods">
+<link rel="section" href="./1.15" title="§1.15 Summability Methods ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods">
+<link rel="section" href="./1.16" title="§1.16 Distributions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods">
+<link rel="section" href="./1.17" title="§1.17 Integral and Series Representations of the Dirac Delta ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods">
+<link rel="section" href="./1.18" title="§1.18 Linear Second Order Differential Operators and Eigenfunction Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods">
+<link rel="document" href="./front/foreword" title="Foreword">
+<link rel="document" href="./front/preface" title="Preface">
+<link rel="document" href="./front/introduction" title="Mathematical Introduction">
+<link rel="chapter" href="./1" title="Chapter 1 Algebraic and Analytic Methods">
+<link rel="chapter" href="./2" title="Chapter 2 Asymptotic Approximations">
+<link rel="chapter" href="./3" title="Chapter 3 Numerical Methods">
+<link rel="chapter" href="./4" title="Chapter 4 Elementary Functions">
+<link rel="chapter" href="./5" title="Chapter 5 Gamma Function">
+<link rel="chapter" href="./6" title="Chapter 6 Exponential, Logarithmic, Sine, and Cosine Integrals">
+<link rel="chapter" href="./7" title="Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="chapter" href="./8" title="Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="chapter" href="./9" title="Chapter 9 Airy and Related Functions">
+<link rel="chapter" href="./10" title="Chapter 10 Bessel Functions">
+<link rel="chapter" href="./11" title="Chapter 11 Struve and Related Functions">
+<link rel="chapter" href="./12" title="Chapter 12 Parabolic Cylinder Functions">
+<link rel="chapter" href="./13" title="Chapter 13 Confluent Hypergeometric Functions">
+<link rel="chapter" href="./14" title="Chapter 14 Legendre and Related Functions">
+<link rel="chapter" href="./15" title="Chapter 15 Hypergeometric Function">
+<link rel="chapter" href="./16" title="Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="chapter" href="./17" title="Chapter 17 𝑞-Hypergeometric and Related Functions">
+<link rel="chapter" href="./18" title="Chapter 18 Orthogonal Polynomials">
+<link rel="chapter" href="./19" title="Chapter 19 Elliptic Integrals">
+<link rel="chapter" href="./20" title="Chapter 20 Theta Functions">
+<link rel="chapter" href="./21" title="Chapter 21 Multidimensional Theta Functions">
+<link rel="chapter" href="./22" title="Chapter 22 Jacobian Elliptic Functions">
+<link rel="chapter" href="./23" title="Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="chapter" href="./24" title="Chapter 24 Bernoulli and Euler Polynomials">
+<link rel="chapter" href="./25" title="Chapter 25 Zeta and Related Functions">
+<link rel="chapter" href="./26" title="Chapter 26 Combinatorial Analysis">
+<link rel="chapter" href="./27" title="Chapter 27 Functions of Number Theory">
+<link rel="chapter" href="./28" title="Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="chapter" href="./29" title="Chapter 29 Lamé Functions">
+<link rel="chapter" href="./30" title="Chapter 30 Spheroidal Wave Functions">
+<link rel="chapter" href="./31" title="Chapter 31 Heun Functions">
+<link rel="chapter" href="./32" title="Chapter 32 Painlevé Transcendents">
+<link rel="chapter" href="./33" title="Chapter 33 Coulomb Functions">
+<link rel="chapter" href="./34" title="Chapter 34 3⁢𝑗,6⁢𝑗,9⁢𝑗 Symbols">
+<link rel="chapter" href="./35" title="Chapter 35 Functions of Matrix Argument">
+<link rel="chapter" href="./36" title="Chapter 36 Integrals with Coalescing Saddles">
+<link rel="bibliography" href="./bib/" title="Bibliography">
+<link rel="index" href="./idx/" title="Index">
+<link rel="glossary" href="./not/" title="Notations">
+<link rel="document" href="./lof/" title="List of Figures">
+<link rel="document" href="./lot/" title="List of Tables">
+<link rel="document" href="./software/" title="Software Index">
+<link rel="document" href="./errata/" title="Errata">
+<link rel="document" href="./help/" title="Need Help?">
+<link rel="document" href="./search/" title="Advanced Search">
+<link rel="document" href="./about/" title="About the Project">
+<meta name="keywords" lang="en" content="Cauchy, Cauchy determinant, Hadamard’s inequality, Hadamard’s inequality for determinants, Hill’s type, Krattenthaler’s formula, Krattenthaler’s formula for determinants, Parseval’s equality, Vandermonde, Vandermondian, alternant, alternants, circulant, cofactor, convergence, definition, determinant, determinants, inequalities, infinite, minor, notation, orthonormal expansions, properties">
+</head>
+<body class="color_default textfont_default titlefont_default fontsize_default navbar_default">
+<div class="ltx_page_navbar">
+<div class="ltx_page_navlogo"><a href="./" title="Digital Library of Mathematical Functions"><span>DLMF</span></a></div>
+<div class="ltx_page_navitems">
+<form method="get" action="./search/search">
+<ul>
+<li><a href="./idx/">Index</a></li>
+<li><a href="./not/">Notations</a></li>
+<li><small><input type="text" name="q" value="" size="6" class="ltx_page_navitem_search"><button type="submit">Search</button></small></li>
+<li><a href="./help/" class="ltx_help">Help?</a></li>
+<li><a href="./help/cite">Citing</a></li>
+<li><a href="./help/customize" class="ltx_customize">Customize</a></li>
+<li id="showinfo"><a href="" onclick="showInfo(); return false;" title="Show Annotations">Annotate</a></li>
+<li id="hideinfo"><a href="" onclick="hideInfo(); return false;">UnAnnotate</a></li>
+</ul>
+</form>
+</div>
+<div class="ltx_page_navsponsors">
+<div><a href="./about/" class="ltx_page_navabout">About the Project</a></div>
+</div>
+</div>
+<div class="ltx_page_main">
+<div class="ltx_page_header">
+<a href="./1" title="" class="ltx_ref" rel="up up"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1 </span>Algebraic and Analytic Methods</span></a><a href="./1#PT2" title="In Chapter 1 Algebraic and Analytic Methods" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title">Topics of Discussion</span></a><a href="./1.2" title="In Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.2 </span>Elementary Algebra</span></a><a href="./1.4" title="In Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.4 </span>Calculus of One Variable</span></a>
+</div>
+<div class="ltx_page_content">
+<section class="ltx_section ltx_authors_multiline ltx_leqno">
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">§1.3 </span>Determinants, Linear Operators, and Spectral Expansions</h1>
+<div id="info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=cofactor">cofactor</a>, <a class="ltx_keyword" href="./search/search?q=minor">minor</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./1.2#Px11.p1" title="The Determinant ‣ §1.2(vi) Square Matrices ‣ §1.2 Elementary Algebra ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.2(vi)</span></a>,
+<a href="./errata/#V1.2.0.I2.ix1.I1.ix2" title="In Erratum (V1.2.0) for Chapter 1 Additions ‣ Other Changes ‣ Version 1.2.0 (March 27, 2024) ‣ Errata" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Erratum (V1.2.0) §<span class="ltx_text ltx_ref_tag">1.3</span></span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./1.3" title="" class="ltx_ref">http://dlmf.nist.gov/1.3</a></dd>
+<dt>Modification (effective with 1.2.0):</dt>
+<dd>
+The title of this section was changed from <span class="ltx_text ltx_font_italic">Determinants</span>
+to <span class="ltx_text ltx_font_italic">Determinants, Linear Operators, and Spectral Expansions</span>.
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<h6>Contents</h6>
+<ol class="ltx_toclist ltx_toclist_section">
+<li class="ltx_tocentry"><a href="#i"><span class="ltx_tag ltx_tag_subsection">§1.3(i) </span>Determinants: Elementary Properties</a></li>
+<li class="ltx_tocentry"><a href="#ii"><span class="ltx_tag ltx_tag_subsection">§1.3(ii) </span>Special Determinants</a></li>
+<li class="ltx_tocentry"><a href="#iii"><span class="ltx_tag ltx_tag_subsection">§1.3(iii) </span>Infinite Determinants</a></li>
+<li class="ltx_tocentry"><a href="#iv"><span class="ltx_tag ltx_tag_subsection">§1.3(iv) </span>Matrices as Linear Operators</a></li>
+</ol>
+<section id="i" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§1.3(i) </span>Determinants: Elementary Properties</h2>
+<div id="i.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=cofactor">cofactor</a>, <a class="ltx_keyword" href="./search/search?q=definition">definition</a>, <a class="ltx_keyword" href="./search/search?q=determinants">determinants</a>, <a class="ltx_keyword" href="./search/search?q=minor">minor</a>, <a class="ltx_keyword" href="./search/search?q=notation">notation</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./1.3.i" title="" class="ltx_ref">http://dlmf.nist.gov/1.3.i</a></dd>
+<dt>Modification (effective with 1.2.0):</dt>
+<dd>
+The title of this subsection was changed from
+<span class="ltx_text ltx_font_italic">Definitions and Elementary Properties</span>
+to <span class="ltx_text ltx_font_italic">Determinants: Elementary Properties</span>.
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.3#info" title="§1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.3</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<section id="Px1" class="ltx_paragraph">
+<h3 class="ltx_title ltx_title_paragraph">Formal Calculation of Determinants</h3>
+<div id="Px1.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=cofactor">cofactor</a>, <a class="ltx_keyword" href="./search/search?q=determinants">determinants</a>, <a class="ltx_keyword" href="./search/search?q=minor">minor</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.3#i.info" title="§1.3(i) Determinants: Elementary Properties ‣ §1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.3(i)</span></a>,
+<a href="./1.3#info" title="§1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.3</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="Px1.p1" class="ltx_para">
+<p class="ltx_p">The notation is that of (<a href="./1.2#E58" title="(1.2.58) ‣ The Determinant ‣ §1.2(vi) Square Matrices ‣ §1.2 Elementary Algebra ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.2.58</span></a>).
+For <math class="ltx_Math" altimg="m60.png" altimg-height="17px" altimg-valign="-2px" altimg-width="55px" alttext="n=2" display="inline"><mrow><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi><mo>=</mo><mn>2</mn></mrow></math>:</p>
+</div>
+<div id="Px1.p2" class="ltx_para">
+<table id="E1" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">1.3.1</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E1.png" altimg-height="84px" altimg-valign="-22px" altimg-width="368px" alttext="\det[a_{jk}]=\begin{vmatrix}a_{11}&amp;a_{12}\\
+a_{21}&amp;a_{22}\end{vmatrix}=a_{11}a_{22}-a_{12}a_{21}." display="block"><mrow><mrow><mrow><mo href="./1.2#E58" movablelimits="false" rspace="0em" title="determinant">det</mo><mrow><mo stretchy="false">[</mo><msub><mi>a</mi><mrow><mi href="./1.1#t1.r4" title="integer">j</mi><mo>⁢</mo><mi href="./1.1#t1.r4" title="integer">k</mi></mrow></msub><mo stretchy="false">]</mo></mrow></mrow><mo>=</mo><mrow><mo href="./1.2#Px11.p1" title="determinant">|</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd><msub><mi>a</mi><mn>11</mn></msub></mtd><mtd><msub><mi>a</mi><mn>12</mn></msub></mtd></mtr><mtr><mtd><msub><mi>a</mi><mn>21</mn></msub></mtd><mtd><msub><mi>a</mi><mn>22</mn></msub></mtd></mtr></mtable><mo href="./1.2#Px11.p1" title="determinant">|</mo></mrow><mo>=</mo><mrow><mrow><msub><mi>a</mi><mn>11</mn></msub><mo>⁢</mo><msub><mi>a</mi><mn>22</mn></msub></mrow><mo>−</mo><mrow><msub><mi>a</mi><mn>12</mn></msub><mo>⁢</mo><msub><mi>a</mi><mn>21</mn></msub></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E1.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./1.2#Px11.p1" title="The Determinant ‣ §1.2(vi) Square Matrices ‣ §1.2 Elementary Algebra ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m27.png" altimg-height="18px" altimg-valign="-2px" altimg-width="33px" alttext="\det" display="inline"><mo href="./1.2#E58" title="determinant">det</mo></math>: determinant</a>,
+<a href="./1.1#t1.r4" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m54.png" altimg-height="22px" altimg-valign="-6px" altimg-width="14px" alttext="j" display="inline"><mi href="./1.1#t1.r4" title="integer">j</mi></math>:  integer</a> and
+<a href="./1.1#t1.r4" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m56.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./1.1#t1.r4" title="integer">k</mi></math>:  integer</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./1.3.E1" title="" class="ltx_ref">http://dlmf.nist.gov/1.3.E1</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./1.3.E1.tex">TeX</a>, <a href="./1.3.E1.pmml">pMML</a>, <a href="./1.3.E1.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.3#Px1.info" title="Formal Calculation of Determinants ‣ §1.3(i) Determinants: Elementary Properties ‣ §1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.3(i)</span></a>,
+<a href="./1.3#i.info" title="§1.3(i) Determinants: Elementary Properties ‣ §1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.3(i)</span></a>,
+<a href="./1.3#info" title="§1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.3</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">For <math class="ltx_Math" altimg="m61.png" altimg-height="17px" altimg-valign="-2px" altimg-width="55px" alttext="n=3" display="inline"><mrow><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi><mo>=</mo><mn>3</mn></mrow></math>:</p>
+<table id="E2" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">1.3.2</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_Math ltx_eqn_cell ltx_align_center"><math class="ltx_Math" alttext="\det[a_{jk}]=\begin{vmatrix}a_{11}&amp;a_{12}&amp;a_{13}\\
+a_{21}&amp;a_{22}&amp;a_{23}\\
+a_{31}&amp;a_{32}&amp;a_{33}\end{vmatrix}=a_{11}\begin{vmatrix}a_{22}&amp;a_{23}\\
+a_{32}&amp;a_{33}\end{vmatrix}-a_{12}\begin{vmatrix}a_{21}&amp;a_{23}\\
+a_{31}&amp;a_{33}\end{vmatrix}+a_{13}\begin{vmatrix}a_{21}&amp;a_{22}\\
+a_{31}&amp;a_{32}\end{vmatrix}=a_{11}a_{22}a_{33}-a_{11}a_{23}a_{32}-a_{12}a_{21}a%
+_{33}+a_{12}a_{23}a_{31}+a_{13}a_{21}a_{32}-a_{13}a_{22}a_{31}." display="block"><mrow><mtable align="baseline 1" columnalign="left" columnspacing="0.1em" displaystyle="true"><mtr><mtd class="ltx_align_left"><mrow><mo href="./1.2#E58" movablelimits="false" rspace="0em" title="determinant">det</mo><mrow><mo stretchy="false">[</mo><msub><mi>a</mi><mrow><mi href="./1.1#t1.r4" title="integer">j</mi><mo>⁢</mo><mi href="./1.1#t1.r4" title="integer">k</mi></mrow></msub><mo stretchy="false">]</mo></mrow></mrow></mtd><mtd class="ltx_align_left"><mo>=</mo><mrow><mo href="./1.2#Px11.p1" title="determinant">|</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd><msub><mi>a</mi><mn>11</mn></msub></mtd><mtd><msub><mi>a</mi><mn>12</mn></msub></mtd><mtd><msub><mi>a</mi><mn>13</mn></msub></mtd></mtr><mtr><mtd><msub><mi>a</mi><mn>21</mn></msub></mtd><mtd><msub><mi>a</mi><mn>22</mn></msub></mtd><mtd><msub><mi>a</mi><mn>23</mn></msub></mtd></mtr><mtr><mtd><msub><mi>a</mi><mn>31</mn></msub></mtd><mtd><msub><mi>a</mi><mn>32</mn></msub></mtd><mtd><msub><mi>a</mi><mn>33</mn></msub></mtd></mtr></mtable><mo href="./1.2#Px11.p1" title="determinant">|</mo></mrow><mo>=</mo><mrow><mrow><mrow><msub><mi>a</mi><mn>11</mn></msub><mo>⁢</mo><mrow><mo href="./1.2#Px11.p1" title="determinant">|</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd><msub><mi>a</mi><mn>22</mn></msub></mtd><mtd><msub><mi>a</mi><mn>23</mn></msub></mtd></mtr><mtr><mtd><msub><mi>a</mi><mn>32</mn></msub></mtd><mtd><msub><mi>a</mi><mn>33</mn></msub></mtd></mtr></mtable><mo href="./1.2#Px11.p1" title="determinant">|</mo></mrow></mrow><mo>−</mo><mrow><msub><mi>a</mi><mn>12</mn></msub><mo>⁢</mo><mrow><mo href="./1.2#Px11.p1" title="determinant">|</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd><msub><mi>a</mi><mn>21</mn></msub></mtd><mtd><msub><mi>a</mi><mn>23</mn></msub></mtd></mtr><mtr><mtd><msub><mi>a</mi><mn>31</mn></msub></mtd><mtd><msub><mi>a</mi><mn>33</mn></msub></mtd></mtr></mtable><mo href="./1.2#Px11.p1" title="determinant">|</mo></mrow></mrow></mrow><mo>+</mo><mrow><msub><mi>a</mi><mn>13</mn></msub><mo>⁢</mo><mrow><mo href="./1.2#Px11.p1" title="determinant">|</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd><msub><mi>a</mi><mn>21</mn></msub></mtd><mtd><msub><mi>a</mi><mn>22</mn></msub></mtd></mtr><mtr><mtd><msub><mi>a</mi><mn>31</mn></msub></mtd><mtd><msub><mi>a</mi><mn>32</mn></msub></mtd></mtr></mtable><mo href="./1.2#Px11.p1" title="determinant">|</mo></mrow></mrow></mrow></mtd></mtr><mtr><mtd class="ltx_align_left"></mtd><mtd class="ltx_align_left"><mo>=</mo><mrow><mtable align="baseline 1" columnalign="left" displaystyle="true"><mtr><mtd class="ltx_align_left"><mrow><mrow><mrow><msub><mi>a</mi><mn>11</mn></msub><mo>⁢</mo><msub><mi>a</mi><mn>22</mn></msub><mo>⁢</mo><msub><mi>a</mi><mn>33</mn></msub></mrow><mo>−</mo><mrow><msub><mi>a</mi><mn>11</mn></msub><mo>⁢</mo><msub><mi>a</mi><mn>23</mn></msub><mo>⁢</mo><msub><mi>a</mi><mn>32</mn></msub></mrow><mo>−</mo><mrow><msub><mi>a</mi><mn>12</mn></msub><mo>⁢</mo><msub><mi>a</mi><mn>21</mn></msub><mo>⁢</mo><msub><mi>a</mi><mn>33</mn></msub></mrow></mrow><mo>+</mo><mrow><msub><mi>a</mi><mn>12</mn></msub><mo>⁢</mo><msub><mi>a</mi><mn>23</mn></msub><mo>⁢</mo><msub><mi>a</mi><mn>31</mn></msub></mrow><mo>+</mo><mrow><msub><mi>a</mi><mn>13</mn></msub><mo>⁢</mo><msub><mi>a</mi><mn>21</mn></msub><mo>⁢</mo><msub><mi>a</mi><mn>32</mn></msub></mrow></mrow></mtd></mtr><mtr><mtd class="ltx_align_left"><mspace style="width:2em;" width="2em"></mspace><mo>−</mo><mrow><msub><mi>a</mi><mn>13</mn></msub><mo>⁢</mo><msub><mi>a</mi><mn>22</mn></msub><mo>⁢</mo><msub><mi>a</mi><mn>31</mn></msub></mrow><mo lspace="0em">.</mo></mtd></mtr></mtable></mrow></mtd></mtr></mtable></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E2.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./1.2#Px11.p1" title="The Determinant ‣ §1.2(vi) Square Matrices ‣ §1.2 Elementary Algebra ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m27.png" altimg-height="18px" altimg-valign="-2px" altimg-width="33px" alttext="\det" display="inline"><mo href="./1.2#E58" title="determinant">det</mo></math>: determinant</a>,
+<a href="./1.1#t1.r4" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m54.png" altimg-height="22px" altimg-valign="-6px" altimg-width="14px" alttext="j" display="inline"><mi href="./1.1#t1.r4" title="integer">j</mi></math>:  integer</a> and
+<a href="./1.1#t1.r4" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m56.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./1.1#t1.r4" title="integer">k</mi></math>:  integer</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./1.3.E2" title="" class="ltx_ref">http://dlmf.nist.gov/1.3.E2</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./1.3.E2.tex">TeX</a>, <a href="./1.3.E2.pmml">pMML</a>, <a href="./1.3.E2.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.3#Px1.info" title="Formal Calculation of Determinants ‣ §1.3(i) Determinants: Elementary Properties ‣ §1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.3(i)</span></a>,
+<a href="./1.3#i.info" title="§1.3(i) Determinants: Elementary Properties ‣ §1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.3(i)</span></a>,
+<a href="./1.3#info" title="§1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.3</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">Higher-order determinants are natural generalizations. The <em class="ltx_emph ltx_font_italic">minor</em>
+<math class="ltx_Math" altimg="m17.png" altimg-height="24px" altimg-valign="-8px" altimg-width="42px" alttext="M_{jk}" display="inline"><msub><mi href="./1.3#Px1.p2" title="minor">M</mi><mrow><mi href="./1.1#t1.r4" title="integer">j</mi><mo>⁢</mo><mi href="./1.1#t1.r4" title="integer">k</mi></mrow></msub></math> of the entry <math class="ltx_Math" altimg="m50.png" altimg-height="19px" altimg-valign="-8px" altimg-width="33px" alttext="a_{jk}" display="inline"><msub><mi>a</mi><mrow><mi href="./1.1#t1.r4" title="integer">j</mi><mo>⁢</mo><mi href="./1.1#t1.r4" title="integer">k</mi></mrow></msub></math> in the <math class="ltx_Math" altimg="m62.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></math>th-order determinant <math class="ltx_Math" altimg="m26.png" altimg-height="26px" altimg-valign="-8px" altimg-width="74px" alttext="\det[a_{jk}]" display="inline"><mrow><mo href="./1.2#E58" rspace="0em" title="determinant">det</mo><mrow><mo stretchy="false">[</mo><msub><mi>a</mi><mrow><mi href="./1.1#t1.r4" title="integer">j</mi><mo>⁢</mo><mi href="./1.1#t1.r4" title="integer">k</mi></mrow></msub><mo stretchy="false">]</mo></mrow></mrow></math>
+is the (<math class="ltx_Math" altimg="m59.png" altimg-height="19px" altimg-valign="-4px" altimg-width="53px" alttext="n-1" display="inline"><mrow><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi><mo>−</mo><mn>1</mn></mrow></math>)th-order determinant derived from <math class="ltx_Math" altimg="m26.png" altimg-height="26px" altimg-valign="-8px" altimg-width="74px" alttext="\det[a_{jk}]" display="inline"><mrow><mo href="./1.2#E58" rspace="0em" title="determinant">det</mo><mrow><mo stretchy="false">[</mo><msub><mi>a</mi><mrow><mi href="./1.1#t1.r4" title="integer">j</mi><mo>⁢</mo><mi href="./1.1#t1.r4" title="integer">k</mi></mrow></msub><mo stretchy="false">]</mo></mrow></mrow></math> by deleting
+the <math class="ltx_Math" altimg="m54.png" altimg-height="22px" altimg-valign="-6px" altimg-width="14px" alttext="j" display="inline"><mi href="./1.1#t1.r4" title="integer">j</mi></math>th row and the <math class="ltx_Math" altimg="m56.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./1.1#t1.r4" title="integer">k</mi></math>th column. The <em class="ltx_emph ltx_font_italic">cofactor</em>
+<math class="ltx_Math" altimg="m10.png" altimg-height="24px" altimg-valign="-8px" altimg-width="38px" alttext="A_{jk}" display="inline"><msub><mi href="./1.3#E3" title="cofactor">A</mi><mrow><mi href="./1.1#t1.r4" title="integer">j</mi><mo>⁢</mo><mi href="./1.1#t1.r4" title="integer">k</mi></mrow></msub></math> of <math class="ltx_Math" altimg="m50.png" altimg-height="19px" altimg-valign="-8px" altimg-width="33px" alttext="a_{jk}" display="inline"><msub><mi>a</mi><mrow><mi href="./1.1#t1.r4" title="integer">j</mi><mo>⁢</mo><mi href="./1.1#t1.r4" title="integer">k</mi></mrow></msub></math> is
+</p>
+<table id="E3" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">1.3.3</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E3.png" altimg-height="31px" altimg-valign="-8px" altimg-width="185px" alttext="A_{jk}=(-1)^{j+k}M_{jk}." display="block"><mrow><mrow><msub><mi href="./1.3#E3" title="cofactor">A</mi><mrow><mi href="./1.1#t1.r4" title="integer">j</mi><mo>⁢</mo><mi href="./1.1#t1.r4" title="integer">k</mi></mrow></msub><mo>=</mo><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mrow><mi href="./1.1#t1.r4" title="integer">j</mi><mo>+</mo><mi href="./1.1#t1.r4" title="integer">k</mi></mrow></msup><mo>⁢</mo><msub><mi href="./1.3#Px1.p2" title="minor">M</mi><mrow><mi href="./1.1#t1.r4" title="integer">j</mi><mo>⁢</mo><mi href="./1.1#t1.r4" title="integer">k</mi></mrow></msub></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E3.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Defines:</dt>
+<dd><span class="ltx_text"><math class="ltx_Math" altimg="m9.png" altimg-height="24px" altimg-valign="-8px" altimg-width="38px" alttext="A_{\NVar{j}\NVar{k}}" display="inline"><msub><mi href="./1.3#E3" title="cofactor">A</mi><mrow><mi class="ltx_nvar" href="./1.1#t1.r4" title="integer">j</mi><mo>⁢</mo><mi class="ltx_nvar" href="./1.1#t1.r4" title="integer">k</mi></mrow></msub></math>:  cofactor (locally)</span></dd>
+<dt>Symbols:</dt>
+<dd>
+<a href="./1.1#t1.r4" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m54.png" altimg-height="22px" altimg-valign="-6px" altimg-width="14px" alttext="j" display="inline"><mi href="./1.1#t1.r4" title="integer">j</mi></math>:  integer</a>,
+<a href="./1.1#t1.r4" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m56.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./1.1#t1.r4" title="integer">k</mi></math>:  integer</a> and
+<a href="./1.3#Px1.p2" title="Formal Calculation of Determinants ‣ §1.3(i) Determinants: Elementary Properties ‣ §1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m16.png" altimg-height="24px" altimg-valign="-8px" altimg-width="42px" alttext="M_{\NVar{j}\NVar{k}}" display="inline"><msub><mi href="./1.3#Px1.p2" title="minor">M</mi><mrow><mi class="ltx_nvar" href="./1.1#t1.r4" title="integer">j</mi><mo>⁢</mo><mi class="ltx_nvar" href="./1.1#t1.r4" title="integer">k</mi></mrow></msub></math>:  minor</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./1.3.E3" title="" class="ltx_ref">http://dlmf.nist.gov/1.3.E3</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./1.3.E3.tex">TeX</a>, <a href="./1.3.E3.pmml">pMML</a>, <a href="./1.3.E3.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.3#Px1.info" title="Formal Calculation of Determinants ‣ §1.3(i) Determinants: Elementary Properties ‣ §1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.3(i)</span></a>,
+<a href="./1.3#i.info" title="§1.3(i) Determinants: Elementary Properties ‣ §1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.3(i)</span></a>,
+<a href="./1.3#info" title="§1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.3</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">An <math class="ltx_Math" altimg="m62.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></math>th-order determinant expanded by its <math class="ltx_Math" altimg="m54.png" altimg-height="22px" altimg-valign="-6px" altimg-width="14px" alttext="j" display="inline"><mi href="./1.1#t1.r4" title="integer">j</mi></math>th row is given by</p>
+<table id="E4" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">1.3.4</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E4.png" altimg-height="68px" altimg-valign="-29px" altimg-width="201px" alttext="\det[a_{jk}]=\sum^{n}_{\ell=1}a_{j\ell}A_{j\ell}." display="block"><mrow><mrow><mrow><mo href="./1.2#E58" movablelimits="false" rspace="0em" title="determinant">det</mo><mrow><mo stretchy="false">[</mo><msub><mi>a</mi><mrow><mi href="./1.1#t1.r4" title="integer">j</mi><mo>⁢</mo><mi href="./1.1#t1.r4" title="integer">k</mi></mrow></msub><mo stretchy="false">]</mo></mrow></mrow><mo rspace="0.111em">=</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi mathvariant="normal">ℓ</mi><mo>=</mo><mn>1</mn></mrow><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></munderover><mrow><msub><mi>a</mi><mrow><mi href="./1.1#t1.r4" title="integer">j</mi><mo>⁢</mo><mi mathvariant="normal">ℓ</mi></mrow></msub><mo>⁢</mo><msub><mi href="./1.3#E3" title="cofactor">A</mi><mrow><mi href="./1.1#t1.r4" title="integer">j</mi><mo>⁢</mo><mi mathvariant="normal">ℓ</mi></mrow></msub></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E4.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./1.2#Px11.p1" title="The Determinant ‣ §1.2(vi) Square Matrices ‣ §1.2 Elementary Algebra ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m27.png" altimg-height="18px" altimg-valign="-2px" altimg-width="33px" alttext="\det" display="inline"><mo href="./1.2#E58" title="determinant">det</mo></math>: determinant</a>,
+<a href="./1.1#t1.r4" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m54.png" altimg-height="22px" altimg-valign="-6px" altimg-width="14px" alttext="j" display="inline"><mi href="./1.1#t1.r4" title="integer">j</mi></math>:  integer</a>,
+<a href="./1.1#t1.r4" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m56.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./1.1#t1.r4" title="integer">k</mi></math>:  integer</a>,
+<a href="./1.1#t1.r5" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m62.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></math>:  nonnegative integer</a> and
+<a href="./1.3#E3" title="(1.3.3) ‣ Formal Calculation of Determinants ‣ §1.3(i) Determinants: Elementary Properties ‣ §1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m9.png" altimg-height="24px" altimg-valign="-8px" altimg-width="38px" alttext="A_{\NVar{j}\NVar{k}}" display="inline"><msub><mi href="./1.3#E3" title="cofactor">A</mi><mrow><mi class="ltx_nvar" href="./1.1#t1.r4" title="integer">j</mi><mo>⁢</mo><mi class="ltx_nvar" href="./1.1#t1.r4" title="integer">k</mi></mrow></msub></math>:  cofactor</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./1.3.E4" title="" class="ltx_ref">http://dlmf.nist.gov/1.3.E4</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./1.3.E4.tex">TeX</a>, <a href="./1.3.E4.pmml">pMML</a>, <a href="./1.3.E4.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.3#Px1.info" title="Formal Calculation of Determinants ‣ §1.3(i) Determinants: Elementary Properties ‣ §1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.3(i)</span></a>,
+<a href="./1.3#i.info" title="§1.3(i) Determinants: Elementary Properties ‣ §1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.3(i)</span></a>,
+<a href="./1.3#info" title="§1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.3</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">If two rows (or columns) of a determinant are interchanged, then the
+determinant changes sign. If two rows (columns) of a determinant are
+identical, then the determinant is zero. If all the elements of a row (column)
+of a determinant are multiplied by an arbitrary factor <math class="ltx_Math" altimg="m44.png" altimg-height="17px" altimg-valign="-6px" altimg-width="17px" alttext="\mu" display="inline"><mi href="./1.3#Px1.p2" title="arbitrary factor">μ</mi></math>, then the result
+is a determinant which is <math class="ltx_Math" altimg="m44.png" altimg-height="17px" altimg-valign="-6px" altimg-width="17px" alttext="\mu" display="inline"><mi href="./1.3#Px1.p2" title="arbitrary factor">μ</mi></math> times the original. If <math class="ltx_Math" altimg="m44.png" altimg-height="17px" altimg-valign="-6px" altimg-width="17px" alttext="\mu" display="inline"><mi href="./1.3#Px1.p2" title="arbitrary factor">μ</mi></math> times a row
+(column) of a determinant is added to another row (column), then the value of
+the determinant is unchanged.</p>
+</div>
+</section>
+<section id="Px2" class="ltx_paragraph">
+<h3 class="ltx_title ltx_title_paragraph">Relationships Between Determinants</h3>
+<div id="Px2.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=determinants">determinants</a>, <a class="ltx_keyword" href="./search/search?q=properties">properties</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.3#i.info" title="§1.3(i) Determinants: Elementary Properties ‣ §1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.3(i)</span></a>,
+<a href="./1.3#info" title="§1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.3</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="Px2.p1" class="ltx_para">
+<table id="EGx1" class="ltx_equationgroup ltx_eqn_table">
+
+<tbody id="E5">
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">1.3.5</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m5.png" altimg-height="43px" altimg-valign="-9px" altimg-width="105px" alttext="\displaystyle\det\left(\mathbf{A}^{\mathrm{T}}\right)" display="inline"><mrow><mo href="./1.2#E58" movablelimits="false" rspace="0em" title="determinant">det</mo><mrow><mo>(</mo><msup><mi>𝐀</mi><mi href="./1.2#E28" mathvariant="normal" title="transpose of matrix">T</mi></msup><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m1.png" altimg-height="27px" altimg-valign="-7px" altimg-width="97px" alttext="\displaystyle=\det(\mathbf{A})," display="inline"><mrow><mrow><mi></mi><mo rspace="0.1389em">=</mo><mrow><mo href="./1.2#E58" lspace="0.1389em" movablelimits="false" rspace="0em" title="determinant">det</mo><mrow><mo stretchy="false">(</mo><mi>𝐀</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E5.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./1.2#Px11.p1" title="The Determinant ‣ §1.2(vi) Square Matrices ‣ §1.2 Elementary Algebra ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m27.png" altimg-height="18px" altimg-valign="-2px" altimg-width="33px" alttext="\det" display="inline"><mo href="./1.2#E58" title="determinant">det</mo></math>: determinant</a>,
+<a href="./1.2#E28" title="(1.2.28) ‣ General 𝑚×𝑛 Matrices ‣ §1.2(v) Matrices, Vectors, Scalar Products, and Norms ‣ §1.2 Elementary Algebra ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m20.png" altimg-height="22px" altimg-valign="-2px" altimg-width="35px" alttext="\NVar{\mathbf{A}}^{\mathrm{T}}" display="inline"><msup><mi class="ltx_nvar">𝐀</mi><mi href="./1.2#E28" mathvariant="normal" title="transpose of matrix">T</mi></msup></math>: transpose of matrix</a>,
+<a href="./1.1#t1.r4" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m54.png" altimg-height="22px" altimg-valign="-6px" altimg-width="14px" alttext="j" display="inline"><mi href="./1.1#t1.r4" title="integer">j</mi></math>:  integer</a> and
+<a href="./1.1#t1.r4" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m56.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./1.1#t1.r4" title="integer">k</mi></math>:  integer</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./errata/#V1.2.0.I1.ix1" title="In Errata ‣ Version 1.2.0 (March 27, 2024) ‣ Errata" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Erratum (V1.2.0) for  Equations (<span class="ltx_text ltx_ref_tag">1.3.5</span>), (<span class="ltx_text ltx_ref_tag">1.3.6</span>), (<span class="ltx_text ltx_ref_tag">1.3.7</span>)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./1.3.E5" title="" class="ltx_ref">http://dlmf.nist.gov/1.3.E5</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./1.3.E5.tex">TeX</a>, <a href="./1.3.E5.pmml">pMML</a>, <a href="./1.3.E5.png">png</a>
+</dd>
+<dt>Modification (effective with 1.2.0):</dt>
+<dd>
+Previously we did use the notation <math class="ltx_Math" altimg="m18.png" altimg-height="26px" altimg-valign="-8px" altimg-width="45px" alttext="[a_{jk}]" display="inline"><mrow><mo stretchy="false">[</mo><msub><mi>a</mi><mrow><mi href="./1.1#t1.r4" title="integer">j</mi><mo>⁢</mo><mi href="./1.1#t1.r4" title="integer">k</mi></mrow></msub><mo stretchy="false">]</mo></mrow></math> for <math class="ltx_Math" altimg="m37.png" altimg-height="18px" altimg-valign="-2px" altimg-width="22px" alttext="\mathbf{A}" display="inline"><mi>𝐀</mi></math>.
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.3#Px2.info" title="Relationships Between Determinants ‣ §1.3(i) Determinants: Elementary Properties ‣ §1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.3(i)</span></a>,
+<a href="./1.3#i.info" title="§1.3(i) Determinants: Elementary Properties ‣ §1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.3(i)</span></a>,
+<a href="./1.3#info" title="§1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.3</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+<tbody id="E6">
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">1.3.6</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m6.png" altimg-height="43px" altimg-valign="-9px" altimg-width="115px" alttext="\displaystyle\det\left({\mathbf{A}}^{-1}\right)" display="inline"><mrow><mo href="./1.2#E58" movablelimits="false" rspace="0em" title="determinant">det</mo><mrow><mo>(</mo><msup><mi>𝐀</mi><mrow><mo href="./1.2#Px12" title="matrix inverse">−</mo><mn href="./1.2#Px12" title="matrix inverse">1</mn></mrow></msup><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m3.png" altimg-height="53px" altimg-valign="-21px" altimg-width="102px" alttext="\displaystyle=\frac{1}{\det(\mathbf{A})}," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><mrow><mo href="./1.2#E58" rspace="0em" title="determinant">det</mo><mrow><mo stretchy="false">(</mo><mi>𝐀</mi><mo stretchy="false">)</mo></mrow></mrow></mfrac></mstyle></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E6.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./1.2#Px11.p1" title="The Determinant ‣ §1.2(vi) Square Matrices ‣ §1.2 Elementary Algebra ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m27.png" altimg-height="18px" altimg-valign="-2px" altimg-width="33px" alttext="\det" display="inline"><mo href="./1.2#E58" title="determinant">det</mo></math>: determinant</a>,
+<a href="./1.2#Px12" title="The Inverse ‣ §1.2(vi) Square Matrices ‣ §1.2 Elementary Algebra ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m66.png" altimg-height="23px" altimg-valign="-2px" altimg-width="45px" alttext="{\NVar{\mathbf{A}}}^{-1}" display="inline"><msup><mi class="ltx_nvar" href="./1.2#Px19" title="non-defective matrix">𝐀</mi><mrow><mo href="./1.2#Px12" title="matrix inverse">−</mo><mn href="./1.2#Px12" title="matrix inverse">1</mn></mrow></msup></math>: matrix inverse</a>,
+<a href="./1.1#t1.r4" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m54.png" altimg-height="22px" altimg-valign="-6px" altimg-width="14px" alttext="j" display="inline"><mi href="./1.1#t1.r4" title="integer">j</mi></math>:  integer</a> and
+<a href="./1.1#t1.r4" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m56.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./1.1#t1.r4" title="integer">k</mi></math>:  integer</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./errata/#V1.2.0.I1.ix1" title="In Errata ‣ Version 1.2.0 (March 27, 2024) ‣ Errata" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Erratum (V1.2.0) for  Equations (<span class="ltx_text ltx_ref_tag">1.3.5</span>), (<span class="ltx_text ltx_ref_tag">1.3.6</span>), (<span class="ltx_text ltx_ref_tag">1.3.7</span>)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./1.3.E6" title="" class="ltx_ref">http://dlmf.nist.gov/1.3.E6</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./1.3.E6.tex">TeX</a>, <a href="./1.3.E6.pmml">pMML</a>, <a href="./1.3.E6.png">png</a>
+</dd>
+<dt>Modification (effective with 1.2.0):</dt>
+<dd>
+Previously we did use the notation <math class="ltx_Math" altimg="m18.png" altimg-height="26px" altimg-valign="-8px" altimg-width="45px" alttext="[a_{jk}]" display="inline"><mrow><mo stretchy="false">[</mo><msub><mi>a</mi><mrow><mi href="./1.1#t1.r4" title="integer">j</mi><mo>⁢</mo><mi href="./1.1#t1.r4" title="integer">k</mi></mrow></msub><mo stretchy="false">]</mo></mrow></math> for <math class="ltx_Math" altimg="m37.png" altimg-height="18px" altimg-valign="-2px" altimg-width="22px" alttext="\mathbf{A}" display="inline"><mi>𝐀</mi></math>.
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.3#Px2.info" title="Relationships Between Determinants ‣ §1.3(i) Determinants: Elementary Properties ‣ §1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.3(i)</span></a>,
+<a href="./1.3#i.info" title="§1.3(i) Determinants: Elementary Properties ‣ §1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.3(i)</span></a>,
+<a href="./1.3#info" title="§1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.3</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+<tbody id="E7">
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">1.3.7</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m4.png" altimg-height="27px" altimg-valign="-7px" altimg-width="87px" alttext="\displaystyle\det(\mathbf{A}\mathbf{B})" display="inline"><mrow><mo href="./1.2#E58" movablelimits="false" rspace="0em" title="determinant">det</mo><mrow><mo stretchy="false">(</mo><mrow><mi>𝐀</mi><mo>⁢</mo><mi>𝐁</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m2.png" altimg-height="27px" altimg-valign="-7px" altimg-width="163px" alttext="\displaystyle=\det(\mathbf{A})\det(\mathbf{B})." display="inline"><mrow><mrow><mi></mi><mo rspace="0.1389em">=</mo><mrow><mo href="./1.2#E58" lspace="0.1389em" movablelimits="false" rspace="0em" title="determinant">det</mo><mrow><mrow><mo stretchy="false">(</mo><mi>𝐀</mi><mo stretchy="false">)</mo></mrow><mo lspace="0.167em">⁢</mo><mrow><mo href="./1.2#E58" movablelimits="false" rspace="0em" title="determinant">det</mo><mrow><mo stretchy="false">(</mo><mi>𝐁</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E7.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./1.2#Px11.p1" title="The Determinant ‣ §1.2(vi) Square Matrices ‣ §1.2 Elementary Algebra ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m27.png" altimg-height="18px" altimg-valign="-2px" altimg-width="33px" alttext="\det" display="inline"><mo href="./1.2#E58" title="determinant">det</mo></math>: determinant</a>,
+<a href="./1.1#t1.r4" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m54.png" altimg-height="22px" altimg-valign="-6px" altimg-width="14px" alttext="j" display="inline"><mi href="./1.1#t1.r4" title="integer">j</mi></math>:  integer</a> and
+<a href="./1.1#t1.r4" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m56.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./1.1#t1.r4" title="integer">k</mi></math>:  integer</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./1.2#Px19.p1" title="Relation of Eigenvalues to the Determinant and Trace ‣ §1.2(vi) Square Matrices ‣ §1.2 Elementary Algebra ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.2(vi)</span></a>,
+<a href="./1.3#Px4.p1" title="Hadamard’s Inequality ‣ §1.3(i) Determinants: Elementary Properties ‣ §1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.3(i)</span></a>,
+<a href="./errata/#V1.2.0.I1.ix1" title="In Errata ‣ Version 1.2.0 (March 27, 2024) ‣ Errata" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Erratum (V1.2.0) for  Equations (<span class="ltx_text ltx_ref_tag">1.3.5</span>), (<span class="ltx_text ltx_ref_tag">1.3.6</span>), (<span class="ltx_text ltx_ref_tag">1.3.7</span>)</span></a>,
+<a href="./errata/#V1.2.0.I2.ix1.I1.ix2.p1" title="In Erratum (V1.2.0) for Chapter 1 Additions ‣ Other Changes ‣ Version 1.2.0 (March 27, 2024) ‣ Errata" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Erratum (V1.2.0) §<span class="ltx_text ltx_ref_tag">1.3</span></span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./1.3.E7" title="" class="ltx_ref">http://dlmf.nist.gov/1.3.E7</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./1.3.E7.tex">TeX</a>, <a href="./1.3.E7.pmml">pMML</a>, <a href="./1.3.E7.png">png</a>
+</dd>
+<dt>Modification (effective with 1.2.0):</dt>
+<dd>
+Previously we did use the notation <math class="ltx_Math" altimg="m18.png" altimg-height="26px" altimg-valign="-8px" altimg-width="45px" alttext="[a_{jk}]" display="inline"><mrow><mo stretchy="false">[</mo><msub><mi>a</mi><mrow><mi href="./1.1#t1.r4" title="integer">j</mi><mo>⁢</mo><mi href="./1.1#t1.r4" title="integer">k</mi></mrow></msub><mo stretchy="false">]</mo></mrow></math> for <math class="ltx_Math" altimg="m37.png" altimg-height="18px" altimg-valign="-2px" altimg-width="22px" alttext="\mathbf{A}" display="inline"><mi>𝐀</mi></math>.
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.3#Px2.info" title="Relationships Between Determinants ‣ §1.3(i) Determinants: Elementary Properties ‣ §1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.3(i)</span></a>,
+<a href="./1.3#i.info" title="§1.3(i) Determinants: Elementary Properties ‣ §1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.3(i)</span></a>,
+<a href="./1.3#info" title="§1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.3</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="Px3" class="ltx_paragraph">
+<h3 class="ltx_title ltx_title_paragraph">Determinants of Upper/Lower Triangular and Diagonal Matrices</h3>
+<div id="Px3.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.3#i.info" title="§1.3(i) Determinants: Elementary Properties ‣ §1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.3(i)</span></a>,
+<a href="./1.3#info" title="§1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.3</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="Px3.p1" class="ltx_para">
+<p class="ltx_p">The determinant of an upper or lower triangular, or diagonal, square matrix <math class="ltx_Math" altimg="m37.png" altimg-height="18px" altimg-valign="-2px" altimg-width="22px" alttext="\mathbf{A}" display="inline"><mi>𝐀</mi></math> is the product of the diagonal elements
+<math class="ltx_Math" altimg="m25.png" altimg-height="27px" altimg-valign="-8px" altimg-width="170px" alttext="\det(\mathbf{A})=\prod_{i=1}^{n}a_{ii}" display="inline"><mrow><mrow><mo href="./1.2#E58" rspace="0em" title="determinant">det</mo><mrow><mo stretchy="false">(</mo><mi>𝐀</mi><mo stretchy="false">)</mo></mrow></mrow><mo rspace="0.111em">=</mo><mrow><msubsup><mo>∏</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></msubsup><msub><mi>a</mi><mrow><mi>i</mi><mo>⁢</mo><mi>i</mi></mrow></msub></mrow></mrow></math>.</p>
+</div>
+</section>
+<section id="Px4" class="ltx_paragraph">
+<h3 class="ltx_title ltx_title_paragraph">Hadamard’s Inequality</h3>
+<div id="Px4.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=Hadamard%20inequality">Hadamard’s inequality</a>, <a class="ltx_keyword" href="./search/search?q=Hadamard%20inequality%20for%20determinants">Hadamard’s inequality for determinants</a>, <a class="ltx_keyword" href="./search/search?q=determinants">determinants</a>, <a class="ltx_keyword" href="./search/search?q=inequalities">inequalities</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.3#i.info" title="§1.3(i) Determinants: Elementary Properties ‣ §1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.3(i)</span></a>,
+<a href="./1.3#info" title="§1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.3</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="Px4.p1" class="ltx_para">
+<p class="ltx_p">For real-valued <math class="ltx_Math" altimg="m50.png" altimg-height="19px" altimg-valign="-8px" altimg-width="33px" alttext="a_{jk}" display="inline"><msub><mi>a</mi><mrow><mi href="./1.1#t1.r4" title="integer">j</mi><mo>⁢</mo><mi href="./1.1#t1.r4" title="integer">k</mi></mrow></msub></math>,</p>
+<table id="E8" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">1.3.8</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E8.png" altimg-height="61px" altimg-valign="-22px" altimg-width="338px" alttext="{\begin{vmatrix}a_{11}&amp;a_{12}\\
+a_{21}&amp;a_{22}\end{vmatrix}}^{2}\leq(a^{2}_{11}+a^{2}_{12})(a^{2}_{21}+a^{2}_{2%
+2})," display="block"><mrow><mrow><msup><mrow><mo href="./1.2#Px11.p1" title="determinant">|</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd><msub><mi>a</mi><mn>11</mn></msub></mtd><mtd><msub><mi>a</mi><mn>12</mn></msub></mtd></mtr><mtr><mtd><msub><mi>a</mi><mn>21</mn></msub></mtd><mtd><msub><mi>a</mi><mn>22</mn></msub></mtd></mtr></mtable><mo href="./1.2#Px11.p1" title="determinant">|</mo></mrow><mn>2</mn></msup><mo>≤</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><msubsup><mi>a</mi><mn>11</mn><mn>2</mn></msubsup><mo>+</mo><msubsup><mi>a</mi><mn>12</mn><mn>2</mn></msubsup></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msubsup><mi>a</mi><mn>21</mn><mn>2</mn></msubsup><mo>+</mo><msubsup><mi>a</mi><mn>22</mn><mn>2</mn></msubsup></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E8.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd><a href="./1.2#Px11.p1" title="The Determinant ‣ §1.2(vi) Square Matrices ‣ §1.2 Elementary Algebra ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m27.png" altimg-height="18px" altimg-valign="-2px" altimg-width="33px" alttext="\det" display="inline"><mo href="./1.2#E58" title="determinant">det</mo></math>: determinant</a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./1.3.E8" title="" class="ltx_ref">http://dlmf.nist.gov/1.3.E8</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./1.3.E8.tex">TeX</a>, <a href="./1.3.E8.pmml">pMML</a>, <a href="./1.3.E8.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.3#Px4.info" title="Hadamard’s Inequality ‣ §1.3(i) Determinants: Elementary Properties ‣ §1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.3(i)</span></a>,
+<a href="./1.3#i.info" title="§1.3(i) Determinants: Elementary Properties ‣ §1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.3(i)</span></a>,
+<a href="./1.3#info" title="§1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.3</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<table id="E9" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">1.3.9</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E9.png" altimg-height="239px" altimg-valign="-29px" altimg-width="229px" alttext="\det[a_{jk}]^{2}\leq\left(\sum^{n}_{k=1}a^{2}_{1k}\right)\left(\sum^{n}_{k=1}a%
+^{2}_{2k}\right)\dots\left(\sum^{n}_{k=1}a^{2}_{nk}\right)." display="block"><mrow><mrow><mrow><mo href="./1.2#E58" movablelimits="false" rspace="0em" title="determinant">det</mo><msup><mrow><mo stretchy="false">[</mo><msub><mi>a</mi><mrow><mi href="./1.1#t1.r4" title="integer">j</mi><mo>⁢</mo><mi href="./1.1#t1.r4" title="integer">k</mi></mrow></msub><mo stretchy="false">]</mo></mrow><mn>2</mn></msup></mrow><mo>≤</mo><mrow><mrow><mo>(</mo><mrow><munderover><mo lspace="0em" movablelimits="false">∑</mo><mrow><mi href="./1.1#t1.r4" title="integer">k</mi><mo>=</mo><mn>1</mn></mrow><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></munderover><msubsup><mi>a</mi><mrow><mn>1</mn><mo>⁢</mo><mi href="./1.1#t1.r4" title="integer">k</mi></mrow><mn>2</mn></msubsup></mrow><mo>)</mo></mrow><mo>⁢</mo><mrow><mo>(</mo><mrow><munderover><mo lspace="0em" movablelimits="false">∑</mo><mrow><mi href="./1.1#t1.r4" title="integer">k</mi><mo>=</mo><mn>1</mn></mrow><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></munderover><msubsup><mi>a</mi><mrow><mn>2</mn><mo>⁢</mo><mi href="./1.1#t1.r4" title="integer">k</mi></mrow><mn>2</mn></msubsup></mrow><mo>)</mo></mrow><mo>⁢</mo><mi mathvariant="normal">…</mi><mo>⁢</mo><mrow><mo>(</mo><mrow><munderover><mo lspace="0em" movablelimits="false">∑</mo><mrow><mi href="./1.1#t1.r4" title="integer">k</mi><mo>=</mo><mn>1</mn></mrow><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></munderover><msubsup><mi>a</mi><mrow><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi><mo>⁢</mo><mi href="./1.1#t1.r4" title="integer">k</mi></mrow><mn>2</mn></msubsup></mrow><mo>)</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E9.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./1.2#Px11.p1" title="The Determinant ‣ §1.2(vi) Square Matrices ‣ §1.2 Elementary Algebra ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m27.png" altimg-height="18px" altimg-valign="-2px" altimg-width="33px" alttext="\det" display="inline"><mo href="./1.2#E58" title="determinant">det</mo></math>: determinant</a>,
+<a href="./1.1#t1.r4" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m54.png" altimg-height="22px" altimg-valign="-6px" altimg-width="14px" alttext="j" display="inline"><mi href="./1.1#t1.r4" title="integer">j</mi></math>:  integer</a>,
+<a href="./1.1#t1.r4" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m56.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./1.1#t1.r4" title="integer">k</mi></math>:  integer</a> and
+<a href="./1.1#t1.r5" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m62.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></math>:  nonnegative integer</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./1.3.E9" title="" class="ltx_ref">http://dlmf.nist.gov/1.3.E9</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./1.3.E9.tex">TeX</a>, <a href="./1.3.E9.pmml">pMML</a>, <a href="./1.3.E9.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.3#Px4.info" title="Hadamard’s Inequality ‣ §1.3(i) Determinants: Elementary Properties ‣ §1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.3(i)</span></a>,
+<a href="./1.3#i.info" title="§1.3(i) Determinants: Elementary Properties ‣ §1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.3(i)</span></a>,
+<a href="./1.3#info" title="§1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.3</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">Compare also (<a href="./1.3#E7" title="(1.3.7) ‣ Relationships Between Determinants ‣ §1.3(i) Determinants: Elementary Properties ‣ §1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.3.7</span></a>) for the left-hand side. Equality holds iff</p>
+<table id="E10" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">1.3.10</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E10.png" altimg-height="25px" altimg-valign="-8px" altimg-width="321px" alttext="a_{j1}a_{k1}+a_{j2}a_{k2}+\dots+a_{jn}a_{kn}=0" display="block"><mrow><mrow><mrow><msub><mi>a</mi><mrow><mi href="./1.1#t1.r4" title="integer">j</mi><mo>⁢</mo><mn>1</mn></mrow></msub><mo>⁢</mo><msub><mi>a</mi><mrow><mi href="./1.1#t1.r4" title="integer">k</mi><mo>⁢</mo><mn>1</mn></mrow></msub></mrow><mo>+</mo><mrow><msub><mi>a</mi><mrow><mi href="./1.1#t1.r4" title="integer">j</mi><mo>⁢</mo><mn>2</mn></mrow></msub><mo>⁢</mo><msub><mi>a</mi><mrow><mi href="./1.1#t1.r4" title="integer">k</mi><mo>⁢</mo><mn>2</mn></mrow></msub></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><mrow><msub><mi>a</mi><mrow><mi href="./1.1#t1.r4" title="integer">j</mi><mo>⁢</mo><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></mrow></msub><mo>⁢</mo><msub><mi>a</mi><mrow><mi href="./1.1#t1.r4" title="integer">k</mi><mo>⁢</mo><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></mrow></msub></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E10.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./1.1#t1.r4" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m54.png" altimg-height="22px" altimg-valign="-6px" altimg-width="14px" alttext="j" display="inline"><mi href="./1.1#t1.r4" title="integer">j</mi></math>:  integer</a>,
+<a href="./1.1#t1.r4" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m56.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./1.1#t1.r4" title="integer">k</mi></math>:  integer</a> and
+<a href="./1.1#t1.r5" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m62.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></math>:  nonnegative integer</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./1.3.E10" title="" class="ltx_ref">http://dlmf.nist.gov/1.3.E10</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./1.3.E10.tex">TeX</a>, <a href="./1.3.E10.pmml">pMML</a>, <a href="./1.3.E10.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.3#Px4.info" title="Hadamard’s Inequality ‣ §1.3(i) Determinants: Elementary Properties ‣ §1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.3(i)</span></a>,
+<a href="./1.3#i.info" title="§1.3(i) Determinants: Elementary Properties ‣ §1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.3(i)</span></a>,
+<a href="./1.3#info" title="§1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.3</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">for every distinct pair of <math class="ltx_Math" altimg="m52.png" altimg-height="22px" altimg-valign="-6px" altimg-width="34px" alttext="j,k" display="inline"><mrow><mi href="./1.1#t1.r4" title="integer">j</mi><mo>,</mo><mi href="./1.1#t1.r4" title="integer">k</mi></mrow></math>, or when one of the factors
+<math class="ltx_Math" altimg="m47.png" altimg-height="30px" altimg-valign="-11px" altimg-width="90px" alttext="\sum^{n}_{k=1}a^{2}_{jk}" display="inline"><mrow><msubsup><mo>∑</mo><mrow><mi href="./1.1#t1.r4" title="integer">k</mi><mo>=</mo><mn>1</mn></mrow><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></msubsup><msubsup><mi>a</mi><mrow><mi href="./1.1#t1.r4" title="integer">j</mi><mo>⁢</mo><mi href="./1.1#t1.r4" title="integer">k</mi></mrow><mn>2</mn></msubsup></mrow></math> vanishes.</p>
+</div>
+</section>
+</section>
+<section id="ii" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§1.3(ii) </span>Special Determinants</h2>
+<div id="ii.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=alternant">alternant</a>, <a class="ltx_keyword" href="./search/search?q=alternants">alternants</a>, <a class="ltx_keyword" href="./search/search?q=determinant">determinant</a>, <a class="ltx_keyword" href="./search/search?q=determinants">determinants</a>
+</dd>
+<dt>Notes:</dt>
+<dd>See <cite class="ltx_cite ltx_citemacro_citet">Vein and Dale (<a href="./bib/V#bib2326" title="Determinants and Their Applications in Mathematical Physics" class="ltx_ref">1999</a>, pp. 51–52, 57, 79–81)</cite>.
+For (<a href="./1.3#E17" title="(1.3.17) ‣ Krattenthaler’s Formula ‣ §1.3(ii) Special Determinants ‣ §1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.3.17</span></a>) see <cite class="ltx_cite ltx_citemacro_citet">Bressoud (<a href="./bib/B#bib348" title="Proofs and Confirmations: The Story of the Alternating Sign Matrix Conjecture" class="ltx_ref">1999</a>, p. 67)</cite>.</dd>
+<dt>Permalink:</dt>
+<dd><a href="./1.3.ii" title="" class="ltx_ref">http://dlmf.nist.gov/1.3.ii</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.3#info" title="§1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.3</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="ii.p1" class="ltx_para">
+<p class="ltx_p">An <em class="ltx_emph ltx_font_italic">alternant</em>
+is a determinant function of <math class="ltx_Math" altimg="m62.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></math> variables which changes sign when two of the
+variables are interchanged. Examples:</p>
+<table id="EGx2" class="ltx_equationgroup ltx_eqn_table">
+
+<tbody id="E11">
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">1.3.11</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E11.png" altimg-height="28px" altimg-valign="-8px" altimg-width="110px" alttext="\det[f_{k}(x_{j})]," display="block"><mrow><mrow><mo href="./1.2#E58" movablelimits="false" rspace="0em" title="determinant">det</mo><mrow><mo stretchy="false">[</mo><mrow><msub><mi>f</mi><mi href="./1.1#t1.r4" title="integer">k</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mi href="./1.1#t1.r4" title="integer">j</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">]</mo></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="4"><span class="ltx_constraint"><math class="ltx_Math" altimg="m53.png" altimg-height="22px" altimg-valign="-6px" altimg-width="111px" alttext="j=1,\dots,n" display="inline"><mrow><mi href="./1.1#t1.r4" title="integer">j</mi><mo>=</mo><mrow><mn>1</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></mrow></mrow></math>; <math class="ltx_Math" altimg="m55.png" altimg-height="22px" altimg-valign="-6px" altimg-width="112px" alttext="k=1,\dots,n" display="inline"><mrow><mi href="./1.1#t1.r4" title="integer">k</mi><mo>=</mo><mrow><mn>1</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></mrow></mrow></math>,</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E11.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./1.2#Px11.p1" title="The Determinant ‣ §1.2(vi) Square Matrices ‣ §1.2 Elementary Algebra ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m27.png" altimg-height="18px" altimg-valign="-2px" altimg-width="33px" alttext="\det" display="inline"><mo href="./1.2#E58" title="determinant">det</mo></math>: determinant</a>,
+<a href="./1.1#t1.r4" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m54.png" altimg-height="22px" altimg-valign="-6px" altimg-width="14px" alttext="j" display="inline"><mi href="./1.1#t1.r4" title="integer">j</mi></math>:  integer</a>,
+<a href="./1.1#t1.r4" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m56.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./1.1#t1.r4" title="integer">k</mi></math>:  integer</a> and
+<a href="./1.1#t1.r5" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m62.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></math>:  nonnegative integer</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./1.3.E11" title="" class="ltx_ref">http://dlmf.nist.gov/1.3.E11</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./1.3.E11.tex">TeX</a>, <a href="./1.3.E11.pmml">pMML</a>, <a href="./1.3.E11.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.3#ii.info" title="§1.3(ii) Special Determinants ‣ §1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.3(ii)</span></a>,
+<a href="./1.3#info" title="§1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.3</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+<tbody id="E12">
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">1.3.12</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E12.png" altimg-height="28px" altimg-valign="-8px" altimg-width="131px" alttext="\det[f(x_{j},y_{k})]," display="block"><mrow><mrow><mo href="./1.2#E58" movablelimits="false" rspace="0em" title="determinant">det</mo><mrow><mo stretchy="false">[</mo><mrow><mi>f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mi href="./1.1#t1.r4" title="integer">j</mi></msub><mo>,</mo><msub><mi>y</mi><mi href="./1.1#t1.r4" title="integer">k</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">]</mo></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="4"><span class="ltx_constraint"><math class="ltx_Math" altimg="m53.png" altimg-height="22px" altimg-valign="-6px" altimg-width="111px" alttext="j=1,\dots,n" display="inline"><mrow><mi href="./1.1#t1.r4" title="integer">j</mi><mo>=</mo><mrow><mn>1</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></mrow></mrow></math>; <math class="ltx_Math" altimg="m55.png" altimg-height="22px" altimg-valign="-6px" altimg-width="112px" alttext="k=1,\dots,n" display="inline"><mrow><mi href="./1.1#t1.r4" title="integer">k</mi><mo>=</mo><mrow><mn>1</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></mrow></mrow></math>.</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E12.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./1.2#Px11.p1" title="The Determinant ‣ §1.2(vi) Square Matrices ‣ §1.2 Elementary Algebra ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m27.png" altimg-height="18px" altimg-valign="-2px" altimg-width="33px" alttext="\det" display="inline"><mo href="./1.2#E58" title="determinant">det</mo></math>: determinant</a>,
+<a href="./1.1#t1.r4" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m54.png" altimg-height="22px" altimg-valign="-6px" altimg-width="14px" alttext="j" display="inline"><mi href="./1.1#t1.r4" title="integer">j</mi></math>:  integer</a>,
+<a href="./1.1#t1.r4" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m56.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./1.1#t1.r4" title="integer">k</mi></math>:  integer</a> and
+<a href="./1.1#t1.r5" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m62.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></math>:  nonnegative integer</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./1.3.E12" title="" class="ltx_ref">http://dlmf.nist.gov/1.3.E12</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./1.3.E12.tex">TeX</a>, <a href="./1.3.E12.pmml">pMML</a>, <a href="./1.3.E12.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.3#ii.info" title="§1.3(ii) Special Determinants ‣ §1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.3(ii)</span></a>,
+<a href="./1.3#info" title="§1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.3</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+<section id="Px5" class="ltx_paragraph">
+<h3 class="ltx_title ltx_title_paragraph">Vandermonde Determinant or Vandermondian</h3>
+<div id="Px5.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=Vandermonde">Vandermonde</a>, <a class="ltx_keyword" href="./search/search?q=Vandermondian">Vandermondian</a>, <a class="ltx_keyword" href="./search/search?q=determinants">determinants</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.3#ii.info" title="§1.3(ii) Special Determinants ‣ §1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.3(ii)</span></a>,
+<a href="./1.3#info" title="§1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.3</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="Px5.p1" class="ltx_para">
+<table id="E13" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">1.3.13</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E13.png" altimg-height="128px" altimg-valign="-54px" altimg-width="649px" alttext="\begin{vmatrix}1&amp;x_{1}&amp;x^{2}_{1}&amp;\cdots&amp;x^{n-1}_{1}\\
+1&amp;x_{2}&amp;x^{2}_{2}&amp;\cdots&amp;x^{n-1}_{2}\\
+\vdots&amp;\vdots&amp;\vdots&amp;\ddots&amp;\vdots\\
+1&amp;x_{n}&amp;x^{2}_{n}&amp;\cdots&amp;x_{n}^{n-1}\end{vmatrix}=\prod_{1\leq j&lt;k\leq n}(x_{k%
+}-x_{j})." display="block"><mrow><mrow><mrow><mo href="./1.2#Px11.p1" title="determinant">|</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd><mn>1</mn></mtd><mtd><msub><mi>x</mi><mn>1</mn></msub></mtd><mtd><msubsup><mi>x</mi><mn>1</mn><mn>2</mn></msubsup></mtd><mtd><mi mathvariant="normal">⋯</mi></mtd><mtd><msubsup><mi>x</mi><mn>1</mn><mrow><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi><mo>−</mo><mn>1</mn></mrow></msubsup></mtd></mtr><mtr><mtd><mn>1</mn></mtd><mtd><msub><mi>x</mi><mn>2</mn></msub></mtd><mtd><msubsup><mi>x</mi><mn>2</mn><mn>2</mn></msubsup></mtd><mtd><mi mathvariant="normal">⋯</mi></mtd><mtd><msubsup><mi>x</mi><mn>2</mn><mrow><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi><mo>−</mo><mn>1</mn></mrow></msubsup></mtd></mtr><mtr><mtd><mi mathvariant="normal">⋮</mi></mtd><mtd><mi mathvariant="normal">⋮</mi></mtd><mtd><mi mathvariant="normal">⋮</mi></mtd><mtd><mi mathvariant="normal">⋱</mi></mtd><mtd><mi mathvariant="normal">⋮</mi></mtd></mtr><mtr><mtd><mn>1</mn></mtd><mtd><msub><mi>x</mi><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></msub></mtd><mtd><msubsup><mi>x</mi><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi><mn>2</mn></msubsup></mtd><mtd><mi mathvariant="normal">⋯</mi></mtd><mtd><msubsup><mi>x</mi><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi><mrow><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi><mo>−</mo><mn>1</mn></mrow></msubsup></mtd></mtr></mtable><mo href="./1.2#Px11.p1" title="determinant">|</mo></mrow><mo rspace="0.111em">=</mo><mrow><munder><mo movablelimits="false" rspace="0em">∏</mo><mrow><mn>1</mn><mo>≤</mo><mi href="./1.1#t1.r4" title="integer">j</mi><mo>&lt;</mo><mi href="./1.1#t1.r4" title="integer">k</mi><mo>≤</mo><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></mrow></munder><mrow><mo stretchy="false">(</mo><mrow><msub><mi>x</mi><mi href="./1.1#t1.r4" title="integer">k</mi></msub><mo>−</mo><msub><mi>x</mi><mi href="./1.1#t1.r4" title="integer">j</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E13.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./1.2#Px11.p1" title="The Determinant ‣ §1.2(vi) Square Matrices ‣ §1.2 Elementary Algebra ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m27.png" altimg-height="18px" altimg-valign="-2px" altimg-width="33px" alttext="\det" display="inline"><mo href="./1.2#E58" title="determinant">det</mo></math>: determinant</a>,
+<a href="./1.1#t1.r4" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m54.png" altimg-height="22px" altimg-valign="-6px" altimg-width="14px" alttext="j" display="inline"><mi href="./1.1#t1.r4" title="integer">j</mi></math>:  integer</a>,
+<a href="./1.1#t1.r4" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m56.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./1.1#t1.r4" title="integer">k</mi></math>:  integer</a> and
+<a href="./1.1#t1.r5" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m62.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></math>:  nonnegative integer</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./1.3.E13" title="" class="ltx_ref">http://dlmf.nist.gov/1.3.E13</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./1.3.E13.tex">TeX</a>, <a href="./1.3.E13.pmml">pMML</a>, <a href="./1.3.E13.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.3#Px5.info" title="Vandermonde Determinant or Vandermondian ‣ §1.3(ii) Special Determinants ‣ §1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.3(ii)</span></a>,
+<a href="./1.3#ii.info" title="§1.3(ii) Special Determinants ‣ §1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.3(ii)</span></a>,
+<a href="./1.3#info" title="§1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.3</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="Px6" class="ltx_paragraph">
+<h3 class="ltx_title ltx_title_paragraph">Cauchy Determinant</h3>
+<div id="Px6.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=Cauchy">Cauchy</a>, <a class="ltx_keyword" href="./search/search?q=Cauchy%20determinant">Cauchy determinant</a>, <a class="ltx_keyword" href="./search/search?q=determinants">determinants</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.3#ii.info" title="§1.3(ii) Special Determinants ‣ §1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.3(ii)</span></a>,
+<a href="./1.3#info" title="§1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.3</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="Px6.p1" class="ltx_para">
+<table id="E14" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">1.3.14</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E14.png" altimg-height="80px" altimg-valign="-32px" altimg-width="802px" alttext="\det\left[\frac{1}{a_{j}-b_{k}}\right]=(-1)^{n(n-1)/2}\*\prod_{1\leq j&lt;k\leq n%
+}(a_{k}-a_{j})(b_{k}-b_{j})\Bigg/\prod^{n}_{j,k=1}(a_{j}-b_{k})." display="block"><mrow><mrow><mrow><mo href="./1.2#E58" movablelimits="false" rspace="0em" title="determinant">det</mo><mrow><mo>[</mo><mfrac><mn>1</mn><mrow><msub><mi>a</mi><mi href="./1.1#t1.r4" title="integer">j</mi></msub><mo>−</mo><msub><mi>b</mi><mi href="./1.1#t1.r4" title="integer">k</mi></msub></mrow></mfrac><mo>]</mo></mrow></mrow><mo>=</mo><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mrow><mrow><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>/</mo><mn>2</mn></mrow></msup><mo>⁢</mo><mrow><munder><mo movablelimits="false" rspace="0em">∏</mo><mrow><mn>1</mn><mo>≤</mo><mi href="./1.1#t1.r4" title="integer">j</mi><mo>&lt;</mo><mi href="./1.1#t1.r4" title="integer">k</mi><mo>≤</mo><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></mrow></munder><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><msub><mi>a</mi><mi href="./1.1#t1.r4" title="integer">k</mi></msub><mo>−</mo><msub><mi>a</mi><mi href="./1.1#t1.r4" title="integer">j</mi></msub></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>b</mi><mi href="./1.1#t1.r4" title="integer">k</mi></msub><mo>−</mo><msub><mi>b</mi><mi href="./1.1#t1.r4" title="integer">j</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo maxsize="2.600em" minsize="2.600em" rspace="0.055em" stretchy="true" symmetric="true">/</mo><mrow><munderover><mo movablelimits="false" rspace="0em">∏</mo><mrow><mrow><mi href="./1.1#t1.r4" title="integer">j</mi><mo>,</mo><mi href="./1.1#t1.r4" title="integer">k</mi></mrow><mo>=</mo><mn>1</mn></mrow><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></munderover><mrow><mo stretchy="false">(</mo><mrow><msub><mi>a</mi><mi href="./1.1#t1.r4" title="integer">j</mi></msub><mo>−</mo><msub><mi>b</mi><mi href="./1.1#t1.r4" title="integer">k</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E14.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./1.2#Px11.p1" title="The Determinant ‣ §1.2(vi) Square Matrices ‣ §1.2 Elementary Algebra ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m27.png" altimg-height="18px" altimg-valign="-2px" altimg-width="33px" alttext="\det" display="inline"><mo href="./1.2#E58" title="determinant">det</mo></math>: determinant</a>,
+<a href="./1.1#t1.r4" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m54.png" altimg-height="22px" altimg-valign="-6px" altimg-width="14px" alttext="j" display="inline"><mi href="./1.1#t1.r4" title="integer">j</mi></math>:  integer</a>,
+<a href="./1.1#t1.r4" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m56.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./1.1#t1.r4" title="integer">k</mi></math>:  integer</a> and
+<a href="./1.1#t1.r5" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m62.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></math>:  nonnegative integer</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./1.3.E14" title="" class="ltx_ref">http://dlmf.nist.gov/1.3.E14</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./1.3.E14.tex">TeX</a>, <a href="./1.3.E14.pmml">pMML</a>, <a href="./1.3.E14.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.3#Px6.info" title="Cauchy Determinant ‣ §1.3(ii) Special Determinants ‣ §1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.3(ii)</span></a>,
+<a href="./1.3#ii.info" title="§1.3(ii) Special Determinants ‣ §1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.3(ii)</span></a>,
+<a href="./1.3#info" title="§1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.3</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="Px7" class="ltx_paragraph">
+<h3 class="ltx_title ltx_title_paragraph">Circulant</h3>
+<div id="Px7.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=circulant">circulant</a>, <a class="ltx_keyword" href="./search/search?q=determinants">determinants</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.3#ii.info" title="§1.3(ii) Special Determinants ‣ §1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.3(ii)</span></a>,
+<a href="./1.3#info" title="§1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.3</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="Px7.p1" class="ltx_para">
+<table id="E15" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">1.3.15</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E15.png" altimg-height="126px" altimg-valign="-54px" altimg-width="766px" alttext="\begin{vmatrix}a_{1}&amp;a_{2}&amp;\cdots&amp;a_{n}\\
+a_{n}&amp;a_{1}&amp;\cdots&amp;a_{n-1}\\
+\vdots&amp;\vdots&amp;\ddots&amp;\vdots\\
+a_{2}&amp;a_{3}&amp;\cdots&amp;a_{1}\end{vmatrix}=\prod^{n}_{k=1}(a_{1}+a_{2}\omega_{k}+a_%
+{3}\omega_{k}^{2}+\dots+a_{n}\omega_{k}^{n-1})," display="block"><mrow><mrow><mrow><mo href="./1.2#Px11.p1" title="determinant">|</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd><msub><mi>a</mi><mn>1</mn></msub></mtd><mtd><msub><mi>a</mi><mn>2</mn></msub></mtd><mtd><mi mathvariant="normal">⋯</mi></mtd><mtd><msub><mi>a</mi><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></msub></mtd></mtr><mtr><mtd><msub><mi>a</mi><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></msub></mtd><mtd><msub><mi>a</mi><mn>1</mn></msub></mtd><mtd><mi mathvariant="normal">⋯</mi></mtd><mtd><msub><mi>a</mi><mrow><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi><mo>−</mo><mn>1</mn></mrow></msub></mtd></mtr><mtr><mtd><mi mathvariant="normal">⋮</mi></mtd><mtd><mi mathvariant="normal">⋮</mi></mtd><mtd><mi mathvariant="normal">⋱</mi></mtd><mtd><mi mathvariant="normal">⋮</mi></mtd></mtr><mtr><mtd><msub><mi>a</mi><mn>2</mn></msub></mtd><mtd><msub><mi>a</mi><mn>3</mn></msub></mtd><mtd><mi mathvariant="normal">⋯</mi></mtd><mtd><msub><mi>a</mi><mn>1</mn></msub></mtd></mtr></mtable><mo href="./1.2#Px11.p1" title="determinant">|</mo></mrow><mo rspace="0.111em">=</mo><mrow><munderover><mo movablelimits="false" rspace="0em">∏</mo><mrow><mi href="./1.1#t1.r4" title="integer">k</mi><mo>=</mo><mn>1</mn></mrow><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></munderover><mrow><mo stretchy="false">(</mo><mrow><msub><mi>a</mi><mn>1</mn></msub><mo>+</mo><mrow><msub><mi>a</mi><mn>2</mn></msub><mo>⁢</mo><msub><mi href="./1.3#Px7.p1" title="roots of unity">ω</mi><mi href="./1.1#t1.r4" title="integer">k</mi></msub></mrow><mo>+</mo><mrow><msub><mi>a</mi><mn>3</mn></msub><mo>⁢</mo><msubsup><mi href="./1.3#Px7.p1" title="roots of unity">ω</mi><mi href="./1.1#t1.r4" title="integer">k</mi><mn>2</mn></msubsup></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><mrow><msub><mi>a</mi><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></msub><mo>⁢</mo><msubsup><mi href="./1.3#Px7.p1" title="roots of unity">ω</mi><mi href="./1.1#t1.r4" title="integer">k</mi><mrow><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi><mo>−</mo><mn>1</mn></mrow></msubsup></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E15.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./1.2#Px11.p1" title="The Determinant ‣ §1.2(vi) Square Matrices ‣ §1.2 Elementary Algebra ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m27.png" altimg-height="18px" altimg-valign="-2px" altimg-width="33px" alttext="\det" display="inline"><mo href="./1.2#E58" title="determinant">det</mo></math>: determinant</a>,
+<a href="./1.1#t1.r4" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m56.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./1.1#t1.r4" title="integer">k</mi></math>:  integer</a>,
+<a href="./1.1#t1.r5" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m62.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></math>:  nonnegative integer</a> and
+<a href="./1.3#Px7.p1" title="Circulant ‣ §1.3(ii) Special Determinants ‣ §1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m46.png" altimg-height="19px" altimg-valign="-8px" altimg-width="26px" alttext="\omega_{\NVar{j}}" display="inline"><msub><mi href="./1.3#Px7.p1" title="roots of unity">ω</mi><mi class="ltx_nvar" href="./1.1#t1.r4" title="integer">j</mi></msub></math>:  roots of unity</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./1.3.E15" title="" class="ltx_ref">http://dlmf.nist.gov/1.3.E15</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./1.3.E15.tex">TeX</a>, <a href="./1.3.E15.pmml">pMML</a>, <a href="./1.3.E15.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.3#Px7.info" title="Circulant ‣ §1.3(ii) Special Determinants ‣ §1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.3(ii)</span></a>,
+<a href="./1.3#ii.info" title="§1.3(ii) Special Determinants ‣ §1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.3(ii)</span></a>,
+<a href="./1.3#info" title="§1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.3</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">where <math class="ltx_Math" altimg="m45.png" altimg-height="17px" altimg-valign="-6px" altimg-width="128px" alttext="\omega_{1},\omega_{2},\dots,\omega_{n}" display="inline"><mrow><msub><mi href="./1.3#Px7.p1" title="roots of unity">ω</mi><mn>1</mn></msub><mo>,</mo><msub><mi href="./1.3#Px7.p1" title="roots of unity">ω</mi><mn>2</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi href="./1.3#Px7.p1" title="roots of unity">ω</mi><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></msub></mrow></math> are the <math class="ltx_Math" altimg="m62.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></math>th roots of unity
+(<a href="./1.11#E21" title="(1.11.21) ‣ §1.11(iv) Roots of Unity and of Other Constants ‣ §1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.11.21</span></a>).</p>
+</div>
+</section>
+<section id="Px8" class="ltx_paragraph">
+<h3 class="ltx_title ltx_title_paragraph">Krattenthaler’s Formula</h3>
+<div id="Px8.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=Krattenthaler%20formula">Krattenthaler’s formula</a>, <a class="ltx_keyword" href="./search/search?q=Krattenthaler%20formula%20for%20determinants">Krattenthaler’s formula for determinants</a>, <a class="ltx_keyword" href="./search/search?q=determinants">determinants</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.3#ii.info" title="§1.3(ii) Special Determinants ‣ §1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.3(ii)</span></a>,
+<a href="./1.3#info" title="§1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.3</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="Px8.p1" class="ltx_para">
+<p class="ltx_p">For</p>
+<table id="E16" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">1.3.16</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E16.png" altimg-height="28px" altimg-valign="-8px" altimg-width="690px" alttext="t_{jk}=(x_{j}+a_{n})(x_{j}+a_{n-1})\cdots(x_{j}+a_{k+1})\*(x_{j}+b_{k})(x_{j}+%
+b_{k-1})\cdots(x_{j}+b_{2})," display="block"><mrow><mrow><msub><mi href="./1.3#E16" title="elements">t</mi><mrow><mi href="./1.1#t1.r4" title="integer">j</mi><mo>⁢</mo><mi href="./1.1#t1.r4" title="integer">k</mi></mrow></msub><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><msub><mi>x</mi><mi href="./1.1#t1.r4" title="integer">j</mi></msub><mo>+</mo><msub><mi>a</mi><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></msub></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>x</mi><mi href="./1.1#t1.r4" title="integer">j</mi></msub><mo>+</mo><msub><mi>a</mi><mrow><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi><mo>−</mo><mn>1</mn></mrow></msub></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi mathvariant="normal">⋯</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>x</mi><mi href="./1.1#t1.r4" title="integer">j</mi></msub><mo>+</mo><msub><mi>a</mi><mrow><mi href="./1.1#t1.r4" title="integer">k</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>x</mi><mi href="./1.1#t1.r4" title="integer">j</mi></msub><mo>+</mo><msub><mi>b</mi><mi href="./1.1#t1.r4" title="integer">k</mi></msub></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>x</mi><mi href="./1.1#t1.r4" title="integer">j</mi></msub><mo>+</mo><msub><mi>b</mi><mrow><mi href="./1.1#t1.r4" title="integer">k</mi><mo>−</mo><mn>1</mn></mrow></msub></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi mathvariant="normal">⋯</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>x</mi><mi href="./1.1#t1.r4" title="integer">j</mi></msub><mo>+</mo><msub><mi>b</mi><mn>2</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E16.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Defines:</dt>
+<dd><span class="ltx_text"><math class="ltx_Math" altimg="m64.png" altimg-height="23px" altimg-valign="-8px" altimg-width="30px" alttext="t_{\NVar{j}\NVar{k}}" display="inline"><msub><mi href="./1.3#E16" title="elements">t</mi><mrow><mi class="ltx_nvar" href="./1.1#t1.r4" title="integer">j</mi><mo>⁢</mo><mi class="ltx_nvar" href="./1.1#t1.r4" title="integer">k</mi></mrow></msub></math>:  elements (locally)</span></dd>
+<dt>Symbols:</dt>
+<dd>
+<a href="./1.1#t1.r4" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m54.png" altimg-height="22px" altimg-valign="-6px" altimg-width="14px" alttext="j" display="inline"><mi href="./1.1#t1.r4" title="integer">j</mi></math>:  integer</a>,
+<a href="./1.1#t1.r4" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m56.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./1.1#t1.r4" title="integer">k</mi></math>:  integer</a> and
+<a href="./1.1#t1.r5" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m62.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></math>:  nonnegative integer</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./1.3.E16" title="" class="ltx_ref">http://dlmf.nist.gov/1.3.E16</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./1.3.E16.tex">TeX</a>, <a href="./1.3.E16.pmml">pMML</a>, <a href="./1.3.E16.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.3#Px8.info" title="Krattenthaler’s Formula ‣ §1.3(ii) Special Determinants ‣ §1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.3(ii)</span></a>,
+<a href="./1.3#ii.info" title="§1.3(ii) Special Determinants ‣ §1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.3(ii)</span></a>,
+<a href="./1.3#info" title="§1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.3</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<table id="E17" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">1.3.17</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E17.png" altimg-height="58px" altimg-valign="-32px" altimg-width="422px" alttext="\det[t_{jk}]=\prod_{1\leq j&lt;k\leq n}(x_{j}-x_{k})\prod_{2\leq j\leq k\leq n}(b%
+_{j}-a_{k})." display="block"><mrow><mrow><mrow><mo href="./1.2#E58" movablelimits="false" rspace="0em" title="determinant">det</mo><mrow><mo stretchy="false">[</mo><msub><mi href="./1.3#E16" title="elements">t</mi><mrow><mi href="./1.1#t1.r4" title="integer">j</mi><mo>⁢</mo><mi href="./1.1#t1.r4" title="integer">k</mi></mrow></msub><mo stretchy="false">]</mo></mrow></mrow><mo rspace="0.111em">=</mo><mrow><munder><mo movablelimits="false" rspace="0em">∏</mo><mrow><mn>1</mn><mo>≤</mo><mi href="./1.1#t1.r4" title="integer">j</mi><mo>&lt;</mo><mi href="./1.1#t1.r4" title="integer">k</mi><mo>≤</mo><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></mrow></munder><mrow><mrow><mo stretchy="false">(</mo><mrow><msub><mi>x</mi><mi href="./1.1#t1.r4" title="integer">j</mi></msub><mo>−</mo><msub><mi>x</mi><mi href="./1.1#t1.r4" title="integer">k</mi></msub></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><munder><mo movablelimits="false" rspace="0em">∏</mo><mrow><mn>2</mn><mo>≤</mo><mi href="./1.1#t1.r4" title="integer">j</mi><mo>≤</mo><mi href="./1.1#t1.r4" title="integer">k</mi><mo>≤</mo><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></mrow></munder><mrow><mo stretchy="false">(</mo><mrow><msub><mi>b</mi><mi href="./1.1#t1.r4" title="integer">j</mi></msub><mo>−</mo><msub><mi>a</mi><mi href="./1.1#t1.r4" title="integer">k</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E17.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./1.2#Px11.p1" title="The Determinant ‣ §1.2(vi) Square Matrices ‣ §1.2 Elementary Algebra ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m27.png" altimg-height="18px" altimg-valign="-2px" altimg-width="33px" alttext="\det" display="inline"><mo href="./1.2#E58" title="determinant">det</mo></math>: determinant</a>,
+<a href="./1.1#t1.r4" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m54.png" altimg-height="22px" altimg-valign="-6px" altimg-width="14px" alttext="j" display="inline"><mi href="./1.1#t1.r4" title="integer">j</mi></math>:  integer</a>,
+<a href="./1.1#t1.r4" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m56.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./1.1#t1.r4" title="integer">k</mi></math>:  integer</a>,
+<a href="./1.1#t1.r5" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m62.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></math>:  nonnegative integer</a> and
+<a href="./1.3#E16" title="(1.3.16) ‣ Krattenthaler’s Formula ‣ §1.3(ii) Special Determinants ‣ §1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m64.png" altimg-height="23px" altimg-valign="-8px" altimg-width="30px" alttext="t_{\NVar{j}\NVar{k}}" display="inline"><msub><mi href="./1.3#E16" title="elements">t</mi><mrow><mi class="ltx_nvar" href="./1.1#t1.r4" title="integer">j</mi><mo>⁢</mo><mi class="ltx_nvar" href="./1.1#t1.r4" title="integer">k</mi></mrow></msub></math>:  elements</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./1.3#ii.info" title="§1.3(ii) Special Determinants ‣ §1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.3(ii)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./1.3.E17" title="" class="ltx_ref">http://dlmf.nist.gov/1.3.E17</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./1.3.E17.tex">TeX</a>, <a href="./1.3.E17.pmml">pMML</a>, <a href="./1.3.E17.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.3#Px8.info" title="Krattenthaler’s Formula ‣ §1.3(ii) Special Determinants ‣ §1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.3(ii)</span></a>,
+<a href="./1.3#ii.info" title="§1.3(ii) Special Determinants ‣ §1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.3(ii)</span></a>,
+<a href="./1.3#info" title="§1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.3</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+<section id="iii" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§1.3(iii) </span>Infinite Determinants</h2>
+<div id="iii.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=Hill%20type">Hill’s type</a>, <a class="ltx_keyword" href="./search/search?q=convergence">convergence</a>, <a class="ltx_keyword" href="./search/search?q=determinants">determinants</a>, <a class="ltx_keyword" href="./search/search?q=infinite">infinite</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./1.3.iii" title="" class="ltx_ref">http://dlmf.nist.gov/1.3.iii</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.3#info" title="§1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.3</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="iii.p1" class="ltx_para">
+<p class="ltx_p">Let <math class="ltx_Math" altimg="m49.png" altimg-height="19px" altimg-valign="-8px" altimg-width="37px" alttext="a_{j,k}" display="inline"><msub><mi>a</mi><mrow><mi href="./1.1#t1.r4" title="integer">j</mi><mo>,</mo><mi href="./1.1#t1.r4" title="integer">k</mi></mrow></msub></math> be defined for all integer values of <math class="ltx_Math" altimg="m54.png" altimg-height="22px" altimg-valign="-6px" altimg-width="14px" alttext="j" display="inline"><mi href="./1.1#t1.r4" title="integer">j</mi></math> and <math class="ltx_Math" altimg="m56.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./1.1#t1.r4" title="integer">k</mi></math>, and
+<math class="ltx_Math" altimg="m14.png" altimg-height="26px" altimg-valign="-8px" altimg-width="77px" alttext="D_{n}[a_{j,k}]" display="inline"><mrow><msub><mo href="./1.3#E18" title="(2⁢𝑛+1)×(2⁢𝑛+1) determinant">𝐷</mo><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></msub><mrow><mo lspace="0em" stretchy="false">[</mo><msub><mi>a</mi><mrow><mi href="./1.1#t1.r4" title="integer">j</mi><mo>,</mo><mi href="./1.1#t1.r4" title="integer">k</mi></mrow></msub><mo stretchy="false">]</mo></mrow></mrow></math> denote the <math class="ltx_Math" altimg="m8.png" altimg-height="25px" altimg-valign="-7px" altimg-width="179px" alttext="(2n+1)\times(2n+1)" display="inline"><mrow><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></mrow><mo>+</mo><mn>1</mn></mrow><mo rspace="0.055em" stretchy="false">)</mo></mrow><mo rspace="0.222em">×</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></mrow><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></math> determinant</p>
+<table id="E18" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">1.3.18</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E18.png" altimg-height="148px" altimg-valign="-54px" altimg-width="478px" alttext="D_{n}[a_{j,k}]=\begin{vmatrix}a_{-n,-n}&amp;a_{-n,-n+1}&amp;\dots&amp;a_{-n,n}\\
+a_{-n+1,-n}&amp;a_{-n+1,-n+1}&amp;\dots&amp;a_{-n+1,n}\\
+\vdots&amp;\vdots&amp;\ddots&amp;\vdots\\
+a_{n,-n}&amp;a_{n,-n+1}&amp;\dots&amp;a_{n,n}\end{vmatrix}." display="block"><mrow><mrow><mrow><msub><mo href="./1.3#E18" title="(2⁢𝑛+1)×(2⁢𝑛+1) determinant">𝐷</mo><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></msub><mrow><mo lspace="0em" stretchy="false">[</mo><msub><mi>a</mi><mrow><mi href="./1.1#t1.r4" title="integer">j</mi><mo>,</mo><mi href="./1.1#t1.r4" title="integer">k</mi></mrow></msub><mo stretchy="false">]</mo></mrow></mrow><mo>=</mo><mrow><mo href="./1.2#Px11.p1" title="determinant">|</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd><msub><mi>a</mi><mrow><mrow><mo>−</mo><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></mrow><mo>,</mo><mrow><mo>−</mo><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></mrow></mrow></msub></mtd><mtd><msub><mi>a</mi><mrow><mrow><mo>−</mo><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></mrow><mo>,</mo><mrow><mrow><mo>−</mo><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></mrow><mo>+</mo><mn>1</mn></mrow></mrow></msub></mtd><mtd><mi mathvariant="normal">…</mi></mtd><mtd><msub><mi>a</mi><mrow><mrow><mo>−</mo><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></mrow><mo>,</mo><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></mrow></msub></mtd></mtr><mtr><mtd><msub><mi>a</mi><mrow><mrow><mrow><mo>−</mo><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></mrow><mo>+</mo><mn>1</mn></mrow><mo>,</mo><mrow><mo>−</mo><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></mrow></mrow></msub></mtd><mtd><msub><mi>a</mi><mrow><mrow><mrow><mo>−</mo><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></mrow><mo>+</mo><mn>1</mn></mrow><mo>,</mo><mrow><mrow><mo>−</mo><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></mrow><mo>+</mo><mn>1</mn></mrow></mrow></msub></mtd><mtd><mi mathvariant="normal">…</mi></mtd><mtd><msub><mi>a</mi><mrow><mrow><mrow><mo>−</mo><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></mrow><mo>+</mo><mn>1</mn></mrow><mo>,</mo><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></mrow></msub></mtd></mtr><mtr><mtd><mi mathvariant="normal">⋮</mi></mtd><mtd><mi mathvariant="normal">⋮</mi></mtd><mtd><mi mathvariant="normal">⋱</mi></mtd><mtd><mi mathvariant="normal">⋮</mi></mtd></mtr><mtr><mtd><msub><mi>a</mi><mrow><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi><mo>,</mo><mrow><mo>−</mo><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></mrow></mrow></msub></mtd><mtd><msub><mi>a</mi><mrow><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi><mo>,</mo><mrow><mrow><mo>−</mo><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></mrow><mo>+</mo><mn>1</mn></mrow></mrow></msub></mtd><mtd><mi mathvariant="normal">…</mi></mtd><mtd><msub><mi>a</mi><mrow><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi><mo>,</mo><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></mrow></msub></mtd></mtr></mtable><mo href="./1.2#Px11.p1" title="determinant">|</mo></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E18.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Defines:</dt>
+<dd><span class="ltx_text"><math class="ltx_Math" altimg="m11.png" altimg-height="26px" altimg-valign="-8px" altimg-width="78px" alttext="D_{\NVar{n}}[\NVar{a}_{\NVar{j},\NVar{k}}]" display="inline"><mrow><msub><mo href="./1.3#E18" title="(2⁢𝑛+1)×(2⁢𝑛+1) determinant">𝐷</mo><mi class="ltx_nvar" href="./1.1#t1.r5" title="nonnegative integer">n</mi></msub><mrow><mo lspace="0em" stretchy="false">[</mo><msub><mi class="ltx_nvar">a</mi><mrow><mi class="ltx_nvar" href="./1.1#t1.r4" title="integer">j</mi><mo>,</mo><mi class="ltx_nvar" href="./1.1#t1.r4" title="integer">k</mi></mrow></msub><mo stretchy="false">]</mo></mrow></mrow></math>:  <math class="ltx_Math" altimg="m7.png" altimg-height="25px" altimg-valign="-7px" altimg-width="179px" alttext="(2\NVar{n}+1)\times(2\NVar{n}+1)" display="inline"><mrow><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi class="ltx_nvar" href="./1.1#t1.r5" title="nonnegative integer">n</mi></mrow><mo>+</mo><mn>1</mn></mrow><mo rspace="0.055em" stretchy="false">)</mo></mrow><mo rspace="0.222em">×</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi class="ltx_nvar" href="./1.1#t1.r5" title="nonnegative integer">n</mi></mrow><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></math> determinant (locally)</span></dd>
+<dt>Symbols:</dt>
+<dd>
+<a href="./1.2#Px11.p1" title="The Determinant ‣ §1.2(vi) Square Matrices ‣ §1.2 Elementary Algebra ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m27.png" altimg-height="18px" altimg-valign="-2px" altimg-width="33px" alttext="\det" display="inline"><mo href="./1.2#E58" title="determinant">det</mo></math>: determinant</a>,
+<a href="./1.1#t1.r4" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m54.png" altimg-height="22px" altimg-valign="-6px" altimg-width="14px" alttext="j" display="inline"><mi href="./1.1#t1.r4" title="integer">j</mi></math>:  integer</a>,
+<a href="./1.1#t1.r4" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m56.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./1.1#t1.r4" title="integer">k</mi></math>:  integer</a> and
+<a href="./1.1#t1.r5" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m62.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></math>:  nonnegative integer</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./1.3.E18" title="" class="ltx_ref">http://dlmf.nist.gov/1.3.E18</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./1.3.E18.tex">TeX</a>, <a href="./1.3.E18.pmml">pMML</a>, <a href="./1.3.E18.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.3#iii.info" title="§1.3(iii) Infinite Determinants ‣ §1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.3(iii)</span></a>,
+<a href="./1.3#info" title="§1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.3</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">If <math class="ltx_Math" altimg="m14.png" altimg-height="26px" altimg-valign="-8px" altimg-width="77px" alttext="D_{n}[a_{j,k}]" display="inline"><mrow><msub><mo href="./1.3#E18" title="(2⁢𝑛+1)×(2⁢𝑛+1) determinant">𝐷</mo><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></msub><mrow><mo lspace="0em" stretchy="false">[</mo><msub><mi>a</mi><mrow><mi href="./1.1#t1.r4" title="integer">j</mi><mo>,</mo><mi href="./1.1#t1.r4" title="integer">k</mi></mrow></msub><mo stretchy="false">]</mo></mrow></mrow></math> tends to a limit <math class="ltx_Math" altimg="m15.png" altimg-height="18px" altimg-valign="-2px" altimg-width="18px" alttext="L" display="inline"><mi>L</mi></math> as <math class="ltx_Math" altimg="m63.png" altimg-height="13px" altimg-valign="-2px" altimg-width="70px" alttext="n\to\infty" display="inline"><mrow><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></math>, then we say that the
+<em class="ltx_emph ltx_font_italic">infinite determinant</em> <math class="ltx_Math" altimg="m13.png" altimg-height="26px" altimg-valign="-8px" altimg-width="84px" alttext="D_{\infty}[a_{j,k}]" display="inline"><mrow><msub><mo href="./1.3#E18" title="(2⁢𝑛+1)×(2⁢𝑛+1) determinant">𝐷</mo><mi mathvariant="normal">∞</mi></msub><mrow><mo lspace="0em" stretchy="false">[</mo><msub><mi>a</mi><mrow><mi href="./1.1#t1.r4" title="integer">j</mi><mo>,</mo><mi href="./1.1#t1.r4" title="integer">k</mi></mrow></msub><mo stretchy="false">]</mo></mrow></mrow></math> <em class="ltx_emph ltx_font_italic">converges</em> and
+<math class="ltx_Math" altimg="m12.png" altimg-height="26px" altimg-valign="-8px" altimg-width="125px" alttext="D_{\infty}[a_{j,k}]=L" display="inline"><mrow><mrow><msub><mo href="./1.3#E18" title="(2⁢𝑛+1)×(2⁢𝑛+1) determinant">𝐷</mo><mi mathvariant="normal">∞</mi></msub><mrow><mo lspace="0em" stretchy="false">[</mo><msub><mi>a</mi><mrow><mi href="./1.1#t1.r4" title="integer">j</mi><mo>,</mo><mi href="./1.1#t1.r4" title="integer">k</mi></mrow></msub><mo stretchy="false">]</mo></mrow></mrow><mo>=</mo><mi>L</mi></mrow></math>.
+</p>
+</div>
+<div id="iii.p2" class="ltx_para">
+<p class="ltx_p">Of importance for special functions are infinite determinants of <em class="ltx_emph ltx_font_italic">Hill’s
+type</em>.
+These have the property that the double series</p>
+<table id="E19" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">1.3.19</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E19.png" altimg-height="77px" altimg-valign="-32px" altimg-width="179px" alttext="\sum^{\infty}_{j,k=-\infty}\left|a_{j,k}-\delta_{j,k}\right|" display="block"><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mrow><mi href="./1.1#t1.r4" title="integer">j</mi><mo>,</mo><mi href="./1.1#t1.r4" title="integer">k</mi></mrow><mo>=</mo><mrow><mo>−</mo><mi mathvariant="normal">∞</mi></mrow></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><mo href="./1.9#E7" lspace="0em" title="absolute value (modulus)">|</mo><mrow><msub><mi>a</mi><mrow><mi href="./1.1#t1.r4" title="integer">j</mi><mo>,</mo><mi href="./1.1#t1.r4" title="integer">k</mi></mrow></msub><mo>−</mo><msub><mi href="./front/introduction#common.t1.r4" title="Kronecker delta">δ</mi><mrow><mi href="./1.1#t1.r4" title="integer">j</mi><mo href="./front/introduction#common.t1.r4" title="Kronecker delta">,</mo><mi href="./1.1#t1.r4" title="integer">k</mi></mrow></msub></mrow><mo href="./1.9#E7" title="absolute value (modulus)">|</mo></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E19.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./front/introduction#common.t1.r4" title="Common Notations and Definitions ‣ Mathematical Introduction" class="ltx_ref"><math class="ltx_Math" altimg="m23.png" altimg-height="24px" altimg-valign="-8px" altimg-width="36px" alttext="\delta_{\NVar{j},\NVar{k}}" display="inline"><msub><mi href="./front/introduction#common.t1.r4" title="Kronecker delta">δ</mi><mrow><mi class="ltx_nvar">j</mi><mo href="./front/introduction#common.t1.r4" title="Kronecker delta">,</mo><mi class="ltx_nvar">k</mi></mrow></msub></math>: Kronecker delta</a>,
+<a href="./1.1#t1.r4" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m54.png" altimg-height="22px" altimg-valign="-6px" altimg-width="14px" alttext="j" display="inline"><mi href="./1.1#t1.r4" title="integer">j</mi></math>:  integer</a>,
+<a href="./1.1#t1.r4" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m56.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./1.1#t1.r4" title="integer">k</mi></math>:  integer</a> and
+<a href="./1.9#E7" title="(1.9.7) ‣ Modulus and Phase ‣ §1.9(i) Complex Numbers ‣ §1.9 Calculus of a Complex Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m33.png" altimg-height="25px" altimg-valign="-7px" altimg-width="28px" alttext="\left|\NVar{x}\right|" display="inline"><mrow><mo href="./1.9#E7" title="absolute value (modulus)">|</mo><mi class="ltx_nvar">x</mi><mo href="./1.9#E7" title="absolute value (modulus)">|</mo></mrow></math>:  absolute value of <math class="ltx_Math" altimg="m21.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="\NVar{x}" display="inline"><mi class="ltx_nvar">x</mi></math></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./1.3.E19" title="" class="ltx_ref">http://dlmf.nist.gov/1.3.E19</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./1.3.E19.tex">TeX</a>, <a href="./1.3.E19.pmml">pMML</a>, <a href="./1.3.E19.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.3#iii.info" title="§1.3(iii) Infinite Determinants ‣ §1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.3(iii)</span></a>,
+<a href="./1.3#info" title="§1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.3</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">converges (§<a href="./1.9#vii" title="§1.9(vii) Inversion of Limits ‣ §1.9 Calculus of a Complex Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.9(vii)</span></a>). Here <math class="ltx_Math" altimg="m24.png" altimg-height="24px" altimg-valign="-8px" altimg-width="35px" alttext="\delta_{j,k}" display="inline"><msub><mi href="./front/introduction#common.t1.r4" title="Kronecker delta">δ</mi><mrow><mi href="./1.1#t1.r4" title="integer">j</mi><mo href="./front/introduction#common.t1.r4" title="Kronecker delta">,</mo><mi href="./1.1#t1.r4" title="integer">k</mi></mrow></msub></math> is the Kronecker
+delta. Hill-type determinants always converge.</p>
+</div>
+<div id="iii.p3" class="ltx_para">
+<p class="ltx_p">For further information see <cite class="ltx_cite ltx_citemacro_citet">Whittaker and Watson (<a href="./bib/W#bib2404" title="A Course of Modern Analysis" class="ltx_ref">1927</a>, pp. 36–40)</cite> and
+<cite class="ltx_cite ltx_citemacro_citet">Magnus and Winkler (<a href="./bib/M#bib1535" title="Hill’s Equation" class="ltx_ref">1966</a>, §2.3)</cite>.</p>
+</div>
+</section>
+<section id="iv" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§1.3(iv) </span>Matrices as Linear Operators</h2>
+<div id="iv.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Notes:</dt>
+<dd>See <cite class="ltx_cite ltx_citemacro_citet">Axler (<a href="./bib/#bib3097" title="Linear algebra done right" class="ltx_ref">2015</a>, Chapter 7 )</cite> or <cite class="ltx_cite ltx_citemacro_citet">Shilov (<a href="./bib/S#bib2970" title="Introduction to the Theory of Linear Spaces" class="ltx_ref">2013</a>, pages 181–192)</cite>.</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./18.39#ii.p2" title="§18.39(ii) A 3D Separable Quantum System, the Hydrogen Atom ‣ §18.39 Applications in the Physical Sciences ‣ Applications ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§18.39(ii)</span></a>,
+<a href="./errata/#V1.2.0.I2.ix1.I1.ix2.p1" title="In Erratum (V1.2.0) for Chapter 1 Additions ‣ Other Changes ‣ Version 1.2.0 (March 27, 2024) ‣ Errata" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Erratum (V1.2.0) §<span class="ltx_text ltx_ref_tag">1.3</span></span></a>,
+<a href="./errata/#V1.2.0.p3" title="Version 1.2.0 (March 27, 2024) ‣ Errata" class="ltx_ref"><span class="ltx_text ltx_ref_title">Version 1.2.0 (March 27, 2024)</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./1.3.iv" title="" class="ltx_ref">http://dlmf.nist.gov/1.3.iv</a></dd>
+<dt>Addition (effective with 1.2.0):</dt>
+<dd>
+This subsection was added.
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.3#info" title="§1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.3</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<section id="Px9" class="ltx_paragraph">
+<h3 class="ltx_title ltx_title_paragraph">Linear Operators in Finite Dimensional Vector Spaces</h3>
+<div id="Px9.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.3#iv.info" title="§1.3(iv) Matrices as Linear Operators ‣ §1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.3(iv)</span></a>,
+<a href="./1.3#info" title="§1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.3</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="Px9.p1" class="ltx_para">
+<p class="ltx_p">Square matices can be seen as <em class="ltx_emph ltx_font_italic">linear operators</em> because
+<math class="ltx_Math" altimg="m34.png" altimg-height="25px" altimg-valign="-7px" altimg-width="255px" alttext="\mathbf{A}(\alpha\mathbf{a}+\beta\mathbf{b})=\alpha\mathbf{A}\mathbf{a}+\beta%
+\mathbf{A}\mathbf{b}" display="inline"><mrow><mrow><mi>𝐀</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>α</mi><mo>⁢</mo><mi>𝐚</mi></mrow><mo>+</mo><mrow><mi>β</mi><mo>⁢</mo><mi>𝐛</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>α</mi><mo>⁢</mo><mi>𝐀</mi><mo>⁢</mo><mi>𝐚</mi></mrow><mo>+</mo><mrow><mi>β</mi><mo>⁢</mo><mi>𝐀</mi><mo>⁢</mo><mi>𝐛</mi></mrow></mrow></mrow></math> for all <math class="ltx_Math" altimg="m22.png" altimg-height="22px" altimg-valign="-6px" altimg-width="80px" alttext="\alpha,\beta\in\mathbb{C}" display="inline"><mrow><mrow><mi>α</mi><mo>,</mo><mi>β</mi></mrow><mo href="./front/introduction#common.t1.r10" title="element of">∈</mo><mi href="./front/introduction#common.t1.r1" title="complex plane">ℂ</mi></mrow></math> and
+<math class="ltx_Math" altimg="m41.png" altimg-height="22px" altimg-valign="-6px" altimg-width="91px" alttext="\mathbf{a},\mathbf{b}\in\mathbf{E}_{n}" display="inline"><mrow><mrow><mi>𝐚</mi><mo>,</mo><mi>𝐛</mi></mrow><mo href="./front/introduction#common.t1.r10" title="element of">∈</mo><msub><mi href="./1.1#t1.r13" title="E n : space of n -dimensional vectors, real or complex">𝐄</mi><mi href="./1.1#t1.r13" title="E n : space of n -dimensional vectors, real or complex">n</mi></msub></mrow></math>, the space of all <math class="ltx_Math" altimg="m62.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></math>-dimensional vectors.</p>
+</div>
+</section>
+<section id="Px10" class="ltx_paragraph">
+<h3 class="ltx_title ltx_title_paragraph">Self-Adjoint Operators on <math class="ltx_Math" altimg="m39.png" altimg-height="21px" altimg-valign="-5px" altimg-width="31px" alttext="\mathbf{E}_{n}" display="inline"><msub><mi href="./1.1#t1.r13" title="E n : space of n -dimensional vectors, real or complex">𝐄</mi><mi href="./1.1#t1.r13" title="E n : space of n -dimensional vectors, real or complex">n</mi></msub></math>
+</h3>
+<div id="Px10.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Defines:</dt>
+<dd><span class="ltx_text ltx_font_bold"><math class="ltx_Math" altimg="m65.png" altimg-height="20px" altimg-valign="-2px" altimg-width="32px" alttext="{\NVar{\mathbf{A}}}^{*}" display="inline"><msup><mi class="ltx_nvar">𝐀</mi><mo href="./1.3#Px10" title="adjoint of matrix">∗</mo></msup></math>: adjoint of matrix</span></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.3#iv.info" title="§1.3(iv) Matrices as Linear Operators ‣ §1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.3(iv)</span></a>,
+<a href="./1.3#info" title="§1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.3</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="Px10.p1" class="ltx_para">
+<p class="ltx_p">The <em class="ltx_emph ltx_font_italic">adjoint</em> of a matrix <math class="ltx_Math" altimg="m37.png" altimg-height="18px" altimg-valign="-2px" altimg-width="22px" alttext="\mathbf{A}" display="inline"><mi>𝐀</mi></math> is the matrix <math class="ltx_Math" altimg="m69.png" altimg-height="18px" altimg-valign="-2px" altimg-width="32px" alttext="{\mathbf{A}}^{*}" display="inline"><msup><mi>𝐀</mi><mo href="./1.3#Px10" title="adjoint of matrix">∗</mo></msup></math> such that
+<math class="ltx_Math" altimg="m31.png" altimg-height="25px" altimg-valign="-7px" altimg-width="178px" alttext="\left\langle\mathbf{A}\mathbf{a},\mathbf{b}\right\rangle=\left\langle\mathbf{a%
+},{\mathbf{A}}^{*}\mathbf{b}\right\rangle" display="inline"><mrow><mrow><mo href="./1.2#E40" title="inner product over vectors">⟨</mo><mrow><mi>𝐀</mi><mo>⁢</mo><mi>𝐚</mi></mrow><mo href="./1.2#E40" title="inner product over vectors">,</mo><mi>𝐛</mi><mo href="./1.2#E40" title="inner product over vectors">⟩</mo></mrow><mo>=</mo><mrow><mo href="./1.2#E40" title="inner product over vectors">⟨</mo><mi>𝐚</mi><mo href="./1.2#E40" title="inner product over vectors">,</mo><mrow><msup><mi>𝐀</mi><mo href="./1.3#Px10" title="adjoint of matrix">∗</mo></msup><mo>⁢</mo><mi>𝐛</mi></mrow><mo href="./1.2#E40" title="inner product over vectors">⟩</mo></mrow></mrow></math> for all
+<math class="ltx_Math" altimg="m41.png" altimg-height="22px" altimg-valign="-6px" altimg-width="91px" alttext="\mathbf{a},\mathbf{b}\in\mathbf{E}_{n}" display="inline"><mrow><mrow><mi>𝐚</mi><mo>,</mo><mi>𝐛</mi></mrow><mo href="./front/introduction#common.t1.r10" title="element of">∈</mo><msub><mi href="./1.1#t1.r13" title="E n : space of n -dimensional vectors, real or complex">𝐄</mi><mi href="./1.1#t1.r13" title="E n : space of n -dimensional vectors, real or complex">n</mi></msub></mrow></math>.
+In the case of a real matrix <math class="ltx_Math" altimg="m67.png" altimg-height="22px" altimg-valign="-2px" altimg-width="90px" alttext="{\mathbf{A}}^{*}=\mathbf{A}^{\mathrm{T}}" display="inline"><mrow><msup><mi>𝐀</mi><mo href="./1.3#Px10" title="adjoint of matrix">∗</mo></msup><mo>=</mo><msup><mi>𝐀</mi><mi href="./1.2#E28" mathvariant="normal" title="transpose of matrix">T</mi></msup></mrow></math> and in the complex case <math class="ltx_Math" altimg="m68.png" altimg-height="22px" altimg-valign="-2px" altimg-width="91px" alttext="{\mathbf{A}}^{*}={\mathbf{A}}^{{\rm H}}" display="inline"><mrow><msup><mi>𝐀</mi><mo href="./1.3#Px10" title="adjoint of matrix">∗</mo></msup><mo>=</mo><msup><mi>𝐀</mi><mi href="./1.2#E30" mathvariant="normal" title="Hermitian conjugate of matrix">H</mi></msup></mrow></math>.</p>
+</div>
+<div id="Px10.p2" class="ltx_para">
+<p class="ltx_p">Real symmetric (<math class="ltx_Math" altimg="m35.png" altimg-height="22px" altimg-valign="-2px" altimg-width="81px" alttext="\mathbf{A}=\mathbf{A}^{\mathrm{T}}" display="inline"><mrow><mi>𝐀</mi><mo>=</mo><msup><mi>𝐀</mi><mi href="./1.2#E28" mathvariant="normal" title="transpose of matrix">T</mi></msup></mrow></math>) and Hermitian (<math class="ltx_Math" altimg="m36.png" altimg-height="22px" altimg-valign="-2px" altimg-width="81px" alttext="\mathbf{A}={\mathbf{A}}^{{\rm H}}" display="inline"><mrow><mi>𝐀</mi><mo>=</mo><msup><mi>𝐀</mi><mi href="./1.2#E30" mathvariant="normal" title="Hermitian conjugate of matrix">H</mi></msup></mrow></math>) matrices are <em class="ltx_emph ltx_font_italic">self-adjoint</em>
+operators on <math class="ltx_Math" altimg="m39.png" altimg-height="21px" altimg-valign="-5px" altimg-width="31px" alttext="\mathbf{E}_{n}" display="inline"><msub><mi href="./1.1#t1.r13" title="E n : space of n -dimensional vectors, real or complex">𝐄</mi><mi href="./1.1#t1.r13" title="E n : space of n -dimensional vectors, real or complex">n</mi></msub></math>.
+The <em class="ltx_emph ltx_font_italic">spectrum</em> of such self-adjoint operators consists of their eigenvalues, <math class="ltx_Math" altimg="m28.png" altimg-height="22px" altimg-valign="-6px" altimg-width="156px" alttext="\lambda_{i},i=1,2,\dots,n" display="inline"><mrow><mrow><mrow><msub><mi>λ</mi><mi>i</mi></msub><mo>,</mo><mi>i</mi></mrow><mo>=</mo><mn>1</mn></mrow><mo>,</mo><mrow><mn>2</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></mrow></mrow></math>, and all <math class="ltx_Math" altimg="m29.png" altimg-height="21px" altimg-valign="-5px" altimg-width="64px" alttext="\lambda_{i}\in\mathbb{R}" display="inline"><mrow><msub><mi>λ</mi><mi>i</mi></msub><mo href="./front/introduction#common.t1.r10" title="element of">∈</mo><mi href="./front/introduction#common.t2.r14" title="real line">ℝ</mi></mrow></math>.
+The corresponding eigenvectors <math class="ltx_Math" altimg="m42.png" altimg-height="17px" altimg-valign="-6px" altimg-width="94px" alttext="\mathbf{a}_{1},\dots,\mathbf{a}_{n}" display="inline"><mrow><msub><mi>𝐚</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>𝐚</mi><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></msub></mrow></math> can be chosen such that they form a complete orthonormal basis in <math class="ltx_Math" altimg="m39.png" altimg-height="21px" altimg-valign="-5px" altimg-width="31px" alttext="\mathbf{E}_{n}" display="inline"><msub><mi href="./1.1#t1.r13" title="E n : space of n -dimensional vectors, real or complex">𝐄</mi><mi href="./1.1#t1.r13" title="E n : space of n -dimensional vectors, real or complex">n</mi></msub></math>.</p>
+</div>
+<div id="Px10.p3" class="ltx_para">
+<p class="ltx_p">Let the columns of matrix <math class="ltx_Math" altimg="m40.png" altimg-height="18px" altimg-valign="-2px" altimg-width="18px" alttext="\mathbf{S}" display="inline"><mi>𝐒</mi></math> be these eigenvectors <math class="ltx_Math" altimg="m42.png" altimg-height="17px" altimg-valign="-6px" altimg-width="94px" alttext="\mathbf{a}_{1},\dots,\mathbf{a}_{n}" display="inline"><mrow><msub><mi>𝐚</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>𝐚</mi><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></msub></mrow></math>, then <math class="ltx_Math" altimg="m70.png" altimg-height="22px" altimg-valign="-2px" altimg-width="94px" alttext="{\mathbf{S}}^{-1}={\mathbf{S}}^{{\rm H}}" display="inline"><mrow><msup><mi>𝐒</mi><mrow><mo href="./1.2#Px12" title="matrix inverse">−</mo><mn href="./1.2#Px12" title="matrix inverse">1</mn></mrow></msup><mo>=</mo><msup><mi>𝐒</mi><mi href="./1.2#E30" mathvariant="normal" title="Hermitian conjugate of matrix">H</mi></msup></mrow></math>,
+and the similarity transformation (<a href="./1.2#E73" title="(1.2.73) ‣ Non-Defective Square Matrices ‣ §1.2(vi) Square Matrices ‣ §1.2 Elementary Algebra ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.2.73</span></a>) is now of the form
+<math class="ltx_Math" altimg="m71.png" altimg-height="28px" altimg-valign="-8px" altimg-width="138px" alttext="{\mathbf{S}}^{{\rm H}}\mathbf{A}\mathbf{S}=\lambda_{i}\delta_{i,j}" display="inline"><mrow><mrow><msup><mi>𝐒</mi><mi href="./1.2#E30" mathvariant="normal" title="Hermitian conjugate of matrix">H</mi></msup><mo>⁢</mo><mi>𝐀</mi><mo>⁢</mo><mi>𝐒</mi></mrow><mo>=</mo><mrow><msub><mi>λ</mi><mi>i</mi></msub><mo>⁢</mo><msub><mi href="./front/introduction#common.t1.r4" title="Kronecker delta">δ</mi><mrow><mi>i</mi><mo href="./front/introduction#common.t1.r4" title="Kronecker delta">,</mo><mi href="./1.1#t1.r4" title="integer">j</mi></mrow></msub></mrow></mrow></math>.
+For Hermitian matrices <math class="ltx_Math" altimg="m40.png" altimg-height="18px" altimg-valign="-2px" altimg-width="18px" alttext="\mathbf{S}" display="inline"><mi>𝐒</mi></math> is <em class="ltx_emph ltx_font_italic">unitary</em>, and for real symmetric matrices <math class="ltx_Math" altimg="m40.png" altimg-height="18px" altimg-valign="-2px" altimg-width="18px" alttext="\mathbf{S}" display="inline"><mi>𝐒</mi></math> is an <em class="ltx_emph ltx_font_italic">orthogonal</em> transformation.</p>
+</div>
+<div id="Px10.p4" class="ltx_para">
+<p class="ltx_p">For self-adjoint <math class="ltx_Math" altimg="m37.png" altimg-height="18px" altimg-valign="-2px" altimg-width="22px" alttext="\mathbf{A}" display="inline"><mi>𝐀</mi></math> and <math class="ltx_Math" altimg="m38.png" altimg-height="18px" altimg-valign="-2px" altimg-width="21px" alttext="\mathbf{B}" display="inline"><mi>𝐁</mi></math>, if <math class="ltx_Math" altimg="m19.png" altimg-height="25px" altimg-valign="-7px" altimg-width="100px" alttext="[{\mathbf{A}},{\mathbf{B}}]=\boldsymbol{{0}}" display="inline"><mrow><mrow><mo href="./1.2#E66" stretchy="false" title="commutator">[</mo><mi>𝐀</mi><mo href="./1.2#E66" title="commutator">,</mo><mi>𝐁</mi><mo href="./1.2#E66" stretchy="false" title="commutator">]</mo></mrow><mo>=</mo><mi href="./1.2#Px4.p1" title="matrix of zeros">𝟎</mi></mrow></math>, see (<a href="./1.2#E66" title="(1.2.66) ‣ The Commutator ‣ §1.2(vi) Square Matrices ‣ §1.2 Elementary Algebra ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.2.66</span></a>),
+simultaneous eigenvectors of <math class="ltx_Math" altimg="m37.png" altimg-height="18px" altimg-valign="-2px" altimg-width="22px" alttext="\mathbf{A}" display="inline"><mi>𝐀</mi></math> and <math class="ltx_Math" altimg="m38.png" altimg-height="18px" altimg-valign="-2px" altimg-width="21px" alttext="\mathbf{B}" display="inline"><mi>𝐁</mi></math> always exist.</p>
+</div>
+</section>
+<section id="Px11" class="ltx_paragraph">
+<h3 class="ltx_title ltx_title_paragraph">Orthonormal Expansions</h3>
+<div id="Px11.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=Parseval%20equality">Parseval’s equality</a>, <a class="ltx_keyword" href="./search/search?q=orthonormal%20expansions">orthonormal expansions</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.3#iv.info" title="§1.3(iv) Matrices as Linear Operators ‣ §1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.3(iv)</span></a>,
+<a href="./1.3#info" title="§1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.3</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="Px11.p1" class="ltx_para">
+<p class="ltx_p">Assuming <math class="ltx_Math" altimg="m48.png" altimg-height="25px" altimg-valign="-7px" altimg-width="44px" alttext="\{\mathbf{a}_{i}\}" display="inline"><mrow><mo stretchy="false">{</mo><msub><mi>𝐚</mi><mi>i</mi></msub><mo stretchy="false">}</mo></mrow></math> is an orthonormal basis in <math class="ltx_Math" altimg="m39.png" altimg-height="21px" altimg-valign="-5px" altimg-width="31px" alttext="\mathbf{E}_{n}" display="inline"><msub><mi href="./1.1#t1.r13" title="E n : space of n -dimensional vectors, real or complex">𝐄</mi><mi href="./1.1#t1.r13" title="E n : space of n -dimensional vectors, real or complex">n</mi></msub></math>, any vector <math class="ltx_Math" altimg="m43.png" altimg-height="13px" altimg-valign="-2px" altimg-width="18px" alttext="\mathbf{u}" display="inline"><mi>𝐮</mi></math> may be expanded as</p>
+<table id="E20" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">1.3.20</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E20.png" altimg-height="67px" altimg-valign="-29px" altimg-width="121px" alttext="\mathbf{u}=\sum_{i=1}^{n}c_{i}\mathbf{a}_{i}," display="block"><mrow><mrow><mi>𝐮</mi><mo rspace="0.111em">=</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></munderover><mrow><msub><mi>c</mi><mi>i</mi></msub><mo>⁢</mo><msub><mi>𝐚</mi><mi>i</mi></msub></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="4"><span class="ltx_constraint"><math class="ltx_Math" altimg="m51.png" altimg-height="25px" altimg-valign="-7px" altimg-width="105px" alttext="c_{i}=\left\langle\mathbf{u},\mathbf{a}_{i}\right\rangle" display="inline"><mrow><msub><mi>c</mi><mi>i</mi></msub><mo>=</mo><mrow><mo href="./1.2#E40" title="inner product over vectors">⟨</mo><mi>𝐮</mi><mo href="./1.2#E40" title="inner product over vectors">,</mo><msub><mi>𝐚</mi><mi>i</mi></msub><mo href="./1.2#E40" title="inner product over vectors">⟩</mo></mrow></mrow></math>.</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E20.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./1.2#E40" title="(1.2.40) ‣ Row and Column Vectors ‣ §1.2(v) Matrices, Vectors, Scalar Products, and Norms ‣ §1.2 Elementary Algebra ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m30.png" altimg-height="25px" altimg-valign="-7px" altimg-width="56px" alttext="\left\langle\NVar{\mathbf{u}},\NVar{\mathbf{v}}\right\rangle" display="inline"><mrow><mo href="./1.2#E40" title="inner product over vectors">⟨</mo><mi class="ltx_nvar" href="./1.2#Px6" title="column vector">𝐮</mi><mo href="./1.2#E40" title="inner product over vectors">,</mo><mi class="ltx_nvar" href="./1.2#Px6" title="column vector">𝐯</mi><mo href="./1.2#E40" title="inner product over vectors">⟩</mo></mrow></math>: inner product over vectors</a> and
+<a href="./1.1#t1.r5" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m62.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></math>:  nonnegative integer</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./errata/#V1.2.0.I2.ix1.I1.ix2.p1" title="In Erratum (V1.2.0) for Chapter 1 Additions ‣ Other Changes ‣ Version 1.2.0 (March 27, 2024) ‣ Errata" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Erratum (V1.2.0) §<span class="ltx_text ltx_ref_tag">1.3</span></span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./1.3.E20" title="" class="ltx_ref">http://dlmf.nist.gov/1.3.E20</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./1.3.E20.tex">TeX</a>, <a href="./1.3.E20.pmml">pMML</a>, <a href="./1.3.E20.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.3#Px11.info" title="Orthonormal Expansions ‣ §1.3(iv) Matrices as Linear Operators ‣ §1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.3(iv)</span></a>,
+<a href="./1.3#iv.info" title="§1.3(iv) Matrices as Linear Operators ‣ §1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.3(iv)</span></a>,
+<a href="./1.3#info" title="§1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.3</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">Taking <math class="ltx_Math" altimg="m58.png" altimg-height="21px" altimg-valign="-2px" altimg-width="20px" alttext="l^{2}" display="inline"><msup><mi>l</mi><mn>2</mn></msup></math> norms,</p>
+<table id="E21" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">1.3.21</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E21.png" altimg-height="67px" altimg-valign="-29px" altimg-width="154px" alttext="{\left\|{\mathbf{u}}\right\|}^{2}=\sum_{i=1}^{n}{\left|c_{i}\right|}^{2}," display="block"><mrow><mrow><msup><mrow><mo href="./1.2#E46" title="vector norm (𝑙²)">‖</mo><mi>𝐮</mi><mo href="./1.2#E46" title="vector norm (𝑙²)">‖</mo></mrow><mn>2</mn></msup><mo rspace="0.111em">=</mo><mrow><munderover><mo movablelimits="false" rspace="0em">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></munderover><msup><mrow><mo href="./1.9#E7" title="absolute value (modulus)">|</mo><msub><mi>c</mi><mi>i</mi></msub><mo href="./1.9#E7" title="absolute value (modulus)">|</mo></mrow><mn>2</mn></msup></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E21.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./1.2#E46" title="(1.2.46) ‣ Vector Norms ‣ §1.2(v) Matrices, Vectors, Scalar Products, and Norms ‣ §1.2 Elementary Algebra ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m32.png" altimg-height="25px" altimg-valign="-7px" altimg-width="38px" alttext="\left\|{\NVar{\mathbf{v}}}\right\|" display="inline"><mrow><mo href="./1.2#E46" title="vector norm (𝑙²)">‖</mo><mi class="ltx_nvar" href="./1.2#Px6" title="column vector">𝐯</mi><mo href="./1.2#E46" title="vector norm (𝑙²)">‖</mo></mrow></math>: vector norm (<math class="ltx_Math" altimg="m57.png" altimg-height="18px" altimg-valign="-2px" altimg-width="11px" alttext="l" display="inline"><mi>l</mi></math>²)</a>,
+<a href="./1.1#t1.r5" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m62.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></math>:  nonnegative integer</a> and
+<a href="./1.9#E7" title="(1.9.7) ‣ Modulus and Phase ‣ §1.9(i) Complex Numbers ‣ §1.9 Calculus of a Complex Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m33.png" altimg-height="25px" altimg-valign="-7px" altimg-width="28px" alttext="\left|\NVar{x}\right|" display="inline"><mrow><mo href="./1.9#E7" title="absolute value (modulus)">|</mo><mi class="ltx_nvar">x</mi><mo href="./1.9#E7" title="absolute value (modulus)">|</mo></mrow></math>:  absolute value of <math class="ltx_Math" altimg="m21.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="\NVar{x}" display="inline"><mi class="ltx_nvar">x</mi></math></a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./errata/#V1.2.0.I2.ix1.I1.ix2.p1" title="In Erratum (V1.2.0) for Chapter 1 Additions ‣ Other Changes ‣ Version 1.2.0 (March 27, 2024) ‣ Errata" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Erratum (V1.2.0) §<span class="ltx_text ltx_ref_tag">1.3</span></span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./1.3.E21" title="" class="ltx_ref">http://dlmf.nist.gov/1.3.E21</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./1.3.E21.tex">TeX</a>, <a href="./1.3.E21.pmml">pMML</a>, <a href="./1.3.E21.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.3#Px11.info" title="Orthonormal Expansions ‣ §1.3(iv) Matrices as Linear Operators ‣ §1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.3(iv)</span></a>,
+<a href="./1.3#iv.info" title="§1.3(iv) Matrices as Linear Operators ‣ §1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.3(iv)</span></a>,
+<a href="./1.3#info" title="§1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.3</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">which is <em class="ltx_emph ltx_font_italic">Parseval’s equality</em>.
+</p>
+</div>
+</section>
+</section>
+</section>
+</div>
+<div class="ltx_page_footer">
+<div class="ltx_siblings">
+<a href="./1.2" title="In Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.2 </span>Elementary Algebra</span></a><a href="./1.4" title="In Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.4 </span>Calculus of One Variable</span></a>
+</div>
+<div class="ltx_footer_links ltx_centering">
+<a href="./about/notices">© 2010–2026 NIST</a> / <a href="./about/notices#S2">Disclaimer</a> / <a href="/cdn-cgi/l/email-protection#6e2a22232843080b0b0a0c0f0d052e00071d1a40090118">Feedback</a>;
+ Version 1.2.7;
+Release date 2026-06-15.</div>
+<span id="pagesettings"></span>
+<div class="ltx_nist_logo"><a href="http://www.nist.gov/"><img src="./style/nistidc.png" width="500" alt="NIST"></a></div>
+<div class="ltx_nist_links ltx_align_right">
+<a href="https://www.nist.gov/privacy-policy">Site Privacy</a> <a href="https://www.nist.gov/oism/accessibility">Accessibility</a> <a href="https://www.nist.gov/privacy">Privacy Program</a> <a href="https://www.nist.gov/oism/copyrights">Copyrights</a> <a href="https://www.commerce.gov/vulnerability-disclosure-policy">Vulnerability Disclosure</a> <a href="https://www.nist.gov/no-fear-act-policy">No Fear Act Policy</a> <a href="https://www.nist.gov/foia">FOIA</a> <a href="https://www.nist.gov/environmental-policy-statement">Environmental Policy</a> <a href="https://www.nist.gov/summary-report-scientific-integrity">Scientific Integrity</a> <a href="https://www.nist.gov/nist-information-quality-standards">Information Quality Standards</a> <a href="https://www.commerce.gov/">Commerce.gov</a> <a href="http://www.science.gov/">Science.gov</a> <a href="http://www.usa.gov/">USA.gov</a>
+</div>
+</div>
+</div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a3152a36699541e0',t:'MTc4Nzc3MTcyMw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

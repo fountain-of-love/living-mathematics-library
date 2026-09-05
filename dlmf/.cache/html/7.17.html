@@ -1,0 +1,578 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>DLMF: §7.17 Inverse Error Functions ‣ Properties ‣ Chapter 7 Error Functions, Dawson’s and Fresnel Integrals</title>
+<link rel="shortcut icon" href="./style/DLMF-16.png" type="image/png">
+<script type="text/javascript"><!--
+	var PATH="DLMF:/7.17";
+	var ROOT="./";
+      //--></script>
+<script type="text/javascript" src="./style/jquery.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/jquery.leaveNotice.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/DLMF.js"><!-- non-empty so ie6 will accept it --></script>
+<script async="" type="text/javascript" id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC&amp;subagency=NIST&amp;pua=UA-37115410-44&amp;yt=true&amp;exts=ppsx,pps,f90,sch,rtf,wrl,txz,m1v,xlsm,msi,xsd,f,tif,eps,mpg,xml,pl,xlt,c"><!-- non-empty so ie6 will accept it --></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-BZB64W4M0L"></script><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-BZB64W4M0L');
+      </script>
+<link rel="stylesheet" type="text/css" href="./style/LaTeXML.css">
+<link rel="stylesheet" type="text/css" href="./style/DLMF.css">
+<link rel="stylesheet" type="text/css" href="./style/print.css" media="print">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="top" href="./" title="DLMF">
+<link rel="copyright" href="./about/notices" title="Copyright">
+<link rel="search" href="./search/search" title="Search">
+<link rel="help" class="ltx_help" href="./help/" title="Help">
+<link rel="up" href="./7#PT2" title="Properties ‣ Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="up up" href="./7" title="Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="start" href="./" title="">
+<link rel="prev" href="./7.16" title="§7.16 Generalized Error Functions ‣ Properties ‣ Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="next" href="./7.18" title="§7.18 Repeated Integrals of the Complementary Error Function ‣ Properties ‣ Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="section" href="./7.1" title="§7.1 Special Notation ‣ Notation ‣ Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="section" href="./7.2" title="§7.2 Definitions ‣ Properties ‣ Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="section" href="./7.3" title="§7.3 Graphics ‣ Properties ‣ Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="section" href="./7.4" title="§7.4 Symmetry ‣ Properties ‣ Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="section" href="./7.5" title="§7.5 Interrelations ‣ Properties ‣ Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="section" href="./7.6" title="§7.6 Series Expansions ‣ Properties ‣ Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="section" href="./7.7" title="§7.7 Integral Representations ‣ Properties ‣ Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="section" href="./7.8" title="§7.8 Inequalities ‣ Properties ‣ Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="section" href="./7.9" title="§7.9 Continued Fractions ‣ Properties ‣ Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="section" href="./7.10" title="§7.10 Derivatives ‣ Properties ‣ Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="section" href="./7.11" title="§7.11 Relations to Other Functions ‣ Properties ‣ Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="section" href="./7.12" title="§7.12 Asymptotic Expansions ‣ Properties ‣ Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="section" href="./7.13" title="§7.13 Zeros ‣ Properties ‣ Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="section" href="./7.14" title="§7.14 Integrals ‣ Properties ‣ Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="section" href="./7.15" title="§7.15 Sums ‣ Properties ‣ Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="section" href="./7.16" title="§7.16 Generalized Error Functions ‣ Properties ‣ Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="section" href="./7.18" title="§7.18 Repeated Integrals of the Complementary Error Function ‣ Properties ‣ Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="section" href="./7.19" title="§7.19 Voigt Functions ‣ Properties ‣ Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="section" href="./7.20" title="§7.20 Mathematical Applications ‣ Applications ‣ Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="section" href="./7.21" title="§7.21 Physical Applications ‣ Applications ‣ Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="section" href="./7.22" title="§7.22 Methods of Computation ‣ Computation ‣ Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="section" href="./7.23" title="§7.23 Tables ‣ Computation ‣ Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="section" href="./7.24" title="§7.24 Approximations ‣ Computation ‣ Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="section" href="./7.25" title="§7.25 Software ‣ Computation ‣ Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="sidebar" href="./7.SB1" title="Sidebar 7.SB1: Diffraction from a Straightedge ‣ Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="document" href="./front/foreword" title="Foreword">
+<link rel="document" href="./front/preface" title="Preface">
+<link rel="document" href="./front/introduction" title="Mathematical Introduction">
+<link rel="chapter" href="./1" title="Chapter 1 Algebraic and Analytic Methods">
+<link rel="chapter" href="./2" title="Chapter 2 Asymptotic Approximations">
+<link rel="chapter" href="./3" title="Chapter 3 Numerical Methods">
+<link rel="chapter" href="./4" title="Chapter 4 Elementary Functions">
+<link rel="chapter" href="./5" title="Chapter 5 Gamma Function">
+<link rel="chapter" href="./6" title="Chapter 6 Exponential, Logarithmic, Sine, and Cosine Integrals">
+<link rel="chapter" href="./7" title="Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="chapter" href="./8" title="Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="chapter" href="./9" title="Chapter 9 Airy and Related Functions">
+<link rel="chapter" href="./10" title="Chapter 10 Bessel Functions">
+<link rel="chapter" href="./11" title="Chapter 11 Struve and Related Functions">
+<link rel="chapter" href="./12" title="Chapter 12 Parabolic Cylinder Functions">
+<link rel="chapter" href="./13" title="Chapter 13 Confluent Hypergeometric Functions">
+<link rel="chapter" href="./14" title="Chapter 14 Legendre and Related Functions">
+<link rel="chapter" href="./15" title="Chapter 15 Hypergeometric Function">
+<link rel="chapter" href="./16" title="Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="chapter" href="./17" title="Chapter 17 𝑞-Hypergeometric and Related Functions">
+<link rel="chapter" href="./18" title="Chapter 18 Orthogonal Polynomials">
+<link rel="chapter" href="./19" title="Chapter 19 Elliptic Integrals">
+<link rel="chapter" href="./20" title="Chapter 20 Theta Functions">
+<link rel="chapter" href="./21" title="Chapter 21 Multidimensional Theta Functions">
+<link rel="chapter" href="./22" title="Chapter 22 Jacobian Elliptic Functions">
+<link rel="chapter" href="./23" title="Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="chapter" href="./24" title="Chapter 24 Bernoulli and Euler Polynomials">
+<link rel="chapter" href="./25" title="Chapter 25 Zeta and Related Functions">
+<link rel="chapter" href="./26" title="Chapter 26 Combinatorial Analysis">
+<link rel="chapter" href="./27" title="Chapter 27 Functions of Number Theory">
+<link rel="chapter" href="./28" title="Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="chapter" href="./29" title="Chapter 29 Lamé Functions">
+<link rel="chapter" href="./30" title="Chapter 30 Spheroidal Wave Functions">
+<link rel="chapter" href="./31" title="Chapter 31 Heun Functions">
+<link rel="chapter" href="./32" title="Chapter 32 Painlevé Transcendents">
+<link rel="chapter" href="./33" title="Chapter 33 Coulomb Functions">
+<link rel="chapter" href="./34" title="Chapter 34 3⁢𝑗,6⁢𝑗,9⁢𝑗 Symbols">
+<link rel="chapter" href="./35" title="Chapter 35 Functions of Matrix Argument">
+<link rel="chapter" href="./36" title="Chapter 36 Integrals with Coalescing Saddles">
+<link rel="bibliography" href="./bib/" title="Bibliography">
+<link rel="index" href="./idx/" title="Index">
+<link rel="glossary" href="./not/" title="Notations">
+<link rel="document" href="./lof/" title="List of Figures">
+<link rel="document" href="./lot/" title="List of Tables">
+<link rel="document" href="./software/" title="Software Index">
+<link rel="document" href="./errata/" title="Errata">
+<link rel="document" href="./help/" title="Need Help?">
+<link rel="document" href="./search/" title="Advanced Search">
+<link rel="document" href="./about/" title="About the Project">
+<meta name="keywords" lang="en" content="asymptotic expansions, error functions, inverse functions, power-series expansions">
+</head>
+<body class="color_default textfont_default titlefont_default fontsize_default navbar_default">
+<div class="ltx_page_navbar">
+<div class="ltx_page_navlogo"><a href="./" title="Digital Library of Mathematical Functions"><span>DLMF</span></a></div>
+<div class="ltx_page_navitems">
+<form method="get" action="./search/search">
+<ul>
+<li><a href="./idx/">Index</a></li>
+<li><a href="./not/">Notations</a></li>
+<li><small><input type="text" name="q" value="" size="6" class="ltx_page_navitem_search"><button type="submit">Search</button></small></li>
+<li><a href="./help/" class="ltx_help">Help?</a></li>
+<li><a href="./help/cite">Citing</a></li>
+<li><a href="./help/customize" class="ltx_customize">Customize</a></li>
+<li id="showinfo"><a href="" onclick="showInfo(); return false;" title="Show Annotations">Annotate</a></li>
+<li id="hideinfo"><a href="" onclick="hideInfo(); return false;">UnAnnotate</a></li>
+</ul>
+</form>
+</div>
+<div class="ltx_page_navsponsors">
+<div><a href="./about/" class="ltx_page_navabout">About the Project</a></div>
+</div>
+</div>
+<div class="ltx_page_main">
+<div class="ltx_page_header">
+<a href="./7" title="" class="ltx_ref" rel="up up"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">7 </span>Error Functions, Dawson’s and Fresnel Integrals</span></a><a href="./7#PT2" title="In Chapter 7 Error Functions, Dawson’s and Fresnel Integrals" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title">Properties</span></a><a href="./7.16" title="In Properties ‣ Chapter 7 Error Functions, Dawson’s and Fresnel Integrals" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">7.16 </span>Generalized Error Functions</span></a><a href="./7.18" title="In Properties ‣ Chapter 7 Error Functions, Dawson’s and Fresnel Integrals" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">7.18 </span>Repeated Integrals of the Complementary Error Function</span></a>
+</div>
+<div class="ltx_page_content">
+<section class="ltx_section ltx_authors_multiline ltx_leqno">
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">§7.17 </span>Inverse Error Functions</h1>
+<div id="info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Referenced by:</dt>
+<dd><a href="./8.12#Px1.p1" title="Inverse Function ‣ §8.12 Uniform Asymptotic Expansions for Large Parameter ‣ Incomplete Gamma Functions ‣ Chapter 8 Incomplete Gamma and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§8.12</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./7.17" title="" class="ltx_ref">http://dlmf.nist.gov/7.17</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./7#info" title="Chapter 7 Error Functions, Dawson’s and Fresnel Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.7</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<h6>Contents</h6>
+<ol class="ltx_toclist ltx_toclist_section">
+<li class="ltx_tocentry"><a href="#i"><span class="ltx_tag ltx_tag_subsection">§7.17(i) </span>Notation</a></li>
+<li class="ltx_tocentry"><a href="#ii"><span class="ltx_tag ltx_tag_subsection">§7.17(ii) </span>Power Series</a></li>
+<li class="ltx_tocentry"><a href="#iii"><span class="ltx_tag ltx_tag_subsection">§7.17(iii) </span>Asymptotic Expansion of <math class="ltx_Math" altimg="m14.png" altimg-height="18px" altimg-valign="-2px" altimg-width="80px" alttext="\operatorname{inverfc}x" display="inline"><mrow><mi href="./7.17#E1" title="inverse complementary error function">inverfc</mi><mo lspace="0.167em">⁡</mo><mi href="./7.1#p1.t1.r1" title="real variable">x</mi></mrow></math> for Small <math class="ltx_Math" altimg="m27.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./7.1#p1.t1.r1" title="real variable">x</mi></math></a></li>
+</ol>
+<section id="i" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§7.17(i) </span>Notation</h2>
+<div id="i.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=error%20functions">error functions</a>, <a class="ltx_keyword" href="./search/search?q=inverse%20functions">inverse functions</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./7.17.i" title="" class="ltx_ref">http://dlmf.nist.gov/7.17.i</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./7.17#info" title="§7.17 Inverse Error Functions ‣ Properties ‣ Chapter 7 Error Functions, Dawson’s and Fresnel Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§7.17</span></a> and
+<a href="./7#info" title="Chapter 7 Error Functions, Dawson’s and Fresnel Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.7</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="i.p1" class="ltx_para">
+<p class="ltx_p">The inverses of the functions <math class="ltx_Math" altimg="m26.png" altimg-height="22px" altimg-valign="-6px" altimg-width="84px" alttext="x=\operatorname{erf}y" display="inline"><mrow><mi href="./7.1#p1.t1.r1" title="real variable">x</mi><mo>=</mo><mrow><mi href="./7.2#E1" title="error function">erf</mi><mo lspace="0.167em">⁡</mo><mi>y</mi></mrow></mrow></math>, <math class="ltx_Math" altimg="m25.png" altimg-height="22px" altimg-valign="-6px" altimg-width="91px" alttext="x=\operatorname{erfc}y" display="inline"><mrow><mi href="./7.1#p1.t1.r1" title="real variable">x</mi><mo>=</mo><mrow><mi href="./7.2#E2" title="complementary error function">erfc</mi><mo lspace="0.167em">⁡</mo><mi>y</mi></mrow></mrow></math>, <math class="ltx_Math" altimg="m29.png" altimg-height="22px" altimg-valign="-6px" altimg-width="56px" alttext="y\in\mathbb{R}" display="inline"><mrow><mi>y</mi><mo href="./front/introduction#common.t1.r10" title="element of">∈</mo><mi href="./front/introduction#common.t2.r14" title="real line">ℝ</mi></mrow></math>,
+are denoted by</p>
+<table id="E1" class="ltx_equationgroup ltx_eqn_table">
+<tbody>
+<tr id="Ex1" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="2" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equationgroup ltx_align_left">7.17.1</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m9.png" altimg-height="19px" altimg-valign="-6px" altimg-width="18px" alttext="\displaystyle y" display="inline"><mi>y</mi></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m3.png" altimg-height="24px" altimg-valign="-6px" altimg-width="102px" alttext="\displaystyle=\operatorname{inverf}x," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mi href="./7.17#E1" title="inverse error function">inverf</mi><mo lspace="0.167em">⁡</mo><mi href="./7.1#p1.t1.r1" title="real variable">x</mi></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex2" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m9.png" altimg-height="19px" altimg-valign="-6px" altimg-width="18px" alttext="\displaystyle y" display="inline"><mi>y</mi></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m2.png" altimg-height="24px" altimg-valign="-6px" altimg-width="110px" alttext="\displaystyle=\operatorname{inverfc}x," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mi href="./7.17#E1" title="inverse complementary error function">inverfc</mi><mo lspace="0.167em">⁡</mo><mi href="./7.1#p1.t1.r1" title="real variable">x</mi></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E1.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Defines:</dt>
+<dd>
+<span class="ltx_text ltx_font_bold"><math class="ltx_Math" altimg="m13.png" altimg-height="18px" altimg-valign="-2px" altimg-width="80px" alttext="\operatorname{inverfc}\NVar{x}" display="inline"><mrow><mi href="./7.17#E1" title="inverse complementary error function">inverfc</mi><mo lspace="0.167em">⁡</mo><mi class="ltx_nvar" href="./7.1#p1.t1.r1" title="real variable">x</mi></mrow></math>: inverse complementary error function</span> and
+<span class="ltx_text ltx_font_bold"><math class="ltx_Math" altimg="m15.png" altimg-height="18px" altimg-valign="-2px" altimg-width="72px" alttext="\operatorname{inverf}\NVar{x}" display="inline"><mrow><mi href="./7.17#E1" title="inverse error function">inverf</mi><mo lspace="0.167em">⁡</mo><mi class="ltx_nvar" href="./7.1#p1.t1.r1" title="real variable">x</mi></mrow></math>: inverse error function</span>
+</dd>
+<dt>Symbols:</dt>
+<dd><a href="./7.1#p1.t1.r1" title="§7.1 Special Notation ‣ Notation ‣ Chapter 7 Error Functions, Dawson’s and Fresnel Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m27.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./7.1#p1.t1.r1" title="real variable">x</mi></math>:  real variable</a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./7.17.E1" title="" class="ltx_ref">http://dlmf.nist.gov/7.17.E1</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./7.17.E1a.tex">TeX</a>, <a href="./7.17.E1b.tex">TeX</a>, <a href="./7.17.E1a.pmml">pMML</a>, <a href="./7.17.E1b.pmml">pMML</a>, <a href="./7.17.E1a.png">png</a>, <a href="./7.17.E1b.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./7.17#i.info" title="§7.17(i) Notation ‣ §7.17 Inverse Error Functions ‣ Properties ‣ Chapter 7 Error Functions, Dawson’s and Fresnel Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§7.17(i)</span></a>,
+<a href="./7.17#info" title="§7.17 Inverse Error Functions ‣ Properties ‣ Chapter 7 Error Functions, Dawson’s and Fresnel Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§7.17</span></a> and
+<a href="./7#info" title="Chapter 7 Error Functions, Dawson’s and Fresnel Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.7</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">respectively.</p>
+</div>
+</section>
+<section id="ii" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§7.17(ii) </span>Power Series</h2>
+<div id="ii.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=error%20functions">error functions</a>, <a class="ltx_keyword" href="./search/search?q=inverse%20functions">inverse functions</a>, <a class="ltx_keyword" href="./search/search?q=power-series%20expansions">power-series expansions</a>
+</dd>
+<dt>Notes:</dt>
+<dd>See <cite class="ltx_cite ltx_citemacro_citet">Carlitz (<a href="./bib/C#bib420" title="The inverse of the error function" class="ltx_ref">1963</a>)</cite>.</dd>
+<dt>Permalink:</dt>
+<dd><a href="./7.17.ii" title="" class="ltx_ref">http://dlmf.nist.gov/7.17.ii</a></dd>
+<dt>Addition (effective with 1.1.7):</dt>
+<dd>
+The recurrence relation (<a href="./7.17#E2_5" title="(7.17.2_5) ‣ §7.17(ii) Power Series ‣ §7.17 Inverse Error Functions ‣ Properties ‣ Chapter 7 Error Functions, Dawson’s and Fresnel Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">7.17.2_5</span></a>) and some descriptive text
+above it was added.
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./7.17#info" title="§7.17 Inverse Error Functions ‣ Properties ‣ Chapter 7 Error Functions, Dawson’s and Fresnel Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§7.17</span></a> and
+<a href="./7#info" title="Chapter 7 Error Functions, Dawson’s and Fresnel Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.7</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="ii.p1" class="ltx_para">
+<p class="ltx_p">With <math class="ltx_Math" altimg="m22.png" altimg-height="29px" altimg-valign="-9px" altimg-width="94px" alttext="t=\frac{1}{2}\sqrt{\pi}x" display="inline"><mrow><mi>t</mi><mo>=</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><msqrt><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></msqrt><mo>⁢</mo><mi href="./7.1#p1.t1.r1" title="real variable">x</mi></mrow></mrow></math>,</p>
+<table id="E2" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">7.17.2</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E2.png" altimg-height="67px" altimg-valign="-28px" altimg-width="502px" alttext="\operatorname{inverf}x=t+\tfrac{1}{3}t^{3}+\tfrac{7}{30}t^{5}+\tfrac{127}{630}%
+t^{7}+\cdots=\sum_{m=0}^{\infty}a_{m}t^{2m+1}," display="block"><mrow><mrow><mrow><mi href="./7.17#E1" title="inverse error function">inverf</mi><mo lspace="0.167em">⁡</mo><mi href="./7.1#p1.t1.r1" title="real variable">x</mi></mrow><mo>=</mo><mrow><mi>t</mi><mo>+</mo><mrow><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>3</mn></mfrac></mstyle><mo>⁢</mo><msup><mi>t</mi><mn>3</mn></msup></mrow><mo>+</mo><mrow><mstyle displaystyle="false"><mfrac><mn>7</mn><mn>30</mn></mfrac></mstyle><mo>⁢</mo><msup><mi>t</mi><mn>5</mn></msup></mrow><mo>+</mo><mrow><mstyle displaystyle="false"><mfrac><mn>127</mn><mn>630</mn></mfrac></mstyle><mo>⁢</mo><msup><mi>t</mi><mn>7</mn></msup></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi></mrow><mo rspace="0.111em">=</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>m</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><msub><mi>a</mi><mi>m</mi></msub><mo>⁢</mo><msup><mi>t</mi><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>m</mi></mrow><mo>+</mo><mn>1</mn></mrow></msup></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="4"><span class="ltx_constraint"><math class="ltx_Math" altimg="m30.png" altimg-height="25px" altimg-valign="-7px" altimg-width="66px" alttext="|x|&lt;1" display="inline"><mrow><mrow><mo stretchy="false">|</mo><mi href="./7.1#p1.t1.r1" title="real variable">x</mi><mo stretchy="false">|</mo></mrow><mo>&lt;</mo><mn>1</mn></mrow></math>,</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E2.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./7.17#E1" title="(7.17.1) ‣ §7.17(i) Notation ‣ §7.17 Inverse Error Functions ‣ Properties ‣ Chapter 7 Error Functions, Dawson’s and Fresnel Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m15.png" altimg-height="18px" altimg-valign="-2px" altimg-width="72px" alttext="\operatorname{inverf}\NVar{x}" display="inline"><mrow><mi href="./7.17#E1" title="inverse error function">inverf</mi><mo lspace="0.167em">⁡</mo><mi class="ltx_nvar" href="./7.1#p1.t1.r1" title="real variable">x</mi></mrow></math>: inverse error function</a> and
+<a href="./7.1#p1.t1.r1" title="§7.1 Special Notation ‣ Notation ‣ Chapter 7 Error Functions, Dawson’s and Fresnel Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m27.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./7.1#p1.t1.r1" title="real variable">x</mi></math>:  real variable</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./errata/#V1.1.7.I2.ix2.p1" title="In Other Changes ‣ Version 1.1.7 (October 15, 2022) ‣ Errata" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Erratum (V1.1.7) for  Additions</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./7.17.E2" title="" class="ltx_ref">http://dlmf.nist.gov/7.17.E2</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./7.17.E2.tex">TeX</a>, <a href="./7.17.E2.pmml">pMML</a>, <a href="./7.17.E2.png">png</a>
+</dd>
+<dt>Addition (effective with 1.1.7):</dt>
+<dd>
+The equality “<math class="ltx_Math" altimg="m10.png" altimg-height="27px" altimg-valign="-8px" altimg-width="168px" alttext="=\sum_{m=0}^{\infty}a_{m}t^{2m+1}" display="inline"><mrow><mi></mi><mo rspace="0.111em">=</mo><mrow><msubsup><mo>∑</mo><mrow><mi>m</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><mrow><msub><mi>a</mi><mi>m</mi></msub><mo>⁢</mo><msup><mi>t</mi><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>m</mi></mrow><mo>+</mo><mn>1</mn></mrow></msup></mrow></mrow></mrow></math>” was added to this equation.
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./7.17#ii.info" title="§7.17(ii) Power Series ‣ §7.17 Inverse Error Functions ‣ Properties ‣ Chapter 7 Error Functions, Dawson’s and Fresnel Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§7.17(ii)</span></a>,
+<a href="./7.17#info" title="§7.17 Inverse Error Functions ‣ Properties ‣ Chapter 7 Error Functions, Dawson’s and Fresnel Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§7.17</span></a> and
+<a href="./7#info" title="Chapter 7 Error Functions, Dawson’s and Fresnel Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.7</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">where <math class="ltx_Math" altimg="m18.png" altimg-height="20px" altimg-valign="-5px" altimg-width="63px" alttext="a_{0}=1" display="inline"><mrow><msub><mi>a</mi><mn>0</mn></msub><mo>=</mo><mn>1</mn></mrow></math> and the other coefficients follow from the recursion</p>
+<table id="E2_5" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">7.17.2_5</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E2_5.png" altimg-height="67px" altimg-valign="-28px" altimg-width="364px" alttext="a_{m+1}=\frac{1}{2m+3}\sum_{n=0}^{m}\frac{2n+1}{m-n+1}a_{n}a_{m-n}," display="block"><mrow><mrow><msub><mi>a</mi><mrow><mi>m</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>=</mo><mrow><mfrac><mn>1</mn><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>m</mi></mrow><mo>+</mo><mn>3</mn></mrow></mfrac><mo>⁢</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi href="./7.1#p1.t1.r3" title="nonnegative integer">n</mi><mo>=</mo><mn>0</mn></mrow><mi>m</mi></munderover><mrow><mfrac><mrow><mrow><mn>2</mn><mo>⁢</mo><mi href="./7.1#p1.t1.r3" title="nonnegative integer">n</mi></mrow><mo>+</mo><mn>1</mn></mrow><mrow><mrow><mi>m</mi><mo>−</mo><mi href="./7.1#p1.t1.r3" title="nonnegative integer">n</mi></mrow><mo>+</mo><mn>1</mn></mrow></mfrac><mo>⁢</mo><msub><mi>a</mi><mi href="./7.1#p1.t1.r3" title="nonnegative integer">n</mi></msub><mo>⁢</mo><msub><mi>a</mi><mrow><mi>m</mi><mo>−</mo><mi href="./7.1#p1.t1.r3" title="nonnegative integer">n</mi></mrow></msub></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="4"><span class="ltx_constraint"><math class="ltx_Math" altimg="m20.png" altimg-height="21px" altimg-valign="-6px" altimg-width="133px" alttext="m=0,1,2,\ldots" display="inline"><mrow><mi>m</mi><mo>=</mo><mrow><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mi mathvariant="normal">…</mi></mrow></mrow></math>.</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E2_5.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd><a href="./7.1#p1.t1.r3" title="§7.1 Special Notation ‣ Notation ‣ Chapter 7 Error Functions, Dawson’s and Fresnel Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m21.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./7.1#p1.t1.r3" title="nonnegative integer">n</mi></math>:  nonnegative integer</a></dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./7.17#ii.info" title="§7.17(ii) Power Series ‣ §7.17 Inverse Error Functions ‣ Properties ‣ Chapter 7 Error Functions, Dawson’s and Fresnel Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§7.17(ii)</span></a>,
+<a href="./errata/#V1.1.7.I2.ix2.p1" title="In Other Changes ‣ Version 1.1.7 (October 15, 2022) ‣ Errata" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Erratum (V1.1.7) for  Additions</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./7.17.E2_5" title="" class="ltx_ref">http://dlmf.nist.gov/7.17.E2_5</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./7.17.E2_5.tex">TeX</a>, <a href="./7.17.E2_5.pmml">pMML</a>, <a href="./7.17.E2_5.png">png</a>
+</dd>
+<dt>Addition (effective with 1.1.7):</dt>
+<dd>
+This equation was added.
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./7.17#ii.info" title="§7.17(ii) Power Series ‣ §7.17 Inverse Error Functions ‣ Properties ‣ Chapter 7 Error Functions, Dawson’s and Fresnel Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§7.17(ii)</span></a>,
+<a href="./7.17#info" title="§7.17 Inverse Error Functions ‣ Properties ‣ Chapter 7 Error Functions, Dawson’s and Fresnel Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§7.17</span></a> and
+<a href="./7#info" title="Chapter 7 Error Functions, Dawson’s and Fresnel Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.7</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">For these results and 25S values of the first 200 coefficients see <cite class="ltx_cite ltx_citemacro_citet">Strecok (<a href="./bib/S#bib2178" title="On the calculation of the inverse of the error function" class="ltx_ref">1968</a>)</cite>.</p>
+</div>
+</section>
+<section id="iii" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§7.17(iii) </span>Asymptotic Expansion of <math class="ltx_Math" altimg="m14.png" altimg-height="18px" altimg-valign="-2px" altimg-width="80px" alttext="\operatorname{inverfc}x" display="inline"><mrow><mi href="./7.17#E1" title="inverse complementary error function">inverfc</mi><mo lspace="0.167em">⁡</mo><mi href="./7.1#p1.t1.r1" title="real variable">x</mi></mrow></math> for Small <math class="ltx_Math" altimg="m27.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./7.1#p1.t1.r1" title="real variable">x</mi></math>
+</h2>
+<div id="iii.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=asymptotic%20expansions">asymptotic expansions</a>, <a class="ltx_keyword" href="./search/search?q=error%20functions">error functions</a>, <a class="ltx_keyword" href="./search/search?q=inverse%20functions">inverse functions</a>
+</dd>
+<dt>Notes:</dt>
+<dd>(<a href="./7.17#E3" title="(7.17.3) ‣ §7.17(iii) Asymptotic Expansion of inverfc𝑥 for Small 𝑥 ‣ §7.17 Inverse Error Functions ‣ Properties ‣ Chapter 7 Error Functions, Dawson’s and Fresnel Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">7.17.3</span></a>) follows from <cite class="ltx_cite ltx_citemacro_citet">Blair<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/B#bib288" title="Rational Chebyshev approximations for the inverse of the error function" class="ltx_ref">1976</a>)</cite>, after
+modifications.</dd>
+<dt>Permalink:</dt>
+<dd><a href="./7.17.iii" title="" class="ltx_ref">http://dlmf.nist.gov/7.17.iii</a></dd>
+<dt>Addition (effective with 1.1.7):</dt>
+<dd>
+A sentence was added at the end of this subsection indicating that one can
+find an alternative representation of (<a href="./7.17#E3" title="(7.17.3) ‣ §7.17(iii) Asymptotic Expansion of inverfc𝑥 for Small 𝑥 ‣ §7.17 Inverse Error Functions ‣ Properties ‣ Chapter 7 Error Functions, Dawson’s and Fresnel Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">7.17.3</span></a>) in <cite class="ltx_cite ltx_citemacro_citet">Blair<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/B#bib288" title="Rational Chebyshev approximations for the inverse of the error function" class="ltx_ref">1976</a>)</cite>.
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./7.17#info" title="§7.17 Inverse Error Functions ‣ Properties ‣ Chapter 7 Error Functions, Dawson’s and Fresnel Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§7.17</span></a> and
+<a href="./7#info" title="Chapter 7 Error Functions, Dawson’s and Fresnel Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.7</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="iii.p1" class="ltx_para">
+<p class="ltx_p">As <math class="ltx_Math" altimg="m28.png" altimg-height="17px" altimg-valign="-2px" altimg-width="59px" alttext="x\to 0" display="inline"><mrow><mi href="./7.1#p1.t1.r1" title="real variable">x</mi><mo stretchy="false">→</mo><mn>0</mn></mrow></math></p>
+<table id="E3" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">7.17.3</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E3.png" altimg-height="30px" altimg-valign="-6px" altimg-width="470px" alttext="\operatorname{inverfc}x\sim u^{-1/2}+a_{2}u^{3/2}+a_{3}u^{5/2}+a_{4}u^{7/2}+\cdots," display="block"><mrow><mrow><mrow><mi href="./7.17#E1" title="inverse complementary error function">inverfc</mi><mo lspace="0.167em">⁡</mo><mi href="./7.1#p1.t1.r1" title="real variable">x</mi></mrow><mo href="./2.1#iii.p1" title="Poincaré asymptotic expansion">∼</mo><mrow><msup><mi href="./7.17#E5" title="expansion variable">u</mi><mrow><mo>−</mo><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></mrow></msup><mo>+</mo><mrow><msub><mi href="./7.17#E4" title="coefficients">a</mi><mn>2</mn></msub><mo>⁢</mo><msup><mi href="./7.17#E5" title="expansion variable">u</mi><mrow><mn>3</mn><mo>/</mo><mn>2</mn></mrow></msup></mrow><mo>+</mo><mrow><msub><mi href="./7.17#E4" title="coefficients">a</mi><mn>3</mn></msub><mo>⁢</mo><msup><mi href="./7.17#E5" title="expansion variable">u</mi><mrow><mn>5</mn><mo>/</mo><mn>2</mn></mrow></msup></mrow><mo>+</mo><mrow><msub><mi href="./7.17#E4" title="coefficients">a</mi><mn>4</mn></msub><mo>⁢</mo><msup><mi href="./7.17#E5" title="expansion variable">u</mi><mrow><mn>7</mn><mo>/</mo><mn>2</mn></mrow></msup></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E3.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./2.1#iii.p1" title="§2.1(iii) Asymptotic Expansions ‣ §2.1 Definitions and Elementary Properties ‣ Areas ‣ Chapter 2 Asymptotic Approximations" class="ltx_ref"><math class="ltx_Math" altimg="m17.png" altimg-height="11px" altimg-valign="-2px" altimg-width="20px" alttext="\sim" display="inline"><mo href="./2.1#iii.p1" title="Poincaré asymptotic expansion">∼</mo></math>: Poincaré asymptotic expansion</a>,
+<a href="./7.17#E1" title="(7.17.1) ‣ §7.17(i) Notation ‣ §7.17 Inverse Error Functions ‣ Properties ‣ Chapter 7 Error Functions, Dawson’s and Fresnel Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m13.png" altimg-height="18px" altimg-valign="-2px" altimg-width="80px" alttext="\operatorname{inverfc}\NVar{x}" display="inline"><mrow><mi href="./7.17#E1" title="inverse complementary error function">inverfc</mi><mo lspace="0.167em">⁡</mo><mi class="ltx_nvar" href="./7.1#p1.t1.r1" title="real variable">x</mi></mrow></math>: inverse complementary error function</a>,
+<a href="./7.1#p1.t1.r1" title="§7.1 Special Notation ‣ Notation ‣ Chapter 7 Error Functions, Dawson’s and Fresnel Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m27.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./7.1#p1.t1.r1" title="real variable">x</mi></math>:  real variable</a>,
+<a href="./7.17#E4" title="(7.17.4) ‣ §7.17(iii) Asymptotic Expansion of inverfc𝑥 for Small 𝑥 ‣ §7.17 Inverse Error Functions ‣ Properties ‣ Chapter 7 Error Functions, Dawson’s and Fresnel Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m19.png" altimg-height="16px" altimg-valign="-5px" altimg-width="22px" alttext="a_{i}" display="inline"><msub><mi href="./7.17#E4" title="coefficients">a</mi><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></msub></math>:  coefficients</a> and
+<a href="./7.17#E5" title="(7.17.5) ‣ §7.17(iii) Asymptotic Expansion of inverfc𝑥 for Small 𝑥 ‣ §7.17 Inverse Error Functions ‣ Properties ‣ Chapter 7 Error Functions, Dawson’s and Fresnel Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m23.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="u" display="inline"><mi href="./7.17#E5" title="expansion variable">u</mi></math>:  expansion variable</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./7.17#iii.info" title="§7.17(iii) Asymptotic Expansion of inverfc𝑥 for Small 𝑥 ‣ §7.17 Inverse Error Functions ‣ Properties ‣ Chapter 7 Error Functions, Dawson’s and Fresnel Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§7.17(iii)</span></a>,
+<a href="./7.17#iii.p1" title="§7.17(iii) Asymptotic Expansion of inverfc𝑥 for Small 𝑥 ‣ §7.17 Inverse Error Functions ‣ Properties ‣ Chapter 7 Error Functions, Dawson’s and Fresnel Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§7.17(iii)</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./7.17.E3" title="" class="ltx_ref">http://dlmf.nist.gov/7.17.E3</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./7.17.E3.tex">TeX</a>, <a href="./7.17.E3.pmml">pMML</a>, <a href="./7.17.E3.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./7.17#iii.info" title="§7.17(iii) Asymptotic Expansion of inverfc𝑥 for Small 𝑥 ‣ §7.17 Inverse Error Functions ‣ Properties ‣ Chapter 7 Error Functions, Dawson’s and Fresnel Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§7.17(iii)</span></a>,
+<a href="./7.17#info" title="§7.17 Inverse Error Functions ‣ Properties ‣ Chapter 7 Error Functions, Dawson’s and Fresnel Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§7.17</span></a> and
+<a href="./7#info" title="Chapter 7 Error Functions, Dawson’s and Fresnel Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.7</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">where</p>
+<table id="E4" class="ltx_equationgroup ltx_eqn_table">
+<tbody>
+<tr id="Ex3" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="3" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equationgroup ltx_align_left">7.17.4</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m6.png" altimg-height="18px" altimg-valign="-5px" altimg-width="27px" alttext="\displaystyle a_{2}" display="inline"><msub><mi href="./7.17#E4" title="coefficients">a</mi><mn>2</mn></msub></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m5.png" altimg-height="31px" altimg-valign="-9px" altimg-width="58px" alttext="\displaystyle=\tfrac{1}{8}v," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mfrac><mn>1</mn><mn>8</mn></mfrac><mo>⁢</mo><mi href="./7.17#E6" title="expansion variable">v</mi></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex4" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m7.png" altimg-height="18px" altimg-valign="-5px" altimg-width="27px" alttext="\displaystyle a_{3}" display="inline"><msub><mi href="./7.17#E4" title="coefficients">a</mi><mn>3</mn></msub></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m1.png" altimg-height="31px" altimg-valign="-9px" altimg-width="191px" alttext="\displaystyle=-\tfrac{1}{32}(v^{2}+6v-6)," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mo>−</mo><mrow><mfrac><mn>1</mn><mn>32</mn></mfrac><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><msup><mi href="./7.17#E6" title="expansion variable">v</mi><mn>2</mn></msup><mo>+</mo><mrow><mn>6</mn><mo>⁢</mo><mi href="./7.17#E6" title="expansion variable">v</mi></mrow></mrow><mo>−</mo><mn>6</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex5" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m8.png" altimg-height="18px" altimg-valign="-5px" altimg-width="27px" alttext="\displaystyle a_{4}" display="inline"><msub><mi href="./7.17#E4" title="coefficients">a</mi><mn>4</mn></msub></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m4.png" altimg-height="31px" altimg-valign="-9px" altimg-width="301px" alttext="\displaystyle=\tfrac{1}{384}(4v^{3}+27v^{2}+108v-300)," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mfrac><mn>1</mn><mn>384</mn></mfrac><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mrow><mn>4</mn><mo>⁢</mo><msup><mi href="./7.17#E6" title="expansion variable">v</mi><mn>3</mn></msup></mrow><mo>+</mo><mrow><mn>27</mn><mo>⁢</mo><msup><mi href="./7.17#E6" title="expansion variable">v</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mn>108</mn><mo>⁢</mo><mi href="./7.17#E6" title="expansion variable">v</mi></mrow></mrow><mo>−</mo><mn>300</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E4.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Defines:</dt>
+<dd><span class="ltx_text"><math class="ltx_Math" altimg="m19.png" altimg-height="16px" altimg-valign="-5px" altimg-width="22px" alttext="a_{i}" display="inline"><msub><mi href="./7.17#E4" title="coefficients">a</mi><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></msub></math>:  coefficients (locally)</span></dd>
+<dt>Symbols:</dt>
+<dd>
+<a href="./1.9#E1" title="(1.9.1) ‣ §1.9(i) Complex Numbers ‣ §1.9 Calculus of a Complex Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m12.png" altimg-height="18px" altimg-valign="-2px" altimg-width="10px" alttext="\mathrm{i}" display="inline"><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></math>: imaginary unit</a> and
+<a href="./7.17#E6" title="(7.17.6) ‣ §7.17(iii) Asymptotic Expansion of inverfc𝑥 for Small 𝑥 ‣ §7.17 Inverse Error Functions ‣ Properties ‣ Chapter 7 Error Functions, Dawson’s and Fresnel Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m24.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="v" display="inline"><mi href="./7.17#E6" title="expansion variable">v</mi></math>:  expansion variable</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./7.17.E4" title="" class="ltx_ref">http://dlmf.nist.gov/7.17.E4</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./7.17.E4a.tex">TeX</a>, <a href="./7.17.E4b.tex">TeX</a>, <a href="./7.17.E4c.tex">TeX</a>, <a href="./7.17.E4a.pmml">pMML</a>, <a href="./7.17.E4b.pmml">pMML</a>, <a href="./7.17.E4c.pmml">pMML</a>, <a href="./7.17.E4a.png">png</a>, <a href="./7.17.E4b.png">png</a>, <a href="./7.17.E4c.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./7.17#iii.info" title="§7.17(iii) Asymptotic Expansion of inverfc𝑥 for Small 𝑥 ‣ §7.17 Inverse Error Functions ‣ Properties ‣ Chapter 7 Error Functions, Dawson’s and Fresnel Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§7.17(iii)</span></a>,
+<a href="./7.17#info" title="§7.17 Inverse Error Functions ‣ Properties ‣ Chapter 7 Error Functions, Dawson’s and Fresnel Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§7.17</span></a> and
+<a href="./7#info" title="Chapter 7 Error Functions, Dawson’s and Fresnel Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.7</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<table id="E5" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">7.17.5</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E5.png" altimg-height="81px" altimg-valign="-9px" altimg-width="242px" alttext="u=-2/\ln\left(\pi x^{2}\ln\left(1/x\right)\right)," display="block"><mrow><mrow><mi href="./7.17#E5" title="expansion variable">u</mi><mo>=</mo><mrow><mo>−</mo><mrow><mn>2</mn><mo>/</mo><mrow><mi href="./4.2#E2" title="principal branch of logarithm function">ln</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>⁢</mo><msup><mi href="./7.1#p1.t1.r1" title="real variable">x</mi><mn>2</mn></msup><mo lspace="0.167em">⁢</mo><mrow><mi href="./4.2#E2" title="principal branch of logarithm function">ln</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mn>1</mn><mo>/</mo><mi href="./7.1#p1.t1.r1" title="real variable">x</mi></mrow><mo>)</mo></mrow></mrow></mrow><mo>)</mo></mrow></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E5.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Defines:</dt>
+<dd><span class="ltx_text"><math class="ltx_Math" altimg="m23.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="u" display="inline"><mi href="./7.17#E5" title="expansion variable">u</mi></math>:  expansion variable (locally)</span></dd>
+<dt>Symbols:</dt>
+<dd>
+<a href="./3.12#E1" title="(3.12.1) ‣ §3.12 Mathematical Constants ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m16.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="\pi" display="inline"><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></math>: the ratio of the circumference of a circle to its diameter</a>,
+<a href="./4.2#E2" title="(4.2.2) ‣ §4.2(i) The Logarithm ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m11.png" altimg-height="18px" altimg-valign="-2px" altimg-width="36px" alttext="\ln\NVar{z}" display="inline"><mrow><mi href="./4.2#E2" title="principal branch of logarithm function">ln</mi><mo lspace="0.167em">⁡</mo><mi class="ltx_nvar" href="./4.1#t1.r4" title="complex variable">z</mi></mrow></math>: principal branch of logarithm function</a> and
+<a href="./7.1#p1.t1.r1" title="§7.1 Special Notation ‣ Notation ‣ Chapter 7 Error Functions, Dawson’s and Fresnel Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m27.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./7.1#p1.t1.r1" title="real variable">x</mi></math>:  real variable</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./7.17.E5" title="" class="ltx_ref">http://dlmf.nist.gov/7.17.E5</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./7.17.E5.tex">TeX</a>, <a href="./7.17.E5.pmml">pMML</a>, <a href="./7.17.E5.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./7.17#iii.info" title="§7.17(iii) Asymptotic Expansion of inverfc𝑥 for Small 𝑥 ‣ §7.17 Inverse Error Functions ‣ Properties ‣ Chapter 7 Error Functions, Dawson’s and Fresnel Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§7.17(iii)</span></a>,
+<a href="./7.17#info" title="§7.17 Inverse Error Functions ‣ Properties ‣ Chapter 7 Error Functions, Dawson’s and Fresnel Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§7.17</span></a> and
+<a href="./7#info" title="Chapter 7 Error Functions, Dawson’s and Fresnel Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.7</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">and</p>
+<table id="E6" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">7.17.6</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E6.png" altimg-height="79px" altimg-valign="-7px" altimg-width="252px" alttext="v=\ln\left(\ln\left(1/x\right)\right)-2+\ln\pi." display="block"><mrow><mrow><mi href="./7.17#E6" title="expansion variable">v</mi><mo>=</mo><mrow><mrow><mrow><mi href="./4.2#E2" title="principal branch of logarithm function">ln</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./4.2#E2" title="principal branch of logarithm function">ln</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mn>1</mn><mo>/</mo><mi href="./7.1#p1.t1.r1" title="real variable">x</mi></mrow><mo>)</mo></mrow></mrow><mo>)</mo></mrow></mrow><mo>−</mo><mn>2</mn></mrow><mo>+</mo><mrow><mi href="./4.2#E2" title="principal branch of logarithm function">ln</mi><mo lspace="0.167em">⁡</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E6.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Defines:</dt>
+<dd><span class="ltx_text"><math class="ltx_Math" altimg="m24.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="v" display="inline"><mi href="./7.17#E6" title="expansion variable">v</mi></math>:  expansion variable (locally)</span></dd>
+<dt>Symbols:</dt>
+<dd>
+<a href="./3.12#E1" title="(3.12.1) ‣ §3.12 Mathematical Constants ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m16.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="\pi" display="inline"><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></math>: the ratio of the circumference of a circle to its diameter</a>,
+<a href="./4.2#E2" title="(4.2.2) ‣ §4.2(i) The Logarithm ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m11.png" altimg-height="18px" altimg-valign="-2px" altimg-width="36px" alttext="\ln\NVar{z}" display="inline"><mrow><mi href="./4.2#E2" title="principal branch of logarithm function">ln</mi><mo lspace="0.167em">⁡</mo><mi class="ltx_nvar" href="./4.1#t1.r4" title="complex variable">z</mi></mrow></math>: principal branch of logarithm function</a> and
+<a href="./7.1#p1.t1.r1" title="§7.1 Special Notation ‣ Notation ‣ Chapter 7 Error Functions, Dawson’s and Fresnel Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m27.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./7.1#p1.t1.r1" title="real variable">x</mi></math>:  real variable</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./7.17.E6" title="" class="ltx_ref">http://dlmf.nist.gov/7.17.E6</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./7.17.E6.tex">TeX</a>, <a href="./7.17.E6.pmml">pMML</a>, <a href="./7.17.E6.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./7.17#iii.info" title="§7.17(iii) Asymptotic Expansion of inverfc𝑥 for Small 𝑥 ‣ §7.17 Inverse Error Functions ‣ Properties ‣ Chapter 7 Error Functions, Dawson’s and Fresnel Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§7.17(iii)</span></a>,
+<a href="./7.17#info" title="§7.17 Inverse Error Functions ‣ Properties ‣ Chapter 7 Error Functions, Dawson’s and Fresnel Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§7.17</span></a> and
+<a href="./7#info" title="Chapter 7 Error Functions, Dawson’s and Fresnel Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.7</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">For an alternative representation of (<a href="./7.17#E3" title="(7.17.3) ‣ §7.17(iii) Asymptotic Expansion of inverfc𝑥 for Small 𝑥 ‣ §7.17 Inverse Error Functions ‣ Properties ‣ Chapter 7 Error Functions, Dawson’s and Fresnel Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">7.17.3</span></a>) see <cite class="ltx_cite ltx_citemacro_citet">Blair<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/B#bib288" title="Rational Chebyshev approximations for the inverse of the error function" class="ltx_ref">1976</a>)</cite>.</p>
+</div>
+</section>
+</section>
+</div>
+<div class="ltx_page_footer">
+<div class="ltx_siblings">
+<a href="./7.16" title="In Properties ‣ Chapter 7 Error Functions, Dawson’s and Fresnel Integrals" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">7.16 </span>Generalized Error Functions</span></a><a href="./7.18" title="In Properties ‣ Chapter 7 Error Functions, Dawson’s and Fresnel Integrals" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">7.18 </span>Repeated Integrals of the Complementary Error Function</span></a>
+</div>
+<div class="ltx_footer_links ltx_centering">
+<a href="./about/notices">© 2010–2026 NIST</a> / <a href="./about/notices#S2">Disclaimer</a> / <a href="/cdn-cgi/l/email-protection#81c5cdccc7ace7e4e4e5e3e0e2eac1efe8f2f5afe6eef7">Feedback</a>;
+ Version 1.2.7;
+Release date 2026-06-15.</div>
+<span id="pagesettings"></span>
+<div class="ltx_nist_logo"><a href="http://www.nist.gov/"><img src="./style/nistidc.png" width="500" alt="NIST"></a></div>
+<div class="ltx_nist_links ltx_align_right">
+<a href="https://www.nist.gov/privacy-policy">Site Privacy</a> <a href="https://www.nist.gov/oism/accessibility">Accessibility</a> <a href="https://www.nist.gov/privacy">Privacy Program</a> <a href="https://www.nist.gov/oism/copyrights">Copyrights</a> <a href="https://www.commerce.gov/vulnerability-disclosure-policy">Vulnerability Disclosure</a> <a href="https://www.nist.gov/no-fear-act-policy">No Fear Act Policy</a> <a href="https://www.nist.gov/foia">FOIA</a> <a href="https://www.nist.gov/environmental-policy-statement">Environmental Policy</a> <a href="https://www.nist.gov/summary-report-scientific-integrity">Scientific Integrity</a> <a href="https://www.nist.gov/nist-information-quality-standards">Information Quality Standards</a> <a href="https://www.commerce.gov/">Commerce.gov</a> <a href="http://www.science.gov/">Science.gov</a> <a href="http://www.usa.gov/">USA.gov</a>
+</div>
+</div>
+</div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a30b515b88d14361',t:'MTc4NzY2ODQ2OQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"9ef5b487afff42a68917b2d63593a474"}' crossorigin="anonymous"></script>
+</body>
+</html>

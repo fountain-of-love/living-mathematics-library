@@ -1,0 +1,365 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>DLMF: §14.21 Definitions and Basic Properties ‣ Complex Arguments ‣ Chapter 14 Legendre and Related Functions</title>
+<link rel="shortcut icon" href="./style/DLMF-16.png" type="image/png">
+<script type="text/javascript"><!--
+	var PATH="DLMF:/14.21";
+	var ROOT="./";
+      //--></script>
+<script type="text/javascript" src="./style/jquery.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/jquery.leaveNotice.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/DLMF.js"><!-- non-empty so ie6 will accept it --></script>
+<script async="" type="text/javascript" id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC&amp;subagency=NIST&amp;pua=UA-37115410-44&amp;yt=true&amp;exts=ppsx,pps,f90,sch,rtf,wrl,txz,m1v,xlsm,msi,xsd,f,tif,eps,mpg,xml,pl,xlt,c"><!-- non-empty so ie6 will accept it --></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-BZB64W4M0L"></script><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-BZB64W4M0L');
+      </script>
+<link rel="stylesheet" type="text/css" href="./style/LaTeXML.css">
+<link rel="stylesheet" type="text/css" href="./style/DLMF.css">
+<link rel="stylesheet" type="text/css" href="./style/print.css" media="print">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="top" href="./" title="DLMF">
+<link rel="copyright" href="./about/notices" title="Copyright">
+<link rel="search" href="./search/search" title="Search">
+<link rel="help" class="ltx_help" href="./help/" title="Help">
+<link rel="up" href="./14#PT3" title="Complex Arguments ‣ Chapter 14 Legendre and Related Functions">
+<link rel="up up" href="./14" title="Chapter 14 Legendre and Related Functions">
+<link rel="start" href="./" title="">
+<link rel="prev" href="./14.20" title="§14.20 Conical (or Mehler) Functions ‣ Real Arguments ‣ Chapter 14 Legendre and Related Functions">
+<link rel="next" href="./14.22" title="§14.22 Graphics ‣ Complex Arguments ‣ Chapter 14 Legendre and Related Functions">
+<link rel="section" href="./14.1" title="§14.1 Special Notation ‣ Notation ‣ Chapter 14 Legendre and Related Functions">
+<link rel="section" href="./14.2" title="§14.2 Differential Equations ‣ Real Arguments ‣ Chapter 14 Legendre and Related Functions">
+<link rel="section" href="./14.3" title="§14.3 Definitions and Hypergeometric Representations ‣ Real Arguments ‣ Chapter 14 Legendre and Related Functions">
+<link rel="section" href="./14.4" title="§14.4 Graphics ‣ Real Arguments ‣ Chapter 14 Legendre and Related Functions">
+<link rel="section" href="./14.5" title="§14.5 Special Values ‣ Real Arguments ‣ Chapter 14 Legendre and Related Functions">
+<link rel="section" href="./14.6" title="§14.6 Integer Order ‣ Real Arguments ‣ Chapter 14 Legendre and Related Functions">
+<link rel="section" href="./14.7" title="§14.7 Integer Degree and Order ‣ Real Arguments ‣ Chapter 14 Legendre and Related Functions">
+<link rel="section" href="./14.8" title="§14.8 Behavior at Singularities ‣ Real Arguments ‣ Chapter 14 Legendre and Related Functions">
+<link rel="section" href="./14.9" title="§14.9 Connection Formulas ‣ Real Arguments ‣ Chapter 14 Legendre and Related Functions">
+<link rel="section" href="./14.10" title="§14.10 Recurrence Relations and Derivatives ‣ Real Arguments ‣ Chapter 14 Legendre and Related Functions">
+<link rel="section" href="./14.11" title="§14.11 Derivatives with Respect to Degree or Order ‣ Real Arguments ‣ Chapter 14 Legendre and Related Functions">
+<link rel="section" href="./14.12" title="§14.12 Integral Representations ‣ Real Arguments ‣ Chapter 14 Legendre and Related Functions">
+<link rel="section" href="./14.13" title="§14.13 Trigonometric Expansions ‣ Real Arguments ‣ Chapter 14 Legendre and Related Functions">
+<link rel="section" href="./14.14" title="§14.14 Continued Fractions ‣ Real Arguments ‣ Chapter 14 Legendre and Related Functions">
+<link rel="section" href="./14.15" title="§14.15 Uniform Asymptotic Approximations ‣ Real Arguments ‣ Chapter 14 Legendre and Related Functions">
+<link rel="section" href="./14.16" title="§14.16 Zeros ‣ Real Arguments ‣ Chapter 14 Legendre and Related Functions">
+<link rel="section" href="./14.17" title="§14.17 Integrals ‣ Real Arguments ‣ Chapter 14 Legendre and Related Functions">
+<link rel="section" href="./14.18" title="§14.18 Sums ‣ Real Arguments ‣ Chapter 14 Legendre and Related Functions">
+<link rel="section" href="./14.19" title="§14.19 Toroidal (or Ring) Functions ‣ Real Arguments ‣ Chapter 14 Legendre and Related Functions">
+<link rel="section" href="./14.20" title="§14.20 Conical (or Mehler) Functions ‣ Real Arguments ‣ Chapter 14 Legendre and Related Functions">
+<link rel="section" href="./14.22" title="§14.22 Graphics ‣ Complex Arguments ‣ Chapter 14 Legendre and Related Functions">
+<link rel="section" href="./14.23" title="§14.23 Values on the Cut ‣ Complex Arguments ‣ Chapter 14 Legendre and Related Functions">
+<link rel="section" href="./14.24" title="§14.24 Analytic Continuation ‣ Complex Arguments ‣ Chapter 14 Legendre and Related Functions">
+<link rel="section" href="./14.25" title="§14.25 Integral Representations ‣ Complex Arguments ‣ Chapter 14 Legendre and Related Functions">
+<link rel="section" href="./14.26" title="§14.26 Uniform Asymptotic Expansions ‣ Complex Arguments ‣ Chapter 14 Legendre and Related Functions">
+<link rel="section" href="./14.27" title="§14.27 Zeros ‣ Complex Arguments ‣ Chapter 14 Legendre and Related Functions">
+<link rel="section" href="./14.28" title="§14.28 Sums ‣ Complex Arguments ‣ Chapter 14 Legendre and Related Functions">
+<link rel="section" href="./14.29" title="§14.29 Generalizations ‣ Complex Arguments ‣ Chapter 14 Legendre and Related Functions">
+<link rel="section" href="./14.30" title="§14.30 Spherical and Spheroidal Harmonics ‣ Applications ‣ Chapter 14 Legendre and Related Functions">
+<link rel="section" href="./14.31" title="§14.31 Other Applications ‣ Applications ‣ Chapter 14 Legendre and Related Functions">
+<link rel="section" href="./14.32" title="§14.32 Methods of Computation ‣ Computation ‣ Chapter 14 Legendre and Related Functions">
+<link rel="section" href="./14.33" title="§14.33 Tables ‣ Computation ‣ Chapter 14 Legendre and Related Functions">
+<link rel="section" href="./14.34" title="§14.34 Software ‣ Computation ‣ Chapter 14 Legendre and Related Functions">
+<link rel="document" href="./front/foreword" title="Foreword">
+<link rel="document" href="./front/preface" title="Preface">
+<link rel="document" href="./front/introduction" title="Mathematical Introduction">
+<link rel="chapter" href="./1" title="Chapter 1 Algebraic and Analytic Methods">
+<link rel="chapter" href="./2" title="Chapter 2 Asymptotic Approximations">
+<link rel="chapter" href="./3" title="Chapter 3 Numerical Methods">
+<link rel="chapter" href="./4" title="Chapter 4 Elementary Functions">
+<link rel="chapter" href="./5" title="Chapter 5 Gamma Function">
+<link rel="chapter" href="./6" title="Chapter 6 Exponential, Logarithmic, Sine, and Cosine Integrals">
+<link rel="chapter" href="./7" title="Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="chapter" href="./8" title="Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="chapter" href="./9" title="Chapter 9 Airy and Related Functions">
+<link rel="chapter" href="./10" title="Chapter 10 Bessel Functions">
+<link rel="chapter" href="./11" title="Chapter 11 Struve and Related Functions">
+<link rel="chapter" href="./12" title="Chapter 12 Parabolic Cylinder Functions">
+<link rel="chapter" href="./13" title="Chapter 13 Confluent Hypergeometric Functions">
+<link rel="chapter" href="./14" title="Chapter 14 Legendre and Related Functions">
+<link rel="chapter" href="./15" title="Chapter 15 Hypergeometric Function">
+<link rel="chapter" href="./16" title="Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="chapter" href="./17" title="Chapter 17 𝑞-Hypergeometric and Related Functions">
+<link rel="chapter" href="./18" title="Chapter 18 Orthogonal Polynomials">
+<link rel="chapter" href="./19" title="Chapter 19 Elliptic Integrals">
+<link rel="chapter" href="./20" title="Chapter 20 Theta Functions">
+<link rel="chapter" href="./21" title="Chapter 21 Multidimensional Theta Functions">
+<link rel="chapter" href="./22" title="Chapter 22 Jacobian Elliptic Functions">
+<link rel="chapter" href="./23" title="Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="chapter" href="./24" title="Chapter 24 Bernoulli and Euler Polynomials">
+<link rel="chapter" href="./25" title="Chapter 25 Zeta and Related Functions">
+<link rel="chapter" href="./26" title="Chapter 26 Combinatorial Analysis">
+<link rel="chapter" href="./27" title="Chapter 27 Functions of Number Theory">
+<link rel="chapter" href="./28" title="Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="chapter" href="./29" title="Chapter 29 Lamé Functions">
+<link rel="chapter" href="./30" title="Chapter 30 Spheroidal Wave Functions">
+<link rel="chapter" href="./31" title="Chapter 31 Heun Functions">
+<link rel="chapter" href="./32" title="Chapter 32 Painlevé Transcendents">
+<link rel="chapter" href="./33" title="Chapter 33 Coulomb Functions">
+<link rel="chapter" href="./34" title="Chapter 34 3⁢𝑗,6⁢𝑗,9⁢𝑗 Symbols">
+<link rel="chapter" href="./35" title="Chapter 35 Functions of Matrix Argument">
+<link rel="chapter" href="./36" title="Chapter 36 Integrals with Coalescing Saddles">
+<link rel="bibliography" href="./bib/" title="Bibliography">
+<link rel="index" href="./idx/" title="Index">
+<link rel="glossary" href="./not/" title="Notations">
+<link rel="document" href="./lof/" title="List of Figures">
+<link rel="document" href="./lot/" title="List of Tables">
+<link rel="document" href="./software/" title="Software Index">
+<link rel="document" href="./errata/" title="Errata">
+<link rel="document" href="./help/" title="Need Help?">
+<link rel="document" href="./search/" title="Advanced Search">
+<link rel="document" href="./about/" title="About the Project">
+<meta name="keywords" lang="en" content="Olver’s, Olver’s associated Legendre function, Wronskians, analytic properties, associated Legendre equation, associated Legendre functions, behavior at singularities, connection formulas, definitions, generating functions, hypergeometric representations, integer degree and order, integer order, numerically satisfactory solutions, principal values (or branches), recurrence relations, standard solutions">
+</head>
+<body class="color_default textfont_default titlefont_default fontsize_default navbar_default">
+<div class="ltx_page_navbar">
+<div class="ltx_page_navlogo"><a href="./" title="Digital Library of Mathematical Functions"><span>DLMF</span></a></div>
+<div class="ltx_page_navitems">
+<form method="get" action="./search/search">
+<ul>
+<li><a href="./idx/">Index</a></li>
+<li><a href="./not/">Notations</a></li>
+<li><small><input type="text" name="q" value="" size="6" class="ltx_page_navitem_search"><button type="submit">Search</button></small></li>
+<li><a href="./help/" class="ltx_help">Help?</a></li>
+<li><a href="./help/cite">Citing</a></li>
+<li><a href="./help/customize" class="ltx_customize">Customize</a></li>
+<li id="showinfo"><a href="" onclick="showInfo(); return false;" title="Show Annotations">Annotate</a></li>
+<li id="hideinfo"><a href="" onclick="hideInfo(); return false;">UnAnnotate</a></li>
+</ul>
+</form>
+</div>
+<div class="ltx_page_navsponsors">
+<div><a href="./about/" class="ltx_page_navabout">About the Project</a></div>
+</div>
+</div>
+<div class="ltx_page_main">
+<div class="ltx_page_header">
+<a href="./14" title="" class="ltx_ref" rel="up up"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">14 </span>Legendre and Related Functions</span></a><a href="./14#PT3" title="In Chapter 14 Legendre and Related Functions" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title">Complex Arguments</span></a><a href="./14.20" title="In Real Arguments ‣ Chapter 14 Legendre and Related Functions" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">14.20 </span>Conical (or Mehler) Functions</span></a><a href="./14.22" title="In Complex Arguments ‣ Chapter 14 Legendre and Related Functions" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">14.22 </span>Graphics</span></a>
+</div>
+<div class="ltx_page_content">
+<section class="ltx_section ltx_authors_multiline ltx_leqno">
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">§14.21 </span>Definitions and Basic Properties</h1>
+<div id="info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Referenced by:</dt>
+<dd><a href="./14.2#ii.p4" title="§14.2(ii) Associated Legendre Equation ‣ §14.2 Differential Equations ‣ Real Arguments ‣ Chapter 14 Legendre and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§14.2(ii)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./14.21" title="" class="ltx_ref">http://dlmf.nist.gov/14.21</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./14#info" title="Chapter 14 Legendre and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.14</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<h6>Contents</h6>
+<ol class="ltx_toclist ltx_toclist_section">
+<li class="ltx_tocentry"><a href="#i"><span class="ltx_tag ltx_tag_subsection">§14.21(i) </span>Associated Legendre Equation</a></li>
+<li class="ltx_tocentry"><a href="#ii"><span class="ltx_tag ltx_tag_subsection">§14.21(ii) </span>Numerically Satisfactory Solutions</a></li>
+<li class="ltx_tocentry"><a href="#iii"><span class="ltx_tag ltx_tag_subsection">§14.21(iii) </span>Properties</a></li>
+</ol>
+<section id="i" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§14.21(i) </span>Associated Legendre Equation</h2>
+<div id="i.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Defines:</dt>
+<dd>
+<span class="ltx_text ltx_font_bold"><math class="ltx_Math" altimg="m5.png" altimg-height="25px" altimg-valign="-7px" altimg-width="62px" alttext="P^{\NVar{\mu}}_{\NVar{\nu}}\left(\NVar{z}\right)" display="inline"><mrow><msubsup><mi href="./14.21#i.p1" title="associated Legendre function of the first kind">P</mi><mi class="ltx_nvar" href="./14.1#p1.t1.r4" title="general degree">ν</mi><mi class="ltx_nvar" href="./14.1#p1.t1.r4" title="general order">μ</mi></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./14.1#p1.t1.r2" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: associated Legendre function of the first kind</span>,
+<span class="ltx_text ltx_font_bold"><math class="ltx_Math" altimg="m8.png" altimg-height="25px" altimg-valign="-7px" altimg-width="62px" alttext="Q^{\NVar{\mu}}_{\NVar{\nu}}\left(\NVar{z}\right)" display="inline"><mrow><msubsup><mi href="./14.21#i.p1" title="associated Legendre function of the second kind">Q</mi><mi class="ltx_nvar" href="./14.1#p1.t1.r4" title="general degree">ν</mi><mi class="ltx_nvar" href="./14.1#p1.t1.r4" title="general order">μ</mi></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./14.1#p1.t1.r2" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: associated Legendre function of the second kind</span> and
+<span class="ltx_text ltx_font_bold"><math class="ltx_Math" altimg="m12.png" altimg-height="25px" altimg-valign="-7px" altimg-width="64px" alttext="\boldsymbol{Q}^{\NVar{\mu}}_{\NVar{\nu}}\left(\NVar{z}\right)" display="inline"><mrow><msubsup><mi href="./14.21#i.p1" title="Olver’s associated Legendre function">𝑸</mi><mi class="ltx_nvar" href="./14.1#p1.t1.r4" title="general degree">ν</mi><mi class="ltx_nvar" href="./14.1#p1.t1.r4" title="general order">μ</mi></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./14.1#p1.t1.r2" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: Olver’s associated Legendre function</span>
+</dd>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=Olver%E2%80%99s">Olver’s</a>, <a class="ltx_keyword" href="./search/search?q=Olver%20associated%20Legendre%20function">Olver’s associated Legendre function</a>, <a class="ltx_keyword" href="./search/search?q=analytic%20properties">analytic properties</a>, <a class="ltx_keyword" href="./search/search?q=associated%20Legendre%20equation">associated Legendre equation</a>, <a class="ltx_keyword" href="./search/search?q=associated%20Legendre%20functions">associated Legendre functions</a>, <a class="ltx_keyword" href="./search/search?q=definitions">definitions</a>, <a class="ltx_keyword" href="./search/search?q=integer%20order">integer order</a>, <a class="ltx_keyword" href="./search/search?q=principal%20values%20%28or%20branches%29">principal values (or branches)</a>, <a class="ltx_keyword" href="./search/search?q=standard%20solutions">standard solutions</a>
+</dd>
+<dt>Notes:</dt>
+<dd>See <cite class="ltx_cite ltx_citemacro_citet">Olver (<a href="./bib/O#bib1809" title="Asymptotics and Special Functions" class="ltx_ref">1997b</a>, p. 169)</cite>.</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./10.43#iv.p3" title="§10.43(iv) Integrals over the Interval (0,∞) ‣ §10.43 Integrals ‣ Modified Bessel Functions ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§10.43(iv)</span></a>,
+<a href="./10.54#p1" title="§10.54 Integral Representations ‣ Spherical Bessel Functions ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§10.54</span></a>,
+<a href="./14.25#p1" title="§14.25 Integral Representations ‣ Complex Arguments ‣ Chapter 14 Legendre and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§14.25</span></a>,
+<a href="./15.9#iv.info" title="§15.9(iv) Associated Legendre Functions; Ferrers Functions ‣ §15.9 Relations to Other Functions ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§15.9(iv)</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./14.21.i" title="" class="ltx_ref">http://dlmf.nist.gov/14.21.i</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./14.21#info" title="§14.21 Definitions and Basic Properties ‣ Complex Arguments ‣ Chapter 14 Legendre and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§14.21</span></a> and
+<a href="./14#info" title="Chapter 14 Legendre and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.14</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="i.p1" class="ltx_para">
+<table id="E1" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">14.21.1</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E1.png" altimg-height="99px" altimg-valign="-22px" altimg-width="426px" alttext="\left(1-z^{2}\right)\frac{{\mathrm{d}}^{2}w}{{\mathrm{d}z}^{2}}-2z\frac{%
+\mathrm{d}w}{\mathrm{d}z}+\left(\nu(\nu+1)-\frac{\mu^{2}}{1-z^{2}}\right)w=0." display="block"><mrow><mrow><mrow><mrow><mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo>−</mo><msup><mi href="./14.1#p1.t1.r2" title="complex variable">z</mi><mn>2</mn></msup></mrow><mo>)</mo></mrow><mo>⁢</mo><mfrac><mrow><msup><mo href="./1.4#E4" title="derivative of 𝑓 with respect to 𝑥">d</mo><mn>2</mn></msup><mi>w</mi></mrow><msup><mrow><mo href="./1.4#E4" rspace="0em" title="derivative of 𝑓 with respect to 𝑥">d</mo><mi href="./14.1#p1.t1.r2" title="complex variable">z</mi></mrow><mn href="./1.4#E4" title="derivative of 𝑓 with respect to 𝑥">2</mn></msup></mfrac></mrow><mo>−</mo><mrow><mn>2</mn><mo>⁢</mo><mi href="./14.1#p1.t1.r2" title="complex variable">z</mi><mo>⁢</mo><mfrac><mrow><mo href="./1.4#E4" rspace="0em" title="derivative of 𝑓 with respect to 𝑥">d</mo><mi>w</mi></mrow><mrow><mo href="./1.4#E4" rspace="0em" title="derivative of 𝑓 with respect to 𝑥">d</mo><mi href="./14.1#p1.t1.r2" title="complex variable">z</mi></mrow></mfrac></mrow></mrow><mo>+</mo><mrow><mrow><mo>(</mo><mrow><mrow><mi href="./14.1#p1.t1.r4" title="general degree">ν</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi href="./14.1#p1.t1.r4" title="general degree">ν</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mfrac><msup><mi href="./14.1#p1.t1.r4" title="general order">μ</mi><mn>2</mn></msup><mrow><mn>1</mn><mo>−</mo><msup><mi href="./14.1#p1.t1.r2" title="complex variable">z</mi><mn>2</mn></msup></mrow></mfrac></mrow><mo>)</mo></mrow><mo>⁢</mo><mi>w</mi></mrow></mrow><mo>=</mo><mn>0</mn></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E1.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./1.4#E4" title="(1.4.4) ‣ §1.4(iii) Derivatives ‣ §1.4 Calculus of One Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m15.png" altimg-height="31px" altimg-valign="-9px" altimg-width="28px" alttext="\frac{\mathrm{d}\NVar{f}}{\mathrm{d}\NVar{x}}" display="inline"><mfrac><mrow><mo href="./1.4#E4" rspace="0em" title="derivative of 𝑓 with respect to 𝑥">d</mo><mi class="ltx_nvar">f</mi></mrow><mrow><mo href="./1.4#E4" rspace="0em" title="derivative of 𝑓 with respect to 𝑥">d</mo><mi class="ltx_nvar">x</mi></mrow></mfrac></math>: derivative of <math class="ltx_Math" altimg="m22.png" altimg-height="22px" altimg-valign="-6px" altimg-width="17px" alttext="f" display="inline"><mi>f</mi></math> with respect to <math class="ltx_Math" altimg="m23.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./14.1#p1.t1.r2" title="§14.1 Special Notation ‣ Notation ‣ Chapter 14 Legendre and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m25.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi href="./14.1#p1.t1.r2" title="complex variable">z</mi></math>:  complex variable</a>,
+<a href="./14.1#p1.t1.r4" title="§14.1 Special Notation ‣ Notation ‣ Chapter 14 Legendre and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m19.png" altimg-height="17px" altimg-valign="-6px" altimg-width="17px" alttext="\mu" display="inline"><mi href="./14.1#p1.t1.r4" title="general order">μ</mi></math>:  general order</a> and
+<a href="./14.1#p1.t1.r4" title="§14.1 Special Notation ‣ Notation ‣ Chapter 14 Legendre and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m21.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="\nu" display="inline"><mi href="./14.1#p1.t1.r4" title="general degree">ν</mi></math>:  general degree</a>
+</dd>
+<dt>A&amp;S Ref:</dt>
+<dd> <span class="ltx_origref"><span class="ltx_tag">8.1.1</span></span>
+</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./14.21#ii.p1" title="§14.21(ii) Numerically Satisfactory Solutions ‣ §14.21 Definitions and Basic Properties ‣ Complex Arguments ‣ Chapter 14 Legendre and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§14.21(ii)</span></a>,
+<a href="./14.29#p1" title="§14.29 Generalizations ‣ Complex Arguments ‣ Chapter 14 Legendre and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§14.29</span></a>,
+<a href="./14.32#I1.i2.p1" title="In §14.32 Methods of Computation ‣ Computation ‣ Chapter 14 Legendre and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2nd item</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./14.21.E1" title="" class="ltx_ref">http://dlmf.nist.gov/14.21.E1</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./14.21.E1.tex">TeX</a>, <a href="./14.21.E1.pmml">pMML</a>, <a href="./14.21.E1.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./14.21#i.info" title="§14.21(i) Associated Legendre Equation ‣ §14.21 Definitions and Basic Properties ‣ Complex Arguments ‣ Chapter 14 Legendre and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§14.21(i)</span></a>,
+<a href="./14.21#info" title="§14.21 Definitions and Basic Properties ‣ Complex Arguments ‣ Chapter 14 Legendre and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§14.21</span></a> and
+<a href="./14#info" title="Chapter 14 Legendre and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.14</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">Standard solutions: the associated Legendre functions
+<math class="ltx_Math" altimg="m6.png" altimg-height="25px" altimg-valign="-7px" altimg-width="62px" alttext="P^{\mu}_{\nu}\left(z\right)" display="inline"><mrow><msubsup><mi href="./14.21#i.p1" title="associated Legendre function of the first kind">P</mi><mi href="./14.1#p1.t1.r4" title="general degree">ν</mi><mi href="./14.1#p1.t1.r4" title="general order">μ</mi></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi href="./14.1#p1.t1.r2" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>, <math class="ltx_Math" altimg="m4.png" altimg-height="26px" altimg-valign="-7px" altimg-width="75px" alttext="P^{-\mu}_{\nu}\left(z\right)" display="inline"><mrow><msubsup><mi href="./14.21#i.p1" title="associated Legendre function of the first kind">P</mi><mi href="./14.1#p1.t1.r4" title="general degree">ν</mi><mrow><mo>−</mo><mi href="./14.1#p1.t1.r4" title="general order">μ</mi></mrow></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi href="./14.1#p1.t1.r2" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>,
+<math class="ltx_Math" altimg="m14.png" altimg-height="25px" altimg-valign="-7px" altimg-width="64px" alttext="\boldsymbol{Q}^{\mu}_{\nu}\left(z\right)" display="inline"><mrow><msubsup><mi href="./14.21#i.p1" title="Olver’s associated Legendre function">𝑸</mi><mi href="./14.1#p1.t1.r4" title="general degree">ν</mi><mi href="./14.1#p1.t1.r4" title="general order">μ</mi></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi href="./14.1#p1.t1.r2" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>, and <math class="ltx_Math" altimg="m13.png" altimg-height="28px" altimg-valign="-9px" altimg-width="97px" alttext="\boldsymbol{Q}^{\mu}_{-\nu-1}\left(z\right)" display="inline"><mrow><msubsup><mi href="./14.21#i.p1" title="Olver’s associated Legendre function">𝑸</mi><mrow><mrow><mo>−</mo><mi href="./14.1#p1.t1.r4" title="general degree">ν</mi></mrow><mo>−</mo><mn>1</mn></mrow><mi href="./14.1#p1.t1.r4" title="general order">μ</mi></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi href="./14.1#p1.t1.r2" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>.
+<math class="ltx_Math" altimg="m7.png" altimg-height="26px" altimg-valign="-7px" altimg-width="75px" alttext="P^{\pm\mu}_{\nu}\left(z\right)" display="inline"><mrow><msubsup><mi href="./14.21#i.p1" title="associated Legendre function of the first kind">P</mi><mi href="./14.1#p1.t1.r4" title="general degree">ν</mi><mrow><mo>±</mo><mi href="./14.1#p1.t1.r4" title="general order">μ</mi></mrow></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi href="./14.1#p1.t1.r2" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math> and <math class="ltx_Math" altimg="m14.png" altimg-height="25px" altimg-valign="-7px" altimg-width="64px" alttext="\boldsymbol{Q}^{\mu}_{\nu}\left(z\right)" display="inline"><mrow><msubsup><mi href="./14.21#i.p1" title="Olver’s associated Legendre function">𝑸</mi><mi href="./14.1#p1.t1.r4" title="general degree">ν</mi><mi href="./14.1#p1.t1.r4" title="general order">μ</mi></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi href="./14.1#p1.t1.r2" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math> exist for
+all values of <math class="ltx_Math" altimg="m21.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="\nu" display="inline"><mi href="./14.1#p1.t1.r4" title="general degree">ν</mi></math>, <math class="ltx_Math" altimg="m19.png" altimg-height="17px" altimg-valign="-6px" altimg-width="17px" alttext="\mu" display="inline"><mi href="./14.1#p1.t1.r4" title="general order">μ</mi></math>, and <math class="ltx_Math" altimg="m25.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi href="./14.1#p1.t1.r2" title="complex variable">z</mi></math>, except possibly <math class="ltx_Math" altimg="m24.png" altimg-height="19px" altimg-valign="-4px" altimg-width="69px" alttext="z=\pm 1" display="inline"><mrow><mi href="./14.1#p1.t1.r2" title="complex variable">z</mi><mo>=</mo><mrow><mo>±</mo><mn>1</mn></mrow></mrow></math> and <math class="ltx_Math" altimg="m16.png" altimg-height="13px" altimg-valign="-2px" altimg-width="25px" alttext="\infty" display="inline"><mi mathvariant="normal">∞</mi></math>,
+which are branch points (or poles) of the functions, in general. When <math class="ltx_Math" altimg="m25.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi href="./14.1#p1.t1.r2" title="complex variable">z</mi></math> is
+complex <math class="ltx_Math" altimg="m7.png" altimg-height="26px" altimg-valign="-7px" altimg-width="75px" alttext="P^{\pm\mu}_{\nu}\left(z\right)" display="inline"><mrow><msubsup><mi href="./14.21#i.p1" title="associated Legendre function of the first kind">P</mi><mi href="./14.1#p1.t1.r4" title="general degree">ν</mi><mrow><mo>±</mo><mi href="./14.1#p1.t1.r4" title="general order">μ</mi></mrow></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi href="./14.1#p1.t1.r2" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>, <math class="ltx_Math" altimg="m9.png" altimg-height="25px" altimg-valign="-7px" altimg-width="62px" alttext="Q^{\mu}_{\nu}\left(z\right)" display="inline"><mrow><msubsup><mi href="./14.21#i.p1" title="associated Legendre function of the second kind">Q</mi><mi href="./14.1#p1.t1.r4" title="general degree">ν</mi><mi href="./14.1#p1.t1.r4" title="general order">μ</mi></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi href="./14.1#p1.t1.r2" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>, and
+<math class="ltx_Math" altimg="m14.png" altimg-height="25px" altimg-valign="-7px" altimg-width="64px" alttext="\boldsymbol{Q}^{\mu}_{\nu}\left(z\right)" display="inline"><mrow><msubsup><mi href="./14.21#i.p1" title="Olver’s associated Legendre function">𝑸</mi><mi href="./14.1#p1.t1.r4" title="general degree">ν</mi><mi href="./14.1#p1.t1.r4" title="general order">μ</mi></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi href="./14.1#p1.t1.r2" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math> are defined by
+(<a href="./14.3#E6" title="(14.3.6) ‣ Associated Legendre Function of the First Kind ‣ §14.3(ii) Interval 1&lt;𝑥&lt;∞ ‣ §14.3 Definitions and Hypergeometric Representations ‣ Real Arguments ‣ Chapter 14 Legendre and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">14.3.6</span></a>)–(<a href="./14.3#E10" title="(14.3.10) ‣ Associated Legendre Function of the Second Kind ‣ §14.3(ii) Interval 1&lt;𝑥&lt;∞ ‣ §14.3 Definitions and Hypergeometric Representations ‣ Real Arguments ‣ Chapter 14 Legendre and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">14.3.10</span></a>)
+with <math class="ltx_Math" altimg="m23.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./14.1#p1.t1.r1" title="real variable">x</mi></math> replaced by <math class="ltx_Math" altimg="m25.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi href="./14.1#p1.t1.r2" title="complex variable">z</mi></math>: the principal
+branches are obtained by taking the principal values of all the multivalued
+functions appearing in these representations when <math class="ltx_Math" altimg="m26.png" altimg-height="25px" altimg-valign="-7px" altimg-width="97px" alttext="z\in(1,\infty)" display="inline"><mrow><mi href="./14.1#p1.t1.r2" title="complex variable">z</mi><mo href="./front/introduction#common.t1.r10" title="element of">∈</mo><mrow><mo href="./front/introduction#common.t1.r29" stretchy="false" title="open interval">(</mo><mn>1</mn><mo href="./front/introduction#common.t1.r29" title="open interval">,</mo><mi mathvariant="normal">∞</mi><mo href="./front/introduction#common.t1.r29" stretchy="false" title="open interval">)</mo></mrow></mrow></math>, and by
+continuity elsewhere in the <math class="ltx_Math" altimg="m25.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi href="./14.1#p1.t1.r2" title="complex variable">z</mi></math>-plane with a cut along the interval
+<math class="ltx_Math" altimg="m1.png" altimg-height="25px" altimg-valign="-7px" altimg-width="75px" alttext="(-\infty,1]" display="inline"><mrow><mo href="./front/introduction#common.t2.r1" stretchy="false" title="half-closed interval">(</mo><mrow><mo>−</mo><mi mathvariant="normal">∞</mi></mrow><mo href="./front/introduction#common.t2.r1" title="half-closed interval">,</mo><mn>1</mn><mo href="./front/introduction#common.t2.r1" stretchy="false" title="half-closed interval">]</mo></mrow></math>; compare §<a href="./4.2#i" title="§4.2(i) The Logarithm ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.2(i)</span></a>. The principal branches of
+<math class="ltx_Math" altimg="m7.png" altimg-height="26px" altimg-valign="-7px" altimg-width="75px" alttext="P^{\pm\mu}_{\nu}\left(z\right)" display="inline"><mrow><msubsup><mi href="./14.21#i.p1" title="associated Legendre function of the first kind">P</mi><mi href="./14.1#p1.t1.r4" title="general degree">ν</mi><mrow><mo>±</mo><mi href="./14.1#p1.t1.r4" title="general order">μ</mi></mrow></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi href="./14.1#p1.t1.r2" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math> and <math class="ltx_Math" altimg="m14.png" altimg-height="25px" altimg-valign="-7px" altimg-width="64px" alttext="\boldsymbol{Q}^{\mu}_{\nu}\left(z\right)" display="inline"><mrow><msubsup><mi href="./14.21#i.p1" title="Olver’s associated Legendre function">𝑸</mi><mi href="./14.1#p1.t1.r4" title="general degree">ν</mi><mi href="./14.1#p1.t1.r4" title="general order">μ</mi></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi href="./14.1#p1.t1.r2" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math> are real
+when <math class="ltx_Math" altimg="m21.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="\nu" display="inline"><mi href="./14.1#p1.t1.r4" title="general degree">ν</mi></math>, <math class="ltx_Math" altimg="m20.png" altimg-height="22px" altimg-valign="-6px" altimg-width="57px" alttext="\mu\in\mathbb{R}" display="inline"><mrow><mi href="./14.1#p1.t1.r4" title="general order">μ</mi><mo href="./front/introduction#common.t1.r10" title="element of">∈</mo><mi href="./front/introduction#common.t2.r14" title="real line">ℝ</mi></mrow></math> and <math class="ltx_Math" altimg="m26.png" altimg-height="25px" altimg-valign="-7px" altimg-width="97px" alttext="z\in(1,\infty)" display="inline"><mrow><mi href="./14.1#p1.t1.r2" title="complex variable">z</mi><mo href="./front/introduction#common.t1.r10" title="element of">∈</mo><mrow><mo href="./front/introduction#common.t1.r29" stretchy="false" title="open interval">(</mo><mn>1</mn><mo href="./front/introduction#common.t1.r29" title="open interval">,</mo><mi mathvariant="normal">∞</mi><mo href="./front/introduction#common.t1.r29" stretchy="false" title="open interval">)</mo></mrow></mrow></math>.
+</p>
+</div>
+</section>
+<section id="ii" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§14.21(ii) </span>Numerically Satisfactory Solutions</h2>
+<div id="ii.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=associated%20Legendre%20equation">associated Legendre equation</a>, <a class="ltx_keyword" href="./search/search?q=numerically%20satisfactory%20solutions">numerically satisfactory solutions</a>
+</dd>
+<dt>Notes:</dt>
+<dd>See <cite class="ltx_cite ltx_citemacro_citet">Olver (<a href="./bib/O#bib1809" title="Asymptotics and Special Functions" class="ltx_ref">1997b</a>, p. 172)</cite>.</dd>
+<dt>Permalink:</dt>
+<dd><a href="./14.21.ii" title="" class="ltx_ref">http://dlmf.nist.gov/14.21.ii</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./14.21#info" title="§14.21 Definitions and Basic Properties ‣ Complex Arguments ‣ Chapter 14 Legendre and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§14.21</span></a> and
+<a href="./14#info" title="Chapter 14 Legendre and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.14</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="ii.p1" class="ltx_para">
+<p class="ltx_p">When <math class="ltx_Math" altimg="m11.png" altimg-height="29px" altimg-valign="-9px" altimg-width="88px" alttext="\Re\nu\geq-\frac{1}{2}" display="inline"><mrow><mrow><mi href="./1.9#E2" mathvariant="normal" title="real part">ℜ</mi><mo lspace="0.167em">⁡</mo><mi href="./14.1#p1.t1.r4" title="general degree">ν</mi></mrow><mo>≥</mo><mrow><mo>−</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></mrow></math> and <math class="ltx_Math" altimg="m10.png" altimg-height="22px" altimg-valign="-6px" altimg-width="70px" alttext="\Re\mu\geq 0" display="inline"><mrow><mrow><mi href="./1.9#E2" mathvariant="normal" title="real part">ℜ</mi><mo lspace="0.167em">⁡</mo><mi href="./14.1#p1.t1.r4" title="general order">μ</mi></mrow><mo>≥</mo><mn>0</mn></mrow></math>, a
+numerically satisfactory pair of solutions of (<a href="./14.21#E1" title="(14.21.1) ‣ §14.21(i) Associated Legendre Equation ‣ §14.21 Definitions and Basic Properties ‣ Complex Arguments ‣ Chapter 14 Legendre and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">14.21.1</span></a>) in the
+half-plane <math class="ltx_Math" altimg="m27.png" altimg-height="29px" altimg-valign="-9px" altimg-width="110px" alttext="|\operatorname{ph}z|\leq\frac{1}{2}\pi" display="inline"><mrow><mrow><mo stretchy="false">|</mo><mrow><mi href="./1.9#E7" title="phase">ph</mi><mo lspace="0.167em">⁡</mo><mi href="./14.1#p1.t1.r2" title="complex variable">z</mi></mrow><mo stretchy="false">|</mo></mrow><mo>≤</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></mrow></mrow></math> is given by
+<math class="ltx_Math" altimg="m4.png" altimg-height="26px" altimg-valign="-7px" altimg-width="75px" alttext="P^{-\mu}_{\nu}\left(z\right)" display="inline"><mrow><msubsup><mi href="./14.21#i.p1" title="associated Legendre function of the first kind">P</mi><mi href="./14.1#p1.t1.r4" title="general degree">ν</mi><mrow><mo>−</mo><mi href="./14.1#p1.t1.r4" title="general order">μ</mi></mrow></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi href="./14.1#p1.t1.r2" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math> and <math class="ltx_Math" altimg="m14.png" altimg-height="25px" altimg-valign="-7px" altimg-width="64px" alttext="\boldsymbol{Q}^{\mu}_{\nu}\left(z\right)" display="inline"><mrow><msubsup><mi href="./14.21#i.p1" title="Olver’s associated Legendre function">𝑸</mi><mi href="./14.1#p1.t1.r4" title="general degree">ν</mi><mi href="./14.1#p1.t1.r4" title="general order">μ</mi></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi href="./14.1#p1.t1.r2" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>.</p>
+</div>
+</section>
+<section id="iii" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§14.21(iii) </span>Properties</h2>
+<div id="iii.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=Wronskians">Wronskians</a>, <a class="ltx_keyword" href="./search/search?q=associated%20Legendre%20functions">associated Legendre functions</a>, <a class="ltx_keyword" href="./search/search?q=behavior%20at%20singularities">behavior at singularities</a>, <a class="ltx_keyword" href="./search/search?q=connection%20formulas">connection formulas</a>, <a class="ltx_keyword" href="./search/search?q=generating%20functions">generating functions</a>, <a class="ltx_keyword" href="./search/search?q=hypergeometric%20representations">hypergeometric representations</a>, <a class="ltx_keyword" href="./search/search?q=integer%20degree%20and%20order">integer degree and order</a>, <a class="ltx_keyword" href="./search/search?q=recurrence%20relations">recurrence relations</a>
+</dd>
+<dt>Notes:</dt>
+<dd>See <cite class="ltx_cite ltx_citemacro_citet">Erdélyi<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/E#bib751" title="Higher Transcendental Functions. Vol. I" class="ltx_ref">1953a</a>, Chapter 3)</cite> and
+<cite class="ltx_cite ltx_citemacro_citet">Olver (<a href="./bib/O#bib1809" title="Asymptotics and Special Functions" class="ltx_ref">1997b</a>, Chapter 5, §§12–14)</cite>.</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./15.9#iv.p1" title="§15.9(iv) Associated Legendre Functions; Ferrers Functions ‣ §15.9 Relations to Other Functions ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§15.9(iv)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./14.21.iii" title="" class="ltx_ref">http://dlmf.nist.gov/14.21.iii</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./14.21#info" title="§14.21 Definitions and Basic Properties ‣ Complex Arguments ‣ Chapter 14 Legendre and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§14.21</span></a> and
+<a href="./14#info" title="Chapter 14 Legendre and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.14</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="iii.p1" class="ltx_para">
+<p class="ltx_p">Many of the properties stated in preceding sections extend immediately from the
+<math class="ltx_Math" altimg="m23.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./14.1#p1.t1.r1" title="real variable">x</mi></math>-interval <math class="ltx_Math" altimg="m2.png" altimg-height="25px" altimg-valign="-7px" altimg-width="61px" alttext="(1,\infty)" display="inline"><mrow><mo href="./front/introduction#common.t1.r29" stretchy="false" title="open interval">(</mo><mn>1</mn><mo href="./front/introduction#common.t1.r29" title="open interval">,</mo><mi mathvariant="normal">∞</mi><mo href="./front/introduction#common.t1.r29" stretchy="false" title="open interval">)</mo></mrow></math> to the cut <math class="ltx_Math" altimg="m25.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi href="./14.1#p1.t1.r2" title="complex variable">z</mi></math>-plane <math class="ltx_Math" altimg="m17.png" altimg-height="25px" altimg-valign="-7px" altimg-width="100px" alttext="\mathbb{C}\backslash(-\infty,1]" display="inline"><mrow><mi href="./front/introduction#common.t1.r1" title="complex plane">ℂ</mi><mo lspace="0.222em" rspace="0.222em">\</mo><mrow><mo href="./front/introduction#common.t2.r1" stretchy="false" title="half-closed interval">(</mo><mrow><mo>−</mo><mi mathvariant="normal">∞</mi></mrow><mo href="./front/introduction#common.t2.r1" title="half-closed interval">,</mo><mn>1</mn><mo href="./front/introduction#common.t2.r1" stretchy="false" title="half-closed interval">]</mo></mrow></mrow></math>. This includes, for example, the Wronskian relations
+(<a href="./14.2#E7" title="(14.2.7) ‣ §14.2(iv) Wronskians and Cross-Products ‣ §14.2 Differential Equations ‣ Real Arguments ‣ Chapter 14 Legendre and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">14.2.7</span></a>)–(<a href="./14.2#E11" title="(14.2.11) ‣ §14.2(iv) Wronskians and Cross-Products ‣ §14.2 Differential Equations ‣ Real Arguments ‣ Chapter 14 Legendre and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">14.2.11</span></a>); hypergeometric
+representations (<a href="./14.3#E6" title="(14.3.6) ‣ Associated Legendre Function of the First Kind ‣ §14.3(ii) Interval 1&lt;𝑥&lt;∞ ‣ §14.3 Definitions and Hypergeometric Representations ‣ Real Arguments ‣ Chapter 14 Legendre and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">14.3.6</span></a>)–(<a href="./14.3#E10" title="(14.3.10) ‣ Associated Legendre Function of the Second Kind ‣ §14.3(ii) Interval 1&lt;𝑥&lt;∞ ‣ §14.3 Definitions and Hypergeometric Representations ‣ Real Arguments ‣ Chapter 14 Legendre and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">14.3.10</span></a>)
+and (<a href="./14.3#E15" title="(14.3.15) ‣ §14.3(iii) Alternative Hypergeometric Representations ‣ §14.3 Definitions and Hypergeometric Representations ‣ Real Arguments ‣ Chapter 14 Legendre and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">14.3.15</span></a>)–(<a href="./14.3#E20" title="(14.3.20) ‣ §14.3(iii) Alternative Hypergeometric Representations ‣ §14.3 Definitions and Hypergeometric Representations ‣ Real Arguments ‣ Chapter 14 Legendre and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">14.3.20</span></a>);
+results for integer orders
+(<a href="./14.6#E3" title="(14.6.3) ‣ §14.6(i) Nonnegative Integer Orders ‣ §14.6 Integer Order ‣ Real Arguments ‣ Chapter 14 Legendre and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">14.6.3</span></a>)–(<a href="./14.6#E5" title="(14.6.5) ‣ §14.6(i) Nonnegative Integer Orders ‣ §14.6 Integer Order ‣ Real Arguments ‣ Chapter 14 Legendre and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">14.6.5</span></a>), (<a href="./14.6#E7" title="(14.6.7) ‣ §14.6(ii) Negative Integer Orders ‣ §14.6 Integer Order ‣ Real Arguments ‣ Chapter 14 Legendre and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">14.6.7</span></a>),
+(<a href="./14.6#E8" title="(14.6.8) ‣ §14.6(ii) Negative Integer Orders ‣ §14.6 Integer Order ‣ Real Arguments ‣ Chapter 14 Legendre and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">14.6.8</span></a>), (<a href="./14.7#E6" title="(14.7.6) ‣ §14.7(i) 𝜇=0 ‣ §14.7 Integer Degree and Order ‣ Real Arguments ‣ Chapter 14 Legendre and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">14.7.6</span></a>), (<a href="./14.7#E7" title="(14.7.7) ‣ §14.7(i) 𝜇=0 ‣ §14.7 Integer Degree and Order ‣ Real Arguments ‣ Chapter 14 Legendre and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">14.7.7</span></a>), and
+(<a href="./14.7#E11" title="(14.7.11) ‣ §14.7(ii) Rodrigues-Type Formulas ‣ §14.7 Integer Degree and Order ‣ Real Arguments ‣ Chapter 14 Legendre and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">14.7.11</span></a>)–(<a href="./14.7#E16" title="(14.7.16) ‣ §14.7(ii) Rodrigues-Type Formulas ‣ §14.7 Integer Degree and Order ‣ Real Arguments ‣ Chapter 14 Legendre and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">14.7.16</span></a>); behavior at singularities
+(<a href="./14.8#E7" title="(14.8.7) ‣ §14.8(ii) 𝑥→limit-from1+ ‣ §14.8 Behavior at Singularities ‣ Real Arguments ‣ Chapter 14 Legendre and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">14.8.7</span></a>)–(<a href="./14.8#E16" title="(14.8.16) ‣ §14.8(iii) 𝑥→∞ ‣ §14.8 Behavior at Singularities ‣ Real Arguments ‣ Chapter 14 Legendre and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">14.8.16</span></a>); connection formulas
+(<a href="./14.9#E11" title="(14.9.11) ‣ §14.9(iii) Connections Between 𝑃^{±𝜇}_𝜈(𝑥), 𝑃^{±𝜇}_{-𝜈-1}(𝑥), 𝑸^{±𝜇}_𝜈(𝑥), 𝑸^𝜇_{-𝜈-1}(𝑥) ‣ §14.9 Connection Formulas ‣ Real Arguments ‣ Chapter 14 Legendre and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">14.9.11</span></a>)–(<a href="./14.9#E16" title="(14.9.16) ‣ §14.9(iv) Whipple’s Formula ‣ §14.9 Connection Formulas ‣ Real Arguments ‣ Chapter 14 Legendre and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">14.9.16</span></a>); recurrence relations
+(<a href="./14.10#E3" title="(14.10.3) ‣ §14.10 Recurrence Relations and Derivatives ‣ Real Arguments ‣ Chapter 14 Legendre and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">14.10.3</span></a>)–(<a href="./14.10#E7" title="(14.10.7) ‣ §14.10 Recurrence Relations and Derivatives ‣ Real Arguments ‣ Chapter 14 Legendre and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">14.10.7</span></a>). The generating function expansions
+(<a href="./14.7#E19" title="(14.7.19) ‣ §14.7(iv) Generating Functions ‣ §14.7 Integer Degree and Order ‣ Real Arguments ‣ Chapter 14 Legendre and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">14.7.19</span></a>) (with <math class="ltx_Math" altimg="m18.png" altimg-height="18px" altimg-valign="-2px" altimg-width="18px" alttext="\mathsf{P}" display="inline"><mi href="./14.2#ii.p2" title="Ferrers function of the first kind">𝖯</mi></math> replaced by <math class="ltx_Math" altimg="m3.png" altimg-height="18px" altimg-valign="-2px" altimg-width="21px" alttext="P" display="inline"><mi href="./14.2#ii.p2" title="Legendre function of the first kind">P</mi></math>) and
+(<a href="./14.7#E22" title="(14.7.22) ‣ §14.7(iv) Generating Functions ‣ §14.7 Integer Degree and Order ‣ Real Arguments ‣ Chapter 14 Legendre and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">14.7.22</span></a>) apply when
+<math class="ltx_Math" altimg="m28.png" altimg-height="42px" altimg-valign="-15px" altimg-width="244px" alttext="|h|&lt;\min\left|z\pm\left(z^{2}-1\right)^{1/2}\right|" display="inline"><mrow><mrow><mo stretchy="false">|</mo><mi>h</mi><mo stretchy="false">|</mo></mrow><mo>&lt;</mo><mrow><mi>min</mi><mo>⁡</mo><mrow><mo>|</mo><mrow><mi href="./14.1#p1.t1.r2" title="complex variable">z</mi><mo>±</mo><msup><mrow><mo>(</mo><mrow><msup><mi href="./14.1#p1.t1.r2" title="complex variable">z</mi><mn>2</mn></msup><mo>−</mo><mn>1</mn></mrow><mo>)</mo></mrow><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msup></mrow><mo>|</mo></mrow></mrow></mrow></math>;
+(<a href="./14.7#E21" title="(14.7.21) ‣ §14.7(iv) Generating Functions ‣ §14.7 Integer Degree and Order ‣ Real Arguments ‣ Chapter 14 Legendre and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">14.7.21</span></a>) (with <math class="ltx_Math" altimg="m18.png" altimg-height="18px" altimg-valign="-2px" altimg-width="18px" alttext="\mathsf{P}" display="inline"><mi href="./14.2#ii.p2" title="Ferrers function of the first kind">𝖯</mi></math> replaced by <math class="ltx_Math" altimg="m3.png" altimg-height="18px" altimg-valign="-2px" altimg-width="21px" alttext="P" display="inline"><mi href="./14.2#ii.p2" title="Legendre function of the first kind">P</mi></math>) applies
+when <math class="ltx_Math" altimg="m29.png" altimg-height="42px" altimg-valign="-15px" altimg-width="248px" alttext="|h|&gt;\max\left|z\pm\left(z^{2}-1\right)^{1/2}\right|" display="inline"><mrow><mrow><mo stretchy="false">|</mo><mi>h</mi><mo stretchy="false">|</mo></mrow><mo>&gt;</mo><mrow><mi>max</mi><mo>⁡</mo><mrow><mo>|</mo><mrow><mi href="./14.1#p1.t1.r2" title="complex variable">z</mi><mo>±</mo><msup><mrow><mo>(</mo><mrow><msup><mi href="./14.1#p1.t1.r2" title="complex variable">z</mi><mn>2</mn></msup><mo>−</mo><mn>1</mn></mrow><mo>)</mo></mrow><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msup></mrow><mo>|</mo></mrow></mrow></mrow></math>.</p>
+</div>
+</section>
+</section>
+</div>
+<div class="ltx_page_footer">
+<div class="ltx_siblings">
+<a href="./14.20" title="In Real Arguments ‣ Chapter 14 Legendre and Related Functions" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">14.20 </span>Conical (or Mehler) Functions</span></a><a href="./14.22" title="In Complex Arguments ‣ Chapter 14 Legendre and Related Functions" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">14.22 </span>Graphics</span></a>
+</div>
+<div class="ltx_footer_links ltx_centering">
+<a href="./about/notices">© 2010–2026 NIST</a> / <a href="./about/notices#S2">Disclaimer</a> / <a href="/cdn-cgi/l/email-protection#3b7f77767d165d5e5e5f595a58507b5552484f155c544d">Feedback</a>;
+ Version 1.2.7;
+Release date 2026-06-15.</div>
+<span id="pagesettings"></span>
+<div class="ltx_nist_logo"><a href="http://www.nist.gov/"><img src="./style/nistidc.png" width="500" alt="NIST"></a></div>
+<div class="ltx_nist_links ltx_align_right">
+<a href="https://www.nist.gov/privacy-policy">Site Privacy</a> <a href="https://www.nist.gov/oism/accessibility">Accessibility</a> <a href="https://www.nist.gov/privacy">Privacy Program</a> <a href="https://www.nist.gov/oism/copyrights">Copyrights</a> <a href="https://www.commerce.gov/vulnerability-disclosure-policy">Vulnerability Disclosure</a> <a href="https://www.nist.gov/no-fear-act-policy">No Fear Act Policy</a> <a href="https://www.nist.gov/foia">FOIA</a> <a href="https://www.nist.gov/environmental-policy-statement">Environmental Policy</a> <a href="https://www.nist.gov/summary-report-scientific-integrity">Scientific Integrity</a> <a href="https://www.nist.gov/nist-information-quality-standards">Information Quality Standards</a> <a href="https://www.commerce.gov/">Commerce.gov</a> <a href="http://www.science.gov/">Science.gov</a> <a href="http://www.usa.gov/">USA.gov</a>
+</div>
+</div>
+</div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a30b6177ec0ec34b',t:'MTc4NzY2OTEyOA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"9ef5b487afff42a68917b2d63593a474"}' crossorigin="anonymous"></script>
+</body>
+</html>

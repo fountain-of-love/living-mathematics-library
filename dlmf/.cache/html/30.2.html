@@ -1,0 +1,447 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>DLMF: §30.2 Differential Equations ‣ Properties ‣ Chapter 30 Spheroidal Wave Functions</title>
+<link rel="shortcut icon" href="./style/DLMF-16.png" type="image/png">
+<script type="text/javascript"><!--
+	var PATH="DLMF:/30.2";
+	var ROOT="./";
+      //--></script>
+<script type="text/javascript" src="./style/jquery.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/jquery.leaveNotice.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/DLMF.js"><!-- non-empty so ie6 will accept it --></script>
+<script async="" type="text/javascript" id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC&amp;subagency=NIST&amp;pua=UA-37115410-44&amp;yt=true&amp;exts=ppsx,pps,f90,sch,rtf,wrl,txz,m1v,xlsm,msi,xsd,f,tif,eps,mpg,xml,pl,xlt,c"><!-- non-empty so ie6 will accept it --></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-BZB64W4M0L"></script><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-BZB64W4M0L');
+      </script>
+<link rel="stylesheet" type="text/css" href="./style/LaTeXML.css">
+<link rel="stylesheet" type="text/css" href="./style/DLMF.css">
+<link rel="stylesheet" type="text/css" href="./style/print.css" media="print">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="top" href="./" title="DLMF">
+<link rel="copyright" href="./about/notices" title="Copyright">
+<link rel="search" href="./search/search" title="Search">
+<link rel="help" class="ltx_help" href="./help/" title="Help">
+<link rel="up" href="./30#PT2" title="Properties ‣ Chapter 30 Spheroidal Wave Functions">
+<link rel="up up" href="./30" title="Chapter 30 Spheroidal Wave Functions">
+<link rel="start" href="./" title="">
+<link rel="prev" href="./30.1" title="§30.1 Special Notation ‣ Notation ‣ Chapter 30 Spheroidal Wave Functions">
+<link rel="next" href="./30.3" title="§30.3 Eigenvalues ‣ Properties ‣ Chapter 30 Spheroidal Wave Functions">
+<link rel="section" href="./30.1" title="§30.1 Special Notation ‣ Notation ‣ Chapter 30 Spheroidal Wave Functions">
+<link rel="section" href="./30.3" title="§30.3 Eigenvalues ‣ Properties ‣ Chapter 30 Spheroidal Wave Functions">
+<link rel="section" href="./30.4" title="§30.4 Functions of the First Kind ‣ Properties ‣ Chapter 30 Spheroidal Wave Functions">
+<link rel="section" href="./30.5" title="§30.5 Functions of the Second Kind ‣ Properties ‣ Chapter 30 Spheroidal Wave Functions">
+<link rel="section" href="./30.6" title="§30.6 Functions of Complex Argument ‣ Properties ‣ Chapter 30 Spheroidal Wave Functions">
+<link rel="section" href="./30.7" title="§30.7 Graphics ‣ Properties ‣ Chapter 30 Spheroidal Wave Functions">
+<link rel="section" href="./30.8" title="§30.8 Expansions in Series of Ferrers Functions ‣ Properties ‣ Chapter 30 Spheroidal Wave Functions">
+<link rel="section" href="./30.9" title="§30.9 Asymptotic Approximations and Expansions ‣ Properties ‣ Chapter 30 Spheroidal Wave Functions">
+<link rel="section" href="./30.10" title="§30.10 Series and Integrals ‣ Properties ‣ Chapter 30 Spheroidal Wave Functions">
+<link rel="section" href="./30.11" title="§30.11 Radial Spheroidal Wave Functions ‣ Properties ‣ Chapter 30 Spheroidal Wave Functions">
+<link rel="section" href="./30.12" title="§30.12 Generalized and Coulomb Spheroidal Functions ‣ Properties ‣ Chapter 30 Spheroidal Wave Functions">
+<link rel="section" href="./30.13" title="§30.13 Wave Equation in Prolate Spheroidal Coordinates ‣ Applications ‣ Chapter 30 Spheroidal Wave Functions">
+<link rel="section" href="./30.14" title="§30.14 Wave Equation in Oblate Spheroidal Coordinates ‣ Applications ‣ Chapter 30 Spheroidal Wave Functions">
+<link rel="section" href="./30.15" title="§30.15 Signal Analysis ‣ Applications ‣ Chapter 30 Spheroidal Wave Functions">
+<link rel="section" href="./30.16" title="§30.16 Methods of Computation ‣ Computation ‣ Chapter 30 Spheroidal Wave Functions">
+<link rel="section" href="./30.17" title="§30.17 Tables ‣ Computation ‣ Chapter 30 Spheroidal Wave Functions">
+<link rel="section" href="./30.18" title="§30.18 Software ‣ Computation ‣ Chapter 30 Spheroidal Wave Functions">
+<link rel="document" href="./front/foreword" title="Foreword">
+<link rel="document" href="./front/preface" title="Preface">
+<link rel="document" href="./front/introduction" title="Mathematical Introduction">
+<link rel="chapter" href="./1" title="Chapter 1 Algebraic and Analytic Methods">
+<link rel="chapter" href="./2" title="Chapter 2 Asymptotic Approximations">
+<link rel="chapter" href="./3" title="Chapter 3 Numerical Methods">
+<link rel="chapter" href="./4" title="Chapter 4 Elementary Functions">
+<link rel="chapter" href="./5" title="Chapter 5 Gamma Function">
+<link rel="chapter" href="./6" title="Chapter 6 Exponential, Logarithmic, Sine, and Cosine Integrals">
+<link rel="chapter" href="./7" title="Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="chapter" href="./8" title="Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="chapter" href="./9" title="Chapter 9 Airy and Related Functions">
+<link rel="chapter" href="./10" title="Chapter 10 Bessel Functions">
+<link rel="chapter" href="./11" title="Chapter 11 Struve and Related Functions">
+<link rel="chapter" href="./12" title="Chapter 12 Parabolic Cylinder Functions">
+<link rel="chapter" href="./13" title="Chapter 13 Confluent Hypergeometric Functions">
+<link rel="chapter" href="./14" title="Chapter 14 Legendre and Related Functions">
+<link rel="chapter" href="./15" title="Chapter 15 Hypergeometric Function">
+<link rel="chapter" href="./16" title="Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="chapter" href="./17" title="Chapter 17 𝑞-Hypergeometric and Related Functions">
+<link rel="chapter" href="./18" title="Chapter 18 Orthogonal Polynomials">
+<link rel="chapter" href="./19" title="Chapter 19 Elliptic Integrals">
+<link rel="chapter" href="./20" title="Chapter 20 Theta Functions">
+<link rel="chapter" href="./21" title="Chapter 21 Multidimensional Theta Functions">
+<link rel="chapter" href="./22" title="Chapter 22 Jacobian Elliptic Functions">
+<link rel="chapter" href="./23" title="Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="chapter" href="./24" title="Chapter 24 Bernoulli and Euler Polynomials">
+<link rel="chapter" href="./25" title="Chapter 25 Zeta and Related Functions">
+<link rel="chapter" href="./26" title="Chapter 26 Combinatorial Analysis">
+<link rel="chapter" href="./27" title="Chapter 27 Functions of Number Theory">
+<link rel="chapter" href="./28" title="Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="chapter" href="./29" title="Chapter 29 Lamé Functions">
+<link rel="chapter" href="./30" title="Chapter 30 Spheroidal Wave Functions">
+<link rel="chapter" href="./31" title="Chapter 31 Heun Functions">
+<link rel="chapter" href="./32" title="Chapter 32 Painlevé Transcendents">
+<link rel="chapter" href="./33" title="Chapter 33 Coulomb Functions">
+<link rel="chapter" href="./34" title="Chapter 34 3⁢𝑗,6⁢𝑗,9⁢𝑗 Symbols">
+<link rel="chapter" href="./35" title="Chapter 35 Functions of Matrix Argument">
+<link rel="chapter" href="./36" title="Chapter 36 Integrals with Coalescing Saddles">
+<link rel="bibliography" href="./bib/" title="Bibliography">
+<link rel="index" href="./idx/" title="Index">
+<link rel="glossary" href="./not/" title="Notations">
+<link rel="document" href="./lof/" title="List of Figures">
+<link rel="document" href="./lot/" title="List of Tables">
+<link rel="document" href="./software/" title="Software Index">
+<link rel="document" href="./errata/" title="Errata">
+<link rel="document" href="./help/" title="Need Help?">
+<link rel="document" href="./search/" title="Advanced Search">
+<link rel="document" href="./about/" title="About the Project">
+<meta name="keywords" lang="en" content="Liouville normal form, differential equation, singularities, special cases, spheroidal differential equation, spheroidal wave functions">
+</head>
+<body class="color_default textfont_default titlefont_default fontsize_default navbar_default">
+<div class="ltx_page_navbar">
+<div class="ltx_page_navlogo"><a href="./" title="Digital Library of Mathematical Functions"><span>DLMF</span></a></div>
+<div class="ltx_page_navitems">
+<form method="get" action="./search/search">
+<ul>
+<li><a href="./idx/">Index</a></li>
+<li><a href="./not/">Notations</a></li>
+<li><small><input type="text" name="q" value="" size="6" class="ltx_page_navitem_search"><button type="submit">Search</button></small></li>
+<li><a href="./help/" class="ltx_help">Help?</a></li>
+<li><a href="./help/cite">Citing</a></li>
+<li><a href="./help/customize" class="ltx_customize">Customize</a></li>
+<li id="showinfo"><a href="" onclick="showInfo(); return false;" title="Show Annotations">Annotate</a></li>
+<li id="hideinfo"><a href="" onclick="hideInfo(); return false;">UnAnnotate</a></li>
+</ul>
+</form>
+</div>
+<div class="ltx_page_navsponsors">
+<div><a href="./about/" class="ltx_page_navabout">About the Project</a></div>
+</div>
+</div>
+<div class="ltx_page_main">
+<div class="ltx_page_header">
+<a href="./30" title="" class="ltx_ref" rel="up up"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">30 </span>Spheroidal Wave Functions</span></a><a href="./30#PT2" title="In Chapter 30 Spheroidal Wave Functions" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title">Properties</span></a><a href="./30.1" title="In Notation ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">30.1 </span>Special Notation</span></a><a href="./30.3" title="In Properties ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">30.3 </span>Eigenvalues</span></a>
+</div>
+<div class="ltx_page_content">
+<section class="ltx_section ltx_authors_multiline ltx_leqno">
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">§30.2 </span>Differential Equations</h1>
+<div id="info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Permalink:</dt>
+<dd><a href="./30.2" title="" class="ltx_ref">http://dlmf.nist.gov/30.2</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./30#info" title="Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.30</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<h6>Contents</h6>
+<ol class="ltx_toclist ltx_toclist_section">
+<li class="ltx_tocentry"><a href="#i"><span class="ltx_tag ltx_tag_subsection">§30.2(i) </span>Spheroidal Differential Equation</a></li>
+<li class="ltx_tocentry"><a href="#ii"><span class="ltx_tag ltx_tag_subsection">§30.2(ii) </span>Other Forms</a></li>
+<li class="ltx_tocentry"><a href="#iii"><span class="ltx_tag ltx_tag_subsection">§30.2(iii) </span>Special Cases</a></li>
+</ol>
+<section id="i" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§30.2(i) </span>Spheroidal Differential Equation</h2>
+<div id="i.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=differential%20equation">differential equation</a>, <a class="ltx_keyword" href="./search/search?q=singularities">singularities</a>, <a class="ltx_keyword" href="./search/search?q=spheroidal%20differential%20equation">spheroidal differential equation</a>, <a class="ltx_keyword" href="./search/search?q=spheroidal%20wave%20functions">spheroidal wave functions</a>
+</dd>
+<dt>Notes:</dt>
+<dd>See <cite class="ltx_cite ltx_citemacro_citet">Meixner and Schäfke (<a href="./bib/M#bib1598" title="Mathieusche Funktionen und Sphäroidfunktionen mit Anwendungen auf physikalische und technische Probleme" class="ltx_ref">1954</a>, §3.1)</cite>.</dd>
+<dt>Permalink:</dt>
+<dd><a href="./30.2.i" title="" class="ltx_ref">http://dlmf.nist.gov/30.2.i</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./30.2#info" title="§30.2 Differential Equations ‣ Properties ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§30.2</span></a> and
+<a href="./30#info" title="Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.30</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="i.p1" class="ltx_para">
+<table id="E1" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">30.2.1</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E1.png" altimg-height="119px" altimg-valign="-22px" altimg-width="358px" alttext="\frac{\mathrm{d}}{\mathrm{d}z}\left((1-z^{2})\frac{\mathrm{d}w}{\mathrm{d}z}%
+\right)+\left(\lambda+\gamma^{2}(1-z^{2})-\frac{\mu^{2}}{1-z^{2}}\right)w=0." display="block"><mrow><mrow><mrow><mrow><mfrac><mo href="./1.4#E4" title="derivative of 𝑓 with respect to 𝑥">d</mo><mrow><mo href="./1.4#E4" rspace="0em" title="derivative of 𝑓 with respect to 𝑥">d</mo><mi href="./30.1#p1" title="complex variable">z</mi></mrow></mfrac><mo>⁡</mo><mrow><mo>(</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>−</mo><msup><mi href="./30.1#p1" title="complex variable">z</mi><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mfrac><mrow><mo href="./1.4#E4" rspace="0em" title="derivative of 𝑓 with respect to 𝑥">d</mo><mi href="./30.2#i" title="solution to DE">w</mi></mrow><mrow><mo href="./1.4#E4" rspace="0em" title="derivative of 𝑓 with respect to 𝑥">d</mo><mi href="./30.1#p1" title="complex variable">z</mi></mrow></mfrac></mrow><mo>)</mo></mrow></mrow><mo>+</mo><mrow><mrow><mo>(</mo><mrow><mrow><mi href="./30.2#i.p1" title="real parameter">λ</mi><mo>+</mo><mrow><msup><mi href="./30.2#i.p1" title="real parameter">γ</mi><mn>2</mn></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>−</mo><msup><mi href="./30.1#p1" title="complex variable">z</mi><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>−</mo><mfrac><msup><mi href="./30.2#i.p1" title="real parameter">μ</mi><mn>2</mn></msup><mrow><mn>1</mn><mo>−</mo><msup><mi href="./30.1#p1" title="complex variable">z</mi><mn>2</mn></msup></mrow></mfrac></mrow><mo>)</mo></mrow><mo>⁢</mo><mi href="./30.2#i" title="solution to DE">w</mi></mrow></mrow><mo>=</mo><mn>0</mn></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E1.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./1.4#E4" title="(1.4.4) ‣ §1.4(iii) Derivatives ‣ §1.4 Calculus of One Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m6.png" altimg-height="31px" altimg-valign="-9px" altimg-width="28px" alttext="\frac{\mathrm{d}\NVar{f}}{\mathrm{d}\NVar{x}}" display="inline"><mfrac><mrow><mo href="./1.4#E4" rspace="0em" title="derivative of 𝑓 with respect to 𝑥">d</mo><mi class="ltx_nvar">f</mi></mrow><mrow><mo href="./1.4#E4" rspace="0em" title="derivative of 𝑓 with respect to 𝑥">d</mo><mi class="ltx_nvar">x</mi></mrow></mfrac></math>: derivative of <math class="ltx_Math" altimg="m17.png" altimg-height="22px" altimg-valign="-6px" altimg-width="17px" alttext="f" display="inline"><mi>f</mi></math> with respect to <math class="ltx_Math" altimg="m19.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./30.1#p1" title="§30.1 Special Notation ‣ Notation ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><math class="ltx_Math" altimg="m22.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi href="./30.1#p1" title="complex variable">z</mi></math>:  complex variable</a>,
+<a href="./30.2#i" title="§30.2(i) Spheroidal Differential Equation ‣ §30.2 Differential Equations ‣ Properties ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><math class="ltx_Math" altimg="m18.png" altimg-height="13px" altimg-valign="-2px" altimg-width="20px" alttext="w" display="inline"><mi href="./30.2#i" title="solution to DE">w</mi></math>:  solution to DE</a>,
+<a href="./30.2#i.p1" title="§30.2(i) Spheroidal Differential Equation ‣ §30.2 Differential Equations ‣ Properties ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><math class="ltx_Math" altimg="m10.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="\lambda" display="inline"><mi href="./30.2#i.p1" title="real parameter">λ</mi></math>:  real parameter</a>,
+<a href="./30.2#i.p1" title="§30.2(i) Spheroidal Differential Equation ‣ §30.2 Differential Equations ‣ Properties ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><math class="ltx_Math" altimg="m9.png" altimg-height="25px" altimg-valign="-6px" altimg-width="26px" alttext="\gamma^{2}" display="inline"><msup><mi href="./30.2#i.p1" title="real parameter">γ</mi><mn>2</mn></msup></math>:  real parameter</a> and
+<a href="./30.2#i.p1" title="§30.2(i) Spheroidal Differential Equation ‣ §30.2 Differential Equations ‣ Properties ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><math class="ltx_Math" altimg="m11.png" altimg-height="17px" altimg-valign="-6px" altimg-width="17px" alttext="\mu" display="inline"><mi href="./30.2#i.p1" title="real parameter">μ</mi></math>:  real parameter</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./30.11#i.p1" title="§30.11(i) Definitions ‣ §30.11 Radial Spheroidal Wave Functions ‣ Properties ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§30.11(i)</span></a>,
+<a href="./30.12#p1" title="§30.12 Generalized and Coulomb Spheroidal Functions ‣ Properties ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§30.12</span></a>,
+<a href="./30.12#p2" title="§30.12 Generalized and Coulomb Spheroidal Functions ‣ Properties ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§30.12</span></a>,
+<a href="./30.13#iv.p1" title="§30.13(iv) Separation of Variables ‣ §30.13 Wave Equation in Prolate Spheroidal Coordinates ‣ Applications ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§30.13(iv)</span></a>,
+<a href="./30.14#iv.p1" title="§30.14(iv) Separation of Variables ‣ §30.14 Wave Equation in Oblate Spheroidal Coordinates ‣ Applications ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§30.14(iv)</span></a>,
+<a href="./30.16#ii.p2" title="§30.16(ii) Spheroidal Wave Functions of the First Kind ‣ §30.16 Methods of Computation ‣ Computation ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§30.16(ii)</span></a>,
+<a href="./30.2#ii.p1" title="§30.2(ii) Other Forms ‣ §30.2 Differential Equations ‣ Properties ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§30.2(ii)</span></a>,
+<a href="./30.2#iii.p1" title="§30.2(iii) Special Cases ‣ §30.2 Differential Equations ‣ Properties ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§30.2(iii)</span></a>,
+<a href="./30.3#i.p1" title="§30.3(i) Definition ‣ §30.3 Eigenvalues ‣ Properties ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§30.3(i)</span></a>,
+<a href="./30.4#i.p1" title="§30.4(i) Definitions ‣ §30.4 Functions of the First Kind ‣ Properties ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§30.4(i)</span></a>,
+<a href="./30.5#p1" title="§30.5 Functions of the Second Kind ‣ Properties ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§30.5</span></a>,
+<a href="./30.6#Px3.p3" title="Values on (-1,1) ‣ §30.6 Functions of Complex Argument ‣ Properties ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§30.6</span></a>,
+<a href="./30.6#p1" title="§30.6 Functions of Complex Argument ‣ Properties ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§30.6</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./30.2.E1" title="" class="ltx_ref">http://dlmf.nist.gov/30.2.E1</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./30.2.E1.tex">TeX</a>, <a href="./30.2.E1.pmml">pMML</a>, <a href="./30.2.E1.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./30.2#i.info" title="§30.2(i) Spheroidal Differential Equation ‣ §30.2 Differential Equations ‣ Properties ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§30.2(i)</span></a>,
+<a href="./30.2#info" title="§30.2 Differential Equations ‣ Properties ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§30.2</span></a> and
+<a href="./30#info" title="Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.30</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">This equation has regular singularities at <math class="ltx_Math" altimg="m21.png" altimg-height="19px" altimg-valign="-4px" altimg-width="69px" alttext="z=\pm 1" display="inline"><mrow><mi href="./30.1#p1" title="complex variable">z</mi><mo>=</mo><mrow><mo>±</mo><mn>1</mn></mrow></mrow></math> with exponents
+<math class="ltx_Math" altimg="m13.png" altimg-height="29px" altimg-valign="-9px" altimg-width="46px" alttext="\pm\frac{1}{2}\mu" display="inline"><mrow><mo>±</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mi href="./30.2#i.p1" title="real parameter">μ</mi></mrow></mrow></math> and an irregular singularity of rank 1 at <math class="ltx_Math" altimg="m20.png" altimg-height="13px" altimg-valign="-2px" altimg-width="63px" alttext="z=\infty" display="inline"><mrow><mi href="./30.1#p1" title="complex variable">z</mi><mo>=</mo><mi mathvariant="normal">∞</mi></mrow></math>
+(if <math class="ltx_Math" altimg="m8.png" altimg-height="22px" altimg-valign="-6px" altimg-width="54px" alttext="\gamma\neq 0" display="inline"><mrow><mi href="./30.2#i.p1" title="real parameter">γ</mi><mo>≠</mo><mn>0</mn></mrow></math>). The equation contains three real parameters <math class="ltx_Math" altimg="m10.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="\lambda" display="inline"><mi href="./30.2#i.p1" title="real parameter">λ</mi></math>,
+<math class="ltx_Math" altimg="m9.png" altimg-height="25px" altimg-valign="-6px" altimg-width="26px" alttext="\gamma^{2}" display="inline"><msup><mi href="./30.2#i.p1" title="real parameter">γ</mi><mn>2</mn></msup></math>, and <math class="ltx_Math" altimg="m11.png" altimg-height="17px" altimg-valign="-6px" altimg-width="17px" alttext="\mu" display="inline"><mi href="./30.2#i.p1" title="real parameter">μ</mi></math>. In applications involving prolate spheroidal coordinates
+<math class="ltx_Math" altimg="m9.png" altimg-height="25px" altimg-valign="-6px" altimg-width="26px" alttext="\gamma^{2}" display="inline"><msup><mi href="./30.2#i.p1" title="real parameter">γ</mi><mn>2</mn></msup></math> is positive, in applications involving oblate spheroidal coordinates
+<math class="ltx_Math" altimg="m9.png" altimg-height="25px" altimg-valign="-6px" altimg-width="26px" alttext="\gamma^{2}" display="inline"><msup><mi href="./30.2#i.p1" title="real parameter">γ</mi><mn>2</mn></msup></math> is negative; see §§<a href="./30.13" title="§30.13 Wave Equation in Prolate Spheroidal Coordinates ‣ Applications ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">30.13</span></a>, <a href="./30.14" title="§30.14 Wave Equation in Oblate Spheroidal Coordinates ‣ Applications ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">30.14</span></a>.
+</p>
+</div>
+</section>
+<section id="ii" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§30.2(ii) </span>Other Forms</h2>
+<div id="ii.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=Liouville%20normal%20form">Liouville normal form</a>, <a class="ltx_keyword" href="./search/search?q=spheroidal%20differential%20equation">spheroidal differential equation</a>
+</dd>
+<dt>Notes:</dt>
+<dd>See <cite class="ltx_cite ltx_citemacro_citet">Arscott (<a href="./bib/#bib142" title="Periodic Differential Equations. An Introduction to Mathieu, Lamé, and Allied Functions" class="ltx_ref">1964b</a>, §8.1)</cite> and
+<cite class="ltx_cite ltx_citemacro_citet">Meixner and Schäfke (<a href="./bib/M#bib1598" title="Mathieusche Funktionen und Sphäroidfunktionen mit Anwendungen auf physikalische und technische Probleme" class="ltx_ref">1954</a>, §3.14)</cite>.</dd>
+<dt>Permalink:</dt>
+<dd><a href="./30.2.ii" title="" class="ltx_ref">http://dlmf.nist.gov/30.2.ii</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./30.2#info" title="§30.2 Differential Equations ‣ Properties ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§30.2</span></a> and
+<a href="./30#info" title="Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.30</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="ii.p1" class="ltx_para">
+<p class="ltx_p">The <em class="ltx_emph ltx_font_italic">Liouville normal form</em> of equation (<a href="./30.2#E1" title="(30.2.1) ‣ §30.2(i) Spheroidal Differential Equation ‣ §30.2 Differential Equations ‣ Properties ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">30.2.1</span></a>) is
+</p>
+<table id="E2" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">30.2.2</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E2.png" altimg-height="65px" altimg-valign="-22px" altimg-width="734px" alttext="\frac{{\mathrm{d}}^{2}g}{{\mathrm{d}t}^{2}}+\left(\lambda+\frac{1}{4}+\gamma^{%
+2}{\sin}^{2}t-\frac{\mu^{2}-\frac{1}{4}}{{\sin}^{2}t}\right)g=0," display="block"><mrow><mrow><mrow><mfrac><mrow><msup><mo href="./1.4#E4" title="derivative of 𝑓 with respect to 𝑥">d</mo><mn>2</mn></msup><mi>g</mi></mrow><msup><mrow><mo href="./1.4#E4" rspace="0em" title="derivative of 𝑓 with respect to 𝑥">d</mo><mi>t</mi></mrow><mn href="./1.4#E4" title="derivative of 𝑓 with respect to 𝑥">2</mn></msup></mfrac><mo>+</mo><mrow><mrow><mo>(</mo><mrow><mrow><mi href="./30.2#i.p1" title="real parameter">λ</mi><mo>+</mo><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>+</mo><mrow><msup><mi href="./30.2#i.p1" title="real parameter">γ</mi><mn>2</mn></msup><mo lspace="0.167em">⁢</mo><mrow><msup><mi href="./4.14#E1" title="sine function">sin</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>t</mi></mrow></mrow></mrow><mo>−</mo><mfrac><mrow><msup><mi href="./30.2#i.p1" title="real parameter">μ</mi><mn>2</mn></msup><mo>−</mo><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow><mrow><msup><mi href="./4.14#E1" title="sine function">sin</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>t</mi></mrow></mfrac></mrow><mo>)</mo></mrow><mo>⁢</mo><mi>g</mi></mrow></mrow><mo>=</mo><mn>0</mn></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E2.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./1.4#E4" title="(1.4.4) ‣ §1.4(iii) Derivatives ‣ §1.4 Calculus of One Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m6.png" altimg-height="31px" altimg-valign="-9px" altimg-width="28px" alttext="\frac{\mathrm{d}\NVar{f}}{\mathrm{d}\NVar{x}}" display="inline"><mfrac><mrow><mo href="./1.4#E4" rspace="0em" title="derivative of 𝑓 with respect to 𝑥">d</mo><mi class="ltx_nvar">f</mi></mrow><mrow><mo href="./1.4#E4" rspace="0em" title="derivative of 𝑓 with respect to 𝑥">d</mo><mi class="ltx_nvar">x</mi></mrow></mfrac></math>: derivative of <math class="ltx_Math" altimg="m17.png" altimg-height="22px" altimg-valign="-6px" altimg-width="17px" alttext="f" display="inline"><mi>f</mi></math> with respect to <math class="ltx_Math" altimg="m19.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./4.14#E1" title="(4.14.1) ‣ §4.14 Definitions and Periodicity ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m14.png" altimg-height="18px" altimg-valign="-2px" altimg-width="44px" alttext="\sin\NVar{z}" display="inline"><mrow><mi href="./4.14#E1" title="sine function">sin</mi><mo lspace="0.167em">⁡</mo><mi class="ltx_nvar" href="./4.1#t1.r4" title="complex variable">z</mi></mrow></math>: sine function</a>,
+<a href="./30.2#i.p1" title="§30.2(i) Spheroidal Differential Equation ‣ §30.2 Differential Equations ‣ Properties ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><math class="ltx_Math" altimg="m10.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="\lambda" display="inline"><mi href="./30.2#i.p1" title="real parameter">λ</mi></math>:  real parameter</a>,
+<a href="./30.2#i.p1" title="§30.2(i) Spheroidal Differential Equation ‣ §30.2 Differential Equations ‣ Properties ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><math class="ltx_Math" altimg="m9.png" altimg-height="25px" altimg-valign="-6px" altimg-width="26px" alttext="\gamma^{2}" display="inline"><msup><mi href="./30.2#i.p1" title="real parameter">γ</mi><mn>2</mn></msup></math>:  real parameter</a> and
+<a href="./30.2#i.p1" title="§30.2(i) Spheroidal Differential Equation ‣ §30.2 Differential Equations ‣ Properties ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><math class="ltx_Math" altimg="m11.png" altimg-height="17px" altimg-valign="-6px" altimg-width="17px" alttext="\mu" display="inline"><mi href="./30.2#i.p1" title="real parameter">μ</mi></math>:  real parameter</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./30.2#iii.p1" title="§30.2(iii) Special Cases ‣ §30.2 Differential Equations ‣ Properties ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§30.2(iii)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./30.2.E2" title="" class="ltx_ref">http://dlmf.nist.gov/30.2.E2</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./30.2.E2.tex">TeX</a>, <a href="./30.2.E2.pmml">pMML</a>, <a href="./30.2.E2.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./30.2#ii.info" title="§30.2(ii) Other Forms ‣ §30.2 Differential Equations ‣ Properties ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§30.2(ii)</span></a>,
+<a href="./30.2#info" title="§30.2 Differential Equations ‣ Properties ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§30.2</span></a> and
+<a href="./30#info" title="Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.30</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<table id="E3" class="ltx_equationgroup ltx_eqn_table">
+<tbody>
+<tr id="Ex1" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="2" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equationgroup ltx_align_left">30.2.3</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m4.png" altimg-height="15px" altimg-valign="-2px" altimg-width="17px" alttext="\displaystyle z" display="inline"><mi href="./30.1#p1" title="complex variable">z</mi></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m2.png" altimg-height="23px" altimg-valign="-6px" altimg-width="73px" alttext="\displaystyle=\cos t," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mi href="./4.14#E2" title="cosine function">cos</mi><mo lspace="0.167em">⁡</mo><mi>t</mi></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex2" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m3.png" altimg-height="27px" altimg-valign="-7px" altimg-width="49px" alttext="\displaystyle w(z)" display="inline"><mrow><mi href="./30.2#i" title="solution to DE">w</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./30.1#p1" title="complex variable">z</mi><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m1.png" altimg-height="32px" altimg-valign="-7px" altimg-width="166px" alttext="\displaystyle=(1-z^{2})^{-\frac{1}{4}}g(t)." display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>−</mo><msup><mi href="./30.1#p1" title="complex variable">z</mi><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow><mrow><mo>−</mo><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow></msup><mo>⁢</mo><mrow><mi>g</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E3.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./4.14#E2" title="(4.14.2) ‣ §4.14 Definitions and Periodicity ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m5.png" altimg-height="13px" altimg-valign="-2px" altimg-width="46px" alttext="\cos\NVar{z}" display="inline"><mrow><mi href="./4.14#E2" title="cosine function">cos</mi><mo lspace="0.167em">⁡</mo><mi class="ltx_nvar" href="./4.1#t1.r4" title="complex variable">z</mi></mrow></math>: cosine function</a>,
+<a href="./30.1#p1" title="§30.1 Special Notation ‣ Notation ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><math class="ltx_Math" altimg="m22.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi href="./30.1#p1" title="complex variable">z</mi></math>:  complex variable</a> and
+<a href="./30.2#i" title="§30.2(i) Spheroidal Differential Equation ‣ §30.2 Differential Equations ‣ Properties ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><math class="ltx_Math" altimg="m18.png" altimg-height="13px" altimg-valign="-2px" altimg-width="20px" alttext="w" display="inline"><mi href="./30.2#i" title="solution to DE">w</mi></math>:  solution to DE</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./30.2.E3" title="" class="ltx_ref">http://dlmf.nist.gov/30.2.E3</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./30.2.E3a.tex">TeX</a>, <a href="./30.2.E3b.tex">TeX</a>, <a href="./30.2.E3a.pmml">pMML</a>, <a href="./30.2.E3b.pmml">pMML</a>, <a href="./30.2.E3a.png">png</a>, <a href="./30.2.E3b.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./30.2#ii.info" title="§30.2(ii) Other Forms ‣ §30.2 Differential Equations ‣ Properties ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§30.2(ii)</span></a>,
+<a href="./30.2#info" title="§30.2 Differential Equations ‣ Properties ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§30.2</span></a> and
+<a href="./30#info" title="Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.30</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">With <math class="ltx_Math" altimg="m15.png" altimg-height="22px" altimg-valign="-6px" altimg-width="65px" alttext="\zeta=\gamma z" display="inline"><mrow><mi href="./30.2#ii.p1" title="parameter">ζ</mi><mo>=</mo><mrow><mi href="./30.2#i.p1" title="real parameter">γ</mi><mo>⁢</mo><mi href="./30.1#p1" title="complex variable">z</mi></mrow></mrow></math> Equation (<a href="./30.2#E1" title="(30.2.1) ‣ §30.2(i) Spheroidal Differential Equation ‣ §30.2 Differential Equations ‣ Properties ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">30.2.1</span></a>) changes to
+</p>
+<table id="E4" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">30.2.4</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E4.png" altimg-height="64px" altimg-valign="-22px" altimg-width="545px" alttext="(\zeta^{2}-\gamma^{2})\frac{{\mathrm{d}}^{2}w}{{\mathrm{d}\zeta}^{2}}+2\zeta%
+\frac{\mathrm{d}w}{\mathrm{d}\zeta}+\left(\zeta^{2}-\lambda-\gamma^{2}-\frac{%
+\gamma^{2}\mu^{2}}{\zeta^{2}-\gamma^{2}}\right)w=0." display="block"><mrow><mrow><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><msup><mi href="./30.2#ii.p1" title="parameter">ζ</mi><mn>2</mn></msup><mo>−</mo><msup><mi href="./30.2#i.p1" title="real parameter">γ</mi><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mfrac><mrow><msup><mo href="./1.4#E4" title="derivative of 𝑓 with respect to 𝑥">d</mo><mn>2</mn></msup><mi href="./30.2#i" title="solution to DE">w</mi></mrow><msup><mrow><mo href="./1.4#E4" rspace="0em" title="derivative of 𝑓 with respect to 𝑥">d</mo><mi href="./30.2#ii.p1" title="parameter">ζ</mi></mrow><mn href="./1.4#E4" title="derivative of 𝑓 with respect to 𝑥">2</mn></msup></mfrac></mrow><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><mi href="./30.2#ii.p1" title="parameter">ζ</mi><mo>⁢</mo><mfrac><mrow><mo href="./1.4#E4" rspace="0em" title="derivative of 𝑓 with respect to 𝑥">d</mo><mi href="./30.2#i" title="solution to DE">w</mi></mrow><mrow><mo href="./1.4#E4" rspace="0em" title="derivative of 𝑓 with respect to 𝑥">d</mo><mi href="./30.2#ii.p1" title="parameter">ζ</mi></mrow></mfrac></mrow><mo>+</mo><mrow><mrow><mo>(</mo><mrow><msup><mi href="./30.2#ii.p1" title="parameter">ζ</mi><mn>2</mn></msup><mo>−</mo><mi href="./30.2#i.p1" title="real parameter">λ</mi><mo>−</mo><msup><mi href="./30.2#i.p1" title="real parameter">γ</mi><mn>2</mn></msup><mo>−</mo><mfrac><mrow><msup><mi href="./30.2#i.p1" title="real parameter">γ</mi><mn>2</mn></msup><mo>⁢</mo><msup><mi href="./30.2#i.p1" title="real parameter">μ</mi><mn>2</mn></msup></mrow><mrow><msup><mi href="./30.2#ii.p1" title="parameter">ζ</mi><mn>2</mn></msup><mo>−</mo><msup><mi href="./30.2#i.p1" title="real parameter">γ</mi><mn>2</mn></msup></mrow></mfrac></mrow><mo>)</mo></mrow><mo>⁢</mo><mi href="./30.2#i" title="solution to DE">w</mi></mrow></mrow><mo>=</mo><mn>0</mn></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E4.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./1.4#E4" title="(1.4.4) ‣ §1.4(iii) Derivatives ‣ §1.4 Calculus of One Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m6.png" altimg-height="31px" altimg-valign="-9px" altimg-width="28px" alttext="\frac{\mathrm{d}\NVar{f}}{\mathrm{d}\NVar{x}}" display="inline"><mfrac><mrow><mo href="./1.4#E4" rspace="0em" title="derivative of 𝑓 with respect to 𝑥">d</mo><mi class="ltx_nvar">f</mi></mrow><mrow><mo href="./1.4#E4" rspace="0em" title="derivative of 𝑓 with respect to 𝑥">d</mo><mi class="ltx_nvar">x</mi></mrow></mfrac></math>: derivative of <math class="ltx_Math" altimg="m17.png" altimg-height="22px" altimg-valign="-6px" altimg-width="17px" alttext="f" display="inline"><mi>f</mi></math> with respect to <math class="ltx_Math" altimg="m19.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./30.2#i" title="§30.2(i) Spheroidal Differential Equation ‣ §30.2 Differential Equations ‣ Properties ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><math class="ltx_Math" altimg="m18.png" altimg-height="13px" altimg-valign="-2px" altimg-width="20px" alttext="w" display="inline"><mi href="./30.2#i" title="solution to DE">w</mi></math>:  solution to DE</a>,
+<a href="./30.2#i.p1" title="§30.2(i) Spheroidal Differential Equation ‣ §30.2 Differential Equations ‣ Properties ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><math class="ltx_Math" altimg="m10.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="\lambda" display="inline"><mi href="./30.2#i.p1" title="real parameter">λ</mi></math>:  real parameter</a>,
+<a href="./30.2#i.p1" title="§30.2(i) Spheroidal Differential Equation ‣ §30.2 Differential Equations ‣ Properties ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><math class="ltx_Math" altimg="m9.png" altimg-height="25px" altimg-valign="-6px" altimg-width="26px" alttext="\gamma^{2}" display="inline"><msup><mi href="./30.2#i.p1" title="real parameter">γ</mi><mn>2</mn></msup></math>:  real parameter</a>,
+<a href="./30.2#i.p1" title="§30.2(i) Spheroidal Differential Equation ‣ §30.2 Differential Equations ‣ Properties ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><math class="ltx_Math" altimg="m11.png" altimg-height="17px" altimg-valign="-6px" altimg-width="17px" alttext="\mu" display="inline"><mi href="./30.2#i.p1" title="real parameter">μ</mi></math>:  real parameter</a> and
+<a href="./30.2#ii.p1" title="§30.2(ii) Other Forms ‣ §30.2 Differential Equations ‣ Properties ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><math class="ltx_Math" altimg="m16.png" altimg-height="22px" altimg-valign="-6px" altimg-width="15px" alttext="\zeta" display="inline"><mi href="./30.2#ii.p1" title="parameter">ζ</mi></math>:  parameter</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./30.2#iii.p1" title="§30.2(iii) Special Cases ‣ §30.2 Differential Equations ‣ Properties ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§30.2(iii)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./30.2.E4" title="" class="ltx_ref">http://dlmf.nist.gov/30.2.E4</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./30.2.E4.tex">TeX</a>, <a href="./30.2.E4.pmml">pMML</a>, <a href="./30.2.E4.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./30.2#ii.info" title="§30.2(ii) Other Forms ‣ §30.2 Differential Equations ‣ Properties ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§30.2(ii)</span></a>,
+<a href="./30.2#info" title="§30.2 Differential Equations ‣ Properties ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§30.2</span></a> and
+<a href="./30#info" title="Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.30</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="iii" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§30.2(iii) </span>Special Cases</h2>
+<div id="iii.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=special%20cases">special cases</a>, <a class="ltx_keyword" href="./search/search?q=spheroidal%20differential%20equation">spheroidal differential equation</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./30.2.iii" title="" class="ltx_ref">http://dlmf.nist.gov/30.2.iii</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./30.2#info" title="§30.2 Differential Equations ‣ Properties ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§30.2</span></a> and
+<a href="./30#info" title="Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.30</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="iii.p1" class="ltx_para">
+<p class="ltx_p">If <math class="ltx_Math" altimg="m7.png" altimg-height="21px" altimg-valign="-6px" altimg-width="54px" alttext="\gamma=0" display="inline"><mrow><mi href="./30.2#i.p1" title="real parameter">γ</mi><mo>=</mo><mn>0</mn></mrow></math>, Equation (<a href="./30.2#E1" title="(30.2.1) ‣ §30.2(i) Spheroidal Differential Equation ‣ §30.2 Differential Equations ‣ Properties ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">30.2.1</span></a>) is the associated Legendre
+differential equation; see (<a href="./14.2#E2" title="(14.2.2) ‣ §14.2(ii) Associated Legendre Equation ‣ §14.2 Differential Equations ‣ Real Arguments ‣ Chapter 14 Legendre and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">14.2.2</span></a>). If
+<math class="ltx_Math" altimg="m12.png" altimg-height="29px" altimg-valign="-9px" altimg-width="67px" alttext="\mu^{2}=\frac{1}{4}" display="inline"><mrow><msup><mi href="./30.2#i.p1" title="real parameter">μ</mi><mn>2</mn></msup><mo>=</mo><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow></math>, Equation (<a href="./30.2#E2" title="(30.2.2) ‣ §30.2(ii) Other Forms ‣ §30.2 Differential Equations ‣ Properties ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">30.2.2</span></a>) reduces to the Mathieu
+equation; see (<a href="./28.2#E1" title="(28.2.1) ‣ §28.2(i) Mathieu’s Equation ‣ §28.2 Definitions and Basic Properties ‣ Mathieu Functions of Integer Order ‣ Chapter 28 Mathieu Functions and Hill’s Equation" class="ltx_ref"><span class="ltx_text ltx_ref_tag">28.2.1</span></a>). If <math class="ltx_Math" altimg="m7.png" altimg-height="21px" altimg-valign="-6px" altimg-width="54px" alttext="\gamma=0" display="inline"><mrow><mi href="./30.2#i.p1" title="real parameter">γ</mi><mo>=</mo><mn>0</mn></mrow></math>, Equation
+(<a href="./30.2#E4" title="(30.2.4) ‣ §30.2(ii) Other Forms ‣ §30.2 Differential Equations ‣ Properties ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">30.2.4</span></a>) is satisfied by spherical Bessel functions; see
+(<a href="./10.47#E1" title="(10.47.1) ‣ §10.47(i) Differential Equations ‣ §10.47 Definitions and Basic Properties ‣ Spherical Bessel Functions ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">10.47.1</span></a>).</p>
+</div>
+</section>
+</section>
+</div>
+<div class="ltx_page_footer">
+<div class="ltx_siblings">
+<a href="./30.1" title="In Notation ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">30.1 </span>Special Notation</span></a><a href="./30.3" title="In Properties ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">30.3 </span>Eigenvalues</span></a>
+</div>
+<div class="ltx_footer_links ltx_centering">
+<a href="./about/notices">© 2010–2026 NIST</a> / <a href="./about/notices#S2">Disclaimer</a> / <a href="/cdn-cgi/l/email-protection#73373f3e355e1516161711121018331d1a00075d141c05">Feedback</a>;
+ Version 1.2.7;
+Release date 2026-06-15.</div>
+<span id="pagesettings"></span>
+<div class="ltx_nist_logo"><a href="http://www.nist.gov/"><img src="./style/nistidc.png" width="500" alt="NIST"></a></div>
+<div class="ltx_nist_links ltx_align_right">
+<a href="https://www.nist.gov/privacy-policy">Site Privacy</a> <a href="https://www.nist.gov/oism/accessibility">Accessibility</a> <a href="https://www.nist.gov/privacy">Privacy Program</a> <a href="https://www.nist.gov/oism/copyrights">Copyrights</a> <a href="https://www.commerce.gov/vulnerability-disclosure-policy">Vulnerability Disclosure</a> <a href="https://www.nist.gov/no-fear-act-policy">No Fear Act Policy</a> <a href="https://www.nist.gov/foia">FOIA</a> <a href="https://www.nist.gov/environmental-policy-statement">Environmental Policy</a> <a href="https://www.nist.gov/summary-report-scientific-integrity">Scientific Integrity</a> <a href="https://www.nist.gov/nist-information-quality-standards">Information Quality Standards</a> <a href="https://www.commerce.gov/">Commerce.gov</a> <a href="http://www.science.gov/">Science.gov</a> <a href="http://www.usa.gov/">USA.gov</a>
+</div>
+</div>
+</div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"9ef5b487afff42a68917b2d63593a474"}' crossorigin="anonymous"></script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a30dbd2fcdc6fccc',t:'MTc4NzY5Mzg1Nw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

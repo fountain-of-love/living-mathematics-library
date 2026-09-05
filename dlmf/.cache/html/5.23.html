@@ -1,0 +1,273 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>DLMF: §5.23 Approximations ‣ Computation ‣ Chapter 5 Gamma Function</title>
+<link rel="shortcut icon" href="./style/DLMF-16.png" type="image/png">
+<script type="text/javascript"><!--
+	var PATH="DLMF:/5.23";
+	var ROOT="./";
+      //--></script>
+<script type="text/javascript" src="./style/jquery.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/jquery.leaveNotice.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/DLMF.js"><!-- non-empty so ie6 will accept it --></script>
+<script async="" type="text/javascript" id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC&amp;subagency=NIST&amp;pua=UA-37115410-44&amp;yt=true&amp;exts=ppsx,pps,f90,sch,rtf,wrl,txz,m1v,xlsm,msi,xsd,f,tif,eps,mpg,xml,pl,xlt,c"><!-- non-empty so ie6 will accept it --></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-BZB64W4M0L"></script><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-BZB64W4M0L');
+      </script>
+<link rel="stylesheet" type="text/css" href="./style/LaTeXML.css">
+<link rel="stylesheet" type="text/css" href="./style/DLMF.css">
+<link rel="stylesheet" type="text/css" href="./style/print.css" media="print">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="top" href="./" title="DLMF">
+<link rel="copyright" href="./about/notices" title="Copyright">
+<link rel="search" href="./search/search" title="Search">
+<link rel="help" class="ltx_help" href="./help/" title="Help">
+<link rel="up" href="./5#PT4" title="Computation ‣ Chapter 5 Gamma Function">
+<link rel="up up" href="./5" title="Chapter 5 Gamma Function">
+<link rel="start" href="./" title="">
+<link rel="prev" href="./5.22" title="§5.22 Tables ‣ Computation ‣ Chapter 5 Gamma Function">
+<link rel="next" href="./5.24" title="§5.24 Software ‣ Computation ‣ Chapter 5 Gamma Function">
+<link rel="section" href="./5.1" title="§5.1 Special Notation ‣ Notation ‣ Chapter 5 Gamma Function">
+<link rel="section" href="./5.2" title="§5.2 Definitions ‣ Properties ‣ Chapter 5 Gamma Function">
+<link rel="section" href="./5.3" title="§5.3 Graphics ‣ Properties ‣ Chapter 5 Gamma Function">
+<link rel="section" href="./5.4" title="§5.4 Special Values and Extrema ‣ Properties ‣ Chapter 5 Gamma Function">
+<link rel="section" href="./5.5" title="§5.5 Functional Relations ‣ Properties ‣ Chapter 5 Gamma Function">
+<link rel="section" href="./5.6" title="§5.6 Inequalities ‣ Properties ‣ Chapter 5 Gamma Function">
+<link rel="section" href="./5.7" title="§5.7 Series Expansions ‣ Properties ‣ Chapter 5 Gamma Function">
+<link rel="section" href="./5.8" title="§5.8 Infinite Products ‣ Properties ‣ Chapter 5 Gamma Function">
+<link rel="section" href="./5.9" title="§5.9 Integral Representations ‣ Properties ‣ Chapter 5 Gamma Function">
+<link rel="section" href="./5.10" title="§5.10 Continued Fractions ‣ Properties ‣ Chapter 5 Gamma Function">
+<link rel="section" href="./5.11" title="§5.11 Asymptotic Expansions ‣ Properties ‣ Chapter 5 Gamma Function">
+<link rel="section" href="./5.12" title="§5.12 Beta Function ‣ Properties ‣ Chapter 5 Gamma Function">
+<link rel="section" href="./5.13" title="§5.13 Integrals ‣ Properties ‣ Chapter 5 Gamma Function">
+<link rel="section" href="./5.14" title="§5.14 Multidimensional Integrals ‣ Properties ‣ Chapter 5 Gamma Function">
+<link rel="section" href="./5.15" title="§5.15 Polygamma Functions ‣ Properties ‣ Chapter 5 Gamma Function">
+<link rel="section" href="./5.16" title="§5.16 Sums ‣ Properties ‣ Chapter 5 Gamma Function">
+<link rel="section" href="./5.17" title="§5.17 Barnes’ 𝐺-Function (Double Gamma Function) ‣ Properties ‣ Chapter 5 Gamma Function">
+<link rel="section" href="./5.18" title="§5.18 𝑞-Gamma and 𝑞-Beta Functions ‣ Properties ‣ Chapter 5 Gamma Function">
+<link rel="section" href="./5.19" title="§5.19 Mathematical Applications ‣ Applications ‣ Chapter 5 Gamma Function">
+<link rel="section" href="./5.20" title="§5.20 Physical Applications ‣ Applications ‣ Chapter 5 Gamma Function">
+<link rel="section" href="./5.21" title="§5.21 Methods of Computation ‣ Computation ‣ Chapter 5 Gamma Function">
+<link rel="section" href="./5.22" title="§5.22 Tables ‣ Computation ‣ Chapter 5 Gamma Function">
+<link rel="section" href="./5.24" title="§5.24 Software ‣ Computation ‣ Chapter 5 Gamma Function">
+<link rel="sidebar" href="./5.SB1" title="Sidebar 5.SB1: Gamma &amp; Digamma Phase Plots ‣ Chapter 5 Gamma Function">
+<link rel="document" href="./front/foreword" title="Foreword">
+<link rel="document" href="./front/preface" title="Preface">
+<link rel="document" href="./front/introduction" title="Mathematical Introduction">
+<link rel="chapter" href="./1" title="Chapter 1 Algebraic and Analytic Methods">
+<link rel="chapter" href="./2" title="Chapter 2 Asymptotic Approximations">
+<link rel="chapter" href="./3" title="Chapter 3 Numerical Methods">
+<link rel="chapter" href="./4" title="Chapter 4 Elementary Functions">
+<link rel="chapter" href="./5" title="Chapter 5 Gamma Function">
+<link rel="chapter" href="./6" title="Chapter 6 Exponential, Logarithmic, Sine, and Cosine Integrals">
+<link rel="chapter" href="./7" title="Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="chapter" href="./8" title="Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="chapter" href="./9" title="Chapter 9 Airy and Related Functions">
+<link rel="chapter" href="./10" title="Chapter 10 Bessel Functions">
+<link rel="chapter" href="./11" title="Chapter 11 Struve and Related Functions">
+<link rel="chapter" href="./12" title="Chapter 12 Parabolic Cylinder Functions">
+<link rel="chapter" href="./13" title="Chapter 13 Confluent Hypergeometric Functions">
+<link rel="chapter" href="./14" title="Chapter 14 Legendre and Related Functions">
+<link rel="chapter" href="./15" title="Chapter 15 Hypergeometric Function">
+<link rel="chapter" href="./16" title="Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="chapter" href="./17" title="Chapter 17 𝑞-Hypergeometric and Related Functions">
+<link rel="chapter" href="./18" title="Chapter 18 Orthogonal Polynomials">
+<link rel="chapter" href="./19" title="Chapter 19 Elliptic Integrals">
+<link rel="chapter" href="./20" title="Chapter 20 Theta Functions">
+<link rel="chapter" href="./21" title="Chapter 21 Multidimensional Theta Functions">
+<link rel="chapter" href="./22" title="Chapter 22 Jacobian Elliptic Functions">
+<link rel="chapter" href="./23" title="Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="chapter" href="./24" title="Chapter 24 Bernoulli and Euler Polynomials">
+<link rel="chapter" href="./25" title="Chapter 25 Zeta and Related Functions">
+<link rel="chapter" href="./26" title="Chapter 26 Combinatorial Analysis">
+<link rel="chapter" href="./27" title="Chapter 27 Functions of Number Theory">
+<link rel="chapter" href="./28" title="Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="chapter" href="./29" title="Chapter 29 Lamé Functions">
+<link rel="chapter" href="./30" title="Chapter 30 Spheroidal Wave Functions">
+<link rel="chapter" href="./31" title="Chapter 31 Heun Functions">
+<link rel="chapter" href="./32" title="Chapter 32 Painlevé Transcendents">
+<link rel="chapter" href="./33" title="Chapter 33 Coulomb Functions">
+<link rel="chapter" href="./34" title="Chapter 34 3⁢𝑗,6⁢𝑗,9⁢𝑗 Symbols">
+<link rel="chapter" href="./35" title="Chapter 35 Functions of Matrix Argument">
+<link rel="chapter" href="./36" title="Chapter 36 Integrals with Coalescing Saddles">
+<link rel="bibliography" href="./bib/" title="Bibliography">
+<link rel="index" href="./idx/" title="Index">
+<link rel="glossary" href="./not/" title="Notations">
+<link rel="document" href="./lof/" title="List of Figures">
+<link rel="document" href="./lot/" title="List of Tables">
+<link rel="document" href="./software/" title="Software Index">
+<link rel="document" href="./errata/" title="Errata">
+<link rel="document" href="./help/" title="Need Help?">
+<link rel="document" href="./search/" title="Advanced Search">
+<link rel="document" href="./about/" title="About the Project">
+<meta name="keywords" lang="en" content="Chebyshev series, approximations, complex variable, complex variables, gamma function, psi function, rational">
+</head>
+<body class="color_default textfont_default titlefont_default fontsize_default navbar_default">
+<div class="ltx_page_navbar">
+<div class="ltx_page_navlogo"><a href="./" title="Digital Library of Mathematical Functions"><span>DLMF</span></a></div>
+<div class="ltx_page_navitems">
+<form method="get" action="./search/search">
+<ul>
+<li><a href="./idx/">Index</a></li>
+<li><a href="./not/">Notations</a></li>
+<li><small><input type="text" name="q" value="" size="6" class="ltx_page_navitem_search"><button type="submit">Search</button></small></li>
+<li><a href="./help/" class="ltx_help">Help?</a></li>
+<li><a href="./help/cite">Citing</a></li>
+<li><a href="./help/customize" class="ltx_customize">Customize</a></li>
+<li id="showinfo"><a href="" onclick="showInfo(); return false;" title="Show Annotations">Annotate</a></li>
+<li id="hideinfo"><a href="" onclick="hideInfo(); return false;">UnAnnotate</a></li>
+</ul>
+</form>
+</div>
+<div class="ltx_page_navsponsors">
+<div><a href="./about/" class="ltx_page_navabout">About the Project</a></div>
+</div>
+</div>
+<div class="ltx_page_main">
+<div class="ltx_page_header">
+<a href="./5" title="" class="ltx_ref" rel="up up"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">5 </span>Gamma Function</span></a><a href="./5#PT4" title="In Chapter 5 Gamma Function" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title">Computation</span></a><a href="./5.22" title="In Computation ‣ Chapter 5 Gamma Function" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">5.22 </span>Tables</span></a><a href="./5.24" title="In Computation ‣ Chapter 5 Gamma Function" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">5.24 </span>Software</span></a>
+</div>
+<div class="ltx_page_content">
+<section class="ltx_section ltx_authors_multiline ltx_leqno">
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">§5.23 </span>Approximations</h1>
+<div id="info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Permalink:</dt>
+<dd><a href="./5.23" title="" class="ltx_ref">http://dlmf.nist.gov/5.23</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./5#info" title="Chapter 5 Gamma Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.5</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<h6>Contents</h6>
+<ol class="ltx_toclist ltx_toclist_section">
+<li class="ltx_tocentry"><a href="#i"><span class="ltx_tag ltx_tag_subsection">§5.23(i) </span>Rational Approximations</a></li>
+<li class="ltx_tocentry"><a href="#ii"><span class="ltx_tag ltx_tag_subsection">§5.23(ii) </span>Expansions in Chebyshev Series</a></li>
+<li class="ltx_tocentry"><a href="#iii"><span class="ltx_tag ltx_tag_subsection">§5.23(iii) </span>Approximations in the Complex Plane</a></li>
+</ol>
+<section id="i" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§5.23(i) </span>Rational Approximations</h2>
+<div id="i.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=approximations">approximations</a>, <a class="ltx_keyword" href="./search/search?q=gamma%20function">gamma function</a>, <a class="ltx_keyword" href="./search/search?q=psi%20function">psi function</a>, <a class="ltx_keyword" href="./search/search?q=rational">rational</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./5.23.i" title="" class="ltx_ref">http://dlmf.nist.gov/5.23.i</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./5.23#info" title="§5.23 Approximations ‣ Computation ‣ Chapter 5 Gamma Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§5.23</span></a> and
+<a href="./5#info" title="Chapter 5 Gamma Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.5</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="i.p1" class="ltx_para">
+<p class="ltx_p"><cite class="ltx_cite ltx_citemacro_citet">Cody and Hillstrom (<a href="./bib/C#bib548" title="Chebyshev approximations for the natural logarithm of the gamma function" class="ltx_ref">1967</a>)</cite> gives minimax rational approximations for
+<math class="ltx_Math" altimg="m16.png" altimg-height="25px" altimg-valign="-7px" altimg-width="69px" alttext="\ln\Gamma\left(x\right)" display="inline"><mrow><mi href="./4.2#E2" title="principal branch of logarithm function">ln</mi><mo lspace="0.167em">⁡</mo><mrow><mi href="./5.2#E1" mathvariant="normal" title="gamma function">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./5.1#t1.r3" title="real variable">x</mi><mo>)</mo></mrow></mrow></mrow></math> for the ranges <math class="ltx_Math" altimg="m1.png" altimg-height="20px" altimg-valign="-5px" altimg-width="125px" alttext="0.5\leq x\leq 1.5" display="inline"><mrow><mn>0.5</mn><mo>≤</mo><mi href="./5.1#t1.r3" title="real variable">x</mi><mo>≤</mo><mn>1.5</mn></mrow></math>,
+<math class="ltx_Math" altimg="m4.png" altimg-height="20px" altimg-valign="-5px" altimg-width="108px" alttext="1.5\leq x\leq 4" display="inline"><mrow><mn>1.5</mn><mo>≤</mo><mi href="./5.1#t1.r3" title="real variable">x</mi><mo>≤</mo><mn>4</mn></mrow></math>, <math class="ltx_Math" altimg="m8.png" altimg-height="20px" altimg-valign="-5px" altimg-width="103px" alttext="4\leq x\leq 12" display="inline"><mrow><mn>4</mn><mo>≤</mo><mi href="./5.1#t1.r3" title="real variable">x</mi><mo>≤</mo><mn>12</mn></mrow></math>; precision is variable.
+<cite class="ltx_cite ltx_citemacro_citet">Hart<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/H#bib1051" title="Computer Approximations" class="ltx_ref">1968</a>)</cite> gives minimax polynomial and rational approximations to
+<math class="ltx_Math" altimg="m13.png" altimg-height="25px" altimg-valign="-7px" altimg-width="49px" alttext="\Gamma\left(x\right)" display="inline"><mrow><mi href="./5.2#E1" mathvariant="normal" title="gamma function">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./5.1#t1.r3" title="real variable">x</mi><mo>)</mo></mrow></mrow></math> and <math class="ltx_Math" altimg="m16.png" altimg-height="25px" altimg-valign="-7px" altimg-width="69px" alttext="\ln\Gamma\left(x\right)" display="inline"><mrow><mi href="./4.2#E2" title="principal branch of logarithm function">ln</mi><mo lspace="0.167em">⁡</mo><mrow><mi href="./5.2#E1" mathvariant="normal" title="gamma function">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./5.1#t1.r3" title="real variable">x</mi><mo>)</mo></mrow></mrow></mrow></math> in the intervals
+<math class="ltx_Math" altimg="m3.png" altimg-height="20px" altimg-valign="-5px" altimg-width="92px" alttext="0\leq x\leq 1" display="inline"><mrow><mn>0</mn><mo>≤</mo><mi href="./5.1#t1.r3" title="real variable">x</mi><mo>≤</mo><mn>1</mn></mrow></math>, <math class="ltx_Math" altimg="m9.png" altimg-height="20px" altimg-valign="-5px" altimg-width="123px" alttext="8\leq x\leq 1000" display="inline"><mrow><mn>8</mn><mo>≤</mo><mi href="./5.1#t1.r3" title="real variable">x</mi><mo>≤</mo><mn>1000</mn></mrow></math>, <math class="ltx_Math" altimg="m6.png" altimg-height="20px" altimg-valign="-5px" altimg-width="134px" alttext="12\leq x\leq 1000" display="inline"><mrow><mn>12</mn><mo>≤</mo><mi href="./5.1#t1.r3" title="real variable">x</mi><mo>≤</mo><mn>1000</mn></mrow></math>; precision is
+variable. <cite class="ltx_cite ltx_citemacro_citet">Cody<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/C#bib552" title="Chebyshev approximations for the psi function" class="ltx_ref">1973</a>)</cite> gives minimax rational approximations
+for <math class="ltx_Math" altimg="m18.png" altimg-height="25px" altimg-valign="-7px" altimg-width="50px" alttext="\psi\left(x\right)" display="inline"><mrow><mi href="./5.2#E2" title="psi (or digamma) function">ψ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./5.1#t1.r3" title="real variable">x</mi><mo>)</mo></mrow></mrow></math> for the ranges <math class="ltx_Math" altimg="m2.png" altimg-height="20px" altimg-valign="-5px" altimg-width="108px" alttext="0.5\leq x\leq 3" display="inline"><mrow><mn>0.5</mn><mo>≤</mo><mi href="./5.1#t1.r3" title="real variable">x</mi><mo>≤</mo><mn>3</mn></mrow></math> and
+<math class="ltx_Math" altimg="m7.png" altimg-height="20px" altimg-valign="-5px" altimg-width="103px" alttext="3\leq x&lt;\infty" display="inline"><mrow><mn>3</mn><mo>≤</mo><mi href="./5.1#t1.r3" title="real variable">x</mi><mo>&lt;</mo><mi mathvariant="normal">∞</mi></mrow></math>; precision is variable.</p>
+</div>
+<div id="i.p2" class="ltx_para">
+<p class="ltx_p">For additional approximations see <cite class="ltx_cite ltx_citemacro_citet">Hart<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/H#bib1051" title="Computer Approximations" class="ltx_ref">1968</a>, Appendix B)</cite>,
+<cite class="ltx_cite ltx_citemacro_citet">Luke (<a href="./bib/L#bib1501" title="Mathematical Functions and their Approximations" class="ltx_ref">1975</a>, pp. 22–23)</cite>, and <cite class="ltx_cite ltx_citemacro_citet">Weniger (<a href="./bib/W#bib2394" title="A rational approximant for the digamma function" class="ltx_ref">2003</a>)</cite>.</p>
+</div>
+</section>
+<section id="ii" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§5.23(ii) </span>Expansions in Chebyshev Series</h2>
+<div id="ii.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=Chebyshev%20series">Chebyshev series</a>, <a class="ltx_keyword" href="./search/search?q=approximations">approximations</a>, <a class="ltx_keyword" href="./search/search?q=gamma%20function">gamma function</a>, <a class="ltx_keyword" href="./search/search?q=psi%20function">psi function</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./5.23.ii" title="" class="ltx_ref">http://dlmf.nist.gov/5.23.ii</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./5.23#info" title="§5.23 Approximations ‣ Computation ‣ Chapter 5 Gamma Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§5.23</span></a> and
+<a href="./5#info" title="Chapter 5 Gamma Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.5</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="ii.p1" class="ltx_para">
+<p class="ltx_p"><cite class="ltx_cite ltx_citemacro_citet">Luke (<a href="./bib/L#bib1496" title="The Special Functions and their Approximations. Vol. 2" class="ltx_ref">1969b</a>)</cite> gives the coefficients to 20D for the Chebyshev-series
+expansions of <math class="ltx_Math" altimg="m11.png" altimg-height="25px" altimg-valign="-7px" altimg-width="84px" alttext="\Gamma\left(1+x\right)" display="inline"><mrow><mi href="./5.2#E1" mathvariant="normal" title="gamma function">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mi href="./5.1#t1.r3" title="real variable">x</mi></mrow><mo>)</mo></mrow></mrow></math>, <math class="ltx_Math" altimg="m5.png" altimg-height="25px" altimg-valign="-7px" altimg-width="105px" alttext="1/\Gamma\left(1+x\right)" display="inline"><mrow><mn>1</mn><mo>/</mo><mrow><mi href="./5.2#E1" mathvariant="normal" title="gamma function">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mi href="./5.1#t1.r3" title="real variable">x</mi></mrow><mo>)</mo></mrow></mrow></mrow></math>,
+<math class="ltx_Math" altimg="m12.png" altimg-height="25px" altimg-valign="-7px" altimg-width="84px" alttext="\Gamma\left(x+3\right)" display="inline"><mrow><mi href="./5.2#E1" mathvariant="normal" title="gamma function">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./5.1#t1.r3" title="real variable">x</mi><mo>+</mo><mn>3</mn></mrow><mo>)</mo></mrow></mrow></math>, <math class="ltx_Math" altimg="m15.png" altimg-height="25px" altimg-valign="-7px" altimg-width="105px" alttext="\ln\Gamma\left(x+3\right)" display="inline"><mrow><mi href="./4.2#E2" title="principal branch of logarithm function">ln</mi><mo lspace="0.167em">⁡</mo><mrow><mi href="./5.2#E1" mathvariant="normal" title="gamma function">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./5.1#t1.r3" title="real variable">x</mi><mo>+</mo><mn>3</mn></mrow><mo>)</mo></mrow></mrow></mrow></math>, <math class="ltx_Math" altimg="m17.png" altimg-height="25px" altimg-valign="-7px" altimg-width="86px" alttext="\psi\left(x+3\right)" display="inline"><mrow><mi href="./5.2#E2" title="psi (or digamma) function">ψ</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./5.1#t1.r3" title="real variable">x</mi><mo>+</mo><mn>3</mn></mrow><mo>)</mo></mrow></mrow></math>, and the
+first six derivatives of <math class="ltx_Math" altimg="m17.png" altimg-height="25px" altimg-valign="-7px" altimg-width="86px" alttext="\psi\left(x+3\right)" display="inline"><mrow><mi href="./5.2#E2" title="psi (or digamma) function">ψ</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./5.1#t1.r3" title="real variable">x</mi><mo>+</mo><mn>3</mn></mrow><mo>)</mo></mrow></mrow></math> for <math class="ltx_Math" altimg="m3.png" altimg-height="20px" altimg-valign="-5px" altimg-width="92px" alttext="0\leq x\leq 1" display="inline"><mrow><mn>0</mn><mo>≤</mo><mi href="./5.1#t1.r3" title="real variable">x</mi><mo>≤</mo><mn>1</mn></mrow></math>. These
+coefficients are reproduced in <cite class="ltx_cite ltx_citemacro_citet">Luke (<a href="./bib/L#bib1501" title="Mathematical Functions and their Approximations" class="ltx_ref">1975</a>)</cite>. <cite class="ltx_cite ltx_citemacro_citet">Clenshaw (<a href="./bib/C#bib525" title="Chebyshev Series for Mathematical Functions" class="ltx_ref">1962</a>)</cite>
+also gives 20D Chebyshev-series coefficients for <math class="ltx_Math" altimg="m11.png" altimg-height="25px" altimg-valign="-7px" altimg-width="84px" alttext="\Gamma\left(1+x\right)" display="inline"><mrow><mi href="./5.2#E1" mathvariant="normal" title="gamma function">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mi href="./5.1#t1.r3" title="real variable">x</mi></mrow><mo>)</mo></mrow></mrow></math> and its
+reciprocal for <math class="ltx_Math" altimg="m3.png" altimg-height="20px" altimg-valign="-5px" altimg-width="92px" alttext="0\leq x\leq 1" display="inline"><mrow><mn>0</mn><mo>≤</mo><mi href="./5.1#t1.r3" title="real variable">x</mi><mo>≤</mo><mn>1</mn></mrow></math>. See <cite class="ltx_cite ltx_citemacro_citet">Luke (<a href="./bib/L#bib1501" title="Mathematical Functions and their Approximations" class="ltx_ref">1975</a>, pp. 22–23)</cite>
+for additional expansions.</p>
+</div>
+</section>
+<section id="iii" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§5.23(iii) </span>Approximations in the Complex Plane</h2>
+<div id="iii.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=approximations">approximations</a>, <a class="ltx_keyword" href="./search/search?q=complex%20variable">complex variable</a>, <a class="ltx_keyword" href="./search/search?q=complex%20variables">complex variables</a>, <a class="ltx_keyword" href="./search/search?q=gamma%20function">gamma function</a>, <a class="ltx_keyword" href="./search/search?q=psi%20function">psi function</a>, <a class="ltx_keyword" href="./search/search?q=rational">rational</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./5.23.iii" title="" class="ltx_ref">http://dlmf.nist.gov/5.23.iii</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./5.23#info" title="§5.23 Approximations ‣ Computation ‣ Chapter 5 Gamma Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§5.23</span></a> and
+<a href="./5#info" title="Chapter 5 Gamma Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.5</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="iii.p1" class="ltx_para">
+<p class="ltx_p">See <cite class="ltx_cite ltx_citemacro_citet">Schmelzer and Trefethen (<a href="./bib/S#bib2010" title="Computing the gamma function using contour integrals and rational approximations" class="ltx_ref">2007</a>)</cite> for a survey of rational approximations to
+various scaled versions of <math class="ltx_Math" altimg="m14.png" altimg-height="25px" altimg-valign="-7px" altimg-width="47px" alttext="\Gamma\left(z\right)" display="inline"><mrow><mi href="./5.2#E1" mathvariant="normal" title="gamma function">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./5.1#t1.r4" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>.</p>
+</div>
+<div id="iii.p2" class="ltx_para">
+<p class="ltx_p">For rational approximations to <math class="ltx_Math" altimg="m19.png" altimg-height="25px" altimg-valign="-7px" altimg-width="86px" alttext="\psi\left(z\right)+\gamma" display="inline"><mrow><mrow><mi href="./5.2#E2" title="psi (or digamma) function">ψ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./5.1#t1.r4" title="complex variable">z</mi><mo>)</mo></mrow></mrow><mo>+</mo><mi href="./5.2#E3" title="Euler’s constant">γ</mi></mrow></math> see
+<cite class="ltx_cite ltx_citemacro_citet">Luke (<a href="./bib/L#bib1501" title="Mathematical Functions and their Approximations" class="ltx_ref">1975</a>, pp. 13–16)</cite>.</p>
+</div>
+</section>
+</section>
+</div>
+<div class="ltx_page_footer">
+<div class="ltx_siblings">
+<a href="./5.22" title="In Computation ‣ Chapter 5 Gamma Function" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">5.22 </span>Tables</span></a><a href="./5.24" title="In Computation ‣ Chapter 5 Gamma Function" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">5.24 </span>Software</span></a>
+</div>
+<div class="ltx_footer_links ltx_centering">
+<a href="./about/notices">© 2010–2026 NIST</a> / <a href="./about/notices#S2">Disclaimer</a> / <a href="/cdn-cgi/l/email-protection#86c2cacbc0abe0e3e3e2e4e7e5edc6e8eff5f2a8e1e9f0">Feedback</a>;
+ Version 1.2.7;
+Release date 2026-06-15.</div>
+<span id="pagesettings"></span>
+<div class="ltx_nist_logo"><a href="http://www.nist.gov/"><img src="./style/nistidc.png" width="500" alt="NIST"></a></div>
+<div class="ltx_nist_links ltx_align_right">
+<a href="https://www.nist.gov/privacy-policy">Site Privacy</a> <a href="https://www.nist.gov/oism/accessibility">Accessibility</a> <a href="https://www.nist.gov/privacy">Privacy Program</a> <a href="https://www.nist.gov/oism/copyrights">Copyrights</a> <a href="https://www.commerce.gov/vulnerability-disclosure-policy">Vulnerability Disclosure</a> <a href="https://www.nist.gov/no-fear-act-policy">No Fear Act Policy</a> <a href="https://www.nist.gov/foia">FOIA</a> <a href="https://www.nist.gov/environmental-policy-statement">Environmental Policy</a> <a href="https://www.nist.gov/summary-report-scientific-integrity">Scientific Integrity</a> <a href="https://www.nist.gov/nist-information-quality-standards">Information Quality Standards</a> <a href="https://www.commerce.gov/">Commerce.gov</a> <a href="http://www.science.gov/">Science.gov</a> <a href="http://www.usa.gov/">USA.gov</a>
+</div>
+</div>
+</div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a30b50a2fc6243fa',t:'MTc4NzY2ODQzOQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"9ef5b487afff42a68917b2d63593a474"}' crossorigin="anonymous"></script>
+</body>
+</html>

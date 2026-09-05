@@ -1,0 +1,1592 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>DLMF: §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles</title>
+<link rel="shortcut icon" href="./style/DLMF-16.png" type="image/png">
+<script type="text/javascript"><!--
+	var PATH="DLMF:/36.5";
+	var ROOT="./";
+      //--></script>
+<script type="text/javascript" src="./style/jquery.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/jquery.leaveNotice.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/DLMF.js"><!-- non-empty so ie6 will accept it --></script>
+<script async="" type="text/javascript" id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC&amp;subagency=NIST&amp;pua=UA-37115410-44&amp;yt=true&amp;exts=ppsx,pps,f90,sch,rtf,wrl,txz,m1v,xlsm,msi,xsd,f,tif,eps,mpg,xml,pl,xlt,c"><!-- non-empty so ie6 will accept it --></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-BZB64W4M0L"></script><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-BZB64W4M0L');
+      </script>
+<link rel="stylesheet" type="text/css" href="./style/LaTeXML.css">
+<link rel="stylesheet" type="text/css" href="./style/DLMF.css">
+<link rel="stylesheet" type="text/css" href="./style/print.css" media="print">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="top" href="./" title="DLMF">
+<link rel="copyright" href="./about/notices" title="Copyright">
+<link rel="search" href="./search/search" title="Search">
+<link rel="help" class="ltx_help" href="./help/" title="Help">
+<link rel="up" href="./36#PT2" title="Properties ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="up up" href="./36" title="Chapter 36 Integrals with Coalescing Saddles">
+<link rel="start" href="./" title="">
+<link rel="prev" href="./36.4" title="§36.4 Bifurcation Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="next" href="./36.6" title="§36.6 Scaling Relations ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="section" href="./36.1" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="section" href="./36.2" title="§36.2 Catastrophes and Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="section" href="./36.3" title="§36.3 Visualizations of Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="section" href="./36.4" title="§36.4 Bifurcation Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="section" href="./36.6" title="§36.6 Scaling Relations ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="section" href="./36.7" title="§36.7 Zeros ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="section" href="./36.8" title="§36.8 Convergent Series Expansions ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="section" href="./36.9" title="§36.9 Integral Identities ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="section" href="./36.10" title="§36.10 Differential Equations ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="section" href="./36.11" title="§36.11 Leading-Order Asymptotics ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="section" href="./36.12" title="§36.12 Uniform Approximation of Integrals ‣ Applications ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="section" href="./36.13" title="§36.13 Kelvin’s Ship-Wave Pattern ‣ Applications ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="section" href="./36.14" title="§36.14 Other Physical Applications ‣ Applications ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="section" href="./36.15" title="§36.15 Methods of Computation ‣ Computation ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="document" href="./front/foreword" title="Foreword">
+<link rel="document" href="./front/preface" title="Preface">
+<link rel="document" href="./front/introduction" title="Mathematical Introduction">
+<link rel="chapter" href="./1" title="Chapter 1 Algebraic and Analytic Methods">
+<link rel="chapter" href="./2" title="Chapter 2 Asymptotic Approximations">
+<link rel="chapter" href="./3" title="Chapter 3 Numerical Methods">
+<link rel="chapter" href="./4" title="Chapter 4 Elementary Functions">
+<link rel="chapter" href="./5" title="Chapter 5 Gamma Function">
+<link rel="chapter" href="./6" title="Chapter 6 Exponential, Logarithmic, Sine, and Cosine Integrals">
+<link rel="chapter" href="./7" title="Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="chapter" href="./8" title="Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="chapter" href="./9" title="Chapter 9 Airy and Related Functions">
+<link rel="chapter" href="./10" title="Chapter 10 Bessel Functions">
+<link rel="chapter" href="./11" title="Chapter 11 Struve and Related Functions">
+<link rel="chapter" href="./12" title="Chapter 12 Parabolic Cylinder Functions">
+<link rel="chapter" href="./13" title="Chapter 13 Confluent Hypergeometric Functions">
+<link rel="chapter" href="./14" title="Chapter 14 Legendre and Related Functions">
+<link rel="chapter" href="./15" title="Chapter 15 Hypergeometric Function">
+<link rel="chapter" href="./16" title="Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="chapter" href="./17" title="Chapter 17 𝑞-Hypergeometric and Related Functions">
+<link rel="chapter" href="./18" title="Chapter 18 Orthogonal Polynomials">
+<link rel="chapter" href="./19" title="Chapter 19 Elliptic Integrals">
+<link rel="chapter" href="./20" title="Chapter 20 Theta Functions">
+<link rel="chapter" href="./21" title="Chapter 21 Multidimensional Theta Functions">
+<link rel="chapter" href="./22" title="Chapter 22 Jacobian Elliptic Functions">
+<link rel="chapter" href="./23" title="Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="chapter" href="./24" title="Chapter 24 Bernoulli and Euler Polynomials">
+<link rel="chapter" href="./25" title="Chapter 25 Zeta and Related Functions">
+<link rel="chapter" href="./26" title="Chapter 26 Combinatorial Analysis">
+<link rel="chapter" href="./27" title="Chapter 27 Functions of Number Theory">
+<link rel="chapter" href="./28" title="Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="chapter" href="./29" title="Chapter 29 Lamé Functions">
+<link rel="chapter" href="./30" title="Chapter 30 Spheroidal Wave Functions">
+<link rel="chapter" href="./31" title="Chapter 31 Heun Functions">
+<link rel="chapter" href="./32" title="Chapter 32 Painlevé Transcendents">
+<link rel="chapter" href="./33" title="Chapter 33 Coulomb Functions">
+<link rel="chapter" href="./34" title="Chapter 34 3⁢𝑗,6⁢𝑗,9⁢𝑗 Symbols">
+<link rel="chapter" href="./35" title="Chapter 35 Functions of Matrix Argument">
+<link rel="chapter" href="./36" title="Chapter 36 Integrals with Coalescing Saddles">
+<link rel="bibliography" href="./bib/" title="Bibliography">
+<link rel="index" href="./idx/" title="Index">
+<link rel="glossary" href="./not/" title="Notations">
+<link rel="document" href="./lof/" title="List of Figures">
+<link rel="document" href="./lot/" title="List of Tables">
+<link rel="document" href="./software/" title="Software Index">
+<link rel="document" href="./errata/" title="Errata">
+<link rel="document" href="./help/" title="Need Help?">
+<link rel="document" href="./search/" title="Advanced Search">
+<link rel="document" href="./about/" title="About the Project">
+<link rel="sidebar" href="./36.5.F1.mag" title="Figure 36.5.1 ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="sidebar" href="./36.5.F2.mag" title="Figure 36.5.2 ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="sidebar" href="./36.5.F3.mag" title="Figure 36.5.3 ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="sidebar" href="./36.5.F4.mag" title="Figure 36.5.4 ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="sidebar" href="./36.5.F5.mag" title="Figure 36.5.5 ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="sidebar" href="./36.5.F6.mag" title="Figure 36.5.6 ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="sidebar" href="./36.5.F7.mag" title="Figure 36.5.7 ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="sidebar" href="./36.5.F8.mag" title="Figure 36.5.8 ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="sidebar" href="./36.5.F9.mag" title="Figure 36.5.9 ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles">
+<meta name="keywords" lang="en" content="Pearcey integral, Stokes sets, cusp catastophe, cuspoids, definitions, elliptic umbilic canonical integral, elliptic umbilic catastrophe, formula for Stokes set, formulas for Stokes set, hyperbolic umbilic canonical integral, hyperbolic umbilic catastrophe, picture of Stokes set, swallowtail canonical integral, swallowtail catastrophe, umbilics, visualizations">
+</head>
+<body class="color_default textfont_default titlefont_default fontsize_default navbar_default">
+<div class="ltx_page_navbar">
+<div class="ltx_page_navlogo"><a href="./" title="Digital Library of Mathematical Functions"><span>DLMF</span></a></div>
+<div class="ltx_page_navitems">
+<form method="get" action="./search/search">
+<ul>
+<li><a href="./idx/">Index</a></li>
+<li><a href="./not/">Notations</a></li>
+<li><small><input type="text" name="q" value="" size="6" class="ltx_page_navitem_search"><button type="submit">Search</button></small></li>
+<li><a href="./help/" class="ltx_help">Help?</a></li>
+<li><a href="./help/cite">Citing</a></li>
+<li><a href="./help/customize" class="ltx_customize">Customize</a></li>
+<li id="showinfo"><a href="" onclick="showInfo(); return false;" title="Show Annotations">Annotate</a></li>
+<li id="hideinfo"><a href="" onclick="hideInfo(); return false;">UnAnnotate</a></li>
+</ul>
+</form>
+</div>
+<div class="ltx_page_navsponsors">
+<div><a href="./about/" class="ltx_page_navabout">About the Project</a></div>
+</div>
+</div>
+<div class="ltx_page_main">
+<div class="ltx_page_header">
+<a href="./36" title="" class="ltx_ref" rel="up up"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">36 </span>Integrals with Coalescing Saddles</span></a><a href="./36#PT2" title="In Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title">Properties</span></a><a href="./36.4" title="In Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">36.4 </span>Bifurcation Sets</span></a><a href="./36.6" title="In Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">36.6 </span>Scaling Relations</span></a>
+</div>
+<div class="ltx_page_content">
+<section class="ltx_section ltx_authors_multiline ltx_leqno">
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">§36.5 </span>Stokes Sets</h1>
+<div id="info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Permalink:</dt>
+<dd><a href="./36.5" title="" class="ltx_ref">http://dlmf.nist.gov/36.5</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./36#info" title="Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.36</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<h6>Contents</h6>
+<ol class="ltx_toclist ltx_toclist_section">
+<li class="ltx_tocentry"><a href="#i"><span class="ltx_tag ltx_tag_subsection">§36.5(i) </span>Definitions</a></li>
+<li class="ltx_tocentry"><a href="#ii"><span class="ltx_tag ltx_tag_subsection">§36.5(ii) </span>Cuspoids</a></li>
+<li class="ltx_tocentry"><a href="#iii"><span class="ltx_tag ltx_tag_subsection">§36.5(iii) </span>Umbilics</a></li>
+<li class="ltx_tocentry"><a href="#iv"><span class="ltx_tag ltx_tag_subsection">§36.5(iv) </span>Visualizations</a></li>
+</ol>
+<section id="i" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§36.5(i) </span>Definitions</h2>
+<div id="i.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=Stokes%20sets">Stokes sets</a>, <a class="ltx_keyword" href="./search/search?q=definitions">definitions</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./36.5#iv.info" title="§36.5(iv) Visualizations ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5(iv)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./36.5.i" title="" class="ltx_ref">http://dlmf.nist.gov/36.5.i</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./36.5#info" title="§36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5</span></a> and
+<a href="./36#info" title="Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.36</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="i.p1" class="ltx_para">
+<p class="ltx_p">Stokes sets are surfaces (codimension one) in <math class="ltx_Math" altimg="m44.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="\mathbf{x}" display="inline"><mi>𝐱</mi></math> space, across which
+<math class="ltx_Math" altimg="m38.png" altimg-height="25px" altimg-valign="-7px" altimg-width="86px" alttext="\Psi_{K}(\mathbf{x};k)" display="inline"><mrow><msub><mi href="./36.2#E10" mathvariant="normal" title="diffraction catastrophe">Ψ</mi><mi href="./36.1#t1.r3" title="codimension">K</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>𝐱</mi><mo>;</mo><mi href="./36.1#t1.r2" title="variable">k</mi><mo stretchy="false">)</mo></mrow></mrow></math> or <math class="ltx_Math" altimg="m37.png" altimg-height="28px" altimg-valign="-7px" altimg-width="96px" alttext="\Psi^{(\mathrm{U})}(\mathbf{x};k)" display="inline"><mrow><msup><mi href="./36.2#E11" mathvariant="normal" title="umbilic canonical integral function">Ψ</mi><mrow><mo href="./36.2#E11" stretchy="false" title="umbilic canonical integral function">(</mo><mi href="./36.2#E11" mathvariant="normal" title="umbilic canonical integral function">U</mi><mo href="./36.2#E11" stretchy="false" title="umbilic canonical integral function">)</mo></mrow></msup><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>𝐱</mi><mo>;</mo><mi href="./36.1#t1.r2" title="variable">k</mi><mo stretchy="false">)</mo></mrow></mrow></math> acquires an
+exponentially-small asymptotic contribution (in <math class="ltx_Math" altimg="m50.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./36.1#t1.r2" title="variable">k</mi></math>), associated with a complex
+critical point of <math class="ltx_Math" altimg="m35.png" altimg-height="21px" altimg-valign="-5px" altimg-width="35px" alttext="\Phi_{K}" display="inline"><msub><mi href="./36.2#E1" mathvariant="normal" title="cuspoid catastrophe of codimension 𝐾">Φ</mi><mi href="./36.1#t1.r3" title="codimension">K</mi></msub></math> or <math class="ltx_Math" altimg="m33.png" altimg-height="23px" altimg-valign="-2px" altimg-width="46px" alttext="\Phi^{(\mathrm{U})}" display="inline"><msup><mi href="./36.2#Px2" mathvariant="normal" title='elliptic umbilic catastrophe for U=E⁢" or "⁢K'>Φ</mi><mrow><mo href="./36.2#Px2" stretchy="false" title='elliptic umbilic catastrophe for U=E⁢" or "⁢K'>(</mo><mi href="./36.2#Px2" mathvariant="normal" title='elliptic umbilic catastrophe for U=E⁢" or "⁢K'>U</mi><mo href="./36.2#Px2" stretchy="false" title='elliptic umbilic catastrophe for U=E⁢" or "⁢K'>)</mo></mrow></msup></math>. The Stokes sets are defined
+by the exponential dominance condition:</p>
+<table id="E1" class="ltx_equationgroup ltx_eqn_table">
+<tbody>
+<tr id="Ex1" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="2" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equationgroup ltx_align_left">36.5.1</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m19.png" altimg-height="99px" altimg-valign="-8px" altimg-width="176px" alttext="\displaystyle\Re\left(\Phi_{K}\left(t_{j}(\mathbf{x});\mathbf{x}\right)-\Phi_{%
+K}\left(t_{\mu}(\mathbf{x});\mathbf{x}\right)\right)" display="inline"><mrow><mi href="./1.9#E2" mathvariant="normal" title="real part">ℜ</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mrow><msub><mi href="./36.2#E1" mathvariant="normal" title="cuspoid catastrophe of codimension 𝐾">Φ</mi><mi href="./36.1#t1.r3" title="codimension">K</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mrow><msub><mi href="./36.4#Px1.p1" title="solutions">t</mi><mi href="./36.5#i.p1" title="real critical point">j</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>𝐱</mi><mo stretchy="false">)</mo></mrow></mrow><mo>;</mo><mi>𝐱</mi><mo>)</mo></mrow></mrow><mo>−</mo><mrow><msub><mi href="./36.2#E1" mathvariant="normal" title="cuspoid catastrophe of codimension 𝐾">Φ</mi><mi href="./36.1#t1.r3" title="codimension">K</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mrow><msub><mi href="./36.4#Px1.p1" title="solutions">t</mi><mi>μ</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>𝐱</mi><mo stretchy="false">)</mo></mrow></mrow><mo>;</mo><mi>𝐱</mi><mo>)</mo></mrow></mrow></mrow><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m3.png" altimg-height="23px" altimg-valign="-6px" altimg-width="45px" alttext="\displaystyle=0," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mn>0</mn></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex2" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m18.png" altimg-height="121px" altimg-valign="-15px" altimg-width="250px" alttext="\displaystyle\Re\left(\Phi^{(\mathrm{U})}\left(s_{j}(\mathbf{x}),t_{j}(\mathbf%
+{x});\mathbf{x}\right)-\Phi^{(\mathrm{U})}\left(s_{\mu}(\mathbf{x}),t_{\mu}(%
+\mathbf{x});\mathbf{x}\right)\right)" display="inline"><mrow><mi href="./1.9#E2" mathvariant="normal" title="real part">ℜ</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mrow><msup><mi href="./36.2#Px2" mathvariant="normal" title='elliptic umbilic catastrophe for U=E⁢" or "⁢K'>Φ</mi><mrow><mo href="./36.2#Px2" stretchy="false" title='elliptic umbilic catastrophe for U=E⁢" or "⁢K'>(</mo><mi href="./36.2#Px2" mathvariant="normal" title='elliptic umbilic catastrophe for U=E⁢" or "⁢K'>U</mi><mo href="./36.2#Px2" stretchy="false" title='elliptic umbilic catastrophe for U=E⁢" or "⁢K'>)</mo></mrow></msup><mo>⁡</mo><mrow><mo>(</mo><mrow><msub><mi href="./36.1#t1.r2" title="variable">s</mi><mi href="./36.5#i.p1" title="real critical point">j</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>𝐱</mi><mo stretchy="false">)</mo></mrow></mrow><mo>,</mo><mrow><msub><mi href="./36.4#Px1.p1" title="solutions">t</mi><mi href="./36.5#i.p1" title="real critical point">j</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>𝐱</mi><mo stretchy="false">)</mo></mrow></mrow><mo>;</mo><mi>𝐱</mi><mo>)</mo></mrow></mrow><mo>−</mo><mrow><msup><mi href="./36.2#Px2" mathvariant="normal" title='elliptic umbilic catastrophe for U=E⁢" or "⁢K'>Φ</mi><mrow><mo href="./36.2#Px2" stretchy="false" title='elliptic umbilic catastrophe for U=E⁢" or "⁢K'>(</mo><mi href="./36.2#Px2" mathvariant="normal" title='elliptic umbilic catastrophe for U=E⁢" or "⁢K'>U</mi><mo href="./36.2#Px2" stretchy="false" title='elliptic umbilic catastrophe for U=E⁢" or "⁢K'>)</mo></mrow></msup><mo>⁡</mo><mrow><mo>(</mo><mrow><msub><mi href="./36.1#t1.r2" title="variable">s</mi><mi>μ</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>𝐱</mi><mo stretchy="false">)</mo></mrow></mrow><mo>,</mo><mrow><msub><mi href="./36.4#Px1.p1" title="solutions">t</mi><mi>μ</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>𝐱</mi><mo stretchy="false">)</mo></mrow></mrow><mo>;</mo><mi>𝐱</mi><mo>)</mo></mrow></mrow></mrow><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m3.png" altimg-height="23px" altimg-valign="-6px" altimg-width="45px" alttext="\displaystyle=0," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mn>0</mn></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E1.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./36.2#E1" title="(36.2.1) ‣ Normal Forms Associated with Canonical Integrals: Cuspoid Catastrophe with Codimension 𝐾 ‣ §36.2(i) Definitions ‣ §36.2 Catastrophes and Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m36.png" altimg-height="25px" altimg-valign="-7px" altimg-width="84px" alttext="\Phi_{\NVar{K}}\left(\NVar{t};\NVar{\mathbf{x}}\right)" display="inline"><mrow><msub><mi href="./36.2#E1" mathvariant="normal" title="cuspoid catastrophe of codimension 𝐾">Φ</mi><mi class="ltx_nvar" href="./36.1#t1.r3" title="codimension">K</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./36.1#t1.r2" title="variable">t</mi><mo>;</mo><mi class="ltx_nvar">𝐱</mi><mo>)</mo></mrow></mrow></math>: cuspoid catastrophe of codimension <math class="ltx_Math" altimg="m27.png" altimg-height="18px" altimg-valign="-2px" altimg-width="23px" alttext="K" display="inline"><mi href="./36.1#t1.r3" title="codimension">K</mi></math></a>,
+<a href="./1.9#E2" title="(1.9.2) ‣ Real and Imaginary Parts ‣ §1.9(i) Complex Numbers ‣ §1.9 Calculus of a Complex Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m40.png" altimg-height="18px" altimg-valign="-2px" altimg-width="19px" alttext="\Re" display="inline"><mrow><mi href="./1.9#E2" mathvariant="normal" title="real part">ℜ</mi><mo>⁡</mo></mrow></math>: real part</a>,
+<a href="./36.2#Px2" title="Normal Forms for Umbilic Catastrophes with Codimension 𝐾=3 ‣ §36.2(i) Definitions ‣ §36.2 Catastrophes and Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m34.png" altimg-height="28px" altimg-valign="-7px" altimg-width="113px" alttext="\Phi^{(\mathrm{U})}\left(\NVar{s},\NVar{t};\NVar{\mathbf{x}}\right)" display="inline"><mrow><msup><mi href="./36.2#Px2" mathvariant="normal" title='elliptic umbilic catastrophe for U=E⁢" or "⁢K'>Φ</mi><mrow><mo href="./36.2#Px2" stretchy="false" title='elliptic umbilic catastrophe for U=E⁢" or "⁢K'>(</mo><mi href="./36.2#Px2" mathvariant="normal" title='elliptic umbilic catastrophe for U=E⁢" or "⁢K'>U</mi><mo href="./36.2#Px2" stretchy="false" title='elliptic umbilic catastrophe for U=E⁢" or "⁢K'>)</mo></mrow></msup><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./36.1#t1.r2" title="variable">s</mi><mo>,</mo><mi class="ltx_nvar" href="./36.1#t1.r2" title="variable">t</mi><mo>;</mo><mi class="ltx_nvar">𝐱</mi><mo>)</mo></mrow></mrow></math>: elliptic umbilic catastrophe for <math class="ltx_Math" altimg="m45.png" altimg-height="18px" altimg-valign="-2px" altimg-width="110px" alttext="\mathrm{U}=\mathrm{E}\mbox{ or }\mathrm{K}" display="inline"><mrow><mi mathvariant="normal">U</mi><mo>=</mo><mrow><mi mathvariant="normal">E</mi><mo>⁢</mo><mtext> or </mtext><mo>⁢</mo><mi mathvariant="normal">K</mi></mrow></mrow></math></a>,
+<a href="./36.1#t1.r2" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m52.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="s" display="inline"><mi href="./36.1#t1.r2" title="variable">s</mi></math>:  variable</a>,
+<a href="./36.1#t1.r3" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m27.png" altimg-height="18px" altimg-valign="-2px" altimg-width="23px" alttext="K" display="inline"><mi href="./36.1#t1.r3" title="codimension">K</mi></math>:  codimension</a>,
+<a href="./36.4#Px1.p1" title="Critical Points for Cuspoids ‣ §36.4(i) Formulas ‣ §36.4 Bifurcation Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m54.png" altimg-height="26px" altimg-valign="-8px" altimg-width="49px" alttext="t_{j}(\mathbf{x})" display="inline"><mrow><msub><mi href="./36.4#Px1.p1" title="solutions">t</mi><mi>j</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>𝐱</mi><mo stretchy="false">)</mo></mrow></mrow></math>:  solutions</a> and
+<a href="./36.5#i.p1" title="§36.5(i) Definitions ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m49.png" altimg-height="22px" altimg-valign="-6px" altimg-width="14px" alttext="j" display="inline"><mi href="./36.5#i.p1" title="real critical point">j</mi></math>:  real critical point</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./36.5#ii.info" title="§36.5(ii) Cuspoids ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5(ii)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./36.5.E1" title="" class="ltx_ref">http://dlmf.nist.gov/36.5.E1</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./36.5.E1a.tex">TeX</a>, <a href="./36.5.E1b.tex">TeX</a>, <a href="./36.5.E1a.pmml">pMML</a>, <a href="./36.5.E1b.pmml">pMML</a>, <a href="./36.5.E1a.png">png</a>, <a href="./36.5.E1b.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./36.5#i.info" title="§36.5(i) Definitions ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5(i)</span></a>,
+<a href="./36.5#info" title="§36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5</span></a> and
+<a href="./36#info" title="Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.36</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">where <math class="ltx_Math" altimg="m49.png" altimg-height="22px" altimg-valign="-6px" altimg-width="14px" alttext="j" display="inline"><mi href="./36.5#i.p1" title="real critical point">j</mi></math> denotes a real critical point (<a href="./36.4#E1" title="(36.4.1) ‣ Critical Points for Cuspoids ‣ §36.4(i) Formulas ‣ §36.4 Bifurcation Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">36.4.1</span></a>) or
+(<a href="./36.4#E2" title="(36.4.2) ‣ Critical Points for Umbilics ‣ §36.4(i) Formulas ‣ §36.4 Bifurcation Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">36.4.2</span></a>), and <math class="ltx_Math" altimg="m46.png" altimg-height="17px" altimg-valign="-6px" altimg-width="17px" alttext="\mu" display="inline"><mi>μ</mi></math> denotes a critical point with complex <math class="ltx_Math" altimg="m53.png" altimg-height="17px" altimg-valign="-2px" altimg-width="12px" alttext="t" display="inline"><mi href="./36.1#t1.r2" title="variable">t</mi></math> or
+<math class="ltx_Math" altimg="m51.png" altimg-height="21px" altimg-valign="-6px" altimg-width="31px" alttext="s,t" display="inline"><mrow><mi href="./36.1#t1.r2" title="variable">s</mi><mo>,</mo><mi href="./36.1#t1.r2" title="variable">t</mi></mrow></math>, connected with <math class="ltx_Math" altimg="m49.png" altimg-height="22px" altimg-valign="-6px" altimg-width="14px" alttext="j" display="inline"><mi href="./36.5#i.p1" title="real critical point">j</mi></math> by a steepest-descent path (that is, a path where
+<math class="ltx_Math" altimg="m39.png" altimg-height="18px" altimg-valign="-2px" altimg-width="139px" alttext="\Re\Phi=\mathrm{constant}" display="inline"><mrow><mrow><mi href="./1.9#E2" mathvariant="normal" title="real part">ℜ</mi><mo lspace="0.167em">⁡</mo><mi mathvariant="normal">Φ</mi></mrow><mo>=</mo><mi>constant</mi></mrow></math>) in complex <math class="ltx_Math" altimg="m53.png" altimg-height="17px" altimg-valign="-2px" altimg-width="12px" alttext="t" display="inline"><mi href="./36.1#t1.r2" title="variable">t</mi></math> or <math class="ltx_Math" altimg="m22.png" altimg-height="25px" altimg-valign="-7px" altimg-width="47px" alttext="(s,t)" display="inline"><mrow><mo href="./front/introduction#common.t1.r29" stretchy="false" title="open interval">(</mo><mi href="./36.1#t1.r2" title="variable">s</mi><mo href="./front/introduction#common.t1.r29" title="open interval">,</mo><mi href="./36.1#t1.r2" title="variable">t</mi><mo href="./front/introduction#common.t1.r29" stretchy="false" title="open interval">)</mo></mrow></math> space.</p>
+</div>
+<div id="i.p2" class="ltx_para">
+<p class="ltx_p">In the following subsections, only Stokes sets involving at least one real
+saddle are included unless stated otherwise.</p>
+</div>
+</section>
+<section id="ii" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§36.5(ii) </span>Cuspoids</h2>
+<div id="ii.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=Pearcey%20integral">Pearcey integral</a>, <a class="ltx_keyword" href="./search/search?q=Stokes%20sets">Stokes sets</a>, <a class="ltx_keyword" href="./search/search?q=cuspoids">cuspoids</a>, <a class="ltx_keyword" href="./search/search?q=formula%20for%20Stokes%20set">formula for Stokes set</a>, <a class="ltx_keyword" href="./search/search?q=formulas%20for%20Stokes%20set">formulas for Stokes set</a>, <a class="ltx_keyword" href="./search/search?q=swallowtail%20canonical%20integral">swallowtail canonical integral</a>
+</dd>
+<dt>Notes:</dt>
+<dd>See <cite class="ltx_cite ltx_citemacro_citet">Wright (<a href="./bib/W#bib2460" title="The Stokes set of the cusp diffraction catastrophe" class="ltx_ref">1980</a>)</cite>, <cite class="ltx_cite ltx_citemacro_citet">Berry and Howls (<a href="./bib/B#bib257" title="Stokes surfaces of diffraction catastrophes with codimension three" class="ltx_ref">1990</a>)</cite>.
+The common strategy employed in deriving the formulas in this subsection
+involves using the critical-point condition (<a href="./36.4#E1" title="(36.4.1) ‣ Critical Points for Cuspoids ‣ §36.4(i) Formulas ‣ §36.4 Bifurcation Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">36.4.1</span></a>) to reduce
+the order of the catastrophe polynomials in (<a href="./36.2#E1" title="(36.2.1) ‣ Normal Forms Associated with Canonical Integrals: Cuspoid Catastrophe with Codimension 𝐾 ‣ §36.2(i) Definitions ‣ §36.2 Catastrophes and Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">36.2.1</span></a>), then
+solving (<a href="./36.5#E1" title="(36.5.1) ‣ §36.5(i) Definitions ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">36.5.1</span></a>) for the imaginary part of the complex critical
+point in terms of the value of the real critical point, which is itself
+determined by (<a href="./36.4#E1" title="(36.4.1) ‣ Critical Points for Cuspoids ‣ §36.4(i) Formulas ‣ §36.4 Bifurcation Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">36.4.1</span></a>) and then used to generate the Stokes
+sets parametrically.</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./36.5#iii.info" title="§36.5(iii) Umbilics ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5(iii)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./36.5.ii" title="" class="ltx_ref">http://dlmf.nist.gov/36.5.ii</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./36.5#info" title="§36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5</span></a> and
+<a href="./36#info" title="Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.36</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<section id="Px1" class="ltx_paragraph">
+<h3 class="ltx_title ltx_title_paragraph">
+<math class="ltx_Math" altimg="m24.png" altimg-height="18px" altimg-valign="-2px" altimg-width="61px" alttext="K=1" display="inline"><mrow><mi href="./36.1#t1.r3" title="codimension">K</mi><mo>=</mo><mn>1</mn></mrow></math>. Airy Function</h3>
+<div id="Px1.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./36.5#ii.info" title="§36.5(ii) Cuspoids ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5(ii)</span></a>,
+<a href="./36.5#info" title="§36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5</span></a> and
+<a href="./36#info" title="Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.36</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="Px1.p1" class="ltx_para">
+<p class="ltx_p">The Stokes set consists of the rays <math class="ltx_Math" altimg="m47.png" altimg-height="25px" altimg-valign="-7px" altimg-width="130px" alttext="\operatorname{ph}x=\pm 2\pi/3" display="inline"><mrow><mrow><mi href="./1.9#E7" title="phase">ph</mi><mo lspace="0.167em">⁡</mo><mi href="./36.1#t1.r4" title="real parameter">x</mi></mrow><mo>=</mo><mrow><mo>±</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></mrow><mo>/</mo><mn>3</mn></mrow></mrow></mrow></math> in the complex
+<math class="ltx_Math" altimg="m61.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./36.1#t1.r4" title="real parameter">x</mi></math>-plane.</p>
+</div>
+</section>
+<section id="Px2" class="ltx_paragraph">
+<h3 class="ltx_title ltx_title_paragraph">
+<math class="ltx_Math" altimg="m25.png" altimg-height="18px" altimg-valign="-2px" altimg-width="61px" alttext="K=2" display="inline"><mrow><mi href="./36.1#t1.r3" title="codimension">K</mi><mo>=</mo><mn>2</mn></mrow></math>. Cusp</h3>
+<div id="Px2.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./36.5#ii.info" title="§36.5(ii) Cuspoids ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5(ii)</span></a>,
+<a href="./36.5#info" title="§36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5</span></a> and
+<a href="./36#info" title="Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.36</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="Px2.p1" class="ltx_para">
+<p class="ltx_p">The Stokes set is itself a cusped curve, connected to the cusp of the
+bifurcation set:</p>
+<table id="E2" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">36.5.2</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E2.png" altimg-height="72px" altimg-valign="-15px" altimg-width="325px" alttext="y^{3}=\tfrac{27}{4}\left(\sqrt{27}-5\right)x^{2}=1.32403x^{2}." display="block"><mrow><mrow><msup><mi href="./36.1#t1.r4" title="real parameter">y</mi><mn>3</mn></msup><mo>=</mo><mrow><mstyle displaystyle="false"><mfrac><mn>27</mn><mn>4</mn></mfrac></mstyle><mo>⁢</mo><mrow><mo>(</mo><mrow><msqrt><mn>27</mn></msqrt><mo>−</mo><mn>5</mn></mrow><mo>)</mo></mrow><mo>⁢</mo><msup><mi href="./36.1#t1.r4" title="real parameter">x</mi><mn>2</mn></msup></mrow><mo>=</mo><mrow><mn>1.32403</mn><mo>⁢</mo><msup><mi href="./36.1#t1.r4" title="real parameter">x</mi><mn>2</mn></msup></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E2.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./36.1#t1.r4" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m65.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="y" display="inline"><mi href="./36.1#t1.r4" title="real parameter">y</mi></math>:  real parameter</a> and
+<a href="./36.1#t1.r4" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m61.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./36.1#t1.r4" title="real parameter">x</mi></math>:  real parameter</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./36.5.E2" title="" class="ltx_ref">http://dlmf.nist.gov/36.5.E2</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./36.5.E2.tex">TeX</a>, <a href="./36.5.E2.pmml">pMML</a>, <a href="./36.5.E2.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./36.5#Px2.info" title="𝐾=2. Cusp ‣ §36.5(ii) Cuspoids ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5(ii)</span></a>,
+<a href="./36.5#ii.info" title="§36.5(ii) Cuspoids ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5(ii)</span></a>,
+<a href="./36.5#info" title="§36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5</span></a> and
+<a href="./36#info" title="Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.36</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="Px3" class="ltx_paragraph">
+<h3 class="ltx_title ltx_title_paragraph">
+<math class="ltx_Math" altimg="m26.png" altimg-height="18px" altimg-valign="-2px" altimg-width="61px" alttext="K=3" display="inline"><mrow><mi href="./36.1#t1.r3" title="codimension">K</mi><mo>=</mo><mn>3</mn></mrow></math>. Swallowtail</h3>
+<div id="Px3.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./36.5#ii.info" title="§36.5(ii) Cuspoids ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5(ii)</span></a>,
+<a href="./36.5#info" title="§36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5</span></a> and
+<a href="./36#info" title="Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.36</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="Px3.p1" class="ltx_para">
+<p class="ltx_p">The Stokes set takes different forms for <math class="ltx_Math" altimg="m67.png" altimg-height="17px" altimg-valign="-2px" altimg-width="53px" alttext="z=0" display="inline"><mrow><mi href="./36.1#t1.r4" title="real parameter">z</mi><mo>=</mo><mn>0</mn></mrow></math>, <math class="ltx_Math" altimg="m66.png" altimg-height="18px" altimg-valign="-3px" altimg-width="53px" alttext="z&lt;0" display="inline"><mrow><mi href="./36.1#t1.r4" title="real parameter">z</mi><mo>&lt;</mo><mn>0</mn></mrow></math>, and <math class="ltx_Math" altimg="m69.png" altimg-height="18px" altimg-valign="-3px" altimg-width="53px" alttext="z&gt;0" display="inline"><mrow><mi href="./36.1#t1.r4" title="real parameter">z</mi><mo>&gt;</mo><mn>0</mn></mrow></math>.</p>
+</div>
+<div id="Px3.p2" class="ltx_para">
+<p class="ltx_p">For <math class="ltx_Math" altimg="m67.png" altimg-height="17px" altimg-valign="-2px" altimg-width="53px" alttext="z=0" display="inline"><mrow><mi href="./36.1#t1.r4" title="real parameter">z</mi><mo>=</mo><mn>0</mn></mrow></math>, the set consists of the two curves</p>
+<table id="E3" class="ltx_equationgroup ltx_eqn_table">
+<tbody>
+<tr id="Ex3" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="2" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equationgroup ltx_align_left">36.5.3</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m21.png" altimg-height="15px" altimg-valign="-2px" altimg-width="18px" alttext="\displaystyle x" display="inline"><mi href="./36.1#t1.r4" title="real parameter">x</mi></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m8.png" altimg-height="31px" altimg-valign="-7px" altimg-width="113px" alttext="\displaystyle=B_{\pm}|y|^{4/3}," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><msub><mi>B</mi><mo>±</mo></msub><mo>⁢</mo><msup><mrow><mo stretchy="false">|</mo><mi href="./36.1#t1.r4" title="real parameter">y</mi><mo stretchy="false">|</mo></mrow><mrow><mn>4</mn><mo>/</mo><mn>3</mn></mrow></msup></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex4" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m14.png" altimg-height="25px" altimg-valign="-7px" altimg-width="36px" alttext="\displaystyle B_{\pm}" display="inline"><msub><mi>B</mi><mo>±</mo></msub></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m5.png" altimg-height="49px" altimg-valign="-15px" altimg-width="269px" alttext="\displaystyle=10^{-1/3}\left(2x_{\pm}^{4/3}-\tfrac{1}{2}x_{\pm}^{-2/3}\right)," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><msup><mn>10</mn><mrow><mo>−</mo><mrow><mn>1</mn><mo>/</mo><mn>3</mn></mrow></mrow></msup><mo>⁢</mo><mrow><mo>(</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><msubsup><mi href="./36.1#t1.r4" title="real parameter">x</mi><mo>±</mo><mrow><mn>4</mn><mo>/</mo><mn>3</mn></mrow></msubsup></mrow><mo>−</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><msubsup><mi href="./36.1#t1.r4" title="real parameter">x</mi><mo>±</mo><mrow><mo>−</mo><mrow><mn>2</mn><mo>/</mo><mn>3</mn></mrow></mrow></msubsup></mrow></mrow><mo>)</mo></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E3.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./36.1#t1.r4" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m65.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="y" display="inline"><mi href="./36.1#t1.r4" title="real parameter">y</mi></math>:  real parameter</a>,
+<a href="./36.1#t1.r4" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m63.png" altimg-height="16px" altimg-valign="-5px" altimg-width="23px" alttext="x_{i}" display="inline"><msub><mi href="./36.1#t1.r4" title="real parameter">x</mi><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></msub></math>:  real parameter</a> and
+<a href="./36.1#t1.r4" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m61.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./36.1#t1.r4" title="real parameter">x</mi></math>:  real parameter</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./36.5.E3" title="" class="ltx_ref">http://dlmf.nist.gov/36.5.E3</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./36.5.E3a.tex">TeX</a>, <a href="./36.5.E3b.tex">TeX</a>, <a href="./36.5.E3a.pmml">pMML</a>, <a href="./36.5.E3b.pmml">pMML</a>, <a href="./36.5.E3a.png">png</a>, <a href="./36.5.E3b.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./36.5#Px3.info" title="𝐾=3. Swallowtail ‣ §36.5(ii) Cuspoids ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5(ii)</span></a>,
+<a href="./36.5#ii.info" title="§36.5(ii) Cuspoids ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5(ii)</span></a>,
+<a href="./36.5#info" title="§36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5</span></a> and
+<a href="./36#info" title="Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.36</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">where <math class="ltx_Math" altimg="m62.png" altimg-height="18px" altimg-valign="-7px" altimg-width="30px" alttext="x_{\pm}" display="inline"><msub><mi href="./36.1#t1.r4" title="real parameter">x</mi><mo>±</mo></msub></math> are the two smallest positive roots of the equation</p>
+<table id="E4" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">36.5.4</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E4.png" altimg-height="28px" altimg-valign="-6px" altimg-width="378px" alttext="80x^{5}-40x^{4}-55x^{3}+5x^{2}+20x-1=0," display="block"><mrow><mrow><mrow><mrow><mrow><mrow><mn>80</mn><mo>⁢</mo><msup><mi href="./36.1#t1.r4" title="real parameter">x</mi><mn>5</mn></msup></mrow><mo>−</mo><mrow><mn>40</mn><mo>⁢</mo><msup><mi href="./36.1#t1.r4" title="real parameter">x</mi><mn>4</mn></msup></mrow><mo>−</mo><mrow><mn>55</mn><mo>⁢</mo><msup><mi href="./36.1#t1.r4" title="real parameter">x</mi><mn>3</mn></msup></mrow></mrow><mo>+</mo><mrow><mn>5</mn><mo>⁢</mo><msup><mi href="./36.1#t1.r4" title="real parameter">x</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mn>20</mn><mo>⁢</mo><mi href="./36.1#t1.r4" title="real parameter">x</mi></mrow></mrow><mo>−</mo><mn>1</mn></mrow><mo>=</mo><mn>0</mn></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E4.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd><a href="./36.1#t1.r4" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m61.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./36.1#t1.r4" title="real parameter">x</mi></math>:  real parameter</a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./36.5.E4" title="" class="ltx_ref">http://dlmf.nist.gov/36.5.E4</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./36.5.E4.tex">TeX</a>, <a href="./36.5.E4.pmml">pMML</a>, <a href="./36.5.E4.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./36.5#Px3.info" title="𝐾=3. Swallowtail ‣ §36.5(ii) Cuspoids ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5(ii)</span></a>,
+<a href="./36.5#ii.info" title="§36.5(ii) Cuspoids ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5(ii)</span></a>,
+<a href="./36.5#info" title="§36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5</span></a> and
+<a href="./36#info" title="Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.36</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">and</p>
+<table id="E5" class="ltx_equationgroup ltx_eqn_table">
+<tbody>
+<tr id="Ex5" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="2" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equationgroup ltx_align_left">36.5.5</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m13.png" altimg-height="25px" altimg-valign="-7px" altimg-width="36px" alttext="\displaystyle B_{-}" display="inline"><msub><mi>B</mi><mo>−</mo></msub></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m2.png" altimg-height="23px" altimg-valign="-6px" altimg-width="118px" alttext="\displaystyle=-1.69916," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mo>−</mo><mn>1.69916</mn></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex6" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m12.png" altimg-height="25px" altimg-valign="-7px" altimg-width="36px" alttext="\displaystyle B_{+}" display="inline"><msub><mi>B</mi><mo>+</mo></msub></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m4.png" altimg-height="19px" altimg-valign="-2px" altimg-width="102px" alttext="\displaystyle=0.33912." display="inline"><mrow><mrow><mi></mi><mo>=</mo><mn>0.33912</mn></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E5.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Permalink:</dt>
+<dd><a href="./36.5.E5" title="" class="ltx_ref">http://dlmf.nist.gov/36.5.E5</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./36.5.E5a.tex">TeX</a>, <a href="./36.5.E5b.tex">TeX</a>, <a href="./36.5.E5a.pmml">pMML</a>, <a href="./36.5.E5b.pmml">pMML</a>, <a href="./36.5.E5a.png">png</a>, <a href="./36.5.E5b.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./36.5#Px3.info" title="𝐾=3. Swallowtail ‣ §36.5(ii) Cuspoids ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5(ii)</span></a>,
+<a href="./36.5#ii.info" title="§36.5(ii) Cuspoids ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5(ii)</span></a>,
+<a href="./36.5#info" title="§36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5</span></a> and
+<a href="./36#info" title="Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.36</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+<div id="Px3.p3" class="ltx_para">
+<p class="ltx_p">For <math class="ltx_Math" altimg="m71.png" altimg-height="22px" altimg-valign="-6px" altimg-width="53px" alttext="z\neq 0" display="inline"><mrow><mi href="./36.1#t1.r4" title="real parameter">z</mi><mo>≠</mo><mn>0</mn></mrow></math>, the Stokes set is expressed in terms of scaled coordinates</p>
+<table id="E6" class="ltx_equationgroup ltx_eqn_table">
+<tbody>
+<tr id="Ex7" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="2" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equationgroup ltx_align_left">36.5.6</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m15.png" altimg-height="20px" altimg-valign="-2px" altimg-width="25px" alttext="\displaystyle X" display="inline"><mi href="./36.5#E6" title="scaled coordinate">X</mi></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m10.png" altimg-height="29px" altimg-valign="-7px" altimg-width="76px" alttext="\displaystyle=x/z^{2}," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mi href="./36.1#t1.r4" title="real parameter">x</mi><mo>/</mo><msup><mi href="./36.1#t1.r4" title="real parameter">z</mi><mn>2</mn></msup></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex8" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m17.png" altimg-height="20px" altimg-valign="-2px" altimg-width="23px" alttext="\displaystyle Y" display="inline"><mi href="./36.5#E6" title="scaled coordinate">Y</mi></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m11.png" altimg-height="31px" altimg-valign="-7px" altimg-width="104px" alttext="\displaystyle=y/|z|^{3/2}," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mi href="./36.1#t1.r4" title="real parameter">y</mi><mo>/</mo><msup><mrow><mo stretchy="false">|</mo><mi href="./36.1#t1.r4" title="real parameter">z</mi><mo stretchy="false">|</mo></mrow><mrow><mn>3</mn><mo>/</mo><mn>2</mn></mrow></msup></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E6.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Defines:</dt>
+<dd>
+<span class="ltx_text"><math class="ltx_Math" altimg="m29.png" altimg-height="18px" altimg-valign="-2px" altimg-width="23px" alttext="X" display="inline"><mi href="./36.5#E6" title="scaled coordinate">X</mi></math>:  scaled coordinate (locally)</span> and
+<span class="ltx_text"><math class="ltx_Math" altimg="m31.png" altimg-height="18px" altimg-valign="-2px" altimg-width="21px" alttext="Y" display="inline"><mi href="./36.5#E6" title="scaled coordinate">Y</mi></math>:  scaled coordinate (locally)</span>
+</dd>
+<dt>Symbols:</dt>
+<dd>
+<a href="./36.1#t1.r4" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m65.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="y" display="inline"><mi href="./36.1#t1.r4" title="real parameter">y</mi></math>:  real parameter</a>,
+<a href="./36.1#t1.r4" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m70.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi href="./36.1#t1.r4" title="real parameter">z</mi></math>:  real parameter</a> and
+<a href="./36.1#t1.r4" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m61.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./36.1#t1.r4" title="real parameter">x</mi></math>:  real parameter</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./36.5#Px3.p5" title="𝐾=3. Swallowtail ‣ §36.5(ii) Cuspoids ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5(ii)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./36.5.E6" title="" class="ltx_ref">http://dlmf.nist.gov/36.5.E6</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./36.5.E6a.tex">TeX</a>, <a href="./36.5.E6b.tex">TeX</a>, <a href="./36.5.E6a.pmml">pMML</a>, <a href="./36.5.E6b.pmml">pMML</a>, <a href="./36.5.E6a.png">png</a>, <a href="./36.5.E6b.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./36.5#Px3.info" title="𝐾=3. Swallowtail ‣ §36.5(ii) Cuspoids ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5(ii)</span></a>,
+<a href="./36.5#ii.info" title="§36.5(ii) Cuspoids ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5(ii)</span></a>,
+<a href="./36.5#info" title="§36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5</span></a> and
+<a href="./36#info" title="Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.36</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">by</p>
+<table id="E7" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">36.5.7</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E7.png" altimg-height="72px" altimg-valign="-16px" altimg-width="354px" alttext="X=\dfrac{9}{20}+20u^{4}-\frac{Y^{2}}{20u^{2}}+6u^{2}\operatorname{sign}\left(z%
+\right)," display="block"><mrow><mrow><mi href="./36.5#E6" title="scaled coordinate">X</mi><mo>=</mo><mrow><mrow><mrow><mfrac><mn>9</mn><mn>20</mn></mfrac><mo>+</mo><mrow><mn>20</mn><mo>⁢</mo><msup><mi>u</mi><mn>4</mn></msup></mrow></mrow><mo>−</mo><mfrac><msup><mi href="./36.5#E6" title="scaled coordinate">Y</mi><mn>2</mn></msup><mrow><mn>20</mn><mo>⁢</mo><msup><mi>u</mi><mn>2</mn></msup></mrow></mfrac></mrow><mo>+</mo><mrow><mn>6</mn><mo>⁢</mo><msup><mi>u</mi><mn>2</mn></msup><mo lspace="0.167em">⁢</mo><mrow><mi href="./front/introduction#common.t2.r18" title="sign of">sign</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./36.1#t1.r4" title="real parameter">z</mi><mo>)</mo></mrow></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E7.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./front/introduction#common.t2.r18" title="Common Notations and Definitions ‣ Mathematical Introduction" class="ltx_ref"><math class="ltx_Math" altimg="m48.png" altimg-height="22px" altimg-valign="-6px" altimg-width="55px" alttext="\operatorname{sign}\NVar{x}" display="inline"><mrow><mi href="./front/introduction#common.t2.r18" title="sign of">sign</mi><mo lspace="0.167em">⁡</mo><mi class="ltx_nvar">x</mi></mrow></math>: sign of</a>,
+<a href="./36.1#t1.r4" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m70.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi href="./36.1#t1.r4" title="real parameter">z</mi></math>:  real parameter</a>,
+<a href="./36.5#E6" title="(36.5.6) ‣ 𝐾=3. Swallowtail ‣ §36.5(ii) Cuspoids ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m29.png" altimg-height="18px" altimg-valign="-2px" altimg-width="23px" alttext="X" display="inline"><mi href="./36.5#E6" title="scaled coordinate">X</mi></math>:  scaled coordinate</a> and
+<a href="./36.5#E6" title="(36.5.6) ‣ 𝐾=3. Swallowtail ‣ §36.5(ii) Cuspoids ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m31.png" altimg-height="18px" altimg-valign="-2px" altimg-width="21px" alttext="Y" display="inline"><mi href="./36.5#E6" title="scaled coordinate">Y</mi></math>:  scaled coordinate</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./36.5.E7" title="" class="ltx_ref">http://dlmf.nist.gov/36.5.E7</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./36.5.E7.tex">TeX</a>, <a href="./36.5.E7.pmml">pMML</a>, <a href="./36.5.E7.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./36.5#Px3.info" title="𝐾=3. Swallowtail ‣ §36.5(ii) Cuspoids ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5(ii)</span></a>,
+<a href="./36.5#ii.info" title="§36.5(ii) Cuspoids ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5(ii)</span></a>,
+<a href="./36.5#info" title="§36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5</span></a> and
+<a href="./36#info" title="Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.36</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">where <math class="ltx_Math" altimg="m56.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="u" display="inline"><mi>u</mi></math> satisfies the equation</p>
+<table id="E8" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">36.5.8</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E8.png" altimg-height="135px" altimg-valign="-16px" altimg-width="312px" alttext="16u^{5}-\frac{Y^{2}}{10u}+4u^{3}\operatorname{sign}\left(z\right)-\frac{3}{10}%
+|Y|\operatorname{sign}\left(z\right)+4t^{5}+2t^{3}\operatorname{sign}\left(z%
+\right)+|Y|t^{2}=0," display="block"><mrow><mrow><mrow><mrow><mrow><mrow><mrow><mn>16</mn><mo>⁢</mo><msup><mi>u</mi><mn>5</mn></msup></mrow><mo>−</mo><mfrac><msup><mi href="./36.5#E6" title="scaled coordinate">Y</mi><mn>2</mn></msup><mrow><mn>10</mn><mo>⁢</mo><mi>u</mi></mrow></mfrac></mrow><mo>+</mo><mrow><mn>4</mn><mo>⁢</mo><msup><mi>u</mi><mn>3</mn></msup><mo lspace="0.167em">⁢</mo><mrow><mi href="./front/introduction#common.t2.r18" title="sign of">sign</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./36.1#t1.r4" title="real parameter">z</mi><mo>)</mo></mrow></mrow></mrow></mrow><mo>−</mo><mrow><mfrac><mn>3</mn><mn>10</mn></mfrac><mo>⁢</mo><mrow><mo stretchy="false">|</mo><mi href="./36.5#E6" title="scaled coordinate">Y</mi><mo stretchy="false">|</mo></mrow><mo lspace="0.167em">⁢</mo><mrow><mi href="./front/introduction#common.t2.r18" title="sign of">sign</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./36.1#t1.r4" title="real parameter">z</mi><mo>)</mo></mrow></mrow></mrow></mrow><mo>+</mo><mrow><mn>4</mn><mo>⁢</mo><msup><mi href="./36.1#t1.r2" title="variable">t</mi><mn>5</mn></msup></mrow><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><msup><mi href="./36.1#t1.r2" title="variable">t</mi><mn>3</mn></msup><mo lspace="0.167em">⁢</mo><mrow><mi href="./front/introduction#common.t2.r18" title="sign of">sign</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./36.1#t1.r4" title="real parameter">z</mi><mo>)</mo></mrow></mrow></mrow><mo>+</mo><mrow><mrow><mo stretchy="false">|</mo><mi href="./36.5#E6" title="scaled coordinate">Y</mi><mo stretchy="false">|</mo></mrow><mo>⁢</mo><msup><mi href="./36.1#t1.r2" title="variable">t</mi><mn>2</mn></msup></mrow></mrow><mo>=</mo><mn>0</mn></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E8.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./front/introduction#common.t2.r18" title="Common Notations and Definitions ‣ Mathematical Introduction" class="ltx_ref"><math class="ltx_Math" altimg="m48.png" altimg-height="22px" altimg-valign="-6px" altimg-width="55px" alttext="\operatorname{sign}\NVar{x}" display="inline"><mrow><mi href="./front/introduction#common.t2.r18" title="sign of">sign</mi><mo lspace="0.167em">⁡</mo><mi class="ltx_nvar">x</mi></mrow></math>: sign of</a>,
+<a href="./36.1#t1.r4" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m70.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi href="./36.1#t1.r4" title="real parameter">z</mi></math>:  real parameter</a>,
+<a href="./36.1#t1.r2" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m53.png" altimg-height="17px" altimg-valign="-2px" altimg-width="12px" alttext="t" display="inline"><mi href="./36.1#t1.r2" title="variable">t</mi></math>:  variable</a> and
+<a href="./36.5#E6" title="(36.5.6) ‣ 𝐾=3. Swallowtail ‣ §36.5(ii) Cuspoids ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m31.png" altimg-height="18px" altimg-valign="-2px" altimg-width="21px" alttext="Y" display="inline"><mi href="./36.5#E6" title="scaled coordinate">Y</mi></math>:  scaled coordinate</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./36.5.E8" title="" class="ltx_ref">http://dlmf.nist.gov/36.5.E8</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./36.5.E8.tex">TeX</a>, <a href="./36.5.E8.pmml">pMML</a>, <a href="./36.5.E8.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./36.5#Px3.info" title="𝐾=3. Swallowtail ‣ §36.5(ii) Cuspoids ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5(ii)</span></a>,
+<a href="./36.5#ii.info" title="§36.5(ii) Cuspoids ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5(ii)</span></a>,
+<a href="./36.5#info" title="§36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5</span></a> and
+<a href="./36#info" title="Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.36</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">in which</p>
+<table id="E9" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">36.5.9</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E9.png" altimg-height="110px" altimg-valign="-22px" altimg-width="359px" alttext="t=-u+\left(\dfrac{|Y|}{10u}-u^{2}-\dfrac{3}{10}\operatorname{sign}\left(z%
+\right)\right)^{1/2}." display="block"><mrow><mrow><mi href="./36.1#t1.r2" title="variable">t</mi><mo>=</mo><mrow><mrow><mo>−</mo><mi>u</mi></mrow><mo>+</mo><msup><mrow><mo>(</mo><mrow><mfrac><mrow><mo stretchy="false">|</mo><mi href="./36.5#E6" title="scaled coordinate">Y</mi><mo stretchy="false">|</mo></mrow><mrow><mn>10</mn><mo>⁢</mo><mi>u</mi></mrow></mfrac><mo>−</mo><msup><mi>u</mi><mn>2</mn></msup><mo>−</mo><mrow><mfrac><mn>3</mn><mn>10</mn></mfrac><mo lspace="0.167em">⁢</mo><mrow><mi href="./front/introduction#common.t2.r18" title="sign of">sign</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./36.1#t1.r4" title="real parameter">z</mi><mo>)</mo></mrow></mrow></mrow></mrow><mo>)</mo></mrow><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msup></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E9.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./front/introduction#common.t2.r18" title="Common Notations and Definitions ‣ Mathematical Introduction" class="ltx_ref"><math class="ltx_Math" altimg="m48.png" altimg-height="22px" altimg-valign="-6px" altimg-width="55px" alttext="\operatorname{sign}\NVar{x}" display="inline"><mrow><mi href="./front/introduction#common.t2.r18" title="sign of">sign</mi><mo lspace="0.167em">⁡</mo><mi class="ltx_nvar">x</mi></mrow></math>: sign of</a>,
+<a href="./36.1#t1.r4" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m70.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi href="./36.1#t1.r4" title="real parameter">z</mi></math>:  real parameter</a>,
+<a href="./36.1#t1.r2" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m53.png" altimg-height="17px" altimg-valign="-2px" altimg-width="12px" alttext="t" display="inline"><mi href="./36.1#t1.r2" title="variable">t</mi></math>:  variable</a> and
+<a href="./36.5#E6" title="(36.5.6) ‣ 𝐾=3. Swallowtail ‣ §36.5(ii) Cuspoids ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m31.png" altimg-height="18px" altimg-valign="-2px" altimg-width="21px" alttext="Y" display="inline"><mi href="./36.5#E6" title="scaled coordinate">Y</mi></math>:  scaled coordinate</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./36.5#Px3.p5" title="𝐾=3. Swallowtail ‣ §36.5(ii) Cuspoids ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5(ii)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./36.5.E9" title="" class="ltx_ref">http://dlmf.nist.gov/36.5.E9</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./36.5.E9.tex">TeX</a>, <a href="./36.5.E9.pmml">pMML</a>, <a href="./36.5.E9.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./36.5#Px3.info" title="𝐾=3. Swallowtail ‣ §36.5(ii) Cuspoids ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5(ii)</span></a>,
+<a href="./36.5#ii.info" title="§36.5(ii) Cuspoids ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5(ii)</span></a>,
+<a href="./36.5#info" title="§36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5</span></a> and
+<a href="./36#info" title="Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.36</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+<div id="Px3.p4" class="ltx_para">
+<p class="ltx_p">For <math class="ltx_Math" altimg="m66.png" altimg-height="18px" altimg-valign="-3px" altimg-width="53px" alttext="z&lt;0" display="inline"><mrow><mi href="./36.1#t1.r4" title="real parameter">z</mi><mo>&lt;</mo><mn>0</mn></mrow></math>, there are two solutions <math class="ltx_Math" altimg="m56.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="u" display="inline"><mi>u</mi></math>, provided that <math class="ltx_Math" altimg="m75.png" altimg-height="30px" altimg-valign="-9px" altimg-width="116px" alttext="|Y|&gt;(\frac{2}{5})^{1/2}" display="inline"><mrow><mrow><mo stretchy="false">|</mo><mi href="./36.5#E6" title="scaled coordinate">Y</mi><mo stretchy="false">|</mo></mrow><mo>&gt;</mo><msup><mrow><mo stretchy="false">(</mo><mfrac><mn>2</mn><mn>5</mn></mfrac><mo stretchy="false">)</mo></mrow><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msup></mrow></math>.
+They generate a pair of cusp-edged sheets connected to the cusped sheets of the
+swallowtail bifurcation set (§<a href="./36.4" title="§36.4 Bifurcation Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">36.4</span></a>).</p>
+</div>
+<div id="Px3.p5" class="ltx_para">
+<p class="ltx_p">For <math class="ltx_Math" altimg="m69.png" altimg-height="18px" altimg-valign="-3px" altimg-width="53px" alttext="z&gt;0" display="inline"><mrow><mi href="./36.1#t1.r4" title="real parameter">z</mi><mo>&gt;</mo><mn>0</mn></mrow></math> the Stokes set has two sheets. The first sheet corresponds to
+<math class="ltx_Math" altimg="m58.png" altimg-height="18px" altimg-valign="-3px" altimg-width="54px" alttext="x&lt;0" display="inline"><mrow><mi href="./36.1#t1.r4" title="real parameter">x</mi><mo>&lt;</mo><mn>0</mn></mrow></math> and is generated as a solution of Equations (<a href="./36.5#E6" title="(36.5.6) ‣ 𝐾=3. Swallowtail ‣ §36.5(ii) Cuspoids ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">36.5.6</span></a>)–(<a href="./36.5#E9" title="(36.5.9) ‣ 𝐾=3. Swallowtail ‣ §36.5(ii) Cuspoids ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">36.5.9</span></a>).
+The second sheet corresponds to <math class="ltx_Math" altimg="m60.png" altimg-height="18px" altimg-valign="-3px" altimg-width="54px" alttext="x&gt;0" display="inline"><mrow><mi href="./36.1#t1.r4" title="real parameter">x</mi><mo>&gt;</mo><mn>0</mn></mrow></math> and it intersects
+the bifurcation set (§<a href="./36.4" title="§36.4 Bifurcation Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">36.4</span></a>) smoothly along the line generated by
+<math class="ltx_Math" altimg="m28.png" altimg-height="21px" altimg-valign="-5px" altimg-width="173px" alttext="X=X_{1}=6.95643" display="inline"><mrow><mi href="./36.5#E6" title="scaled coordinate">X</mi><mo>=</mo><msub><mi href="./36.5#E6" title="scaled coordinate">X</mi><mn>1</mn></msub><mo>=</mo><mn>6.95643</mn></mrow></math>, <math class="ltx_Math" altimg="m42.png" altimg-height="25px" altimg-valign="-7px" altimg-width="189px" alttext="\left|Y\right|=\left|Y_{1}\right|=6.81337" display="inline"><mrow><mrow><mo>|</mo><mi href="./36.5#E6" title="scaled coordinate">Y</mi><mo>|</mo></mrow><mo>=</mo><mrow><mo>|</mo><msub><mi href="./36.5#E6" title="scaled coordinate">Y</mi><mn>1</mn></msub><mo>|</mo></mrow><mo>=</mo><mn>6.81337</mn></mrow></math>. For <math class="ltx_Math" altimg="m43.png" altimg-height="25px" altimg-valign="-7px" altimg-width="82px" alttext="\left|Y\right|&gt;Y_{1}" display="inline"><mrow><mrow><mo>|</mo><mi href="./36.5#E6" title="scaled coordinate">Y</mi><mo>|</mo></mrow><mo>&gt;</mo><msub><mi href="./36.5#E6" title="scaled coordinate">Y</mi><mn>1</mn></msub></mrow></math> the
+second sheet is generated by a second solution of (<a href="./36.5#E6" title="(36.5.6) ‣ 𝐾=3. Swallowtail ‣ §36.5(ii) Cuspoids ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">36.5.6</span></a>)–(<a href="./36.5#E9" title="(36.5.9) ‣ 𝐾=3. Swallowtail ‣ §36.5(ii) Cuspoids ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">36.5.9</span></a>),
+and for <math class="ltx_Math" altimg="m41.png" altimg-height="25px" altimg-valign="-7px" altimg-width="82px" alttext="\left|Y\right|&lt;Y_{1}" display="inline"><mrow><mrow><mo>|</mo><mi href="./36.5#E6" title="scaled coordinate">Y</mi><mo>|</mo></mrow><mo>&lt;</mo><msub><mi href="./36.5#E6" title="scaled coordinate">Y</mi><mn>1</mn></msub></mrow></math> it is generated by the roots of
+the polynomial equation</p>
+<table id="E10" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">36.5.10</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E10.png" altimg-height="26px" altimg-valign="-4px" altimg-width="186px" alttext="160u^{6}+40u^{4}=Y^{2}." display="block"><mrow><mrow><mrow><mrow><mn>160</mn><mo>⁢</mo><msup><mi>u</mi><mn>6</mn></msup></mrow><mo>+</mo><mrow><mn>40</mn><mo>⁢</mo><msup><mi>u</mi><mn>4</mn></msup></mrow></mrow><mo>=</mo><msup><mi href="./36.5#E6" title="scaled coordinate">Y</mi><mn>2</mn></msup></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E10.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd><a href="./36.5#E6" title="(36.5.6) ‣ 𝐾=3. Swallowtail ‣ §36.5(ii) Cuspoids ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m31.png" altimg-height="18px" altimg-valign="-2px" altimg-width="21px" alttext="Y" display="inline"><mi href="./36.5#E6" title="scaled coordinate">Y</mi></math>:  scaled coordinate</a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./36.5.E10" title="" class="ltx_ref">http://dlmf.nist.gov/36.5.E10</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./36.5.E10.tex">TeX</a>, <a href="./36.5.E10.pmml">pMML</a>, <a href="./36.5.E10.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./36.5#Px3.info" title="𝐾=3. Swallowtail ‣ §36.5(ii) Cuspoids ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5(ii)</span></a>,
+<a href="./36.5#ii.info" title="§36.5(ii) Cuspoids ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5(ii)</span></a>,
+<a href="./36.5#info" title="§36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5</span></a> and
+<a href="./36#info" title="Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.36</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+<section id="iii" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§36.5(iii) </span>Umbilics</h2>
+<div id="iii.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=Stokes%20sets">Stokes sets</a>, <a class="ltx_keyword" href="./search/search?q=elliptic%20umbilic%20canonical%20integral">elliptic umbilic canonical integral</a>, <a class="ltx_keyword" href="./search/search?q=formulas%20for%20Stokes%20set">formulas for Stokes set</a>, <a class="ltx_keyword" href="./search/search?q=hyperbolic%20umbilic%20canonical%20integral">hyperbolic umbilic canonical integral</a>, <a class="ltx_keyword" href="./search/search?q=umbilics">umbilics</a>
+</dd>
+<dt>Notes:</dt>
+<dd>See <cite class="ltx_cite ltx_citemacro_citet">Berry and Howls (<a href="./bib/B#bib257" title="Stokes surfaces of diffraction catastrophes with codimension three" class="ltx_ref">1990</a>)</cite>.
+The strategy used to derive the formulas in this subsection is the same
+as in §<a href="./36.5#ii" title="§36.5(ii) Cuspoids ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">36.5(ii)</span></a>, but using the exponents in the
+representations (<a href="./36.2#E6" title="(36.2.6) ‣ Canonical Integrals ‣ §36.2(i) Definitions ‣ §36.2 Catastrophes and Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">36.2.6</span></a>) and (<a href="./36.2#E8" title="(36.2.8) ‣ Canonical Integrals ‣ §36.2(i) Definitions ‣ §36.2 Catastrophes and Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">36.2.8</span></a>).</dd>
+<dt>Permalink:</dt>
+<dd><a href="./36.5.iii" title="" class="ltx_ref">http://dlmf.nist.gov/36.5.iii</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./36.5#info" title="§36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5</span></a> and
+<a href="./36#info" title="Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.36</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<section id="Px4" class="ltx_paragraph">
+<h3 class="ltx_title ltx_title_paragraph">Elliptic Umbilic Stokes Set (Codimension three)</h3>
+<div id="Px4.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./36.5#iii.info" title="§36.5(iii) Umbilics ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5(iii)</span></a>,
+<a href="./36.5#info" title="§36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5</span></a> and
+<a href="./36#info" title="Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.36</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="Px4.p1" class="ltx_para">
+<p class="ltx_p">This consists of three separate cusp-edged sheets connected to the cusp-edged
+sheets of the bifurcation set, and related by rotation about the <math class="ltx_Math" altimg="m70.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi href="./36.1#t1.r4" title="real parameter">z</mi></math>-axis by
+<math class="ltx_Math" altimg="m23.png" altimg-height="25px" altimg-valign="-7px" altimg-width="48px" alttext="2\pi/3" display="inline"><mrow><mrow><mn>2</mn><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></mrow><mo>/</mo><mn>3</mn></mrow></math>. One of the sheets is symmetrical under reflection in the plane
+<math class="ltx_Math" altimg="m64.png" altimg-height="21px" altimg-valign="-6px" altimg-width="53px" alttext="y=0" display="inline"><mrow><mi href="./36.1#t1.r4" title="real parameter">y</mi><mo>=</mo><mn>0</mn></mrow></math>, and is given by</p>
+<table id="E11" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">36.5.11</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E11.png" altimg-height="111px" altimg-valign="-30px" altimg-width="409px" alttext="\frac{x}{z^{2}}=-1-12u^{2}+8u-\left|\frac{y}{z^{2}}\right|\dfrac{\frac{1}{3}-u%
+}{\left(u\left(\frac{2}{3}-u\right)\right)^{1/2}}." display="block"><mrow><mrow><mfrac><mi href="./36.1#t1.r4" title="real parameter">x</mi><msup><mi href="./36.1#t1.r4" title="real parameter">z</mi><mn>2</mn></msup></mfrac><mo>=</mo><mrow><mrow><mrow><mrow><mo>−</mo><mn>1</mn></mrow><mo>−</mo><mrow><mn>12</mn><mo>⁢</mo><msup><mi>u</mi><mn>2</mn></msup></mrow></mrow><mo>+</mo><mrow><mn>8</mn><mo>⁢</mo><mi>u</mi></mrow></mrow><mo>−</mo><mrow><mrow><mo>|</mo><mfrac><mi href="./36.1#t1.r4" title="real parameter">y</mi><msup><mi href="./36.1#t1.r4" title="real parameter">z</mi><mn>2</mn></msup></mfrac><mo>|</mo></mrow><mo>⁢</mo><mfrac><mrow><mfrac><mn>1</mn><mn>3</mn></mfrac><mo>−</mo><mi>u</mi></mrow><msup><mrow><mo>(</mo><mrow><mi>u</mi><mo>⁢</mo><mrow><mo>(</mo><mrow><mfrac><mn>2</mn><mn>3</mn></mfrac><mo>−</mo><mi>u</mi></mrow><mo>)</mo></mrow></mrow><mo>)</mo></mrow><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msup></mfrac></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E11.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./36.1#t1.r4" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m65.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="y" display="inline"><mi href="./36.1#t1.r4" title="real parameter">y</mi></math>:  real parameter</a>,
+<a href="./36.1#t1.r4" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m70.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi href="./36.1#t1.r4" title="real parameter">z</mi></math>:  real parameter</a> and
+<a href="./36.1#t1.r4" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m61.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./36.1#t1.r4" title="real parameter">x</mi></math>:  real parameter</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./36.5#iv.info" title="§36.5(iv) Visualizations ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5(iv)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./36.5.E11" title="" class="ltx_ref">http://dlmf.nist.gov/36.5.E11</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./36.5.E11.tex">TeX</a>, <a href="./36.5.E11.pmml">pMML</a>, <a href="./36.5.E11.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./36.5#Px4.info" title="Elliptic Umbilic Stokes Set (Codimension three) ‣ §36.5(iii) Umbilics ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5(iii)</span></a>,
+<a href="./36.5#iii.info" title="§36.5(iii) Umbilics ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5(iii)</span></a>,
+<a href="./36.5#info" title="§36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5</span></a> and
+<a href="./36#info" title="Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.36</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">Here <math class="ltx_Math" altimg="m56.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="u" display="inline"><mi>u</mi></math> is the root of the equation</p>
+<table id="E12" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">36.5.12</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E12.png" altimg-height="114px" altimg-valign="-24px" altimg-width="337px" alttext="8u^{3}-4u^{2}-\left|\frac{y}{3z^{2}}\right|\left(\frac{u}{\tfrac{2}{3}-u}%
+\right)^{1/2}=\frac{y^{2}}{6wz^{4}}-2w^{3}-2w^{2}," display="block"><mrow><mrow><mrow><mrow><mn>8</mn><mo>⁢</mo><msup><mi>u</mi><mn>3</mn></msup></mrow><mo>−</mo><mrow><mn>4</mn><mo>⁢</mo><msup><mi>u</mi><mn>2</mn></msup></mrow><mo>−</mo><mrow><mrow><mo>|</mo><mfrac><mi href="./36.1#t1.r4" title="real parameter">y</mi><mrow><mn>3</mn><mo>⁢</mo><msup><mi href="./36.1#t1.r4" title="real parameter">z</mi><mn>2</mn></msup></mrow></mfrac><mo>|</mo></mrow><mo>⁢</mo><msup><mrow><mo>(</mo><mfrac><mi>u</mi><mrow><mfrac><mn>2</mn><mn>3</mn></mfrac><mo>−</mo><mi>u</mi></mrow></mfrac><mo>)</mo></mrow><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msup></mrow></mrow><mo>=</mo><mrow><mfrac><msup><mi href="./36.1#t1.r4" title="real parameter">y</mi><mn>2</mn></msup><mrow><mn>6</mn><mo>⁢</mo><mi href="./36.5#E13" title="quantity">w</mi><mo>⁢</mo><msup><mi href="./36.1#t1.r4" title="real parameter">z</mi><mn>4</mn></msup></mrow></mfrac><mo>−</mo><mrow><mn>2</mn><mo>⁢</mo><msup><mi href="./36.5#E13" title="quantity">w</mi><mn>3</mn></msup></mrow><mo>−</mo><mrow><mn>2</mn><mo>⁢</mo><msup><mi href="./36.5#E13" title="quantity">w</mi><mn>2</mn></msup></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E12.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./36.1#t1.r4" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m65.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="y" display="inline"><mi href="./36.1#t1.r4" title="real parameter">y</mi></math>:  real parameter</a>,
+<a href="./36.1#t1.r4" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m70.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi href="./36.1#t1.r4" title="real parameter">z</mi></math>:  real parameter</a> and
+<a href="./36.5#E13" title="(36.5.13) ‣ Elliptic Umbilic Stokes Set (Codimension three) ‣ §36.5(iii) Umbilics ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m57.png" altimg-height="13px" altimg-valign="-2px" altimg-width="20px" alttext="w" display="inline"><mi href="./36.5#E13" title="quantity">w</mi></math>:  quantity</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./36.5.E12" title="" class="ltx_ref">http://dlmf.nist.gov/36.5.E12</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./36.5.E12.tex">TeX</a>, <a href="./36.5.E12.pmml">pMML</a>, <a href="./36.5.E12.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./36.5#Px4.info" title="Elliptic Umbilic Stokes Set (Codimension three) ‣ §36.5(iii) Umbilics ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5(iii)</span></a>,
+<a href="./36.5#iii.info" title="§36.5(iii) Umbilics ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5(iii)</span></a>,
+<a href="./36.5#info" title="§36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5</span></a> and
+<a href="./36#info" title="Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.36</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">with</p>
+<table id="E13" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">36.5.13</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E13.png" altimg-height="234px" altimg-valign="-28px" altimg-width="218px" alttext="w=u-\tfrac{2}{3}+\left(\left(\tfrac{2}{3}-u\right)^{2}+\left|\frac{y}{6z^{2}}%
+\right|\left(\frac{\frac{2}{3}-u}{u}\right)^{1/2}\right)^{1/2}," display="block"><mrow><mrow><mi href="./36.5#E13" title="quantity">w</mi><mo>=</mo><mrow><mrow><mi>u</mi><mo>−</mo><mstyle displaystyle="false"><mfrac><mn>2</mn><mn>3</mn></mfrac></mstyle></mrow><mo>+</mo><msup><mrow><mo>(</mo><mrow><msup><mrow><mo>(</mo><mrow><mstyle displaystyle="false"><mfrac><mn>2</mn><mn>3</mn></mfrac></mstyle><mo>−</mo><mi>u</mi></mrow><mo>)</mo></mrow><mn>2</mn></msup><mo>+</mo><mrow><mrow><mo>|</mo><mfrac><mi href="./36.1#t1.r4" title="real parameter">y</mi><mrow><mn>6</mn><mo>⁢</mo><msup><mi href="./36.1#t1.r4" title="real parameter">z</mi><mn>2</mn></msup></mrow></mfrac><mo>|</mo></mrow><mo>⁢</mo><msup><mrow><mo>(</mo><mfrac><mrow><mfrac><mn>2</mn><mn>3</mn></mfrac><mo>−</mo><mi>u</mi></mrow><mi>u</mi></mfrac><mo>)</mo></mrow><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msup></mrow></mrow><mo>)</mo></mrow><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msup></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E13.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Defines:</dt>
+<dd><span class="ltx_text"><math class="ltx_Math" altimg="m57.png" altimg-height="13px" altimg-valign="-2px" altimg-width="20px" alttext="w" display="inline"><mi href="./36.5#E13" title="quantity">w</mi></math>:  quantity (locally)</span></dd>
+<dt>Symbols:</dt>
+<dd>
+<a href="./36.1#t1.r4" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m65.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="y" display="inline"><mi href="./36.1#t1.r4" title="real parameter">y</mi></math>:  real parameter</a> and
+<a href="./36.1#t1.r4" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m70.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi href="./36.1#t1.r4" title="real parameter">z</mi></math>:  real parameter</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./36.5.E13" title="" class="ltx_ref">http://dlmf.nist.gov/36.5.E13</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./36.5.E13.tex">TeX</a>, <a href="./36.5.E13.pmml">pMML</a>, <a href="./36.5.E13.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./36.5#Px4.info" title="Elliptic Umbilic Stokes Set (Codimension three) ‣ §36.5(iii) Umbilics ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5(iii)</span></a>,
+<a href="./36.5#iii.info" title="§36.5(iii) Umbilics ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5(iii)</span></a>,
+<a href="./36.5#info" title="§36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5</span></a> and
+<a href="./36#info" title="Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.36</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">and such that</p>
+<table id="E14" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">36.5.14</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E14.png" altimg-height="31px" altimg-valign="-9px" altimg-width="103px" alttext="0&lt;u&lt;\tfrac{1}{6}." display="block"><mrow><mrow><mn>0</mn><mo>&lt;</mo><mi>u</mi><mo>&lt;</mo><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>6</mn></mfrac></mstyle></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E14.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Permalink:</dt>
+<dd><a href="./36.5.E14" title="" class="ltx_ref">http://dlmf.nist.gov/36.5.E14</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./36.5.E14.tex">TeX</a>, <a href="./36.5.E14.pmml">pMML</a>, <a href="./36.5.E14.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./36.5#Px4.info" title="Elliptic Umbilic Stokes Set (Codimension three) ‣ §36.5(iii) Umbilics ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5(iii)</span></a>,
+<a href="./36.5#iii.info" title="§36.5(iii) Umbilics ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5(iii)</span></a>,
+<a href="./36.5#info" title="§36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5</span></a> and
+<a href="./36#info" title="Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.36</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="Px5" class="ltx_paragraph">
+<h3 class="ltx_title ltx_title_paragraph">Hyperbolic Umbilic Stokes Set (Codimension three)</h3>
+<div id="Px5.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./36.5#iii.info" title="§36.5(iii) Umbilics ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5(iii)</span></a>,
+<a href="./36.5#info" title="§36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5</span></a> and
+<a href="./36#info" title="Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.36</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="Px5.p1" class="ltx_para">
+<p class="ltx_p">This consists of a cusp-edged sheet connected to the cusp-edged sheet of the
+bifurcation set and intersecting the smooth sheet of the bifurcation set. With
+coordinates</p>
+<table id="E15" class="ltx_equationgroup ltx_eqn_table">
+<tbody>
+<tr id="Ex9" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="2" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equationgroup ltx_align_left">36.5.15</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m15.png" altimg-height="20px" altimg-valign="-2px" altimg-width="25px" alttext="\displaystyle X" display="inline"><mi href="./36.5#E15" title="scaled coordinate">X</mi></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m1.png" altimg-height="29px" altimg-valign="-7px" altimg-width="129px" alttext="\displaystyle=(x-y)/z^{2}," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi href="./36.1#t1.r4" title="real parameter">x</mi><mo>−</mo><mi href="./36.1#t1.r4" title="real parameter">y</mi></mrow><mo stretchy="false">)</mo></mrow><mo>/</mo><msup><mi href="./36.1#t1.r4" title="real parameter">z</mi><mn>2</mn></msup></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex10" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m17.png" altimg-height="20px" altimg-valign="-2px" altimg-width="23px" alttext="\displaystyle Y" display="inline"><mi>Y</mi></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m9.png" altimg-height="43px" altimg-valign="-9px" altimg-width="196px" alttext="\displaystyle=\tfrac{1}{2}+\left((x+y)/z^{2}\right)," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>+</mo><mrow><mo>(</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi href="./36.1#t1.r4" title="real parameter">x</mi><mo>+</mo><mi href="./36.1#t1.r4" title="real parameter">y</mi></mrow><mo stretchy="false">)</mo></mrow><mo>/</mo><msup><mi href="./36.1#t1.r4" title="real parameter">z</mi><mn>2</mn></msup></mrow><mo>)</mo></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E15.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Defines:</dt>
+<dd><span class="ltx_text"><math class="ltx_Math" altimg="m29.png" altimg-height="18px" altimg-valign="-2px" altimg-width="23px" alttext="X" display="inline"><mi href="./36.5#E15" title="scaled coordinate">X</mi></math>:  scaled coordinate (locally)</span></dd>
+<dt>Symbols:</dt>
+<dd>
+<a href="./36.1#t1.r4" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m65.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="y" display="inline"><mi href="./36.1#t1.r4" title="real parameter">y</mi></math>:  real parameter</a>,
+<a href="./36.1#t1.r4" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m70.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi href="./36.1#t1.r4" title="real parameter">z</mi></math>:  real parameter</a> and
+<a href="./36.1#t1.r4" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m61.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./36.1#t1.r4" title="real parameter">x</mi></math>:  real parameter</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./36.5.E15" title="" class="ltx_ref">http://dlmf.nist.gov/36.5.E15</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./36.5.E15a.tex">TeX</a>, <a href="./36.5.E15b.tex">TeX</a>, <a href="./36.5.E15a.pmml">pMML</a>, <a href="./36.5.E15b.pmml">pMML</a>, <a href="./36.5.E15a.png">png</a>, <a href="./36.5.E15b.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./36.5#Px5.info" title="Hyperbolic Umbilic Stokes Set (Codimension three) ‣ §36.5(iii) Umbilics ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5(iii)</span></a>,
+<a href="./36.5#iii.info" title="§36.5(iii) Umbilics ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5(iii)</span></a>,
+<a href="./36.5#info" title="§36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5</span></a> and
+<a href="./36#info" title="Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.36</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">the intersection lines with the bifurcation set are generated by
+<math class="ltx_Math" altimg="m73.png" altimg-height="25px" altimg-valign="-7px" altimg-width="185px" alttext="|X|=X_{2}=0.45148" display="inline"><mrow><mrow><mo stretchy="false">|</mo><mi href="./36.5#E15" title="scaled coordinate">X</mi><mo stretchy="false">|</mo></mrow><mo>=</mo><msub><mi href="./36.5#E15" title="scaled coordinate">X</mi><mn>2</mn></msub><mo>=</mo><mn>0.45148</mn></mrow></math>, <math class="ltx_Math" altimg="m30.png" altimg-height="21px" altimg-valign="-5px" altimg-width="166px" alttext="Y=Y_{2}=0.59693" display="inline"><mrow><mi>Y</mi><mo>=</mo><msub><mi>Y</mi><mn>2</mn></msub><mo>=</mo><mn>0.59693</mn></mrow></math>. Define</p>
+<table id="E16" class="ltx_equationgroup ltx_eqn_table">
+<tbody>
+<tr id="Ex11" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="2" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equationgroup ltx_align_left">36.5.16</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m16.png" altimg-height="27px" altimg-valign="-7px" altimg-width="79px" alttext="\displaystyle Y(u,X)" display="inline"><mrow><mi>Y</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>u</mi><mo>,</mo><mi href="./36.5#E15" title="scaled coordinate">X</mi><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m7.png" altimg-height="68px" altimg-valign="-30px" altimg-width="303px" alttext="\displaystyle=8u-24u^{2}+X\dfrac{u-\tfrac{1}{6}}{\left(u\left(u-\tfrac{1}{3}%
+\right)\right)^{1/2}}," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mrow><mrow><mn>8</mn><mo>⁢</mo><mi>u</mi></mrow><mo>−</mo><mrow><mn>24</mn><mo>⁢</mo><msup><mi>u</mi><mn>2</mn></msup></mrow></mrow><mo>+</mo><mrow><mi href="./36.5#E15" title="scaled coordinate">X</mi><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mrow><mi>u</mi><mo>−</mo><mfrac><mn>1</mn><mn>6</mn></mfrac></mrow><msup><mrow><mo>(</mo><mrow><mi>u</mi><mo>⁢</mo><mrow><mo>(</mo><mrow><mi>u</mi><mo>−</mo><mfrac><mn>1</mn><mn>3</mn></mfrac></mrow><mo>)</mo></mrow></mrow><mo>)</mo></mrow><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msup></mfrac></mstyle></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex12" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m20.png" altimg-height="27px" altimg-valign="-7px" altimg-width="75px" alttext="\displaystyle f(u,X)" display="inline"><mrow><mi>f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>u</mi><mo>,</mo><mi href="./36.5#E15" title="scaled coordinate">X</mi><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m6.png" altimg-height="71px" altimg-valign="-24px" altimg-width="320px" alttext="\displaystyle=16u^{3}-4u^{2}-\tfrac{1}{6}|X|\left(\dfrac{u}{u-\tfrac{1}{3}}%
+\right)^{1/2}." display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mrow><mn>16</mn><mo>⁢</mo><msup><mi>u</mi><mn>3</mn></msup></mrow><mo>−</mo><mrow><mn>4</mn><mo>⁢</mo><msup><mi>u</mi><mn>2</mn></msup></mrow><mo>−</mo><mrow><mfrac><mn>1</mn><mn>6</mn></mfrac><mo>⁢</mo><mrow><mo stretchy="false">|</mo><mi href="./36.5#E15" title="scaled coordinate">X</mi><mo stretchy="false">|</mo></mrow><mo>⁢</mo><msup><mrow><mo>(</mo><mstyle displaystyle="true"><mfrac><mi>u</mi><mrow><mi>u</mi><mo>−</mo><mfrac><mn>1</mn><mn>3</mn></mfrac></mrow></mfrac></mstyle><mo>)</mo></mrow><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msup></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E16.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd><a href="./36.5#E15" title="(36.5.15) ‣ Hyperbolic Umbilic Stokes Set (Codimension three) ‣ §36.5(iii) Umbilics ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m29.png" altimg-height="18px" altimg-valign="-2px" altimg-width="23px" alttext="X" display="inline"><mi href="./36.5#E15" title="scaled coordinate">X</mi></math>:  scaled coordinate</a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./36.5.E16" title="" class="ltx_ref">http://dlmf.nist.gov/36.5.E16</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./36.5.E16a.tex">TeX</a>, <a href="./36.5.E16b.tex">TeX</a>, <a href="./36.5.E16a.pmml">pMML</a>, <a href="./36.5.E16b.pmml">pMML</a>, <a href="./36.5.E16a.png">png</a>, <a href="./36.5.E16b.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./36.5#Px5.info" title="Hyperbolic Umbilic Stokes Set (Codimension three) ‣ §36.5(iii) Umbilics ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5(iii)</span></a>,
+<a href="./36.5#iii.info" title="§36.5(iii) Umbilics ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5(iii)</span></a>,
+<a href="./36.5#info" title="§36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5</span></a> and
+<a href="./36#info" title="Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.36</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+<div id="Px5.p2" class="ltx_para">
+<p class="ltx_p">When <math class="ltx_Math" altimg="m74.png" altimg-height="25px" altimg-valign="-7px" altimg-width="89px" alttext="|X|&gt;X_{2}" display="inline"><mrow><mrow><mo stretchy="false">|</mo><mi href="./36.5#E15" title="scaled coordinate">X</mi><mo stretchy="false">|</mo></mrow><mo>&gt;</mo><msub><mi href="./36.5#E15" title="scaled coordinate">X</mi><mn>2</mn></msub></mrow></math> the Stokes set <math class="ltx_Math" altimg="m32.png" altimg-height="25px" altimg-valign="-7px" altimg-width="62px" alttext="Y_{\mathrm{S}}(X)" display="inline"><mrow><msub><mi>Y</mi><mi mathvariant="normal">S</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./36.5#E15" title="scaled coordinate">X</mi><mo stretchy="false">)</mo></mrow></mrow></math> is given by</p>
+</div>
+<div id="Px5.p3" class="ltx_para">
+<table id="E17" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">36.5.17</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E17.png" altimg-height="27px" altimg-valign="-7px" altimg-width="182px" alttext="Y_{\mathrm{S}}(X)=Y(u,|X|)," display="block"><mrow><mrow><mrow><msub><mi>Y</mi><mi mathvariant="normal">S</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./36.5#E15" title="scaled coordinate">X</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>Y</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>u</mi><mo>,</mo><mrow><mo stretchy="false">|</mo><mi href="./36.5#E15" title="scaled coordinate">X</mi><mo stretchy="false">|</mo></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E17.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd><a href="./36.5#E15" title="(36.5.15) ‣ Hyperbolic Umbilic Stokes Set (Codimension three) ‣ §36.5(iii) Umbilics ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m29.png" altimg-height="18px" altimg-valign="-2px" altimg-width="23px" alttext="X" display="inline"><mi href="./36.5#E15" title="scaled coordinate">X</mi></math>:  scaled coordinate</a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./36.5.E17" title="" class="ltx_ref">http://dlmf.nist.gov/36.5.E17</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./36.5.E17.tex">TeX</a>, <a href="./36.5.E17.pmml">pMML</a>, <a href="./36.5.E17.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./36.5#Px5.info" title="Hyperbolic Umbilic Stokes Set (Codimension three) ‣ §36.5(iii) Umbilics ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5(iii)</span></a>,
+<a href="./36.5#iii.info" title="§36.5(iii) Umbilics ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5(iii)</span></a>,
+<a href="./36.5#info" title="§36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5</span></a> and
+<a href="./36#info" title="Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.36</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">where <math class="ltx_Math" altimg="m56.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="u" display="inline"><mi>u</mi></math> is the root of the equation</p>
+<table id="E18" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">36.5.18</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E18.png" altimg-height="31px" altimg-valign="-9px" altimg-width="232px" alttext="f(u,X)=f(-u+\tfrac{1}{3},X)," display="block"><mrow><mrow><mrow><mi>f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>u</mi><mo>,</mo><mi href="./36.5#E15" title="scaled coordinate">X</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mo>−</mo><mi>u</mi></mrow><mo>+</mo><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>3</mn></mfrac></mstyle></mrow><mo>,</mo><mi href="./36.5#E15" title="scaled coordinate">X</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E18.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd><a href="./36.5#E15" title="(36.5.15) ‣ Hyperbolic Umbilic Stokes Set (Codimension three) ‣ §36.5(iii) Umbilics ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m29.png" altimg-height="18px" altimg-valign="-2px" altimg-width="23px" alttext="X" display="inline"><mi href="./36.5#E15" title="scaled coordinate">X</mi></math>:  scaled coordinate</a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./36.5.E18" title="" class="ltx_ref">http://dlmf.nist.gov/36.5.E18</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./36.5.E18.tex">TeX</a>, <a href="./36.5.E18.pmml">pMML</a>, <a href="./36.5.E18.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./36.5#Px5.info" title="Hyperbolic Umbilic Stokes Set (Codimension three) ‣ §36.5(iii) Umbilics ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5(iii)</span></a>,
+<a href="./36.5#iii.info" title="§36.5(iii) Umbilics ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5(iii)</span></a>,
+<a href="./36.5#info" title="§36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5</span></a> and
+<a href="./36#info" title="Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.36</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">such that <math class="ltx_Math" altimg="m55.png" altimg-height="29px" altimg-valign="-9px" altimg-width="57px" alttext="u&gt;\tfrac{1}{3}" display="inline"><mrow><mi>u</mi><mo>&gt;</mo><mfrac><mn>1</mn><mn>3</mn></mfrac></mrow></math>. This part of the Stokes set connects two complex
+saddles.</p>
+</div>
+<div id="Px5.p4" class="ltx_para">
+<p class="ltx_p">Alternatively, when <math class="ltx_Math" altimg="m72.png" altimg-height="25px" altimg-valign="-7px" altimg-width="89px" alttext="|X|&lt;X_{2}" display="inline"><mrow><mrow><mo stretchy="false">|</mo><mi href="./36.5#E15" title="scaled coordinate">X</mi><mo stretchy="false">|</mo></mrow><mo>&lt;</mo><msub><mi href="./36.5#E15" title="scaled coordinate">X</mi><mn>2</mn></msub></mrow></math></p>
+<table id="E19" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">36.5.19</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E19.png" altimg-height="27px" altimg-valign="-7px" altimg-width="214px" alttext="Y_{\mathrm{S}}(X)=Y(-u,-|X|)," display="block"><mrow><mrow><mrow><msub><mi>Y</mi><mi mathvariant="normal">S</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./36.5#E15" title="scaled coordinate">X</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>Y</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mi>u</mi></mrow><mo>,</mo><mrow><mo>−</mo><mrow><mo stretchy="false">|</mo><mi href="./36.5#E15" title="scaled coordinate">X</mi><mo stretchy="false">|</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E19.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd><a href="./36.5#E15" title="(36.5.15) ‣ Hyperbolic Umbilic Stokes Set (Codimension three) ‣ §36.5(iii) Umbilics ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m29.png" altimg-height="18px" altimg-valign="-2px" altimg-width="23px" alttext="X" display="inline"><mi href="./36.5#E15" title="scaled coordinate">X</mi></math>:  scaled coordinate</a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./36.5.E19" title="" class="ltx_ref">http://dlmf.nist.gov/36.5.E19</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./36.5.E19.tex">TeX</a>, <a href="./36.5.E19.pmml">pMML</a>, <a href="./36.5.E19.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./36.5#Px5.info" title="Hyperbolic Umbilic Stokes Set (Codimension three) ‣ §36.5(iii) Umbilics ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5(iii)</span></a>,
+<a href="./36.5#iii.info" title="§36.5(iii) Umbilics ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5(iii)</span></a>,
+<a href="./36.5#info" title="§36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5</span></a> and
+<a href="./36#info" title="Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.36</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">where <math class="ltx_Math" altimg="m56.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="u" display="inline"><mi>u</mi></math> is the positive root of the equation</p>
+<table id="E20" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">36.5.20</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E20.png" altimg-height="52px" altimg-valign="-16px" altimg-width="287px" alttext="f(-u,X)=\dfrac{X^{2}}{12w}+4w^{3}-2w^{2}," display="block"><mrow><mrow><mrow><mi>f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mi>u</mi></mrow><mo>,</mo><mi href="./36.5#E15" title="scaled coordinate">X</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mfrac><msup><mi href="./36.5#E15" title="scaled coordinate">X</mi><mn>2</mn></msup><mrow><mn>12</mn><mo>⁢</mo><mi href="./36.5#E13" title="quantity">w</mi></mrow></mfrac><mo>+</mo><mrow><mn>4</mn><mo>⁢</mo><msup><mi href="./36.5#E13" title="quantity">w</mi><mn>3</mn></msup></mrow></mrow><mo>−</mo><mrow><mn>2</mn><mo>⁢</mo><msup><mi href="./36.5#E13" title="quantity">w</mi><mn>2</mn></msup></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E20.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./36.5#E13" title="(36.5.13) ‣ Elliptic Umbilic Stokes Set (Codimension three) ‣ §36.5(iii) Umbilics ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m57.png" altimg-height="13px" altimg-valign="-2px" altimg-width="20px" alttext="w" display="inline"><mi href="./36.5#E13" title="quantity">w</mi></math>:  quantity</a> and
+<a href="./36.5#E15" title="(36.5.15) ‣ Hyperbolic Umbilic Stokes Set (Codimension three) ‣ §36.5(iii) Umbilics ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m29.png" altimg-height="18px" altimg-valign="-2px" altimg-width="23px" alttext="X" display="inline"><mi href="./36.5#E15" title="scaled coordinate">X</mi></math>:  scaled coordinate</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./36.5.E20" title="" class="ltx_ref">http://dlmf.nist.gov/36.5.E20</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./36.5.E20.tex">TeX</a>, <a href="./36.5.E20.pmml">pMML</a>, <a href="./36.5.E20.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./36.5#Px5.info" title="Hyperbolic Umbilic Stokes Set (Codimension three) ‣ §36.5(iii) Umbilics ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5(iii)</span></a>,
+<a href="./36.5#iii.info" title="§36.5(iii) Umbilics ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5(iii)</span></a>,
+<a href="./36.5#info" title="§36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5</span></a> and
+<a href="./36#info" title="Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.36</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">in which</p>
+<table id="E21" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">36.5.21</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E21.png" altimg-height="113px" altimg-valign="-28px" altimg-width="440px" alttext="w=(\tfrac{1}{3}+u)\left(1-\left(1-\dfrac{|X|}{12u^{1/2}(\tfrac{1}{3}+u)^{3/2}}%
+\right)^{1/2}\right)." display="block"><mrow><mrow><mi href="./36.5#E13" title="quantity">w</mi><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>3</mn></mfrac></mstyle><mo>+</mo><mi>u</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo>(</mo><mrow><mn>1</mn><mo>−</mo><msup><mrow><mo>(</mo><mrow><mn>1</mn><mo>−</mo><mfrac><mrow><mo stretchy="false">|</mo><mi href="./36.5#E15" title="scaled coordinate">X</mi><mo stretchy="false">|</mo></mrow><mrow><mn>12</mn><mo>⁢</mo><msup><mi>u</mi><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msup><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mfrac><mn>1</mn><mn>3</mn></mfrac><mo>+</mo><mi>u</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mn>3</mn><mo>/</mo><mn>2</mn></mrow></msup></mrow></mfrac></mrow><mo>)</mo></mrow><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msup></mrow><mo>)</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E21.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./36.5#E13" title="(36.5.13) ‣ Elliptic Umbilic Stokes Set (Codimension three) ‣ §36.5(iii) Umbilics ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m57.png" altimg-height="13px" altimg-valign="-2px" altimg-width="20px" alttext="w" display="inline"><mi href="./36.5#E13" title="quantity">w</mi></math>:  quantity</a> and
+<a href="./36.5#E15" title="(36.5.15) ‣ Hyperbolic Umbilic Stokes Set (Codimension three) ‣ §36.5(iii) Umbilics ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m29.png" altimg-height="18px" altimg-valign="-2px" altimg-width="23px" alttext="X" display="inline"><mi href="./36.5#E15" title="scaled coordinate">X</mi></math>:  scaled coordinate</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./36.5#iv.info" title="§36.5(iv) Visualizations ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5(iv)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./36.5.E21" title="" class="ltx_ref">http://dlmf.nist.gov/36.5.E21</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./36.5.E21.tex">TeX</a>, <a href="./36.5.E21.pmml">pMML</a>, <a href="./36.5.E21.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./36.5#Px5.info" title="Hyperbolic Umbilic Stokes Set (Codimension three) ‣ §36.5(iii) Umbilics ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5(iii)</span></a>,
+<a href="./36.5#iii.info" title="§36.5(iii) Umbilics ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5(iii)</span></a>,
+<a href="./36.5#info" title="§36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5</span></a> and
+<a href="./36#info" title="Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.36</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+<section id="iv" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§36.5(iv) </span>Visualizations</h2>
+<div id="iv.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=Pearcey%20integral">Pearcey integral</a>, <a class="ltx_keyword" href="./search/search?q=Stokes%20sets">Stokes sets</a>, <a class="ltx_keyword" href="./search/search?q=hyperbolic%20umbilic%20catastrophe">hyperbolic umbilic catastrophe</a>, <a class="ltx_keyword" href="./search/search?q=picture%20of%20Stokes%20set">picture of Stokes set</a>, <a class="ltx_keyword" href="./search/search?q=swallowtail%20canonical%20integral">swallowtail canonical integral</a>, <a class="ltx_keyword" href="./search/search?q=visualizations">visualizations</a>
+</dd>
+<dt>Notes:</dt>
+<dd>The graphics were generated by the authors.
+For Figures <a href="./36.5#F2" title="Figure 36.5.2 ‣ §36.5(iv) Visualizations ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">36.5.2</span></a>–<a href="./36.5#F9" title="Figure 36.5.9 ‣ §36.5(iv) Visualizations ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">36.5.9</span></a>,
+Eqs. (<a href="./36.5#E11" title="(36.5.11) ‣ Elliptic Umbilic Stokes Set (Codimension three) ‣ §36.5(iii) Umbilics ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">36.5.11</span></a>)–(<a href="./36.5#E21" title="(36.5.21) ‣ Hyperbolic Umbilic Stokes Set (Codimension three) ‣ §36.5(iii) Umbilics ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">36.5.21</span></a>) were used in parametric
+form <math class="ltx_Math" altimg="m59.png" altimg-height="25px" altimg-valign="-7px" altimg-width="83px" alttext="x=x(y)" display="inline"><mrow><mi href="./36.1#t1.r4" title="real parameter">x</mi><mo>=</mo><mrow><mi href="./36.1#t1.r4" title="real parameter">x</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi href="./36.1#t1.r4" title="real parameter">y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math>, and checked against the numerical computations in
+<cite class="ltx_cite ltx_citemacro_citet">Berry and Howls (<a href="./bib/B#bib257" title="Stokes surfaces of diffraction catastrophes with codimension three" class="ltx_ref">1990</a>)</cite> (which were based directly on the definitions given in §<a href="./36.5#i" title="§36.5(i) Definitions ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">36.5(i)</span></a>).</dd>
+<dt>Permalink:</dt>
+<dd><a href="./36.5.iv" title="" class="ltx_ref">http://dlmf.nist.gov/36.5.iv</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./36.5#info" title="§36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5</span></a> and
+<a href="./36#info" title="Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.36</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="iv.p1" class="ltx_para">
+<p class="ltx_p">In Figures <a href="./36.5#F1" title="Figure 36.5.1 ‣ §36.5(iv) Visualizations ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">36.5.1</span></a>–<a href="./36.5#F6" title="Figure 36.5.6 ‣ §36.5(iv) Visualizations ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">36.5.6</span></a> the plane is divided
+into regions by the dashed curves (Stokes sets) and the continuous
+curves (bifurcation sets). <span class="ltx_text" style="--ltx-fg-color:#FF0000;">Red</span> and <span class="ltx_text" style="--ltx-fg-color:#0000FF;">blue</span>
+numbers in each region correspond, respectively, to the numbers of
+<span class="ltx_text" style="--ltx-fg-color:#FF0000;">real</span> and <span class="ltx_text" style="--ltx-fg-color:#0000FF;">complex</span> critical points
+that contribute to the asymptotics of the canonical integral away from
+the bifurcation sets. In Figure <a href="./36.5#F4" title="Figure 36.5.4 ‣ §36.5(iv) Visualizations ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">36.5.4</span></a> the part of the Stokes
+surface inside the bifurcation set connects two complex saddles. The
+distribution of real and complex critical points in Figures
+<a href="./36.5#F5" title="Figure 36.5.5 ‣ §36.5(iv) Visualizations ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">36.5.5</span></a> and <a href="./36.5#F6" title="Figure 36.5.6 ‣ §36.5(iv) Visualizations ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">36.5.6</span></a> follows from consistency with
+Figure <a href="./36.5#F1" title="Figure 36.5.1 ‣ §36.5(iv) Visualizations ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">36.5.1</span></a> and the fact that there are four real saddles in the
+inner regions.</p>
+</div>
+<figure id="iv.fig1" class="ltx_figure">
+<div class="ltx_flex_figure">
+<div class="ltx_flex_cell ltx_flex_size_2">
+<figure id="F1" class="ltx_figure ltx_figure_panel"><a href="./36.5.F1.mag" title="Magnify Figure" class="ltx_magnifiable"><img src="./36/5/F1.png" id="F1.g1" class="ltx_graphics ltx_centering ltx_img_square" width="360" height="387" alt="See accompanying text"></a>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 36.5.1: </span>Cusp catastrophe.
+
+
+<a href="./36.5.F1.mag" title="Magnify Figure" class="ltx_magnifiable ltx_icon"><span>Magnify</span></a>
+</figcaption>
+<div id="F1.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd><a class="ltx_keyword" href="./search/search?q=cusp%20catastophe">cusp catastophe</a></dd>
+<dt>Referenced by:</dt>
+<dd><a href="./36.5#iv.p1" title="§36.5(iv) Visualizations ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5(iv)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./36.5.F1" title="" class="ltx_ref">http://dlmf.nist.gov/36.5.F1</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./36.5.F1.pdf">pdf</a>, <a href="./36.5.F1.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./36.5#iv.info" title="§36.5(iv) Visualizations ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5(iv)</span></a>,
+<a href="./36.5#info" title="§36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5</span></a> and
+<a href="./36#info" title="Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.36</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+</div>
+<div class="ltx_flex_cell ltx_flex_size_2">
+<figure id="F2" class="ltx_figure ltx_figure_panel"><a href="./36.5.F2.mag" title="Magnify Figure" class="ltx_magnifiable"><img src="./36/5/F2.png" id="F2.g1" class="ltx_graphics ltx_centering ltx_img_square" width="360" height="351" alt="See accompanying text"></a>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 36.5.2: </span>Swallowtail catastrophe with <math class="ltx_Math" altimg="m66.png" altimg-height="18px" altimg-valign="-3px" altimg-width="53px" alttext="z&lt;0" display="inline"><mrow><mi href="./36.1#t1.r4" title="real parameter">z</mi><mo>&lt;</mo><mn>0</mn></mrow></math>.
+
+
+<a href="./36.5.F2.mag" title="Magnify Figure" class="ltx_magnifiable ltx_icon"><span>Magnify</span></a>
+</figcaption>
+<div id="F2.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd><a href="./36.1#t1.r4" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m70.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi href="./36.1#t1.r4" title="real parameter">z</mi></math>:  real parameter</a></dd>
+<dt>Keywords:</dt>
+<dd><a class="ltx_keyword" href="./search/search?q=swallowtail%20catastrophe">swallowtail catastrophe</a></dd>
+<dt>Referenced by:</dt>
+<dd><a href="./36.5#iv.info" title="§36.5(iv) Visualizations ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5(iv)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./36.5.F2" title="" class="ltx_ref">http://dlmf.nist.gov/36.5.F2</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./36.5.F2.pdf">pdf</a>, <a href="./36.5.F2.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./36.5#iv.info" title="§36.5(iv) Visualizations ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5(iv)</span></a>,
+<a href="./36.5#info" title="§36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5</span></a> and
+<a href="./36#info" title="Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.36</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+</div>
+</div>
+</figure>
+<figure id="iv.fig2" class="ltx_figure">
+<div class="ltx_flex_figure">
+<div class="ltx_flex_cell ltx_flex_size_2">
+<figure id="F3" class="ltx_figure ltx_figure_panel"><a href="./36.5.F3.mag" title="Magnify Figure" class="ltx_magnifiable"><img src="./36/5/F3.png" id="F3.g1" class="ltx_graphics ltx_centering ltx_img_square" width="359" height="357" alt="See accompanying text"></a>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 36.5.3: </span>Swallowtail catastrophe with <math class="ltx_Math" altimg="m67.png" altimg-height="17px" altimg-valign="-2px" altimg-width="53px" alttext="z=0" display="inline"><mrow><mi href="./36.1#t1.r4" title="real parameter">z</mi><mo>=</mo><mn>0</mn></mrow></math>.
+
+
+<a href="./36.5.F3.mag" title="Magnify Figure" class="ltx_magnifiable ltx_icon"><span>Magnify</span></a>
+</figcaption>
+<div id="F3.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd><a href="./36.1#t1.r4" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m70.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi href="./36.1#t1.r4" title="real parameter">z</mi></math>:  real parameter</a></dd>
+<dt>Keywords:</dt>
+<dd><a class="ltx_keyword" href="./search/search?q=swallowtail%20catastrophe">swallowtail catastrophe</a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./36.5.F3" title="" class="ltx_ref">http://dlmf.nist.gov/36.5.F3</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./36.5.F3.pdf">pdf</a>, <a href="./36.5.F3.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./36.5#iv.info" title="§36.5(iv) Visualizations ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5(iv)</span></a>,
+<a href="./36.5#info" title="§36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5</span></a> and
+<a href="./36#info" title="Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.36</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+</div>
+<div class="ltx_flex_cell ltx_flex_size_2">
+<figure id="F4" class="ltx_figure ltx_figure_panel"><a href="./36.5.F4.mag" title="Magnify Figure" class="ltx_magnifiable"><img src="./36/5/F4.png" id="F4.g1" class="ltx_graphics ltx_centering ltx_img_landscape" width="361" height="268" alt="See accompanying text"></a>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 36.5.4: </span>Swallowtail catastrophe with <math class="ltx_Math" altimg="m69.png" altimg-height="18px" altimg-valign="-3px" altimg-width="53px" alttext="z&gt;0" display="inline"><mrow><mi href="./36.1#t1.r4" title="real parameter">z</mi><mo>&gt;</mo><mn>0</mn></mrow></math>.
+
+
+<a href="./36.5.F4.mag" title="Magnify Figure" class="ltx_magnifiable ltx_icon"><span>Magnify</span></a>
+</figcaption>
+<div id="F4.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd><a href="./36.1#t1.r4" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m70.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi href="./36.1#t1.r4" title="real parameter">z</mi></math>:  real parameter</a></dd>
+<dt>Keywords:</dt>
+<dd><a class="ltx_keyword" href="./search/search?q=swallowtail%20catastrophe">swallowtail catastrophe</a></dd>
+<dt>Referenced by:</dt>
+<dd><a href="./36.5#iv.p1" title="§36.5(iv) Visualizations ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5(iv)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./36.5.F4" title="" class="ltx_ref">http://dlmf.nist.gov/36.5.F4</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./36.5.F4.pdf">pdf</a>, <a href="./36.5.F4.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./36.5#iv.info" title="§36.5(iv) Visualizations ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5(iv)</span></a>,
+<a href="./36.5#info" title="§36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5</span></a> and
+<a href="./36#info" title="Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.36</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+</div>
+</div>
+</figure>
+<figure id="iv.fig3" class="ltx_figure">
+<div class="ltx_flex_figure">
+<div class="ltx_flex_cell ltx_flex_size_2">
+<figure id="F5" class="ltx_figure ltx_figure_panel"><a href="./36.5.F5.mag" title="Magnify Figure" class="ltx_magnifiable"><img src="./36/5/F5.png" id="F5.g1" class="ltx_graphics ltx_centering ltx_img_square" width="361" height="373" alt="See accompanying text"></a>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 36.5.5: </span>Elliptic
+umbilic catastrophe with <math class="ltx_Math" altimg="m68.png" altimg-height="17px" altimg-valign="-2px" altimg-width="119px" alttext="z=\mathrm{constant}" display="inline"><mrow><mi href="./36.1#t1.r4" title="real parameter">z</mi><mo>=</mo><mi>constant</mi></mrow></math>.
+
+
+<a href="./36.5.F5.mag" title="Magnify Figure" class="ltx_magnifiable ltx_icon"><span>Magnify</span></a>
+</figcaption>
+<div id="F5.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd><a href="./36.1#t1.r4" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m70.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi href="./36.1#t1.r4" title="real parameter">z</mi></math>:  real parameter</a></dd>
+<dt>Keywords:</dt>
+<dd><a class="ltx_keyword" href="./search/search?q=elliptic%20umbilic%20catastrophe">elliptic umbilic catastrophe</a></dd>
+<dt>Referenced by:</dt>
+<dd><a href="./36.5#iv.p1" title="§36.5(iv) Visualizations ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5(iv)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./36.5.F5" title="" class="ltx_ref">http://dlmf.nist.gov/36.5.F5</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./36.5.F5.pdf">pdf</a>, <a href="./36.5.F5.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./36.5#iv.info" title="§36.5(iv) Visualizations ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5(iv)</span></a>,
+<a href="./36.5#info" title="§36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5</span></a> and
+<a href="./36#info" title="Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.36</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+</div>
+<div class="ltx_flex_cell ltx_flex_size_2">
+<figure id="F6" class="ltx_figure ltx_figure_panel"><a href="./36.5.F6.mag" title="Magnify Figure" class="ltx_magnifiable"><img src="./36/5/F6.png" id="F6.g1" class="ltx_graphics ltx_centering ltx_img_landscape" width="361" height="259" alt="See accompanying text"></a>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 36.5.6: </span>Hyperbolic
+umbilic catastrophe with <math class="ltx_Math" altimg="m68.png" altimg-height="17px" altimg-valign="-2px" altimg-width="119px" alttext="z=\mathrm{constant}" display="inline"><mrow><mi href="./36.1#t1.r4" title="real parameter">z</mi><mo>=</mo><mi>constant</mi></mrow></math>.
+
+
+<a href="./36.5.F6.mag" title="Magnify Figure" class="ltx_magnifiable ltx_icon"><span>Magnify</span></a>
+</figcaption>
+<div id="F6.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd><a href="./36.1#t1.r4" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m70.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi href="./36.1#t1.r4" title="real parameter">z</mi></math>:  real parameter</a></dd>
+<dt>Referenced by:</dt>
+<dd><a href="./36.5#iv.p1" title="§36.5(iv) Visualizations ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5(iv)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./36.5.F6" title="" class="ltx_ref">http://dlmf.nist.gov/36.5.F6</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./36.5.F6.pdf">pdf</a>, <a href="./36.5.F6.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./36.5#iv.info" title="§36.5(iv) Visualizations ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5(iv)</span></a>,
+<a href="./36.5#info" title="§36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5</span></a> and
+<a href="./36#info" title="Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.36</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+</div>
+</div>
+</figure>
+<figure id="F7" class="ltx_figure"><a href="./36.5.F7.mag" title="Magnify Figure" class="ltx_magnifiable"><img src="./36/5/F7.png" id="F7.g1" class="ltx_graphics ltx_centering ltx_img_square" width="277" height="307" alt="See accompanying text"></a>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 36.5.7: </span>Sheets of the Stokes surface for the swallowtail catastrophe
+(colored and with mesh) and the bifurcation set (gray).
+
+
+<a href="./36.5.F7.mag" title="Magnify Figure" class="ltx_magnifiable ltx_icon"><span>Magnify</span></a>
+</figcaption>
+<div id="F7.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd><a class="ltx_keyword" href="./search/search?q=swallowtail%20catastrophe">swallowtail catastrophe</a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./36.5.F7" title="" class="ltx_ref">http://dlmf.nist.gov/36.5.F7</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./36.5.F7.pdf">pdf</a>, <a href="./36.5.F7.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./36.5#iv.info" title="§36.5(iv) Visualizations ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5(iv)</span></a>,
+<a href="./36.5#info" title="§36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5</span></a> and
+<a href="./36#info" title="Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.36</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+<figure id="F8" class="ltx_figure"><a href="./36.5.F8.mag" title="Magnify Figure" class="ltx_magnifiable"><img src="./36/5/F8.png" id="F8.g1" class="ltx_graphics ltx_centering ltx_img_portrait" width="277" height="440" alt="See accompanying text"></a>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 36.5.8: </span>Sheets of the Stokes surface for the elliptic umbilic catastrophe
+(colored and with mesh) and the bifurcation set (gray).
+
+
+<a href="./36.5.F8.mag" title="Magnify Figure" class="ltx_magnifiable ltx_icon"><span>Magnify</span></a>
+</figcaption>
+<div id="F8.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=elliptic%20umbilic%20canonical%20integral">elliptic umbilic canonical integral</a>, <a class="ltx_keyword" href="./search/search?q=picture%20of%20Stokes%20set">picture of Stokes set</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./36.5.F8" title="" class="ltx_ref">http://dlmf.nist.gov/36.5.F8</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./36.5.F8.pdf">pdf</a>, <a href="./36.5.F8.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./36.5#iv.info" title="§36.5(iv) Visualizations ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5(iv)</span></a>,
+<a href="./36.5#info" title="§36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5</span></a> and
+<a href="./36#info" title="Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.36</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+<figure id="F9" class="ltx_figure"><a href="./36.5.F9.mag" title="Magnify Figure" class="ltx_magnifiable"><img src="./36/5/F9.png" id="F9.g1" class="ltx_graphics ltx_centering ltx_img_portrait" width="277" height="597" alt="See accompanying text"></a>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 36.5.9: </span>Sheets of the Stokes surface for the hyperbolic umbilic catastrophe
+(colored and with mesh) and the bifurcation set (gray).
+
+
+<a href="./36.5.F9.mag" title="Magnify Figure" class="ltx_magnifiable ltx_icon"><span>Magnify</span></a>
+</figcaption>
+<div id="F9.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=hyperbolic%20umbilic%20canonical%20integral">hyperbolic umbilic canonical integral</a>, <a class="ltx_keyword" href="./search/search?q=picture%20of%20Stokes%20set">picture of Stokes set</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./36.5#iv.info" title="§36.5(iv) Visualizations ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5(iv)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./36.5.F9" title="" class="ltx_ref">http://dlmf.nist.gov/36.5.F9</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./36.5.F9.pdf">pdf</a>, <a href="./36.5.F9.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./36.5#iv.info" title="§36.5(iv) Visualizations ‣ §36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5(iv)</span></a>,
+<a href="./36.5#info" title="§36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.5</span></a> and
+<a href="./36#info" title="Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.36</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+</section>
+</section>
+</div>
+<div class="ltx_page_footer">
+<div class="ltx_siblings">
+<a href="./36.4" title="In Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">36.4 </span>Bifurcation Sets</span></a><a href="./36.6" title="In Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">36.6 </span>Scaling Relations</span></a>
+</div>
+<div class="ltx_footer_links ltx_centering">
+<a href="./about/notices">© 2010–2026 NIST</a> / <a href="./about/notices#S2">Disclaimer</a> / <a href="/cdn-cgi/l/email-protection#c6828a8b80eba0a3a3a2a4a7a5ad86a8afb5b2e8a1a9b0">Feedback</a>;
+ Version 1.2.7;
+Release date 2026-06-15.</div>
+<span id="pagesettings"></span>
+<div class="ltx_nist_logo"><a href="http://www.nist.gov/"><img src="./style/nistidc.png" width="500" alt="NIST"></a></div>
+<div class="ltx_nist_links ltx_align_right">
+<a href="https://www.nist.gov/privacy-policy">Site Privacy</a> <a href="https://www.nist.gov/oism/accessibility">Accessibility</a> <a href="https://www.nist.gov/privacy">Privacy Program</a> <a href="https://www.nist.gov/oism/copyrights">Copyrights</a> <a href="https://www.commerce.gov/vulnerability-disclosure-policy">Vulnerability Disclosure</a> <a href="https://www.nist.gov/no-fear-act-policy">No Fear Act Policy</a> <a href="https://www.nist.gov/foia">FOIA</a> <a href="https://www.nist.gov/environmental-policy-statement">Environmental Policy</a> <a href="https://www.nist.gov/summary-report-scientific-integrity">Scientific Integrity</a> <a href="https://www.nist.gov/nist-information-quality-standards">Information Quality Standards</a> <a href="https://www.commerce.gov/">Commerce.gov</a> <a href="http://www.science.gov/">Science.gov</a> <a href="http://www.usa.gov/">USA.gov</a>
+</div>
+</div>
+</div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"9ef5b487afff42a68917b2d63593a474"}' crossorigin="anonymous"></script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a30dbf674db14343',t:'MTc4NzY5Mzk0OA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

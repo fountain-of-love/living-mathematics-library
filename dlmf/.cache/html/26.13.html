@@ -1,0 +1,482 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>DLMF: §26.13 Permutations: Cycle Notation ‣ Properties ‣ Chapter 26 Combinatorial Analysis</title>
+<link rel="shortcut icon" href="./style/DLMF-16.png" type="image/png">
+<script type="text/javascript"><!--
+	var PATH="DLMF:/26.13";
+	var ROOT="./";
+      //--></script>
+<script type="text/javascript" src="./style/jquery.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/jquery.leaveNotice.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/DLMF.js"><!-- non-empty so ie6 will accept it --></script>
+<script async="" type="text/javascript" id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC&amp;subagency=NIST&amp;pua=UA-37115410-44&amp;yt=true&amp;exts=ppsx,pps,f90,sch,rtf,wrl,txz,m1v,xlsm,msi,xsd,f,tif,eps,mpg,xml,pl,xlt,c"><!-- non-empty so ie6 will accept it --></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-BZB64W4M0L"></script><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-BZB64W4M0L');
+      </script>
+<link rel="stylesheet" type="text/css" href="./style/LaTeXML.css">
+<link rel="stylesheet" type="text/css" href="./style/DLMF.css">
+<link rel="stylesheet" type="text/css" href="./style/print.css" media="print">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="top" href="./" title="DLMF">
+<link rel="copyright" href="./about/notices" title="Copyright">
+<link rel="search" href="./search/search" title="Search">
+<link rel="help" class="ltx_help" href="./help/" title="Help">
+<link rel="up" href="./26#PT2" title="Properties ‣ Chapter 26 Combinatorial Analysis">
+<link rel="up up" href="./26" title="Chapter 26 Combinatorial Analysis">
+<link rel="start" href="./" title="">
+<link rel="prev" href="./26.12" title="§26.12 Plane Partitions ‣ Properties ‣ Chapter 26 Combinatorial Analysis">
+<link rel="next" href="./26.14" title="§26.14 Permutations: Order Notation ‣ Properties ‣ Chapter 26 Combinatorial Analysis">
+<link rel="section" href="./26.1" title="§26.1 Special Notation ‣ Notation ‣ Chapter 26 Combinatorial Analysis">
+<link rel="section" href="./26.2" title="§26.2 Basic Definitions ‣ Properties ‣ Chapter 26 Combinatorial Analysis">
+<link rel="section" href="./26.3" title="§26.3 Lattice Paths: Binomial Coefficients ‣ Properties ‣ Chapter 26 Combinatorial Analysis">
+<link rel="section" href="./26.4" title="§26.4 Lattice Paths: Multinomial Coefficients and Set Partitions ‣ Properties ‣ Chapter 26 Combinatorial Analysis">
+<link rel="section" href="./26.5" title="§26.5 Lattice Paths: Catalan Numbers ‣ Properties ‣ Chapter 26 Combinatorial Analysis">
+<link rel="section" href="./26.6" title="§26.6 Other Lattice Path Numbers ‣ Properties ‣ Chapter 26 Combinatorial Analysis">
+<link rel="section" href="./26.7" title="§26.7 Set Partitions: Bell Numbers ‣ Properties ‣ Chapter 26 Combinatorial Analysis">
+<link rel="section" href="./26.8" title="§26.8 Set Partitions: Stirling Numbers ‣ Properties ‣ Chapter 26 Combinatorial Analysis">
+<link rel="section" href="./26.9" title="§26.9 Integer Partitions: Restricted Number and Part Size ‣ Properties ‣ Chapter 26 Combinatorial Analysis">
+<link rel="section" href="./26.10" title="§26.10 Integer Partitions: Other Restrictions ‣ Properties ‣ Chapter 26 Combinatorial Analysis">
+<link rel="section" href="./26.11" title="§26.11 Integer Partitions: Compositions ‣ Properties ‣ Chapter 26 Combinatorial Analysis">
+<link rel="section" href="./26.12" title="§26.12 Plane Partitions ‣ Properties ‣ Chapter 26 Combinatorial Analysis">
+<link rel="section" href="./26.14" title="§26.14 Permutations: Order Notation ‣ Properties ‣ Chapter 26 Combinatorial Analysis">
+<link rel="section" href="./26.15" title="§26.15 Permutations: Matrix Notation ‣ Properties ‣ Chapter 26 Combinatorial Analysis">
+<link rel="section" href="./26.16" title="§26.16 Multiset Permutations ‣ Properties ‣ Chapter 26 Combinatorial Analysis">
+<link rel="section" href="./26.17" title="§26.17 The Twelvefold Way ‣ Properties ‣ Chapter 26 Combinatorial Analysis">
+<link rel="section" href="./26.18" title="§26.18 Counting Techniques ‣ Properties ‣ Chapter 26 Combinatorial Analysis">
+<link rel="section" href="./26.19" title="§26.19 Mathematical Applications ‣ Applications ‣ Chapter 26 Combinatorial Analysis">
+<link rel="section" href="./26.20" title="§26.20 Physical Applications ‣ Applications ‣ Chapter 26 Combinatorial Analysis">
+<link rel="section" href="./26.21" title="§26.21 Tables ‣ Computation ‣ Chapter 26 Combinatorial Analysis">
+<link rel="section" href="./26.22" title="§26.22 Software ‣ Computation ‣ Chapter 26 Combinatorial Analysis">
+<link rel="document" href="./front/foreword" title="Foreword">
+<link rel="document" href="./front/preface" title="Preface">
+<link rel="document" href="./front/introduction" title="Mathematical Introduction">
+<link rel="chapter" href="./1" title="Chapter 1 Algebraic and Analytic Methods">
+<link rel="chapter" href="./2" title="Chapter 2 Asymptotic Approximations">
+<link rel="chapter" href="./3" title="Chapter 3 Numerical Methods">
+<link rel="chapter" href="./4" title="Chapter 4 Elementary Functions">
+<link rel="chapter" href="./5" title="Chapter 5 Gamma Function">
+<link rel="chapter" href="./6" title="Chapter 6 Exponential, Logarithmic, Sine, and Cosine Integrals">
+<link rel="chapter" href="./7" title="Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="chapter" href="./8" title="Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="chapter" href="./9" title="Chapter 9 Airy and Related Functions">
+<link rel="chapter" href="./10" title="Chapter 10 Bessel Functions">
+<link rel="chapter" href="./11" title="Chapter 11 Struve and Related Functions">
+<link rel="chapter" href="./12" title="Chapter 12 Parabolic Cylinder Functions">
+<link rel="chapter" href="./13" title="Chapter 13 Confluent Hypergeometric Functions">
+<link rel="chapter" href="./14" title="Chapter 14 Legendre and Related Functions">
+<link rel="chapter" href="./15" title="Chapter 15 Hypergeometric Function">
+<link rel="chapter" href="./16" title="Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="chapter" href="./17" title="Chapter 17 𝑞-Hypergeometric and Related Functions">
+<link rel="chapter" href="./18" title="Chapter 18 Orthogonal Polynomials">
+<link rel="chapter" href="./19" title="Chapter 19 Elliptic Integrals">
+<link rel="chapter" href="./20" title="Chapter 20 Theta Functions">
+<link rel="chapter" href="./21" title="Chapter 21 Multidimensional Theta Functions">
+<link rel="chapter" href="./22" title="Chapter 22 Jacobian Elliptic Functions">
+<link rel="chapter" href="./23" title="Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="chapter" href="./24" title="Chapter 24 Bernoulli and Euler Polynomials">
+<link rel="chapter" href="./25" title="Chapter 25 Zeta and Related Functions">
+<link rel="chapter" href="./26" title="Chapter 26 Combinatorial Analysis">
+<link rel="chapter" href="./27" title="Chapter 27 Functions of Number Theory">
+<link rel="chapter" href="./28" title="Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="chapter" href="./29" title="Chapter 29 Lamé Functions">
+<link rel="chapter" href="./30" title="Chapter 30 Spheroidal Wave Functions">
+<link rel="chapter" href="./31" title="Chapter 31 Heun Functions">
+<link rel="chapter" href="./32" title="Chapter 32 Painlevé Transcendents">
+<link rel="chapter" href="./33" title="Chapter 33 Coulomb Functions">
+<link rel="chapter" href="./34" title="Chapter 34 3⁢𝑗,6⁢𝑗,9⁢𝑗 Symbols">
+<link rel="chapter" href="./35" title="Chapter 35 Functions of Matrix Argument">
+<link rel="chapter" href="./36" title="Chapter 36 Integrals with Coalescing Saddles">
+<link rel="bibliography" href="./bib/" title="Bibliography">
+<link rel="index" href="./idx/" title="Index">
+<link rel="glossary" href="./not/" title="Notations">
+<link rel="document" href="./lof/" title="List of Figures">
+<link rel="document" href="./lot/" title="List of Tables">
+<link rel="document" href="./software/" title="Software Index">
+<link rel="document" href="./errata/" title="Errata">
+<link rel="document" href="./help/" title="Need Help?">
+<link rel="document" href="./search/" title="Advanced Search">
+<link rel="document" href="./about/" title="About the Project">
+<meta name="keywords" lang="en" content="Stirling cycle numbers, adjacent transposition, cycle notation, derangement, derangement number, even or odd, fixed points, inversion numbers, permutations, sign, transpositions">
+</head>
+<body class="color_default textfont_default titlefont_default fontsize_default navbar_default">
+<div class="ltx_page_navbar">
+<div class="ltx_page_navlogo"><a href="./" title="Digital Library of Mathematical Functions"><span>DLMF</span></a></div>
+<div class="ltx_page_navitems">
+<form method="get" action="./search/search">
+<ul>
+<li><a href="./idx/">Index</a></li>
+<li><a href="./not/">Notations</a></li>
+<li><small><input type="text" name="q" value="" size="6" class="ltx_page_navitem_search"><button type="submit">Search</button></small></li>
+<li><a href="./help/" class="ltx_help">Help?</a></li>
+<li><a href="./help/cite">Citing</a></li>
+<li><a href="./help/customize" class="ltx_customize">Customize</a></li>
+<li id="showinfo"><a href="" onclick="showInfo(); return false;" title="Show Annotations">Annotate</a></li>
+<li id="hideinfo"><a href="" onclick="hideInfo(); return false;">UnAnnotate</a></li>
+</ul>
+</form>
+</div>
+<div class="ltx_page_navsponsors">
+<div><a href="./about/" class="ltx_page_navabout">About the Project</a></div>
+</div>
+</div>
+<div class="ltx_page_main">
+<div class="ltx_page_header">
+<a href="./26" title="" class="ltx_ref" rel="up up"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">26 </span>Combinatorial Analysis</span></a><a href="./26#PT2" title="In Chapter 26 Combinatorial Analysis" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title">Properties</span></a><a href="./26.12" title="In Properties ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">26.12 </span>Plane Partitions</span></a><a href="./26.14" title="In Properties ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">26.14 </span>Permutations: Order Notation</span></a>
+</div>
+<div class="ltx_page_content">
+<section class="ltx_section ltx_authors_multiline ltx_leqno">
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">§26.13 </span>Permutations: Cycle Notation</h1>
+<div id="info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Defines:</dt>
+<dd><span class="ltx_text ltx_font_bold"><math class="ltx_Math" altimg="m10.png" altimg-height="21px" altimg-valign="-5px" altimg-width="33px" alttext="\mathfrak{S}_{\NVar{n}}" display="inline"><msub><mi href="./26.13#p1" title="set of permutations of {1,2,…,𝑛}">𝔖</mi><mi class="ltx_nvar" href="./26.1#t1.r2" title="nonnegative integer">n</mi></msub></math>: set of permutations of <math class="ltx_Math" altimg="m18.png" altimg-height="25px" altimg-valign="-7px" altimg-width="114px" alttext="\{1,2,\ldots,n\}" display="inline"><mrow><mo stretchy="false">{</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi><mo stretchy="false">}</mo></mrow></math></span></dd>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=Stirling%20cycle%20numbers">Stirling cycle numbers</a>, <a class="ltx_keyword" href="./search/search?q=adjacent%20transposition">adjacent transposition</a>, <a class="ltx_keyword" href="./search/search?q=cycle%20notation">cycle notation</a>, <a class="ltx_keyword" href="./search/search?q=derangement">derangement</a>, <a class="ltx_keyword" href="./search/search?q=derangement%20number">derangement number</a>, <a class="ltx_keyword" href="./search/search?q=even%20or%20odd">even or odd</a>, <a class="ltx_keyword" href="./search/search?q=fixed%20points">fixed points</a>, <a class="ltx_keyword" href="./search/search?q=inversion%20numbers">inversion numbers</a>, <a class="ltx_keyword" href="./search/search?q=permutations">permutations</a>, <a class="ltx_keyword" href="./search/search?q=sign">sign</a>, <a class="ltx_keyword" href="./search/search?q=transpositions">transpositions</a>
+</dd>
+<dt>Notes:</dt>
+<dd>See <cite class="ltx_cite ltx_citemacro_citet">Cameron (<a href="./bib/C#bib405" title="Combinatorics: Topics, Techniques, Algorithms" class="ltx_ref">1994</a>, pp. 77, 80–84)</cite> and
+<cite class="ltx_cite ltx_citemacro_citet">Stanley (<a href="./bib/S#bib2157" title="Enumerative Combinatorics. Vol. 1" class="ltx_ref">1997</a>, pp. 20–21, 67)</cite>.</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./1.2#Px11.p1" title="The Determinant ‣ §1.2(vi) Square Matrices ‣ §1.2 Elementary Algebra ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.2(vi)</span></a>,
+<a href="./26.14#i.p1" title="§26.14(i) Definitions ‣ §26.14 Permutations: Order Notation ‣ Properties ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§26.14(i)</span></a>,
+<a href="./26.15#p1" title="§26.15 Permutations: Matrix Notation ‣ Properties ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§26.15</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./26.13" title="" class="ltx_ref">http://dlmf.nist.gov/26.13</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./26#info" title="Chapter 26 Combinatorial Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.26</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="p1" class="ltx_para">
+<p class="ltx_p"><math class="ltx_Math" altimg="m11.png" altimg-height="21px" altimg-valign="-5px" altimg-width="33px" alttext="\mathfrak{S}_{n}" display="inline"><msub><mi href="./26.13#p1" title="set of permutations of {1,2,…,𝑛}">𝔖</mi><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi></msub></math> denotes the set of permutations of <math class="ltx_Math" altimg="m18.png" altimg-height="25px" altimg-valign="-7px" altimg-width="114px" alttext="\{1,2,\ldots,n\}" display="inline"><mrow><mo stretchy="false">{</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi><mo stretchy="false">}</mo></mrow></math>.
+<math class="ltx_Math" altimg="m17.png" altimg-height="21px" altimg-valign="-5px" altimg-width="71px" alttext="\sigma\in\mathfrak{S}_{n}" display="inline"><mrow><mi href="./26.13#p1" title="permutation">σ</mi><mo href="./front/introduction#common.t1.r10" title="element of">∈</mo><msub><mi href="./26.13#p1" title="set of permutations of {1,2,…,𝑛}">𝔖</mi><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi></msub></mrow></math> is a one-to-one and onto mapping from
+<math class="ltx_Math" altimg="m18.png" altimg-height="25px" altimg-valign="-7px" altimg-width="114px" alttext="\{1,2,\ldots,n\}" display="inline"><mrow><mo stretchy="false">{</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi><mo stretchy="false">}</mo></mrow></math> to itself. An explicit representation of <math class="ltx_Math" altimg="m16.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="\sigma" display="inline"><mi href="./26.13#p1" title="permutation">σ</mi></math> can be
+given by the <math class="ltx_Math" altimg="m5.png" altimg-height="19px" altimg-valign="-4px" altimg-width="53px" alttext="2\times n" display="inline"><mrow><mn>2</mn><mo lspace="0.222em" rspace="0.222em">×</mo><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi></mrow></math> matrix:</p>
+</div>
+<div id="p2" class="ltx_para">
+<table id="E1" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">26.13.1</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E1.png" altimg-height="62px" altimg-valign="-22px" altimg-width="320px" alttext="\begin{bmatrix}1&amp;2&amp;3&amp;\cdots&amp;n\\
+\sigma(1)&amp;\sigma(2)&amp;\sigma(3)&amp;\cdots&amp;\sigma(n)\end{bmatrix}." display="block"><mrow><mrow><mo>[</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd><mn>1</mn></mtd><mtd><mn>2</mn></mtd><mtd><mn>3</mn></mtd><mtd><mi mathvariant="normal">⋯</mi></mtd><mtd><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi></mtd></mtr><mtr><mtd><mrow><mi href="./26.13#p1" title="permutation">σ</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></mrow></mtd><mtd><mrow><mi href="./26.13#p1" title="permutation">σ</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo></mrow></mrow></mtd><mtd><mrow><mi href="./26.13#p1" title="permutation">σ</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mn>3</mn><mo stretchy="false">)</mo></mrow></mrow></mtd><mtd><mi mathvariant="normal">⋯</mi></mtd><mtd><mrow><mi href="./26.13#p1" title="permutation">σ</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi><mo stretchy="false">)</mo></mrow></mrow></mtd></mtr></mtable><mo>]</mo></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E1.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./26.1#t1.r2" title="§26.1 Special Notation ‣ Notation ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><math class="ltx_Math" altimg="m31.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi></math>:  nonnegative integer</a> and
+<a href="./26.13#p1" title="§26.13 Permutations: Cycle Notation ‣ Properties ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><math class="ltx_Math" altimg="m16.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="\sigma" display="inline"><mi href="./26.13#p1" title="permutation">σ</mi></math>:  permutation</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./26.13.E1" title="" class="ltx_ref">http://dlmf.nist.gov/26.13.E1</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./26.13.E1.tex">TeX</a>, <a href="./26.13.E1.pmml">pMML</a>, <a href="./26.13.E1.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./26.13#info" title="§26.13 Permutations: Cycle Notation ‣ Properties ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§26.13</span></a> and
+<a href="./26#info" title="Chapter 26 Combinatorial Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.26</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+<div id="p3" class="ltx_para">
+<p class="ltx_p">In cycle notation, the elements in each cycle are put inside parentheses,
+ordered so that <math class="ltx_Math" altimg="m15.png" altimg-height="25px" altimg-valign="-7px" altimg-width="43px" alttext="\sigma(j)" display="inline"><mrow><mi href="./26.13#p1" title="permutation">σ</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./26.1#t1.r2" title="nonnegative integer">j</mi><mo stretchy="false">)</mo></mrow></mrow></math> immediately follows <math class="ltx_Math" altimg="m26.png" altimg-height="22px" altimg-valign="-6px" altimg-width="14px" alttext="j" display="inline"><mi href="./26.1#t1.r2" title="nonnegative integer">j</mi></math> or, if <math class="ltx_Math" altimg="m26.png" altimg-height="22px" altimg-valign="-6px" altimg-width="14px" alttext="j" display="inline"><mi href="./26.1#t1.r2" title="nonnegative integer">j</mi></math> is the last
+listed element of the cycle, then <math class="ltx_Math" altimg="m15.png" altimg-height="25px" altimg-valign="-7px" altimg-width="43px" alttext="\sigma(j)" display="inline"><mrow><mi href="./26.13#p1" title="permutation">σ</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./26.1#t1.r2" title="nonnegative integer">j</mi><mo stretchy="false">)</mo></mrow></mrow></math> is the first element of the
+cycle. The permutation</p>
+</div>
+<div id="p4" class="ltx_para">
+<table id="E2" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">26.13.2</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E2.png" altimg-height="62px" altimg-valign="-22px" altimg-width="273px" alttext="\begin{bmatrix}1&amp;2&amp;3&amp;4&amp;5&amp;6&amp;7&amp;8\\
+3&amp;5&amp;2&amp;4&amp;7&amp;8&amp;1&amp;6\end{bmatrix}" display="block"><mrow><mo>[</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd><mn>1</mn></mtd><mtd><mn>2</mn></mtd><mtd><mn>3</mn></mtd><mtd><mn>4</mn></mtd><mtd><mn>5</mn></mtd><mtd><mn>6</mn></mtd><mtd><mn>7</mn></mtd><mtd><mn>8</mn></mtd></mtr><mtr><mtd><mn>3</mn></mtd><mtd><mn>5</mn></mtd><mtd><mn>2</mn></mtd><mtd><mn>4</mn></mtd><mtd><mn>7</mn></mtd><mtd><mn>8</mn></mtd><mtd><mn>1</mn></mtd><mtd><mn>6</mn></mtd></mtr></mtable><mo>]</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E2.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./26.13#p10" title="§26.13 Permutations: Cycle Notation ‣ Properties ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§26.13</span></a>,
+<a href="./26.13#p4" title="§26.13 Permutations: Cycle Notation ‣ Properties ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§26.13</span></a>,
+<a href="./26.13#p8" title="§26.13 Permutations: Cycle Notation ‣ Properties ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§26.13</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./26.13.E2" title="" class="ltx_ref">http://dlmf.nist.gov/26.13.E2</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./26.13.E2.tex">TeX</a>, <a href="./26.13.E2.pmml">pMML</a>, <a href="./26.13.E2.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./26.13#info" title="§26.13 Permutations: Cycle Notation ‣ Properties ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§26.13</span></a> and
+<a href="./26#info" title="Chapter 26 Combinatorial Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.26</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">is <math class="ltx_Math" altimg="m34.png" altimg-height="25px" altimg-valign="-7px" altimg-width="182px" alttext="{\left(1,3,2,5,7\right)}{\left(4\right)}{\left(6,8\right)}" display="inline"><mrow><mrow><mo href="./26.2#Px2" title="cycle">(</mo><mrow><mn>1</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>5</mn><mo>,</mo><mn>7</mn></mrow><mo href="./26.2#Px2" title="cycle">)</mo></mrow><mo>⁢</mo><mrow><mo href="./26.2#Px2" title="cycle">(</mo><mn>4</mn><mo href="./26.2#Px2" title="cycle">)</mo></mrow><mo>⁢</mo><mrow><mo href="./26.2#Px2" title="cycle">(</mo><mrow><mn>6</mn><mo>,</mo><mn>8</mn></mrow><mo href="./26.2#Px2" title="cycle">)</mo></mrow></mrow></math> in cycle notation. Cycles of length one are
+<em class="ltx_emph ltx_font_italic">fixed points</em>. They are often dropped from the cycle notation. In
+consequence, (<a href="./26.13#E2" title="(26.13.2) ‣ §26.13 Permutations: Cycle Notation ‣ Properties ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">26.13.2</span></a>) can also be written as
+<math class="ltx_Math" altimg="m37.png" altimg-height="25px" altimg-valign="-7px" altimg-width="155px" alttext="{\left(1,3,2,5,7\right)}{\left(6,8\right)}" display="inline"><mrow><mrow><mo href="./26.2#Px2" title="cycle">(</mo><mrow><mn>1</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>5</mn><mo>,</mo><mn>7</mn></mrow><mo href="./26.2#Px2" title="cycle">)</mo></mrow><mo>⁢</mo><mrow><mo href="./26.2#Px2" title="cycle">(</mo><mrow><mn>6</mn><mo>,</mo><mn>8</mn></mrow><mo href="./26.2#Px2" title="cycle">)</mo></mrow></mrow></math>.</p>
+</div>
+<div id="p5" class="ltx_para">
+<p class="ltx_p">An element of <math class="ltx_Math" altimg="m11.png" altimg-height="21px" altimg-valign="-5px" altimg-width="33px" alttext="\mathfrak{S}_{n}" display="inline"><msub><mi href="./26.13#p1" title="set of permutations of {1,2,…,𝑛}">𝔖</mi><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi></msub></math> with <math class="ltx_Math" altimg="m19.png" altimg-height="16px" altimg-valign="-5px" altimg-width="25px" alttext="a_{1}" display="inline"><msub><mi href="./26.13" title="numbers">a</mi><mn>1</mn></msub></math> fixed points, <math class="ltx_Math" altimg="m21.png" altimg-height="16px" altimg-valign="-5px" altimg-width="25px" alttext="a_{2}" display="inline"><msub><mi href="./26.13" title="numbers">a</mi><mn>2</mn></msub></math> cycles of
+length <math class="ltx_Math" altimg="m4.png" altimg-height="21px" altimg-valign="-6px" altimg-width="83px" alttext="2,\ldots,a_{n}" display="inline"><mrow><mn>2</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi href="./26.13" title="numbers">a</mi><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi></msub></mrow></math> cycles of length <math class="ltx_Math" altimg="m31.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi></math>, where
+<math class="ltx_Math" altimg="m30.png" altimg-height="20px" altimg-valign="-5px" altimg-width="230px" alttext="n=a_{1}+2a_{2}+\cdots+na_{n}" display="inline"><mrow><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi><mo>=</mo><mrow><msub><mi href="./26.13" title="numbers">a</mi><mn>1</mn></msub><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><msub><mi href="./26.13" title="numbers">a</mi><mn>2</mn></msub></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><mrow><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi><mo>⁢</mo><msub><mi href="./26.13" title="numbers">a</mi><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi></msub></mrow></mrow></mrow></math>, is said to have <em class="ltx_emph ltx_font_italic">cycle type</em>
+<math class="ltx_Math" altimg="m39.png" altimg-height="25px" altimg-valign="-7px" altimg-width="139px" alttext="{\left(a_{1},a_{2},\ldots,a_{n}\right)}" display="inline"><mrow><mo href="./26.2#Px2" title="cycle">(</mo><mrow><msub><mi href="./26.13" title="numbers">a</mi><mn>1</mn></msub><mo>,</mo><msub><mi href="./26.13" title="numbers">a</mi><mn>2</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi href="./26.13" title="numbers">a</mi><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi></msub></mrow><mo href="./26.2#Px2" title="cycle">)</mo></mrow></math>. The number of elements of <math class="ltx_Math" altimg="m11.png" altimg-height="21px" altimg-valign="-5px" altimg-width="33px" alttext="\mathfrak{S}_{n}" display="inline"><msub><mi href="./26.13#p1" title="set of permutations of {1,2,…,𝑛}">𝔖</mi><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi></msub></math> with cycle type
+<math class="ltx_Math" altimg="m39.png" altimg-height="25px" altimg-valign="-7px" altimg-width="139px" alttext="{\left(a_{1},a_{2},\ldots,a_{n}\right)}" display="inline"><mrow><mo href="./26.2#Px2" title="cycle">(</mo><mrow><msub><mi href="./26.13" title="numbers">a</mi><mn>1</mn></msub><mo>,</mo><msub><mi href="./26.13" title="numbers">a</mi><mn>2</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi href="./26.13" title="numbers">a</mi><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi></msub></mrow><mo href="./26.2#Px2" title="cycle">)</mo></mrow></math> is given by (<a href="./26.4#E7" title="(26.4.7) ‣ §26.4(i) Definitions ‣ §26.4 Lattice Paths: Multinomial Coefficients and Set Partitions ‣ Properties ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">26.4.7</span></a>).</p>
+</div>
+<div id="p6" class="ltx_para">
+<p class="ltx_p">The <em class="ltx_emph ltx_font_italic">Stirling cycle numbers</em> of the first kind, denoted by
+<math class="ltx_Math" altimg="m8.png" altimg-height="29px" altimg-valign="-9px" altimg-width="32px" alttext="\genfrac{[}{]}{0.0pt}{}{n}{k}" display="inline"><mrow><mo href="./26.13#E3" title="Stirling cycle number of the first kind">[</mo><mfrac linethickness="0.0pt"><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi><mi href="./26.1#t1.r2" title="nonnegative integer">k</mi></mfrac><mo href="./26.13#E3" title="Stirling cycle number of the first kind">]</mo></mrow></math>,
+count the number of permutations of
+<math class="ltx_Math" altimg="m18.png" altimg-height="25px" altimg-valign="-7px" altimg-width="114px" alttext="\{1,2,\ldots,n\}" display="inline"><mrow><mo stretchy="false">{</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi><mo stretchy="false">}</mo></mrow></math> with exactly <math class="ltx_Math" altimg="m28.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./26.1#t1.r2" title="nonnegative integer">k</mi></math> cycles. They are related to Stirling
+numbers of the first kind by</p>
+<table id="E3" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">26.13.3</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E3.png" altimg-height="100px" altimg-valign="-22px" altimg-width="152px" alttext="\genfrac{[}{]}{0.0pt}{}{n}{k}=\left|s\left(n,k\right)\right|." display="block"><mrow><mrow><mrow><mo href="./26.13#E3" title="Stirling cycle number of the first kind">[</mo><mfrac linethickness="0.0pt"><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi><mi href="./26.1#t1.r2" title="nonnegative integer">k</mi></mfrac><mo href="./26.13#E3" title="Stirling cycle number of the first kind">]</mo></mrow><mo>=</mo><mrow><mo>|</mo><mrow><mi href="./26.8#i.p1" title="Stirling number of the first kind">s</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi><mo>,</mo><mi href="./26.1#t1.r2" title="nonnegative integer">k</mi><mo>)</mo></mrow></mrow><mo>|</mo></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E3.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Defines:</dt>
+<dd><span class="ltx_text ltx_font_bold"><math class="ltx_Math" altimg="m7.png" altimg-height="29px" altimg-valign="-9px" altimg-width="32px" alttext="\genfrac{[}{]}{0.0pt}{}{\NVar{n}}{\NVar{k}}" display="inline"><mrow><mo href="./26.13#E3" title="Stirling cycle number of the first kind">[</mo><mfrac linethickness="0.0pt"><mi class="ltx_nvar" href="./26.1#t1.r2" title="nonnegative integer">n</mi><mi class="ltx_nvar" href="./26.1#t1.r2" title="nonnegative integer">k</mi></mfrac><mo href="./26.13#E3" title="Stirling cycle number of the first kind">]</mo></mrow></math>: Stirling cycle number of the first kind</span></dd>
+<dt>Symbols:</dt>
+<dd>
+<a href="./26.8#i.p1" title="§26.8(i) Definitions ‣ §26.8 Set Partitions: Stirling Numbers ‣ Properties ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><math class="ltx_Math" altimg="m32.png" altimg-height="25px" altimg-valign="-7px" altimg-width="67px" alttext="s\left(\NVar{n},\NVar{k}\right)" display="inline"><mrow><mi href="./26.8#i.p1" title="Stirling number of the first kind">s</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./26.1#t1.r2" title="nonnegative integer">n</mi><mo>,</mo><mi class="ltx_nvar" href="./26.1#t1.r2" title="nonnegative integer">k</mi><mo>)</mo></mrow></mrow></math>: Stirling number of the first kind</a>,
+<a href="./26.1#t1.r2" title="§26.1 Special Notation ‣ Notation ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><math class="ltx_Math" altimg="m28.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./26.1#t1.r2" title="nonnegative integer">k</mi></math>:  nonnegative integer</a> and
+<a href="./26.1#t1.r2" title="§26.1 Special Notation ‣ Notation ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><math class="ltx_Math" altimg="m31.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi></math>:  nonnegative integer</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./4.13#p6" title="§4.13 Lambert 𝑊-Function ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§4.13</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./26.13.E3" title="" class="ltx_ref">http://dlmf.nist.gov/26.13.E3</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./26.13.E3.tex">TeX</a>, <a href="./26.13.E3.pmml">pMML</a>, <a href="./26.13.E3.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./26.13#info" title="§26.13 Permutations: Cycle Notation ‣ Properties ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§26.13</span></a> and
+<a href="./26#info" title="Chapter 26 Combinatorial Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.26</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">See §<a href="./26.8" title="§26.8 Set Partitions: Stirling Numbers ‣ Properties ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">26.8</span></a> for generating functions, recurrence relations,
+identities, and asymptotic approximations.</p>
+</div>
+<div id="p7" class="ltx_para">
+<p class="ltx_p">A <em class="ltx_emph ltx_font_italic">derangement</em> is a permutation with no fixed points. The
+<em class="ltx_emph ltx_font_italic">derangement number</em>, <math class="ltx_Math" altimg="m24.png" altimg-height="25px" altimg-valign="-7px" altimg-width="44px" alttext="d(n)" display="inline"><mrow><mi href="./26.13#p7" title="derangement number">d</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi><mo stretchy="false">)</mo></mrow></mrow></math>, is the number of elements of <math class="ltx_Math" altimg="m11.png" altimg-height="21px" altimg-valign="-5px" altimg-width="33px" alttext="\mathfrak{S}_{n}" display="inline"><msub><mi href="./26.13#p1" title="set of permutations of {1,2,…,𝑛}">𝔖</mi><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi></msub></math>
+with no fixed points:
+</p>
+<table id="E4" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">26.13.4</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E4.png" altimg-height="97px" altimg-valign="-31px" altimg-width="352px" alttext="d(n)=n!\sum_{j=0}^{n}(-1)^{j}\frac{1}{j!}=\left\lfloor\frac{n!+\mathrm{e}-2}{%
+\mathrm{e}}\right\rfloor." display="block"><mrow><mrow><mrow><mi href="./26.13#p7" title="derangement number">d</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi><mo href="./front/introduction#common.t1.r15" title="factorial (as in 𝑛!)">!</mo></mrow><mo>⁢</mo><mrow><munderover><mo movablelimits="false" rspace="0em">∑</mo><mrow><mi href="./26.1#t1.r2" title="nonnegative integer">j</mi><mo>=</mo><mn>0</mn></mrow><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi></munderover><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mi href="./26.1#t1.r2" title="nonnegative integer">j</mi></msup><mo>⁢</mo><mfrac><mn>1</mn><mrow><mi href="./26.1#t1.r2" title="nonnegative integer">j</mi><mo href="./front/introduction#common.t1.r15" title="factorial (as in 𝑛!)">!</mo></mrow></mfrac></mrow></mrow></mrow><mo>=</mo><mrow><mo href="./front/introduction#common.t1.r17" title="floor of 𝑥">⌊</mo><mfrac><mrow><mrow><mrow><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi><mo href="./front/introduction#common.t1.r15" title="factorial (as in 𝑛!)">!</mo></mrow><mo>+</mo><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi></mrow><mo>−</mo><mn>2</mn></mrow><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi></mfrac><mo href="./front/introduction#common.t1.r17" title="floor of 𝑥">⌋</mo></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E4.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./4.2#E11" title="(4.2.11) ‣ §4.2(ii) Logarithms to a General Base 𝑎 ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m14.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="\mathrm{e}" display="inline"><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi></math>: base of natural logarithm</a>,
+<a href="./front/introduction#common.t1.r15" title="Common Notations and Definitions ‣ Mathematical Introduction" class="ltx_ref"><math class="ltx_Math" altimg="m1.png" altimg-height="18px" altimg-valign="-2px" altimg-width="10px" alttext="!" display="inline"><mo href="./front/introduction#common.t1.r15" title="factorial (as in 𝑛!)">!</mo></math>: factorial (as in <math class="ltx_Math" altimg="m29.png" altimg-height="18px" altimg-valign="-2px" altimg-width="23px" alttext="n!" display="inline"><mrow><mi>n</mi><mo href="./front/introduction#common.t1.r15" title="factorial (as in 𝑛!)">!</mo></mrow></math>)</a>,
+<a href="./front/introduction#common.t1.r17" title="Common Notations and Definitions ‣ Mathematical Introduction" class="ltx_ref"><math class="ltx_Math" altimg="m9.png" altimg-height="25px" altimg-valign="-7px" altimg-width="35px" alttext="\left\lfloor\NVar{x}\right\rfloor" display="inline"><mrow><mo href="./front/introduction#common.t1.r17" title="floor of 𝑥">⌊</mo><mi class="ltx_nvar">x</mi><mo href="./front/introduction#common.t1.r17" title="floor of 𝑥">⌋</mo></mrow></math>: floor of <math class="ltx_Math" altimg="m33.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./26.1#t1.r2" title="§26.1 Special Notation ‣ Notation ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><math class="ltx_Math" altimg="m26.png" altimg-height="22px" altimg-valign="-6px" altimg-width="14px" alttext="j" display="inline"><mi href="./26.1#t1.r2" title="nonnegative integer">j</mi></math>:  nonnegative integer</a>,
+<a href="./26.1#t1.r2" title="§26.1 Special Notation ‣ Notation ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><math class="ltx_Math" altimg="m31.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi></math>:  nonnegative integer</a> and
+<a href="./26.13#p7" title="§26.13 Permutations: Cycle Notation ‣ Properties ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><math class="ltx_Math" altimg="m24.png" altimg-height="25px" altimg-valign="-7px" altimg-width="44px" alttext="d(n)" display="inline"><mrow><mi href="./26.13#p7" title="derangement number">d</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi><mo stretchy="false">)</mo></mrow></mrow></math>:  derangement number</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./26.13.E4" title="" class="ltx_ref">http://dlmf.nist.gov/26.13.E4</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./26.13.E4.tex">TeX</a>, <a href="./26.13.E4.pmml">pMML</a>, <a href="./26.13.E4.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./26.13#info" title="§26.13 Permutations: Cycle Notation ‣ Properties ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§26.13</span></a> and
+<a href="./26#info" title="Chapter 26 Combinatorial Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.26</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+<div id="p8" class="ltx_para">
+<p class="ltx_p">A <em class="ltx_emph ltx_font_italic">transposition</em> is a permutation that consists of a single cycle of
+length two. An <em class="ltx_emph ltx_font_italic">adjacent transposition</em> is a transposition of two
+consecutive integers. A permutation that consists of a single cycle of length
+<math class="ltx_Math" altimg="m28.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./26.1#t1.r2" title="nonnegative integer">k</mi></math> can be written as the composition of <math class="ltx_Math" altimg="m27.png" altimg-height="20px" altimg-valign="-4px" altimg-width="52px" alttext="k-1" display="inline"><mrow><mi href="./26.1#t1.r2" title="nonnegative integer">k</mi><mo>−</mo><mn>1</mn></mrow></math> two-cycles (read from right to
+left):</p>
+<table id="E5" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">26.13.5</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E5.png" altimg-height="27px" altimg-valign="-7px" altimg-width="509px" alttext="{\left(j_{1},j_{2},\ldots,j_{k}\right)}={\left(j_{1},j_{2}\right)}{\left(j_{2}%
+,j_{3}\right)}\cdots{\left(j_{k-2},j_{k-1}\right)}{\left(j_{k-1},j_{k}\right)}." display="block"><mrow><mrow><mrow><mo href="./26.2#Px2" title="cycle">(</mo><mrow><msub><mi href="./26.1#t1.r2" title="nonnegative integer">j</mi><mn>1</mn></msub><mo>,</mo><msub><mi href="./26.1#t1.r2" title="nonnegative integer">j</mi><mn>2</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi href="./26.1#t1.r2" title="nonnegative integer">j</mi><mi href="./26.1#t1.r2" title="nonnegative integer">k</mi></msub></mrow><mo href="./26.2#Px2" title="cycle">)</mo></mrow><mo>=</mo><mrow><mrow><mo href="./26.2#Px2" title="cycle">(</mo><mrow><msub><mi href="./26.1#t1.r2" title="nonnegative integer">j</mi><mn>1</mn></msub><mo>,</mo><msub><mi href="./26.1#t1.r2" title="nonnegative integer">j</mi><mn>2</mn></msub></mrow><mo href="./26.2#Px2" title="cycle">)</mo></mrow><mo>⁢</mo><mrow><mo href="./26.2#Px2" title="cycle">(</mo><mrow><msub><mi href="./26.1#t1.r2" title="nonnegative integer">j</mi><mn>2</mn></msub><mo>,</mo><msub><mi href="./26.1#t1.r2" title="nonnegative integer">j</mi><mn>3</mn></msub></mrow><mo href="./26.2#Px2" title="cycle">)</mo></mrow><mo>⁢</mo><mi mathvariant="normal">⋯</mi><mo>⁢</mo><mrow><mo href="./26.2#Px2" title="cycle">(</mo><mrow><msub><mi href="./26.1#t1.r2" title="nonnegative integer">j</mi><mrow><mi href="./26.1#t1.r2" title="nonnegative integer">k</mi><mo>−</mo><mn>2</mn></mrow></msub><mo>,</mo><msub><mi href="./26.1#t1.r2" title="nonnegative integer">j</mi><mrow><mi href="./26.1#t1.r2" title="nonnegative integer">k</mi><mo>−</mo><mn>1</mn></mrow></msub></mrow><mo href="./26.2#Px2" title="cycle">)</mo></mrow><mo>⁢</mo><mrow><mo href="./26.2#Px2" title="cycle">(</mo><mrow><msub><mi href="./26.1#t1.r2" title="nonnegative integer">j</mi><mrow><mi href="./26.1#t1.r2" title="nonnegative integer">k</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>,</mo><msub><mi href="./26.1#t1.r2" title="nonnegative integer">j</mi><mi href="./26.1#t1.r2" title="nonnegative integer">k</mi></msub></mrow><mo href="./26.2#Px2" title="cycle">)</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E5.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./26.2#Px2" title="Cycle ‣ §26.2 Basic Definitions ‣ Properties ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><math class="ltx_Math" altimg="m38.png" altimg-height="25px" altimg-valign="-7px" altimg-width="34px" alttext="{\left(\NVar{S}\right)}" display="inline"><mrow><mo href="./26.2#Px2" title="cycle">(</mo><mi class="ltx_nvar">S</mi><mo href="./26.2#Px2" title="cycle">)</mo></mrow></math>: cycle</a>,
+<a href="./26.1#t1.r2" title="§26.1 Special Notation ‣ Notation ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><math class="ltx_Math" altimg="m26.png" altimg-height="22px" altimg-valign="-6px" altimg-width="14px" alttext="j" display="inline"><mi href="./26.1#t1.r2" title="nonnegative integer">j</mi></math>:  nonnegative integer</a> and
+<a href="./26.1#t1.r2" title="§26.1 Special Notation ‣ Notation ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><math class="ltx_Math" altimg="m28.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./26.1#t1.r2" title="nonnegative integer">k</mi></math>:  nonnegative integer</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./26.13.E5" title="" class="ltx_ref">http://dlmf.nist.gov/26.13.E5</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./26.13.E5.tex">TeX</a>, <a href="./26.13.E5.pmml">pMML</a>, <a href="./26.13.E5.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./26.13#info" title="§26.13 Permutations: Cycle Notation ‣ Properties ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§26.13</span></a> and
+<a href="./26#info" title="Chapter 26 Combinatorial Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.26</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">Every permutation is a product of transpositions. A permutation with cycle
+type <math class="ltx_Math" altimg="m39.png" altimg-height="25px" altimg-valign="-7px" altimg-width="139px" alttext="{\left(a_{1},a_{2},\ldots,a_{n}\right)}" display="inline"><mrow><mo href="./26.2#Px2" title="cycle">(</mo><mrow><msub><mi href="./26.13" title="numbers">a</mi><mn>1</mn></msub><mo>,</mo><msub><mi href="./26.13" title="numbers">a</mi><mn>2</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi href="./26.13" title="numbers">a</mi><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi></msub></mrow><mo href="./26.2#Px2" title="cycle">)</mo></mrow></math> can be written as a product of
+<math class="ltx_Math" altimg="m20.png" altimg-height="25px" altimg-valign="-7px" altimg-width="487px" alttext="a_{2}+2a_{3}+\cdots+(n-1)a_{n}=n-(a_{1}+a_{2}+\cdots+a_{n})" display="inline"><mrow><mrow><msub><mi href="./26.13" title="numbers">a</mi><mn>2</mn></msub><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><msub><mi href="./26.13" title="numbers">a</mi><mn>3</mn></msub></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><mi href="./26.13" title="numbers">a</mi><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi></msub></mrow></mrow><mo>=</mo><mrow><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi><mo>−</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi href="./26.13" title="numbers">a</mi><mn>1</mn></msub><mo>+</mo><msub><mi href="./26.13" title="numbers">a</mi><mn>2</mn></msub><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><msub><mi href="./26.13" title="numbers">a</mi><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></math>
+transpositions, and no fewer. For the example (<a href="./26.13#E2" title="(26.13.2) ‣ §26.13 Permutations: Cycle Notation ‣ Properties ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">26.13.2</span></a>), this
+decomposition is given by <math class="ltx_Math" altimg="m35.png" altimg-height="25px" altimg-valign="-7px" altimg-width="419px" alttext="{\left(1,3,2,5,7\right)}{\left(6,8\right)}={\left(1,3\right)}{\left(2,3\right)%
+}{\left(2,5\right)}{\left(5,7\right)}{\left(6,8\right)}." display="inline"><mrow><mrow><mrow><mrow><mo href="./26.2#Px2" title="cycle">(</mo><mrow><mn>1</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>5</mn><mo>,</mo><mn>7</mn></mrow><mo href="./26.2#Px2" title="cycle">)</mo></mrow><mo>⁢</mo><mrow><mo href="./26.2#Px2" title="cycle">(</mo><mrow><mn>6</mn><mo>,</mo><mn>8</mn></mrow><mo href="./26.2#Px2" title="cycle">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mo href="./26.2#Px2" title="cycle">(</mo><mrow><mn>1</mn><mo>,</mo><mn>3</mn></mrow><mo href="./26.2#Px2" title="cycle">)</mo></mrow><mo>⁢</mo><mrow><mo href="./26.2#Px2" title="cycle">(</mo><mrow><mn>2</mn><mo>,</mo><mn>3</mn></mrow><mo href="./26.2#Px2" title="cycle">)</mo></mrow><mo>⁢</mo><mrow><mo href="./26.2#Px2" title="cycle">(</mo><mrow><mn>2</mn><mo>,</mo><mn>5</mn></mrow><mo href="./26.2#Px2" title="cycle">)</mo></mrow><mo>⁢</mo><mrow><mo href="./26.2#Px2" title="cycle">(</mo><mrow><mn>5</mn><mo>,</mo><mn>7</mn></mrow><mo href="./26.2#Px2" title="cycle">)</mo></mrow><mo>⁢</mo><mrow><mo href="./26.2#Px2" title="cycle">(</mo><mrow><mn>6</mn><mo>,</mo><mn>8</mn></mrow><mo href="./26.2#Px2" title="cycle">)</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></p>
+</div>
+<div id="p9" class="ltx_para">
+<p class="ltx_p">A permutation is <em class="ltx_emph ltx_font_italic">even</em> or <em class="ltx_emph ltx_font_italic">odd</em> according to the parity of the
+number of transpositions. The <em class="ltx_emph ltx_font_italic">sign of a permutation</em> is <math class="ltx_Math" altimg="m2.png" altimg-height="18px" altimg-valign="-4px" altimg-width="20px" alttext="+" display="inline"><mo>+</mo></math> if the
+permutation is even, <math class="ltx_Math" altimg="m3.png" altimg-height="18px" altimg-valign="-4px" altimg-width="20px" alttext="-" display="inline"><mo>−</mo></math> if it is odd.</p>
+</div>
+<div id="p10" class="ltx_para">
+<p class="ltx_p">Every transposition is the product of adjacent transpositions. If <math class="ltx_Math" altimg="m25.png" altimg-height="22px" altimg-valign="-6px" altimg-width="53px" alttext="j&lt;k" display="inline"><mrow><mi href="./26.1#t1.r2" title="nonnegative integer">j</mi><mo>&lt;</mo><mi href="./26.1#t1.r2" title="nonnegative integer">k</mi></mrow></math>, then
+<math class="ltx_Math" altimg="m40.png" altimg-height="25px" altimg-valign="-7px" altimg-width="50px" alttext="{\left(j,k\right)}" display="inline"><mrow><mo href="./26.2#Px2" title="cycle">(</mo><mrow><mi href="./26.1#t1.r2" title="nonnegative integer">j</mi><mo>,</mo><mi href="./26.1#t1.r2" title="nonnegative integer">k</mi></mrow><mo href="./26.2#Px2" title="cycle">)</mo></mrow></math> is a product of <math class="ltx_Math" altimg="m6.png" altimg-height="22px" altimg-valign="-6px" altimg-width="107px" alttext="2k-2j-1" display="inline"><mrow><mrow><mn>2</mn><mo>⁢</mo><mi href="./26.1#t1.r2" title="nonnegative integer">k</mi></mrow><mo>−</mo><mrow><mn>2</mn><mo>⁢</mo><mi href="./26.1#t1.r2" title="nonnegative integer">j</mi></mrow><mo>−</mo><mn>1</mn></mrow></math> adjacent transpositions:</p>
+<table id="E6" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">26.13.6</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E6.png" altimg-height="27px" altimg-valign="-7px" altimg-width="751px" alttext="{\left(j,k\right)}={\left(k-1,k\right)}{\left(k-2,k-1\right)}\cdots{\left(j+1,%
+j+2\right)}\*{\left(j,j+1\right)}{\left(j+1,j+2\right)}\cdots{\left(k-1,k%
+\right)}." display="block"><mrow><mrow><mrow><mo href="./26.2#Px2" title="cycle">(</mo><mrow><mi href="./26.1#t1.r2" title="nonnegative integer">j</mi><mo>,</mo><mi href="./26.1#t1.r2" title="nonnegative integer">k</mi></mrow><mo href="./26.2#Px2" title="cycle">)</mo></mrow><mo>=</mo><mrow><mrow><mo href="./26.2#Px2" title="cycle">(</mo><mrow><mrow><mi href="./26.1#t1.r2" title="nonnegative integer">k</mi><mo>−</mo><mn>1</mn></mrow><mo>,</mo><mi href="./26.1#t1.r2" title="nonnegative integer">k</mi></mrow><mo href="./26.2#Px2" title="cycle">)</mo></mrow><mo>⁢</mo><mrow><mo href="./26.2#Px2" title="cycle">(</mo><mrow><mrow><mi href="./26.1#t1.r2" title="nonnegative integer">k</mi><mo>−</mo><mn>2</mn></mrow><mo>,</mo><mrow><mi href="./26.1#t1.r2" title="nonnegative integer">k</mi><mo>−</mo><mn>1</mn></mrow></mrow><mo href="./26.2#Px2" title="cycle">)</mo></mrow><mo>⁢</mo><mi mathvariant="normal">⋯</mi><mo>⁢</mo><mrow><mo href="./26.2#Px2" title="cycle">(</mo><mrow><mrow><mi href="./26.1#t1.r2" title="nonnegative integer">j</mi><mo>+</mo><mn>1</mn></mrow><mo>,</mo><mrow><mi href="./26.1#t1.r2" title="nonnegative integer">j</mi><mo>+</mo><mn>2</mn></mrow></mrow><mo href="./26.2#Px2" title="cycle">)</mo></mrow><mo>⁢</mo><mrow><mo href="./26.2#Px2" title="cycle">(</mo><mrow><mi href="./26.1#t1.r2" title="nonnegative integer">j</mi><mo>,</mo><mrow><mi href="./26.1#t1.r2" title="nonnegative integer">j</mi><mo>+</mo><mn>1</mn></mrow></mrow><mo href="./26.2#Px2" title="cycle">)</mo></mrow><mo>⁢</mo><mrow><mo href="./26.2#Px2" title="cycle">(</mo><mrow><mrow><mi href="./26.1#t1.r2" title="nonnegative integer">j</mi><mo>+</mo><mn>1</mn></mrow><mo>,</mo><mrow><mi href="./26.1#t1.r2" title="nonnegative integer">j</mi><mo>+</mo><mn>2</mn></mrow></mrow><mo href="./26.2#Px2" title="cycle">)</mo></mrow><mo>⁢</mo><mi mathvariant="normal">⋯</mi><mo>⁢</mo><mrow><mo href="./26.2#Px2" title="cycle">(</mo><mrow><mrow><mi href="./26.1#t1.r2" title="nonnegative integer">k</mi><mo>−</mo><mn>1</mn></mrow><mo>,</mo><mi href="./26.1#t1.r2" title="nonnegative integer">k</mi></mrow><mo href="./26.2#Px2" title="cycle">)</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E6.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./26.2#Px2" title="Cycle ‣ §26.2 Basic Definitions ‣ Properties ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><math class="ltx_Math" altimg="m38.png" altimg-height="25px" altimg-valign="-7px" altimg-width="34px" alttext="{\left(\NVar{S}\right)}" display="inline"><mrow><mo href="./26.2#Px2" title="cycle">(</mo><mi class="ltx_nvar">S</mi><mo href="./26.2#Px2" title="cycle">)</mo></mrow></math>: cycle</a>,
+<a href="./26.1#t1.r2" title="§26.1 Special Notation ‣ Notation ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><math class="ltx_Math" altimg="m26.png" altimg-height="22px" altimg-valign="-6px" altimg-width="14px" alttext="j" display="inline"><mi href="./26.1#t1.r2" title="nonnegative integer">j</mi></math>:  nonnegative integer</a> and
+<a href="./26.1#t1.r2" title="§26.1 Special Notation ‣ Notation ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><math class="ltx_Math" altimg="m28.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./26.1#t1.r2" title="nonnegative integer">k</mi></math>:  nonnegative integer</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./26.13.E6" title="" class="ltx_ref">http://dlmf.nist.gov/26.13.E6</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./26.13.E6.tex">TeX</a>, <a href="./26.13.E6.pmml">pMML</a>, <a href="./26.13.E6.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./26.13#info" title="§26.13 Permutations: Cycle Notation ‣ Properties ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§26.13</span></a> and
+<a href="./26#info" title="Chapter 26 Combinatorial Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.26</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">Every permutation is a product of adjacent transpositions. Given a permutation
+<math class="ltx_Math" altimg="m17.png" altimg-height="21px" altimg-valign="-5px" altimg-width="71px" alttext="\sigma\in\mathfrak{S}_{n}" display="inline"><mrow><mi href="./26.13#p1" title="permutation">σ</mi><mo href="./front/introduction#common.t1.r10" title="element of">∈</mo><msub><mi href="./26.13#p1" title="set of permutations of {1,2,…,𝑛}">𝔖</mi><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi></msub></mrow></math>, the <em class="ltx_emph ltx_font_italic">inversion number</em> of <math class="ltx_Math" altimg="m16.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="\sigma" display="inline"><mi href="./26.13#p1" title="permutation">σ</mi></math>, denoted
+<math class="ltx_Math" altimg="m12.png" altimg-height="25px" altimg-valign="-7px" altimg-width="61px" alttext="\mathop{\mathrm{inv}}(\sigma)" display="inline"><mrow><mo href="./26.13#p10" rspace="0em" title="inversion number">inv</mo><mrow><mo href="./26.13#p10" stretchy="false" title="inversion number">(</mo><mi href="./26.13#p1" title="permutation">σ</mi><mo href="./26.13#p10" stretchy="false" title="inversion number">)</mo></mrow></mrow></math>, is the least number of adjacent transpositions required to
+represent <math class="ltx_Math" altimg="m16.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="\sigma" display="inline"><mi href="./26.13#p1" title="permutation">σ</mi></math>. Again, for the example (<a href="./26.13#E2" title="(26.13.2) ‣ §26.13 Permutations: Cycle Notation ‣ Properties ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">26.13.2</span></a>) a minimal
+decomposition into adjacent transpositions is given by
+<math class="ltx_Math" altimg="m36.png" altimg-height="25px" altimg-valign="-7px" altimg-width="690px" alttext="{\left(1,3,2,5,7\right)}{\left(6,8\right)}={\left(2,3\right)}\*{\left(1,2%
+\right)}\*{\left(4,5\right)}{\left(3,4\right)}{\left(2,3\right)}{\left(3,4%
+\right)}{\left(4,5\right)}{\left(6,7\right)}{\left(5,6\right)}{\left(7,8\right%
+)}\*{\left(6,7\right)}" display="inline"><mrow><mrow><mrow><mo href="./26.2#Px2" title="cycle">(</mo><mrow><mn>1</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>5</mn><mo>,</mo><mn>7</mn></mrow><mo href="./26.2#Px2" title="cycle">)</mo></mrow><mo>⁢</mo><mrow><mo href="./26.2#Px2" title="cycle">(</mo><mrow><mn>6</mn><mo>,</mo><mn>8</mn></mrow><mo href="./26.2#Px2" title="cycle">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mo href="./26.2#Px2" title="cycle">(</mo><mrow><mn>2</mn><mo>,</mo><mn>3</mn></mrow><mo href="./26.2#Px2" title="cycle">)</mo></mrow><mo>⁢</mo><mrow><mo href="./26.2#Px2" title="cycle">(</mo><mrow><mn>1</mn><mo>,</mo><mn>2</mn></mrow><mo href="./26.2#Px2" title="cycle">)</mo></mrow><mo>⁢</mo><mrow><mo href="./26.2#Px2" title="cycle">(</mo><mrow><mn>4</mn><mo>,</mo><mn>5</mn></mrow><mo href="./26.2#Px2" title="cycle">)</mo></mrow><mo>⁢</mo><mrow><mo href="./26.2#Px2" title="cycle">(</mo><mrow><mn>3</mn><mo>,</mo><mn>4</mn></mrow><mo href="./26.2#Px2" title="cycle">)</mo></mrow><mo>⁢</mo><mrow><mo href="./26.2#Px2" title="cycle">(</mo><mrow><mn>2</mn><mo>,</mo><mn>3</mn></mrow><mo href="./26.2#Px2" title="cycle">)</mo></mrow><mo>⁢</mo><mrow><mo href="./26.2#Px2" title="cycle">(</mo><mrow><mn>3</mn><mo>,</mo><mn>4</mn></mrow><mo href="./26.2#Px2" title="cycle">)</mo></mrow><mo>⁢</mo><mrow><mo href="./26.2#Px2" title="cycle">(</mo><mrow><mn>4</mn><mo>,</mo><mn>5</mn></mrow><mo href="./26.2#Px2" title="cycle">)</mo></mrow><mo>⁢</mo><mrow><mo href="./26.2#Px2" title="cycle">(</mo><mrow><mn>6</mn><mo>,</mo><mn>7</mn></mrow><mo href="./26.2#Px2" title="cycle">)</mo></mrow><mo>⁢</mo><mrow><mo href="./26.2#Px2" title="cycle">(</mo><mrow><mn>5</mn><mo>,</mo><mn>6</mn></mrow><mo href="./26.2#Px2" title="cycle">)</mo></mrow><mo>⁢</mo><mrow><mo href="./26.2#Px2" title="cycle">(</mo><mrow><mn>7</mn><mo>,</mo><mn>8</mn></mrow><mo href="./26.2#Px2" title="cycle">)</mo></mrow><mo>⁢</mo><mrow><mo href="./26.2#Px2" title="cycle">(</mo><mrow><mn>6</mn><mo>,</mo><mn>7</mn></mrow><mo href="./26.2#Px2" title="cycle">)</mo></mrow></mrow></mrow></math>:
+<math class="ltx_Math" altimg="m13.png" altimg-height="25px" altimg-valign="-7px" altimg-width="248px" alttext="\mathop{\mathrm{inv}}({\left(1,3,2,5,7\right)}{\left(6,8\right)})=11" display="inline"><mrow><mrow><mo rspace="0em">inv</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mo href="./26.2#Px2" title="cycle">(</mo><mrow><mn>1</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>5</mn><mo>,</mo><mn>7</mn></mrow><mo href="./26.2#Px2" title="cycle">)</mo></mrow><mo>⁢</mo><mrow><mo href="./26.2#Px2" title="cycle">(</mo><mrow><mn>6</mn><mo>,</mo><mn>8</mn></mrow><mo href="./26.2#Px2" title="cycle">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>11</mn></mrow></math>.</p>
+</div>
+</section>
+</div>
+<div class="ltx_page_footer">
+<div class="ltx_siblings">
+<a href="./26.12" title="In Properties ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">26.12 </span>Plane Partitions</span></a><a href="./26.14" title="In Properties ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">26.14 </span>Permutations: Order Notation</span></a>
+</div>
+<div class="ltx_footer_links ltx_centering">
+<a href="./about/notices">© 2010–2026 NIST</a> / <a href="./about/notices#S2">Disclaimer</a> / <a href="/cdn-cgi/l/email-protection#7a3e36373c571c1f1f1e181b19113a1413090e541d150c">Feedback</a>;
+ Version 1.2.7;
+Release date 2026-06-15.</div>
+<span id="pagesettings"></span>
+<div class="ltx_nist_logo"><a href="http://www.nist.gov/"><img src="./style/nistidc.png" width="500" alt="NIST"></a></div>
+<div class="ltx_nist_links ltx_align_right">
+<a href="https://www.nist.gov/privacy-policy">Site Privacy</a> <a href="https://www.nist.gov/oism/accessibility">Accessibility</a> <a href="https://www.nist.gov/privacy">Privacy Program</a> <a href="https://www.nist.gov/oism/copyrights">Copyrights</a> <a href="https://www.commerce.gov/vulnerability-disclosure-policy">Vulnerability Disclosure</a> <a href="https://www.nist.gov/no-fear-act-policy">No Fear Act Policy</a> <a href="https://www.nist.gov/foia">FOIA</a> <a href="https://www.nist.gov/environmental-policy-statement">Environmental Policy</a> <a href="https://www.nist.gov/summary-report-scientific-integrity">Scientific Integrity</a> <a href="https://www.nist.gov/nist-information-quality-standards">Information Quality Standards</a> <a href="https://www.commerce.gov/">Commerce.gov</a> <a href="http://www.science.gov/">Science.gov</a> <a href="http://www.usa.gov/">USA.gov</a>
+</div>
+</div>
+</div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a30dbb619f077286',t:'MTc4NzY5Mzc4Mw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"9ef5b487afff42a68917b2d63593a474"}' crossorigin="anonymous"></script>
+</body>
+</html>

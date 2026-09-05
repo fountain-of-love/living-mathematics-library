@@ -1,0 +1,271 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>DLMF: §16.24 Physical Applications ‣ Applications ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function</title>
+<link rel="shortcut icon" href="./style/DLMF-16.png" type="image/png">
+<script type="text/javascript"><!--
+	var PATH="DLMF:/16.24";
+	var ROOT="./";
+      //--></script>
+<script type="text/javascript" src="./style/jquery.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/jquery.leaveNotice.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/DLMF.js"><!-- non-empty so ie6 will accept it --></script>
+<script async="" type="text/javascript" id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC&amp;subagency=NIST&amp;pua=UA-37115410-44&amp;yt=true&amp;exts=ppsx,pps,f90,sch,rtf,wrl,txz,m1v,xlsm,msi,xsd,f,tif,eps,mpg,xml,pl,xlt,c"><!-- non-empty so ie6 will accept it --></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-BZB64W4M0L"></script><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-BZB64W4M0L');
+      </script>
+<link rel="stylesheet" type="text/css" href="./style/LaTeXML.css">
+<link rel="stylesheet" type="text/css" href="./style/DLMF.css">
+<link rel="stylesheet" type="text/css" href="./style/print.css" media="print">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="top" href="./" title="DLMF">
+<link rel="copyright" href="./about/notices" title="Copyright">
+<link rel="search" href="./search/search" title="Search">
+<link rel="help" class="ltx_help" href="./help/" title="Help">
+<link rel="up" href="./16#PT5" title="Applications ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="up up" href="./16" title="Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="start" href="./" title="">
+<link rel="prev" href="./16.23" title="§16.23 Mathematical Applications ‣ Applications ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="next" href="./16.25" title="§16.25 Methods of Computation ‣ Computation ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="section" href="./16.1" title="§16.1 Special Notation ‣ Notation ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="section" href="./16.2" title="§16.2 Definition and Analytic Properties ‣ Generalized Hypergeometric Functions ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="section" href="./16.3" title="§16.3 Derivatives and Contiguous Functions ‣ Generalized Hypergeometric Functions ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="section" href="./16.4" title="§16.4 Argument Unity ‣ Generalized Hypergeometric Functions ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="section" href="./16.5" title="§16.5 Integral Representations and Integrals ‣ Generalized Hypergeometric Functions ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="section" href="./16.6" title="§16.6 Transformations of Variable ‣ Generalized Hypergeometric Functions ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="section" href="./16.7" title="§16.7 Relations to Other Functions ‣ Generalized Hypergeometric Functions ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="section" href="./16.8" title="§16.8 Differential Equations ‣ Generalized Hypergeometric Functions ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="section" href="./16.9" title="§16.9 Zeros ‣ Generalized Hypergeometric Functions ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="section" href="./16.10" title="§16.10 Expansions in Series of {_𝑝}𝐹_𝑞 Functions ‣ Generalized Hypergeometric Functions ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="section" href="./16.11" title="§16.11 Asymptotic Expansions ‣ Generalized Hypergeometric Functions ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="section" href="./16.12" title="§16.12 Products ‣ Generalized Hypergeometric Functions ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="section" href="./16.13" title="§16.13 Appell Functions ‣ Two-Variable Hypergeometric Functions ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="section" href="./16.14" title="§16.14 Partial Differential Equations ‣ Two-Variable Hypergeometric Functions ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="section" href="./16.15" title="§16.15 Integral Representations and Integrals ‣ Two-Variable Hypergeometric Functions ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="section" href="./16.16" title="§16.16 Transformations of Variables ‣ Two-Variable Hypergeometric Functions ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="section" href="./16.17" title="§16.17 Definition ‣ Meijer 𝐺-Function ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="section" href="./16.18" title="§16.18 Special Cases ‣ Meijer 𝐺-Function ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="section" href="./16.19" title="§16.19 Identities ‣ Meijer 𝐺-Function ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="section" href="./16.20" title="§16.20 Integrals and Series ‣ Meijer 𝐺-Function ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="section" href="./16.21" title="§16.21 Differential Equation ‣ Meijer 𝐺-Function ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="section" href="./16.22" title="§16.22 Asymptotic Expansions ‣ Meijer 𝐺-Function ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="section" href="./16.23" title="§16.23 Mathematical Applications ‣ Applications ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="section" href="./16.25" title="§16.25 Methods of Computation ‣ Computation ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="section" href="./16.26" title="§16.26 Approximations ‣ Computation ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="section" href="./16.27" title="§16.27 Software ‣ Computation ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="document" href="./front/foreword" title="Foreword">
+<link rel="document" href="./front/preface" title="Preface">
+<link rel="document" href="./front/introduction" title="Mathematical Introduction">
+<link rel="chapter" href="./1" title="Chapter 1 Algebraic and Analytic Methods">
+<link rel="chapter" href="./2" title="Chapter 2 Asymptotic Approximations">
+<link rel="chapter" href="./3" title="Chapter 3 Numerical Methods">
+<link rel="chapter" href="./4" title="Chapter 4 Elementary Functions">
+<link rel="chapter" href="./5" title="Chapter 5 Gamma Function">
+<link rel="chapter" href="./6" title="Chapter 6 Exponential, Logarithmic, Sine, and Cosine Integrals">
+<link rel="chapter" href="./7" title="Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="chapter" href="./8" title="Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="chapter" href="./9" title="Chapter 9 Airy and Related Functions">
+<link rel="chapter" href="./10" title="Chapter 10 Bessel Functions">
+<link rel="chapter" href="./11" title="Chapter 11 Struve and Related Functions">
+<link rel="chapter" href="./12" title="Chapter 12 Parabolic Cylinder Functions">
+<link rel="chapter" href="./13" title="Chapter 13 Confluent Hypergeometric Functions">
+<link rel="chapter" href="./14" title="Chapter 14 Legendre and Related Functions">
+<link rel="chapter" href="./15" title="Chapter 15 Hypergeometric Function">
+<link rel="chapter" href="./16" title="Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="chapter" href="./17" title="Chapter 17 𝑞-Hypergeometric and Related Functions">
+<link rel="chapter" href="./18" title="Chapter 18 Orthogonal Polynomials">
+<link rel="chapter" href="./19" title="Chapter 19 Elliptic Integrals">
+<link rel="chapter" href="./20" title="Chapter 20 Theta Functions">
+<link rel="chapter" href="./21" title="Chapter 21 Multidimensional Theta Functions">
+<link rel="chapter" href="./22" title="Chapter 22 Jacobian Elliptic Functions">
+<link rel="chapter" href="./23" title="Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="chapter" href="./24" title="Chapter 24 Bernoulli and Euler Polynomials">
+<link rel="chapter" href="./25" title="Chapter 25 Zeta and Related Functions">
+<link rel="chapter" href="./26" title="Chapter 26 Combinatorial Analysis">
+<link rel="chapter" href="./27" title="Chapter 27 Functions of Number Theory">
+<link rel="chapter" href="./28" title="Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="chapter" href="./29" title="Chapter 29 Lamé Functions">
+<link rel="chapter" href="./30" title="Chapter 30 Spheroidal Wave Functions">
+<link rel="chapter" href="./31" title="Chapter 31 Heun Functions">
+<link rel="chapter" href="./32" title="Chapter 32 Painlevé Transcendents">
+<link rel="chapter" href="./33" title="Chapter 33 Coulomb Functions">
+<link rel="chapter" href="./34" title="Chapter 34 3⁢𝑗,6⁢𝑗,9⁢𝑗 Symbols">
+<link rel="chapter" href="./35" title="Chapter 35 Functions of Matrix Argument">
+<link rel="chapter" href="./36" title="Chapter 36 Integrals with Coalescing Saddles">
+<link rel="bibliography" href="./bib/" title="Bibliography">
+<link rel="index" href="./idx/" title="Index">
+<link rel="glossary" href="./not/" title="Notations">
+<link rel="document" href="./lof/" title="List of Figures">
+<link rel="document" href="./lot/" title="List of Tables">
+<link rel="document" href="./software/" title="Software Index">
+<link rel="document" href="./errata/" title="Errata">
+<link rel="document" href="./help/" title="Need Help?">
+<link rel="document" href="./search/" title="Advanced Search">
+<link rel="document" href="./about/" title="About the Project">
+<meta name="keywords" lang="en" content=" symbols, Appell functions, Clebsch–Gordan coefficients, Feynman diagrams, Ising model, Watson integrals, angular momentum, applications, generalized hypergeometric functions, lattice walks, physical, random walks, relation to generalized hypergeometric functions, relations to other functions">
+</head>
+<body class="color_default textfont_default titlefont_default fontsize_default navbar_default">
+<div class="ltx_page_navbar">
+<div class="ltx_page_navlogo"><a href="./" title="Digital Library of Mathematical Functions"><span>DLMF</span></a></div>
+<div class="ltx_page_navitems">
+<form method="get" action="./search/search">
+<ul>
+<li><a href="./idx/">Index</a></li>
+<li><a href="./not/">Notations</a></li>
+<li><small><input type="text" name="q" value="" size="6" class="ltx_page_navitem_search"><button type="submit">Search</button></small></li>
+<li><a href="./help/" class="ltx_help">Help?</a></li>
+<li><a href="./help/cite">Citing</a></li>
+<li><a href="./help/customize" class="ltx_customize">Customize</a></li>
+<li id="showinfo"><a href="" onclick="showInfo(); return false;" title="Show Annotations">Annotate</a></li>
+<li id="hideinfo"><a href="" onclick="hideInfo(); return false;">UnAnnotate</a></li>
+</ul>
+</form>
+</div>
+<div class="ltx_page_navsponsors">
+<div><a href="./about/" class="ltx_page_navabout">About the Project</a></div>
+</div>
+</div>
+<div class="ltx_page_main">
+<div class="ltx_page_header">
+<a href="./16" title="" class="ltx_ref" rel="up up"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">16 </span>Generalized Hypergeometric Functions &amp; Meijer <span class="ltx_text ltx_font_italic">G</span>-Function</span></a><a href="./16#PT5" title="In Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title">Applications</span></a><a href="./16.23" title="In Applications ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">16.23 </span>Mathematical Applications</span></a><a href="./16.25" title="In Computation ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">16.25 </span>Methods of Computation</span></a>
+</div>
+<div class="ltx_page_content">
+<section class="ltx_section ltx_authors_multiline ltx_leqno">
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">§16.24 </span>Physical Applications</h1>
+<div id="info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=Appell%20functions">Appell functions</a>, <a class="ltx_keyword" href="./search/search?q=applications">applications</a>, <a class="ltx_keyword" href="./search/search?q=generalized%20hypergeometric%20functions">generalized hypergeometric functions</a>, <a class="ltx_keyword" href="./search/search?q=physical">physical</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./16.24" title="" class="ltx_ref">http://dlmf.nist.gov/16.24</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./16#info" title="Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.16</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<h6>Contents</h6>
+<ol class="ltx_toclist ltx_toclist_section">
+<li class="ltx_tocentry"><a href="#i"><span class="ltx_tag ltx_tag_subsection">§16.24(i) </span>Random Walks</a></li>
+<li class="ltx_tocentry"><a href="#ii"><span class="ltx_tag ltx_tag_subsection">§16.24(ii) </span>Loop Integrals in Feynman Diagrams</a></li>
+<li class="ltx_tocentry"><a href="#iii"><span class="ltx_tag ltx_tag_subsection">§16.24(iii) </span><math class="ltx_Math" altimg="m2.png" altimg-height="21px" altimg-valign="-6px" altimg-width="24px" alttext="\mathit{3j}" display="inline"><mrow><mn class="ltx_mathvariant_italic" href="./34.2#E4" mathvariant="italic" title="3⁢𝑗 symbol">3</mn><mo href="./34.2#E4" title="3⁢𝑗 symbol">⁢</mo><mi href="./34.2#E4" title="3⁢𝑗 symbol">j</mi></mrow></math>, <math class="ltx_Math" altimg="m3.png" altimg-height="21px" altimg-valign="-6px" altimg-width="24px" alttext="\mathit{6j}" display="inline"><mrow><mn class="ltx_mathvariant_italic" href="./34.4#E1" mathvariant="italic" title="6⁢𝑗 symbol">6</mn><mo href="./34.4#E1" title="6⁢𝑗 symbol">⁢</mo><mi href="./34.4#E1" title="6⁢𝑗 symbol">j</mi></mrow></math>, and <math class="ltx_Math" altimg="m4.png" altimg-height="21px" altimg-valign="-6px" altimg-width="24px" alttext="\mathit{9j}" display="inline"><mrow><mn class="ltx_mathvariant_italic" href="./34.6#E1" mathvariant="italic" title="9⁢𝑗 symbol">9</mn><mo href="./34.6#E1" title="9⁢𝑗 symbol">⁢</mo><mi href="./34.6#E1" title="9⁢𝑗 symbol">j</mi></mrow></math> Symbols</a></li>
+</ol>
+<section id="i" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§16.24(i) </span>Random Walks</h2>
+<div id="i.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=Appell%20functions">Appell functions</a>, <a class="ltx_keyword" href="./search/search?q=Ising%20model">Ising model</a>, <a class="ltx_keyword" href="./search/search?q=Watson%20integrals">Watson integrals</a>, <a class="ltx_keyword" href="./search/search?q=generalized%20hypergeometric%20functions">generalized hypergeometric functions</a>, <a class="ltx_keyword" href="./search/search?q=lattice%20walks">lattice walks</a>, <a class="ltx_keyword" href="./search/search?q=random%20walks">random walks</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./16.24.i" title="" class="ltx_ref">http://dlmf.nist.gov/16.24.i</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./16.24#info" title="§16.24 Physical Applications ‣ Applications ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§16.24</span></a> and
+<a href="./16#info" title="Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.16</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="i.p1" class="ltx_para">
+<p class="ltx_p">Generalized hypergeometric functions and Appell
+functions appear in the evaluation of the so-called Watson integrals which
+characterize the simplest possible lattice walks. They are also potentially
+useful for the solution of more complicated restricted lattice walk problems,
+and the 3D Ising model; see <cite class="ltx_cite ltx_citemacro_citet">Barber and Ninham (<a href="./bib/B#bib190" title="Random and Restricted Walks: Theory and Applications" class="ltx_ref">1970</a>, pp. 147–148)</cite>.</p>
+</div>
+</section>
+<section id="ii" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§16.24(ii) </span>Loop Integrals in Feynman Diagrams</h2>
+<div id="ii.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=Appell%20functions">Appell functions</a>, <a class="ltx_keyword" href="./search/search?q=Feynman%20diagrams">Feynman diagrams</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./16.24.ii" title="" class="ltx_ref">http://dlmf.nist.gov/16.24.ii</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./16.24#info" title="§16.24 Physical Applications ‣ Applications ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§16.24</span></a> and
+<a href="./16#info" title="Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.16</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="ii.p1" class="ltx_para">
+<p class="ltx_p">Appell functions are used for the evaluation of
+one-loop integrals in Feynman diagrams. See <cite class="ltx_cite ltx_citemacro_citet">Cabral-Rosetti and Sanchis-Lozano (<a href="./bib/C#bib401" title="Generalized hypergeometric functions and the evaluation of scalar one-loop integrals in Feynman diagrams" class="ltx_ref">2000</a>)</cite>.</p>
+</div>
+<div id="ii.p2" class="ltx_para">
+<p class="ltx_p">For an extension to two-loop integrals see <cite class="ltx_cite ltx_citemacro_citet">Moch<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/M#bib1643" title="Nested sums, expansion of transcendental functions, and multiscale multiloop integrals" class="ltx_ref">2002</a>)</cite>.</p>
+</div>
+</section>
+<section id="iii" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§16.24(iii) </span><math class="ltx_Math" altimg="m2.png" altimg-height="21px" altimg-valign="-6px" altimg-width="24px" alttext="\mathit{3j}" display="inline"><mrow><mn class="ltx_mathvariant_italic" href="./34.2#E4" mathvariant="italic" title="3⁢𝑗 symbol">3</mn><mo href="./34.2#E4" title="3⁢𝑗 symbol">⁢</mo><mi href="./34.2#E4" title="3⁢𝑗 symbol">j</mi></mrow></math>, <math class="ltx_Math" altimg="m3.png" altimg-height="21px" altimg-valign="-6px" altimg-width="24px" alttext="\mathit{6j}" display="inline"><mrow><mn class="ltx_mathvariant_italic" href="./34.4#E1" mathvariant="italic" title="6⁢𝑗 symbol">6</mn><mo href="./34.4#E1" title="6⁢𝑗 symbol">⁢</mo><mi href="./34.4#E1" title="6⁢𝑗 symbol">j</mi></mrow></math>, and <math class="ltx_Math" altimg="m4.png" altimg-height="21px" altimg-valign="-6px" altimg-width="24px" alttext="\mathit{9j}" display="inline"><mrow><mn class="ltx_mathvariant_italic" href="./34.6#E1" mathvariant="italic" title="9⁢𝑗 symbol">9</mn><mo href="./34.6#E1" title="9⁢𝑗 symbol">⁢</mo><mi href="./34.6#E1" title="9⁢𝑗 symbol">j</mi></mrow></math> Symbols</h2>
+<div id="iii.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=Clebsch%E2%80%93Gordan%20coefficients">Clebsch–Gordan coefficients</a>, <a class="ltx_keyword" href="./search/search?q=angular%20momentum">angular momentum</a>, <a class="ltx_keyword" href="./search/search?q=generalized%20hypergeometric%20functions">generalized hypergeometric functions</a>, <a class="ltx_keyword" href="./search/search?q=relation%20to%20generalized%20hypergeometric%20functions">relation to generalized hypergeometric functions</a>, <a class="ltx_keyword" href="./search/search?q=relations%20to%20other%20functions">relations to other functions</a>, <a class="ltx_keyword" href="./search/search?q=three-j"><math class="ltx_Math" altimg="m1.png" altimg-height="21px" altimg-valign="-6px" altimg-width="83px" alttext="\mathit{3j},\mathit{6j},\mathit{9j}" display="inline"><mrow><mrow><mn class="ltx_mathvariant_italic" href="./34.2#E4" mathvariant="italic" title="3⁢𝑗 symbol">3</mn><mo href="./34.2#E4" title="3⁢𝑗 symbol">⁢</mo><mi href="./34.2#E4" title="3⁢𝑗 symbol">j</mi></mrow><mo>,</mo><mrow><mn class="ltx_mathvariant_italic" href="./34.4#E1" mathvariant="italic" title="6⁢𝑗 symbol">6</mn><mo href="./34.4#E1" title="6⁢𝑗 symbol">⁢</mo><mi href="./34.4#E1" title="6⁢𝑗 symbol">j</mi></mrow><mo>,</mo><mrow><mn class="ltx_mathvariant_italic" href="./34.6#E1" mathvariant="italic" title="9⁢𝑗 symbol">9</mn><mo href="./34.6#E1" title="9⁢𝑗 symbol">⁢</mo><mi href="./34.6#E1" title="9⁢𝑗 symbol">j</mi></mrow></mrow></math> symbols</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./16.24.iii" title="" class="ltx_ref">http://dlmf.nist.gov/16.24.iii</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./16.24#info" title="§16.24 Physical Applications ‣ Applications ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§16.24</span></a> and
+<a href="./16#info" title="Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.16</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="iii.p1" class="ltx_para">
+<p class="ltx_p">The <math class="ltx_Math" altimg="m2.png" altimg-height="21px" altimg-valign="-6px" altimg-width="24px" alttext="\mathit{3j}" display="inline"><mrow><mn class="ltx_mathvariant_italic" href="./34.2#E4" mathvariant="italic" title="3⁢𝑗 symbol">3</mn><mo href="./34.2#E4" title="3⁢𝑗 symbol">⁢</mo><mi href="./34.2#E4" title="3⁢𝑗 symbol">j</mi></mrow></math> symbols, or Clebsch–Gordan coefficients, play an important role in the
+decomposition of reducible representations of the rotation group into
+irreducible representations. They can be expressed as <math class="ltx_Math" altimg="m5.png" altimg-height="21px" altimg-valign="-5px" altimg-width="36px" alttext="{{}_{3}F_{2}}" display="inline"><mmultiscripts><mi href="./16.2" title="alternatively {_𝑝}𝐹_𝑞(𝐚;𝐛;𝑧) or {_𝑝}𝐹_𝑞((𝐚¦𝐛);𝑧)generalized hypergeometric function">F</mi><mn>2</mn><mrow></mrow><mprescripts></mprescripts><mn>3</mn><mrow></mrow></mmultiscripts></math>
+functions with unit argument. The coefficients of transformations between
+different coupling schemes of three angular momenta are related to the Wigner
+<math class="ltx_Math" altimg="m3.png" altimg-height="21px" altimg-valign="-6px" altimg-width="24px" alttext="\mathit{6j}" display="inline"><mrow><mn class="ltx_mathvariant_italic" href="./34.4#E1" mathvariant="italic" title="6⁢𝑗 symbol">6</mn><mo href="./34.4#E1" title="6⁢𝑗 symbol">⁢</mo><mi href="./34.4#E1" title="6⁢𝑗 symbol">j</mi></mrow></math> symbols. These are balanced <math class="ltx_Math" altimg="m6.png" altimg-height="21px" altimg-valign="-5px" altimg-width="36px" alttext="{{}_{4}F_{3}}" display="inline"><mmultiscripts><mi href="./16.2" title="alternatively {_𝑝}𝐹_𝑞(𝐚;𝐛;𝑧) or {_𝑝}𝐹_𝑞((𝐚¦𝐛);𝑧)generalized hypergeometric function">F</mi><mn>3</mn><mrow></mrow><mprescripts></mprescripts><mn>4</mn><mrow></mrow></mmultiscripts></math> functions with unit argument.
+Lastly, special cases of the <math class="ltx_Math" altimg="m4.png" altimg-height="21px" altimg-valign="-6px" altimg-width="24px" alttext="\mathit{9j}" display="inline"><mrow><mn class="ltx_mathvariant_italic" href="./34.6#E1" mathvariant="italic" title="9⁢𝑗 symbol">9</mn><mo href="./34.6#E1" title="9⁢𝑗 symbol">⁢</mo><mi href="./34.6#E1" title="9⁢𝑗 symbol">j</mi></mrow></math> symbols are <math class="ltx_Math" altimg="m7.png" altimg-height="21px" altimg-valign="-5px" altimg-width="36px" alttext="{{}_{5}F_{4}}" display="inline"><mmultiscripts><mi href="./16.2" title="alternatively {_𝑝}𝐹_𝑞(𝐚;𝐛;𝑧) or {_𝑝}𝐹_𝑞((𝐚¦𝐛);𝑧)generalized hypergeometric function">F</mi><mn>4</mn><mrow></mrow><mprescripts></mprescripts><mn>5</mn><mrow></mrow></mmultiscripts></math> functions
+with unit argument. For further information see Chapter <a href="./34" title="Chapter 34 3⁢𝑗,6⁢𝑗,9⁢𝑗 Symbols" class="ltx_ref"><span class="ltx_text ltx_ref_tag">34</span></a> and
+<cite class="ltx_cite ltx_citemacro_citet">Varshalovich<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/V#bib2323" title="Quantum Theory of Angular Momentum" class="ltx_ref">1988</a>, §§8.2.5, 8.8, and 9.2.3)</cite>.</p>
+</div>
+</section>
+</section>
+</div>
+<div class="ltx_page_footer">
+<div class="ltx_siblings">
+<a href="./16.23" title="In Applications ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">16.23 </span>Mathematical Applications</span></a><a href="./16.25" title="In Computation ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">16.25 </span>Methods of Computation</span></a>
+</div>
+<div class="ltx_footer_links ltx_centering">
+<a href="./about/notices">© 2010–2026 NIST</a> / <a href="./about/notices#S2">Disclaimer</a> / <a href="/cdn-cgi/l/email-protection#1f5b53525932797a7a7b7d7e7c745f71766c6b31787069">Feedback</a>;
+ Version 1.2.7;
+Release date 2026-06-15.</div>
+<span id="pagesettings"></span>
+<div class="ltx_nist_logo"><a href="http://www.nist.gov/"><img src="./style/nistidc.png" width="500" alt="NIST"></a></div>
+<div class="ltx_nist_links ltx_align_right">
+<a href="https://www.nist.gov/privacy-policy">Site Privacy</a> <a href="https://www.nist.gov/oism/accessibility">Accessibility</a> <a href="https://www.nist.gov/privacy">Privacy Program</a> <a href="https://www.nist.gov/oism/copyrights">Copyrights</a> <a href="https://www.commerce.gov/vulnerability-disclosure-policy">Vulnerability Disclosure</a> <a href="https://www.nist.gov/no-fear-act-policy">No Fear Act Policy</a> <a href="https://www.nist.gov/foia">FOIA</a> <a href="https://www.nist.gov/environmental-policy-statement">Environmental Policy</a> <a href="https://www.nist.gov/summary-report-scientific-integrity">Scientific Integrity</a> <a href="https://www.nist.gov/nist-information-quality-standards">Information Quality Standards</a> <a href="https://www.commerce.gov/">Commerce.gov</a> <a href="http://www.science.gov/">Science.gov</a> <a href="http://www.usa.gov/">USA.gov</a>
+</div>
+</div>
+</div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"9ef5b487afff42a68917b2d63593a474"}' crossorigin="anonymous"></script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a30b62b0ae0c6a55',t:'MTc4NzY2OTE3OA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

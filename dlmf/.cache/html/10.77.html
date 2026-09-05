@@ -1,0 +1,740 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>DLMF: §10.77 Software ‣ Computation ‣ Chapter 10 Bessel Functions</title>
+<link rel="shortcut icon" href="./style/DLMF-16.png" type="image/png">
+<script type="text/javascript"><!--
+	var PATH="DLMF:/10.77";
+	var ROOT="./";
+      //--></script>
+<script type="text/javascript" src="./style/jquery.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/jquery.leaveNotice.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/DLMF.js"><!-- non-empty so ie6 will accept it --></script>
+<script async="" type="text/javascript" id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC&amp;subagency=NIST&amp;pua=UA-37115410-44&amp;yt=true&amp;exts=ppsx,pps,f90,sch,rtf,wrl,txz,m1v,xlsm,msi,xsd,f,tif,eps,mpg,xml,pl,xlt,c"><!-- non-empty so ie6 will accept it --></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-BZB64W4M0L"></script><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-BZB64W4M0L');
+      </script>
+<link rel="stylesheet" type="text/css" href="./style/LaTeXML.css">
+<link rel="stylesheet" type="text/css" href="./style/DLMF.css">
+<link rel="stylesheet" type="text/css" href="./style/print.css" media="print">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="top" href="./" title="DLMF">
+<link rel="copyright" href="./about/notices" title="Copyright">
+<link rel="search" href="./search/search" title="Search">
+<link rel="help" class="ltx_help" href="./help/" title="Help">
+<link rel="up" href="./10#PT7" title="Computation ‣ Chapter 10 Bessel Functions">
+<link rel="up up" href="./10" title="Chapter 10 Bessel Functions">
+<link rel="start" href="./" title="">
+<link rel="prev" href="./10.76" title="§10.76 Approximations ‣ Computation ‣ Chapter 10 Bessel Functions">
+<link rel="next" href="./11" title="Chapter 11 Struve and Related Functions">
+<link rel="section" href="./10.1" title="§10.1 Special Notation ‣ Notation ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.2" title="§10.2 Definitions ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.3" title="§10.3 Graphics ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.4" title="§10.4 Connection Formulas ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.5" title="§10.5 Wronskians and Cross-Products ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.6" title="§10.6 Recurrence Relations and Derivatives ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.7" title="§10.7 Limiting Forms ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.8" title="§10.8 Power Series ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.9" title="§10.9 Integral Representations ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.10" title="§10.10 Continued Fractions ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.11" title="§10.11 Analytic Continuation ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.12" title="§10.12 Generating Function and Associated Series ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.13" title="§10.13 Other Differential Equations ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.14" title="§10.14 Inequalities; Monotonicity ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.15" title="§10.15 Derivatives with Respect to Order ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.16" title="§10.16 Relations to Other Functions ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.17" title="§10.17 Asymptotic Expansions for Large Argument ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.18" title="§10.18 Modulus and Phase Functions ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.19" title="§10.19 Asymptotic Expansions for Large Order ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.20" title="§10.20 Uniform Asymptotic Expansions for Large Order ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.21" title="§10.21 Zeros ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.22" title="§10.22 Integrals ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.23" title="§10.23 Sums ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.24" title="§10.24 Functions of Imaginary Order ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.25" title="§10.25 Definitions ‣ Modified Bessel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.26" title="§10.26 Graphics ‣ Modified Bessel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.27" title="§10.27 Connection Formulas ‣ Modified Bessel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.28" title="§10.28 Wronskians and Cross-Products ‣ Modified Bessel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.29" title="§10.29 Recurrence Relations and Derivatives ‣ Modified Bessel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.30" title="§10.30 Limiting Forms ‣ Modified Bessel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.31" title="§10.31 Power Series ‣ Modified Bessel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.32" title="§10.32 Integral Representations ‣ Modified Bessel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.33" title="§10.33 Continued Fractions ‣ Modified Bessel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.34" title="§10.34 Analytic Continuation ‣ Modified Bessel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.35" title="§10.35 Generating Function and Associated Series ‣ Modified Bessel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.36" title="§10.36 Other Differential Equations ‣ Modified Bessel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.37" title="§10.37 Inequalities; Monotonicity ‣ Modified Bessel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.38" title="§10.38 Derivatives with Respect to Order ‣ Modified Bessel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.39" title="§10.39 Relations to Other Functions ‣ Modified Bessel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.40" title="§10.40 Asymptotic Expansions for Large Argument ‣ Modified Bessel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.41" title="§10.41 Asymptotic Expansions for Large Order ‣ Modified Bessel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.42" title="§10.42 Zeros ‣ Modified Bessel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.43" title="§10.43 Integrals ‣ Modified Bessel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.44" title="§10.44 Sums ‣ Modified Bessel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.45" title="§10.45 Functions of Imaginary Order ‣ Modified Bessel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.46" title="§10.46 Generalized and Incomplete Bessel Functions; Mittag-Leffler Function ‣ Modified Bessel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.47" title="§10.47 Definitions and Basic Properties ‣ Spherical Bessel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.48" title="§10.48 Graphs ‣ Spherical Bessel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.49" title="§10.49 Explicit Formulas ‣ Spherical Bessel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.50" title="§10.50 Wronskians and Cross-Products ‣ Spherical Bessel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.51" title="§10.51 Recurrence Relations and Derivatives ‣ Spherical Bessel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.52" title="§10.52 Limiting Forms ‣ Spherical Bessel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.53" title="§10.53 Power Series ‣ Spherical Bessel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.54" title="§10.54 Integral Representations ‣ Spherical Bessel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.55" title="§10.55 Continued Fractions ‣ Spherical Bessel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.56" title="§10.56 Generating Functions ‣ Spherical Bessel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.57" title="§10.57 Uniform Asymptotic Expansions for Large Order ‣ Spherical Bessel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.58" title="§10.58 Zeros ‣ Spherical Bessel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.59" title="§10.59 Integrals ‣ Spherical Bessel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.60" title="§10.60 Sums ‣ Spherical Bessel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.61" title="§10.61 Definitions and Basic Properties ‣ Kelvin Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.62" title="§10.62 Graphs ‣ Kelvin Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.63" title="§10.63 Recurrence Relations and Derivatives ‣ Kelvin Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.64" title="§10.64 Integral Representations ‣ Kelvin Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.65" title="§10.65 Power Series ‣ Kelvin Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.66" title="§10.66 Expansions in Series of Bessel Functions ‣ Kelvin Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.67" title="§10.67 Asymptotic Expansions for Large Argument ‣ Kelvin Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.68" title="§10.68 Modulus and Phase Functions ‣ Kelvin Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.69" title="§10.69 Uniform Asymptotic Expansions for Large Order ‣ Kelvin Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.70" title="§10.70 Zeros ‣ Kelvin Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.71" title="§10.71 Integrals ‣ Kelvin Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.72" title="§10.72 Mathematical Applications ‣ Applications ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.73" title="§10.73 Physical Applications ‣ Applications ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.74" title="§10.74 Methods of Computation ‣ Computation ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.75" title="§10.75 Tables ‣ Computation ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.76" title="§10.76 Approximations ‣ Computation ‣ Chapter 10 Bessel Functions">
+<link rel="document" href="./front/foreword" title="Foreword">
+<link rel="document" href="./front/preface" title="Preface">
+<link rel="document" href="./front/introduction" title="Mathematical Introduction">
+<link rel="chapter" href="./1" title="Chapter 1 Algebraic and Analytic Methods">
+<link rel="chapter" href="./2" title="Chapter 2 Asymptotic Approximations">
+<link rel="chapter" href="./3" title="Chapter 3 Numerical Methods">
+<link rel="chapter" href="./4" title="Chapter 4 Elementary Functions">
+<link rel="chapter" href="./5" title="Chapter 5 Gamma Function">
+<link rel="chapter" href="./6" title="Chapter 6 Exponential, Logarithmic, Sine, and Cosine Integrals">
+<link rel="chapter" href="./7" title="Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="chapter" href="./8" title="Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="chapter" href="./9" title="Chapter 9 Airy and Related Functions">
+<link rel="chapter" href="./10" title="Chapter 10 Bessel Functions">
+<link rel="chapter" href="./11" title="Chapter 11 Struve and Related Functions">
+<link rel="chapter" href="./12" title="Chapter 12 Parabolic Cylinder Functions">
+<link rel="chapter" href="./13" title="Chapter 13 Confluent Hypergeometric Functions">
+<link rel="chapter" href="./14" title="Chapter 14 Legendre and Related Functions">
+<link rel="chapter" href="./15" title="Chapter 15 Hypergeometric Function">
+<link rel="chapter" href="./16" title="Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="chapter" href="./17" title="Chapter 17 𝑞-Hypergeometric and Related Functions">
+<link rel="chapter" href="./18" title="Chapter 18 Orthogonal Polynomials">
+<link rel="chapter" href="./19" title="Chapter 19 Elliptic Integrals">
+<link rel="chapter" href="./20" title="Chapter 20 Theta Functions">
+<link rel="chapter" href="./21" title="Chapter 21 Multidimensional Theta Functions">
+<link rel="chapter" href="./22" title="Chapter 22 Jacobian Elliptic Functions">
+<link rel="chapter" href="./23" title="Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="chapter" href="./24" title="Chapter 24 Bernoulli and Euler Polynomials">
+<link rel="chapter" href="./25" title="Chapter 25 Zeta and Related Functions">
+<link rel="chapter" href="./26" title="Chapter 26 Combinatorial Analysis">
+<link rel="chapter" href="./27" title="Chapter 27 Functions of Number Theory">
+<link rel="chapter" href="./28" title="Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="chapter" href="./29" title="Chapter 29 Lamé Functions">
+<link rel="chapter" href="./30" title="Chapter 30 Spheroidal Wave Functions">
+<link rel="chapter" href="./31" title="Chapter 31 Heun Functions">
+<link rel="chapter" href="./32" title="Chapter 32 Painlevé Transcendents">
+<link rel="chapter" href="./33" title="Chapter 33 Coulomb Functions">
+<link rel="chapter" href="./34" title="Chapter 34 3⁢𝑗,6⁢𝑗,9⁢𝑗 Symbols">
+<link rel="chapter" href="./35" title="Chapter 35 Functions of Matrix Argument">
+<link rel="chapter" href="./36" title="Chapter 36 Integrals with Coalescing Saddles">
+<link rel="bibliography" href="./bib/" title="Bibliography">
+<link rel="index" href="./idx/" title="Index">
+<link rel="glossary" href="./not/" title="Notations">
+<link rel="document" href="./lof/" title="List of Figures">
+<link rel="document" href="./lot/" title="List of Tables">
+<link rel="document" href="./software/" title="Software Index">
+<link rel="document" href="./errata/" title="Errata">
+<link rel="document" href="./help/" title="Need Help?">
+<link rel="document" href="./search/" title="Advanced Search">
+<link rel="document" href="./about/" title="About the Project">
+</head>
+<body class="color_default textfont_default titlefont_default fontsize_default navbar_default">
+<div class="ltx_page_navbar">
+<div class="ltx_page_navlogo"><a href="./" title="Digital Library of Mathematical Functions"><span>DLMF</span></a></div>
+<div class="ltx_page_navitems">
+<form method="get" action="./search/search">
+<ul>
+<li><a href="./idx/">Index</a></li>
+<li><a href="./not/">Notations</a></li>
+<li><small><input type="text" name="q" value="" size="6" class="ltx_page_navitem_search"><button type="submit">Search</button></small></li>
+<li><a href="./help/" class="ltx_help">Help?</a></li>
+<li><a href="./help/cite">Citing</a></li>
+<li><a href="./help/customize" class="ltx_customize">Customize</a></li>
+<li id="showinfo"><a href="" onclick="showInfo(); return false;" title="Show Annotations">Annotate</a></li>
+<li id="hideinfo"><a href="" onclick="hideInfo(); return false;">UnAnnotate</a></li>
+</ul>
+</form>
+</div>
+<div class="ltx_page_navsponsors">
+<div><a href="./about/" class="ltx_page_navabout">About the Project</a></div>
+</div>
+</div>
+<div class="ltx_page_main">
+<div class="ltx_page_header">
+<a href="./10" title="" class="ltx_ref" rel="up up"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">10 </span>Bessel Functions</span></a><a href="./10#PT7" title="In Chapter 10 Bessel Functions" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title">Computation</span></a><a href="./10.76" title="In Computation ‣ Chapter 10 Bessel Functions" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">10.76 </span>Approximations</span></a><a href="./11" title="" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">11 </span>Struve and Related Functions</span></a>
+</div>
+<div class="ltx_page_content">
+<section class="ltx_section ltx_authors_multiline ltx_leqno">
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">§10.77 </span>Software</h1>
+<div id="info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Referenced by:</dt>
+<dd><a href="./10.76#i.p1" title="§10.76(i) Introduction ‣ §10.76 Approximations ‣ Computation ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§10.76(i)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./10.77" title="" class="ltx_ref">http://dlmf.nist.gov/10.77</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./10#info" title="Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.10</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<h6>Contents</h6>
+<ol class="ltx_toclist ltx_toclist_section">
+<li class="ltx_tocentry"><a href="#i"><span class="ltx_tag ltx_tag_subsection">§10.77(i) </span>Introduction</a></li>
+<li class="ltx_tocentry"><a href="#ii"><span class="ltx_tag ltx_tag_subsection">§10.77(ii) </span>Bessel Functions–Real Argument and Integer or Half-Integer Order
+(including Spherical Bessel Functions)</a></li>
+<li class="ltx_tocentry"><a href="#iii"><span class="ltx_tag ltx_tag_subsection">§10.77(iii) </span>Bessel Functions–Real Order and Argument</a></li>
+<li class="ltx_tocentry"><a href="#iv"><span class="ltx_tag ltx_tag_subsection">§10.77(iv) </span>Bessel Functions–Integer or Half-Integer Order and Complex
+Arguments, including Kelvin Functions</a></li>
+<li class="ltx_tocentry"><a href="#v"><span class="ltx_tag ltx_tag_subsection">§10.77(v) </span>Bessel Functions–Real Order and Complex Argument (including
+Hankel Functions)</a></li>
+<li class="ltx_tocentry"><a href="#vi"><span class="ltx_tag ltx_tag_subsection">§10.77(vi) </span>Bessel Functions–Imaginary Order and Real Argument</a></li>
+<li class="ltx_tocentry"><a href="#vii"><span class="ltx_tag ltx_tag_subsection">§10.77(vii) </span>Bessel Functions–Complex Order and Real Argument</a></li>
+<li class="ltx_tocentry"><a href="#viii"><span class="ltx_tag ltx_tag_subsection">§10.77(viii) </span>Bessel Functions–Complex Order and Argument</a></li>
+<li class="ltx_tocentry"><a href="#ix"><span class="ltx_tag ltx_tag_subsection">§10.77(ix) </span>Integrals of Bessel Functions</a></li>
+<li class="ltx_tocentry"><a href="#x"><span class="ltx_tag ltx_tag_subsection">§10.77(x) </span>Zeros of Bessel Functions</a></li>
+</ol>
+<section id="i" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§10.77(i) </span>Introduction</h2>
+<div id="i.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Permalink:</dt>
+<dd><a href="./10.77.i" title="" class="ltx_ref">http://dlmf.nist.gov/10.77.i</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./10.77#info" title="§10.77 Software ‣ Computation ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§10.77</span></a> and
+<a href="./10#info" title="Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.10</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="i.p1" class="ltx_para">
+<p class="ltx_p">In this section we provide links to the research literature describing
+the implementation of algorithms in software for the evaluation of
+functions described in this chapter. Citations in bulleted lists refer
+to papers for which research software has been made available and
+can be downloaded via the Web. References to research software that is
+available in other ways is listed separately.</p>
+</div>
+<div id="i.p2" class="ltx_para">
+<p class="ltx_p">A more complete list of available software for computing these functions
+is found in the <a href="./software/" title="" class="ltx_ref"><span class="ltx_text ltx_ref_title">Software Index</span></a>.
+For another listing of Web-accessible
+software for the functions in this chapter, see <a href="https://gams.nist.gov/serve.cgi/Class/C10/" title="" class="ltx_ref GAMS">GAMS (class C10)</a>.</p>
+</div>
+</section>
+<section id="ii" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§10.77(ii) </span>Bessel Functions–Real Argument and Integer or Half-Integer Order
+(including Spherical Bessel Functions)</h2>
+<div id="ii.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Referenced by:</dt>
+<dd><a href="./software/#S1.t1.r39" title="Software Cross Index ‣ Software Index" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§</span> ‣ <span class="ltx_text ltx_ref_title">Software Cross Index</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./10.77.ii" title="" class="ltx_ref">http://dlmf.nist.gov/10.77.ii</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./10.77#info" title="§10.77 Software ‣ Computation ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§10.77</span></a> and
+<a href="./10#info" title="Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.10</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="ii.p1" class="ltx_para">
+<ul id="I1" class="ltx_itemize">
+<li id="I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="I1.i1.p1" class="ltx_para">
+<p class="ltx_p"><cite class="ltx_cite ltx_citemacro_citet">Ardill and Moriarty (<a href="./bib/#bib128" title="Spherical Bessel functions j n and y n of integer order and real argument" class="ltx_ref">1978</a>)</cite>. Fortran.</p>
+</div>
+</li>
+<li id="I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="I1.i2.p1" class="ltx_para">
+<p class="ltx_p"><cite class="ltx_cite ltx_citemacro_citet">Boisvert and Saunders (<a href="./bib/B#bib313" title="Portable vectorized software for Bessel function evaluation" class="ltx_ref">1992</a>)</cite>. Vectorized Fortran.</p>
+</div>
+</li>
+<li id="I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="I1.i3.p1" class="ltx_para">
+<p class="ltx_p"><cite class="ltx_cite ltx_citemacro_citet">Cody (<a href="./bib/C#bib547" title="Algorithm 715: SPECFUN – A portable FORTRAN package of special function routines and test drivers" class="ltx_ref">1993b</a>)</cite>. Fortran.</p>
+</div>
+</li>
+<li id="I1.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="I1.i4.p1" class="ltx_para">
+<p class="ltx_p"><cite class="ltx_cite ltx_citemacro_citet">Coleman (<a href="./bib/C#bib556" title="A Fortran subroutine for the Bessel function ⁢ J n ( x ) of order 0 to 10" class="ltx_ref">1980</a>)</cite>. Fortran.
+</p>
+</div>
+</li>
+<li id="I1.i5" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="I1.i5.p1" class="ltx_para">
+<p class="ltx_p"><cite class="ltx_cite ltx_citemacro_citet">Hill (<a href="./bib/H#bib1080" title="Algorithm 571: Statistics for von Mises’ and Fisher’s distributions of directions: ⁢ / ⁢ I 1 ( x ) I 0 ( x ) , ⁢ / ⁢ I 1.5 ( x ) I 0.5 ( x ) and their inverses [S14]" class="ltx_ref">1981</a>)</cite>. Fortran.
+</p>
+</div>
+</li>
+<li id="I1.i6" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="I1.i6.p1" class="ltx_para">
+<p class="ltx_p"><cite class="ltx_cite ltx_citemacro_citet">Ratis and Fernández de Córdoba (<a href="./bib/R#bib1927" title="A code to calculate (high order) Bessel functions based on the continued fractions method" class="ltx_ref">1993</a>)</cite>. Fortran.</p>
+</div>
+</li>
+<li id="I1.i7" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="I1.i7.p1" class="ltx_para">
+<p class="ltx_p"><cite class="ltx_cite ltx_citemacro_citet">Segura<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/S#bib2043" title="A code to evaluate modified Bessel functions based on the continued fraction method" class="ltx_ref">1997</a>)</cite>. Fortran.</p>
+</div>
+</li>
+</ul>
+<p class="ltx_p">See also
+<cite class="ltx_cite ltx_citemacro_citet">Börsch-Supan (<a href="./bib/B#bib314" title="Algorithm 21: Bessel function for a set of integer orders" class="ltx_ref">1960</a>)</cite>,
+<cite class="ltx_cite ltx_citemacro_citet">Fox<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/F#bib830" title="The PORT mathematical subroutine library" class="ltx_ref">1978</a>)</cite>,
+<cite class="ltx_cite ltx_citemacro_citet">Oser (<a href="./bib/O#bib1819" title="Algorithm 22: Riccati-Bessel functions of first and second kind" class="ltx_ref">1960</a>)</cite>,
+and <cite class="ltx_cite ltx_citemacro_citet">Wojcicki (<a href="./bib/W#bib2426" title="Algorithm 44: Bessel functions computed recursively" class="ltx_ref">1961</a>)</cite>.</p>
+</div>
+</section>
+<section id="iii" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§10.77(iii) </span>Bessel Functions–Real Order and Argument</h2>
+<div id="iii.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Referenced by:</dt>
+<dd><a href="./software/#S1.t1.r40" title="Software Cross Index ‣ Software Index" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§</span> ‣ <span class="ltx_text ltx_ref_title">Software Cross Index</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./10.77.iii" title="" class="ltx_ref">http://dlmf.nist.gov/10.77.iii</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./10.77#info" title="§10.77 Software ‣ Computation ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§10.77</span></a> and
+<a href="./10#info" title="Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.10</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="iii.p1" class="ltx_para">
+<ul id="I2" class="ltx_itemize">
+<li id="I2.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="I2.i1.p1" class="ltx_para">
+<p class="ltx_p"><cite class="ltx_cite ltx_citemacro_citet">Amos<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/#bib81" title="Algorithm 511: CDC 6600 subroutines IBESS and JBESS for Bessel functions ⁢ I ν ( x ) and ⁢ J ν ( x ) , ≥ x 0 , ≥ ν 0" class="ltx_ref">1977</a>)</cite>. Fortran.</p>
+</div>
+</li>
+<li id="I2.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="I2.i2.p1" class="ltx_para">
+<p class="ltx_p"><cite class="ltx_cite ltx_citemacro_citet">Barnett (<a href="./bib/B#bib199" title="COULFG: Coulomb and Bessel functions and their derivatives, for real arguments, by Steed’s method" class="ltx_ref">1982</a>)</cite>. Fortran.</p>
+</div>
+</li>
+<li id="I2.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="I2.i3.p1" class="ltx_para">
+<p class="ltx_p"><cite class="ltx_cite ltx_citemacro_citet">Brent (<a href="./bib/B#bib345" title="Algorithm 524: MP, A Fortran multiple-precision arithmetic package [A1]" class="ltx_ref">1978b</a>)</cite>. Fortran.</p>
+</div>
+</li>
+<li id="I2.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="I2.i4.p1" class="ltx_para">
+<p class="ltx_p"><cite class="ltx_cite ltx_citemacro_citet">Campbell (<a href="./bib/C#bib406" title="Bessel functions ⁢ J ν ( x ) and ⁢ Y ν ( x ) of real order and real argument" class="ltx_ref">1979</a>)</cite>. Fortran.</p>
+</div>
+</li>
+<li id="I2.i5" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="I2.i5.p1" class="ltx_para">
+<p class="ltx_p"><cite class="ltx_cite ltx_citemacro_citet">Cody (<a href="./bib/C#bib544" title="Algorithm 597: Sequence of modified Bessel functions of the first kind" class="ltx_ref">1983</a>)</cite>. Fortran.</p>
+</div>
+</li>
+<li id="I2.i6" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="I2.i6.p1" class="ltx_para">
+<p class="ltx_p"><cite class="ltx_cite ltx_citemacro_citet">Cody (<a href="./bib/C#bib547" title="Algorithm 715: SPECFUN – A portable FORTRAN package of special function routines and test drivers" class="ltx_ref">1993b</a>)</cite>. Fortran.
+</p>
+</div>
+</li>
+<li id="I2.i7" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="I2.i7.p1" class="ltx_para">
+<p class="ltx_p"><cite class="ltx_cite ltx_citemacro_citet">Weider (<a href="./bib/W#bib2386" title="Algorithm 794: Numerical Hankel transform by the Fortran program HANKEL" class="ltx_ref">1999</a>)</cite>. Fortran.</p>
+</div>
+</li>
+</ul>
+<p class="ltx_p">See also
+<cite class="ltx_cite ltx_citemacro_citet">Gautschi (<a href="./bib/G#bib874" title="Algorithm 236: Bessel functions of the first kind" class="ltx_ref">1964b</a>)</cite>,
+<cite class="ltx_cite ltx_citemacro_citet">Matviyenko (<a href="./bib/M#bib1568" title="On the evaluation of Bessel functions" class="ltx_ref">1993</a>)</cite>,
+<cite class="ltx_cite ltx_citemacro_citet">Piessens (<a href="./bib/P#bib1878" title="The computation of Bessel functions on a small computer" class="ltx_ref">1984b</a>)</cite>,
+and <cite class="ltx_cite ltx_citemacro_citet">Temme (<a href="./bib/T#bib2209" title="On the numerical evaluation of the modified Bessel function of the third kind" class="ltx_ref">1975</a>, <a href="./bib/T#bib2210" title="On the numerical evaluation of the ordinary Bessel function of the second kind" class="ltx_ref">1976</a>)</cite>.</p>
+</div>
+</section>
+<section id="iv" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§10.77(iv) </span>Bessel Functions–Integer or Half-Integer Order and Complex
+Arguments, including Kelvin Functions</h2>
+<div id="iv.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Referenced by:</dt>
+<dd><a href="./software/#S1.t1.r41" title="Software Cross Index ‣ Software Index" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§</span> ‣ <span class="ltx_text ltx_ref_title">Software Cross Index</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./10.77.iv" title="" class="ltx_ref">http://dlmf.nist.gov/10.77.iv</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./10.77#info" title="§10.77 Software ‣ Computation ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§10.77</span></a> and
+<a href="./10#info" title="Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.10</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="iv.p1" class="ltx_para">
+<ul id="I3" class="ltx_itemize">
+<li id="I3.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="I3.i1.p1" class="ltx_para">
+<p class="ltx_p"><cite class="ltx_cite ltx_citemacro_citet">Burrell (<a href="./bib/B#bib386" title="Algorithm 484: Evaluation of the modified Bessel functions K0(Z) and K1(Z) for complex arguments" class="ltx_ref">1974</a>)</cite>. Fortran.</p>
+</div>
+</li>
+<li id="I3.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="I3.i2.p1" class="ltx_para">
+<p class="ltx_p"><cite class="ltx_cite ltx_citemacro_citet">du Toit (<a href="./bib/D#bib722" title="Bessel functions ⁢ J n ( z ) and ⁢ Y n ( z ) of integer order and complex argument" class="ltx_ref">1993</a>)</cite>. Pascal.</p>
+</div>
+</li>
+</ul>
+<p class="ltx_p">See also
+<cite class="ltx_cite ltx_citemacro_citet">Babushkina<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/B#bib167" title="Algorithms for computing Bessel functions of half-integer order with complex arguments" class="ltx_ref">1988a</a>, <a href="./bib/B#bib168" title="Algorithms for evaluating spherical Bessel functions in the complex domain" class="ltx_ref">b</a>)</cite>,
+and <cite class="ltx_cite ltx_citemacro_citet">Fox<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/F#bib830" title="The PORT mathematical subroutine library" class="ltx_ref">1978</a>)</cite>.</p>
+</div>
+</section>
+<section id="v" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§10.77(v) </span>Bessel Functions–Real Order and Complex Argument (including
+Hankel Functions)</h2>
+<div id="v.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Referenced by:</dt>
+<dd><a href="./software/#S1.t1.r42" title="Software Cross Index ‣ Software Index" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§</span> ‣ <span class="ltx_text ltx_ref_title">Software Cross Index</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./10.77.v" title="" class="ltx_ref">http://dlmf.nist.gov/10.77.v</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./10.77#info" title="§10.77 Software ‣ Computation ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§10.77</span></a> and
+<a href="./10#info" title="Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.10</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="v.p1" class="ltx_para">
+<ul id="I4" class="ltx_itemize">
+<li id="I4.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="I4.i1.p1" class="ltx_para">
+<p class="ltx_p"><cite class="ltx_cite ltx_citemacro_citet">Amos (<a href="./bib/#bib78" title="Algorithm 644: A portable package for Bessel functions of a complex argument and nonnegative order" class="ltx_ref">1986</a>)</cite>. Fortran.</p>
+</div>
+</li>
+<li id="I4.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="I4.i2.p1" class="ltx_para">
+<p class="ltx_p"><cite class="ltx_cite ltx_citemacro_citet">Campbell (<a href="./bib/C#bib408" title="Bessel functions ⁢ I ν ( x ) and ⁢ K ν ( x ) of real order and complex argument" class="ltx_ref">1981</a>)</cite>. Fortran.
+</p>
+</div>
+</li>
+<li id="I4.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="I4.i3.p1" class="ltx_para">
+<p class="ltx_p"><cite class="ltx_cite ltx_citemacro_citet">Thompson and Barnett (<a href="./bib/T#bib2245" title="Modified Bessel functions ⁢ I ν ( z ) and ⁢ K ν ( z ) of real order and complex argument, to selected accuracy" class="ltx_ref">1987</a>)</cite>. Fortran.</p>
+</div>
+</li>
+</ul>
+</div>
+</section>
+<section id="vi" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§10.77(vi) </span>Bessel Functions–Imaginary Order and Real Argument</h2>
+<div id="vi.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Referenced by:</dt>
+<dd><a href="./software/#S1.t1.r43" title="Software Cross Index ‣ Software Index" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§</span> ‣ <span class="ltx_text ltx_ref_title">Software Cross Index</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./10.77.vi" title="" class="ltx_ref">http://dlmf.nist.gov/10.77.vi</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./10.77#info" title="§10.77 Software ‣ Computation ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§10.77</span></a> and
+<a href="./10#info" title="Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.10</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="vi.p1" class="ltx_para">
+<ul id="I5" class="ltx_itemize">
+<li id="I5.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="I5.i1.p1" class="ltx_para">
+<p class="ltx_p"><cite class="ltx_cite ltx_citemacro_citet">Gil<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/G#bib929" title="Algorithm 831: Modified Bessel functions of imaginary order and positive argument" class="ltx_ref">2004a</a>)</cite>. Fortran.</p>
+</div>
+</li>
+</ul>
+<p class="ltx_p">See also <cite class="ltx_cite ltx_citemacro_citet">Fabijonas<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/F#bib768" title="Algorithms and codes for the Macdonald function: Recent progress and comparisons" class="ltx_ref">2003</a>)</cite>.</p>
+</div>
+</section>
+<section id="vii" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§10.77(vii) </span>Bessel Functions–Complex Order and Real Argument</h2>
+<div id="vii.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Permalink:</dt>
+<dd><a href="./10.77.vii" title="" class="ltx_ref">http://dlmf.nist.gov/10.77.vii</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./10.77#info" title="§10.77 Software ‣ Computation ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§10.77</span></a> and
+<a href="./10#info" title="Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.10</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="vii.p1" class="ltx_para">
+<ul id="I6" class="ltx_itemize">
+<li id="I6.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="I6.i1.p1" class="ltx_para">
+<p class="ltx_p"><cite class="ltx_cite ltx_citemacro_citet">Kodama (<a href="./bib/K#bib2724" title="Algorithm 877: A subroutine package for cylindrical functions of complex order and nonnegative argument" class="ltx_ref">2008</a>)</cite>. Fortran.</p>
+</div>
+</li>
+</ul>
+</div>
+</section>
+<section id="viii" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§10.77(viii) </span>Bessel Functions–Complex Order and Argument</h2>
+<div id="viii.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./errata/#V1.0.9.I3.ix5.p1" title="In Other Changes ‣ Version 1.0.9 (August 29, 2014) ‣ Errata" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Erratum (V1.0.9) for  References</span></a>,
+<a href="./software/#S1.t1.r44" title="Software Cross Index ‣ Software Index" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§</span> ‣ <span class="ltx_text ltx_ref_title">Software Cross Index</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./10.77.viii" title="" class="ltx_ref">http://dlmf.nist.gov/10.77.viii</a></dd>
+<dt>Addition (effective with 1.0.9):</dt>
+<dd>
+The reference to <cite class="ltx_cite ltx_citemacro_citet">Kodama (<a href="./bib/K#bib2797" title="Algorithm 912: a module for calculating cylindrical functions of complex order and complex argument" class="ltx_ref">2011</a>)</cite> has been added in this subsection.
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./10.77#info" title="§10.77 Software ‣ Computation ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§10.77</span></a> and
+<a href="./10#info" title="Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.10</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="viii.p1" class="ltx_para">
+<ul id="I7" class="ltx_itemize">
+<li id="I7.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="I7.i1.p1" class="ltx_para">
+<p class="ltx_p"><cite class="ltx_cite ltx_citemacro_citet">Thompson and Barnett (<a href="./bib/T#bib2243" title="COULCC: A continued-fraction algorithm for Coulomb functions of complex order with complex arguments" class="ltx_ref">1985</a>)</cite>. Fortran.</p>
+</div>
+</li>
+<li id="I7.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="I7.i2.p1" class="ltx_para">
+<p class="ltx_p"><cite class="ltx_cite ltx_citemacro_citet">Kodama (<a href="./bib/K#bib2797" title="Algorithm 912: a module for calculating cylindrical functions of complex order and complex argument" class="ltx_ref">2011</a>)</cite>. Fortran.</p>
+</div>
+</li>
+</ul>
+</div>
+</section>
+<section id="ix" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§10.77(ix) </span>Integrals of Bessel Functions</h2>
+<div id="ix.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./errata/#V1.0.22.I2.ix1.p1" title="In Other Changes ‣ Version 1.0.22 (March 15, 2019) ‣ Errata" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Erratum (V1.0.22) for  References</span></a>,
+<a href="./software/#S1.t1.r45" title="Software Cross Index ‣ Software Index" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§</span> ‣ <span class="ltx_text ltx_ref_title">Software Cross Index</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./10.77.ix" title="" class="ltx_ref">http://dlmf.nist.gov/10.77.ix</a></dd>
+<dt>Addition (effective with 1.0.22):</dt>
+<dd>
+Citations to <cite class="ltx_cite ltx_citemacro_citet">Ratnanather<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/R#bib2885" title="Algorithm 935: IIPBF, a MATLAB toolbox for infinite integral of products of two Bessel functions" class="ltx_ref">2014</a>)</cite> and <cite class="ltx_cite ltx_citemacro_citet">Gil<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/G#bib2886" title="Algorithm 939: computation of the Marcum Q-function" class="ltx_ref">2014</a>)</cite> were added.
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./10.77#info" title="§10.77 Software ‣ Computation ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§10.77</span></a> and
+<a href="./10#info" title="Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.10</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="ix.p1" class="ltx_para">
+<ul id="I8" class="ltx_itemize">
+<li id="I8.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="I8.i1.p1" class="ltx_para">
+<p class="ltx_p"><cite class="ltx_cite ltx_citemacro_citet">Amos (<a href="./bib/#bib74" title="Algorithm 609. A portable FORTRAN subroutine for the Bickley functions ⁢ Ki n ( x )" class="ltx_ref">1983a</a>)</cite>. Fortran.</p>
+</div>
+</li>
+<li id="I8.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="I8.i2.p1" class="ltx_para">
+<p class="ltx_p"><cite class="ltx_cite ltx_citemacro_citet">Anderson (<a href="./bib/#bib86" title="Algorithm 588. Fast Hankel transforms using related and lagged convolutions" class="ltx_ref">1982</a>)</cite>. Fortran.</p>
+</div>
+</li>
+<li id="I8.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="I8.i3.p1" class="ltx_para">
+<p class="ltx_p"><cite class="ltx_cite ltx_citemacro_citet">Gil<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/G#bib2886" title="Algorithm 939: computation of the Marcum Q-function" class="ltx_ref">2014</a>)</cite>. Fortran.</p>
+</div>
+</li>
+<li id="I8.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="I8.i4.p1" class="ltx_para">
+<p class="ltx_p"><cite class="ltx_cite ltx_citemacro_citet">Lemoine (<a href="./bib/L#bib1412" title="Optimal cylindrical and spherical Bessel transforms satisfying bound state boundary conditions" class="ltx_ref">1997</a>)</cite>. Fortran.</p>
+</div>
+</li>
+<li id="I8.i5" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="I8.i5.p1" class="ltx_para">
+<p class="ltx_p"><cite class="ltx_cite ltx_citemacro_citet">MacLeod (<a href="./bib/M#bib1524" title="Algorithm 757: MISCFUN, a software package to compute uncommon special functions" class="ltx_ref">1996a</a>)</cite>. Fortran.</p>
+</div>
+</li>
+<li id="I8.i6" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="I8.i6.p1" class="ltx_para">
+<p class="ltx_p"><cite class="ltx_cite ltx_citemacro_citet">Piessens (<a href="./bib/P#bib1876" title="Automatic computation of Bessel function integrals" class="ltx_ref">1982</a>)</cite>. Fortran.</p>
+</div>
+</li>
+<li id="I8.i7" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="I8.i7.p1" class="ltx_para">
+<p class="ltx_p"><cite class="ltx_cite ltx_citemacro_citet">Ratnanather<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/R#bib2885" title="Algorithm 935: IIPBF, a MATLAB toolbox for infinite integral of products of two Bessel functions" class="ltx_ref">2014</a>)</cite>. MATLAB.</p>
+</div>
+</li>
+<li id="I8.i8" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="I8.i8.p1" class="ltx_para">
+<p class="ltx_p"><cite class="ltx_cite ltx_citemacro_citet">Sommer and Zabolitzky (<a href="./bib/S#bib2134" title="On numerical Bessel transformation" class="ltx_ref">1979</a>)</cite>. Fortran.</p>
+</div>
+</li>
+<li id="I8.i9" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="I8.i9.p1" class="ltx_para">
+<p class="ltx_p"><cite class="ltx_cite ltx_citemacro_citet">Talman (<a href="./bib/T#bib2201" title="LSFBTR: A subroutine for calculating spherical Bessel transforms" class="ltx_ref">1983</a>)</cite>. Fortran.</p>
+</div>
+</li>
+<li id="I8.i10" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="I8.i10.p1" class="ltx_para">
+<p class="ltx_p"><cite class="ltx_cite ltx_citemacro_citet">Weider (<a href="./bib/W#bib2386" title="Algorithm 794: Numerical Hankel transform by the Fortran program HANKEL" class="ltx_ref">1999</a>)</cite>. Fortran.</p>
+</div>
+</li>
+</ul>
+<p class="ltx_p">See also
+<cite class="ltx_cite ltx_citemacro_citet">Chave (<a href="./bib/C#bib474" title="Numerical integration of related Hankel transforms by quadrature and continued fraction expansion" class="ltx_ref">1983</a>)</cite>,
+<cite class="ltx_cite ltx_citemacro_citet">Feuillebois (<a href="./bib/F#bib790" title="Numerical calculation of singular integrals related to Hankel transform" class="ltx_ref">1991</a>)</cite>,
+and <cite class="ltx_cite ltx_citemacro_citet">Piessens and Branders (<a href="./bib/P#bib1883" title="Algorithm 28. Algorithm for the computation of Bessel function integrals" class="ltx_ref">1984</a>)</cite>.</p>
+</div>
+</section>
+<section id="x" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§10.77(x) </span>Zeros of Bessel Functions</h2>
+<div id="x.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Referenced by:</dt>
+<dd><a href="./software/#S1.t1.r46" title="Software Cross Index ‣ Software Index" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§</span> ‣ <span class="ltx_text ltx_ref_title">Software Cross Index</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./10.77.x" title="" class="ltx_ref">http://dlmf.nist.gov/10.77.x</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./10.77#info" title="§10.77 Software ‣ Computation ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§10.77</span></a> and
+<a href="./10#info" title="Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.10</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="x.p1" class="ltx_para">
+<ul id="I9" class="ltx_itemize">
+<li id="I9.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="I9.i1.p1" class="ltx_para">
+<p class="ltx_p"><cite class="ltx_cite ltx_citemacro_citet">Campbell (<a href="./bib/C#bib409" title="Determination of ν -zeros of Hankel functions" class="ltx_ref">1984</a>)</cite>. Fortran.</p>
+</div>
+</li>
+<li id="I9.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="I9.i2.p1" class="ltx_para">
+<p class="ltx_p"><cite class="ltx_cite ltx_citemacro_citet">Kravanja<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/K#bib1343" title="ZEBEC: A mathematical software package for computing simple zeros of Bessel functions of real order and complex argument" class="ltx_ref">1998</a>)</cite>. Fortran.</p>
+</div>
+</li>
+<li id="I9.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="I9.i3.p1" class="ltx_para">
+<p class="ltx_p"><cite class="ltx_cite ltx_citemacro_citet">Vrahatis<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/V#bib2347" title="RFSFNS: A portable package for the numerical determination of the number and the calculation of roots of Bessel functions" class="ltx_ref">1995</a>)</cite>. Fortran.</p>
+</div>
+</li>
+</ul>
+<p class="ltx_p">See also
+<cite class="ltx_cite ltx_citemacro_citet">Temme (<a href="./bib/T#bib2213" title="An algorithm with ALGOL 60 program for the computation of the zeros of ordinary Bessel functions and those of their derivatives" class="ltx_ref">1979a</a>)</cite>.</p>
+</div>
+</section>
+</section>
+</div>
+<div class="ltx_page_footer">
+<div class="ltx_siblings">
+<a href="./10.76" title="In Computation ‣ Chapter 10 Bessel Functions" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">10.76 </span>Approximations</span></a><a href="./11" title="" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">11 </span>Struve and Related Functions</span></a>
+</div>
+<div class="ltx_footer_links ltx_centering">
+<a href="./about/notices">© 2010–2026 NIST</a> / <a href="./about/notices#S2">Disclaimer</a> / <a href="/cdn-cgi/l/email-protection#43070f0e056e2526262721222028032d2a30376d242c35">Feedback</a>;
+ Version 1.2.7;
+Release date 2026-06-15.</div>
+<span id="pagesettings"></span>
+<div class="ltx_nist_logo"><a href="http://www.nist.gov/"><img src="./style/nistidc.png" width="500" alt="NIST"></a></div>
+<div class="ltx_nist_links ltx_align_right">
+<a href="https://www.nist.gov/privacy-policy">Site Privacy</a> <a href="https://www.nist.gov/oism/accessibility">Accessibility</a> <a href="https://www.nist.gov/privacy">Privacy Program</a> <a href="https://www.nist.gov/oism/copyrights">Copyrights</a> <a href="https://www.commerce.gov/vulnerability-disclosure-policy">Vulnerability Disclosure</a> <a href="https://www.nist.gov/no-fear-act-policy">No Fear Act Policy</a> <a href="https://www.nist.gov/foia">FOIA</a> <a href="https://www.nist.gov/environmental-policy-statement">Environmental Policy</a> <a href="https://www.nist.gov/summary-report-scientific-integrity">Scientific Integrity</a> <a href="https://www.nist.gov/nist-information-quality-standards">Information Quality Standards</a> <a href="https://www.commerce.gov/">Commerce.gov</a> <a href="http://www.science.gov/">Science.gov</a> <a href="http://www.usa.gov/">USA.gov</a>
+</div>
+</div>
+</div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"9ef5b487afff42a68917b2d63593a474"}' crossorigin="anonymous"></script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a30b55583d38b017',t:'MTc4NzY2ODYzMg=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

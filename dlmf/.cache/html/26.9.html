@@ -1,0 +1,1202 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>DLMF: §26.9 Integer Partitions: Restricted Number and Part Size ‣ Properties ‣ Chapter 26 Combinatorial Analysis</title>
+<link rel="shortcut icon" href="./style/DLMF-16.png" type="image/png">
+<script type="text/javascript"><!--
+	var PATH="DLMF:/26.9";
+	var ROOT="./";
+      //--></script>
+<script type="text/javascript" src="./style/jquery.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/jquery.leaveNotice.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/DLMF.js"><!-- non-empty so ie6 will accept it --></script>
+<script async="" type="text/javascript" id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC&amp;subagency=NIST&amp;pua=UA-37115410-44&amp;yt=true&amp;exts=ppsx,pps,f90,sch,rtf,wrl,txz,m1v,xlsm,msi,xsd,f,tif,eps,mpg,xml,pl,xlt,c"><!-- non-empty so ie6 will accept it --></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-BZB64W4M0L"></script><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-BZB64W4M0L');
+      </script>
+<link rel="stylesheet" type="text/css" href="./style/LaTeXML.css">
+<link rel="stylesheet" type="text/css" href="./style/DLMF.css">
+<link rel="stylesheet" type="text/css" href="./style/print.css" media="print">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="top" href="./" title="DLMF">
+<link rel="copyright" href="./about/notices" title="Copyright">
+<link rel="search" href="./search/search" title="Search">
+<link rel="help" class="ltx_help" href="./help/" title="Help">
+<link rel="up" href="./26#PT2" title="Properties ‣ Chapter 26 Combinatorial Analysis">
+<link rel="up up" href="./26" title="Chapter 26 Combinatorial Analysis">
+<link rel="start" href="./" title="">
+<link rel="prev" href="./26.8" title="§26.8 Set Partitions: Stirling Numbers ‣ Properties ‣ Chapter 26 Combinatorial Analysis">
+<link rel="next" href="./26.10" title="§26.10 Integer Partitions: Other Restrictions ‣ Properties ‣ Chapter 26 Combinatorial Analysis">
+<link rel="section" href="./26.1" title="§26.1 Special Notation ‣ Notation ‣ Chapter 26 Combinatorial Analysis">
+<link rel="section" href="./26.2" title="§26.2 Basic Definitions ‣ Properties ‣ Chapter 26 Combinatorial Analysis">
+<link rel="section" href="./26.3" title="§26.3 Lattice Paths: Binomial Coefficients ‣ Properties ‣ Chapter 26 Combinatorial Analysis">
+<link rel="section" href="./26.4" title="§26.4 Lattice Paths: Multinomial Coefficients and Set Partitions ‣ Properties ‣ Chapter 26 Combinatorial Analysis">
+<link rel="section" href="./26.5" title="§26.5 Lattice Paths: Catalan Numbers ‣ Properties ‣ Chapter 26 Combinatorial Analysis">
+<link rel="section" href="./26.6" title="§26.6 Other Lattice Path Numbers ‣ Properties ‣ Chapter 26 Combinatorial Analysis">
+<link rel="section" href="./26.7" title="§26.7 Set Partitions: Bell Numbers ‣ Properties ‣ Chapter 26 Combinatorial Analysis">
+<link rel="section" href="./26.8" title="§26.8 Set Partitions: Stirling Numbers ‣ Properties ‣ Chapter 26 Combinatorial Analysis">
+<link rel="section" href="./26.10" title="§26.10 Integer Partitions: Other Restrictions ‣ Properties ‣ Chapter 26 Combinatorial Analysis">
+<link rel="section" href="./26.11" title="§26.11 Integer Partitions: Compositions ‣ Properties ‣ Chapter 26 Combinatorial Analysis">
+<link rel="section" href="./26.12" title="§26.12 Plane Partitions ‣ Properties ‣ Chapter 26 Combinatorial Analysis">
+<link rel="section" href="./26.13" title="§26.13 Permutations: Cycle Notation ‣ Properties ‣ Chapter 26 Combinatorial Analysis">
+<link rel="section" href="./26.14" title="§26.14 Permutations: Order Notation ‣ Properties ‣ Chapter 26 Combinatorial Analysis">
+<link rel="section" href="./26.15" title="§26.15 Permutations: Matrix Notation ‣ Properties ‣ Chapter 26 Combinatorial Analysis">
+<link rel="section" href="./26.16" title="§26.16 Multiset Permutations ‣ Properties ‣ Chapter 26 Combinatorial Analysis">
+<link rel="section" href="./26.17" title="§26.17 The Twelvefold Way ‣ Properties ‣ Chapter 26 Combinatorial Analysis">
+<link rel="section" href="./26.18" title="§26.18 Counting Techniques ‣ Properties ‣ Chapter 26 Combinatorial Analysis">
+<link rel="section" href="./26.19" title="§26.19 Mathematical Applications ‣ Applications ‣ Chapter 26 Combinatorial Analysis">
+<link rel="section" href="./26.20" title="§26.20 Physical Applications ‣ Applications ‣ Chapter 26 Combinatorial Analysis">
+<link rel="section" href="./26.21" title="§26.21 Tables ‣ Computation ‣ Chapter 26 Combinatorial Analysis">
+<link rel="section" href="./26.22" title="§26.22 Software ‣ Computation ‣ Chapter 26 Combinatorial Analysis">
+<link rel="document" href="./front/foreword" title="Foreword">
+<link rel="document" href="./front/preface" title="Preface">
+<link rel="document" href="./front/introduction" title="Mathematical Introduction">
+<link rel="chapter" href="./1" title="Chapter 1 Algebraic and Analytic Methods">
+<link rel="chapter" href="./2" title="Chapter 2 Asymptotic Approximations">
+<link rel="chapter" href="./3" title="Chapter 3 Numerical Methods">
+<link rel="chapter" href="./4" title="Chapter 4 Elementary Functions">
+<link rel="chapter" href="./5" title="Chapter 5 Gamma Function">
+<link rel="chapter" href="./6" title="Chapter 6 Exponential, Logarithmic, Sine, and Cosine Integrals">
+<link rel="chapter" href="./7" title="Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="chapter" href="./8" title="Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="chapter" href="./9" title="Chapter 9 Airy and Related Functions">
+<link rel="chapter" href="./10" title="Chapter 10 Bessel Functions">
+<link rel="chapter" href="./11" title="Chapter 11 Struve and Related Functions">
+<link rel="chapter" href="./12" title="Chapter 12 Parabolic Cylinder Functions">
+<link rel="chapter" href="./13" title="Chapter 13 Confluent Hypergeometric Functions">
+<link rel="chapter" href="./14" title="Chapter 14 Legendre and Related Functions">
+<link rel="chapter" href="./15" title="Chapter 15 Hypergeometric Function">
+<link rel="chapter" href="./16" title="Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="chapter" href="./17" title="Chapter 17 𝑞-Hypergeometric and Related Functions">
+<link rel="chapter" href="./18" title="Chapter 18 Orthogonal Polynomials">
+<link rel="chapter" href="./19" title="Chapter 19 Elliptic Integrals">
+<link rel="chapter" href="./20" title="Chapter 20 Theta Functions">
+<link rel="chapter" href="./21" title="Chapter 21 Multidimensional Theta Functions">
+<link rel="chapter" href="./22" title="Chapter 22 Jacobian Elliptic Functions">
+<link rel="chapter" href="./23" title="Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="chapter" href="./24" title="Chapter 24 Bernoulli and Euler Polynomials">
+<link rel="chapter" href="./25" title="Chapter 25 Zeta and Related Functions">
+<link rel="chapter" href="./26" title="Chapter 26 Combinatorial Analysis">
+<link rel="chapter" href="./27" title="Chapter 27 Functions of Number Theory">
+<link rel="chapter" href="./28" title="Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="chapter" href="./29" title="Chapter 29 Lamé Functions">
+<link rel="chapter" href="./30" title="Chapter 30 Spheroidal Wave Functions">
+<link rel="chapter" href="./31" title="Chapter 31 Heun Functions">
+<link rel="chapter" href="./32" title="Chapter 32 Painlevé Transcendents">
+<link rel="chapter" href="./33" title="Chapter 33 Coulomb Functions">
+<link rel="chapter" href="./34" title="Chapter 34 3⁢𝑗,6⁢𝑗,9⁢𝑗 Symbols">
+<link rel="chapter" href="./35" title="Chapter 35 Functions of Matrix Argument">
+<link rel="chapter" href="./36" title="Chapter 36 Integrals with Coalescing Saddles">
+<link rel="bibliography" href="./bib/" title="Bibliography">
+<link rel="index" href="./idx/" title="Index">
+<link rel="glossary" href="./not/" title="Notations">
+<link rel="document" href="./lof/" title="List of Figures">
+<link rel="document" href="./lot/" title="List of Tables">
+<link rel="document" href="./software/" title="Software Index">
+<link rel="document" href="./errata/" title="Errata">
+<link rel="document" href="./help/" title="Need Help?">
+<link rel="document" href="./search/" title="Advanced Search">
+<link rel="document" href="./about/" title="About the Project">
+<link rel="sidebar" href="./26.9.F2.mag" title="Figure 26.9.2 ‣ §26.9 Integer Partitions: Restricted Number and Part Size ‣ Properties ‣ Chapter 26 Combinatorial Analysis">
+<meta name="keywords" lang="en" content="-binomial coefficient, Ferrers graph, Gaussian polynomials, conjugate, definition, generating functions, limiting form, notation, of integers, partitions, recurrence relations, relation to lattice paths, restricted integer partitions, tables">
+</head>
+<body class="color_default textfont_default titlefont_default fontsize_default navbar_default">
+<div class="ltx_page_navbar">
+<div class="ltx_page_navlogo"><a href="./" title="Digital Library of Mathematical Functions"><span>DLMF</span></a></div>
+<div class="ltx_page_navitems">
+<form method="get" action="./search/search">
+<ul>
+<li><a href="./idx/">Index</a></li>
+<li><a href="./not/">Notations</a></li>
+<li><small><input type="text" name="q" value="" size="6" class="ltx_page_navitem_search"><button type="submit">Search</button></small></li>
+<li><a href="./help/" class="ltx_help">Help?</a></li>
+<li><a href="./help/cite">Citing</a></li>
+<li><a href="./help/customize" class="ltx_customize">Customize</a></li>
+<li id="showinfo"><a href="" onclick="showInfo(); return false;" title="Show Annotations">Annotate</a></li>
+<li id="hideinfo"><a href="" onclick="hideInfo(); return false;">UnAnnotate</a></li>
+</ul>
+</form>
+</div>
+<div class="ltx_page_navsponsors">
+<div><a href="./about/" class="ltx_page_navabout">About the Project</a></div>
+</div>
+</div>
+<div class="ltx_page_main">
+<div class="ltx_page_header">
+<a href="./26" title="" class="ltx_ref" rel="up up"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">26 </span>Combinatorial Analysis</span></a><a href="./26#PT2" title="In Chapter 26 Combinatorial Analysis" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title">Properties</span></a><a href="./26.8" title="In Properties ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">26.8 </span>Set Partitions: Stirling Numbers</span></a><a href="./26.10" title="In Properties ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">26.10 </span>Integer Partitions: Other Restrictions</span></a>
+</div>
+<div class="ltx_page_content">
+<section class="ltx_section ltx_authors_multiline ltx_leqno">
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">§26.9 </span>Integer Partitions:
+Restricted Number and Part Size</h1>
+<div id="info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=of%20integers">of integers</a>, <a class="ltx_keyword" href="./search/search?q=partitions">partitions</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./17.16#p1" title="§17.16 Mathematical Applications ‣ Applications ‣ Chapter 17 𝑞-Hypergeometric and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§17.16</span></a>,
+<a href="./27.14#vi.p3" title="§27.14(vi) Ramanujan’s Tau Function ‣ §27.14 Unrestricted Partitions ‣ Additive Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§27.14(vi)</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./26.9" title="" class="ltx_ref">http://dlmf.nist.gov/26.9</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./26#info" title="Chapter 26 Combinatorial Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.26</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<h6>Contents</h6>
+<ol class="ltx_toclist ltx_toclist_section">
+<li class="ltx_tocentry"><a href="#i"><span class="ltx_tag ltx_tag_subsection">§26.9(i) </span>Definitions</a></li>
+<li class="ltx_tocentry"><a href="#ii"><span class="ltx_tag ltx_tag_subsection">§26.9(ii) </span>Generating Functions</a></li>
+<li class="ltx_tocentry"><a href="#iii"><span class="ltx_tag ltx_tag_subsection">§26.9(iii) </span>Recurrence Relations</a></li>
+<li class="ltx_tocentry"><a href="#iv"><span class="ltx_tag ltx_tag_subsection">§26.9(iv) </span>Limiting Form</a></li>
+</ol>
+<section id="i" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§26.9(i) </span>Definitions</h2>
+<div id="i.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Defines:</dt>
+<dd>
+<span class="ltx_text ltx_font_bold"><math class="ltx_Math" altimg="m33.png" altimg-height="25px" altimg-valign="-7px" altimg-width="57px" alttext="p_{\NVar{k}}\left(\NVar{n}\right)" display="inline"><mrow><msub><mi href="./26.9#i.p1" title="total number of partitions of 𝑛 into at most 𝑘 parts">p</mi><mi class="ltx_nvar" href="./26.1#t1.r2" title="nonnegative integer">k</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./26.1#t1.r2" title="nonnegative integer">n</mi><mo>)</mo></mrow></mrow></math>: total number of partitions of <math class="ltx_Math" altimg="m29.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi></math> into at most <math class="ltx_Math" altimg="m23.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./26.1#t1.r2" title="nonnegative integer">k</mi></math> parts</span> and
+<span class="ltx_text ltx_font_bold"><math class="ltx_Math" altimg="m34.png" altimg-height="25px" altimg-valign="-7px" altimg-width="106px" alttext="p_{\NVar{k}}\left(\leq\NVar{m},\NVar{n}\right)" display="inline"><mrow><msub><mi href="./26.9#i" title="number of partitions of 𝑛 into at most 𝑘 parts, each less than or equal to 𝑚">p</mi><mi class="ltx_nvar" href="./26.1#t1.r2" title="nonnegative integer">k</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mrow><mi></mi><mo>≤</mo><mi class="ltx_nvar" href="./26.1#t1.r2" title="nonnegative integer">m</mi></mrow><mo>,</mo><mi class="ltx_nvar" href="./26.1#t1.r2" title="nonnegative integer">n</mi><mo>)</mo></mrow></mrow></math>: number of partitions of <math class="ltx_Math" altimg="m29.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi></math> into at most <math class="ltx_Math" altimg="m23.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./26.1#t1.r2" title="nonnegative integer">k</mi></math> parts, each less than or equal to <math class="ltx_Math" altimg="m25.png" altimg-height="13px" altimg-valign="-2px" altimg-width="23px" alttext="m" display="inline"><mi href="./26.1#t1.r2" title="nonnegative integer">m</mi></math></span>
+</dd>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=Ferrers%20graph">Ferrers graph</a>, <a class="ltx_keyword" href="./search/search?q=conjugate">conjugate</a>, <a class="ltx_keyword" href="./search/search?q=notation">notation</a>, <a class="ltx_keyword" href="./search/search?q=partitions">partitions</a>, <a class="ltx_keyword" href="./search/search?q=relation%20to%20lattice%20paths">relation to lattice paths</a>, <a class="ltx_keyword" href="./search/search?q=restricted%20integer%20partitions">restricted integer partitions</a>
+</dd>
+<dt>Notes:</dt>
+<dd>See <cite class="ltx_cite ltx_citemacro_citet">Andrews (<a href="./bib/#bib92" title="The Theory of Partitions" class="ltx_ref">1976</a>, pp. 1–13, 81)</cite>.
+Table <a href="./26.9#T1" title="Table 26.9.1 ‣ §26.9(i) Definitions ‣ §26.9 Integer Partitions: Restricted Number and Part Size ‣ Properties ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">26.9.1</span></a> was computed by the author.</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./26.17#p1" title="§26.17 The Twelvefold Way ‣ Properties ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§26.17</span></a>,
+<a href="./27.14#i.p1" title="§27.14(i) Partition Functions ‣ §27.14 Unrestricted Partitions ‣ Additive Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§27.14(i)</span></a>,
+<a href="./27.14#i.p2" title="§27.14(i) Partition Functions ‣ §27.14 Unrestricted Partitions ‣ Additive Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§27.14(i)</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./26.9.i" title="" class="ltx_ref">http://dlmf.nist.gov/26.9.i</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./26.9#info" title="§26.9 Integer Partitions: Restricted Number and Part Size ‣ Properties ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§26.9</span></a> and
+<a href="./26#info" title="Chapter 26 Combinatorial Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.26</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="i.p1" class="ltx_para">
+<p class="ltx_p"><math class="ltx_Math" altimg="m36.png" altimg-height="25px" altimg-valign="-7px" altimg-width="57px" alttext="p_{k}\left(n\right)" display="inline"><mrow><msub><mi href="./26.9#i.p1" title="total number of partitions of 𝑛 into at most 𝑘 parts">p</mi><mi href="./26.1#t1.r2" title="nonnegative integer">k</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi><mo>)</mo></mrow></mrow></math> denotes the number of partitions of <math class="ltx_Math" altimg="m29.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi></math> into at most <math class="ltx_Math" altimg="m23.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./26.1#t1.r2" title="nonnegative integer">k</mi></math>
+parts.
+See Table <a href="./26.9#T1" title="Table 26.9.1 ‣ §26.9(i) Definitions ‣ §26.9 Integer Partitions: Restricted Number and Part Size ‣ Properties ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">26.9.1</span></a>.
+</p>
+<table id="E1" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">26.9.1</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E1.png" altimg-height="70px" altimg-valign="-7px" altimg-width="97px" alttext="p_{k}\left(n\right)=p\left(n\right)," display="block"><mrow><mrow><mrow><msub><mi href="./26.9#i.p1" title="total number of partitions of 𝑛 into at most 𝑘 parts">p</mi><mi href="./26.1#t1.r2" title="nonnegative integer">k</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mi href="./26.2#Px4.p2" title="total number of partitions of 𝑛">p</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi><mo>)</mo></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="4"><span class="ltx_constraint"><math class="ltx_Math" altimg="m24.png" altimg-height="21px" altimg-valign="-5px" altimg-width="56px" alttext="k\geq n" display="inline"><mrow><mi href="./26.1#t1.r2" title="nonnegative integer">k</mi><mo>≥</mo><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi></mrow></math>.</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E1.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./26.2#Px4.p2" title="Partition ‣ §26.2 Basic Definitions ‣ Properties ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><math class="ltx_Math" altimg="m32.png" altimg-height="25px" altimg-valign="-7px" altimg-width="47px" alttext="p\left(\NVar{n}\right)" display="inline"><mrow><mi href="./26.2#Px4.p2" title="total number of partitions of 𝑛">p</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./26.1#t1.r2" title="nonnegative integer">n</mi><mo>)</mo></mrow></mrow></math>: total number of partitions of <math class="ltx_Math" altimg="m29.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi></math></a>,
+<a href="./26.9#i.p1" title="§26.9(i) Definitions ‣ §26.9 Integer Partitions: Restricted Number and Part Size ‣ Properties ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><math class="ltx_Math" altimg="m33.png" altimg-height="25px" altimg-valign="-7px" altimg-width="57px" alttext="p_{\NVar{k}}\left(\NVar{n}\right)" display="inline"><mrow><msub><mi href="./26.9#i.p1" title="total number of partitions of 𝑛 into at most 𝑘 parts">p</mi><mi class="ltx_nvar" href="./26.1#t1.r2" title="nonnegative integer">k</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./26.1#t1.r2" title="nonnegative integer">n</mi><mo>)</mo></mrow></mrow></math>: total number of partitions of <math class="ltx_Math" altimg="m29.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi></math> into at most <math class="ltx_Math" altimg="m23.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./26.1#t1.r2" title="nonnegative integer">k</mi></math> parts</a>,
+<a href="./26.1#t1.r2" title="§26.1 Special Notation ‣ Notation ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><math class="ltx_Math" altimg="m23.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./26.1#t1.r2" title="nonnegative integer">k</mi></math>:  nonnegative integer</a> and
+<a href="./26.1#t1.r2" title="§26.1 Special Notation ‣ Notation ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><math class="ltx_Math" altimg="m29.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi></math>:  nonnegative integer</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./26.9.E1" title="" class="ltx_ref">http://dlmf.nist.gov/26.9.E1</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./26.9.E1.tex">TeX</a>, <a href="./26.9.E1.pmml">pMML</a>, <a href="./26.9.E1.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./26.9#i.info" title="§26.9(i) Definitions ‣ §26.9 Integer Partitions: Restricted Number and Part Size ‣ Properties ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§26.9(i)</span></a>,
+<a href="./26.9#info" title="§26.9 Integer Partitions: Restricted Number and Part Size ‣ Properties ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§26.9</span></a> and
+<a href="./26#info" title="Chapter 26 Combinatorial Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.26</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+<div id="i.p2" class="ltx_para">
+<p class="ltx_p">Unrestricted partitions are covered in §<a href="./27.14" title="§27.14 Unrestricted Partitions ‣ Additive Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">27.14</span></a>.</p>
+</div>
+<figure id="T1" class="ltx_table">
+<figcaption class="ltx_caption"><span class="ltx_tag ltx_tag_table">Table 26.9.1: </span>Partitions <math class="ltx_Math" altimg="m36.png" altimg-height="25px" altimg-valign="-7px" altimg-width="57px" alttext="p_{k}\left(n\right)" display="inline"><mrow><msub><mi href="./26.9#i.p1" title="total number of partitions of 𝑛 into at most 𝑘 parts">p</mi><mi href="./26.1#t1.r2" title="nonnegative integer">k</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi><mo>)</mo></mrow></mrow></math>.
+</figcaption>
+<table id="T1.t1" class="ltx_tabular ltx_centering ltx_guessed_headers ltx_align_middle">
+<thead class="ltx_thead">
+<tr id="T1.t1.r1" class="ltx_tr">
+<th class="ltx_td ltx_align_right ltx_th ltx_th_column ltx_th_row ltx_border_r ltx_border_tt" style="padding-left:5.4pt;padding-right:5.4pt;" rowspan="2"><math class="ltx_Math" altimg="m29.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi></math></th>
+<th class="ltx_td ltx_align_center ltx_th ltx_th_column ltx_border_tt" style="padding-left:5.4pt;padding-right:5.4pt;" colspan="11"><math class="ltx_Math" altimg="m23.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./26.1#t1.r2" title="nonnegative integer">k</mi></math></th>
+</tr>
+<tr id="T1.t1.r2" class="ltx_tr">
+<th class="ltx_td ltx_align_right ltx_th ltx_th_column" style="padding-left:5.4pt;padding-right:5.4pt;">0</th>
+<th class="ltx_td ltx_align_right ltx_th ltx_th_column" style="padding-left:5.4pt;padding-right:5.4pt;">1</th>
+<th class="ltx_td ltx_align_right ltx_th ltx_th_column" style="padding-left:5.4pt;padding-right:5.4pt;">2</th>
+<th class="ltx_td ltx_align_right ltx_th ltx_th_column" style="padding-left:5.4pt;padding-right:5.4pt;">3</th>
+<th class="ltx_td ltx_align_right ltx_th ltx_th_column" style="padding-left:5.4pt;padding-right:5.4pt;">4</th>
+<th class="ltx_td ltx_align_right ltx_th ltx_th_column" style="padding-left:5.4pt;padding-right:5.4pt;">5</th>
+<th class="ltx_td ltx_align_right ltx_th ltx_th_column" style="padding-left:5.4pt;padding-right:5.4pt;">6</th>
+<th class="ltx_td ltx_align_right ltx_th ltx_th_column" style="padding-left:5.4pt;padding-right:5.4pt;">7</th>
+<th class="ltx_td ltx_align_right ltx_th ltx_th_column" style="padding-left:5.4pt;padding-right:5.4pt;">8</th>
+<th class="ltx_td ltx_align_right ltx_th ltx_th_column" style="padding-left:5.4pt;padding-right:5.4pt;">9</th>
+<th class="ltx_td ltx_align_right ltx_th ltx_th_column" style="padding-left:5.4pt;padding-right:5.4pt;">10</th>
+</tr>
+</thead>
+<tbody class="ltx_tbody">
+<tr id="T1.t1.r3" class="ltx_tr">
+<th class="ltx_td ltx_align_right ltx_th ltx_th_row ltx_border_r" style="padding-left:5.4pt;padding-right:5.4pt;">0</th>
+<td class="ltx_td ltx_align_right ltx_border_t" style="padding-left:5.4pt;padding-right:5.4pt;">1</td>
+<td class="ltx_td ltx_align_right ltx_border_t" style="padding-left:5.4pt;padding-right:5.4pt;">1</td>
+<td class="ltx_td ltx_align_right ltx_border_t" style="padding-left:5.4pt;padding-right:5.4pt;">1</td>
+<td class="ltx_td ltx_align_right ltx_border_t" style="padding-left:5.4pt;padding-right:5.4pt;">1</td>
+<td class="ltx_td ltx_align_right ltx_border_t" style="padding-left:5.4pt;padding-right:5.4pt;">1</td>
+<td class="ltx_td ltx_align_right ltx_border_t" style="padding-left:5.4pt;padding-right:5.4pt;">1</td>
+<td class="ltx_td ltx_align_right ltx_border_t" style="padding-left:5.4pt;padding-right:5.4pt;">1</td>
+<td class="ltx_td ltx_align_right ltx_border_t" style="padding-left:5.4pt;padding-right:5.4pt;">1</td>
+<td class="ltx_td ltx_align_right ltx_border_t" style="padding-left:5.4pt;padding-right:5.4pt;">1</td>
+<td class="ltx_td ltx_align_right ltx_border_t" style="padding-left:5.4pt;padding-right:5.4pt;">1</td>
+<td class="ltx_td ltx_align_right ltx_border_t" style="padding-left:5.4pt;padding-right:5.4pt;">1</td>
+</tr>
+<tr id="T1.t1.r4" class="ltx_tr">
+<th class="ltx_td ltx_align_right ltx_th ltx_th_row ltx_border_r" style="padding-left:5.4pt;padding-right:5.4pt;">1</th>
+<td class="ltx_td ltx_align_right" style="padding-left:5.4pt;padding-right:5.4pt;">0</td>
+<td class="ltx_td ltx_align_right" style="padding-left:5.4pt;padding-right:5.4pt;">1</td>
+<td class="ltx_td ltx_align_right" style="padding-left:5.4pt;padding-right:5.4pt;">1</td>
+<td class="ltx_td ltx_align_right" style="padding-left:5.4pt;padding-right:5.4pt;">1</td>
+<td class="ltx_td ltx_align_right" style="padding-left:5.4pt;padding-right:5.4pt;">1</td>
+<td class="ltx_td ltx_align_right" style="padding-left:5.4pt;padding-right:5.4pt;">1</td>
+<td class="ltx_td ltx_align_right" style="padding-left:5.4pt;padding-right:5.4pt;">1</td>
+<td class="ltx_td ltx_align_right" style="padding-left:5.4pt;padding-right:5.4pt;">1</td>
+<td class="ltx_td ltx_align_right" style="padding-left:5.4pt;padding-right:5.4pt;">1</td>
+<td class="ltx_td ltx_align_right" style="padding-left:5.4pt;padding-right:5.4pt;">1</td>
+<td class="ltx_td ltx_align_right" style="padding-left:5.4pt;padding-right:5.4pt;">1</td>
+</tr>
+<tr id="T1.t1.r5" class="ltx_tr">
+<th class="ltx_td ltx_align_right ltx_th ltx_th_row ltx_border_r" style="padding-left:5.4pt;padding-right:5.4pt;">2</th>
+<td class="ltx_td ltx_align_right" style="padding-left:5.4pt;padding-right:5.4pt;">0</td>
+<td class="ltx_td ltx_align_right" style="padding-left:5.4pt;padding-right:5.4pt;">1</td>
+<td class="ltx_td ltx_align_right" style="padding-left:5.4pt;padding-right:5.4pt;">2</td>
+<td class="ltx_td ltx_align_right" style="padding-left:5.4pt;padding-right:5.4pt;">2</td>
+<td class="ltx_td ltx_align_right" style="padding-left:5.4pt;padding-right:5.4pt;">2</td>
+<td class="ltx_td ltx_align_right" style="padding-left:5.4pt;padding-right:5.4pt;">2</td>
+<td class="ltx_td ltx_align_right" style="padding-left:5.4pt;padding-right:5.4pt;">2</td>
+<td class="ltx_td ltx_align_right" style="padding-left:5.4pt;padding-right:5.4pt;">2</td>
+<td class="ltx_td ltx_align_right" style="padding-left:5.4pt;padding-right:5.4pt;">2</td>
+<td class="ltx_td ltx_align_right" style="padding-left:5.4pt;padding-right:5.4pt;">2</td>
+<td class="ltx_td ltx_align_right" style="padding-left:5.4pt;padding-right:5.4pt;">2</td>
+</tr>
+<tr id="T1.t1.r6" class="ltx_tr">
+<th class="ltx_td ltx_align_right ltx_th ltx_th_row ltx_border_r" style="padding-left:5.4pt;padding-right:5.4pt;">3</th>
+<td class="ltx_td ltx_align_right" style="padding-left:5.4pt;padding-right:5.4pt;">0</td>
+<td class="ltx_td ltx_align_right" style="padding-left:5.4pt;padding-right:5.4pt;">1</td>
+<td class="ltx_td ltx_align_right" style="padding-left:5.4pt;padding-right:5.4pt;">2</td>
+<td class="ltx_td ltx_align_right" style="padding-left:5.4pt;padding-right:5.4pt;">3</td>
+<td class="ltx_td ltx_align_right" style="padding-left:5.4pt;padding-right:5.4pt;">3</td>
+<td class="ltx_td ltx_align_right" style="padding-left:5.4pt;padding-right:5.4pt;">3</td>
+<td class="ltx_td ltx_align_right" style="padding-left:5.4pt;padding-right:5.4pt;">3</td>
+<td class="ltx_td ltx_align_right" style="padding-left:5.4pt;padding-right:5.4pt;">3</td>
+<td class="ltx_td ltx_align_right" style="padding-left:5.4pt;padding-right:5.4pt;">3</td>
+<td class="ltx_td ltx_align_right" style="padding-left:5.4pt;padding-right:5.4pt;">3</td>
+<td class="ltx_td ltx_align_right" style="padding-left:5.4pt;padding-right:5.4pt;">3</td>
+</tr>
+<tr id="T1.t1.r7" class="ltx_tr">
+<th class="ltx_td ltx_align_right ltx_th ltx_th_row ltx_border_T ltx_border_r" style="padding-left:5.4pt;padding-right:5.4pt;">4</th>
+<td class="ltx_td ltx_align_right ltx_border_T" style="padding-left:5.4pt;padding-right:5.4pt;">0</td>
+<td class="ltx_td ltx_align_right ltx_border_T" style="padding-left:5.4pt;padding-right:5.4pt;">1</td>
+<td class="ltx_td ltx_align_right ltx_border_T" style="padding-left:5.4pt;padding-right:5.4pt;">3</td>
+<td class="ltx_td ltx_align_right ltx_border_T" style="padding-left:5.4pt;padding-right:5.4pt;">4</td>
+<td class="ltx_td ltx_align_right ltx_border_T" style="padding-left:5.4pt;padding-right:5.4pt;">5</td>
+<td class="ltx_td ltx_align_right ltx_border_T" style="padding-left:5.4pt;padding-right:5.4pt;">5</td>
+<td class="ltx_td ltx_align_right ltx_border_T" style="padding-left:5.4pt;padding-right:5.4pt;">5</td>
+<td class="ltx_td ltx_align_right ltx_border_T" style="padding-left:5.4pt;padding-right:5.4pt;">5</td>
+<td class="ltx_td ltx_align_right ltx_border_T" style="padding-left:5.4pt;padding-right:5.4pt;">5</td>
+<td class="ltx_td ltx_align_right ltx_border_T" style="padding-left:5.4pt;padding-right:5.4pt;">5</td>
+<td class="ltx_td ltx_align_right ltx_border_T" style="padding-left:5.4pt;padding-right:5.4pt;">5</td>
+</tr>
+<tr id="T1.t1.r8" class="ltx_tr">
+<th class="ltx_td ltx_align_right ltx_th ltx_th_row ltx_border_r" style="padding-left:5.4pt;padding-right:5.4pt;">5</th>
+<td class="ltx_td ltx_align_right" style="padding-left:5.4pt;padding-right:5.4pt;">0</td>
+<td class="ltx_td ltx_align_right" style="padding-left:5.4pt;padding-right:5.4pt;">1</td>
+<td class="ltx_td ltx_align_right" style="padding-left:5.4pt;padding-right:5.4pt;">3</td>
+<td class="ltx_td ltx_align_right" style="padding-left:5.4pt;padding-right:5.4pt;">5</td>
+<td class="ltx_td ltx_align_right" style="padding-left:5.4pt;padding-right:5.4pt;">6</td>
+<td class="ltx_td ltx_align_right" style="padding-left:5.4pt;padding-right:5.4pt;">7</td>
+<td class="ltx_td ltx_align_right" style="padding-left:5.4pt;padding-right:5.4pt;">7</td>
+<td class="ltx_td ltx_align_right" style="padding-left:5.4pt;padding-right:5.4pt;">7</td>
+<td class="ltx_td ltx_align_right" style="padding-left:5.4pt;padding-right:5.4pt;">7</td>
+<td class="ltx_td ltx_align_right" style="padding-left:5.4pt;padding-right:5.4pt;">7</td>
+<td class="ltx_td ltx_align_right" style="padding-left:5.4pt;padding-right:5.4pt;">7</td>
+</tr>
+<tr id="T1.t1.r9" class="ltx_tr">
+<th class="ltx_td ltx_align_right ltx_th ltx_th_row ltx_border_r" style="padding-left:5.4pt;padding-right:5.4pt;">6</th>
+<td class="ltx_td ltx_align_right" style="padding-left:5.4pt;padding-right:5.4pt;">0</td>
+<td class="ltx_td ltx_align_right" style="padding-left:5.4pt;padding-right:5.4pt;">1</td>
+<td class="ltx_td ltx_align_right" style="padding-left:5.4pt;padding-right:5.4pt;">4</td>
+<td class="ltx_td ltx_align_right" style="padding-left:5.4pt;padding-right:5.4pt;">7</td>
+<td class="ltx_td ltx_align_right" style="padding-left:5.4pt;padding-right:5.4pt;">9</td>
+<td class="ltx_td ltx_align_right" style="padding-left:5.4pt;padding-right:5.4pt;">10</td>
+<td class="ltx_td ltx_align_right" style="padding-left:5.4pt;padding-right:5.4pt;">11</td>
+<td class="ltx_td ltx_align_right" style="padding-left:5.4pt;padding-right:5.4pt;">11</td>
+<td class="ltx_td ltx_align_right" style="padding-left:5.4pt;padding-right:5.4pt;">11</td>
+<td class="ltx_td ltx_align_right" style="padding-left:5.4pt;padding-right:5.4pt;">11</td>
+<td class="ltx_td ltx_align_right" style="padding-left:5.4pt;padding-right:5.4pt;">11</td>
+</tr>
+<tr id="T1.t1.r10" class="ltx_tr">
+<th class="ltx_td ltx_align_right ltx_th ltx_th_row ltx_border_T ltx_border_r" style="padding-left:5.4pt;padding-right:5.4pt;">7</th>
+<td class="ltx_td ltx_align_right ltx_border_T" style="padding-left:5.4pt;padding-right:5.4pt;">0</td>
+<td class="ltx_td ltx_align_right ltx_border_T" style="padding-left:5.4pt;padding-right:5.4pt;">1</td>
+<td class="ltx_td ltx_align_right ltx_border_T" style="padding-left:5.4pt;padding-right:5.4pt;">4</td>
+<td class="ltx_td ltx_align_right ltx_border_T" style="padding-left:5.4pt;padding-right:5.4pt;">8</td>
+<td class="ltx_td ltx_align_right ltx_border_T" style="padding-left:5.4pt;padding-right:5.4pt;">11</td>
+<td class="ltx_td ltx_align_right ltx_border_T" style="padding-left:5.4pt;padding-right:5.4pt;">13</td>
+<td class="ltx_td ltx_align_right ltx_border_T" style="padding-left:5.4pt;padding-right:5.4pt;">14</td>
+<td class="ltx_td ltx_align_right ltx_border_T" style="padding-left:5.4pt;padding-right:5.4pt;">15</td>
+<td class="ltx_td ltx_align_right ltx_border_T" style="padding-left:5.4pt;padding-right:5.4pt;">15</td>
+<td class="ltx_td ltx_align_right ltx_border_T" style="padding-left:5.4pt;padding-right:5.4pt;">15</td>
+<td class="ltx_td ltx_align_right ltx_border_T" style="padding-left:5.4pt;padding-right:5.4pt;">15</td>
+</tr>
+<tr id="T1.t1.r11" class="ltx_tr">
+<th class="ltx_td ltx_align_right ltx_th ltx_th_row ltx_border_r" style="padding-left:5.4pt;padding-right:5.4pt;">8</th>
+<td class="ltx_td ltx_align_right" style="padding-left:5.4pt;padding-right:5.4pt;">0</td>
+<td class="ltx_td ltx_align_right" style="padding-left:5.4pt;padding-right:5.4pt;">1</td>
+<td class="ltx_td ltx_align_right" style="padding-left:5.4pt;padding-right:5.4pt;">5</td>
+<td class="ltx_td ltx_align_right" style="padding-left:5.4pt;padding-right:5.4pt;">10</td>
+<td class="ltx_td ltx_align_right" style="padding-left:5.4pt;padding-right:5.4pt;">15</td>
+<td class="ltx_td ltx_align_right" style="padding-left:5.4pt;padding-right:5.4pt;">18</td>
+<td class="ltx_td ltx_align_right" style="padding-left:5.4pt;padding-right:5.4pt;">20</td>
+<td class="ltx_td ltx_align_right" style="padding-left:5.4pt;padding-right:5.4pt;">21</td>
+<td class="ltx_td ltx_align_right" style="padding-left:5.4pt;padding-right:5.4pt;">22</td>
+<td class="ltx_td ltx_align_right" style="padding-left:5.4pt;padding-right:5.4pt;">22</td>
+<td class="ltx_td ltx_align_right" style="padding-left:5.4pt;padding-right:5.4pt;">22</td>
+</tr>
+<tr id="T1.t1.r12" class="ltx_tr">
+<th class="ltx_td ltx_align_right ltx_th ltx_th_row ltx_border_r" style="padding-left:5.4pt;padding-right:5.4pt;">9</th>
+<td class="ltx_td ltx_align_right" style="padding-left:5.4pt;padding-right:5.4pt;">0</td>
+<td class="ltx_td ltx_align_right" style="padding-left:5.4pt;padding-right:5.4pt;">1</td>
+<td class="ltx_td ltx_align_right" style="padding-left:5.4pt;padding-right:5.4pt;">5</td>
+<td class="ltx_td ltx_align_right" style="padding-left:5.4pt;padding-right:5.4pt;">12</td>
+<td class="ltx_td ltx_align_right" style="padding-left:5.4pt;padding-right:5.4pt;">18</td>
+<td class="ltx_td ltx_align_right" style="padding-left:5.4pt;padding-right:5.4pt;">23</td>
+<td class="ltx_td ltx_align_right" style="padding-left:5.4pt;padding-right:5.4pt;">26</td>
+<td class="ltx_td ltx_align_right" style="padding-left:5.4pt;padding-right:5.4pt;">28</td>
+<td class="ltx_td ltx_align_right" style="padding-left:5.4pt;padding-right:5.4pt;">29</td>
+<td class="ltx_td ltx_align_right" style="padding-left:5.4pt;padding-right:5.4pt;">30</td>
+<td class="ltx_td ltx_align_right" style="padding-left:5.4pt;padding-right:5.4pt;">30</td>
+</tr>
+<tr id="T1.t1.r13" class="ltx_tr">
+<th class="ltx_td ltx_align_right ltx_th ltx_th_row ltx_border_b ltx_border_r" style="padding-left:5.4pt;padding-right:5.4pt;">10</th>
+<td class="ltx_td ltx_align_right ltx_border_b" style="padding-left:5.4pt;padding-right:5.4pt;">0</td>
+<td class="ltx_td ltx_align_right ltx_border_b" style="padding-left:5.4pt;padding-right:5.4pt;">1</td>
+<td class="ltx_td ltx_align_right ltx_border_b" style="padding-left:5.4pt;padding-right:5.4pt;">6</td>
+<td class="ltx_td ltx_align_right ltx_border_b" style="padding-left:5.4pt;padding-right:5.4pt;">14</td>
+<td class="ltx_td ltx_align_right ltx_border_b" style="padding-left:5.4pt;padding-right:5.4pt;">23</td>
+<td class="ltx_td ltx_align_right ltx_border_b" style="padding-left:5.4pt;padding-right:5.4pt;">30</td>
+<td class="ltx_td ltx_align_right ltx_border_b" style="padding-left:5.4pt;padding-right:5.4pt;">35</td>
+<td class="ltx_td ltx_align_right ltx_border_b" style="padding-left:5.4pt;padding-right:5.4pt;">38</td>
+<td class="ltx_td ltx_align_right ltx_border_b" style="padding-left:5.4pt;padding-right:5.4pt;">40</td>
+<td class="ltx_td ltx_align_right ltx_border_b" style="padding-left:5.4pt;padding-right:5.4pt;">41</td>
+<td class="ltx_td ltx_align_right ltx_border_b" style="padding-left:5.4pt;padding-right:5.4pt;">42</td>
+</tr>
+</tbody>
+</table>
+<div id="T1.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./26.9#i.p1" title="§26.9(i) Definitions ‣ §26.9 Integer Partitions: Restricted Number and Part Size ‣ Properties ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><math class="ltx_Math" altimg="m33.png" altimg-height="25px" altimg-valign="-7px" altimg-width="57px" alttext="p_{\NVar{k}}\left(\NVar{n}\right)" display="inline"><mrow><msub><mi href="./26.9#i.p1" title="total number of partitions of 𝑛 into at most 𝑘 parts">p</mi><mi class="ltx_nvar" href="./26.1#t1.r2" title="nonnegative integer">k</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./26.1#t1.r2" title="nonnegative integer">n</mi><mo>)</mo></mrow></mrow></math>: total number of partitions of <math class="ltx_Math" altimg="m29.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi></math> into at most <math class="ltx_Math" altimg="m23.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./26.1#t1.r2" title="nonnegative integer">k</mi></math> parts</a>,
+<a href="./26.1#t1.r2" title="§26.1 Special Notation ‣ Notation ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><math class="ltx_Math" altimg="m23.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./26.1#t1.r2" title="nonnegative integer">k</mi></math>:  nonnegative integer</a> and
+<a href="./26.1#t1.r2" title="§26.1 Special Notation ‣ Notation ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><math class="ltx_Math" altimg="m29.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi></math>:  nonnegative integer</a>
+</dd>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=restricted%20integer%20partitions">restricted integer partitions</a>, <a class="ltx_keyword" href="./search/search?q=tables">tables</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./26.9#i.info" title="§26.9(i) Definitions ‣ §26.9 Integer Partitions: Restricted Number and Part Size ‣ Properties ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§26.9(i)</span></a>,
+<a href="./26.9#i.p1" title="§26.9(i) Definitions ‣ §26.9 Integer Partitions: Restricted Number and Part Size ‣ Properties ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§26.9(i)</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./26.9.T1" title="" class="ltx_ref">http://dlmf.nist.gov/26.9.T1</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./26.9#i.info" title="§26.9(i) Definitions ‣ §26.9 Integer Partitions: Restricted Number and Part Size ‣ Properties ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§26.9(i)</span></a>,
+<a href="./26.9#info" title="§26.9 Integer Partitions: Restricted Number and Part Size ‣ Properties ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§26.9</span></a> and
+<a href="./26#info" title="Chapter 26 Combinatorial Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.26</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+<div id="i.p3" class="ltx_para">
+<p class="ltx_p">A useful representation for a partition is the <span class="ltx_text ltx_font_italic">Ferrers graph</span> in which
+the integers in the partition are each represented by a row of dots. An example
+is provided in Figure <a href="./26.9#F1" title="Figure 26.9.1 ‣ §26.9(i) Definitions ‣ §26.9 Integer Partitions: Restricted Number and Part Size ‣ Properties ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">26.9.1</span></a>.</p>
+</div>
+<figure id="F1" class="ltx_figure">
+<table id="F1.t1" class="ltx_tabular ltx_centering ltx_align_middle">
+<tbody class="ltx_tbody">
+<tr id="F1.t1.r1" class="ltx_tr">
+<td class="ltx_td ltx_align_center"><math class="ltx_Math" altimg="m18.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="\bullet" display="inline"><mo>∙</mo></math></td>
+<td class="ltx_td ltx_align_center"><math class="ltx_Math" altimg="m18.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="\bullet" display="inline"><mo>∙</mo></math></td>
+<td class="ltx_td ltx_align_center"><math class="ltx_Math" altimg="m18.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="\bullet" display="inline"><mo>∙</mo></math></td>
+<td class="ltx_td ltx_align_center"><math class="ltx_Math" altimg="m18.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="\bullet" display="inline"><mo>∙</mo></math></td>
+<td class="ltx_td ltx_align_center"><math class="ltx_Math" altimg="m18.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="\bullet" display="inline"><mo>∙</mo></math></td>
+<td class="ltx_td ltx_align_center"><math class="ltx_Math" altimg="m18.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="\bullet" display="inline"><mo>∙</mo></math></td>
+<td class="ltx_td ltx_align_center"><math class="ltx_Math" altimg="m18.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="\bullet" display="inline"><mo>∙</mo></math></td>
+</tr>
+<tr id="F1.t1.r2" class="ltx_tr">
+<td class="ltx_td ltx_align_center"><math class="ltx_Math" altimg="m18.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="\bullet" display="inline"><mo>∙</mo></math></td>
+<td class="ltx_td ltx_align_center"><math class="ltx_Math" altimg="m18.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="\bullet" display="inline"><mo>∙</mo></math></td>
+<td class="ltx_td ltx_align_center"><math class="ltx_Math" altimg="m18.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="\bullet" display="inline"><mo>∙</mo></math></td>
+<td class="ltx_td ltx_align_center"><math class="ltx_Math" altimg="m18.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="\bullet" display="inline"><mo>∙</mo></math></td>
+<td class="ltx_td"></td>
+<td class="ltx_td"></td>
+<td class="ltx_td"></td>
+</tr>
+<tr id="F1.t1.r3" class="ltx_tr">
+<td class="ltx_td ltx_align_center"><math class="ltx_Math" altimg="m18.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="\bullet" display="inline"><mo>∙</mo></math></td>
+<td class="ltx_td ltx_align_center"><math class="ltx_Math" altimg="m18.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="\bullet" display="inline"><mo>∙</mo></math></td>
+<td class="ltx_td ltx_align_center"><math class="ltx_Math" altimg="m18.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="\bullet" display="inline"><mo>∙</mo></math></td>
+<td class="ltx_td"></td>
+<td class="ltx_td"></td>
+<td class="ltx_td"></td>
+<td class="ltx_td"></td>
+</tr>
+<tr id="F1.t1.r4" class="ltx_tr">
+<td class="ltx_td ltx_align_center"><math class="ltx_Math" altimg="m18.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="\bullet" display="inline"><mo>∙</mo></math></td>
+<td class="ltx_td ltx_align_center"><math class="ltx_Math" altimg="m18.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="\bullet" display="inline"><mo>∙</mo></math></td>
+<td class="ltx_td ltx_align_center"><math class="ltx_Math" altimg="m18.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="\bullet" display="inline"><mo>∙</mo></math></td>
+<td class="ltx_td"></td>
+<td class="ltx_td"></td>
+<td class="ltx_td"></td>
+<td class="ltx_td"></td>
+</tr>
+<tr id="F1.t1.r5" class="ltx_tr">
+<td class="ltx_td ltx_align_center"><math class="ltx_Math" altimg="m18.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="\bullet" display="inline"><mo>∙</mo></math></td>
+<td class="ltx_td ltx_align_center"><math class="ltx_Math" altimg="m18.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="\bullet" display="inline"><mo>∙</mo></math></td>
+<td class="ltx_td"></td>
+<td class="ltx_td"></td>
+<td class="ltx_td"></td>
+<td class="ltx_td"></td>
+<td class="ltx_td"></td>
+</tr>
+<tr id="F1.t1.r6" class="ltx_tr">
+<td class="ltx_td ltx_align_center"><math class="ltx_Math" altimg="m18.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="\bullet" display="inline"><mo>∙</mo></math></td>
+<td class="ltx_td"></td>
+<td class="ltx_td"></td>
+<td class="ltx_td"></td>
+<td class="ltx_td"></td>
+<td class="ltx_td"></td>
+<td class="ltx_td"></td>
+</tr>
+</tbody>
+</table>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 26.9.1: </span>Ferrers graph of the partition <math class="ltx_Math" altimg="m17.png" altimg-height="19px" altimg-valign="-4px" altimg-width="193px" alttext="7+4+3+3+2+1" display="inline"><mrow><mn>7</mn><mo>+</mo><mn>4</mn><mo>+</mo><mn>3</mn><mo>+</mo><mn>3</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>1</mn></mrow></math>.
+</figcaption>
+<div id="F1.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./26.9#i.p3" title="§26.9(i) Definitions ‣ §26.9 Integer Partitions: Restricted Number and Part Size ‣ Properties ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§26.9(i)</span></a>,
+<a href="./26.9#i.p4" title="§26.9(i) Definitions ‣ §26.9 Integer Partitions: Restricted Number and Part Size ‣ Properties ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§26.9(i)</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./26.9.F1" title="" class="ltx_ref">http://dlmf.nist.gov/26.9.F1</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./26.9#i.info" title="§26.9(i) Definitions ‣ §26.9 Integer Partitions: Restricted Number and Part Size ‣ Properties ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§26.9(i)</span></a>,
+<a href="./26.9#info" title="§26.9 Integer Partitions: Restricted Number and Part Size ‣ Properties ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§26.9</span></a> and
+<a href="./26#info" title="Chapter 26 Combinatorial Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.26</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+<div id="i.p4" class="ltx_para">
+<p class="ltx_p">The <em class="ltx_emph ltx_font_italic">conjugate</em> partition is obtained by reflecting the Ferrers graph
+across the main diagonal or, equivalently, by representing each integer by a
+column of dots. The conjugate to the example in Figure <a href="./26.9#F1" title="Figure 26.9.1 ‣ §26.9(i) Definitions ‣ §26.9 Integer Partitions: Restricted Number and Part Size ‣ Properties ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">26.9.1</span></a>
+is <math class="ltx_Math" altimg="m16.png" altimg-height="19px" altimg-valign="-4px" altimg-width="229px" alttext="6+5+4+2+1+1+1" display="inline"><mrow><mn>6</mn><mo>+</mo><mn>5</mn><mo>+</mo><mn>4</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>1</mn><mo>+</mo><mn>1</mn><mo>+</mo><mn>1</mn></mrow></math>. Conjugation establishes a one-to-one correspondence between
+partitions of <math class="ltx_Math" altimg="m29.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi></math> into at most <math class="ltx_Math" altimg="m23.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./26.1#t1.r2" title="nonnegative integer">k</mi></math> parts and partitions of <math class="ltx_Math" altimg="m29.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi></math> into parts with
+largest part less than or equal to <math class="ltx_Math" altimg="m23.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./26.1#t1.r2" title="nonnegative integer">k</mi></math>. It follows that <math class="ltx_Math" altimg="m36.png" altimg-height="25px" altimg-valign="-7px" altimg-width="57px" alttext="p_{k}\left(n\right)" display="inline"><mrow><msub><mi href="./26.9#i.p1" title="total number of partitions of 𝑛 into at most 𝑘 parts">p</mi><mi href="./26.1#t1.r2" title="nonnegative integer">k</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi><mo>)</mo></mrow></mrow></math>
+also equals the number of partitions of <math class="ltx_Math" altimg="m29.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi></math> into parts that are less than
+or equal to <math class="ltx_Math" altimg="m23.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./26.1#t1.r2" title="nonnegative integer">k</mi></math>.</p>
+</div>
+<div id="i.p5" class="ltx_para">
+<p class="ltx_p"><math class="ltx_Math" altimg="m35.png" altimg-height="25px" altimg-valign="-7px" altimg-width="106px" alttext="p_{k}\left(\leq m,n\right)" display="inline"><mrow><msub><mi href="./26.9#i" title="number of partitions of 𝑛 into at most 𝑘 parts, each less than or equal to 𝑚">p</mi><mi href="./26.1#t1.r2" title="nonnegative integer">k</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mrow><mi></mi><mo>≤</mo><mi href="./26.1#t1.r2" title="nonnegative integer">m</mi></mrow><mo>,</mo><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi><mo>)</mo></mrow></mrow></math> is the number of partitions of <math class="ltx_Math" altimg="m29.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi></math> into at most <math class="ltx_Math" altimg="m23.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./26.1#t1.r2" title="nonnegative integer">k</mi></math> parts, each
+less than or equal to <math class="ltx_Math" altimg="m25.png" altimg-height="13px" altimg-valign="-2px" altimg-width="23px" alttext="m" display="inline"><mi href="./26.1#t1.r2" title="nonnegative integer">m</mi></math>. It is also equal to the number of lattice
+paths from <math class="ltx_Math" altimg="m8.png" altimg-height="25px" altimg-valign="-7px" altimg-width="50px" alttext="(0,0)" display="inline"><mrow><mo href="./front/introduction#common.t1.r29" stretchy="false" title="open interval">(</mo><mn>0</mn><mo href="./front/introduction#common.t1.r29" title="open interval">,</mo><mn>0</mn><mo href="./front/introduction#common.t1.r29" stretchy="false" title="open interval">)</mo></mrow></math> to <math class="ltx_Math" altimg="m12.png" altimg-height="25px" altimg-valign="-7px" altimg-width="59px" alttext="(m,k)" display="inline"><mrow><mo href="./front/introduction#common.t1.r29" stretchy="false" title="open interval">(</mo><mi href="./26.1#t1.r2" title="nonnegative integer">m</mi><mo href="./front/introduction#common.t1.r29" title="open interval">,</mo><mi href="./26.1#t1.r2" title="nonnegative integer">k</mi><mo href="./front/introduction#common.t1.r29" stretchy="false" title="open interval">)</mo></mrow></math> that have exactly <math class="ltx_Math" altimg="m29.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi></math> vertices <math class="ltx_Math" altimg="m11.png" altimg-height="25px" altimg-valign="-7px" altimg-width="51px" alttext="(h,j)" display="inline"><mrow><mo href="./front/introduction#common.t1.r29" stretchy="false" title="open interval">(</mo><mi href="./26.1#t1.r2" title="nonnegative integer">h</mi><mo href="./front/introduction#common.t1.r29" title="open interval">,</mo><mi href="./26.1#t1.r2" title="nonnegative integer">j</mi><mo href="./front/introduction#common.t1.r29" stretchy="false" title="open interval">)</mo></mrow></math>,
+<math class="ltx_Math" altimg="m13.png" altimg-height="21px" altimg-valign="-5px" altimg-width="100px" alttext="1\leq h\leq m" display="inline"><mrow><mn>1</mn><mo>≤</mo><mi href="./26.1#t1.r2" title="nonnegative integer">h</mi><mo>≤</mo><mi href="./26.1#t1.r2" title="nonnegative integer">m</mi></mrow></math>, <math class="ltx_Math" altimg="m14.png" altimg-height="22px" altimg-valign="-6px" altimg-width="91px" alttext="1\leq j\leq k" display="inline"><mrow><mn>1</mn><mo>≤</mo><mi href="./26.1#t1.r2" title="nonnegative integer">j</mi><mo>≤</mo><mi href="./26.1#t1.r2" title="nonnegative integer">k</mi></mrow></math>, above and to the left of the lattice
+path. See Figure <a href="./26.9#F2" title="Figure 26.9.2 ‣ §26.9(i) Definitions ‣ §26.9 Integer Partitions: Restricted Number and Part Size ‣ Properties ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">26.9.2</span></a>.</p>
+</div>
+<figure id="F2" class="ltx_figure"><a href="./26.9.F2.mag"><img id="F2.pic1" class="ltx_picture ltx_centering" style="width:170.0pt;height:110.0pt;" src="./26/9/F2.png" width="318" height="207" alt="\begin{picture}(170.0,110.0)(-25.0,0.0)\put(0.0,0.0){\circle*{2.0}}\put(20.0,0%
+.0){\circle*{2.0}}\put(40.0,0.0){\circle*{2.0}}\put(60.0,0.0){\circle*{2.0}}%
+\put(80.0,0.0){\circle*{2.0}}\put(100.0,0.0){\circle*{2.0}}\put(120.0,0.0){%
+\circle*{2.0}}\put(0.0,20.0){\circle*{2.0}}\put(20.0,20.0){\circle*{2.0}}\put(%
+40.0,20.0){\circle*{2.0}}\put(60.0,20.0){\circle*{2.0}}\put(80.0,20.0){\circle%
+*{2.0}}\put(100.0,20.0){\circle*{2.0}}\put(120.0,20.0){\circle*{2.0}}\put(0.0,%
+40.0){\circle*{2.0}}\put(20.0,40.0){\circle*{2.0}}\put(40.0,40.0){\circle*{2.0%
+}}\put(60.0,40.0){\circle*{2.0}}\put(80.0,40.0){\circle*{2.0}}\put(100.0,40.0)%
+{\circle*{2.0}}\put(120.0,40.0){\circle*{2.0}}\put(0.0,60.0){\circle*{2.0}}%
+\put(20.0,60.0){\circle*{2.0}}\put(40.0,60.0){\circle*{2.0}}\put(60.0,60.0){%
+\circle*{2.0}}\put(80.0,60.0){\circle*{2.0}}\put(100.0,60.0){\circle*{2.0}}%
+\put(120.0,60.0){\circle*{2.0}}\put(0.0,80.0){\circle*{2.0}}\put(20.0,80.0){%
+\circle*{2.0}}\put(40.0,80.0){\circle*{2.0}}\put(60.0,80.0){\circle*{2.0}}\put%
+(80.0,80.0){\circle*{2.0}}\put(100.0,80.0){\circle*{2.0}}\put(120.0,80.0){%
+\circle*{2.0}}\put(0.0,100.0){\circle*{2.0}}\put(20.0,100.0){\circle*{2.0}}%
+\put(40.0,100.0){\circle*{2.0}}\put(60.0,100.0){\circle*{2.0}}\put(80.0,100.0)%
+{\circle*{2.0}}\put(100.0,100.0){\circle*{2.0}}\put(120.0,100.0){\circle*{2.0}%
+}\put(0.0,0.0){\line(1,0){4.0}}\put(8.0,0.0){\line(1,0){4.0}}\put(16.0,0.0){%
+\line(1,0){4.0}}\put(24.0,0.0){\line(1,0){4.0}}\put(32.0,0.0){\line(1,0){4.0}}%
+\put(40.0,0.0){\line(1,0){4.0}}\put(48.0,0.0){\line(1,0){4.0}}\put(56.0,0.0){%
+\line(1,0){4.0}}\put(64.0,0.0){\line(1,0){4.0}}\put(72.0,0.0){\line(1,0){4.0}}%
+\put(80.0,0.0){\line(1,0){4.0}}\put(88.0,0.0){\line(1,0){4.0}}\put(96.0,0.0){%
+\line(1,0){4.0}}\put(104.0,0.0){\line(1,0){4.0}}\put(112.0,0.0){\line(1,0){4.0%
+}}\put(0.0,20.0){\line(1,0){4.0}}\put(8.0,20.0){\line(1,0){4.0}}\put(16.0,20.0%
+){\line(1,0){4.0}}\put(24.0,20.0){\line(1,0){4.0}}\put(32.0,20.0){\line(1,0){4%
+.0}}\put(40.0,20.0){\line(1,0){4.0}}\put(48.0,20.0){\line(1,0){4.0}}\put(56.0,%
+20.0){\line(1,0){4.0}}\put(64.0,20.0){\line(1,0){4.0}}\put(72.0,20.0){\line(1,%
+0){4.0}}\put(80.0,20.0){\line(1,0){4.0}}\put(88.0,20.0){\line(1,0){4.0}}\put(9%
+6.0,20.0){\line(1,0){4.0}}\put(104.0,20.0){\line(1,0){4.0}}\put(112.0,20.0){%
+\line(1,0){4.0}}\put(0.0,40.0){\line(1,0){4.0}}\put(8.0,40.0){\line(1,0){4.0}}%
+\put(16.0,40.0){\line(1,0){4.0}}\put(24.0,40.0){\line(1,0){4.0}}\put(32.0,40.0%
+){\line(1,0){4.0}}\put(40.0,40.0){\line(1,0){4.0}}\put(48.0,40.0){\line(1,0){4%
+.0}}\put(56.0,40.0){\line(1,0){4.0}}\put(64.0,40.0){\line(1,0){4.0}}\put(72.0,%
+40.0){\line(1,0){4.0}}\put(80.0,40.0){\line(1,0){4.0}}\put(88.0,40.0){\line(1,%
+0){4.0}}\put(96.0,40.0){\line(1,0){4.0}}\put(104.0,40.0){\line(1,0){4.0}}\put(%
+112.0,40.0){\line(1,0){4.0}}\put(0.0,60.0){\line(1,0){4.0}}\put(8.0,60.0){%
+\line(1,0){4.0}}\put(16.0,60.0){\line(1,0){4.0}}\put(24.0,60.0){\line(1,0){4.0%
+}}\put(32.0,60.0){\line(1,0){4.0}}\put(40.0,60.0){\line(1,0){4.0}}\put(48.0,60%
+.0){\line(1,0){4.0}}\put(56.0,60.0){\line(1,0){4.0}}\put(64.0,60.0){\line(1,0)%
+{4.0}}\put(72.0,60.0){\line(1,0){4.0}}\put(80.0,60.0){\line(1,0){4.0}}\put(88.%
+0,60.0){\line(1,0){4.0}}\put(96.0,60.0){\line(1,0){4.0}}\put(104.0,60.0){\line%
+(1,0){4.0}}\put(112.0,60.0){\line(1,0){4.0}}\put(0.0,80.0){\line(1,0){4.0}}%
+\put(8.0,80.0){\line(1,0){4.0}}\put(16.0,80.0){\line(1,0){4.0}}\put(24.0,80.0)%
+{\line(1,0){4.0}}\put(32.0,80.0){\line(1,0){4.0}}\put(40.0,80.0){\line(1,0){4.%
+0}}\put(48.0,80.0){\line(1,0){4.0}}\put(56.0,80.0){\line(1,0){4.0}}\put(64.0,8%
+0.0){\line(1,0){4.0}}\put(72.0,80.0){\line(1,0){4.0}}\put(80.0,80.0){\line(1,0%
+){4.0}}\put(88.0,80.0){\line(1,0){4.0}}\put(96.0,80.0){\line(1,0){4.0}}\put(10%
+4.0,80.0){\line(1,0){4.0}}\put(112.0,80.0){\line(1,0){4.0}}\put(0.0,100.0){%
+\line(1,0){4.0}}\put(8.0,100.0){\line(1,0){4.0}}\put(16.0,100.0){\line(1,0){4.%
+0}}\put(24.0,100.0){\line(1,0){4.0}}\put(32.0,100.0){\line(1,0){4.0}}\put(40.0%
+,100.0){\line(1,0){4.0}}\put(48.0,100.0){\line(1,0){4.0}}\put(56.0,100.0){%
+\line(1,0){4.0}}\put(64.0,100.0){\line(1,0){4.0}}\put(72.0,100.0){\line(1,0){4%
+.0}}\put(80.0,100.0){\line(1,0){4.0}}\put(88.0,100.0){\line(1,0){4.0}}\put(96.%
+0,100.0){\line(1,0){4.0}}\put(104.0,100.0){\line(1,0){4.0}}\put(112.0,100.0){%
+\line(1,0){4.0}}\put(0.0,0.0){\line(0,1){4.0}}\put(0.0,8.0){\line(0,1){4.0}}%
+\put(0.0,16.0){\line(0,1){4.0}}\put(0.0,24.0){\line(0,1){4.0}}\put(0.0,32.0){%
+\line(0,1){4.0}}\put(0.0,40.0){\line(0,1){4.0}}\put(0.0,48.0){\line(0,1){4.0}}%
+\put(0.0,56.0){\line(0,1){4.0}}\put(0.0,64.0){\line(0,1){4.0}}\put(0.0,72.0){%
+\line(0,1){4.0}}\put(0.0,80.0){\line(0,1){4.0}}\put(0.0,88.0){\line(0,1){4.0}}%
+\put(0.0,96.0){\line(0,1){4.0}}\put(20.0,0.0){\line(0,1){4.0}}\put(20.0,8.0){%
+\line(0,1){4.0}}\put(20.0,16.0){\line(0,1){4.0}}\put(20.0,24.0){\line(0,1){4.0%
+}}\put(20.0,32.0){\line(0,1){4.0}}\put(20.0,40.0){\line(0,1){4.0}}\put(20.0,48%
+.0){\line(0,1){4.0}}\put(20.0,56.0){\line(0,1){4.0}}\put(20.0,64.0){\line(0,1)%
+{4.0}}\put(20.0,72.0){\line(0,1){4.0}}\put(20.0,80.0){\line(0,1){4.0}}\put(20.%
+0,88.0){\line(0,1){4.0}}\put(20.0,96.0){\line(0,1){4.0}}\put(40.0,0.0){\line(0%
+,1){4.0}}\put(40.0,8.0){\line(0,1){4.0}}\put(40.0,16.0){\line(0,1){4.0}}\put(4%
+0.0,24.0){\line(0,1){4.0}}\put(40.0,32.0){\line(0,1){4.0}}\put(40.0,40.0){%
+\line(0,1){4.0}}\put(40.0,48.0){\line(0,1){4.0}}\put(40.0,56.0){\line(0,1){4.0%
+}}\put(40.0,64.0){\line(0,1){4.0}}\put(40.0,72.0){\line(0,1){4.0}}\put(40.0,80%
+.0){\line(0,1){4.0}}\put(40.0,88.0){\line(0,1){4.0}}\put(40.0,96.0){\line(0,1)%
+{4.0}}\put(60.0,0.0){\line(0,1){4.0}}\put(60.0,8.0){\line(0,1){4.0}}\put(60.0,%
+16.0){\line(0,1){4.0}}\put(60.0,24.0){\line(0,1){4.0}}\put(60.0,32.0){\line(0,%
+1){4.0}}\put(60.0,40.0){\line(0,1){4.0}}\put(60.0,48.0){\line(0,1){4.0}}\put(6%
+0.0,56.0){\line(0,1){4.0}}\put(60.0,64.0){\line(0,1){4.0}}\put(60.0,72.0){%
+\line(0,1){4.0}}\put(60.0,80.0){\line(0,1){4.0}}\put(60.0,88.0){\line(0,1){4.0%
+}}\put(60.0,96.0){\line(0,1){4.0}}\put(80.0,0.0){\line(0,1){4.0}}\put(80.0,8.0%
+){\line(0,1){4.0}}\put(80.0,16.0){\line(0,1){4.0}}\put(80.0,24.0){\line(0,1){4%
+.0}}\put(80.0,32.0){\line(0,1){4.0}}\put(80.0,40.0){\line(0,1){4.0}}\put(80.0,%
+48.0){\line(0,1){4.0}}\put(80.0,56.0){\line(0,1){4.0}}\put(80.0,64.0){\line(0,%
+1){4.0}}\put(80.0,72.0){\line(0,1){4.0}}\put(80.0,80.0){\line(0,1){4.0}}\put(8%
+0.0,88.0){\line(0,1){4.0}}\put(80.0,96.0){\line(0,1){4.0}}\put(100.0,0.0){%
+\line(0,1){4.0}}\put(100.0,8.0){\line(0,1){4.0}}\put(100.0,16.0){\line(0,1){4.%
+0}}\put(100.0,24.0){\line(0,1){4.0}}\put(100.0,32.0){\line(0,1){4.0}}\put(100.%
+0,40.0){\line(0,1){4.0}}\put(100.0,48.0){\line(0,1){4.0}}\put(100.0,56.0){%
+\line(0,1){4.0}}\put(100.0,64.0){\line(0,1){4.0}}\put(100.0,72.0){\line(0,1){4%
+.0}}\put(100.0,80.0){\line(0,1){4.0}}\put(100.0,88.0){\line(0,1){4.0}}\put(100%
+.0,96.0){\line(0,1){4.0}}\put(120.0,0.0){\line(0,1){4.0}}\put(120.0,8.0){\line%
+(0,1){4.0}}\put(120.0,16.0){\line(0,1){4.0}}\put(120.0,24.0){\line(0,1){4.0}}%
+\put(120.0,32.0){\line(0,1){4.0}}\put(120.0,40.0){\line(0,1){4.0}}\put(120.0,4%
+8.0){\line(0,1){4.0}}\put(120.0,56.0){\line(0,1){4.0}}\put(120.0,64.0){\line(0%
+,1){4.0}}\put(120.0,72.0){\line(0,1){4.0}}\put(120.0,80.0){\line(0,1){4.0}}%
+\put(120.0,88.0){\line(0,1){4.0}}\put(120.0,96.0){\line(0,1){4.0}}\put(-28.0,0%
+.0){$(0,0)$}\put(125.0,100.0){$(6,5)$}\put(0.0,0.0){\line(0,1){20.0}}\put(0.0,%
+20.0){\line(1,0){40.0}}\put(40.0,20.0){\line(0,1){20.0}}\put(40.0,40.0){\line(%
+1,0){20.0}}\put(60.0,40.0){\line(0,1){20.0}}\put(60.0,60.0){\line(1,0){40.0}}%
+\put(100.0,60.0){\line(0,1){40.0}}\put(100.0,100.0){\line(1,0){20.0}}\put(0.0,%
+100.0){\circle*{5.0}}\put(20.0,100.0){\circle*{5.0}}\put(40.0,100.0){\circle*{%
+5.0}}\put(60.0,100.0){\circle*{5.0}}\put(80.0,100.0){\circle*{5.0}}\put(0.0,80%
+.0){\circle*{5.0}}\put(20.0,80.0){\circle*{5.0}}\put(40.0,80.0){\circle*{5.0}}%
+\put(60.0,80.0){\circle*{5.0}}\put(80.0,80.0){\circle*{5.0}}\put(0.0,60.0){%
+\circle*{5.0}}\put(20.0,60.0){\circle*{5.0}}\put(40.0,60.0){\circle*{5.0}}\put%
+(0.0,40.0){\circle*{5.0}}\put(20.0,40.0){\circle*{5.0}}\end{picture}"></a>
+<figcaption class="ltx_caption"><span class="ltx_tag ltx_tag_figure">Figure 26.9.2: </span>The partition <math class="ltx_Math" altimg="m15.png" altimg-height="19px" altimg-valign="-4px" altimg-width="122px" alttext="5+5+3+2" display="inline"><mrow><mn>5</mn><mo>+</mo><mn>5</mn><mo>+</mo><mn>3</mn><mo>+</mo><mn>2</mn></mrow></math> represented as a lattice path.
+
+
+
+<a href="./26.9.F2.mag" title="Magnify Figure" class="ltx_magnifiable ltx_icon"><span>Magnify</span></a>
+</figcaption>
+<div id="F2.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd><a href="./front/introduction#common.t1.r29" title="Common Notations and Definitions ‣ Mathematical Introduction" class="ltx_ref"><math class="ltx_Math" altimg="m10.png" altimg-height="25px" altimg-valign="-7px" altimg-width="50px" alttext="(\NVar{a},\NVar{b})" display="inline"><mrow><mo href="./front/introduction#common.t1.r29" stretchy="false" title="open interval">(</mo><mi class="ltx_nvar">a</mi><mo href="./front/introduction#common.t1.r29" title="open interval">,</mo><mi class="ltx_nvar">b</mi><mo href="./front/introduction#common.t1.r29" stretchy="false" title="open interval">)</mo></mrow></math>: open interval</a></dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./26.2#Px3.p1" title="Lattice Path ‣ §26.2 Basic Definitions ‣ Properties ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§26.2</span></a>,
+<a href="./26.9#i.p5" title="§26.9(i) Definitions ‣ §26.9 Integer Partitions: Restricted Number and Part Size ‣ Properties ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§26.9(i)</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./26.9.F2" title="" class="ltx_ref">http://dlmf.nist.gov/26.9.F2</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./26.9.F2.tex">TeX</a>, <a href="./26.9.F2.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./26.9#i.info" title="§26.9(i) Definitions ‣ §26.9 Integer Partitions: Restricted Number and Part Size ‣ Properties ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§26.9(i)</span></a>,
+<a href="./26.9#info" title="§26.9 Integer Partitions: Restricted Number and Part Size ‣ Properties ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§26.9</span></a> and
+<a href="./26#info" title="Chapter 26 Combinatorial Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.26</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+<div id="i.p6" class="ltx_para">
+<p class="ltx_p">Equations (<a href="./26.9#E2" title="(26.9.2) ‣ §26.9(i) Definitions ‣ §26.9 Integer Partitions: Restricted Number and Part Size ‣ Properties ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">26.9.2</span></a>)–(<a href="./26.9#E3" title="(26.9.3) ‣ §26.9(i) Definitions ‣ §26.9 Integer Partitions: Restricted Number and Part Size ‣ Properties ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">26.9.3</span></a>) are examples of closed
+forms that can be computed explicitly for any positive integer <math class="ltx_Math" altimg="m23.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./26.1#t1.r2" title="nonnegative integer">k</mi></math>. See
+<cite class="ltx_cite ltx_citemacro_citet">Andrews (<a href="./bib/#bib92" title="The Theory of Partitions" class="ltx_ref">1976</a>, p. 81)</cite>.</p>
+</div>
+<div id="i.p7" class="ltx_para">
+<table id="E2" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">26.9.2</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E2.png" altimg-height="40px" altimg-valign="-7px" altimg-width="160px" alttext="p_{0}\left(n\right)=0," display="block"><mrow><mrow><mrow><msub><mi href="./26.9#i.p1" title="total number of partitions of 𝑛 into at most 𝑘 parts">p</mi><mn>0</mn></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi><mo>)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="4"><span class="ltx_constraint"><math class="ltx_Math" altimg="m28.png" altimg-height="18px" altimg-valign="-3px" altimg-width="55px" alttext="n&gt;0" display="inline"><mrow><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi><mo>&gt;</mo><mn>0</mn></mrow></math>,</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E2.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./26.9#i.p1" title="§26.9(i) Definitions ‣ §26.9 Integer Partitions: Restricted Number and Part Size ‣ Properties ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><math class="ltx_Math" altimg="m33.png" altimg-height="25px" altimg-valign="-7px" altimg-width="57px" alttext="p_{\NVar{k}}\left(\NVar{n}\right)" display="inline"><mrow><msub><mi href="./26.9#i.p1" title="total number of partitions of 𝑛 into at most 𝑘 parts">p</mi><mi class="ltx_nvar" href="./26.1#t1.r2" title="nonnegative integer">k</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./26.1#t1.r2" title="nonnegative integer">n</mi><mo>)</mo></mrow></mrow></math>: total number of partitions of <math class="ltx_Math" altimg="m29.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi></math> into at most <math class="ltx_Math" altimg="m23.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./26.1#t1.r2" title="nonnegative integer">k</mi></math> parts</a> and
+<a href="./26.1#t1.r2" title="§26.1 Special Notation ‣ Notation ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><math class="ltx_Math" altimg="m29.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi></math>:  nonnegative integer</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./26.9#i.p6" title="§26.9(i) Definitions ‣ §26.9 Integer Partitions: Restricted Number and Part Size ‣ Properties ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§26.9(i)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./26.9.E2" title="" class="ltx_ref">http://dlmf.nist.gov/26.9.E2</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./26.9.E2.tex">TeX</a>, <a href="./26.9.E2.pmml">pMML</a>, <a href="./26.9.E2.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./26.9#i.info" title="§26.9(i) Definitions ‣ §26.9 Integer Partitions: Restricted Number and Part Size ‣ Properties ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§26.9(i)</span></a>,
+<a href="./26.9#info" title="§26.9 Integer Partitions: Restricted Number and Part Size ‣ Properties ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§26.9</span></a> and
+<a href="./26#info" title="Chapter 26 Combinatorial Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.26</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+<div id="i.p8" class="ltx_para">
+<table id="E3" class="ltx_equationgroup ltx_eqn_table">
+<tbody>
+<tr id="Ex1" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="3" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equationgroup ltx_align_left">26.9.3</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m4.png" altimg-height="40px" altimg-valign="-7px" altimg-width="75px" alttext="\displaystyle p_{1}\left(n\right)" display="inline"><mrow><msub><mi href="./26.9#i.p1" title="total number of partitions of 𝑛 into at most 𝑘 parts">p</mi><mn>1</mn></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m3.png" altimg-height="23px" altimg-valign="-6px" altimg-width="45px" alttext="\displaystyle=1," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mn>1</mn></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex2" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m5.png" altimg-height="40px" altimg-valign="-7px" altimg-width="75px" alttext="\displaystyle p_{2}\left(n\right)" display="inline"><mrow><msub><mi href="./26.9#i.p1" title="total number of partitions of 𝑛 into at most 𝑘 parts">p</mi><mn>2</mn></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m1.png" altimg-height="40px" altimg-valign="-7px" altimg-width="131px" alttext="\displaystyle=1+\left\lfloor n/2\right\rfloor," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mn>1</mn><mo>+</mo><mrow><mo href="./front/introduction#common.t1.r17" title="floor of 𝑥">⌊</mo><mrow><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi><mo>/</mo><mn>2</mn></mrow><mo href="./front/introduction#common.t1.r17" title="floor of 𝑥">⌋</mo></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex3" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m6.png" altimg-height="40px" altimg-valign="-7px" altimg-width="75px" alttext="\displaystyle p_{3}\left(n\right)" display="inline"><mrow><msub><mi href="./26.9#i.p1" title="total number of partitions of 𝑛 into at most 𝑘 parts">p</mi><mn>3</mn></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m2.png" altimg-height="63px" altimg-valign="-22px" altimg-width="178px" alttext="\displaystyle=1+\left\lfloor\frac{n^{2}+6n}{12}\right\rfloor." display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mn>1</mn><mo>+</mo><mrow><mo href="./front/introduction#common.t1.r17" title="floor of 𝑥">⌊</mo><mstyle displaystyle="true"><mfrac><mrow><msup><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi><mn>2</mn></msup><mo>+</mo><mrow><mn>6</mn><mo>⁢</mo><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi></mrow></mrow><mn>12</mn></mfrac></mstyle><mo href="./front/introduction#common.t1.r17" title="floor of 𝑥">⌋</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E3.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./front/introduction#common.t1.r17" title="Common Notations and Definitions ‣ Mathematical Introduction" class="ltx_ref"><math class="ltx_Math" altimg="m20.png" altimg-height="25px" altimg-valign="-7px" altimg-width="35px" alttext="\left\lfloor\NVar{x}\right\rfloor" display="inline"><mrow><mo href="./front/introduction#common.t1.r17" title="floor of 𝑥">⌊</mo><mi class="ltx_nvar">x</mi><mo href="./front/introduction#common.t1.r17" title="floor of 𝑥">⌋</mo></mrow></math>: floor of <math class="ltx_Math" altimg="m39.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./26.9#i.p1" title="§26.9(i) Definitions ‣ §26.9 Integer Partitions: Restricted Number and Part Size ‣ Properties ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><math class="ltx_Math" altimg="m33.png" altimg-height="25px" altimg-valign="-7px" altimg-width="57px" alttext="p_{\NVar{k}}\left(\NVar{n}\right)" display="inline"><mrow><msub><mi href="./26.9#i.p1" title="total number of partitions of 𝑛 into at most 𝑘 parts">p</mi><mi class="ltx_nvar" href="./26.1#t1.r2" title="nonnegative integer">k</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./26.1#t1.r2" title="nonnegative integer">n</mi><mo>)</mo></mrow></mrow></math>: total number of partitions of <math class="ltx_Math" altimg="m29.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi></math> into at most <math class="ltx_Math" altimg="m23.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./26.1#t1.r2" title="nonnegative integer">k</mi></math> parts</a> and
+<a href="./26.1#t1.r2" title="§26.1 Special Notation ‣ Notation ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><math class="ltx_Math" altimg="m29.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi></math>:  nonnegative integer</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./26.9#i.p6" title="§26.9(i) Definitions ‣ §26.9 Integer Partitions: Restricted Number and Part Size ‣ Properties ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§26.9(i)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./26.9.E3" title="" class="ltx_ref">http://dlmf.nist.gov/26.9.E3</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./26.9.E3a.tex">TeX</a>, <a href="./26.9.E3b.tex">TeX</a>, <a href="./26.9.E3c.tex">TeX</a>, <a href="./26.9.E3a.pmml">pMML</a>, <a href="./26.9.E3b.pmml">pMML</a>, <a href="./26.9.E3c.pmml">pMML</a>, <a href="./26.9.E3a.png">png</a>, <a href="./26.9.E3b.png">png</a>, <a href="./26.9.E3c.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./26.9#i.info" title="§26.9(i) Definitions ‣ §26.9 Integer Partitions: Restricted Number and Part Size ‣ Properties ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§26.9(i)</span></a>,
+<a href="./26.9#info" title="§26.9 Integer Partitions: Restricted Number and Part Size ‣ Properties ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§26.9</span></a> and
+<a href="./26#info" title="Chapter 26 Combinatorial Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.26</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="ii" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§26.9(ii) </span>Generating Functions</h2>
+<div id="ii.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=Gaussian%20polynomials">Gaussian polynomials</a>, <a class="ltx_keyword" href="./search/search?q=definition">definition</a>, <a class="ltx_keyword" href="./search/search?q=generating%20functions">generating functions</a>, <a class="ltx_keyword" href="./search/search?q=q-binomial%20coefficient"><math class="ltx_Math" altimg="m37.png" altimg-height="17px" altimg-valign="-6px" altimg-width="14px" alttext="q" display="inline"><mi href="./26.9#ii.p1" title="parameter">q</mi></math>-binomial coefficient</a>, <a class="ltx_keyword" href="./search/search?q=restricted%20integer%20partitions">restricted integer partitions</a>
+</dd>
+<dt>Notes:</dt>
+<dd>See <cite class="ltx_cite ltx_citemacro_citet">Andrews (<a href="./bib/#bib92" title="The Theory of Partitions" class="ltx_ref">1976</a>, pp. 36, 47)</cite>.</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./17.2#iii.info" title="§17.2(iii) 𝑞-Binomial Theorem ‣ §17.2 Calculus ‣ Properties ‣ Chapter 17 𝑞-Hypergeometric and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§17.2(iii)</span></a>,
+<a href="./17.2#iii.p5" title="§17.2(iii) 𝑞-Binomial Theorem ‣ §17.2 Calculus ‣ Properties ‣ Chapter 17 𝑞-Hypergeometric and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§17.2(iii)</span></a>,
+<a href="./26.16#p3" title="§26.16 Multiset Permutations ‣ Properties ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§26.16</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./26.9.ii" title="" class="ltx_ref">http://dlmf.nist.gov/26.9.ii</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./26.9#info" title="§26.9 Integer Partitions: Restricted Number and Part Size ‣ Properties ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§26.9</span></a> and
+<a href="./26#info" title="Chapter 26 Combinatorial Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.26</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="ii.p1" class="ltx_para">
+<p class="ltx_p">In what follows</p>
+<table id="E4" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">26.9.4</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E4.png" altimg-height="70px" altimg-valign="-31px" altimg-width="232px" alttext="\genfrac{[}{]}{0.0pt}{}{m}{n}_{q}=\prod_{j=1}^{n}\frac{1-q^{m-n+j}}{1-q^{j}}," display="block"><mrow><mrow><msub><mrow><mo href="./17.2#E27" title="𝑞-binomial coefficient (or Gaussian polynomial)">[</mo><mfrac linethickness="0.0pt"><mi href="./26.1#t1.r2" title="nonnegative integer">m</mi><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi></mfrac><mo href="./17.2#E27" title="𝑞-binomial coefficient (or Gaussian polynomial)">]</mo></mrow><mi href="./26.9#ii.p1" title="parameter">q</mi></msub><mo rspace="0.111em">=</mo><mrow><munderover><mo movablelimits="false">∏</mo><mrow><mi href="./26.1#t1.r2" title="nonnegative integer">j</mi><mo>=</mo><mn>1</mn></mrow><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi></munderover><mfrac><mrow><mn>1</mn><mo>−</mo><msup><mi href="./26.9#ii.p1" title="parameter">q</mi><mrow><mrow><mi href="./26.1#t1.r2" title="nonnegative integer">m</mi><mo>−</mo><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi></mrow><mo>+</mo><mi href="./26.1#t1.r2" title="nonnegative integer">j</mi></mrow></msup></mrow><mrow><mn>1</mn><mo>−</mo><msup><mi href="./26.9#ii.p1" title="parameter">q</mi><mi href="./26.1#t1.r2" title="nonnegative integer">j</mi></msup></mrow></mfrac></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="4"><span class="ltx_constraint"><math class="ltx_Math" altimg="m30.png" altimg-height="20px" altimg-valign="-5px" altimg-width="55px" alttext="n\geq 0" display="inline"><mrow><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi><mo>≥</mo><mn>0</mn></mrow></math>,</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E4.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./17.2#E27" title="(17.2.27) ‣ §17.2(ii) 𝑞-Binomial Coefficients ‣ §17.2 Calculus ‣ Properties ‣ Chapter 17 𝑞-Hypergeometric and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m19.png" altimg-height="33px" altimg-valign="-13px" altimg-width="45px" alttext="\genfrac{[}{]}{0.0pt}{}{\NVar{n}}{\NVar{m}}_{\NVar{q}}" display="inline"><msub><mrow><mo href="./17.2#E27" title="𝑞-binomial coefficient (or Gaussian polynomial)">[</mo><mfrac linethickness="0.0pt"><mi class="ltx_nvar" href="./17.1#p1.t1.r1" title="nonnegative integer">n</mi><mi class="ltx_nvar" href="./17.1#p1.t1.r1" title="nonnegative integer">m</mi></mfrac><mo href="./17.2#E27" title="𝑞-binomial coefficient (or Gaussian polynomial)">]</mo></mrow><mi class="ltx_nvar" href="./17.1#p1.t1.r4" title="complex base">q</mi></msub></math>: <math class="ltx_Math" altimg="m37.png" altimg-height="17px" altimg-valign="-6px" altimg-width="14px" alttext="q" display="inline"><mi href="./17.1#p1.t1.r4" title="complex base">q</mi></math>-binomial coefficient (or Gaussian polynomial)</a>,
+<a href="./26.1#t1.r2" title="§26.1 Special Notation ‣ Notation ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><math class="ltx_Math" altimg="m22.png" altimg-height="22px" altimg-valign="-6px" altimg-width="14px" alttext="j" display="inline"><mi href="./26.1#t1.r2" title="nonnegative integer">j</mi></math>:  nonnegative integer</a>,
+<a href="./26.1#t1.r2" title="§26.1 Special Notation ‣ Notation ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><math class="ltx_Math" altimg="m25.png" altimg-height="13px" altimg-valign="-2px" altimg-width="23px" alttext="m" display="inline"><mi href="./26.1#t1.r2" title="nonnegative integer">m</mi></math>:  nonnegative integer</a>,
+<a href="./26.1#t1.r2" title="§26.1 Special Notation ‣ Notation ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><math class="ltx_Math" altimg="m29.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi></math>:  nonnegative integer</a> and
+<a href="./26.9#ii.p1" title="§26.9(ii) Generating Functions ‣ §26.9 Integer Partitions: Restricted Number and Part Size ‣ Properties ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><math class="ltx_Math" altimg="m37.png" altimg-height="17px" altimg-valign="-6px" altimg-width="14px" alttext="q" display="inline"><mi href="./26.9#ii.p1" title="parameter">q</mi></math>:  parameter</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./26.9.E4" title="" class="ltx_ref">http://dlmf.nist.gov/26.9.E4</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./26.9.E4.tex">TeX</a>, <a href="./26.9.E4.pmml">pMML</a>, <a href="./26.9.E4.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./26.9#ii.info" title="§26.9(ii) Generating Functions ‣ §26.9 Integer Partitions: Restricted Number and Part Size ‣ Properties ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§26.9(ii)</span></a>,
+<a href="./26.9#info" title="§26.9 Integer Partitions: Restricted Number and Part Size ‣ Properties ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§26.9</span></a> and
+<a href="./26#info" title="Chapter 26 Combinatorial Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.26</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">is the <em class="ltx_emph ltx_font_italic">Gaussian polynomial</em> (or <math class="ltx_Math" altimg="m37.png" altimg-height="17px" altimg-valign="-6px" altimg-width="14px" alttext="q" display="inline"><mi href="./26.9#ii.p1" title="parameter">q</mi></math>-<em class="ltx_emph ltx_font_italic">binomial coefficient</em>); see also
+§§<a href="./17.2#i" title="§17.2(i) 𝑞-Calculus ‣ §17.2 Calculus ‣ Properties ‣ Chapter 17 𝑞-Hypergeometric and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">17.2(i)</span></a>–<a href="./17.2#ii" title="§17.2(ii) 𝑞-Binomial Coefficients ‣ §17.2 Calculus ‣ Properties ‣ Chapter 17 𝑞-Hypergeometric and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">17.2(ii)</span></a>. In the present chapter
+<math class="ltx_Math" altimg="m26.png" altimg-height="20px" altimg-valign="-5px" altimg-width="101px" alttext="m\geq n\geq 0" display="inline"><mrow><mi href="./26.1#t1.r2" title="nonnegative integer">m</mi><mo>≥</mo><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi><mo>≥</mo><mn>0</mn></mrow></math> in all cases. It is also assumed everywhere
+that <math class="ltx_Math" altimg="m40.png" altimg-height="25px" altimg-valign="-7px" altimg-width="64px" alttext="|q|&lt;1" display="inline"><mrow><mrow><mo stretchy="false">|</mo><mi href="./26.9#ii.p1" title="parameter">q</mi><mo stretchy="false">|</mo></mrow><mo>&lt;</mo><mn>1</mn></mrow></math>.</p>
+</div>
+<div id="ii.p2" class="ltx_para">
+<table id="E5" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">26.9.5</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E5.png" altimg-height="80px" altimg-valign="-31px" altimg-width="622px" alttext="\sum_{n=0}^{\infty}p_{k}\left(n\right)q^{n}=\prod_{j=1}^{k}\frac{1}{1-q^{j}}=1%
++\sum_{m=1}^{\infty}\genfrac{[}{]}{0.0pt}{}{k+m-1}{m}_{q}q^{m}," display="block"><mrow><mrow><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><mrow><msub><mi href="./26.9#i.p1" title="total number of partitions of 𝑛 into at most 𝑘 parts">p</mi><mi href="./26.1#t1.r2" title="nonnegative integer">k</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi><mo>)</mo></mrow></mrow><mo>⁢</mo><msup><mi href="./26.9#ii.p1" title="parameter">q</mi><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi></msup></mrow></mrow><mo rspace="0.111em">=</mo><mrow><munderover><mo movablelimits="false">∏</mo><mrow><mi href="./26.1#t1.r2" title="nonnegative integer">j</mi><mo>=</mo><mn>1</mn></mrow><mi href="./26.1#t1.r2" title="nonnegative integer">k</mi></munderover><mfrac><mn>1</mn><mrow><mn>1</mn><mo>−</mo><msup><mi href="./26.9#ii.p1" title="parameter">q</mi><mi href="./26.1#t1.r2" title="nonnegative integer">j</mi></msup></mrow></mfrac></mrow><mo>=</mo><mrow><mn>1</mn><mo rspace="0.055em">+</mo><mrow><munderover><mo movablelimits="false" rspace="0em">∑</mo><mrow><mi href="./26.1#t1.r2" title="nonnegative integer">m</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><msub><mrow><mo href="./17.2#E27" title="𝑞-binomial coefficient (or Gaussian polynomial)">[</mo><mfrac linethickness="0.0pt"><mrow><mrow><mi href="./26.1#t1.r2" title="nonnegative integer">k</mi><mo>+</mo><mi href="./26.1#t1.r2" title="nonnegative integer">m</mi></mrow><mo>−</mo><mn>1</mn></mrow><mi href="./26.1#t1.r2" title="nonnegative integer">m</mi></mfrac><mo href="./17.2#E27" title="𝑞-binomial coefficient (or Gaussian polynomial)">]</mo></mrow><mi href="./26.9#ii.p1" title="parameter">q</mi></msub><mo>⁢</mo><msup><mi href="./26.9#ii.p1" title="parameter">q</mi><mi href="./26.1#t1.r2" title="nonnegative integer">m</mi></msup></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E5.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./26.9#i.p1" title="§26.9(i) Definitions ‣ §26.9 Integer Partitions: Restricted Number and Part Size ‣ Properties ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><math class="ltx_Math" altimg="m33.png" altimg-height="25px" altimg-valign="-7px" altimg-width="57px" alttext="p_{\NVar{k}}\left(\NVar{n}\right)" display="inline"><mrow><msub><mi href="./26.9#i.p1" title="total number of partitions of 𝑛 into at most 𝑘 parts">p</mi><mi class="ltx_nvar" href="./26.1#t1.r2" title="nonnegative integer">k</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./26.1#t1.r2" title="nonnegative integer">n</mi><mo>)</mo></mrow></mrow></math>: total number of partitions of <math class="ltx_Math" altimg="m29.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi></math> into at most <math class="ltx_Math" altimg="m23.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./26.1#t1.r2" title="nonnegative integer">k</mi></math> parts</a>,
+<a href="./17.2#E27" title="(17.2.27) ‣ §17.2(ii) 𝑞-Binomial Coefficients ‣ §17.2 Calculus ‣ Properties ‣ Chapter 17 𝑞-Hypergeometric and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m19.png" altimg-height="33px" altimg-valign="-13px" altimg-width="45px" alttext="\genfrac{[}{]}{0.0pt}{}{\NVar{n}}{\NVar{m}}_{\NVar{q}}" display="inline"><msub><mrow><mo href="./17.2#E27" title="𝑞-binomial coefficient (or Gaussian polynomial)">[</mo><mfrac linethickness="0.0pt"><mi class="ltx_nvar" href="./17.1#p1.t1.r1" title="nonnegative integer">n</mi><mi class="ltx_nvar" href="./17.1#p1.t1.r1" title="nonnegative integer">m</mi></mfrac><mo href="./17.2#E27" title="𝑞-binomial coefficient (or Gaussian polynomial)">]</mo></mrow><mi class="ltx_nvar" href="./17.1#p1.t1.r4" title="complex base">q</mi></msub></math>: <math class="ltx_Math" altimg="m37.png" altimg-height="17px" altimg-valign="-6px" altimg-width="14px" alttext="q" display="inline"><mi href="./17.1#p1.t1.r4" title="complex base">q</mi></math>-binomial coefficient (or Gaussian polynomial)</a>,
+<a href="./26.1#t1.r2" title="§26.1 Special Notation ‣ Notation ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><math class="ltx_Math" altimg="m22.png" altimg-height="22px" altimg-valign="-6px" altimg-width="14px" alttext="j" display="inline"><mi href="./26.1#t1.r2" title="nonnegative integer">j</mi></math>:  nonnegative integer</a>,
+<a href="./26.1#t1.r2" title="§26.1 Special Notation ‣ Notation ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><math class="ltx_Math" altimg="m23.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./26.1#t1.r2" title="nonnegative integer">k</mi></math>:  nonnegative integer</a>,
+<a href="./26.1#t1.r2" title="§26.1 Special Notation ‣ Notation ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><math class="ltx_Math" altimg="m25.png" altimg-height="13px" altimg-valign="-2px" altimg-width="23px" alttext="m" display="inline"><mi href="./26.1#t1.r2" title="nonnegative integer">m</mi></math>:  nonnegative integer</a>,
+<a href="./26.1#t1.r2" title="§26.1 Special Notation ‣ Notation ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><math class="ltx_Math" altimg="m29.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi></math>:  nonnegative integer</a> and
+<a href="./26.9#ii.p1" title="§26.9(ii) Generating Functions ‣ §26.9 Integer Partitions: Restricted Number and Part Size ‣ Properties ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><math class="ltx_Math" altimg="m37.png" altimg-height="17px" altimg-valign="-6px" altimg-width="14px" alttext="q" display="inline"><mi href="./26.9#ii.p1" title="parameter">q</mi></math>:  parameter</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./26.9.E5" title="" class="ltx_ref">http://dlmf.nist.gov/26.9.E5</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./26.9.E5.tex">TeX</a>, <a href="./26.9.E5.pmml">pMML</a>, <a href="./26.9.E5.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./26.9#ii.info" title="§26.9(ii) Generating Functions ‣ §26.9 Integer Partitions: Restricted Number and Part Size ‣ Properties ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§26.9(ii)</span></a>,
+<a href="./26.9#info" title="§26.9 Integer Partitions: Restricted Number and Part Size ‣ Properties ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§26.9</span></a> and
+<a href="./26#info" title="Chapter 26 Combinatorial Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.26</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+<div id="ii.p3" class="ltx_para">
+<table id="E6" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">26.9.6</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E6.png" altimg-height="73px" altimg-valign="-28px" altimg-width="465px" alttext="\sum_{n=0}^{\infty}p_{k}\left(\leq m,n\right)q^{n}=\genfrac{[}{]}{0.0pt}{}{m+k%
+}{k}_{q}." display="block"><mrow><mrow><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><mrow><msub><mi href="./26.9#i" title="number of partitions of 𝑛 into at most 𝑘 parts, each less than or equal to 𝑚">p</mi><mi href="./26.1#t1.r2" title="nonnegative integer">k</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mrow><mi></mi><mo>≤</mo><mi href="./26.1#t1.r2" title="nonnegative integer">m</mi></mrow><mo>,</mo><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi><mo>)</mo></mrow></mrow><mo>⁢</mo><msup><mi href="./26.9#ii.p1" title="parameter">q</mi><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi></msup></mrow></mrow><mo>=</mo><msub><mrow><mo href="./17.2#E27" title="𝑞-binomial coefficient (or Gaussian polynomial)">[</mo><mfrac linethickness="0.0pt"><mrow><mi href="./26.1#t1.r2" title="nonnegative integer">m</mi><mo>+</mo><mi href="./26.1#t1.r2" title="nonnegative integer">k</mi></mrow><mi href="./26.1#t1.r2" title="nonnegative integer">k</mi></mfrac><mo href="./17.2#E27" title="𝑞-binomial coefficient (or Gaussian polynomial)">]</mo></mrow><mi href="./26.9#ii.p1" title="parameter">q</mi></msub></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E6.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./17.2#E27" title="(17.2.27) ‣ §17.2(ii) 𝑞-Binomial Coefficients ‣ §17.2 Calculus ‣ Properties ‣ Chapter 17 𝑞-Hypergeometric and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m19.png" altimg-height="33px" altimg-valign="-13px" altimg-width="45px" alttext="\genfrac{[}{]}{0.0pt}{}{\NVar{n}}{\NVar{m}}_{\NVar{q}}" display="inline"><msub><mrow><mo href="./17.2#E27" title="𝑞-binomial coefficient (or Gaussian polynomial)">[</mo><mfrac linethickness="0.0pt"><mi class="ltx_nvar" href="./17.1#p1.t1.r1" title="nonnegative integer">n</mi><mi class="ltx_nvar" href="./17.1#p1.t1.r1" title="nonnegative integer">m</mi></mfrac><mo href="./17.2#E27" title="𝑞-binomial coefficient (or Gaussian polynomial)">]</mo></mrow><mi class="ltx_nvar" href="./17.1#p1.t1.r4" title="complex base">q</mi></msub></math>: <math class="ltx_Math" altimg="m37.png" altimg-height="17px" altimg-valign="-6px" altimg-width="14px" alttext="q" display="inline"><mi href="./17.1#p1.t1.r4" title="complex base">q</mi></math>-binomial coefficient (or Gaussian polynomial)</a>,
+<a href="./26.9#i" title="§26.9(i) Definitions ‣ §26.9 Integer Partitions: Restricted Number and Part Size ‣ Properties ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><math class="ltx_Math" altimg="m34.png" altimg-height="25px" altimg-valign="-7px" altimg-width="106px" alttext="p_{\NVar{k}}\left(\leq\NVar{m},\NVar{n}\right)" display="inline"><mrow><msub><mi href="./26.9#i" title="number of partitions of 𝑛 into at most 𝑘 parts, each less than or equal to 𝑚">p</mi><mi class="ltx_nvar" href="./26.1#t1.r2" title="nonnegative integer">k</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mrow><mi></mi><mo>≤</mo><mi class="ltx_nvar" href="./26.1#t1.r2" title="nonnegative integer">m</mi></mrow><mo>,</mo><mi class="ltx_nvar" href="./26.1#t1.r2" title="nonnegative integer">n</mi><mo>)</mo></mrow></mrow></math>: number of partitions of <math class="ltx_Math" altimg="m29.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi></math> into at most <math class="ltx_Math" altimg="m23.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./26.1#t1.r2" title="nonnegative integer">k</mi></math> parts, each less than or equal to <math class="ltx_Math" altimg="m25.png" altimg-height="13px" altimg-valign="-2px" altimg-width="23px" alttext="m" display="inline"><mi href="./26.1#t1.r2" title="nonnegative integer">m</mi></math></a>,
+<a href="./26.1#t1.r2" title="§26.1 Special Notation ‣ Notation ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><math class="ltx_Math" altimg="m23.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./26.1#t1.r2" title="nonnegative integer">k</mi></math>:  nonnegative integer</a>,
+<a href="./26.1#t1.r2" title="§26.1 Special Notation ‣ Notation ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><math class="ltx_Math" altimg="m25.png" altimg-height="13px" altimg-valign="-2px" altimg-width="23px" alttext="m" display="inline"><mi href="./26.1#t1.r2" title="nonnegative integer">m</mi></math>:  nonnegative integer</a>,
+<a href="./26.1#t1.r2" title="§26.1 Special Notation ‣ Notation ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><math class="ltx_Math" altimg="m29.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi></math>:  nonnegative integer</a> and
+<a href="./26.9#ii.p1" title="§26.9(ii) Generating Functions ‣ §26.9 Integer Partitions: Restricted Number and Part Size ‣ Properties ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><math class="ltx_Math" altimg="m37.png" altimg-height="17px" altimg-valign="-6px" altimg-width="14px" alttext="q" display="inline"><mi href="./26.9#ii.p1" title="parameter">q</mi></math>:  parameter</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./26.9.E6" title="" class="ltx_ref">http://dlmf.nist.gov/26.9.E6</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./26.9.E6.tex">TeX</a>, <a href="./26.9.E6.pmml">pMML</a>, <a href="./26.9.E6.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./26.9#ii.info" title="§26.9(ii) Generating Functions ‣ §26.9 Integer Partitions: Restricted Number and Part Size ‣ Properties ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§26.9(ii)</span></a>,
+<a href="./26.9#info" title="§26.9 Integer Partitions: Restricted Number and Part Size ‣ Properties ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§26.9</span></a> and
+<a href="./26#info" title="Chapter 26 Combinatorial Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.26</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">Also, when <math class="ltx_Math" altimg="m41.png" altimg-height="25px" altimg-valign="-7px" altimg-width="76px" alttext="|xq|&lt;1" display="inline"><mrow><mrow><mo stretchy="false">|</mo><mrow><mi href="./26.1#t1.r1" title="real variable">x</mi><mo>⁢</mo><mi href="./26.9#ii.p1" title="parameter">q</mi></mrow><mo stretchy="false">|</mo></mrow><mo>&lt;</mo><mn>1</mn></mrow></math></p>
+<table id="E7" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">26.9.7</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E7.png" altimg-height="76px" altimg-valign="-31px" altimg-width="774px" alttext="\sum_{m,n=0}^{\infty}p_{k}\left(\leq m,n\right)x^{k}q^{n}=1+\sum_{k=1}^{\infty%
+}\genfrac{[}{]}{0.0pt}{}{m+k}{k}_{q}x^{k}=\prod_{j=0}^{m}\frac{1}{1-x\,q^{j}}." display="block"><mrow><mrow><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mrow><mi href="./26.1#t1.r2" title="nonnegative integer">m</mi><mo>,</mo><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi></mrow><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><mrow><msub><mi href="./26.9#i" title="number of partitions of 𝑛 into at most 𝑘 parts, each less than or equal to 𝑚">p</mi><mi href="./26.1#t1.r2" title="nonnegative integer">k</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mrow><mi></mi><mo>≤</mo><mi href="./26.1#t1.r2" title="nonnegative integer">m</mi></mrow><mo>,</mo><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi><mo>)</mo></mrow></mrow><mo>⁢</mo><msup><mi href="./26.1#t1.r1" title="real variable">x</mi><mi href="./26.1#t1.r2" title="nonnegative integer">k</mi></msup><mo>⁢</mo><msup><mi href="./26.9#ii.p1" title="parameter">q</mi><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi></msup></mrow></mrow><mo>=</mo><mrow><mn>1</mn><mo rspace="0.055em">+</mo><mrow><munderover><mo movablelimits="false" rspace="0em">∑</mo><mrow><mi href="./26.1#t1.r2" title="nonnegative integer">k</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><msub><mrow><mo href="./17.2#E27" title="𝑞-binomial coefficient (or Gaussian polynomial)">[</mo><mfrac linethickness="0.0pt"><mrow><mi href="./26.1#t1.r2" title="nonnegative integer">m</mi><mo>+</mo><mi href="./26.1#t1.r2" title="nonnegative integer">k</mi></mrow><mi href="./26.1#t1.r2" title="nonnegative integer">k</mi></mfrac><mo href="./17.2#E27" title="𝑞-binomial coefficient (or Gaussian polynomial)">]</mo></mrow><mi href="./26.9#ii.p1" title="parameter">q</mi></msub><mo>⁢</mo><msup><mi href="./26.1#t1.r1" title="real variable">x</mi><mi href="./26.1#t1.r2" title="nonnegative integer">k</mi></msup></mrow></mrow></mrow><mo rspace="0.111em">=</mo><mrow><munderover><mo movablelimits="false">∏</mo><mrow><mi href="./26.1#t1.r2" title="nonnegative integer">j</mi><mo>=</mo><mn>0</mn></mrow><mi href="./26.1#t1.r2" title="nonnegative integer">m</mi></munderover><mfrac><mn>1</mn><mrow><mn>1</mn><mo>−</mo><mrow><mi href="./26.1#t1.r1" title="real variable">x</mi><mo lspace="0.170em">⁢</mo><msup><mi href="./26.9#ii.p1" title="parameter">q</mi><mi href="./26.1#t1.r2" title="nonnegative integer">j</mi></msup></mrow></mrow></mfrac></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E7.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./17.2#E27" title="(17.2.27) ‣ §17.2(ii) 𝑞-Binomial Coefficients ‣ §17.2 Calculus ‣ Properties ‣ Chapter 17 𝑞-Hypergeometric and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m19.png" altimg-height="33px" altimg-valign="-13px" altimg-width="45px" alttext="\genfrac{[}{]}{0.0pt}{}{\NVar{n}}{\NVar{m}}_{\NVar{q}}" display="inline"><msub><mrow><mo href="./17.2#E27" title="𝑞-binomial coefficient (or Gaussian polynomial)">[</mo><mfrac linethickness="0.0pt"><mi class="ltx_nvar" href="./17.1#p1.t1.r1" title="nonnegative integer">n</mi><mi class="ltx_nvar" href="./17.1#p1.t1.r1" title="nonnegative integer">m</mi></mfrac><mo href="./17.2#E27" title="𝑞-binomial coefficient (or Gaussian polynomial)">]</mo></mrow><mi class="ltx_nvar" href="./17.1#p1.t1.r4" title="complex base">q</mi></msub></math>: <math class="ltx_Math" altimg="m37.png" altimg-height="17px" altimg-valign="-6px" altimg-width="14px" alttext="q" display="inline"><mi href="./17.1#p1.t1.r4" title="complex base">q</mi></math>-binomial coefficient (or Gaussian polynomial)</a>,
+<a href="./26.9#i" title="§26.9(i) Definitions ‣ §26.9 Integer Partitions: Restricted Number and Part Size ‣ Properties ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><math class="ltx_Math" altimg="m34.png" altimg-height="25px" altimg-valign="-7px" altimg-width="106px" alttext="p_{\NVar{k}}\left(\leq\NVar{m},\NVar{n}\right)" display="inline"><mrow><msub><mi href="./26.9#i" title="number of partitions of 𝑛 into at most 𝑘 parts, each less than or equal to 𝑚">p</mi><mi class="ltx_nvar" href="./26.1#t1.r2" title="nonnegative integer">k</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mrow><mi></mi><mo>≤</mo><mi class="ltx_nvar" href="./26.1#t1.r2" title="nonnegative integer">m</mi></mrow><mo>,</mo><mi class="ltx_nvar" href="./26.1#t1.r2" title="nonnegative integer">n</mi><mo>)</mo></mrow></mrow></math>: number of partitions of <math class="ltx_Math" altimg="m29.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi></math> into at most <math class="ltx_Math" altimg="m23.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./26.1#t1.r2" title="nonnegative integer">k</mi></math> parts, each less than or equal to <math class="ltx_Math" altimg="m25.png" altimg-height="13px" altimg-valign="-2px" altimg-width="23px" alttext="m" display="inline"><mi href="./26.1#t1.r2" title="nonnegative integer">m</mi></math></a>,
+<a href="./26.1#t1.r1" title="§26.1 Special Notation ‣ Notation ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><math class="ltx_Math" altimg="m39.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./26.1#t1.r1" title="real variable">x</mi></math>:  real variable</a>,
+<a href="./26.1#t1.r2" title="§26.1 Special Notation ‣ Notation ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><math class="ltx_Math" altimg="m22.png" altimg-height="22px" altimg-valign="-6px" altimg-width="14px" alttext="j" display="inline"><mi href="./26.1#t1.r2" title="nonnegative integer">j</mi></math>:  nonnegative integer</a>,
+<a href="./26.1#t1.r2" title="§26.1 Special Notation ‣ Notation ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><math class="ltx_Math" altimg="m23.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./26.1#t1.r2" title="nonnegative integer">k</mi></math>:  nonnegative integer</a>,
+<a href="./26.1#t1.r2" title="§26.1 Special Notation ‣ Notation ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><math class="ltx_Math" altimg="m25.png" altimg-height="13px" altimg-valign="-2px" altimg-width="23px" alttext="m" display="inline"><mi href="./26.1#t1.r2" title="nonnegative integer">m</mi></math>:  nonnegative integer</a>,
+<a href="./26.1#t1.r2" title="§26.1 Special Notation ‣ Notation ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><math class="ltx_Math" altimg="m29.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi></math>:  nonnegative integer</a> and
+<a href="./26.9#ii.p1" title="§26.9(ii) Generating Functions ‣ §26.9 Integer Partitions: Restricted Number and Part Size ‣ Properties ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><math class="ltx_Math" altimg="m37.png" altimg-height="17px" altimg-valign="-6px" altimg-width="14px" alttext="q" display="inline"><mi href="./26.9#ii.p1" title="parameter">q</mi></math>:  parameter</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./26.9.E7" title="" class="ltx_ref">http://dlmf.nist.gov/26.9.E7</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./26.9.E7.tex">TeX</a>, <a href="./26.9.E7.pmml">pMML</a>, <a href="./26.9.E7.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./26.9#ii.info" title="§26.9(ii) Generating Functions ‣ §26.9 Integer Partitions: Restricted Number and Part Size ‣ Properties ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§26.9(ii)</span></a>,
+<a href="./26.9#info" title="§26.9 Integer Partitions: Restricted Number and Part Size ‣ Properties ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§26.9</span></a> and
+<a href="./26#info" title="Chapter 26 Combinatorial Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.26</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="iii" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§26.9(iii) </span>Recurrence Relations</h2>
+<div id="iii.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=recurrence%20relations">recurrence relations</a>, <a class="ltx_keyword" href="./search/search?q=restricted%20integer%20partitions">restricted integer partitions</a>
+</dd>
+<dt>Notes:</dt>
+<dd>(<a href="./26.9#E9" title="(26.9.9) ‣ §26.9(iii) Recurrence Relations ‣ §26.9 Integer Partitions: Restricted Number and Part Size ‣ Properties ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">26.9.9</span></a>) is a special case of equation (2.23) in
+<cite class="ltx_cite ltx_citemacro_citet">Bressoud (<a href="./bib/B#bib348" title="Proofs and Confirmations: The Story of the Alternating Sign Matrix Conjecture" class="ltx_ref">1999</a>, p. 60)</cite>.</dd>
+<dt>Permalink:</dt>
+<dd><a href="./26.9.iii" title="" class="ltx_ref">http://dlmf.nist.gov/26.9.iii</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./26.9#info" title="§26.9 Integer Partitions: Restricted Number and Part Size ‣ Properties ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§26.9</span></a> and
+<a href="./26#info" title="Chapter 26 Combinatorial Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.26</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="iii.p1" class="ltx_para">
+<table id="E8" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">26.9.8</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E8.png" altimg-height="99px" altimg-valign="-7px" altimg-width="177px" alttext="p_{k}\left(n\right)=p_{k}\left(n-k\right)+p_{k-1}\left(n\right);" display="block"><mrow><mrow><mrow><msub><mi href="./26.9#i.p1" title="total number of partitions of 𝑛 into at most 𝑘 parts">p</mi><mi href="./26.1#t1.r2" title="nonnegative integer">k</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mrow><msub><mi href="./26.9#i.p1" title="total number of partitions of 𝑛 into at most 𝑘 parts">p</mi><mi href="./26.1#t1.r2" title="nonnegative integer">k</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi><mo>−</mo><mi href="./26.1#t1.r2" title="nonnegative integer">k</mi></mrow><mo>)</mo></mrow></mrow><mo>+</mo><mrow><msub><mi href="./26.9#i.p1" title="total number of partitions of 𝑛 into at most 𝑘 parts">p</mi><mrow><mi href="./26.1#t1.r2" title="nonnegative integer">k</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi><mo>)</mo></mrow></mrow></mrow></mrow><mo>;</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E8.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./26.9#i.p1" title="§26.9(i) Definitions ‣ §26.9 Integer Partitions: Restricted Number and Part Size ‣ Properties ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><math class="ltx_Math" altimg="m33.png" altimg-height="25px" altimg-valign="-7px" altimg-width="57px" alttext="p_{\NVar{k}}\left(\NVar{n}\right)" display="inline"><mrow><msub><mi href="./26.9#i.p1" title="total number of partitions of 𝑛 into at most 𝑘 parts">p</mi><mi class="ltx_nvar" href="./26.1#t1.r2" title="nonnegative integer">k</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./26.1#t1.r2" title="nonnegative integer">n</mi><mo>)</mo></mrow></mrow></math>: total number of partitions of <math class="ltx_Math" altimg="m29.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi></math> into at most <math class="ltx_Math" altimg="m23.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./26.1#t1.r2" title="nonnegative integer">k</mi></math> parts</a>,
+<a href="./26.1#t1.r2" title="§26.1 Special Notation ‣ Notation ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><math class="ltx_Math" altimg="m23.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./26.1#t1.r2" title="nonnegative integer">k</mi></math>:  nonnegative integer</a> and
+<a href="./26.1#t1.r2" title="§26.1 Special Notation ‣ Notation ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><math class="ltx_Math" altimg="m29.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi></math>:  nonnegative integer</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./26.10#iii.p4" title="§26.10(iii) Recurrence Relations ‣ §26.10 Integer Partitions: Other Restrictions ‣ Properties ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§26.10(iii)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./26.9.E8" title="" class="ltx_ref">http://dlmf.nist.gov/26.9.E8</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./26.9.E8.tex">TeX</a>, <a href="./26.9.E8.pmml">pMML</a>, <a href="./26.9.E8.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./26.9#iii.info" title="§26.9(iii) Recurrence Relations ‣ §26.9 Integer Partitions: Restricted Number and Part Size ‣ Properties ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§26.9(iii)</span></a>,
+<a href="./26.9#info" title="§26.9 Integer Partitions: Restricted Number and Part Size ‣ Properties ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§26.9</span></a> and
+<a href="./26#info" title="Chapter 26 Combinatorial Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.26</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">equivalently, partitions into at most <math class="ltx_Math" altimg="m23.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./26.1#t1.r2" title="nonnegative integer">k</mi></math> parts either have exactly <math class="ltx_Math" altimg="m23.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./26.1#t1.r2" title="nonnegative integer">k</mi></math> parts,
+in which case we can subtract one from each part, or they have strictly fewer
+than <math class="ltx_Math" altimg="m23.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./26.1#t1.r2" title="nonnegative integer">k</mi></math> parts.</p>
+</div>
+<div id="iii.p2" class="ltx_para">
+<table id="E9" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">26.9.9</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E9.png" altimg-height="127px" altimg-valign="-49px" altimg-width="278px" alttext="p_{k}\left(n\right)=\frac{1}{n}\sum_{t=1}^{n}p_{k}\left(n-t\right)\sum_{\begin%
+{subarray}{c}j\mathbin{|}t\\
+j\leq k\end{subarray}}j," display="block"><mrow><mrow><mrow><msub><mi href="./26.9#i.p1" title="total number of partitions of 𝑛 into at most 𝑘 parts">p</mi><mi href="./26.1#t1.r2" title="nonnegative integer">k</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mfrac><mn>1</mn><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi></mfrac><mo>⁢</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>t</mi><mo>=</mo><mn>1</mn></mrow><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi></munderover><mrow><mrow><msub><mi href="./26.9#i.p1" title="total number of partitions of 𝑛 into at most 𝑘 parts">p</mi><mi href="./26.1#t1.r2" title="nonnegative integer">k</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi><mo>−</mo><mi>t</mi></mrow><mo>)</mo></mrow></mrow><mo>⁢</mo><mrow><munder><mo movablelimits="false">∑</mo><mtable rowspacing="0pt"><mtr><mtd><mrow><mi href="./26.1#t1.r2" title="nonnegative integer">j</mi><mo fence="false" lspace="0.222em" rspace="0.222em">|</mo><mi>t</mi></mrow></mtd></mtr><mtr><mtd><mrow><mi href="./26.1#t1.r2" title="nonnegative integer">j</mi><mo>≤</mo><mi href="./26.1#t1.r2" title="nonnegative integer">k</mi></mrow></mtd></mtr></mtable></munder><mi href="./26.1#t1.r2" title="nonnegative integer">j</mi></mrow></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E9.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./26.9#i.p1" title="§26.9(i) Definitions ‣ §26.9 Integer Partitions: Restricted Number and Part Size ‣ Properties ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><math class="ltx_Math" altimg="m33.png" altimg-height="25px" altimg-valign="-7px" altimg-width="57px" alttext="p_{\NVar{k}}\left(\NVar{n}\right)" display="inline"><mrow><msub><mi href="./26.9#i.p1" title="total number of partitions of 𝑛 into at most 𝑘 parts">p</mi><mi class="ltx_nvar" href="./26.1#t1.r2" title="nonnegative integer">k</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./26.1#t1.r2" title="nonnegative integer">n</mi><mo>)</mo></mrow></mrow></math>: total number of partitions of <math class="ltx_Math" altimg="m29.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi></math> into at most <math class="ltx_Math" altimg="m23.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./26.1#t1.r2" title="nonnegative integer">k</mi></math> parts</a>,
+<a href="./26.1#t1.r2" title="§26.1 Special Notation ‣ Notation ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><math class="ltx_Math" altimg="m22.png" altimg-height="22px" altimg-valign="-6px" altimg-width="14px" alttext="j" display="inline"><mi href="./26.1#t1.r2" title="nonnegative integer">j</mi></math>:  nonnegative integer</a>,
+<a href="./26.1#t1.r2" title="§26.1 Special Notation ‣ Notation ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><math class="ltx_Math" altimg="m23.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./26.1#t1.r2" title="nonnegative integer">k</mi></math>:  nonnegative integer</a> and
+<a href="./26.1#t1.r2" title="§26.1 Special Notation ‣ Notation ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><math class="ltx_Math" altimg="m29.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi></math>:  nonnegative integer</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./26.9#iii.info" title="§26.9(iii) Recurrence Relations ‣ §26.9 Integer Partitions: Restricted Number and Part Size ‣ Properties ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§26.9(iii)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./26.9.E9" title="" class="ltx_ref">http://dlmf.nist.gov/26.9.E9</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./26.9.E9.tex">TeX</a>, <a href="./26.9.E9.pmml">pMML</a>, <a href="./26.9.E9.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./26.9#iii.info" title="§26.9(iii) Recurrence Relations ‣ §26.9 Integer Partitions: Restricted Number and Part Size ‣ Properties ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§26.9(iii)</span></a>,
+<a href="./26.9#info" title="§26.9 Integer Partitions: Restricted Number and Part Size ‣ Properties ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§26.9</span></a> and
+<a href="./26#info" title="Chapter 26 Combinatorial Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.26</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">where the inner sum is taken over all positive divisors of <math class="ltx_Math" altimg="m38.png" altimg-height="17px" altimg-valign="-2px" altimg-width="12px" alttext="t" display="inline"><mi>t</mi></math> that are less
+than or equal to <math class="ltx_Math" altimg="m23.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./26.1#t1.r2" title="nonnegative integer">k</mi></math>.</p>
+</div>
+</section>
+<section id="iv" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§26.9(iv) </span>Limiting Form</h2>
+<div id="iv.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=limiting%20form">limiting form</a>, <a class="ltx_keyword" href="./search/search?q=restricted%20integer%20partitions">restricted integer partitions</a>
+</dd>
+<dt>Notes:</dt>
+<dd>See <cite class="ltx_cite ltx_citemacro_citet">Andrews (<a href="./bib/#bib92" title="The Theory of Partitions" class="ltx_ref">1976</a>, Chapter 6)</cite>.</dd>
+<dt>Permalink:</dt>
+<dd><a href="./26.9.iv" title="" class="ltx_ref">http://dlmf.nist.gov/26.9.iv</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./26.9#info" title="§26.9 Integer Partitions: Restricted Number and Part Size ‣ Properties ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§26.9</span></a> and
+<a href="./26#info" title="Chapter 26 Combinatorial Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.26</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="iv.p1" class="ltx_para">
+<p class="ltx_p">As <math class="ltx_Math" altimg="m31.png" altimg-height="13px" altimg-valign="-2px" altimg-width="70px" alttext="n\to\infty" display="inline"><mrow><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></math> with <math class="ltx_Math" altimg="m23.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./26.1#t1.r2" title="nonnegative integer">k</mi></math> fixed,</p>
+<table id="E10" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">26.9.10</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E10.png" altimg-height="64px" altimg-valign="-21px" altimg-width="243px" alttext="p_{k}\left(n\right)\sim\frac{n^{k-1}}{k!(k-1)!}." display="block"><mrow><mrow><mrow><msub><mi href="./26.9#i.p1" title="total number of partitions of 𝑛 into at most 𝑘 parts">p</mi><mi href="./26.1#t1.r2" title="nonnegative integer">k</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi><mo>)</mo></mrow></mrow><mo href="./2.1#E1" title="asymptotic equality">∼</mo><mfrac><msup><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi><mrow><mi href="./26.1#t1.r2" title="nonnegative integer">k</mi><mo>−</mo><mn>1</mn></mrow></msup><mrow><mrow><mi href="./26.1#t1.r2" title="nonnegative integer">k</mi><mo href="./front/introduction#common.t1.r15" title="factorial (as in 𝑛!)">!</mo></mrow><mo>⁢</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi href="./26.1#t1.r2" title="nonnegative integer">k</mi><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo href="./front/introduction#common.t1.r15" title="factorial (as in 𝑛!)">!</mo></mrow></mrow></mfrac></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E10.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./2.1#E1" title="(2.1.1) ‣ §2.1(i) Asymptotic and Order Symbols ‣ §2.1 Definitions and Elementary Properties ‣ Areas ‣ Chapter 2 Asymptotic Approximations" class="ltx_ref"><math class="ltx_Math" altimg="m21.png" altimg-height="11px" altimg-valign="-2px" altimg-width="20px" alttext="\sim" display="inline"><mo href="./2.1#E1" title="asymptotic equality">∼</mo></math>: asymptotic equality</a>,
+<a href="./front/introduction#common.t1.r15" title="Common Notations and Definitions ‣ Mathematical Introduction" class="ltx_ref"><math class="ltx_Math" altimg="m7.png" altimg-height="18px" altimg-valign="-2px" altimg-width="10px" alttext="!" display="inline"><mo href="./front/introduction#common.t1.r15" title="factorial (as in 𝑛!)">!</mo></math>: factorial (as in <math class="ltx_Math" altimg="m27.png" altimg-height="18px" altimg-valign="-2px" altimg-width="23px" alttext="n!" display="inline"><mrow><mi>n</mi><mo href="./front/introduction#common.t1.r15" title="factorial (as in 𝑛!)">!</mo></mrow></math>)</a>,
+<a href="./26.9#i.p1" title="§26.9(i) Definitions ‣ §26.9 Integer Partitions: Restricted Number and Part Size ‣ Properties ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><math class="ltx_Math" altimg="m33.png" altimg-height="25px" altimg-valign="-7px" altimg-width="57px" alttext="p_{\NVar{k}}\left(\NVar{n}\right)" display="inline"><mrow><msub><mi href="./26.9#i.p1" title="total number of partitions of 𝑛 into at most 𝑘 parts">p</mi><mi class="ltx_nvar" href="./26.1#t1.r2" title="nonnegative integer">k</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./26.1#t1.r2" title="nonnegative integer">n</mi><mo>)</mo></mrow></mrow></math>: total number of partitions of <math class="ltx_Math" altimg="m29.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi></math> into at most <math class="ltx_Math" altimg="m23.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./26.1#t1.r2" title="nonnegative integer">k</mi></math> parts</a>,
+<a href="./26.1#t1.r2" title="§26.1 Special Notation ‣ Notation ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><math class="ltx_Math" altimg="m23.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./26.1#t1.r2" title="nonnegative integer">k</mi></math>:  nonnegative integer</a> and
+<a href="./26.1#t1.r2" title="§26.1 Special Notation ‣ Notation ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><math class="ltx_Math" altimg="m29.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./26.1#t1.r2" title="nonnegative integer">n</mi></math>:  nonnegative integer</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./26.9.E10" title="" class="ltx_ref">http://dlmf.nist.gov/26.9.E10</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./26.9.E10.tex">TeX</a>, <a href="./26.9.E10.pmml">pMML</a>, <a href="./26.9.E10.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./26.9#iv.info" title="§26.9(iv) Limiting Form ‣ §26.9 Integer Partitions: Restricted Number and Part Size ‣ Properties ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§26.9(iv)</span></a>,
+<a href="./26.9#info" title="§26.9 Integer Partitions: Restricted Number and Part Size ‣ Properties ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§26.9</span></a> and
+<a href="./26#info" title="Chapter 26 Combinatorial Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.26</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+</div>
+<div class="ltx_page_footer">
+<div class="ltx_siblings">
+<a href="./26.8" title="In Properties ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">26.8 </span>Set Partitions: Stirling Numbers</span></a><a href="./26.10" title="In Properties ‣ Chapter 26 Combinatorial Analysis" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">26.10 </span>Integer Partitions: Other Restrictions</span></a>
+</div>
+<div class="ltx_footer_links ltx_centering">
+<a href="./about/notices">© 2010–2026 NIST</a> / <a href="./about/notices#S2">Disclaimer</a> / <a href="/cdn-cgi/l/email-protection#cc8880818ae1aaa9a9a8aeadafa78ca2a5bfb8e2aba3ba">Feedback</a>;
+ Version 1.2.7;
+Release date 2026-06-15.</div>
+<span id="pagesettings"></span>
+<div class="ltx_nist_logo"><a href="http://www.nist.gov/"><img src="./style/nistidc.png" width="500" alt="NIST"></a></div>
+<div class="ltx_nist_links ltx_align_right">
+<a href="https://www.nist.gov/privacy-policy">Site Privacy</a> <a href="https://www.nist.gov/oism/accessibility">Accessibility</a> <a href="https://www.nist.gov/privacy">Privacy Program</a> <a href="https://www.nist.gov/oism/copyrights">Copyrights</a> <a href="https://www.commerce.gov/vulnerability-disclosure-policy">Vulnerability Disclosure</a> <a href="https://www.nist.gov/no-fear-act-policy">No Fear Act Policy</a> <a href="https://www.nist.gov/foia">FOIA</a> <a href="https://www.nist.gov/environmental-policy-statement">Environmental Policy</a> <a href="https://www.nist.gov/summary-report-scientific-integrity">Scientific Integrity</a> <a href="https://www.nist.gov/nist-information-quality-standards">Information Quality Standards</a> <a href="https://www.commerce.gov/">Commerce.gov</a> <a href="http://www.science.gov/">Science.gov</a> <a href="http://www.usa.gov/">USA.gov</a>
+</div>
+</div>
+</div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a30dbb499a224251',t:'MTc4NzY5Mzc3OQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"9ef5b487afff42a68917b2d63593a474"}' crossorigin="anonymous"></script>
+</body>
+</html>

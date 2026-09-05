@@ -1,0 +1,763 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>DLMF: §30.14 Wave Equation in Oblate Spheroidal Coordinates ‣ Applications ‣ Chapter 30 Spheroidal Wave Functions</title>
+<link rel="shortcut icon" href="./style/DLMF-16.png" type="image/png">
+<script type="text/javascript"><!--
+	var PATH="DLMF:/30.14";
+	var ROOT="./";
+      //--></script>
+<script type="text/javascript" src="./style/jquery.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/jquery.leaveNotice.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/DLMF.js"><!-- non-empty so ie6 will accept it --></script>
+<script async="" type="text/javascript" id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC&amp;subagency=NIST&amp;pua=UA-37115410-44&amp;yt=true&amp;exts=ppsx,pps,f90,sch,rtf,wrl,txz,m1v,xlsm,msi,xsd,f,tif,eps,mpg,xml,pl,xlt,c"><!-- non-empty so ie6 will accept it --></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-BZB64W4M0L"></script><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-BZB64W4M0L');
+      </script>
+<link rel="stylesheet" type="text/css" href="./style/LaTeXML.css">
+<link rel="stylesheet" type="text/css" href="./style/DLMF.css">
+<link rel="stylesheet" type="text/css" href="./style/print.css" media="print">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="top" href="./" title="DLMF">
+<link rel="copyright" href="./about/notices" title="Copyright">
+<link rel="search" href="./search/search" title="Search">
+<link rel="help" class="ltx_help" href="./help/" title="Help">
+<link rel="up" href="./30#PT3" title="Applications ‣ Chapter 30 Spheroidal Wave Functions">
+<link rel="up up" href="./30" title="Chapter 30 Spheroidal Wave Functions">
+<link rel="start" href="./" title="">
+<link rel="prev" href="./30.13" title="§30.13 Wave Equation in Prolate Spheroidal Coordinates ‣ Applications ‣ Chapter 30 Spheroidal Wave Functions">
+<link rel="next" href="./30.15" title="§30.15 Signal Analysis ‣ Applications ‣ Chapter 30 Spheroidal Wave Functions">
+<link rel="section" href="./30.1" title="§30.1 Special Notation ‣ Notation ‣ Chapter 30 Spheroidal Wave Functions">
+<link rel="section" href="./30.2" title="§30.2 Differential Equations ‣ Properties ‣ Chapter 30 Spheroidal Wave Functions">
+<link rel="section" href="./30.3" title="§30.3 Eigenvalues ‣ Properties ‣ Chapter 30 Spheroidal Wave Functions">
+<link rel="section" href="./30.4" title="§30.4 Functions of the First Kind ‣ Properties ‣ Chapter 30 Spheroidal Wave Functions">
+<link rel="section" href="./30.5" title="§30.5 Functions of the Second Kind ‣ Properties ‣ Chapter 30 Spheroidal Wave Functions">
+<link rel="section" href="./30.6" title="§30.6 Functions of Complex Argument ‣ Properties ‣ Chapter 30 Spheroidal Wave Functions">
+<link rel="section" href="./30.7" title="§30.7 Graphics ‣ Properties ‣ Chapter 30 Spheroidal Wave Functions">
+<link rel="section" href="./30.8" title="§30.8 Expansions in Series of Ferrers Functions ‣ Properties ‣ Chapter 30 Spheroidal Wave Functions">
+<link rel="section" href="./30.9" title="§30.9 Asymptotic Approximations and Expansions ‣ Properties ‣ Chapter 30 Spheroidal Wave Functions">
+<link rel="section" href="./30.10" title="§30.10 Series and Integrals ‣ Properties ‣ Chapter 30 Spheroidal Wave Functions">
+<link rel="section" href="./30.11" title="§30.11 Radial Spheroidal Wave Functions ‣ Properties ‣ Chapter 30 Spheroidal Wave Functions">
+<link rel="section" href="./30.12" title="§30.12 Generalized and Coulomb Spheroidal Functions ‣ Properties ‣ Chapter 30 Spheroidal Wave Functions">
+<link rel="section" href="./30.13" title="§30.13 Wave Equation in Prolate Spheroidal Coordinates ‣ Applications ‣ Chapter 30 Spheroidal Wave Functions">
+<link rel="section" href="./30.15" title="§30.15 Signal Analysis ‣ Applications ‣ Chapter 30 Spheroidal Wave Functions">
+<link rel="section" href="./30.16" title="§30.16 Methods of Computation ‣ Computation ‣ Chapter 30 Spheroidal Wave Functions">
+<link rel="section" href="./30.17" title="§30.17 Tables ‣ Computation ‣ Chapter 30 Spheroidal Wave Functions">
+<link rel="section" href="./30.18" title="§30.18 Software ‣ Computation ‣ Chapter 30 Spheroidal Wave Functions">
+<link rel="document" href="./front/foreword" title="Foreword">
+<link rel="document" href="./front/preface" title="Preface">
+<link rel="document" href="./front/introduction" title="Mathematical Introduction">
+<link rel="chapter" href="./1" title="Chapter 1 Algebraic and Analytic Methods">
+<link rel="chapter" href="./2" title="Chapter 2 Asymptotic Approximations">
+<link rel="chapter" href="./3" title="Chapter 3 Numerical Methods">
+<link rel="chapter" href="./4" title="Chapter 4 Elementary Functions">
+<link rel="chapter" href="./5" title="Chapter 5 Gamma Function">
+<link rel="chapter" href="./6" title="Chapter 6 Exponential, Logarithmic, Sine, and Cosine Integrals">
+<link rel="chapter" href="./7" title="Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="chapter" href="./8" title="Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="chapter" href="./9" title="Chapter 9 Airy and Related Functions">
+<link rel="chapter" href="./10" title="Chapter 10 Bessel Functions">
+<link rel="chapter" href="./11" title="Chapter 11 Struve and Related Functions">
+<link rel="chapter" href="./12" title="Chapter 12 Parabolic Cylinder Functions">
+<link rel="chapter" href="./13" title="Chapter 13 Confluent Hypergeometric Functions">
+<link rel="chapter" href="./14" title="Chapter 14 Legendre and Related Functions">
+<link rel="chapter" href="./15" title="Chapter 15 Hypergeometric Function">
+<link rel="chapter" href="./16" title="Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="chapter" href="./17" title="Chapter 17 𝑞-Hypergeometric and Related Functions">
+<link rel="chapter" href="./18" title="Chapter 18 Orthogonal Polynomials">
+<link rel="chapter" href="./19" title="Chapter 19 Elliptic Integrals">
+<link rel="chapter" href="./20" title="Chapter 20 Theta Functions">
+<link rel="chapter" href="./21" title="Chapter 21 Multidimensional Theta Functions">
+<link rel="chapter" href="./22" title="Chapter 22 Jacobian Elliptic Functions">
+<link rel="chapter" href="./23" title="Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="chapter" href="./24" title="Chapter 24 Bernoulli and Euler Polynomials">
+<link rel="chapter" href="./25" title="Chapter 25 Zeta and Related Functions">
+<link rel="chapter" href="./26" title="Chapter 26 Combinatorial Analysis">
+<link rel="chapter" href="./27" title="Chapter 27 Functions of Number Theory">
+<link rel="chapter" href="./28" title="Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="chapter" href="./29" title="Chapter 29 Lamé Functions">
+<link rel="chapter" href="./30" title="Chapter 30 Spheroidal Wave Functions">
+<link rel="chapter" href="./31" title="Chapter 31 Heun Functions">
+<link rel="chapter" href="./32" title="Chapter 32 Painlevé Transcendents">
+<link rel="chapter" href="./33" title="Chapter 33 Coulomb Functions">
+<link rel="chapter" href="./34" title="Chapter 34 3⁢𝑗,6⁢𝑗,9⁢𝑗 Symbols">
+<link rel="chapter" href="./35" title="Chapter 35 Functions of Matrix Argument">
+<link rel="chapter" href="./36" title="Chapter 36 Integrals with Coalescing Saddles">
+<link rel="bibliography" href="./bib/" title="Bibliography">
+<link rel="index" href="./idx/" title="Index">
+<link rel="glossary" href="./not/" title="Notations">
+<link rel="document" href="./lof/" title="List of Figures">
+<link rel="document" href="./lot/" title="List of Tables">
+<link rel="document" href="./software/" title="Software Index">
+<link rel="document" href="./errata/" title="Errata">
+<link rel="document" href="./help/" title="Need Help?">
+<link rel="document" href="./search/" title="Advanced Search">
+<link rel="document" href="./about/" title="About the Project">
+<meta name="keywords" lang="en" content="Laplacian, applications, coordinate systems, for oblate spheroidal coordinates, for oblate spheroids, interior Dirichlet problem, metric coefficients, oblate spheroidal, oblate spheroidal coordinates, radial spheroidal wave functions, spheroidal wave functions, wave equation">
+</head>
+<body class="color_default textfont_default titlefont_default fontsize_default navbar_default">
+<div class="ltx_page_navbar">
+<div class="ltx_page_navlogo"><a href="./" title="Digital Library of Mathematical Functions"><span>DLMF</span></a></div>
+<div class="ltx_page_navitems">
+<form method="get" action="./search/search">
+<ul>
+<li><a href="./idx/">Index</a></li>
+<li><a href="./not/">Notations</a></li>
+<li><small><input type="text" name="q" value="" size="6" class="ltx_page_navitem_search"><button type="submit">Search</button></small></li>
+<li><a href="./help/" class="ltx_help">Help?</a></li>
+<li><a href="./help/cite">Citing</a></li>
+<li><a href="./help/customize" class="ltx_customize">Customize</a></li>
+<li id="showinfo"><a href="" onclick="showInfo(); return false;" title="Show Annotations">Annotate</a></li>
+<li id="hideinfo"><a href="" onclick="hideInfo(); return false;">UnAnnotate</a></li>
+</ul>
+</form>
+</div>
+<div class="ltx_page_navsponsors">
+<div><a href="./about/" class="ltx_page_navabout">About the Project</a></div>
+</div>
+</div>
+<div class="ltx_page_main">
+<div class="ltx_page_header">
+<a href="./30" title="" class="ltx_ref" rel="up up"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">30 </span>Spheroidal Wave Functions</span></a><a href="./30#PT3" title="In Chapter 30 Spheroidal Wave Functions" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title">Applications</span></a><a href="./30.13" title="In Applications ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">30.13 </span>Wave Equation in Prolate Spheroidal Coordinates</span></a><a href="./30.15" title="In Applications ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">30.15 </span>Signal Analysis</span></a>
+</div>
+<div class="ltx_page_content">
+<section class="ltx_section ltx_authors_multiline ltx_leqno">
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">§30.14 </span>Wave Equation in Oblate Spheroidal Coordinates</h1>
+<div id="info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./1.5#Px6.p2" title="Spherical Coordinates ‣ §1.5(ii) Coordinate Systems ‣ §1.5 Calculus of Two or More Variables ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.5(ii)</span></a>,
+<a href="./30.1#p1.t1.r1" title="§30.1 Special Notation ‣ Notation ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§30.1</span></a>,
+<a href="./30.2#i.p1" title="§30.2(i) Spheroidal Differential Equation ‣ §30.2 Differential Equations ‣ Properties ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§30.2(i)</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./30.14" title="" class="ltx_ref">http://dlmf.nist.gov/30.14</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./30#info" title="Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.30</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<h6>Contents</h6>
+<ol class="ltx_toclist ltx_toclist_section">
+<li class="ltx_tocentry"><a href="#i"><span class="ltx_tag ltx_tag_subsection">§30.14(i) </span>Oblate Spheroidal Coordinates</a></li>
+<li class="ltx_tocentry"><a href="#ii"><span class="ltx_tag ltx_tag_subsection">§30.14(ii) </span>Metric Coefficients</a></li>
+<li class="ltx_tocentry"><a href="#iii"><span class="ltx_tag ltx_tag_subsection">§30.14(iii) </span>Laplacian</a></li>
+<li class="ltx_tocentry"><a href="#iv"><span class="ltx_tag ltx_tag_subsection">§30.14(iv) </span>Separation of Variables</a></li>
+<li class="ltx_tocentry"><a href="#v"><span class="ltx_tag ltx_tag_subsection">§30.14(v) </span>The Interior Dirichlet Problem for Oblate Ellipsoids</a></li>
+</ol>
+<section id="i" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§30.14(i) </span>Oblate Spheroidal Coordinates</h2>
+<div id="i.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=coordinate%20systems">coordinate systems</a>, <a class="ltx_keyword" href="./search/search?q=oblate%20spheroidal">oblate spheroidal</a>, <a class="ltx_keyword" href="./search/search?q=oblate%20spheroidal%20coordinates">oblate spheroidal coordinates</a>, <a class="ltx_keyword" href="./search/search?q=wave%20equation">wave equation</a>
+</dd>
+<dt>Notes:</dt>
+<dd>See <cite class="ltx_cite ltx_citemacro_citet">Erdélyi<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/E#bib755" title="Higher Transcendental Functions. Vol. III" class="ltx_ref">1955</a>, §16.1.3)</cite> and
+<cite class="ltx_cite ltx_citemacro_citet">Meixner and Schäfke (<a href="./bib/M#bib1598" title="Mathieusche Funktionen und Sphäroidfunktionen mit Anwendungen auf physikalische und technische Probleme" class="ltx_ref">1954</a>, §1.124)</cite>.</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./errata/#V1.0.5.I2.ix6.p1" title="In Other Changes ‣ Version 1.0.5 (October 1, 2012) ‣ Errata" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Erratum (V1.0.5) for  Clarifications</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./30.14.i" title="" class="ltx_ref">http://dlmf.nist.gov/30.14.i</a></dd>
+<dt>Clarification (effective with 1.0.5):</dt>
+<dd>
+The parenthetical explanation has been added after (<a href="./30.14#E1" title="(30.14.1) ‣ §30.14(i) Oblate Spheroidal Coordinates ‣ §30.14 Wave Equation in Oblate Spheroidal Coordinates ‣ Applications ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">30.14.1</span></a>).
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./30.14#info" title="§30.14 Wave Equation in Oblate Spheroidal Coordinates ‣ Applications ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§30.14</span></a> and
+<a href="./30#info" title="Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.30</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="i.p1" class="ltx_para">
+<p class="ltx_p">Oblate spheroidal coordinates <math class="ltx_Math" altimg="m45.png" altimg-height="22px" altimg-valign="-6px" altimg-width="56px" alttext="\xi,\eta,\phi" display="inline"><mrow><mi href="./30.14#E1" title="oblate spheroidal coordinate">ξ</mi><mo>,</mo><mi href="./30.14#E1" title="oblate spheroidal coordinate">η</mi><mo>,</mo><mi href="./30.14#E1" title="oblate spheroidal coordinate">ϕ</mi></mrow></math> are related to Cartesian
+coordinates <math class="ltx_Math" altimg="m70.png" altimg-height="17px" altimg-valign="-6px" altimg-width="56px" alttext="x,y,z" display="inline"><mrow><mi href="./30.1#p1.t1.r1" title="real variable">x</mi><mo>,</mo><mi href="./30.1#p1.t1.r1" title="real variable">y</mi><mo>,</mo><mi href="./30.1#p1" title="complex variable">z</mi></mrow></math> by</p>
+<table id="E1" class="ltx_equationgroup ltx_eqn_table">
+<tbody>
+<tr id="Ex1" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="3" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equationgroup ltx_align_left">30.14.1</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m15.png" altimg-height="15px" altimg-valign="-2px" altimg-width="18px" alttext="\displaystyle x" display="inline"><mi href="./30.1#p1.t1.r1" title="real variable">x</mi></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m7.png" altimg-height="33px" altimg-valign="-7px" altimg-width="255px" alttext="\displaystyle=c\sqrt{(\xi^{2}+1)(1-\eta^{2})}\cos\phi," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mi href="./30.14#i.p1" title="positive constant">c</mi><mo>⁢</mo><msqrt><mrow><mrow><mo stretchy="false">(</mo><mrow><msup><mi href="./30.14#E1" title="oblate spheroidal coordinate">ξ</mi><mn>2</mn></msup><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>−</mo><msup><mi href="./30.14#E1" title="oblate spheroidal coordinate">η</mi><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow></mrow></msqrt><mo lspace="0.167em">⁢</mo><mrow><mi href="./4.14#E2" title="cosine function">cos</mi><mo lspace="0.167em">⁡</mo><mi href="./30.14#E1" title="oblate spheroidal coordinate">ϕ</mi></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex2" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m16.png" altimg-height="19px" altimg-valign="-6px" altimg-width="18px" alttext="\displaystyle y" display="inline"><mi href="./30.1#p1.t1.r1" title="real variable">y</mi></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m8.png" altimg-height="33px" altimg-valign="-7px" altimg-width="252px" alttext="\displaystyle=c\sqrt{(\xi^{2}+1)(1-\eta^{2})}\sin\phi," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mi href="./30.14#i.p1" title="positive constant">c</mi><mo>⁢</mo><msqrt><mrow><mrow><mo stretchy="false">(</mo><mrow><msup><mi href="./30.14#E1" title="oblate spheroidal coordinate">ξ</mi><mn>2</mn></msup><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>−</mo><msup><mi href="./30.14#E1" title="oblate spheroidal coordinate">η</mi><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow></mrow></msqrt><mo lspace="0.167em">⁢</mo><mrow><mi href="./4.14#E1" title="sine function">sin</mi><mo lspace="0.167em">⁡</mo><mi href="./30.14#E1" title="oblate spheroidal coordinate">ϕ</mi></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex3" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m17.png" altimg-height="15px" altimg-valign="-2px" altimg-width="17px" alttext="\displaystyle z" display="inline"><mi href="./30.1#p1" title="complex variable">z</mi></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m9.png" altimg-height="24px" altimg-valign="-6px" altimg-width="64px" alttext="\displaystyle=c\xi\eta," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mi href="./30.14#i.p1" title="positive constant">c</mi><mo>⁢</mo><mi href="./30.14#E1" title="oblate spheroidal coordinate">ξ</mi><mo>⁢</mo><mi href="./30.14#E1" title="oblate spheroidal coordinate">η</mi></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E1.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Defines:</dt>
+<dd>
+<span class="ltx_text"><math class="ltx_Math" altimg="m49.png" altimg-height="22px" altimg-valign="-6px" altimg-width="14px" alttext="\xi" display="inline"><mi href="./30.14#E1" title="oblate spheroidal coordinate">ξ</mi></math>:  oblate spheroidal coordinate (locally)</span>,
+<span class="ltx_text"><math class="ltx_Math" altimg="m26.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="\eta" display="inline"><mi href="./30.14#E1" title="oblate spheroidal coordinate">η</mi></math>:  oblate spheroidal coordinate (locally)</span> and
+<span class="ltx_text"><math class="ltx_Math" altimg="m40.png" altimg-height="22px" altimg-valign="-6px" altimg-width="17px" alttext="\phi" display="inline"><mi href="./30.14#E1" title="oblate spheroidal coordinate">ϕ</mi></math>:  oblate spheroidal coordinate (locally)</span>
+</dd>
+<dt>Symbols:</dt>
+<dd>
+<a href="./4.14#E2" title="(4.14.2) ‣ §4.14 Definitions and Periodicity ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m23.png" altimg-height="13px" altimg-valign="-2px" altimg-width="46px" alttext="\cos\NVar{z}" display="inline"><mrow><mi href="./4.14#E2" title="cosine function">cos</mi><mo lspace="0.167em">⁡</mo><mi class="ltx_nvar" href="./4.1#t1.r4" title="complex variable">z</mi></mrow></math>: cosine function</a>,
+<a href="./4.14#E1" title="(4.14.1) ‣ §4.14 Definitions and Periodicity ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m43.png" altimg-height="18px" altimg-valign="-2px" altimg-width="44px" alttext="\sin\NVar{z}" display="inline"><mrow><mi href="./4.14#E1" title="sine function">sin</mi><mo lspace="0.167em">⁡</mo><mi class="ltx_nvar" href="./4.1#t1.r4" title="complex variable">z</mi></mrow></math>: sine function</a>,
+<a href="./30.1#p1" title="§30.1 Special Notation ‣ Notation ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><math class="ltx_Math" altimg="m78.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi href="./30.1#p1" title="complex variable">z</mi></math>:  complex variable</a>,
+<a href="./30.1#p1.t1.r1" title="§30.1 Special Notation ‣ Notation ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><math class="ltx_Math" altimg="m72.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./30.1#p1.t1.r1" title="real variable">x</mi></math>:  real variable</a>,
+<a href="./30.1#p1.t1.r1" title="§30.1 Special Notation ‣ Notation ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><math class="ltx_Math" altimg="m75.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="y" display="inline"><mi href="./30.1#p1.t1.r1" title="real variable">y</mi></math>:  real variable</a> and
+<a href="./30.14#i.p1" title="§30.14(i) Oblate Spheroidal Coordinates ‣ §30.14 Wave Equation in Oblate Spheroidal Coordinates ‣ Applications ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><math class="ltx_Math" altimg="m56.png" altimg-height="13px" altimg-valign="-2px" altimg-width="13px" alttext="c" display="inline"><mi href="./30.14#i.p1" title="positive constant">c</mi></math>:  positive constant</a>
+</dd>
+<dt>A&amp;S Ref:</dt>
+<dd> <span class="ltx_origref"><span class="ltx_tag">21.3.2</span> (in different form)</span>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./30.14#i.info" title="§30.14(i) Oblate Spheroidal Coordinates ‣ §30.14 Wave Equation in Oblate Spheroidal Coordinates ‣ Applications ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§30.14(i)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./30.14.E1" title="" class="ltx_ref">http://dlmf.nist.gov/30.14.E1</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./30.14.E1a.tex">TeX</a>, <a href="./30.14.E1b.tex">TeX</a>, <a href="./30.14.E1c.tex">TeX</a>, <a href="./30.14.E1a.pmml">pMML</a>, <a href="./30.14.E1b.pmml">pMML</a>, <a href="./30.14.E1c.pmml">pMML</a>, <a href="./30.14.E1a.png">png</a>, <a href="./30.14.E1b.png">png</a>, <a href="./30.14.E1c.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./30.14#i.info" title="§30.14(i) Oblate Spheroidal Coordinates ‣ §30.14 Wave Equation in Oblate Spheroidal Coordinates ‣ Applications ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§30.14(i)</span></a>,
+<a href="./30.14#info" title="§30.14 Wave Equation in Oblate Spheroidal Coordinates ‣ Applications ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§30.14</span></a> and
+<a href="./30#info" title="Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.30</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">where <math class="ltx_Math" altimg="m56.png" altimg-height="13px" altimg-valign="-2px" altimg-width="13px" alttext="c" display="inline"><mi href="./30.14#i.p1" title="positive constant">c</mi></math> is a positive constant. (On the use of the symbol <math class="ltx_Math" altimg="m44.png" altimg-height="18px" altimg-valign="-2px" altimg-width="15px" alttext="\theta" display="inline"><mi>θ</mi></math> in place
+of <math class="ltx_Math" altimg="m40.png" altimg-height="22px" altimg-valign="-6px" altimg-width="17px" alttext="\phi" display="inline"><mi href="./30.14#E1" title="oblate spheroidal coordinate">ϕ</mi></math> see §<a href="./1.5#ii" title="§1.5(ii) Coordinate Systems ‣ §1.5 Calculus of Two or More Variables ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.5(ii)</span></a>.) The <math class="ltx_Math" altimg="m19.png" altimg-height="25px" altimg-valign="-7px" altimg-width="72px" alttext="(x,y,z)" display="inline"><mrow><mo stretchy="false">(</mo><mi href="./30.1#p1.t1.r1" title="real variable">x</mi><mo>,</mo><mi href="./30.1#p1.t1.r1" title="real variable">y</mi><mo>,</mo><mi href="./30.1#p1" title="complex variable">z</mi><mo stretchy="false">)</mo></mrow></math>-space without the <math class="ltx_Math" altimg="m78.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi href="./30.1#p1" title="complex variable">z</mi></math>-axis
+and the disk <math class="ltx_Math" altimg="m76.png" altimg-height="17px" altimg-valign="-2px" altimg-width="53px" alttext="z=0" display="inline"><mrow><mi href="./30.1#p1" title="complex variable">z</mi><mo>=</mo><mn>0</mn></mrow></math>, <math class="ltx_Math" altimg="m74.png" altimg-height="25px" altimg-valign="-6px" altimg-width="117px" alttext="x^{2}+y^{2}\leq c^{2}" display="inline"><mrow><mrow><msup><mi href="./30.1#p1.t1.r1" title="real variable">x</mi><mn>2</mn></msup><mo>+</mo><msup><mi href="./30.1#p1.t1.r1" title="real variable">y</mi><mn>2</mn></msup></mrow><mo>≤</mo><msup><mi href="./30.14#i.p1" title="positive constant">c</mi><mn>2</mn></msup></mrow></math> corresponds to</p>
+<table id="E2" class="ltx_equationgroup ltx_eqn_table">
+<tbody>
+<tr id="Ex4" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="3" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equationgroup ltx_align_left">30.14.2</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m2.png" altimg-height="19px" altimg-valign="-2px" altimg-width="17px" alttext="\displaystyle 0" display="inline"><mn>0</mn></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m4.png" altimg-height="24px" altimg-valign="-6px" altimg-width="93px" alttext="\displaystyle&lt;\xi&lt;\infty," display="inline"><mrow><mrow><mi></mi><mo>&lt;</mo><mi href="./30.14#E1" title="oblate spheroidal coordinate">ξ</mi><mo>&lt;</mo><mi mathvariant="normal">∞</mi></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex5" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m1.png" altimg-height="21px" altimg-valign="-4px" altimg-width="33px" alttext="\displaystyle-1" display="inline"><mrow><mo>−</mo><mn>1</mn></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m3.png" altimg-height="23px" altimg-valign="-6px" altimg-width="83px" alttext="\displaystyle&lt;\eta&lt;1," display="inline"><mrow><mrow><mi></mi><mo>&lt;</mo><mi href="./30.14#E1" title="oblate spheroidal coordinate">η</mi><mo>&lt;</mo><mn>1</mn></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex6" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m2.png" altimg-height="19px" altimg-valign="-2px" altimg-width="17px" alttext="\displaystyle 0" display="inline"><mn>0</mn></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m11.png" altimg-height="24px" altimg-valign="-6px" altimg-width="97px" alttext="\displaystyle\leq\phi&lt;2\pi." display="inline"><mrow><mrow><mi></mi><mo>≤</mo><mi href="./30.14#E1" title="oblate spheroidal coordinate">ϕ</mi><mo>&lt;</mo><mrow><mn>2</mn><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E2.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./3.12#E1" title="(3.12.1) ‣ §3.12 Mathematical Constants ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m41.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="\pi" display="inline"><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></math>: the ratio of the circumference of a circle to its diameter</a>,
+<a href="./30.14#E1" title="(30.14.1) ‣ §30.14(i) Oblate Spheroidal Coordinates ‣ §30.14 Wave Equation in Oblate Spheroidal Coordinates ‣ Applications ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><math class="ltx_Math" altimg="m49.png" altimg-height="22px" altimg-valign="-6px" altimg-width="14px" alttext="\xi" display="inline"><mi href="./30.14#E1" title="oblate spheroidal coordinate">ξ</mi></math>:  oblate spheroidal coordinate</a>,
+<a href="./30.14#E1" title="(30.14.1) ‣ §30.14(i) Oblate Spheroidal Coordinates ‣ §30.14 Wave Equation in Oblate Spheroidal Coordinates ‣ Applications ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><math class="ltx_Math" altimg="m26.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="\eta" display="inline"><mi href="./30.14#E1" title="oblate spheroidal coordinate">η</mi></math>:  oblate spheroidal coordinate</a> and
+<a href="./30.14#E1" title="(30.14.1) ‣ §30.14(i) Oblate Spheroidal Coordinates ‣ §30.14 Wave Equation in Oblate Spheroidal Coordinates ‣ Applications ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><math class="ltx_Math" altimg="m40.png" altimg-height="22px" altimg-valign="-6px" altimg-width="17px" alttext="\phi" display="inline"><mi href="./30.14#E1" title="oblate spheroidal coordinate">ϕ</mi></math>:  oblate spheroidal coordinate</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./30.14.E2" title="" class="ltx_ref">http://dlmf.nist.gov/30.14.E2</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./30.14.E2a.tex">TeX</a>, <a href="./30.14.E2b.tex">TeX</a>, <a href="./30.14.E2c.tex">TeX</a>, <a href="./30.14.E2a.pmml">pMML</a>, <a href="./30.14.E2b.pmml">pMML</a>, <a href="./30.14.E2c.pmml">pMML</a>, <a href="./30.14.E2a.png">png</a>, <a href="./30.14.E2b.png">png</a>, <a href="./30.14.E2c.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./30.14#i.info" title="§30.14(i) Oblate Spheroidal Coordinates ‣ §30.14 Wave Equation in Oblate Spheroidal Coordinates ‣ Applications ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§30.14(i)</span></a>,
+<a href="./30.14#info" title="§30.14 Wave Equation in Oblate Spheroidal Coordinates ‣ Applications ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§30.14</span></a> and
+<a href="./30#info" title="Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.30</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">The coordinate surfaces <math class="ltx_Math" altimg="m47.png" altimg-height="22px" altimg-valign="-6px" altimg-width="95px" alttext="\xi=\mbox{const}." display="inline"><mrow><mrow><mi href="./30.14#E1" title="oblate spheroidal coordinate">ξ</mi><mo>=</mo><mtext>const</mtext></mrow><mo lspace="0em">.</mo></mrow></math> are oblate ellipsoids of
+revolution with focal circle <math class="ltx_Math" altimg="m76.png" altimg-height="17px" altimg-valign="-2px" altimg-width="53px" alttext="z=0" display="inline"><mrow><mi href="./30.1#p1" title="complex variable">z</mi><mo>=</mo><mn>0</mn></mrow></math>, <math class="ltx_Math" altimg="m73.png" altimg-height="25px" altimg-valign="-6px" altimg-width="117px" alttext="x^{2}+y^{2}=c^{2}" display="inline"><mrow><mrow><msup><mi href="./30.1#p1.t1.r1" title="real variable">x</mi><mn>2</mn></msup><mo>+</mo><msup><mi href="./30.1#p1.t1.r1" title="real variable">y</mi><mn>2</mn></msup></mrow><mo>=</mo><msup><mi href="./30.14#i.p1" title="positive constant">c</mi><mn>2</mn></msup></mrow></math>. The coordinate
+surfaces <math class="ltx_Math" altimg="m24.png" altimg-height="21px" altimg-valign="-6px" altimg-width="96px" alttext="\eta=\mbox{const}." display="inline"><mrow><mrow><mi href="./30.14#E1" title="oblate spheroidal coordinate">η</mi><mo>=</mo><mtext>const</mtext></mrow><mo lspace="0em">.</mo></mrow></math> are halves of one-sheeted hyperboloids of
+revolution with the same focal circle. The disk <math class="ltx_Math" altimg="m76.png" altimg-height="17px" altimg-valign="-2px" altimg-width="53px" alttext="z=0" display="inline"><mrow><mi href="./30.1#p1" title="complex variable">z</mi><mo>=</mo><mn>0</mn></mrow></math>, <math class="ltx_Math" altimg="m74.png" altimg-height="25px" altimg-valign="-6px" altimg-width="117px" alttext="x^{2}+y^{2}\leq c^{2}" display="inline"><mrow><mrow><msup><mi href="./30.1#p1.t1.r1" title="real variable">x</mi><mn>2</mn></msup><mo>+</mo><msup><mi href="./30.1#p1.t1.r1" title="real variable">y</mi><mn>2</mn></msup></mrow><mo>≤</mo><msup><mi href="./30.14#i.p1" title="positive constant">c</mi><mn>2</mn></msup></mrow></math> is
+given by <math class="ltx_Math" altimg="m46.png" altimg-height="22px" altimg-valign="-6px" altimg-width="52px" alttext="\xi=0" display="inline"><mrow><mi href="./30.14#E1" title="oblate spheroidal coordinate">ξ</mi><mo>=</mo><mn>0</mn></mrow></math>, <math class="ltx_Math" altimg="m21.png" altimg-height="21px" altimg-valign="-6px" altimg-width="108px" alttext="-1\leq\eta\leq 1" display="inline"><mrow><mrow><mo>−</mo><mn>1</mn></mrow><mo>≤</mo><mi href="./30.14#E1" title="oblate spheroidal coordinate">η</mi><mo>≤</mo><mn>1</mn></mrow></math>, and the rays <math class="ltx_Math" altimg="m42.png" altimg-height="20px" altimg-valign="-5px" altimg-width="69px" alttext="\pm z\geq 0" display="inline"><mrow><mrow><mo>±</mo><mi href="./30.1#p1" title="complex variable">z</mi></mrow><mo>≥</mo><mn>0</mn></mrow></math>,
+<math class="ltx_Math" altimg="m71.png" altimg-height="21px" altimg-valign="-6px" altimg-width="93px" alttext="x=y=0" display="inline"><mrow><mi href="./30.1#p1.t1.r1" title="real variable">x</mi><mo>=</mo><mi href="./30.1#p1.t1.r1" title="real variable">y</mi><mo>=</mo><mn>0</mn></mrow></math> are given by <math class="ltx_Math" altimg="m25.png" altimg-height="21px" altimg-valign="-6px" altimg-width="70px" alttext="\eta=\pm 1" display="inline"><mrow><mi href="./30.14#E1" title="oblate spheroidal coordinate">η</mi><mo>=</mo><mrow><mo>±</mo><mn>1</mn></mrow></mrow></math>, <math class="ltx_Math" altimg="m50.png" altimg-height="22px" altimg-valign="-6px" altimg-width="52px" alttext="\xi\geq 0" display="inline"><mrow><mi href="./30.14#E1" title="oblate spheroidal coordinate">ξ</mi><mo>≥</mo><mn>0</mn></mrow></math>.</p>
+</div>
+</section>
+<section id="ii" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§30.14(ii) </span>Metric Coefficients</h2>
+<div id="ii.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=for%20oblate%20spheroidal%20coordinates">for oblate spheroidal coordinates</a>, <a class="ltx_keyword" href="./search/search?q=metric%20coefficients">metric coefficients</a>, <a class="ltx_keyword" href="./search/search?q=oblate%20spheroidal%20coordinates">oblate spheroidal coordinates</a>
+</dd>
+<dt>Notes:</dt>
+<dd>See <cite class="ltx_cite ltx_citemacro_citet">Meixner and Schäfke (<a href="./bib/M#bib1598" title="Mathieusche Funktionen und Sphäroidfunktionen mit Anwendungen auf physikalische und technische Probleme" class="ltx_ref">1954</a>, §1.124)</cite>.</dd>
+<dt>Permalink:</dt>
+<dd><a href="./30.14.ii" title="" class="ltx_ref">http://dlmf.nist.gov/30.14.ii</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./30.14#info" title="§30.14 Wave Equation in Oblate Spheroidal Coordinates ‣ Applications ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§30.14</span></a> and
+<a href="./30#info" title="Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.30</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="ii.p1" class="ltx_para">
+<table id="EGx1" class="ltx_equationgroup ltx_eqn_table">
+
+<tbody id="E3">
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">30.14.3</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m14.png" altimg-height="32px" altimg-valign="-10px" altimg-width="28px" alttext="\displaystyle h_{\xi}^{2}" display="inline"><msubsup><mi href="./30.13#EGx1" title="metric coefficients">h</mi><mi href="./30.14#E1" title="oblate spheroidal coordinate">ξ</mi><mn>2</mn></msubsup></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m5.png" altimg-height="56px" altimg-valign="-20px" altimg-width="139px" alttext="\displaystyle=\frac{c^{2}(\xi^{2}+\eta^{2})}{1+\xi^{2}}," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mstyle displaystyle="true"><mfrac><mrow><msup><mi href="./30.14#i.p1" title="positive constant">c</mi><mn>2</mn></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi href="./30.14#E1" title="oblate spheroidal coordinate">ξ</mi><mn>2</mn></msup><mo>+</mo><msup><mi href="./30.14#E1" title="oblate spheroidal coordinate">η</mi><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><mrow><mn>1</mn><mo>+</mo><msup><mi href="./30.14#E1" title="oblate spheroidal coordinate">ξ</mi><mn>2</mn></msup></mrow></mfrac></mstyle></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E3.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./30.13#EGx1" title="§30.13(ii) Metric Coefficients ‣ §30.13 Wave Equation in Prolate Spheroidal Coordinates ‣ Applications ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><math class="ltx_Math" altimg="m59.png" altimg-height="24px" altimg-valign="-8px" altimg-width="89px" alttext="h_{\xi},h_{\eta},h_{\phi}" display="inline"><mrow><msub><mi href="./30.13#EGx1" title="metric coefficients">h</mi><mi href="./30.13#E1" title="prolate spheroidal coordinate">ξ</mi></msub><mo>,</mo><msub><mi href="./30.13#EGx1" title="metric coefficients">h</mi><mi href="./30.13#E1" title="prolate spheroidal coordinate">η</mi></msub><mo>,</mo><msub><mi href="./30.13#EGx1" title="metric coefficients">h</mi><mi href="./30.13#E1" title="prolate spheroidal coordinate">ϕ</mi></msub></mrow></math>:  metric coefficients</a>,
+<a href="./30.14#E1" title="(30.14.1) ‣ §30.14(i) Oblate Spheroidal Coordinates ‣ §30.14 Wave Equation in Oblate Spheroidal Coordinates ‣ Applications ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><math class="ltx_Math" altimg="m49.png" altimg-height="22px" altimg-valign="-6px" altimg-width="14px" alttext="\xi" display="inline"><mi href="./30.14#E1" title="oblate spheroidal coordinate">ξ</mi></math>:  oblate spheroidal coordinate</a>,
+<a href="./30.14#E1" title="(30.14.1) ‣ §30.14(i) Oblate Spheroidal Coordinates ‣ §30.14 Wave Equation in Oblate Spheroidal Coordinates ‣ Applications ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><math class="ltx_Math" altimg="m26.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="\eta" display="inline"><mi href="./30.14#E1" title="oblate spheroidal coordinate">η</mi></math>:  oblate spheroidal coordinate</a> and
+<a href="./30.14#i.p1" title="§30.14(i) Oblate Spheroidal Coordinates ‣ §30.14 Wave Equation in Oblate Spheroidal Coordinates ‣ Applications ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><math class="ltx_Math" altimg="m56.png" altimg-height="13px" altimg-valign="-2px" altimg-width="13px" alttext="c" display="inline"><mi href="./30.14#i.p1" title="positive constant">c</mi></math>:  positive constant</a>
+</dd>
+<dt>A&amp;S Ref:</dt>
+<dd> <span class="ltx_origref"><span class="ltx_tag">21.4.3</span> (in different form)</span>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./30.14.E3" title="" class="ltx_ref">http://dlmf.nist.gov/30.14.E3</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./30.14.E3.tex">TeX</a>, <a href="./30.14.E3.pmml">pMML</a>, <a href="./30.14.E3.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./30.14#ii.info" title="§30.14(ii) Metric Coefficients ‣ §30.14 Wave Equation in Oblate Spheroidal Coordinates ‣ Applications ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§30.14(ii)</span></a>,
+<a href="./30.14#info" title="§30.14 Wave Equation in Oblate Spheroidal Coordinates ‣ Applications ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§30.14</span></a> and
+<a href="./30#info" title="Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.30</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+<tbody id="E4">
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">30.14.4</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m12.png" altimg-height="32px" altimg-valign="-10px" altimg-width="29px" alttext="\displaystyle h_{\eta}^{2}" display="inline"><msubsup><mi href="./30.13#EGx1" title="metric coefficients">h</mi><mi href="./30.14#E1" title="oblate spheroidal coordinate">η</mi><mn>2</mn></msubsup></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m6.png" altimg-height="56px" altimg-valign="-20px" altimg-width="139px" alttext="\displaystyle=\frac{c^{2}(\xi^{2}+\eta^{2})}{1-\eta^{2}}," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mstyle displaystyle="true"><mfrac><mrow><msup><mi href="./30.14#i.p1" title="positive constant">c</mi><mn>2</mn></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi href="./30.14#E1" title="oblate spheroidal coordinate">ξ</mi><mn>2</mn></msup><mo>+</mo><msup><mi href="./30.14#E1" title="oblate spheroidal coordinate">η</mi><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><mrow><mn>1</mn><mo>−</mo><msup><mi href="./30.14#E1" title="oblate spheroidal coordinate">η</mi><mn>2</mn></msup></mrow></mfrac></mstyle></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E4.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./30.13#EGx1" title="§30.13(ii) Metric Coefficients ‣ §30.13 Wave Equation in Prolate Spheroidal Coordinates ‣ Applications ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><math class="ltx_Math" altimg="m59.png" altimg-height="24px" altimg-valign="-8px" altimg-width="89px" alttext="h_{\xi},h_{\eta},h_{\phi}" display="inline"><mrow><msub><mi href="./30.13#EGx1" title="metric coefficients">h</mi><mi href="./30.13#E1" title="prolate spheroidal coordinate">ξ</mi></msub><mo>,</mo><msub><mi href="./30.13#EGx1" title="metric coefficients">h</mi><mi href="./30.13#E1" title="prolate spheroidal coordinate">η</mi></msub><mo>,</mo><msub><mi href="./30.13#EGx1" title="metric coefficients">h</mi><mi href="./30.13#E1" title="prolate spheroidal coordinate">ϕ</mi></msub></mrow></math>:  metric coefficients</a>,
+<a href="./30.14#E1" title="(30.14.1) ‣ §30.14(i) Oblate Spheroidal Coordinates ‣ §30.14 Wave Equation in Oblate Spheroidal Coordinates ‣ Applications ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><math class="ltx_Math" altimg="m49.png" altimg-height="22px" altimg-valign="-6px" altimg-width="14px" alttext="\xi" display="inline"><mi href="./30.14#E1" title="oblate spheroidal coordinate">ξ</mi></math>:  oblate spheroidal coordinate</a>,
+<a href="./30.14#E1" title="(30.14.1) ‣ §30.14(i) Oblate Spheroidal Coordinates ‣ §30.14 Wave Equation in Oblate Spheroidal Coordinates ‣ Applications ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><math class="ltx_Math" altimg="m26.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="\eta" display="inline"><mi href="./30.14#E1" title="oblate spheroidal coordinate">η</mi></math>:  oblate spheroidal coordinate</a> and
+<a href="./30.14#i.p1" title="§30.14(i) Oblate Spheroidal Coordinates ‣ §30.14 Wave Equation in Oblate Spheroidal Coordinates ‣ Applications ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><math class="ltx_Math" altimg="m56.png" altimg-height="13px" altimg-valign="-2px" altimg-width="13px" alttext="c" display="inline"><mi href="./30.14#i.p1" title="positive constant">c</mi></math>:  positive constant</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./30.14.E4" title="" class="ltx_ref">http://dlmf.nist.gov/30.14.E4</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./30.14.E4.tex">TeX</a>, <a href="./30.14.E4.pmml">pMML</a>, <a href="./30.14.E4.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./30.14#ii.info" title="§30.14(ii) Metric Coefficients ‣ §30.14 Wave Equation in Oblate Spheroidal Coordinates ‣ Applications ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§30.14(ii)</span></a>,
+<a href="./30.14#info" title="§30.14 Wave Equation in Oblate Spheroidal Coordinates ‣ Applications ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§30.14</span></a> and
+<a href="./30#info" title="Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.30</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+<tbody id="E5">
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">30.14.5</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m13.png" altimg-height="32px" altimg-valign="-10px" altimg-width="30px" alttext="\displaystyle h_{\phi}^{2}" display="inline"><msubsup><mi href="./30.13#EGx1" title="metric coefficients">h</mi><mi href="./30.14#E1" title="oblate spheroidal coordinate">ϕ</mi><mn>2</mn></msubsup></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m10.png" altimg-height="29px" altimg-valign="-7px" altimg-width="196px" alttext="\displaystyle=c^{2}(\xi^{2}+1)(1-\eta^{2})." display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><msup><mi href="./30.14#i.p1" title="positive constant">c</mi><mn>2</mn></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi href="./30.14#E1" title="oblate spheroidal coordinate">ξ</mi><mn>2</mn></msup><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>−</mo><msup><mi href="./30.14#E1" title="oblate spheroidal coordinate">η</mi><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E5.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./30.13#EGx1" title="§30.13(ii) Metric Coefficients ‣ §30.13 Wave Equation in Prolate Spheroidal Coordinates ‣ Applications ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><math class="ltx_Math" altimg="m59.png" altimg-height="24px" altimg-valign="-8px" altimg-width="89px" alttext="h_{\xi},h_{\eta},h_{\phi}" display="inline"><mrow><msub><mi href="./30.13#EGx1" title="metric coefficients">h</mi><mi href="./30.13#E1" title="prolate spheroidal coordinate">ξ</mi></msub><mo>,</mo><msub><mi href="./30.13#EGx1" title="metric coefficients">h</mi><mi href="./30.13#E1" title="prolate spheroidal coordinate">η</mi></msub><mo>,</mo><msub><mi href="./30.13#EGx1" title="metric coefficients">h</mi><mi href="./30.13#E1" title="prolate spheroidal coordinate">ϕ</mi></msub></mrow></math>:  metric coefficients</a>,
+<a href="./30.14#E1" title="(30.14.1) ‣ §30.14(i) Oblate Spheroidal Coordinates ‣ §30.14 Wave Equation in Oblate Spheroidal Coordinates ‣ Applications ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><math class="ltx_Math" altimg="m49.png" altimg-height="22px" altimg-valign="-6px" altimg-width="14px" alttext="\xi" display="inline"><mi href="./30.14#E1" title="oblate spheroidal coordinate">ξ</mi></math>:  oblate spheroidal coordinate</a>,
+<a href="./30.14#E1" title="(30.14.1) ‣ §30.14(i) Oblate Spheroidal Coordinates ‣ §30.14 Wave Equation in Oblate Spheroidal Coordinates ‣ Applications ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><math class="ltx_Math" altimg="m26.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="\eta" display="inline"><mi href="./30.14#E1" title="oblate spheroidal coordinate">η</mi></math>:  oblate spheroidal coordinate</a>,
+<a href="./30.14#E1" title="(30.14.1) ‣ §30.14(i) Oblate Spheroidal Coordinates ‣ §30.14 Wave Equation in Oblate Spheroidal Coordinates ‣ Applications ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><math class="ltx_Math" altimg="m40.png" altimg-height="22px" altimg-valign="-6px" altimg-width="17px" alttext="\phi" display="inline"><mi href="./30.14#E1" title="oblate spheroidal coordinate">ϕ</mi></math>:  oblate spheroidal coordinate</a> and
+<a href="./30.14#i.p1" title="§30.14(i) Oblate Spheroidal Coordinates ‣ §30.14 Wave Equation in Oblate Spheroidal Coordinates ‣ Applications ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><math class="ltx_Math" altimg="m56.png" altimg-height="13px" altimg-valign="-2px" altimg-width="13px" alttext="c" display="inline"><mi href="./30.14#i.p1" title="positive constant">c</mi></math>:  positive constant</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./30.14.E5" title="" class="ltx_ref">http://dlmf.nist.gov/30.14.E5</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./30.14.E5.tex">TeX</a>, <a href="./30.14.E5.pmml">pMML</a>, <a href="./30.14.E5.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./30.14#ii.info" title="§30.14(ii) Metric Coefficients ‣ §30.14 Wave Equation in Oblate Spheroidal Coordinates ‣ Applications ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§30.14(ii)</span></a>,
+<a href="./30.14#info" title="§30.14 Wave Equation in Oblate Spheroidal Coordinates ‣ Applications ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§30.14</span></a> and
+<a href="./30#info" title="Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.30</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="iii" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§30.14(iii) </span>Laplacian</h2>
+<div id="iii.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=Laplacian">Laplacian</a>, <a class="ltx_keyword" href="./search/search?q=oblate%20spheroidal%20coordinates">oblate spheroidal coordinates</a>
+</dd>
+<dt>Notes:</dt>
+<dd>See <cite class="ltx_cite ltx_citemacro_citet">Meixner and Schäfke (<a href="./bib/M#bib1598" title="Mathieusche Funktionen und Sphäroidfunktionen mit Anwendungen auf physikalische und technische Probleme" class="ltx_ref">1954</a>, §1.124)</cite>.</dd>
+<dt>Permalink:</dt>
+<dd><a href="./30.14.iii" title="" class="ltx_ref">http://dlmf.nist.gov/30.14.iii</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./30.14#info" title="§30.14 Wave Equation in Oblate Spheroidal Coordinates ‣ Applications ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§30.14</span></a> and
+<a href="./30#info" title="Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.30</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="iii.p1" class="ltx_para">
+<table id="E6" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">30.14.6</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E6.png" altimg-height="167px" altimg-valign="-22px" altimg-width="464px" alttext="\nabla^{2}=\frac{1}{c^{2}(\xi^{2}+\eta^{2})}\left(\frac{\partial}{\partial\xi}%
+\left((\xi^{2}+1)\frac{\partial}{\partial\xi}\right)+\frac{\partial}{\partial%
+\eta}\left((1-\eta^{2})\frac{\partial}{\partial\eta}\right)+\frac{\xi^{2}+\eta%
+^{2}}{(\xi^{2}+1)(1-\eta^{2})}\frac{{\partial}^{2}}{{\partial\phi}^{2}}\right)." display="block"><mrow><mrow><msup><mo>∇</mo><mn>2</mn></msup><mo>=</mo><mrow><mfrac><mn>1</mn><mrow><msup><mi href="./30.14#i.p1" title="positive constant">c</mi><mn>2</mn></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi href="./30.14#E1" title="oblate spheroidal coordinate">ξ</mi><mn>2</mn></msup><mo>+</mo><msup><mi href="./30.14#E1" title="oblate spheroidal coordinate">η</mi><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow></mrow></mfrac><mo>⁢</mo><mrow><mo>(</mo><mrow><mrow><mfrac><mo href="./1.5#E3" title="partial derivative of 𝑓 with respect to 𝑥">∂</mo><mrow><mo href="./1.5#E3" rspace="0em" title="partial derivative of 𝑓 with respect to 𝑥">∂</mo><mi href="./30.14#E1" title="oblate spheroidal coordinate">ξ</mi></mrow></mfrac><mo>⁡</mo><mrow><mo>(</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><msup><mi href="./30.14#E1" title="oblate spheroidal coordinate">ξ</mi><mn>2</mn></msup><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mfrac><mo href="./1.5#E3" title="partial derivative of 𝑓 with respect to 𝑥">∂</mo><mrow><mo href="./1.5#E3" rspace="0em" title="partial derivative of 𝑓 with respect to 𝑥">∂</mo><mi href="./30.14#E1" title="oblate spheroidal coordinate">ξ</mi></mrow></mfrac></mrow><mo>)</mo></mrow></mrow><mo>+</mo><mrow><mfrac><mo href="./1.5#E3" title="partial derivative of 𝑓 with respect to 𝑥">∂</mo><mrow><mo href="./1.5#E3" rspace="0em" title="partial derivative of 𝑓 with respect to 𝑥">∂</mo><mi href="./30.14#E1" title="oblate spheroidal coordinate">η</mi></mrow></mfrac><mo>⁡</mo><mrow><mo>(</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>−</mo><msup><mi href="./30.14#E1" title="oblate spheroidal coordinate">η</mi><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mfrac><mo href="./1.5#E3" title="partial derivative of 𝑓 with respect to 𝑥">∂</mo><mrow><mo href="./1.5#E3" rspace="0em" title="partial derivative of 𝑓 with respect to 𝑥">∂</mo><mi href="./30.14#E1" title="oblate spheroidal coordinate">η</mi></mrow></mfrac></mrow><mo>)</mo></mrow></mrow><mo>+</mo><mrow><mfrac><mrow><msup><mi href="./30.14#E1" title="oblate spheroidal coordinate">ξ</mi><mn>2</mn></msup><mo>+</mo><msup><mi href="./30.14#E1" title="oblate spheroidal coordinate">η</mi><mn>2</mn></msup></mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><msup><mi href="./30.14#E1" title="oblate spheroidal coordinate">ξ</mi><mn>2</mn></msup><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>−</mo><msup><mi href="./30.14#E1" title="oblate spheroidal coordinate">η</mi><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow></mrow></mfrac><mo>⁢</mo><mfrac><msup><mo href="./1.5#E3" title="partial derivative of 𝑓 with respect to 𝑥">∂</mo><mn>2</mn></msup><msup><mrow><mo href="./1.5#E3" rspace="0em" title="partial derivative of 𝑓 with respect to 𝑥">∂</mo><mi href="./30.14#E1" title="oblate spheroidal coordinate">ϕ</mi></mrow><mn href="./1.5#E3" title="partial derivative of 𝑓 with respect to 𝑥">2</mn></msup></mfrac></mrow></mrow><mo>)</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E6.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./1.5#E3" title="(1.5.3) ‣ §1.5(i) Partial Derivatives ‣ §1.5 Calculus of Two or More Variables ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m28.png" altimg-height="31px" altimg-valign="-9px" altimg-width="29px" alttext="\frac{\partial\NVar{f}}{\partial\NVar{x}}" display="inline"><mfrac><mrow><mo href="./1.5#E3" rspace="0em" title="partial derivative of 𝑓 with respect to 𝑥">∂</mo><mi class="ltx_nvar">f</mi></mrow><mrow><mo href="./1.5#E3" rspace="0em" title="partial derivative of 𝑓 with respect to 𝑥">∂</mo><mi class="ltx_nvar">x</mi></mrow></mfrac></math>: partial derivative of <math class="ltx_Math" altimg="m58.png" altimg-height="22px" altimg-valign="-6px" altimg-width="17px" alttext="f" display="inline"><mi>f</mi></math> with respect to <math class="ltx_Math" altimg="m72.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./1.5#E3" title="(1.5.3) ‣ §1.5(i) Partial Derivatives ‣ §1.5 Calculus of Two or More Variables ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m39.png" altimg-height="18px" altimg-valign="-2px" altimg-width="28px" alttext="\,\partial\NVar{x}" display="inline"><mrow><mo href="./1.5#E3" rspace="0em" title="partial differential of 𝑥">∂</mo><mi class="ltx_nvar">x</mi></mrow></math>: partial differential of <math class="ltx_Math" altimg="m72.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./30.14#E1" title="(30.14.1) ‣ §30.14(i) Oblate Spheroidal Coordinates ‣ §30.14 Wave Equation in Oblate Spheroidal Coordinates ‣ Applications ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><math class="ltx_Math" altimg="m49.png" altimg-height="22px" altimg-valign="-6px" altimg-width="14px" alttext="\xi" display="inline"><mi href="./30.14#E1" title="oblate spheroidal coordinate">ξ</mi></math>:  oblate spheroidal coordinate</a>,
+<a href="./30.14#E1" title="(30.14.1) ‣ §30.14(i) Oblate Spheroidal Coordinates ‣ §30.14 Wave Equation in Oblate Spheroidal Coordinates ‣ Applications ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><math class="ltx_Math" altimg="m26.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="\eta" display="inline"><mi href="./30.14#E1" title="oblate spheroidal coordinate">η</mi></math>:  oblate spheroidal coordinate</a>,
+<a href="./30.14#E1" title="(30.14.1) ‣ §30.14(i) Oblate Spheroidal Coordinates ‣ §30.14 Wave Equation in Oblate Spheroidal Coordinates ‣ Applications ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><math class="ltx_Math" altimg="m40.png" altimg-height="22px" altimg-valign="-6px" altimg-width="17px" alttext="\phi" display="inline"><mi href="./30.14#E1" title="oblate spheroidal coordinate">ϕ</mi></math>:  oblate spheroidal coordinate</a> and
+<a href="./30.14#i.p1" title="§30.14(i) Oblate Spheroidal Coordinates ‣ §30.14 Wave Equation in Oblate Spheroidal Coordinates ‣ Applications ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><math class="ltx_Math" altimg="m56.png" altimg-height="13px" altimg-valign="-2px" altimg-width="13px" alttext="c" display="inline"><mi href="./30.14#i.p1" title="positive constant">c</mi></math>:  positive constant</a>
+</dd>
+<dt>A&amp;S Ref:</dt>
+<dd> <span class="ltx_origref"><span class="ltx_tag">21.5.2</span> (in corrected form)</span>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./30.14.E6" title="" class="ltx_ref">http://dlmf.nist.gov/30.14.E6</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./30.14.E6.tex">TeX</a>, <a href="./30.14.E6.pmml">pMML</a>, <a href="./30.14.E6.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./30.14#iii.info" title="§30.14(iii) Laplacian ‣ §30.14 Wave Equation in Oblate Spheroidal Coordinates ‣ Applications ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§30.14(iii)</span></a>,
+<a href="./30.14#info" title="§30.14 Wave Equation in Oblate Spheroidal Coordinates ‣ Applications ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§30.14</span></a> and
+<a href="./30#info" title="Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.30</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="iv" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§30.14(iv) </span>Separation of Variables</h2>
+<div id="iv.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Notes:</dt>
+<dd>See <cite class="ltx_cite ltx_citemacro_citet">Meixner and Schäfke (<a href="./bib/M#bib1598" title="Mathieusche Funktionen und Sphäroidfunktionen mit Anwendungen auf physikalische und technische Probleme" class="ltx_ref">1954</a>, §1.134)</cite>.</dd>
+<dt>Permalink:</dt>
+<dd><a href="./30.14.iv" title="" class="ltx_ref">http://dlmf.nist.gov/30.14.iv</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./30.14#info" title="§30.14 Wave Equation in Oblate Spheroidal Coordinates ‣ Applications ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§30.14</span></a> and
+<a href="./30#info" title="Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.30</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="iv.p1" class="ltx_para">
+<p class="ltx_p">The wave equation (<a href="./30.13#E7" title="(30.13.7) ‣ §30.13(iv) Separation of Variables ‣ §30.13 Wave Equation in Prolate Spheroidal Coordinates ‣ Applications ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">30.13.7</span></a>), transformed to oblate spheroidal
+coordinates <math class="ltx_Math" altimg="m18.png" altimg-height="25px" altimg-valign="-7px" altimg-width="72px" alttext="(\xi,\eta,\phi)" display="inline"><mrow><mo stretchy="false">(</mo><mi href="./30.14#E1" title="oblate spheroidal coordinate">ξ</mi><mo>,</mo><mi href="./30.14#E1" title="oblate spheroidal coordinate">η</mi><mo>,</mo><mi href="./30.14#E1" title="oblate spheroidal coordinate">ϕ</mi><mo stretchy="false">)</mo></mrow></math>, admits solutions of the form (<a href="./30.13#E8" title="(30.13.8) ‣ §30.13(iv) Separation of Variables ‣ §30.13 Wave Equation in Prolate Spheroidal Coordinates ‣ Applications ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">30.13.8</span></a>),
+where <math class="ltx_Math" altimg="m65.png" altimg-height="16px" altimg-valign="-5px" altimg-width="28px" alttext="w_{1}" display="inline"><msub><mi href="./30.14#iv.p1" title="solution to DE">w</mi><mn>1</mn></msub></math> satisfies the differential equation
+</p>
+<table id="E7" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">30.14.7</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E7.png" altimg-height="119px" altimg-valign="-22px" altimg-width="366px" alttext="\frac{\mathrm{d}}{\mathrm{d}\xi}\left((1+\xi^{2})\frac{\mathrm{d}w_{1}}{%
+\mathrm{d}\xi}\right)-\left(\lambda+\gamma^{2}(1+\xi^{2})-\frac{\mu^{2}}{1+\xi%
+^{2}}\right)w_{1}=0," display="block"><mrow><mrow><mrow><mrow><mfrac><mo href="./1.4#E4" title="derivative of 𝑓 with respect to 𝑥">d</mo><mrow><mo href="./1.4#E4" rspace="0em" title="derivative of 𝑓 with respect to 𝑥">d</mo><mi href="./30.14#E1" title="oblate spheroidal coordinate">ξ</mi></mrow></mfrac><mo>⁡</mo><mrow><mo>(</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><msup><mi href="./30.14#E1" title="oblate spheroidal coordinate">ξ</mi><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mfrac><mrow><mo href="./1.4#E4" rspace="0em" title="derivative of 𝑓 with respect to 𝑥">d</mo><msub><mi href="./30.14#iv.p1" title="solution to DE">w</mi><mn>1</mn></msub></mrow><mrow><mo href="./1.4#E4" rspace="0em" title="derivative of 𝑓 with respect to 𝑥">d</mo><mi href="./30.14#E1" title="oblate spheroidal coordinate">ξ</mi></mrow></mfrac></mrow><mo>)</mo></mrow></mrow><mo>−</mo><mrow><mrow><mo>(</mo><mrow><mrow><mi href="./30.2#i.p1" title="real parameter">λ</mi><mo>+</mo><mrow><msup><mi href="./30.14#iv.p1" title="parameter">γ</mi><mn>2</mn></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><msup><mi href="./30.14#E1" title="oblate spheroidal coordinate">ξ</mi><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>−</mo><mfrac><msup><mi href="./30.2#i.p1" title="real parameter">μ</mi><mn>2</mn></msup><mrow><mn>1</mn><mo>+</mo><msup><mi href="./30.14#E1" title="oblate spheroidal coordinate">ξ</mi><mn>2</mn></msup></mrow></mfrac></mrow><mo>)</mo></mrow><mo>⁢</mo><msub><mi href="./30.14#iv.p1" title="solution to DE">w</mi><mn>1</mn></msub></mrow></mrow><mo>=</mo><mn>0</mn></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E7.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./1.4#E4" title="(1.4.4) ‣ §1.4(iii) Derivatives ‣ §1.4 Calculus of One Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m27.png" altimg-height="31px" altimg-valign="-9px" altimg-width="28px" alttext="\frac{\mathrm{d}\NVar{f}}{\mathrm{d}\NVar{x}}" display="inline"><mfrac><mrow><mo href="./1.4#E4" rspace="0em" title="derivative of 𝑓 with respect to 𝑥">d</mo><mi class="ltx_nvar">f</mi></mrow><mrow><mo href="./1.4#E4" rspace="0em" title="derivative of 𝑓 with respect to 𝑥">d</mo><mi class="ltx_nvar">x</mi></mrow></mfrac></math>: derivative of <math class="ltx_Math" altimg="m58.png" altimg-height="22px" altimg-valign="-6px" altimg-width="17px" alttext="f" display="inline"><mi>f</mi></math> with respect to <math class="ltx_Math" altimg="m72.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./30.14#E1" title="(30.14.1) ‣ §30.14(i) Oblate Spheroidal Coordinates ‣ §30.14 Wave Equation in Oblate Spheroidal Coordinates ‣ Applications ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><math class="ltx_Math" altimg="m49.png" altimg-height="22px" altimg-valign="-6px" altimg-width="14px" alttext="\xi" display="inline"><mi href="./30.14#E1" title="oblate spheroidal coordinate">ξ</mi></math>:  oblate spheroidal coordinate</a>,
+<a href="./30.14#iv.p1" title="§30.14(iv) Separation of Variables ‣ §30.14 Wave Equation in Oblate Spheroidal Coordinates ‣ Applications ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><math class="ltx_Math" altimg="m69.png" altimg-height="19px" altimg-valign="-8px" altimg-width="28px" alttext="w_{j}" display="inline"><msub><mi href="./30.14#iv.p1" title="solution to DE">w</mi><mi>j</mi></msub></math>:  solution to DE</a>,
+<a href="./30.14#iv.p1" title="§30.14(iv) Separation of Variables ‣ §30.14 Wave Equation in Oblate Spheroidal Coordinates ‣ Applications ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><math class="ltx_Math" altimg="m30.png" altimg-height="25px" altimg-valign="-6px" altimg-width="93px" alttext="\gamma^{2}=\kappa^{2}c^{2}" display="inline"><mrow><msup><mi href="./30.14#iv.p1" title="parameter">γ</mi><mn>2</mn></msup><mo>=</mo><mrow><msup><mi href="./30.13#E7" title="parameter">κ</mi><mn>2</mn></msup><mo>⁢</mo><msup><mi href="./30.14#i.p1" title="positive constant">c</mi><mn>2</mn></msup></mrow></mrow></math>:  parameter</a>,
+<a href="./30.2#i.p1" title="§30.2(i) Spheroidal Differential Equation ‣ §30.2 Differential Equations ‣ Properties ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><math class="ltx_Math" altimg="m34.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="\lambda" display="inline"><mi href="./30.2#i.p1" title="real parameter">λ</mi></math>:  real parameter</a> and
+<a href="./30.2#i.p1" title="§30.2(i) Spheroidal Differential Equation ‣ §30.2 Differential Equations ‣ Properties ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><math class="ltx_Math" altimg="m37.png" altimg-height="17px" altimg-valign="-6px" altimg-width="17px" alttext="\mu" display="inline"><mi href="./30.2#i.p1" title="real parameter">μ</mi></math>:  real parameter</a>
+</dd>
+<dt>A&amp;S Ref:</dt>
+<dd> <span class="ltx_origref"><span class="ltx_tag">21.6.3</span> (in different form)</span>
+</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./30.14#iv.p1" title="§30.14(iv) Separation of Variables ‣ §30.14 Wave Equation in Oblate Spheroidal Coordinates ‣ Applications ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§30.14(iv)</span></a>,
+<a href="./30.14#iv.p2" title="§30.14(iv) Separation of Variables ‣ §30.14 Wave Equation in Oblate Spheroidal Coordinates ‣ Applications ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§30.14(iv)</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./30.14.E7" title="" class="ltx_ref">http://dlmf.nist.gov/30.14.E7</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./30.14.E7.tex">TeX</a>, <a href="./30.14.E7.pmml">pMML</a>, <a href="./30.14.E7.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./30.14#iv.info" title="§30.14(iv) Separation of Variables ‣ §30.14 Wave Equation in Oblate Spheroidal Coordinates ‣ Applications ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§30.14(iv)</span></a>,
+<a href="./30.14#info" title="§30.14 Wave Equation in Oblate Spheroidal Coordinates ‣ Applications ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§30.14</span></a> and
+<a href="./30#info" title="Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.30</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">and <math class="ltx_Math" altimg="m67.png" altimg-height="16px" altimg-valign="-5px" altimg-width="28px" alttext="w_{2}" display="inline"><msub><mi href="./30.14#iv.p1" title="solution to DE">w</mi><mn>2</mn></msub></math>, <math class="ltx_Math" altimg="m68.png" altimg-height="16px" altimg-valign="-5px" altimg-width="28px" alttext="w_{3}" display="inline"><msub><mi href="./30.14#iv.p1" title="solution to DE">w</mi><mn>3</mn></msub></math> satisfy (<a href="./30.13#E10" title="(30.13.10) ‣ §30.13(iv) Separation of Variables ‣ §30.13 Wave Equation in Prolate Spheroidal Coordinates ‣ Applications ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">30.13.10</span></a>) and (<a href="./30.13#E11" title="(30.13.11) ‣ §30.13(iv) Separation of Variables ‣ §30.13 Wave Equation in Prolate Spheroidal Coordinates ‣ Applications ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">30.13.11</span></a>),
+respectively, with <math class="ltx_Math" altimg="m29.png" altimg-height="25px" altimg-valign="-6px" altimg-width="147px" alttext="\gamma^{2}=-\kappa^{2}c^{2}\leq 0" display="inline"><mrow><msup><mi href="./30.14#iv.p1" title="parameter">γ</mi><mn>2</mn></msup><mo>=</mo><mrow><mo>−</mo><mrow><msup><mi href="./30.13#E7" title="parameter">κ</mi><mn>2</mn></msup><mo>⁢</mo><msup><mi href="./30.14#i.p1" title="positive constant">c</mi><mn>2</mn></msup></mrow></mrow><mo>≤</mo><mn>0</mn></mrow></math> and separation constants
+<math class="ltx_Math" altimg="m34.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="\lambda" display="inline"><mi href="./30.2#i.p1" title="real parameter">λ</mi></math> and <math class="ltx_Math" altimg="m38.png" altimg-height="25px" altimg-valign="-6px" altimg-width="26px" alttext="\mu^{2}" display="inline"><msup><mi href="./30.2#i.p1" title="real parameter">μ</mi><mn>2</mn></msup></math>. Equation (<a href="./30.14#E7" title="(30.14.7) ‣ §30.14(iv) Separation of Variables ‣ §30.14 Wave Equation in Oblate Spheroidal Coordinates ‣ Applications ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">30.14.7</span></a>) can be transformed to
+equation (<a href="./30.2#E1" title="(30.2.1) ‣ §30.2(i) Spheroidal Differential Equation ‣ §30.2 Differential Equations ‣ Properties ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">30.2.1</span></a>) by the substitution <math class="ltx_Math" altimg="m77.png" altimg-height="22px" altimg-valign="-6px" altimg-width="76px" alttext="z=\pm i\xi" display="inline"><mrow><mi href="./30.1#p1" title="complex variable">z</mi><mo>=</mo><mrow><mo>±</mo><mrow><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi><mo>⁢</mo><mi href="./30.14#E1" title="oblate spheroidal coordinate">ξ</mi></mrow></mrow></mrow></math>.</p>
+</div>
+<div id="iv.p2" class="ltx_para">
+<p class="ltx_p">In most applications the solution <math class="ltx_Math" altimg="m64.png" altimg-height="13px" altimg-valign="-2px" altimg-width="20px" alttext="w" display="inline"><mi href="./30.14#iv.p1" title="solution to DE">w</mi></math> has to be a single-valued function of
+<math class="ltx_Math" altimg="m19.png" altimg-height="25px" altimg-valign="-7px" altimg-width="72px" alttext="(x,y,z)" display="inline"><mrow><mo stretchy="false">(</mo><mi href="./30.1#p1.t1.r1" title="real variable">x</mi><mo>,</mo><mi href="./30.1#p1.t1.r1" title="real variable">y</mi><mo>,</mo><mi href="./30.1#p1" title="complex variable">z</mi><mo stretchy="false">)</mo></mrow></math>, which requires <math class="ltx_Math" altimg="m36.png" altimg-height="17px" altimg-valign="-6px" altimg-width="63px" alttext="\mu=m" display="inline"><mrow><mi href="./30.2#i.p1" title="real parameter">μ</mi><mo>=</mo><mi href="./30.1#p1.t1.r3" title="nonnegative integer">m</mi></mrow></math> (a nonnegative integer). Moreover, the
+solution <math class="ltx_Math" altimg="m64.png" altimg-height="13px" altimg-valign="-2px" altimg-width="20px" alttext="w" display="inline"><mi href="./30.14#iv.p1" title="solution to DE">w</mi></math> has to be bounded along the <math class="ltx_Math" altimg="m78.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi href="./30.1#p1" title="complex variable">z</mi></math>-axis: this requires <math class="ltx_Math" altimg="m66.png" altimg-height="25px" altimg-valign="-7px" altimg-width="56px" alttext="w_{2}(\eta)" display="inline"><mrow><msub><mi href="./30.14#iv.p1" title="solution to DE">w</mi><mn>2</mn></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./30.14#E1" title="oblate spheroidal coordinate">η</mi><mo stretchy="false">)</mo></mrow></mrow></math> to
+be bounded when <math class="ltx_Math" altimg="m20.png" altimg-height="21px" altimg-valign="-6px" altimg-width="108px" alttext="-1&lt;\eta&lt;1" display="inline"><mrow><mrow><mo>−</mo><mn>1</mn></mrow><mo>&lt;</mo><mi href="./30.14#E1" title="oblate spheroidal coordinate">η</mi><mo>&lt;</mo><mn>1</mn></mrow></math>. Then <math class="ltx_Math" altimg="m33.png" altimg-height="29px" altimg-valign="-9px" altimg-width="116px" alttext="\lambda=\lambda^{m}_{n}\left(\gamma^{2}\right)" display="inline"><mrow><mi href="./30.2#i.p1" title="real parameter">λ</mi><mo>=</mo><mrow><msubsup><mi href="./30.3#i.p1" title="eigenvalues of the spheroidal differential equation">λ</mi><mi href="./30.1#p1.t1.r4" title="integer degree">n</mi><mi href="./30.1#p1.t1.r3" title="nonnegative integer">m</mi></msubsup><mo>⁡</mo><mrow><mo>(</mo><msup><mi href="./30.14#iv.p1" title="parameter">γ</mi><mn>2</mn></msup><mo>)</mo></mrow></mrow></mrow></math> for some <math class="ltx_Math" altimg="m61.png" altimg-height="21px" altimg-valign="-6px" altimg-width="222px" alttext="n=m,m+1,m+2,\dots" display="inline"><mrow><mi href="./30.1#p1.t1.r4" title="integer degree">n</mi><mo>=</mo><mrow><mi href="./30.1#p1.t1.r3" title="nonnegative integer">m</mi><mo>,</mo><mrow><mi href="./30.1#p1.t1.r3" title="nonnegative integer">m</mi><mo>+</mo><mn>1</mn></mrow><mo>,</mo><mrow><mi href="./30.1#p1.t1.r3" title="nonnegative integer">m</mi><mo>+</mo><mn>2</mn></mrow><mo>,</mo><mi mathvariant="normal">…</mi></mrow></mrow></math>, and the solution of (<a href="./30.13#E10" title="(30.13.10) ‣ §30.13(iv) Separation of Variables ‣ §30.13 Wave Equation in Prolate Spheroidal Coordinates ‣ Applications ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">30.13.10</span></a>) is given by
+(<a href="./30.13#E13" title="(30.13.13) ‣ §30.13(iv) Separation of Variables ‣ §30.13 Wave Equation in Prolate Spheroidal Coordinates ‣ Applications ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">30.13.13</span></a>). The solution of (<a href="./30.14#E7" title="(30.14.7) ‣ §30.14(iv) Separation of Variables ‣ §30.14 Wave Equation in Oblate Spheroidal Coordinates ‣ Applications ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">30.14.7</span></a>) is given by</p>
+<table id="E8" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">30.14.8</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E8.png" altimg-height="86px" altimg-valign="-7px" altimg-width="224px" alttext="w_{1}(\xi)=a_{1}S^{m(1)}_{n}\left(i\xi,\gamma\right)+b_{1}S^{m(2)}_{n}\left(i%
+\xi,\gamma\right)." display="block"><mrow><mrow><mrow><msub><mi href="./30.14#iv.p1" title="solution to DE">w</mi><mn>1</mn></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./30.14#E1" title="oblate spheroidal coordinate">ξ</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><msub><mi href="./30.13#iv.p2" title="coefficients">a</mi><mn>1</mn></msub><mo>⁢</mo><mrow><msubsup><mi href="./30.11#E3" title="radial spheroidal wave function">S</mi><mi href="./30.1#p1.t1.r4" title="integer degree">n</mi><mrow><mi href="./30.1#p1.t1.r3" title="nonnegative integer">m</mi><mo href="./30.11#E3" title="radial spheroidal wave function">⁢</mo><mrow><mo href="./30.11#E3" stretchy="false" title="radial spheroidal wave function">(</mo><mn>1</mn><mo href="./30.11#E3" stretchy="false" title="radial spheroidal wave function">)</mo></mrow></mrow></msubsup><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi><mo>⁢</mo><mi href="./30.14#E1" title="oblate spheroidal coordinate">ξ</mi></mrow><mo>,</mo><mi href="./30.14#iv.p1" title="parameter">γ</mi><mo>)</mo></mrow></mrow></mrow><mo>+</mo><mrow><msub><mi href="./30.13#iv.p2" title="coefficients">b</mi><mn>1</mn></msub><mo>⁢</mo><mrow><msubsup><mi href="./30.11#E3" title="radial spheroidal wave function">S</mi><mi href="./30.1#p1.t1.r4" title="integer degree">n</mi><mrow><mi href="./30.1#p1.t1.r3" title="nonnegative integer">m</mi><mo href="./30.11#E3" title="radial spheroidal wave function">⁢</mo><mrow><mo href="./30.11#E3" stretchy="false" title="radial spheroidal wave function">(</mo><mn>2</mn><mo href="./30.11#E3" stretchy="false" title="radial spheroidal wave function">)</mo></mrow></mrow></msubsup><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi><mo>⁢</mo><mi href="./30.14#E1" title="oblate spheroidal coordinate">ξ</mi></mrow><mo>,</mo><mi href="./30.14#iv.p1" title="parameter">γ</mi><mo>)</mo></mrow></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E8.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./1.9#E1" title="(1.9.1) ‣ §1.9(i) Complex Numbers ‣ §1.9 Calculus of a Complex Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m35.png" altimg-height="18px" altimg-valign="-2px" altimg-width="10px" alttext="\mathrm{i}" display="inline"><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></math>: imaginary unit</a>,
+<a href="./30.11#E3" title="(30.11.3) ‣ §30.11(i) Definitions ‣ §30.11 Radial Spheroidal Wave Functions ‣ Properties ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><math class="ltx_Math" altimg="m22.png" altimg-height="31px" altimg-valign="-7px" altimg-width="106px" alttext="S^{\NVar{m}(\NVar{j})}_{\NVar{n}}\left(\NVar{z},\NVar{\gamma}\right)" display="inline"><mrow><msubsup><mi href="./30.11#E3" title="radial spheroidal wave function">S</mi><mi class="ltx_nvar" href="./30.1#p1.t1.r4" title="integer degree">n</mi><mrow><mi class="ltx_nvar" href="./30.1#p1.t1.r3" title="nonnegative integer">m</mi><mo href="./30.11#E3" title="radial spheroidal wave function">⁢</mo><mrow><mo href="./30.11#E3" stretchy="false" title="radial spheroidal wave function">(</mo><mi class="ltx_nvar">j</mi><mo href="./30.11#E3" stretchy="false" title="radial spheroidal wave function">)</mo></mrow></mrow></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./30.1#p1" title="complex variable">z</mi><mo>,</mo><mi class="ltx_nvar" href="./30.2#i.p1" title="real parameter">γ</mi><mo>)</mo></mrow></mrow></math>: radial spheroidal wave function</a>,
+<a href="./30.1#p1.t1.r3" title="§30.1 Special Notation ‣ Notation ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><math class="ltx_Math" altimg="m60.png" altimg-height="13px" altimg-valign="-2px" altimg-width="23px" alttext="m" display="inline"><mi href="./30.1#p1.t1.r3" title="nonnegative integer">m</mi></math>:  nonnegative integer</a>,
+<a href="./30.1#p1.t1.r4" title="§30.1 Special Notation ‣ Notation ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><math class="ltx_Math" altimg="m62.png" altimg-height="20px" altimg-valign="-5px" altimg-width="63px" alttext="n\geq m" display="inline"><mrow><mi href="./30.1#p1.t1.r4" title="integer degree">n</mi><mo>≥</mo><mi href="./30.1#p1.t1.r3" title="nonnegative integer">m</mi></mrow></math>:  integer degree</a>,
+<a href="./30.13#iv.p2" title="§30.13(iv) Separation of Variables ‣ §30.13 Wave Equation in Prolate Spheroidal Coordinates ‣ Applications ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><math class="ltx_Math" altimg="m55.png" altimg-height="24px" altimg-valign="-8px" altimg-width="22px" alttext="b_{j}" display="inline"><msub><mi href="./30.13#iv.p2" title="coefficients">b</mi><mi>j</mi></msub></math>:  coefficients</a>,
+<a href="./30.13#iv.p2" title="§30.13(iv) Separation of Variables ‣ §30.13 Wave Equation in Prolate Spheroidal Coordinates ‣ Applications ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><math class="ltx_Math" altimg="m52.png" altimg-height="19px" altimg-valign="-8px" altimg-width="24px" alttext="a_{j}" display="inline"><msub><mi href="./30.13#iv.p2" title="coefficients">a</mi><mi>j</mi></msub></math>:  coefficients</a>,
+<a href="./30.14#E1" title="(30.14.1) ‣ §30.14(i) Oblate Spheroidal Coordinates ‣ §30.14 Wave Equation in Oblate Spheroidal Coordinates ‣ Applications ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><math class="ltx_Math" altimg="m49.png" altimg-height="22px" altimg-valign="-6px" altimg-width="14px" alttext="\xi" display="inline"><mi href="./30.14#E1" title="oblate spheroidal coordinate">ξ</mi></math>:  oblate spheroidal coordinate</a>,
+<a href="./30.14#iv.p1" title="§30.14(iv) Separation of Variables ‣ §30.14 Wave Equation in Oblate Spheroidal Coordinates ‣ Applications ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><math class="ltx_Math" altimg="m69.png" altimg-height="19px" altimg-valign="-8px" altimg-width="28px" alttext="w_{j}" display="inline"><msub><mi href="./30.14#iv.p1" title="solution to DE">w</mi><mi>j</mi></msub></math>:  solution to DE</a> and
+<a href="./30.14#iv.p1" title="§30.14(iv) Separation of Variables ‣ §30.14 Wave Equation in Oblate Spheroidal Coordinates ‣ Applications ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><math class="ltx_Math" altimg="m30.png" altimg-height="25px" altimg-valign="-6px" altimg-width="93px" alttext="\gamma^{2}=\kappa^{2}c^{2}" display="inline"><mrow><msup><mi href="./30.14#iv.p1" title="parameter">γ</mi><mn>2</mn></msup><mo>=</mo><mrow><msup><mi href="./30.13#E7" title="parameter">κ</mi><mn>2</mn></msup><mo>⁢</mo><msup><mi href="./30.14#i.p1" title="positive constant">c</mi><mn>2</mn></msup></mrow></mrow></math>:  parameter</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./30.14#v.p1" title="§30.14(v) The Interior Dirichlet Problem for Oblate Ellipsoids ‣ §30.14 Wave Equation in Oblate Spheroidal Coordinates ‣ Applications ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§30.14(v)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./30.14.E8" title="" class="ltx_ref">http://dlmf.nist.gov/30.14.E8</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./30.14.E8.tex">TeX</a>, <a href="./30.14.E8.pmml">pMML</a>, <a href="./30.14.E8.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./30.14#iv.info" title="§30.14(iv) Separation of Variables ‣ §30.14 Wave Equation in Oblate Spheroidal Coordinates ‣ Applications ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§30.14(iv)</span></a>,
+<a href="./30.14#info" title="§30.14 Wave Equation in Oblate Spheroidal Coordinates ‣ Applications ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§30.14</span></a> and
+<a href="./30#info" title="Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.30</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+<div id="iv.p3" class="ltx_para">
+<p class="ltx_p">If <math class="ltx_Math" altimg="m53.png" altimg-height="21px" altimg-valign="-5px" altimg-width="106px" alttext="b_{1}=b_{2}=0" display="inline"><mrow><msub><mi href="./30.13#iv.p2" title="coefficients">b</mi><mn>1</mn></msub><mo>=</mo><msub><mi href="./30.13#iv.p2" title="coefficients">b</mi><mn>2</mn></msub><mo>=</mo><mn>0</mn></mrow></math>, then the function (<a href="./30.13#E8" title="(30.13.8) ‣ §30.13(iv) Separation of Variables ‣ §30.13 Wave Equation in Prolate Spheroidal Coordinates ‣ Applications ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">30.13.8</span></a>) is a
+twice-continuously differentiable solution
+of (<a href="./30.13#E7" title="(30.13.7) ‣ §30.13(iv) Separation of Variables ‣ §30.13 Wave Equation in Prolate Spheroidal Coordinates ‣ Applications ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">30.13.7</span></a>) in the entire <math class="ltx_Math" altimg="m19.png" altimg-height="25px" altimg-valign="-7px" altimg-width="72px" alttext="(x,y,z)" display="inline"><mrow><mo stretchy="false">(</mo><mi href="./30.1#p1.t1.r1" title="real variable">x</mi><mo>,</mo><mi href="./30.1#p1.t1.r1" title="real variable">y</mi><mo>,</mo><mi href="./30.1#p1" title="complex variable">z</mi><mo stretchy="false">)</mo></mrow></math>-space. If <math class="ltx_Math" altimg="m54.png" altimg-height="21px" altimg-valign="-5px" altimg-width="61px" alttext="b_{2}=0" display="inline"><mrow><msub><mi href="./30.13#iv.p2" title="coefficients">b</mi><mn>2</mn></msub><mo>=</mo><mn>0</mn></mrow></math>, then
+this property holds outside the focal disk.</p>
+</div>
+</section>
+<section id="v" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§30.14(v) </span>The Interior Dirichlet Problem for Oblate Ellipsoids</h2>
+<div id="v.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=applications">applications</a>, <a class="ltx_keyword" href="./search/search?q=for%20oblate%20spheroids">for oblate spheroids</a>, <a class="ltx_keyword" href="./search/search?q=interior%20Dirichlet%20problem">interior Dirichlet problem</a>, <a class="ltx_keyword" href="./search/search?q=oblate%20spheroidal%20coordinates">oblate spheroidal coordinates</a>, <a class="ltx_keyword" href="./search/search?q=radial%20spheroidal%20wave%20functions">radial spheroidal wave functions</a>, <a class="ltx_keyword" href="./search/search?q=spheroidal%20wave%20functions">spheroidal wave functions</a>, <a class="ltx_keyword" href="./search/search?q=wave%20equation">wave equation</a>
+</dd>
+<dt>Notes:</dt>
+<dd>See <cite class="ltx_cite ltx_citemacro_citet">Meixner and Schäfke (<a href="./bib/M#bib1598" title="Mathieusche Funktionen und Sphäroidfunktionen mit Anwendungen auf physikalische und technische Probleme" class="ltx_ref">1954</a>, Chapter 4)</cite>.</dd>
+<dt>Permalink:</dt>
+<dd><a href="./30.14.v" title="" class="ltx_ref">http://dlmf.nist.gov/30.14.v</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./30.14#info" title="§30.14 Wave Equation in Oblate Spheroidal Coordinates ‣ Applications ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§30.14</span></a> and
+<a href="./30#info" title="Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.30</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="v.p1" class="ltx_para">
+<p class="ltx_p">Equation (<a href="./30.13#E7" title="(30.13.7) ‣ §30.13(iv) Separation of Variables ‣ §30.13 Wave Equation in Prolate Spheroidal Coordinates ‣ Applications ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">30.13.7</span></a>) for <math class="ltx_Math" altimg="m51.png" altimg-height="22px" altimg-valign="-6px" altimg-width="60px" alttext="\xi\leq\xi_{0}" display="inline"><mrow><mi href="./30.14#E1" title="oblate spheroidal coordinate">ξ</mi><mo>≤</mo><msub><mi href="./30.14#E1" title="oblate spheroidal coordinate">ξ</mi><mn>0</mn></msub></mrow></math> together with the boundary
+condition <math class="ltx_Math" altimg="m63.png" altimg-height="17px" altimg-valign="-2px" altimg-width="58px" alttext="w=0" display="inline"><mrow><mi href="./30.14#iv.p1" title="solution to DE">w</mi><mo>=</mo><mn>0</mn></mrow></math> on the ellipsoid given by <math class="ltx_Math" altimg="m48.png" altimg-height="22px" altimg-valign="-6px" altimg-width="60px" alttext="\xi=\xi_{0}" display="inline"><mrow><mi href="./30.14#E1" title="oblate spheroidal coordinate">ξ</mi><mo>=</mo><msub><mi href="./30.14#E1" title="oblate spheroidal coordinate">ξ</mi><mn>0</mn></msub></mrow></math>, poses an eigenvalue
+problem with <math class="ltx_Math" altimg="m32.png" altimg-height="21px" altimg-valign="-2px" altimg-width="26px" alttext="\kappa^{2}" display="inline"><msup><mi href="./30.13#E7" title="parameter">κ</mi><mn>2</mn></msup></math> as spectral parameter. The eigenvalues are given by
+<math class="ltx_Math" altimg="m57.png" altimg-height="25px" altimg-valign="-6px" altimg-width="109px" alttext="c^{2}\kappa^{2}=-\gamma^{2}" display="inline"><mrow><mrow><msup><mi href="./30.14#i.p1" title="positive constant">c</mi><mn>2</mn></msup><mo>⁢</mo><msup><mi href="./30.13#E7" title="parameter">κ</mi><mn>2</mn></msup></mrow><mo>=</mo><mrow><mo>−</mo><msup><mi href="./30.2#i.p1" title="real parameter">γ</mi><mn>2</mn></msup></mrow></mrow></math>, where <math class="ltx_Math" altimg="m31.png" altimg-height="25px" altimg-valign="-6px" altimg-width="26px" alttext="\gamma^{2}" display="inline"><msup><mi href="./30.2#i.p1" title="real parameter">γ</mi><mn>2</mn></msup></math> is determined from the condition</p>
+<table id="E9" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">30.14.9</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E9.png" altimg-height="40px" altimg-valign="-7px" altimg-width="288px" alttext="S^{m(1)}_{n}\left(\mathrm{i}\xi_{0},\gamma\right)=0." display="block"><mrow><mrow><mrow><msubsup><mi href="./30.11#E3" title="radial spheroidal wave function">S</mi><mi href="./30.1#p1.t1.r4" title="integer degree">n</mi><mrow><mi href="./30.1#p1.t1.r3" title="nonnegative integer">m</mi><mo href="./30.11#E3" title="radial spheroidal wave function">⁢</mo><mrow><mo href="./30.11#E3" stretchy="false" title="radial spheroidal wave function">(</mo><mn>1</mn><mo href="./30.11#E3" stretchy="false" title="radial spheroidal wave function">)</mo></mrow></mrow></msubsup><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi><mo>⁢</mo><msub><mi href="./30.14#E1" title="oblate spheroidal coordinate">ξ</mi><mn>0</mn></msub></mrow><mo>,</mo><mi href="./30.2#i.p1" title="real parameter">γ</mi><mo>)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E9.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./1.9#E1" title="(1.9.1) ‣ §1.9(i) Complex Numbers ‣ §1.9 Calculus of a Complex Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m35.png" altimg-height="18px" altimg-valign="-2px" altimg-width="10px" alttext="\mathrm{i}" display="inline"><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></math>: imaginary unit</a>,
+<a href="./30.11#E3" title="(30.11.3) ‣ §30.11(i) Definitions ‣ §30.11 Radial Spheroidal Wave Functions ‣ Properties ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><math class="ltx_Math" altimg="m22.png" altimg-height="31px" altimg-valign="-7px" altimg-width="106px" alttext="S^{\NVar{m}(\NVar{j})}_{\NVar{n}}\left(\NVar{z},\NVar{\gamma}\right)" display="inline"><mrow><msubsup><mi href="./30.11#E3" title="radial spheroidal wave function">S</mi><mi class="ltx_nvar" href="./30.1#p1.t1.r4" title="integer degree">n</mi><mrow><mi class="ltx_nvar" href="./30.1#p1.t1.r3" title="nonnegative integer">m</mi><mo href="./30.11#E3" title="radial spheroidal wave function">⁢</mo><mrow><mo href="./30.11#E3" stretchy="false" title="radial spheroidal wave function">(</mo><mi class="ltx_nvar">j</mi><mo href="./30.11#E3" stretchy="false" title="radial spheroidal wave function">)</mo></mrow></mrow></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./30.1#p1" title="complex variable">z</mi><mo>,</mo><mi class="ltx_nvar" href="./30.2#i.p1" title="real parameter">γ</mi><mo>)</mo></mrow></mrow></math>: radial spheroidal wave function</a>,
+<a href="./30.1#p1.t1.r3" title="§30.1 Special Notation ‣ Notation ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><math class="ltx_Math" altimg="m60.png" altimg-height="13px" altimg-valign="-2px" altimg-width="23px" alttext="m" display="inline"><mi href="./30.1#p1.t1.r3" title="nonnegative integer">m</mi></math>:  nonnegative integer</a>,
+<a href="./30.1#p1.t1.r4" title="§30.1 Special Notation ‣ Notation ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><math class="ltx_Math" altimg="m62.png" altimg-height="20px" altimg-valign="-5px" altimg-width="63px" alttext="n\geq m" display="inline"><mrow><mi href="./30.1#p1.t1.r4" title="integer degree">n</mi><mo>≥</mo><mi href="./30.1#p1.t1.r3" title="nonnegative integer">m</mi></mrow></math>:  integer degree</a>,
+<a href="./30.14#E1" title="(30.14.1) ‣ §30.14(i) Oblate Spheroidal Coordinates ‣ §30.14 Wave Equation in Oblate Spheroidal Coordinates ‣ Applications ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><math class="ltx_Math" altimg="m49.png" altimg-height="22px" altimg-valign="-6px" altimg-width="14px" alttext="\xi" display="inline"><mi href="./30.14#E1" title="oblate spheroidal coordinate">ξ</mi></math>:  oblate spheroidal coordinate</a> and
+<a href="./30.2#i.p1" title="§30.2(i) Spheroidal Differential Equation ‣ §30.2 Differential Equations ‣ Properties ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><math class="ltx_Math" altimg="m31.png" altimg-height="25px" altimg-valign="-6px" altimg-width="26px" alttext="\gamma^{2}" display="inline"><msup><mi href="./30.2#i.p1" title="real parameter">γ</mi><mn>2</mn></msup></math>:  real parameter</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./30.14.E9" title="" class="ltx_ref">http://dlmf.nist.gov/30.14.E9</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./30.14.E9.tex">TeX</a>, <a href="./30.14.E9.pmml">pMML</a>, <a href="./30.14.E9.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./30.14#v.info" title="§30.14(v) The Interior Dirichlet Problem for Oblate Ellipsoids ‣ §30.14 Wave Equation in Oblate Spheroidal Coordinates ‣ Applications ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§30.14(v)</span></a>,
+<a href="./30.14#info" title="§30.14 Wave Equation in Oblate Spheroidal Coordinates ‣ Applications ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§30.14</span></a> and
+<a href="./30#info" title="Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.30</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+<p class="ltx_p">The corresponding eigenfunctions are then given by (<a href="./30.13#E8" title="(30.13.8) ‣ §30.13(iv) Separation of Variables ‣ §30.13 Wave Equation in Prolate Spheroidal Coordinates ‣ Applications ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">30.13.8</span></a>),
+(<a href="./30.14#E8" title="(30.14.8) ‣ §30.14(iv) Separation of Variables ‣ §30.14 Wave Equation in Oblate Spheroidal Coordinates ‣ Applications ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">30.14.8</span></a>), (<a href="./30.13#E13" title="(30.13.13) ‣ §30.13(iv) Separation of Variables ‣ §30.13 Wave Equation in Prolate Spheroidal Coordinates ‣ Applications ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">30.13.13</span></a>), (<a href="./30.13#E12" title="(30.13.12) ‣ §30.13(iv) Separation of Variables ‣ §30.13 Wave Equation in Prolate Spheroidal Coordinates ‣ Applications ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">30.13.12</span></a>), with
+<math class="ltx_Math" altimg="m53.png" altimg-height="21px" altimg-valign="-5px" altimg-width="106px" alttext="b_{1}=b_{2}=0" display="inline"><mrow><msub><mi href="./30.13#iv.p2" title="coefficients">b</mi><mn>1</mn></msub><mo>=</mo><msub><mi href="./30.13#iv.p2" title="coefficients">b</mi><mn>2</mn></msub><mo>=</mo><mn>0</mn></mrow></math>.</p>
+</div>
+<div id="v.p2" class="ltx_para">
+<p class="ltx_p">For further applications see <cite class="ltx_cite ltx_citemacro_citet">Meixner and Schäfke (<a href="./bib/M#bib1598" title="Mathieusche Funktionen und Sphäroidfunktionen mit Anwendungen auf physikalische und technische Probleme" class="ltx_ref">1954</a>)</cite>, <cite class="ltx_cite ltx_citemacro_citet">Meixner<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/M#bib1599" title="Mathieu Functions and Spheroidal Functions and Their Mathematical Foundations: Further Studies" class="ltx_ref">1980</a>)</cite>
+and the references cited therein; also <cite class="ltx_cite ltx_citemacro_citet">Kokkorakis and Roumeliotis (<a href="./bib/K#bib1308" title="Electromagnetic eigenfrequencies in a spheroidal cavity (calculation by spheroidal eigenvectors)" class="ltx_ref">1998</a>)</cite> and
+<cite class="ltx_cite ltx_citemacro_citet">Li<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/L#bib1434" title="Microwave specific attenuation by oblate spheroidal raindrops: An exact analysis of TCS’s in terms of spheroidal wave functions" class="ltx_ref">1998b</a>)</cite>.
+</p>
+</div>
+</section>
+</section>
+</div>
+<div class="ltx_page_footer">
+<div class="ltx_siblings">
+<a href="./30.13" title="In Applications ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">30.13 </span>Wave Equation in Prolate Spheroidal Coordinates</span></a><a href="./30.15" title="In Applications ‣ Chapter 30 Spheroidal Wave Functions" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">30.15 </span>Signal Analysis</span></a>
+</div>
+<div class="ltx_footer_links ltx_centering">
+<a href="./about/notices">© 2010–2026 NIST</a> / <a href="./about/notices#S2">Disclaimer</a> / <a href="/cdn-cgi/l/email-protection#4e0a02030863282b2b2a2c2f2d250e20273d3a60292138">Feedback</a>;
+ Version 1.2.7;
+Release date 2026-06-15.</div>
+<span id="pagesettings"></span>
+<div class="ltx_nist_logo"><a href="http://www.nist.gov/"><img src="./style/nistidc.png" width="500" alt="NIST"></a></div>
+<div class="ltx_nist_links ltx_align_right">
+<a href="https://www.nist.gov/privacy-policy">Site Privacy</a> <a href="https://www.nist.gov/oism/accessibility">Accessibility</a> <a href="https://www.nist.gov/privacy">Privacy Program</a> <a href="https://www.nist.gov/oism/copyrights">Copyrights</a> <a href="https://www.commerce.gov/vulnerability-disclosure-policy">Vulnerability Disclosure</a> <a href="https://www.nist.gov/no-fear-act-policy">No Fear Act Policy</a> <a href="https://www.nist.gov/foia">FOIA</a> <a href="https://www.nist.gov/environmental-policy-statement">Environmental Policy</a> <a href="https://www.nist.gov/summary-report-scientific-integrity">Scientific Integrity</a> <a href="https://www.nist.gov/nist-information-quality-standards">Information Quality Standards</a> <a href="https://www.commerce.gov/">Commerce.gov</a> <a href="http://www.science.gov/">Science.gov</a> <a href="http://www.usa.gov/">USA.gov</a>
+</div>
+</div>
+</div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a30dbd6e4f134228',t:'MTc4NzY5Mzg2Nw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"9ef5b487afff42a68917b2d63593a474"}' crossorigin="anonymous"></script>
+</body>
+</html>

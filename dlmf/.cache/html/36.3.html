@@ -1,0 +1,1456 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>DLMF: §36.3 Visualizations of Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles</title>
+<link rel="shortcut icon" href="./style/DLMF-16.png" type="image/png">
+<script type="text/javascript"><!--
+	var PATH="DLMF:/36.3";
+	var ROOT="./";
+      //--></script>
+<script type="text/javascript" src="./style/jquery.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/jquery.leaveNotice.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/DLMF.js"><!-- non-empty so ie6 will accept it --></script>
+<script async="" type="text/javascript" id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC&amp;subagency=NIST&amp;pua=UA-37115410-44&amp;yt=true&amp;exts=ppsx,pps,f90,sch,rtf,wrl,txz,m1v,xlsm,msi,xsd,f,tif,eps,mpg,xml,pl,xlt,c"><!-- non-empty so ie6 will accept it --></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-BZB64W4M0L"></script><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-BZB64W4M0L');
+      </script>
+<link rel="stylesheet" type="text/css" href="./style/LaTeXML.css">
+<link rel="stylesheet" type="text/css" href="./style/DLMF.css">
+<link rel="stylesheet" type="text/css" href="./style/print.css" media="print">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="top" href="./" title="DLMF">
+<link rel="copyright" href="./about/notices" title="Copyright">
+<link rel="search" href="./search/search" title="Search">
+<link rel="help" class="ltx_help" href="./help/" title="Help">
+<link rel="up" href="./36#PT2" title="Properties ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="up up" href="./36" title="Chapter 36 Integrals with Coalescing Saddles">
+<link rel="start" href="./" title="">
+<link rel="prev" href="./36.2" title="§36.2 Catastrophes and Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="next" href="./36.4" title="§36.4 Bifurcation Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="section" href="./36.1" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="section" href="./36.2" title="§36.2 Catastrophes and Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="section" href="./36.4" title="§36.4 Bifurcation Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="section" href="./36.5" title="§36.5 Stokes Sets ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="section" href="./36.6" title="§36.6 Scaling Relations ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="section" href="./36.7" title="§36.7 Zeros ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="section" href="./36.8" title="§36.8 Convergent Series Expansions ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="section" href="./36.9" title="§36.9 Integral Identities ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="section" href="./36.10" title="§36.10 Differential Equations ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="section" href="./36.11" title="§36.11 Leading-Order Asymptotics ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="section" href="./36.12" title="§36.12 Uniform Approximation of Integrals ‣ Applications ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="section" href="./36.13" title="§36.13 Kelvin’s Ship-Wave Pattern ‣ Applications ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="section" href="./36.14" title="§36.14 Other Physical Applications ‣ Applications ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="section" href="./36.15" title="§36.15 Methods of Computation ‣ Computation ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="document" href="./front/foreword" title="Foreword">
+<link rel="document" href="./front/preface" title="Preface">
+<link rel="document" href="./front/introduction" title="Mathematical Introduction">
+<link rel="chapter" href="./1" title="Chapter 1 Algebraic and Analytic Methods">
+<link rel="chapter" href="./2" title="Chapter 2 Asymptotic Approximations">
+<link rel="chapter" href="./3" title="Chapter 3 Numerical Methods">
+<link rel="chapter" href="./4" title="Chapter 4 Elementary Functions">
+<link rel="chapter" href="./5" title="Chapter 5 Gamma Function">
+<link rel="chapter" href="./6" title="Chapter 6 Exponential, Logarithmic, Sine, and Cosine Integrals">
+<link rel="chapter" href="./7" title="Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="chapter" href="./8" title="Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="chapter" href="./9" title="Chapter 9 Airy and Related Functions">
+<link rel="chapter" href="./10" title="Chapter 10 Bessel Functions">
+<link rel="chapter" href="./11" title="Chapter 11 Struve and Related Functions">
+<link rel="chapter" href="./12" title="Chapter 12 Parabolic Cylinder Functions">
+<link rel="chapter" href="./13" title="Chapter 13 Confluent Hypergeometric Functions">
+<link rel="chapter" href="./14" title="Chapter 14 Legendre and Related Functions">
+<link rel="chapter" href="./15" title="Chapter 15 Hypergeometric Function">
+<link rel="chapter" href="./16" title="Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="chapter" href="./17" title="Chapter 17 𝑞-Hypergeometric and Related Functions">
+<link rel="chapter" href="./18" title="Chapter 18 Orthogonal Polynomials">
+<link rel="chapter" href="./19" title="Chapter 19 Elliptic Integrals">
+<link rel="chapter" href="./20" title="Chapter 20 Theta Functions">
+<link rel="chapter" href="./21" title="Chapter 21 Multidimensional Theta Functions">
+<link rel="chapter" href="./22" title="Chapter 22 Jacobian Elliptic Functions">
+<link rel="chapter" href="./23" title="Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="chapter" href="./24" title="Chapter 24 Bernoulli and Euler Polynomials">
+<link rel="chapter" href="./25" title="Chapter 25 Zeta and Related Functions">
+<link rel="chapter" href="./26" title="Chapter 26 Combinatorial Analysis">
+<link rel="chapter" href="./27" title="Chapter 27 Functions of Number Theory">
+<link rel="chapter" href="./28" title="Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="chapter" href="./29" title="Chapter 29 Lamé Functions">
+<link rel="chapter" href="./30" title="Chapter 30 Spheroidal Wave Functions">
+<link rel="chapter" href="./31" title="Chapter 31 Heun Functions">
+<link rel="chapter" href="./32" title="Chapter 32 Painlevé Transcendents">
+<link rel="chapter" href="./33" title="Chapter 33 Coulomb Functions">
+<link rel="chapter" href="./34" title="Chapter 34 3⁢𝑗,6⁢𝑗,9⁢𝑗 Symbols">
+<link rel="chapter" href="./35" title="Chapter 35 Functions of Matrix Argument">
+<link rel="chapter" href="./36" title="Chapter 36 Integrals with Coalescing Saddles">
+<link rel="bibliography" href="./bib/" title="Bibliography">
+<link rel="index" href="./idx/" title="Index">
+<link rel="glossary" href="./not/" title="Notations">
+<link rel="document" href="./lof/" title="List of Figures">
+<link rel="document" href="./lot/" title="List of Tables">
+<link rel="document" href="./software/" title="Software Index">
+<link rel="document" href="./errata/" title="Errata">
+<link rel="document" href="./help/" title="Need Help?">
+<link rel="document" href="./search/" title="Advanced Search">
+<link rel="document" href="./about/" title="About the Project">
+<link rel="sidebar" href="./36.3.F1.mag" title="Figure 36.3.1 ‣ §36.3 Visualizations of Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="sidebar" href="./36.3.F1b.viz" title="Figure 36.3.1 ‣ §36.3 Visualizations of Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="sidebar" href="./36.3.F2.mag" title="Figure 36.3.2 ‣ §36.3 Visualizations of Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="sidebar" href="./36.3.F2b.viz" title="Figure 36.3.2 ‣ §36.3 Visualizations of Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="sidebar" href="./36.3.F3.mag" title="Figure 36.3.3 ‣ §36.3 Visualizations of Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="sidebar" href="./36.3.F3b.viz" title="Figure 36.3.3 ‣ §36.3 Visualizations of Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="sidebar" href="./36.3.F4.mag" title="Figure 36.3.4 ‣ §36.3 Visualizations of Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="sidebar" href="./36.3.F4b.viz" title="Figure 36.3.4 ‣ §36.3 Visualizations of Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="sidebar" href="./36.3.F5.mag" title="Figure 36.3.5 ‣ §36.3 Visualizations of Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="sidebar" href="./36.3.F5b.viz" title="Figure 36.3.5 ‣ §36.3 Visualizations of Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="sidebar" href="./36.3.F6.mag" title="Figure 36.3.6 ‣ §36.3 Visualizations of Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="sidebar" href="./36.3.F6b.viz" title="Figure 36.3.6 ‣ §36.3 Visualizations of Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="sidebar" href="./36.3.F7.mag" title="Figure 36.3.7 ‣ §36.3 Visualizations of Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="sidebar" href="./36.3.F7b.viz" title="Figure 36.3.7 ‣ §36.3 Visualizations of Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="sidebar" href="./36.3.F8.mag" title="Figure 36.3.8 ‣ §36.3 Visualizations of Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="sidebar" href="./36.3.F8b.viz" title="Figure 36.3.8 ‣ §36.3 Visualizations of Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="sidebar" href="./36.3.F9.mag" title="Figure 36.3.9 ‣ §36.3 Visualizations of Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="sidebar" href="./36.3.F9b.viz" title="Figure 36.3.9 ‣ §36.3 Visualizations of Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="sidebar" href="./36.3.F10.mag" title="Figure 36.3.10 ‣ §36.3 Visualizations of Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="sidebar" href="./36.3.F10b.viz" title="Figure 36.3.10 ‣ §36.3 Visualizations of Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="sidebar" href="./36.3.F11.mag" title="Figure 36.3.11 ‣ §36.3 Visualizations of Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="sidebar" href="./36.3.F11b.viz" title="Figure 36.3.11 ‣ §36.3 Visualizations of Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="sidebar" href="./36.3.F12.mag" title="Figure 36.3.12 ‣ §36.3 Visualizations of Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="sidebar" href="./36.3.F12b.viz" title="Figure 36.3.12 ‣ §36.3 Visualizations of Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="sidebar" href="./36.3.F13.mag" title="Figure 36.3.13 ‣ §36.3 Visualizations of Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="sidebar" href="./36.3.F14.mag" title="Figure 36.3.14 ‣ §36.3 Visualizations of Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="sidebar" href="./36.3.F15.mag" title="Figure 36.3.15 ‣ §36.3 Visualizations of Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="sidebar" href="./36.3.F16.mag" title="Figure 36.3.16 ‣ §36.3 Visualizations of Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="sidebar" href="./36.3.F17.mag" title="Figure 36.3.17 ‣ §36.3 Visualizations of Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="sidebar" href="./36.3.F18.mag" title="Figure 36.3.18 ‣ §36.3 Visualizations of Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="sidebar" href="./36.3.F19.mag" title="Figure 36.3.19 ‣ §36.3 Visualizations of Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="sidebar" href="./36.3.F20.mag" title="Figure 36.3.20 ‣ §36.3 Visualizations of Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles">
+<link rel="sidebar" href="./36.3.F21.mag" title="Figure 36.3.21 ‣ §36.3 Visualizations of Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles">
+<meta name="keywords" lang="en" content="Pearcey integral, canonical integrals, elliptic umbilic canonical integral, hyperbolic umbilic canonical integral, pictures of modulus, pictures of phase, swallowtail canonical integral, visualizations of modulus, visualizations of phase">
+</head>
+<body class="color_default textfont_default titlefont_default fontsize_default navbar_default">
+<div class="ltx_page_navbar">
+<div class="ltx_page_navlogo"><a href="./" title="Digital Library of Mathematical Functions"><span>DLMF</span></a></div>
+<div class="ltx_page_navitems">
+<form method="get" action="./search/search">
+<ul>
+<li><a href="./idx/">Index</a></li>
+<li><a href="./not/">Notations</a></li>
+<li><small><input type="text" name="q" value="" size="6" class="ltx_page_navitem_search"><button type="submit">Search</button></small></li>
+<li><a href="./help/" class="ltx_help">Help?</a></li>
+<li><a href="./help/cite">Citing</a></li>
+<li><a href="./help/customize" class="ltx_customize">Customize</a></li>
+<li id="showinfo"><a href="" onclick="showInfo(); return false;" title="Show Annotations">Annotate</a></li>
+<li id="hideinfo"><a href="" onclick="hideInfo(); return false;">UnAnnotate</a></li>
+</ul>
+</form>
+</div>
+<div class="ltx_page_navsponsors">
+<div><a href="./about/" class="ltx_page_navabout">About the Project</a></div>
+</div>
+</div>
+<div class="ltx_page_main">
+<div class="ltx_page_header">
+<a href="./36" title="" class="ltx_ref" rel="up up"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">36 </span>Integrals with Coalescing Saddles</span></a><a href="./36#PT2" title="In Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title">Properties</span></a><a href="./36.2" title="In Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">36.2 </span>Catastrophes and Canonical Integrals</span></a><a href="./36.4" title="In Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">36.4 </span>Bifurcation Sets</span></a>
+</div>
+<div class="ltx_page_content">
+<section class="ltx_section ltx_authors_multiline ltx_leqno">
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">§36.3 </span>Visualizations of Canonical Integrals</h1>
+<div id="info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Referenced by:</dt>
+<dd><a href="./errata/#V1.0.14.I3.ix7" title="In Other Changes ‣ Version 1.0.14 (December 21, 2016) ‣ Errata" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Erratum (V1.0.14) for  Section <span class="ltx_text ltx_ref_tag">36.3</span></span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./36.3" title="" class="ltx_ref">http://dlmf.nist.gov/36.3</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./36#info" title="Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.36</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<h6>Contents</h6>
+<ol class="ltx_toclist ltx_toclist_section">
+<li class="ltx_tocentry"><a href="#i"><span class="ltx_tag ltx_tag_subsection">§36.3(i) </span>Canonical Integrals: Modulus</a></li>
+<li class="ltx_tocentry"><a href="#ii"><span class="ltx_tag ltx_tag_subsection">§36.3(ii) </span>Canonical Integrals: Phase</a></li>
+</ol>
+<section id="i" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§36.3(i) </span>Canonical Integrals: Modulus</h2>
+<div id="i.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=canonical%20integrals">canonical integrals</a>, <a class="ltx_keyword" href="./search/search?q=visualizations%20of%20modulus">visualizations of modulus</a>
+</dd>
+<dt>Notes:</dt>
+<dd>These figures were generated by the authors.</dd>
+<dt>Permalink:</dt>
+<dd><a href="./36.3.i" title="" class="ltx_ref">http://dlmf.nist.gov/36.3.i</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./36.3#info" title="§36.3 Visualizations of Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.3</span></a> and
+<a href="./36#info" title="Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.36</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<figure id="F1" class="ltx_figure">
+<table id="F1.t1" class="ltx_tabular ltx_centering ltx_align_middle">
+<tbody class="ltx_tbody">
+<tr id="F1.t1.r1" class="ltx_tr">
+<td class="ltx_td ltx_align_center"><a href="./36.3.F1.mag" title="Magnify Figure" class="ltx_magnifiable"><img src="./36/3/F1a.png" id="F1.t1.r1.g1" class="ltx_graphics ltx_img_landscape" width="380" height="299" alt="See accompanying text"></a></td>
+<td class="ltx_td ltx_align_center">
+<div class="ltx_vizimg">
+<a href="./36.3.F1b.viz" title="Interactive 3D Visualization" class="ltx_3dgraphic"><img src="./36/3/F1b.png" id="F1.t1.r1.g2" class="ltx_graphics ltx_img_landscape" width="381" height="299" alt="See accompanying text"></a>
+</div>
+</td>
+</tr>
+<tr id="F1.t1.r2" class="ltx_tr">
+<td class="ltx_td ltx_align_center">(a) Density plot.</td>
+<td class="ltx_td ltx_align_center">(b) 3D plot.</td>
+</tr>
+</tbody>
+</table>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 36.3.1: </span>Modulus of Pearcey integral <math class="ltx_Math" altimg="m33.png" altimg-height="25px" altimg-valign="-7px" altimg-width="96px" alttext="|\Psi_{2}\left(x,y\right)|" display="inline"><mrow><mo stretchy="false">|</mo><mrow><msub><mi href="./36.2#E4" mathvariant="normal" title="canonical integral function">Ψ</mi><mn>2</mn></msub><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./36.1#t1.r4" title="real parameter">x</mi><mo>,</mo><mi href="./36.1#t1.r4" title="real parameter">y</mi></mrow><mo>)</mo></mrow></mrow><mo stretchy="false">|</mo></mrow></math>.
+
+
+<a href="./36.3.F1.mag" title="Magnify Figure" class="ltx_magnifiable ltx_icon"><span>Magnify</span></a>
+
+<a href="./36.3.F1b.viz" title="Interactive 3D Visualization" class="ltx_3dgraphic ltx_icon"><span>3D</span></a>
+<a href="./help/vrml/" class="ltx_help" style="font-size:80%">Help</a>
+</figcaption>
+<div id="F1.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./36.2#E4" title="(36.2.4) ‣ Canonical Integrals ‣ §36.2(i) Definitions ‣ §36.2 Catastrophes and Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m8.png" altimg-height="25px" altimg-valign="-7px" altimg-width="69px" alttext="\Psi_{\NVar{K}}\left(\NVar{\mathbf{x}}\right)" display="inline"><mrow><msub><mi href="./36.2#E4" mathvariant="normal" title="canonical integral function">Ψ</mi><mi class="ltx_nvar" href="./36.1#t1.r3" title="codimension">K</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">𝐱</mi><mo>)</mo></mrow></mrow></math>: canonical integral function</a>,
+<a href="./36.1#t1.r4" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m25.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="y" display="inline"><mi href="./36.1#t1.r4" title="real parameter">y</mi></math>:  real parameter</a> and
+<a href="./36.1#t1.r4" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m24.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./36.1#t1.r4" title="real parameter">x</mi></math>:  real parameter</a>
+</dd>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=Pearcey%20integral">Pearcey integral</a>, <a class="ltx_keyword" href="./search/search?q=pictures%20of%20modulus">pictures of modulus</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./errata/#V1.0.14.I3.ix7.p1" title="In Other Changes ‣ Version 1.0.14 (December 21, 2016) ‣ Errata" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Erratum (V1.0.14) for  Section <span class="ltx_text ltx_ref_tag">36.3</span></span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./36.3.F1" title="" class="ltx_ref">http://dlmf.nist.gov/36.3.F1</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./36.3.F1b.viz">Vizualization</a>, <a href="./36.3.F1a.pdf">pdf</a>, <a href="./36.3.F1b.pdf">pdf</a>, <a href="./36.3.F1a.png">png</a>, <a href="./36.3.F1b.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./36.3#i.info" title="§36.3(i) Canonical Integrals: Modulus ‣ §36.3 Visualizations of Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.3(i)</span></a>,
+<a href="./36.3#info" title="§36.3 Visualizations of Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.3</span></a> and
+<a href="./36#info" title="Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.36</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+<figure id="F2" class="ltx_figure">
+<table id="F2.t1" class="ltx_tabular ltx_centering ltx_align_middle">
+<tbody class="ltx_tbody">
+<tr id="F2.t1.r1" class="ltx_tr">
+<td class="ltx_td ltx_align_center"><a href="./36.3.F2.mag" title="Magnify Figure" class="ltx_magnifiable"><img src="./36/3/F2a.png" id="F2.t1.r1.g1" class="ltx_graphics ltx_img_square" width="380" height="329" alt="See accompanying text"></a></td>
+<td class="ltx_td ltx_align_center">
+<div class="ltx_vizimg">
+<a href="./36.3.F2b.viz" title="Interactive 3D Visualization" class="ltx_3dgraphic"><img src="./36/3/F2b.png" id="F2.t1.r1.g2" class="ltx_graphics ltx_img_square" width="380" height="326" alt="See accompanying text"></a>
+</div>
+</td>
+</tr>
+<tr id="F2.t1.r2" class="ltx_tr">
+<td class="ltx_td ltx_align_center">(a) Density plot.</td>
+<td class="ltx_td ltx_align_center">(b) 3D plot.</td>
+</tr>
+</tbody>
+</table>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 36.3.2: </span>Modulus of swallowtail canonical integral function
+<math class="ltx_Math" altimg="m37.png" altimg-height="25px" altimg-valign="-7px" altimg-width="116px" alttext="|\Psi_{3}\left(x,y,3\right)|" display="inline"><mrow><mo stretchy="false">|</mo><mrow><msub><mi href="./36.2#E4" mathvariant="normal" title="canonical integral function">Ψ</mi><mn>3</mn></msub><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./36.1#t1.r4" title="real parameter">x</mi><mo>,</mo><mi href="./36.1#t1.r4" title="real parameter">y</mi><mo>,</mo><mn>3</mn></mrow><mo>)</mo></mrow></mrow><mo stretchy="false">|</mo></mrow></math>.
+
+
+<a href="./36.3.F2.mag" title="Magnify Figure" class="ltx_magnifiable ltx_icon"><span>Magnify</span></a>
+
+<a href="./36.3.F2b.viz" title="Interactive 3D Visualization" class="ltx_3dgraphic ltx_icon"><span>3D</span></a>
+<a href="./help/vrml/" class="ltx_help" style="font-size:80%">Help</a>
+</figcaption>
+<div id="F2.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./36.2#E4" title="(36.2.4) ‣ Canonical Integrals ‣ §36.2(i) Definitions ‣ §36.2 Catastrophes and Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m8.png" altimg-height="25px" altimg-valign="-7px" altimg-width="69px" alttext="\Psi_{\NVar{K}}\left(\NVar{\mathbf{x}}\right)" display="inline"><mrow><msub><mi href="./36.2#E4" mathvariant="normal" title="canonical integral function">Ψ</mi><mi class="ltx_nvar" href="./36.1#t1.r3" title="codimension">K</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">𝐱</mi><mo>)</mo></mrow></mrow></math>: canonical integral function</a>,
+<a href="./36.1#t1.r4" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m25.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="y" display="inline"><mi href="./36.1#t1.r4" title="real parameter">y</mi></math>:  real parameter</a> and
+<a href="./36.1#t1.r4" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m24.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./36.1#t1.r4" title="real parameter">x</mi></math>:  real parameter</a>
+</dd>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=pictures%20of%20modulus">pictures of modulus</a>, <a class="ltx_keyword" href="./search/search?q=swallowtail%20canonical%20integral">swallowtail canonical integral</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./errata/#V1.0.14.I3.ix7.p1" title="In Other Changes ‣ Version 1.0.14 (December 21, 2016) ‣ Errata" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Erratum (V1.0.14) for  Section <span class="ltx_text ltx_ref_tag">36.3</span></span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./36.3.F2" title="" class="ltx_ref">http://dlmf.nist.gov/36.3.F2</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./36.3.F2b.viz">Vizualization</a>, <a href="./36.3.F2a.pdf">pdf</a>, <a href="./36.3.F2b.pdf">pdf</a>, <a href="./36.3.F2a.png">png</a>, <a href="./36.3.F2b.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./36.3#i.info" title="§36.3(i) Canonical Integrals: Modulus ‣ §36.3 Visualizations of Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.3(i)</span></a>,
+<a href="./36.3#info" title="§36.3 Visualizations of Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.3</span></a> and
+<a href="./36#info" title="Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.36</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+<figure id="F3" class="ltx_figure">
+<table id="F3.t1" class="ltx_tabular ltx_centering ltx_align_middle">
+<tbody class="ltx_tbody">
+<tr id="F3.t1.r1" class="ltx_tr">
+<td class="ltx_td ltx_align_center"><a href="./36.3.F3.mag" title="Magnify Figure" class="ltx_magnifiable"><img src="./36/3/F3a.png" id="F3.t1.r1.g1" class="ltx_graphics ltx_img_square" width="381" height="328" alt="See accompanying text"></a></td>
+<td class="ltx_td ltx_align_center">
+<div class="ltx_vizimg">
+<a href="./36.3.F3b.viz" title="Interactive 3D Visualization" class="ltx_3dgraphic"><img src="./36/3/F3b.png" id="F3.t1.r1.g2" class="ltx_graphics ltx_img_square" width="380" height="322" alt="See accompanying text"></a>
+</div>
+</td>
+</tr>
+<tr id="F3.t1.r2" class="ltx_tr">
+<td class="ltx_td ltx_align_center">(a) Density plot.</td>
+<td class="ltx_td ltx_align_center">(b) 3D plot.</td>
+</tr>
+</tbody>
+</table>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 36.3.3: </span>Modulus of swallowtail canonical integral function
+<math class="ltx_Math" altimg="m36.png" altimg-height="25px" altimg-valign="-7px" altimg-width="116px" alttext="|\Psi_{3}\left(x,y,0\right)|" display="inline"><mrow><mo stretchy="false">|</mo><mrow><msub><mi href="./36.2#E4" mathvariant="normal" title="canonical integral function">Ψ</mi><mn>3</mn></msub><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./36.1#t1.r4" title="real parameter">x</mi><mo>,</mo><mi href="./36.1#t1.r4" title="real parameter">y</mi><mo>,</mo><mn>0</mn></mrow><mo>)</mo></mrow></mrow><mo stretchy="false">|</mo></mrow></math>.
+
+
+<a href="./36.3.F3.mag" title="Magnify Figure" class="ltx_magnifiable ltx_icon"><span>Magnify</span></a>
+
+<a href="./36.3.F3b.viz" title="Interactive 3D Visualization" class="ltx_3dgraphic ltx_icon"><span>3D</span></a>
+<a href="./help/vrml/" class="ltx_help" style="font-size:80%">Help</a>
+</figcaption>
+<div id="F3.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./36.2#E4" title="(36.2.4) ‣ Canonical Integrals ‣ §36.2(i) Definitions ‣ §36.2 Catastrophes and Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m8.png" altimg-height="25px" altimg-valign="-7px" altimg-width="69px" alttext="\Psi_{\NVar{K}}\left(\NVar{\mathbf{x}}\right)" display="inline"><mrow><msub><mi href="./36.2#E4" mathvariant="normal" title="canonical integral function">Ψ</mi><mi class="ltx_nvar" href="./36.1#t1.r3" title="codimension">K</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">𝐱</mi><mo>)</mo></mrow></mrow></math>: canonical integral function</a>,
+<a href="./36.1#t1.r4" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m25.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="y" display="inline"><mi href="./36.1#t1.r4" title="real parameter">y</mi></math>:  real parameter</a> and
+<a href="./36.1#t1.r4" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m24.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./36.1#t1.r4" title="real parameter">x</mi></math>:  real parameter</a>
+</dd>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=pictures%20of%20modulus">pictures of modulus</a>, <a class="ltx_keyword" href="./search/search?q=swallowtail%20canonical%20integral">swallowtail canonical integral</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./errata/#V1.0.14.I3.ix7.p1" title="In Other Changes ‣ Version 1.0.14 (December 21, 2016) ‣ Errata" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Erratum (V1.0.14) for  Section <span class="ltx_text ltx_ref_tag">36.3</span></span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./36.3.F3" title="" class="ltx_ref">http://dlmf.nist.gov/36.3.F3</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./36.3.F3b.viz">Vizualization</a>, <a href="./36.3.F3a.pdf">pdf</a>, <a href="./36.3.F3b.pdf">pdf</a>, <a href="./36.3.F3a.png">png</a>, <a href="./36.3.F3b.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./36.3#i.info" title="§36.3(i) Canonical Integrals: Modulus ‣ §36.3 Visualizations of Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.3(i)</span></a>,
+<a href="./36.3#info" title="§36.3 Visualizations of Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.3</span></a> and
+<a href="./36#info" title="Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.36</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+<figure id="F4" class="ltx_figure">
+<table id="F4.t1" class="ltx_tabular ltx_centering ltx_align_middle">
+<tbody class="ltx_tbody">
+<tr id="F4.t1.r1" class="ltx_tr">
+<td class="ltx_td ltx_align_center"><a href="./36.3.F4.mag" title="Magnify Figure" class="ltx_magnifiable"><img src="./36/3/F4a.png" id="F4.t1.r1.g1" class="ltx_graphics ltx_img_square" width="380" height="329" alt="See accompanying text"></a></td>
+<td class="ltx_td ltx_align_center">
+<div class="ltx_vizimg">
+<a href="./36.3.F4b.viz" title="Interactive 3D Visualization" class="ltx_3dgraphic"><img src="./36/3/F4b.png" id="F4.t1.r1.g2" class="ltx_graphics ltx_img_square" width="380" height="316" alt="See accompanying text"></a>
+</div>
+</td>
+</tr>
+<tr id="F4.t1.r2" class="ltx_tr">
+<td class="ltx_td ltx_align_center">(a) Density plot.</td>
+<td class="ltx_td ltx_align_center">(b) 3D plot.</td>
+</tr>
+</tbody>
+</table>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 36.3.4: </span>Modulus of swallowtail canonical integral function
+<math class="ltx_Math" altimg="m34.png" altimg-height="25px" altimg-valign="-7px" altimg-width="132px" alttext="|\Psi_{3}\left(x,y,-3\right)|" display="inline"><mrow><mo stretchy="false">|</mo><mrow><msub><mi href="./36.2#E4" mathvariant="normal" title="canonical integral function">Ψ</mi><mn>3</mn></msub><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./36.1#t1.r4" title="real parameter">x</mi><mo>,</mo><mi href="./36.1#t1.r4" title="real parameter">y</mi><mo>,</mo><mrow><mo>−</mo><mn>3</mn></mrow></mrow><mo>)</mo></mrow></mrow><mo stretchy="false">|</mo></mrow></math>.
+
+
+<a href="./36.3.F4.mag" title="Magnify Figure" class="ltx_magnifiable ltx_icon"><span>Magnify</span></a>
+
+<a href="./36.3.F4b.viz" title="Interactive 3D Visualization" class="ltx_3dgraphic ltx_icon"><span>3D</span></a>
+<a href="./help/vrml/" class="ltx_help" style="font-size:80%">Help</a>
+</figcaption>
+<div id="F4.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./36.2#E4" title="(36.2.4) ‣ Canonical Integrals ‣ §36.2(i) Definitions ‣ §36.2 Catastrophes and Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m8.png" altimg-height="25px" altimg-valign="-7px" altimg-width="69px" alttext="\Psi_{\NVar{K}}\left(\NVar{\mathbf{x}}\right)" display="inline"><mrow><msub><mi href="./36.2#E4" mathvariant="normal" title="canonical integral function">Ψ</mi><mi class="ltx_nvar" href="./36.1#t1.r3" title="codimension">K</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">𝐱</mi><mo>)</mo></mrow></mrow></math>: canonical integral function</a>,
+<a href="./36.1#t1.r4" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m25.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="y" display="inline"><mi href="./36.1#t1.r4" title="real parameter">y</mi></math>:  real parameter</a> and
+<a href="./36.1#t1.r4" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m24.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./36.1#t1.r4" title="real parameter">x</mi></math>:  real parameter</a>
+</dd>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=pictures%20of%20modulus">pictures of modulus</a>, <a class="ltx_keyword" href="./search/search?q=swallowtail%20canonical%20integral">swallowtail canonical integral</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./errata/#V1.0.14.I3.ix7.p1" title="In Other Changes ‣ Version 1.0.14 (December 21, 2016) ‣ Errata" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Erratum (V1.0.14) for  Section <span class="ltx_text ltx_ref_tag">36.3</span></span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./36.3.F4" title="" class="ltx_ref">http://dlmf.nist.gov/36.3.F4</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./36.3.F4b.viz">Vizualization</a>, <a href="./36.3.F4a.pdf">pdf</a>, <a href="./36.3.F4b.pdf">pdf</a>, <a href="./36.3.F4a.png">png</a>, <a href="./36.3.F4b.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./36.3#i.info" title="§36.3(i) Canonical Integrals: Modulus ‣ §36.3 Visualizations of Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.3(i)</span></a>,
+<a href="./36.3#info" title="§36.3 Visualizations of Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.3</span></a> and
+<a href="./36#info" title="Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.36</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+<figure id="F5" class="ltx_figure">
+<table id="F5.t1" class="ltx_tabular ltx_centering ltx_align_middle">
+<tbody class="ltx_tbody">
+<tr id="F5.t1.r1" class="ltx_tr">
+<td class="ltx_td ltx_align_center"><a href="./36.3.F5.mag" title="Magnify Figure" class="ltx_magnifiable"><img src="./36/3/F5a.png" id="F5.t1.r1.g1" class="ltx_graphics ltx_img_square" width="381" height="330" alt="See accompanying text"></a></td>
+<td class="ltx_td ltx_align_center">
+<div class="ltx_vizimg">
+<a href="./36.3.F5b.viz" title="Interactive 3D Visualization" class="ltx_3dgraphic"><img src="./36/3/F5b.png" id="F5.t1.r1.g2" class="ltx_graphics ltx_img_square" width="380" height="307" alt="See accompanying text"></a>
+</div>
+</td>
+</tr>
+<tr id="F5.t1.r2" class="ltx_tr">
+<td class="ltx_td ltx_align_center">(a) Density plot.</td>
+<td class="ltx_td ltx_align_center">(b) 3D plot.</td>
+</tr>
+</tbody>
+</table>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 36.3.5: </span>Modulus of swallowtail canonical integral function
+<math class="ltx_Math" altimg="m35.png" altimg-height="25px" altimg-valign="-7px" altimg-width="148px" alttext="|\Psi_{3}\left(x,y,-7.5\right)|" display="inline"><mrow><mo stretchy="false">|</mo><mrow><msub><mi href="./36.2#E4" mathvariant="normal" title="canonical integral function">Ψ</mi><mn>3</mn></msub><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./36.1#t1.r4" title="real parameter">x</mi><mo>,</mo><mi href="./36.1#t1.r4" title="real parameter">y</mi><mo>,</mo><mrow><mo>−</mo><mn>7.5</mn></mrow></mrow><mo>)</mo></mrow></mrow><mo stretchy="false">|</mo></mrow></math>.
+
+
+<a href="./36.3.F5.mag" title="Magnify Figure" class="ltx_magnifiable ltx_icon"><span>Magnify</span></a>
+
+<a href="./36.3.F5b.viz" title="Interactive 3D Visualization" class="ltx_3dgraphic ltx_icon"><span>3D</span></a>
+<a href="./help/vrml/" class="ltx_help" style="font-size:80%">Help</a>
+</figcaption>
+<div id="F5.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./36.2#E4" title="(36.2.4) ‣ Canonical Integrals ‣ §36.2(i) Definitions ‣ §36.2 Catastrophes and Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m8.png" altimg-height="25px" altimg-valign="-7px" altimg-width="69px" alttext="\Psi_{\NVar{K}}\left(\NVar{\mathbf{x}}\right)" display="inline"><mrow><msub><mi href="./36.2#E4" mathvariant="normal" title="canonical integral function">Ψ</mi><mi class="ltx_nvar" href="./36.1#t1.r3" title="codimension">K</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">𝐱</mi><mo>)</mo></mrow></mrow></math>: canonical integral function</a>,
+<a href="./36.1#t1.r4" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m25.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="y" display="inline"><mi href="./36.1#t1.r4" title="real parameter">y</mi></math>:  real parameter</a> and
+<a href="./36.1#t1.r4" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m24.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./36.1#t1.r4" title="real parameter">x</mi></math>:  real parameter</a>
+</dd>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=pictures%20of%20modulus">pictures of modulus</a>, <a class="ltx_keyword" href="./search/search?q=swallowtail%20canonical%20integral">swallowtail canonical integral</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./errata/#V1.0.14.I3.ix7.p1" title="In Other Changes ‣ Version 1.0.14 (December 21, 2016) ‣ Errata" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Erratum (V1.0.14) for  Section <span class="ltx_text ltx_ref_tag">36.3</span></span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./36.3.F5" title="" class="ltx_ref">http://dlmf.nist.gov/36.3.F5</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./36.3.F5b.viz">Vizualization</a>, <a href="./36.3.F5a.pdf">pdf</a>, <a href="./36.3.F5b.pdf">pdf</a>, <a href="./36.3.F5a.png">png</a>, <a href="./36.3.F5b.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./36.3#i.info" title="§36.3(i) Canonical Integrals: Modulus ‣ §36.3 Visualizations of Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.3(i)</span></a>,
+<a href="./36.3#info" title="§36.3 Visualizations of Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.3</span></a> and
+<a href="./36#info" title="Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.36</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+<div class="ltx_pagination ltx_role_newpage"></div>
+<figure id="F6" class="ltx_figure">
+<table id="F6.t1" class="ltx_tabular ltx_centering ltx_align_middle">
+<tbody class="ltx_tbody">
+<tr id="F6.t1.r1" class="ltx_tr">
+<td class="ltx_td ltx_align_center"><a href="./36.3.F6.mag" title="Magnify Figure" class="ltx_magnifiable"><img src="./36/3/F6a.png" id="F6.t1.r1.g1" class="ltx_graphics ltx_img_square" width="380" height="317" alt="See accompanying text"></a></td>
+<td class="ltx_td ltx_align_center">
+<div class="ltx_vizimg">
+<a href="./36.3.F6b.viz" title="Interactive 3D Visualization" class="ltx_3dgraphic"><img src="./36/3/F6b.png" id="F6.t1.r1.g2" class="ltx_graphics ltx_img_square" width="382" height="323" alt="See accompanying text"></a>
+</div>
+</td>
+</tr>
+<tr id="F6.t1.r2" class="ltx_tr">
+<td class="ltx_td ltx_align_center">(a) Density plot.</td>
+<td class="ltx_td ltx_align_center">(b) 3D plot.</td>
+</tr>
+</tbody>
+</table>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 36.3.6: </span>Modulus of elliptic umbilic canonical integral function
+<math class="ltx_Math" altimg="m26.png" altimg-height="28px" altimg-valign="-7px" altimg-width="132px" alttext="|\Psi^{(\mathrm{E})}\left(x,y,0\right)|" display="inline"><mrow><mo stretchy="false">|</mo><mrow><msup><mi href="./36.2#E5" mathvariant="normal" title="elliptic umbilic canonical integral function">Ψ</mi><mrow><mo href="./36.2#E5" stretchy="false" title="elliptic umbilic canonical integral function">(</mo><mi href="./36.2#E5" mathvariant="normal" title="elliptic umbilic canonical integral function">E</mi><mo href="./36.2#E5" stretchy="false" title="elliptic umbilic canonical integral function">)</mo></mrow></msup><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./36.1#t1.r4" title="real parameter">x</mi><mo>,</mo><mi href="./36.1#t1.r4" title="real parameter">y</mi><mo>,</mo><mn>0</mn></mrow><mo>)</mo></mrow></mrow><mo stretchy="false">|</mo></mrow></math>.
+
+
+<a href="./36.3.F6.mag" title="Magnify Figure" class="ltx_magnifiable ltx_icon"><span>Magnify</span></a>
+
+<a href="./36.3.F6b.viz" title="Interactive 3D Visualization" class="ltx_3dgraphic ltx_icon"><span>3D</span></a>
+<a href="./help/vrml/" class="ltx_help" style="font-size:80%">Help</a>
+</figcaption>
+<div id="F6.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./36.2#E5" title="(36.2.5) ‣ Canonical Integrals ‣ §36.2(i) Definitions ‣ §36.2 Catastrophes and Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m5.png" altimg-height="28px" altimg-valign="-7px" altimg-width="78px" alttext="\Psi^{(\mathrm{E})}\left(\NVar{\mathbf{x}}\right)" display="inline"><mrow><msup><mi href="./36.2#E5" mathvariant="normal" title="elliptic umbilic canonical integral function">Ψ</mi><mrow><mo href="./36.2#E5" stretchy="false" title="elliptic umbilic canonical integral function">(</mo><mi href="./36.2#E5" mathvariant="normal" title="elliptic umbilic canonical integral function">E</mi><mo href="./36.2#E5" stretchy="false" title="elliptic umbilic canonical integral function">)</mo></mrow></msup><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">𝐱</mi><mo>)</mo></mrow></mrow></math>: elliptic umbilic canonical integral function</a>,
+<a href="./36.1#t1.r4" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m25.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="y" display="inline"><mi href="./36.1#t1.r4" title="real parameter">y</mi></math>:  real parameter</a> and
+<a href="./36.1#t1.r4" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m24.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./36.1#t1.r4" title="real parameter">x</mi></math>:  real parameter</a>
+</dd>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=elliptic%20umbilic%20canonical%20integral">elliptic umbilic canonical integral</a>, <a class="ltx_keyword" href="./search/search?q=pictures%20of%20modulus">pictures of modulus</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./errata/#V1.0.14.I3.ix7.p1" title="In Other Changes ‣ Version 1.0.14 (December 21, 2016) ‣ Errata" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Erratum (V1.0.14) for  Section <span class="ltx_text ltx_ref_tag">36.3</span></span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./36.3.F6" title="" class="ltx_ref">http://dlmf.nist.gov/36.3.F6</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./36.3.F6b.viz">Vizualization</a>, <a href="./36.3.F6a.pdf">pdf</a>, <a href="./36.3.F6b.pdf">pdf</a>, <a href="./36.3.F6a.png">png</a>, <a href="./36.3.F6b.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./36.3#i.info" title="§36.3(i) Canonical Integrals: Modulus ‣ §36.3 Visualizations of Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.3(i)</span></a>,
+<a href="./36.3#info" title="§36.3 Visualizations of Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.3</span></a> and
+<a href="./36#info" title="Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.36</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+<figure id="F7" class="ltx_figure">
+<table id="F7.t1" class="ltx_tabular ltx_centering ltx_align_middle">
+<tbody class="ltx_tbody">
+<tr id="F7.t1.r1" class="ltx_tr">
+<td class="ltx_td ltx_align_center"><a href="./36.3.F7.mag" title="Magnify Figure" class="ltx_magnifiable"><img src="./36/3/F7a.png" id="F7.t1.r1.g1" class="ltx_graphics ltx_img_square" width="380" height="314" alt="See accompanying text"></a></td>
+<td class="ltx_td ltx_align_center">
+<div class="ltx_vizimg">
+<a href="./36.3.F7b.viz" title="Interactive 3D Visualization" class="ltx_3dgraphic"><img src="./36/3/F7b.png" id="F7.t1.r1.g2" class="ltx_graphics ltx_img_square" width="380" height="329" alt="See accompanying text"></a>
+</div>
+</td>
+</tr>
+<tr id="F7.t1.r2" class="ltx_tr">
+<td class="ltx_td ltx_align_center">(a) Density plot.</td>
+<td class="ltx_td ltx_align_center">(b) 3D plot.</td>
+</tr>
+</tbody>
+</table>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 36.3.7: </span>Modulus of elliptic umbilic canonical integral function
+<math class="ltx_Math" altimg="m27.png" altimg-height="28px" altimg-valign="-7px" altimg-width="132px" alttext="|\Psi^{(\mathrm{E})}\left(x,y,2\right)|" display="inline"><mrow><mo stretchy="false">|</mo><mrow><msup><mi href="./36.2#E5" mathvariant="normal" title="elliptic umbilic canonical integral function">Ψ</mi><mrow><mo href="./36.2#E5" stretchy="false" title="elliptic umbilic canonical integral function">(</mo><mi href="./36.2#E5" mathvariant="normal" title="elliptic umbilic canonical integral function">E</mi><mo href="./36.2#E5" stretchy="false" title="elliptic umbilic canonical integral function">)</mo></mrow></msup><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./36.1#t1.r4" title="real parameter">x</mi><mo>,</mo><mi href="./36.1#t1.r4" title="real parameter">y</mi><mo>,</mo><mn>2</mn></mrow><mo>)</mo></mrow></mrow><mo stretchy="false">|</mo></mrow></math>.
+
+
+<a href="./36.3.F7.mag" title="Magnify Figure" class="ltx_magnifiable ltx_icon"><span>Magnify</span></a>
+
+<a href="./36.3.F7b.viz" title="Interactive 3D Visualization" class="ltx_3dgraphic ltx_icon"><span>3D</span></a>
+<a href="./help/vrml/" class="ltx_help" style="font-size:80%">Help</a>
+</figcaption>
+<div id="F7.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./36.2#E5" title="(36.2.5) ‣ Canonical Integrals ‣ §36.2(i) Definitions ‣ §36.2 Catastrophes and Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m5.png" altimg-height="28px" altimg-valign="-7px" altimg-width="78px" alttext="\Psi^{(\mathrm{E})}\left(\NVar{\mathbf{x}}\right)" display="inline"><mrow><msup><mi href="./36.2#E5" mathvariant="normal" title="elliptic umbilic canonical integral function">Ψ</mi><mrow><mo href="./36.2#E5" stretchy="false" title="elliptic umbilic canonical integral function">(</mo><mi href="./36.2#E5" mathvariant="normal" title="elliptic umbilic canonical integral function">E</mi><mo href="./36.2#E5" stretchy="false" title="elliptic umbilic canonical integral function">)</mo></mrow></msup><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">𝐱</mi><mo>)</mo></mrow></mrow></math>: elliptic umbilic canonical integral function</a>,
+<a href="./36.1#t1.r4" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m25.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="y" display="inline"><mi href="./36.1#t1.r4" title="real parameter">y</mi></math>:  real parameter</a> and
+<a href="./36.1#t1.r4" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m24.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./36.1#t1.r4" title="real parameter">x</mi></math>:  real parameter</a>
+</dd>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=elliptic%20umbilic%20canonical%20integral">elliptic umbilic canonical integral</a>, <a class="ltx_keyword" href="./search/search?q=pictures%20of%20modulus">pictures of modulus</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./errata/#V1.0.14.I3.ix7.p1" title="In Other Changes ‣ Version 1.0.14 (December 21, 2016) ‣ Errata" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Erratum (V1.0.14) for  Section <span class="ltx_text ltx_ref_tag">36.3</span></span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./36.3.F7" title="" class="ltx_ref">http://dlmf.nist.gov/36.3.F7</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./36.3.F7b.viz">Vizualization</a>, <a href="./36.3.F7a.pdf">pdf</a>, <a href="./36.3.F7b.pdf">pdf</a>, <a href="./36.3.F7a.png">png</a>, <a href="./36.3.F7b.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./36.3#i.info" title="§36.3(i) Canonical Integrals: Modulus ‣ §36.3 Visualizations of Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.3(i)</span></a>,
+<a href="./36.3#info" title="§36.3 Visualizations of Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.3</span></a> and
+<a href="./36#info" title="Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.36</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+<figure id="F8" class="ltx_figure">
+<table id="F8.t1" class="ltx_tabular ltx_centering ltx_align_middle">
+<tbody class="ltx_tbody">
+<tr id="F8.t1.r1" class="ltx_tr">
+<td class="ltx_td ltx_align_center"><a href="./36.3.F8.mag" title="Magnify Figure" class="ltx_magnifiable"><img src="./36/3/F8a.png" id="F8.t1.r1.g1" class="ltx_graphics ltx_img_square" width="381" height="318" alt="See accompanying text"></a></td>
+<td class="ltx_td ltx_align_center">
+<div class="ltx_vizimg">
+<a href="./36.3.F8b.viz" title="Interactive 3D Visualization" class="ltx_3dgraphic"><img src="./36/3/F8b.png" id="F8.t1.r1.g2" class="ltx_graphics ltx_img_landscape" width="381" height="305" alt="See accompanying text"></a>
+</div>
+</td>
+</tr>
+<tr id="F8.t1.r2" class="ltx_tr">
+<td class="ltx_td ltx_align_center">(a) Density plot.</td>
+<td class="ltx_td ltx_align_center">(b) 3D plot.</td>
+</tr>
+</tbody>
+</table>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 36.3.8: </span>Modulus of elliptic umbilic canonical integral function
+<math class="ltx_Math" altimg="m28.png" altimg-height="28px" altimg-valign="-7px" altimg-width="132px" alttext="|\Psi^{(\mathrm{E})}\left(x,y,4\right)|" display="inline"><mrow><mo stretchy="false">|</mo><mrow><msup><mi href="./36.2#E5" mathvariant="normal" title="elliptic umbilic canonical integral function">Ψ</mi><mrow><mo href="./36.2#E5" stretchy="false" title="elliptic umbilic canonical integral function">(</mo><mi href="./36.2#E5" mathvariant="normal" title="elliptic umbilic canonical integral function">E</mi><mo href="./36.2#E5" stretchy="false" title="elliptic umbilic canonical integral function">)</mo></mrow></msup><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./36.1#t1.r4" title="real parameter">x</mi><mo>,</mo><mi href="./36.1#t1.r4" title="real parameter">y</mi><mo>,</mo><mn>4</mn></mrow><mo>)</mo></mrow></mrow><mo stretchy="false">|</mo></mrow></math>.
+
+
+<a href="./36.3.F8.mag" title="Magnify Figure" class="ltx_magnifiable ltx_icon"><span>Magnify</span></a>
+
+<a href="./36.3.F8b.viz" title="Interactive 3D Visualization" class="ltx_3dgraphic ltx_icon"><span>3D</span></a>
+<a href="./help/vrml/" class="ltx_help" style="font-size:80%">Help</a>
+</figcaption>
+<div id="F8.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./36.2#E5" title="(36.2.5) ‣ Canonical Integrals ‣ §36.2(i) Definitions ‣ §36.2 Catastrophes and Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m5.png" altimg-height="28px" altimg-valign="-7px" altimg-width="78px" alttext="\Psi^{(\mathrm{E})}\left(\NVar{\mathbf{x}}\right)" display="inline"><mrow><msup><mi href="./36.2#E5" mathvariant="normal" title="elliptic umbilic canonical integral function">Ψ</mi><mrow><mo href="./36.2#E5" stretchy="false" title="elliptic umbilic canonical integral function">(</mo><mi href="./36.2#E5" mathvariant="normal" title="elliptic umbilic canonical integral function">E</mi><mo href="./36.2#E5" stretchy="false" title="elliptic umbilic canonical integral function">)</mo></mrow></msup><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">𝐱</mi><mo>)</mo></mrow></mrow></math>: elliptic umbilic canonical integral function</a>,
+<a href="./36.1#t1.r4" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m25.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="y" display="inline"><mi href="./36.1#t1.r4" title="real parameter">y</mi></math>:  real parameter</a> and
+<a href="./36.1#t1.r4" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m24.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./36.1#t1.r4" title="real parameter">x</mi></math>:  real parameter</a>
+</dd>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=elliptic%20umbilic%20canonical%20integral">elliptic umbilic canonical integral</a>, <a class="ltx_keyword" href="./search/search?q=pictures%20of%20modulus">pictures of modulus</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./errata/#V1.0.14.I3.ix7.p1" title="In Other Changes ‣ Version 1.0.14 (December 21, 2016) ‣ Errata" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Erratum (V1.0.14) for  Section <span class="ltx_text ltx_ref_tag">36.3</span></span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./36.3.F8" title="" class="ltx_ref">http://dlmf.nist.gov/36.3.F8</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./36.3.F8b.viz">Vizualization</a>, <a href="./36.3.F8a.pdf">pdf</a>, <a href="./36.3.F8b.pdf">pdf</a>, <a href="./36.3.F8a.png">png</a>, <a href="./36.3.F8b.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./36.3#i.info" title="§36.3(i) Canonical Integrals: Modulus ‣ §36.3 Visualizations of Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.3(i)</span></a>,
+<a href="./36.3#info" title="§36.3 Visualizations of Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.3</span></a> and
+<a href="./36#info" title="Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.36</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+<figure id="F9" class="ltx_figure">
+<table id="F9.t1" class="ltx_tabular ltx_centering ltx_align_middle">
+<tbody class="ltx_tbody">
+<tr id="F9.t1.r1" class="ltx_tr">
+<td class="ltx_td ltx_align_center"><a href="./36.3.F9.mag" title="Magnify Figure" class="ltx_magnifiable"><img src="./36/3/F9a.png" id="F9.t1.r1.g1" class="ltx_graphics ltx_img_square" width="381" height="314" alt="See accompanying text"></a></td>
+<td class="ltx_td ltx_align_center">
+<div class="ltx_vizimg">
+<a href="./36.3.F9b.viz" title="Interactive 3D Visualization" class="ltx_3dgraphic"><img src="./36/3/F9b.png" id="F9.t1.r1.g2" class="ltx_graphics ltx_img_landscape" width="381" height="299" alt="See accompanying text"></a>
+</div>
+</td>
+</tr>
+<tr id="F9.t1.r2" class="ltx_tr">
+<td class="ltx_td ltx_align_center">(a) Density plot.</td>
+<td class="ltx_td ltx_align_center">(b) 3D plot.</td>
+</tr>
+</tbody>
+</table>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 36.3.9: </span>Modulus of hyperbolic umbilic canonical integral function
+<math class="ltx_Math" altimg="m29.png" altimg-height="28px" altimg-valign="-7px" altimg-width="133px" alttext="|\Psi^{(\mathrm{H})}\left(x,y,0\right)|" display="inline"><mrow><mo stretchy="false">|</mo><mrow><msup><mi href="./36.2#E5" mathvariant="normal" title="hyperbolic umbilic canonical integral function">Ψ</mi><mrow><mo href="./36.2#E5" stretchy="false" title="hyperbolic umbilic canonical integral function">(</mo><mi href="./36.2#E5" mathvariant="normal" title="hyperbolic umbilic canonical integral function">H</mi><mo href="./36.2#E5" stretchy="false" title="hyperbolic umbilic canonical integral function">)</mo></mrow></msup><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./36.1#t1.r4" title="real parameter">x</mi><mo>,</mo><mi href="./36.1#t1.r4" title="real parameter">y</mi><mo>,</mo><mn>0</mn></mrow><mo>)</mo></mrow></mrow><mo stretchy="false">|</mo></mrow></math>.
+
+
+<a href="./36.3.F9.mag" title="Magnify Figure" class="ltx_magnifiable ltx_icon"><span>Magnify</span></a>
+
+<a href="./36.3.F9b.viz" title="Interactive 3D Visualization" class="ltx_3dgraphic ltx_icon"><span>3D</span></a>
+<a href="./help/vrml/" class="ltx_help" style="font-size:80%">Help</a>
+</figcaption>
+<div id="F9.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./36.2#E5" title="(36.2.5) ‣ Canonical Integrals ‣ §36.2(i) Definitions ‣ §36.2 Catastrophes and Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m6.png" altimg-height="28px" altimg-valign="-7px" altimg-width="79px" alttext="\Psi^{(\mathrm{H})}\left(\NVar{\mathbf{x}}\right)" display="inline"><mrow><msup><mi href="./36.2#E5" mathvariant="normal" title="hyperbolic umbilic canonical integral function">Ψ</mi><mrow><mo href="./36.2#E5" stretchy="false" title="hyperbolic umbilic canonical integral function">(</mo><mi href="./36.2#E5" mathvariant="normal" title="hyperbolic umbilic canonical integral function">H</mi><mo href="./36.2#E5" stretchy="false" title="hyperbolic umbilic canonical integral function">)</mo></mrow></msup><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">𝐱</mi><mo>)</mo></mrow></mrow></math>: hyperbolic umbilic canonical integral function</a>,
+<a href="./36.1#t1.r4" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m25.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="y" display="inline"><mi href="./36.1#t1.r4" title="real parameter">y</mi></math>:  real parameter</a> and
+<a href="./36.1#t1.r4" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m24.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./36.1#t1.r4" title="real parameter">x</mi></math>:  real parameter</a>
+</dd>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=hyperbolic%20umbilic%20canonical%20integral">hyperbolic umbilic canonical integral</a>, <a class="ltx_keyword" href="./search/search?q=pictures%20of%20modulus">pictures of modulus</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./errata/#V1.0.14.I2.ix1" title="In Errata ‣ Version 1.0.14 (December 21, 2016) ‣ Errata" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Erratum (V1.0.14) for  Figures <span class="ltx_text ltx_ref_tag">36.3.9</span>, <span class="ltx_text ltx_ref_tag">36.3.10</span>, <span class="ltx_text ltx_ref_tag">36.3.11</span>, <span class="ltx_text ltx_ref_tag">36.3.12</span></span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./36.3.F9" title="" class="ltx_ref">http://dlmf.nist.gov/36.3.F9</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./36.3.F9b.viz">Vizualization</a>, <a href="./36.3.F9a.pdf">pdf</a>, <a href="./36.3.F9b.pdf">pdf</a>, <a href="./36.3.F9a.png">png</a>, <a href="./36.3.F9b.png">png</a>
+</dd>
+<dt>Errata (effective with 1.0.14):</dt>
+<dd>
+Scales were corrected. The interval
+<math class="ltx_Math" altimg="m4.png" altimg-height="34px" altimg-valign="-13px" altimg-width="165px" alttext="-8.4\leq\frac{x-y}{\sqrt{2}}\leq 8.4" display="inline"><mrow><mrow><mo>−</mo><mn>8.4</mn></mrow><mo>≤</mo><mfrac><mrow><mi href="./36.1#t1.r4" title="real parameter">x</mi><mo>−</mo><mi href="./36.1#t1.r4" title="real parameter">y</mi></mrow><msqrt><mn>2</mn></msqrt></mfrac><mo>≤</mo><mn>8.4</mn></mrow></math> was replaced by <math class="ltx_Math" altimg="m1.png" altimg-height="34px" altimg-valign="-13px" altimg-width="186px" alttext="-12.0\leq\frac{x-y}{\sqrt{2}}\leq 12.0" display="inline"><mrow><mrow><mo>−</mo><mn>12.0</mn></mrow><mo>≤</mo><mfrac><mrow><mi href="./36.1#t1.r4" title="real parameter">x</mi><mo>−</mo><mi href="./36.1#t1.r4" title="real parameter">y</mi></mrow><msqrt><mn>2</mn></msqrt></mfrac><mo>≤</mo><mn>12.0</mn></mrow></math> and <math class="ltx_Math" altimg="m2.png" altimg-height="34px" altimg-valign="-13px" altimg-width="175px" alttext="-12.7\leq\frac{x+y}{\sqrt{2}}\leq 4.2" display="inline"><mrow><mrow><mo>−</mo><mn>12.7</mn></mrow><mo>≤</mo><mfrac><mrow><mi href="./36.1#t1.r4" title="real parameter">x</mi><mo>+</mo><mi href="./36.1#t1.r4" title="real parameter">y</mi></mrow><msqrt><mn>2</mn></msqrt></mfrac><mo>≤</mo><mn>4.2</mn></mrow></math> replaced by <math class="ltx_Math" altimg="m3.png" altimg-height="34px" altimg-valign="-13px" altimg-width="181px" alttext="-18.0\leq\frac{x+y}{\sqrt{2}}\leq 6.0." display="inline"><mrow><mrow><mrow><mo>−</mo><mn>18.0</mn></mrow><mo>≤</mo><mfrac><mrow><mi href="./36.1#t1.r4" title="real parameter">x</mi><mo>+</mo><mi href="./36.1#t1.r4" title="real parameter">y</mi></mrow><msqrt><mn>2</mn></msqrt></mfrac><mo>≤</mo><mn>6.0</mn></mrow><mo lspace="0em">.</mo></mrow></math>
+
+<p><span class="ltx_font_italic">Reported 2016-09-12 by Dan  Piponi</span></p>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./36.3#i.info" title="§36.3(i) Canonical Integrals: Modulus ‣ §36.3 Visualizations of Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.3(i)</span></a>,
+<a href="./36.3#info" title="§36.3 Visualizations of Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.3</span></a> and
+<a href="./36#info" title="Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.36</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+<figure id="F10" class="ltx_figure">
+<table id="F10.t1" class="ltx_tabular ltx_centering ltx_align_middle">
+<tbody class="ltx_tbody">
+<tr id="F10.t1.r1" class="ltx_tr">
+<td class="ltx_td ltx_align_center"><a href="./36.3.F10.mag" title="Magnify Figure" class="ltx_magnifiable"><img src="./36/3/F10a.png" id="F10.t1.r1.g1" class="ltx_graphics ltx_img_square" width="381" height="323" alt="See accompanying text"></a></td>
+<td class="ltx_td ltx_align_center">
+<div class="ltx_vizimg">
+<a href="./36.3.F10b.viz" title="Interactive 3D Visualization" class="ltx_3dgraphic"><img src="./36/3/F10b.png" id="F10.t1.r1.g2" class="ltx_graphics ltx_img_landscape" width="381" height="305" alt="See accompanying text"></a>
+</div>
+</td>
+</tr>
+<tr id="F10.t1.r2" class="ltx_tr">
+<td class="ltx_td ltx_align_center">(a) Density plot.</td>
+<td class="ltx_td ltx_align_center">(b) 3D plot.</td>
+</tr>
+</tbody>
+</table>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 36.3.10: </span>Modulus of hyperbolic umbilic canonical integral function
+<math class="ltx_Math" altimg="m30.png" altimg-height="28px" altimg-valign="-7px" altimg-width="133px" alttext="|\Psi^{(\mathrm{H})}\left(x,y,1\right)|" display="inline"><mrow><mo stretchy="false">|</mo><mrow><msup><mi href="./36.2#E5" mathvariant="normal" title="hyperbolic umbilic canonical integral function">Ψ</mi><mrow><mo href="./36.2#E5" stretchy="false" title="hyperbolic umbilic canonical integral function">(</mo><mi href="./36.2#E5" mathvariant="normal" title="hyperbolic umbilic canonical integral function">H</mi><mo href="./36.2#E5" stretchy="false" title="hyperbolic umbilic canonical integral function">)</mo></mrow></msup><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./36.1#t1.r4" title="real parameter">x</mi><mo>,</mo><mi href="./36.1#t1.r4" title="real parameter">y</mi><mo>,</mo><mn>1</mn></mrow><mo>)</mo></mrow></mrow><mo stretchy="false">|</mo></mrow></math>.
+
+
+<a href="./36.3.F10.mag" title="Magnify Figure" class="ltx_magnifiable ltx_icon"><span>Magnify</span></a>
+
+<a href="./36.3.F10b.viz" title="Interactive 3D Visualization" class="ltx_3dgraphic ltx_icon"><span>3D</span></a>
+<a href="./help/vrml/" class="ltx_help" style="font-size:80%">Help</a>
+</figcaption>
+<div id="F10.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./36.2#E5" title="(36.2.5) ‣ Canonical Integrals ‣ §36.2(i) Definitions ‣ §36.2 Catastrophes and Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m6.png" altimg-height="28px" altimg-valign="-7px" altimg-width="79px" alttext="\Psi^{(\mathrm{H})}\left(\NVar{\mathbf{x}}\right)" display="inline"><mrow><msup><mi href="./36.2#E5" mathvariant="normal" title="hyperbolic umbilic canonical integral function">Ψ</mi><mrow><mo href="./36.2#E5" stretchy="false" title="hyperbolic umbilic canonical integral function">(</mo><mi href="./36.2#E5" mathvariant="normal" title="hyperbolic umbilic canonical integral function">H</mi><mo href="./36.2#E5" stretchy="false" title="hyperbolic umbilic canonical integral function">)</mo></mrow></msup><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">𝐱</mi><mo>)</mo></mrow></mrow></math>: hyperbolic umbilic canonical integral function</a>,
+<a href="./36.1#t1.r4" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m25.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="y" display="inline"><mi href="./36.1#t1.r4" title="real parameter">y</mi></math>:  real parameter</a> and
+<a href="./36.1#t1.r4" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m24.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./36.1#t1.r4" title="real parameter">x</mi></math>:  real parameter</a>
+</dd>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=hyperbolic%20umbilic%20canonical%20integral">hyperbolic umbilic canonical integral</a>, <a class="ltx_keyword" href="./search/search?q=pictures%20of%20modulus">pictures of modulus</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./errata/#V1.0.14.I2.ix1" title="In Errata ‣ Version 1.0.14 (December 21, 2016) ‣ Errata" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Erratum (V1.0.14) for  Figures <span class="ltx_text ltx_ref_tag">36.3.9</span>, <span class="ltx_text ltx_ref_tag">36.3.10</span>, <span class="ltx_text ltx_ref_tag">36.3.11</span>, <span class="ltx_text ltx_ref_tag">36.3.12</span></span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./36.3.F10" title="" class="ltx_ref">http://dlmf.nist.gov/36.3.F10</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./36.3.F10b.viz">Vizualization</a>, <a href="./36.3.F10a.pdf">pdf</a>, <a href="./36.3.F10b.pdf">pdf</a>, <a href="./36.3.F10a.png">png</a>, <a href="./36.3.F10b.png">png</a>
+</dd>
+<dt>Errata (effective with 1.0.14):</dt>
+<dd>
+Scales were corrected. The interval
+<math class="ltx_Math" altimg="m4.png" altimg-height="34px" altimg-valign="-13px" altimg-width="165px" alttext="-8.4\leq\frac{x-y}{\sqrt{2}}\leq 8.4" display="inline"><mrow><mrow><mo>−</mo><mn>8.4</mn></mrow><mo>≤</mo><mfrac><mrow><mi href="./36.1#t1.r4" title="real parameter">x</mi><mo>−</mo><mi href="./36.1#t1.r4" title="real parameter">y</mi></mrow><msqrt><mn>2</mn></msqrt></mfrac><mo>≤</mo><mn>8.4</mn></mrow></math> was replaced by <math class="ltx_Math" altimg="m1.png" altimg-height="34px" altimg-valign="-13px" altimg-width="186px" alttext="-12.0\leq\frac{x-y}{\sqrt{2}}\leq 12.0" display="inline"><mrow><mrow><mo>−</mo><mn>12.0</mn></mrow><mo>≤</mo><mfrac><mrow><mi href="./36.1#t1.r4" title="real parameter">x</mi><mo>−</mo><mi href="./36.1#t1.r4" title="real parameter">y</mi></mrow><msqrt><mn>2</mn></msqrt></mfrac><mo>≤</mo><mn>12.0</mn></mrow></math> and <math class="ltx_Math" altimg="m2.png" altimg-height="34px" altimg-valign="-13px" altimg-width="175px" alttext="-12.7\leq\frac{x+y}{\sqrt{2}}\leq 4.2" display="inline"><mrow><mrow><mo>−</mo><mn>12.7</mn></mrow><mo>≤</mo><mfrac><mrow><mi href="./36.1#t1.r4" title="real parameter">x</mi><mo>+</mo><mi href="./36.1#t1.r4" title="real parameter">y</mi></mrow><msqrt><mn>2</mn></msqrt></mfrac><mo>≤</mo><mn>4.2</mn></mrow></math> replaced by <math class="ltx_Math" altimg="m3.png" altimg-height="34px" altimg-valign="-13px" altimg-width="181px" alttext="-18.0\leq\frac{x+y}{\sqrt{2}}\leq 6.0." display="inline"><mrow><mrow><mrow><mo>−</mo><mn>18.0</mn></mrow><mo>≤</mo><mfrac><mrow><mi href="./36.1#t1.r4" title="real parameter">x</mi><mo>+</mo><mi href="./36.1#t1.r4" title="real parameter">y</mi></mrow><msqrt><mn>2</mn></msqrt></mfrac><mo>≤</mo><mn>6.0</mn></mrow><mo lspace="0em">.</mo></mrow></math>
+
+<p><span class="ltx_font_italic">Reported 2016-09-12 by Dan  Piponi</span></p>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./36.3#i.info" title="§36.3(i) Canonical Integrals: Modulus ‣ §36.3 Visualizations of Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.3(i)</span></a>,
+<a href="./36.3#info" title="§36.3 Visualizations of Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.3</span></a> and
+<a href="./36#info" title="Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.36</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+<figure id="F11" class="ltx_figure">
+<table id="F11.t1" class="ltx_tabular ltx_centering ltx_align_middle">
+<tbody class="ltx_tbody">
+<tr id="F11.t1.r1" class="ltx_tr">
+<td class="ltx_td ltx_align_center"><a href="./36.3.F11.mag" title="Magnify Figure" class="ltx_magnifiable"><img src="./36/3/F11a.png" id="F11.t1.r1.g1" class="ltx_graphics ltx_img_square" width="381" height="323" alt="See accompanying text"></a></td>
+<td class="ltx_td ltx_align_center">
+<div class="ltx_vizimg">
+<a href="./36.3.F11b.viz" title="Interactive 3D Visualization" class="ltx_3dgraphic"><img src="./36/3/F11b.png" id="F11.t1.r1.g2" class="ltx_graphics ltx_img_landscape" width="381" height="295" alt="See accompanying text"></a>
+</div>
+</td>
+</tr>
+<tr id="F11.t1.r2" class="ltx_tr">
+<td class="ltx_td ltx_align_center">(a) Density plot.</td>
+<td class="ltx_td ltx_align_center">(b) 3D plot.</td>
+</tr>
+</tbody>
+</table>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 36.3.11: </span>Modulus of hyperbolic umbilic canonical integral function
+<math class="ltx_Math" altimg="m31.png" altimg-height="28px" altimg-valign="-7px" altimg-width="133px" alttext="|\Psi^{(\mathrm{H})}\left(x,y,2\right)|" display="inline"><mrow><mo stretchy="false">|</mo><mrow><msup><mi href="./36.2#E5" mathvariant="normal" title="hyperbolic umbilic canonical integral function">Ψ</mi><mrow><mo href="./36.2#E5" stretchy="false" title="hyperbolic umbilic canonical integral function">(</mo><mi href="./36.2#E5" mathvariant="normal" title="hyperbolic umbilic canonical integral function">H</mi><mo href="./36.2#E5" stretchy="false" title="hyperbolic umbilic canonical integral function">)</mo></mrow></msup><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./36.1#t1.r4" title="real parameter">x</mi><mo>,</mo><mi href="./36.1#t1.r4" title="real parameter">y</mi><mo>,</mo><mn>2</mn></mrow><mo>)</mo></mrow></mrow><mo stretchy="false">|</mo></mrow></math>.
+
+
+<a href="./36.3.F11.mag" title="Magnify Figure" class="ltx_magnifiable ltx_icon"><span>Magnify</span></a>
+
+<a href="./36.3.F11b.viz" title="Interactive 3D Visualization" class="ltx_3dgraphic ltx_icon"><span>3D</span></a>
+<a href="./help/vrml/" class="ltx_help" style="font-size:80%">Help</a>
+</figcaption>
+<div id="F11.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./36.2#E5" title="(36.2.5) ‣ Canonical Integrals ‣ §36.2(i) Definitions ‣ §36.2 Catastrophes and Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m6.png" altimg-height="28px" altimg-valign="-7px" altimg-width="79px" alttext="\Psi^{(\mathrm{H})}\left(\NVar{\mathbf{x}}\right)" display="inline"><mrow><msup><mi href="./36.2#E5" mathvariant="normal" title="hyperbolic umbilic canonical integral function">Ψ</mi><mrow><mo href="./36.2#E5" stretchy="false" title="hyperbolic umbilic canonical integral function">(</mo><mi href="./36.2#E5" mathvariant="normal" title="hyperbolic umbilic canonical integral function">H</mi><mo href="./36.2#E5" stretchy="false" title="hyperbolic umbilic canonical integral function">)</mo></mrow></msup><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">𝐱</mi><mo>)</mo></mrow></mrow></math>: hyperbolic umbilic canonical integral function</a>,
+<a href="./36.1#t1.r4" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m25.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="y" display="inline"><mi href="./36.1#t1.r4" title="real parameter">y</mi></math>:  real parameter</a> and
+<a href="./36.1#t1.r4" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m24.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./36.1#t1.r4" title="real parameter">x</mi></math>:  real parameter</a>
+</dd>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=hyperbolic%20umbilic%20canonical%20integral">hyperbolic umbilic canonical integral</a>, <a class="ltx_keyword" href="./search/search?q=pictures%20of%20modulus">pictures of modulus</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./errata/#V1.0.14.I2.ix1" title="In Errata ‣ Version 1.0.14 (December 21, 2016) ‣ Errata" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Erratum (V1.0.14) for  Figures <span class="ltx_text ltx_ref_tag">36.3.9</span>, <span class="ltx_text ltx_ref_tag">36.3.10</span>, <span class="ltx_text ltx_ref_tag">36.3.11</span>, <span class="ltx_text ltx_ref_tag">36.3.12</span></span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./36.3.F11" title="" class="ltx_ref">http://dlmf.nist.gov/36.3.F11</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./36.3.F11b.viz">Vizualization</a>, <a href="./36.3.F11a.pdf">pdf</a>, <a href="./36.3.F11b.pdf">pdf</a>, <a href="./36.3.F11a.png">png</a>, <a href="./36.3.F11b.png">png</a>
+</dd>
+<dt>Errata (effective with 1.0.14):</dt>
+<dd>
+Scales were corrected. The interval
+<math class="ltx_Math" altimg="m4.png" altimg-height="34px" altimg-valign="-13px" altimg-width="165px" alttext="-8.4\leq\frac{x-y}{\sqrt{2}}\leq 8.4" display="inline"><mrow><mrow><mo>−</mo><mn>8.4</mn></mrow><mo>≤</mo><mfrac><mrow><mi href="./36.1#t1.r4" title="real parameter">x</mi><mo>−</mo><mi href="./36.1#t1.r4" title="real parameter">y</mi></mrow><msqrt><mn>2</mn></msqrt></mfrac><mo>≤</mo><mn>8.4</mn></mrow></math> was replaced by <math class="ltx_Math" altimg="m1.png" altimg-height="34px" altimg-valign="-13px" altimg-width="186px" alttext="-12.0\leq\frac{x-y}{\sqrt{2}}\leq 12.0" display="inline"><mrow><mrow><mo>−</mo><mn>12.0</mn></mrow><mo>≤</mo><mfrac><mrow><mi href="./36.1#t1.r4" title="real parameter">x</mi><mo>−</mo><mi href="./36.1#t1.r4" title="real parameter">y</mi></mrow><msqrt><mn>2</mn></msqrt></mfrac><mo>≤</mo><mn>12.0</mn></mrow></math> and <math class="ltx_Math" altimg="m2.png" altimg-height="34px" altimg-valign="-13px" altimg-width="175px" alttext="-12.7\leq\frac{x+y}{\sqrt{2}}\leq 4.2" display="inline"><mrow><mrow><mo>−</mo><mn>12.7</mn></mrow><mo>≤</mo><mfrac><mrow><mi href="./36.1#t1.r4" title="real parameter">x</mi><mo>+</mo><mi href="./36.1#t1.r4" title="real parameter">y</mi></mrow><msqrt><mn>2</mn></msqrt></mfrac><mo>≤</mo><mn>4.2</mn></mrow></math> replaced by <math class="ltx_Math" altimg="m3.png" altimg-height="34px" altimg-valign="-13px" altimg-width="181px" alttext="-18.0\leq\frac{x+y}{\sqrt{2}}\leq 6.0." display="inline"><mrow><mrow><mrow><mo>−</mo><mn>18.0</mn></mrow><mo>≤</mo><mfrac><mrow><mi href="./36.1#t1.r4" title="real parameter">x</mi><mo>+</mo><mi href="./36.1#t1.r4" title="real parameter">y</mi></mrow><msqrt><mn>2</mn></msqrt></mfrac><mo>≤</mo><mn>6.0</mn></mrow><mo lspace="0em">.</mo></mrow></math>
+
+<p><span class="ltx_font_italic">Reported 2016-09-12 by Dan  Piponi</span></p>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./36.3#i.info" title="§36.3(i) Canonical Integrals: Modulus ‣ §36.3 Visualizations of Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.3(i)</span></a>,
+<a href="./36.3#info" title="§36.3 Visualizations of Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.3</span></a> and
+<a href="./36#info" title="Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.36</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+<figure id="F12" class="ltx_figure">
+<table id="F12.t1" class="ltx_tabular ltx_centering ltx_align_middle">
+<tbody class="ltx_tbody">
+<tr id="F12.t1.r1" class="ltx_tr">
+<td class="ltx_td ltx_align_center"><a href="./36.3.F12.mag" title="Magnify Figure" class="ltx_magnifiable"><img src="./36/3/F12a.png" id="F12.t1.r1.g1" class="ltx_graphics ltx_img_square" width="381" height="322" alt="See accompanying text"></a></td>
+<td class="ltx_td ltx_align_center">
+<div class="ltx_vizimg">
+<a href="./36.3.F12b.viz" title="Interactive 3D Visualization" class="ltx_3dgraphic"><img src="./36/3/F12b.png" id="F12.t1.r1.g2" class="ltx_graphics ltx_img_landscape" width="381" height="307" alt="See accompanying text"></a>
+</div>
+</td>
+</tr>
+<tr id="F12.t1.r2" class="ltx_tr">
+<td class="ltx_td ltx_align_center">(a) Density plot.</td>
+<td class="ltx_td ltx_align_center">(b) 3D plot.</td>
+</tr>
+</tbody>
+</table>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 36.3.12: </span>Modulus of hyperbolic umbilic canonical integral function
+<math class="ltx_Math" altimg="m32.png" altimg-height="28px" altimg-valign="-7px" altimg-width="133px" alttext="|\Psi^{(\mathrm{H})}\left(x,y,3\right)|" display="inline"><mrow><mo stretchy="false">|</mo><mrow><msup><mi href="./36.2#E5" mathvariant="normal" title="hyperbolic umbilic canonical integral function">Ψ</mi><mrow><mo href="./36.2#E5" stretchy="false" title="hyperbolic umbilic canonical integral function">(</mo><mi href="./36.2#E5" mathvariant="normal" title="hyperbolic umbilic canonical integral function">H</mi><mo href="./36.2#E5" stretchy="false" title="hyperbolic umbilic canonical integral function">)</mo></mrow></msup><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./36.1#t1.r4" title="real parameter">x</mi><mo>,</mo><mi href="./36.1#t1.r4" title="real parameter">y</mi><mo>,</mo><mn>3</mn></mrow><mo>)</mo></mrow></mrow><mo stretchy="false">|</mo></mrow></math>.
+
+
+<a href="./36.3.F12.mag" title="Magnify Figure" class="ltx_magnifiable ltx_icon"><span>Magnify</span></a>
+
+<a href="./36.3.F12b.viz" title="Interactive 3D Visualization" class="ltx_3dgraphic ltx_icon"><span>3D</span></a>
+<a href="./help/vrml/" class="ltx_help" style="font-size:80%">Help</a>
+</figcaption>
+<div id="F12.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./36.2#E5" title="(36.2.5) ‣ Canonical Integrals ‣ §36.2(i) Definitions ‣ §36.2 Catastrophes and Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m6.png" altimg-height="28px" altimg-valign="-7px" altimg-width="79px" alttext="\Psi^{(\mathrm{H})}\left(\NVar{\mathbf{x}}\right)" display="inline"><mrow><msup><mi href="./36.2#E5" mathvariant="normal" title="hyperbolic umbilic canonical integral function">Ψ</mi><mrow><mo href="./36.2#E5" stretchy="false" title="hyperbolic umbilic canonical integral function">(</mo><mi href="./36.2#E5" mathvariant="normal" title="hyperbolic umbilic canonical integral function">H</mi><mo href="./36.2#E5" stretchy="false" title="hyperbolic umbilic canonical integral function">)</mo></mrow></msup><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">𝐱</mi><mo>)</mo></mrow></mrow></math>: hyperbolic umbilic canonical integral function</a>,
+<a href="./36.1#t1.r4" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m25.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="y" display="inline"><mi href="./36.1#t1.r4" title="real parameter">y</mi></math>:  real parameter</a> and
+<a href="./36.1#t1.r4" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m24.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./36.1#t1.r4" title="real parameter">x</mi></math>:  real parameter</a>
+</dd>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=hyperbolic%20umbilic%20canonical%20integral">hyperbolic umbilic canonical integral</a>, <a class="ltx_keyword" href="./search/search?q=pictures%20of%20modulus">pictures of modulus</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./errata/#V1.0.14.I2.ix1" title="In Errata ‣ Version 1.0.14 (December 21, 2016) ‣ Errata" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Erratum (V1.0.14) for  Figures <span class="ltx_text ltx_ref_tag">36.3.9</span>, <span class="ltx_text ltx_ref_tag">36.3.10</span>, <span class="ltx_text ltx_ref_tag">36.3.11</span>, <span class="ltx_text ltx_ref_tag">36.3.12</span></span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./36.3.F12" title="" class="ltx_ref">http://dlmf.nist.gov/36.3.F12</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./36.3.F12b.viz">Vizualization</a>, <a href="./36.3.F12a.pdf">pdf</a>, <a href="./36.3.F12b.pdf">pdf</a>, <a href="./36.3.F12a.png">png</a>, <a href="./36.3.F12b.png">png</a>
+</dd>
+<dt>Errata (effective with 1.0.14):</dt>
+<dd>
+Scales were corrected. The interval
+<math class="ltx_Math" altimg="m4.png" altimg-height="34px" altimg-valign="-13px" altimg-width="165px" alttext="-8.4\leq\frac{x-y}{\sqrt{2}}\leq 8.4" display="inline"><mrow><mrow><mo>−</mo><mn>8.4</mn></mrow><mo>≤</mo><mfrac><mrow><mi href="./36.1#t1.r4" title="real parameter">x</mi><mo>−</mo><mi href="./36.1#t1.r4" title="real parameter">y</mi></mrow><msqrt><mn>2</mn></msqrt></mfrac><mo>≤</mo><mn>8.4</mn></mrow></math> was replaced by <math class="ltx_Math" altimg="m1.png" altimg-height="34px" altimg-valign="-13px" altimg-width="186px" alttext="-12.0\leq\frac{x-y}{\sqrt{2}}\leq 12.0" display="inline"><mrow><mrow><mo>−</mo><mn>12.0</mn></mrow><mo>≤</mo><mfrac><mrow><mi href="./36.1#t1.r4" title="real parameter">x</mi><mo>−</mo><mi href="./36.1#t1.r4" title="real parameter">y</mi></mrow><msqrt><mn>2</mn></msqrt></mfrac><mo>≤</mo><mn>12.0</mn></mrow></math> and <math class="ltx_Math" altimg="m2.png" altimg-height="34px" altimg-valign="-13px" altimg-width="175px" alttext="-12.7\leq\frac{x+y}{\sqrt{2}}\leq 4.2" display="inline"><mrow><mrow><mo>−</mo><mn>12.7</mn></mrow><mo>≤</mo><mfrac><mrow><mi href="./36.1#t1.r4" title="real parameter">x</mi><mo>+</mo><mi href="./36.1#t1.r4" title="real parameter">y</mi></mrow><msqrt><mn>2</mn></msqrt></mfrac><mo>≤</mo><mn>4.2</mn></mrow></math> replaced by <math class="ltx_Math" altimg="m3.png" altimg-height="34px" altimg-valign="-13px" altimg-width="181px" alttext="-18.0\leq\frac{x+y}{\sqrt{2}}\leq 6.0." display="inline"><mrow><mrow><mrow><mo>−</mo><mn>18.0</mn></mrow><mo>≤</mo><mfrac><mrow><mi href="./36.1#t1.r4" title="real parameter">x</mi><mo>+</mo><mi href="./36.1#t1.r4" title="real parameter">y</mi></mrow><msqrt><mn>2</mn></msqrt></mfrac><mo>≤</mo><mn>6.0</mn></mrow><mo lspace="0em">.</mo></mrow></math>
+
+<p><span class="ltx_font_italic">Reported 2016-09-12 by Dan  Piponi</span></p>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./36.3#i.info" title="§36.3(i) Canonical Integrals: Modulus ‣ §36.3 Visualizations of Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.3(i)</span></a>,
+<a href="./36.3#info" title="§36.3 Visualizations of Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.3</span></a> and
+<a href="./36#info" title="Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.36</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+<div class="ltx_pagination ltx_role_newpage"></div>
+</section>
+<section id="ii" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§36.3(ii) </span>Canonical Integrals: Phase</h2>
+<div id="ii.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=canonical%20integrals">canonical integrals</a>, <a class="ltx_keyword" href="./search/search?q=visualizations%20of%20phase">visualizations of phase</a>
+</dd>
+<dt>Notes:</dt>
+<dd>These figures were generated by the authors.</dd>
+<dt>Permalink:</dt>
+<dd><a href="./36.3.ii" title="" class="ltx_ref">http://dlmf.nist.gov/36.3.ii</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./36.3#info" title="§36.3 Visualizations of Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.3</span></a> and
+<a href="./36#info" title="Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.36</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="ii.p1" class="ltx_para">
+<p class="ltx_p">In Figure <a href="./36.3#F13" title="Figure 36.3.13 ‣ §36.3(ii) Canonical Integrals: Phase ‣ §36.3 Visualizations of Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">36.3.13</span></a>(a) points of confluence of phase contours are
+zeros of <math class="ltx_Math" altimg="m7.png" altimg-height="25px" altimg-valign="-7px" altimg-width="81px" alttext="\Psi_{2}\left(x,y\right)" display="inline"><mrow><msub><mi href="./36.2#E4" mathvariant="normal" title="canonical integral function">Ψ</mi><mn>2</mn></msub><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./36.1#t1.r4" title="real parameter">x</mi><mo>,</mo><mi href="./36.1#t1.r4" title="real parameter">y</mi></mrow><mo>)</mo></mrow></mrow></math>; similarly for other contour plots in this
+subsection.
+In Figure <a href="./36.3#F13" title="Figure 36.3.13 ‣ §36.3(ii) Canonical Integrals: Phase ‣ §36.3 Visualizations of Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">36.3.13</span></a>(b) points of confluence of all colors are
+zeros of <math class="ltx_Math" altimg="m7.png" altimg-height="25px" altimg-valign="-7px" altimg-width="81px" alttext="\Psi_{2}\left(x,y\right)" display="inline"><mrow><msub><mi href="./36.2#E4" mathvariant="normal" title="canonical integral function">Ψ</mi><mn>2</mn></msub><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./36.1#t1.r4" title="real parameter">x</mi><mo>,</mo><mi href="./36.1#t1.r4" title="real parameter">y</mi></mrow><mo>)</mo></mrow></mrow></math>; similarly for other density plots in this subsection.</p>
+</div>
+<figure id="F13" class="ltx_figure">
+<table id="F13.t1" class="ltx_tabular ltx_centering ltx_align_middle">
+<tbody class="ltx_tbody">
+<tr id="F13.t1.r1" class="ltx_tr">
+<td class="ltx_td ltx_align_center"><a href="./36.3.F13.mag" title="Magnify Figure" class="ltx_magnifiable"><img src="./36/3/F13a.png" id="F13.t1.r1.g1" class="ltx_graphics ltx_img_landscape" width="360" height="283" alt="See accompanying text"></a></td>
+<td class="ltx_td ltx_align_center"><a href="./36.3.F13.mag" title="Magnify Figure" class="ltx_magnifiable"><img src="./36/3/F13b.png" id="F13.t1.r1.g2" class="ltx_graphics ltx_img_square" width="360" height="297" alt="See accompanying text"></a></td>
+</tr>
+<tr id="F13.t1.r2" class="ltx_tr">
+<td class="ltx_td ltx_align_center">(a) Contour plot, at intervals of <math class="ltx_Math" altimg="m22.png" altimg-height="25px" altimg-valign="-7px" altimg-width="38px" alttext="\pi/4" display="inline"><mrow><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>/</mo><mn>4</mn></mrow></math>.</td>
+<td class="ltx_td ltx_align_center">(b) Density plot.</td>
+</tr>
+</tbody>
+</table>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 36.3.13: </span>Phase of Pearcey integral <math class="ltx_Math" altimg="m16.png" altimg-height="25px" altimg-valign="-7px" altimg-width="108px" alttext="\operatorname{ph}\Psi_{2}\left(x,y\right)" display="inline"><mrow><mi href="./1.9#E7" title="phase">ph</mi><mo lspace="0.167em">⁡</mo><mrow><msub><mi href="./36.2#E4" mathvariant="normal" title="canonical integral function">Ψ</mi><mn>2</mn></msub><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./36.1#t1.r4" title="real parameter">x</mi><mo>,</mo><mi href="./36.1#t1.r4" title="real parameter">y</mi></mrow><mo>)</mo></mrow></mrow></mrow></math>.
+
+
+<a href="./36.3.F13.mag" title="Magnify Figure" class="ltx_magnifiable ltx_icon"><span>Magnify</span></a>
+</figcaption>
+<div id="F13.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./36.2#E4" title="(36.2.4) ‣ Canonical Integrals ‣ §36.2(i) Definitions ‣ §36.2 Catastrophes and Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m8.png" altimg-height="25px" altimg-valign="-7px" altimg-width="69px" alttext="\Psi_{\NVar{K}}\left(\NVar{\mathbf{x}}\right)" display="inline"><mrow><msub><mi href="./36.2#E4" mathvariant="normal" title="canonical integral function">Ψ</mi><mi class="ltx_nvar" href="./36.1#t1.r3" title="codimension">K</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">𝐱</mi><mo>)</mo></mrow></mrow></math>: canonical integral function</a>,
+<a href="./3.12#E1" title="(3.12.1) ‣ §3.12 Mathematical Constants ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m23.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="\pi" display="inline"><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></math>: the ratio of the circumference of a circle to its diameter</a>,
+<a href="./1.9#E7" title="(1.9.7) ‣ Modulus and Phase ‣ §1.9(i) Complex Numbers ‣ §1.9 Calculus of a Complex Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m21.png" altimg-height="22px" altimg-valign="-6px" altimg-width="27px" alttext="\operatorname{ph}" display="inline"><mi href="./1.9#E7" title="phase">ph</mi></math>: phase</a>,
+<a href="./36.1#t1.r4" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m25.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="y" display="inline"><mi href="./36.1#t1.r4" title="real parameter">y</mi></math>:  real parameter</a> and
+<a href="./36.1#t1.r4" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m24.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./36.1#t1.r4" title="real parameter">x</mi></math>:  real parameter</a>
+</dd>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=Pearcey%20integral">Pearcey integral</a>, <a class="ltx_keyword" href="./search/search?q=pictures%20of%20phase">pictures of phase</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./36.3#ii.p1" title="§36.3(ii) Canonical Integrals: Phase ‣ §36.3 Visualizations of Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.3(ii)</span></a>,
+<a href="./errata/#V1.0.14.I3.ix7.p1" title="In Other Changes ‣ Version 1.0.14 (December 21, 2016) ‣ Errata" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Erratum (V1.0.14) for  Section <span class="ltx_text ltx_ref_tag">36.3</span></span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./36.3.F13" title="" class="ltx_ref">http://dlmf.nist.gov/36.3.F13</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./36.3.F13a.pdf">pdf</a>, <a href="./36.3.F13b.pdf">pdf</a>, <a href="./36.3.F13a.png">png</a>, <a href="./36.3.F13b.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./36.3#ii.info" title="§36.3(ii) Canonical Integrals: Phase ‣ §36.3 Visualizations of Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.3(ii)</span></a>,
+<a href="./36.3#info" title="§36.3 Visualizations of Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.3</span></a> and
+<a href="./36#info" title="Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.36</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+<figure id="F14" class="ltx_figure">
+<table id="F14.t1" class="ltx_tabular ltx_centering ltx_align_middle">
+<tbody class="ltx_tbody">
+<tr id="F14.t1.r1" class="ltx_tr">
+<td class="ltx_td ltx_align_center"><a href="./36.3.F14.mag" title="Magnify Figure" class="ltx_magnifiable"><img src="./36/3/F14a.png" id="F14.t1.r1.g1" class="ltx_graphics ltx_img_square" width="388" height="321" alt="See accompanying text"></a></td>
+<td class="ltx_td ltx_align_center"><a href="./36.3.F14.mag" title="Magnify Figure" class="ltx_magnifiable"><img src="./36/3/F14b.png" id="F14.t1.r1.g2" class="ltx_graphics ltx_img_square" width="373" height="305" alt="See accompanying text"></a></td>
+</tr>
+<tr id="F14.t1.r2" class="ltx_tr">
+<td class="ltx_td ltx_align_center" style="padding-bottom:5.0pt;">(a) <math class="ltx_Math" altimg="m20.png" altimg-height="25px" altimg-valign="-7px" altimg-width="127px" alttext="\operatorname{ph}\Psi_{3}\left(x,y,3\right)" display="inline"><mrow><mi href="./1.9#E7" title="phase">ph</mi><mo lspace="0.167em">⁡</mo><mrow><msub><mi href="./36.2#E4" mathvariant="normal" title="canonical integral function">Ψ</mi><mn>3</mn></msub><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./36.1#t1.r4" title="real parameter">x</mi><mo>,</mo><mi href="./36.1#t1.r4" title="real parameter">y</mi><mo>,</mo><mn>3</mn></mrow><mo>)</mo></mrow></mrow></mrow></math>.</td>
+<td class="ltx_td ltx_align_center" style="padding-bottom:5.0pt;">(b) <math class="ltx_Math" altimg="m19.png" altimg-height="25px" altimg-valign="-7px" altimg-width="127px" alttext="\operatorname{ph}\Psi_{3}\left(x,y,0\right)" display="inline"><mrow><mi href="./1.9#E7" title="phase">ph</mi><mo lspace="0.167em">⁡</mo><mrow><msub><mi href="./36.2#E4" mathvariant="normal" title="canonical integral function">Ψ</mi><mn>3</mn></msub><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./36.1#t1.r4" title="real parameter">x</mi><mo>,</mo><mi href="./36.1#t1.r4" title="real parameter">y</mi><mo>,</mo><mn>0</mn></mrow><mo>)</mo></mrow></mrow></mrow></math>.</td>
+</tr>
+<tr id="F14.t1.r3" class="ltx_tr">
+<td class="ltx_td ltx_align_center"><a href="./36.3.F14.mag" title="Magnify Figure" class="ltx_magnifiable"><img src="./36/3/F14c.png" id="F14.t1.r3.g1" class="ltx_graphics ltx_img_square" width="373" height="303" alt="See accompanying text"></a></td>
+<td class="ltx_td ltx_align_center"><a href="./36.3.F14.mag" title="Magnify Figure" class="ltx_magnifiable"><img src="./36/3/F14d.png" id="F14.t1.r3.g2" class="ltx_graphics ltx_img_square" width="374" height="305" alt="See accompanying text"></a></td>
+</tr>
+<tr id="F14.t1.r4" class="ltx_tr">
+<td class="ltx_td ltx_align_center">(c) <math class="ltx_Math" altimg="m17.png" altimg-height="25px" altimg-valign="-7px" altimg-width="144px" alttext="\operatorname{ph}\Psi_{3}\left(x,y,-3\right)" display="inline"><mrow><mi href="./1.9#E7" title="phase">ph</mi><mo lspace="0.167em">⁡</mo><mrow><msub><mi href="./36.2#E4" mathvariant="normal" title="canonical integral function">Ψ</mi><mn>3</mn></msub><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./36.1#t1.r4" title="real parameter">x</mi><mo>,</mo><mi href="./36.1#t1.r4" title="real parameter">y</mi><mo>,</mo><mrow><mo>−</mo><mn>3</mn></mrow></mrow><mo>)</mo></mrow></mrow></mrow></math>.</td>
+<td class="ltx_td ltx_align_center">(d) <math class="ltx_Math" altimg="m18.png" altimg-height="25px" altimg-valign="-7px" altimg-width="160px" alttext="\operatorname{ph}\Psi_{3}\left(x,y,-7.5\right)" display="inline"><mrow><mi href="./1.9#E7" title="phase">ph</mi><mo lspace="0.167em">⁡</mo><mrow><msub><mi href="./36.2#E4" mathvariant="normal" title="canonical integral function">Ψ</mi><mn>3</mn></msub><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./36.1#t1.r4" title="real parameter">x</mi><mo>,</mo><mi href="./36.1#t1.r4" title="real parameter">y</mi><mo>,</mo><mrow><mo>−</mo><mn>7.5</mn></mrow></mrow><mo>)</mo></mrow></mrow></mrow></math>.</td>
+</tr>
+</tbody>
+</table>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 36.3.14: </span>Density plots of phase of swallowtail canonical integrals.
+
+
+<a href="./36.3.F14.mag" title="Magnify Figure" class="ltx_magnifiable ltx_icon"><span>Magnify</span></a>
+</figcaption>
+<div id="F14.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./36.2#E4" title="(36.2.4) ‣ Canonical Integrals ‣ §36.2(i) Definitions ‣ §36.2 Catastrophes and Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m8.png" altimg-height="25px" altimg-valign="-7px" altimg-width="69px" alttext="\Psi_{\NVar{K}}\left(\NVar{\mathbf{x}}\right)" display="inline"><mrow><msub><mi href="./36.2#E4" mathvariant="normal" title="canonical integral function">Ψ</mi><mi class="ltx_nvar" href="./36.1#t1.r3" title="codimension">K</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">𝐱</mi><mo>)</mo></mrow></mrow></math>: canonical integral function</a>,
+<a href="./1.9#E7" title="(1.9.7) ‣ Modulus and Phase ‣ §1.9(i) Complex Numbers ‣ §1.9 Calculus of a Complex Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m21.png" altimg-height="22px" altimg-valign="-6px" altimg-width="27px" alttext="\operatorname{ph}" display="inline"><mi href="./1.9#E7" title="phase">ph</mi></math>: phase</a>,
+<a href="./36.1#t1.r4" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m25.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="y" display="inline"><mi href="./36.1#t1.r4" title="real parameter">y</mi></math>:  real parameter</a> and
+<a href="./36.1#t1.r4" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m24.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./36.1#t1.r4" title="real parameter">x</mi></math>:  real parameter</a>
+</dd>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=pictures%20of%20phase">pictures of phase</a>, <a class="ltx_keyword" href="./search/search?q=swallowtail%20canonical%20integral">swallowtail canonical integral</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./errata/#V1.0.14.I3.ix7.p1" title="In Other Changes ‣ Version 1.0.14 (December 21, 2016) ‣ Errata" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Erratum (V1.0.14) for  Section <span class="ltx_text ltx_ref_tag">36.3</span></span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./36.3.F14" title="" class="ltx_ref">http://dlmf.nist.gov/36.3.F14</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./36.3.F14a.pdf">pdf</a>, <a href="./36.3.F14b.pdf">pdf</a>, <a href="./36.3.F14c.pdf">pdf</a>, <a href="./36.3.F14d.pdf">pdf</a>, <a href="./36.3.F14a.png">png</a>, <a href="./36.3.F14b.png">png</a>, <a href="./36.3.F14c.png">png</a>, <a href="./36.3.F14d.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./36.3#ii.info" title="§36.3(ii) Canonical Integrals: Phase ‣ §36.3 Visualizations of Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.3(ii)</span></a>,
+<a href="./36.3#info" title="§36.3 Visualizations of Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.3</span></a> and
+<a href="./36#info" title="Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.36</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+<figure id="F15" class="ltx_figure">
+<table id="F15.t1" class="ltx_tabular ltx_centering ltx_align_middle">
+<tbody class="ltx_tbody">
+<tr id="F15.t1.r1" class="ltx_tr">
+<td class="ltx_td ltx_align_center"><a href="./36.3.F15.mag" title="Magnify Figure" class="ltx_magnifiable"><img src="./36/3/F15a.png" id="F15.t1.r1.g1" class="ltx_graphics ltx_img_landscape" width="374" height="293" alt="See accompanying text"></a></td>
+<td class="ltx_td ltx_align_center"><a href="./36.3.F15.mag" title="Magnify Figure" class="ltx_magnifiable"><img src="./36/3/F15b.png" id="F15.t1.r1.g2" class="ltx_graphics ltx_img_landscape" width="374" height="293" alt="See accompanying text"></a></td>
+</tr>
+<tr id="F15.t1.r2" class="ltx_tr">
+<td class="ltx_td ltx_align_center">(a) Contour plot.</td>
+<td class="ltx_td ltx_align_center">(b) Density plot.</td>
+</tr>
+</tbody>
+</table>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 36.3.15: </span>Phase of elliptic umbilic canonical integral
+<math class="ltx_Math" altimg="m9.png" altimg-height="28px" altimg-valign="-7px" altimg-width="143px" alttext="\operatorname{ph}\Psi^{(\mathrm{E})}\left(x,y,0\right)" display="inline"><mrow><mi href="./1.9#E7" title="phase">ph</mi><mo lspace="0.167em">⁡</mo><mrow><msup><mi href="./36.2#E5" mathvariant="normal" title="elliptic umbilic canonical integral function">Ψ</mi><mrow><mo href="./36.2#E5" stretchy="false" title="elliptic umbilic canonical integral function">(</mo><mi href="./36.2#E5" mathvariant="normal" title="elliptic umbilic canonical integral function">E</mi><mo href="./36.2#E5" stretchy="false" title="elliptic umbilic canonical integral function">)</mo></mrow></msup><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./36.1#t1.r4" title="real parameter">x</mi><mo>,</mo><mi href="./36.1#t1.r4" title="real parameter">y</mi><mo>,</mo><mn>0</mn></mrow><mo>)</mo></mrow></mrow></mrow></math>.
+
+
+<a href="./36.3.F15.mag" title="Magnify Figure" class="ltx_magnifiable ltx_icon"><span>Magnify</span></a>
+</figcaption>
+<div id="F15.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./36.2#E5" title="(36.2.5) ‣ Canonical Integrals ‣ §36.2(i) Definitions ‣ §36.2 Catastrophes and Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m5.png" altimg-height="28px" altimg-valign="-7px" altimg-width="78px" alttext="\Psi^{(\mathrm{E})}\left(\NVar{\mathbf{x}}\right)" display="inline"><mrow><msup><mi href="./36.2#E5" mathvariant="normal" title="elliptic umbilic canonical integral function">Ψ</mi><mrow><mo href="./36.2#E5" stretchy="false" title="elliptic umbilic canonical integral function">(</mo><mi href="./36.2#E5" mathvariant="normal" title="elliptic umbilic canonical integral function">E</mi><mo href="./36.2#E5" stretchy="false" title="elliptic umbilic canonical integral function">)</mo></mrow></msup><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">𝐱</mi><mo>)</mo></mrow></mrow></math>: elliptic umbilic canonical integral function</a>,
+<a href="./1.9#E7" title="(1.9.7) ‣ Modulus and Phase ‣ §1.9(i) Complex Numbers ‣ §1.9 Calculus of a Complex Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m21.png" altimg-height="22px" altimg-valign="-6px" altimg-width="27px" alttext="\operatorname{ph}" display="inline"><mi href="./1.9#E7" title="phase">ph</mi></math>: phase</a>,
+<a href="./36.1#t1.r4" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m25.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="y" display="inline"><mi href="./36.1#t1.r4" title="real parameter">y</mi></math>:  real parameter</a> and
+<a href="./36.1#t1.r4" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m24.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./36.1#t1.r4" title="real parameter">x</mi></math>:  real parameter</a>
+</dd>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=elliptic%20umbilic%20canonical%20integral">elliptic umbilic canonical integral</a>, <a class="ltx_keyword" href="./search/search?q=pictures%20of%20phase">pictures of phase</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./errata/#V1.0.14.I3.ix7.p1" title="In Other Changes ‣ Version 1.0.14 (December 21, 2016) ‣ Errata" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Erratum (V1.0.14) for  Section <span class="ltx_text ltx_ref_tag">36.3</span></span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./36.3.F15" title="" class="ltx_ref">http://dlmf.nist.gov/36.3.F15</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./36.3.F15a.pdf">pdf</a>, <a href="./36.3.F15b.pdf">pdf</a>, <a href="./36.3.F15a.png">png</a>, <a href="./36.3.F15b.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./36.3#ii.info" title="§36.3(ii) Canonical Integrals: Phase ‣ §36.3 Visualizations of Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.3(ii)</span></a>,
+<a href="./36.3#info" title="§36.3 Visualizations of Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.3</span></a> and
+<a href="./36#info" title="Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.36</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+<figure id="F16" class="ltx_figure">
+<table id="F16.t1" class="ltx_tabular ltx_centering ltx_align_middle">
+<tbody class="ltx_tbody">
+<tr id="F16.t1.r1" class="ltx_tr">
+<td class="ltx_td ltx_align_center"><a href="./36.3.F16.mag" title="Magnify Figure" class="ltx_magnifiable"><img src="./36/3/F16a.png" id="F16.t1.r1.g1" class="ltx_graphics ltx_img_landscape" width="374" height="293" alt="See accompanying text"></a></td>
+<td class="ltx_td ltx_align_center"><a href="./36.3.F16.mag" title="Magnify Figure" class="ltx_magnifiable"><img src="./36/3/F16b.png" id="F16.t1.r1.g2" class="ltx_graphics ltx_img_landscape" width="373" height="294" alt="See accompanying text"></a></td>
+</tr>
+<tr id="F16.t1.r2" class="ltx_tr">
+<td class="ltx_td ltx_align_center">(a) Contour plot.</td>
+<td class="ltx_td ltx_align_center">(b) Density plot.</td>
+</tr>
+</tbody>
+</table>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 36.3.16: </span>Phase of elliptic umbilic canonical integral
+<math class="ltx_Math" altimg="m10.png" altimg-height="28px" altimg-valign="-7px" altimg-width="143px" alttext="\operatorname{ph}\Psi^{(\mathrm{E})}\left(x,y,2\right)" display="inline"><mrow><mi href="./1.9#E7" title="phase">ph</mi><mo lspace="0.167em">⁡</mo><mrow><msup><mi href="./36.2#E5" mathvariant="normal" title="elliptic umbilic canonical integral function">Ψ</mi><mrow><mo href="./36.2#E5" stretchy="false" title="elliptic umbilic canonical integral function">(</mo><mi href="./36.2#E5" mathvariant="normal" title="elliptic umbilic canonical integral function">E</mi><mo href="./36.2#E5" stretchy="false" title="elliptic umbilic canonical integral function">)</mo></mrow></msup><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./36.1#t1.r4" title="real parameter">x</mi><mo>,</mo><mi href="./36.1#t1.r4" title="real parameter">y</mi><mo>,</mo><mn>2</mn></mrow><mo>)</mo></mrow></mrow></mrow></math>.
+
+
+<a href="./36.3.F16.mag" title="Magnify Figure" class="ltx_magnifiable ltx_icon"><span>Magnify</span></a>
+</figcaption>
+<div id="F16.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./36.2#E5" title="(36.2.5) ‣ Canonical Integrals ‣ §36.2(i) Definitions ‣ §36.2 Catastrophes and Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m5.png" altimg-height="28px" altimg-valign="-7px" altimg-width="78px" alttext="\Psi^{(\mathrm{E})}\left(\NVar{\mathbf{x}}\right)" display="inline"><mrow><msup><mi href="./36.2#E5" mathvariant="normal" title="elliptic umbilic canonical integral function">Ψ</mi><mrow><mo href="./36.2#E5" stretchy="false" title="elliptic umbilic canonical integral function">(</mo><mi href="./36.2#E5" mathvariant="normal" title="elliptic umbilic canonical integral function">E</mi><mo href="./36.2#E5" stretchy="false" title="elliptic umbilic canonical integral function">)</mo></mrow></msup><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">𝐱</mi><mo>)</mo></mrow></mrow></math>: elliptic umbilic canonical integral function</a>,
+<a href="./1.9#E7" title="(1.9.7) ‣ Modulus and Phase ‣ §1.9(i) Complex Numbers ‣ §1.9 Calculus of a Complex Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m21.png" altimg-height="22px" altimg-valign="-6px" altimg-width="27px" alttext="\operatorname{ph}" display="inline"><mi href="./1.9#E7" title="phase">ph</mi></math>: phase</a>,
+<a href="./36.1#t1.r4" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m25.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="y" display="inline"><mi href="./36.1#t1.r4" title="real parameter">y</mi></math>:  real parameter</a> and
+<a href="./36.1#t1.r4" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m24.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./36.1#t1.r4" title="real parameter">x</mi></math>:  real parameter</a>
+</dd>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=elliptic%20umbilic%20canonical%20integral">elliptic umbilic canonical integral</a>, <a class="ltx_keyword" href="./search/search?q=pictures%20of%20phase">pictures of phase</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./errata/#V1.0.14.I3.ix7.p1" title="In Other Changes ‣ Version 1.0.14 (December 21, 2016) ‣ Errata" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Erratum (V1.0.14) for  Section <span class="ltx_text ltx_ref_tag">36.3</span></span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./36.3.F16" title="" class="ltx_ref">http://dlmf.nist.gov/36.3.F16</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./36.3.F16a.pdf">pdf</a>, <a href="./36.3.F16b.pdf">pdf</a>, <a href="./36.3.F16a.png">png</a>, <a href="./36.3.F16b.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./36.3#ii.info" title="§36.3(ii) Canonical Integrals: Phase ‣ §36.3 Visualizations of Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.3(ii)</span></a>,
+<a href="./36.3#info" title="§36.3 Visualizations of Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.3</span></a> and
+<a href="./36#info" title="Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.36</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+<figure id="F17" class="ltx_figure">
+<table id="F17.t1" class="ltx_tabular ltx_centering ltx_align_middle">
+<tbody class="ltx_tbody">
+<tr id="F17.t1.r1" class="ltx_tr">
+<td class="ltx_td ltx_align_center"><a href="./36.3.F17.mag" title="Magnify Figure" class="ltx_magnifiable"><img src="./36/3/F17a.png" id="F17.t1.r1.g1" class="ltx_graphics ltx_img_landscape" width="374" height="293" alt="See accompanying text"></a></td>
+<td class="ltx_td ltx_align_center"><a href="./36.3.F17.mag" title="Magnify Figure" class="ltx_magnifiable"><img src="./36/3/F17b.png" id="F17.t1.r1.g2" class="ltx_graphics ltx_img_landscape" width="374" height="295" alt="See accompanying text"></a></td>
+</tr>
+<tr id="F17.t1.r2" class="ltx_tr">
+<td class="ltx_td ltx_align_center">(a) Contour plot.</td>
+<td class="ltx_td ltx_align_center">(b) Density plot.</td>
+</tr>
+</tbody>
+</table>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 36.3.17: </span>Phase of elliptic umbilic canonical integral
+<math class="ltx_Math" altimg="m11.png" altimg-height="28px" altimg-valign="-7px" altimg-width="143px" alttext="\operatorname{ph}\Psi^{(\mathrm{E})}\left(x,y,4\right)" display="inline"><mrow><mi href="./1.9#E7" title="phase">ph</mi><mo lspace="0.167em">⁡</mo><mrow><msup><mi href="./36.2#E5" mathvariant="normal" title="elliptic umbilic canonical integral function">Ψ</mi><mrow><mo href="./36.2#E5" stretchy="false" title="elliptic umbilic canonical integral function">(</mo><mi href="./36.2#E5" mathvariant="normal" title="elliptic umbilic canonical integral function">E</mi><mo href="./36.2#E5" stretchy="false" title="elliptic umbilic canonical integral function">)</mo></mrow></msup><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./36.1#t1.r4" title="real parameter">x</mi><mo>,</mo><mi href="./36.1#t1.r4" title="real parameter">y</mi><mo>,</mo><mn>4</mn></mrow><mo>)</mo></mrow></mrow></mrow></math>.
+
+
+<a href="./36.3.F17.mag" title="Magnify Figure" class="ltx_magnifiable ltx_icon"><span>Magnify</span></a>
+</figcaption>
+<div id="F17.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./36.2#E5" title="(36.2.5) ‣ Canonical Integrals ‣ §36.2(i) Definitions ‣ §36.2 Catastrophes and Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m5.png" altimg-height="28px" altimg-valign="-7px" altimg-width="78px" alttext="\Psi^{(\mathrm{E})}\left(\NVar{\mathbf{x}}\right)" display="inline"><mrow><msup><mi href="./36.2#E5" mathvariant="normal" title="elliptic umbilic canonical integral function">Ψ</mi><mrow><mo href="./36.2#E5" stretchy="false" title="elliptic umbilic canonical integral function">(</mo><mi href="./36.2#E5" mathvariant="normal" title="elliptic umbilic canonical integral function">E</mi><mo href="./36.2#E5" stretchy="false" title="elliptic umbilic canonical integral function">)</mo></mrow></msup><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">𝐱</mi><mo>)</mo></mrow></mrow></math>: elliptic umbilic canonical integral function</a>,
+<a href="./1.9#E7" title="(1.9.7) ‣ Modulus and Phase ‣ §1.9(i) Complex Numbers ‣ §1.9 Calculus of a Complex Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m21.png" altimg-height="22px" altimg-valign="-6px" altimg-width="27px" alttext="\operatorname{ph}" display="inline"><mi href="./1.9#E7" title="phase">ph</mi></math>: phase</a>,
+<a href="./36.1#t1.r4" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m25.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="y" display="inline"><mi href="./36.1#t1.r4" title="real parameter">y</mi></math>:  real parameter</a> and
+<a href="./36.1#t1.r4" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m24.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./36.1#t1.r4" title="real parameter">x</mi></math>:  real parameter</a>
+</dd>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=elliptic%20umbilic%20canonical%20integral">elliptic umbilic canonical integral</a>, <a class="ltx_keyword" href="./search/search?q=pictures%20of%20phase">pictures of phase</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./errata/#V1.0.14.I3.ix7.p1" title="In Other Changes ‣ Version 1.0.14 (December 21, 2016) ‣ Errata" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Erratum (V1.0.14) for  Section <span class="ltx_text ltx_ref_tag">36.3</span></span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./36.3.F17" title="" class="ltx_ref">http://dlmf.nist.gov/36.3.F17</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./36.3.F17a.pdf">pdf</a>, <a href="./36.3.F17b.pdf">pdf</a>, <a href="./36.3.F17a.png">png</a>, <a href="./36.3.F17b.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./36.3#ii.info" title="§36.3(ii) Canonical Integrals: Phase ‣ §36.3 Visualizations of Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.3(ii)</span></a>,
+<a href="./36.3#info" title="§36.3 Visualizations of Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.3</span></a> and
+<a href="./36#info" title="Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.36</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+<figure id="F18" class="ltx_figure">
+<table id="F18.t1" class="ltx_tabular ltx_centering ltx_align_middle">
+<tbody class="ltx_tbody">
+<tr id="F18.t1.r1" class="ltx_tr">
+<td class="ltx_td ltx_align_center"><a href="./36.3.F18.mag" title="Magnify Figure" class="ltx_magnifiable"><img src="./36/3/F18a.png" id="F18.t1.r1.g1" class="ltx_graphics ltx_img_square" width="360" height="313" alt="See accompanying text"></a></td>
+<td class="ltx_td ltx_align_center"><a href="./36.3.F18.mag" title="Magnify Figure" class="ltx_magnifiable"><img src="./36/3/F18b.png" id="F18.t1.r1.g2" class="ltx_graphics ltx_img_landscape" width="402" height="310" alt="See accompanying text"></a></td>
+</tr>
+<tr id="F18.t1.r2" class="ltx_tr">
+<td class="ltx_td ltx_align_center">(a) Contour plot.</td>
+<td class="ltx_td ltx_align_center">(b) Density plot.</td>
+</tr>
+</tbody>
+</table>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 36.3.18: </span>Phase of hyperbolic umbilic canonical integral
+<math class="ltx_Math" altimg="m12.png" altimg-height="28px" altimg-valign="-7px" altimg-width="144px" alttext="\operatorname{ph}\Psi^{(\mathrm{H})}\left(x,y,0\right)" display="inline"><mrow><mi href="./1.9#E7" title="phase">ph</mi><mo lspace="0.167em">⁡</mo><mrow><msup><mi href="./36.2#E5" mathvariant="normal" title="hyperbolic umbilic canonical integral function">Ψ</mi><mrow><mo href="./36.2#E5" stretchy="false" title="hyperbolic umbilic canonical integral function">(</mo><mi href="./36.2#E5" mathvariant="normal" title="hyperbolic umbilic canonical integral function">H</mi><mo href="./36.2#E5" stretchy="false" title="hyperbolic umbilic canonical integral function">)</mo></mrow></msup><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./36.1#t1.r4" title="real parameter">x</mi><mo>,</mo><mi href="./36.1#t1.r4" title="real parameter">y</mi><mo>,</mo><mn>0</mn></mrow><mo>)</mo></mrow></mrow></mrow></math>.
+
+
+<a href="./36.3.F18.mag" title="Magnify Figure" class="ltx_magnifiable ltx_icon"><span>Magnify</span></a>
+</figcaption>
+<div id="F18.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./36.2#E5" title="(36.2.5) ‣ Canonical Integrals ‣ §36.2(i) Definitions ‣ §36.2 Catastrophes and Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m6.png" altimg-height="28px" altimg-valign="-7px" altimg-width="79px" alttext="\Psi^{(\mathrm{H})}\left(\NVar{\mathbf{x}}\right)" display="inline"><mrow><msup><mi href="./36.2#E5" mathvariant="normal" title="hyperbolic umbilic canonical integral function">Ψ</mi><mrow><mo href="./36.2#E5" stretchy="false" title="hyperbolic umbilic canonical integral function">(</mo><mi href="./36.2#E5" mathvariant="normal" title="hyperbolic umbilic canonical integral function">H</mi><mo href="./36.2#E5" stretchy="false" title="hyperbolic umbilic canonical integral function">)</mo></mrow></msup><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">𝐱</mi><mo>)</mo></mrow></mrow></math>: hyperbolic umbilic canonical integral function</a>,
+<a href="./1.9#E7" title="(1.9.7) ‣ Modulus and Phase ‣ §1.9(i) Complex Numbers ‣ §1.9 Calculus of a Complex Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m21.png" altimg-height="22px" altimg-valign="-6px" altimg-width="27px" alttext="\operatorname{ph}" display="inline"><mi href="./1.9#E7" title="phase">ph</mi></math>: phase</a>,
+<a href="./36.1#t1.r4" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m25.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="y" display="inline"><mi href="./36.1#t1.r4" title="real parameter">y</mi></math>:  real parameter</a> and
+<a href="./36.1#t1.r4" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m24.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./36.1#t1.r4" title="real parameter">x</mi></math>:  real parameter</a>
+</dd>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=hyperbolic%20umbilic%20canonical%20integral">hyperbolic umbilic canonical integral</a>, <a class="ltx_keyword" href="./search/search?q=pictures%20of%20phase">pictures of phase</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./errata/#V1.0.14.I2.ix2" title="In Errata ‣ Version 1.0.14 (December 21, 2016) ‣ Errata" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Erratum (V1.0.14) for  Figures <span class="ltx_text ltx_ref_tag">36.3.18</span>, <span class="ltx_text ltx_ref_tag">36.3.19</span>, <span class="ltx_text ltx_ref_tag">36.3.20</span>, <span class="ltx_text ltx_ref_tag">36.3.21</span></span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./36.3.F18" title="" class="ltx_ref">http://dlmf.nist.gov/36.3.F18</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./36.3.F18a.pdf">pdf</a>, <a href="./36.3.F18b.pdf">pdf</a>, <a href="./36.3.F18a.png">png</a>, <a href="./36.3.F18b.png">png</a>
+</dd>
+<dt>Errata (effective with 1.0.14):</dt>
+<dd>
+Scales were corrected. The interval
+<math class="ltx_Math" altimg="m4.png" altimg-height="34px" altimg-valign="-13px" altimg-width="165px" alttext="-8.4\leq\frac{x-y}{\sqrt{2}}\leq 8.4" display="inline"><mrow><mrow><mo>−</mo><mn>8.4</mn></mrow><mo>≤</mo><mfrac><mrow><mi href="./36.1#t1.r4" title="real parameter">x</mi><mo>−</mo><mi href="./36.1#t1.r4" title="real parameter">y</mi></mrow><msqrt><mn>2</mn></msqrt></mfrac><mo>≤</mo><mn>8.4</mn></mrow></math> was replaced by <math class="ltx_Math" altimg="m1.png" altimg-height="34px" altimg-valign="-13px" altimg-width="186px" alttext="-12.0\leq\frac{x-y}{\sqrt{2}}\leq 12.0" display="inline"><mrow><mrow><mo>−</mo><mn>12.0</mn></mrow><mo>≤</mo><mfrac><mrow><mi href="./36.1#t1.r4" title="real parameter">x</mi><mo>−</mo><mi href="./36.1#t1.r4" title="real parameter">y</mi></mrow><msqrt><mn>2</mn></msqrt></mfrac><mo>≤</mo><mn>12.0</mn></mrow></math> and <math class="ltx_Math" altimg="m2.png" altimg-height="34px" altimg-valign="-13px" altimg-width="175px" alttext="-12.7\leq\frac{x+y}{\sqrt{2}}\leq 4.2" display="inline"><mrow><mrow><mo>−</mo><mn>12.7</mn></mrow><mo>≤</mo><mfrac><mrow><mi href="./36.1#t1.r4" title="real parameter">x</mi><mo>+</mo><mi href="./36.1#t1.r4" title="real parameter">y</mi></mrow><msqrt><mn>2</mn></msqrt></mfrac><mo>≤</mo><mn>4.2</mn></mrow></math> replaced by <math class="ltx_Math" altimg="m3.png" altimg-height="34px" altimg-valign="-13px" altimg-width="181px" alttext="-18.0\leq\frac{x+y}{\sqrt{2}}\leq 6.0." display="inline"><mrow><mrow><mrow><mo>−</mo><mn>18.0</mn></mrow><mo>≤</mo><mfrac><mrow><mi href="./36.1#t1.r4" title="real parameter">x</mi><mo>+</mo><mi href="./36.1#t1.r4" title="real parameter">y</mi></mrow><msqrt><mn>2</mn></msqrt></mfrac><mo>≤</mo><mn>6.0</mn></mrow><mo lspace="0em">.</mo></mrow></math>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./36.3#ii.info" title="§36.3(ii) Canonical Integrals: Phase ‣ §36.3 Visualizations of Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.3(ii)</span></a>,
+<a href="./36.3#info" title="§36.3 Visualizations of Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.3</span></a> and
+<a href="./36#info" title="Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.36</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+<figure id="F19" class="ltx_figure">
+<table id="F19.t1" class="ltx_tabular ltx_centering ltx_align_middle">
+<tbody class="ltx_tbody">
+<tr id="F19.t1.r1" class="ltx_tr">
+<td class="ltx_td ltx_align_center"><a href="./36.3.F19.mag" title="Magnify Figure" class="ltx_magnifiable"><img src="./36/3/F19a.png" id="F19.t1.r1.g1" class="ltx_graphics ltx_img_square" width="360" height="313" alt="See accompanying text"></a></td>
+<td class="ltx_td ltx_align_center"><a href="./36.3.F19.mag" title="Magnify Figure" class="ltx_magnifiable"><img src="./36/3/F19b.png" id="F19.t1.r1.g2" class="ltx_graphics ltx_img_landscape" width="402" height="314" alt="See accompanying text"></a></td>
+</tr>
+<tr id="F19.t1.r2" class="ltx_tr">
+<td class="ltx_td ltx_align_center">(a) Contour plot.</td>
+<td class="ltx_td ltx_align_center">(b) Density plot.</td>
+</tr>
+</tbody>
+</table>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 36.3.19: </span>Phase of hyperbolic umbilic canonical integral
+<math class="ltx_Math" altimg="m13.png" altimg-height="28px" altimg-valign="-7px" altimg-width="144px" alttext="\operatorname{ph}\Psi^{(\mathrm{H})}\left(x,y,1\right)" display="inline"><mrow><mi href="./1.9#E7" title="phase">ph</mi><mo lspace="0.167em">⁡</mo><mrow><msup><mi href="./36.2#E5" mathvariant="normal" title="hyperbolic umbilic canonical integral function">Ψ</mi><mrow><mo href="./36.2#E5" stretchy="false" title="hyperbolic umbilic canonical integral function">(</mo><mi href="./36.2#E5" mathvariant="normal" title="hyperbolic umbilic canonical integral function">H</mi><mo href="./36.2#E5" stretchy="false" title="hyperbolic umbilic canonical integral function">)</mo></mrow></msup><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./36.1#t1.r4" title="real parameter">x</mi><mo>,</mo><mi href="./36.1#t1.r4" title="real parameter">y</mi><mo>,</mo><mn>1</mn></mrow><mo>)</mo></mrow></mrow></mrow></math>.
+
+
+<a href="./36.3.F19.mag" title="Magnify Figure" class="ltx_magnifiable ltx_icon"><span>Magnify</span></a>
+</figcaption>
+<div id="F19.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./36.2#E5" title="(36.2.5) ‣ Canonical Integrals ‣ §36.2(i) Definitions ‣ §36.2 Catastrophes and Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m6.png" altimg-height="28px" altimg-valign="-7px" altimg-width="79px" alttext="\Psi^{(\mathrm{H})}\left(\NVar{\mathbf{x}}\right)" display="inline"><mrow><msup><mi href="./36.2#E5" mathvariant="normal" title="hyperbolic umbilic canonical integral function">Ψ</mi><mrow><mo href="./36.2#E5" stretchy="false" title="hyperbolic umbilic canonical integral function">(</mo><mi href="./36.2#E5" mathvariant="normal" title="hyperbolic umbilic canonical integral function">H</mi><mo href="./36.2#E5" stretchy="false" title="hyperbolic umbilic canonical integral function">)</mo></mrow></msup><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">𝐱</mi><mo>)</mo></mrow></mrow></math>: hyperbolic umbilic canonical integral function</a>,
+<a href="./1.9#E7" title="(1.9.7) ‣ Modulus and Phase ‣ §1.9(i) Complex Numbers ‣ §1.9 Calculus of a Complex Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m21.png" altimg-height="22px" altimg-valign="-6px" altimg-width="27px" alttext="\operatorname{ph}" display="inline"><mi href="./1.9#E7" title="phase">ph</mi></math>: phase</a>,
+<a href="./36.1#t1.r4" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m25.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="y" display="inline"><mi href="./36.1#t1.r4" title="real parameter">y</mi></math>:  real parameter</a> and
+<a href="./36.1#t1.r4" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m24.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./36.1#t1.r4" title="real parameter">x</mi></math>:  real parameter</a>
+</dd>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=hyperbolic%20umbilic%20canonical%20integral">hyperbolic umbilic canonical integral</a>, <a class="ltx_keyword" href="./search/search?q=pictures%20of%20phase">pictures of phase</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./errata/#V1.0.14.I2.ix2" title="In Errata ‣ Version 1.0.14 (December 21, 2016) ‣ Errata" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Erratum (V1.0.14) for  Figures <span class="ltx_text ltx_ref_tag">36.3.18</span>, <span class="ltx_text ltx_ref_tag">36.3.19</span>, <span class="ltx_text ltx_ref_tag">36.3.20</span>, <span class="ltx_text ltx_ref_tag">36.3.21</span></span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./36.3.F19" title="" class="ltx_ref">http://dlmf.nist.gov/36.3.F19</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./36.3.F19a.pdf">pdf</a>, <a href="./36.3.F19b.pdf">pdf</a>, <a href="./36.3.F19a.png">png</a>, <a href="./36.3.F19b.png">png</a>
+</dd>
+<dt>Errata (effective with 1.0.14):</dt>
+<dd>
+Scales were corrected. The interval
+<math class="ltx_Math" altimg="m4.png" altimg-height="34px" altimg-valign="-13px" altimg-width="165px" alttext="-8.4\leq\frac{x-y}{\sqrt{2}}\leq 8.4" display="inline"><mrow><mrow><mo>−</mo><mn>8.4</mn></mrow><mo>≤</mo><mfrac><mrow><mi href="./36.1#t1.r4" title="real parameter">x</mi><mo>−</mo><mi href="./36.1#t1.r4" title="real parameter">y</mi></mrow><msqrt><mn>2</mn></msqrt></mfrac><mo>≤</mo><mn>8.4</mn></mrow></math> was replaced by <math class="ltx_Math" altimg="m1.png" altimg-height="34px" altimg-valign="-13px" altimg-width="186px" alttext="-12.0\leq\frac{x-y}{\sqrt{2}}\leq 12.0" display="inline"><mrow><mrow><mo>−</mo><mn>12.0</mn></mrow><mo>≤</mo><mfrac><mrow><mi href="./36.1#t1.r4" title="real parameter">x</mi><mo>−</mo><mi href="./36.1#t1.r4" title="real parameter">y</mi></mrow><msqrt><mn>2</mn></msqrt></mfrac><mo>≤</mo><mn>12.0</mn></mrow></math> and <math class="ltx_Math" altimg="m2.png" altimg-height="34px" altimg-valign="-13px" altimg-width="175px" alttext="-12.7\leq\frac{x+y}{\sqrt{2}}\leq 4.2" display="inline"><mrow><mrow><mo>−</mo><mn>12.7</mn></mrow><mo>≤</mo><mfrac><mrow><mi href="./36.1#t1.r4" title="real parameter">x</mi><mo>+</mo><mi href="./36.1#t1.r4" title="real parameter">y</mi></mrow><msqrt><mn>2</mn></msqrt></mfrac><mo>≤</mo><mn>4.2</mn></mrow></math> replaced by <math class="ltx_Math" altimg="m3.png" altimg-height="34px" altimg-valign="-13px" altimg-width="181px" alttext="-18.0\leq\frac{x+y}{\sqrt{2}}\leq 6.0." display="inline"><mrow><mrow><mrow><mo>−</mo><mn>18.0</mn></mrow><mo>≤</mo><mfrac><mrow><mi href="./36.1#t1.r4" title="real parameter">x</mi><mo>+</mo><mi href="./36.1#t1.r4" title="real parameter">y</mi></mrow><msqrt><mn>2</mn></msqrt></mfrac><mo>≤</mo><mn>6.0</mn></mrow><mo lspace="0em">.</mo></mrow></math>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./36.3#ii.info" title="§36.3(ii) Canonical Integrals: Phase ‣ §36.3 Visualizations of Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.3(ii)</span></a>,
+<a href="./36.3#info" title="§36.3 Visualizations of Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.3</span></a> and
+<a href="./36#info" title="Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.36</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+<figure id="F20" class="ltx_figure">
+<table id="F20.t1" class="ltx_tabular ltx_centering ltx_align_middle">
+<tbody class="ltx_tbody">
+<tr id="F20.t1.r1" class="ltx_tr">
+<td class="ltx_td ltx_align_center"><a href="./36.3.F20.mag" title="Magnify Figure" class="ltx_magnifiable"><img src="./36/3/F20a.png" id="F20.t1.r1.g1" class="ltx_graphics ltx_img_square" width="360" height="313" alt="See accompanying text"></a></td>
+<td class="ltx_td ltx_align_center"><a href="./36.3.F20.mag" title="Magnify Figure" class="ltx_magnifiable"><img src="./36/3/F20b.png" id="F20.t1.r1.g2" class="ltx_graphics ltx_img_landscape" width="402" height="313" alt="See accompanying text"></a></td>
+</tr>
+<tr id="F20.t1.r2" class="ltx_tr">
+<td class="ltx_td ltx_align_center">(a) Contour plot.</td>
+<td class="ltx_td ltx_align_center">(b) Density plot.</td>
+</tr>
+</tbody>
+</table>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 36.3.20: </span>Phase of hyperbolic umbilic canonical integral
+<math class="ltx_Math" altimg="m14.png" altimg-height="28px" altimg-valign="-7px" altimg-width="144px" alttext="\operatorname{ph}\Psi^{(\mathrm{H})}\left(x,y,2\right)" display="inline"><mrow><mi href="./1.9#E7" title="phase">ph</mi><mo lspace="0.167em">⁡</mo><mrow><msup><mi href="./36.2#E5" mathvariant="normal" title="hyperbolic umbilic canonical integral function">Ψ</mi><mrow><mo href="./36.2#E5" stretchy="false" title="hyperbolic umbilic canonical integral function">(</mo><mi href="./36.2#E5" mathvariant="normal" title="hyperbolic umbilic canonical integral function">H</mi><mo href="./36.2#E5" stretchy="false" title="hyperbolic umbilic canonical integral function">)</mo></mrow></msup><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./36.1#t1.r4" title="real parameter">x</mi><mo>,</mo><mi href="./36.1#t1.r4" title="real parameter">y</mi><mo>,</mo><mn>2</mn></mrow><mo>)</mo></mrow></mrow></mrow></math>.
+
+
+<a href="./36.3.F20.mag" title="Magnify Figure" class="ltx_magnifiable ltx_icon"><span>Magnify</span></a>
+</figcaption>
+<div id="F20.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./36.2#E5" title="(36.2.5) ‣ Canonical Integrals ‣ §36.2(i) Definitions ‣ §36.2 Catastrophes and Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m6.png" altimg-height="28px" altimg-valign="-7px" altimg-width="79px" alttext="\Psi^{(\mathrm{H})}\left(\NVar{\mathbf{x}}\right)" display="inline"><mrow><msup><mi href="./36.2#E5" mathvariant="normal" title="hyperbolic umbilic canonical integral function">Ψ</mi><mrow><mo href="./36.2#E5" stretchy="false" title="hyperbolic umbilic canonical integral function">(</mo><mi href="./36.2#E5" mathvariant="normal" title="hyperbolic umbilic canonical integral function">H</mi><mo href="./36.2#E5" stretchy="false" title="hyperbolic umbilic canonical integral function">)</mo></mrow></msup><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">𝐱</mi><mo>)</mo></mrow></mrow></math>: hyperbolic umbilic canonical integral function</a>,
+<a href="./1.9#E7" title="(1.9.7) ‣ Modulus and Phase ‣ §1.9(i) Complex Numbers ‣ §1.9 Calculus of a Complex Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m21.png" altimg-height="22px" altimg-valign="-6px" altimg-width="27px" alttext="\operatorname{ph}" display="inline"><mi href="./1.9#E7" title="phase">ph</mi></math>: phase</a>,
+<a href="./36.1#t1.r4" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m25.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="y" display="inline"><mi href="./36.1#t1.r4" title="real parameter">y</mi></math>:  real parameter</a> and
+<a href="./36.1#t1.r4" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m24.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./36.1#t1.r4" title="real parameter">x</mi></math>:  real parameter</a>
+</dd>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=hyperbolic%20umbilic%20canonical%20integral">hyperbolic umbilic canonical integral</a>, <a class="ltx_keyword" href="./search/search?q=pictures%20of%20phase">pictures of phase</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./errata/#V1.0.14.I2.ix2" title="In Errata ‣ Version 1.0.14 (December 21, 2016) ‣ Errata" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Erratum (V1.0.14) for  Figures <span class="ltx_text ltx_ref_tag">36.3.18</span>, <span class="ltx_text ltx_ref_tag">36.3.19</span>, <span class="ltx_text ltx_ref_tag">36.3.20</span>, <span class="ltx_text ltx_ref_tag">36.3.21</span></span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./36.3.F20" title="" class="ltx_ref">http://dlmf.nist.gov/36.3.F20</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./36.3.F20a.pdf">pdf</a>, <a href="./36.3.F20b.pdf">pdf</a>, <a href="./36.3.F20a.png">png</a>, <a href="./36.3.F20b.png">png</a>
+</dd>
+<dt>Errata (effective with 1.0.14):</dt>
+<dd>
+Scales were corrected. The interval
+<math class="ltx_Math" altimg="m4.png" altimg-height="34px" altimg-valign="-13px" altimg-width="165px" alttext="-8.4\leq\frac{x-y}{\sqrt{2}}\leq 8.4" display="inline"><mrow><mrow><mo>−</mo><mn>8.4</mn></mrow><mo>≤</mo><mfrac><mrow><mi href="./36.1#t1.r4" title="real parameter">x</mi><mo>−</mo><mi href="./36.1#t1.r4" title="real parameter">y</mi></mrow><msqrt><mn>2</mn></msqrt></mfrac><mo>≤</mo><mn>8.4</mn></mrow></math> was replaced by <math class="ltx_Math" altimg="m1.png" altimg-height="34px" altimg-valign="-13px" altimg-width="186px" alttext="-12.0\leq\frac{x-y}{\sqrt{2}}\leq 12.0" display="inline"><mrow><mrow><mo>−</mo><mn>12.0</mn></mrow><mo>≤</mo><mfrac><mrow><mi href="./36.1#t1.r4" title="real parameter">x</mi><mo>−</mo><mi href="./36.1#t1.r4" title="real parameter">y</mi></mrow><msqrt><mn>2</mn></msqrt></mfrac><mo>≤</mo><mn>12.0</mn></mrow></math> and <math class="ltx_Math" altimg="m2.png" altimg-height="34px" altimg-valign="-13px" altimg-width="175px" alttext="-12.7\leq\frac{x+y}{\sqrt{2}}\leq 4.2" display="inline"><mrow><mrow><mo>−</mo><mn>12.7</mn></mrow><mo>≤</mo><mfrac><mrow><mi href="./36.1#t1.r4" title="real parameter">x</mi><mo>+</mo><mi href="./36.1#t1.r4" title="real parameter">y</mi></mrow><msqrt><mn>2</mn></msqrt></mfrac><mo>≤</mo><mn>4.2</mn></mrow></math> replaced by <math class="ltx_Math" altimg="m3.png" altimg-height="34px" altimg-valign="-13px" altimg-width="181px" alttext="-18.0\leq\frac{x+y}{\sqrt{2}}\leq 6.0." display="inline"><mrow><mrow><mrow><mo>−</mo><mn>18.0</mn></mrow><mo>≤</mo><mfrac><mrow><mi href="./36.1#t1.r4" title="real parameter">x</mi><mo>+</mo><mi href="./36.1#t1.r4" title="real parameter">y</mi></mrow><msqrt><mn>2</mn></msqrt></mfrac><mo>≤</mo><mn>6.0</mn></mrow><mo lspace="0em">.</mo></mrow></math>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./36.3#ii.info" title="§36.3(ii) Canonical Integrals: Phase ‣ §36.3 Visualizations of Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.3(ii)</span></a>,
+<a href="./36.3#info" title="§36.3 Visualizations of Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.3</span></a> and
+<a href="./36#info" title="Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.36</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+<div class="ltx_pagination ltx_role_newpage"></div>
+<figure id="F21" class="ltx_figure">
+<table id="F21.t1" class="ltx_tabular ltx_centering ltx_align_middle">
+<tbody class="ltx_tbody">
+<tr id="F21.t1.r1" class="ltx_tr">
+<td class="ltx_td ltx_align_center"><a href="./36.3.F21.mag" title="Magnify Figure" class="ltx_magnifiable"><img src="./36/3/F21a.png" id="F21.t1.r1.g1" class="ltx_graphics ltx_img_square" width="360" height="313" alt="See accompanying text"></a></td>
+<td class="ltx_td ltx_align_center"><a href="./36.3.F21.mag" title="Magnify Figure" class="ltx_magnifiable"><img src="./36/3/F21b.png" id="F21.t1.r1.g2" class="ltx_graphics ltx_img_landscape" width="402" height="316" alt="See accompanying text"></a></td>
+</tr>
+<tr id="F21.t1.r2" class="ltx_tr">
+<td class="ltx_td ltx_align_center">(a) Contour plot.</td>
+<td class="ltx_td ltx_align_center">(b) Density plot.</td>
+</tr>
+</tbody>
+</table>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 36.3.21: </span>Phase of hyperbolic umbilic canonical integral
+<math class="ltx_Math" altimg="m15.png" altimg-height="28px" altimg-valign="-7px" altimg-width="144px" alttext="\operatorname{ph}\Psi^{(\mathrm{H})}\left(x,y,3\right)" display="inline"><mrow><mi href="./1.9#E7" title="phase">ph</mi><mo lspace="0.167em">⁡</mo><mrow><msup><mi href="./36.2#E5" mathvariant="normal" title="hyperbolic umbilic canonical integral function">Ψ</mi><mrow><mo href="./36.2#E5" stretchy="false" title="hyperbolic umbilic canonical integral function">(</mo><mi href="./36.2#E5" mathvariant="normal" title="hyperbolic umbilic canonical integral function">H</mi><mo href="./36.2#E5" stretchy="false" title="hyperbolic umbilic canonical integral function">)</mo></mrow></msup><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./36.1#t1.r4" title="real parameter">x</mi><mo>,</mo><mi href="./36.1#t1.r4" title="real parameter">y</mi><mo>,</mo><mn>3</mn></mrow><mo>)</mo></mrow></mrow></mrow></math>.
+
+
+<a href="./36.3.F21.mag" title="Magnify Figure" class="ltx_magnifiable ltx_icon"><span>Magnify</span></a>
+</figcaption>
+<div id="F21.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./36.2#E5" title="(36.2.5) ‣ Canonical Integrals ‣ §36.2(i) Definitions ‣ §36.2 Catastrophes and Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m6.png" altimg-height="28px" altimg-valign="-7px" altimg-width="79px" alttext="\Psi^{(\mathrm{H})}\left(\NVar{\mathbf{x}}\right)" display="inline"><mrow><msup><mi href="./36.2#E5" mathvariant="normal" title="hyperbolic umbilic canonical integral function">Ψ</mi><mrow><mo href="./36.2#E5" stretchy="false" title="hyperbolic umbilic canonical integral function">(</mo><mi href="./36.2#E5" mathvariant="normal" title="hyperbolic umbilic canonical integral function">H</mi><mo href="./36.2#E5" stretchy="false" title="hyperbolic umbilic canonical integral function">)</mo></mrow></msup><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">𝐱</mi><mo>)</mo></mrow></mrow></math>: hyperbolic umbilic canonical integral function</a>,
+<a href="./1.9#E7" title="(1.9.7) ‣ Modulus and Phase ‣ §1.9(i) Complex Numbers ‣ §1.9 Calculus of a Complex Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m21.png" altimg-height="22px" altimg-valign="-6px" altimg-width="27px" alttext="\operatorname{ph}" display="inline"><mi href="./1.9#E7" title="phase">ph</mi></math>: phase</a>,
+<a href="./36.1#t1.r4" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m25.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="y" display="inline"><mi href="./36.1#t1.r4" title="real parameter">y</mi></math>:  real parameter</a> and
+<a href="./36.1#t1.r4" title="§36.1 Special Notation ‣ Notation ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><math class="ltx_Math" altimg="m24.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./36.1#t1.r4" title="real parameter">x</mi></math>:  real parameter</a>
+</dd>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=hyperbolic%20umbilic%20canonical%20integral">hyperbolic umbilic canonical integral</a>, <a class="ltx_keyword" href="./search/search?q=pictures%20of%20phase">pictures of phase</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./errata/#V1.0.14.I2.ix2" title="In Errata ‣ Version 1.0.14 (December 21, 2016) ‣ Errata" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Erratum (V1.0.14) for  Figures <span class="ltx_text ltx_ref_tag">36.3.18</span>, <span class="ltx_text ltx_ref_tag">36.3.19</span>, <span class="ltx_text ltx_ref_tag">36.3.20</span>, <span class="ltx_text ltx_ref_tag">36.3.21</span></span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./36.3.F21" title="" class="ltx_ref">http://dlmf.nist.gov/36.3.F21</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./36.3.F21a.pdf">pdf</a>, <a href="./36.3.F21b.pdf">pdf</a>, <a href="./36.3.F21a.png">png</a>, <a href="./36.3.F21b.png">png</a>
+</dd>
+<dt>Errata (effective with 1.0.14):</dt>
+<dd>
+Scales were corrected. The interval
+<math class="ltx_Math" altimg="m4.png" altimg-height="34px" altimg-valign="-13px" altimg-width="165px" alttext="-8.4\leq\frac{x-y}{\sqrt{2}}\leq 8.4" display="inline"><mrow><mrow><mo>−</mo><mn>8.4</mn></mrow><mo>≤</mo><mfrac><mrow><mi href="./36.1#t1.r4" title="real parameter">x</mi><mo>−</mo><mi href="./36.1#t1.r4" title="real parameter">y</mi></mrow><msqrt><mn>2</mn></msqrt></mfrac><mo>≤</mo><mn>8.4</mn></mrow></math> was replaced by <math class="ltx_Math" altimg="m1.png" altimg-height="34px" altimg-valign="-13px" altimg-width="186px" alttext="-12.0\leq\frac{x-y}{\sqrt{2}}\leq 12.0" display="inline"><mrow><mrow><mo>−</mo><mn>12.0</mn></mrow><mo>≤</mo><mfrac><mrow><mi href="./36.1#t1.r4" title="real parameter">x</mi><mo>−</mo><mi href="./36.1#t1.r4" title="real parameter">y</mi></mrow><msqrt><mn>2</mn></msqrt></mfrac><mo>≤</mo><mn>12.0</mn></mrow></math> and <math class="ltx_Math" altimg="m2.png" altimg-height="34px" altimg-valign="-13px" altimg-width="175px" alttext="-12.7\leq\frac{x+y}{\sqrt{2}}\leq 4.2" display="inline"><mrow><mrow><mo>−</mo><mn>12.7</mn></mrow><mo>≤</mo><mfrac><mrow><mi href="./36.1#t1.r4" title="real parameter">x</mi><mo>+</mo><mi href="./36.1#t1.r4" title="real parameter">y</mi></mrow><msqrt><mn>2</mn></msqrt></mfrac><mo>≤</mo><mn>4.2</mn></mrow></math> replaced by <math class="ltx_Math" altimg="m3.png" altimg-height="34px" altimg-valign="-13px" altimg-width="181px" alttext="-18.0\leq\frac{x+y}{\sqrt{2}}\leq 6.0." display="inline"><mrow><mrow><mrow><mo>−</mo><mn>18.0</mn></mrow><mo>≤</mo><mfrac><mrow><mi href="./36.1#t1.r4" title="real parameter">x</mi><mo>+</mo><mi href="./36.1#t1.r4" title="real parameter">y</mi></mrow><msqrt><mn>2</mn></msqrt></mfrac><mo>≤</mo><mn>6.0</mn></mrow><mo lspace="0em">.</mo></mrow></math>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./36.3#ii.info" title="§36.3(ii) Canonical Integrals: Phase ‣ §36.3 Visualizations of Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.3(ii)</span></a>,
+<a href="./36.3#info" title="§36.3 Visualizations of Canonical Integrals ‣ Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§36.3</span></a> and
+<a href="./36#info" title="Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.36</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</figure>
+</section>
+</section>
+</div>
+<div class="ltx_page_footer">
+<div class="ltx_siblings">
+<a href="./36.2" title="In Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">36.2 </span>Catastrophes and Canonical Integrals</span></a><a href="./36.4" title="In Properties ‣ Chapter 36 Integrals with Coalescing Saddles" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">36.4 </span>Bifurcation Sets</span></a>
+</div>
+<div class="ltx_footer_links ltx_centering">
+<a href="./about/notices">© 2010–2026 NIST</a> / <a href="./about/notices#S2">Disclaimer</a> / <a href="/cdn-cgi/l/email-protection#155159585338737070717774767e557b7c66613b727a63">Feedback</a>;
+ Version 1.2.7;
+Release date 2026-06-15.</div>
+<span id="pagesettings"></span>
+<div class="ltx_nist_logo"><a href="http://www.nist.gov/"><img src="./style/nistidc.png" width="500" alt="NIST"></a></div>
+<div class="ltx_nist_links ltx_align_right">
+<a href="https://www.nist.gov/privacy-policy">Site Privacy</a> <a href="https://www.nist.gov/oism/accessibility">Accessibility</a> <a href="https://www.nist.gov/privacy">Privacy Program</a> <a href="https://www.nist.gov/oism/copyrights">Copyrights</a> <a href="https://www.commerce.gov/vulnerability-disclosure-policy">Vulnerability Disclosure</a> <a href="https://www.nist.gov/no-fear-act-policy">No Fear Act Policy</a> <a href="https://www.nist.gov/foia">FOIA</a> <a href="https://www.nist.gov/environmental-policy-statement">Environmental Policy</a> <a href="https://www.nist.gov/summary-report-scientific-integrity">Scientific Integrity</a> <a href="https://www.nist.gov/nist-information-quality-standards">Information Quality Standards</a> <a href="https://www.commerce.gov/">Commerce.gov</a> <a href="http://www.science.gov/">Science.gov</a> <a href="http://www.usa.gov/">USA.gov</a>
+</div>
+</div>
+</div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"9ef5b487afff42a68917b2d63593a474"}' crossorigin="anonymous"></script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a30dbf5ba81643f3',t:'MTc4NzY5Mzk0Ng=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

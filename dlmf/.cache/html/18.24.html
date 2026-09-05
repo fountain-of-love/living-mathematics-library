@@ -1,0 +1,358 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>DLMF: §18.24 Hahn Class: Asymptotic Approximations ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials</title>
+<link rel="shortcut icon" href="./style/DLMF-16.png" type="image/png">
+<script type="text/javascript"><!--
+	var PATH="DLMF:/18.24";
+	var ROOT="./";
+      //--></script>
+<script type="text/javascript" src="./style/jquery.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/jquery.leaveNotice.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/DLMF.js"><!-- non-empty so ie6 will accept it --></script>
+<script async="" type="text/javascript" id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC&amp;subagency=NIST&amp;pua=UA-37115410-44&amp;yt=true&amp;exts=ppsx,pps,f90,sch,rtf,wrl,txz,m1v,xlsm,msi,xsd,f,tif,eps,mpg,xml,pl,xlt,c"><!-- non-empty so ie6 will accept it --></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-BZB64W4M0L"></script><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-BZB64W4M0L');
+      </script>
+<link rel="stylesheet" type="text/css" href="./style/LaTeXML.css">
+<link rel="stylesheet" type="text/css" href="./style/DLMF.css">
+<link rel="stylesheet" type="text/css" href="./style/print.css" media="print">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="top" href="./" title="DLMF">
+<link rel="copyright" href="./about/notices" title="Copyright">
+<link rel="search" href="./search/search" title="Search">
+<link rel="help" class="ltx_help" href="./help/" title="Help">
+<link rel="up" href="./18#PT4" title="Askey Scheme ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="up up" href="./18" title="Chapter 18 Orthogonal Polynomials">
+<link rel="start" href="./" title="">
+<link rel="prev" href="./18.23" title="§18.23 Hahn Class: Generating Functions ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="next" href="./18.25" title="§18.25 Wilson Class: Definitions ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.1" title="§18.1 Notation ‣ Notation ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.2" title="§18.2 General Orthogonal Polynomials ‣ General Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.3" title="§18.3 Definitions ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.4" title="§18.4 Graphics ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.5" title="§18.5 Explicit Representations ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.6" title="§18.6 Symmetry, Special Values, and Limits to Monomials ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.7" title="§18.7 Interrelations and Limit Relations ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.8" title="§18.8 Differential Equations ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.9" title="§18.9 Recurrence Relations and Derivatives ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.10" title="§18.10 Integral Representations ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.11" title="§18.11 Relations to Other Functions ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.12" title="§18.12 Generating Functions ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.13" title="§18.13 Continued Fractions ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.14" title="§18.14 Inequalities ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.15" title="§18.15 Asymptotic Approximations ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.16" title="§18.16 Zeros ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.17" title="§18.17 Integrals ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.18" title="§18.18 Sums ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.19" title="§18.19 Hahn Class: Definitions ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.20" title="§18.20 Hahn Class: Explicit Representations ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.21" title="§18.21 Hahn Class: Interrelations ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.22" title="§18.22 Hahn Class: Recurrence Relations and Differences ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.23" title="§18.23 Hahn Class: Generating Functions ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.25" title="§18.25 Wilson Class: Definitions ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.26" title="§18.26 Wilson Class: Continued ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.27" title="§18.27 𝑞-Hahn Class ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.28" title="§18.28 Askey–Wilson Class ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.29" title="§18.29 Asymptotic Approximations for 𝑞-Hahn and Askey–Wilson Classes ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.30" title="§18.30 Associated OP’s ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.31" title="§18.31 Bernstein–Szegő Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.32" title="§18.32 OP’s with Respect to Freud Weights ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.33" title="§18.33 Polynomials Orthogonal on the Unit Circle ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.34" title="§18.34 Bessel Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.35" title="§18.35 Pollaczek Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.36" title="§18.36 Miscellaneous Polynomials ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.37" title="§18.37 Classical OP’s in Two or More Variables ‣ Other Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.38" title="§18.38 Mathematical Applications ‣ Applications ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.39" title="§18.39 Applications in the Physical Sciences ‣ Applications ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.40" title="§18.40 Methods of Computation ‣ Computation ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.41" title="§18.41 Tables ‣ Computation ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="section" href="./18.42" title="§18.42 Software ‣ Computation ‣ Chapter 18 Orthogonal Polynomials">
+<link rel="document" href="./front/foreword" title="Foreword">
+<link rel="document" href="./front/preface" title="Preface">
+<link rel="document" href="./front/introduction" title="Mathematical Introduction">
+<link rel="chapter" href="./1" title="Chapter 1 Algebraic and Analytic Methods">
+<link rel="chapter" href="./2" title="Chapter 2 Asymptotic Approximations">
+<link rel="chapter" href="./3" title="Chapter 3 Numerical Methods">
+<link rel="chapter" href="./4" title="Chapter 4 Elementary Functions">
+<link rel="chapter" href="./5" title="Chapter 5 Gamma Function">
+<link rel="chapter" href="./6" title="Chapter 6 Exponential, Logarithmic, Sine, and Cosine Integrals">
+<link rel="chapter" href="./7" title="Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="chapter" href="./8" title="Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="chapter" href="./9" title="Chapter 9 Airy and Related Functions">
+<link rel="chapter" href="./10" title="Chapter 10 Bessel Functions">
+<link rel="chapter" href="./11" title="Chapter 11 Struve and Related Functions">
+<link rel="chapter" href="./12" title="Chapter 12 Parabolic Cylinder Functions">
+<link rel="chapter" href="./13" title="Chapter 13 Confluent Hypergeometric Functions">
+<link rel="chapter" href="./14" title="Chapter 14 Legendre and Related Functions">
+<link rel="chapter" href="./15" title="Chapter 15 Hypergeometric Function">
+<link rel="chapter" href="./16" title="Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="chapter" href="./17" title="Chapter 17 𝑞-Hypergeometric and Related Functions">
+<link rel="chapter" href="./18" title="Chapter 18 Orthogonal Polynomials">
+<link rel="chapter" href="./19" title="Chapter 19 Elliptic Integrals">
+<link rel="chapter" href="./20" title="Chapter 20 Theta Functions">
+<link rel="chapter" href="./21" title="Chapter 21 Multidimensional Theta Functions">
+<link rel="chapter" href="./22" title="Chapter 22 Jacobian Elliptic Functions">
+<link rel="chapter" href="./23" title="Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="chapter" href="./24" title="Chapter 24 Bernoulli and Euler Polynomials">
+<link rel="chapter" href="./25" title="Chapter 25 Zeta and Related Functions">
+<link rel="chapter" href="./26" title="Chapter 26 Combinatorial Analysis">
+<link rel="chapter" href="./27" title="Chapter 27 Functions of Number Theory">
+<link rel="chapter" href="./28" title="Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="chapter" href="./29" title="Chapter 29 Lamé Functions">
+<link rel="chapter" href="./30" title="Chapter 30 Spheroidal Wave Functions">
+<link rel="chapter" href="./31" title="Chapter 31 Heun Functions">
+<link rel="chapter" href="./32" title="Chapter 32 Painlevé Transcendents">
+<link rel="chapter" href="./33" title="Chapter 33 Coulomb Functions">
+<link rel="chapter" href="./34" title="Chapter 34 3⁢𝑗,6⁢𝑗,9⁢𝑗 Symbols">
+<link rel="chapter" href="./35" title="Chapter 35 Functions of Matrix Argument">
+<link rel="chapter" href="./36" title="Chapter 36 Integrals with Coalescing Saddles">
+<link rel="bibliography" href="./bib/" title="Bibliography">
+<link rel="index" href="./idx/" title="Index">
+<link rel="glossary" href="./not/" title="Notations">
+<link rel="document" href="./lof/" title="List of Figures">
+<link rel="document" href="./lot/" title="List of Tables">
+<link rel="document" href="./software/" title="Software Index">
+<link rel="document" href="./errata/" title="Errata">
+<link rel="document" href="./help/" title="Need Help?">
+<link rel="document" href="./search/" title="Advanced Search">
+<link rel="document" href="./about/" title="About the Project">
+<meta name="keywords" lang="en" content="Hahn class orthogonal polynomials, asymptotic approximations">
+</head>
+<body class="color_default textfont_default titlefont_default fontsize_default navbar_default">
+<div class="ltx_page_navbar">
+<div class="ltx_page_navlogo"><a href="./" title="Digital Library of Mathematical Functions"><span>DLMF</span></a></div>
+<div class="ltx_page_navitems">
+<form method="get" action="./search/search">
+<ul>
+<li><a href="./idx/">Index</a></li>
+<li><a href="./not/">Notations</a></li>
+<li><small><input type="text" name="q" value="" size="6" class="ltx_page_navitem_search"><button type="submit">Search</button></small></li>
+<li><a href="./help/" class="ltx_help">Help?</a></li>
+<li><a href="./help/cite">Citing</a></li>
+<li><a href="./help/customize" class="ltx_customize">Customize</a></li>
+<li id="showinfo"><a href="" onclick="showInfo(); return false;" title="Show Annotations">Annotate</a></li>
+<li id="hideinfo"><a href="" onclick="hideInfo(); return false;">UnAnnotate</a></li>
+</ul>
+</form>
+</div>
+<div class="ltx_page_navsponsors">
+<div><a href="./about/" class="ltx_page_navabout">About the Project</a></div>
+</div>
+</div>
+<div class="ltx_page_main">
+<div class="ltx_page_header">
+<a href="./18" title="" class="ltx_ref" rel="up up"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">18 </span>Orthogonal Polynomials</span></a><a href="./18#PT4" title="In Chapter 18 Orthogonal Polynomials" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title">Askey Scheme</span></a><a href="./18.23" title="In Askey Scheme ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">18.23 </span>Hahn Class: Generating Functions</span></a><a href="./18.25" title="In Askey Scheme ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">18.25 </span>Wilson Class: Definitions</span></a>
+</div>
+<div class="ltx_page_content">
+<section class="ltx_section ltx_authors_multiline ltx_leqno">
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">§18.24 </span>Hahn Class: Asymptotic Approximations</h1>
+<div id="info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=Hahn%20class%20orthogonal%20polynomials">Hahn class orthogonal polynomials</a>, <a class="ltx_keyword" href="./search/search?q=asymptotic%20approximations">asymptotic approximations</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./2.8#iv.p8" title="§2.8(iv) Case III: Simple Pole ‣ §2.8 Differential Equations with a Parameter ‣ Areas ‣ Chapter 2 Asymptotic Approximations" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§2.8(iv)</span></a>,
+<a href="./2.8#vi.p5" title="§2.8(vi) Coalescing Transition Points ‣ §2.8 Differential Equations with a Parameter ‣ Areas ‣ Chapter 2 Asymptotic Approximations" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§2.8(vi)</span></a>,
+<a href="./errata/#V1.0.10.I2.ix6.p1" title="In Other Changes ‣ Version 1.0.10 (August 7, 2015) ‣ Errata" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Erratum (V1.0.10) for  References</span></a>,
+<a href="./errata/#V1.0.7.I5.ix7.p1" title="In Other Changes ‣ Version 1.0.7 (March 21, 2014) ‣ Errata" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Erratum (V1.0.7) for  References</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./18.24" title="" class="ltx_ref">http://dlmf.nist.gov/18.24</a></dd>
+<dt>Addition (effective with 1.0.10):</dt>
+<dd>
+A paragraph <span class="ltx_text ltx_font_bold">Hahn</span> with reference to <cite class="ltx_cite ltx_citemacro_citet">Lin and Wong (<a href="./bib/L#bib155" title="Global asymptotics of the Hahn polynomials" class="ltx_ref">2013</a>)</cite> has been
+added at the beginning of this section.
+</dd>
+<dt>Addition (effective with 1.0.7):</dt>
+<dd>
+The citations <cite class="ltx_cite ltx_citemacro_citet">Wang and Wong (<a href="./bib/W#bib2814" title="Global asymptotics of the Meixner polynomials" class="ltx_ref">2011</a>)</cite> and <cite class="ltx_cite ltx_citemacro_citet">Khwaja and Olde Daalhuis (<a href="./bib/K#bib2808" title="Uniform asymptotic approximations for the Meixner-Sobolev polynomials" class="ltx_ref">2012</a>)</cite> have been added
+under the subheading <span class="ltx_text ltx_font_bold">Meixner</span>.
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./18#info" title="Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.18</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<section id="Px1" class="ltx_paragraph">
+<h2 class="ltx_title ltx_title_paragraph">Hahn</h2>
+<div id="Px1.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./18.24#info" title="§18.24 Hahn Class: Asymptotic Approximations ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§18.24</span></a> and
+<a href="./18#info" title="Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.18</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="Px1.p1" class="ltx_para">
+<p class="ltx_p">When the parameters <math class="ltx_Math" altimg="m11.png" altimg-height="13px" altimg-valign="-2px" altimg-width="18px" alttext="\alpha" display="inline"><mi>α</mi></math> and <math class="ltx_Math" altimg="m12.png" altimg-height="22px" altimg-valign="-6px" altimg-width="17px" alttext="\beta" display="inline"><mi>β</mi></math> are fixed and the ratio <math class="ltx_Math" altimg="m26.png" altimg-height="25px" altimg-valign="-7px" altimg-width="82px" alttext="n/N=c" display="inline"><mrow><mrow><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi><mo>/</mo><mi href="./18.1#i.t1.r7" title="positive integer">N</mi></mrow><mo>=</mo><mi>c</mi></mrow></math> is a constant in the interval (0,1),
+uniform asymptotic formulas (as <math class="ltx_Math" altimg="m28.png" altimg-height="13px" altimg-valign="-2px" altimg-width="70px" alttext="n\to\infty" display="inline"><mrow><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></math> ) of the Hahn polynomials <math class="ltx_Math" altimg="m9.png" altimg-height="25px" altimg-valign="-7px" altimg-width="132px" alttext="Q_{n}(z;\alpha,\beta,N)" display="inline"><mrow><msub><mi>Q</mi><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi href="./18.1#i.t1.r2" title="complex variable">z</mi><mo>;</mo><mi>α</mi><mo>,</mo><mi>β</mi><mo>,</mo><mi href="./18.1#i.t1.r7" title="positive integer">N</mi><mo stretchy="false">)</mo></mrow></mrow></math> can be
+found in <cite class="ltx_cite ltx_citemacro_citet">Lin and Wong (<a href="./bib/L#bib155" title="Global asymptotics of the Hahn polynomials" class="ltx_ref">2013</a>)</cite> for <math class="ltx_Math" altimg="m34.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi href="./18.1#i.t1.r2" title="complex variable">z</mi></math> in three overlapping regions, which together cover the entire
+complex plane. In particular, asymptotic formulas in terms of elementary functions are given when
+<math class="ltx_Math" altimg="m33.png" altimg-height="13px" altimg-valign="-2px" altimg-width="54px" alttext="z=x" display="inline"><mrow><mi href="./18.1#i.t1.r2" title="complex variable">z</mi><mo>=</mo><mi href="./18.2#Px1.p2" title="real variable">x</mi></mrow></math> is real and fixed.</p>
+</div>
+</section>
+<section id="Px2" class="ltx_paragraph">
+<h2 class="ltx_title ltx_title_paragraph">Krawtchouk</h2>
+<div id="Px2.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./18.24#info" title="§18.24 Hahn Class: Asymptotic Approximations ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§18.24</span></a> and
+<a href="./18#info" title="Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.18</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="Px2.p1" class="ltx_para">
+<p class="ltx_p">With <math class="ltx_Math" altimg="m31.png" altimg-height="18px" altimg-valign="-2px" altimg-width="75px" alttext="x=\lambda N" display="inline"><mrow><mi href="./18.2#Px1.p2" title="real variable">x</mi><mo>=</mo><mrow><mi>λ</mi><mo>⁢</mo><mi href="./18.1#i.t1.r7" title="positive integer">N</mi></mrow></mrow></math> and <math class="ltx_Math" altimg="m19.png" altimg-height="25px" altimg-valign="-7px" altimg-width="84px" alttext="\nu=n/N" display="inline"><mrow><mi>ν</mi><mo>=</mo><mrow><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi><mo>/</mo><mi href="./18.1#i.t1.r7" title="positive integer">N</mi></mrow></mrow></math>, <cite class="ltx_cite ltx_citemacro_citet">Li and Wong (<a href="./bib/L#bib1436" title="A uniform asymptotic expansion for Krawtchouk polynomials" class="ltx_ref">2000</a>)</cite> gives an asymptotic
+expansion for <math class="ltx_Math" altimg="m5.png" altimg-height="25px" altimg-valign="-7px" altimg-width="113px" alttext="K_{n}\left(x;p,N\right)" display="inline"><mrow><msub><mi href="./18.19#T1.t1.r3" title="Krawtchouk polynomial">K</mi><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./18.2#Px1.p2" title="real variable">x</mi><mo>;</mo><mi>p</mi><mo>,</mo><mi href="./18.1#i.t1.r7" title="positive integer">N</mi><mo>)</mo></mrow></mrow></math> as <math class="ltx_Math" altimg="m28.png" altimg-height="13px" altimg-valign="-2px" altimg-width="70px" alttext="n\to\infty" display="inline"><mrow><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></math>, that holds
+uniformly for <math class="ltx_Math" altimg="m15.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="\lambda" display="inline"><mi>λ</mi></math> and <math class="ltx_Math" altimg="m20.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="\nu" display="inline"><mi>ν</mi></math> in compact subintervals of <math class="ltx_Math" altimg="m1.png" altimg-height="25px" altimg-valign="-7px" altimg-width="50px" alttext="(0,1)" display="inline"><mrow><mo href="./front/introduction#common.t1.r29" stretchy="false" title="open interval">(</mo><mn>0</mn><mo href="./front/introduction#common.t1.r29" title="open interval">,</mo><mn>1</mn><mo href="./front/introduction#common.t1.r29" stretchy="false" title="open interval">)</mo></mrow></math>. This
+expansion is in terms of the parabolic cylinder function and its derivative.</p>
+</div>
+<div id="Px2.p2" class="ltx_para">
+<p class="ltx_p">With <math class="ltx_Math" altimg="m16.png" altimg-height="25px" altimg-valign="-7px" altimg-width="85px" alttext="\mu=N/n" display="inline"><mrow><mi>μ</mi><mo>=</mo><mrow><mi href="./18.1#i.t1.r7" title="positive integer">N</mi><mo>/</mo><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></mrow></mrow></math> and <math class="ltx_Math" altimg="m32.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./18.2#Px1.p2" title="real variable">x</mi></math> fixed, <cite class="ltx_cite ltx_citemacro_citet">Qiu and Wong (<a href="./bib/Q#bib1914" title="Asymptotic expansion of the Krawtchouk polynomials and their zeros" class="ltx_ref">2004</a>)</cite> gives an asymptotic
+expansion for <math class="ltx_Math" altimg="m5.png" altimg-height="25px" altimg-valign="-7px" altimg-width="113px" alttext="K_{n}\left(x;p,N\right)" display="inline"><mrow><msub><mi href="./18.19#T1.t1.r3" title="Krawtchouk polynomial">K</mi><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./18.2#Px1.p2" title="real variable">x</mi><mo>;</mo><mi>p</mi><mo>,</mo><mi href="./18.1#i.t1.r7" title="positive integer">N</mi><mo>)</mo></mrow></mrow></math> as <math class="ltx_Math" altimg="m28.png" altimg-height="13px" altimg-valign="-2px" altimg-width="70px" alttext="n\to\infty" display="inline"><mrow><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></math>, that holds
+uniformly for <math class="ltx_Math" altimg="m18.png" altimg-height="25px" altimg-valign="-7px" altimg-width="96px" alttext="\mu\in[1,\infty)" display="inline"><mrow><mi>μ</mi><mo href="./front/introduction#common.t1.r10" title="element of">∈</mo><mrow><mo href="./front/introduction#common.t2.r1" stretchy="false" title="half-closed interval">[</mo><mn>1</mn><mo href="./front/introduction#common.t2.r1" title="half-closed interval">,</mo><mi mathvariant="normal">∞</mi><mo href="./front/introduction#common.t2.r1" stretchy="false" title="half-closed interval">)</mo></mrow></mrow></math>. This expansion is in terms of confluent
+hypergeometric functions. Asymptotic approximations are also provided for the
+zeros of <math class="ltx_Math" altimg="m5.png" altimg-height="25px" altimg-valign="-7px" altimg-width="113px" alttext="K_{n}\left(x;p,N\right)" display="inline"><mrow><msub><mi href="./18.19#T1.t1.r3" title="Krawtchouk polynomial">K</mi><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./18.2#Px1.p2" title="real variable">x</mi><mo>;</mo><mi>p</mi><mo>,</mo><mi href="./18.1#i.t1.r7" title="positive integer">N</mi><mo>)</mo></mrow></mrow></math> in various cases depending on the values
+of <math class="ltx_Math" altimg="m29.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="p" display="inline"><mi>p</mi></math> and <math class="ltx_Math" altimg="m17.png" altimg-height="17px" altimg-valign="-6px" altimg-width="17px" alttext="\mu" display="inline"><mi>μ</mi></math>.</p>
+</div>
+</section>
+<section id="Px3" class="ltx_paragraph">
+<h2 class="ltx_title ltx_title_paragraph">Meixner</h2>
+<div id="Px3.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./18.24#info" title="§18.24 Hahn Class: Asymptotic Approximations ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§18.24</span></a> and
+<a href="./18#info" title="Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.18</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="Px3.p1" class="ltx_para">
+<p class="ltx_p">For two asymptotic expansions of <math class="ltx_Math" altimg="m6.png" altimg-height="25px" altimg-valign="-7px" altimg-width="120px" alttext="M_{n}\left(nx;\beta,c\right)" display="inline"><mrow><msub><mi href="./18.19#T1.t1.r4" title="Meixner polynomial">M</mi><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi><mo>⁢</mo><mi href="./18.2#Px1.p2" title="real variable">x</mi></mrow><mo>;</mo><mi>β</mi><mo>,</mo><mi>c</mi><mo>)</mo></mrow></mrow></math> as
+<math class="ltx_Math" altimg="m28.png" altimg-height="13px" altimg-valign="-2px" altimg-width="70px" alttext="n\to\infty" display="inline"><mrow><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></math>, with <math class="ltx_Math" altimg="m12.png" altimg-height="22px" altimg-valign="-6px" altimg-width="17px" alttext="\beta" display="inline"><mi>β</mi></math> and <math class="ltx_Math" altimg="m25.png" altimg-height="13px" altimg-valign="-2px" altimg-width="13px" alttext="c" display="inline"><mi>c</mi></math> fixed, see <cite class="ltx_cite ltx_citemacro_citet">Jin and Wong (<a href="./bib/J#bib1171" title="Uniform asymptotic expansions for Meixner polynomials" class="ltx_ref">1998</a>)</cite> and
+<cite class="ltx_cite ltx_citemacro_citet">Wang and Wong (<a href="./bib/W#bib2814" title="Global asymptotics of the Meixner polynomials" class="ltx_ref">2011</a>)</cite>. The first
+expansion holds uniformly for <math class="ltx_Math" altimg="m14.png" altimg-height="21px" altimg-valign="-5px" altimg-width="127px" alttext="\delta\leq x\leq 1+\delta" display="inline"><mrow><mi href="./18.1#i.t1.r9" title="arbitrary small positive constant">δ</mi><mo>≤</mo><mi href="./18.2#Px1.p2" title="real variable">x</mi><mo>≤</mo><mrow><mn>1</mn><mo>+</mo><mi href="./18.1#i.t1.r9" title="arbitrary small positive constant">δ</mi></mrow></mrow></math>, and the second for
+<math class="ltx_Math" altimg="m3.png" altimg-height="24px" altimg-valign="-5px" altimg-width="185px" alttext="1-\delta\leq x\leq 1+\delta^{-1}" display="inline"><mrow><mrow><mn>1</mn><mo>−</mo><mi href="./18.1#i.t1.r9" title="arbitrary small positive constant">δ</mi></mrow><mo>≤</mo><mi href="./18.2#Px1.p2" title="real variable">x</mi><mo>≤</mo><mrow><mn>1</mn><mo>+</mo><msup><mi href="./18.1#i.t1.r9" title="arbitrary small positive constant">δ</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup></mrow></mrow></math>, <math class="ltx_Math" altimg="m13.png" altimg-height="18px" altimg-valign="-2px" altimg-width="14px" alttext="\delta" display="inline"><mi href="./18.1#i.t1.r9" title="arbitrary small positive constant">δ</mi></math> being an arbitrary small
+positive constant. Both expansions are in terms of parabolic cylinder
+functions.</p>
+</div>
+<div id="Px3.p2" class="ltx_para">
+<p class="ltx_p">For asymptotic approximations for the zeros of <math class="ltx_Math" altimg="m6.png" altimg-height="25px" altimg-valign="-7px" altimg-width="120px" alttext="M_{n}\left(nx;\beta,c\right)" display="inline"><mrow><msub><mi href="./18.19#T1.t1.r4" title="Meixner polynomial">M</mi><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi><mo>⁢</mo><mi href="./18.2#Px1.p2" title="real variable">x</mi></mrow><mo>;</mo><mi>β</mi><mo>,</mo><mi>c</mi><mo>)</mo></mrow></mrow></math>
+in terms of zeros of <math class="ltx_Math" altimg="m21.png" altimg-height="25px" altimg-valign="-7px" altimg-width="57px" alttext="\operatorname{Ai}\left(x\right)" display="inline"><mrow><mi href="./9.2#i" title="Airy function">Ai</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./18.2#Px1.p2" title="real variable">x</mi><mo>)</mo></mrow></mrow></math> (§<a href="./9.9#i" title="§9.9(i) Distribution and Notation ‣ §9.9 Zeros ‣ Airy Functions ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">9.9(i)</span></a>), see
+<cite class="ltx_cite ltx_citemacro_citet">Jin and Wong (<a href="./bib/J#bib1172" title="Asymptotic formulas for the zeros of the Meixner polynomials" class="ltx_ref">1999</a>)</cite> and <cite class="ltx_cite ltx_citemacro_citet">Khwaja and Olde Daalhuis (<a href="./bib/K#bib2808" title="Uniform asymptotic approximations for the Meixner-Sobolev polynomials" class="ltx_ref">2012</a>)</cite>.</p>
+</div>
+</section>
+<section id="Px4" class="ltx_paragraph">
+<h2 class="ltx_title ltx_title_paragraph">Charlier</h2>
+<div id="Px4.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./18.24#info" title="§18.24 Hahn Class: Asymptotic Approximations ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§18.24</span></a> and
+<a href="./18#info" title="Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.18</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="Px4.p1" class="ltx_para">
+<p class="ltx_p"><cite class="ltx_cite ltx_citemacro_citet">Dunster (<a href="./bib/D#bib709" title="Uniform asymptotic expansions for Charlier polynomials" class="ltx_ref">2001b</a>)</cite> provides various asymptotic expansions for
+<math class="ltx_Math" altimg="m4.png" altimg-height="25px" altimg-valign="-7px" altimg-width="82px" alttext="C_{n}\left(x;a\right)" display="inline"><mrow><msub><mi href="./18.19#T1.t1.r5" title="Charlier polynomial">C</mi><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./18.2#Px1.p2" title="real variable">x</mi><mo>;</mo><mi>a</mi><mo>)</mo></mrow></mrow></math> as <math class="ltx_Math" altimg="m28.png" altimg-height="13px" altimg-valign="-2px" altimg-width="70px" alttext="n\to\infty" display="inline"><mrow><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></math>, in terms of elementary functions or
+in terms of Bessel functions. Taken together, these expansions are uniformly
+valid for <math class="ltx_Math" altimg="m2.png" altimg-height="18px" altimg-valign="-4px" altimg-width="129px" alttext="-\infty&lt;x&lt;\infty" display="inline"><mrow><mrow><mo>−</mo><mi mathvariant="normal">∞</mi></mrow><mo>&lt;</mo><mi href="./18.2#Px1.p2" title="real variable">x</mi><mo>&lt;</mo><mi mathvariant="normal">∞</mi></mrow></math> and for <math class="ltx_Math" altimg="m24.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="a" display="inline"><mi>a</mi></math> in unbounded intervals—each of
+which contains <math class="ltx_Math" altimg="m10.png" altimg-height="25px" altimg-valign="-7px" altimg-width="110px" alttext="[0,(1-\delta)n]" display="inline"><mrow><mo href="./front/introduction#common.t1.r30" stretchy="false" title="closed interval">[</mo><mn>0</mn><mo href="./front/introduction#common.t1.r30" title="closed interval">,</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>−</mo><mi href="./18.1#i.t1.r9" title="arbitrary small positive constant">δ</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></mrow><mo href="./front/introduction#common.t1.r30" stretchy="false" title="closed interval">]</mo></mrow></math>, where <math class="ltx_Math" altimg="m13.png" altimg-height="18px" altimg-valign="-2px" altimg-width="14px" alttext="\delta" display="inline"><mi href="./18.1#i.t1.r9" title="arbitrary small positive constant">δ</mi></math> again denotes an
+arbitrary small positive constant. See also <cite class="ltx_cite ltx_citemacro_citet">Bo and Wong (<a href="./bib/B#bib304" title="Uniform asymptotic expansion of Charlier polynomials" class="ltx_ref">1994</a>)</cite> and
+<cite class="ltx_cite ltx_citemacro_citet">Goh (<a href="./bib/G#bib947" title="Plancherel-Rotach asymptotics for the Charlier polynomials" class="ltx_ref">1998</a>)</cite>.</p>
+</div>
+</section>
+<section id="Px5" class="ltx_paragraph">
+<h2 class="ltx_title ltx_title_paragraph">Meixner–Pollaczek</h2>
+<div id="Px5.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./18.24#info" title="§18.24 Hahn Class: Asymptotic Approximations ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§18.24</span></a> and
+<a href="./18#info" title="Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.18</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="Px5.p1" class="ltx_para">
+<p class="ltx_p">For an asymptotic expansion of <math class="ltx_Math" altimg="m7.png" altimg-height="31px" altimg-valign="-7px" altimg-width="110px" alttext="P^{(\lambda)}_{n}\left(nx;\phi\right)" display="inline"><mrow><msubsup><mi href="./18.19#Px3.p1" title="Meixner–Pollaczek polynomial">P</mi><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi><mrow><mo href="./18.19#Px3.p1" stretchy="false" title="Meixner–Pollaczek polynomial">(</mo><mi>λ</mi><mo href="./18.19#Px3.p1" stretchy="false" title="Meixner–Pollaczek polynomial">)</mo></mrow></msubsup><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi><mo>⁢</mo><mi href="./18.2#Px1.p2" title="real variable">x</mi></mrow><mo>;</mo><mi>ϕ</mi><mo>)</mo></mrow></mrow></math> as
+<math class="ltx_Math" altimg="m28.png" altimg-height="13px" altimg-valign="-2px" altimg-width="70px" alttext="n\to\infty" display="inline"><mrow><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></math>, with <math class="ltx_Math" altimg="m23.png" altimg-height="22px" altimg-valign="-6px" altimg-width="17px" alttext="\phi" display="inline"><mi>ϕ</mi></math> fixed, see <cite class="ltx_cite ltx_citemacro_citet">Li and Wong (<a href="./bib/L#bib1437" title="On the asymptotics of the Meixner-Pollaczek polynomials and their zeros" class="ltx_ref">2001</a>)</cite>. This expansion is
+uniformly valid in any compact <math class="ltx_Math" altimg="m32.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./18.2#Px1.p2" title="real variable">x</mi></math>-interval on the real line and is in terms of
+parabolic cylinder functions. Corresponding approximations are included for the
+zeros of <math class="ltx_Math" altimg="m7.png" altimg-height="31px" altimg-valign="-7px" altimg-width="110px" alttext="P^{(\lambda)}_{n}\left(nx;\phi\right)" display="inline"><mrow><msubsup><mi href="./18.19#Px3.p1" title="Meixner–Pollaczek polynomial">P</mi><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi><mrow><mo href="./18.19#Px3.p1" stretchy="false" title="Meixner–Pollaczek polynomial">(</mo><mi>λ</mi><mo href="./18.19#Px3.p1" stretchy="false" title="Meixner–Pollaczek polynomial">)</mo></mrow></msubsup><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi><mo>⁢</mo><mi href="./18.2#Px1.p2" title="real variable">x</mi></mrow><mo>;</mo><mi>ϕ</mi><mo>)</mo></mrow></mrow></math>.</p>
+</div>
+</section>
+<section id="Px6" class="ltx_paragraph">
+<h2 class="ltx_title ltx_title_paragraph">Approximations in Terms of Laguerre Polynomials</h2>
+<div id="Px6.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=Hahn%20class%20orthogonal%20polynomials">Hahn class orthogonal polynomials</a>, <a class="ltx_keyword" href="./search/search?q=asymptotic%20approximations">asymptotic approximations</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./18.24#info" title="§18.24 Hahn Class: Asymptotic Approximations ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§18.24</span></a> and
+<a href="./18#info" title="Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.18</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="Px6.p1" class="ltx_para">
+<p class="ltx_p">For asymptotic approximations to <math class="ltx_Math" altimg="m8.png" altimg-height="31px" altimg-valign="-7px" altimg-width="97px" alttext="P^{(\lambda)}_{n}\left(x;\phi\right)" display="inline"><mrow><msubsup><mi href="./18.19#Px3.p1" title="Meixner–Pollaczek polynomial">P</mi><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi><mrow><mo href="./18.19#Px3.p1" stretchy="false" title="Meixner–Pollaczek polynomial">(</mo><mi>λ</mi><mo href="./18.19#Px3.p1" stretchy="false" title="Meixner–Pollaczek polynomial">)</mo></mrow></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi href="./18.2#Px1.p2" title="real variable">x</mi><mo>;</mo><mi>ϕ</mi><mo>)</mo></mrow></mrow></math> as
+<math class="ltx_Math" altimg="m35.png" altimg-height="25px" altimg-valign="-7px" altimg-width="125px" alttext="|x+i\lambda|\to\infty" display="inline"><mrow><mrow><mo stretchy="false">|</mo><mrow><mi href="./18.2#Px1.p2" title="real variable">x</mi><mo>+</mo><mrow><mi>i</mi><mo>⁢</mo><mi>λ</mi></mrow></mrow><mo stretchy="false">|</mo></mrow><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></math>, with <math class="ltx_Math" altimg="m27.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./18.1#i.t1.r6" title="nonnegative integer">n</mi></math> fixed, see <cite class="ltx_cite ltx_citemacro_citet">Temme and López (<a href="./bib/T#bib2235" title="The Askey scheme for hypergeometric orthogonal polynomials viewed from asymptotic analysis" class="ltx_ref">2001</a>)</cite>. These
+approximations are in terms of Laguerre polynomials and hold uniformly for
+<math class="ltx_Math" altimg="m22.png" altimg-height="25px" altimg-valign="-7px" altimg-width="173px" alttext="\operatorname{ph}\left(x+i\lambda\right)\in[0,\pi]" display="inline"><mrow><mrow><mi href="./1.9#E7" title="phase">ph</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./18.2#Px1.p2" title="real variable">x</mi><mo>+</mo><mrow><mi>i</mi><mo>⁢</mo><mi>λ</mi></mrow></mrow><mo>)</mo></mrow></mrow><mo href="./front/introduction#common.t1.r10" title="element of">∈</mo><mrow><mo href="./front/introduction#common.t1.r30" stretchy="false" title="closed interval">[</mo><mn>0</mn><mo href="./front/introduction#common.t1.r30" title="closed interval">,</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo href="./front/introduction#common.t1.r30" stretchy="false" title="closed interval">]</mo></mrow></mrow></math>. Compare also (<a href="./18.21#E12" title="(18.21.12) ‣ Meixner–Pollaczek → Laguerre ‣ §18.21(ii) Limit Relations and Special Cases ‣ §18.21 Hahn Class: Interrelations ‣ Askey Scheme ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">18.21.12</span></a>). Similar
+approximations are included for Jacobi, Krawtchouk, and Meixner polynomials.</p>
+</div>
+</section>
+</section>
+</div>
+<div class="ltx_page_footer">
+<div class="ltx_siblings">
+<a href="./18.23" title="In Askey Scheme ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">18.23 </span>Hahn Class: Generating Functions</span></a><a href="./18.25" title="In Askey Scheme ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">18.25 </span>Wilson Class: Definitions</span></a>
+</div>
+<div class="ltx_footer_links ltx_centering">
+<a href="./about/notices">© 2010–2026 NIST</a> / <a href="./about/notices#S2">Disclaimer</a> / <a href="/cdn-cgi/l/email-protection#12565e5f543f7477777670737179527c7b61663c757d64">Feedback</a>;
+ Version 1.2.7;
+Release date 2026-06-15.</div>
+<span id="pagesettings"></span>
+<div class="ltx_nist_logo"><a href="http://www.nist.gov/"><img src="./style/nistidc.png" width="500" alt="NIST"></a></div>
+<div class="ltx_nist_links ltx_align_right">
+<a href="https://www.nist.gov/privacy-policy">Site Privacy</a> <a href="https://www.nist.gov/oism/accessibility">Accessibility</a> <a href="https://www.nist.gov/privacy">Privacy Program</a> <a href="https://www.nist.gov/oism/copyrights">Copyrights</a> <a href="https://www.commerce.gov/vulnerability-disclosure-policy">Vulnerability Disclosure</a> <a href="https://www.nist.gov/no-fear-act-policy">No Fear Act Policy</a> <a href="https://www.nist.gov/foia">FOIA</a> <a href="https://www.nist.gov/environmental-policy-statement">Environmental Policy</a> <a href="https://www.nist.gov/summary-report-scientific-integrity">Scientific Integrity</a> <a href="https://www.nist.gov/nist-information-quality-standards">Information Quality Standards</a> <a href="https://www.commerce.gov/">Commerce.gov</a> <a href="http://www.science.gov/">Science.gov</a> <a href="http://www.usa.gov/">USA.gov</a>
+</div>
+</div>
+</div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"9ef5b487afff42a68917b2d63593a474"}' crossorigin="anonymous"></script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a30b63d47bdf09a2',t:'MTc4NzY2OTIyNQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

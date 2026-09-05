@@ -1,0 +1,298 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>DLMF: §29.20 Methods of Computation ‣ Computation ‣ Chapter 29 Lamé Functions</title>
+<link rel="shortcut icon" href="./style/DLMF-16.png" type="image/png">
+<script type="text/javascript"><!--
+	var PATH="DLMF:/29.20";
+	var ROOT="./";
+      //--></script>
+<script type="text/javascript" src="./style/jquery.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/jquery.leaveNotice.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/DLMF.js"><!-- non-empty so ie6 will accept it --></script>
+<script async="" type="text/javascript" id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC&amp;subagency=NIST&amp;pua=UA-37115410-44&amp;yt=true&amp;exts=ppsx,pps,f90,sch,rtf,wrl,txz,m1v,xlsm,msi,xsd,f,tif,eps,mpg,xml,pl,xlt,c"><!-- non-empty so ie6 will accept it --></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-BZB64W4M0L"></script><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-BZB64W4M0L');
+      </script>
+<link rel="stylesheet" type="text/css" href="./style/LaTeXML.css">
+<link rel="stylesheet" type="text/css" href="./style/DLMF.css">
+<link rel="stylesheet" type="text/css" href="./style/print.css" media="print">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="top" href="./" title="DLMF">
+<link rel="copyright" href="./about/notices" title="Copyright">
+<link rel="search" href="./search/search" title="Search">
+<link rel="help" class="ltx_help" href="./help/" title="Help">
+<link rel="up" href="./29#PT5" title="Computation ‣ Chapter 29 Lamé Functions">
+<link rel="up up" href="./29" title="Chapter 29 Lamé Functions">
+<link rel="start" href="./" title="">
+<link rel="prev" href="./29.19" title="§29.19 Physical Applications ‣ Applications ‣ Chapter 29 Lamé Functions">
+<link rel="next" href="./29.21" title="§29.21 Tables ‣ Computation ‣ Chapter 29 Lamé Functions">
+<link rel="section" href="./29.1" title="§29.1 Special Notation ‣ Notation ‣ Chapter 29 Lamé Functions">
+<link rel="section" href="./29.2" title="§29.2 Differential Equations ‣ Lamé Functions ‣ Chapter 29 Lamé Functions">
+<link rel="section" href="./29.3" title="§29.3 Definitions and Basic Properties ‣ Lamé Functions ‣ Chapter 29 Lamé Functions">
+<link rel="section" href="./29.4" title="§29.4 Graphics ‣ Lamé Functions ‣ Chapter 29 Lamé Functions">
+<link rel="section" href="./29.5" title="§29.5 Special Cases and Limiting Forms ‣ Lamé Functions ‣ Chapter 29 Lamé Functions">
+<link rel="section" href="./29.6" title="§29.6 Fourier Series ‣ Lamé Functions ‣ Chapter 29 Lamé Functions">
+<link rel="section" href="./29.7" title="§29.7 Asymptotic Expansions ‣ Lamé Functions ‣ Chapter 29 Lamé Functions">
+<link rel="section" href="./29.8" title="§29.8 Integral Equations ‣ Lamé Functions ‣ Chapter 29 Lamé Functions">
+<link rel="section" href="./29.9" title="§29.9 Stability ‣ Lamé Functions ‣ Chapter 29 Lamé Functions">
+<link rel="section" href="./29.10" title="§29.10 Lamé Functions with Imaginary Periods ‣ Lamé Functions ‣ Chapter 29 Lamé Functions">
+<link rel="section" href="./29.11" title="§29.11 Lamé Wave Equation ‣ Lamé Functions ‣ Chapter 29 Lamé Functions">
+<link rel="section" href="./29.12" title="§29.12 Definitions ‣ Lamé Polynomials ‣ Chapter 29 Lamé Functions">
+<link rel="section" href="./29.13" title="§29.13 Graphics ‣ Lamé Polynomials ‣ Chapter 29 Lamé Functions">
+<link rel="section" href="./29.14" title="§29.14 Orthogonality ‣ Lamé Polynomials ‣ Chapter 29 Lamé Functions">
+<link rel="section" href="./29.15" title="§29.15 Fourier Series and Chebyshev Series ‣ Lamé Polynomials ‣ Chapter 29 Lamé Functions">
+<link rel="section" href="./29.16" title="§29.16 Asymptotic Expansions ‣ Lamé Polynomials ‣ Chapter 29 Lamé Functions">
+<link rel="section" href="./29.17" title="§29.17 Other Solutions ‣ Lamé Polynomials ‣ Chapter 29 Lamé Functions">
+<link rel="section" href="./29.18" title="§29.18 Mathematical Applications ‣ Applications ‣ Chapter 29 Lamé Functions">
+<link rel="section" href="./29.19" title="§29.19 Physical Applications ‣ Applications ‣ Chapter 29 Lamé Functions">
+<link rel="section" href="./29.21" title="§29.21 Tables ‣ Computation ‣ Chapter 29 Lamé Functions">
+<link rel="section" href="./29.22" title="§29.22 Software ‣ Computation ‣ Chapter 29 Lamé Functions">
+<link rel="document" href="./front/foreword" title="Foreword">
+<link rel="document" href="./front/preface" title="Preface">
+<link rel="document" href="./front/introduction" title="Mathematical Introduction">
+<link rel="chapter" href="./1" title="Chapter 1 Algebraic and Analytic Methods">
+<link rel="chapter" href="./2" title="Chapter 2 Asymptotic Approximations">
+<link rel="chapter" href="./3" title="Chapter 3 Numerical Methods">
+<link rel="chapter" href="./4" title="Chapter 4 Elementary Functions">
+<link rel="chapter" href="./5" title="Chapter 5 Gamma Function">
+<link rel="chapter" href="./6" title="Chapter 6 Exponential, Logarithmic, Sine, and Cosine Integrals">
+<link rel="chapter" href="./7" title="Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="chapter" href="./8" title="Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="chapter" href="./9" title="Chapter 9 Airy and Related Functions">
+<link rel="chapter" href="./10" title="Chapter 10 Bessel Functions">
+<link rel="chapter" href="./11" title="Chapter 11 Struve and Related Functions">
+<link rel="chapter" href="./12" title="Chapter 12 Parabolic Cylinder Functions">
+<link rel="chapter" href="./13" title="Chapter 13 Confluent Hypergeometric Functions">
+<link rel="chapter" href="./14" title="Chapter 14 Legendre and Related Functions">
+<link rel="chapter" href="./15" title="Chapter 15 Hypergeometric Function">
+<link rel="chapter" href="./16" title="Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="chapter" href="./17" title="Chapter 17 𝑞-Hypergeometric and Related Functions">
+<link rel="chapter" href="./18" title="Chapter 18 Orthogonal Polynomials">
+<link rel="chapter" href="./19" title="Chapter 19 Elliptic Integrals">
+<link rel="chapter" href="./20" title="Chapter 20 Theta Functions">
+<link rel="chapter" href="./21" title="Chapter 21 Multidimensional Theta Functions">
+<link rel="chapter" href="./22" title="Chapter 22 Jacobian Elliptic Functions">
+<link rel="chapter" href="./23" title="Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="chapter" href="./24" title="Chapter 24 Bernoulli and Euler Polynomials">
+<link rel="chapter" href="./25" title="Chapter 25 Zeta and Related Functions">
+<link rel="chapter" href="./26" title="Chapter 26 Combinatorial Analysis">
+<link rel="chapter" href="./27" title="Chapter 27 Functions of Number Theory">
+<link rel="chapter" href="./28" title="Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="chapter" href="./29" title="Chapter 29 Lamé Functions">
+<link rel="chapter" href="./30" title="Chapter 30 Spheroidal Wave Functions">
+<link rel="chapter" href="./31" title="Chapter 31 Heun Functions">
+<link rel="chapter" href="./32" title="Chapter 32 Painlevé Transcendents">
+<link rel="chapter" href="./33" title="Chapter 33 Coulomb Functions">
+<link rel="chapter" href="./34" title="Chapter 34 3⁢𝑗,6⁢𝑗,9⁢𝑗 Symbols">
+<link rel="chapter" href="./35" title="Chapter 35 Functions of Matrix Argument">
+<link rel="chapter" href="./36" title="Chapter 36 Integrals with Coalescing Saddles">
+<link rel="bibliography" href="./bib/" title="Bibliography">
+<link rel="index" href="./idx/" title="Index">
+<link rel="glossary" href="./not/" title="Notations">
+<link rel="document" href="./lof/" title="List of Figures">
+<link rel="document" href="./lot/" title="List of Tables">
+<link rel="document" href="./software/" title="Software Index">
+<link rel="document" href="./errata/" title="Errata">
+<link rel="document" href="./help/" title="Need Help?">
+<link rel="document" href="./search/" title="Advanced Search">
+<link rel="document" href="./about/" title="About the Project">
+<meta name="keywords" lang="en" content="Lamé functions, Lamé polynomials, coefficients, computation, eigenvalues, zeros">
+</head>
+<body class="color_default textfont_default titlefont_default fontsize_default navbar_default">
+<div class="ltx_page_navbar">
+<div class="ltx_page_navlogo"><a href="./" title="Digital Library of Mathematical Functions"><span>DLMF</span></a></div>
+<div class="ltx_page_navitems">
+<form method="get" action="./search/search">
+<ul>
+<li><a href="./idx/">Index</a></li>
+<li><a href="./not/">Notations</a></li>
+<li><small><input type="text" name="q" value="" size="6" class="ltx_page_navitem_search"><button type="submit">Search</button></small></li>
+<li><a href="./help/" class="ltx_help">Help?</a></li>
+<li><a href="./help/cite">Citing</a></li>
+<li><a href="./help/customize" class="ltx_customize">Customize</a></li>
+<li id="showinfo"><a href="" onclick="showInfo(); return false;" title="Show Annotations">Annotate</a></li>
+<li id="hideinfo"><a href="" onclick="hideInfo(); return false;">UnAnnotate</a></li>
+</ul>
+</form>
+</div>
+<div class="ltx_page_navsponsors">
+<div><a href="./about/" class="ltx_page_navabout">About the Project</a></div>
+</div>
+</div>
+<div class="ltx_page_main">
+<div class="ltx_page_header">
+<a href="./29" title="" class="ltx_ref" rel="up up"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">29 </span>Lamé Functions</span></a><a href="./29#PT5" title="In Chapter 29 Lamé Functions" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title">Computation</span></a><a href="./29.19" title="In Applications ‣ Chapter 29 Lamé Functions" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">29.19 </span>Physical Applications</span></a><a href="./29.21" title="In Computation ‣ Chapter 29 Lamé Functions" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">29.21 </span>Tables</span></a>
+</div>
+<div class="ltx_page_content">
+<section class="ltx_section ltx_authors_multiline ltx_leqno">
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">§29.20 </span>Methods of Computation</h1>
+<div id="info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Permalink:</dt>
+<dd><a href="./29.20" title="" class="ltx_ref">http://dlmf.nist.gov/29.20</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./29#info" title="Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.29</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<h6>Contents</h6>
+<ol class="ltx_toclist ltx_toclist_section">
+<li class="ltx_tocentry"><a href="#i"><span class="ltx_tag ltx_tag_subsection">§29.20(i) </span>Lamé Functions</a></li>
+<li class="ltx_tocentry"><a href="#ii"><span class="ltx_tag ltx_tag_subsection">§29.20(ii) </span>Lamé Polynomials</a></li>
+<li class="ltx_tocentry"><a href="#iii"><span class="ltx_tag ltx_tag_subsection">§29.20(iii) </span>Zeros</a></li>
+</ol>
+<section id="i" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§29.20(i) </span>Lamé Functions</h2>
+<div id="i.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=Lam%C3%A9%20functions">Lamé functions</a>, <a class="ltx_keyword" href="./search/search?q=computation">computation</a>, <a class="ltx_keyword" href="./search/search?q=eigenvalues">eigenvalues</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./3.10#Px8.p4" title="Steed’s Algorithm ‣ §3.10(iii) Numerical Evaluation of Continued Fractions ‣ §3.10 Continued Fractions ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§3.10(iii)</span></a>,
+<a href="./errata/#V1.0.5.I2.ix2.p1" title="In Other Changes ‣ Version 1.0.5 (October 1, 2012) ‣ Errata" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Erratum (V1.0.5) for  References</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./29.20.i" title="" class="ltx_ref">http://dlmf.nist.gov/29.20.i</a></dd>
+<dt>Addition (effective with 1.0.5):</dt>
+<dd>
+A paragraph describing a fourth method, with link leading to a reference
+to <cite class="ltx_cite ltx_citemacro_citet">Volkmer (<a href="./bib/V#bib2781" title="Approximation of eigenvalues of some differential equations by zeros of orthogonal polynomials" class="ltx_ref">2008</a>)</cite>, has been added at the end of this subsection.
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./29.20#info" title="§29.20 Methods of Computation ‣ Computation ‣ Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§29.20</span></a> and
+<a href="./29#info" title="Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.29</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="i.p1" class="ltx_para">
+<p class="ltx_p">The eigenvalues <math class="ltx_Math" altimg="m4.png" altimg-height="29px" altimg-valign="-9px" altimg-width="74px" alttext="a^{m}_{\nu}\left(k^{2}\right)" display="inline"><mrow><msubsup><mi href="./29.3#i.p1" title="eigenvalues of Lamé’s equation">a</mi><mi href="./29.1#t1.r4" title="real parameter">ν</mi><mi href="./29.1#t1.r1" title="nonnegative integer">m</mi></msubsup><mo>⁡</mo><mrow><mo>(</mo><msup><mi href="./29.1#t1.r4" title="real parameter">k</mi><mn>2</mn></msup><mo>)</mo></mrow></mrow></math>, <math class="ltx_Math" altimg="m5.png" altimg-height="29px" altimg-valign="-9px" altimg-width="72px" alttext="b^{m}_{\nu}\left(k^{2}\right)" display="inline"><mrow><msubsup><mi href="./29.3#i.p1" title="eigenvalues of Lamé’s equation">b</mi><mi href="./29.1#t1.r4" title="real parameter">ν</mi><mi href="./29.1#t1.r1" title="nonnegative integer">m</mi></msubsup><mo>⁡</mo><mrow><mo>(</mo><msup><mi href="./29.1#t1.r4" title="real parameter">k</mi><mn>2</mn></msup><mo>)</mo></mrow></mrow></math>, and the Lamé
+functions <math class="ltx_Math" altimg="m2.png" altimg-height="29px" altimg-valign="-9px" altimg-width="108px" alttext="\mathit{Ec}^{m}_{\nu}\left(z,k^{2}\right)" display="inline"><mrow><msubsup><mi href="./29.3#iv.p1" title="Lamé function">𝐸𝑐</mi><mi href="./29.1#t1.r4" title="real parameter">ν</mi><mi href="./29.1#t1.r1" title="nonnegative integer">m</mi></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi href="./29.1#t1.r3" title="complex variable">z</mi><mo>,</mo><msup><mi href="./29.1#t1.r4" title="real parameter">k</mi><mn>2</mn></msup><mo>)</mo></mrow></mrow></math>, <math class="ltx_Math" altimg="m3.png" altimg-height="29px" altimg-valign="-9px" altimg-width="107px" alttext="\mathit{Es}^{m}_{\nu}\left(z,k^{2}\right)" display="inline"><mrow><msubsup><mi href="./29.3#iv.p1" title="Lamé function">𝐸𝑠</mi><mi href="./29.1#t1.r4" title="real parameter">ν</mi><mi href="./29.1#t1.r1" title="nonnegative integer">m</mi></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi href="./29.1#t1.r3" title="complex variable">z</mi><mo>,</mo><msup><mi href="./29.1#t1.r4" title="real parameter">k</mi><mn>2</mn></msup><mo>)</mo></mrow></mrow></math>, can be
+calculated by direct numerical methods applied to the differential equation
+(<a href="./29.2#E1" title="(29.2.1) ‣ §29.2(i) Lamé’s Equation ‣ §29.2 Differential Equations ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">29.2.1</span></a>); see §<a href="./3.7" title="§3.7 Ordinary Differential Equations ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.7</span></a>. The normalization of Lamé
+functions given in §<a href="./29.3#v" title="§29.3(v) Normalization ‣ §29.3 Definitions and Basic Properties ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">29.3(v)</span></a> can be carried out by quadrature
+(§<a href="./3.5" title="§3.5 Quadrature ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5</span></a>).</p>
+</div>
+<div id="i.p2" class="ltx_para">
+<p class="ltx_p">A second approach is to solve the continued-fraction equations typified by
+(<a href="./29.3#E10" title="(29.3.10) ‣ §29.3(iii) Continued Fractions ‣ §29.3 Definitions and Basic Properties ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">29.3.10</span></a>) by Newton’s rule or other iterative methods; see
+§<a href="./3.8" title="§3.8 Nonlinear Equations ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.8</span></a>. Initial approximations to the eigenvalues can be found, for
+example, from the asymptotic expansions supplied in §<a href="./29.7#i" title="§29.7(i) Eigenvalues ‣ §29.7 Asymptotic Expansions ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">29.7(i)</span></a>.
+Subsequently, formulas typified by (<a href="./29.6#E4" title="(29.6.4) ‣ §29.6(i) Function 𝐸𝑐^{2⁢𝑚}_𝜈(𝑧,𝑘²) ‣ §29.6 Fourier Series ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">29.6.4</span></a>) can be applied to
+compute the coefficients of the Fourier expansions of the corresponding Lamé
+functions by backward recursion followed by application of formulas typified by
+(<a href="./29.6#E5" title="(29.6.5) ‣ §29.6(i) Function 𝐸𝑐^{2⁢𝑚}_𝜈(𝑧,𝑘²) ‣ §29.6 Fourier Series ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">29.6.5</span></a>) and (<a href="./29.6#E6" title="(29.6.6) ‣ §29.6(i) Function 𝐸𝑐^{2⁢𝑚}_𝜈(𝑧,𝑘²) ‣ §29.6 Fourier Series ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">29.6.6</span></a>) to achieve normalization; compare
+§<a href="./3.6" title="§3.6 Linear Difference Equations ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.6</span></a>. (Equation (<a href="./29.6#E3" title="(29.6.3) ‣ §29.6(i) Function 𝐸𝑐^{2⁢𝑚}_𝜈(𝑧,𝑘²) ‣ §29.6 Fourier Series ‣ Lamé Functions ‣ Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">29.6.3</span></a>) serves as a check.) The
+Fourier series may be summed using Clenshaw’s algorithm; see
+§<a href="./3.11#ii" title="§3.11(ii) Chebyshev-Series Expansions ‣ §3.11 Approximation Techniques ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.11(ii)</span></a>. For further information see <cite class="ltx_cite ltx_citemacro_citet">Jansen (<a href="./bib/J#bib1162" title="Simple-periodic and Non-periodic Lamé Functions" class="ltx_ref">1977</a>)</cite>.</p>
+</div>
+<div id="i.p3" class="ltx_para">
+<p class="ltx_p">A third method is to approximate eigenvalues and Fourier coefficients of Lamé
+functions by eigenvalues and eigenvectors of finite matrices using the methods
+of §§<a href="./3.2#vi" title="§3.2(vi) Lanczos Tridiagonalization of a Symmetric Matrix ‣ §3.2 Linear Algebra ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.2(vi)</span></a> and <a href="./3.8#iv" title="§3.8(iv) Zeros of Polynomials ‣ §3.8 Nonlinear Equations ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.8(iv)</span></a>. These matrices are
+the same as those provided in §<a href="./29.15#i" title="§29.15(i) Fourier Coefficients ‣ §29.15 Fourier Series and Chebyshev Series ‣ Lamé Polynomials ‣ Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">29.15(i)</span></a> for the computation of
+Lamé polynomials with the difference that <math class="ltx_Math" altimg="m7.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./29.1#t1.r1" title="nonnegative integer">n</mi></math> has to be chosen sufficiently
+large. The approximations converge geometrically (§<a href="./3.8#i" title="§3.8(i) Introduction ‣ §3.8 Nonlinear Equations ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.8(i)</span></a>)
+to the eigenvalues and
+coefficients of Lamé functions as <math class="ltx_Math" altimg="m8.png" altimg-height="13px" altimg-valign="-2px" altimg-width="70px" alttext="n\to\infty" display="inline"><mrow><mi href="./29.1#t1.r1" title="nonnegative integer">n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></math>. The numerical computations
+described in <cite class="ltx_cite ltx_citemacro_citet">Jansen (<a href="./bib/J#bib1162" title="Simple-periodic and Non-periodic Lamé Functions" class="ltx_ref">1977</a>)</cite> are based in part upon this method.</p>
+</div>
+<div id="i.p4" class="ltx_para">
+<p class="ltx_p">A fourth method is by asymptotic approximations by zeros of orthogonal
+polynomials of increasing degree. See (f) of §<a href="./28.34#ii" title="§28.34(ii) Eigenvalues ‣ §28.34 Methods of Computation ‣ Computation ‣ Chapter 28 Mathieu Functions and Hill’s Equation" class="ltx_ref"><span class="ltx_text ltx_ref_tag">28.34(ii)</span></a>.</p>
+</div>
+</section>
+<section id="ii" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§29.20(ii) </span>Lamé Polynomials</h2>
+<div id="ii.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=Lam%C3%A9%20polynomials">Lamé polynomials</a>, <a class="ltx_keyword" href="./search/search?q=coefficients">coefficients</a>, <a class="ltx_keyword" href="./search/search?q=computation">computation</a>, <a class="ltx_keyword" href="./search/search?q=eigenvalues">eigenvalues</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./29.20.ii" title="" class="ltx_ref">http://dlmf.nist.gov/29.20.ii</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./29.20#info" title="§29.20 Methods of Computation ‣ Computation ‣ Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§29.20</span></a> and
+<a href="./29#info" title="Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.29</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="ii.p1" class="ltx_para">
+<p class="ltx_p">The eigenvalues corresponding to Lamé polynomials are computed from
+eigenvalues of the finite tridiagonal matrices <math class="ltx_Math" altimg="m1.png" altimg-height="18px" altimg-valign="-2px" altimg-width="27px" alttext="\mathbf{M}" display="inline"><mi>𝐌</mi></math> given in
+§<a href="./29.15#i" title="§29.15(i) Fourier Coefficients ‣ §29.15 Fourier Series and Chebyshev Series ‣ Lamé Polynomials ‣ Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">29.15(i)</span></a>, using methods described in §<a href="./3.2#vi" title="§3.2(vi) Lanczos Tridiagonalization of a Symmetric Matrix ‣ §3.2 Linear Algebra ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.2(vi)</span></a> and
+<cite class="ltx_cite ltx_citemacro_citet">Ritter (<a href="./bib/R#bib1956" title="On the computation of Lamé functions, of eigenvalues and eigenfunctions of some potential operators" class="ltx_ref">1998</a>)</cite>. The corresponding eigenvectors yield the coefficients
+in the finite Fourier series for Lamé polynomials. §<a href="./29.15#i" title="§29.15(i) Fourier Coefficients ‣ §29.15 Fourier Series and Chebyshev Series ‣ Lamé Polynomials ‣ Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">29.15(i)</span></a>
+includes formulas for normalizing the eigenvectors.</p>
+</div>
+</section>
+<section id="iii" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§29.20(iii) </span>Zeros</h2>
+<div id="iii.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=Lam%C3%A9%20polynomials">Lamé polynomials</a>, <a class="ltx_keyword" href="./search/search?q=computation">computation</a>, <a class="ltx_keyword" href="./search/search?q=zeros">zeros</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./29.20.iii" title="" class="ltx_ref">http://dlmf.nist.gov/29.20.iii</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./29.20#info" title="§29.20 Methods of Computation ‣ Computation ‣ Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§29.20</span></a> and
+<a href="./29#info" title="Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.29</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="iii.p1" class="ltx_para">
+<p class="ltx_p">Zeros of Lamé polynomials can be computed by solving the system of equations
+(<a href="./29.12#E13" title="(29.12.13) ‣ §29.12(iii) Zeros ‣ §29.12 Definitions ‣ Lamé Polynomials ‣ Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">29.12.13</span></a>) by employing Newton’s method; see
+§<a href="./3.8#ii" title="§3.8(ii) Newton’s Rule ‣ §3.8 Nonlinear Equations ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.8(ii)</span></a>. Alternatively, the zeros can be found by locating
+the maximum of function <math class="ltx_Math" altimg="m6.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="g" display="inline"><mi href="./29.12#E11" title="function">g</mi></math>
+in (<a href="./29.12#E11" title="(29.12.11) ‣ §29.12(iii) Zeros ‣ §29.12 Definitions ‣ Lamé Polynomials ‣ Chapter 29 Lamé Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">29.12.11</span></a>).</p>
+</div>
+</section>
+</section>
+</div>
+<div class="ltx_page_footer">
+<div class="ltx_siblings">
+<a href="./29.19" title="In Applications ‣ Chapter 29 Lamé Functions" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">29.19 </span>Physical Applications</span></a><a href="./29.21" title="In Computation ‣ Chapter 29 Lamé Functions" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">29.21 </span>Tables</span></a>
+</div>
+<div class="ltx_footer_links ltx_centering">
+<a href="./about/notices">© 2010–2026 NIST</a> / <a href="./about/notices#S2">Disclaimer</a> / <a href="/cdn-cgi/l/email-protection#5c1810111a713a3939383e3d3f371c32352f28723b332a">Feedback</a>;
+ Version 1.2.7;
+Release date 2026-06-15.</div>
+<span id="pagesettings"></span>
+<div class="ltx_nist_logo"><a href="http://www.nist.gov/"><img src="./style/nistidc.png" width="500" alt="NIST"></a></div>
+<div class="ltx_nist_links ltx_align_right">
+<a href="https://www.nist.gov/privacy-policy">Site Privacy</a> <a href="https://www.nist.gov/oism/accessibility">Accessibility</a> <a href="https://www.nist.gov/privacy">Privacy Program</a> <a href="https://www.nist.gov/oism/copyrights">Copyrights</a> <a href="https://www.commerce.gov/vulnerability-disclosure-policy">Vulnerability Disclosure</a> <a href="https://www.nist.gov/no-fear-act-policy">No Fear Act Policy</a> <a href="https://www.nist.gov/foia">FOIA</a> <a href="https://www.nist.gov/environmental-policy-statement">Environmental Policy</a> <a href="https://www.nist.gov/summary-report-scientific-integrity">Scientific Integrity</a> <a href="https://www.nist.gov/nist-information-quality-standards">Information Quality Standards</a> <a href="https://www.commerce.gov/">Commerce.gov</a> <a href="http://www.science.gov/">Science.gov</a> <a href="http://www.usa.gov/">USA.gov</a>
+</div>
+</div>
+</div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"9ef5b487afff42a68917b2d63593a474"}' crossorigin="anonymous"></script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a30dbd1efd5509ae',t:'MTc4NzY5Mzg1NA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

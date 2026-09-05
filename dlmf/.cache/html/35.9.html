@@ -1,0 +1,195 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>DLMF: §35.9 Applications ‣ Applications ‣ Chapter 35 Functions of Matrix Argument</title>
+<link rel="shortcut icon" href="./style/DLMF-16.png" type="image/png">
+<script type="text/javascript"><!--
+	var PATH="DLMF:/35.9";
+	var ROOT="./";
+      //--></script>
+<script type="text/javascript" src="./style/jquery.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/jquery.leaveNotice.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/DLMF.js"><!-- non-empty so ie6 will accept it --></script>
+<script async="" type="text/javascript" id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC&amp;subagency=NIST&amp;pua=UA-37115410-44&amp;yt=true&amp;exts=ppsx,pps,f90,sch,rtf,wrl,txz,m1v,xlsm,msi,xsd,f,tif,eps,mpg,xml,pl,xlt,c"><!-- non-empty so ie6 will accept it --></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-BZB64W4M0L"></script><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-BZB64W4M0L');
+      </script>
+<link rel="stylesheet" type="text/css" href="./style/LaTeXML.css">
+<link rel="stylesheet" type="text/css" href="./style/DLMF.css">
+<link rel="stylesheet" type="text/css" href="./style/print.css" media="print">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="top" href="./" title="DLMF">
+<link rel="copyright" href="./about/notices" title="Copyright">
+<link rel="search" href="./search/search" title="Search">
+<link rel="help" class="ltx_help" href="./help/" title="Help">
+<link rel="up" href="./35#PT3" title="Applications ‣ Chapter 35 Functions of Matrix Argument">
+<link rel="up up" href="./35" title="Chapter 35 Functions of Matrix Argument">
+<link rel="start" href="./" title="">
+<link rel="prev" href="./35.8" title="§35.8 Generalized Hypergeometric Functions of Matrix Argument ‣ Properties ‣ Chapter 35 Functions of Matrix Argument">
+<link rel="next" href="./35.10" title="§35.10 Methods of Computation ‣ Computation ‣ Chapter 35 Functions of Matrix Argument">
+<link rel="section" href="./35.1" title="§35.1 Special Notation ‣ Notation ‣ Chapter 35 Functions of Matrix Argument">
+<link rel="section" href="./35.2" title="§35.2 Laplace Transform ‣ Properties ‣ Chapter 35 Functions of Matrix Argument">
+<link rel="section" href="./35.3" title="§35.3 Multivariate Gamma and Beta Functions ‣ Properties ‣ Chapter 35 Functions of Matrix Argument">
+<link rel="section" href="./35.4" title="§35.4 Partitions and Zonal Polynomials ‣ Properties ‣ Chapter 35 Functions of Matrix Argument">
+<link rel="section" href="./35.5" title="§35.5 Bessel Functions of Matrix Argument ‣ Properties ‣ Chapter 35 Functions of Matrix Argument">
+<link rel="section" href="./35.6" title="§35.6 Confluent Hypergeometric Functions of Matrix Argument ‣ Properties ‣ Chapter 35 Functions of Matrix Argument">
+<link rel="section" href="./35.7" title="§35.7 Gaussian Hypergeometric Function of Matrix Argument ‣ Properties ‣ Chapter 35 Functions of Matrix Argument">
+<link rel="section" href="./35.8" title="§35.8 Generalized Hypergeometric Functions of Matrix Argument ‣ Properties ‣ Chapter 35 Functions of Matrix Argument">
+<link rel="section" href="./35.10" title="§35.10 Methods of Computation ‣ Computation ‣ Chapter 35 Functions of Matrix Argument">
+<link rel="section" href="./35.11" title="§35.11 Tables ‣ Computation ‣ Chapter 35 Functions of Matrix Argument">
+<link rel="section" href="./35.12" title="§35.12 Software ‣ Computation ‣ Chapter 35 Functions of Matrix Argument">
+<link rel="document" href="./front/foreword" title="Foreword">
+<link rel="document" href="./front/preface" title="Preface">
+<link rel="document" href="./front/introduction" title="Mathematical Introduction">
+<link rel="chapter" href="./1" title="Chapter 1 Algebraic and Analytic Methods">
+<link rel="chapter" href="./2" title="Chapter 2 Asymptotic Approximations">
+<link rel="chapter" href="./3" title="Chapter 3 Numerical Methods">
+<link rel="chapter" href="./4" title="Chapter 4 Elementary Functions">
+<link rel="chapter" href="./5" title="Chapter 5 Gamma Function">
+<link rel="chapter" href="./6" title="Chapter 6 Exponential, Logarithmic, Sine, and Cosine Integrals">
+<link rel="chapter" href="./7" title="Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="chapter" href="./8" title="Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="chapter" href="./9" title="Chapter 9 Airy and Related Functions">
+<link rel="chapter" href="./10" title="Chapter 10 Bessel Functions">
+<link rel="chapter" href="./11" title="Chapter 11 Struve and Related Functions">
+<link rel="chapter" href="./12" title="Chapter 12 Parabolic Cylinder Functions">
+<link rel="chapter" href="./13" title="Chapter 13 Confluent Hypergeometric Functions">
+<link rel="chapter" href="./14" title="Chapter 14 Legendre and Related Functions">
+<link rel="chapter" href="./15" title="Chapter 15 Hypergeometric Function">
+<link rel="chapter" href="./16" title="Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="chapter" href="./17" title="Chapter 17 𝑞-Hypergeometric and Related Functions">
+<link rel="chapter" href="./18" title="Chapter 18 Orthogonal Polynomials">
+<link rel="chapter" href="./19" title="Chapter 19 Elliptic Integrals">
+<link rel="chapter" href="./20" title="Chapter 20 Theta Functions">
+<link rel="chapter" href="./21" title="Chapter 21 Multidimensional Theta Functions">
+<link rel="chapter" href="./22" title="Chapter 22 Jacobian Elliptic Functions">
+<link rel="chapter" href="./23" title="Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="chapter" href="./24" title="Chapter 24 Bernoulli and Euler Polynomials">
+<link rel="chapter" href="./25" title="Chapter 25 Zeta and Related Functions">
+<link rel="chapter" href="./26" title="Chapter 26 Combinatorial Analysis">
+<link rel="chapter" href="./27" title="Chapter 27 Functions of Number Theory">
+<link rel="chapter" href="./28" title="Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="chapter" href="./29" title="Chapter 29 Lamé Functions">
+<link rel="chapter" href="./30" title="Chapter 30 Spheroidal Wave Functions">
+<link rel="chapter" href="./31" title="Chapter 31 Heun Functions">
+<link rel="chapter" href="./32" title="Chapter 32 Painlevé Transcendents">
+<link rel="chapter" href="./33" title="Chapter 33 Coulomb Functions">
+<link rel="chapter" href="./34" title="Chapter 34 3⁢𝑗,6⁢𝑗,9⁢𝑗 Symbols">
+<link rel="chapter" href="./35" title="Chapter 35 Functions of Matrix Argument">
+<link rel="chapter" href="./36" title="Chapter 36 Integrals with Coalescing Saddles">
+<link rel="bibliography" href="./bib/" title="Bibliography">
+<link rel="index" href="./idx/" title="Index">
+<link rel="glossary" href="./not/" title="Notations">
+<link rel="document" href="./lof/" title="List of Figures">
+<link rel="document" href="./lot/" title="List of Tables">
+<link rel="document" href="./software/" title="Software Index">
+<link rel="document" href="./errata/" title="Errata">
+<link rel="document" href="./help/" title="Need Help?">
+<link rel="document" href="./search/" title="Advanced Search">
+<link rel="document" href="./about/" title="About the Project">
+<meta name="keywords" lang="en" content="Bessel functions, Gaussian hypergeometric function, applications, functions of matrix argument, generalized hypergeometric functions, multivariate, of matrix argument, statistical analysis, statistical applications, zonal polynomials">
+</head>
+<body class="color_default textfont_default titlefont_default fontsize_default navbar_default">
+<div class="ltx_page_navbar">
+<div class="ltx_page_navlogo"><a href="./" title="Digital Library of Mathematical Functions"><span>DLMF</span></a></div>
+<div class="ltx_page_navitems">
+<form method="get" action="./search/search">
+<ul>
+<li><a href="./idx/">Index</a></li>
+<li><a href="./not/">Notations</a></li>
+<li><small><input type="text" name="q" value="" size="6" class="ltx_page_navitem_search"><button type="submit">Search</button></small></li>
+<li><a href="./help/" class="ltx_help">Help?</a></li>
+<li><a href="./help/cite">Citing</a></li>
+<li><a href="./help/customize" class="ltx_customize">Customize</a></li>
+<li id="showinfo"><a href="" onclick="showInfo(); return false;" title="Show Annotations">Annotate</a></li>
+<li id="hideinfo"><a href="" onclick="hideInfo(); return false;">UnAnnotate</a></li>
+</ul>
+</form>
+</div>
+<div class="ltx_page_navsponsors">
+<div><a href="./about/" class="ltx_page_navabout">About the Project</a></div>
+</div>
+</div>
+<div class="ltx_page_main">
+<div class="ltx_page_header">
+<a href="./35" title="" class="ltx_ref" rel="up up"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">35 </span>Functions of Matrix Argument</span></a><a href="./35#PT3" title="In Chapter 35 Functions of Matrix Argument" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title">Applications</span></a><a href="./35.8" title="In Properties ‣ Chapter 35 Functions of Matrix Argument" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">35.8 </span>Generalized Hypergeometric Functions of Matrix Argument</span></a><a href="./35.10" title="In Computation ‣ Chapter 35 Functions of Matrix Argument" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">35.10 </span>Methods of Computation</span></a>
+</div>
+<div class="ltx_page_content">
+<section class="ltx_section ltx_authors_multiline ltx_leqno">
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">§35.9 </span>Applications</h1>
+<div id="info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=Bessel%20functions">Bessel functions</a>, <a class="ltx_keyword" href="./search/search?q=Gaussian%20hypergeometric%20function">Gaussian hypergeometric function</a>, <a class="ltx_keyword" href="./search/search?q=applications">applications</a>, <a class="ltx_keyword" href="./search/search?q=functions%20of%20matrix%20argument">functions of matrix argument</a>, <a class="ltx_keyword" href="./search/search?q=generalized%20hypergeometric%20functions">generalized hypergeometric functions</a>, <a class="ltx_keyword" href="./search/search?q=multivariate">multivariate</a>, <a class="ltx_keyword" href="./search/search?q=of%20matrix%20argument">of matrix argument</a>, <a class="ltx_keyword" href="./search/search?q=statistical%20analysis">statistical analysis</a>, <a class="ltx_keyword" href="./search/search?q=statistical%20applications">statistical applications</a>, <a class="ltx_keyword" href="./search/search?q=zonal%20polynomials">zonal polynomials</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./35.9" title="" class="ltx_ref">http://dlmf.nist.gov/35.9</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./35#info" title="Chapter 35 Functions of Matrix Argument" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.35</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="p1" class="ltx_para">
+<p class="ltx_p">In multivariate statistical analysis based on the multivariate normal
+distribution, the probability density functions of many random matrices are
+expressible in terms of generalized hypergeometric functions of matrix argument
+<math class="ltx_Math" altimg="m3.png" altimg-height="24px" altimg-valign="-8px" altimg-width="36px" alttext="{{}_{p}F_{q}}" display="inline"><mmultiscripts><mi href="./35.8#E1" title="generalized hypergeometric function of matrix">F</mi><mi href="./35.1#t1.r2" title="nonnegative integer">q</mi><mrow></mrow><mprescripts></mprescripts><mi href="./35.1#t1.r2" title="nonnegative integer">p</mi><mrow></mrow></mmultiscripts></math>, with <math class="ltx_Math" altimg="m1.png" altimg-height="21px" altimg-valign="-6px" altimg-width="53px" alttext="p\leq 2" display="inline"><mrow><mi href="./35.1#t1.r2" title="nonnegative integer">p</mi><mo>≤</mo><mn>2</mn></mrow></math> and <math class="ltx_Math" altimg="m2.png" altimg-height="21px" altimg-valign="-6px" altimg-width="52px" alttext="q\leq 1" display="inline"><mrow><mi href="./35.1#t1.r2" title="nonnegative integer">q</mi><mo>≤</mo><mn>1</mn></mrow></math>. See <cite class="ltx_cite ltx_citemacro_citet">James (<a href="./bib/J#bib1161" title="Distributions of matrix variates and latent roots derived from normal samples" class="ltx_ref">1964</a>)</cite>,
+<cite class="ltx_cite ltx_citemacro_citet">Muirhead (<a href="./bib/M#bib1667" title="Aspects of Multivariate Statistical Theory" class="ltx_ref">1982</a>)</cite>, <cite class="ltx_cite ltx_citemacro_citet">Takemura (<a href="./bib/T#bib2200" title="Zonal Polynomials" class="ltx_ref">1984</a>)</cite>, <cite class="ltx_cite ltx_citemacro_citet">Farrell (<a href="./bib/F#bib776" title="Multivariate Calculation. Use of the Continuous Groups" class="ltx_ref">1985</a>)</cite>,
+and <cite class="ltx_cite ltx_citemacro_citet">Chikuse (<a href="./bib/C#bib492" title="Statistics on Special Manifolds" class="ltx_ref">2003</a>)</cite> for extensive treatments.</p>
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">For other statistical applications of <math class="ltx_Math" altimg="m3.png" altimg-height="24px" altimg-valign="-8px" altimg-width="36px" alttext="{{}_{p}F_{q}}" display="inline"><mmultiscripts><mi href="./35.8#E1" title="generalized hypergeometric function of matrix">F</mi><mi href="./35.1#t1.r2" title="nonnegative integer">q</mi><mrow></mrow><mprescripts></mprescripts><mi href="./35.1#t1.r2" title="nonnegative integer">p</mi><mrow></mrow></mmultiscripts></math> functions of matrix
+argument see <cite class="ltx_cite ltx_citemacro_citet">Perlman and Olkin (<a href="./bib/P#bib1866" title="Unbiasedness of invariant tests for MANOVA and other multivariate problems" class="ltx_ref">1980</a>)</cite>, <cite class="ltx_cite ltx_citemacro_cite">Groeneboom and Truax (<a href="./bib/G#bib987" title="A monotonicity property of the power function of multivariate tests" class="ltx_ref">2000</a>)</cite>,
+<cite class="ltx_cite ltx_citemacro_citet">Bhaumik and Sarkar (<a href="./bib/B#bib275" title="On the power function of the likelihood ratio test for MANOVA" class="ltx_ref">2002</a>)</cite>,
+<cite class="ltx_cite ltx_citemacro_citet">Richards (<a href="./bib/R#bib1948" title="Total positivity properties of generalized hypergeometric functions of matrix argument" class="ltx_ref">2004</a>)</cite> (monotonicity of power functions of multivariate
+statistical test criteria), <cite class="ltx_cite ltx_citemacro_citet">Bingham<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/B#bib285" title="Approximating the matrix Fisher and Bingham distributions: Applications to spherical regression and Procrustes analysis" class="ltx_ref">1992</a>)</cite> (Procrustes analysis), and
+<cite class="ltx_cite ltx_citemacro_citet">Phillips (<a href="./bib/P#bib1874" title="The exact distribution of the Wald statistic" class="ltx_ref">1986</a>)</cite> (exact distributions of statistical test criteria).
+These references all use results related to the integral formulas
+(<a href="./35.4#E7" title="(35.4.7) ‣ Mean-Value ‣ §35.4(ii) Properties ‣ §35.4 Partitions and Zonal Polynomials ‣ Properties ‣ Chapter 35 Functions of Matrix Argument" class="ltx_ref"><span class="ltx_text ltx_ref_tag">35.4.7</span></a>) and (<a href="./35.5#E8" title="(35.5.8) ‣ §35.5(ii) Properties ‣ §35.5 Bessel Functions of Matrix Argument ‣ Properties ‣ Chapter 35 Functions of Matrix Argument" class="ltx_ref"><span class="ltx_text ltx_ref_tag">35.5.8</span></a>).</p>
+</div>
+<div id="p3" class="ltx_para">
+<p class="ltx_p">For applications of the integral representation (<a href="./35.5#E3" title="(35.5.3) ‣ §35.5(i) Definitions ‣ §35.5 Bessel Functions of Matrix Argument ‣ Properties ‣ Chapter 35 Functions of Matrix Argument" class="ltx_ref"><span class="ltx_text ltx_ref_tag">35.5.3</span></a>) see
+<cite class="ltx_cite ltx_citemacro_citet">McFarland and Richards (<a href="./bib/M#bib1580" title="Exact misclassification probabilities for plug-in normal quadratic discriminant functions. I. The equal-means case" class="ltx_ref">2001</a>, <a href="./bib/M#bib1581" title="Exact misclassification probabilities for plug-in normal quadratic discriminant functions. II. The heterogeneous case" class="ltx_ref">2002</a>)</cite> (statistical
+estimation of misclassification probabilities for discriminating between
+multivariate normal populations). The asymptotic approximations of
+§<a href="./35.7#iv" title="§35.7(iv) Asymptotic Approximations ‣ §35.7 Gaussian Hypergeometric Function of Matrix Argument ‣ Properties ‣ Chapter 35 Functions of Matrix Argument" class="ltx_ref"><span class="ltx_text ltx_ref_tag">35.7(iv)</span></a> are applied in numerous statistical contexts in
+<cite class="ltx_cite ltx_citemacro_citet">Butler and Wood (<a href="./bib/B#bib393" title="Laplace approximations for hypergeometric functions with matrix argument" class="ltx_ref">2002</a>)</cite>.</p>
+</div>
+<div id="p4" class="ltx_para">
+<p class="ltx_p">In chemistry, <cite class="ltx_cite ltx_citemacro_citet">Wei and Eichinger (<a href="./bib/W#bib2385" title="Asymptotic expansions of some matrix argument hypergeometric functions, with applications to macromolecules" class="ltx_ref">1993</a>)</cite> expresses the probability density functions of
+macromolecules in terms of generalized hypergeometric functions of matrix
+argument, and develop asymptotic approximations for these density functions.</p>
+</div>
+<div id="p5" class="ltx_para">
+<p class="ltx_p">In the nascent area of applications of zonal polynomials to the limiting
+probability distributions of symmetric random matrices, one of the most
+comprehensive accounts is <cite class="ltx_cite ltx_citemacro_citet">Rains (<a href="./bib/R#bib1920" title="Normal limit theorems for symmetric random matrices" class="ltx_ref">1998</a>)</cite>.</p>
+</div>
+</section>
+</div>
+<div class="ltx_page_footer">
+<div class="ltx_siblings">
+<a href="./35.8" title="In Properties ‣ Chapter 35 Functions of Matrix Argument" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">35.8 </span>Generalized Hypergeometric Functions of Matrix Argument</span></a><a href="./35.10" title="In Computation ‣ Chapter 35 Functions of Matrix Argument" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">35.10 </span>Methods of Computation</span></a>
+</div>
+<div class="ltx_footer_links ltx_centering">
+<a href="./about/notices">© 2010–2026 NIST</a> / <a href="./about/notices#S2">Disclaimer</a> / <a href="/cdn-cgi/l/email-protection#b1f5fdfcf79cd7d4d4d5d3d0d2daf1dfd8c2c59fd6dec7">Feedback</a>;
+ Version 1.2.7;
+Release date 2026-06-15.</div>
+<span id="pagesettings"></span>
+<div class="ltx_nist_logo"><a href="http://www.nist.gov/"><img src="./style/nistidc.png" width="500" alt="NIST"></a></div>
+<div class="ltx_nist_links ltx_align_right">
+<a href="https://www.nist.gov/privacy-policy">Site Privacy</a> <a href="https://www.nist.gov/oism/accessibility">Accessibility</a> <a href="https://www.nist.gov/privacy">Privacy Program</a> <a href="https://www.nist.gov/oism/copyrights">Copyrights</a> <a href="https://www.commerce.gov/vulnerability-disclosure-policy">Vulnerability Disclosure</a> <a href="https://www.nist.gov/no-fear-act-policy">No Fear Act Policy</a> <a href="https://www.nist.gov/foia">FOIA</a> <a href="https://www.nist.gov/environmental-policy-statement">Environmental Policy</a> <a href="https://www.nist.gov/summary-report-scientific-integrity">Scientific Integrity</a> <a href="https://www.nist.gov/nist-information-quality-standards">Information Quality Standards</a> <a href="https://www.commerce.gov/">Commerce.gov</a> <a href="http://www.science.gov/">Science.gov</a> <a href="http://www.usa.gov/">USA.gov</a>
+</div>
+</div>
+</div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"9ef5b487afff42a68917b2d63593a474"}' crossorigin="anonymous"></script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a30dbf3e2d54ef9d',t:'MTc4NzY5Mzk0MQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

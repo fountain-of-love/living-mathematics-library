@@ -1,0 +1,781 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>DLMF: §10.74 Methods of Computation ‣ Computation ‣ Chapter 10 Bessel Functions</title>
+<link rel="shortcut icon" href="./style/DLMF-16.png" type="image/png">
+<script type="text/javascript"><!--
+	var PATH="DLMF:/10.74";
+	var ROOT="./";
+      //--></script>
+<script type="text/javascript" src="./style/jquery.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/jquery.leaveNotice.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/DLMF.js"><!-- non-empty so ie6 will accept it --></script>
+<script async="" type="text/javascript" id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC&amp;subagency=NIST&amp;pua=UA-37115410-44&amp;yt=true&amp;exts=ppsx,pps,f90,sch,rtf,wrl,txz,m1v,xlsm,msi,xsd,f,tif,eps,mpg,xml,pl,xlt,c"><!-- non-empty so ie6 will accept it --></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-BZB64W4M0L"></script><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-BZB64W4M0L');
+      </script>
+<link rel="stylesheet" type="text/css" href="./style/LaTeXML.css">
+<link rel="stylesheet" type="text/css" href="./style/DLMF.css">
+<link rel="stylesheet" type="text/css" href="./style/print.css" media="print">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="top" href="./" title="DLMF">
+<link rel="copyright" href="./about/notices" title="Copyright">
+<link rel="search" href="./search/search" title="Search">
+<link rel="help" class="ltx_help" href="./help/" title="Help">
+<link rel="up" href="./10#PT7" title="Computation ‣ Chapter 10 Bessel Functions">
+<link rel="up up" href="./10" title="Chapter 10 Bessel Functions">
+<link rel="start" href="./" title="">
+<link rel="prev" href="./10.73" title="§10.73 Physical Applications ‣ Applications ‣ Chapter 10 Bessel Functions">
+<link rel="next" href="./10.75" title="§10.75 Tables ‣ Computation ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.1" title="§10.1 Special Notation ‣ Notation ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.2" title="§10.2 Definitions ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.3" title="§10.3 Graphics ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.4" title="§10.4 Connection Formulas ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.5" title="§10.5 Wronskians and Cross-Products ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.6" title="§10.6 Recurrence Relations and Derivatives ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.7" title="§10.7 Limiting Forms ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.8" title="§10.8 Power Series ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.9" title="§10.9 Integral Representations ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.10" title="§10.10 Continued Fractions ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.11" title="§10.11 Analytic Continuation ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.12" title="§10.12 Generating Function and Associated Series ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.13" title="§10.13 Other Differential Equations ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.14" title="§10.14 Inequalities; Monotonicity ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.15" title="§10.15 Derivatives with Respect to Order ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.16" title="§10.16 Relations to Other Functions ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.17" title="§10.17 Asymptotic Expansions for Large Argument ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.18" title="§10.18 Modulus and Phase Functions ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.19" title="§10.19 Asymptotic Expansions for Large Order ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.20" title="§10.20 Uniform Asymptotic Expansions for Large Order ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.21" title="§10.21 Zeros ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.22" title="§10.22 Integrals ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.23" title="§10.23 Sums ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.24" title="§10.24 Functions of Imaginary Order ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.25" title="§10.25 Definitions ‣ Modified Bessel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.26" title="§10.26 Graphics ‣ Modified Bessel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.27" title="§10.27 Connection Formulas ‣ Modified Bessel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.28" title="§10.28 Wronskians and Cross-Products ‣ Modified Bessel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.29" title="§10.29 Recurrence Relations and Derivatives ‣ Modified Bessel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.30" title="§10.30 Limiting Forms ‣ Modified Bessel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.31" title="§10.31 Power Series ‣ Modified Bessel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.32" title="§10.32 Integral Representations ‣ Modified Bessel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.33" title="§10.33 Continued Fractions ‣ Modified Bessel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.34" title="§10.34 Analytic Continuation ‣ Modified Bessel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.35" title="§10.35 Generating Function and Associated Series ‣ Modified Bessel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.36" title="§10.36 Other Differential Equations ‣ Modified Bessel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.37" title="§10.37 Inequalities; Monotonicity ‣ Modified Bessel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.38" title="§10.38 Derivatives with Respect to Order ‣ Modified Bessel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.39" title="§10.39 Relations to Other Functions ‣ Modified Bessel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.40" title="§10.40 Asymptotic Expansions for Large Argument ‣ Modified Bessel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.41" title="§10.41 Asymptotic Expansions for Large Order ‣ Modified Bessel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.42" title="§10.42 Zeros ‣ Modified Bessel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.43" title="§10.43 Integrals ‣ Modified Bessel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.44" title="§10.44 Sums ‣ Modified Bessel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.45" title="§10.45 Functions of Imaginary Order ‣ Modified Bessel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.46" title="§10.46 Generalized and Incomplete Bessel Functions; Mittag-Leffler Function ‣ Modified Bessel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.47" title="§10.47 Definitions and Basic Properties ‣ Spherical Bessel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.48" title="§10.48 Graphs ‣ Spherical Bessel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.49" title="§10.49 Explicit Formulas ‣ Spherical Bessel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.50" title="§10.50 Wronskians and Cross-Products ‣ Spherical Bessel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.51" title="§10.51 Recurrence Relations and Derivatives ‣ Spherical Bessel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.52" title="§10.52 Limiting Forms ‣ Spherical Bessel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.53" title="§10.53 Power Series ‣ Spherical Bessel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.54" title="§10.54 Integral Representations ‣ Spherical Bessel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.55" title="§10.55 Continued Fractions ‣ Spherical Bessel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.56" title="§10.56 Generating Functions ‣ Spherical Bessel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.57" title="§10.57 Uniform Asymptotic Expansions for Large Order ‣ Spherical Bessel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.58" title="§10.58 Zeros ‣ Spherical Bessel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.59" title="§10.59 Integrals ‣ Spherical Bessel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.60" title="§10.60 Sums ‣ Spherical Bessel Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.61" title="§10.61 Definitions and Basic Properties ‣ Kelvin Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.62" title="§10.62 Graphs ‣ Kelvin Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.63" title="§10.63 Recurrence Relations and Derivatives ‣ Kelvin Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.64" title="§10.64 Integral Representations ‣ Kelvin Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.65" title="§10.65 Power Series ‣ Kelvin Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.66" title="§10.66 Expansions in Series of Bessel Functions ‣ Kelvin Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.67" title="§10.67 Asymptotic Expansions for Large Argument ‣ Kelvin Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.68" title="§10.68 Modulus and Phase Functions ‣ Kelvin Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.69" title="§10.69 Uniform Asymptotic Expansions for Large Order ‣ Kelvin Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.70" title="§10.70 Zeros ‣ Kelvin Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.71" title="§10.71 Integrals ‣ Kelvin Functions ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.72" title="§10.72 Mathematical Applications ‣ Applications ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.73" title="§10.73 Physical Applications ‣ Applications ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.75" title="§10.75 Tables ‣ Computation ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.76" title="§10.76 Approximations ‣ Computation ‣ Chapter 10 Bessel Functions">
+<link rel="section" href="./10.77" title="§10.77 Software ‣ Computation ‣ Chapter 10 Bessel Functions">
+<link rel="document" href="./front/foreword" title="Foreword">
+<link rel="document" href="./front/preface" title="Preface">
+<link rel="document" href="./front/introduction" title="Mathematical Introduction">
+<link rel="chapter" href="./1" title="Chapter 1 Algebraic and Analytic Methods">
+<link rel="chapter" href="./2" title="Chapter 2 Asymptotic Approximations">
+<link rel="chapter" href="./3" title="Chapter 3 Numerical Methods">
+<link rel="chapter" href="./4" title="Chapter 4 Elementary Functions">
+<link rel="chapter" href="./5" title="Chapter 5 Gamma Function">
+<link rel="chapter" href="./6" title="Chapter 6 Exponential, Logarithmic, Sine, and Cosine Integrals">
+<link rel="chapter" href="./7" title="Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="chapter" href="./8" title="Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="chapter" href="./9" title="Chapter 9 Airy and Related Functions">
+<link rel="chapter" href="./10" title="Chapter 10 Bessel Functions">
+<link rel="chapter" href="./11" title="Chapter 11 Struve and Related Functions">
+<link rel="chapter" href="./12" title="Chapter 12 Parabolic Cylinder Functions">
+<link rel="chapter" href="./13" title="Chapter 13 Confluent Hypergeometric Functions">
+<link rel="chapter" href="./14" title="Chapter 14 Legendre and Related Functions">
+<link rel="chapter" href="./15" title="Chapter 15 Hypergeometric Function">
+<link rel="chapter" href="./16" title="Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="chapter" href="./17" title="Chapter 17 𝑞-Hypergeometric and Related Functions">
+<link rel="chapter" href="./18" title="Chapter 18 Orthogonal Polynomials">
+<link rel="chapter" href="./19" title="Chapter 19 Elliptic Integrals">
+<link rel="chapter" href="./20" title="Chapter 20 Theta Functions">
+<link rel="chapter" href="./21" title="Chapter 21 Multidimensional Theta Functions">
+<link rel="chapter" href="./22" title="Chapter 22 Jacobian Elliptic Functions">
+<link rel="chapter" href="./23" title="Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="chapter" href="./24" title="Chapter 24 Bernoulli and Euler Polynomials">
+<link rel="chapter" href="./25" title="Chapter 25 Zeta and Related Functions">
+<link rel="chapter" href="./26" title="Chapter 26 Combinatorial Analysis">
+<link rel="chapter" href="./27" title="Chapter 27 Functions of Number Theory">
+<link rel="chapter" href="./28" title="Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="chapter" href="./29" title="Chapter 29 Lamé Functions">
+<link rel="chapter" href="./30" title="Chapter 30 Spheroidal Wave Functions">
+<link rel="chapter" href="./31" title="Chapter 31 Heun Functions">
+<link rel="chapter" href="./32" title="Chapter 32 Painlevé Transcendents">
+<link rel="chapter" href="./33" title="Chapter 33 Coulomb Functions">
+<link rel="chapter" href="./34" title="Chapter 34 3⁢𝑗,6⁢𝑗,9⁢𝑗 Symbols">
+<link rel="chapter" href="./35" title="Chapter 35 Functions of Matrix Argument">
+<link rel="chapter" href="./36" title="Chapter 36 Integrals with Coalescing Saddles">
+<link rel="bibliography" href="./bib/" title="Bibliography">
+<link rel="index" href="./idx/" title="Index">
+<link rel="glossary" href="./not/" title="Notations">
+<link rel="document" href="./lof/" title="List of Figures">
+<link rel="document" href="./lot/" title="List of Tables">
+<link rel="document" href="./software/" title="Software Index">
+<link rel="document" href="./errata/" title="Errata">
+<link rel="document" href="./help/" title="Need Help?">
+<link rel="document" href="./search/" title="Advanced Search">
+<link rel="document" href="./about/" title="About the Project">
+<meta name="keywords" lang="en" content="Bessel functions, Fourier–Bessel expansion, Hankel functions, Hankel transform, Kelvin functions, Kontorovich–Lebedev transform, computation, hyperasymptotic expansions, integrals, integrals of modified Bessel functions, modified Bessel functions, of imaginary order, spherical Bessel functions, spherical Bessel transform, zeros, zeros of Bessel functions (including derivatives)">
+</head>
+<body class="color_default textfont_default titlefont_default fontsize_default navbar_default">
+<div class="ltx_page_navbar">
+<div class="ltx_page_navlogo"><a href="./" title="Digital Library of Mathematical Functions"><span>DLMF</span></a></div>
+<div class="ltx_page_navitems">
+<form method="get" action="./search/search">
+<ul>
+<li><a href="./idx/">Index</a></li>
+<li><a href="./not/">Notations</a></li>
+<li><small><input type="text" name="q" value="" size="6" class="ltx_page_navitem_search"><button type="submit">Search</button></small></li>
+<li><a href="./help/" class="ltx_help">Help?</a></li>
+<li><a href="./help/cite">Citing</a></li>
+<li><a href="./help/customize" class="ltx_customize">Customize</a></li>
+<li id="showinfo"><a href="" onclick="showInfo(); return false;" title="Show Annotations">Annotate</a></li>
+<li id="hideinfo"><a href="" onclick="hideInfo(); return false;">UnAnnotate</a></li>
+</ul>
+</form>
+</div>
+<div class="ltx_page_navsponsors">
+<div><a href="./about/" class="ltx_page_navabout">About the Project</a></div>
+</div>
+</div>
+<div class="ltx_page_main">
+<div class="ltx_page_header">
+<a href="./10" title="" class="ltx_ref" rel="up up"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">10 </span>Bessel Functions</span></a><a href="./10#PT7" title="In Chapter 10 Bessel Functions" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title">Computation</span></a><a href="./10.73" title="In Applications ‣ Chapter 10 Bessel Functions" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">10.73 </span>Physical Applications</span></a><a href="./10.75" title="In Computation ‣ Chapter 10 Bessel Functions" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">10.75 </span>Tables</span></a>
+</div>
+<div class="ltx_page_content">
+<section class="ltx_section ltx_authors_multiline ltx_leqno">
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">§10.74 </span>Methods of Computation</h1>
+<div id="info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Referenced by:</dt>
+<dd><a href="./9.17#iv.p1" title="§9.17(iv) Via Bessel Functions ‣ §9.17 Methods of Computation ‣ Computation ‣ Chapter 9 Airy and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§9.17(iv)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./10.74" title="" class="ltx_ref">http://dlmf.nist.gov/10.74</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./10#info" title="Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.10</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<h6>Contents</h6>
+<ol class="ltx_toclist ltx_toclist_section">
+<li class="ltx_tocentry"><a href="#i"><span class="ltx_tag ltx_tag_subsection">§10.74(i) </span>Series Expansions</a></li>
+<li class="ltx_tocentry"><a href="#ii"><span class="ltx_tag ltx_tag_subsection">§10.74(ii) </span>Differential Equations</a></li>
+<li class="ltx_tocentry"><a href="#iii"><span class="ltx_tag ltx_tag_subsection">§10.74(iii) </span>Integral Representations</a></li>
+<li class="ltx_tocentry"><a href="#iv"><span class="ltx_tag ltx_tag_subsection">§10.74(iv) </span>Recurrence Relations</a></li>
+<li class="ltx_tocentry"><a href="#v"><span class="ltx_tag ltx_tag_subsection">§10.74(v) </span>Continued Fractions</a></li>
+<li class="ltx_tocentry"><a href="#vi"><span class="ltx_tag ltx_tag_subsection">§10.74(vi) </span>Zeros and Associated Values</a></li>
+<li class="ltx_tocentry"><a href="#vii"><span class="ltx_tag ltx_tag_subsection">§10.74(vii) </span>Integrals</a></li>
+<li class="ltx_tocentry"><a href="#viii"><span class="ltx_tag ltx_tag_subsection">§10.74(viii) </span>Functions of Imaginary Order</a></li>
+</ol>
+<section id="i" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§10.74(i) </span>Series Expansions</h2>
+<div id="i.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=hyperasymptotic%20expansions">hyperasymptotic expansions</a>, <a class="ltx_keyword" href="./search/search?q=modified%20Bessel%20functions">modified Bessel functions</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./10.74.i" title="" class="ltx_ref">http://dlmf.nist.gov/10.74.i</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./10.74#info" title="§10.74 Methods of Computation ‣ Computation ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§10.74</span></a> and
+<a href="./10#info" title="Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.10</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="i.p1" class="ltx_para">
+<p class="ltx_p">The power-series expansions given in §§<a href="./10.2" title="§10.2 Definitions ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">10.2</span></a> and <a href="./10.8" title="§10.8 Power Series ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">10.8</span></a>,
+together with the connection formulas of §<a href="./10.4" title="§10.4 Connection Formulas ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">10.4</span></a>, can be used to
+compute the Bessel and Hankel functions when the argument <math class="ltx_Math" altimg="m32.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./10.1#t1.r3" title="real variable">x</mi></math> or <math class="ltx_Math" altimg="m35.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi href="./10.1#t1.r4" title="complex variable">z</mi></math> is
+sufficiently small in absolute value. In the case of the modified Bessel
+function <math class="ltx_Math" altimg="m17.png" altimg-height="25px" altimg-valign="-7px" altimg-width="62px" alttext="K_{\nu}\left(z\right)" display="inline"><mrow><msub><mi href="./10.25#E3" title="modified Bessel function of the second kind">K</mi><mi href="./10.1#t1.r5" title="complex parameter">ν</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./10.1#t1.r4" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math> see especially <cite class="ltx_cite ltx_citemacro_citet">Temme (<a href="./bib/T#bib2209" title="On the numerical evaluation of the modified Bessel function of the third kind" class="ltx_ref">1975</a>)</cite>.</p>
+</div>
+<div id="i.p2" class="ltx_para">
+<p class="ltx_p">In other circumstances the power series are prone to slow convergence and
+heavy numerical cancellation.</p>
+</div>
+<div id="i.p3" class="ltx_para">
+<p class="ltx_p">If <math class="ltx_Math" altimg="m32.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./10.1#t1.r3" title="real variable">x</mi></math> or <math class="ltx_Math" altimg="m40.png" altimg-height="25px" altimg-valign="-7px" altimg-width="26px" alttext="|z|" display="inline"><mrow><mo stretchy="false">|</mo><mi href="./10.1#t1.r4" title="complex variable">z</mi><mo stretchy="false">|</mo></mrow></math> is large compared with <math class="ltx_Math" altimg="m39.png" altimg-height="26px" altimg-valign="-7px" altimg-width="37px" alttext="|\nu|^{2}" display="inline"><msup><mrow><mo stretchy="false">|</mo><mi href="./10.1#t1.r5" title="complex parameter">ν</mi><mo stretchy="false">|</mo></mrow><mn>2</mn></msup></math>, then the asymptotic
+expansions of §§<a href="./10.17#i" title="§10.17(i) Hankel’s Expansions ‣ §10.17 Asymptotic Expansions for Large Argument ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">10.17(i)</span></a>–<a href="./10.17#iv" title="§10.17(iv) Error Bounds for Complex Argument and Order ‣ §10.17 Asymptotic Expansions for Large Argument ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">10.17(iv)</span></a> are available.
+Furthermore, the attainable accuracy can be increased substantially by use of
+the exponentially-improved expansions given in §<a href="./10.17#v" title="§10.17(v) Exponentially-Improved Expansions ‣ §10.17 Asymptotic Expansions for Large Argument ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">10.17(v)</span></a>, even
+more so by application of the hyperasymptotic expansions to be found in the
+references in that subsection.</p>
+</div>
+<div id="i.p4" class="ltx_para">
+<p class="ltx_p">For large positive real values of <math class="ltx_Math" altimg="m25.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="\nu" display="inline"><mi href="./10.1#t1.r5" title="complex parameter">ν</mi></math> the uniform asymptotic expansions of
+§§<a href="./10.20#i" title="§10.20(i) Real Variables ‣ §10.20 Uniform Asymptotic Expansions for Large Order ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">10.20(i)</span></a> and <a href="./10.20#ii" title="§10.20(ii) Complex Variables ‣ §10.20 Uniform Asymptotic Expansions for Large Order ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">10.20(ii)</span></a> can be used. Moreover, because
+of their double asymptotic properties (§<a href="./10.41#v" title="§10.41(v) Double Asymptotic Properties (Continued) ‣ §10.41 Asymptotic Expansions for Large Order ‣ Modified Bessel Functions ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">10.41(v)</span></a>) these
+expansions can also be used for large <math class="ltx_Math" altimg="m32.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./10.1#t1.r3" title="real variable">x</mi></math> or <math class="ltx_Math" altimg="m40.png" altimg-height="25px" altimg-valign="-7px" altimg-width="26px" alttext="|z|" display="inline"><mrow><mo stretchy="false">|</mo><mi href="./10.1#t1.r4" title="complex variable">z</mi><mo stretchy="false">|</mo></mrow></math>, whether or not <math class="ltx_Math" altimg="m25.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="\nu" display="inline"><mi href="./10.1#t1.r5" title="complex parameter">ν</mi></math> is
+large. It should be noted, however, that there is a difficulty in evaluating
+the coefficients <math class="ltx_Math" altimg="m8.png" altimg-height="25px" altimg-valign="-7px" altimg-width="57px" alttext="A_{k}(\zeta)" display="inline"><mrow><msub><mi href="./10.20#E10" title="coefficients">A</mi><mi href="./10.1#t1.r2" title="nonnegative integer">k</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>ζ</mi><mo stretchy="false">)</mo></mrow></mrow></math>, <math class="ltx_Math" altimg="m9.png" altimg-height="25px" altimg-valign="-7px" altimg-width="57px" alttext="B_{k}(\zeta)" display="inline"><mrow><msub><mi href="./10.20#E11" title="coefficients">B</mi><mi href="./10.1#t1.r2" title="nonnegative integer">k</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>ζ</mi><mo stretchy="false">)</mo></mrow></mrow></math>, <math class="ltx_Math" altimg="m10.png" altimg-height="25px" altimg-valign="-7px" altimg-width="56px" alttext="C_{k}(\zeta)" display="inline"><mrow><msub><mi href="./10.20#E12" title="coefficients">C</mi><mi href="./10.1#t1.r2" title="nonnegative integer">k</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>ζ</mi><mo stretchy="false">)</mo></mrow></mrow></math>, and <math class="ltx_Math" altimg="m11.png" altimg-height="25px" altimg-valign="-7px" altimg-width="58px" alttext="D_{k}(\zeta)" display="inline"><mrow><msub><mi href="./10.20#E13" title="coefficients">D</mi><mi href="./10.1#t1.r2" title="nonnegative integer">k</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>ζ</mi><mo stretchy="false">)</mo></mrow></mrow></math>,
+from the explicit expressions (<a href="./10.20#E10" title="(10.20.10) ‣ Interval 0&lt;𝑧&lt;1 ‣ §10.20(i) Real Variables ‣ §10.20 Uniform Asymptotic Expansions for Large Order ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">10.20.10</span></a>)–(<a href="./10.20#E13" title="(10.20.13) ‣ Interval 0&lt;𝑧&lt;1 ‣ §10.20(i) Real Variables ‣ §10.20 Uniform Asymptotic Expansions for Large Order ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">10.20.13</span></a>)
+when <math class="ltx_Math" altimg="m35.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi href="./10.1#t1.r4" title="complex variable">z</mi></math> is close to <math class="ltx_Math" altimg="m5.png" altimg-height="17px" altimg-valign="-2px" altimg-width="15px" alttext="1" display="inline"><mn>1</mn></math> owing to severe cancellation. <cite class="ltx_cite ltx_citemacro_citet">Temme (<a href="./bib/T#bib2232" title="Numerical algorithms for uniform Airy-type asymptotic expansions" class="ltx_ref">1997</a>)</cite>
+shows how to overcome this difficulty by use of the Maclaurin
+expansions for these coefficients or by use of auxiliary functions.
+</p>
+</div>
+<div id="i.p5" class="ltx_para">
+<p class="ltx_p">Similar observations apply to the computation of modified Bessel functions,
+spherical Bessel functions, and Kelvin functions. In the case of the spherical
+Bessel functions the explicit formulas given in §§<a href="./10.49#i" title="§10.49(i) Unmodified Functions ‣ §10.49 Explicit Formulas ‣ Spherical Bessel Functions ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">10.49(i)</span></a> and
+<a href="./10.49#ii" title="§10.49(ii) Modified Functions ‣ §10.49 Explicit Formulas ‣ Spherical Bessel Functions ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">10.49(ii)</span></a> are terminating cases of the asymptotic expansions given
+in §§<a href="./10.17#i" title="§10.17(i) Hankel’s Expansions ‣ §10.17 Asymptotic Expansions for Large Argument ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">10.17(i)</span></a> and <a href="./10.40#i" title="§10.40(i) Hankel’s Expansions ‣ §10.40 Asymptotic Expansions for Large Argument ‣ Modified Bessel Functions ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">10.40(i)</span></a> for the Bessel functions
+and modified Bessel functions. And since there are no error terms they could,
+in theory, be used for all values of <math class="ltx_Math" altimg="m35.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi href="./10.1#t1.r4" title="complex variable">z</mi></math>; however, there may be severe
+cancellation when <math class="ltx_Math" altimg="m40.png" altimg-height="25px" altimg-valign="-7px" altimg-width="26px" alttext="|z|" display="inline"><mrow><mo stretchy="false">|</mo><mi href="./10.1#t1.r4" title="complex variable">z</mi><mo stretchy="false">|</mo></mrow></math> is not large compared with <math class="ltx_Math" altimg="m31.png" altimg-height="21px" altimg-valign="-2px" altimg-width="26px" alttext="n^{2}" display="inline"><msup><mi href="./10.1#t1.r1" title="integer">n</mi><mn>2</mn></msup></math>.</p>
+</div>
+</section>
+<section id="ii" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§10.74(ii) </span>Differential Equations</h2>
+<div id="ii.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Permalink:</dt>
+<dd><a href="./10.74.ii" title="" class="ltx_ref">http://dlmf.nist.gov/10.74.ii</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./10.74#info" title="§10.74 Methods of Computation ‣ Computation ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§10.74</span></a> and
+<a href="./10#info" title="Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.10</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="ii.p1" class="ltx_para">
+<p class="ltx_p">A comprehensive and powerful approach is to integrate the differential
+equations (<a href="./10.2#E1" title="(10.2.1) ‣ §10.2(i) Bessel’s Equation ‣ §10.2 Definitions ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">10.2.1</span></a>) and (<a href="./10.25#E1" title="(10.25.1) ‣ §10.25(i) Modified Bessel’s Equation ‣ §10.25 Definitions ‣ Modified Bessel Functions ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">10.25.1</span></a>) by direct numerical
+methods. As described in §<a href="./3.7#ii" title="§3.7(ii) Taylor-Series Method: Initial-Value Problems ‣ §3.7 Ordinary Differential Equations ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.7(ii)</span></a>, to insure stability the
+integration path must be chosen in such a way that as we proceed along it
+the wanted solution grows in magnitude at least as fast as all other solutions
+of the differential equation.</p>
+</div>
+<div id="ii.p2" class="ltx_para">
+<p class="ltx_p">In the interval <math class="ltx_Math" altimg="m3.png" altimg-height="18px" altimg-valign="-3px" altimg-width="93px" alttext="0&lt;x&lt;\nu" display="inline"><mrow><mn>0</mn><mo>&lt;</mo><mi href="./10.1#t1.r3" title="real variable">x</mi><mo>&lt;</mo><mi href="./10.1#t1.r5" title="complex parameter">ν</mi></mrow></math>, <math class="ltx_Math" altimg="m13.png" altimg-height="25px" altimg-valign="-7px" altimg-width="58px" alttext="J_{\nu}\left(x\right)" display="inline"><mrow><msub><mi href="./10.2#E2" title="Bessel function of the first kind">J</mi><mi href="./10.1#t1.r5" title="complex parameter">ν</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./10.1#t1.r3" title="real variable">x</mi><mo>)</mo></mrow></mrow></math> needs to be integrated in the
+forward direction and <math class="ltx_Math" altimg="m18.png" altimg-height="25px" altimg-valign="-7px" altimg-width="58px" alttext="Y_{\nu}\left(x\right)" display="inline"><mrow><msub><mi href="./10.2#E3" title="Bessel function of the second kind">Y</mi><mi href="./10.1#t1.r5" title="complex parameter">ν</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./10.1#t1.r3" title="real variable">x</mi><mo>)</mo></mrow></mrow></math> in the backward direction, with
+initial values for the former obtained from the power-series expansion
+(<a href="./10.2#E2" title="(10.2.2) ‣ Bessel Function of the First Kind ‣ §10.2(ii) Standard Solutions ‣ §10.2 Definitions ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">10.2.2</span></a>) and for the latter from asymptotic expansions
+(§§<a href="./10.17#i" title="§10.17(i) Hankel’s Expansions ‣ §10.17 Asymptotic Expansions for Large Argument ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">10.17(i)</span></a> and <a href="./10.20#i" title="§10.20(i) Real Variables ‣ §10.20 Uniform Asymptotic Expansions for Large Order ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">10.20(i)</span></a>). In the interval <math class="ltx_Math" altimg="m22.png" altimg-height="16px" altimg-valign="-3px" altimg-width="104px" alttext="\nu&lt;x&lt;\infty" display="inline"><mrow><mi href="./10.1#t1.r5" title="complex parameter">ν</mi><mo>&lt;</mo><mi href="./10.1#t1.r3" title="real variable">x</mi><mo>&lt;</mo><mi mathvariant="normal">∞</mi></mrow></math>
+either direction of integration can be used for both functions.</p>
+</div>
+<div id="ii.p3" class="ltx_para">
+<p class="ltx_p">Similarly, to maintain stability in the interval <math class="ltx_Math" altimg="m2.png" altimg-height="18px" altimg-valign="-3px" altimg-width="103px" alttext="0&lt;x&lt;\infty" display="inline"><mrow><mn>0</mn><mo>&lt;</mo><mi href="./10.1#t1.r3" title="real variable">x</mi><mo>&lt;</mo><mi mathvariant="normal">∞</mi></mrow></math> the integration
+direction has to be forwards in the case of <math class="ltx_Math" altimg="m12.png" altimg-height="25px" altimg-valign="-7px" altimg-width="55px" alttext="I_{\nu}\left(x\right)" display="inline"><mrow><msub><mi href="./10.25#E2" title="modified Bessel function of the first kind">I</mi><mi href="./10.1#t1.r5" title="complex parameter">ν</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./10.1#t1.r3" title="real variable">x</mi><mo>)</mo></mrow></mrow></math> and backwards
+in the case of <math class="ltx_Math" altimg="m16.png" altimg-height="25px" altimg-valign="-7px" altimg-width="64px" alttext="K_{\nu}\left(x\right)" display="inline"><mrow><msub><mi href="./10.25#E3" title="modified Bessel function of the second kind">K</mi><mi href="./10.1#t1.r5" title="complex parameter">ν</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./10.1#t1.r3" title="real variable">x</mi><mo>)</mo></mrow></mrow></math>, with initial values obtained in an
+analogous manner to those for <math class="ltx_Math" altimg="m13.png" altimg-height="25px" altimg-valign="-7px" altimg-width="58px" alttext="J_{\nu}\left(x\right)" display="inline"><mrow><msub><mi href="./10.2#E2" title="Bessel function of the first kind">J</mi><mi href="./10.1#t1.r5" title="complex parameter">ν</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./10.1#t1.r3" title="real variable">x</mi><mo>)</mo></mrow></mrow></math> and <math class="ltx_Math" altimg="m18.png" altimg-height="25px" altimg-valign="-7px" altimg-width="58px" alttext="Y_{\nu}\left(x\right)" display="inline"><mrow><msub><mi href="./10.2#E3" title="Bessel function of the second kind">Y</mi><mi href="./10.1#t1.r5" title="complex parameter">ν</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./10.1#t1.r3" title="real variable">x</mi><mo>)</mo></mrow></mrow></math>.</p>
+</div>
+<div id="ii.p4" class="ltx_para">
+<p class="ltx_p">For <math class="ltx_Math" altimg="m36.png" altimg-height="19px" altimg-valign="-3px" altimg-width="55px" alttext="z\in\mathbb{C}" display="inline"><mrow><mi href="./10.1#t1.r4" title="complex variable">z</mi><mo href="./front/introduction#common.t1.r10" title="element of">∈</mo><mi href="./front/introduction#common.t1.r1" title="complex plane">ℂ</mi></mrow></math> the function <math class="ltx_Math" altimg="m37.png" altimg-height="31px" altimg-valign="-7px" altimg-width="76px" alttext="{H^{(1)}_{\nu}}\left(z\right)" display="inline"><mrow><msubsup><mi href="./10.2#E5" title="Bessel function of the third kind (or Hankel function)">H</mi><mi href="./10.1#t1.r5" title="complex parameter">ν</mi><mrow><mo href="./10.2#E5" stretchy="false" title="Bessel function of the third kind (or Hankel function)">(</mo><mn href="./10.2#E5" title="Bessel function of the third kind (or Hankel function)">1</mn><mo href="./10.2#E5" stretchy="false" title="Bessel function of the third kind (or Hankel function)">)</mo></mrow></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi href="./10.1#t1.r4" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>, for example, can
+always be computed in a stable manner in the sector <math class="ltx_Math" altimg="m4.png" altimg-height="22px" altimg-valign="-6px" altimg-width="120px" alttext="0\leq\operatorname{ph}z\leq\pi" display="inline"><mrow><mn>0</mn><mo>≤</mo><mrow><mi href="./1.9#E7" title="phase">ph</mi><mo lspace="0.167em">⁡</mo><mi href="./10.1#t1.r4" title="complex variable">z</mi></mrow><mo>≤</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></mrow></math>
+by integrating along rays towards the origin.</p>
+</div>
+<div id="ii.p5" class="ltx_para">
+<p class="ltx_p">Similar considerations apply to the spherical Bessel functions and Kelvin
+functions.</p>
+</div>
+<div id="ii.p6" class="ltx_para">
+<p class="ltx_p">For further information, including parallel methods for solving the
+differential equations, see <cite class="ltx_cite ltx_citemacro_citet">Lozier and Olver (<a href="./bib/L#bib1477" title="Airy and Bessel Functions by Parallel Integration of ODEs" class="ltx_ref">1993</a>)</cite>.</p>
+</div>
+</section>
+<section id="iii" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§10.74(iii) </span>Integral Representations</h2>
+<div id="iii.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Permalink:</dt>
+<dd><a href="./10.74.iii" title="" class="ltx_ref">http://dlmf.nist.gov/10.74.iii</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./10.74#info" title="§10.74 Methods of Computation ‣ Computation ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§10.74</span></a> and
+<a href="./10#info" title="Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.10</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="iii.p1" class="ltx_para">
+<p class="ltx_p">For evaluation of the Hankel functions <math class="ltx_Math" altimg="m37.png" altimg-height="31px" altimg-valign="-7px" altimg-width="76px" alttext="{H^{(1)}_{\nu}}\left(z\right)" display="inline"><mrow><msubsup><mi href="./10.2#E5" title="Bessel function of the third kind (or Hankel function)">H</mi><mi href="./10.1#t1.r5" title="complex parameter">ν</mi><mrow><mo href="./10.2#E5" stretchy="false" title="Bessel function of the third kind (or Hankel function)">(</mo><mn href="./10.2#E5" title="Bessel function of the third kind (or Hankel function)">1</mn><mo href="./10.2#E5" stretchy="false" title="Bessel function of the third kind (or Hankel function)">)</mo></mrow></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi href="./10.1#t1.r4" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math> and
+<math class="ltx_Math" altimg="m38.png" altimg-height="31px" altimg-valign="-7px" altimg-width="76px" alttext="{H^{(2)}_{\nu}}\left(z\right)" display="inline"><mrow><msubsup><mi href="./10.2#E6" title="Bessel function of the third kind (or Hankel function)">H</mi><mi href="./10.1#t1.r5" title="complex parameter">ν</mi><mrow><mo href="./10.2#E6" stretchy="false" title="Bessel function of the third kind (or Hankel function)">(</mo><mn href="./10.2#E6" title="Bessel function of the third kind (or Hankel function)">2</mn><mo href="./10.2#E6" stretchy="false" title="Bessel function of the third kind (or Hankel function)">)</mo></mrow></msubsup><mo>⁡</mo><mrow><mo>(</mo><mi href="./10.1#t1.r4" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math> for complex values of <math class="ltx_Math" altimg="m25.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="\nu" display="inline"><mi href="./10.1#t1.r5" title="complex parameter">ν</mi></math> and <math class="ltx_Math" altimg="m35.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi href="./10.1#t1.r4" title="complex variable">z</mi></math> based on the
+integral representations (<a href="./10.9#E18" title="(10.9.18) ‣ Schläfli–Sommerfeld Integrals ‣ §10.9(ii) Contour Integrals ‣ §10.9 Integral Representations ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">10.9.18</span></a>) see <cite class="ltx_cite ltx_citemacro_citet">Remenets (<a href="./bib/R#bib1942" title="Computation of Hankel (Bessel) functions of complex index and argument by numerical integration of a Schläfli contour integral" class="ltx_ref">1973</a>)</cite>.</p>
+</div>
+<div id="iii.p2" class="ltx_para">
+<p class="ltx_p">For applications of generalized Gauss–Laguerre quadrature
+(§<a href="./3.5#v" title="§3.5(v) Gauss Quadrature ‣ §3.5 Quadrature ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5(v)</span></a>) to the evaluation of the modified Bessel functions
+<math class="ltx_Math" altimg="m17.png" altimg-height="25px" altimg-valign="-7px" altimg-width="62px" alttext="K_{\nu}\left(z\right)" display="inline"><mrow><msub><mi href="./10.25#E3" title="modified Bessel function of the second kind">K</mi><mi href="./10.1#t1.r5" title="complex parameter">ν</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./10.1#t1.r4" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math> for <math class="ltx_Math" altimg="m1.png" altimg-height="18px" altimg-valign="-3px" altimg-width="92px" alttext="0&lt;\nu&lt;1" display="inline"><mrow><mn>0</mn><mo>&lt;</mo><mi href="./10.1#t1.r5" title="complex parameter">ν</mi><mo>&lt;</mo><mn>1</mn></mrow></math> and <math class="ltx_Math" altimg="m2.png" altimg-height="18px" altimg-valign="-3px" altimg-width="103px" alttext="0&lt;x&lt;\infty" display="inline"><mrow><mn>0</mn><mo>&lt;</mo><mi href="./10.1#t1.r3" title="real variable">x</mi><mo>&lt;</mo><mi mathvariant="normal">∞</mi></mrow></math> see
+<cite class="ltx_cite ltx_citemacro_citet">Gautschi (<a href="./bib/G#bib897" title="Computation of Bessel and Airy functions and of related Gaussian quadrature formulae" class="ltx_ref">2002a</a>)</cite>. The integral representation used is based on
+(<a href="./10.32#E8" title="(10.32.8) ‣ §10.32(i) Integrals along the Real Line ‣ §10.32 Integral Representations ‣ Modified Bessel Functions ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">10.32.8</span></a>).</p>
+</div>
+<div id="iii.p3" class="ltx_para">
+<p class="ltx_p">For evaluation of <math class="ltx_Math" altimg="m17.png" altimg-height="25px" altimg-valign="-7px" altimg-width="62px" alttext="K_{\nu}\left(z\right)" display="inline"><mrow><msub><mi href="./10.25#E3" title="modified Bessel function of the second kind">K</mi><mi href="./10.1#t1.r5" title="complex parameter">ν</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./10.1#t1.r4" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math> from (<a href="./10.32#E14" title="(10.32.14) ‣ Mellin–Barnes Type ‣ §10.32(ii) Contour Integrals ‣ §10.32 Integral Representations ‣ Modified Bessel Functions ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">10.32.14</span></a>) with
+<math class="ltx_Math" altimg="m23.png" altimg-height="13px" altimg-valign="-2px" altimg-width="56px" alttext="\nu=n" display="inline"><mrow><mi href="./10.1#t1.r5" title="complex parameter">ν</mi><mo>=</mo><mi href="./10.1#t1.r1" title="integer">n</mi></mrow></math> and <math class="ltx_Math" altimg="m35.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="z" display="inline"><mi href="./10.1#t1.r4" title="complex variable">z</mi></math> complex, see <cite class="ltx_cite ltx_citemacro_citet">Mechel (<a href="./bib/M#bib1589" title="Calculation of the modified Bessel functions of the second kind with complex argument" class="ltx_ref">1966</a>)</cite>.</p>
+</div>
+</section>
+<section id="iv" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§10.74(iv) </span>Recurrence Relations</h2>
+<div id="iv.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Permalink:</dt>
+<dd><a href="./10.74.iv" title="" class="ltx_ref">http://dlmf.nist.gov/10.74.iv</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./10.74#info" title="§10.74 Methods of Computation ‣ Computation ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§10.74</span></a> and
+<a href="./10#info" title="Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.10</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="iv.p1" class="ltx_para">
+<p class="ltx_p">If values of the Bessel functions <math class="ltx_Math" altimg="m14.png" altimg-height="25px" altimg-valign="-7px" altimg-width="56px" alttext="J_{\nu}\left(z\right)" display="inline"><mrow><msub><mi href="./10.2#E2" title="Bessel function of the first kind">J</mi><mi href="./10.1#t1.r5" title="complex parameter">ν</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./10.1#t1.r4" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>, <math class="ltx_Math" altimg="m19.png" altimg-height="25px" altimg-valign="-7px" altimg-width="57px" alttext="Y_{\nu}\left(z\right)" display="inline"><mrow><msub><mi href="./10.2#E3" title="Bessel function of the second kind">Y</mi><mi href="./10.1#t1.r5" title="complex parameter">ν</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./10.1#t1.r4" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>, or
+the other functions treated in this chapter, are needed for integer-spaced
+ranges of values of the order <math class="ltx_Math" altimg="m25.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="\nu" display="inline"><mi href="./10.1#t1.r5" title="complex parameter">ν</mi></math>, then a simple and powerful procedure is
+provided by recurrence relations typified by the first of
+(<a href="./10.6#E1" title="(10.6.1) ‣ §10.6(i) Recurrence Relations ‣ §10.6 Recurrence Relations and Derivatives ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">10.6.1</span></a>).</p>
+</div>
+<div id="iv.p2" class="ltx_para">
+<p class="ltx_p">Suppose, for example, <math class="ltx_Math" altimg="m24.png" altimg-height="21px" altimg-valign="-6px" altimg-width="164px" alttext="\nu=n\in 0,1,2,\dotsc" display="inline"><mrow><mrow><mi href="./10.1#t1.r5" title="complex parameter">ν</mi><mo>=</mo><mi href="./10.1#t1.r1" title="integer">n</mi><mo href="./front/introduction#common.t1.r10" title="element of">∈</mo><mn>0</mn></mrow><mo>,</mo><mrow><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mi mathvariant="normal">…</mi></mrow></mrow></math>, and <math class="ltx_Math" altimg="m33.png" altimg-height="25px" altimg-valign="-7px" altimg-width="98px" alttext="x\in(0,\infty)" display="inline"><mrow><mi href="./10.1#t1.r3" title="real variable">x</mi><mo href="./front/introduction#common.t1.r10" title="element of">∈</mo><mrow><mo href="./front/introduction#common.t1.r29" stretchy="false" title="open interval">(</mo><mn>0</mn><mo href="./front/introduction#common.t1.r29" title="open interval">,</mo><mi mathvariant="normal">∞</mi><mo href="./front/introduction#common.t1.r29" stretchy="false" title="open interval">)</mo></mrow></mrow></math>. Then
+<math class="ltx_Math" altimg="m15.png" altimg-height="25px" altimg-valign="-7px" altimg-width="59px" alttext="J_{n}\left(x\right)" display="inline"><mrow><msub><mi href="./10.2#E2" title="Bessel function of the first kind">J</mi><mi href="./10.1#t1.r1" title="integer">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./10.1#t1.r3" title="real variable">x</mi><mo>)</mo></mrow></mrow></math> and <math class="ltx_Math" altimg="m20.png" altimg-height="25px" altimg-valign="-7px" altimg-width="59px" alttext="Y_{n}\left(x\right)" display="inline"><mrow><msub><mi href="./10.2#E3" title="Bessel function of the second kind">Y</mi><mi href="./10.1#t1.r1" title="integer">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./10.1#t1.r3" title="real variable">x</mi><mo>)</mo></mrow></mrow></math> can be generated by either forward or
+backward recurrence on <math class="ltx_Math" altimg="m30.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./10.1#t1.r1" title="integer">n</mi></math> when <math class="ltx_Math" altimg="m28.png" altimg-height="16px" altimg-valign="-3px" altimg-width="56px" alttext="n&lt;x" display="inline"><mrow><mi href="./10.1#t1.r1" title="integer">n</mi><mo>&lt;</mo><mi href="./10.1#t1.r3" title="real variable">x</mi></mrow></math>, but if <math class="ltx_Math" altimg="m29.png" altimg-height="16px" altimg-valign="-3px" altimg-width="56px" alttext="n&gt;x" display="inline"><mrow><mi href="./10.1#t1.r1" title="integer">n</mi><mo>&gt;</mo><mi href="./10.1#t1.r3" title="real variable">x</mi></mrow></math> then to maintain stability
+<math class="ltx_Math" altimg="m15.png" altimg-height="25px" altimg-valign="-7px" altimg-width="59px" alttext="J_{n}\left(x\right)" display="inline"><mrow><msub><mi href="./10.2#E2" title="Bessel function of the first kind">J</mi><mi href="./10.1#t1.r1" title="integer">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./10.1#t1.r3" title="real variable">x</mi><mo>)</mo></mrow></mrow></math> has to be generated by backward recurrence on <math class="ltx_Math" altimg="m30.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./10.1#t1.r1" title="integer">n</mi></math>, and
+<math class="ltx_Math" altimg="m20.png" altimg-height="25px" altimg-valign="-7px" altimg-width="59px" alttext="Y_{n}\left(x\right)" display="inline"><mrow><msub><mi href="./10.2#E3" title="Bessel function of the second kind">Y</mi><mi href="./10.1#t1.r1" title="integer">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./10.1#t1.r3" title="real variable">x</mi><mo>)</mo></mrow></mrow></math> has to be generated by forward recurrence on <math class="ltx_Math" altimg="m30.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./10.1#t1.r1" title="integer">n</mi></math>. In the
+case of <math class="ltx_Math" altimg="m15.png" altimg-height="25px" altimg-valign="-7px" altimg-width="59px" alttext="J_{n}\left(x\right)" display="inline"><mrow><msub><mi href="./10.2#E2" title="Bessel function of the first kind">J</mi><mi href="./10.1#t1.r1" title="integer">n</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./10.1#t1.r3" title="real variable">x</mi><mo>)</mo></mrow></mrow></math>, the need for initial values can be avoided by
+application of Olver’s algorithm (§<a href="./3.6#v" title="§3.6(v) Olver’s Algorithm ‣ §3.6 Linear Difference Equations ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.6(v)</span></a>) in conjunction with
+Equation (<a href="./10.12#E4" title="(10.12.4) ‣ §10.12 Generating Function and Associated Series ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">10.12.4</span></a>) used as a normalizing condition, or in the case of
+noninteger orders, (<a href="./10.23#E15" title="(10.23.15) ‣ Examples ‣ §10.23(iii) Series Expansions of Arbitrary Functions ‣ §10.23 Sums ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">10.23.15</span></a>).</p>
+</div>
+<div id="iv.p3" class="ltx_para">
+<p class="ltx_p">For further information see <cite class="ltx_cite ltx_citemacro_citet">Gautschi (<a href="./bib/G#bib877" title="Computational aspects of three-term recurrence relations" class="ltx_ref">1967</a>)</cite>,
+<cite class="ltx_cite ltx_citemacro_citet">Olver and Sookne (<a href="./bib/O#bib1812" title="Note on backward recurrence algorithms" class="ltx_ref">1972</a>)</cite>,
+<cite class="ltx_cite ltx_citemacro_citet">Temme (<a href="./bib/T#bib2209" title="On the numerical evaluation of the modified Bessel function of the third kind" class="ltx_ref">1975</a>)</cite>, <cite class="ltx_cite ltx_citemacro_citet">Campbell (<a href="./bib/C#bib407" title="On Temme’s algorithm for the modified Bessel function of the third kind" class="ltx_ref">1980</a>)</cite>, and
+<cite class="ltx_cite ltx_citemacro_citet">Kerimov and Skorokhodov (<a href="./bib/K#bib1249" title="Calculation of modified Bessel functions in a complex domain" class="ltx_ref">1984a</a>)</cite>.</p>
+</div>
+</section>
+<section id="v" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§10.74(v) </span>Continued Fractions</h2>
+<div id="v.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=Bessel%20functions">Bessel functions</a>, <a class="ltx_keyword" href="./search/search?q=Hankel%20functions">Hankel functions</a>, <a class="ltx_keyword" href="./search/search?q=Kelvin%20functions">Kelvin functions</a>, <a class="ltx_keyword" href="./search/search?q=computation">computation</a>, <a class="ltx_keyword" href="./search/search?q=modified%20Bessel%20functions">modified Bessel functions</a>, <a class="ltx_keyword" href="./search/search?q=spherical%20Bessel%20functions">spherical Bessel functions</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./3.10#Px8.p4" title="Steed’s Algorithm ‣ §3.10(iii) Numerical Evaluation of Continued Fractions ‣ §3.10 Continued Fractions ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§3.10(iii)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./10.74.v" title="" class="ltx_ref">http://dlmf.nist.gov/10.74.v</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./10.74#info" title="§10.74 Methods of Computation ‣ Computation ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§10.74</span></a> and
+<a href="./10#info" title="Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.10</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="v.p1" class="ltx_para">
+<p class="ltx_p">For applications of the continued-fraction expansions (<a href="./10.10#E1" title="(10.10.1) ‣ §10.10 Continued Fractions ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">10.10.1</span></a>),
+(<a href="./10.10#E2" title="(10.10.2) ‣ §10.10 Continued Fractions ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">10.10.2</span></a>), (<a href="./10.33#E1" title="(10.33.1) ‣ §10.33 Continued Fractions ‣ Modified Bessel Functions ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">10.33.1</span></a>), and (<a href="./10.33#E2" title="(10.33.2) ‣ §10.33 Continued Fractions ‣ Modified Bessel Functions ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">10.33.2</span></a>) to the
+computation of Bessel functions and modified Bessel functions see
+<cite class="ltx_cite ltx_citemacro_citet">Gargantini and Henrici (<a href="./bib/G#bib857" title="A continued fraction algorithm for the computation of higher transcendental functions in the complex plane" class="ltx_ref">1967</a>)</cite>, <cite class="ltx_cite ltx_citemacro_citet">Amos (<a href="./bib/#bib71" title="Computation of modified Bessel functions and their ratios" class="ltx_ref">1974</a>)</cite>, <cite class="ltx_cite ltx_citemacro_citet">Gautschi and Slavik (<a href="./bib/G#bib885" title="On the computation of modified Bessel function ratios" class="ltx_ref">1978</a>)</cite>,
+<cite class="ltx_cite ltx_citemacro_citet">Tretter and Walster (<a href="./bib/T#bib2273" title="Further comments on the computation of modified Bessel function ratios" class="ltx_ref">1980</a>)</cite>, <cite class="ltx_cite ltx_citemacro_citet">Thompson and Barnett (<a href="./bib/T#bib2244" title="Coulomb and Bessel functions of complex arguments and order" class="ltx_ref">1986</a>)</cite>, and
+<cite class="ltx_cite ltx_citemacro_citet">Cuyt<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/C#bib608" title="Handbook of Continued Fractions for Special Functions" class="ltx_ref">2008</a>)</cite>.
+</p>
+</div>
+</section>
+<section id="vi" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§10.74(vi) </span>Zeros and Associated Values</h2>
+<div id="vi.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=Hankel%20functions">Hankel functions</a>, <a class="ltx_keyword" href="./search/search?q=Kelvin%20functions">Kelvin functions</a>, <a class="ltx_keyword" href="./search/search?q=computation">computation</a>, <a class="ltx_keyword" href="./search/search?q=modified%20Bessel%20functions">modified Bessel functions</a>, <a class="ltx_keyword" href="./search/search?q=zeros">zeros</a>, <a class="ltx_keyword" href="./search/search?q=zeros%20of%20Bessel%20functions">zeros of Bessel functions (including derivatives)</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./10.21#ix.info" title="§10.21(ix) Complex Zeros ‣ §10.21 Zeros ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§10.21(ix)</span></a>,
+<a href="./errata/#V1.0.10.I2.ix6.p1" title="In Other Changes ‣ Version 1.0.10 (August 7, 2015) ‣ Errata" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Erratum (V1.0.10) for  References</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./10.74.vi" title="" class="ltx_ref">http://dlmf.nist.gov/10.74.vi</a></dd>
+<dt>Addition (effective with 1.0.10):</dt>
+<dd>
+A reference to <cite class="ltx_cite ltx_citemacro_citet">Segura (<a href="./bib/S#bib2835" title="Computing the complex zeros of special functions" class="ltx_ref">2013</a>)</cite> was added in the paragraph
+headed <span class="ltx_text ltx_font_bold">Complex Zeros</span>.
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./10.74#info" title="§10.74 Methods of Computation ‣ Computation ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§10.74</span></a> and
+<a href="./10#info" title="Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.10</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="vi.p1" class="ltx_para">
+<p class="ltx_p">Newton’s rule (§<a href="./3.8#i" title="§3.8(i) Introduction ‣ §3.8 Nonlinear Equations ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.8(i)</span></a>) or Halley’s rule (§<a href="./3.8#v" title="§3.8(v) Zeros of Analytic Functions ‣ §3.8 Nonlinear Equations ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.8(v)</span></a>)
+can be used to compute to arbitrarily high accuracy the real or complex zeros
+of all the functions treated in this chapter. Necessary values of the first
+derivatives of the functions are obtained by the use of
+(<a href="./10.6#E2" title="(10.6.2) ‣ §10.6(i) Recurrence Relations ‣ §10.6 Recurrence Relations and Derivatives ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">10.6.2</span></a>), for example. Newton’s rule is quadratically
+convergent and Halley’s rule is cubically convergent. See also
+<cite class="ltx_cite ltx_citemacro_citet">Segura (<a href="./bib/S#bib2040" title="A global Newton method for the zeros of cylinder functions" class="ltx_ref">1998</a>, <a href="./bib/S#bib2041" title="Bounds on differences of adjacent zeros of Bessel functions and iterative relations between consecutive zeros" class="ltx_ref">2001</a>)</cite>.</p>
+</div>
+<div id="vi.p2" class="ltx_para">
+<p class="ltx_p">Methods for obtaining initial approximations to the zeros include asymptotic
+expansions (§§<a href="./10.21#vi" title="§10.21(vi) McMahon’s Asymptotic Expansions for Large Zeros ‣ §10.21 Zeros ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">10.21(vi)</span></a>-<a href="./10.21#ix" title="§10.21(ix) Complex Zeros ‣ §10.21 Zeros ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">10.21(ix)</span></a>), graphical intersection
+of <math class="ltx_Math" altimg="m6.png" altimg-height="18px" altimg-valign="-2px" altimg-width="32px" alttext="2D" display="inline"><mrow><mn>2</mn><mo>⁢</mo><mi>D</mi></mrow></math> graphs in <math class="ltx_Math" altimg="m21.png" altimg-height="18px" altimg-valign="-2px" altimg-width="19px" alttext="\mathbb{R}" display="inline"><mi href="./front/introduction#common.t2.r14" title="real line">ℝ</mi></math> (e.g., §<a href="./10.3#i" title="§10.3(i) Real Order and Variable ‣ §10.3 Graphics ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">10.3(i)</span></a>) with the <math class="ltx_Math" altimg="m32.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi href="./10.1#t1.r3" title="real variable">x</mi></math>-axis, or
+graphical intersection of <math class="ltx_Math" altimg="m7.png" altimg-height="18px" altimg-valign="-2px" altimg-width="32px" alttext="3D" display="inline"><mrow><mn>3</mn><mo>⁢</mo><mi>D</mi></mrow></math> complex-variable surfaces
+(e.g., §<a href="./10.3#ii" title="§10.3(ii) Real Order, Complex Variable ‣ §10.3 Graphics ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">10.3(ii)</span></a>) with the plane <math class="ltx_Math" altimg="m34.png" altimg-height="17px" altimg-valign="-2px" altimg-width="53px" alttext="z=0" display="inline"><mrow><mi href="./10.1#t1.r4" title="complex variable">z</mi><mo>=</mo><mn>0</mn></mrow></math>.</p>
+</div>
+<div id="vi.p3" class="ltx_para">
+<p class="ltx_p">To ensure that no zeros are overlooked, standard tools are the phase
+principle and Rouché’s theorem; see §<a href="./1.10#iv" title="§1.10(iv) Residue Theorem ‣ §1.10 Functions of a Complex Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.10(iv)</span></a>.</p>
+</div>
+<section id="Px1" class="ltx_paragraph">
+<h3 class="ltx_title ltx_title_paragraph">Real Zeros</h3>
+<div id="Px1.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./10.74#vi.info" title="§10.74(vi) Zeros and Associated Values ‣ §10.74 Methods of Computation ‣ Computation ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§10.74(vi)</span></a>,
+<a href="./10.74#info" title="§10.74 Methods of Computation ‣ Computation ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§10.74</span></a> and
+<a href="./10#info" title="Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.10</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="Px1.p1" class="ltx_para">
+<p class="ltx_p">See <cite class="ltx_cite ltx_citemacro_citet">Olver (<a href="./bib/O#bib1783" title="Bessel Functions. Part III: Zeros and Associated Values" class="ltx_ref">1960</a>, pp. xvi–xxix)</cite>, <cite class="ltx_cite ltx_citemacro_citet">Grad and Zakrajšek (<a href="./bib/G#bib969" title="Method for evaluation of zeros of Bessel functions" class="ltx_ref">1973</a>)</cite>,
+<cite class="ltx_cite ltx_citemacro_citet">Temme (<a href="./bib/T#bib2213" title="An algorithm with ALGOL 60 program for the computation of the zeros of ordinary Bessel functions and those of their derivatives" class="ltx_ref">1979a</a>)</cite>, <cite class="ltx_cite ltx_citemacro_citet">Ikebe<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/I#bib1122" title="Computing zeros and orders of Bessel functions" class="ltx_ref">1991</a>)</cite>,
+<cite class="ltx_cite ltx_citemacro_citet">Zafiropoulos<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/Z#bib2477" title="On the Computation of Zeros of Bessel and Bessel-related Functions" class="ltx_ref">1996</a>)</cite>, <cite class="ltx_cite ltx_citemacro_citet">Vrahatis<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/V#bib2346" title="On the localization and computation of zeros of Bessel functions" class="ltx_ref">1997a</a>)</cite>,
+<cite class="ltx_cite ltx_citemacro_citet">Ball (<a href="./bib/B#bib182" title="Automatic computation of zeros of Bessel functions and other special functions" class="ltx_ref">2000</a>)</cite>, and <cite class="ltx_cite ltx_citemacro_citet">Gil and Segura (<a href="./bib/G#bib919" title="Computing the zeros and turning points of solutions of second order homogeneous linear ODEs" class="ltx_ref">2003</a>)</cite>.</p>
+</div>
+</section>
+<section id="Px2" class="ltx_paragraph">
+<h3 class="ltx_title ltx_title_paragraph">Complex Zeros</h3>
+<div id="Px2.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./10.74#vi.info" title="§10.74(vi) Zeros and Associated Values ‣ §10.74 Methods of Computation ‣ Computation ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§10.74(vi)</span></a>,
+<a href="./10.74#info" title="§10.74 Methods of Computation ‣ Computation ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§10.74</span></a> and
+<a href="./10#info" title="Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.10</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="Px2.p1" class="ltx_para">
+<p class="ltx_p">See <cite class="ltx_cite ltx_citemacro_citet">Leung and Ghaderpanah (<a href="./bib/L#bib1422" title="An application of the finite element approximation method to find the complex zeros of the modified Bessel function ⁢ K n ( z )" class="ltx_ref">1979</a>)</cite>,
+<cite class="ltx_cite ltx_citemacro_citet">Kerimov and Skorokhodov (<a href="./bib/K#bib1248" title="Calculation of the complex zeros of the modified Bessel function of the second kind and its derivatives" class="ltx_ref">1984b</a>, <a href="./bib/K#bib1250" title="Evaluation of complex zeros of Bessel functions ⁢ J ν ( z ) and ⁢ I ν ( z ) and their derivatives" class="ltx_ref">c</a>, <a href="./bib/K#bib1251" title="Calculation of the complex zeros of a Bessel function of the second kind and its derivatives" class="ltx_ref">1985a</a>, <a href="./bib/K#bib1252" title="Calculation of the complex zeros of Hankel functions and their derivatives" class="ltx_ref">1985b</a>)</cite>,
+<cite class="ltx_cite ltx_citemacro_citet">Skorokhodov (<a href="./bib/S#bib2095" title="On the calculation of complex zeros of the modified Bessel function of the second kind" class="ltx_ref">1985</a>)</cite>, <cite class="ltx_cite ltx_citemacro_citet">Modenov and Filonov (<a href="./bib/M#bib1644" title="Calculation of zeros of cylindrical functions and their derivatives" class="ltx_ref">1986</a>)</cite>,
+<cite class="ltx_cite ltx_citemacro_citet">Vrahatis<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/V#bib2348" title="The topological degree theory for the localization and computation of complex zeros of Bessel functions" class="ltx_ref">1997b</a>)</cite>, and <cite class="ltx_cite ltx_citemacro_citet">Segura (<a href="./bib/S#bib2835" title="Computing the complex zeros of special functions" class="ltx_ref">2013</a>)</cite>.</p>
+</div>
+</section>
+<section id="Px3" class="ltx_paragraph">
+<h3 class="ltx_title ltx_title_paragraph">Multiple Zeros</h3>
+<div id="Px3.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=computation">computation</a>, <a class="ltx_keyword" href="./search/search?q=zeros%20of%20Bessel%20functions">zeros of Bessel functions (including derivatives)</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./10.74#vi.info" title="§10.74(vi) Zeros and Associated Values ‣ §10.74 Methods of Computation ‣ Computation ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§10.74(vi)</span></a>,
+<a href="./10.74#info" title="§10.74 Methods of Computation ‣ Computation ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§10.74</span></a> and
+<a href="./10#info" title="Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.10</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="Px3.p1" class="ltx_para">
+<p class="ltx_p">See <cite class="ltx_cite ltx_citemacro_citet">Kerimov and Skorokhodov (<a href="./bib/K#bib1253" title="Calculation of the multiple zeros of the derivatives of the cylindrical Bessel functions ⁢ J ν ( z ) and ⁢ Y ν ( z )" class="ltx_ref">1985c</a>, <a href="./bib/K#bib1254" title="On multiple zeros of derivatives of Bessel’s cylindrical functions" class="ltx_ref">1986</a>, <a href="./bib/K#bib1255" title="On the calculation of the multiple complex roots of the derivatives of cylindrical Bessel functions" class="ltx_ref">1987</a>, <a href="./bib/K#bib1256" title="Multiple complex zeros of derivatives of the cylindrical Bessel functions" class="ltx_ref">1988</a>)</cite>.
+</p>
+</div>
+</section>
+</section>
+<section id="vii" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§10.74(vii) </span>Integrals</h2>
+<div id="vii.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=Bessel%20functions">Bessel functions</a>, <a class="ltx_keyword" href="./search/search?q=computation">computation</a>, <a class="ltx_keyword" href="./search/search?q=integrals">integrals</a>, <a class="ltx_keyword" href="./search/search?q=integrals%20of%20modified%20Bessel%20functions">integrals of modified Bessel functions</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./errata/#V1.0.22.I2.ix1.p1" title="In Other Changes ‣ Version 1.0.22 (March 15, 2019) ‣ Errata" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Erratum (V1.0.22) for  References</span></a>,
+<a href="./errata/#V1.0.5.I2.ix2.p1" title="In Other Changes ‣ Version 1.0.5 (October 1, 2012) ‣ Errata" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Erratum (V1.0.5) for  References</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./10.74.vii" title="" class="ltx_ref">http://dlmf.nist.gov/10.74.vii</a></dd>
+<dt>Addition (effective with 1.0.5):</dt>
+<dd>
+The reference to <cite class="ltx_cite ltx_citemacro_citet">Van Deun and Cools (<a href="./bib/V#bib2767" title="Integrating products of Bessel functions with an additional exponential or rational factor" class="ltx_ref">2008</a>)</cite> has been added at the end of this subsection.
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./10.74#info" title="§10.74 Methods of Computation ‣ Computation ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§10.74</span></a> and
+<a href="./10#info" title="Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.10</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<section id="Px4" class="ltx_paragraph">
+<h3 class="ltx_title ltx_title_paragraph">Hankel Transform</h3>
+<div id="Px4.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=Hankel%20transform">Hankel transform</a>, <a class="ltx_keyword" href="./search/search?q=computation">computation</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./10.74#vii.info" title="§10.74(vii) Integrals ‣ §10.74 Methods of Computation ‣ Computation ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§10.74(vii)</span></a>,
+<a href="./10.74#info" title="§10.74 Methods of Computation ‣ Computation ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§10.74</span></a> and
+<a href="./10#info" title="Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.10</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="Px4.p1" class="ltx_para">
+<p class="ltx_p">See <cite class="ltx_cite ltx_citemacro_citet">Cornille (<a href="./bib/C#bib589" title="Computation of Hankel transforms" class="ltx_ref">1972</a>)</cite>,
+<cite class="ltx_cite ltx_citemacro_citet">Johansen and Sørensen (<a href="./bib/J#bib1173" title="Fast Hankel transforms" class="ltx_ref">1979</a>)</cite>,
+<cite class="ltx_cite ltx_citemacro_citet">Gabutti (<a href="./bib/G#bib851" title="On high precision methods for computing integrals involving Bessel functions" class="ltx_ref">1979</a>)</cite>,
+<cite class="ltx_cite ltx_citemacro_citet">Gabutti and Minetti (<a href="./bib/G#bib853" title="A new application of the discrete Laguerre polynomials in the numerical evaluation of the Hankel transform of a strongly decreasing even function" class="ltx_ref">1981</a>)</cite>,
+<cite class="ltx_cite ltx_citemacro_citet">Candel (<a href="./bib/C#bib412" title="An algorithm for the Fourier-Bessel transform" class="ltx_ref">1981</a>)</cite>,
+<cite class="ltx_cite ltx_citemacro_citet">Wong (<a href="./bib/W#bib2436" title="Quadrature formulas for oscillatory integral transforms" class="ltx_ref">1982</a>)</cite>,
+<cite class="ltx_cite ltx_citemacro_citet">Lund (<a href="./bib/L#bib1504" title="Bessel transforms and rational extrapolation" class="ltx_ref">1985</a>)</cite>,
+<cite class="ltx_cite ltx_citemacro_citet">Piessens and Branders (<a href="./bib/P#bib1884" title="A survey of numerical methods for the computation of Bessel function integrals" class="ltx_ref">1985</a>)</cite>,
+<cite class="ltx_cite ltx_citemacro_citet">Hansen (<a href="./bib/H#bib1036" title="Fast Hankel transform algorithm" class="ltx_ref">1985</a>)</cite>,
+<cite class="ltx_cite ltx_citemacro_citet">Bezvoda<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/B#bib273" title="On numerical evaluation of integrals involving Bessel functions" class="ltx_ref">1986</a>)</cite>,
+<cite class="ltx_cite ltx_citemacro_citet">Puoskari (<a href="./bib/P#bib1909" title="A method for computing Bessel function integrals" class="ltx_ref">1988</a>)</cite>,
+<cite class="ltx_cite ltx_citemacro_citet">Christensen (<a href="./bib/C#bib496" title="Optimized fast Hankel transform filters" class="ltx_ref">1990</a>)</cite>,
+<cite class="ltx_cite ltx_citemacro_citet">Campos (<a href="./bib/C#bib411" title="A quadrature formula for the Hankel transform" class="ltx_ref">1995</a>)</cite>,
+<cite class="ltx_cite ltx_citemacro_citet">Lucas and Stone (<a href="./bib/L#bib1483" title="Evaluating infinite integrals involving Bessel functions of arbitrary order" class="ltx_ref">1995</a>)</cite>,
+<cite class="ltx_cite ltx_citemacro_citet">Barakat and Parshall (<a href="./bib/B#bib188" title="Numerical evaluation of the zero-order Hankel transform using Filon quadrature philosophy" class="ltx_ref">1996</a>)</cite>,
+<cite class="ltx_cite ltx_citemacro_citet">Sidi (<a href="./bib/S#bib2074" title="Computation of infinite integrals involving Bessel functions of arbitrary order by the ¯ D -transformation" class="ltx_ref">1997</a>)</cite>,
+<cite class="ltx_cite ltx_citemacro_citet">Secada (<a href="./bib/S#bib2038" title="Numerical evaluation of the Hankel transform" class="ltx_ref">1999</a>)</cite>.</p>
+</div>
+</section>
+<section id="Px5" class="ltx_paragraph">
+<h3 class="ltx_title ltx_title_paragraph">Fourier–Bessel Expansion</h3>
+<div id="Px5.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=Bessel%20functions">Bessel functions</a>, <a class="ltx_keyword" href="./search/search?q=Fourier%E2%80%93Bessel%20expansion">Fourier–Bessel expansion</a>, <a class="ltx_keyword" href="./search/search?q=computation">computation</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./10.74#vii.info" title="§10.74(vii) Integrals ‣ §10.74 Methods of Computation ‣ Computation ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§10.74(vii)</span></a>,
+<a href="./10.74#info" title="§10.74 Methods of Computation ‣ Computation ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§10.74</span></a> and
+<a href="./10#info" title="Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.10</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="Px5.p1" class="ltx_para">
+<p class="ltx_p">For the computation of the integral (<a href="./10.23#E19" title="(10.23.19) ‣ Fourier–Bessel Expansion ‣ §10.23(iii) Series Expansions of Arbitrary Functions ‣ §10.23 Sums ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">10.23.19</span></a>) see
+<cite class="ltx_cite ltx_citemacro_citet">Piessens and Branders (<a href="./bib/P#bib1882" title="Modified Clenshaw-Curtis method for the computation of Bessel function integrals" class="ltx_ref">1983</a>, <a href="./bib/P#bib1884" title="A survey of numerical methods for the computation of Bessel function integrals" class="ltx_ref">1985</a>)</cite>, <cite class="ltx_cite ltx_citemacro_citet">Lewanowicz (<a href="./bib/L#bib1430" title="Evaluation of Bessel function integrals with algebraic singularities" class="ltx_ref">1991</a>)</cite>, and
+<cite class="ltx_cite ltx_citemacro_citet">Zhileĭkin and Kukarkin (<a href="./bib/Z#bib2495" title="A fast Fourier-Bessel transform algorithm" class="ltx_ref">1995</a>)</cite>.</p>
+</div>
+</section>
+<section id="Px6" class="ltx_paragraph">
+<h3 class="ltx_title ltx_title_paragraph">Spherical Bessel Transform</h3>
+<div id="Px6.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=computation">computation</a>, <a class="ltx_keyword" href="./search/search?q=integrals">integrals</a>, <a class="ltx_keyword" href="./search/search?q=spherical%20Bessel%20functions">spherical Bessel functions</a>, <a class="ltx_keyword" href="./search/search?q=spherical%20Bessel%20transform">spherical Bessel transform</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./10.74#vii.info" title="§10.74(vii) Integrals ‣ §10.74 Methods of Computation ‣ Computation ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§10.74(vii)</span></a>,
+<a href="./10.74#info" title="§10.74 Methods of Computation ‣ Computation ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§10.74</span></a> and
+<a href="./10#info" title="Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.10</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="Px6.p1" class="ltx_para">
+<p class="ltx_p">The <em class="ltx_emph ltx_font_italic">spherical Bessel transform</em> is the Hankel transform
+(<a href="./10.22#E76" title="(10.22.76) ‣ §10.22(v) Hankel Transform ‣ §10.22 Integrals ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">10.22.76</span></a>) in the case when <math class="ltx_Math" altimg="m25.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="\nu" display="inline"><mi href="./10.1#t1.r5" title="complex parameter">ν</mi></math> is half an odd positive integer.</p>
+</div>
+<div id="Px6.p2" class="ltx_para">
+<p class="ltx_p">See <cite class="ltx_cite ltx_citemacro_citet">Lehman<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/L#bib1404" title="Numerical evaluation of integrals containing a spherical Bessel function by product integration" class="ltx_ref">1981</a>)</cite>, <cite class="ltx_cite ltx_citemacro_citet">Puoskari (<a href="./bib/P#bib1909" title="A method for computing Bessel function integrals" class="ltx_ref">1988</a>)</cite>, and
+<cite class="ltx_cite ltx_citemacro_citet">Sharafeddin<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/S#bib2057" title="Numerical evaluation of spherical Bessel transforms via fast Fourier transforms" class="ltx_ref">1992</a>)</cite>.</p>
+</div>
+</section>
+<section id="Px7" class="ltx_paragraph">
+<h3 class="ltx_title ltx_title_paragraph">Kontorovich–Lebedev Transform</h3>
+<div id="Px7.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=Kontorovich%E2%80%93Lebedev%20transform">Kontorovich–Lebedev transform</a>, <a class="ltx_keyword" href="./search/search?q=computation">computation</a>, <a class="ltx_keyword" href="./search/search?q=modified%20Bessel%20functions">modified Bessel functions</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./10.74#vii.info" title="§10.74(vii) Integrals ‣ §10.74 Methods of Computation ‣ Computation ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§10.74(vii)</span></a>,
+<a href="./10.74#info" title="§10.74 Methods of Computation ‣ Computation ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§10.74</span></a> and
+<a href="./10#info" title="Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.10</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="Px7.p1" class="ltx_para">
+<p class="ltx_p">See <cite class="ltx_cite ltx_citemacro_citet">Ehrenmark (<a href="./bib/E#bib732" title="The numerical inversion of two classes of Kontorovich-Lebedev transform by direct quadrature" class="ltx_ref">1995</a>)</cite>.</p>
+</div>
+</section>
+<section id="Px8" class="ltx_paragraph">
+<h3 class="ltx_title ltx_title_paragraph">Products</h3>
+<div id="Px8.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Referenced by:</dt>
+<dd><a href="./errata/#V1.0.22.I2.ix1.p1" title="In Other Changes ‣ Version 1.0.22 (March 15, 2019) ‣ Errata" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Erratum (V1.0.22) for  References</span></a></dd>
+<dt>Addition (effective with 1.0.22):</dt>
+<dd>
+A reference and sentence describing <cite class="ltx_cite ltx_citemacro_citet">Ratnanather<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/R#bib2885" title="Algorithm 935: IIPBF, a MATLAB toolbox for infinite integral of products of two Bessel functions" class="ltx_ref">2014</a>)</cite> has been added in this paragraph.
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./10.74#vii.info" title="§10.74(vii) Integrals ‣ §10.74 Methods of Computation ‣ Computation ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§10.74(vii)</span></a>,
+<a href="./10.74#info" title="§10.74 Methods of Computation ‣ Computation ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§10.74</span></a> and
+<a href="./10#info" title="Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.10</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="Px8.p1" class="ltx_para">
+<p class="ltx_p">For infinite integrals involving products of Bessel functions of the first
+kind, see <cite class="ltx_cite ltx_citemacro_citet">Linz and Kropp (<a href="./bib/L#bib1443" title="A note on the computation of integrals involving products of trigonometric and Bessel functions" class="ltx_ref">1973</a>)</cite>, <cite class="ltx_cite ltx_citemacro_citet">Gabutti (<a href="./bib/G#bib852" title="On the generalization of a method for computing Bessel function integrals" class="ltx_ref">1980</a>)</cite>,
+<cite class="ltx_cite ltx_citemacro_citet">Ikonomou<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/I#bib1124" title="Computation of integrals over the half-line involving products of Bessel functions, with application to microwave transmission lines" class="ltx_ref">1995</a>)</cite>, <cite class="ltx_cite ltx_citemacro_citet">Lucas (<a href="./bib/L#bib1482" title="Evaluating infinite integrals involving products of Bessel functions of arbitrary order" class="ltx_ref">1995</a>)</cite>, and <cite class="ltx_cite ltx_citemacro_citet">Van Deun and Cools (<a href="./bib/V#bib2767" title="Integrating products of Bessel functions with an additional exponential or rational factor" class="ltx_ref">2008</a>)</cite>.
+For infinite integrals involving products of Bessel functions of the first
+and second kinds, see <cite class="ltx_cite ltx_citemacro_citet">Ratnanather<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/R#bib2885" title="Algorithm 935: IIPBF, a MATLAB toolbox for infinite integral of products of two Bessel functions" class="ltx_ref">2014</a>)</cite>.</p>
+</div>
+</section>
+</section>
+<section id="viii" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§10.74(viii) </span>Functions of Imaginary Order</h2>
+<div id="viii.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=computation">computation</a>, <a class="ltx_keyword" href="./search/search?q=modified%20Bessel%20functions">modified Bessel functions</a>, <a class="ltx_keyword" href="./search/search?q=of%20imaginary%20order">of imaginary order</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./10.74.viii" title="" class="ltx_ref">http://dlmf.nist.gov/10.74.viii</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./10.74#info" title="§10.74 Methods of Computation ‣ Computation ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§10.74</span></a> and
+<a href="./10#info" title="Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.10</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="viii.p1" class="ltx_para">
+<p class="ltx_p">For the computation of the functions <math class="ltx_Math" altimg="m26.png" altimg-height="30px" altimg-valign="-7px" altimg-width="55px" alttext="\widetilde{I}_{\nu}\left(x\right)" display="inline"><mrow><msub><mover accent="true"><mi href="./10.45#E2" title="modified Bessel function of the first kind of imaginary order">I</mi><mo href="./10.45#E2" title="modified Bessel function of the first kind of imaginary order">~</mo></mover><mi href="./10.1#t1.r5" title="complex parameter">ν</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./10.1#t1.r3" title="real variable">x</mi><mo>)</mo></mrow></mrow></math> and
+<math class="ltx_Math" altimg="m27.png" altimg-height="30px" altimg-valign="-7px" altimg-width="64px" alttext="\widetilde{K}_{\nu}\left(x\right)" display="inline"><mrow><msub><mover accent="true"><mi href="./10.45#E2" title="modified Bessel function fo the second kind of imaginary order">K</mi><mo href="./10.45#E2" title="modified Bessel function fo the second kind of imaginary order">~</mo></mover><mi href="./10.1#t1.r5" title="complex parameter">ν</mi></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./10.1#t1.r3" title="real variable">x</mi><mo>)</mo></mrow></mrow></math> defined by (<a href="./10.45#E2" title="(10.45.2) ‣ §10.45 Functions of Imaginary Order ‣ Modified Bessel Functions ‣ Chapter 10 Bessel Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">10.45.2</span></a>) see
+<cite class="ltx_cite ltx_citemacro_citet">Temme (<a href="./bib/T#bib2226" title="Steepest descent paths for integrals defining the modified Bessel functions of imaginary order" class="ltx_ref">1994c</a>)</cite> and <cite class="ltx_cite ltx_citemacro_citet">Gil<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/G#bib925" title="Evaluation of the modified Bessel function of the third kind of imaginary orders" class="ltx_ref">2002d</a>, <a href="./bib/G#bib926" title="Computation of the modified Bessel function of the third kind of imaginary orders: Uniform Airy-type asymptotic expansion" class="ltx_ref">2003a</a>, <a href="./bib/G#bib930" title="Computing solutions of the modified Bessel differential equation for imaginary orders and positive arguments" class="ltx_ref">2004b</a>)</cite>.</p>
+</div>
+</section>
+</section>
+</div>
+<div class="ltx_page_footer">
+<div class="ltx_siblings">
+<a href="./10.73" title="In Applications ‣ Chapter 10 Bessel Functions" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">10.73 </span>Physical Applications</span></a><a href="./10.75" title="In Computation ‣ Chapter 10 Bessel Functions" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">10.75 </span>Tables</span></a>
+</div>
+<div class="ltx_footer_links ltx_centering">
+<a href="./about/notices">© 2010–2026 NIST</a> / <a href="./about/notices#S2">Disclaimer</a> / <a href="/cdn-cgi/l/email-protection#cf8b838289e2a9aaaaabadaeaca48fa1a6bcbbe1a8a0b9">Feedback</a>;
+ Version 1.2.7;
+Release date 2026-06-15.</div>
+<span id="pagesettings"></span>
+<div class="ltx_nist_logo"><a href="http://www.nist.gov/"><img src="./style/nistidc.png" width="500" alt="NIST"></a></div>
+<div class="ltx_nist_links ltx_align_right">
+<a href="https://www.nist.gov/privacy-policy">Site Privacy</a> <a href="https://www.nist.gov/oism/accessibility">Accessibility</a> <a href="https://www.nist.gov/privacy">Privacy Program</a> <a href="https://www.nist.gov/oism/copyrights">Copyrights</a> <a href="https://www.commerce.gov/vulnerability-disclosure-policy">Vulnerability Disclosure</a> <a href="https://www.nist.gov/no-fear-act-policy">No Fear Act Policy</a> <a href="https://www.nist.gov/foia">FOIA</a> <a href="https://www.nist.gov/environmental-policy-statement">Environmental Policy</a> <a href="https://www.nist.gov/summary-report-scientific-integrity">Scientific Integrity</a> <a href="https://www.nist.gov/nist-information-quality-standards">Information Quality Standards</a> <a href="https://www.commerce.gov/">Commerce.gov</a> <a href="http://www.science.gov/">Science.gov</a> <a href="http://www.usa.gov/">USA.gov</a>
+</div>
+</div>
+</div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"9ef5b487afff42a68917b2d63593a474"}' crossorigin="anonymous"></script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a30b5546ed6e43c3',t:'MTc4NzY2ODYyOQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
