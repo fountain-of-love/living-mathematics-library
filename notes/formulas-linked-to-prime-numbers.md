@@ -5,7 +5,7 @@ accessed 2026-08-25.
 
 This page is a companion to [Formula Genealogy: From Prime Counting To Zeta, And Back Again](formula-genealogy-zeta-to-primes.md).
 For a repo-wide navigation layer without reproducing formulas, see the
-[Formula Registry](formula-registry.md).
+[Formula Registry](../formula-registry.md).
 The genealogy explains why analytic number theory transforms
 
 $$
@@ -249,10 +249,10 @@ $$
 p_n=
 \sum_{i=0}^{n^2}
 \left(
-1\dotminus
+1\operatorname{monus}
 \left(
-\left(\sum_{j=0}^{i}(j\dotminus1)!^2\bmod j\right)
-\dotminus n
+    \left(\sum_{j=0}^{i}(j\operatorname{monus}1)!^2\bmod j\right)
+    \operatorname{monus} n
 \right)
 \right).
 $$
@@ -260,7 +260,7 @@ $$
 Here
 
 $$
-a\dotminus b=\max(a-b,0).
+a\operatorname{monus} b=\max(a-b,0).
 $$
 
 What kind of formula is this?

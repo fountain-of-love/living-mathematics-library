@@ -30,7 +30,7 @@ being made.
 | Reader need | Start here | Why |
 |---|---|---|
 | I want the conceptual map. | [Mathematical Fundamentals](mathematical-ontology/Mathematical%20fundamentals.md) | Ontology, vocabulary, topology, and core concept entries. |
-| I want to find a formula. | [Formula Registry](notes/formula-registry.md) | Workspace-wide index of formulas and learning routes. |
+| I want to find a formula. | [Formula Registry](formula-registry.md) | Workspace-wide index of formulas and learning routes. |
 | I want one formula explained. | [Dedicated Formula Pages](formulas/README.md) | Focused pages for individual formulas and named functions. |
 | I want to understand relationships between formulas. | [Formula Bonds](formula-bonds/README.md) | Teaching notes about why formulas belong together. |
 | I want the prime/zeta story. | [Formula Genealogy](notes/formula-genealogy-zeta-to-primes.md) | Narrative path from prime counting to zeta and back. |
@@ -67,7 +67,7 @@ These layers should not drift into each other. The reader should always be able 
 ## Main Navigation
 
 - [Mathematical Fundamentals](mathematical-ontology/Mathematical%20fundamentals.md)
-- [Formula Registry](notes/formula-registry.md)
+- [Formula Registry](formula-registry.md)
 - [Formulas](formulas/README.md)
 - [Formula Bonds](formula-bonds/README.md)
 - [Formulas Linked To Prime Numbers](notes/formulas-linked-to-prime-numbers.md)

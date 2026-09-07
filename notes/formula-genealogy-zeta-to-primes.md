@@ -35,7 +35,7 @@ catalogues prime-generating, prime-counting, prime-encoding, and prime-describin
 formulas, using Wikipedia's ["Formula for primes"](https://en.wikipedia.org/wiki/Formula_for_primes)
 as its source spine.
 
-Registry page: [Formula Registry](formula-registry.md).
+Registry page: [Formula Registry](../formula-registry.md).
 
 Related formula-bond notes live in [Formula Bonds](formula-bonds/README.md), starting
 with [Farey Neighbors, Fibonacci Ratios, And The Golden Ratio](formula-bonds/farey-fibonacci-golden-ratio.md).

@@ -5,7 +5,7 @@ also be understood as the horizontal position of a point moving around the unit 
 
 Navigation:
 
-- Formula registry: [Formula Registry](../notes/formula-registry.md)
+- Formula registry: [Formula Registry](../formula-registry.md)
 - Related concept page: [Mathematical Fundamentals](../mathematical-ontology/Mathematical%20fundamentals.md#oscillation)
 - Related bridge: [Euler's formula](../mathematical-ontology/Mathematical%20fundamentals.md#eulers-formula)
 

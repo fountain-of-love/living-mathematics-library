@@ -3,7 +3,7 @@
 This folder contains dedicated pages for individual formulas and named mathematical
 functions.
 
-Use the [Formula Registry](../notes/formula-registry.md) as the main index. The registry
+Use the [Formula Registry](../formula-registry.md) as the main index. The registry
 lists formulas without reproducing them; these pages hold the actual explanations.
 
 ## Pages

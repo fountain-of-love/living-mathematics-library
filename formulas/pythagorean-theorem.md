@@ -13,7 +13,7 @@ the longest side of a right triangle.
 
 Navigation:
 
-- Formula registry: [Formula Registry](../notes/formula-registry.md)
+- Formula registry: [Formula Registry](../formula-registry.md)
 - Related concept page: [Mathematical Fundamentals](../mathematical-ontology/Mathematical%20fundamentals.md#pythagorean-theorem)
 - Related observation: [Mathematical Constants As Process Invariants](constants-as-process-invariants-proposal.md#sqrt2-incommensurability)
 

@@ -31,8 +31,8 @@ the same determinant-1 structure that makes Farey neighbors special.
 Navigation:
 
 - Bond overview: [Formula Bonds](README.md)
-- Formula registry: [Formula Registry](../notes/formula-registry.md)
-- Registry entries: [Fibonacci recurrence](../notes/formula-registry.md#fibonacci-farey-and-rational-approximation), [Farey determinant condition](../notes/formula-registry.md#fibonacci-farey-and-rational-approximation), [Golden-ratio continued fraction](../notes/formula-registry.md#fibonacci-farey-and-rational-approximation)
+- Formula registry: [Formula Registry](../formula-registry.md)
+- Registry entries: [Fibonacci recurrence](../formula-registry.md#fibonacci-farey-and-rational-approximation), [Farey determinant condition](../formula-registry.md#fibonacci-farey-and-rational-approximation), [Golden-ratio continued fraction](../formula-registry.md#fibonacci-farey-and-rational-approximation)
 
 How to read this page:
 

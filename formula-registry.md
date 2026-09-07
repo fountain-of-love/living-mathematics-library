@@ -30,8 +30,8 @@ Companion pages:
 - [Formulas Linked To Prime Numbers](formulas-linked-to-prime-numbers.md)
 - [Dedicated Formula Pages](formulas/README.md)
 - [Formula Bonds](formula-bonds/README.md)
-- [Mathematical Fundamentals](Mathematical%20fundamentals.md)
-- [Repository Stewardship Review](repository-stewardship-review.md)
+- [Mathematical Fundamentals](../mathematical-ontology/Mathematical%20fundamentals.md)
+- [Repository Stewardship Review](repository-stewardship.md)
 
 ---
 
@@ -140,11 +140,11 @@ reader oriented: first see the story, then inspect the individual formulas.
 
 | Entry | Kind | Current source | Suggested page |
 |---|---|---|---|
-| Riemann zeta function | Analytic encoding | [Zeta function](Mathematical%20fundamentals.md#zeta-function) | `formulas/riemann-zeta-function.md` |
+| Riemann zeta function | Analytic encoding | [Zeta function](../mathematical-ontology/Mathematical%20fundamentals.md#zeta-function) | `formulas/riemann-zeta-function.md` |
 | Euler product | Prime encoding | [Euler Product Formula](formulas-linked-to-prime-numbers.md#3-euler-product-formula) | `formulas/euler-product.md` |
 | Logarithmic derivative of zeta | Transform | [Logarithmic Derivative Formula](formulas-linked-to-prime-numbers.md#4-logarithmic-derivative-formula) | `formulas/zeta-logarithmic-derivative.md` |
 | Von Mangoldt function | Prime-power signal | [From -zeta'/zeta To Lambda(n)](formula-genealogy-zeta-to-primes.md#von-mangoldt) | `formulas/von-mangoldt-function.md` |
-| Dirichlet L-function | Arithmetic progression encoding | [Dirichlet L-function](Mathematical%20fundamentals.md#dirichlet-l-function) | `formulas/dirichlet-l-function.md` |
+| Dirichlet L-function | Arithmetic progression encoding | [Dirichlet L-function](../mathematical-ontology/Mathematical%20fundamentals.md#dirichlet-l-function) | `formulas/dirichlet-l-function.md` |
 | Euler totient normalisation | Residue-class normalisation | [History of Prime Distribution Analytics](history-of-prime-distribution-analytics.md) | `formulas/euler-totient-normalisation.md` |
 
 ---
@@ -178,8 +178,8 @@ reader oriented: first see the story, then inspect the individual formulas.
 | Extreme prime gap estimate | Statistical scale | [Prime gaps](history-of-prime-distribution-analytics.md#xi-prime-gaps) | `formulas/extreme-prime-gap.md` |
 | Hardy-Littlewood prime tuple heuristic | Correlation model | [Hardy-Littlewood](history-of-prime-distribution-analytics.md#xii-hardylittlewood) | `formulas/hardy-littlewood-prime-tuple-heuristic.md` |
 | Cramer model | Probabilistic model | [History of Prime Distribution Analytics](history-of-prime-distribution-analytics.md) | `formulas/cramer-prime-model.md` |
-| Singular series | Local correction factor | [Singular series](Mathematical%20fundamentals.md#singular-series) | `formulas/singular-series.md` |
-| Pair correlation | Zero statistics | [Pair correlation](Mathematical%20fundamentals.md#pair-correlation) | `formulas/pair-correlation.md` |
+| Singular series | Local correction factor | [Singular series](../mathematical-ontology/Mathematical%20fundamentals.md#singular-series) | `formulas/singular-series.md` |
+| Pair correlation | Zero statistics | [Pair correlation](../mathematical-ontology/Mathematical%20fundamentals.md#pair-correlation) | `formulas/pair-correlation.md` |
 | Unfolded zero spacing | Normalised statistic | [Zero ordinates to unfolded zero spacings](history-of-prime-distribution-analytics.md#10-zero-ordinates--unfolded-zero-spacings) | `formulas/unfolded-zero-spacing.md` |
 
 ---
@@ -206,10 +206,10 @@ reader oriented: first see the story, then inspect the individual formulas.
 | Golden ratio | Recurrence invariant | [phi: self-similar recurrence](constants-as-process-invariants-proposal.md#phi-self-similar-recurrence) | `formulas/golden-ratio.md` |
 | Pi | Rotational invariant | [pi: circular proportion and rotational closure](constants-as-process-invariants-proposal.md#pi-circular-proportion-and-rotational-closure) | `formulas/pi-rotational-invariant.md` |
 | Euler's number | Continuous-change invariant | [e: self-consistent continuous change](constants-as-process-invariants-proposal.md#e-self-consistent-continuous-change) | `formulas/e-continuous-change-invariant.md` |
-| Natural logarithm | Inverse exponential / growth measure | [Natural logarithm](Mathematical%20fundamentals.md#natural-logarithm) | `formulas/natural-logarithm.md` |
-| Euler's formula | Rotation/complex bridge | [Euler's formula](Mathematical%20fundamentals.md#eulers-formula) | `formulas/eulers-formula.md` |
+| Natural logarithm | Inverse exponential / growth measure | [Natural logarithm](../mathematical-ontology/Mathematical%20fundamentals.md#natural-logarithm) | `formulas/natural-logarithm.md` |
+| Euler's formula | Rotation/complex bridge | [Euler's formula](../mathematical-ontology/Mathematical%20fundamentals.md#eulers-formula) | `formulas/eulers-formula.md` |
 | Euler's identity | Constant unification | [Binet's Formula, Euler's Number, And Number-System Extension](formula-bonds/binet-euler-number-systems.md#8-eulers-formula-extends-the-pattern) | `formulas/eulers-identity.md` |
-| Imaginary unit rotation | Orthogonal transformation | [Multiplication by i](Mathematical%20fundamentals.md#multiplication-by-i) | `formulas/imaginary-unit-rotation.md` |
+| Imaginary unit rotation | Orthogonal transformation | [Multiplication by i](../mathematical-ontology/Mathematical%20fundamentals.md#multiplication-by-i) | `formulas/imaginary-unit-rotation.md` |
 | Square root of 2 | Incommensurability signature | [sqrt(2): incommensurability](constants-as-process-invariants-proposal.md#sqrt2-incommensurability) | `formulas/sqrt2-incommensurability.md` |
 | Square root of one half | Exact radical value | [Square Root Of One Half](formulas/sqrt-one-half.md) | `formulas/sqrt-one-half.md` |
 | Square root of 5 | Fibonacci mode separator | [sqrt(5): separation of Fibonacci modes](constants-as-process-invariants-proposal.md#sqrt5-separation-of-fibonacci-modes) | `formulas/sqrt5-fibonacci-mode-separation.md` |
@@ -251,8 +251,8 @@ reader oriented: first see the story, then inspect the individual formulas.
 
 | Entry | Kind | Current source | Suggested page |
 |---|---|---|---|
-| Circle radius formulas | Elementary geometry | [Radius](Mathematical%20fundamentals.md#radius) | `formulas/circle-radius.md` |
-| Phasor representation | Complex signal encoding | [Phasor](Mathematical%20fundamentals.md#phasor) | `formulas/phasor-representation.md` |
+| Circle radius formulas | Elementary geometry | [Radius](../mathematical-ontology/Mathematical%20fundamentals.md#radius) | `formulas/circle-radius.md` |
+| Phasor representation | Complex signal encoding | [Phasor](../mathematical-ontology/Mathematical%20fundamentals.md#phasor) | `formulas/phasor-representation.md` |
 | Five-coordinate vortex kernel | Coordinate model | [Five-Coordinate Kernel](vortex-discrete-continuous-mapping-proposal.md#five-coordinate-kernel) | `formulas/five-coordinate-vortex-kernel.md` |
 | Continuous dual-helix expression | Continuous geometry | [Continuous Dual-Helix Expression](vortex-discrete-continuous-mapping-proposal.md#continuous-dual-helix-expression) | `formulas/continuous-dual-helix-expression.md` |
 | Discrete dual-helix expression | Discrete geometry | [Discrete Dual-Helix Expression](vortex-discrete-continuous-mapping-proposal.md#discrete-dual-helix-expression) | `formulas/discrete-dual-helix-expression.md` |

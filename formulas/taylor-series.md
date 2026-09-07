@@ -6,7 +6,7 @@ uses the values of the function's derivatives at a single point.
 
 Navigation:
 
-- Formula registry: [Formula Registry](../notes/formula-registry.md)
+- Formula registry: [Formula Registry](../formula-registry.md)
 - Related concept page: [Mathematical Fundamentals](../mathematical-ontology/Mathematical%20fundamentals.md#taylor-series)
 
 ---

@@ -10,7 +10,7 @@ when a limit proves that the two growing quantities stay in the right proportion
 Navigation:
 
 - Formula bonds overview: [Formula Bonds](README.md)
-- Formula registry: [Formula Registry](../notes/formula-registry.md)
+- Formula registry: [Formula Registry](../formula-registry.md)
 - Source page: [Harmonic And Prime Reciprocal Series](../formulas/harmonic-and-prime-reciprocal-series.md)
 - Source page: [Series That Sum To One](../formulas/series-that-sum-to-one.md)
 - Source page: [L'Hopital's Rule](../formulas/lhopitals-rule.md)

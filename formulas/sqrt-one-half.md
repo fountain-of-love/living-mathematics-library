@@ -21,7 +21,7 @@ $$
 
 Navigation:
 
-- Formula registry: [Formula Registry](../notes/formula-registry.md)
+- Formula registry: [Formula Registry](../formula-registry.md)
 - Related observation: [sqrt(2): incommensurability](constants-as-process-invariants-proposal.md#sqrt2-incommensurability)
 - Related formula page: [Pythagorean Theorem](pythagorean-theorem.md)
 

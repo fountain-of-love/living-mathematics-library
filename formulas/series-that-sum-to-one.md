@@ -6,7 +6,7 @@ terms, the signs, or the operation.
 
 Navigation:
 
-- Formula registry: [Formula Registry](../notes/formula-registry.md)
+- Formula registry: [Formula Registry](../formula-registry.md)
 - Related page: [Harmonic And Prime Reciprocal Series](harmonic-and-prime-reciprocal-series.md)
 - Related bond page: [Divergence, Partial Sums, And Indeterminate Quotients](../formula-bonds/divergence-partial-sums-and-indeterminate-quotients.md)
 

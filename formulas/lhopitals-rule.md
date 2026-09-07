@@ -13,7 +13,7 @@ It works by comparing the rates of change of the numerator and denominator.
 
 Navigation:
 
-- Formula registry: [Formula Registry](../notes/formula-registry.md)
+- Formula registry: [Formula Registry](../formula-registry.md)
 - Related concept page: [Mathematical Fundamentals](../mathematical-ontology/Mathematical%20fundamentals.md#indeterminate-form)
 - Related bond page: [Divergence, Partial Sums, And Indeterminate Quotients](../formula-bonds/divergence-partial-sums-and-indeterminate-quotients.md)
 

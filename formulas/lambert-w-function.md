@@ -15,7 +15,7 @@ This page focuses especially on the second real branch, usually written as
 
 Navigation:
 
-- Formula registry: [Formula Registry](../notes/formula-registry.md)
+- Formula registry: [Formula Registry](../formula-registry.md)
 - Related concept page: [Binet's Formula, Euler's Number, And Number-System Extension](../formula-bonds/binet-euler-number-systems.md)
 - Related source note: [Omega as process invariant](constants-as-process-invariants-proposal.md#additional-relevant-signatures)
 

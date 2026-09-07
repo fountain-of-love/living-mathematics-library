@@ -4,7 +4,7 @@ This folder collects focused pages about how mathematical formulas connect to ea
 other. A formula bond is a guided explanation of why two mathematical ideas keep
 appearing together.
 
-Repo-wide formula index: [Formula Registry](../notes/formula-registry.md).
+Repo-wide formula index: [Formula Registry](../formula-registry.md).
 
 Each page treats one "bond": not only two formulas sitting near each other, but the
 specific invariant, transformation, recurrence, or representation that makes the
@@ -17,7 +17,7 @@ The pages are written as teaching notes. Each one should help the reader notice:
 - which formula is doing the connecting work;
 - what changes in the reader's understanding after the bond is seen.
 
-Use the [Formula Registry](../notes/formula-registry.md) when you want a repo-wide index of
+Use the [Formula Registry](../formula-registry.md) when you want a repo-wide index of
 individual formulas. Use this folder when you want the story between formulas.
 
 ## Page Pattern

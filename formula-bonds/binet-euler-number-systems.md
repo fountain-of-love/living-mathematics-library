@@ -30,8 +30,8 @@ rotation.
 Navigation:
 
 - Bond overview: [Formula Bonds](README.md)
-- Formula registry: [Formula Registry](../notes/formula-registry.md)
-- Registry entries: [Binet's formula](../notes/formula-registry.md#fibonacci-farey-and-rational-approximation), [Euler's number](../notes/formula-registry.md#constants-and-process-invariants), [Euler's formula](../notes/formula-registry.md#constants-and-process-invariants), [Euler's identity](../notes/formula-registry.md#constants-and-process-invariants)
+- Formula registry: [Formula Registry](../formula-registry.md)
+- Registry entries: [Binet's formula](../formula-registry.md#fibonacci-farey-and-rational-approximation), [Euler's number](../formula-registry.md#constants-and-process-invariants), [Euler's formula](../formula-registry.md#constants-and-process-invariants), [Euler's identity](../formula-registry.md#constants-and-process-invariants)
 
 How to read this page:
 
