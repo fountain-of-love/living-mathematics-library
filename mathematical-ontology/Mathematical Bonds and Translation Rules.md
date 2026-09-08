@@ -10,42 +10,42 @@ $$
 A \xrightarrow{\text{bond}} B,
 $$
 
-where the bond specifies the operation, observation, or change of representation that turns \(A\) into \(B\).
+where the bond specifies the operation, observation, or change of representation that turns $A$ into $B$.
 
 ## Bond Families
 
 | # | Bond | Core Idea | Generic Form | Simple Example |
 |---:|---|---|---|---|
-| 1 | Identity / invariance | Transformation leaves something unchanged | \(T(x)=x\) | \(\frac{d}{dx}e^x=e^x\) |
-| 2 | Scale | Same structure, different magnitude | \(x\mapsto ax\) | \(r\mapsto 2r\) |
-| 3 | Ratio / proportion | Two quantities lock into a stable relation | \(a/b=c\) | \(C/D=\pi\) |
-| 4 | Recursion | Output becomes next input | \(x_{n+1}=F(x_n)\) | Fibonacci ratios \(\to\varphi\) |
-| 5 | Composition | Several operations form a new operation | \(F\circ G\) | repeated multiplication |
-| 6 | Inverse | One transformation undoes another | \(F^{-1}(F(x))=x\) | \(\log(e^x)=x\) |
-| 7 | Reflection / sign | Orientation is reversed | \(x\mapsto -x\) | \(e^{i\pi}=-1\) |
-| 8 | Rotation / phase | Direction changes without changing magnitude | \(z\mapsto e^{i\theta}z\) | \(i=e^{i\pi/2}\) |
-| 9 | Projection | Higher-dimensional state becomes lower-dimensional observation | \(P:X\to Y\) | \(\Re(e^{it})=\cos t\) |
-| 10 | Lift / embedding | Lower-dimensional object is represented in richer space | \(x\mapsto\Phi(x)\) | \(\cos t\mapsto e^{it}\) |
-| 11 | Coordinate translation | Same object expressed in another coordinate system | \(x\leftrightarrow u(x)\) | \(x\leftrightarrow\log x\) |
-| 12 | Log-exponential | Multiplication becomes addition | \(\log(ab)=\log a+\log b\) | doubling \(\leftrightarrow \ln2\) |
-| 13 | Discrete-continuous | Iteration becomes smooth evolution | \(n\leftrightarrow t\) | \((1+\frac1n)^n\to e\) |
-| 14 | Derivative / rate | State becomes instantaneous change | \(f\mapsto f'\) | \(e^x\mapsto e^x\) |
-| 15 | Integral / accumulation | Local contributions become global state | \(f\mapsto\int f\) | velocity \(\to\) distance |
-| 16 | Limit / asymptotic | Finite process reveals infinite-scale value | \(a_n\to L\) | Fibonacci ratios \(\to\varphi\) |
-| 17 | Normalization | Remove arbitrary scale to expose structure | \(x\mapsto x/\|x\|\) | vector \(\to\) unit vector |
-| 18 | Symmetry | Transformation preserves governing structure | \(T(S)=S\) | circle under rotation |
-| 19 | Duality | Different descriptions encode the same structure | \(A\leftrightarrow B\) | position \(\leftrightarrow\) frequency |
-| 20 | Conjugacy | Same dynamics after changing representation | \(G=H^{-1}FH\) | equivalent dynamical systems |
-| 21 | Spectral decomposition | Whole behavior becomes component modes | \(f\mapsto\{\omega_k\}\) | wave \(\to\) Fourier spectrum |
-| 22 | Interference | Components combine constructively or destructively | \(\sum A_ke^{i\theta_k}\) | waves cancel at a zero |
-| 23 | Resonance | Frequencies lock into a ratio | \(\omega_1:\omega_2=p:q\) | harmonic ratios |
-| 24 | Orthogonal composition | Independent components combine geometrically | \(r^2=x^2+y^2\) | \((1,1)\to\sqrt2\) |
-| 25 | Boundary / zero-crossing | Observation reaches a special constraint surface | \(F(x)=0\) | \(\cos t=0\) |
-| 26 | Fixed point | Recursive operation returns the same state | \(F(x)=x\) | \(\varphi=1+1/\varphi\) |
-| 27 | Periodicity / closure | Repeated evolution returns to origin | \(F^n(x)=x\) | \(e^{i2\pi}=1\) |
-| 28 | Bifurcation | Qualitative structure changes at a parameter threshold | \(F_\lambda\) | Feigenbaum scaling |
-| 29 | Conservation | Quantity survives evolution | \(I(Tx)=I(x)\) | \(|e^{it}|=1\) |
-| 30 | Correction / residue | Mismatch between descriptions tends to a constant | \(A_n-B_n\to c\) | \(H_n-\ln n\to\gamma\) |
+| 1 | Identity / invariance | Transformation leaves<br>something unchanged | $T(x)=x$ | $\frac{d}{dx}e^x=e^x$ |
+| 2 | Scale | Same structure,<br>different magnitude | $x\mapsto ax$ | $r\mapsto 2r$ |
+| 3 | Ratio / proportion | Two quantities lock into<br>a stable relation | $a/b=c$ | $C/D=\pi$ |
+| 4 | Recursion | Output becomes<br>next input | $x_{n+1}=F(x_n)$ | Fibonacci ratios $\to\varphi$ |
+| 5 | Composition | Several operations form a new operation | $F\circ G$ | repeated multiplication |
+| 6 | Inverse | One transformation undoes another | $F^{-1}(F(x))=x$ | $\log(e^x)=x$ |
+| 7 | Reflection / sign | Orientation is reversed | $x\mapsto -x$ | $e^{i\pi}=-1$ |
+| 8 | Rotation / phase | Direction changes without<br>changing magnitude | $z\mapsto e^{i\theta}z$ | $i=e^{i\pi/2}$ |
+| 9 | Projection | Higher-dimensional state becomes<br>lower-dimensional observation | $P:X\to Y$ | $\Re(e^{it})=\cos t$ |
+| 10 | Lift / embedding | Lower-dimensional object is<br>represented in richer space | $x\mapsto\Phi(x)$ | $\cos t\mapsto e^{it}$ |
+| 11 | Coordinate translation | Same object expressed in another<br>coordinate system | $x\leftrightarrow u(x)$ | $x\leftrightarrow\log x$ |
+| 12 | Log-exponential | Multiplication becomes addition | $\log(ab)=\log a+\log b$ | doubling $\leftrightarrow \ln2$ |
+| 13 | Discrete-continuous | Iteration becomes smooth<br>evolution | $n\leftrightarrow t$ | $(1+\frac1n)^n\to e$ |
+| 14 | Derivative / rate | State becomes instantaneous<br>change | $f\mapsto f'$ | $e^x\mapsto e^x$ |
+| 15 | Integral / accumulation | Local contributions become global<br>state | $f\mapsto\int f$ | velocity $\to$ distance |
+| 16 | Limit / asymptotic | Finite process reveals<br>infinite-scale value | $a_n\to L$ | Fibonacci ratios $\to\varphi$ |
+| 17 | Normalization | Remove arbitrary scale to<br>expose structure | $x\mapsto x/\|x\|$ | vector $\to$ unit vector |
+| 18 | Symmetry | Transformation preserves<br>governing structure | $T(S)=S$ | circle under rotation |
+| 19 | Duality | Different descriptions encode<br>the same structure | $A\leftrightarrow B$ | position $\leftrightarrow$ frequency |
+| 20 | Conjugacy | Same dynamics after changing<br>representation | $G=H^{-1}FH$ | equivalent dynamical systems |
+| 21 | Spectral decomposition | Whole behavior becomes<br>component modes | $f\mapsto\{\omega_k\}$ | wave $\to$ Fourier spectrum |
+| 22 | Interference | Components combine constructively<br>or destructively | $\sum A_ke^{i\theta_k}$ | waves cancel at a zero |
+| 23 | Resonance | Frequencies lock into a ratio | $\omega_1:\omega_2=p:q$ | harmonic ratios |
+| 24 | Orthogonal composition | Independent components combine<br>geometrically | $r^2=x^2+y^2$ | $(1,1)\to\sqrt2$ |
+| 25 | Boundary / zero-crossing | Observation reaches a special<br>constraint surface | $F(x)=0$ | $\cos t=0$ |
+| 26 | Fixed point | Recursive operation returns<br>the same state | $F(x)=x$ | $\varphi=1+1/\varphi$ |
+| 27 | Periodicity / closure | Repeated evolution returns<br>to origin | $F^n(x)=x$ | $e^{i2\pi}=1$ |
+| 28 | Bifurcation | Qualitative structure changes at<br>a parameter threshold | $F_\lambda$ | Feigenbaum scaling |
+| 29 | Conservation | Quantity survives evolution | $I(Tx)=I(x)$ | $|e^{it}|=1$ |
+| 30 | Correction / residue | Mismatch between descriptions tends<br>to a constant | $A_n-B_n\to c$ | $H_n-\ln n\to\gamma$ |
 
 ## Six Major Classes
 
@@ -189,7 +189,7 @@ $$
 i=e^{i\pi/2}.
 $$
 
-Here \(i\), \(e\), and \(\pi\) are directly bonded.
+Here $i$, $e$, and $\pi$ are directly bonded.
 
 ### Transformational Bond
 
@@ -199,7 +199,7 @@ $$
 \left(1-\frac1n\right)^n\to e^{-1}.
 $$
 
-The constant \(e^{-1}\) is the continuous-limit representation of a discrete recursive depletion process.
+The constant $e^{-1}$ is the continuous-limit representation of a discrete recursive depletion process.
 
 ### Structural Bond
 
@@ -209,7 +209,7 @@ $$
 e^{i\pi}+1=0.
 $$
 
-The constants \(e\), \(\pi\), \(i\), \(1\), and \(0\) meet because exponential evolution, rotation, and algebraic opposition are compatible.
+The constants $e$, $\pi$, $i$, $1$, and $0$ meet because exponential evolution, rotation, and algebraic opposition are compatible.
 
 ### Observational Bond
 
@@ -257,9 +257,9 @@ A structural ontology of mathematics can distinguish three object types:
 
 | Object Type | Examples | Role |
 |---|---|---|
-| Elements | \(\pi,e,\varphi,\sqrt2,\gamma,\delta,\ldots\) | Natural constants and stable invariants |
-| Bonds | rotate, scale, recurse, project, normalize, limit, invert | Primitive transformations |
-| Observations | zero, maximum, minimum, period, frequency, ratio, residue | Events visible through a lens |
+| Elements | $\pi,e,\varphi,\sqrt2,\gamma,\delta,\ldots$ | Natural constants and<br>stable invariants |
+| Bonds | rotate, scale, recurse,<br>project, normalize, limit, invert | Primitive transformations |
+| Observations | zero, maximum, minimum,<br>period, frequency, ratio, residue | Events visible through a lens |
 
 The general grammar is
 

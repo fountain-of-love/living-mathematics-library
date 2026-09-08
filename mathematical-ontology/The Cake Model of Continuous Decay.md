@@ -1,98 +1,271 @@
 # The Cake Model of Continuous Decay
 
-## Core Idea
+## The cake rule
 
-Negative compound interest describes repeated proportional removal. Each removal is taken from the current remaining quantity, not from the original quantity. The result is a recursive process: every step acts on the output of the previous step.
+Imagine one cake whose initial size is normalized to $1$. We observe it over one unit of time and divide that time into $n$ equal rounds.
 
-## Recursive Removal
-
-Let the initial quantity be
+At every round, remove the fraction $1/n$ of the cake **currently on the table**. The rule always acts on what survived the preceding rounds:
 
 $$
-C_0 = 1.
+\text{next remainder}
+=
+\text{current remainder}
+-\frac1n(\text{current remainder}).
 $$
 
-Perform \(n\) steps. At each step, remove the fraction \(1/n\) of what currently remains. The remaining quantity is multiplied each time by
+Equivalently,
 
 $$
-1 - \frac{1}{n}.
+\text{next remainder}
+=
+\left(1-\frac1n\right)
+\text{current remainder}.
 $$
 
-After \(k\) removals,
+The cake is therefore not divided in advance into $n$ equal pieces of the original whole. Every new removal is a smaller piece because it is measured from the cake that remains at that moment. This recursive rule is the entire model.
+
+## The discrete recursion
+
+Let $C_{n,k}$ denote the fraction of cake remaining after $k$ of the $n$ rounds. Initially,
 
 $$
-C_k = \left(1-\frac{1}{n}\right)^k.
+C_{n,0}=1.
 $$
 
-After exactly \(n\) removals,
+The rule gives the recursion
 
 $$
-C_n = \left(1-\frac{1}{n}\right)^n.
+\boxed{
+C_{n,k+1}
+=
+\left(1-\frac1n\right)C_{n,k}.}
 $$
 
-The total removed quantity is therefore
+Applying it repeatedly yields
 
 $$
-R_n = 1 - \left(1-\frac{1}{n}\right)^n.
+C_{n,k}
+=
+\left(1-\frac1n\right)^k.
 $$
 
-## Example: Four Removals
-
-For \(n=4\), each step removes one quarter of the current remainder:
+After all $n$ rounds, the surviving fraction is
 
 $$
-1 \rightarrow \frac{3}{4} \rightarrow \left(\frac{3}{4}\right)^2
-\rightarrow \left(\frac{3}{4}\right)^3
-\rightarrow \left(\frac{3}{4}\right)^4.
+C_{n,n}
+=
+\left(1-\frac1n\right)^n,
 $$
+
+and the fraction removed is
+
+$$
+R_n
+=
+1-C_{n,n}
+=
+1-\left(1-\frac1n\right)^n.
+$$
+
+## Example: four rounds
+
+Take $n=4$. At each round, remove one quarter of the cake then present. The cake evolves as
+
+$$
+1
+\longrightarrow
+\frac34
+\longrightarrow
+\left(\frac34\right)^2
+\longrightarrow
+\left(\frac34\right)^3
+\longrightarrow
+\left(\frac34\right)^4.
+$$
+
+The successive amounts removed are
+
+$$
+\frac14,
+\qquad
+\frac14\left(\frac34\right),
+\qquad
+\frac14\left(\frac34\right)^2,
+\qquad
+\frac14\left(\frac34\right)^3.
+$$
+
+Each piece is one quarter of the remainder at that stage, so the pieces become progressively smaller.
 
 After four rounds,
 
 $$
-C_4 = \left(\frac{3}{4}\right)^4 = \frac{81}{256} \approx 0.3164.
+C_{4,4}
+=
+\left(\frac34\right)^4
+=
+\frac{81}{256}
+\approx0.3164.
 $$
 
-Thus the removed fraction is
+The removed fraction is therefore
 
 $$
-1 - 0.3164 = 0.6836,
+R_4
+=
+1-\frac{81}{256}
+=
+\frac{175}{256}
+\approx0.6836.
 $$
 
-or about \(68.36\%\) of the original quantity.
+About $31.64\%$ of the cake remains and $68.36\%$ has been removed.
 
-## Continuous Limit
+## Putting time into the model
 
-The limiting survival fraction is
-
-$$
-\lim_{n\to\infty}\left(1-\frac{1}{n}\right)^n = e^{-1}.
-$$
-
-Hence
+Each round lasts
 
 $$
-\lim_{n\to\infty} R_n = 1-e^{-1} \approx 0.63212.
+\Delta t=\frac1n.
 $$
 
-In the limit of many increasingly small proportional removals, approximately \(63.2\%\) is removed and approximately \(36.8\%\) remains.
-
-## Contrast: Removal From the Original Quantity
-
-If each step removes \(1/n\) of the original quantity, rather than \(1/n\) of the current remainder, then the process is not recursive:
+After $k$ rounds, the elapsed time is
 
 $$
-1 - n\frac{1}{n} = 0.
+t_k=\frac{k}{n}.
 $$
 
-After \(n\) such removals, the entire original quantity is removed.
+Since $k=nt_k$, the remaining fraction can be written as
 
-## Course Note
+$$
+C_n(t_k)
+=
+\left(1-\frac1n\right)^{nt_k}.
+$$
 
-The distinction is structural:
+This notation reveals the continuous question: what happens at a fixed time $t$ when the rounds become increasingly short and increasingly numerous?
 
-| Process | Rule | Result after \(n\) steps |
-|---|---|---|
-| Linear removal | Remove a fixed fraction of the original quantity | \(0\) remains |
-| Recursive removal | Remove a fixed fraction of the current quantity | \(\left(1-\frac{1}{n}\right)^n\) remains |
+## From the recursion to a differential equation
 
-Negative compound interest belongs to the second case. Its limiting form is governed by \(e^{-1}\), the natural residual scale of continuous proportional decay.
+The change during one round is
+
+$$
+C_{n,k+1}-C_{n,k}
+=
+-\frac1nC_{n,k}.
+$$
+
+Divide by the duration $\Delta t=1/n$:
+
+$$
+\frac{C_{n,k+1}-C_{n,k}}{1/n}
+=
+-C_{n,k}.
+$$
+
+The left-hand side is the discrete rate of change. As $n\to\infty$, the time step tends to zero, and the recursion approaches
+
+$$
+\boxed{
+\frac{dC}{dt}=-C(t),
+\qquad C(0)=1.}
+$$
+
+The rate of removal is proportional to the amount of cake currently remaining. The solution is
+
+$$
+\boxed{C(t)=e^{-t}.}
+$$
+
+The constant $e$ appears because exponential decay is the continuous process whose instantaneous rate is always proportional to its current state.
+
+## The one-unit-time limit
+
+At $t=1$,
+
+$$
+C(1)=e^{-1}.
+$$
+
+Equivalently,
+
+$$
+\lim_{n\to\infty}
+\left(1-\frac1n\right)^n
+=
+e^{-1}
+\approx0.36788.
+$$
+
+Thus, after one unit of continuous proportional decay,
+
+$$
+\boxed{
+\begin{aligned}
+\text{fraction remaining}
+&=e^{-1}\approx36.8\%,\\
+\text{fraction removed}
+&=1-e^{-1}\approx63.2\%.
+\end{aligned}}
+$$
+
+The four-round example removes about $68.36\%$. Increasing the number of rounds while decreasing the fraction removed per round moves the result toward $63.2\%$.
+
+## The general decay rate
+
+Suppose the cake is removed at proportional rate $\lambda>0$. For $n>\lambda$, divide time into $n$ rounds and multiply the remainder at each round by
+
+$$
+1-\frac{\lambda}{n}.
+$$
+
+At time $t=k/n$,
+
+$$
+C_{n,\lambda}(t)
+=
+\left(1-\frac{\lambda}{n}\right)^{nt}.
+$$
+
+For fixed $\lambda$ and $t$, letting $n\to\infty$ gives
+
+$$
+\boxed{
+C_\lambda(t)=e^{-\lambda t}.}
+$$
+
+It satisfies
+
+$$
+\frac{dC_\lambda}{dt}
+=
+-\lambda C_\lambda(t).
+$$
+
+The parameter $\lambda$ controls the rate, while the recursive structure remains unchanged.
+
+## What the metaphor captures
+
+The cake model makes four structural features visible:
+
+1. **State dependence:** every removal is determined by the current remainder.
+2. **Recursion:** each state becomes the input to the next step.
+3. **Proportionality:** a smaller remainder produces a smaller subsequent removal.
+4. **Continuous limit:** increasingly fine recursive steps converge to exponential decay.
+
+The complete progression is
+
+$$
+\boxed{
+\text{current cake}
+\longrightarrow
+\text{proportional removal}
+\longrightarrow
+\text{new current cake}
+\longrightarrow
+\cdots
+\longrightarrow
+e^{-\lambda t}.}
+$$
+
+Throughout the model, the cake means the amount currently present. That single state-dependent rule generates the full exponential decay law.

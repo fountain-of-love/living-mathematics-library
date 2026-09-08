@@ -44,20 +44,27 @@ The Seed Vault keeps knowledge readable and reviewable. MML aims to make governe
 
 ## Table of Contents
 
+The common authoring and graph contract is defined in the [Knowledge Node Spec](./docs/knowledge-node-spec.md), with a deeper legacy/general form in the [Universal Mathematical Knowledge-Node Schema](./docs/universal-mathematical-knowledge-node-schema.md). These documents provide shared identity, provenance, epistemic, relation, and governance fields while keeping schema terms separate from mathematical entities.
+
+The compact terminology interface is defined in the [Mathematical Dictionary](./docs/mathematical-dictionary.md). It establishes shared meanings, canonical terms, relationship labels, stable links, and outward paths toward deeper material without turning each entry into a full textbook treatment.
+
+The working page contracts are split into focused documents: [Concept](./docs/mathematical-concept-spec.md), [Formula](./docs/mathematical-formula-spec.md), [Theorem](./docs/mathematical-theorem-spec.md), [Conjecture](./docs/mathematical-conjecture-spec.md), [Proof](./docs/mathematical-proof-spec.md), [Experiment](./docs/mathematical-experiment-spec.md), [Process](./docs/mathematical-process.md), [Proof Run](./docs/mathematical-proof-run.md), [Proof Run 5](./docs/proof-run-5.md), and [Worklist](./docs/mathematical-worklist.md). These documents keep the ontology usable in practice while the universal schema remains the deeper data model.
+
 | Order | Module | One-Sentence Definition |
 |---:|---|---|
-| 1 | [The Cake Model of Continuous Decay](./The%20Cake%20Model%20of%20Continuous%20Decay.md) | Introduces recursive proportional removal as a concrete model for continuous decay and the emergence of \(e^{-1}\). |
-| 2 | [Asymptotic Normalization and Continuous Change](./Asymptotic%20Normalization%20and%20Continuous%20Change.md) | Explains how many small relative changes converge to exponential behavior governed by \(e\). |
-| 3 | [How Rotation Becomes a Wave](./How%20Rotation%20Becomes%20a%20Wave.md) | Shows how circular motion becomes sine and cosine when observed through coordinate projections. |
-| 4 | [Natural Constants as Fingerprints of Structure](./Natural%20Constants%20as%20Fingerprints%20of%20Structure.md) | Presents natural constants as stable values forced by operations, constraints, and self-consistency. |
-| 5 | [A Periodic Table of Mathematical Constants](./A%20Periodic%20Table%20of%20Mathematical%20Constants.md) | Organizes constants by the primitive relationships that generate them, such as rotation, recursion, scale, and residue. |
-| 6 | [Mathematical Bonds and Translation Rules](./Mathematical%20Bonds%20and%20Translation%20Rules.md) | Classifies the transformations that connect mathematical structures, representations, observations, and invariants. |
-| 7 | [The Periodic Graph of Mathematical Structure](./The%20Periodic%20Graph%20of%20Mathematical%20Structure.md) | Defines the ontology as a typed graph linking structures, operations, dynamics, representations, observations, events, and invariants. |
-| 8 | [A Translation Atlas for Mathematical Objects](./A%20Translation%20Atlas%20for%20Mathematical%20Objects.md) | Extends the ontology with objects, operators, metrics, compatibility rules, and information-preserving translations. |
-| 9 | [When Observations Hide Structure](./When%20Observations%20Hide%20Structure.md) | Distinguishes complete translation from normalization, quotienting, projection, and induced observational structure. |
-| 10 | [Equivalence and Gauge in Mathematical Translation](./Equivalence%20and%20Gauge%20in%20Mathematical%20Translation.md) | Formalizes equivalence classes, gauge freedom, commutativity, observability, identifiability, and aliasing. |
-| 11 | [The Mathematical Compass of Orientation and Dimension](./The%20Mathematical%20Compass%20of%20Orientation%20and%20Dimension.md) | Adds orientation, chirality, reference frames, dimension, networks, and computational separation to the ontology. |
+| 1 | [Mathematical Fundamentals](./Mathematical%20fundamentals.md) | Broad concept map, vocabulary, topology, and glossary for the workspace. |
+| 2 | [The Cake Model of Continuous Decay](./The%20Cake%20Model%20of%20Continuous%20Decay.md) | Introduces recursive proportional removal as a concrete model for continuous decay and the emergence of \(e^{-1}\). |
+| 3 | [Asymptotic Normalization and Continuous Change](./Asymptotic%20Normalization%20and%20Continuous%20Change.md) | Explains how many small relative changes converge to exponential behavior governed by \(e\). |
+| 4 | [How Rotation Becomes a Wave](./How%20Rotation%20Becomes%20a%20Wave.md) | Shows how circular motion becomes sine and cosine when observed through coordinate projections. |
+| 5 | [Natural Constants as Fingerprints of Structure](./Natural%20Constants%20as%20Fingerprints%20of%20Structure.md) | Presents natural constants as stable values forced by operations, constraints, and self-consistency. |
+| 6 | [A Periodic Table of Mathematical Constants](./A%20Periodic%20Table%20of%20Mathematical%20Constants.md) | Organizes constants by the primitive relationships that generate them, such as rotation, recursion, scale, and residue. |
+| 7 | [Mathematical Bonds and Translation Rules](./Mathematical%20Bonds%20and%20Translation%20Rules.md) | Classifies the transformations that connect mathematical structures, representations, observations, and invariants. |
+| 8 | [The Periodic Graph of Mathematical Structure](./The%20Periodic%20Graph%20of%20Mathematical%20Structure.md) | Defines the ontology as a typed graph linking structures, operations, dynamics, representations, observations, events, and invariants. |
+| 9 | [A Translation Atlas for Mathematical Objects](./A%20Translation%20Atlas%20for%20Mathematical%20Objects.md) | Extends the ontology with objects, operators, metrics, compatibility rules, and information-preserving translations. |
+| 10 | [When Observations Hide Structure](./When%20Observations%20Hide%20Structure.md) | Distinguishes complete translation from normalization, quotienting, projection, and induced observational structure. |
+| 11 | [Equivalence and Gauge in Mathematical Translation](./Equivalence%20and%20Gauge%20in%20Mathematical%20Translation.md) | Formalizes equivalence classes, gauge freedom, commutativity, observability, identifiability, and aliasing. |
+| 12 | [The Mathematical Compass of Orientation and Dimension](./The%20Mathematical%20Compass%20of%20Orientation%20and%20Dimension.md) | Adds orientation, chirality, reference frames, dimension, networks, and computational separation to the ontology. |
 
 ## Course Path
 
-The sequence begins with concrete examples of decay and rotation, then develops constants, bonds, graph structure, translation rules, observation theory, and finally orientation and dimensional bookkeeping.
+The sequence begins with the broad fundamentals map, continues through concrete examples of decay and rotation, then develops constants, bonds, graph structure, translation rules, observation theory, and finally orientation and dimensional bookkeeping.
