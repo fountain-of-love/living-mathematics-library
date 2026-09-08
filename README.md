@@ -25,6 +25,81 @@ move from an ordinary image to a formal object, then sideways into related formu
 historical context, and verified reference material without losing the type of claim
 being made.
 
+## Current Architecture
+
+The Living Mathematics Library is currently built around a formal, machine-readable
+**math-node/0.1** knowledge model.
+
+The repository is no longer only a collection of mathematical Markdown pages. Each
+canonical knowledge object is intended to be representable as a typed mathematical
+node with:
+
+- a stable identity;
+- a declared node type;
+- epistemic status;
+- governance/page maturity;
+- typed semantic relationships;
+- structured provenance;
+- type-specific attributes;
+- validation invariants.
+
+The human-readable Markdown layer and the machine-readable knowledge layer are
+designed to coexist:
+
+```text
+Markdown
+   ↓
+math-node/0.1 frontmatter + content
+   ↓
+validated node records
+   ↓
+knowledge graph / indexes
+   ↓
+AI retrieval, navigation, visualization
+```
+
+### Canonical Specification
+
+The normative specification currently lives in:
+
+- [Knowledge Node Spec](mathematical-ontology/docs/knowledge-node-spec.md)
+- [Universal Mathematical Knowledge-Node Schema](mathematical-ontology/docs/universal-mathematical-knowledge-node-schema.md)
+- [Relation Vocabulary](mathematical-ontology/docs/relation-vocabulary.md)
+
+The current schema version is **math-node/0.1**.
+
+### Architectural Status
+
+Implemented:
+
+- universal mathematical knowledge-node envelope;
+- stable node identities;
+- typed node classes;
+- typed semantic relations with relation categories and bond types;
+- epistemic status;
+- governance/page maturity;
+- provenance model;
+- formula, theorem, conjecture, proof, and experiment contracts;
+- proof and counterexample structures;
+- analogy constraints;
+- validation invariants;
+- one Euler's formula vertical slice with concepts, formula pages, teaching page,
+  example, source nodes, and graph record.
+
+In progress:
+
+- migrating existing corpus material into the canonical node model;
+- automated validation;
+- graph extraction and indexing;
+- completing high-priority canonical formula and concept pages;
+- selecting precise source statements for canonical formulas;
+- completing the controlled bond vocabulary within each relation category.
+
+### Design Principle
+
+The schema is the contract. Markdown explains the mathematics; structured metadata
+makes the mathematical knowledge explicit, linkable, auditable, and machine-readable.
+
 ## Where To Start
 
 | Reader need | Start here | Why |
@@ -33,9 +108,11 @@ being made.
 | I want to find a formula. | [Formula Registry](formula-registry.md) | Workspace-wide index of formulas and learning routes. |
 | I want one formula explained. | [Dedicated Formula Pages](formulas/README.md) | Focused pages for individual formulas and named functions. |
 | I want to understand relationships between formulas. | [Formula Bonds](formula-bonds/README.md) | Teaching notes about why formulas belong together. |
-| I want the prime/zeta story. | [Formula Genealogy](notes/formula-genealogy-zeta-to-primes.md) | Narrative path from prime counting to zeta and back. |
-| I want the historical prime-distribution account. | [History of Prime Distribution Analytics](notes/history-of-prime-distribution-analytics.md) | Historical spine for primes, zeta, zeros, and statistical structure. |
+| I want the prime/zeta story. | [Formula Genealogy](notes/03-03-formula-genealogy-zeta-to-primes.md) | Narrative path from prime counting to zeta and back. |
+| I want to review emerging observations. | [Brain-Dump Observation Index](brain-dumps/README.md) | Context-first registry of raw observations, translations, status, scope, and promotion readiness. |
+| I want the historical prime-distribution account. | [History of Prime Distribution Analytics](notes/01-03-history-of-prime-distribution-analytics.md) | Historical spine for primes, zeta, zeros, and statistical structure. |
 | I want reference material. | [DLMF Documentation Index](dlmf/index.md) | Local map of the NIST Digital Library of Mathematical Functions notes. |
+| I want the Living Mathematics Library starter contract. | [Living Mathematics Library](living-mathematics-library/knowledge-node-spec.md) | Minimal dictionary, node spec, process, and proof-run gate before scaling. |
 
 ## Reading Principle
 
@@ -70,8 +147,9 @@ These layers should not drift into each other. The reader should always be able 
 - [Formula Registry](formula-registry.md)
 - [Formulas](formulas/README.md)
 - [Formula Bonds](formula-bonds/README.md)
-- [Formulas Linked To Prime Numbers](notes/formulas-linked-to-prime-numbers.md)
-- [Formula Genealogy: From Prime Counting To Zeta, And Back Again](notes/formula-genealogy-zeta-to-primes.md)
+- [Formulas Linked To Prime Numbers](notes/03-04-formulas-linked-to-prime-numbers.md)
+- [Formula Genealogy: From Prime Counting To Zeta, And Back Again](notes/03-03-formula-genealogy-zeta-to-primes.md)
+- [Brain-Dump Observation Index](brain-dumps/README.md)
 - [Repository Stewardship Review](repository-stewardship.md)
 - [Stewardship Progress](stewardship-progress.md)
 
