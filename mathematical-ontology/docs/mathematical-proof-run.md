@@ -123,14 +123,16 @@ notation_notes:
 objects:
   - concept.complex-number
   - concept.exponential-function
-  - concept.sine
-  - concept.cosine
+  - concept.sine-function
+  - concept.cosine-function
 
 relations:
-  derives:
-    - formula.euler-identity
-  connects:
-    - concept.complex-rotation
+  - category: dependency
+    type: derives
+    target: formula.euler-identity
+  - category: representation
+    type: represents
+    target: concept.rotation
 
 verification:
   type: proof
@@ -309,7 +311,7 @@ sources_and_artifacts:
 ### 5.2 What Fields Were Awkward?
 
 - `sources: Not listed on source page.` is useful for extraction, but final canonical pages should prefer structured source records.
-- Formula `relations` need a controlled vocabulary soon; free-form keys like `derives` and `connects` are readable but not yet strict.
+- Formula `relations` need controlled bond vocabulary inside the broader relation categories. The category layer now exists, but the bond lists are still early.
 - Theorem `counterexamples.status: not-applicable` needs scope text, otherwise it can be mistaken for a global claim.
 - Experiment setup wants nested fields, while the current experiment spec is still mostly section-oriented.
 

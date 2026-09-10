@@ -29,7 +29,10 @@ Strongly recommended fields:
 ```yaml
 domains: []
 prerequisites: []
-relations: []
+relations:
+  - category: dependency
+    type: depends-on
+    target: concept.example-prerequisite
 sources:
   - id: source.example
     role: reference
@@ -39,6 +42,8 @@ validation:
 ```
 
 Type-specific contracts add only what that node kind needs.
+
+Relations use the category and bond vocabulary in [Relation Vocabulary](./relation-vocabulary.md). `category` says what kind of connection this is; `type` names the specific bond inside that category.
 
 ## 3. Provenance And Validation
 
@@ -139,7 +144,32 @@ related:
 
 Do not create mathematical concept nodes for schema grammar merely because a page mentions the word. For example, `status`, `source`, `prerequisite`, `relationship`, `proof`, and `example` are not dictionary concepts unless the page is explicitly documenting the schema itself.
 
-### 4.2 Link Rendering Rule
+Presentation-oriented types such as `teaching` may organize explanations of mathematical entities. They should point to mathematical nodes through stable IDs, but they must not change the epistemic status of those nodes.
+
+## 5. Relation Categories And Bonds
+
+Every formal relation should have:
+
+```yaml
+relations:
+  - category: representation
+    type: represents
+    target: concept.rotation
+```
+
+Use these broad categories:
+
+- `transformation`;
+- `structural-property`;
+- `equivalence`;
+- `dependency`;
+- `evidence`;
+- `representation`;
+- `analogy`.
+
+The `type` field is the controlled bond within the selected category. For example, `rotation`, `projection`, `embedding`, `derivative`, and `integral` usually participate as transformations or transformation-related entities. `symmetry`, `conservation`, `invariance`, `fixed point`, and `periodicity` usually describe structural properties or observations. `resonance`, `interference`, and `correction/residue` need explicit category choice because they can be phenomena, evidence, or corrective operations depending on context.
+
+### 5.1 Link Rendering Rule
 
 Use Markdown or Obsidian links for mathematical entities:
 
@@ -160,7 +190,7 @@ Use inline code for schema terms:
 
 This prevents graph builders from mistaking the schema's own vocabulary for mathematical content.
 
-## 5. Human Links And Stable IDs
+## 6. Human Links And Stable IDs
 
 Use Obsidian links for human navigation:
 
@@ -181,7 +211,7 @@ related:
 
 The display name may change. The stable ID should not.
 
-## 6. Graph Direction
+## 7. Graph Direction
 
 The graph is derived from Markdown nodes:
 
@@ -199,7 +229,7 @@ indexes / visualization / AI retrieval
 
 Do not make a database the initial source of truth.
 
-## 7. Validation Rules
+## 8. Validation Rules
 
 - Every node has a stable ID.
 - Every node separates schema terms from mathematical entities.
@@ -208,6 +238,7 @@ Do not make a database the initial source of truth.
 - Required fields are present or explicitly marked with an absence value.
 - Source notation is preserved before canonical formula normalization.
 - Relations use stable IDs behind human-friendly links.
+- Relations separate broad `category` from specific bond `type`.
 - Sources are structured as source-node references where possible.
 - Validation is recorded separately from provenance.
 - Markdown prose remains readable without inspecting generated graph data.

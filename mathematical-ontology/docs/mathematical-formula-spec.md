@@ -38,14 +38,16 @@ notation_notes:
 objects:
   - concept.complex-number
   - concept.exponential-function
-  - concept.sine
-  - concept.cosine
+  - concept.sine-function
+  - concept.cosine-function
 
 relations:
-  derives:
-    - formula.euler-identity
-  connects:
-    - concept.complex-rotation
+  - category: dependency
+    type: derives
+    target: formula.euler-identity
+  - category: representation
+    type: represents
+    target: concept.rotation
 
 verification:
   type: proof

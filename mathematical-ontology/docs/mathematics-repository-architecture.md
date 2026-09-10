@@ -132,6 +132,7 @@ corollary
 conjecture
 proof
 example
+teaching
 counterexample
 algorithm
 transformation
@@ -144,6 +145,8 @@ person
 source
 research-question
 ```
+
+`teaching` is a presentation-oriented node type. It may teach or sequence mathematical nodes, but it must not change the epistemic status of the mathematics it presents.
 
 Do not require every type to have a separate folder immediately.
 
@@ -347,79 +350,49 @@ means "A is a prerequisite for B", then B should not also declare A as a prerequ
 
 The graph should not use a generic `related-to` relation except as a last resort.
 
-Preferred relation vocabulary:
+Use two relation layers:
+
+1. `category`: the broad kind of relation.
+2. `type`: the specific bond or predicate inside that category.
+
+Core relation categories:
 
 ```
-defines
-defined-by
-
-contains
-part-of
-
-generalizes
-special-case-of
-
-equivalent-to
-approximately-equivalent-to
-
-derived-from
-derives
-
-depends-on
-required-for
-
-transforms-to
-transformed-from
-
-represents
-represented-by
-
-projects-to
-projected-from
-
-preserves
-invariant-of
-
-contrasts-with
-confused-with
-
-example-of
-counterexample-to
-
-supports
-does-not-support
-
-evidence-for
-evidence-against
-
-motivates
-motivated-by
-
-historically-precedes
-historically-follows
-
-explains
-explained-by
-
-tests
-tested-by
-
-cites
-cited-by
-
-extends
-extended-by
+transformation
+structural-property
+equivalence
+dependency
+evidence
+representation
+analogy
 ```
+
+The bond family is a controlled vocabulary within the chosen category. For example, `rotation`, `projection`, `embedding`, `derivative`, and `integral` usually participate as operations or transformations. `symmetry`, `conservation`, `invariance`, `fixed point`, and `periodicity` are structural properties or observations. `resonance`, `interference`, and `correction/residue` need an explicit category choice because they can play different roles in different contexts.
+
+Example bond types include:
+
+| Category | Bond types |
+|---|---|
+| `transformation` | `transforms-to`, `projects-to`, `embeds`, `differentiates`, `integrates` |
+| `structural-property` | `preserves`, `has-invariant`, `has-symmetry`, `has-fixed-point`, `has-periodicity` |
+| `equivalence` | `equivalent-to`, `approximately-equivalent-to`, `normalizes-to` |
+| `dependency` | `defines`, `depends-on`, `required-for`, `derived-from`, `special-case-of`, `extends` |
+| `evidence` | `supports`, `does-not-support`, `evidence-for`, `evidence-against`, `tests`, `cites` |
+| `representation` | `represents`, `expresses`, `example-of`, `explains` |
+| `analogy` | `analogous-to`, `contrasts-with`, `confused-with` |
 
 Example:
 
 ```
 relations:
-  - type: special-case-of
+  - category: dependency
+    type: special-case-of
     target: formula.euler
-  - type: transforms-to
+  - category: transformation
+    type: transforms-to
     target: formula.euler-identity
-  - type: prerequisite-for
+  - category: dependency
+    type: prerequisite-for
     target: concept.fourier-transform
 ```
 
@@ -766,8 +739,8 @@ aliases:
 prerequisites:
   - concept.complex-number
   - concept.exponential-function
-  - concept.sine
-  - concept.cosine
+  - concept.sine-function
+  - concept.cosine-function
 
 expression: |
   e^{i\theta} = \cos(\theta) + i\sin(\theta)
@@ -781,13 +754,16 @@ conditions:
   - theta is real
 
 relations:
-  - type: represents
-    target: concept.rotation-in-complex-plane
+  - category: representation
+    type: represents
+    target: concept.rotation
 
-  - type: special-case-of
-    target: formula.complex-exponential
+  - category: dependency
+    type: special-case-of
+    target: definition.complex-exponential
 
-  - type: derives
+  - category: dependency
+    type: derives
     target: formula.euler-identity
 
   - type: prerequisite-for

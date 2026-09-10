@@ -414,7 +414,8 @@ Every relation is directed and has this shape:
 
 ```yaml
 relations:
-  - predicate: proved-by
+  - category: evidence
+    type: proved-by
     target: proof.euclid-pythagorean
     qualifiers:
       scope: Euclidean plane geometry
@@ -422,31 +423,44 @@ relations:
       - prov-1
 ```
 
-`predicate` and `target` are required. `qualifiers` and `provenance_refs` may be empty. Inverse relations are declared by the vocabulary and may be computed; they need not be stored twice.
+`category`, `type`, and `target` are required. `qualifiers` and `provenance_refs` may be empty. `type` is the specific bond predicate inside the broader relation category. Older drafts may use `predicate`; normalize that to `type` during ingestion. Inverse relations are declared by the vocabulary and may be computed; they need not be stored twice.
 
-### 4.1 Core Relation Vocabulary
+### 4.1 Relation Categories
 
-| Predicate | Inverse | Intended connection |
+| Category | Meaning | Examples |
 |---|---|---|
-| `defines` | `defined-by` | Definition to concept, symbol, or object. |
-| `expresses` | `expressed-by` | Formula to concept, theorem, or relation. |
-| `states` | `stated-by` | Node to a formal or narrative statement. |
-| `proves` | `proved-by` | Proof to theorem or resolved conjecture. |
-| `refutes` | `refuted-by` | Counterexample or proof to a claim. |
-| `supports` | `supported-by` | Evidence that raises confidence without proving. |
-| `contradicts` | `contradicted-by` | Scoped logical or evidential tension. |
-| `derives-from` | `derives` | Formal or explanatory derivation. |
-| `depends-on` | `dependency-of` | Required mathematical dependency. |
-| `generalizes` | `specializes` | Broader-to-narrower mathematical scope. |
-| `equivalent-to` | `equivalent-to` | Equivalence under stated conditions. |
-| `approximates` | `approximated-by` | Inexact relation with an explicit regime or error. |
-| `exemplifies` | `exemplified-by` | Instance-to-pattern connection. |
-| `analogous-to` | `analogous-to` | Heuristic comparison with stated limits. |
-| `cites` | `cited-by` | Explicit use of a source. |
-| `attributed-to` | `credited-with` | Historically sourced attribution. |
-| `participated-in` | `had-participant` | Person-to-historical-event connection. |
-| `precedes` | `follows` | Historical or logical ordering. |
-| `supersedes` | `superseded-by` | New node replaces an older account without erasing it. |
+| `transformation` | Operation, map, process, or conversion. | rotation, projection, embedding, derivative, integral |
+| `structural-property` | Property, invariant, regularity, or observation. | symmetry, conservation, invariance, fixed point, periodicity |
+| `equivalence` | Sameness, rewrite, isomorphism, or identity. | equivalent-to, rewrites-to, isomorphic-to |
+| `dependency` | Prerequisite, assumption, construction, or derivation input. | depends-on, requires, derives-from, defined-by |
+| `evidence` | Proof, counterexample, source, support, contradiction, or empirical evidence. | proves, refutes, supports, cites |
+| `representation` | One object, model, picture, or coordinate system expressing another. | expresses, represents, models, parameterized-by |
+| `analogy` | Heuristic cross-domain comparison with limits. | analogous-to, resembles, maps-onto |
+
+The bond family is controlled within the appropriate category. Do not flatten all bonds into an untyped list, and do not confuse a transformation with a structural property merely because both are mathematically nearby.
+
+### 4.2 Core Relation Vocabulary
+
+| Category | Type | Inverse | Intended connection |
+|---|---|---|---|
+| `dependency` | `defines` | `defined-by` | Definition to concept, symbol, or object. |
+| `representation` | `expresses` | `expressed-by` | Formula to concept, theorem, or relation. |
+| `representation` | `states` | `stated-by` | Node to a formal or narrative statement. |
+| `evidence` | `proves` | `proved-by` | Proof to theorem or resolved conjecture. |
+| `evidence` | `refutes` | `refuted-by` | Counterexample or proof to a claim. |
+| `evidence` | `supports` | `supported-by` | Evidence that raises confidence without proving. |
+| `evidence` | `contradicts` | `contradicted-by` | Scoped logical or evidential tension. |
+| `dependency` | `derives-from` | `derives` | Formal or explanatory derivation. |
+| `dependency` | `depends-on` | `dependency-of` | Required mathematical dependency. |
+| `dependency` | `generalizes` | `specializes` | Broader-to-narrower mathematical scope. |
+| `equivalence` | `equivalent-to` | `equivalent-to` | Equivalence under stated conditions. |
+| `equivalence` | `approximates` | `approximated-by` | Inexact relation with an explicit regime or error. |
+| `representation` | `exemplifies` | `exemplified-by` | Instance-to-pattern connection. |
+| `analogy` | `analogous-to` | `analogous-to` | Heuristic comparison with stated limits. |
+| `evidence` | `cites` | `cited-by` | Explicit use of a source. |
+| `evidence` | `attributed-to` | `credited-with` | Historically sourced attribution. |
+| `dependency` | `precedes` | `follows` | Historical or logical ordering. |
+| `dependency` | `supersedes` | `superseded-by` | New node replaces an older account without erasing it. |
 
 Relations with conditions, transformations, error bounds, or disputed attribution must put those qualifications in `qualifiers`. A generic `related-to` edge should be avoided when a more precise predicate is available.
 
@@ -548,18 +562,21 @@ attributes:
   formal_system: Euclidean plane geometry
 
 relations:
-  - predicate: expressed-by
+  - category: representation
+    type: expressed-by
     target: formula.pythagorean-identity
     qualifiers: {}
     provenance_refs:
       - prov-1
-  - predicate: proved-by
+  - category: evidence
+    type: proved-by
     target: proof.euclid-elements-i-47
     qualifiers:
       presentation: Euclid's geometric proof
     provenance_refs:
       - prov-1
-  - predicate: depends-on
+  - category: dependency
+    type: depends-on
     target: definition.right-triangle
     qualifiers:
       role: supplies the right-angle hypothesis

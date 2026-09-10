@@ -1,0 +1,48 @@
+{
+  "id": "graph.euler-formula-slice",
+  "type": "graph-record",
+  "status": "draft",
+  "slice": "slice.euler-formula",
+  "slice_file": "slice.euler-formula.md",
+  "entrypoint": "formula.euler",
+  "nodes": [
+    { "id": "concept.complex-number", "type": "concept", "file": "concept.complex-number.md" },
+    { "id": "concept.exponential-function", "type": "concept", "file": "concept.exponential-function.md" },
+    { "id": "concept.imaginary-unit", "type": "concept", "file": "concept.imaginary-unit.md" },
+    { "id": "concept.unit-circle", "type": "concept", "file": "concept.unit-circle.md" },
+    { "id": "concept.angle", "type": "concept", "file": "concept.angle.md" },
+    { "id": "concept.sine-function", "type": "concept", "file": "concept.sine-function.md" },
+    { "id": "concept.cosine-function", "type": "concept", "file": "concept.cosine-function.md" },
+    { "id": "concept.rotation", "type": "concept", "file": "concept.rotation.md" },
+    { "id": "definition.complex-exponential", "type": "definition", "file": "definition.complex-exponential.md" },
+    { "id": "formula.euler", "type": "formula", "file": "formula.euler.md" },
+    { "id": "formula.euler-identity", "type": "formula", "file": "formula.euler-identity.md" },
+    { "id": "example.euler-formula-half-turn", "type": "example", "file": "example.euler-formula-half-turn.md" },
+    { "id": "teaching.euler-formula", "type": "teaching", "file": "teaching.euler-formula.md" },
+    { "id": "source.dlmf.4.2", "type": "source", "file": "source.dlmf.4.2.md" },
+    { "id": "source.dlmf.4.14", "type": "source", "file": "source.dlmf.4.14.md" }
+  ],
+  "edges": [
+    { "source": "formula.euler", "category": "representation", "type": "expresses", "target": "concept.complex-number" },
+    { "source": "formula.euler", "category": "representation", "type": "expresses", "target": "concept.exponential-function" },
+    { "source": "formula.euler", "category": "representation", "type": "expresses", "target": "concept.sine-function" },
+    { "source": "formula.euler", "category": "representation", "type": "expresses", "target": "concept.cosine-function" },
+    { "source": "formula.euler", "category": "dependency", "type": "uses", "target": "concept.imaginary-unit" },
+    { "source": "formula.euler", "category": "representation", "type": "represents", "target": "concept.rotation" },
+    { "source": "formula.euler", "category": "representation", "type": "geometric-model", "target": "concept.unit-circle" },
+    { "source": "formula.euler", "category": "representation", "type": "parameterized-by", "target": "concept.angle" },
+    { "source": "formula.euler", "category": "dependency", "type": "derives-from", "target": "definition.complex-exponential" },
+    { "source": "formula.euler-identity", "category": "dependency", "type": "specializes", "target": "formula.euler" },
+    { "source": "example.euler-formula-half-turn", "category": "representation", "type": "demonstrates", "target": "formula.euler" },
+    { "source": "example.euler-formula-half-turn", "category": "dependency", "type": "specializes-to", "target": "formula.euler-identity" },
+    { "source": "teaching.euler-formula", "category": "representation", "type": "teaches", "target": "formula.euler" },
+    { "source": "concept.exponential-function", "category": "evidence", "type": "source", "target": "source.dlmf.4.2" },
+    { "source": "definition.complex-exponential", "category": "evidence", "type": "source", "target": "source.dlmf.4.2" },
+    { "source": "concept.sine-function", "category": "evidence", "type": "source", "target": "source.dlmf.4.14" },
+    { "source": "concept.cosine-function", "category": "evidence", "type": "source", "target": "source.dlmf.4.14" }
+  ],
+  "open_issues": [
+    "Select and record a precise source statement for formula.euler.",
+    "Generate this graph record automatically from frontmatter."
+  ]
+}

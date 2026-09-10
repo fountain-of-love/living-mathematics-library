@@ -144,6 +144,21 @@ related:
 
 The dictionary uses a small set of human-readable relationship types. These are intentionally broader than the typed relations in the universal node schema.
 
+Formal node records use the relation taxonomy in [Relation Vocabulary](./relation-vocabulary.md):
+
+```text
+relation
+├── transformation
+├── structural-property
+├── equivalence
+├── dependency
+├── evidence
+├── representation
+└── analogy
+```
+
+The dictionary can stay human-facing, but when a relation becomes part of a node or graph record it should choose a category and a controlled bond type.
+
 | Relationship | Meaning | Example |
 |---|---|---|
 | `Related` | Terms that are often needed nearby for understanding or use. | Fourier Transform -> Convolution |
@@ -312,16 +327,111 @@ Status: [[Established]]
 Related:
 - [[Complex Number]]
 - [[Exponential Function]]
-- [[Sine]]
-- [[Cosine]]
+- [[Imaginary Unit]]
+- [[Angle]]
+- [[Sine Function]]
+- [[Cosine Function]]
 - [[Unit Circle]]
+- [[Rotation]]
 - [[Euler's Identity]]
 - [[Fourier Transform]]
 
 Future deep links:
 - [[Complex Exponential]]
-- [[Rotation]]
 - [[Lie Group]]
+
+## Exponential Function
+
+A function whose values change multiplicatively with additive changes in the input.
+
+Related:
+- [[Complex Exponential]]
+- [[Euler's Formula]]
+
+Deeper reference:
+- [[DLMF §4.2 Definitions]]
+
+## Imaginary Unit
+
+A number \(i\) satisfying \(i^2=-1\).
+
+Related:
+- [[Complex Number]]
+- [[Euler's Formula]]
+
+## Unit Circle
+
+The circle of radius 1 centered at the origin.
+
+Related:
+- [[Angle]]
+- [[Sine Function]]
+- [[Cosine Function]]
+- [[Rotation]]
+- [[Euler's Formula]]
+
+## Angle
+
+A measure of rotation or separation between directions, commonly expressed in radians in analytic formulas.
+
+Related:
+- [[Unit Circle]]
+- [[Rotation]]
+- [[Euler's Formula]]
+
+## Sine Function
+
+The trigonometric function giving the vertical coordinate of a point on the unit circle at a given angle.
+
+Related:
+- [[Cosine Function]]
+- [[Unit Circle]]
+- [[Euler's Formula]]
+
+Deeper reference:
+- [[DLMF §4.14 Definitions and Periodicity]]
+
+## Cosine Function
+
+The trigonometric function giving the horizontal coordinate of a point on the unit circle at a given angle.
+
+Related:
+- [[Sine Function]]
+- [[Unit Circle]]
+- [[Euler's Formula]]
+
+Deeper reference:
+- [[DLMF §4.14 Definitions and Periodicity]]
+
+## Rotation
+
+A transformation that turns an object around a fixed point or axis while preserving relevant distances.
+
+Related:
+- [[Angle]]
+- [[Unit Circle]]
+- [[Euler's Formula]]
+
+## Euler's Identity
+
+The special case of Euler's formula at \(\theta=\pi\), commonly written \(e^{i\pi}+1=0\).
+
+Related:
+- [[Euler's Formula]]
+- [[Complex Number]]
+- [[Unit Circle]]
+
+## Complex Exponential
+
+The exponential function extended to complex inputs.
+
+Related:
+- [[Exponential Function]]
+- [[Complex Number]]
+- [[Euler's Formula]]
+
+Deeper reference:
+- [[DLMF §4.2 Definitions]]
 
 ## Fourier Transform
 

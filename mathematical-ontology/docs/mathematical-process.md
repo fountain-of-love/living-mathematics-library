@@ -20,6 +20,9 @@ theorem
 conjecture
 proof
 experiment
+example
+teaching
+source
 proof-run
 ```
 
@@ -308,6 +311,19 @@ Do not infer "no counterexample" from silence. Use `not-known`, `not-applicable`
 ### 9.12 Add Transformations And Bonds
 
 Record transformations, equivalences, dependencies, derivations, representations, invariants, and loss-of-information relationships.
+
+Every formal relation should separate broad category from specific bond:
+
+```yaml
+relations:
+  - category: transformation
+    type: projects
+    target: concept.subspace
+```
+
+Use the relation categories from [Relation Vocabulary](./relation-vocabulary.md): `transformation`, `structural-property`, `equivalence`, `dependency`, `evidence`, `representation`, and `analogy`.
+
+The bond family is a controlled vocabulary within the chosen category. For example, rotation, projection, embedding, derivative, and integral are primarily operations or transformations; symmetry, conservation, invariance, fixed point, and periodicity are structural properties or observations; resonance, interference, and correction/residue require an explicit category decision.
 
 Use this step to connect the artifact to the mathematical ontology without expanding the page into a full domain treatment.
 

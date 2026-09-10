@@ -8,6 +8,7 @@ This directory contains the specifications and page contracts that make the math
 |---|---|
 | [Mathematical Design Principles](./mathematical-design-principles.md) | Defines the philosophy: dictionary as interface, one sentence first, portal links, honest absence, and human links backed by stable IDs. |
 | [Knowledge Node Spec](./knowledge-node-spec.md) | Defines the minimal node contract, schema-term/entity distinction, stable IDs, and Markdown-as-source architecture. |
+| [Relation Vocabulary](./relation-vocabulary.md) | Defines relation categories and controlled bond predicates for graph edges. |
 | [Universal Mathematical Knowledge-Node Schema](./universal-mathematical-knowledge-node-schema.md) | Defines one common node architecture, common knowledge-node types, typed relations, provenance, and validation rules. |
 | [Mathematical Dictionary](./mathematical-dictionary.md) | Defines the compact interface ontology for canonical terms, relationship labels, stable links, and outward paths to deeper material. |
 | [Mathematical Concept Spec](./mathematical-concept-spec.md) | Defines the page contract for stable mathematical concept notes using structured facts plus prose. |
